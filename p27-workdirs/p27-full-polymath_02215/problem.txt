@@ -1,0 +1,1 @@
+Internal angles of triangle are $(5x+3y)^{\circ}$, $(3x+20)^{\circ}$ and $(10y+30)^{\circ}$ where $x$ and $y$ are positive integers. Which values can $x+y$ get ?

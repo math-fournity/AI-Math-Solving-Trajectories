@@ -1,0 +1,1 @@
+Given real numbers \(a, b, c\) such that \(a + b + c = 1\) and \(ab + bc + ca > 0\), find the minimum value of the expression \(P = \frac{2}{|a - b|} + \frac{2}{|b - c|} + \frac{2}{|c - a|} + \frac{5}{\sqrt{ab + bc + ca}}\).

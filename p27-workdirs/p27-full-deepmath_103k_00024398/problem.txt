@@ -1,0 +1,1 @@
+Let $R$ be a commutative ring with a unit element such that any ideal can be decomposed as a sum of an idempotent ideal and a small ideal (i.e., an ideal in the Jacobson radical $J(R)$). Determine whether the idempotents of $R/J(R)$ lift modulo $J(R)$. Specifically, if $x^2 - x \in J(R)$ for $x \in R$, does it follow that $x - e \in J(R)$ for some idempotent $e \in R$?

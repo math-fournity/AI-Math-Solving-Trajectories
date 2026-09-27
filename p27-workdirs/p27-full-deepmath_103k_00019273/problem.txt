@@ -1,0 +1,1 @@
+Determine whether for every positive integer $m$, there exists a second-degree real polynomial $P(x)$ and a positive integer $k(m)$ such that all numbers in the set $\{P(k(m)), P(k(m)+1), \ldots, P(k(m)+m-1)\}$ are prime numbers.

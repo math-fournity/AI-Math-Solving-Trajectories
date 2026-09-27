@@ -1,0 +1,1 @@
+Given two positive integers $n$ and $k$. In the plane, there are $n$ circles ($n \geq 2$) such that each circle intersects every other circle at two points, and all these intersection points are pairwise distinct.

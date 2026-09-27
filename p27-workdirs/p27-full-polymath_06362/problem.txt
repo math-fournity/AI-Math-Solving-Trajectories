@@ -1,0 +1,1 @@
+An industrial warehouse floor is a grid of 8 rows and 8 columns of storage bays. To optimize airflow, the bays follow a checkerboard pattern: "Cold" bays and "Warm" bays alternate such that no two adjacent bays are of the same type. The bay in the first row and first column is a Cold bay.

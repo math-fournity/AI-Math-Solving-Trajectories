@@ -1,0 +1,1 @@
+In a remote industrial facility, a control grid is laid out as a 2-row by 4-column matrix of sensors. A signal begins at the bottom-left sensor (Cell (1,1)).

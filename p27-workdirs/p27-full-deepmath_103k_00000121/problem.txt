@@ -1,0 +1,1 @@
+Determine whether there exist integers \( n \neq 0,1 \) such that \( \pi_n(S^2) = 0 \).

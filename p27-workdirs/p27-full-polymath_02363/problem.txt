@@ -1,0 +1,1 @@
+An arrangement of 12 real numbers in a row is called [i]good[/i] if for any four consecutive numbers the arithmetic mean of the first and last numbers is equal to the product of the two middle numbers. How many good arrangements are there in which the first and last numbers are 1, and the second number is the same as the third?

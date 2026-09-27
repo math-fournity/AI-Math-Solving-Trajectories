@@ -1,0 +1,1 @@
+Identify all transitive subgroups of the symmetric group $\mathfrak{S}_4$ up to relabeling of indices, and for each such subgroup $G$, provide an example of a quartic polynomial $F(X) \in \mathbb{Q}[X]$ whose splitting field $\mathbb{K}$ over $\mathbb{Q}$ has Galois group $\operatorname{Gal}(\mathbb{K}/\mathbb{Q})$ isomorphic to $G$.

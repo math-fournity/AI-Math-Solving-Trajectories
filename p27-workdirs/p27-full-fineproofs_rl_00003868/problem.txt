@@ -1,0 +1,1 @@
+Let $a_{0}$ and $a_{n}$ be distinct divisors of a natural number $m>1$, and the sequence of natural numbers $a_{0}, a_{1}, a_{2}, \ldots, a_{n}$ satisfies

@@ -1,0 +1,1 @@
+A high-security data center uses a circular sequence of $N$ encryption nodes to process a daily batch of data. On the first day, the lead engineer, Merlin, configures the nodes in an initial arrangement.

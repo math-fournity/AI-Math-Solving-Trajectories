@@ -1,0 +1,1 @@
+For a positive integer \( n \), we say an \( n \)-transposition is a bijection \(\sigma:\{1,2, \ldots, n\} \rightarrow\{1,2, \ldots, n\}\) such that there exist exactly two elements \( i \) of \(\{1,2, \ldots, n\}\) such that \(\sigma(i) \neq i\).

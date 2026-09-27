@@ -1,0 +1,1 @@
+3000 people each go into one of three rooms randomly. What is the most likely value for the maximum number of people in any of the rooms?

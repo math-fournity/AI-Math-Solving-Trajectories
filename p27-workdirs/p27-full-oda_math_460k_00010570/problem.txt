@@ -1,0 +1,1 @@
+4. In the plane of Camelot, King Arthur built a maze $\mathscr{L}$ consisting of $n$ walls, each wall being a straight line (infinitely extended), with no two walls parallel and no three walls having a common point. The wizard Merlin painted one side of each wall entirely red and the other side entirely blue.

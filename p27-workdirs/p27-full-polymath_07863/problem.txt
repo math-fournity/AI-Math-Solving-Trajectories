@@ -1,0 +1,1 @@
+A high-security research facility uses a master control panel with 19 distinct power levels, indexed as $M = \{1, 2, \dots, 19\}$. To optimize the system, a technician needs to select a subset of "primary" voltage chips, $A = \{a_1, a_2, \dots, a_k\}$, chosen from these 19 levels.

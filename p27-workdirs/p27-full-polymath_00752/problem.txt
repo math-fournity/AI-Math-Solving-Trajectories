@@ -1,0 +1,1 @@
+Consider the following $5$-by-5 square and $3$-by-1 rectangle:

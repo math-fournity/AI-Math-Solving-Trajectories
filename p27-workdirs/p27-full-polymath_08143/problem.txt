@@ -1,0 +1,1 @@
+In the high-tech city of Metropolia, a cybersecurity expert (the "Infiltrator") and a system administrator (the "Guardian") are engaged in a digital tug-of-war over an $n \times n$ grid of server nodes.

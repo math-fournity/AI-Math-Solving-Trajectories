@@ -1,0 +1,1 @@
+In the plane, there are 20 points, no three of which are collinear. Some of the points are connected by segments such that for every subset of 10 points, there exists a point (outside or inside the subset) connected by a segment to each of the 10 points. Find the minimum possible number of drawn segments.

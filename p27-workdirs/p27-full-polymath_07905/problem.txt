@@ -1,0 +1,1 @@
+In a specialized data facility, two circular server racks are being tested for their automated security protocols. The first rack contains $n=8$ servers, labeled $S_0, S_1, \dots, S_7$, and the second rack contains $n=9$ servers, labeled $S_0, S_1, \dots, S_8$. In both racks, every server is initially "ACTIVE."

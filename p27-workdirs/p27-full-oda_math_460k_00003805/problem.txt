@@ -1,0 +1,1 @@
+Let \( X \subset \mathbb{R} \) be a set such that any function \( f: \mathbb{R} \to \mathbb{R} \), whose restriction to any segment \( [a, b] \subset X \) is continuous, is continuous on \( X \). If \( X \) is the union of intervals and points, find the maximum number of disjoint intervals that can be in \( X \) if \( X \) contains exactly 100 points.

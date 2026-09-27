@@ -1,0 +1,1 @@
+A specialized restoration crew is assigned to a hallway consisting of a single row of 2024 damaged tiles. Initially, every tile is designated as "Unrestored." The crew consists of two specialists, Arthur and Beatrice, who take turns performing their tasks, with Arthur going first.

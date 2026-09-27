@@ -1,0 +1,1 @@
+5. Let $A$ be a finite set of natural numbers. A partition of $A$ into two non-empty disjoint subsets $A_{1}$ and $A_{2}$ is called demonic if the least common multiple of the elements of $A_{1}$ is equal to the greatest common divisor of the elements of $A_{2}$. What is the smallest number of elements that $A$ must have for there to be exactly 2016 demonic partitions?

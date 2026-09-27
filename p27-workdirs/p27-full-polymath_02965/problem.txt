@@ -1,0 +1,1 @@
+Find the set of all integers $p \ge 1$ for which there exist integers $x_{1}, x_{2}, \dots, x_{p}$ satisfying the equation

@@ -1,0 +1,1 @@
+In the competitive world of professional drone racing, a pilot's flight path is determined by a complex signal interference pattern modeled by three tuning parameters: $a$, $b$, and $c$. These parameters are represented as coordinates in the complex plane.

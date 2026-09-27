@@ -1,0 +1,1 @@
+In a remote digital treasury, access codes are generated using a specific security protocol. A system administrator needs to identify every valid security quartet $(x, y, z, n)$ that satisfies a precise power-load balance.

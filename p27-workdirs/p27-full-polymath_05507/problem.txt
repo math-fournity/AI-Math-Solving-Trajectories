@@ -1,0 +1,1 @@
+A rectangular table with 9 rows and 2008 columns is filled with numbers 1 through 2008 such that each number appears exactly 9 times. The difference between any two numbers in the same column is not greater than 3. What is the maximum value of the minimum sum of a column?

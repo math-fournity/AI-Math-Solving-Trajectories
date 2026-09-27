@@ -1,0 +1,1 @@
+Given a countably infinite set $H$, find the maximum number of subsets that can be selected from the power set $P(H)$ such that every $n$ subsets have infinitely many elements in common, but every $n+1$ subsets have only finitely many elements in common, where $n$ is a positive integer greater than or equal to 2.

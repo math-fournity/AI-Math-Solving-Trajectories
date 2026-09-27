@@ -1,0 +1,1 @@
+Evaluate the limit: $$\lim_{n \rightarrow \infty} \sum_{i=1}^n \frac{1}{i^3} \left[ \prod_{j=i}^n \frac{kj -1}{kj} \right]^3$$ where $k$ is a constant.

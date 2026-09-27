@@ -1,0 +1,1 @@
+For every \( l \in \mathbb{N} \) and \( m \in \mathbb{Z} \) such that \( |m| \leq l \), calculate the integral

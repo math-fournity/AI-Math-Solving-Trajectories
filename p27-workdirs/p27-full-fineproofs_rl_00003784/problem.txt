@@ -1,0 +1,1 @@
+Let $a$ and $b$ be distinct positive integers such that $3^{a}+2$ is divisible by $3^{b}+2$. Prove that $a>b^{2}$ 。

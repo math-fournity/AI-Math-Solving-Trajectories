@@ -1,0 +1,1 @@
+In triangle \(ABC\) with incenter \(I\), let \(A'\) be the incenter of triangle \(IBC\), \(B'\) be the incenter of triangle \(IAC\), and \(C'\) be the incenter of triangle \(IAB\). If \(O\) is the circumcenter of triangle \(ABC\), calculate the length of \(OO'\), where \(O'\) is the circumcenter of triangle \(A'B'C'\).

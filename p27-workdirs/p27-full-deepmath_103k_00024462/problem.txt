@@ -1,0 +1,1 @@
+Let $G$ be a finitely generated subgroup of $\text{PGL}(2,\mathbb{C})$ such that each element $g \in G$ has finite order. Is $G$ necessarily finite? Provide a justification for your answer.

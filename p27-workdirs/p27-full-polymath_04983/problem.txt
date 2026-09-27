@@ -1,0 +1,1 @@
+Find the sum of all positive integers $N$ such that for any infinite triangular grid with exactly $N$ black unit equilateral triangles, there exists an equilateral triangle $S$ whose sides align with grid lines such that there is exactly one black unit equilateral triangle outside of $S$.

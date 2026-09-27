@@ -1,0 +1,1 @@
+Let $P$ and $Q$ be monic polynomials with integer coefficients and degrees $n$ and $d$ respectively, where $d\mid n$. Suppose there are infinitely many pairs of positive integers $(a,b)$ for which $P(a)=Q(b)$. Does there exist a polynomial $R$ with integer coefficients such that $$P(x)=Q(R(x))$$?

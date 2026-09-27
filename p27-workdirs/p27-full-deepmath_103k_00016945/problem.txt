@@ -1,0 +1,1 @@
+Determine whether the following statement is true or false: The number of irreducible components of the algebraic subset $V(f_1, \\ldots , f_k)$ of $\mathbb{R}^n$ is always less than or equal to the number of irreducible components of the algebraic subset $Z(f_1, \\ldots , f_k)$ of $\mathbb{C}^n$. Justify your answer.

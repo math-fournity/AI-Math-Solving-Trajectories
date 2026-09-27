@@ -1,0 +1,1 @@
+Let $R = \mathbb{C}[x_1, \ldots, x_n]$ and $S = \mathbb{C}[y_1, \ldots, y_m]$ be polynomial rings, and consider a ring homomorphism $f: R \to S$. Suppose that:

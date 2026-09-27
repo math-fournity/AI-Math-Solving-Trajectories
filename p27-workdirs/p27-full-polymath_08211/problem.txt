@@ -1,0 +1,1 @@
+In the futuristic city of Lattice-Grid, a square district measuring $100 \times 100$ city blocks is undergoing a solar installation project. The district is divided into $10,000$ identical unit square cells by a network of $101$ horizontal and $101$ vertical street segments, creating a grid of unit-length boundary segments.

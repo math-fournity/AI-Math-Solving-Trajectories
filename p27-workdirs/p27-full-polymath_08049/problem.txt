@@ -1,0 +1,1 @@
+In a remote industrial facility, a chemical crystallization process is governed by a growth constant $\lambda$. This constant is defined as the unique positive solution to the reaction stability equation $t^2 - 1998t - 1 = 0$.

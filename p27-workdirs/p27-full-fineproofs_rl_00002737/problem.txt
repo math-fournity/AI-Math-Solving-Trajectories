@@ -1,0 +1,1 @@
+Let  $ABCD$  be a parallelogram and let  $P{}$  be a point inside it such that  $\angle PDA= \angle PBA$ . Let  $\omega_1$  be the excircle of  $PAB$  opposite to the vertex  $A{}$ . Let  $\omega_2$  be the incircle of the triangle  $PCD$ . Prove that one of the common tangents of  $\omega_1$  and  $\omega_2$  is parallel to  $AD$ .

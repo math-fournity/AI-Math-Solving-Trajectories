@@ -1,0 +1,1 @@
+Find the sum of all integers $m$ in the set $\{1, 2, 3, \dots, 100\}$ such that:

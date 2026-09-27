@@ -1,0 +1,1 @@
+Find the smallest constant \( C > 0 \) such that for all integers \( m > n > 1 \), the following inequality holds:

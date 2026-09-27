@@ -1,0 +1,1 @@
+Determine all polynomials \( P(x) \) with integer coefficients such that \( P(n) \) is a palindrome for every integer \( n \geq 0 \).

@@ -1,0 +1,1 @@
+A high-tech automated warehouse uses a linear array of $m$ charging docks to manage its drone fleet. Two logistics protocols, Protocol A and Protocol B, operate the system in alternating cycles, starting with Protocol A.

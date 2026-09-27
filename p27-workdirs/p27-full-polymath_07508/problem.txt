@@ -1,0 +1,1 @@
+In the city of Arithmos, the **Efficiency Rating** of a local power plant is calculated based on its total output capacity. For any plant with a capacity of $n$ megawatts (where $n$ is a positive integer), the city council identifies every possible **standard operating block** size that can divide the total capacity $n$ perfectly.

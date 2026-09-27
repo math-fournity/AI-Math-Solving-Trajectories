@@ -1,0 +1,1 @@
+Let us call a $9$-digit number a balanced number if its digits are exactly $1,2,\ldots,9$ in some order. Let $S$ be the sequence of digits obtained by writing all balanced numbers in order from smallest to largest, one after another. Find the smallest $k$ such that any two distinct substrings of $S$ of length $k$ are different.

@@ -1,0 +1,1 @@
+Determine the dimension of the subset of $2 \times 2$ matrices $(c_1, c_2)$ that generate a 2-dimensional Lie algebra, given by the condition $[c_1, c_2] = k_1 c_1 + k_2 c_2$, where $[a,b]$ denotes the commutator $ab - ba$. Provide your answer as a single integer.

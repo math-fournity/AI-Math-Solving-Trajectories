@@ -1,0 +1,1 @@
+In a specialized laboratory, an aerospace engineer is testing the stability of a new propulsion system. The system's performance is governed by three complex physical coefficients, $a, b,$ and $c$. These coefficients define a stress function $S(z) = az^2 + bz + c$, where $z$ represents a complex input variable.

@@ -1,0 +1,1 @@
+Let $I$ be an uncountable directed set, and let $T = \{E_{\alpha}: \alpha \in I\}$ be a collection of countably infinite sets such that $E_{\alpha} \subset E_{\beta}$ whenever $\alpha \le \beta$. The collection $T$ is totally ordered with respect to set inclusion. Determine the cardinality of $\bigcup_{\alpha \in I} E_{\alpha}$.

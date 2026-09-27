@@ -1,0 +1,1 @@
+In a futuristic city, an architect is designing a modular square plaza named **District ABCD**. To create a visually striking pattern, the architect divides the plaza into a central square garden, **Zone KLMN**, and eight identical right-triangular glass pavilions that surround it.

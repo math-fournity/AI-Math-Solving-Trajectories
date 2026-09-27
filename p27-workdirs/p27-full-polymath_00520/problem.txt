@@ -1,0 +1,1 @@
+In $\triangle ABC$ with $AC < BC$ and area $20 \sqrt{3}$, let $M$ and $I$ be the circumcenter and the incenter of the triangle, respectively. Suppose the segment $IM$ has length $1$ and is parallel to the side $AB$. Find the sum of the squares of the lengths of the sides of the triangle.

@@ -1,0 +1,1 @@
+A function $f: \mathbb{R} \rightarrow \mathbb{R}$ is essentially increasing if $f(s) \leq f(t)$ holds whenever $s \leq t$ are real numbers such that $f(s) \neq 0$ and $f(t) \neq 0$. Find the smallest integer $k$ such that for any 2022 real numbers $x_{1}, x_{2}, \ldots, x_{2022}$, there exist $k$ essentially increasing functions $f_{1}, \ldots, f_{k}$ such that

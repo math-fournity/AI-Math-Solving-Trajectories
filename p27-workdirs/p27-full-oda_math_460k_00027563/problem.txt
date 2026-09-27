@@ -1,0 +1,1 @@
+Find all rational numbers \( x = \frac{p}{q} > 1 \) (\( p, q \) being integers such that \( q > 0 \) and \( \text{gcd}(p, q) = 1 \)) with the property: there exists a constant \( c \) such that for all sufficiently large \( n \) we have\n\n\[\n| \{ x^n \} - c | \leq \frac{1}{2(p + q)}.\n\]\n\n*Chinese TST 2007*

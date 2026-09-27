@@ -1,0 +1,1 @@
+Let $S$ be the set of all matrices $X \in \mathcal{M}_{2}(\mathbb{C})$ such that $X^{2023}=X^{2022}$. Find the smallest positive integer $k$ such that for every $X \in S$, the identity $X^k = X^{k-1}$ holds.

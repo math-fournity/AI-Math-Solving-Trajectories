@@ -1,0 +1,1 @@
+Determine for which positive integers $n$ there exist distinct, non-zero real numbers $a_{1}, a_{2}, \ldots, a_{n}$ such that

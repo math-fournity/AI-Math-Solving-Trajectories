@@ -1,0 +1,1 @@
+Assuming the axiom of choice, determine whether every quasi-connected graph has a spanning tree, defined as a subgraph where every pair of vertices is connected by a unique finite or infinite path.

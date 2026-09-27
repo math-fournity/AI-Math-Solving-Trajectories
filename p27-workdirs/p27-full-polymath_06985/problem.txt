@@ -1,0 +1,1 @@
+In a specialized logistics simulation, a central server maintains a "Target Value," which is initially set to a natural number $n_0 > 1$. Two systems, the Optimizer (Player A) and the Auditor (Player B), update this value sequentially.

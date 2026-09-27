@@ -1,0 +1,1 @@
+A high-security server farm consists of 27 individual server modules arranged in a fixed grid of 3 rows and 9 columns. Each module stores a specific amount of data, represented as a non-negative integer of terabytes.

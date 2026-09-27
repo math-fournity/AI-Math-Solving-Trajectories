@@ -1,0 +1,1 @@
+A city planning commission is developing a square district of size 1 by 1. Within this district, exactly $n$ specific coordinates have been designated as "Protected Landmarks." These $n$ landmarks are all located strictly inside the district's boundaries.

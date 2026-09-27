@@ -1,0 +1,1 @@
+In \(\triangle ABC\), points \(M\) and \(N\) are on sides \(BC\) and \(AC\), respectively. Segments \(AM\) and \(BN\) intersect at point \(P\). The circumcircles of \(\triangle ANP\) and \(\triangle BMP\) intersect for the second time at the center of the inscribed circle of \(\triangle ABC\). Find \(IP\), if \(\angle ACB=45^{\circ}\) and \(R_{ABC}=1\).

@@ -1,0 +1,1 @@
+For a positive integer $n$, two players $A$ and $B$ play a game with a pile of $N$ stones. On each turn, a player can take either one stone, a prime number of stones, or $kn$ stones for some positive integer $k$. The player who takes the last stone wins. Assuming both players play perfectly, for how many integers $N$ does $B$ win?

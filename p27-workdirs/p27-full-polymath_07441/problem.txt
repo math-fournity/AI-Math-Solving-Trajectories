@@ -1,0 +1,1 @@
+In a vast digital archive, a historian is categorizing specialized L-shaped "Expansion Zones" within an infinite grid of storage sectors. Each Expansion Zone is a set of grid squares consisting of exactly one corner square, a horizontal arm of 2012 adjacent squares, and a vertical arm of 2012 adjacent squares.

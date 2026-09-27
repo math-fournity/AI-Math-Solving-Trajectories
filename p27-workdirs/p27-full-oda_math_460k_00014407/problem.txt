@@ -1,0 +1,1 @@
+Given a partially ordered set \((A, <)\) with \(\dim (A, <) = \aleph_1\), find the minimum number of disjoint subsets \(A_0, A_1, \ldots, A_n\) of \(A\) such that for each \(i\), \(\dim (A_i, <) > \aleph_0\).

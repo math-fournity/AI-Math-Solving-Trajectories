@@ -1,0 +1,1 @@
+A network security firm is testing a biometric encryption system that uses the relative positioning of $n$ distinct sensors placed on a flat circuit board. No three sensors are ever placed in a straight line. To verify the system's integrity, an engineer generates two different indexing schemes, both using the ID numbers $1, 2, 3, \dots, n$.

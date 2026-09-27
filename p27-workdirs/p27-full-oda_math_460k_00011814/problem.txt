@@ -1,0 +1,1 @@
+a) Find all possible arrangements of four points on the plane, where the pairwise distances between these points take only two distinct values \(a\) and \(b\). List all possible values of the ratio \(\frac{b}{a}\) for which such arrangements are possible.

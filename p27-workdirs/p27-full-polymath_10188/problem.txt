@@ -1,0 +1,1 @@
+In a remote industrial refinery, a chemist is working with a specialized liquid compound known as Substance $x$. The refinery’s processing units are strictly limited to two specific chemical interactions between any two containers of the substance:

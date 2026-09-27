@@ -1,0 +1,1 @@
+A regional logistics network consists of four distribution hubs positioned at points $A, B, C$, and $D$, forming a convex territory. There are six direct transport routes connecting these hubs:

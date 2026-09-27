@@ -1,0 +1,1 @@
+Let $D$ be a unique factorization domain (UFD) with infinitely many maximal ideals. Determine whether $D$ has infinitely many irreducible elements that are pairwise non-associate. Justify your answer.

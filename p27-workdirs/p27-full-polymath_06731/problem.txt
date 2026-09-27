@@ -1,0 +1,1 @@
+In the city of Neopolis, a high-tech server farm consists of a $6 \times 6$ grid of server slots. The facility uses specialized cooling units, each of which is designed to occupy exactly two adjacent slots (horizontally or vertically).

@@ -1,0 +1,1 @@
+Evaluate the limit of the function as \( x \to \infty \):

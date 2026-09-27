@@ -1,0 +1,1 @@
+In a remote archipelago, there are 6 distinct islands arranged in a strictly circular fashion, such that they form the vertices of a convex hexagon. To provide a scenic tour for travelers, a cruise line wants to establish a "Voyage Route."

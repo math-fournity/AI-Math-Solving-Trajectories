@@ -1,0 +1,1 @@
+Let $R$ be a commutative ring and consider free modules $M$ and $N$ over $R$. Suppose there exists a map $f: M \rightarrow N$ such that the induced map $f^* : N^* \rightarrow M^*$, obtained by applying $\text{Hom}(-,R)$, is an isomorphism. If $M$ and $N$ are countably generated, does it necessarily follow that $f$ is an isomorphism? Provide a justification for your answer.

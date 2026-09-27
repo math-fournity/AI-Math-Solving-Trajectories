@@ -1,0 +1,1 @@
+In the distant archipelago of Technos, a digital infrastructure firm is tasked with connecting 21 server hubs via high-speed fiber-optic cables. Each cable directly links two specific hubs. In this network, a "data route" is defined as a sequence of distinct hubs $H_1, H_2, \dots, H_n$ such that a direct cable exists between $H_i$ and $H_{i+1}$ for all $1 \leq i < n$.

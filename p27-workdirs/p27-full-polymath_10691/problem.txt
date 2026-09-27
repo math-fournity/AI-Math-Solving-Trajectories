@@ -1,0 +1,1 @@
+A specialized global logistics network consists of 2012 distinct delivery hubs. For each hub $i$, where $i = 1, 2, \ldots, 2012$, the management assigns a positive integer efficiency rating $a_i$.

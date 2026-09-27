@@ -1,0 +1,1 @@
+Given twenty distinct integers \( b_1, b_2, \ldots, b_{20} \), the set of their pairwise sums \( \{ b_i + b_j \mid 1 \leq i \leq j \leq 20 \} \) has 201 elements. What is the minimum number of elements in the set of their pairwise differences \( \{ b_i - b_j \mid 1 \leq i \leq j \leq 20 \} \)?

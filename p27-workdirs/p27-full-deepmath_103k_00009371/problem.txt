@@ -1,0 +1,1 @@
+Let $f:X\rightarrow X$ be a contractive mapping of a complete metric space satisfying \[d(f(x),f(y))\leq\alpha(d(x,y))d(x,y)\] where $\alpha:\mathbf{R}^+\rightarrow [0,1)$, and $\alpha(t_n)\rightarrow 1$ implies $t_n\rightarrow 0$. Does $f$ have a fixed point?

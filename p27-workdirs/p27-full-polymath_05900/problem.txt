@@ -1,0 +1,1 @@
+In a remote archipelago, five research stations—$A_1, A_2, A_3, A_4,$ and $A_5$—are positioned as the vertices of a regular pentagon. All five stations are situated on the shoreline of a perfectly circular lagoon, which has a total surface area of $\frac{5+\sqrt{5}}{10} \pi$ square kilometers.

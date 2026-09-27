@@ -1,0 +1,1 @@
+In the high-tech logistics hub of Sector 2011, a master computer is programmed to generate encrypted security sequences. A sequence consists of an ordered list of 2011 specific calibration values, denoted as $(a_{1}, a_{2}, \ldots, a_{2011})$. Each individual value $a_i$ must be a positive integer selected from the range $1$ to $2011^2$, inclusive.

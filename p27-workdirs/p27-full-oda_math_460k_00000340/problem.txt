@@ -1,0 +1,1 @@
+Let $\mathcal{H}$ be the subset of $\mathcal{M}_{n}(\mathbb{R})$ such that for every matrix $A = (a_{ij}) \in \mathcal{H}$, $A$ is symmetric positive and each $a_{ij} \in [0,1]$. Determine the extremal points of $\mathcal{H}$.

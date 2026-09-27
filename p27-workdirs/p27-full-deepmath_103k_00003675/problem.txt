@@ -1,0 +1,1 @@
+Consider the Hilbert space \( l_2 \) with the inner product \( \langle x, y \rangle = \sum x_i y_i \). Let \( S = \{ x \in l_2 : \sum \frac{x_i}{n} = 0 \} \). Determine the number of interior points of the set \( S \).

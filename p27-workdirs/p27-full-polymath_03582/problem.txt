@@ -1,0 +1,1 @@
+On an infinite lattice grid, a circle with radius \(0<r<10\) is drawn, centered at the origin. Each grid square is shaded if and only if the boundary of the circle passes through its interior (not only a corner or side). Let \(N\) be the number of grid squares that are shaded. How many possible values of \(N\) are there?

@@ -1,0 +1,1 @@
+Let $n$ be an integer greater than $1$ and let $S$ be a finite set containing more than $n+1$ elements.Consider the collection of all sets $A$ of subsets of $S$ satisfying the following two conditions :

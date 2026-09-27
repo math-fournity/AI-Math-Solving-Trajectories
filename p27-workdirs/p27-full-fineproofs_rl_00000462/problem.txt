@@ -1,0 +1,1 @@
+6. (POL 2) ${ }^{\mathrm{IMO} 2}$ Does there exist a finite set $M$ of points in space, not all in the same plane, such that for each two points $A, B \in M$ there exist two other points $C, D \in M$ such that lines $A B$ and $C D$ are parallel?

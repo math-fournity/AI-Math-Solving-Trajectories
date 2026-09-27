@@ -1,0 +1,1 @@
+For any natural number $n$ with decimal representation $n = \overline{d_1 d_2 \ldots d_k}$, we define the Pleven selection operation as follows:

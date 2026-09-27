@@ -1,0 +1,1 @@
+Find the maximum number of kings that can be placed on a \(12 \times 12\) chessboard such that each king attacks exactly one other king.

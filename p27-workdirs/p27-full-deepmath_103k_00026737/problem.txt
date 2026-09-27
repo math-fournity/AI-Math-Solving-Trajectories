@@ -1,0 +1,1 @@
+Find the general solution of the functional differential equation \( f'(x) = f(f(x)) \).

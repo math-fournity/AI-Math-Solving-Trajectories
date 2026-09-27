@@ -1,0 +1,1 @@
+Suppose that a positive integer $n$ has the property that $n, 2 n, 3 n, \ldots, 9 n$ are all palindromes. Prove that the decimal digits of $n$ are all zeros or ones.

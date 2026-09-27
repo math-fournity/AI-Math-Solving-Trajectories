@@ -1,0 +1,14 @@
+/-!
+# International Mathematical Olympiad 2023, Problem 2
+
+Let ABC be an acute-angled triangle with AB < AC.
+Let Ω be the circumcircle of ABC.
+Let S be the midpoint of the arc CB of Ω containing A.
+The perpendicular from A to BC meets BS at D and meets Ω again at E ≠ A.
+The line through D parallel to BC meets line BE at L.
+Denote the circumcircle of triangle BDL by ω.
+Let ω meet Ω again at P ≠ B.
+Prove that the line tangent to ω at P meets line BS on the internal angle bisector of ∠BAC.
+-/
+
+##

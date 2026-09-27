@@ -1,0 +1,1 @@
+Determine all triples $\{a, b, c\}$ of positive integers that are coprime (not necessarily pairwise prime) such that $a + b + c$ divides the numbers $a^{12} + b^{12} + c^{12}$, $a^{23} + b^{23} + c^{23}$, and $a^{11004} + b^{11004} + c^{11004}$.

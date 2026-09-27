@@ -1,0 +1,1 @@
+A high-tech agricultural firm is designing a sensor network across a flat, open plain. They have installed $n$ signal towers ($n > 2$) at specific coordinates such that no three towers sit along the same straight line.

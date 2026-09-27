@@ -1,0 +1,1 @@
+Let  $(I_b)$ ,  $(I_c)$  are excircles of a triangle  $ABC$ . Given a circle  $ \omega $  passes through  $A$  and externally tangents to the circles  $(I_b)$  and  $(I_c)$  such that it intersects with  $BC$  at points  $M$ ,  $N$ .

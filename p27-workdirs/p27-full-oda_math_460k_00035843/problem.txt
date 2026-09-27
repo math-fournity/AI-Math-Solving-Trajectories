@@ -1,0 +1,1 @@
+Find all pairs of odd integers $a$ and $b$ for which there exists a natural number$ c$ such that  the number $\frac{c^n+1}{2^na+b}$ is integer for all natural $n$.

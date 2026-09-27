@@ -1,0 +1,1 @@
+Let  $\left( A,+, \cdot \right)$  be a ring that verifies the following properties:

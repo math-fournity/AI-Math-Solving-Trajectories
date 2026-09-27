@@ -1,0 +1,1 @@
+Line $\ell$ passes through a 2020 by 2020 grid of square cells. Let a cell be shaved if $\ell$ cuts it into two pieces with positive areas $a$ and $b$ such that $a < \frac{b}{2020}$. Let $S$ be the set of all cells that are shaved by $\ell$, and let $n$ be the number of distinct possible sets $S$ with exactly 2020 elements. Compute the remainder when $n$ is divided by 1000.

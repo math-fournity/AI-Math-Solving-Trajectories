@@ -1,0 +1,1 @@
+A network of 1000 server hubs is arranged in a perfect physical circle, indexed $i = 1, 2, \dots, 1000$. Each hub $i$ possesses two non-negative integer settings: a power level $a(i)$ and a scanning range $b(i)$. Because the hubs are in a circle, the indices wrap around such that $i \pm 1000 = i$.

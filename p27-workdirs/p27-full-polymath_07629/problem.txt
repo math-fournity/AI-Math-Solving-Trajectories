@@ -1,0 +1,1 @@
+A regional surveyor is mapping a triangular plot of land. To designate specific agricultural zones, two straight boundary fences are installed. Each fence starts at one of two distinct corners (vertices) of the plot and extends to the opposite edge, intersecting each other inside the property.

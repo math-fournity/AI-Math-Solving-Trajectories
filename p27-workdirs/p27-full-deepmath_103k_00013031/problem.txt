@@ -1,0 +1,1 @@
+Determine the cardinality of the set S, where S is the set of all infinite increasing sequences of binary strings. An infinite increasing sequence of binary strings is a series $w_1, w_2, \ldots$ of finite binary strings such that for every number $i$, the string $w_i$ is a prefix of $w_{i+1}$. For example, a sequence could be "101", "10100", "101001", "1010010111", and so on.

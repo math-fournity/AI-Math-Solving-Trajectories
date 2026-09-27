@@ -1,0 +1,1 @@
+Determine whether a simply connected complete Riemannian manifold with a positive upper curvature bound has a positive injectivity radius.

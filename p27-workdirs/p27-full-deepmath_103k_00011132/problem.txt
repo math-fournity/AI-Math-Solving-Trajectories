@@ -1,0 +1,1 @@
+Determine the cardinality of the set \(E(a)\), where \(E(a) = \{(r_1, r_2, \ldots, r_n, \ldots) \mid r_n \in \mathbb{Q} \cap [0,1], r_n \leq r_{n+1}, \forall n \geq 1, \sum_{n=1}^\infty \frac{r_n}{2^n} = a\}\) for any \(a \in (0,1)\). What is \(|E(a)|\)?

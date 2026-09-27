@@ -1,0 +1,1 @@
+In every acyclic graph with $n$ vertices, we can choose $k$ of the vertices such that every chosen vertex has at most 2 edges to other chosen vertices in the subgraph induced by the chosen vertices. Let $f(n)$ be the maximum integer $k$ such that this property is guaranteed to hold for any acyclic graph with $n$ vertices. Find $f(2022)$.

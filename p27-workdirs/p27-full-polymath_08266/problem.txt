@@ -1,0 +1,1 @@
+A metropolitan city is designed as a perfect grid of city blocks, forming a large square composed of $n^2$ individual units, each representing a single block with a side length of 1 mile. The grid is defined by a series of horizontal and vertical streets.

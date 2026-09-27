@@ -1,0 +1,1 @@
+Let \( a \equiv 1 \pmod{4} \) be a positive integer. Consider a polynomial \( Q \in \mathbb{Z}[X] \) with all positive coefficients such that

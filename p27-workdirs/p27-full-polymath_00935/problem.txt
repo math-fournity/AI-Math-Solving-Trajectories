@@ -1,0 +1,1 @@
+The set of real numbers $\{a_0, a_1, \ldots, a_{400}\}$ satisfies the following conditions:

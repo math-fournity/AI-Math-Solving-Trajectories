@@ -1,0 +1,1 @@
+Let \(2S\) be the total weight of a certain set of weights. We call a natural number \(k\) average if it is possible to choose \(k\) weights from the set such that their total weight equals \(S\). What is the maximum number of average numbers that a set of \(100\) weights can have?

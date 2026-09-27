@@ -1,0 +1,1 @@
+Each side of a unit square (side length 1) is also one side of an equilateral triangle that lies in the square.  Compute the area of the intersection of (the interiors of) all four triangles.

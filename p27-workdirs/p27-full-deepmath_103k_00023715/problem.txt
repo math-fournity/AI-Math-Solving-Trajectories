@@ -1,0 +1,1 @@
+Suppose \( f\colon \mathbb{R} \to \mathbb{R} \) is a strictly decreasing function satisfying the equation \[ f(x+y) + f(f(x) + f(y)) = f(f(x+f(y)) + f(y+f(x))) \] for all \( x, y \in \mathbb{R} \). Find a relation between \( f(f(x)) \) and \( x \).

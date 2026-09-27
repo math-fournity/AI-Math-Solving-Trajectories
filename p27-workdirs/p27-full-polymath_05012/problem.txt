@@ -1,0 +1,1 @@
+C4. Players $A$ and $B$ play a game with $N \geq 2012$ coins and 2012 boxes arranged around a circle. Initially $A$ distributes the coins among the boxes so that there is at least 1 coin in each box. Then the two of them make moves in the order $B, A, B, A, \ldots$ by the following rules:

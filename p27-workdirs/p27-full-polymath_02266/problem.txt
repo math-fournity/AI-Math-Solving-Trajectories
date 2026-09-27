@@ -1,0 +1,1 @@
+A natural number $n$ is called "terminating" if, for every positive integer $m < n$, the fraction $\frac{n}{m}$ has a finite decimal representation. Determine the sum of all such natural numbers $n$.

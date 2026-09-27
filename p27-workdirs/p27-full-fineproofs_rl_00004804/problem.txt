@@ -1,0 +1,1 @@
+The midpoints of all heights of a certain tetrahedron lie on its inscribed sphere. Is this tetrahedron necessarily regular then?

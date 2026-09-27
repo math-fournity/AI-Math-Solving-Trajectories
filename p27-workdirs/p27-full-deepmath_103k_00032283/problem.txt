@@ -1,0 +1,1 @@
+Determine the smallest positive integer $n$ such that in every two-coloring of the edges of the complete graph $K_n$, there always exist two monochromatic triangles that share exactly one common edge.

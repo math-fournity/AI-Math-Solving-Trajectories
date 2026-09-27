@@ -1,0 +1,1 @@
+Let $a_1,a_2,\dots, a_{17}$ be a permutation of $1,2,\dots, 17$ such that $(a_1-a_2)(a_2-a_3)\dots(a_{17}-a_1)=2^n$ . Find the maximum possible value of positive integer $n$ .

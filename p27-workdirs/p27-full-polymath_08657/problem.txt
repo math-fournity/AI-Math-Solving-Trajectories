@@ -1,0 +1,1 @@
+A specialized digital factory operates using a unique power-distribution protocol. For any given energy level $n$ (where $n$ is a positive integer), the factory requires a configuration of exactly $k$ energy-regulating modules. Each module’s capacity must be a factor of $n$.

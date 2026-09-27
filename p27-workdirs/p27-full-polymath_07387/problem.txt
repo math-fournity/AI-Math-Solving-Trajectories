@@ -1,0 +1,1 @@
+In a specialized logistics hub, there are 10 cargo containers, each marked with a unique ID number from 1 to 10 inclusive. A technician is tasked with a specific "Efficiency Calibration" protocol.

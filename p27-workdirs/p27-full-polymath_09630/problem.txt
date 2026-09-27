@@ -1,0 +1,1 @@
+A specialized robotic delivery drone is stationed at a central logistics hub located at coordinates $A_0$. The drone is assigned $n$ distinct delivery tasks, represented by displacement vectors $\vec{a}_1, \dots, \vec{a}_n$. The sum of these vectors is exactly $\vec{0}$, meaning that after completing all $n$ deliveries, the drone will always return to the hub $A_0$.

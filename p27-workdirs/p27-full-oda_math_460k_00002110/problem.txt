@@ -1,0 +1,1 @@
+Given a polynomial \( P \in \mathbb{R}[x] \) with \(\deg P > 1\), find all pairs of functions and polynomials \((f, Q)\) where \( f: \mathbb{R} \to \mathbb{R} \) and \( Q \in \mathbb{R}[x] \) satisfying the following conditions:

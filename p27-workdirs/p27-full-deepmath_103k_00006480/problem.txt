@@ -1,0 +1,1 @@
+Does there exist a positive irrational number \( \alpha \), such that for any positive integer \( n \), the number \( \lfloor n\alpha \rfloor \) is not a prime?

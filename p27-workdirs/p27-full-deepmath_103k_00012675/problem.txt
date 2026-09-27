@@ -1,0 +1,1 @@
+Consider independent random variables $X_i$ for $i = 1, 2, \ldots$, each uniformly distributed on the interval $[0, 1]$. Determine the probability that the sum \( \sum_{n=1}^\infty \prod_{i=1}^n X_i \) is finite.

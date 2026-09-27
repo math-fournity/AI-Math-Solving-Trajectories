@@ -1,0 +1,1 @@
+Suppose that $K$ is a field of characteristic $0$ and $L/K$ is an extension such that every polynomial of degree $\leq n$ over $K$ splits in $L$. Without assuming that $L$ is algebraically closed, determine if it is true that every degree $n$ polynomial over $K[[t]]$ splits completely over $L[[t^{1/n!}]]$. Provide a justification for your answer.

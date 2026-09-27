@@ -1,0 +1,1 @@
+2. For every positive integer $n$, find the largest constant $c_{n}$ with the following property: for any $n$ real-valued functions $f_{1}(x), f_{2}(x), \cdots$, $f_{n}(x)$ defined on the closed interval $[0,1]$, there exist real numbers $x_{1}, x_{2}, \cdots, x_{n}$, such that $0 \leqslant x_{i} \leqslant 1$ $(i=1,2, \cdots, n)$, and

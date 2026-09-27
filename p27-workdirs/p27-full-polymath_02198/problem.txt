@@ -1,0 +1,1 @@
+6. Each point on a circle is colored one of three colors: red, yellow, or blue, and all three colors appear. Now, $n$ points are chosen from the circle. If among these points, there always exist three points that form a triangle with vertices of the same color and an obtuse angle, then the minimum possible value of $n$ is $\qquad$ .

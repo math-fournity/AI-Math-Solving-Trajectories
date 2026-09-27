@@ -1,0 +1,1 @@
+Find a bijective proof of Theorem 6.22, i.e., find a bijection \(\varphi\) between the set of all rooted forests on \([n]\) and the set \(\mathrm{PF}_{n}\) of all parking functions of length \(n\) satisfying \(\operatorname{inv}(F) = \binom{n+1}{2} - (a_1 + \cdots + a_n)\) when \(\varphi(F) = (a_1, \ldots, a_n)\).

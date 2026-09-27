@@ -1,0 +1,1 @@
+A high-security vault is protected by a 10-digit passcode, represented by the sequence $a_9, a_8, \dots, a_0$. A security auditor needs to determine the exact passcode by querying the vault's internal database.

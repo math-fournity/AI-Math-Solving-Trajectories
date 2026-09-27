@@ -1,0 +1,1 @@
+In a specialized laboratory, researchers are studying the stability of chemical compounds defined by two parameters: the acidity level ($a$) and the bonding strength ($b$). A pair of these parameters $(a,b)$ is considered "stable" if it satisfies two fundamental conservation laws observed during experimental trials.

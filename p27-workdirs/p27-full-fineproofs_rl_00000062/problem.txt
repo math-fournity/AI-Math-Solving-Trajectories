@@ -1,0 +1,1 @@
+$ABCDEF$  is a convex hexagon, such that  $|\angle FAB| = |\angle BCD| =|\angle DEF|$  and   $|AB| =|BC|,$   $|CD| = |DE|$ ,  $|EF| = |FA|$ . Prove that the lines  $AD$ ,  $BE$  and  $CF$  are concurrent.

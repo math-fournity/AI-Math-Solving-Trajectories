@@ -1,0 +1,1 @@
+A convex polyhedron has $2n$ faces ($n \geq 3$), and all faces are triangles. Let $V_3(n)$ be the maximum number of vertices of such a polyhedron where exactly 3 edges meet. Calculate the sum of $V_3(n)$ for $n = 3, 4, 5, \dots, 10$.

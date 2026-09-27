@@ -1,0 +1,1 @@
+In a specialized digital manufacturing facility, a custom logistics robot is programmed to fulfill parts orders using only specific "Standard Batch Sizes." The available batch sizes are defined by the set $S$, where each batch contains exactly $10^n + 1000$ units for any non-negative integer $n$ (i.e., batches can be sized $1001, 1010, 1100, 2000, 11000, \dots$).

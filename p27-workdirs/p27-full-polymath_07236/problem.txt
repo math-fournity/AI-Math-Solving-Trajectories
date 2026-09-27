@@ -1,0 +1,1 @@
+In a vast desert, three distinct oasis outposts—labeled Alpha ($A$), Bravo ($B$), and Charlie ($C$)—are positioned such that the distances between them are all different (forming a scalene triangle).

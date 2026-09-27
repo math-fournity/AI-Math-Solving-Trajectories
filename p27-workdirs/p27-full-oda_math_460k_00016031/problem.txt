@@ -1,0 +1,1 @@
+In the plane, each point is colored either red or blue. Given an odd integer \( n \ge 3 \), find the minimum number of similar monochromatic triangles, with a similarity ratio of \( n \), that must exist in this coloring.

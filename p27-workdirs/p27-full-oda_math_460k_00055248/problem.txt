@@ -1,0 +1,1 @@
+In a complete graph with 11 vertices where each edge is colored with one of 3 colors, find the minimum number of monochromatic cycles of length 4 that must exist.

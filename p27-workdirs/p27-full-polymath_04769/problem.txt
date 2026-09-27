@@ -1,0 +1,1 @@
+Let $m, n$ be integers such that $n \ge m \ge 2$, and let $S$ be a set of $n$ integers. Let $f(n, m)$ be the minimum possible number of subsets of $S$ whose element sum is divisible by $m$ (the sum of elements of the empty set is defined as 0). Find the value of $f(13, 5)$.

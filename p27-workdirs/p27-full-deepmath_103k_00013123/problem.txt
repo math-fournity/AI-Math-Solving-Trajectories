@@ -1,0 +1,1 @@
+Determine if the recurrence relation \(\sum\limits_{k=0}^{n}\left[{2k\choose k}{2\left(n-k\right)\choose n-k}\right]^3={n^2\choose 2n}\) can be solved using Zeilberger's algorithm.

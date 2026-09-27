@@ -1,0 +1,1 @@
+Example 6 How many elements $k$ are there in the set $\{0,1, \cdots, 2012\}$ such that the binomial coefficient $\mathrm{C}_{2012}^{k}$ is a multiple of 2012?

@@ -1,0 +1,1 @@
+In a bustling telecommunications hub, there are $n$ distinct circular satellite coverage zones mapped on a 2D monitoring screen, where $n \geq 2$. The zones are arranged such that every pair of satellite boundaries overlaps at exactly two distinct signal-interference points, and no three boundaries ever intersect at the same location.

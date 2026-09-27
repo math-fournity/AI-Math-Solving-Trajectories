@@ -1,0 +1,1 @@
+Let $n \geq 2$ be a natural number, and let $\left( a_{1};\;a_{2};\;...;\;a_{n}\right)$ be a permutation of $\left(1;\;2;\;...;\;n\right)$. For any integer $k$ with $1 \leq k \leq n$, we place $a_k$ raisins on the position $k$ of the real number axis.

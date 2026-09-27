@@ -1,0 +1,1 @@
+Let \( A \) be a finite subset of real numbers. Define \( f(A) = \frac{|AA + A|}{|A|^{3/2}} \). Find the maximum possible value of \( c \) such that \( f(A) \geq c \) for all finite subsets \( A \) of real numbers.

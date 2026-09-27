@@ -1,0 +1,1 @@
+Paul starts at $1$ and counts by threes: $1, 4, 7, 10, ... $. At the same time and at the same speed, Penny counts backwards from $2017$ by fives: $2017, 2012, 2007, 2002,...$ . Find the one number that both Paul and Penny count at the same time.

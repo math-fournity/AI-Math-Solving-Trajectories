@@ -1,0 +1,1 @@
+Let  $\mathbb{N}$  be the set of positive integers. Across all function  $f:\mathbb{N}\to\mathbb{N}$  such that   $$ mn+1\text{ divides } f(m)f(n)+1 $$   for all positive integers  $m$  and  $n$ , determine all possible values of  $f(101).$

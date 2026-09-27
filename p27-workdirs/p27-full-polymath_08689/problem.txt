@@ -1,0 +1,1 @@
+In a specialized logistics hub, a manager is selecting a group of distinct storage containers, each assigned a unique integer identification number. This group of containers forms a set, $M$.

@@ -1,0 +1,1 @@
+Given a function $f: \mathbb{N} \to \mathbb{R}$, assume that \( A := \sup_{k \geq 0} \left| \sum_{n=0}^\infty \frac{t^n}{n!} f(k+n) \right| < \infty \) for some \( t \in (0,1) \). Can we conclude that $f$ is bounded on $\mathbb{N}$? Provide a justification for your answer.

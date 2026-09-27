@@ -1,0 +1,1 @@
+In a remote logistics network, there are $n$ supply depots located at integer coordinates $1, 2, \dots, n$ along a straight road. A cargo manifest $(a_1, a_2, \dots, a_n)$ is a permutation of the values $(1, 2, \dots, n)$, where $a_k$ represents the number of resource units stored at depot $k$.

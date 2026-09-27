@@ -1,0 +1,1 @@
+A team of deep-sea researchers is collecting a set $A$ of distinct mineral samples from a trench. Each sample has a specific chemical weight, which is an integer (the weights can be positive, negative, or zero).

@@ -1,0 +1,1 @@
+Consider a sequence \( \{x_n\} \) in \( \mathbb{N} \) with \( x_1 = 1 \) such that for any prime \( p \), the set \( \{x_1, x_2, \ldots, x_p\} \) forms a complete residue system modulo \( p \). Determine whether \( \lim_{n \to \infty} \frac{x_n}{n} \) exists, and if it does, find its value.

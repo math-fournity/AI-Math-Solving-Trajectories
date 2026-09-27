@@ -1,0 +1,1 @@
+Ana and Bob take turns writing $0$s and $1$s on a board, with Ana starting first. Each writes a total of $2021$ digits. Ana wins if the resulting binary number can be expressed as the sum of two squares; otherwise, Bob wins. Determine who has a winning strategy.

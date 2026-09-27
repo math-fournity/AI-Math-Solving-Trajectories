@@ -1,0 +1,1 @@
+In the high-stakes world of semiconductor manufacturing, a central server is managing a complex network of $N$ faulty processing units. Due to a series of logic errors, every single unit in the network has been programmed to send a "Deactivation Command" to exactly two other specific units in the system.

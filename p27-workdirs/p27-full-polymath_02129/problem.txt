@@ -1,0 +1,1 @@
+Right isosceles triangle \( T \) is placed in the first quadrant of the coordinate plane. Suppose that the projection of \( T \) onto the \( x \)-axis has length \( 6 \), while the projection of \( T \) onto the \( y \)-axis has length \( 8 \). What is the sum of all possible areas of the triangle \( T \)?

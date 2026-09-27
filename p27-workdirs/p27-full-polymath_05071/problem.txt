@@ -1,0 +1,1 @@
+Let $n > 3$ be a natural number. An $n$-gon $M$ is given. A vertex of $M$ is called "isolated" if no diagonal of $M$ passing through that vertex lies entirely within $M$. Let $f(n)$ be the maximum possible number of isolated vertices in an $n$-gon. Compute the sum $\sum_{n=4}^{100} f(n)$.

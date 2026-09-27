@@ -1,0 +1,1 @@
+Calculate the expected value of the time at which the trajectory of the Wiener process, $W_t$, first crosses the line $y=t$.

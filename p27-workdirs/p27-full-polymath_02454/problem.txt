@@ -1,0 +1,1 @@
+An \(8\) by \(8\) grid of numbers obeys the following pattern:

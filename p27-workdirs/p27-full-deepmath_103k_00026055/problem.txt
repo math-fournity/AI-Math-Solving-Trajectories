@@ -1,0 +1,1 @@
+Determine the Krull dimension of the power series ring $R[[X_1, ..., X_n]]$ in terms of the Krull dimension of a Noetherian ring $R$.

@@ -1,0 +1,1 @@
+An elite security firm is designing a surveillance protocol for a square $7 \times 7$ grid of high-security storage vaults. Each vault is identified by its row number and column number, both ranging from $1$ to $7$.

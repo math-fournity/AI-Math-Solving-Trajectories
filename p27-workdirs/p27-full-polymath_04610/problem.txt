@@ -1,0 +1,1 @@
+A convex polygon is composed of $n > 1$ equal (possibly overlapping) equilateral triangles such that the sides of all triangles are pairwise non-parallel. What is the smallest possible value of $n$?

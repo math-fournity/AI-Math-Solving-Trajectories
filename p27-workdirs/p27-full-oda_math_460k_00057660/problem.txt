@@ -1,0 +1,1 @@
+Given $n \ge 8$ points on a plane such that among any 8 points, there are four that lie on one straight line, determine the smallest value of $n$ for which it follows that one can either erase one point so that all remaining points lie on two lines, or erase four points so that the remaining points lie on one line.

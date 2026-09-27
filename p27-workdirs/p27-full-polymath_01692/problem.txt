@@ -1,0 +1,1 @@
+A chain of 17 electrical bulbs is circular, with each bulb initially on. An operation consists of sending a signal from one bulb to the next: if the bulb the signal leaves is on, the next bulb changes status; if off, the next bulb does not change status. How many operations does it take, at least, for all the bulbs to be on again?

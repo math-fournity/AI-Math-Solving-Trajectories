@@ -1,0 +1,1 @@
+Is the Schwartz space $S(\mathbb{R}^n)$ dense in the Sobolev space $H^1(\mathbb{R}^n)$ with respect to the $\lVert \cdot \rVert_{H^1}$-norm?

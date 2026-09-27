@@ -1,0 +1,1 @@
+In a specialized logistics hub, there are 60 unique storage containers, numbered sequentially from 1 to 60. For any selection of three distinct containers with ID numbers $x, y,$ and $z$, a "Resource Efficiency Rating" $n$ is calculated using the following protocol:

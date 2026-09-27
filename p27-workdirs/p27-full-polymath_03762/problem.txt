@@ -1,0 +1,1 @@
+In a $7 \times 7$ square table, some of the squares are colored black and the others white, such that each white square is adjacent (along an edge) to an edge of the table or to a black square. Find the minimum number of black squares on the table.

@@ -1,0 +1,1 @@
+Let $A$ and $B$ be noetherian regular domains of dimension one. If $\mathbb{A}^1_A$ is birational to $\mathbb{A}^1_B$, is $\text{Spec}(A)$ birational to $\text{Spec}(B)$?

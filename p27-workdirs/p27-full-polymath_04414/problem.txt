@@ -1,0 +1,1 @@
+There are $2019$ points on the plane, none of which lie on the same line. What is the minimum number of lines that must be drawn to ensure that all points are separated from each other? (Two points are separated if there is at least one line with respect to which they lie on opposite sides.)

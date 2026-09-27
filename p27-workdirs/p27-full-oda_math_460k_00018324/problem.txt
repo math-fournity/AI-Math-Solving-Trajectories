@@ -1,0 +1,1 @@
+Find all integer values of \( a \), \( b \), and \( c \) such that \( a^2 + b^2 + c^2 + (ab)^2 + (bc)^2 + (ac)^2 + (abc)^2 = 456787654 \).

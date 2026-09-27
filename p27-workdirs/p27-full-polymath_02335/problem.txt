@@ -1,0 +1,1 @@
+Find the number of ten-digit natural numbers (which do not start with zero) that do not contain the block "1991".

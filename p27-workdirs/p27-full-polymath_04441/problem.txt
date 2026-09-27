@@ -1,0 +1,1 @@
+for a positive integer $n$, there are positive integers $a_1, a_2, ... a_n$ that satisfy these two.

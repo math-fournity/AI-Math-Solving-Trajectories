@@ -1,0 +1,1 @@
+Given a positive integer \( n > 2 \), find the smallest natural number \( K \) such that for all integers \( k \ge K \), the open interval \( (k^n, (k+1)^n) \) contains \( n \) different integers whose product is an \( n \)-th power of an integer. Calculate \( K \) for \( n = 3 \).

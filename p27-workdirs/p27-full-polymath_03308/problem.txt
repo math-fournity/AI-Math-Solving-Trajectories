@@ -1,0 +1,1 @@
+This year, the Sorting Hat sent 20% more girls to Gryffindor than last year, and 30% fewer boys than last year. The number of newly admitted students in Gryffindor this year is a three-digit number, written with non-zero distinct digits and is the mirror of the number of newly admitted students in Gryffindor last year.

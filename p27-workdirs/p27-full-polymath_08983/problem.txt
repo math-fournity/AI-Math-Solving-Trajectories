@@ -1,0 +1,1 @@
+In a remote industrial complex, there are 20 specialized chemical storage tanks, indexed from 1 to 20. Each tank $i$ contains a specific volume of reagent, denoted by a positive integer $a_i$ liters.

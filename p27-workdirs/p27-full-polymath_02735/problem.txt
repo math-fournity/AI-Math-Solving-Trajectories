@@ -1,0 +1,1 @@
+Let $S = \{s_1, s_2, \dots, s_{10}\}$ be a set of 10 distinct complex numbers such that exactly $10-3=7$ of them are real numbers. Let $N$ be the maximum possible number of quadratic polynomials $f(z)$ with complex coefficients such that $f(S) = S$ (meaning $f$ maps $S$ onto itself). Find the value of $N$.

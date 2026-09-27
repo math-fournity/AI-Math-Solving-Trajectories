@@ -1,0 +1,1 @@
+In a remote $17 \times 17$ grid of agricultural plots, a network of irrigation sensors must be installed to monitor soil moisture across the entire field. The installation must follow two strict engineering protocols:

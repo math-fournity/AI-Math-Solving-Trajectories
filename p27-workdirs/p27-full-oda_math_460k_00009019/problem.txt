@@ -1,0 +1,1 @@
+There is number  $1$  on the blackboard initially. The first step is to erase  $1$  and write two nonnegative reals whose sum is  $1$ . Call the smaller number of the two  $L_2$ .

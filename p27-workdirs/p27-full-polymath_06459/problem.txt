@@ -1,0 +1,1 @@
+In a futuristic city, five central power stations—named Alpha, Beta, Gamma, Delta, and Epsilon—are positioned as the vertices of a perfect regular pentagon $ABCDE$. A straight transmission cable connects Beta to Epsilon.

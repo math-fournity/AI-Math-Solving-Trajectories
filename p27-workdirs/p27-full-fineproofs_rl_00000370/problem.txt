@@ -1,0 +1,1 @@
+26. C6 (POL) Let $n$ be an even positive integer. Show that there is a permutation $x_{1}, x_{2}, \ldots, x_{n}$ of $1,2, \ldots, n$ such that for every $1 \leq i \leq n$ the number $x_{i+1}$ is one of $2 x_{i}, 2 x_{i}-1,2 x_{i}-n, 2 x_{i}-n-1$ (where we take $x_{n+1}=x_{1}$ ).

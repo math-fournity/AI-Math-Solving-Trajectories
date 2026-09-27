@@ -1,0 +1,1 @@
+In a specialized technology hub, there are three distinct server clusters—Alpha, Beta, and Gamma—each containing exactly $n = 50$ individual processing units.

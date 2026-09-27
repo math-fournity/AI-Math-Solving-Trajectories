@@ -1,0 +1,1 @@
+Determine whether there exist two distinct number fields $E$ and $F$ such that for every prime $p$, the tensor products of their rings of integers with $\mathbb{F}_p$ are isomorphic, i.e., $\mathcal{O}_E \otimes \mathbb{F}_p \cong \mathcal{O}_F \otimes \mathbb{F}_p$. Provide a justification for your answer.

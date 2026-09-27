@@ -1,0 +1,1 @@
+In the specialized industrial sector of chemical refining, a facility operates using three distinct catalyst agents, designated as Alpha ($a$), Beta ($b$), and Gamma ($c$). Due to the chemical properties of these agents, their concentrations must always be represented by positive values.

@@ -1,0 +1,1 @@
+In a remote industrial automation facility, three sensors—Alpha ($x$), Beta ($y$), and Gamma ($z$)—report continuous real-number values. These sensors are integrated into a processing unit that can perform exactly three types of signal operations:

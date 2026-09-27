@@ -1,0 +1,1 @@
+Let $P(x)$ and $Q(x)$ be relatively prime nonconstant real polynomials. Find the maximum possible number of distinct real values $\lambda$ such that the polynomial $P(x) + \lambda Q(x)$ is the square of another polynomial $R(x) \in \mathbb{R}[x]$.

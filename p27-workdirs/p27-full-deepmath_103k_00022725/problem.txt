@@ -1,0 +1,1 @@
+Determine whether a non-null map satisfying the given axioms can exist over a non-division ring that is not the tensor algebra over a field.

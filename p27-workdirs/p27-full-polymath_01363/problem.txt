@@ -1,0 +1,1 @@
+Find the minimum value of $c$ such that for any positive integer $n\ge 4$ and any set $A\subseteq \{1,2,\cdots,n\}$, if $|A| >cn$, there exists a function $f:A\to\{1,-1\}$ satisfying

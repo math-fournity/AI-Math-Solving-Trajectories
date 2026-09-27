@@ -1,0 +1,1 @@
+There are $n$ voters and $m$ candidates. Every voter makes a list of all candidates and votes for the first $k$ people in his/her list. The candidates with the most votes are selected as winners. A poll profile $R$ is the collection of these $n$ lists.

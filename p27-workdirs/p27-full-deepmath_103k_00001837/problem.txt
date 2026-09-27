@@ -1,0 +1,1 @@
+Given a graph G with a $K_t$ minor, let H be the smallest subgraph of G that contains $K_t$ as a minor. Suppose H can be partitioned into sets $V_1, V_2, \ldots, V_t$ such that each $H[V_i]$ is connected and $\\chi(H[V_i]) < t$ for all $i \in \{1, 2, \ldots, t\}$. If the clique number of H is less than t, can we conclude that $\chi(H) \leq t$?

@@ -1,0 +1,1 @@
+Consider an arc-length parametrized discrete curve \( \gamma \) in the plane with tangent vectors \( T_k = \gamma_{k+1} - \gamma_k \). The tangent flow is defined as:

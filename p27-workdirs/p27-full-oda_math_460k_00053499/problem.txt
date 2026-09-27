@@ -1,0 +1,1 @@
+Return your final response within \boxed{}. Let $d, k \in \mathbb{N}$ with $d \geqslant 3$, and let $G$ be a graph with a minimum degree $\delta(G) \geqslant d$ and girth $g(G) \geqslant 8k + 3$. Then $G$ has a subgraph $H$ with minimum degree $\delta(H) \geqslant d(d-1)^k$.

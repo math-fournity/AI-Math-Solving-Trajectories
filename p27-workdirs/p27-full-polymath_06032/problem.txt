@@ -1,0 +1,1 @@
+In the global telecommunications network of "Aetheria," there are $n$ distinct server hubs. Any two hubs are connected by at most one direct fiber-optic cable. The network is designed with high redundancy: even if all cables connected to any single hub are severed, the remaining network remains fully connected, allowing data to travel between any two surviving hubs.

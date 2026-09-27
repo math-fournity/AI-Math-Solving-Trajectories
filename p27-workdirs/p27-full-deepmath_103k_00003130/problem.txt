@@ -1,0 +1,1 @@
+Determine whether there exists an infinite group $G$ such that there is no sequence $(A_n)$ of its subsets satisfying the conditions: \(A_n = A_n^{-1}\) and \(A_{n+1}A_{n+1} \subsetneqq A_n\) for all $n$.

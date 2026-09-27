@@ -1,0 +1,1 @@
+Given a $9 \times 18$ grid table, find the number of ways to cover the grid completely using 18 "banners". Each "banner" is formed by removing one of the four corner squares from a $2 \times 5$ grid.

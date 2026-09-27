@@ -1,0 +1,1 @@
+Around a circular server network, there are $6n$ processing nodes connected in a ring. These nodes are divided into three distinct types based on their architecture: $2n$ are Type-P units, $2n$ are Type-B units, and $2n$ are Type-E units.

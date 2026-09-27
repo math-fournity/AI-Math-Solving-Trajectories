@@ -1,0 +1,1 @@
+Find all positive integers \( x, y, k, n \) such that

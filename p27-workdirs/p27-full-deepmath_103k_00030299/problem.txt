@@ -1,0 +1,1 @@
+Determine whether the conjunction of the following three conditions is sufficient for a set $S$ of integers to be the set of all integers $n$ for which a fixed group $G$ is an $n$-abelian group:

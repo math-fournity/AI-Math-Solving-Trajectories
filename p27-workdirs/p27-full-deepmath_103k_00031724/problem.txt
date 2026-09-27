@@ -1,0 +1,1 @@
+Find the largest constant \( K \geq 0 \) such that the inequality \[ \frac{a^a(b^2+c^2)}{(a^a-1)^2}+\frac{b^b(c^2+a^2)}{(b^b-1)^2}+\frac{c^c(a^2+b^2)}{(c^c-1)^2}\geq K\left (\frac{a+b+c}{abc-1}\right)^2 \] holds for all positive real numbers \( a, b, c \) satisfying \( ab+bc+ca=abc \).

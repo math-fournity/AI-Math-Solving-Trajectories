@@ -1,0 +1,1 @@
+A group of $N$ children sit in a circle to play a game. The children are numbered $0, 1, \dots, N-1$ clockwise, with child 0 starting with a parcel. On turn $i$ (for $i=1, 2, 3, \dots$), the parcel is passed $i^2$ positions clockwise, and the child currently holding it receives a prize.

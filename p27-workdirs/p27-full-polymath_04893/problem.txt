@@ -1,0 +1,1 @@
+Let $A$ be a finite set of (not necessarily positive) integers, and let $m = 10$. Assume that there exist non-empty subsets $B_{1}, B_{2}, \ldots, B_{10}$ of $A$ whose elements add up to the sums $10^{1}, 10^{2}, \ldots, 10^{10}$, respectively. Let $k$ be the minimum possible number of elements in $A$. Find $k$.

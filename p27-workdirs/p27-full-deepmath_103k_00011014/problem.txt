@@ -1,0 +1,1 @@
+Determine the number of pairwise non-isomorphic 2-connected graphs with 20 vertices that do not contain a $K_4^-$ minor.

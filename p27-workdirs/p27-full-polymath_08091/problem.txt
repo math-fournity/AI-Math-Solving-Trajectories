@@ -1,0 +1,1 @@
+A specialized digital archive stores data packets labeled with positive integers $n$. Each packet $n$ is assigned a security clearance level $f(n)$. The system defines these levels through a recursive protocol:

@@ -1,0 +1,1 @@
+In a remote industrial refinery, a digital pressure monitoring system tracks a variable $f(n)$ for each discrete time step $n = 1, 2, 3, \dots$. The pressure level $f(n)$ is always a positive integer.

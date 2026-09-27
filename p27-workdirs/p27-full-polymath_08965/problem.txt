@@ -1,0 +1,1 @@
+A specialized architectural firm is designing a sprawling high-tech campus. The lead architect wants to install a series of $n$ decorative sensor beacons across a flat plaza. To ensure the aesthetic balance of the site, the layout must satisfy the following geometric and logistical constraints:

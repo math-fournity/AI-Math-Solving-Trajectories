@@ -1,0 +1,1 @@
+Let $a, b, c \in \mathbb{R}$, $a^3 b + b^3 c + c^3 a = 3$, find the minimum value of the expression $f(a, b, c) = (\sum a^4)^4 + 1000 \sum a^2 b^2$.

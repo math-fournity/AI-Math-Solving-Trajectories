@@ -1,0 +1,1 @@
+For the graded Lie algebra $W(n, \phi)$ with $p > 2$, describe $W(n, \phi)_{1}$ as a representation of $W(n, \phi)_{0} \cong \mathfrak{gl}_{n}$. Is this representation irreducible?

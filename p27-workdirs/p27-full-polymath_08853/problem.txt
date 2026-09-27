@@ -1,0 +1,1 @@
+In a sprawling desert, a massive solar farm has been constructed in the shape of a perfect square with sides measuring exactly 1 kilometer. The facility management team is planning to install sensitive monitoring sensors at every possible coordinate within the boundaries of this square, including along the perimeter.

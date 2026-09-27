@@ -1,0 +1,1 @@
+Let $X$ be a Banach space. If $X$ is not reflexive, does there exist a functional $f \in X'$ such that there is no $x \in X$ with $f(x) = \|f\| \cdot \|x\|$?

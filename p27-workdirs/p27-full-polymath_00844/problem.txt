@@ -1,0 +1,1 @@
+On a circle with 2018 points, each point is labeled with an integer such that each number is larger than the sum of the preceding two numbers in clockwise order. Determine the maximal number of positive integers that can occur in such a configuration.

@@ -1,0 +1,1 @@
+A cube with an edge length of 6 is cut into several smaller cubes with integer edge lengths. The total surface area of these smaller cubes is exactly $\frac{10}{3}$ times the surface area of the original large cube. Find the sum of all possible values for the number of smaller cubes with an edge length of 1.

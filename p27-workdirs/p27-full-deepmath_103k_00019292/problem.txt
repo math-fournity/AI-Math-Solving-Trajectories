@@ -1,0 +1,1 @@
+Determine whether the following inequality holds for all positive real numbers $x_1, x_2, \ldots, x_n$ such that $\sum_{i=1}^{n}{x_i} = n$:

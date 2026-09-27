@@ -1,0 +1,1 @@
+How many pairwise considerably different non-constant arithmetic progressions of positive integers contain an infinite non-constant geometric progression \((b_n)_{n\ge0}\) with \(b_2 = 40 \cdot 2009\)?

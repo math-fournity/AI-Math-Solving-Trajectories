@@ -1,0 +1,1 @@
+Let $E$ be a rank $r$ vector bundle on a quasiprojective scheme. Consider the natural map:

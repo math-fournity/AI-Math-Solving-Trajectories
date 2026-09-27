@@ -1,0 +1,1 @@
+Is any differential graded (dg) coalgebra weakly equivalent to its cohomology as an $A_\infty$ coalgebra?

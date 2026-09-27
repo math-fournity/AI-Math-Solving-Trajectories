@@ -1,0 +1,1 @@
+Find all functions \( g: \mathbb{R} \rightarrow \mathbb{R}_0^+ \) that satisfy the functional equation: \[ \forall p,q,r,s \in \mathbb{R}: pq+qr+rs=0 \Rightarrow g(p-q)+g(r-s)=g(p)+g(q+r)+g(s) \]

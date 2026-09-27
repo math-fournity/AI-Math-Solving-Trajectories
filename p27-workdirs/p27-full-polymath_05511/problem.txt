@@ -1,0 +1,1 @@
+4. Find the largest real number $c$, such that the following conclusion holds for all integers $n \geqslant 3$: Let $A_{1}, A_{2}, \cdots, A_{n}$ be $n$ arcs on a circle (each arc includes its endpoints). If there are at least $\frac{1}{2} \mathrm{C}_{n}^{3}$ triples $(i, j, k)$ satisfying

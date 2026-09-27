@@ -1,0 +1,6 @@
+Determine all functions f : ℤ → ℤ such that for all integers a,b,c with a + b + c = 0,
+the following equality holds:
+f(a)² + f(b)² + f(c)² = 2f(a)f(b) + 2f(b)f(c) + 2f(c)f(a).
+
+</rule>
+</rules>

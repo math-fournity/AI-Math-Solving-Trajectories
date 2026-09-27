@@ -1,0 +1,1 @@
+Let $(M,d)$ be a compact metric space, and let $G$ be a group that acts on $M$ by isometries transitively and faithfully. Is $G$ a closed subspace of the isometry group $\operatorname{Isom}(M)$ when equipped with the supremum metric $\rho(g,h) = \sup_{x \in M} d(gx,hx)$?

@@ -1,0 +1,1 @@
+A circular deep-sea research station has a radius of exactly 1 kilometer. Along the outer glass perimeter of this station, there are 1000 distinct research sensors, labeled $A_{1}$ through $A_{1000}$, positioned at various fixed locations.

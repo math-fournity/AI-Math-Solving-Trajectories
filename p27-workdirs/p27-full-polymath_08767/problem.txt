@@ -1,0 +1,1 @@
+A specialized textile factory produces a hexagonal "Master Patch" made of a rare fabric with a total surface area of 1 unit. The patch is initially a perfect regular hexagon. To refine the design into more intricate shapes, a tailoring robot performs a sequence of "corner trims."

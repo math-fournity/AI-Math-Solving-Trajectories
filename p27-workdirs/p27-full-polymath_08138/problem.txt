@@ -1,0 +1,1 @@
+A high-tech surveillance network consists of six radar stations, $S_1$ through $S_6$, positioned at the vertices of a perfect hexagonal perimeter with a side length of exactly 1 unit. Each station has a circular signal range with a radius of $r$. Because the stations are indexed circularly, station $S_7$ is identical to $S_1$.

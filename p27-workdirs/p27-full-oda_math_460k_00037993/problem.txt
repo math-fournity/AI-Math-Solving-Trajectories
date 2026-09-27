@@ -1,0 +1,1 @@
+Let $n$ be a positive integer. Determine integers $n+1 \leq r \leq 3n+2$ such that for all integers $a_1, a_2, \dots, a_m, b_1, b_2, \dots, b_m$ satisfying the equations

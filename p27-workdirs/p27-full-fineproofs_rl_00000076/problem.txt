@@ -1,0 +1,1 @@
+$O$  is a point inside triangle  $ABC$  such that  $OA=OB+OC$ . Suppose  $B',C'$  be midpoints of arcs  $\overarc{AOC}$  and  $AOB$ . Prove that circumcircles  $COC'$  and  $BOB'$  are tangent to each other.

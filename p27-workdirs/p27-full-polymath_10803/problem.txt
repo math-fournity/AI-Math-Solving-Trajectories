@@ -1,0 +1,1 @@
+In a futuristic data center, an engineer is configuring a square grid of $n$ rows and $n$ columns of server nodes, where $n$ is an even integer. The engineer must install security modules into some of these nodes, with a maximum of one module per node.

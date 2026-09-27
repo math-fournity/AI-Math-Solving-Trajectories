@@ -1,0 +1,1 @@
+In a futuristic data-processing facility, engineers are trying to organize the infinite stream of all positive identification codes, $\mathbb{N}^* = \{1, 2, 3, \dots\}$, into $n$ distinct, non-empty storage servers, labeled $A_1, A_2, \dots, A_n$. Every single identification code must be assigned to exactly one server.

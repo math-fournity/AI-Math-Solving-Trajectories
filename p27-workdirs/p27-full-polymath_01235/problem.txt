@@ -1,0 +1,1 @@
+In a convex 2014-gon, 1007 diagonals are drawn such that each vertex is the endpoint of exactly one diagonal, every two diagonals intersect at an interior point, and no three diagonals intersect at one point. These diagonals divide the interior of the 2014-gon into convex polygons. What is the minimum number of these polygons that can be triangles?

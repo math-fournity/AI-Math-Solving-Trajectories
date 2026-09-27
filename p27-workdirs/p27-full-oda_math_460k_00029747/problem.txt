@@ -1,0 +1,1 @@
+Find all holomorphic functions \( f: \mathbb{D} \to \mathbb{D} \) such that \( 2|f'(0)| = \sup\limits_{z, w \in \mathbb{D}} |f(z) - f(w)| \), where \( \mathbb{D} \) is the open unit disc.

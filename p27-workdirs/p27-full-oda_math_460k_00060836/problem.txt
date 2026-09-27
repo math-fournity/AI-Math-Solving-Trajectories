@@ -1,0 +1,1 @@
+Determine the least cardinality \( \kappa \) such that every \( C \)-satisfiable first-order sentence \( \varphi \) in the language of rings has a topological space \( \mathcal{X} \) with \( |\mathcal{X}| < \kappa \) satisfying \( \mathcal{X} \models_C \varphi \). Discuss its relation to classical model-theoretic concepts such as the Lowenheim-Skolem theorem.

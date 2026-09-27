@@ -1,0 +1,1 @@
+In a remote industrial refinery, a massive tank contains a total of $N$ gallons of specialized fuel. Two rival engineers, Alice and Bob, are tasked with draining the tank according to a strict regulatory protocol. They take turns extracting fuel, and Alice always takes the first turn.

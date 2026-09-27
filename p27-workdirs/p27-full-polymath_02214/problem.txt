@@ -1,0 +1,1 @@
+Let $\Gamma$ be a circle centered at $O$ with chord $AB$. The tangents to $\Gamma$ at $A$ and $B$ meet at $C$. A secant from $C$ intersects chord $AB$ at $D$ and $\Gamma$ at $E$ such that $D$ lies on segment $CE$. Given that $\angle BOD + \angle EAD = 180^\circ$, $AE = 1$, and $BE = 2$, find $CE$.

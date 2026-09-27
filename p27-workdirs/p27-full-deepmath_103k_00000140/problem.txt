@@ -1,0 +1,1 @@
+Let $p_1, \ldots, p_n$ be a finite sequence of nonconstant polynomials with integer coefficients. Determine whether there exists a finite sequence of integers $x_1, \ldots, x_n$ such that the integers $p_1(x_1), \ldots, p_n(x_n)$ have a nontrivial common divisor.

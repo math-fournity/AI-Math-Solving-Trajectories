@@ -1,0 +1,1 @@
+In a remote forest, a botanical researcher is mapping out a square grid of 49 research plots, arranged in a 7x7 formation. The researcher intends to install several specialized weather monitoring stations. Each station requires a 2x2 footprint of plots to function (covering exactly 4 plots), and no two stations are allowed to overlap or share any plots.

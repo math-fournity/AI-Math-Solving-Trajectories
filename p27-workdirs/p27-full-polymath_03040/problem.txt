@@ -1,0 +1,1 @@
+41st IMO 2000 shortlist Problem C4 Find the smallest number of pawns that can be placed on an n x n board such that no row or column contains k adjacent unoccupied squares. Assume that n/2 < k ≤ 2n/3. Solution

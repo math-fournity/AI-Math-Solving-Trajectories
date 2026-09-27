@@ -1,0 +1,1 @@
+Let \(\{a_n\}\) be a sequence of positive integers, and let \([x]\) denote the greatest integer less than or equal to \(x\). Consider the system of equations in \(x,y\):

@@ -1,0 +1,1 @@
+What is the first general unified formula for the integral \( N_1(q, b, \nu, \gamma < 0) = \int_0^\infty dx \, x^\gamma \sin^q(bx^\nu) \), where \( q \) is an even positive integer and \( \gamma < 0 \)?

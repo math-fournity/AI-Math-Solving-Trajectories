@@ -1,0 +1,1 @@
+Let $c$ denote the largest possible real number such that there exists a nonconstant polynomial $P$ with \[P(z^2)=P(z-c)P(z+c)\] for all $z$.  Compute the sum of all values of $P(\tfrac13)$ over all nonconstant polynomials $P$ satisfying the above constraint for this $c$.

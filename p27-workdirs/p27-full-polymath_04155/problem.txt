@@ -1,0 +1,1 @@
+A square is divided into $n^2$ smaller squares each with side length 1 by horizontal and vertical lines. What is the greatest possible value of $n$ such that it is possible to select $n$ squares such that any rectangle with area $n$ formed by the horizontal and vertical lines would contain at least one of the selected $n$ squares?

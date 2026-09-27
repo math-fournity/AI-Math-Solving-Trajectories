@@ -1,0 +1,1 @@
+In a sprawling digital communication network, there are $m$ servers. The network is configured such that every single server is directly connected to exactly 50 other servers via bidirectional data cables.

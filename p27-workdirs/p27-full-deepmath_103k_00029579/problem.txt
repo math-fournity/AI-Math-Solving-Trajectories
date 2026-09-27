@@ -1,0 +1,1 @@
+Let $X$ be a Banach space. If every finite-dimensional subspace of $X$ is one-complemented, is $X$ isometrically isomorphic to a Hilbert space?

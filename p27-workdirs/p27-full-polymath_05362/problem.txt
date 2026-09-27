@@ -1,0 +1,1 @@
+Determine the maximum number $ h$ satisfying the following condition: for every $ a\in [0,h]$ and every polynomial $ P(x)$ of degree 99 such that $ P(0)\equal{}P(1)\equal{}0$, there exist $ x_1,x_2\in [0,1]$ such that $ P(x_1)\equal{}P(x_2)$ and $ x_2\minus{}x_1\equal{}a$.

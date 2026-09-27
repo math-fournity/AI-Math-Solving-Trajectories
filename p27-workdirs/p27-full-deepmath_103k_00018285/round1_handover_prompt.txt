@@ -1,0 +1,49 @@
+你的任务：为deepmath_103k_00018285的round1 conversation.json编写HANDOVER.md交接文档。
+
+## 背景
+
+这道题的round1思考过程被截断了，需要编写交接文档供下一轮AI继续。
+
+## 你需要读取的文件
+
+1. **面包屑地图**：/Volumes/data/math-agent-glm5.2-tmux-agents-dir/p27-continuation/p27-full-deepmath_103k_00018285/round1_conversation_map.md
+2. **conversation.json**：/Volumes/data/math-agent-glm5.2-tmux-agents-dir/p27-continuation/p27-full-deepmath_103k_00018285/round1_export.json
+3. **续传规范文档**：/Users/user/AI-Math-Competition-Problem-Solving-System/docs/patterns/续传规范文档.md
+4. **题目文本**：
+# Problem
+
+Determine whether an odd perfect number can be divisible by 165.
+
+## 解题约束（必须严格遵守）
+
+1. **不要使用任何工具**——不要写文件、不要执行命令、不要搜索、不要浏览网页、不要读取文件。
+   你只需要在TUI中用thinking来解题。所有推理过程在你的思维中完成。
+
+2. **直接在TUI中输出证明**——不要创建任何文件，不要使用任何工具调用。
+   完成证明后，在TUI中直接输出（必须用英文原文，不要翻译成中文）：
+
+## 工作流程
+
+1. 先读取面包屑地图，了解conversation.json的整体结构
+2. 读取续传规范文档，了解HANDOVER.md的8个章节要求
+3. 按地图的面包屑，逐个agent step处理
+4. 按HANDOVER.md的8个章节整理提取的内容
+5. 将HANDOVER.md写入：/Volumes/data/math-agent-glm5.2-tmux-agents-dir/p27-continuation/p27-full-deepmath_103k_00018285/round1_HANDOVER.md
+
+## HANDOVER.md的8个章节（参考续传规范文档）
+
+1. **题目**：完整的数学题目
+2. **当前状态**：已完成/截断/错误
+3. **已确认的结论**：AI在thinking中得出的数学结论
+4. **已排除的方向**：AI尝试过但失败的方向
+5. **关键文献/参考**：AI引用的文献或定理
+6. **已有的中间产物**：AI创建的文件、计算结果
+7. **当前卡在哪里**：如果是截断，AI在思考什么时被截断
+8. **下一步建议**：如何继续
+
+## 重要约束
+
+- **不要编造内容**——所有内容必须来自conversation.json
+- **保留数学公式**——LaTeX格式保留
+- **标注来源**：每个结论标注来自哪个step
+- **包含工具调用结果**：exec的observation必须包含在HANDOVER.md中

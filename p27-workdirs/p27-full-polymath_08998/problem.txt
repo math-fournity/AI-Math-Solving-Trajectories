@@ -1,0 +1,1 @@
+In a specialized electronics lab, engineers are designing a communication network consisting of 17 server nodes, labeled 1 through 17. Every possible pair of nodes is connected by a dedicated fiber-optic cable, forming a complete graph.

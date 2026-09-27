@@ -1,0 +1,1 @@
+Determine the absolute maximum value of \( f(z) = \left| \frac{5z^4 + 4}{z^2 + 1} \right| \) on the closed disk defined by \( |z - 2i| \leq 0.5 \).

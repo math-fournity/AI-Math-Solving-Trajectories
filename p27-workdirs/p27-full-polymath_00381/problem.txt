@@ -1,0 +1,1 @@
+Let \(ABCDEFG\) be a regular heptagon inscribed in a unit circle centered at \(O\). Let \(L\) be the line tangent to the circum-circle at \(A\), and \(P\) be a point on \(L\) such that \(DAOP\) is isosceles. Let \(p\) denote the value of \(AP \cdot BP \cdot CP \cdot DP \cdot EP \cdot FP \cdot GP\). Determine the value of \(p^2\).

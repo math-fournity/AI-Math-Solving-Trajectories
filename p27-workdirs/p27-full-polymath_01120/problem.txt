@@ -1,0 +1,1 @@
+Find all pairs $(n,m)$ with $m \geq n \geq 3$ for which there exists an $n \times m$ table filled with real numbers such that the sum of numbers in every $2 \times 2$ subtable is negative and the sum of numbers in every $3 \times 3$ subtable is positive.

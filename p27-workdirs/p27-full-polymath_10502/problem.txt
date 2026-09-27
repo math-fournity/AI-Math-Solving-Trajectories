@@ -1,0 +1,1 @@
+In a remote sector of the galaxy, the Galactic Architect Council mandates that all four-sided space stations must be convex. The four structural support beams of these stations meet at internal angles, measured in whole degrees, denoted as $w, x, y,$ and $z$. To ensure structural stability, these angles must be non-decreasing, such that $w \leq x \leq y \leq z$.

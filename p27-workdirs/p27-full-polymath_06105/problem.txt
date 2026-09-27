@@ -1,0 +1,1 @@
+A high-tech manufacturing firm operates a sequence of 2011 specialized assembly stations, indexed $i = 1, 2, \ldots, 2011$. For each station $i$, a technician must program a target precision setting $a_i$, where $a_i$ is a positive integer between 1 and $2011^2$, inclusive. This creates a configuration tuple $(a_1, a_2, \ldots, a_{2011})$.

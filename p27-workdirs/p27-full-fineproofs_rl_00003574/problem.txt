@@ -1,0 +1,1 @@
+Let $A B C$ be a scalene triangle with circumcircle $\Omega$, and suppose the incircle of $A B C$ touches $B C$ at $D$. The angle bisector of $\angle A$ meets $B C$ and $\Omega$ at $K$ and $M$. The circumcircle of $\triangle D K M$ intersects the $A$-excircle at $S_{1}, S_{2}$, and $\Omega$ at $T \neq M$. Prove that line $A T$ passes through either $S_{1}$ or $S_{2}$.

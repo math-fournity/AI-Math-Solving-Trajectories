@@ -1,0 +1,1 @@
+Find the sum of all possible values of $f(10)$ for a function $f: \mathbb{Z}_+ \rightarrow \mathbb{Z}_+$ such that for any $x, y \in \mathbb{Z}_+$, the condition $f(f(x) + y) \mid x + f(y)$ is satisfied, given that $f(1) = 5$.

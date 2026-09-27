@@ -1,0 +1,1 @@
+On the real line, the points $0$ and $1$ are initially marked. We can perform an operation where we take two already marked points $a$ and $b$ and mark the reflection of $a$ over $b$. Let $f(n)$ be the minimum number of operations needed to mark the integer $n$ on the real line. Calculate the value of $f(2025) + f(-100)$.

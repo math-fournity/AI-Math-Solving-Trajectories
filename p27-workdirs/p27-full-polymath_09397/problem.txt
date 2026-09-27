@@ -1,0 +1,1 @@
+In a remote industrial complex, an automated climate control system manages a series of 401 thermal sensors, indexed from $k=0$ to $k=400$. Each sensor records a specific temperature differential, denoted by $a_k$. Due to the facility's insulation requirements, the sensors at both boundaries are fixed at a neutral state, such that $a_0 = a_{400} = 0$.

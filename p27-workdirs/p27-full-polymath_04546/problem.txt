@@ -1,0 +1,1 @@
+Find the range of all real numbers $a$ such that the equation $\lfloor \sqrt{n} + \sqrt{n+a} \rfloor = \lfloor \sqrt{4n+1} \rfloor$ holds for all positive integers $n$. If the set of all such $a$ is the interval $[L, R]$, calculate the value of $L + R$.

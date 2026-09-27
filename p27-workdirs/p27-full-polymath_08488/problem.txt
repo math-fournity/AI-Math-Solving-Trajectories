@@ -1,0 +1,1 @@
+In a futuristic data-storage facility, there are 2016 spherical server modules floating in a zero-gravity chamber. No two modules occupy the same space. Each module is assigned one of two possible protocols: the "Red-Link" protocol or the "Green-Link" protocol.

@@ -1,0 +1,1 @@
+In the unit squares of a transparent  $1 \times 100$  tape, numbers  $1,2,\cdots,100$  are written in the ascending order.We fold this tape on it's lines with arbitrary order and arbitrary directions until we reach a  $1 \times1$  tape with  $100$  layers.A permutation of the numbers  $1,2,\cdots,100$  can be seen on the tape, from the top to the bottom.

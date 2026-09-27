@@ -1,0 +1,1 @@
+A specialized team of engineers is decommissioning a power grid consisting of $n$ identical storage batteries, where $n \in \{1, 2, \dots, 100\}$. Each battery currently holds exactly 2 units of charge. Two technicians, Lizzie and Alex, take turns discharging the system according to strict safety protocols. Lizzie always performs the first procedure.

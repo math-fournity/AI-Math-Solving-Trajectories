@@ -1,0 +1,1 @@
+Determine the minimum number of elements that a "universal" set $A$ can have, where $A$ is a set of binary sequences of length 5, such that every infinite binary sequence contains 5 consecutive terms that form an element of $A$.

@@ -1,0 +1,1 @@
+Let $X$ and $Y$ be two continuous random variables with values in $\mathbb{R}$. Given a continuous and differentiable function $f: \mathbb{R} \to \mathbb{R}$, determine whether there exists a measurable random variable $C$ such that the mean value theorem holds for $f(X)$ and $f(Y)$, expressed as:

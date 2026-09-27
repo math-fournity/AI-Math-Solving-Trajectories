@@ -1,0 +1,1 @@
+Let $K \subset \mathbb{R}^n$ be a compact set such that each $x \in K$ is associated with a positive number $r_x > 0$. Is it always possible to cover $K$ with a family of balls \( \mathcal{B} = \{ B(x_i, r_i) : i = 1, \dots, k \} \), where \( r_i := r_{x_i} \), such that for any distinct \( i, j \le k \), we have \( x_i \notin B(x_j, r_j) \) and \( x_j \notin B(x_i, r_i) \)?

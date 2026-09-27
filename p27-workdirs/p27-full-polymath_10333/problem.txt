@@ -1,0 +1,1 @@
+In a specialized security facility, a technician named Leo is tasked with identifying a specific 2-digit access code (from 00 to 99) stored in an encrypted vault.

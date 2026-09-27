@@ -1,0 +1,1 @@
+In a massive logistics hub, a grid-based storage facility is organized into a perfect $100 \times 100$ array of individual scanning stations, totaling $10,000$ unique coordinate points. The facility manager is tasked with partitioning the entire facility into several distinct shipping zones.

@@ -1,0 +1,1 @@
+Does there exist a family of regular dense graphs with girth at least 5, where every maximal independent set has a size of at least \( \Omega(n) \)? Assume the graphs have \( n \) nodes and \( m \ge n^{1+\epsilon} \) edges for some constant \( \epsilon > 0 \).

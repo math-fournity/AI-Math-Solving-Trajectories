@@ -1,0 +1,1 @@
+The integer lattice in the plane is colored with 3 colors. Find the least positive real $S$ with the property: for any such coloring it is possible to find a monochromatic lattice points $A,B,C$ with $S_{\triangle ABC}=S$.

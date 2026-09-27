@@ -1,0 +1,1 @@
+A high-security communications network consists of a collection of discrete transmission nodes scattered throughout a sector of space. A network is classified as "Resilient" if any signal plane (a flat barrier crossing the sector) that does not intersect any nodes still leaves at least 100 nodes available to maintain the signal on either side of the barrier.

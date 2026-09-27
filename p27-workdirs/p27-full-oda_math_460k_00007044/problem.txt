@@ -1,0 +1,1 @@
+IMO 1999 Problem 6 Determine all functions f: R -> R such that f(x - f(y) ) = f( f(y) ) + x f(y) + f(x) - 1 for all x, y in R. [R is the reals.]

@@ -1,0 +1,1 @@
+Find the maximum $n$ such that a cube cannot be divided into $n$ smaller cubes.

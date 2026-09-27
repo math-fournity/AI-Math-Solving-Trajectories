@@ -1,0 +1,1 @@
+Find the smallest integer \(n\) such that it is possible to place a positive integer in every cell of an infinite grid so that for each \(k \geq n\), any \(k \times k\) square contains the number \(k\).

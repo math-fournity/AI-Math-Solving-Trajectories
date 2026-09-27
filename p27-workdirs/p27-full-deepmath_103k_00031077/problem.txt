@@ -1,0 +1,1 @@
+Determine whether there exists a 1990-gon where all angles are equal and the side lengths are a permutation of the numbers \(1^2, 2^2, \ldots, 1989^2, 1990^2\).

@@ -1,0 +1,1 @@
+Let $n \ge 3$ be an integer. Two players, Ana and Beto, play the following game on a regular $n$-gon. Ana tags the vertices with the numbers $1, 2, \dots, n$ in any order she chooses, using each number exactly once. Then, a turkey is placed at each of the $n$ vertices.

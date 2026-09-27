@@ -1,0 +1,1 @@
+Let \(ABC\) be a triangle with circumcenter \(O\) and orthocenter \(H\). If the isotomic line of the Lemoine axis of \(\triangle ABC\) intersects \(OH\) at point \(P\), find the ratio \(\frac{OP}{PH}\) in terms of the triangle's side lengths \(a\), \(b\), and \(c\).

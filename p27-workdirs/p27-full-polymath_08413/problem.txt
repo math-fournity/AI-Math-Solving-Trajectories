@@ -1,0 +1,1 @@
+A high-security data center manages a mainframe containing exactly 100 distinct physical server nodes, indexed from 1 to 100. To ensure system redundancy and administrative control, the facility maintains a digital registry $\mathcal{C}$ that catalogs various authorized "Operational Clusters" (subsets of these 100 nodes).

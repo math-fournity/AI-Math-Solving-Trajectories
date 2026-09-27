@@ -1,0 +1,1 @@
+Find all positive integer solutions \((a, b, c)\) of the equation \(2b^5 = a^5 + c^5\).

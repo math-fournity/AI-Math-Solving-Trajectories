@@ -1,0 +1,1 @@
+Determine the minimum value of $A$ such that the inequality $s^2 \le 2R^2 + 8Rr + 3r^2$ holds for all such triangles, where $s$ is the semiperimeter, $R$ is the circumradius, and $r$ is the inradius.

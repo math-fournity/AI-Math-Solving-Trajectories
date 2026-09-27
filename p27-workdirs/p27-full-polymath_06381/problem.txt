@@ -1,0 +1,1 @@
+A high-security data center consists of a grid of $99 \times 99$ individual server nodes. Each node is identified by its coordinates $(x, y)$, where $1 \le x \le 99$ represents the column and $1 \le y \le 99$ represents the row. Every single node in this grid is managed by a dedicated AI maintenance bot.

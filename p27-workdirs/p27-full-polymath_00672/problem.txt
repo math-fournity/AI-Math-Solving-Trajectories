@@ -1,0 +1,1 @@
+A country has $N$ cities, and between any two cities, there is either a two-way road directly connecting them or no direct road. There are $M$ roads in total, and the resulting graph is connected. Each city has at most $K$ roads leading to other cities. Let $D$ be the maximum number of roads in the shortest path between any two cities (the diameter of the road network).

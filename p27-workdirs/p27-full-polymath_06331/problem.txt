@@ -1,0 +1,1 @@
+In a specialized data processing facility, a central processor manages a "Primary Register" (initially empty) and a "Task Queue" (initially containing a sequence of 9 binary commands). The system processes the Task Queue from left to right according to a rigid set of six transformation protocols until the queue is either empty or no protocols apply:

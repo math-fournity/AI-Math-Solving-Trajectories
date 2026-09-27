@@ -1,0 +1,1 @@
+Let $M$ be a compact, connected $n$-manifold with a non-empty boundary $\partial M$. Determine whether the $n$-th cohomology group, $H^n(M)$, is always trivial, regardless of whether the manifold is orientable or not.

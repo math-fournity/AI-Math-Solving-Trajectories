@@ -1,0 +1,1 @@
+Let $n\geq 3$ a positive integer. In each cell of a $n\times n$ chessboard one must write $1$ or $2$ in such a way the sum of all written numbers in each $2\times 3$ and $3\times 2$ sub-chessboard is even. How many different ways can the chessboard be completed?

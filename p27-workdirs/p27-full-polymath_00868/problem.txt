@@ -1,0 +1,1 @@
+A rook has passed through an \$n\$×\$n\$ board, visiting each cell exactly once, and each of its moves was exactly one cell. The cells are numbered from 1 to \$n^2\$ in the order of the rook's passage. Let $\$ M \$$ be the maximum difference between the numbers of adjacent (by side) cells. What is the smallest possible value of $\$ \mathrm{M} \$$?

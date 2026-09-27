@@ -1,0 +1,1 @@
+In a vast desert, a circular oasis $C$ with a radius of $1$ kilometer is located at the center of a coordinate system $(0,0)$. A nomadic tribe builds a perimeter fence $P$ in the shape of a convex polygon such that every straight section of the fence is perfectly tangent to the edge of the central oasis.

@@ -1,0 +1,1 @@
+In a specialized logistics hub, there are four distinct types of cargo containers labeled with the IDs $\{1, 2, 3, 4\}$. A logistics manager needs to construct a master sequence of container shipments, denoted by $a_1, a_2, \dots, a_k$, where each shipment $a_i$ must be one of the four container types.

@@ -1,0 +1,1 @@
+Determine whether every prime number greater than 2 has a prime primitive root in the range from 2 to p-1.

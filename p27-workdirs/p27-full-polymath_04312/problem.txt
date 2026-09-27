@@ -1,0 +1,1 @@
+Given an integer $d \ge 2$ and a circle $\omega$, a finite number of chords are drawn such that each end of each chord is an end of at least $d$ different drawn chords. We assume that chords with a common end intersect. Let $M$ be the maximum possible value such that for any such configuration of chords, there must exist a chord which intersects at least $M$ other chords.

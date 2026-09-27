@@ -1,0 +1,1 @@
+Evaluate the integral in closed form: \[ \mathfrak{R} \int_{0}^{\pi/2} \frac{x^2}{x^2 + \log^2(-2\cos x)} \, \mathrm{d}x \] where \(\mathfrak{R}\) denotes the real part, and \(\log(z)\) denotes the principal value of the logarithm for \(z \neq 0\) given by \[\log(z) = \ln |z| + i \arg z, \quad -\pi < \arg z \leq \pi.\]

@@ -1,0 +1,1 @@
+In a local integrally closed domain $R$ of dimension 2, if $M$ is a nonzero finitely generated $R$-module that is maximal Cohen-Macaulay (MCM), does it follow that $M$ is reflexive?

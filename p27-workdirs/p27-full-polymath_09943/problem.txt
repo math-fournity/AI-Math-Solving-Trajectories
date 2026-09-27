@@ -1,0 +1,1 @@
+A specialized urban planning committee is analyzing a series of potential development sites for a recurring project. For every integer $n$ from 4 up to 100, they examine all possible layouts of $n$ designated survey markers placed on a flat plot of land.

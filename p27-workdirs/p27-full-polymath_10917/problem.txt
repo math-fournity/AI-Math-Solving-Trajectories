@@ -1,0 +1,1 @@
+In a highly automated logistics hub, a central control algorithm determines the daily operational capacity, $x_i$, for each of $n$ interconnected sectors. The capacity for any sector $j$ is strictly dictated by the previous sector’s capacity, $x_{j+1}$, according to a specific efficiency function $f$.

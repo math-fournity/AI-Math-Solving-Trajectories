@@ -1,0 +1,1 @@
+Determine whether the following statement is true or false: If a group $G$ has infinitely many ends, then it is not boundedly generated.

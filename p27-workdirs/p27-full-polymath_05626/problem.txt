@@ -1,0 +1,1 @@
+In a $19 \times 19$ board, a piece called a "dragon" moves as follows: it travels by four squares (either horizontally or vertically) and then it moves one square more in a direction perpendicular to its previous direction. The squares are indexed from $(0,0)$ to $(18,18)$.

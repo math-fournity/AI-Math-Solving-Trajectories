@@ -1,0 +1,1 @@
+Find the largest natural number \( t \) with the property: No matter how we color seven of the cells of an \( 8 \times 8 \) square in red, there exists a rectangle with sides parallel to the sides of the square without colored cells and with an area of at least \( t \mathrm{~cm}^{2} \).

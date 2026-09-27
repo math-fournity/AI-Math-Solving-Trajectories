@@ -1,0 +1,1 @@
+Calculate the limit of the sum of binomial coefficients given by:

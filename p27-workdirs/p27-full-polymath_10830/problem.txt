@@ -1,0 +1,1 @@
+In the city of Metros, there are $n$ distinct high-end construction projects currently underway. For each project, exactly two specialized engineers are assigned—a Lead Architect and a Site Manager.

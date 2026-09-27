@@ -1,0 +1,1 @@
+Construct the scalene triangle if the points of intersection, different from the vertices, of the exterior angle bisectors with the circumcircle are given.

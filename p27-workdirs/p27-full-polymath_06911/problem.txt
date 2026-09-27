@@ -1,0 +1,1 @@
+A specialized logistics company is tasked with organizing a fleet of $3n$ industrial sensors, uniquely numbered from $1$ to $3n$, into $n$ separate diagnostic kits. Each kit must contain exactly three sensors, labeled $a, b,$ and $c$, such that their ID numbers follow the sequence $a < b < c$.

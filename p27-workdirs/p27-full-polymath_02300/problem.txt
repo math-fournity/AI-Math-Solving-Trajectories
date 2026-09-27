@@ -1,0 +1,1 @@
+7.109 Given that the lock on a safe is composed of 3 dials, each with 8 different positions. Due to disrepair, the safe can now be opened as long as two out of the three dials are in the correct position. How many combinations must be tried at a minimum to ensure the safe can be opened?

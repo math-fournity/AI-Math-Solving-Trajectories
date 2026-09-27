@@ -1,0 +1,1 @@
+The 21st question, given a positive integer $\mathrm{n} \geq 3$, if the $\mathrm{n}$-order simple graph $\mathrm{G}(\mathrm{V}, \mathrm{E})$ is connected, and removing all edges on any cycle in $\mathrm{G}$ makes $\mathrm{G}$ no longer connected, try to find the maximum possible value of $|\mathrm{E}(\mathrm{G})|$.

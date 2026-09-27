@@ -1,0 +1,1 @@
+Consider a circle with radius $r$ and center at the origin of the coordinate plane. Let $P_1, P_2, \ldots, P_n$ be $n$ points on the periphery of the circle such that the distance between any two points is a rational number. If such a configuration exists for infinitely many points, find the sum of all possible values of $r^2$ when $n = 4$.

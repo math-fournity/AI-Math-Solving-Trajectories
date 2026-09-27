@@ -1,0 +1,1 @@
+The Bank of Pittsburgh issues coins that have a heads side and a tails side. Vera has a row of 2023 such coins alternately tails-up and heads-up, with the leftmost coin tails-up.

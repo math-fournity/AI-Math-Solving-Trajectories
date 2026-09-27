@@ -1,0 +1,1 @@
+Is there a Hausdorff space \((X, \tau)\) with \(|X| > 1\) such that the box product \(\Box_{n \in \omega} X\) is connected?

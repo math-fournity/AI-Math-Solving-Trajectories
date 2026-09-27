@@ -1,0 +1,1 @@
+Let $\mathcal{S}$ be a set of $2023$ points in a plane, and it is known that the distances of any two different points in $S$ are all distinct. Ivan colors the points with $k$ colors such that for every point $P \in \mathcal{S}$, the closest and the furthest point from $P$ in $\mathcal{S}$ also have the same color as $P$.

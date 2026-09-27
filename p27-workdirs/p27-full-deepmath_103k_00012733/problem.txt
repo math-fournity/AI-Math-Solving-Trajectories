@@ -1,0 +1,1 @@
+Determine whether every open subset of \(\mathbb{C}\) can be expressed as a countable union of disjoint connected open sets. That is, if \(A \subset \mathbb{C}\), can \(A = \bigcup_{i=1}^{\infty} U_i\) where \(U_i\) are pairwise disjoint, connected, open sets?

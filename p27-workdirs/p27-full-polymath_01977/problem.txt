@@ -1,0 +1,1 @@
+For a pair of integers $(a, b)$ with $0 < a < b < 1000$, a subset $S$ of $\{1, 2, \ldots, 2003\}$ is called a *skipping set* for $(a, b)$ if $|s_1 - s_2| \notin \{a, b\}$ for any $s_1, s_2 \in S$. Let $f(a, b)$ be the maximum size of a skipping set for $(a, b)$. Find the sum of the maximum and minimum possible values of $f(a, b)$ over all valid pairs $(a, b)$.

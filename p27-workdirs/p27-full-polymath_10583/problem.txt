@@ -1,0 +1,1 @@
+In the competitive world of skyscraper architecture, four master contractors—Alice, Bob, Charlie, and David—are assigned to supply raw steel beams for a mega-structure. Let $a, b, c,$ and $d$ represent the positive real quantities of steel (in kilotons) provided by Alice, Bob, Charlie, and David, respectively.

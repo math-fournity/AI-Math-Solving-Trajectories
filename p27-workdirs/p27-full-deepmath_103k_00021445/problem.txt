@@ -1,0 +1,1 @@
+Calculate the Lebesgue integral of the function defined as 1 for irrational numbers and 0 for rational numbers over the interval \([0, 2]\).

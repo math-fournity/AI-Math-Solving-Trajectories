@@ -1,0 +1,1 @@
+Given an 8x8 grid where each square is colored either black or white, such that in every 3x3 subgrid the number of white squares is even, what is the minimum number of black squares?

@@ -1,0 +1,1 @@
+A circle $\omega$ touches a half-plane $H$ if $H$ does not contain $\omega$ and $\omega$ is tangent to the boundary line of $H$. Let $\mathcal{H}$ be a finite non-empty set of half-planes in a plane satisfying the following three conditions simultaneously:

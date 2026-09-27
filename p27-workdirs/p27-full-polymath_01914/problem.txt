@@ -1,0 +1,1 @@
+Find the value of \( y = \frac{x}{1 + x} \) where \( x = w^{w^{w^{\cdots}}} \) (2009 times) and \( w \) is a complex cube root of unity.

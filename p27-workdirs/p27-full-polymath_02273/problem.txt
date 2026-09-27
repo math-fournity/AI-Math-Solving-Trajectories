@@ -1,0 +1,1 @@
+Given 2013 cards, each with a unique number from 1 to 2013, placed upside down on a table, one may ask whether the arithmetic mean of any set of cards is an integer. The answer will always be true. Determine the maximum number of groups that can be formed such that each group contains cards with known numbers but the specific number on each card within the group is unknown.

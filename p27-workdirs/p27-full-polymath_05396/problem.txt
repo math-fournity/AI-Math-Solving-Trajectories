@@ -1,0 +1,1 @@
+Let $B$ be a subset of $\mathbb{Z}_{3}^{n}$ with the property that for every two distinct members $(a_{1},\dots,a_{n})$ and $(b_{1},\dots,b_{n})$ of $B$ there exist $1\le i\le n$ such that $a_{i}\equiv{b_{i}+1}\pmod{3}$. Let $M(n)$ be the maximum possible cardinality of such a set $B$. Compute the value of $M(5)$.

@@ -1,0 +1,1 @@
+Find an equivalence for $\sum_{n\geq 2} \frac{\cos (2\pi nx)}{n\ln n}$ as $x$ tends to $0^{+}$.

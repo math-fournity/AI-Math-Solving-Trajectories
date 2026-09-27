@@ -1,0 +1,1 @@
+In a massive logistics warehouse, there are 170 distinct shipping crates, each uniquely labeled with an integer weight from 1 kg to 170 kg (specifically, one crate for every integer weight in the range $[1, 170]$).

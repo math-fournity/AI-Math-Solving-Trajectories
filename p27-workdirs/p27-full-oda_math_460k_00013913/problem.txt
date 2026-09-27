@@ -1,0 +1,1 @@
+Find all positive integers \( n \) such that the set\n\n\[\n\{n, n + 1, n + 2, n + 3, n + 4, n + 5\}\n\]\n\ncan be split into two disjoint subsets such that the products of elements in these subsets are the same.\n\n*(12th International Mathematical Olympiad)*

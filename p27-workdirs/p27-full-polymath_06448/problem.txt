@@ -1,0 +1,1 @@
+In a remote industrial refinery, a chemical engineer is monitoring the pressure differential across a specialized filtration system. The efficiency of the system is governed by a specific safety threshold.

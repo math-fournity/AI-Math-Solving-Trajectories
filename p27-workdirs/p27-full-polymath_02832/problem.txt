@@ -1,0 +1,1 @@
+Given an infinite sequence of natural numbers \(a_1, a_2, a_3, \ldots\) that satisfy the conditions:

@@ -1,0 +1,1 @@
+An autonomous delivery drone is positioned at the southwestern corner $(0,0)$ of a city grid, initialized to face North toward $(0,1)$. The drone’s mission is to reach a charging station located at $(1,1)$.

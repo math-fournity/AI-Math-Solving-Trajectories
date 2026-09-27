@@ -1,0 +1,1 @@
+Let $(X, \tau)$ be a topological space with a topological base $\mathcal{E}$. Denote Bor$(\mathcal{E})$ as the smallest $\sigma$-algebra containing $\mathcal{E}$. Assume that Bor$(\mathcal{E}) = $ Bor$(\tau)$. If $O$ is an open set in $X$, does there exist a sequence of open sets $\{O_n\} \subseteq \mathcal{E}$ such that $O = \bigcup O_n$?

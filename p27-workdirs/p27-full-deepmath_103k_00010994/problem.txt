@@ -1,0 +1,1 @@
+Consider the ideal $I = (f, g, h)$ in the polynomial ring $k[x, y, z]$, where $LT(f) > LT(g) > LT(h)$ in the lexicographic order, and $I$ is reduced such that $LT(g) \nmid LT(f)$, $LT(h) \nmid LT(g)$, and $LT(h) \nmid LT(f)$. Is it necessary that the reduced Groebner basis $G$ of $I$ contains at least 3 elements? Assume the case is nontrivial.

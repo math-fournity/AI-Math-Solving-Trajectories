@@ -1,0 +1,1 @@
+Let $a$ and $b$ be relatively prime positive integers such that $a/b$ is the maximum possible value of \[\sin^2x_1+\sin^2x_2+\sin^2x_3+\cdots+\sin^2x_{2007},\] where, for $1\leq i\leq 2007$, $x_i$ is a nonnegative real number, and \[x_1+x_2+x_3+\cdots+x_{2007}=\pi.\] Find the value of $a+b$.

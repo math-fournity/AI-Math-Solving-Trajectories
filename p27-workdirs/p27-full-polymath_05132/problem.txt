@@ -1,0 +1,1 @@
+In a simple graph, there exist two vertices $A,B$ such that there are exactly $100$ shortest paths from $A$ to $B$. Find the minimum number of edges in the graph.

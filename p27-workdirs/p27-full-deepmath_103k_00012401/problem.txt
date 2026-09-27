@@ -1,0 +1,1 @@
+Determine the smallest positive integer \( n \) such that \( \lim\limits_{x \to 0} f^{(n)}(x) \) is neither 0 nor \( \pm\infty \), where \( f(x) = \left(\frac{\sin x}{x}\right)^{\frac{x}{\sin x}} \) and \( f^{(n)}(x) \) denotes the \( n \)-th derivative of \( f(x) \).

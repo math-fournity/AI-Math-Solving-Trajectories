@@ -1,0 +1,1 @@
+Does there exist a finite nonoriented graph whose automorphism group is transitive but not generously transitive, meaning it is not true that each pair \((x,y)\) of vertices can be interchanged by some automorphism?

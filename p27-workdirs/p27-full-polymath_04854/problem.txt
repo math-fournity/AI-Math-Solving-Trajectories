@@ -1,0 +1,1 @@
+There are $N$ acute triangles on the plane. Their vertices are all integer points, their areas are all equal to $2^{2020}$, but no two of them are congruent. Find the maximum possible value of $N$.

@@ -1,0 +1,1 @@
+Given a positive integer  $a$ , prove that  $\sigma(am) < \sigma(am + 1)$  for infinitely many positive integers  $m$ . (Here  $\sigma(n)$  is the sum of all positive divisors of the positive integer number  $n$ .)

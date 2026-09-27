@@ -1,0 +1,1 @@
+Determine all integers \( k \geqslant 1 \) with the following property: given \( k \) different colors, if each integer is colored in one of these \( k \) colors, then there must exist integers \( a_{1} < a_{2} < \cdots < a_{2023} \) of the same color such that the differences \( a_{2} - a_{1}, a_{3} - a_{2}, \ldots, a_{2023} - a_{2022} \) are all powers of 2.

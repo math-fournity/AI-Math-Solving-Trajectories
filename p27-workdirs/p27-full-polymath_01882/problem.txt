@@ -1,0 +1,1 @@
+You are given $2024$ yellow and $2024$ blue points on the plane, with no three points collinear. A pair of nonnegative integers $(a, b)$ is called [i]good[/i] if there exists a half-plane containing exactly $a$ yellow and $b$ blue points, with points on the boundary line considered outside the half-plane. Find the smallest possible number of good pairs.

@@ -1,0 +1,1 @@
+A specialized deep-sea drilling project employs an automated sequencing drill that can perform two types of maneuvers at any given depth: Drill Bit A or Drill Bit B. A "sequence" consists of a non-empty string of these maneuvers.

@@ -1,0 +1,1 @@
+Real numbers $x, y, z, c$ satisfy the system of equations:

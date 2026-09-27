@@ -1,0 +1,1 @@
+Find a biholomorphic mapping between the outside of the lemniscate defined by \((x^2 + y^2)^2 = 2(x^2 - y^2)\) and the open unit disc with the origin removed.

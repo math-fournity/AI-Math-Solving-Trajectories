@@ -1,0 +1,1 @@
+In a specialized logistics network, two types of shipping containers, Type $a$ and Type $b$, are used to transport goods. The quantities of these containers must be positive integers. The network's fuel consumption model is governed by the specific equilibrium equation $a^2 + b^2 + 25 = 15ab$.

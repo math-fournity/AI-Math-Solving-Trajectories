@@ -1,0 +1,1 @@
+A specialized logistics company manages a sequence of storage containers labeled with consecutive positive integers starting from container $m$ and ending at container $m+n$.

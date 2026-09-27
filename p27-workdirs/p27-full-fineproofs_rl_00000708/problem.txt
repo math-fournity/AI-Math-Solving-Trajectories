@@ -1,0 +1,1 @@
+A set of balls contains  $ n$  balls which are labeled with numbers  $ 1,2,3,\ldots,n.$  We are given  $ k > 1$  such sets. We want to colour the balls with two colours, black and white in such a way, that

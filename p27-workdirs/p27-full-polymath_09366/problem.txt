@@ -1,0 +1,1 @@
+A specialized digital security firm is testing a series of encryption protocols labeled with an integer strength factor $n$ (where $n > 1$). These protocols are designed to process various data packets, each assigned a positive integer value $a$.

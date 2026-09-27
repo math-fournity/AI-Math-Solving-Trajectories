@@ -1,0 +1,1 @@
+A specialized waste management company operates 10 identical silos, each initially containing 10 tons of hazardous material. Two technicians, the Supervisor and the Operator, must process this material according to strict security protocols.

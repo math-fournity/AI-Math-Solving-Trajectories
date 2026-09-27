@@ -1,0 +1,1 @@
+Ten distinct communication towers are positioned across a vast desert. The straight-line distance between every possible pair of towers is unique, such that no two distances are exactly the same.

@@ -1,0 +1,1 @@
+Construct an entire function that grows faster than \( \exp \circ \exp \circ \cdots \circ \exp(x) \) for any number of \( \exp \) compositions, and faster than the Ackermann function composed with itself \( n \) times for all \( n \).

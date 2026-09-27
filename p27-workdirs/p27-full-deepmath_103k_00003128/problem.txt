@@ -1,0 +1,1 @@
+Let $X$ be a normal, projective complex variety with at worst rational singularities, and let $\pi: Y \to X$ be the resolution of singularities obtained by blowing up the singular points. Determine if $R^1 \pi_*\mathbb{Z} = 0$ when $X$ is of dimension 3.

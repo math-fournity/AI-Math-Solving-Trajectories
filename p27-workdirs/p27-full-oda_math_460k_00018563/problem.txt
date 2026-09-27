@@ -1,0 +1,1 @@
+Find all possible Jordan forms for all $10 \times 10$ matrices over a field of characteristic different from $2$, given that the minimal polynomial is $x^2 (x - 1)^2 (x + 1)^3$.

@@ -1,0 +1,1 @@
+Find the inverse Mellin transform of the function \((ix)^{-s}\) for \(x > 0\).

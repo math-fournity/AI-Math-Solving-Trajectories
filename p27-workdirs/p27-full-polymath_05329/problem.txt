@@ -1,0 +1,1 @@
+Find the smallest integer $n$ such that there exist numbers $a$ and $b$ with $|a - b| \le n$, so that regardless of the specific decomposition of the $50$-gon, one can always find a diagonal that decomposes the edge of the polygon into two parts, each with $a$ or $b$ sides.

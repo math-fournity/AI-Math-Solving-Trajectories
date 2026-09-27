@@ -1,0 +1,1 @@
+In a futuristic data-encryption facility, engineers are designing "Self-Sustaining Sequences" for a security protocol. Each sequence is represented by a specific type of digital structure called a "Monic Polynomial of Degree 12," denoted as $q(x)$, where all coefficients are integers and the leading coefficient is 1.

@@ -1,0 +1,1 @@
+In the remote sector of the Quadrant Nebula, space station $S$ serves as the central hub for three navigational outposts: $A$, $B$, and $C$. These outposts are arranged such that they form a tetrahedral sector $SABC$ in space.

@@ -1,0 +1,1 @@
+A point $P$ lies in the interior of the triangle $A B C$. The lines $A P, B P$, and $C P$ intersect $B C, C A$, and $A B$ at points $D, E$, and $F$, respectively. Prove that if two of the quadrilaterals $A B D E, B C E F, C A F D, A E P F, B F P D$, and $C D P E$ are concyclic, then all six are concyclic.

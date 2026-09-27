@@ -1,0 +1,1 @@
+Inside square $ABCD$, points $K$ and $M$ are marked (point $M$ is inside triangle $ABD$, point $K$ is inside $BMC$) such that triangles $BAM$ and $DKM$ are congruent $(AM = KM, BM = MD, AB = KD)$. Find $\angle KCM$, if $\angle AMB = 100^{\circ}$.

@@ -1,0 +1,1 @@
+In a futuristic data center, a security grid is organized into a perfect $10 \times 10$ array of server nodes. You are tasked with deploying specialized "Sentinel" antivirus programs across the grid.

@@ -1,0 +1,1 @@
+A positive integer $n$ is called [i]Olympic[/i], if there exists a quadratic trinomial with integer coeffecients $f(x)$ satisfying $f(f(\sqrt{n}))=0$. Determine, with proof, the largest Olympic number not exceeding $2015$.

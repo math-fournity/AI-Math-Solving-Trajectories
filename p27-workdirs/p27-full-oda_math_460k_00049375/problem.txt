@@ -1,0 +1,1 @@
+Find all polynomials $p$ with real coefficients satisfying the equation $p(p'(t)) = p'(p(t))$.

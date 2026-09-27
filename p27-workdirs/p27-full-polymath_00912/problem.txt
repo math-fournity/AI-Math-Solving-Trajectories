@@ -1,0 +1,1 @@
+What is the rightmost non-zero digit of \(1000000!\) (one million factorial)?

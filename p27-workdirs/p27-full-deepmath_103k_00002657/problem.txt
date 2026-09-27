@@ -1,0 +1,1 @@
+Let \( G \) be a simply connected semisimple algebraic group over \( \mathbb{Q}_p \). Is any continuous homomorphism \( G(\mathbb{Q}_p) \to S^1 \) trivial?

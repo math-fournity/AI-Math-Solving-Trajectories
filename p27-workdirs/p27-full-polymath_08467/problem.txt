@@ -1,0 +1,1 @@
+A high-tech logistics center operates a square grid of $n \times n$ storage bays. Each bay is identified by its column $i$ and row $j$ (where $1 \le i, j \le n$). Initially, the inventory level in each bay is exactly $i + j$ units.

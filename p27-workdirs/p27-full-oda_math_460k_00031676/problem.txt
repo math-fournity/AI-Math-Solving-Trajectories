@@ -1,0 +1,1 @@
+Consider a set of circles centered at points with integer coordinates in a 3D space, with radii equal to the distance from the origin to the center. Find the number of distinct tetrahedra with positive integer volume that can be formed by connecting the centers of four distinct circles that lie on the surface defined by the equation $x^2 + 2y^2 + 3z^2 = 2010$.

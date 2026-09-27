@@ -1,0 +1,7 @@
+Show that 
+
+\[A_n=\prod_{j=0}^{n-1}\cfrac{(3j+1)!}{(n+j)!}\]
+
+is an integer, for any positive integer \(n\).
+
+##

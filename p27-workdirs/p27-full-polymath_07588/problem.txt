@@ -1,0 +1,1 @@
+A network security architect is designing a series of encryption protocols for 100 different server clusters, indexed by an integer $n$ from 1 to 100. For each cluster $n$, the architect needs to determine if it is possible to program a specific automated signal generator.

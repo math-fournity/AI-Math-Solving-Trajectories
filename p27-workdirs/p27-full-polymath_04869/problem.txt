@@ -1,0 +1,1 @@
+Let \( \triangle ABC \) be a triangle with \( \angle B = \angle C = 80^\circ \). Compute the number of points \( P \) in the plane such that triangles \( \triangle PAB \), \( \triangle PBC \), and \( \triangle PCA \) are all isosceles and non-degenerate.

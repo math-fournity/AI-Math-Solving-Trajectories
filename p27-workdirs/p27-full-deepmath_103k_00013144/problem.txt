@@ -1,0 +1,1 @@
+Determine whether \( \lim_{n \to \infty}{\frac{p_n}{p_{n+1}}} < 1 \), where \( p_n \) denotes the nth prime number.

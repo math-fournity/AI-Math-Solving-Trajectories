@@ -1,0 +1,1 @@
+In the competitive world of city planning, a group of $n$ high-tech surveillance towers is to be constructed on a flat coastal plain. In this region, a specialized laser communication link is established between every possible pair of towers. A link is defined as the straight-line path connecting any two distinct towers.

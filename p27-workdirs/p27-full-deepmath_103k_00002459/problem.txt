@@ -1,0 +1,1 @@
+Let $R$ be a commutative ring with unity, and consider the $R$-module $R^n$. Let $S$ be a maximal linearly independent subset of $R^n$ over $R$. Is it true that $|S| = n$? Justify your answer.

@@ -1,0 +1,1 @@
+For any positive integer \( n \), define the subset \( S_n \) of natural numbers as

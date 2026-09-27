@@ -1,0 +1,1 @@
+Let \(ABC\) be a triangle and \(P\) a point such that the line \(AP\) is the A-symmedian. Let \(DF\) and \(EG\) be antiparallels through \(P\) to \(AB\) and \(AC\) respectively, with \(D\) on \(AC\), \(F\) and \(G\) on \(BC\), and \(E\) on \(AB\). If \(DEFG\) is an isosceles trapezoid, find the ratio \(\frac{DE}{FG}\) given that \(AB = 13\), \(AC = 14\), and \(BC = 15\).

@@ -1,0 +1,1 @@
+A specialized laser-cutting facility is designed in the shape of a triangular zone $ABC$ on a flat workspace. The corner at vertex $A$ is precisely angled at $60^\circ$. A robotic sensor $M$ moves within the interior of this zone. To calibrate its position, the sensor measures its efficiency based on its distance to the boundaries:

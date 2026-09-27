@@ -1,0 +1,240 @@
+# 交接文档 · deepmath_103k_00031012 · Round 1 探索历程
+
+> **交接给**：下一个AI，请在此基础上继续完成解答
+> **来源**：deepmath_103k_00031012 Round 1（1个agent step，被截断）
+> **制作时间**：2026-08-22
+> **模型**：GLM-5.2 High
+> **截断指标**：completion_tokens=25000（达到上限），reasoning_content=68042字符，message=0字符，tool_calls=0
+
+---
+
+## 1. 题目
+
+Determine the number of positive integers, each with exactly \(2^{2005}\) digits, where each digit is either 7 or 8, such that among any two chosen integers, at most half of their corresponding digits are the same.
+
+**解读**：求最大数量的正整数集合，每个数恰好有 \(2^{2005}\) 位，每位数字是7或8，且任意两个数在对应位置上相同的位数不超过一半（即不超过 \(2^{2004}\) 位）。
+
+---
+
+## 2. 答案猜想
+
+**猜想答案：\(2^{2006}\)**（即 \(2n\)，其中 \(n = 2^{2005}\)）
+
+**置信度**：高（90%）
+
+**理由**：
+- 下界 \(2n = 2^{2006}\) 通过 Hadamard 码构造已确认（见§3结论1）
+- 上界 \(M \leq 2n\) 是 Rankin bound 的已知结果（单位向量在 \(R^n\) 中两两内积≤0时最多 \(2n\) 个），但AI未能完成证明（见§4）
+- 小规模验证完全吻合：\(A(2,1)=4=2\cdot2\)，\(A(4,2)=8=2\cdot4\)，\(A(8,4)=16=2\cdot8\)
+
+---
+
+## 3. 已确认的结论
+
+### 结论1：问题等价于求 \(A(n, n/2)\)（来源：step[7] reasoning 开头）
+
+将数字7→0、8→1（或7→+1、8→-1），问题转化为：求长度 \(n = 2^{2005}\)、最小汉明距离 \(d \geq n/2\) 的二进制码的最大大小 \(A(n, n/2)\)。
+
+**推导概要**：
+- "对应位相同"的位数 ≤ \(n/2\) ⟺ 汉明距离 ≥ \(n/2\)
+- 在 ±1 表示下：相同位数 \(a_{ij}\) 满足 \(a_{ij} \leq n/2\) ⟺ 内积 \(\langle v_i, v_j \rangle = 2a_{ij} - n \leq 0\)
+
+### 结论2：下界 \(A(n, n/2) \geq 2n\) 通过 Hadamard 码构造（来源：step[7] reasoning 前段）
+
+对于 \(n = 2^k\)（power of 2），Sylvester Hadamard 矩阵 \(H_n\) 存在。
+
+**构造**：Hadamard 码 \(C_H = \{h_a : a \in G\} \cup \{-h_a : a \in G\}\)，其中 \(G \cong (\mathbb{Z}/2\mathbb{Z})^k\)，\(|G| = n\)。
+
+**验证**：
+- 两个不同行 \(h_a, h_b\)（\(a \neq b\)）：\(\langle h_a, h_b \rangle = 0\)（正交性），距离 = \(n/2\)
+- 行与其负 \(-h_a\)：\(\langle h_a, -h_a \rangle = -n\)，距离 = \(n\)
+- 行与另一行的负 \(-h_b\)（\(a \neq b\)）：\(\langle h_a, -h_b \rangle = 0\)，距离 = \(n/2\)
+
+所以 Hadamard 码有 \(2n\) 个码字，所有两两内积 ≤ 0，最小距离 = \(n/2\)。✓
+
+### 结论3：小规模验证 \(A(2^k, 2^{k-1}) = 2^{k+1}\)（来源：step[7] reasoning 中段）
+
+| \(k\) | \(n = 2^k\) | \(d = n/2\) | \(A(n, d)\) | \(2n\) | 构造 |
+|---|---|---|---|---|---|
+| 1 | 2 | 1 | 4 | 4 | 全部4个二元向量 |
+| 2 | 4 | 2 | 8 | 8 | 全部偶数权重向量 |
+| 3 | 8 | 4 | 16 | 16 | 扩展 Hamming 码 \([8,4,4]\) |
+
+**关键验证**：\(A(8,4) = 16\)（不是20）。AI一度怀疑 \(A(8,4)=20\)，但经过仔细分析确认 \(A(8,4)=16\)，\(A(9,4)=20\)（不同问题）。扩展 Hamming 码 \([8,4,4]\) 有16个码字，覆盖半径为2，无法添加任何非码字向量（任何非码字到码的距离 ≤ 2 < 4）。
+
+### 结论4：Plotkin bound 在 \(d = n/2\) 时不给出有用上界（来源：step[7] reasoning 中段）
+
+**推导概要**：
+- Plotkin bound 标准形式：若 \(2d > n\)，则 \(M \leq 2\lfloor d/(2d-n) \rfloor\)
+- 当 \(d = n/2\) 时，\(2d - n = 0\)，分母为零，bound 退化为 \(M \cdot 0 \leq n\)（平凡成立）
+- 双重计数法验证：\(\sum_{i<j} d(c_i,c_j) = \sum_k a_k(M-a_k)\)，下界 \(\geq (n/2) \cdot M(M-1)/2\)，上界 \(\leq n \cdot M^2/4\)，结合得 \(M(M-1) \leq M^2\)（平凡）
+- **结论**：需要 Rankin bound 或 Delsarte LP bound 才能得到 \(M \leq 2n\)
+
+### 结论5：±1 表示下内积的整数性（来源：step[7] reasoning 后段）
+
+对于 \(n = 2^{2005}\)（偶数），两个 ±1 向量的内积 \(\langle v_i, v_j \rangle\) 是偶数，取值范围为 \(\{0, -2, -4, \ldots, -n\}\)。这意味着若内积非零，则 \(|\langle v_i, v_j \rangle| \geq 2\)，即 \(\langle v_i, v_j \rangle^2 \geq 4\)。
+
+---
+
+## 4. 已尝试的方向
+
+### 方向1：Plotkin bound 直接应用 ❌失败
+
+**描述**：用标准 Plotkin bound 证明 \(M \leq 2n\)。
+
+**结果**：失败。
+
+**原因**：当 \(d = n/2\) 恰好时，Plotkin bound 的分母 \(2d - n = 0\)，bound 退化为平凡不等式。双重计数法（\(\sum a_k(M-a_k)\) 的上界与 \(\sum d(c_i,c_j)\) 的下界结合）也只给出 \(M-1 \leq M\) 的平凡结果。
+
+### 方向2：Rankin bound 证明（M ≤ 2n for unit vectors with pairwise ≤0 inner products）⚠️未完成
+
+**描述**：用 Rankin bound（球面码理论已知结果：\(R^n\) 中两两内积≤0的单位向量最多 \(2n\) 个）证明上界。
+
+**结果**：未完成——AI尝试了多种证明方法但都卡住了。
+
+**尝试的子方向**：
+
+- **2a. Gram矩阵 + Perron-Frobenius**：构造 \(G' = 2I - G\)（非负矩阵），利用 \(G'\) 有至少 \(M-n\) 个特征值等于2，结合谱半径 ≤ 最大行和。但只能推出 \(\min_i s_i \leq -1\)（存在某个向量的内积之和 ≤ -1），无法直接得到 \(M \leq 2n\)。
+
+- **2b. 矩阵 \(A = G + J\)（\(J\) = 全1矩阵）**：\(A\) 是PSD矩阵，rank ≤ \(n+1\)，trace = \(2M\)。利用 \((2M)^2 \leq (n+1) \cdot \text{trace}(A^2)\) 和 \(\text{trace}(A^2) \leq 2M^2 + 2M\)，得到 \(M(1-n) \leq n+1\)——这是下界不是上界，无用。
+
+- **2c. 归纳法**：对 \(n\) 归纳。利用线性相关性 \(\sum \alpha_i u_i = 0\)，分 \(P\)（正系数）、\(N\)（负系数）、\(Z\)（零系数）。证明了 \(P\) 中向量与 \(N\) 中向量正交（\(\langle u_i, u_j \rangle = 0\) for \(i \in P, j \in N\)），且 \(V_P \perp V_N\)，\(\dim V_P + \dim V_N \leq n\)。但无法处理 \(Z\) 集合中的向量——\(Z\) 中向量投影到 \(V_P\) 后，两两内积不一定 ≤ 0（因为 \(P^\perp\) 分量可能贡献负值）。
+
+- **2d. Cauchy-Schwarz on eigenvalues**：利用 \(\text{trace}((VV^T)^2) \geq M^2 n\)（Cauchy-Schwarz on eigenvalues），但只能得到内积平方和的下界，不是上界。
+
+### 方向3：Delsarte LP bound ⚠️未完成
+
+**描述**：用 Delsarte 线性规划界证明 \(A(2^k, 2^{k-1}) \leq 2^{k+1}\)。
+
+**结果**：未完成——AI提到了LP bound的框架（Krawtchouk多项式、距离分布约束），但未实际求解。提到Hadamard码的距离分布为 \(A_0=1, A_{n/2}=2n-2, A_n=1\)，需要找到对偶解（多项式 \(f\)）来证明LP最优值恰为 \(2n\)。
+
+### 方向4：Walsh-Hadamard 变换方法 ⚠️未完成（截断处）
+
+**描述**：利用 \(n = 2^k\) 的特殊结构，将码字通过 Walsh-Hadamard 变换展开到 Hadamard 基。
+
+**结果**：截断时正在进行。已建立框架：
+- 每个码字 \(c\) 的 Fourier 变换 \(\hat{c}(a) = \langle c, h_a \rangle\)（偶整数，\(|\hat{c}(a)| \leq n\)）
+- Parseval：\(\sum_a \hat{c}(a)^2 = n^2\)
+- 两两条件：\((1/n)\sum_a f_i(a) f_j(a) \leq 0\)
+- **但尚未推导出 \(M \leq 2n\) 的结论**
+
+### 方向5：对 \(k\) 的归纳法 ⚠️未完成
+
+**描述**：对 \(k\) 归纳证明 \(A(2^k, 2^{k-1}) \leq 2^{k+1}\)。
+
+**结果**：未完成——按第一个坐标分割码为 \(C_0, C_1\)，但剩余长度 \(n-1 = 2^k - 1\) 不是2的幂，归纳假设不直接适用。
+
+---
+
+## 5. 关键文献/参考
+
+**注意**：AI没有使用任何工具（无 web_search、无 webfetch），所有引用来自模型内部知识。
+
+| 参考 | 内容 | 对本题的作用 |
+|---|---|---|
+| **Plotkin bound** | 二进制码的 Plotkin 界：若 \(2d > n\)，则 \(M \leq 2\lfloor d/(2d-n) \rfloor\) | 在 \(d = n/2\) 时退化，不给出有用上界 |
+| **Hadamard 矩阵 / Sylvester 构造** | \(n = 2^k\) 时 Hadamard 矩阵 \(H_n\) 存在，行两两正交 | 构造下界 \(2n\) 的 Hadamard 码 |
+| **Rankin bound**（球面码） | \(R^n\) 中两两角度 ≥ 90° 的单位向量最多 \(2n\) 个 | 给出上界 \(M \leq 2n\)，但AI未能完成证明 |
+| **Delsarte LP bound** | 用 Krawtchouk 多项式的线性规划界 | 框架已建立但未求解 |
+| **扩展 Hamming 码 \([8,4,4]\)** | 16个码字，最小距离4，覆盖半径2 | 验证 \(A(8,4) = 16\) |
+| **Brouwer's table**（A(n,d) 表） | \(A(8,4)=16, A(9,4)=20, A(10,4)=40\) | 小规模验证 |
+| **Danzer-Grünbaum 定理** | 被提及为 Rankin bound 的相关结果 | 未深入使用 |
+
+---
+
+## 6. 已有的中间产物
+
+**Round 1 没有写出任何脚本或文件。**
+
+- tool_calls = 0（无任何工具调用）
+- message = "" （空，无TUI输出）
+- 所有分析都在 reasoning_content（thinking）中完成
+- 无 exec、无 web_search、无 webfetch、无 write
+
+---
+
+## 7. 当前卡在哪里
+
+**截断状态**：AI在 thinking spin 中被截断（completion_tokens=25000 达到上限）。
+
+**截断时正在做什么**：AI正在尝试用 **Walsh-Hadamard 变换方法**证明上界 \(M \leq 2n\)。已经建立了 Fourier 变换的框架（每个码字的变换系数 \(\hat{c}(a)\) 满足 Parseval 等式和两两非正条件），但尚未完成从这些约束到 \(M \leq 2n\) 的推导。
+
+**为什么卡住**：
+
+1. **核心困难**：证明上界 \(M \leq 2n\)。下界 \(2n\) 通过 Hadamard 码构造已经确认，但上界证明始终无法完成。
+
+2. **Plotkin bound 在 \(d = n/2\) 边界情况失效**：标准 Plotkin bound 的分母 \(2d - n = 0\)，双重计数法只给出平凡不等式。
+
+3. **Rankin bound 证明的多种尝试都卡住**：
+   - Gram矩阵 + Perron-Frobenius：只能推出弱约束
+   - 矩阵 \(A = G + J\)：给出下界而非上界
+   - 归纳法：无法处理零系数集合 \(Z\)
+   - Cauchy-Schwarz on eigenvalues：只有下界
+
+4. **AI反复尝试不同的证明策略但每次都走到死胡同**，在68042字符的thinking中循环尝试了至少5种方法，最终在Walsh-Hadamard变换方法中被截断。
+
+---
+
+## 8. 建议的下一步
+
+### 核心任务：完成上界 \(M \leq 2n\) 的证明
+
+下界 \(2n\) 已确认（Hadamard码构造），只需完成上界。建议以下方向（按可行性排序）：
+
+### 建议1：查找并引用 Rankin bound 的标准证明 ⭐推荐
+
+Rankin bound（\(\phi = \pi/2\) 时 \(M \leq 2n\)）是已知定理。可以用 web_search 搜索 "Rankin bound proof spherical code" 或查阅标准教材（如 Conway & Sloane "Sphere Packings, Lattices and Groups"）。找到标准证明后直接引用。
+
+**关键搜索词**：`Rankin bound spherical code proof`、`maximum unit vectors pairwise nonpositive inner product`、`obtuse set maximum size 2n`
+
+### 建议2：用 Delsarte LP bound 完成证明
+
+对 \(n = 2^k, d = n/2\) 的具体情形求解 Delsarte LP。需要构造对偶可行解（多项式 \(f\) 满足 \(f_0 = 1, f_k \geq 0\) for \(k \geq d\)，且 Krawtchouk 展开给出上界 \(2n\)）。
+
+Hadamard码的距离分布 \(A_0=1, A_{n/2}=2n-2, A_n=1\) 应该是LP最优解——需要验证这一点。
+
+### 建议3：用线性代数方法直接证明
+
+尝试以下已知有效的证明思路：
+
+**思路A（推荐）**：考虑 \(M\) 个 ±1 向量 \(v_1, \ldots, v_M \in \{\pm1\}^n\)，两两内积 ≤ 0。构造 \(M \times M\) Gram矩阵 \(G\)（PSD，rank ≤ n，对角线 = n，非对角线 ≤ 0）。
+
+利用以下事实：\(G\) 是PSD的且非对角线非正，则 \(G\) 的核空间（零特征值对应的特征空间）的维度 ≥ \(M - n\)。考虑 \(G\) 的零空间中的向量，利用非对角线非正的性质推导约束。
+
+**思路B**：利用 ±1 向量的特殊结构。每个 \(\langle v_i, v_j \rangle\) 是偶整数（\(n\) 偶数时），取值 \(\{0, -2, \ldots, -n\}\)。这种离散性可能给出比连续单位向量更强的约束。
+
+### 建议4：利用 \(n = 2^k\) 的群结构
+
+\(n = 2^{2005}\) 的坐标可以索引为 \(\text{GF}(2)^{2005}\)。Hadamard矩阵的行是群 \((\mathbb{Z}/2\mathbb{Z})^{2005}\) 的特征。利用 Fourier 分析在 \((\mathbb{Z}/2\mathbb{Z})^{2005}\) 上的性质，可能可以直接推导上界。
+
+### 最终答案格式
+
+如果上界证明完成，最终答案为：
+
+$$\boxed{2^{2006}}$$
+
+---
+
+## 附录：探索历程时间线
+
+| Step | Source | 内容 |
+|---|---|---|
+| steps[0] | system | 系统提示词（Devin CLI 基础指令） |
+| steps[1] | system | subagent profiles 说明 |
+| steps[2] | system | "You are powered by GLM-5.2 High." |
+| steps[3] | system | 工作目录信息 |
+| steps[4] | system | always-on rules（AGENTS.md 等） |
+| steps[5] | user | "请按AGENTS.md中的题目直接解答。直接在TUI中输出证明，不要写任何文件，结尾输出 ### PROOF COMPLETE" |
+| steps[6] | system | available_skills 列表 |
+| steps[7] | agent | **68042字符 thinking，被截断**。内容：问题→编码理论转化→Hadamard码下界→小规模验证→Plotkin bound失效→Rankin bound多种证明尝试（全部未完成）→Delsarte LP（未完成）→Walsh-Hadamard变换（截断处）。无message输出，无tool_calls。 |
+
+### steps[7] thinking 的推理脉络
+
+1. **问题转化**（~0-5K字符）：将问题转化为 \(A(n, n/2)\)，±1 表示下条件变为内积 ≤ 0
+2. **Hadamard码构造**（~5-10K字符）：确认下界 \(2n\)，验证 \(n=2\) 时 \(M=4=2n\)
+3. **上界证明尝试1：Plotkin bound**（~10-15K字符）：发现 \(d=n/2\) 时 Plotkin bound 退化
+4. **小规模验证**（~15-20K字符）：验证 \(A(8,4)=16\)（纠正了一度怀疑的20），确认模式 \(A(2^k,2^{k-1})=2^{k+1}\)
+5. **上界证明尝试2：Rankin bound**（~20-35K字符）：多种方法（Gram矩阵+PF、矩阵A=G+J、归纳法、Cauchy-Schwarz）全部卡住
+6. **上界证明尝试3：Delsarte LP**（~35-40K字符）：框架建立但未求解
+7. **上界证明尝试4：对k归纳**（~40-45K字符）：分割后剩余长度非2的幂，不适用
+8. **上界证明尝试5：Walsh-Hadamard变换**（~45-68K字符）：建立Fourier变换框架，**在此处被截断**

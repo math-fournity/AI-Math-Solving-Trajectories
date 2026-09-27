@@ -1,0 +1,1 @@
+Determine whether for any three distinct natural numbers \( a \), \( b \), and \( c \), there exists a quadratic polynomial with integer coefficients and a positive leading coefficient that takes the values \( a^3 \), \( b^3 \), and \( c^3 \) at some integer points.

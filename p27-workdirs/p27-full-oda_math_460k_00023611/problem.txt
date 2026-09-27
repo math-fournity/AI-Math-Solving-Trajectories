@@ -1,0 +1,1 @@
+Let \( P(z) \) be a polynomial of degree \( n \) with complex coefficients having all its zeroes in \( |z| \geq K \), where \( K > 1 \). For \( |z| = 1 \), calculate the maximum value of \( |P(K^2z) - P(z)| \) given that \( \max_{|z|=1} |P(z)| = 1 \). Express your answer in terms of \( K \) and \( n \).

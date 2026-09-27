@@ -1,0 +1,1 @@
+You may choose any five-digit number with distinct digits (excluding 0). You can switch the positions of two adjacent digits up to five times. What is the largest possible difference between the initial number and the final number obtained after these switches?

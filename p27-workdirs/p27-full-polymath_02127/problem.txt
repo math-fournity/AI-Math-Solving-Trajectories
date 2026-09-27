@@ -1,0 +1,1 @@
+A positive integer is [i]detestable[/i] if the sum of its digits is a multiple of $11$. How many positive integers below $10000$ are detestable?

@@ -1,0 +1,1 @@
+In all acute triangles \(ABC\) with area \(S = 1\), find the triangle such that the expression \(\frac{1}{a^5} + \frac{1}{b^5} + \frac{1}{c^5}\) is minimized.

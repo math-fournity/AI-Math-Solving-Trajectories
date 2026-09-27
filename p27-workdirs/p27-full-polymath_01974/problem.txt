@@ -1,0 +1,1 @@
+Find the sum of all positive integers $k$ for which there exists a nonlinear function $f: \mathbb{Z} \rightarrow \mathbb{Z}$ satisfying

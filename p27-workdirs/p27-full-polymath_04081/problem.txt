@@ -1,0 +1,1 @@
+Three. (20 points) In the pyramid $S-ABC$, $SA=4, SB \geqslant 7, SC \geqslant 9, AB=5, BC \leqslant 6, AC \leqslant 8$. Try to find the maximum volume of the pyramid $S-ABC$.

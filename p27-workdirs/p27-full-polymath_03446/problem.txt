@@ -1,0 +1,1 @@
+Let $S$ be the set of the reciprocals of the first $2016$ positive integers and $T$ the set of all subsets of $S$ that form arithmetic progressions. What is the largest possible number of terms in a member of $T$?

@@ -1,0 +1,1 @@
+Does every finite order self-homeomorphism \(\phi: \mathbf{R}^n \to \mathbf{R}^n\) have a fixed point?

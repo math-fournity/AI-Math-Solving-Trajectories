@@ -1,0 +1,1 @@
+Is there a fixed integer $k$ and a $<_k$-increasing sequence of functions $\{ f_n : n \in \mathbb{N} \}$ from $\mathbb{N}$ to itself, such that there exists a function $g$ with $g >_k f_n$ for all $n$?

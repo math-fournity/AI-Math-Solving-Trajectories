@@ -1,0 +1,1 @@
+Given an integer $n \geq 3$, determine the smallest positive number $k$ such that any two points in any $n$-gon (or at its boundary) in the plane can be connected by a polygonal path consisting of $k$ line segments contained in the $n$-gon (including its boundary).

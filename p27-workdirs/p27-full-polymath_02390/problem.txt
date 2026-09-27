@@ -1,0 +1,1 @@
+Let \( K \) and \( L \) be concentric circles with radii \( r \) and \( s \) respectively, where \( r < s \). Let \( BA \) be a chord of \( K \). Let \( BC \) be a chord of \( L \) passing through \( P \) and perpendicular to \( PA \). Find a formula, in terms of \( r \) and \( s \), for \( PA^2 + PB^2 + PC^2 \).

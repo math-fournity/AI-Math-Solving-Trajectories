@@ -1,0 +1,1 @@
+An architect is designing a kite-shaped plaza, $ABCD$, where the northern walkways $AB$ and $AD$ are equal in length, and the southern boundary walls $BC$ and $CD$ are also equal.

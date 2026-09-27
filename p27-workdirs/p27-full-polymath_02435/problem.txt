@@ -1,0 +1,1 @@
+Find the number of positive integers $n$ for which there exists a sequence $x_1, x_2, \cdots, x_n$ of integers with the following property: if indices $1 \le i \le j \le n$ satisfy $i+j \le n$ and $x_i - x_j$ is divisible by $3$, then $x_{i+j} + x_i + x_j + 1$ is divisible by $3$.

@@ -1,0 +1,1 @@
+7.113 The complete works of Tolstoy consist of 100 volumes, which are randomly arranged on a bookshelf. Each time, it is allowed to swap the positions of any two volumes with different parity numbers. How many such swaps are required at a minimum to ensure that they are arranged in order by volume number?

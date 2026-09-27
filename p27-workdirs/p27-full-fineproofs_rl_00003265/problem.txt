@@ -1,0 +1,1 @@
+Let  $m \ge 2$  be an integer. Find the smallest integer  $n>m$  such that for any partition of the set  $\{m,m+1,\cdots,n\}$  into two subsets, at least one subset contains three numbers  $a, b, c$  such that  $c=a^{b}$ .

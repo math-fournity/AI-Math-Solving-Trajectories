@@ -1,0 +1,1 @@
+In a circular botanical garden, denoted as Boundary $\Gamma$ with a radius of 3 kilometers, four observation towers—Alpha ($A$), Bravo ($B$), Charlie ($C$), and Delta ($D$)—are positioned exactly on the perimeter. Two straight walking paths connect these towers: Path $AC$ and Path $BD$. These paths intersect at a central Hub $E$.

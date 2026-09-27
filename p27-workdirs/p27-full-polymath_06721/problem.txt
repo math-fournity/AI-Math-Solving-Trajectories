@@ -1,0 +1,1 @@
+A digital storage system organizes data into sequential sectors, each indexed by a positive integer $n$. To ensure data integrity, the system calculates a "Checksum Signature" for each sector, denoted as $S(n)$, which is defined as the sum of the individual digits of the sector's index $n$ (expressed in base 10).

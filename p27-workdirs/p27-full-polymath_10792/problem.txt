@@ -1,0 +1,1 @@
+In a specialized frequency-testing laboratory, ten signal generators are being calibrated. Each generator $k$ (where $k = 1, 2, \dots, 10$) produces a signal represented by a complex vector $z_k$.

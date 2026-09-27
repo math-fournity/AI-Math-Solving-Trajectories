@@ -1,0 +1,1 @@
+In a futuristic data-processing facility, a specialized server operates based on a single "Core Protocol," which is a cubic polynomial function \( f(x) \). This server processes data packets represented by unique numerical IDs.

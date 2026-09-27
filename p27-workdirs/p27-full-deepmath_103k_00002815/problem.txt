@@ -1,0 +1,1 @@
+Consider a solvable group $G$ of order $p^4 (p+1)(p^2+1)(p^4+1)$, where $p=2^n-1$ is a Mersenne prime. Determine whether $G$ can have an irreducible complex character of degree $p^4$.

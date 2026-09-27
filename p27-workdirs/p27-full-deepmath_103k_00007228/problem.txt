@@ -1,0 +1,1 @@
+Maximize \( \int_{0}^{1} f(x)^5 \, dx \) over all functions \( f: [0,1] \to [-1,1] \) such that \( \int_{0}^{1} f(x)^3 \, dx = 0 \) and \( \int_{0}^{1} f(x) \, dx = 0 \).

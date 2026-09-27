@@ -1,0 +1,1 @@
+A grand tech summit features a square complex with a grid of $n \times n$ exhibition booths. The organizers must assign exactly one unique identification badge, numbered from $1, 2, \ldots, n^2$, to each booth in the grid.

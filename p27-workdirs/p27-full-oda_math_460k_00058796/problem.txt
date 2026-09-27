@@ -1,0 +1,1 @@
+A positive integer $N$ is [i]apt[/i] if for each integer $0 < k < 1009$, there exists exactly one divisor of $N$ with a remainder of $k$ when divided by $1009$. For a prime $p$, suppose there exists an [i]apt[/i] positive integer $N$ where $\tfrac Np$ is an integer but $\tfrac N{p^2}$ is not. Find the number of possible remainders when $p$ is divided by $1009$.

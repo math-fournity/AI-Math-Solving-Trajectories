@@ -1,0 +1,1 @@
+In a futuristic circular space station, there are 101 docking ports arranged in a perfectly symmetrical circle, labeled sequentially from 1 to 101. A communications engineer must assign each port one of two security protocols: "Protocol Red" or "Protocol Blue."

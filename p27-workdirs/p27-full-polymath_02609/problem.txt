@@ -1,0 +1,1 @@
+Regular tetrahedron $P_1P_2P_3P_4$ has side length $1$. Define $P_i$ for $i > 4$ to be the centroid of tetrahedron $P_{i-1}P_{i-2}P_{i-3}P_{i-4}$, and $P_{ \infty} = \lim_{n\to \infty} P_n$. What is the length of $P_5P_{ \infty}$?

@@ -1,0 +1,10 @@
+/-!
+# IMO 2011 A6 (P3)
+
+Let $R$ be a totally ordered commutative ring.
+Let $f : R → R$ be a function such that, for any $x, y ∈ R$,
+$$ f(x + y) ≤ y f(x) + f(f(x)). $$
+Show that $f(x) = 0$ for any $x ∈ R$ such that $x ≤ 0$.
+-/
+
+##

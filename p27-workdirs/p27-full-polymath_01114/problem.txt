@@ -1,0 +1,1 @@
+In a certain country, every city is connected to at least $k$ other cities by roads. Each road is colored either red or blue. Let $C(k)$ be the largest integer such that there must exist a cycle without self-intersections consisting of at least $C(k)$ roads of the same color. Find $C(2008)$.

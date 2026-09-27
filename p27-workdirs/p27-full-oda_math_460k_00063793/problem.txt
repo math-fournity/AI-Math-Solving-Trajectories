@@ -1,0 +1,1 @@
+Find all integer homogeneous polynomials $F(x,y) \in \mathbb{Z}[x,y]$ such that for infinitely many pairs $(m,n) \in \mathbb{N}^{2}$, the integer $F(2^{m},3^{n})$ is a perfect square.

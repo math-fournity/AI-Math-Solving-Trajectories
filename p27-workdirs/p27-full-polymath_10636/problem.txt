@@ -1,0 +1,1 @@
+A specialized logistics hub is designing a series of $n$ modular storage zones. Each zone $i$ (where $i$ ranges from $1$ to $n$) is defined by two integer dimensions: a horizontal safety buffer and a vertical stacking height, denoted as $H_i$ and $V_i$ respectively.

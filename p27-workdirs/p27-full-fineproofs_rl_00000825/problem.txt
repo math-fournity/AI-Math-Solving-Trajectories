@@ -1,0 +1,1 @@
+Ann and Bob play a game on an infinite checkered plane making moves in turn; Ann makes the first move. A move consists in orienting any unit grid-segment that has not been oriented before. If at some stage some oriented segments form an oriented cycle, Bob wins. Does Bob have a strategy that guarantees him to win?

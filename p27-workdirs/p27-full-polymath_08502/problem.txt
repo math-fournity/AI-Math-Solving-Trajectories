@@ -1,0 +1,1 @@
+A specialized deep-sea research vessel is monitoring a tectonic rift. The team is calculating the total pressure (P) exerted at a specific depth, which is expressed by the following mathematical model:

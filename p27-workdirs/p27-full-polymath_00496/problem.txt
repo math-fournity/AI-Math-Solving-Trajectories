@@ -1,0 +1,1 @@
+$N$ digits - ones and twos - are arranged in a circle. A sequence is called an image if it is formed by several digits placed consecutively (clockwise or counterclockwise). What is the smallest value of $N$ such that all four-digit numbers, whose digits consist only of $1$s and $2$s, can appear among the images?

@@ -1,0 +1,1 @@
+In a sprawling metropolitan telecommunications network, engineers are connecting $n$ distinct server hubs ($n \geq 6$) using high-speed fiber-optic cables. Each cable directly links exactly two hubs, and any two hubs can be connected by at most one cable.

@@ -1,0 +1,1 @@
+Determine the cardinality of the set of continuous functions from a metric space $(X, d)$ to itself, given that $(X, d)$ has $rak{c}$ open sets and assuming the Cantor-Schröder-Bernstein theorem holds.

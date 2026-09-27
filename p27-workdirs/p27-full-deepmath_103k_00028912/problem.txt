@@ -1,0 +1,1 @@
+Let $\mathbb{F}$ be a field of characteristic 0 with infinite transcendence degree. If $\mathbb{F}$ has countably many irreducible polynomials, determine the number of automorphisms of $\mathbb{F}$.

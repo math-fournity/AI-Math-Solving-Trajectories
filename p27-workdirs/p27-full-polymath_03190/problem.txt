@@ -1,0 +1,1 @@
+11 points are placed at equal distances on a circle. Several segments are drawn, with endpoints at the given points. The segments are colored in two colors such that each segment intersects at most one other segment of the same color at an internal point. Determine the maximum number of segments that can be drawn.

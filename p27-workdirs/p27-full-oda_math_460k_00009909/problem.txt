@@ -1,0 +1,1 @@
+Return your final response within \boxed{}. Let $\mathbb{N}$ be the set of positive integers. Determine all functions $g: \mathbb{N} \rightarrow \mathbb{N}$ such that $(g(m) + n)(m + g(n))$ is a perfect square for all $m, n \in \mathbb{N}$.

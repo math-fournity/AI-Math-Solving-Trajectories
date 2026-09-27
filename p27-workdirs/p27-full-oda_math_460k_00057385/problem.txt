@@ -1,0 +1,1 @@
+Determine the largest prime number \( p \) such that \( J_0(p) \) completely splits into elliptic curves over \( \mathbb{Q} \).

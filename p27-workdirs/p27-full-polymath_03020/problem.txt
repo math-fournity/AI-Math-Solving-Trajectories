@@ -1,0 +1,1 @@
+Given \( x, y, z \ge 0 \) and \( x + y + z = 1 \), find the minimum value of \( \sqrt{x^2 + xy + y^2} + \sqrt{y^2 + \sqrt{3}yz + z^2} + \sqrt{x^2 + z^2} \).

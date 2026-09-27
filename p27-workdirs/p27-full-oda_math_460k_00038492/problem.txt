@@ -1,0 +1,1 @@
+(Brazil 2012) Find the least positive integer \(n\) for which there is a positive integer \(k\) such that the last 2012 decimal digits of \(n^k\) are all 1's.

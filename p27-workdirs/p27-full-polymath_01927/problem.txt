@@ -1,0 +1,1 @@
+Given a natural number $n\geqslant 2$, find the smallest possible number of edges in a graph that has the following property: for any coloring of the vertices of the graph in $n{}$ colors, there is a vertex that has at least two neighbors of the same color as itself.

@@ -1,0 +1,1 @@
+Let $K$ be a finite $d$-dimensional simplicial complex that is homotopy equivalent to a wedge of $k$ $d$-spheres. Does $K$ necessarily contain a $d$-sphere as a subcomplex?

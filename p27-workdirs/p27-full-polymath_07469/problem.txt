@@ -1,0 +1,1 @@
+In the city of Gridland, urban planners are designing "Pathway Zones" based on transit routes. A route is defined as a continuous path of connected segments on a coordinate plane that starts at the origin $(0,0)$, ends at some positive integer coordinate $(x,y)$, and moves only one unit North or one unit East at a time along the grid lines.

@@ -1,0 +1,1 @@
+A specialized digital network consists of $n = 1000$ unique processing nodes. The architecture of the network is such that every individual node is directly linked to at least $k = 300$ other distinct nodes.

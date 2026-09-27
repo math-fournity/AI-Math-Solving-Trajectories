@@ -1,0 +1,1 @@
+In a remote digital archipelago, there are 2019 servers arranged in a perfect physical circle, indexed sequentially from 1 to 2019. Somewhere in this ring, a single high-value data packet is stored on exactly one server.

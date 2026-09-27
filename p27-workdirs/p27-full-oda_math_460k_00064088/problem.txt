@@ -1,0 +1,1 @@
+Determine the smallest integer $n$ for which the inequality \(2 \uparrow^{n+1} n > 3\uparrow^n 3 + 2\) holds, where \(\uparrow\) denotes Knuth's up-arrow notation.

@@ -1,0 +1,1 @@
+Given fixed positive integers \( n \) and \( k \) where \( n \ge 4k \), determine the minimal constant \( \lambda = \lambda(n,k) \) for which the following inequality holds for any \( a_1, a_2, \ldots, a_n > 0 \) (taking indices modulo \( n \) if required):

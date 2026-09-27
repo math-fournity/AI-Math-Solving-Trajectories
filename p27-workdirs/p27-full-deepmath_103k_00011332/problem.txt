@@ -1,0 +1,1 @@
+Let \( M \) be a \( 2 \times 2 \) matrix with entries in the ring \( \mathbb{C}[x][[y]] \) and a constant determinant. Given \( k > 0 \), does there exist a matrix \( N \) with entries in \( \mathbb{C}[x, y] \) such that \( M \mod (y^{k+1}) = N \mod (y^{k+1}) \) and \( \det M = \det N \)?

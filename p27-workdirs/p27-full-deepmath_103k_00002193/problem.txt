@@ -1,0 +1,1 @@
+Is it true that for any number field $k$ and any split simply connected algebraic group $G$ over $k$, the second Tate-Shafarevich group $Ш^2(k,T)$ is trivial for any maximal torus $T$ of $G$?

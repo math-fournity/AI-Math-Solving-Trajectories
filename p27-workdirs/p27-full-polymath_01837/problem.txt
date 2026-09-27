@@ -1,0 +1,1 @@
+Let $k > 0$ be a constant. Consider the inequality

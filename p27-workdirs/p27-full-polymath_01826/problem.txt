@@ -1,0 +1,1 @@
+Determine the minimal value of \( n \) such that one can choose 9 pairwise distinct numbers from \( \{1, 2, 3, \ldots, n\} \) and fill a 3x3 table so that the products of numbers in each row, column, and main diagonals are equal.

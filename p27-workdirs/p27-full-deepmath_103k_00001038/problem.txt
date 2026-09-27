@@ -1,0 +1,1 @@
+Consider an inverse system \( \{A_i\} \) of commutative, unital Noetherian rings with a finite index set. Determine whether the inverse limit \( \varprojlim A_i \) is also a Noetherian ring.

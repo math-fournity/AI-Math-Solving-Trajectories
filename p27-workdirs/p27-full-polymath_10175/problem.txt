@@ -1,0 +1,1 @@
+In a futuristic city, an architect is designing a massive plaza in the shape of a convex polygon with exactly 2025 structural pillars (vertices) positioned at various points.

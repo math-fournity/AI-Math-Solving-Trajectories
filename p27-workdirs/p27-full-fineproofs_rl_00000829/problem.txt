@@ -1,0 +1,1 @@
+Annie has a permutation  $(a_1, a_2, \dots ,a_{2019})$  of  $S=\{1,2,\dots,2019\}$ , and Yannick wants to guess her permutation. With each guess Yannick gives Annie an  $n$ -tuple  $(y_1, y_2, \dots, y_{2019})$  of integers in  $S$ , and then Annie gives the number of indices  $i\in S$  such that  $a_i=y_i$ .

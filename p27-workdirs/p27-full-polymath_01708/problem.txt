@@ -1,0 +1,1 @@
+let ${a_{n}}$ be a sequence of integers,$a_{1}$ is odd,and for any positive integer $n$,we have

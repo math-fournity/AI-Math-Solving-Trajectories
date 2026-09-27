@@ -1,0 +1,1 @@
+In a futuristic circular city, a lead architect is designing a high-security plaza shaped like a perfect regular polygon with $n$ equal sides. To provide structural support, laser-beam cables are stretched between the vertices of the plaza, acting as internal diagonals.

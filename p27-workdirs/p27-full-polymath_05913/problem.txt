@@ -1,0 +1,1 @@
+A specialized logistics company manages an infinite series of delivery hubs, indexed $n = 1, 2, 3, \dots$. Each hub $n$ is assigned a specific number of crates, $a_n$, which must be a positive whole number.

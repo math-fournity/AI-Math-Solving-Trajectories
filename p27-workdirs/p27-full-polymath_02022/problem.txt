@@ -1,0 +1,1 @@
+There are \( n \) high schools in a city, with the \( i \)-th high school having \( c_i \) students where \( 1 \leq c_i \leq 39 \) and \( \sum_{i=1}^{n} c_i = 1990 \). Each row of the gym has exactly 199 seats. Students from the same school must sit in the same row. Find the minimum number of rows required to seat all the students.

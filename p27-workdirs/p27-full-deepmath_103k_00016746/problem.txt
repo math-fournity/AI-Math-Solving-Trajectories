@@ -1,0 +1,1 @@
+Evaluate the integral \( \int_{0}^{\infty} \cos(pr)p\sqrt{p^2 + m^2} \, dp \) given that \( \int_{-\infty}^{\infty} e^{-ipr}p\sqrt{p^2 + m^2} \, dp = 0 \), where \( r \) and \( m \) are constants.

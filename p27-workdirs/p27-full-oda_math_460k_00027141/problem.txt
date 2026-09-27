@@ -1,0 +1,1 @@
+Consider the set \( S = \{1, 2, \ldots, 4n\} \). Let \( f(n) \) be the number of ways to choose \( 2n \) fractions from \( S \) such that the numerators and denominators are pairwise different, the product of any \( n \) fractions is an integer, and the product of any \( n+1 \) fractions is not an integer. Find the smallest value of \( n \) for which \( f(n) = 0 \).

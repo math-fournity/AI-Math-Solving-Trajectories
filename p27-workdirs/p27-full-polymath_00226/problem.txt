@@ -1,0 +1,1 @@
+Let \( n \) denote the product of the first \( 2013 \) primes. Find the sum of all primes \( p \) with \( 20 \leq p \leq 150 \) such that

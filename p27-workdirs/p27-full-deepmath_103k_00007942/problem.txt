@@ -1,0 +1,1 @@
+Given a normal surface $S$ and a smooth curve $C$ with a flat morphism $\pi: S \to C$, consider a fiber $F$ of $\pi$ in $S$ over $C$. The fiber $F$ is not integral and has no embedded points, and its genus is $0$. Determine the value of $h^0(F, \mathcal O_F)$. Provide a brief justification for your answer.

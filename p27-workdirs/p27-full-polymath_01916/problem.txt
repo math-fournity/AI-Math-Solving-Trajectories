@@ -1,0 +1,1 @@
+Let $H$ be a subgroup with $h = 7$ elements in a group $G$. Suppose that $G$ has an element $a$ such that for all $x \in H$, $(xa)^3 = 1$. Let $P$ be the subset of $G$ containing all elements that can be expressed as a product $x_1 a x_2 a \cdots x_n a$ for some positive integer $n$ and elements $x_i \in H$. Find the maximum possible number of elements in $P$.

@@ -1,0 +1,1 @@
+Let $G$ be a group with generators $a, b \in G$. Define $\mathrm{len}:G\to\mathbb{Z}_{\geq 0}$ by sending $g$ to the minimum length of a word in $a, b, a^{-1}, b^{-1}$ equal to $g$. Assume that for all $g \neq e \in G$, there are infinitely many $n \in \mathbb{Z}_{\geq 0}$ such that $\mathrm{len}(g^{n+1}) < \mathrm{len}(g^n)$. Must every element of $G$ be of finite order?

@@ -1,0 +1,1 @@
+Let $E/F$ be a finite extension. Let $L$ and $K$ be two intermediate fields such that $L \cap K = F$ and $[L : F] [K:F] = [E:F]$. Does it necessarily follow that the compositum $LK$ equals $E$?

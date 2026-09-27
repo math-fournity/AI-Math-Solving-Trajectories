@@ -1,0 +1,1 @@
+Two players alternately write divisors of $N!$ on a blackboard, ensuring no number is already present on the board. The player whose move results in the greatest common divisor (GCD) of all written numbers being $1$ loses the game. Let $W(N) = 1$ if the first player has a winning strategy and $W(N) = 2$ if the second player has a winning strategy.

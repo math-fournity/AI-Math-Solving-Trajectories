@@ -1,0 +1,1 @@
+Let  $ABC$  be a scalene triangle,  $M$  be the midpoint of  $BC,P$  be the common point of  $AM$  and the incircle of  $ABC$  closest to  $A$ , and  $Q$  be the common point of the ray  $AM$  and the excircle farthest from  $A$ . The tangent to the incircle at  $P$  meets  $BC$  at point  $X$ , and the tangent to the excircle at  $Q$  meets  $BC$  at  $Y$ . Prove that  $MX=MY$ .

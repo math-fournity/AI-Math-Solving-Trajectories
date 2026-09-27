@@ -1,0 +1,1 @@
+A team of logistics engineers is tasked with managing the fluctuating daily power demands of a high-tech facility over a period of $2022$ consecutive days. The specific power demand for each day $n$ is recorded as a real number $x_n$, where $n = 1, 2, \ldots, 2022$.

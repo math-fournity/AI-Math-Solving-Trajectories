@@ -1,0 +1,1 @@
+Let $f(z)$ be a holomorphic function in the angle $A=\{0<\arg z<\frac{\pi}{2}\}$, continuous in $\bar{A}$, satisfying $|f(z)|\le M$ on $\partial A$ and the growth condition:

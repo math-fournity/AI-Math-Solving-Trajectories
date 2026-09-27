@@ -1,0 +1,1 @@
+The country has $n \ge 3$ airports, some pairs of which are connected by bidirectional flights. Every day, the government closes the airport with the strictly highest number of flights going out of it. What is the maximum number of days this can continue?

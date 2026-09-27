@@ -1,0 +1,1 @@
+In the futuristic city of Neoterra, a digital architect is designing a recursive security protocol using encrypted data strings within a specialized 11-bit processor environment (represented by the field $\mathbb{F}_{11}$). The architect defines a sequence of data-structure polynomials, $f_0, f_1, f_2, \dots$, where the initial structure is $f_0(x) = x$.

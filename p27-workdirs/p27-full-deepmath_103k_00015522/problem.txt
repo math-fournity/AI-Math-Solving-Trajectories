@@ -1,0 +1,1 @@
+Find the rank of the image of the homomorphism $H_2(Q) \to H_2(\tilde{X})$ in the blow-up of $\mathbb{CP}^{3}$ at a planar nodal cubic curve, where $Q$ is the smooth quadric surface replacing the node in the blow-up.

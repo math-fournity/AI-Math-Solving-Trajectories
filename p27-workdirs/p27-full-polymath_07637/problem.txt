@@ -1,0 +1,1 @@
+A specialized microchip architecture consists of a grid of processing nodes arranged in 2009 rows and 2011 columns. To optimize heat dissipation, the nodes are manufactured in two different materials, "Type-A" and "Type-B," alternating in a checkerboard pattern across the entire grid.

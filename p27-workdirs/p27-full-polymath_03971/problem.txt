@@ -1,0 +1,1 @@
+Determine the smallest possible number $n> 1$ such that there exist positive integers $a_{1}, a_{2}, \ldots, a_{n}$ for which ${a_{1}}^{2}+\cdots +{a_{n}}^{2}\mid (a_{1}+\cdots +a_{n})^{2}-1$.

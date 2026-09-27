@@ -1,0 +1,1 @@
+What is the least upper bound for the Hausdorff dimension of the graph of a real-valued, continuous function on an interval? Is this least upper bound attained by some function?

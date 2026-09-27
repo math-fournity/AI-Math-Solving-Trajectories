@@ -1,0 +1,1 @@
+Given distinct positive integers $a_1, a_2, \ldots, a_{n+1}$ with $n > 1$, determine whether there exists a polynomial $p(x) \in \mathbb{Z}[x]$ of degree $\le n$ such that:

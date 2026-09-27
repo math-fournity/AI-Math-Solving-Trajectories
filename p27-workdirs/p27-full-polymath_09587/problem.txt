@@ -1,0 +1,1 @@
+In a remote high-tech data facility, there are 6 glowing power nodes arranged in a perfect circle, forming the vertices of a regular hexagon. Each node is initially loaded with a non-zero integer power level, such that the total sum of all six power levels is exactly $n$.

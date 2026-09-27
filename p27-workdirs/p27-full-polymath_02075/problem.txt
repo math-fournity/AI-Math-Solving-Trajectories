@@ -1,0 +1,1 @@
+Let \( P(x) \) be a polynomial of degree 100 with real coefficients such that \( P(x) - 1 \) has 65 distinct real roots, and \( P(x) + 1 \) has 85 distinct real roots. Determine the minimal possible number of roots of \( P(x) \).

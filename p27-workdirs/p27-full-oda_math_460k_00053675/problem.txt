@@ -1,0 +1,1 @@
+Give an example of a trigonometric series\n\n\[\n\sum_{n=1}^{\infty} \left(a_n \cos nx + b_n \sin nx\right)\n\]\neverywhere divergent and such that\n\n\[\n\sum_{n=1}^{\infty} \left(a_n^{2+\varepsilon} + b_n^{2+\varepsilon}\right) < +\infty\n\]\nfor every \( \varepsilon > 0 \).

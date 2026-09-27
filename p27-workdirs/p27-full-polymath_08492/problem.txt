@@ -1,0 +1,1 @@
+In a specialized logistics hub, high-capacity cargo ships are loaded with containers of varying weights. For any shipment consisting of a group of $n$ containers (where $n > 3$ is an integer), a security protocol requires identifying "balanced groupings." A balanced grouping is a non-empty subset of the containers whose total weight is exactly divisible by a specific integer $k$.

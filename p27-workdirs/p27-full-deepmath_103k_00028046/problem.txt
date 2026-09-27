@@ -1,0 +1,1 @@
+Determine the number of 5-cells {3,3,3} (pentachora) with a circumscribed diameter of \( \frac{1}{2} \) that can fit into a 600-cell {3,3,5} (hexacosichoron) with a circumscribed diameter of 1.

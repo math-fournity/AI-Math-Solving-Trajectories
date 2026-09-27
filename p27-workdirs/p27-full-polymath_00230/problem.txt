@@ -1,0 +1,1 @@
+The cells of an $m \times n$ table, where $m, n \geq 5$, are colored in three colors such that:

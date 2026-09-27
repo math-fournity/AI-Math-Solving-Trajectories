@@ -1,0 +1,1 @@
+11.2. Given that the weight ratio of any two out of $N$ weights belongs to $\left[\frac{4}{5}, \frac{5}{4}\right]$, and these $N$ weights can be divided into 10 groups of equal weight, as well as 11 groups of equal weight. Find the minimum possible value of $N$.

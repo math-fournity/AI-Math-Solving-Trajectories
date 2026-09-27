@@ -1,0 +1,1 @@
+Let $p$ be an odd prime number, $G$ a finitely generated nonabelian profinite group, and $L \lhd_o G$ a pro-$p$ group with $[G : L] = 2$. Suppose there is a continuous surjection from $G$ onto a free pro-$p$ group of rank $d(G)$. Must $L$ be a free pro-$p$ group? Here, $d(G)$ is the smallest cardinality of a generating set of $G$. Provide a justification for your answer.

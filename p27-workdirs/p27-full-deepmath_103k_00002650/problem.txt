@@ -1,0 +1,1 @@
+For which values of $k$ is the blow-up $X_k = Bl_{p_1,...,p_k}\mathbb{P}^2$ of $\mathbb{P}^2$ at $k$ general points a Mori Dream Space?

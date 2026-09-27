@@ -1,0 +1,1 @@
+Is it possible for positive integers to satisfy the equation \(a^n + b^n = c^n\) for any integer \(n > 2\)?

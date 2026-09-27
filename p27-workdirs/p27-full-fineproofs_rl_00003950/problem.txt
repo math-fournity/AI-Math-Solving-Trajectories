@@ -1,0 +1,1 @@
+Let $n \geq 0$ be an integer, and $x_{1}, x_{2}, \ldots, x_{n+1}$ be strictly positive real numbers such that $\prod_{k=1}^{n+1} x_{i}=1$. Prove that

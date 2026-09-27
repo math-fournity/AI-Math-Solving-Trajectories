@@ -1,0 +1,1 @@
+Determine whether the closure of the set \( \left\{\frac{\tan(n)}{n} \mid n \in \mathbb{N} \right\} \) is equal to \( \mathbb{R} \).

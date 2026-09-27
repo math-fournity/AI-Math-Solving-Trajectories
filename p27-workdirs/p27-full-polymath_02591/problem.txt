@@ -1,0 +1,1 @@
+In the expression $A=1 * 2 * 3 * \cdots * n$, each of the asterisks is replaced with a sign for addition or multiplication, resulting in a composite number whose smallest prime divisor is denoted by $p$. Let $p_{n}$ be the largest prime number $p$ that can be obtained in this way. Find $p_7 + p_8$.

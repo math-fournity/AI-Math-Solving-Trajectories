@@ -1,0 +1,1 @@
+Find all pairs of nonzero integer values \( m \leq n \) that satisfy the inequality \( m+n \neq 0 \) and the identity

@@ -1,0 +1,1 @@
+Let \( n \geq 4 \) be a natural number. The polynomials \( x^{n+1} + x \), \( x^n \), and \( x^{n-3} \) are written on the board. In one move, you can choose two polynomials \( f(x) \) and \( g(x) \) (not necessarily distinct) and add the polynomials \( f(x)g(x) \), \( f(x) + g(x) \), and \( f(x) - g(x) \) to the board.

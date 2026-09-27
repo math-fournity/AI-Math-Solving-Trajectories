@@ -1,0 +1,1 @@
+In a specialized logistics sector, a fleet manager oversees a range of 50 consecutive shipping containers labeled with serial numbers from $M$ to $M+49$, where $M$ is a positive integer.

@@ -1,0 +1,1 @@
+Given an initial integer $n_0 > 1$, two players $A$ and $B$ choose integers $n_1, n_2, n_3, \ldots$ alternately according to the following rules:

@@ -1,0 +1,1 @@
+Consider the polynomial \( T(x) = x^3 + 17x^2 - 1239x + 2001 \). Define \( T_1(x) = T(x) \) and \( T_{n+1}(x) = T(T_n(x)) \) for every \( n = 1, 2, 3, \ldots \). Find the smallest positive integer \( n > 1 \) such that \( T_n(x) - x \) is divisible by 2003 for every integer \( x \).

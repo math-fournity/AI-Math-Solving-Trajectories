@@ -1,0 +1,1 @@
+In a remote research outpost, three atmospheric sensors—Alpha, Beta, and Gamma—record data levels denoted by $a$, $b$, and $c$, respectively. Due to the physical limitations of the station’s hardware, these levels are strictly regulated by the fundamental stability equation:

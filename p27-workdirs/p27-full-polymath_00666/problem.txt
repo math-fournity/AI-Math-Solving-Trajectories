@@ -1,0 +1,1 @@
+A unit square from one of the corners of an $8 \times 8$ chessboard is cut and thrown away. At least how many triangles are necessary to divide the new board into triangles with equal areas?

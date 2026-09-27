@@ -1,0 +1,1 @@
+Find the range of values for the real parameter $a$ such that the equation $(x-1)^5 = a(x^5 - 1)$ has exactly three real roots and two imaginary roots. If the solution is an interval $I$, find the sum of all integers $a$ that are contained in $I$.

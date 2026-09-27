@@ -1,0 +1,1 @@
+In a specialized laboratory, an electronic filter processes a signal $z$. The input signal $z$ is a complex frequency with a maximum magnitude (modulus) of 1. The filter’s output is determined by the quadratic transformation $F(z) = az^2 + bz + c$, where $a, b,$ and $c$ are complex-valued tuning coefficients.

@@ -1,0 +1,1 @@
+Given a set $X=\mathbb{R}$ and a finite family $\mathcal{F}$ of subsets, each being a union of at most $n$ points and intervals in $\mathbb{R}$, where any two sets in $\mathcal{F}$ intersect, determine if there exists a finite transversal set for $\mathcal{F}$ with cardinality $n$.

@@ -1,0 +1,1 @@
+A [i]calendar[/i] is a (finite) rectangular grid. A calendar is [i]valid[/i] if it satisfies the following conditions:

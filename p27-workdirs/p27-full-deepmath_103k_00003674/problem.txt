@@ -1,0 +1,1 @@
+Find the least possible degree of the polynomial \( f(x) \) in the expression \( \frac{d^{100}}{dx^{100}}\left(\frac{p(x)}{x^3-x}\right) = \frac{f(x)}{g(x)} \), where \( p(x) \) is a polynomial that does not have the factor \( x^3-x \).

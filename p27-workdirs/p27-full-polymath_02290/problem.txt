@@ -1,0 +1,1 @@
+Find the number of integers $n$ in the set $\{4, 5, \dots, 2024\}$ with the following property: Among any $n$ different 3-element subsets of an $n$-element set, one can always choose two subsets that have exactly one element in common.

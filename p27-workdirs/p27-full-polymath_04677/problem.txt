@@ -1,0 +1,1 @@
+Danny has a set of 15 pool balls, numbered 1, 2, ..., 15. In how many ways can he put the balls in 8 indistinguishable bins such that the sum of the numbers of the balls in each bin is 14, 15, or 16?

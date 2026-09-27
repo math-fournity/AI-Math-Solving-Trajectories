@@ -1,0 +1,1 @@
+A set $ X$ of positive integers is called [i]nice[/i] if for each pair $ a$, $ b\in X$ exactly one of the numbers $ a \plus{} b$ and $ |a \minus{} b|$ belongs to $ X$ (the numbers $ a$ and $ b$ may be equal). Determine the number of nice sets containing the number 2008.

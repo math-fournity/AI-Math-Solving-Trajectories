@@ -1,0 +1,1 @@
+Numbers $1, 2, \ldots, 64$ are written in an $8 \times 8$ board. For every two numbers $a, b$ with $a > b$ in the same row or column, the ratio $\frac{a}{b}$ is calculated. The characteristic of the board is defined as the least of these ratios. Find the greatest possible value of the characteristic.

@@ -1,0 +1,1 @@
+In a specialized logistics hub, there are $n$ unique chemical components stored in individual canisters, labeled $S = \{1, 2, \dots, n\}$ (where $n \geq 2$).

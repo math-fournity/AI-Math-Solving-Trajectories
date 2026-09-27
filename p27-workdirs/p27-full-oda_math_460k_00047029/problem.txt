@@ -1,0 +1,1 @@
+Find all positive integer solutions \((c, d)\) to the equation \[1372c^4 - d^2 = 3.\]

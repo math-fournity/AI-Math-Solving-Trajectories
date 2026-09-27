@@ -1,0 +1,1 @@
+Let \( \triangle ABC \) be an acute non-equilateral triangle with \(\angle BAC = 60^\circ\). The Euler line of triangle \( \triangle ABC \) intersects side \( BC \) at point \( X \) such that \( B \) lies between \( X \) and \( C \). Given that \( XA = 49 \) and \( XB = 23 \), compute \( XC \).

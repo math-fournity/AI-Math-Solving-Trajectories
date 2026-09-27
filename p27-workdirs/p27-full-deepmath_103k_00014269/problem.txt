@@ -1,0 +1,1 @@
+Consider a fibre bundle \( F \to E \xrightarrow{\pi} B \) over a connected and compact base \( B \), where both the fibre \( F \) and the base \( B \) have the homotopy type of a CW complex. Does the total space \( E \) necessarily have the homotopy type of a CW complex?

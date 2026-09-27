@@ -1,0 +1,1 @@
+Given positive numbers $a$, $b$, and $c$ such that $\dfrac{1}{a} + \dfrac{1}{b} + \dfrac{1}{c} \le 3$, find the maximum value of the expression:

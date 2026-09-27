@@ -1,0 +1,1 @@
+Determine the minimum number of charts needed to parametrize the subset \( C \) of \( \mathbb{R}^{3} \) defined by \( C = \{(x,y,z) \in \mathbb{R}^{3} \mid 0 \leq x \leq 1, \ 0 \leq y \leq 1, \ z = x^{2} + y^{2} \} \). Consider the circular nature of the boundary where \( z = 1 \).

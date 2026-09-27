@@ -1,0 +1,1 @@
+Exercise 10. 22 cards bearing the numbers $1,2, \ldots, 22$ are on the table. Alcindor and Benoît take turns removing a card of their choice from the table, until there are none left. Alcindor goes first. Then each calculates the units digit of the sum of their cards. The winner is the one with the highest result.

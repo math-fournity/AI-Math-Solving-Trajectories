@@ -1,0 +1,1 @@
+Determine whether the unit square $[0,1]^2$ can be completely covered by translates of squares $[0,a_i]^2$, given that the sequence of positive real numbers $a_i$ satisfies $\sum a_i^2 = \infty$. Provide a justification for your answer.

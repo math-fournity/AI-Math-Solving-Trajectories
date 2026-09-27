@@ -1,0 +1,1 @@
+Suppose $M$ and $N$ are manifolds, and $\mathbb{R}^n \times M$ is diffeomorphic to $\mathbb{R}^n \times N$ for some natural number $n$. Determine if it is possible for $M$ and $N$ to not be diffeomorphic.

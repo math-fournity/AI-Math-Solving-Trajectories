@@ -1,0 +1,1 @@
+If the maximum of positive integer \( k \) for which the following holds is \( M \) and the minimum of such integer \( k \) is \( m \), calculate \( M+m \). There exist sets \( A \) and \( B \) with \( k \) integers as their elements such that \(\{a+b \mid a \in A, b \in B\} = \{0,1,2, \ldots, 100\}\).

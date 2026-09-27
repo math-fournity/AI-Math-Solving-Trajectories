@@ -1,0 +1,1 @@
+Evaluate the integral: $$\int_0^1\frac{\mathrm dx}{\sqrt{1-x^\frac{2}{3}}\ \sqrt[3]{2-x^\frac{1}{2}}\ \sqrt[6]x}$$

@@ -1,0 +1,1 @@
+Let $P$ be a convex $n$-gon in the plane. For every three vertices of $P$, consider the triangle formed by them. A triangle is called "good" if all its sides are of unit length. Let $T(n)$ be the maximum possible number of good triangles in such a polygon. Find the value of $T(2025)$.

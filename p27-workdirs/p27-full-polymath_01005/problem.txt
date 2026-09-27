@@ -1,0 +1,1 @@
+Uncle Fyodor and the cat Matroskin are playing a game with a row of $100 N$ sandwiches, each with sausage and cheese. The game proceeds in rounds. In each round:

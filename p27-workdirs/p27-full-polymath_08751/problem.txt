@@ -1,0 +1,1 @@
+A specialized logistics firm manages a network of $n$ distinct storage hubs, labeled $H_1, H_2, \dots, H_n$, where $n$ is an integer such that $n \ge 2$. Each hub $H_i$ contains a non-empty collection of unique digital security keys.

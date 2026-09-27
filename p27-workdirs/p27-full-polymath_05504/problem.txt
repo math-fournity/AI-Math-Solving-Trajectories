@@ -1,0 +1,1 @@
+Let \( q < 50 \) be a prime number. Call a sequence of polynomials \( P_{0}(x), P_{1}(x), P_{2}(x), \ldots, P_{q^{2}}(x) \) tasty if it satisfies the following conditions:

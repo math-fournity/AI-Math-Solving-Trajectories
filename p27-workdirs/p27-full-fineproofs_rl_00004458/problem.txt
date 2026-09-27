@@ -1,0 +1,1 @@
+Quadrilateral  $ABCD$  is inscribed into a circle with center  $O$ . The bisectors of its angles form a cyclic quadrilateral with circumcenter  $I$ , and its external bisectors form a cyclic quadrilateral with circumcenter  $J$ . Prove that  $O$  is the midpoint of  $IJ$ .

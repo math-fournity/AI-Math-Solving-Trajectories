@@ -1,0 +1,1 @@
+In a specialized logistics network, there are $2n$ available transmission hubs, uniquely numbered from $1$ to $2n$. A service provider must select a configuration $F$ consisting of exactly $n$ distinct hubs from this set.

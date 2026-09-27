@@ -1,0 +1,1 @@
+In the city of Centuria, there are exactly $n = 100$ districts arranged in a circular perimeter, labeled $1, 2, \ldots, 100$. For any index $i$ greater than 100, the district $i$ refers back to district $i \pmod{100}$ (specifically, $a_{100+i} = a_i$ for all $i \geq 1$).

@@ -1,0 +1,1 @@
+A high-tech particle accelerator features a circular track equipped with 2,012 equidistant sensors labeled sequentially around the perimeter. To perform a specific experiment, a team of researchers must activate a subset of $k$ sensors. When these $k$ sensors are active, they form the vertices of a convex $k$-gon.

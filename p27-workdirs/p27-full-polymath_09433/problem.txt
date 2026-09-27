@@ -1,0 +1,1 @@
+In a remote circular sanctuary defined by a boundary fence $\omega$, four landmark towers are positioned at coordinates $A_0, B, C_0,$ and $D$ in clockwise order along the perimeter. Surveyors have measured the direct walking distances between the towers: the path from $A_0$ to $B$ is 3 km, $B$ to $C_0$ is 4 km, $C_0$ to $D$ is 6 km, and $D$ back to $A_0$ is 7 km.

@@ -1,0 +1,1 @@
+Let integers $n > k > 1$, and let $z_1, z_2, \ldots, z_n$ be complex numbers with modulus at most 1. Prove that

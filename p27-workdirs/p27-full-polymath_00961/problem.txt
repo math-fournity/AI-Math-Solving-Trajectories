@@ -1,0 +1,1 @@
+Find the greatest possible integer $n$ such that one can place $n$ points in a plane with no three on a line, and color each of them either red, green, or yellow so that:

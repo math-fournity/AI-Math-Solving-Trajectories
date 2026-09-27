@@ -1,0 +1,1 @@
+Let \( K = \mathbb{Q}(\sqrt[2n]{a}) \) where \( a \) is a square-free integer and \( n \) is a positive integer. Calculate the number of nontrivial subfields of \( K \) which are Galois over \( \mathbb{Q} \) when \( n = 10 \).

@@ -1,0 +1,1 @@
+Let \( A = \{a_1 < \ldots < a_n\} \) be a set of real numbers with the property that \( a_i - a_{i-1} < a_{i+1} - a_i \) for any \( i \in \{1, 2, \ldots, n-1\} \). Define \( f(n) = \frac{|A + A|}{|A|^{\frac{3}{2}}} \) and \( g(n) = \frac{|A - A + A|}{|A|^2} \). Find the minimum value of \( f(n) + g(n) \) for \( n \geq 3 \).

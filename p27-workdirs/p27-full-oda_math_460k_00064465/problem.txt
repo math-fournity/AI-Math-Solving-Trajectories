@@ -1,0 +1,1 @@
+Consider a nonminimal translation on $\mathbb{R}^n$. Let $O$ be the orbit of this translation and $\overline{O}$ be its closure. If $\overline{O}$ consists of a finite union of circles, calculate the maximum number of circles that can be in $\overline{O}$ when $n=3$.

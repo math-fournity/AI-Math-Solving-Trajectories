@@ -1,0 +1,1 @@
+A specialized deep-sea submersible begins its mission at a depth coordinate of 1 kilometer and a lateral offset of 0 kilometers, represented as the position $(1,0)$. The pilot adjusts the vessel's coordinates once every minute. If the current position is $(a,b)$, the pilot must transition the vessel to exactly one of the following three new coordinate sets:

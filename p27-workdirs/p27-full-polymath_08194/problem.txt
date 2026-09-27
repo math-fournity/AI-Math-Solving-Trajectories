@@ -1,0 +1,1 @@
+In a large logistics network with $n$ hubs, a "route-swap" is defined as a protocol that exchanges the cargo destinations of exactly two distinct hubs while leaving all other $n-2$ hubs unaffected.

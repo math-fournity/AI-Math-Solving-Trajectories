@@ -1,0 +1,1 @@
+In a global telecommunications network, there are several data hubs. From every single hub, there are exactly two dedicated one-way fiber-optic cables transmitting data to two other distinct hubs.

@@ -1,0 +1,1 @@
+A rook moves on a chessboard without visiting the same square twice and avoids the squares on one of the diagonals (called the fence). What is the maximum number of times the rook can jump over the fence?

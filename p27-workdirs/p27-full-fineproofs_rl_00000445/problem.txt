@@ -1,0 +1,1 @@
+5. Given $n$ points in the plane such that no three of them are collinear, prove that one can find at least $\binom{n-3}{2}$ convex quadrilaterals with their vertices at these points.

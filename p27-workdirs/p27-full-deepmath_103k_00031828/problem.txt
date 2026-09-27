@@ -1,0 +1,1 @@
+Let $x_0, x_1, \ldots, x_{1368}$ be complex numbers. For an integer $m$, let $d(m)$ and $r(m)$ be the unique integers satisfying $0 \leq r(m) < 37$ and $m = 37d(m) + r(m)$. Define the $1369 \times 1369$ matrix $A = \{a_{i,j}\}_{0 \leq i, j \leq 1368}$ as follows:

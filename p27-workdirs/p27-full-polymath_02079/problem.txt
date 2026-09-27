@@ -1,0 +1,1 @@
+An $8 \times 8$ table is divided into $64$ unit squares. In some of these unit squares, a diagonal is drawn. If none of these diagonals have any common point, what is the maximum number of diagonals that can be drawn?

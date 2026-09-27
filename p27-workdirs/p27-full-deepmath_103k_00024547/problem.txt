@@ -1,0 +1,1 @@
+Let $G$ be a group and $M$ be a maximal subgroup of $G$. Let $G'$ and $M'$ be the Zariski closures of $G$ and $M$, respectively. Determine if $M'$ is a maximal subgroup of $G'$ in the abstract group sense, given that it is maximal in the algebraic groups sense.

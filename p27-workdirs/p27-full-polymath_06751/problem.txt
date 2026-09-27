@@ -1,0 +1,1 @@
+In a specialized logistics warehouse, there is a narrow conveyor system consisting of two parallel tracks, each divided into 13 distinct loading zones. The tracks are arranged in two rows: the "Front Row" and the "Back Row."

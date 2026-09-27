@@ -1,0 +1,1 @@
+If a honeycomb graph has \( n \) vertices, what is the maximum number of edges it can have?

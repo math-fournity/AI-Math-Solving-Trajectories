@@ -1,0 +1,1 @@
+Determine the number of connected components of the set \( L \cap \Delta \), where \( L = \alpha b \) is a line in \( \mathbb{R}^n \) with \( \alpha \in \mathbb{R} \) and \( b \in \mathbb{R}^n \) is fixed, and \( \Delta = \{ x \in \mathbb{R}^n : \pi(x) \text{ has roots in the open unit disk of } \mathbb{C} \} \). Assume \( n > 2 \).

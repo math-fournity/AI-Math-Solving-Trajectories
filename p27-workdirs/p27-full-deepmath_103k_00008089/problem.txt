@@ -1,0 +1,1 @@
+Given an infinite set \(P\), is there an ordering relation \(\leq\) such that the poset \((P, \leq)\) is surjectively rigid, meaning the only order-preserving surjective map \(f: P \to P\) is the identity \(\text{id}_P\)?

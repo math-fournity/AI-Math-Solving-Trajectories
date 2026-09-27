@@ -1,0 +1,1 @@
+In a sprawling urban grid consisting of an $n \times n$ network of districts, a logistics company is installing specialized supply hubs. Each district is assigned a unique security clearance level, represented by a distinct integer from $1$ to $n^2$.

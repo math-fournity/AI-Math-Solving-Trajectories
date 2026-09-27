@@ -1,0 +1,1 @@
+Maximise the expression \(x^4 + y^4 - 2z^4 - 3 \sqrt{2} xyz\) given that \(x^2 + y^2 + z^2 = 1\) and \(x, y, z\) are real numbers.

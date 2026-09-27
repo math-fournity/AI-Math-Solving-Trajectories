@@ -1,0 +1,1 @@
+In a remote territory, a telecommunications company is planning to install a network of signal towers. These towers are to be positioned such that no three towers lie on the same straight line.

@@ -1,0 +1,1 @@
+Let \( A \) be a Noetherian ring with an embedded associated prime. Suppose \( a \in A \) is a non-zero divisor such that \( \bigcap_{n=1}^{\infty} a^n A = (0) \). Let \( P \) be an embedded associated prime of \( A \). Find the number of distinct embedded associated primes of \( A/(a) \) if \( P \) is not minimal over \( (a) \).

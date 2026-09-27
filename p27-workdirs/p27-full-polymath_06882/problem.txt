@@ -1,0 +1,1 @@
+A logistics company operates a fleet of 16 delivery drones, arranged in a strictly fixed $4 \times 4$ docking hangar. Two rival technicians, Abel and Cain, are competing to claim territory for their respective software updates. Abel goes first, and they alternate turns.

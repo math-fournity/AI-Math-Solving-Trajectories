@@ -1,0 +1,1 @@
+Evaluate the integral \( \int_{-\infty}^{+\infty} \frac{\exp(1-ix)}{x^2+1} \, dx \) and determine if its value is \( \pi \).

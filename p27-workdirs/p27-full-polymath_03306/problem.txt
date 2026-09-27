@@ -1,0 +1,1 @@
+A committee had 40 meetings, with 10 committee members attending each meeting. Every two committee members attended a meeting together at most once. Determine the minimum possible number of members in the committee.

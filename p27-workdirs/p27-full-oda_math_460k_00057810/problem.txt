@@ -1,0 +1,1 @@
+We start with \( n = 2 \) written on a board. Alice (the first player) and Bob take turns adding a divisor \( d \) of the current number \( n \) (with \( 0 < d < n \)), resulting in \( n + d \).

@@ -1,0 +1,1 @@
+Find the maximum $k \in \mathbb{N_+}$ such that

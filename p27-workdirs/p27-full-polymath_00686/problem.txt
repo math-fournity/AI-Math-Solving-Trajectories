@@ -1,0 +1,1 @@
+Let $k$ be a fixed positive integer. Alberto and Beralto play a game: starting with an initial number $N_0$, they alternately change the current number $n$ to a number $m < n$ such that $m$ and $n$ differ, in their base-2 representation, in exactly $l$ consecutive digits for some $1 \leq l \leq k$. The first player unable to move loses.

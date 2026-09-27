@@ -1,0 +1,13 @@
+/-!
+# International Mathematical Olympiad 1972, Problem 4
+
+Find all positive real solutions to:
+
+(x_1^2 - x_3x_5)(x_2^2 - x_3x_5) ≤ 0
+(x_2^2 - x_4x_1)(x_3^2 - x_4x_1) ≤ 0
+(x_3^2 - x_5x_2)(x_4^2 - x_5x_2) ≤ 0
+(x_4^2 - x_1x_3)(x_5^2 - x_1x_3) ≤ 0
+(x_5^2 - x_2x_4)(x_1^2 - x_2x_4) ≤ 0
+-/
+
+##

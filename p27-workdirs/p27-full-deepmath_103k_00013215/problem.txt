@@ -1,0 +1,1 @@
+Determine the smallest integer n such that the inequality \( \prod_{k=1}^n \frac{\arctan\left( \frac{3k+1}{\sqrt{8k^3+8k^2+2k}}\right)}{\arccos \left( \frac{1}{\sqrt{2k+1}} \right)}>1000 \) holds.

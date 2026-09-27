@@ -1,0 +1,1 @@
+Find the minimum value of \( B \) such that the inequality \( e^{|y|} \leq B |\sin (x+iy)| \) holds for all complex numbers \( z = x + iy \) satisfying \( |z - n\pi| \geq \frac{\pi}{4} \) for all integers \( n \).

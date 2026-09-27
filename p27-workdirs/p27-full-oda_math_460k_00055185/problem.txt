@@ -1,0 +1,1 @@
+Construct an example of a non-hyperbolic group of type $\mathbf{F}_{\infty}$ that does not contain any Baumslag-Solitar subgroups.

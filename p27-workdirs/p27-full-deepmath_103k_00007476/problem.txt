@@ -1,0 +1,1 @@
+Let $A$ and $B$ be subsets of the real numbers such that $|A| = |B| = n$. Determine the best-known upper bound on the number of four-tuples in $A \times B$ where the four points are co-circular.

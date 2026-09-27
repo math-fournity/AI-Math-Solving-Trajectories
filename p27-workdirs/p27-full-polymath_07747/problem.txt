@@ -1,0 +1,1 @@
+A specialized communications hub, Point $P$, is located within a territory bounded by four direct fiber-optic cables connecting four regional stations: Alpha ($A$), Bravo ($B$), Charlie ($C$), and Delta ($D$), forming a convex quadrilateral $ABCD$.

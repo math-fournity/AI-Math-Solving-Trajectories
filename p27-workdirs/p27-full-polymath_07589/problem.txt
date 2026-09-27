@@ -1,0 +1,1 @@
+In a futuristic high-security facility, 100 containment pods are arranged in a perfect ring, numbered sequentially from 1 to 100. A single digital data packet is hidden within one of these pods.

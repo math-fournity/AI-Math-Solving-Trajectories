@@ -1,0 +1,1 @@
+Each of the spots in a $8\times 8$ chessboard is occupied by either a black or white “horse”. At most how many black horses can be on the chessboard so that none of the horses attack more than one black horse?

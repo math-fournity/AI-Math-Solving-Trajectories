@@ -1,0 +1,1 @@
+For the sequence space \((l^2,\|\cdot\|_2)\) and the standard basis vectors \(e_n=(0,0,...,1,0,...)\), let \(\Phi\) be a bounded linear functional. Determine a value of \(p\geq 1\) for which the series \(\sum_{n=1}^\infty |b_n|^p\) converges, where \(b_n=\Phi(e_n)\).

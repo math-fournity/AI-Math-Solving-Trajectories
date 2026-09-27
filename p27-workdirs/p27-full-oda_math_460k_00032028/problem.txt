@@ -1,0 +1,1 @@
+Determine if the second singular cohomology group of the product of projective space over an algebraically closed field $k$ and a discrete valuation ring $R$ (which is also a $k$-algebra) is isomorphic to the integers: \( H^2(\mathbb{P}^n_k \times_k R, \mathbb{Z}) \cong \mathbb{Z} \).

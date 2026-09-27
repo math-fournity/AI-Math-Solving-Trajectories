@@ -1,0 +1,1 @@
+Determine whether there exists an integer \( n > 10^{1000} \) that is not a multiple of 10, such that by swapping two non-zero digits in its decimal representation, the resulting number has the same set of prime factors as \( n \).

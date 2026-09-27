@@ -1,0 +1,1 @@
+19. (ROM 1) Consider the sequences $\left(a_{n}\right),\left(b_{n}\right)$ defined by

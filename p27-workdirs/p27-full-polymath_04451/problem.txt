@@ -1,0 +1,1 @@
+Let \( R \) be a \( 20 \times 18 \) grid of points where adjacent points are 1 unit apart. A fly starts at a point and jumps to other points in \( R \) such that each point is visited exactly once and no two jumps intersect at a point other than an endpoint of a jump, for a total of 359 jumps. A jump is called small if it is of length 1. What is the least number of small jumps?

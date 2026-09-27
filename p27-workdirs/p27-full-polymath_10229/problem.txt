@@ -1,0 +1,1 @@
+In the high-tech logistics hub of Prime-Central, two engineers, Alice and Bob, are competing to manage a resource cache. The total capacity of the cache is determined by a value $V = p_k!$, where $p_k$ is the $k$-th prime number in the sequence $(2, 3, 5, \dots)$.

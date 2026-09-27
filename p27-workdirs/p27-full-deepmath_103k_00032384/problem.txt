@@ -1,0 +1,1 @@
+Determine the minimum number of triangles required to cover the point set \( G_{2008} = \{(i, j) \mid i=1,2, \cdots, 2008 ; j=1,2, \cdots, 2008\} \).

@@ -1,0 +1,1 @@
+In a vast digital library, every unique identification number (the set of all positive integers) is assigned to one of three specialized archival departments: the Acquisition Department ($A$), the Binding Department ($B$), and the Cataloging Department ($C$). Each department organizes its assigned IDs into its own strictly increasing sequence ($a_n, b_n,$ and $c_n$ respectively).

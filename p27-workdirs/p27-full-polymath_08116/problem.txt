@@ -1,0 +1,1 @@
+In a specialized computing facility, there are $n$ distinct server clusters. Each cluster is tasked with processing a specific set of data packets, where every packet size is a power of 2 (e.g., 1MB, 2MB, 4MB, and so on).

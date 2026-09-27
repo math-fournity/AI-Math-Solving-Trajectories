@@ -1,0 +1,1 @@
+In a massive $50 \times 50$ server farm grid, each rack slot can be occupied by a high-capacity Storage Server, a high-speed Compute Node, a specialized AI Accelerator, or it can remain as an empty Cooling Bay. No slot can hold more than one unit. Two slots are considered "linked" if they are adjacent horizontally or vertically.

@@ -1,0 +1,1 @@
+In Hilbert's Hotel, infinitely many guests are playing tag in a finite park. If the runner's speed is greater than the taggers' speed, can the runner avoid being tagged indefinitely?

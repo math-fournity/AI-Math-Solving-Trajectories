@@ -1,0 +1,1 @@
+Find the sum of the infinite series for positive real numbers $a$, $b$, and $c$:

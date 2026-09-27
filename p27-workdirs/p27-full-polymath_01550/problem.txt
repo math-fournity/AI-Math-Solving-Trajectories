@@ -1,0 +1,1 @@
+Let \( p(n) \) denote the product of all odd positive integers less than \( n \). Find the sum of all prime numbers \( n \) such that \( p(n) \equiv 8 \pmod{n} \).

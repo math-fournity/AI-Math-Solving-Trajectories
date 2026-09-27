@@ -1,0 +1,1 @@
+In a specialized digital cryptography lab, an engineer is testing a data-scrambling algorithm determined by a "Prime Factor" $p$, where $p$ is a whole number greater than 1.

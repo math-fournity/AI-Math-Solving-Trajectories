@@ -1,0 +1,1 @@
+Find a closed form expression in terms of known constants for the sum of the following integrals, which converges to approximately 0.1746809:

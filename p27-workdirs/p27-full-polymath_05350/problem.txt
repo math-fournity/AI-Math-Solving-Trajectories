@@ -1,0 +1,1 @@
+A \(4 \times 4\) square is cut along the boundaries of the cells into four identical polygons. How many ways can this be done (the ways are considered different if the resulting polygons are unequal)?

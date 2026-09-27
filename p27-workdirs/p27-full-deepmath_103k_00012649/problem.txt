@@ -1,0 +1,1 @@
+Let $C$ be the field of complex numbers, and let $f \in C[x,y]$ be a polynomial such that there exists $g \in C[x,y]$ with $\text{Jac}(f,g) \in C^{*}$, meaning the determinant of the Jacobian matrix of the polynomials $f$ and $g$ is a nonzero constant. Is it true that $f$ is irreducible?

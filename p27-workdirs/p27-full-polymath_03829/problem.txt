@@ -1,0 +1,1 @@
+Problem 10.7. At one meal, Karlson can eat no more than 5 kg of jam. If he opens a new jar of jam, he must eat it completely during this meal. (Karlson will not open a new jar if he has to eat more than 5 kg of jam together with what he has just eaten.)

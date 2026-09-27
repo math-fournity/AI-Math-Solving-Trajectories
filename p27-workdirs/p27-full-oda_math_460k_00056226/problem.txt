@@ -1,0 +1,1 @@
+Find the asymptotic values for the number of distinct oriented binary trees with \( n \) vertices, where an oriented binary tree is defined as an oriented tree in which each vertex has an in-degree of two or less. Use methods similar to those in exercise 4, which involve singularity analysis of generating functions.

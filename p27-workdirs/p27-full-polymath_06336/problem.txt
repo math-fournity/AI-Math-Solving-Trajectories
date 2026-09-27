@@ -1,0 +1,1 @@
+A specialized logistics company, "Unitary Flux," manages a network of research stations. The company defines a "Balanced Efficiency Cycle" for a set of $n$ stations, where $n$ is a positive integer not exceeding 100.

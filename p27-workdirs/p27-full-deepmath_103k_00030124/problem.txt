@@ -1,0 +1,1 @@
+Is the set \(k^R = \{crc^{-1}\mid c \in R\}\) closed in the profinite topology on \(G\) for every \(k\in K\), given that \(G = K \rtimes R\) is a conjugacy separable group where \(K\) and \(R\) are its subgroups?

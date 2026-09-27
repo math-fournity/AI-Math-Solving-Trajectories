@@ -1,0 +1,1 @@
+Determine the dimension of the ring $R[[X]]$, where $R$ is a Noetherian ring.

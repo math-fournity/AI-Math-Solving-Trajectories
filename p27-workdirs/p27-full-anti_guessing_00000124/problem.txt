@@ -1,0 +1,1 @@
+4. Solve the system of equations $\left\{\begin{array}{l}2 \cos ^{2} x+2 \sqrt{2} \cos x \cos ^{2} 4 x+\cos ^{2} 4 x=0, \\ \sin x=\cos y .\end{array}\right.$.

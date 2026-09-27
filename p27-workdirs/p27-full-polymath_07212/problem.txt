@@ -1,0 +1,1 @@
+In a high-tech manufacturing facility, a microchip is designed as a square grid consisting of $25 \times 25$ individual units. The grid is formed by internal vertical and horizontal circuit pathways that connect the units.

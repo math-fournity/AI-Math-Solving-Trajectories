@@ -1,0 +1,1 @@
+In a futuristic city, an architect is designing a series of rectangular server farms. Each server farm is defined by a grid of cooling units $S_{m,n}$ arranged in $m$ rows and $n$ columns, where $m$ and $n$ are integers between 2 and 10 inclusive ($2 \leq m, n \leq 10$). The units are spaced exactly one meter apart horizontally and vertically.

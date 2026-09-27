@@ -1,0 +1,1 @@
+In \(\triangle ABC\), \(CA = 1960 \sqrt{2}\), \(CB = 6720\), and \(\angle C = 45^\circ\). Let \(K, L, M\) lie on \(BC, CA\), and \(AB\) such that \(AK \perp BC\), \(BL \perp CA\), and \(AM = BM\). Let \(N, O, P\) lie on \(KL, BA\), and \(BL\) such that \(AN = KN\), \(BO = CO\), and \(A\) lies on line \(NP\). If \(H\) is the orthocenter of \(\triangle MOP\), compute \(HK^2\).

@@ -1,0 +1,1 @@
+Consider the unit sphere $S$ in the Urysohn space $\mathbb{U}$. Determine whether any isometry $S \to S$ can be extended to an isometry $\mathbb{U} \to \mathbb{U}$. Provide a justification for your answer.

@@ -1,0 +1,1 @@
+Determine the maximum peak of the function \( \phi(r) = a_1 J_0(\alpha r) + a_2 J_0(\beta r) \) within the interval \([0, l]\), given that \( a_1 + a_2 = 1 \), \( \alpha \) and \( \beta \) are positive parameters, and \( \phi(l) = 0 \) with \( \phi(r) \) being non-negative for \( r \in [0, l] \). Here, \( J_0 \) denotes the Bessel function of the first kind.

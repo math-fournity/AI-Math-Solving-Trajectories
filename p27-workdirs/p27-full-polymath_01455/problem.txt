@@ -1,0 +1,1 @@
+Let \( M = \left\{ (-1,-1), (-1,0), (-1,1), (0,-1), (0,0), (0,1), (1,-1), (1,0), (1,1) \right\} \). Find the smallest total length of segments in a set \( (S) \) such that one can walk from any point in \( M \) to any other point in \( M \) by traveling along segments in \( (S) \).

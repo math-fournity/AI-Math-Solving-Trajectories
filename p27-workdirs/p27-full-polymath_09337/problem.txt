@@ -1,0 +1,1 @@
+A high-tech server farm consists of $2^n$ individual processing nodes and one central master controller. The system operates on internal data packets: high-capacity "Blocks" representing $2^n$ terabytes and smaller "Fragments" of size $2^a$ terabytes, where $a \in \{0, 1, \dots, n-1\}$.

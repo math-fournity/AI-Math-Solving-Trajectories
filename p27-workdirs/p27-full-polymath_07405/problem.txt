@@ -1,0 +1,1 @@
+In a futuristic data center, a technician is optimizing the energy consumption of a modular server rack containing $n$ distinct processing units. Each unit is assigned a unique identification integer $a_j$, where $j$ ranges from $1$ to $n$. Because the units are pairwise distinct, no two processors share the same ID number.

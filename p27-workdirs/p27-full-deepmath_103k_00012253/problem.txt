@@ -1,0 +1,1 @@
+Let $X$ be an $n$-manifold, $B$ an open ball in $\Bbb R^n$, and $f \colon B \to X$ an embedding. For a point $x \in f(B)$, is the map on homology \(H_n(X,X-f(B)) \to H_n(X,X-x)\) induced by the identity map of $X$ always an isomorphism?

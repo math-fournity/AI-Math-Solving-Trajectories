@@ -1,0 +1,9 @@
+/-!
+# IMO 2009 A5
+
+Let $R$ be a totally ordered ring.
+Prove that there does not exist a function $f : R → R$ such that for all $x, y ∈ R$,
+$$ f(x - f(y)) ≤ y f(x) + x. $$
+-/
+
+##

@@ -1,0 +1,1 @@
+In a remote industrial logistics hub, there are 20 distinct docking stations located at different integer coordinates along a one-way service road. Let these coordinates be represented by $a_1, a_2, \dots, a_{20}$, where each coordinate is a positive integer.

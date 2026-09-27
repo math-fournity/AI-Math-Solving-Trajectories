@@ -1,0 +1,1 @@
+Does there exist a field $k$ and a subring $R$ of $S = M_2(k)$ such that $R$ is not finitely generated over its center, $S = kR$, and $1_R = 1_S$? Here, $S$ is the algebra of $2 \times 2$ matrices over $k$. Provide a yes or no answer.

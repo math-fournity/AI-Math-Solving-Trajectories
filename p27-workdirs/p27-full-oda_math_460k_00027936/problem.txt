@@ -1,0 +1,1 @@
+Find \(\alpha, k > 0\) for which the inequality

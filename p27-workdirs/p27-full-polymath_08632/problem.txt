@@ -1,0 +1,1 @@
+A specialized chemical processing plant utilizes three separate reactors to refine a rare compound. Each reactor $i$ (where $i=1,2,3$) operates with a purity level $x, y, z > 0$. The efficiency of an individual reactor is determined by the formula $E(s) = s^2 - s + 1$.

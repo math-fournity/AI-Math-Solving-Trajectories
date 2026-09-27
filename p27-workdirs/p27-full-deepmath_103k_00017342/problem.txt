@@ -1,0 +1,1 @@
+Determine whether the following claim is true or false: For any odd integer $n \geq 3$ and integer $a$ coprime to $n$, $n$ is prime if and only if $P_n^{(a)}(x) \equiv x^n \pmod{n}$ holds, where $P_n^{(a)}(x)$ is defined as:

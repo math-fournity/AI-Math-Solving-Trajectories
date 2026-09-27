@@ -1,0 +1,1 @@
+Find the minimum value of the positive real number \( R \) such that there exist 9 points \( P_1, \ldots, P_9 \) on a plane, where the distance between each pair of points is at least 1, and all points can be covered by a disk of radius \( R \).

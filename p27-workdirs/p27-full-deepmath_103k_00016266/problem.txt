@@ -1,0 +1,1 @@
+Determine the conditions on the parameter $a$ such that the map $h_1$ is a homeomorphism.

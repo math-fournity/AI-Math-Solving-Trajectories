@@ -1,0 +1,1 @@
+In a remote industrial complex, there is a linear sequence of $100$ pressure valves, indexed from $1$ to $100$. Each valve $j$ has a flow setting $x_j$ that can be adjusted anywhere from $0$ (completely closed) to $1$ (completely open).

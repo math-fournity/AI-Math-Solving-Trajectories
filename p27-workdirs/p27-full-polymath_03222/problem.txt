@@ -1,0 +1,1 @@
+For \(a, b, c > 0\) and \(2(a + b + c) + ab + bc + ca = 9\), find the minimum value of the expression:

@@ -1,0 +1,1 @@
+Exercise 18. We say that a set $A$ of polynomials with real coefficients is beautiful if, whenever $P$ and $Q$ are two distinct elements of $A$, there exist positive integers $a_{1}>\cdots>a_{2020}$ such that

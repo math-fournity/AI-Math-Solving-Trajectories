@@ -1,0 +1,1 @@
+In the context of the geodesic equation using the Einstein summation convention and a symmetric connection, determine the number of times the Christoffel symbols are summed.

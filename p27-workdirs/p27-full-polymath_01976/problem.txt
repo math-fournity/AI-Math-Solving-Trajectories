@@ -1,0 +1,1 @@
+10. Compute the smallest positive integer $n$ for which there are at least two odd primes $p$ such that

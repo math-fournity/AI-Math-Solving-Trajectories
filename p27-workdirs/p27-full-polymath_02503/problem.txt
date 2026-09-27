@@ -1,0 +1,1 @@
+Let $a_{1}, a_{2}, \ldots, a_{n}$ be a sequence of $n=10$ real numbers such that

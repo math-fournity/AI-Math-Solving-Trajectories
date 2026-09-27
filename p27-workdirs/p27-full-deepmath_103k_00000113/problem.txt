@@ -1,0 +1,1 @@
+Determine whether the hyperbolic dodecahedral space admits a Heegaard splitting of genus 3.

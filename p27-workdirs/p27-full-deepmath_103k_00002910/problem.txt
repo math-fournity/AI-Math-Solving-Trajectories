@@ -1,0 +1,1 @@
+Let $U$ be a simply connected bounded open set in $\mathbb{R}^2$ with area $A$. Consider a sequence of smooth simple closed curves $\gamma_n$ within $U$, with perimeters $l_n$ and areas $A_n$. Assume $\gamma_n$ eventually leave every compact subset of $U$, $A_n$ converges to $A$, $l_n$ converges to $l$, and $4\pi A = l^2$. Is $U$ necessarily the interior of a circle?

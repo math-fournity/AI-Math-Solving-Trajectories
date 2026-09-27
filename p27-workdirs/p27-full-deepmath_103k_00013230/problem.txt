@@ -1,0 +1,1 @@
+In an abelian category with enough injectives, satisfying (AB3) and (AB4*), and having a generator, does the first derived functor $\varprojlim^1$ vanish on Mittag-Leffler towers?

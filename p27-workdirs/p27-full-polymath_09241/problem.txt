@@ -1,0 +1,1 @@
+A high-tech automated routing laser is being tested on a flat circuit board containing 2017 straight copper etched traces. The traces are laid out such that no three traces intersect at a single junction.

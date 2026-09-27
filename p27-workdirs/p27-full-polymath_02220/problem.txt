@@ -1,0 +1,1 @@
+A \(4 \times 4\) square is divided into \(16\) unit squares. Each of the \(25\) vertices of these squares must be colored either red or blue. Find the number of different colorings such that each unit square has exactly two red vertices.

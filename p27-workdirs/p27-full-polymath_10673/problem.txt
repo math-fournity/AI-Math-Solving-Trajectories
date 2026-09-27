@@ -1,0 +1,1 @@
+An architect is designing a custom floor for a museum gallery. The gallery is shaped like an $8 \times 8$ grid of square marble tiles, but one specific tile in the top-right corner has been removed to accommodate a structural support pillar.

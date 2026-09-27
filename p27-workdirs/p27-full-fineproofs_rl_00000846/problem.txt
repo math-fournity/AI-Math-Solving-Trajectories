@@ -1,0 +1,1 @@
+Assume the  $n$  sets  $A_1, A_2..., A_n$  are a partition of the set  $A=\{1,2,...,29\}$ , and the sum of any elements in  $A_i$  ,  $(i=1,2,...,n)$  is not equal to  $30$ . Find the smallest possible value of  $n$ .

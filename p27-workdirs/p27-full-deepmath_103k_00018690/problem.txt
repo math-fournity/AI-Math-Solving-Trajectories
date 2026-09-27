@@ -1,0 +1,1 @@
+Find all positive integer solutions (x, y) to the Diophantine equation \(24x^4 + 1 = y^2\).

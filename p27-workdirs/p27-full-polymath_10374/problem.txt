@@ -1,0 +1,1 @@
+A specialized deep-learning model is designed to process an input signal $x$ through a primary neural architecture represented by a polynomial function $P(x)$. This architecture $P$ is composed of real-valued weights, has a complexity degree of $10^5$, and is normalized such that its leading coefficient is $1$.

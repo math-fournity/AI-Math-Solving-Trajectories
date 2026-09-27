@@ -1,0 +1,1 @@
+In a remote digital archipelago, there are 16 distinct server nodes arranged in a circular network, indexed by the set of integers modulo 16. A local security protocol requires an administrator to assign a specific encryption key $f(x)$ to each node $x$, where each key must also be an integer from the set $\{0, 1, 2, \dots, 15\}$.

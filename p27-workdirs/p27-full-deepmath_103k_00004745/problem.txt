@@ -1,0 +1,1 @@
+Suppose a smooth surface $M$ has the property that for all spheres $S(p,R)$ (the set of all points at a distance $R \geq 0$ from $p \in M$, measured within the surface), there exists a different point $q(p,R) \in M$ and a distance $D(p,R) \geq 0$ such that $S(p,R) = S(q(p,R),D(p,R))$. Is $M$ isometric to a subset of a sphere?

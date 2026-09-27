@@ -1,0 +1,1 @@
+In a bustling tech hub, two software architects, Cat and Claire, are discussing the version numbers of their latest software builds. Both builds are identified by positive two-digit integers.

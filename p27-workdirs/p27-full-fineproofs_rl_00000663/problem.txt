@@ -1,0 +1,1 @@
+A quadrilateral  $ABCD$  without parallel sidelines is circumscribed around a circle centered at  $I$ . Let  $K, L, M$  and  $N$  be the midpoints of  $AB, BC, CD$  and  $DA$  respectively. It is known that  $AB \cdot CD = 4IK \cdot IM$ . Prove that  $BC \cdot AD = 4IL \cdot IN$ .

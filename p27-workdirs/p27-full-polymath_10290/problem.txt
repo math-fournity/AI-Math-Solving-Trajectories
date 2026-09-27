@@ -1,0 +1,1 @@
+In a distant galaxy, a council of architects is designing a square space station divided into a grid of rooms. The grid has exactly $(n^2 - n + 1)$ rows and $(n^2 - n + 1)$ columns. To organize the station, every single room must be assigned one of $n$ distinct functional designations (colors).

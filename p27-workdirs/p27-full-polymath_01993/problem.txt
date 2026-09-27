@@ -1,0 +1,1 @@
+We put pebbles on some unit squares of a $2013 \times 2013$ chessboard such that every unit square contains at most one pebble. Determine the minimum number of pebbles on the chessboard, if each $19\times 19$ square formed by unit squares contains at least $21$ pebbles.

@@ -1,0 +1,1 @@
+Place a system of non-overlapping segments of length 1 on a number line such that for any (infinite) arithmetic progression (with an arbitrary first term and any difference), at least one of its terms falls inside one of the segments in our system.

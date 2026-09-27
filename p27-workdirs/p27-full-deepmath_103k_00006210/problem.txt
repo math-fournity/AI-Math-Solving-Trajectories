@@ -1,0 +1,1 @@
+Let $M$ be a connected $(d \geq 2)$-dimensional smooth closed manifold. Does there exist a class $C^1$-diffeomorphism $\phi$ from $M$ onto itself such that $(M,\phi)$ is a topologically mixing discrete dynamical system?

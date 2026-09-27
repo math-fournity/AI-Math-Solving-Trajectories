@@ -1,0 +1,1 @@
+Let $\mathcal{G}$ be the class of all graphs with at most $2^{\aleph_1}$ vertices that do not contain a complete subgraph of size $\aleph_2$. Does there exist a graph $G \in \mathcal{G}$ such that every graph in $\mathcal{G}$ is a subgraph of $G$?

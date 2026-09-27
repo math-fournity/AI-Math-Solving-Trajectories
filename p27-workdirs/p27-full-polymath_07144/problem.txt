@@ -1,0 +1,1 @@
+In a large data center, a server rack is organized into a $4 \times 4$ grid of sixteen individual server slots. A technician must install exactly 8 identical cooling units into these slots.

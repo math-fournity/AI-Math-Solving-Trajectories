@@ -1,0 +1,1 @@
+Let \( p \) be a prime such that \( p \equiv 1 \pmod{4} \). Prove or disprove that there always exists a prime \( q \equiv 3 \pmod{4} \) that divides \( p + a^2 \) for some integer \( a \).

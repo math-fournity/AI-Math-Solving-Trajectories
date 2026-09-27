@@ -1,0 +1,1 @@
+Find all positive integers  $n\geq 3$  such that it is possible to triangulate a convex  $n$ -gon such that all vertices of the  $n$ -gon have even degree.

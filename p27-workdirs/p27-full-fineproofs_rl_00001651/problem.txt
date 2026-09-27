@@ -1,0 +1,1 @@
+For all integers $n \geqslant 1$, we define $u_{n}=1!+2!+\ldots+n!$. Show that there are infinitely many prime numbers dividing at least one of the terms of the sequence ( $\mathfrak{u}_{n}$ ).

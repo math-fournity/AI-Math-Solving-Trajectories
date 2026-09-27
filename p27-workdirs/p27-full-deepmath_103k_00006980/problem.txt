@@ -1,0 +1,1 @@
+Let \( f: G \rightarrow K \) be a morphism of simplicial groups such that \( f \) is a weak homotopy equivalence of the underlying simplicial sets. Assume the following conditions:

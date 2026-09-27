@@ -1,0 +1,1 @@
+Evaluate the sum \( \frac{1}{1!} + \frac{1}{1! + 2!} + \frac{1}{1! + 2! + 3!} + \cdots \).

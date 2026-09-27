@@ -1,0 +1,1 @@
+Find the smallest number of prime factors in the product of $N$ positive integers, given that the greatest common divisors of all nonempty subsets of these integers are pairwise distinct.

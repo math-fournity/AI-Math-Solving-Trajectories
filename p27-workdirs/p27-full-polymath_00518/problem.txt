@@ -1,0 +1,1 @@
+Let \( n \geq 2 \) be an integer. Each of the squares of an \( n \times n \) board contains a bit-coin with \( 0 \) on one side, \( 1 \) on the other. Initially, all bit-coins in the leftmost column show a \( 0 \). A move consists of one of the following:

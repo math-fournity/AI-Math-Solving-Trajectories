@@ -1,0 +1,1 @@
+In $\triangle ABC$, let $L$ be a point on $BC$. Let $O$ be the circumcenter of $\triangle ABC$ and $P$ be the orthopole of line $OL$. If $\angle APL = 90^\circ$, calculate the value of $\frac{OL^2}{R^2}$, where $R$ is the circumradius of $\triangle ABC$.

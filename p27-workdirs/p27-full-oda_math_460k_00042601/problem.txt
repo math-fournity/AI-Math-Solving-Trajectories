@@ -1,0 +1,1 @@
+Consider the coefficients in Adams-Bashforth integration given by $$\gamma_n=(-1)^n\int_0^1{-s\choose n}ds.$$ Calculate the value of $$\gamma_{100} - \left(\frac{1}{\log 100} + \frac{1}{\log^2 100}\right).$$

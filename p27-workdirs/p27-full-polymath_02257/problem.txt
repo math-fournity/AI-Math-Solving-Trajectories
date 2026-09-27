@@ -1,0 +1,1 @@
+Given are $n$ distinct natural numbers. For any two of them, the one is obtained from the other by permuting its digits (zero cannot be put in the first place). Find the largest $n$ such that it is possible all these numbers to be divisible by the smallest of them?

@@ -1,0 +1,1 @@
+Let $ABC$ be a triangle and let $J$ be the center of its $A$-excircle. Let $K$ be the symmetric point of $J$ with respect to the segment $[BC]$. Let $E$ and $F$ be the points on the lines $(BJ)$ and $(CJ)$ such that $\widehat{\mathrm{EAB}}=\widehat{\mathrm{CAF}}=90^{\circ}$. Show that $\widehat{\mathrm{FKE}}+\widehat{\mathrm{FJE}}=180^{\circ}$.

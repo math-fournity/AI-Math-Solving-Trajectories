@@ -1,0 +1,1 @@
+The cows are trying to open a circular lock with numbers labelled from $0$ to $39$. The lock accepts a combination $a-b-c$ if the actual combination is $A-B-C$ and the following condition is met:

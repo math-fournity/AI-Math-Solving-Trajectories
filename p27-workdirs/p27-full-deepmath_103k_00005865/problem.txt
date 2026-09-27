@@ -1,0 +1,1 @@
+Let $G$ be a finite $p$-group and $H$ a subgroup of $G$. For subgroups $K_1$ and $K_2$ of $H$ that are conjugate in $G$, does it necessarily follow that $r(K_1,H) = r(K_2,H)$, where $r(K,H)$ is the smallest $r$ such that there exists a chain of subgroups $K=L_0 \lhd L_1 \lhd \cdots \lhd L_r = H$, with each $L_i/L_{i-1}$ cyclic?

@@ -1,0 +1,1 @@
+A square with side length 1 is colored in three colors. What is the largest real number \(\alpha\) such that in the square there are always two monochromatic points at a distance of at least \(\alpha\)?

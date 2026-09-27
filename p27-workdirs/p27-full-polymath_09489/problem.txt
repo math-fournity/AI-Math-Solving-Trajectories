@@ -1,0 +1,1 @@
+In a specialized optics laboratory, a laser source is positioned at a fixed point $P$. Two robotic sensors, $M$ and $N$, are initially placed at positions $M_0$ and $N_0$ such that the distances from the source are equal ($PM_0 = PN_0$). The two sensors and the source form a configuration where the angle $\angle M_0PN_0$ is exactly $\alpha$ degrees.

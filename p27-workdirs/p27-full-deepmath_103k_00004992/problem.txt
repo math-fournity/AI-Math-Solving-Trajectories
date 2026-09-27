@@ -1,0 +1,1 @@
+Determine if the quantity \((\pi(n)!)^{1/(n-h)}\), where \(h = \pi(n/2)\) and \(n > 7\), is bounded above for all integers \(n\). If it is bounded, find the upper bound.

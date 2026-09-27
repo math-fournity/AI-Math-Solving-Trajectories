@@ -1,0 +1,1 @@
+Is there a lattice homomorphism from the complete lattice of ideals of a complete lattice $L$, denoted by ${\cal Id}(L)$, onto $L$?

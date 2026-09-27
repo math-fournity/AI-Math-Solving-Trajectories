@@ -1,0 +1,1 @@
+A team of structural engineers is designing a network of support beams for a high-rise foundation. They are evaluating different configurations of beams, where each beam is identified by a unique, nonzero integer label representing its depth relative to a baseline (positive for bedrock anchors, negative for subterranean pillars).

@@ -1,0 +1,1 @@
+A specialized server farm consists of $n = 2023$ data storage nodes. Initially, all nodes are "active" (unlocked) and contain zero data packets. The system operates in discrete cycles. Each cycle, a network administrator selects exactly one currently active node and uploads a single data packet into it. Immediately following the upload, an automated security protocol intervenes:

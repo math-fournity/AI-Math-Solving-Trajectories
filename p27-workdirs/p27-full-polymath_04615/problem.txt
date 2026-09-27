@@ -1,0 +1,1 @@
+In a city, a water polo tournament is to take place involving $n$ teams. Each team plays exactly once against all others in a home and away round. Two swimming pools are available, so far apart that during a game day, no team can move between them. The following conditions apply:

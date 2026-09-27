@@ -1,0 +1,1 @@
+In Problems 13 and 14, sketch the phase plane diagrams for the given system. Discuss the stability of each limit cycle and critical point. Here \( x = r \cos \theta \) and \( y = r \sin \theta \).\n\n13. \n\[ \n\frac{dx}{dt} = -y + x(x^3 - 5x^2 + 8x - 4), \quad \frac{dy}{dt} = x + y(y^3 - 5y^2 + 8y - 4) \n\]

@@ -1,0 +1,1 @@
+Let \( f \in L^1(\mathbb{D}) \) where \( \mathbb{D} \) is the unit disc in the complex plane. Suppose there exists \( r_0 \in (0,1) \) such that \( f(r_0e^{i\theta}) = \sum_{n=-\infty}^{\infty}\hat{f}(n){r_0}^ne^{in\theta} = 0 \) for every \( \theta \in (-\pi,\pi) \). Does this imply that \( \hat{f}(n) = 0 \) for every \( n \in \mathbb{N} \)?

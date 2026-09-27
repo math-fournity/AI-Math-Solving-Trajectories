@@ -1,0 +1,1 @@
+41st IMO 2000 shortlist Problem G7 Ten gangsters are standing in a field. The distance between each pair of gangsters is different. When the clock strikes, each gangster shoots the nearest gangster dead. What is the largest number of gangsters that can survive? Solution

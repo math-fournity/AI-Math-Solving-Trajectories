@@ -1,0 +1,1 @@
+Find the smallest positive real number $\alpha$ such that for all $k=1,2,\ldots$,

@@ -1,0 +1,1 @@
+If the product space of two topological spaces $X$ and $Y$, denoted as $X \times Y$, is a manifold, must both $X$ and $Y$ individually be manifolds?

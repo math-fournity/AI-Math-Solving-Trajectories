@@ -1,0 +1,1 @@
+Given a set \( A \subseteq \mathbb{N} \) with positive upper density, i.e., \( \lim\sup_{n\to\infty}\frac{|A\cap\{1,\ldots,n\}|}{n} > 0 \), determine if there exists an integer \( k \geq 2 \) such that the set \( M_A(k) = \{a \in A : ka \in A\} \) is infinite.

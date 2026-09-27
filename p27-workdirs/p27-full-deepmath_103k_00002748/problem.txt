@@ -1,0 +1,1 @@
+Consider the graph $G = (V, E)$ where $V$ is the set of all functions $f: \mathbb{N} \to \mathbb{N}$. Two distinct functions $f, g: \mathbb{N} \to \mathbb{N}$ form an edge if and only if they differ at exactly one input $n \in \mathbb{N}$. Determine if the chromatic number $\chi(G)$ is $\aleph_0$.

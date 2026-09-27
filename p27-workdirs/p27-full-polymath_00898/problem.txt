@@ -1,0 +1,1 @@
+Let $n$ be an integer greater than $3$. A square of side length $n$ is divided by lines parallel to each side into $n^2$ squares of length $1$. Find the number of convex trapezoids which have vertices among the vertices of the $n^2$ squares of side length $1$, have side lengths less than or equal $3$ and have area equal to $2$

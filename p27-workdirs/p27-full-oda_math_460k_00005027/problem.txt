@@ -1,0 +1,1 @@
+Find the maximum number of triangles ($K_3$) in a planar graph with $n$ vertices. Also, identify all graphs that achieve this maximum number of triangles.

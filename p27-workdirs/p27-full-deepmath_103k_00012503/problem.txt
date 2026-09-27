@@ -1,0 +1,1 @@
+Determine the value of the upper density \( \mu^+(I) \) of the set \( I \), where \( I \) is the set of positive integers \( n \) such that there exist positive integers \( a, b \) with \( n^2 = \frac{a^2 + b^2}{ab + 1} \).

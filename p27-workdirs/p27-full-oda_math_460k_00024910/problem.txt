@@ -1,0 +1,1 @@
+Construct the line determined by the two intersection points of the Circles of Apollonius for a scalene triangle ABC. Under what conditions does this line pass through the circumcenter of the triangle?

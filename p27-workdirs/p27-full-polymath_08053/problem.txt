@@ -1,0 +1,1 @@
+In a futuristic circular data-processing hub, there are 500 distinct servers labeled with the unique ID numbers $\{1, 2, 3, \dots, 500\}$. These servers are to be installed into 500 fixed slots arranged in a perfect circle.

@@ -1,0 +1,1 @@
+Find all functions  $f\colon \mathbb Z \to \mathbb Z$  for which

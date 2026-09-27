@@ -1,0 +1,1 @@
+In the set of points with integer coordinates \(\mathcal{P}=\{(a, b) \mid 1 \leq a, b \leq 2017, a, b \in \mathbb{Z}\}\), a point \(X=(x, y)\) is chosen, which we need to guess. For this purpose, we ask questions of the form:

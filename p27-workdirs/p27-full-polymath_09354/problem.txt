@@ -1,0 +1,1 @@
+A specialized circular nature preserve, denoted as $\Gamma$, is divided into three distinct conservation zones by three observation stations: $A$, $B$, and $C$. The distance between these stations satisfies the condition $BC > AC > AB$, and the triangle they form contains no $90^\circ$ angles.

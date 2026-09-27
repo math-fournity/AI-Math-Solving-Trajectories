@@ -1,0 +1,1 @@
+Given a function \( f(t) = \sum_{k=1}^N a_k e^{\mathrm{i}\phi_k t} \) with the condition \( 0 \leq f(t) \leq C \) for all \( t \in \mathbb{R} \), where \( C > 0 \) is a constant, \( \phi_k \) are real numbers, and \( a_k \) are complex numbers, find a bound for \( \sum_{k=1}^N |a_k| \) in terms of \( C \) and \( N \). Assume that \( f \) is a real function.

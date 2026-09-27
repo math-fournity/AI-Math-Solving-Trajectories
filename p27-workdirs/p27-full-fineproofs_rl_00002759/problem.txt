@@ -1,0 +1,1 @@
+Let  $ABCD$  be an inscribed quadrilateral, in  which  $\angle BAD<90$ . On the rays  $AB$  and  $AD$  are selected points  $K$  and  $L$ , respectively, such that $ KA = KD, LA = LB$ . Let  $N$  - the midpoint of  $AC$ .Prove that if  $\angle BNC=\angle DNC $ ,so  $\angle KNL=\angle BCD $

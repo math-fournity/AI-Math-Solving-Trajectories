@@ -1,0 +1,1 @@
+In a bustling coastal city, a new architectural project involves designing a central plaza partitioned by $n=10$ rectangular glass pavilions. Each pavilion is oriented perfectly north-south and east-west. To ensure a sleek, staggered aesthetic, the architects mandate that no two pavillion walls (even those from different structures) can lie along the same line or be collinear.

@@ -1,0 +1,1 @@
+In the futuristic city of Gridville, an automated delivery drone must visit every single power terminal in a square district. The district is laid out as a grid of $(n+1) \times (n+1)$ terminals, forming the vertices of an $n \times n$ block area.

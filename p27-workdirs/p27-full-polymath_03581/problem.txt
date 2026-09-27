@@ -1,0 +1,1 @@
+A block of size $a \times b \times c$ is composed of $1 \times 1 \times 2$ domino blocks. Each domino can be oriented in one of three possible directions (parallel to the $a$, $b$, or $c$ edges). Suppose that each of these three directions occurs equally many times in the decomposition.

@@ -1,0 +1,1 @@
+In a circular conservation district known as Zone Omega, three observation outposts—P, Q, and M—are positioned along the perimeter. Outpost M is situated exactly halfway along the shorter coastal route between P and Q, such that the straight-line distances from M to P and from M to Q are both exactly 3 kilometers.

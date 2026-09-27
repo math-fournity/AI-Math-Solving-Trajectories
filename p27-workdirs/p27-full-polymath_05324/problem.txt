@@ -1,0 +1,1 @@
+Define a string to be doubly palindromic if it can be split into two (non-empty) parts that are read the same both backwards and forwards. For example, "hannahhuh" is doubly palindromic as it can be split into "hannah" and "huh". How many doubly palindromic strings of length 9 using only the letters \(\{a, b, c, d\}\) are there?

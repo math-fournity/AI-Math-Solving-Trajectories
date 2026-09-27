@@ -1,0 +1,1 @@
+In a remote digital landscape, there are 2017 unique data-processing nodes. Each node is programmed to monitor a specific "link" between two different server hubs. In this network, every possible pair of server hubs can be connected by at most one node, and no two nodes monitor the same pair of hubs.

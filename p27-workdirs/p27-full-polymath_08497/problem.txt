@@ -1,0 +1,1 @@
+In a remote digital vault, a security system manages a set of $N$ unique access codes. At the beginning of the system's initialization, it is known that the integer $0$ is one of the codes present in the set.

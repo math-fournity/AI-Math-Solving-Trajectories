@@ -1,0 +1,1 @@
+A specialized robotics laboratory is designing two automated laser-guided paths on a 2D coordinate grid.

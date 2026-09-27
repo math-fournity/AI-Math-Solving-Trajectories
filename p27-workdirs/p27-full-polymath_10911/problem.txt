@@ -1,0 +1,1 @@
+A specialized logistics firm manages a collection $A$ of distinct high-security identification codes, each represented by a unique natural number. To stress-test their security protocol, the firm investigates "balanced splits" of these codes.

@@ -1,0 +1,1 @@
+A specialized logistics network consists of 2019 distinct distribution hubs, each assigned a unique positive capacity rating, denoted as $a_1, a_2, \dots, a_{2019}$. These hubs are arranged in a fixed circular configuration.

@@ -1,0 +1,1 @@
+A high-security data vault contains 202 unique digital keys, indexed with serial numbers from 1 to 202. A security auditor is instructed to select a specific collection, $F$, consisting of exactly 101 distinct keys from this vault.

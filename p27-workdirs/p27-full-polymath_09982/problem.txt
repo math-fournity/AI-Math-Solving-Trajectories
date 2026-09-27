@@ -1,0 +1,1 @@
+A remote island chain is composed of an odd number of research outposts arranged in a perfect ring. A supply agency distributes exactly $2013$ solar batteries among these outposts; some outposts might receive many batteries, while others receive none.

@@ -1,0 +1,1 @@
+Determine whether the limit \( \lim_{n\rightarrow\infty} \frac{P(n)}{A(n)} \) exists, where \( P(n) \) is the number of perfect numbers less than or equal to \( n \), and \( A(n) \) is the number of amicable numbers less than \( n \). If the limit exists, find its value.

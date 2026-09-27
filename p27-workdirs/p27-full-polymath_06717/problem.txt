@@ -1,0 +1,1 @@
+A boutique logistics firm manages $3n$ unique storage containers, indexed by serial numbers $1, 2, \dots, 3n$. The manager must organize these containers into $n$ separate delivery teams, each consisting of exactly three containers $\{a, b, c\}$, where $a < b < c$.

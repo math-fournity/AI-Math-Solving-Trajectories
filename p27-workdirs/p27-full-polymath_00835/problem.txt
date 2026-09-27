@@ -1,0 +1,1 @@
+How many ways are there to tile an $8 \times 8$ chessboard using the maximum number of pieces, where the pieces are $1 \times 3$ rectangles and T-shaped tetrominoes?

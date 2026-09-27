@@ -1,0 +1,1 @@
+What is the maximal number of points in $R^n$ such that the distance between any two points is an odd integer?

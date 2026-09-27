@@ -1,0 +1,1 @@
+Suppose $f:D\setminus K \to \Bbb C$ is a holomorphic function and $p_n$ is a sequence of polynomials that converges to $f$ uniformly on compact subsets of $D\setminus K$. Determine if there exists a holomorphic function $g:D\to \Bbb C$ such that $f=g$ on $D\setminus K$.

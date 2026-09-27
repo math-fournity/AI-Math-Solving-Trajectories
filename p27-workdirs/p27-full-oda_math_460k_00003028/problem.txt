@@ -1,0 +1,1 @@
+Find all functions \( f: \mathbf{Z}_{+} \rightarrow \mathbf{Z}_{+} \) such that for any positive integers \( m \) and \( n \), \( f(m) + f(n) - mn \) is non-zero and divides \( mf(m) + nf(n) \).

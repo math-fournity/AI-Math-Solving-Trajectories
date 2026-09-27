@@ -1,0 +1,1 @@
+For a convex quadrilateral \(ABCD\), a point \(P\) in the interior of \(ABCD\) is called [b]balanced[/b] if:

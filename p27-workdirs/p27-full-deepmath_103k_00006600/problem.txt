@@ -1,0 +1,1 @@
+Consider a connected graph $G$ with a countable set of vertices and a finite number of edges meeting at each vertex, such that $G$ is of bounded geometry. Is there a decoration $\alpha$ of $G$ with a finite image such that the decorated graph $(G, \alpha)$ is aperiodic?

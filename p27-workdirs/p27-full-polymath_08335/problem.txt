@@ -1,0 +1,1 @@
+In a global logistics network, every distribution hub is connected to at least $k$ other hubs by dedicated shipping lanes. Each shipping lane is managed by one of two competing freight companies: the Red Line or the Blue Line.

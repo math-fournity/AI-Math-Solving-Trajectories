@@ -1,0 +1,1 @@
+In a specialized logistics hub, a cargo manager is organizing a pyramid-shaped stacking plan involving a foundation of $n = 100$ shipping containers placed side-by-side in a single row. Each container in this base row is assigned a specific integer representing its weight class.

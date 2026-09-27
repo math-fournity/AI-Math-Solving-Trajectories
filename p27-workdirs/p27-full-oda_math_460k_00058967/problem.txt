@@ -1,0 +1,1 @@
+Determine the greatest real number \( C \), such that for every positive integer \( n \ge 2 \), there exist \( x_1, x_2, \ldots, x_n \in [-1,1] \) satisfying

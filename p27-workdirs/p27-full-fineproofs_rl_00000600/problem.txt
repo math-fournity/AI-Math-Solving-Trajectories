@@ -1,0 +1,1 @@
+A infinite sequence  $\{ a_n \}_{n \ge 0}$  of real numbers satisfy  $a_n \ge n^2$ . Suppose that for each  $i, j \ge 0$  there exist  $k, l$  with  $(i,j) \neq (k,l)$ ,  $l - k = j - i$ , and  $a_l - a_k = a_j - a_i$ . Prove that  $a_n \ge (n + 2016)^2$  for some  $n$ .

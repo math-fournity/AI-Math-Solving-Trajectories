@@ -1,0 +1,1 @@
+The sequence of positive integers $\{a_n, n\ge 1\}$ is such that $a_n\le a_{n+1}\le a_n+5$ and $a_n$ is divisible by $n$ for all $n \ge 1$. What are the possible values of $a_1$?

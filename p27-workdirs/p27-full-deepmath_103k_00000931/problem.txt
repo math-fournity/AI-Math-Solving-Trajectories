@@ -1,0 +1,1 @@
+Is every $H_{\infty}$-ring spectrum over Morava E-theory $E$ at height $h$ and prime $p$, whose homotopy ring is isomorphic to $W(F_{p^k})[[v_1, \dots, v_{n-1}]][\beta^{\pm 1}]$, a $K(h)$-local spectrum? Here, $k$ is a positive integer and $\beta$ has degree 2.

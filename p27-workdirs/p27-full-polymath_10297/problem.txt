@@ -1,0 +1,1 @@
+In a futuristic data-processing facility, a specialized algorithm generates a sequence of "Security Tiers," denoted by the function $f(n)$, for every data packet labeled $n = 1, 2, 3, \dots$.

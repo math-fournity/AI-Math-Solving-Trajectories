@@ -1,0 +1,1 @@
+A remote logistics network is established between three supply hubs: Alpha ($A$), Bravo ($B$), and Charlie ($C$). On a coordinate map, the straight-line distance between Alpha and Bravo is exactly 13 units, Bravo and Charlie is 14 units, and Charlie and Alpha is 15 units.

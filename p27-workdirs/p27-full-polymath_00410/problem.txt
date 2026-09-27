@@ -1,0 +1,1 @@
+Let $t, a, b$ be positive integers. Consider a game between two players where they start with the number $t$. The first player replaces $t$ with either $t-a$ or $t-b$. Then the second player replaces the resulting number by subtracting $a$ or $b$, and the players continue to take turns. The first player to reach a negative number loses.

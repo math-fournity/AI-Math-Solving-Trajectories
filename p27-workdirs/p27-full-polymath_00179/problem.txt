@@ -1,0 +1,1 @@
+8. Given a positive integer $n \geqslant 2$, let the square grid be

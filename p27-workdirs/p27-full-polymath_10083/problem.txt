@@ -1,0 +1,1 @@
+A network of $n$ satellite ground stations (where $n \geq 4$) is positioned across a vast, flat desert. To ensure communication stability, the project engineers established a strict "Non-Linearity Rule": at most $n-2$ stations are allowed to lie on any single straight-line path.

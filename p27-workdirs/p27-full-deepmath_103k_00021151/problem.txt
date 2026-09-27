@@ -1,0 +1,1 @@
+Suppose $A$ is a semisimple algebra over a field $\mathbb{F}$, and let $\rho_1: A\rightarrow \text{Mat}_n(\mathbb{F})$ and $\rho_2:A\rightarrow \text{Mat}_n(\mathbb{F})$ be irreducible representations with $V_1$ and $V_2$ as the corresponding left $A$-modules. If $\text{tr}(\rho_1(x))=\text{tr}(\rho_2(x))$ for all $x\in A$, must $V_1$ and $V_2$ be isomorphic $A$-modules?

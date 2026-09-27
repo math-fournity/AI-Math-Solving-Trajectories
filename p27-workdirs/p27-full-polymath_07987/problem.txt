@@ -1,0 +1,1 @@
+In a high-tech server farm, a massive $100 \times 100$ grid of tile-shaped processor slots is being optimized for cooling. Each $1 \times 1$ unit slot can be modified by installing a triangular cooling fin. These fins are all identical isosceles right triangles with leg lengths of $1$.

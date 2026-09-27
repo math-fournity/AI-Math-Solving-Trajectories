@@ -1,0 +1,1 @@
+Let $X$ be a Banach space and $T: X \to X$ be a bounded and invertible operator. Determine whether the Fredholm index $\mathrm{ind}(T) = 0$. Provide a justification for your answer.

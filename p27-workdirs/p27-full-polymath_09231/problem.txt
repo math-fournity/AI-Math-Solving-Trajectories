@@ -1,0 +1,1 @@
+A specialized deep-space probe is programmed to execute a complex sequence of maneuvers over a mission duration of 8032 minutes. The thrust intensity at any given minute $k$ is represented by the coefficient $a_k$ in the expansion of the "Mission Resource Function":

@@ -1,0 +1,1 @@
+In the city of Gridhaven, a civil engineer is designing a solar panel array across a $12 \times 12$ plot of land, divided into 144 identical square plots. Each plot can host at most one high-capacity sensor. To ensure the electrical grid remains stable, the engineer must follow a strict "Even-Load Rule."

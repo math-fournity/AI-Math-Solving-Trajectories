@@ -1,0 +1,1 @@
+A convex $n$-gon has side lengths $1, 2, \ldots, n$ in some order and all of its sides are tangent to the same circle. Let $S$ be the set of all integers $n$ with $4 \leq n \leq 100$ for which such a polygon exists. Find the sum of the elements in $S$.

@@ -1,0 +1,1 @@
+Let $P_0 = (3,1)$ and define $P_{n+1} = (x_n, y_n)$ for $n \ge 0$ by $$x_{n+1} = - \frac{3x_n - y_n}{2}, y_{n+1} = - \frac{x_n + y_n}{2}$$Find the area of the quadrilateral formed by the points $P_{96}, P_{97}, P_{98}, P_{99}$.

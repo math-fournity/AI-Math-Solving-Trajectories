@@ -1,0 +1,1 @@
+In the city of Arithmos, the Central Archives contain a collection $S$ of unique identification codes. Every code in this collection is a positive integer exactly 100 digits long when written in base 10.

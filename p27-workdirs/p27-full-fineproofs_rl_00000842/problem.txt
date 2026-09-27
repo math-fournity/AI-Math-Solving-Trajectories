@@ -1,0 +1,1 @@
+Assume that a function $f: \mathbb{R} \rightarrow \mathbb{R}$ satisfies the following condition: For every $x, y \in \mathbb{R}$ such that $(f(x)+y)(f(y)+x)>0$, we have $f(x)+y=f(y)+x$. Prove that $f(x)+y \leqslant f(y)+x$ whenever $x>y$. (Netherlands)

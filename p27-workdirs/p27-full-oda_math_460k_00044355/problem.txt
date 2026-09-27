@@ -1,0 +1,1 @@
+A paper punching machine can be placed at any point on a plane, and when it operates, it can punch out points at an irrational distance from it. What is the minimum number of paper punching machines needed to punch out all points on the plane? (51st Putnam Mathematics Competition, 1990)

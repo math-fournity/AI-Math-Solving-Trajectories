@@ -1,0 +1,1 @@
+In a specialized historical archive, three sequential storage vaults are labeled with the consecutive positive integers $n$, $n+1$, and $n+2$. An auditor is examining the properties of these three identification numbers to verify the security of the collection. The following observations are recorded:

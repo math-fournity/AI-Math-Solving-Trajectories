@@ -1,0 +1,1 @@
+In the city of Metropolia, the Department of Urban Planning categorizes residential blocks using "Linear Zoning Sequences." A Linear Zoning Sequence is a non-constant arithmetic progression of positive integers, representing the house numbers on a street. Two such sequences are considered "distinct zones" only if they contain different sets of house numbers.

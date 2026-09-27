@@ -1,0 +1,1 @@
+Determine the smallest possible value of \( \epsilon \) and a sequence \( (a_n)_{n=1}^\infty \subset [0, 1] \) such that for all \( N \in \mathbb{N} \), the inequality \( d_{N} = \sup_{x \in [0,1]} \inf_{n=1}^N |x-a_n| \leq \frac{1+\epsilon}{N} \) holds. Note that a dyadic decomposition provides \( \epsilon = 1 \).

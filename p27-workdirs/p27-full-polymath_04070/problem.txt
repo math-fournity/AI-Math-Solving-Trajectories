@@ -1,0 +1,1 @@
+A sequence of integers $a_{1}, a_{2}, a_{3}, \dots$ satisfies the relation:

@@ -1,0 +1,1 @@
+Consider a $5 \times 5$ grid with 25 cells. What is the least number of cells that should be colored such that every $2 \times 3$ or $3 \times 2$ rectangle in the grid has at least two colored cells?

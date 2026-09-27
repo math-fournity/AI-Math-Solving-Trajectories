@@ -1,0 +1,1 @@
+In the city of Arithmos, two luxury train tracks are being decommissioned. The first track consists of $2008$ individual docks arranged in a straight line, and the second track consists of $2009$ docks. In both scenarios, the docks are numbered sequentially starting from $1$.

@@ -1,0 +1,1 @@
+A city is planning a complex layout of $1996$ straight, infinitely long high-speed transit cables across a flat desert. The engineers have two strict safety requirements for the layout:

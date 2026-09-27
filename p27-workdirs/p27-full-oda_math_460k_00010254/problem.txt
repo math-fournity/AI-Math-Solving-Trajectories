@@ -1,0 +1,1 @@
+Natural numbers \( k, n \) are given such that \( 1 < k < n \). Solve the system of \( n \) equations\n\n\[\nx_i^2 (x_i^2 + \cdots + x_{i+k-1}^2) = x_{i-1}^2 \quad \text{ for } 1 \leq i \leq n\n\]\n\nin \( n \) real unknowns \( x_1, \ldots, x_n \). (Note: \( x_0 = x_n, x_1 = x_{n+1}, \) etc.)

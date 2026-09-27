@@ -1,0 +1,1 @@
+Determine whether the subgroup \( H = \langle y^2, yx \rangle \) of the free group \( \mathbb{F}_2 = \langle x, y \rangle \) is free. If it is free, find a set of generators for \( H \).

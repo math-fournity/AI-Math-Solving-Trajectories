@@ -1,0 +1,1 @@
+Let \(ABCD\) be a rhombus with \(\angle ABC = 40^\circ\). \(M\) is the midpoint of \(BC\). \(E\) is the point such that \(AE \perp DM\). Find \(\angle DEC\).

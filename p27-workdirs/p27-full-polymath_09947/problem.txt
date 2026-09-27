@@ -1,0 +1,1 @@
+A specialized logistics company manages two types of data storage protocols, Protocol F and Protocol G, which assign integer costs to specific data packets. Each packet is labeled with a non-negative integer ID.

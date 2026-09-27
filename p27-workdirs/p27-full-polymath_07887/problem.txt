@@ -1,0 +1,1 @@
+In a specialized digital archive, a security researcher is analyzing a series of identification codes. These codes, denoted by the integer $m$, are categorized as "high-security" only if they possess at least four digits.

@@ -1,0 +1,1 @@
+4. [10] Call a simple graph $G$ quasi-colorable if we can color each edge blue, red, green, and white such that

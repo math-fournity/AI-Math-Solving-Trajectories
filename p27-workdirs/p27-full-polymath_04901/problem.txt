@@ -1,0 +1,1 @@
+Some cells of a $10 \times 10$ are colored blue. A set of six cells is called [i]gremista[/i] when the cells are the intersection of three rows and two columns, or two rows and three columns, and are painted blue. Determine the greatest value of $n$ for which it is possible to color $n$ chessboard cells blue such that there is not a [i]gremista[/i] set.

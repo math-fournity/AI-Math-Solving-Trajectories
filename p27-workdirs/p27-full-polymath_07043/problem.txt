@@ -1,0 +1,1 @@
+A regional logistics company operates a central warehouse divided into a grid of $n \times n$ storage zones. To ensure high safety standards, the company must install $n$ specialized fire-suppression sensors, placing exactly one sensor in each of $n$ distinct zones.

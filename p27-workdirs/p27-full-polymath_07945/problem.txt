@@ -1,0 +1,1 @@
+A specialized urban planning commission is mapping out four key logistics hubs—the Junction ($J$), the Maintenance Depot ($M$), the Information Center ($I$), and the Terminal ($T$)—which all lie on a circular transit loop $\mathcal{K}$.

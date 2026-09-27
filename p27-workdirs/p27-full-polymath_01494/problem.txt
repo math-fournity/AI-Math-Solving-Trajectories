@@ -1,0 +1,1 @@
+From a $2 \times 2$ square, four types of triminoes (L-shaped tiles of three squares) can be obtained by removing one square. The types are defined as follows:

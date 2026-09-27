@@ -1,0 +1,1 @@
+A digital archivist is cataloging a series of 2022 unique data encrypted storage units. The units are labeled sequentially as a set $S$, where the first unit is labeled $1$ and each subsequent unit's label is exactly double the value of the previous one, ending with the unit labeled $2^{2021}$.

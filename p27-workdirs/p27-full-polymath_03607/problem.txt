@@ -1,0 +1,1 @@
+Given an integer $n > 2$ and an integer $a$, if there exists an integer $d$ such that $n \mid a^d - 1$ and $n \nmid a^{d-1} + \cdots + 1$, we say $a$ is $n$-separating. Given any $n > 2$, let the defect of $n$ be defined as the number of integers $a$ such that $0 < a < n$, $(a, n) = 1$, and $a$ is not $n$-separating.

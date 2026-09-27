@@ -1,0 +1,1 @@
+Let \( A R M L \) be a trapezoid with bases \(\overline{A R}\) and \(\overline{M L}\), such that \( M R = R A = A L \) and \( L R = A M = M L \). Point \( P \) lies inside the trapezoid such that \(\angle R M P = 12^{\circ}\) and \(\angle R A P = 6^{\circ}\). Diagonals \( A M \) and \( R L \) intersect at \( D \). Compute the measure, in degrees, of angle \( A P D \).

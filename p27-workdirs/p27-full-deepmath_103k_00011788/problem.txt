@@ -1,0 +1,1 @@
+Determine whether there exists a simple graph \( \Gamma \) with 16 vertices such that its full automorphism group \( G \) contains a semiregular normal subgroup \( H \) isomorphic to the quaternion group \( Q_8 \).

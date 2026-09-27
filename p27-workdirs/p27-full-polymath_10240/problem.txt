@@ -1,0 +1,1 @@
+In a vast digital landscape, an engineer is tasked with paving a square server farm measuring $1000 \times 1000$ units of area. To optimize cooling, the farm must be covered using specialized cooling tiles called "Z-conduits."

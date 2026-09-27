@@ -1,0 +1,1 @@
+In a prestigious botanical garden, there are exactly 1,000 unique species of tropical flowers. The head gardener has curated a vast collection of unique seed packets, where each individual packet contains a specific combination of exactly 3 different species of flowers.

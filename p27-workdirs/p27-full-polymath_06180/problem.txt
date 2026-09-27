@@ -1,0 +1,1 @@
+A high-security facility features ten locked vaults, designated as Vault 0, Vault 1, ..., Vault 9. Each vault is protected by a unique 3-digit access code that must be determined according to a strict set of protocols:

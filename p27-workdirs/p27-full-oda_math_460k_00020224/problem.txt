@@ -1,0 +1,1 @@
+Let \(ABC\) be a triangle with \(AB < AC\) and \(\angle A\) obtuse. Let \(AH\) be the altitude from \(A\) to \(BC\), and \(Ax\) be the internal angle bisector of \(\angle A\). Let \((O_1)\) be the circumcircle of triangle \(ABH\) and \((O_2)\) be the circumcircle of triangle \(ACH\).

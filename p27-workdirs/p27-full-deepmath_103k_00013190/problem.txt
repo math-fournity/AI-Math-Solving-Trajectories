@@ -1,0 +1,1 @@
+Find the limit of the integral \( \lim_{n\rightarrow \infty} \int_0^\infty n f(x) e^{-n|x|} \, dx \), where \( f: [0,\infty) \rightarrow \mathbb{R} \) is Lebesgue integrable and \( \lim_{x\rightarrow 0} f(x) = 2016 \), using the Dominated Convergence Theorem.

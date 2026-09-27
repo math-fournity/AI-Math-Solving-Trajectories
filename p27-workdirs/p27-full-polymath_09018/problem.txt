@@ -1,0 +1,1 @@
+In the high-tech logistics center of the Orion Nebula, a master computer and its backup assistant are managing a sequence of binary encryption codes. The system uses a fixed security parameter $k=15$.

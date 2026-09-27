@@ -1,0 +1,1 @@
+How many tokens can be placed on the squares of a \(7 \times 7\) board such that no rectangle of area 6 (with sides along the edges of the squares) contains more than one token?

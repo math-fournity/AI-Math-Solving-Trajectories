@@ -1,0 +1,1 @@
+Determine whether a continuous function $f: \Bbb C \to \Bbb C$ that maps $\Bbb C$ to an open set and satisfies $|f(z)| \to \infty$ as $z\to \infty$ can be extended to a continuous function on the Riemann sphere.

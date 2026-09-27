@@ -1,0 +1,1 @@
+An intergalactic data-storage facility archives information using a system of indexed cells. The state of a cell with index $n$ is represented by a value $f(n)$.

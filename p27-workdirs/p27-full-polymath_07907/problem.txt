@@ -1,0 +1,1 @@
+A specialized laser surveillance system is monitored across a coordinate-mapped grid. At the center of the grid, two curved security perimeters are defined by the hyperbola $\Gamma: \frac{x^{2}}{3}-y^{2}=1$. An observer stands at a fixed location $P$ (which is not on the perimeters). From this point, the observer can cast a sensor beam $l$ that sweeps through the area.

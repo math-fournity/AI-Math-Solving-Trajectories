@@ -1,0 +1,1 @@
+For a given integer \( n \), determine the integer \( m \) such that:

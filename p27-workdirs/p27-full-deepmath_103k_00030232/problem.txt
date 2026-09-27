@@ -1,0 +1,1 @@
+Determine the number of solutions to the equation \((p_{1}^{\alpha_{1}})^{2}+(p_{2}^{\alpha_{2}})^{2}+\cdots+(p_{n}^{\alpha_{n}})^{2}=(p_{m}^{\alpha_{m}})^{2}\), where \(p_{i}\) are distinct prime numbers and \(\alpha_{k}\in\mathbb{N}\).

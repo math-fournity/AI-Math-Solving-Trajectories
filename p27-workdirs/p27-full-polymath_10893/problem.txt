@@ -1,0 +1,1 @@
+In a remote industrial facility, two logistics managers, Alpha and Beta, are configuring the settings for a high-precision pressure release system. The system’s output is determined by the numerical difference between two four-digit sequences:

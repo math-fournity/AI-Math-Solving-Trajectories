@@ -1,0 +1,1 @@
+A specialized tech conglomerate consists of $n \ge 3$ server hubs. Certain pairs of these hubs are linked by dedicated fiber-optic cables that allow data to flow in both directions between them.

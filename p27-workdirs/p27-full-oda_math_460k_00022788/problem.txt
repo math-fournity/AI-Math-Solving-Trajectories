@@ -1,0 +1,1 @@
+For real positive numbers $x,$ the set $A(x)$ is defined by

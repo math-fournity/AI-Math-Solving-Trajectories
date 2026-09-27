@@ -1,0 +1,1 @@
+Let $V$ be an infinite-dimensional vector space over the field $\mathbb{F}$, where $\mathbb{F}$ is either $\mathbb{R}$ or $\mathbb{C}$. If the dimension of $V$ is $\alpha$, a cardinal number, determine the dimension of $V^*$, the algebraic dual of $V$. Express your answer in terms of $\alpha$.

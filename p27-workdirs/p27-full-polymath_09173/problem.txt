@@ -1,0 +1,1 @@
+In a specialized urban planning simulation, three major transit hubs are positioned at coordinates $A$, $B$, and $C$, forming a triangular sector. A central traffic control tower is located at point $O$, which is exactly equidistant from all three hubs.

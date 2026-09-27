@@ -1,0 +1,1 @@
+A circular high-security fiber-optic network hub has 2006 port terminals distributed around its outer perimeter. An architect named Albatross is tasked with assigning each of these terminals one of 17 different signal frequencies (colors).

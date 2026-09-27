@@ -1,0 +1,1 @@
+Construct a quadrilateral given, in position, the projections of the point of intersection of the diagonals upon the four sides.

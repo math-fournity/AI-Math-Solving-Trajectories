@@ -1,0 +1,1 @@
+Determine the lower bound for the average of the partial quotients in the fundamental period of the continued fraction expansion of \(\sqrt{n}\) for nonsquare positive integers \(n\).

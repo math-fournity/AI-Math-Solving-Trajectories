@@ -1,0 +1,1 @@
+For non-negative real numbers $x_{1}, x_{2}, \cdots, x_{n}$ satisfying $x_{1}+x_{2}+\cdots+x_{n}=1$. Find the maximum value of $\sum_{j=1}^{n}\left(x_{j}^{4}-x_{j}^{5}\right)$.

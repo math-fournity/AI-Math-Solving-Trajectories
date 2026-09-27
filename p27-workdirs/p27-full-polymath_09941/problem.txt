@@ -1,0 +1,1 @@
+In a vast digital simulation, a drone starts its flight path at the origin point $A_0 = (0,0)$. Its first movement target is fixed at $A_1 = (1,0)$. The drone follows a strict navigational protocol to determine its subsequent landing points $A_n = (x_n, y_n)$ for all $n \geq 2$.

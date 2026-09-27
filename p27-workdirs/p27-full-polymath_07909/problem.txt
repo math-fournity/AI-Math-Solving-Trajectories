@@ -1,0 +1,1 @@
+In a remote high-tech facility, an automated sorting system consists of a grid-based storage rack with a $3 \times 3$ layout of slots. Two rival logistics engineers, Grant and Stephen, are testing a new protocol for filling the rack with canisters. Grant uses blue canisters (X) and Stephen uses red canisters (O).

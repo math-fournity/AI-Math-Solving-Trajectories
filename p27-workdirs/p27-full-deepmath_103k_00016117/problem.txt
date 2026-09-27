@@ -1,0 +1,1 @@
+Compute the following sum for the Fourier transform of the characteristic function of the $p$-adic integers $\mathcal{O}_p$:

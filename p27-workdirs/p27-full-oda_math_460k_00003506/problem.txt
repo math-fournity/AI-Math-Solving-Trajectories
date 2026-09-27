@@ -1,0 +1,1 @@
+Find all real values of $c$ such that $(e^x+1)^c$ has an elementary antiderivative.

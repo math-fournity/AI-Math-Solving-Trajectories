@@ -1,0 +1,1 @@
+Let \( f(x) \in \mathbb{Q}[x] \) be a polynomial of degree \( n > 0 \). Let \( p_1, p_2, \dots, p_{n+1} \) be distinct prime numbers. Find the smallest positive integer \( k \) such that there exists a non-zero polynomial \( g(x) \in \mathbb{Q}[x] \) with degree \( k \) satisfying \( fg = \sum_{i=1}^{n+1} c_i x^{p_i} \) with every \( c_i \in \mathbb{Q} \).

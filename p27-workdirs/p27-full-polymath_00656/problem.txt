@@ -1,0 +1,1 @@
+Let \( n \) be a given positive integer. For a connected set \( K \) of \( 2n+1 \) points with integer coordinates in the plane, where connected means that for every pair of points \( R, S \in K \), there exists a sequence of points \( R = T_0, T_1, T_2, \ldots, T_{\ell} = S \) in \( K \) such that each \( T_i \) is distance 1 away from \( T_{i+1} \), define the set of vectors

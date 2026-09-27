@@ -1,0 +1,1 @@
+A function \( f: \mathbb{N} \to \mathbb{N} \) is defined such that \( f(x) \) is the number of divisors of \( x \). Find the least value of \( x \) such that \( f(x) = 2016 \). This value can be written as \( a \cdot b \cdot b \), where \( a \) has no square divisors. Determine the value of \( b \).

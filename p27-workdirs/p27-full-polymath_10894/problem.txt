@@ -1,0 +1,1 @@
+A freight train is composed of 20 unique cargo containers coupled together in a single line on a straight track. Because the track is narrow, the only way to reorganize the containers is through a "shunt move," which consists of swapping the positions of any two containers that are currently coupled directly to one another.

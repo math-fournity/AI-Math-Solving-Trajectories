@@ -1,0 +1,1 @@
+Let $T$ be a nonzero bounded linear operator in $B(H)$, where $H$ is an infinite dimensional Hilbert space, and let $\|T\|$ be the norm of $T$. Compute the norm $\|I-T\|$, where $I$ is the identity operator.

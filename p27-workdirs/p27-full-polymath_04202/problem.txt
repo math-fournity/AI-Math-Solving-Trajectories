@@ -1,0 +1,1 @@
+Two players, Andriy and Olesya, play a game with a round cake cut into $2n$ ($n > 1$) sectors with pairwise distinct weights. All weights are known to both players.

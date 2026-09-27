@@ -1,0 +1,1 @@
+Each point with integral coordinates in the plane is coloured white or blue. Prove that one can choose a colour so that for every positive integer  $ n $  there exists a triangle of area  $ n $  having its vertices of the chosen colour.

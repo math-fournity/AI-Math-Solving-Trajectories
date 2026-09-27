@@ -1,0 +1,1 @@
+Find the best interval $[m, n]$ such that for all $x, y, z \in [m, n]$, the inequality

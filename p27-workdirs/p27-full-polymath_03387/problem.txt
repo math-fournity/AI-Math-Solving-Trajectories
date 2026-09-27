@@ -1,0 +1,1 @@
+11.6. Given a natural number $n$. Sasha claims that for any $n$ rays in space, no two of which have common points, he can mark $k$ points on these rays lying on the same sphere. For what largest $k$ is his statement true?

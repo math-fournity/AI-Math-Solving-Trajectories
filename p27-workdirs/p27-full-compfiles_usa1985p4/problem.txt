@@ -1,0 +1,6 @@
+A graph has n > 2 points. Show that we can find two points A and B such that
+at least ⌊n/2⌋ - 1 of the remaining points are joined to either both or
+neither of A and B.
+
+</rule>
+</rules>

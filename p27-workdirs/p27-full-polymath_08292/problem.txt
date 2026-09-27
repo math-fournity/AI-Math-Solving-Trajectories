@@ -1,0 +1,1 @@
+In the remote digital archive of Sector $m$, data packets are stored exclusively in capacities defined by the set $P_m = \{ m^k \mid k=0,1,2, \ldots \}$, where $m$ is a positive integer constant for that sector.

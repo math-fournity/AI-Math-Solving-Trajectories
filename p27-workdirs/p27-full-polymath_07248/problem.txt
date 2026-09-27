@@ -1,0 +1,1 @@
+A specialized laboratory is conducting a series of experiments labeled $n$, where $n$ ranges from 3 to 100. In each experiment $n$, a team of $n$ researchers is assigned a unique digital transmitter. Each transmitter $i$ (where $1 \le i \le n$) is programmed with a signal intensity value $a_i$, which can be any real number such that $0 \le a_i < 1$.

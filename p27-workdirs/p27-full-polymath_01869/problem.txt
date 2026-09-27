@@ -1,0 +1,1 @@
+Let \(ABC\) be a triangle with \(\angle A = 50^\circ\). Suppose there exists an interior point \(P\) such that \(PB = PC\). Let \(E\) be the intersection of \(PB\) and \(AC\), and \(F\) be the intersection of \(PC\) and \(AB\). Given that \(\angle PEF = 50^\circ\) and \(\angle PFE = 30^\circ\), determine \(\angle ACB\).

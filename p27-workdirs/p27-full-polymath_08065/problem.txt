@@ -1,0 +1,1 @@
+A high-security data center consists of an $n \times n$ grid of server racks. Security bots are stationed at specific racks within this grid. A bot monitors all racks located in the same row or column as its own position, but its line of sight is blocked by any other bot; therefore, it only monitors a rack if every rack between itself and that target rack is currently unoccupied.

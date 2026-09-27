@@ -1,0 +1,1 @@
+In a futuristic square server room, a grid of $12 \times 12$ floor tiles is being used to house specialized drone charging stations. Each station occupies exactly one floor tile. These drones are programmed with a strict proximity protocol: a drone "monitors" any station located on a tile that shares at least one common point (edge or corner) with its own tile.

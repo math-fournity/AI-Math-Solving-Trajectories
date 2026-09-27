@@ -1,0 +1,1 @@
+Let $A$ be a real number such that for any positive integer $n$, the distance between $\lceil A^n \rceil$ and the nearest square of an integer is equal to two. It is known that $A = \left(\frac{1+\sqrt{5}}{2}\right)^k$ for some positive integer $k$. Find $k$.

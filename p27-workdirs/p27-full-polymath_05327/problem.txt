@@ -1,0 +1,1 @@
+Let $X$ be a set with $n = 100$ elements and let $A_1, \ldots, A_m$ be subsets of $X$ such that:

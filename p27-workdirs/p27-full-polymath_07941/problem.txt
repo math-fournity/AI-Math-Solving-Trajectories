@@ -1,0 +1,1 @@
+In a specialized digital logistics warehouse, every inventory batch is assigned a unique identification code $n$. This code is a sequence of decimal digits represented as $a_m \dots a_2 a_1 a_0$.

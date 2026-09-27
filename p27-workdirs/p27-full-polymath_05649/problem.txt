@@ -1,0 +1,1 @@
+On each square of an $n\times n$-chessboard, there are two bugs. In a move, each bug moves to a (vertically of horizontally) adjacent square. Bugs from the same square always move to different squares. Determine the maximal number of free squares that can occur after one move.

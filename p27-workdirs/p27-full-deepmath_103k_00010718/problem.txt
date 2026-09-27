@@ -1,0 +1,1 @@
+Let $p \ge 3$ be a prime, and let $V$ be a crystalline 2-dimensional representation of $G_{\mathbb{Q}_p}$ with a lattice $T$ in $V$. Assume the following conditions on $V$:

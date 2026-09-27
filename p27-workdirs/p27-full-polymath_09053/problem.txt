@@ -1,0 +1,1 @@
+A specialized deep-sea research station is housed within a spherical glass hull centered at a command hub $O$. Four observation sensors, $A, B, C$, and $D$, are mounted on the surface of the hull such that the triangular face formed by sensors $A, B$, and $C$ consists entirely of acute angles.

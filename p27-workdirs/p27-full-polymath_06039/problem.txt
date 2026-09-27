@@ -1,0 +1,1 @@
+A high-tech server farm contains $n$ data packets with sizes $1, 2, \dots, n$ terabytes (TB) stored on a primary server. To migrate the data to a backup cloud, technicians use a transmission buffer with a maximum capacity of exactly $n$ TB.

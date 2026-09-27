@@ -1,0 +1,1 @@
+A master architect is designing a series of circular observation decks, each shaped like a regular $n$-gon with $n$ sides, where $n$ is an integer between 3 and 20 inclusive. To support the structure, each deck must be partitioned into exactly $n-2$ triangular glass floor panels by drawing non-intersecting diagonals from the vertices.

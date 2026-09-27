@@ -1,0 +1,1 @@
+In the city of Aethelgard, a grand plaza is paved with a $5 \times 5$ grid of white marble tiles. Two architects, Master A and Master B, are tasked with preparing the plaza for a festival. They take turns placing exactly one decorative bronze plate over a single tile until a total of $k$ plates have been installed on the plaza.

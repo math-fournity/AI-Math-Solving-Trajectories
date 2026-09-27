@@ -1,0 +1,1 @@
+In a remote industrial zone, a specialized chemical reactor is powered by four primary catalysts, denoted as $a, b, c,$ and $d$. Due to strict safety protocols, these catalysts must be balanced such that the sum of their squared concentrations satisfies the equilibrium equation $a^2 + b^2 + c^2 + d^2 = 2$, where each concentration is a non-negative value.

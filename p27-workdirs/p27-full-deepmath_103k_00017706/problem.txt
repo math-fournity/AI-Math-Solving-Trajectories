@@ -1,0 +1,1 @@
+Consider an algebraically closed field $K$. If $G$ is an algebraic subgroup of $(K,+)^3$ with dimension 1, determine whether there always exists a line $L$ in $K^3$ that intersects $G$ only at the origin.

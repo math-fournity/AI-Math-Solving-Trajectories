@@ -1,0 +1,1 @@
+Determine whether there exists a Borel measurable function \( f: [0, 1] \times \mathbb{R} \to [0, \infty) \) such that \( \inf_{g \in \mathcal{L}} \int_{0}^{1} f(t, g(t)) \, dt < \inf_{h \in C^2([0, 1])} \int_{0}^{1} f(t, h(t)) \, dt \), where \( \mathcal{L} \) is the set of continuously differentiable real-valued functions on \([0, 1]\) with Lipschitz continuous derivative.

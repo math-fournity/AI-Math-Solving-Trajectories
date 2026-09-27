@@ -1,0 +1,1 @@
+For a positive integer $n$, an $n$-sequence is a sequence $(a_0, \ldots, a_n)$ of non-negative integers satisfying the following condition: if $i$ and $j$ are non-negative integers with $i+j \le n$, then $a_i+a_j \le n$ and $a_{a_i+a_j} = a_{i+j}$.

@@ -1,0 +1,1 @@
+Let $M$ be a module over the polynomial ring $\mathbb{C}[x]$ such that $x+n$ is invertible in $M$ for every integer $n$. Define $N = \bigoplus_{n>0} \mathbb{C}_n$, where $\mathbb{C}_n := \mathbb{C}[x]/(x+n)$. Determine whether $\operatorname{Ext}^1(M, N) = 0$.

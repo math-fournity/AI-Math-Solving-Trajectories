@@ -1,0 +1,1 @@
+Find all pairs of prime numbers $(p, q)$ such that $p, q < 2005$ and $p$ divides $q^2 + 8$, and $q$ divides $p^2 + 8$. Let $S$ be the set of all such pairs $(p, q)$. Calculate the sum of $p + q$ for all pairs $(p, q) \in S$.

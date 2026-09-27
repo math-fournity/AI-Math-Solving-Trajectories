@@ -1,0 +1,1 @@
+16. (USS 5) ${ }^{\mathrm{IMO} 2}$ Given a convex polyhedron $P_{1}$ with 9 vertices $A_{1}, \ldots, A_{9}$, let us denote by $P_{2}, P_{3}, \ldots, P_{9}$ the images of $P_{1}$ under the translations mapping the vertex $A_{1}$ to $A_{2}, A_{3}, \ldots, A_{9}$ respectively. Prove that among the polyhedra $P_{1}, \ldots, P_{9}$ at least two have a common interior point.

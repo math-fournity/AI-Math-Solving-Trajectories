@@ -1,0 +1,1 @@
+Calculate the number of open subsets of the real line, denoted as \( o(\mathbb{R}) \).

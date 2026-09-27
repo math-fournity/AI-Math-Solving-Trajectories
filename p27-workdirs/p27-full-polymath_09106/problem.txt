@@ -1,0 +1,1 @@
+In the interconnected world of global logistics, there are several distribution hubs linked by specialized cargo transport routes. Each transport route connects exactly two distinct hubs and facilitates the movement of goods in both directions. Every route is managed by one of $k=15$ independent logistics corporations.

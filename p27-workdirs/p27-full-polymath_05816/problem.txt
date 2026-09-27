@@ -1,0 +1,1 @@
+Given a natural number $n > 4$. On the plane, $n$ points are marked, such that no three points lie on the same line. Vasily draws all segments connecting pairs of marked points one by one. For each segment $S$ he draws, he marks it with the smallest natural number (starting from 1) that has not yet been used to mark any previously drawn segment sharing an endpoint with $S$.

@@ -1,0 +1,1 @@
+Let  $m,n\ge 2$  be given integers. Prove that there exist positive integers  $a_1<a_2<\ldots<a_m$  so that for any  $1\le i<j\le m$  the number  $\frac{a_j}{a_j-a_i}$  is an integer divisible by  $n$ .

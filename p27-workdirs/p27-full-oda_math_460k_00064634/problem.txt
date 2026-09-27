@@ -1,0 +1,1 @@
+Consider a hyperbolic Riemann surface $S$ with an abelian fundamental group. If $S$ is conformally isomorphic to either the unit disk $D$, the punctured disk $D \setminus \{ 0 \}$, or the annulus $A_r = \{ z \in \mathbb{C} : 1 < |z| < r \}$, determine the sum of all possible values of $r$ for which $A_r$ can be such a conformal isomorph.

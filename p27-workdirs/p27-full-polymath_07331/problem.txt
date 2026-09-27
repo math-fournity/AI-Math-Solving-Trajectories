@@ -1,0 +1,1 @@
+A high-tech research facility is designing a secure communication network between a set of $n$ servers. To ensure redundancy, every single server must be linked directly to every other server by a dedicated fiber-optic cable, forming a complete network topology.

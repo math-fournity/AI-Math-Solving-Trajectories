@@ -1,0 +1,1 @@
+A fair 100-sided die is rolled twice, giving the numbers $a$ and $b$ in that order. If the probability that $a^2-4b$ is a perfect square is $\frac{m}{n}$, where $m$ and $n$ are relatively prime positive integers, compute $100m+n$.

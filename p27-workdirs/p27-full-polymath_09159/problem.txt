@@ -1,0 +1,1 @@
+In a specialized logistics warehouse, a technician named Leo is monitoring a single automated rover located at one of 2011 distinct charging docks, numbered sequentially from 1 to 2011. Leo cannot see the rover and must identify its exact dock location.

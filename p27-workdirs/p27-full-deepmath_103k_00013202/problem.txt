@@ -1,0 +1,1 @@
+Determine whether the image of the function $f(z) = 2z^{14}\cos^2z$ is $\mathbb{C}$ or $\mathbb{C} \setminus \{a\}$ for some $a \in \mathbb{C}$.

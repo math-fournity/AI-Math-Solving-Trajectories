@@ -1,0 +1,1 @@
+Let \( n \geq 3 \) be an integer. Find the largest real number \( M \) such that for any positive real numbers \( x_1, x_2, \ldots, x_n \), there exists a permutation \( y_1, y_2, \ldots, y_n \) of these numbers satisfying

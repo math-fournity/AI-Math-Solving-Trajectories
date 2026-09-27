@@ -1,0 +1,1 @@
+In a remote high-security server farm, a digital virus (the "Infiltrator") is attempting to exfiltrate data from a $10 \times 10$ central processing grid. The grid consists of unit-length conduits, creating a lattice of $121$ intersection points (nodes). The Infiltrator begins its journey at the dead center of the grid, the node at coordinates $(5,5)$.

@@ -1,0 +1,1 @@
+A specialized assembly plant produces a sequence of digital batches, labeled $a_1, a_2, a_3, \dots$, where each batch size is a strictly positive integer. To ensure initial diversity, the sizes of the first two batches, $a_1$ and $a_2$, share no common factors other than 1. For every subsequent batch, the size is determined by the production rule $a_{n+2} = a_n a_{n+1} + 1$.

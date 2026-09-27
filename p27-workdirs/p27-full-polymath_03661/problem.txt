@@ -1,0 +1,1 @@
+Let $n \geq 2$ be a positive integer. Each cell of an $n \times n$ board is colored red or blue. We place dominoes on the board, each covering two cells. We call a domino plain if it lies on two red or two blue cells, and colorful if it lies on one red and one blue cell.

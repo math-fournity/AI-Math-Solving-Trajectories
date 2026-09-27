@@ -1,0 +1,1 @@
+What are the closed (letterless) fragments of the provability logics $PL_{HA+MP}$ and $PL_{HA+MP+ECT_0}$, where $HA$ is Heyting Arithmetic, $MP$ is Markov's Principle, and $ECT_0$ is the Extended Church's Thesis?

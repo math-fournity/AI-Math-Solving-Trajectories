@@ -1,0 +1,1 @@
+What is the smallest positive real number \( r \) such that a square of side length 1 can be covered by 3 disks of radius \( r \)?

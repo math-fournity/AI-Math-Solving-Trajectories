@@ -1,0 +1,1 @@
+In the strategic logistics hub of a maritime port, four key docking stations are positioned at coordinates labeled $A, B, C,$ and $D$. Two primary underwater fiber-optic cables are laid out in straight lines: the first cable connects station $A$ to station $B$, and the second connects station $C$ to station $D$. These two cables intersect at a central switching junction, $P$.

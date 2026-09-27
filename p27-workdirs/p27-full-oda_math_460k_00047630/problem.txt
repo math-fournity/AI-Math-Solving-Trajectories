@@ -1,0 +1,1 @@
+Given \( x = \frac{a}{b} > 1 \) where \( a, b \in \mathbb{N}^+ \) and \( (a, b) = 1 \), if there exists \( \lambda \in \mathbb{R} \) such that for sufficiently large \( n \):

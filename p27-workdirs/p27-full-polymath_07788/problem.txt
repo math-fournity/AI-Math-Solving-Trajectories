@@ -1,0 +1,1 @@
+A specialized logistics company manages a vast automated warehouse organized into a 3D grid of storage cells, where each cell is a $1 \times 1 \times 1$ cube. The warehouse is partitioned by vertical and horizontal laser grids at every integer coordinate along the $x, y,$ and $z$ axes.

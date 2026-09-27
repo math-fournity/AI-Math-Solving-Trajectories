@@ -1,0 +1,1 @@
+Calculate the cokernel of the map $Hom_B(\Omega_{A/k}\otimes_A B,B) \to Hom_B(I/I^2,B)$ where $k$ is a field, $A=k[x,y]$, $I=(x^2,xy,y^2)$, and $B=A/I$.

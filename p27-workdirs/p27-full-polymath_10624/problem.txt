@@ -1,0 +1,1 @@
+In a specialized logistics harbor, there are 100 cargo vessels docked at the piers. These vessels have varying maximum weight capacities of 101, 102, 103, ..., up to 200 metric tons. Currently, the fleet is carrying a combined total of $n$ metric tons of high-density ore distributed among them.

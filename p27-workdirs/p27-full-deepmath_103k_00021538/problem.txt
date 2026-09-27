@@ -1,0 +1,1 @@
+Evaluate the limit \( \lim_{n \to \infty} J_n \), where \( J_n = \int_{-\infty}^\infty \frac{|\cos \left( \frac{x}{n} \right) \cos(x)|}{\frac{x}{n} x} \, dx \).

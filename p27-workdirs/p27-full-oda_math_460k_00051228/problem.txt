@@ -1,0 +1,1 @@
+Determine all pairs \((a, b)\) of positive integers for which \(s(an + b) - s(n)\) has a finite number of values when \(n\) varies over the positive integers.

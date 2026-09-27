@@ -1,0 +1,1 @@
+Suppose that \(A\) and \(B\) are compact and connected subsets of \(\mathbb{R}^2\), and \(A\) is homeomorphic to \(B\). Are the complements of \(A\) and \(B\) in \(\mathbb{R}^2\) homeomorphic?

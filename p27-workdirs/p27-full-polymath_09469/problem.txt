@@ -1,0 +1,1 @@
+In a futuristic circular data-storage facility, there are 999 memory cells arranged in a perfect ring. Each cell stores a specific numerical voltage level. An engineer is testing the stability of these voltages based on a "gradient protocol" defined by a positive integer $m$.

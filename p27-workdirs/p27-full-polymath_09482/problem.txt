@@ -1,0 +1,1 @@
+In a futuristic data center, a master control system manages a data buffer of size $n$, where $n$ is any integer from 2 to 100 inclusive. The state of the buffer is represented by a value $x$ in the range of integers $\{0, 1, \dots, n-1\}$. All operations on the buffer are performed modulo $n$.

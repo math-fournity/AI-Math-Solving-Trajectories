@@ -1,0 +1,1 @@
+In a futuristic research facility, there is a specialized glass containment chamber shaped like a regular tetrahedron, designated as Chamber $T$. This chamber has a total interior capacity of exactly 1 unit of breathable air.

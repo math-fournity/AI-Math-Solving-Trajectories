@@ -1,0 +1,1 @@
+8. In a Cartesian coordinate system, if all vertices of a polygon are integer points, then the polygon is called "integral". If an integral convex 14-gon can be divided into integral parallelograms, and the area of each parallelogram does not exceed $C$, find the minimum value that $C$ can take.

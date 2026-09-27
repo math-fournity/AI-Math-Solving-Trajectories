@@ -1,0 +1,1 @@
+In a futuristic data-storage facility, information is encoded into a series of hierarchical power-cells. A specific data-load with a magnitude of 513 units must be distributed across a sequence of storage levels: Level 0, Level 1, Level 2, and so on.

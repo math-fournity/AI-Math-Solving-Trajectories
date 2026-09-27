@@ -1,0 +1,1 @@
+Let \( f \in \mathbb{C}[x] \) be a monic polynomial of prime degree \( p \) such that \( f \) is not co-prime with any of its derivatives \( f^{(k)} \) for \( 1 \leq k < p \). Prove or disprove that there exists \( a \in \mathbb{C} \) such that \( f(x) = (x-a)^p \).

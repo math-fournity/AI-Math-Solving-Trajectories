@@ -1,0 +1,1 @@
+In the high-tech logistics hub of Neo-City, a digital filing system organizes data packets labeled with the positive integers $\{1, 2, 3, \dots\}$. A collection of these packets is classified as a "Stable Protocol" if it satisfies two strict security criteria:

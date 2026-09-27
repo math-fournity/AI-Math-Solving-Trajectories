@@ -1,0 +1,1 @@
+Example 5. Solve the equation $\frac{\left(y^{\prime \prime}\right)^{2}-y^{\prime} \cdot y^{\prime \prime \prime}}{\left(y^{\prime}\right)^{2}}=\frac{1}{x^{2}}$.

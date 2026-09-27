@@ -1,0 +1,1 @@
+Let $S(k)$ denote the sum of the digits of the decimal representation of a positive integer $k$. We are interested in positive integers $n \ge 2$ and rational numbers $\beta \in (0,1)$ for which there exist positive integers $a_1, a_2, \ldots, a_n$ such that for any subset $I \subseteq \{1, 2, \ldots, n\}$ containing at least two elements, the following equality holds:

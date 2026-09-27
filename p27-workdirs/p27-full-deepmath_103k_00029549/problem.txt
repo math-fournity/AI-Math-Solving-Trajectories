@@ -1,0 +1,1 @@
+If \( \Pi_C(\cdot):\mathbb{R}^n \to C \) is a projection operator for a set \( C\subseteq \mathbb{R}^n \) under some norm \( ||\cdot||_p \), defined as \( \Pi_C(x) = \underset{y \in C}{\mathrm{argmin}}||y-x||_p \), and \( \Pi_C \) is a contraction map under the same norm, is it necessary that \( C \) is convex? Provide a justification for your answer.

@@ -1,0 +1,1 @@
+A high-security vault system is composed of exactly 17 individual storage chambers. To ensure maximum stability, the floor of each chamber is a perfect square with an integer side length. The total combined surface area of the floors of all 17 chambers is exactly 1917 square meters.

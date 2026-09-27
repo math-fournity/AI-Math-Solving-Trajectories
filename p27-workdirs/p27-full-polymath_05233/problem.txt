@@ -1,0 +1,1 @@
+In acute \(\triangle ABC\), \(AB = 11\) and \(CB = 10\). Points \(E\) and \(D\) are constructed such that \(\angle CBE\) and \(\angle ABD\) are right angles, and \(ACEBD\) is a non-degenerate pentagon. Additionally, \(\angle AEB \cong \angle DCB\), \(AE = CD\), and \(ED = 20\). Given that \(EA\) and \(CD\) intersect at \(P\) and \(AP = 4\), find \(CP^2\).

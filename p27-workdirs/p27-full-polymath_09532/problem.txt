@@ -1,0 +1,1 @@
+In the bureaucratic kingdom of Logistica, resources are processed through six sequential "Redistribution Cycles." Each cycle is governed by a chosen efficiency divisor, $n_i$.

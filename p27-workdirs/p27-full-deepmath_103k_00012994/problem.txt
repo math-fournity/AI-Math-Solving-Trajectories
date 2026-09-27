@@ -1,0 +1,1 @@
+Prove that if a Dirichlet character \( \chi \) modulo \( N \) is defined modulo \( N' \), where \( N' \mid N \), then the conductor \( c(\chi) \) divides \( N' \).

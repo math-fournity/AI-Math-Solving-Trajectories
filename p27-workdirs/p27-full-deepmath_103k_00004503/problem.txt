@@ -1,0 +1,1 @@
+Let $G$ be a finite group and $N \trianglelefteq G$. Assume that $G \lesssim G/G' \times Q_8$, $G/N = Q_8$, and $N \le Z(G)$. Determine whether $G = N \times Q_8$ is true or false.

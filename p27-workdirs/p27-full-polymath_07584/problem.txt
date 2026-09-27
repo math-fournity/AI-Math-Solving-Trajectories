@@ -1,0 +1,1 @@
+In a remote industrial complex, there are two types of machinery groups used for material synthesis: Group Alpha and Group Beta.

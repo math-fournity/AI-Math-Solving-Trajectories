@@ -1,0 +1,1 @@
+Let $\ell_i$ and $\tilde{\ell}_i$ be affine linear polynomials (with non-zero constants) in $\mathbb{C}[x_1,\hdots,x_n]$. Let $y$ be a new variable and assume that

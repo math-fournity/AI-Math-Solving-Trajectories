@@ -1,0 +1,1 @@
+Find the smallest natural number \( n \) such that for all \( i \in \mathbb{N} \) with \( i \leq 1402 \),

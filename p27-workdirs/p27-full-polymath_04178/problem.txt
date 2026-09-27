@@ -1,0 +1,1 @@
+In \(\triangle ABC\), \(\angle B = 36^\circ\), \(\angle C = 76^\circ\). \(I\) is the incenter of \(\triangle ABC\) and \(D\) is the tangent of the \(A\)-excircle to \(BC\). The circle passing through the circumcenter of \(\triangle BCD\), \(B\), and \(C\) meets \(BI\) at \(E\). Calculate \(\angle BEC\).

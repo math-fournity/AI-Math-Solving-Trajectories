@@ -1,0 +1,1 @@
+For every point on the plane, one of  $ n$  colors are colored to it such that:

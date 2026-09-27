@@ -1,0 +1,1 @@
+Let $R$ be a local domain that satisfies the ascending chain condition on radical ideals and the descending chain condition on prime ideals. Determine whether the Krull dimension of $R$ is finite.

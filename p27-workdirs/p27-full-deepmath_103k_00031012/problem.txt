@@ -1,0 +1,1 @@
+Determine the number of positive integers, each with exactly \(2^{2005}\) digits, where each digit is either 7 or 8, such that among any two chosen integers, at most half of their corresponding digits are the same.

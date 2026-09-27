@@ -1,0 +1,1 @@
+Given integers \( n > k \) and a prime \( p > 3 \), let \( v_p(n) \) be the highest power of \( p \) dividing \( n \). Find the smallest positive integer \( m \) such that

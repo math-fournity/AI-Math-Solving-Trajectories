@@ -1,0 +1,1 @@
+Let \(ABCD\) be a convex, non-cyclic quadrilateral with \(E\) the intersection of its diagonals. Given \(\angle ABD + \angle DAC = \angle CBD + \angle DCA\), \(AB = 10\), \(BC = 15\), \(AE = 7\), and \(EC = 13\), find \(BD\).

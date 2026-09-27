@@ -1,0 +1,1 @@
+In a remote desert, three research stations, Alpha ($A$), Bravo ($B$), and Charlie ($C$), form an acute triangular perimeter. A central communications hub is located at the circumcenter $O$ of the triangle, and a logistics depot is situated at the centroid $G$ of the triangle.

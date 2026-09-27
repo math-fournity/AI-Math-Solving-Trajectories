@@ -1,0 +1,1 @@
+Determine the smallest positive constant \(c\) such that for any simple graph \(G = (V, E)\), if \(|E| \geq c|V|\), then \(G\) contains two cycles with no common vertex, and one of them contains a chord.

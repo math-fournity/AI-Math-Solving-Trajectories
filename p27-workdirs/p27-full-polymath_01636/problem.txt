@@ -1,0 +1,1 @@
+How many natural numbers $(a,b,n)$ with $ gcd(a,b)=1$ and $ n>1 $ such that the equation \[ x^{an} +y^{bn} = 2^{2010} \] has natural numbers solution $ (x,y) $

@@ -1,0 +1,1 @@
+There are three types of piece shown as below. Today Alice wants to cover a $100 \times 101$ board with these pieces without gaps and overlaps. Determine the minimum number of $1\times 1$ pieces should be used to cover the whole board and not exceed the board. (There are an infinite number of these three types of pieces.)

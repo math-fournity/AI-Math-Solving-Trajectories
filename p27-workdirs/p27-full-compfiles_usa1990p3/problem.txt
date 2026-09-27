@@ -1,0 +1,7 @@
+Show that for any odd positive integer n, we can always divide the set
+{n, n+1, n+2, ... , n+32} into two parts, one with 14 numbers and one with 19,
+so that the numbers in each part can be arranged in a circle, with each number
+relatively prime to its two neighbours.
+
+</rule>
+</rules>

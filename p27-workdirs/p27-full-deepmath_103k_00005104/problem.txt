@@ -1,0 +1,1 @@
+Determine the smallest positive integer \( n \) such that the number of distinct groups of order \( n \) is greater than \( n \) itself.

@@ -1,0 +1,1 @@
+In a specialized logistics warehouse, the floor is marked with an infinite grid of unit squares defined by integer coordinates. A team of robotic architects is tasked with placing "Modular Command Centers" on this grid.

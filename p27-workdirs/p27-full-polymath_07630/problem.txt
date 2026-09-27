@@ -1,0 +1,1 @@
+A high-security data ring consists of 10 server nodes arranged in a fixed circle. These nodes host five distinct encrypted data packets, with each packet being mirrored across exactly two nodes (forming five pairs of identical twins). Initially, the 10 nodes are assigned these mirrored packets in a completely random arrangement.

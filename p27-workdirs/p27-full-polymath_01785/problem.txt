@@ -1,0 +1,1 @@
+On the real line, only the points $0$ and $1$ are initially marked. We can perform the following operation: choose two already marked points $a$ and $b$, and mark the point $2b - a$ (the symmetric of $a$ with respect to $b$). Let $f(n)$ be the minimum number of operations required to mark the integer $n$. Calculate $f(100) + f(-100)$.

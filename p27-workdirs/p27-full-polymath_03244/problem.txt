@@ -1,0 +1,1 @@
+In some cells of an \(8 \times 8\) table, the number \(2\) is written, in others - the number \(1\), and the rest are empty. Two cells are called neighbors if they share a side. None of the \(64\) cells has two neighbors with the same numbers in them. Find the largest possible sum of the numbers in the table.

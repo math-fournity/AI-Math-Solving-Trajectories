@@ -1,0 +1,1 @@
+A specialized logistics hub is managing a fleet of 2020 identical delivery drones, each currently carrying a 1-ton payload. In this facility, two operators, Controller A and Controller B, manage the consolidation of cargo through a series of rounds.

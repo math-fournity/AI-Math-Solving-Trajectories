@@ -1,0 +1,1 @@
+Given an equilateral triangle \( \triangle ABC \), points \( D \) and \( E \) are inside the triangle such that \( DE = 1 \), \( DA = EA = \sqrt{7} \), and \( DB = EC = 2 \). Find the length of \( AB \).

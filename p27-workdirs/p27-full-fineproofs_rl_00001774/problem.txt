@@ -1,0 +1,1 @@
+Four positive integers $x, y, z$, and $t$ satisfy the relations  $$ x y-z t=x+y=z+t . $$  Is it possible that both $x y$ and $z t$ are perfect squares?  (Russia)

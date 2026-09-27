@@ -1,0 +1,1 @@
+In a remote digital civilization, the Master Architect governs a system consisting of exactly $p$ distinct data nodes, where $p$ is a prime number such that $p$ leaves a remainder of $2$ when divided by $3$.

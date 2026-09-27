@@ -1,0 +1,1 @@
+Consider $n$ points on the plane. Let $T(n)$ be the maximum number of isosceles triangles that can be formed by any selection of $n$ points. Find the smallest constant $c$ such that $T(n) \leq c \cdot n^{\frac{2}{5}}$ holds for all positive integers $n$. Calculate $c$ to the nearest thousandth.

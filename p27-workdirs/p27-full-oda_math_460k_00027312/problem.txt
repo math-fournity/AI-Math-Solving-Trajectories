@@ -1,0 +1,1 @@
+Use the exchange method to find the min-max parabola for \( y(x) = \cos x \) over \( (0, \pi/2) \). [You may want to use the extreme points of \( T_3(x) \), converted by a change of argument to the interval \( (0, \pi/2) \), as an initial quadruple.]

@@ -1,0 +1,1 @@
+A circle passing through vertices  $A$  and  $B$  of triangle  $ABC$  intersects the sides  $AC$  and  $BC$  again at points  $P$  and  $Q$ , respectively. Given that the median from vertex  $C$  bisect the arc  $PQ$  of the circle. Prove that  $ABC$  is an isosceles triangle.

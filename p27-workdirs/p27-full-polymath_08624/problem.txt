@@ -1,0 +1,1 @@
+A high-security data vault requires a specific configuration of encryption keys to function. To set up the vault, a security engineer must select two distinct groups of unique integer-coded keys, Group $A$ and Group $B$.

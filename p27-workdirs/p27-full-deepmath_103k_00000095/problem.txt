@@ -1,0 +1,1 @@
+Determine the degree of the map \( \bar{r} : \mathbb{CP}^n \rightarrow \mathbb{CP}^n \) induced by \( r(z_0, z_1, \ldots, z_n) = (-z_0, z_1, \ldots, z_n) \) on \( \mathbb{C}^{n+1} \). Consider the cases for even and odd \( n \).

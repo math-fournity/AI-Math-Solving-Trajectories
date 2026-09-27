@@ -1,0 +1,1 @@
+Suppose $n$ cars are racing and initially have a specific order. At each moment, a car may overtake another car. No two overtakes occur simultaneously.

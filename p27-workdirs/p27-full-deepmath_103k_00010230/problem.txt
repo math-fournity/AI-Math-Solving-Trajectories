@@ -1,0 +1,1 @@
+Determine whether there exists a linear hypergraph $H = (\omega, E)$ with $E \subseteq [\omega]^\alpha$ such that $\chi(H) = \aleph_0$, where $\alpha \in (\omega \cup \{\omega\}) \setminus \{0,1,2\}$. Provide a justification for your answer.

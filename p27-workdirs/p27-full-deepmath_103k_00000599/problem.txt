@@ -1,0 +1,1 @@
+Does there exist an uncountable group such that every proper subgroup is countable?

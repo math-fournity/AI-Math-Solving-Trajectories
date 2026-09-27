@@ -1,0 +1,1 @@
+Let $\mathbb{N}$ be the set of positive integers. Let $S$ be the set of all positive integers $k$ for which there exist functions $f: \mathbb{N} \rightarrow \mathbb{N}$ and $g: \mathbb{N} \rightarrow \mathbb{N}$ such that $g$ assumes infinitely many values and the equation

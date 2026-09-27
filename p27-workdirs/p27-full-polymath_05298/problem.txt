@@ -1,0 +1,1 @@
+Let $A, B, C, D$, and $E$ be integers with no single common factor greater than 1 such that the polynomials $f(x) = 5Ax^4 + 4Bx^3 + 3Cx^2 + 2Dx + E$ and $g(x) = 10Ax^3 + 6Bx^2 + 3Cx + D$ together have 7 distinct integer roots. Determine the sum of the absolute values of all possible values of $A$.

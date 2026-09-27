@@ -1,0 +1,1 @@
+Find an example of a closed connected smooth manifold $M$ such that $\pi_1(M) = \pi_2(M) = \pi_4(M) = 0$ and $\pi_3(M) = \mathbb{Z}$. If such a manifold exists, determine its minimum possible dimension.

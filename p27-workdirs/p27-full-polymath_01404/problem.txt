@@ -1,0 +1,1 @@
+Let \( a_{n} \) be the number of unordered sets of three distinct bijections \( f, g, h: \{1,2, \ldots, n\} \rightarrow \{1,2, \ldots, n\} \) such that the composition of any two of the bijections equals the third. What is the largest value in the sequence \( a_{1}, a_{2}, \ldots \) which is less than 2021?

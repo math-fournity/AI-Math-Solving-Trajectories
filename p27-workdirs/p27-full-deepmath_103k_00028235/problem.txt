@@ -1,0 +1,1 @@
+Let $X$ be a topological space that is not second-countable. Is it possible to find a subspace $Y \subseteq X$ with $|Y| \leq \aleph_1$ that is also not second-countable?

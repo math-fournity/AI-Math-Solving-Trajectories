@@ -1,0 +1,1 @@
+Does there exist an infinite sequence of positive integers $a_{1}, a_{2}, a_{3}, \ldots$ such that $a_{m}$ and $a_{n}$ are coprime if and only if $|m-n|=1$ ?

@@ -1,0 +1,1 @@
+Let $K$ be a point on the angle bisector, such that $\angle BKL=\angle KBL=30^\circ$. The lines $AB$ and $CK$ intersect in point $M$ and lines $AC$ and $BK$ intersect in point $N$. Determine  $\angle AMN$.

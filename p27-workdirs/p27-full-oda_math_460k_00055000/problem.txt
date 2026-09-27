@@ -1,0 +1,1 @@
+Solve for integers \(x\) and \(y\) in the equation \(x(x+3)(x+6) \cdots (x+120) = y^{70}\).

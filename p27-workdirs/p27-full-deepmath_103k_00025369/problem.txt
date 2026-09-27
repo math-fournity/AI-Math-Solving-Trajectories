@@ -1,0 +1,1 @@
+Determine the proof-theoretic ordinal associated with Peano Arithmetic (PA) augmented with transfinite induction up to \(\epsilon_0\), denoted as \(PA+TI(\epsilon_0)\).

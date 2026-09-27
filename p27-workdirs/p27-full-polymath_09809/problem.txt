@@ -1,0 +1,1 @@
+In a futuristic industrial city, engineers are designing "Signal Modules" for a network grid. Each module is assigned a unique integer ID from the range $\{1, 2, \dots, n\}$, where $n$ is a positive integer representing the total capacity of the grid.

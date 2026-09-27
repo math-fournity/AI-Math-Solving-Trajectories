@@ -1,0 +1,1 @@
+In a global logistics network, $n$ distribution hubs (where $n \ge 3$) are arranged in a large circle. At the start of an optimization cycle, each hub is assigned exactly three unique identification chips from a set numbered $1, 2, \dots, 3n$.

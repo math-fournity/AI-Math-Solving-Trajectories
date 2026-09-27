@@ -1,0 +1,1 @@
+A specialized offshore solar farm is being designed within a triangular maritime zone, designated as Sector Alpha-Beta-Gamma ($\triangle ABC$). The primary boundary along the coastline, $\overline{\beta\gamma}$ (side $BC$), measures exactly 15 kilometers. The survey team has fixed the interior angle at the northern observation post, Alpha ($\angle A$), at precisely $67.5^\circ$.

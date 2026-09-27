@@ -1,0 +1,1 @@
+A wireless telecommunications company is installing a network of 100 identical signal transmitters on a flat, open plain. Due to technical interference constraints, the safety regulations dictate that no two transmitters can be placed closer than 1 kilometer apart.

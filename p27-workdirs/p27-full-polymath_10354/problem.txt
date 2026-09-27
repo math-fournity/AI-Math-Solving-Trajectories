@@ -1,0 +1,1 @@
+A specialized logistics firm operates three delivery drones across a flat, two-dimensional city grid. The firm utilizes three specific "load factors" represented by the values $x_1 = -1$, $x_2 = 2$, and $x_3 = 5$.

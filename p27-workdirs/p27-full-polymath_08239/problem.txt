@@ -1,0 +1,1 @@
+In the competitive world of high-tech manufacturing, two corporations, Arasaka and Biotech, are battling for control of a central energy grid. The grid currently holds a reserve of $N$ units of energy, where $N$ is a positive integer.

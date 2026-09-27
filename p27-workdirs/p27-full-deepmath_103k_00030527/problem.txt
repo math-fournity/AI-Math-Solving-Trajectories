@@ -1,0 +1,1 @@
+Let $G = \mathbb{Z}_p \times \mathbb{Z}_p$, where $p$ is a prime number. Consider two subsets $S$ and $H$ of $G$ with $|S| = |H| = p$ and both containing the identity element $e$. If the sets $h_iS$ form a partition of $G$ such that $G = HS$, is it necessary that either $H$ or $S$ is a subgroup of $G$?

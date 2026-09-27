@@ -1,0 +1,1 @@
+How many points of intersection do the graphs of \( y = \cos\left(\frac{\pi}{x}\right) \) and \( y = 100x + 2 \) have?

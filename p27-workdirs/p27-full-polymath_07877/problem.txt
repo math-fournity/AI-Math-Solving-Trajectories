@@ -1,0 +1,1 @@
+A team of civil engineers is designing a precision irrigation canal that follows a path determined by the decimal expansion of a unit fraction, $1/n$, where $n$ is a positive whole number.

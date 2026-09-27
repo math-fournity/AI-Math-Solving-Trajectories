@@ -1,0 +1,1 @@
+A shipping logistics manager is organizing a transport hub. A client arrives with a manifest listing several crates. Each crate has a weight, expressed as a positive integer in kilograms, and no single crate weighs more than 25 kilograms. The client guarantees that the total weight of all crates in the manifest is at least 200 kilograms.

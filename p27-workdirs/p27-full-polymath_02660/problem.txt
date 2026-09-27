@@ -1,0 +1,1 @@
+Let $p = 101$. Note that both $p$ and $p+2$ are prime numbers. Define a sequence $\{a_n\}$ by $a_1 = 2$ and $a_n = a_{n-1} + \lfloor \frac{pa_{n-1}}{n} \rfloor$ for $n \ge 2$. Find the remainder when $p a_{99}$ is divided by $100$.

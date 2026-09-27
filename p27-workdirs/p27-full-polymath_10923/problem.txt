@@ -1,0 +1,1 @@
+In a remote industrial complex, two separate automated logistics systems, System A and System B, are being tested. Each system manages a fleet of $n$ specialized storage units, where $n$ is a positive integer.

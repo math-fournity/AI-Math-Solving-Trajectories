@@ -1,0 +1,1 @@
+Consider a point \( P \) on the Neuberg cubic of triangle \( ABC \) such that the cevian triangle of \( P \) is equilateral. Let \( Q \) be the point of concurrency of the reflections of \( P \) about the sides of triangle \( ABC \). If \( R \) is the isogonal conjugate of \( P \), find the ratio \( \frac{QR}{PQ} \).

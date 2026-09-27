@@ -1,0 +1,1 @@
+A specialized logistics hub processes various incoming shipments, each assigned a "priority weight" represented by an integer. The hub manager is designing a safety protocol involving a specific number of shipments, denoted as $n$, where $n \geq 9$.

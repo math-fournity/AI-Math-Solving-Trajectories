@@ -1,0 +1,1 @@
+Let \( X \) be a Banach space. Suppose there exists a sequence \( \{x_n\} \) in \( X \) such that for all finite \( A \subseteq \mathbb{N} \) and for all functions \( \alpha:A\to\{-1,1\} \), we have \( \|\sum_{n\in A}\alpha_nx_n\| = |A| \). Does this imply that the closure of the subspace spanned by \( \{x_n\} \) is isomorphic to \( \ell^1 \)?

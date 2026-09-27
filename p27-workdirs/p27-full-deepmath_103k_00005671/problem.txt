@@ -1,0 +1,1 @@
+In a metric space $(X,d)$, a set $S \subseteq X$ is defined as convex if for all $x,y \in S$, the metric segment $[x,y] = \{ z \in X : d(x,z) + d(z,y) = d(x,y) \}$ is contained in $S$. Consider the topology $\tau$ on $X$ induced by the metric $d$. Does there exist a family $\mathcal{B} \subseteq \tau$ of convex sets such that $\mathcal{B}$ is a basis for the topology $\tau$?

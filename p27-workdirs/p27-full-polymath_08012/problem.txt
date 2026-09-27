@@ -1,0 +1,1 @@
+In the competitive world of skyscraper architecture, two rival firms, Emerald Construction and Ruby Developers, are competing to fill a digital grid. A construction site consists of a foundation with $m$ designated plots arranged in a single row. The city's zoning laws dictate that no plot can ever exceed a height of $n$ stories.

@@ -1,0 +1,1 @@
+What is the minimal dimension \( n \) such that there exists an isometric embedding \( f: SO(3) \to \mathbb{R}^n \)?

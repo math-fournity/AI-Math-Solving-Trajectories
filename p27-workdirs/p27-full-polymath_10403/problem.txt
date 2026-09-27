@@ -1,0 +1,1 @@
+In the high-tech logistics hub of Neo-City, there are $n$ designated storage bays, indexed $1, 2, \ldots, n$. At the start of a shift, a supervisor records $n$ non-negative integers representing the initial priority levels assigned to various cargo shipments. These levels are written on a central digital manifest.

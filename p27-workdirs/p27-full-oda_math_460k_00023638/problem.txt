@@ -1,0 +1,1 @@
+Construct the largest possible triangle equiangular to a given triangle such that each side of the triangle is tangent to one of three given circles.

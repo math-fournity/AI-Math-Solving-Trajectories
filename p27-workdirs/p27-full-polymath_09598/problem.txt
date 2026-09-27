@@ -1,0 +1,1 @@
+Five elite hackers are positioned at five workstations arranged in a perfect pentagonal ring. A central server assigns each hacker a unique, non-negative integer number of encrypted data packets. Each hacker is aware of their own packet count and can see the packet counts of the two hackers immediately adjacent to them in the ring.

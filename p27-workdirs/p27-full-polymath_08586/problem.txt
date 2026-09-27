@@ -1,0 +1,1 @@
+In a specialized logistics network, a central hub uses a strictly automated sorting protocol $f$ to route packages labeled with non-negative integers $n \in \{0, 1, 2, \dots \}$. This protocol is strictly increasing, meaning that if a package has a higher tracking number than another, its assigned destination index must also be higher.

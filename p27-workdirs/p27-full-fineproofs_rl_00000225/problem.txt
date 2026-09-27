@@ -1,0 +1,1 @@
+11. G2 (CAN) ${ }^{\mathrm{IMO} 2}$ Let $P$ be a point inside $\triangle A B C$ such that  $$ \angle A P B-\angle C=\angle A P C-\angle B . $$  Let $D, E$ be the incenters of $\triangle A P B, \triangle A P C$ respectively. Show that $A P, B D$ and $C E$ meet in a point.

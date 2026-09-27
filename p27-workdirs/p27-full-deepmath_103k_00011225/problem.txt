@@ -1,0 +1,1 @@
+Consider a sequence \( V_N \) of subspaces of \( \ell^N_1 \) such that \( \dim V_N = N - n \) and \( n \) is \( \mathsf{o}(N) \). Determine if there exist constants \( K_1, K_2 > 0 \) such that for sufficiently large \( N \), the following holds:

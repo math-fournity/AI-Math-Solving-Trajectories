@@ -1,0 +1,5 @@
+(e):
+If mono-sources are \( G \)-initial, then \( G \) need not reflect extremal epimorphisms.  
+**Hint**: Consider the inclusion functor from a subcategory where extremal epimorphisms are not reflected.
+
+##

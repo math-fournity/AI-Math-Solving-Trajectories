@@ -1,0 +1,1 @@
+Let \((R, \mathfrak{m})\) be a Noetherian local ring containing a field. Does the \(\mathfrak{m}\)-adic completion \(\widehat{R}\) of \(R\) also contain a field? Provide a justification for your answer.

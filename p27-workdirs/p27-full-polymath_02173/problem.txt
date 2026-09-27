@@ -1,0 +1,1 @@
+Two natural numbers are called similar if one can be obtained from the other by swapping two of its digits (if the number has a $0$, it cannot be swapped with the first digit; identical digits can be swapped). Find the largest natural number $N$ that is divisible by $13$, but every number similar to $N$ is not divisible by $13$.

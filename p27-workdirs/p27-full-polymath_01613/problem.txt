@@ -1,0 +1,1 @@
+Let $n$ be a fixed positive integer. Consider the set $S_n$ of all $n$-tuples of positive integers $(a_1, a_2, \ldots, a_n)$ such that there exists a non-linear function $f: \mathbb{R} \rightarrow \mathbb{R}$ satisfying the condition

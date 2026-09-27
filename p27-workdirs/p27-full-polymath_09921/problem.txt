@@ -1,0 +1,1 @@
+A specialized digital security firm, CipherGate, uses a modular encryption protocol to protect sensitive data packets. The strength of these packets is determined by four configuration parameters: $n$, $m$, $k$, and $l$, all of which must be positive integers. To ensure system stability, the base parameter $n$ must be strictly greater than 1.

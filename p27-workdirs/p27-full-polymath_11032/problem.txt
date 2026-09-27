@@ -1,0 +1,1 @@
+A high-security data vault contains $n$ independent biometric sensors, labeled $\{1, 2, \ldots, n\}$. To access different levels of the facility, the security system generates various "Access Keys," where each key is a unique subset of these sensors.

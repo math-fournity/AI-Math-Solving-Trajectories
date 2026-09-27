@@ -1,0 +1,1 @@
+In a remote sector of the galaxy, a diplomatic summit is being organized involving $n$ unique alien civilizations. Diplomatic relations exist between certain pairs of these civilizations, while others remain estranged.

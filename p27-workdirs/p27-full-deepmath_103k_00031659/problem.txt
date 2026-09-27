@@ -1,0 +1,1 @@
+Given a positive integer \( n \geq 2 \), determine the smallest positive real number \( c \) such that for any positive real numbers \( x_{1}, x_{2}, \ldots, x_{n} \), the inequality \[ \frac{1}{n}\left(\sum_{i=1}^{n} x_{i}\right)-\sqrt[n]{\prod_{i=1}^{n} x_{i}} \leq c \cdot \sum_{1 \leq i<j \leq n}\left(\sqrt{x_{i}}-\sqrt{x_{j}}\right)^{2} \] always holds.

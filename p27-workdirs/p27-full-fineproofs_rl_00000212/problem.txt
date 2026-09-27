@@ -1,0 +1,1 @@
+10.6  Let the insphere of a pyramid  $SABC$  touch the faces  $SAB, SBC, SCA$  at  $D, E, F$  respectively. Find all the possible values of the sum of the angles  $SDA, SEB, SFC$ .

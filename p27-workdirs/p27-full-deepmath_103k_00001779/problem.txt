@@ -1,0 +1,1 @@
+Let $H=(V,E)$ be a hypergraph where every member of $E$ has at most $n$ elements, with $n$ being a positive integer. Is there necessarily a maximal matchable set $S \subseteq V$?

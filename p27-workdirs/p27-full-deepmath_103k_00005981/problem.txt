@@ -1,0 +1,1 @@
+Let \( f: [a,b] \rightarrow I \subset \mathbb{R}^n \) be a homeomorphism, where \([a,b] \subset \mathbb{R}\) and \(n > 1\). Can the n-dimensional Lebesgue measure of \(I\) be positive?

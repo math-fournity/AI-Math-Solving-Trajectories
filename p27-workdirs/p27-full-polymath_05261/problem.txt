@@ -1,0 +1,1 @@
+On an $n \times n$ chessboard, rooks are placed on some of the unit squares. For any two rooks that do not threaten each other, there must exist an empty unit square that is threatened by both. A rook threatens all unit squares in the same row or column as itself, provided all the unit squares between them are empty.

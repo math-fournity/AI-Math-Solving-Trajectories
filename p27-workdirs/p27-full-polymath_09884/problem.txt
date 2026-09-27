@@ -1,0 +1,1 @@
+In a futuristic data-storage grid, a scientist is configuring a $6 \times 6$ array of memory cells. Each of the 36 cells can be set to one of two states: "Dormant" (represented by 0) or "Active" (represented by 1).

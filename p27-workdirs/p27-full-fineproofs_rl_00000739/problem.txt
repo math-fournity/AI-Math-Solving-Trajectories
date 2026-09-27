@@ -1,0 +1,1 @@
+A triangle, a line and three rectangles, with one side parallel to the given line, are given in such a way that the rectangles completely cover the sides of the triangle. Prove that the rectangles must completely cover the interior of the triangle.

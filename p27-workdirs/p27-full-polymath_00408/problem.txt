@@ -1,0 +1,1 @@
+In a certain language, there are only two letters, A and B. The words of this language satisfy the following requirements:

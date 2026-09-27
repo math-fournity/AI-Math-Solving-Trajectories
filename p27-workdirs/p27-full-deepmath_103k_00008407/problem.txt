@@ -1,0 +1,1 @@
+Let \( D = \{(x,y) \in \mathbb{R}^2: x^2 + y^2 \leq 1 \} \) be a closed disk. Suppose \( A \subset \mathrm{int}D \) is connected and compact, and \( D \setminus A \) is connected. Let \( f: A \to A \) be a continuous function, and \( g: D \to D \) be a continuous function such that \( g_{|A} = f \). Does there exist a point \( x \in \mathrm{int}D \) such that \( g(x) = x \)?

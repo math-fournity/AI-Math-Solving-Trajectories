@@ -1,0 +1,1 @@
+Determine the smallest integer $n$ such that the complex projective space $\mathbb{CP}^8$ can be embedded in the Euclidean space $\mathbb{R}^n$. It is known that $\mathbb{CP}^8$ cannot be embedded in $\mathbb{R}^{23}$ or less, and it can be immersed in $\mathbb{R}^{31}$. What is the smallest such $n$?

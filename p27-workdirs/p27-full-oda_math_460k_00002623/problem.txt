@@ -1,0 +1,1 @@
+Given a prime \( p \) that is not of the form \( 2^s + 1 \) or \( 2^s - 1 \), find all sequences \( (u_n) \) such that for every \( k \) and \( m \), the expression \( (u_k + pm)(u_m + pk) \) is a perfect square.

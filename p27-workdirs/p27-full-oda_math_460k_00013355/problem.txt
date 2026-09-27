@@ -1,0 +1,1 @@
+Given an acute triangle \(ABC\) with orthocenter \(H\), circumcircle \((O)\), and circumtrace \(Y\) of the B-altitude. Let \(Q\) be the intersection of the perpendicular bisector of \(AH\) with \(AC\), and \(A'\) be the antipole of \(A\) with respect to \((O)\). Calculate the ratio \(\frac{A'Y}{OQ}\).

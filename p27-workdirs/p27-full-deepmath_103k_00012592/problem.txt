@@ -1,0 +1,1 @@
+Find the value of $a$ for which the integral \[ \int \limits^{\infty }_{0}\frac{dx}{a^{2}+(x-\frac{1}{x})^{2}} =\frac{\pi}{5050} \] holds, given that $a^{2}\geq0$. \(a\) is a real number.

@@ -1,0 +1,1 @@
+Find the maximum possible value of \( k \) which satisfies the inequality for arbitrary positive reals \( a_1, a_2, \ldots, a_{10} \):

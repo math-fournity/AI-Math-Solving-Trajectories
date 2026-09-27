@@ -1,0 +1,1 @@
+Is there an element \( c \in \hat{F_2} \) such that the subgroup \( \langle a, b, c \rangle \le \hat{F_2} \) is isomorphic to the 3-generator abstract free group \( F_3 \)?

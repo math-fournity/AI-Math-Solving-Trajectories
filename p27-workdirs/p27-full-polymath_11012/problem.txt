@@ -1,0 +1,1 @@
+In a remote archipelago, there are exactly 2008 islands connected by a series of bridges. The geography of this archipelago is unique: while there are various paths and loops, no two cycles of bridges share a single island (meaning the network is a "cactus graph").

@@ -1,0 +1,1 @@
+In triangle  $ABC$ , the perpendicular bisectors of sides  $AB$  and  $BC$  intersect side  $AC$  at points  $P$  and  $Q$ , respectively, with point  $P$  lying on the segment  $AQ$ . Prove that the circumscribed circles of the triangles  $PBC$  and  $QBA$  intersect on the bisector of the angle  $PBQ$ .

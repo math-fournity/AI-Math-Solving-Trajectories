@@ -1,0 +1,1 @@
+Let $n \geqslant m \geqslant 5$ be integers. Let $A_{1} A_{2} \cdots A_{2 n+1}$ be a regular $(2 n+1)$-gon and $P = \{A_{1}, A_{2}, \dots, A_{2 n+1}\}$ be the set of its vertices. Let $N(n, m)$ be the number of convex $m$-gons with vertices in $P$ that have at least one acute interior angle. Find $N(6, 5) + N(7, 5)$.

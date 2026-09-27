@@ -1,0 +1,1 @@
+Find the correct value of the integral: $$\int_0^{\pi/2}\frac{\cosh[a \cos x]\cos[a\sin x]}{\cosh[2a\cos x]+\cos[a\sin x]}dx.$$

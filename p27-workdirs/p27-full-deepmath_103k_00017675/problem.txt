@@ -1,0 +1,1 @@
+Determine whether there exists a positive integer $s > 10$ such that the Riemann zeta function $\zeta(s)$, when divided by a rational constant $c = \frac{1}{d}$ with $d$ being another positive integer, yields a power of $\pi$. Specifically, is there an $s$ for which $\pi = (d\zeta(s))^{1/s}$?

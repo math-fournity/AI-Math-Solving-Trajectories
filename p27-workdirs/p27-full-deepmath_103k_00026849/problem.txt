@@ -1,0 +1,1 @@
+Suppose we have an embedding \(f: \mathbb{R}^2 \to \mathbb{R}^3\) that belongs to the Sobolev space \(W^{1,p}_{loc}(\mathbb{R}^2, \mathbb{R}^3)\) for some \(p > 2\). Is it true that for any two points in \(f(\mathbb{R}^2)\), there exists a curve of finite length connecting them?

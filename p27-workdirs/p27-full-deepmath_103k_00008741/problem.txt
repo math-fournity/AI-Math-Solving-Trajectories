@@ -1,0 +1,1 @@
+Consider an irreducible element \( f \in K[[X_1,\ldots]] \). Let \( f_m \) be the image of \( f \) under the natural quotient ring homomorphism \( K[[X_1,\ldots]] \twoheadrightarrow K[[X_1,\ldots,X_m]] \). Is \( f_m \) also irreducible for sufficiently large \( m \)?

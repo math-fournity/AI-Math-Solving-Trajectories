@@ -1,0 +1,1 @@
+Cyclic pentagon \(A B C D E\) has side lengths \(A B = B C = 5\), \(C D = D E = 12\), and \(A E = 14\). Determine the radius of its circumcircle.

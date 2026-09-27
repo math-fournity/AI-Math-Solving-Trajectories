@@ -1,0 +1,1 @@
+Find the smallest positive integer $n$ such that the remainder when $3^n$ is divided by $2^n$ is greater than $10^{2021}$.

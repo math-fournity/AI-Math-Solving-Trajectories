@@ -1,0 +1,1 @@
+Let  $\omega$  be the circumcircle of a triangle  $ABC$ . Let  $P$  be any point on  $\omega$  different than the verticies of the triangle.

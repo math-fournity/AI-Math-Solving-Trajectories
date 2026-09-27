@@ -1,0 +1,1 @@
+A specialized digital clock system generates an energy-efficiency score $f(x)$ for any signal frequency $x$ in the range $[0, 1)$ MHz.

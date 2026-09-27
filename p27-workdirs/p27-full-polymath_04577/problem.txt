@@ -1,0 +1,1 @@
+Let $P(t) = t^3+27t^2+199t+432$.  Suppose $a$, $b$, $c$, and $x$ are distinct positive reals such that $P(-a)=P(-b)=P(-c)=0$, and \[

@@ -1,0 +1,1 @@
+Let $S$ denote the set of all composite numbers not exceeding 79. Let $k$ be the minimum number of subsets into which $S$ can be partitioned such that the elements in each subset form an arithmetic sequence. Find the value of $k$.

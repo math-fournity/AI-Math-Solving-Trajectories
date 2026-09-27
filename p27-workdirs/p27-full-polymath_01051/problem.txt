@@ -1,0 +1,1 @@
+A regular $2012$-gon is inscribed in a circle. Find the maximal $k$ such that we can choose $k$ vertices from given $2012$ and construct a convex $k$-gon without parallel sides.

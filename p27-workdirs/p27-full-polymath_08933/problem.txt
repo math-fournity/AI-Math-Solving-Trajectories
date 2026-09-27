@@ -1,0 +1,1 @@
+In a futuristic data-processing facility, an automated sorting algorithm assigns a specific "priority level" $f(n)$ to every incoming packet indexed by a non-negative integer $n$.

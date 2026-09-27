@@ -1,0 +1,1 @@
+Let \( S \) be a finite set of points on a line with the property that for any two points \( P \) and \( Q \) in \( S \), there exists a point \( R \) in \( S \) such that \( R \) is the midpoint of \( PQ \), \( Q \) is the midpoint of \( PR \), or \( P \) is the midpoint of \( QR \). Determine the greatest possible number of points in \( S \).

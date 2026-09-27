@@ -1,0 +1,1 @@
+In a specialized solar energy facility, engineers have mapped out an $8 \times 8$ grid of potential installation plots. The grid is oriented with the rows running East-West and the columns running North-South. Each $1 \times 1$ plot can host at most one solar harvester unit.

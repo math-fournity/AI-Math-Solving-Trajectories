@@ -1,0 +1,1 @@
+A circle inscribed in a triangle with a radius of \( 3 \sqrt{2} \) passes through the trisection points of one of the medians of the triangle. What are the lengths of the sides of the triangle?

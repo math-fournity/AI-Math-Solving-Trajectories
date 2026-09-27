@@ -1,0 +1,1 @@
+In a remote territory, three radio outposts—Alpha ($A$), Bravo ($B$), and Charlie ($C$)—form a triangular network. The angle at outpost Bravo is obtuse, and the straight-line distance from Alpha to Charlie is exactly 9 kilometers.

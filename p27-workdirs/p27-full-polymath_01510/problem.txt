@@ -1,0 +1,1 @@
+Let $a = 11$. For each non-zero natural number $k$, let $\{k\}$ denote the fractional part of $k$ and $[k]$ denote the floor of $k$.

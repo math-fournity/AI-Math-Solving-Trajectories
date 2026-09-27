@@ -1,0 +1,1 @@
+19. A5 (JAP) ${ }^{\mathrm{IM} 06}$ Find all the functions $f: \mathbb{R} \rightarrow \mathbb{R}$ that satisfy

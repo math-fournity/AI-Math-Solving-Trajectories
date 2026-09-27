@@ -1,0 +1,1 @@
+Determine the cardinality of the set of all well-formed formulas (WFFs) in propositional logic.

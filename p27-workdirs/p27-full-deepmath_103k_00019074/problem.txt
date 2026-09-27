@@ -1,0 +1,1 @@
+Determine whether $2^{1093} - 2$ is divisible by $1093^2$. Provide a justification for your answer.

@@ -1,0 +1,1 @@
+A specialized robotic hive is constructed as a regular hexagon with a side length of $s$ meters, where $s$ is a positive integer. A precision maintenance drone is launched from one of the hive's interior vertices. The drone travels in a straight line at a constant speed, reflecting off the internal walls of the hive such that the angle of incidence equals the angle of reflection.

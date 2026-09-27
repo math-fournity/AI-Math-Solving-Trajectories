@@ -1,0 +1,1 @@
+It is known that the equation in \(u, v\), \(u^2 - 3v^4 = 1\), has at most four positive integer solutions; and the equation in \(\lambda, \iota\), \(4\lambda^2 - 3\iota^2 = 1\), has at most four positive integer solutions. If a prime \(p\) satisfies \(p \equiv 5 \pmod{8}\), and integers \(x, y\) satisfy

@@ -1,0 +1,1 @@
+A network of $N$ servers (where $N \geq 3$ and $N$ is odd) is being evaluated for processing priority. Initially, a Chief Engineer ranks the servers from 1 to $N$ based on their theoretical hardware specifications, where Rank 1 is the highest and Rank $N$ is the lowest.

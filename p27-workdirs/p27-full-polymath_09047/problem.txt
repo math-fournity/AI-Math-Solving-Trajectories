@@ -1,0 +1,1 @@
+In the coastal logistics hub of Port Veridian, there is a secure vault containing a shipment of 13 unique shipping containers, each assigned a specific identifying integer. A local logistics coordinator is tasked with forming various "shipping manifests" (subsets) from these 13 containers.

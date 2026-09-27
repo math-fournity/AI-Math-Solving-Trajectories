@@ -1,0 +1,1 @@
+In a remote industrial district, two specialized logistics managers, Aris and Bo, are tasked with filling a chemical storage tank that has a strict safety capacity of exactly 99 liters. They each have an identical set of nine delivery canisters, with volumes of $\{2, 3, 4, 5, 6, 7, 8, 9, 10\}$ liters respectively.

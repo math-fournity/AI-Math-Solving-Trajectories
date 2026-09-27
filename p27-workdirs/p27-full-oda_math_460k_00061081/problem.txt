@@ -1,0 +1,1 @@
+Determine the torsion subgroup of the elliptic curve \(A14: y^2 + xy + y = x^3 - x\) over the field \(K = \mathbb{Q}(\sqrt{2})\).

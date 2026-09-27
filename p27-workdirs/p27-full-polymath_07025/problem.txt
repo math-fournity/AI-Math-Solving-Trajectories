@@ -1,0 +1,1 @@
+A high-security laboratory uses two automated chemical sensors, Model F and Model G. Each sensor operates based on a specific quadratic calibration curve of the form $y = ax^2 + bx + c$, where $a, b, c$ are fixed constants unique to that sensor (with $a$ potentially being zero).

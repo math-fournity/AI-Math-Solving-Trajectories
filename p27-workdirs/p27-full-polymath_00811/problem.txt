@@ -1,0 +1,1 @@
+The numbers from $1$ to $100$ are arranged in a $10\times 10$ table so that any two adjacent numbers have sum no larger than $S$. Find the least value of $S$ for which this is possible.

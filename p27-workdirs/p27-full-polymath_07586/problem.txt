@@ -1,0 +1,1 @@
+In a specialized laboratory, a sensitive thermal sensor is used to identify a single defective microchip from a batch of $N$ identical-looking chips. The defective chip is known to be slightly colder than the functional ones.

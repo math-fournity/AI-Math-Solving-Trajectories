@@ -1,0 +1,1 @@
+In a futuristic logistics hub, a cargo management system operates on a 20x20 grid of storage bays. A configuration of occupied bays is labeled "Active" if every one of the 20 horizontal aisles has at least one occupied bay and every one of the 20 vertical aisles has at least one occupied bay.

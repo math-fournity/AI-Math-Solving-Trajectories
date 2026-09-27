@@ -1,0 +1,1 @@
+Is it consistent within ZF set theory for there to exist a set $X$ with more than one element such that every injective map $f: X \to X$ has a fixed point?

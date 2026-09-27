@@ -1,0 +1,1 @@
+A player starts with $A$ blue cards, $B$ red cards, and $C$ white cards. He scores points as he plays each card. If he plays a blue card, his score is the number of white cards remaining in his hand. If he plays a red card, it is three times the number of blue cards remaining in his hand. If he plays a white card, it is twice the number of red cards remaining in his hand.

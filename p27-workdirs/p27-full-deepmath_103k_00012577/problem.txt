@@ -1,0 +1,1 @@
+Evaluate the limit \( \lim_{n\rightarrow \infty }\int \frac{n\sin(x/n)}{x(1+x^2)}\,dx \) using the Lebesgue Dominated Convergence Theorem. Use the hint: \( \int \frac{1}{1+x^2}\,dx=\pi \).

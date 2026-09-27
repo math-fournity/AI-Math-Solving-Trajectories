@@ -1,0 +1,1 @@
+Consider two distinct points \(s = (s_i)_{i \in \mathbb{Z}}\) and \(u = (u_i)_{i \in \mathbb{Z}}\) in the Thue-Morse subshift \(X\). Is it true that the set of indices \(\{i \in \mathbb{Z} : s_i \neq u_i\}\) is necessarily infinite?

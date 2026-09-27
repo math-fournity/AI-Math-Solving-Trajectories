@@ -1,0 +1,1 @@
+Find the positive integer \( A = \overline{a_{n} a_{n-1} \cdots a_{1} a_{0}} \), where \( a_{n}, a_{n-1}, \ldots, a_{0} \) are all non-zero and not all equal, such that \( A \) divides each of its cyclic permutations \( A_{k} \) for \( k=1,2, \cdots, n \).

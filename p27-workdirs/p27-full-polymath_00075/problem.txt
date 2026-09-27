@@ -1,0 +1,1 @@
+A knight is on an infinite chessboard. After exactly 100 legal moves, how many different possible squares can it end on? A knight can move to any of the 8 closest squares not on the same row, column, or diagonal.

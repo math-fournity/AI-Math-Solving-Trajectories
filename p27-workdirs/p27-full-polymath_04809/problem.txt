@@ -1,0 +1,1 @@
+For $1 \leq k < n!$, let $\varphi_{k}$ be the permutation of $[n]$ defined by $\varphi_{k}(\pi_{k}(j)) = \pi_{k+1}(j)$. What is the cardinality of $\{\varphi_{k} \mid 1 \leq k < n!\}$?

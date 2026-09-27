@@ -1,0 +1,1 @@
+In a specialized logistics warehouse, there are 2018 uniquely labeled crates, originally numbered $1, 2, \dots, 2018$. Currently, these crates are arranged in a single long row in some arbitrary, scrambled order $\sigma$.

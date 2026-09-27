@@ -1,0 +1,1 @@
+Suppose $U$ and $V$ are nonempty disjoint open subsets of $[0,1]^2$. Is there necessarily a continuum $K \subseteq [0,1]^2$ such that $[0,1]^2 \setminus K$ is the union of two disjoint open sets $T$ and $W$ with $U \subseteq T$ and $V \subseteq W$?

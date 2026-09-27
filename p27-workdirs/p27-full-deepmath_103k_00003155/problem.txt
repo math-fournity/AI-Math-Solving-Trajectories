@@ -1,0 +1,1 @@
+Is the index of $G_{pq}$ in $G_p \cap G_q$ always finite, where $G$ is a group, $G_n = \langle\{g^n| g \in G\}\rangle$, and $p$ and $q$ are coprime integers?

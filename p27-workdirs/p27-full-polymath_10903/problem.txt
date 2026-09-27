@@ -1,0 +1,1 @@
+In a remote industrial complex, a specialized filtration system is built as a rectangular array of $3$ horizontal levels and $n$ vertical sections, creating a grid of $3 \times n$ individual chambers. Each chamber can either be "Open" (white) or "Blocked" (black).

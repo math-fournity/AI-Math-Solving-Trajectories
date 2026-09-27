@@ -1,0 +1,1 @@
+In a specialized logistics hub, items are identified by unique serial numbers. For any given starting integer $m \geqslant 2$, a sequence of consecutive serial numbers is generated, starting from $m$ and ending at a terminal value $n$. The facility manager must organize these items into two separate storage containers.

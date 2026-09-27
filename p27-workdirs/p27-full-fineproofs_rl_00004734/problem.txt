@@ -1,0 +1,1 @@
+The diagonals of a cyclic quadrilateral meet at point  $M$ . A circle  $\omega$  touches segments  $MA$  and  $MD$  at points  $P,Q$  respectively and touches the circumcircle of  $ABCD$  at point  $X$ . Prove that  $X$  lies on the radical axis of circles  $ACQ$  and  $BDP$ .

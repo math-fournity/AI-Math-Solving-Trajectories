@@ -1,0 +1,1 @@
+In the digital city of Bitville, every plot of land is identified by a unique address code $n$, which is a positive integer. To determine the "Complexity Score" of a plot, surveyors first convert the address $n$ into its binary format (base 2).

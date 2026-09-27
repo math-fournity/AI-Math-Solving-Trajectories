@@ -1,0 +1,1 @@
+7. Find the smallest natural number $n$, such that in any two-coloring of $K_{n}$ there exist 5 edge-disjoint monochromatic triangles.

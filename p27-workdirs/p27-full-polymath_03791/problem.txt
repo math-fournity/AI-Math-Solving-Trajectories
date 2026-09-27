@@ -1,0 +1,1 @@
+On a table there are 2004 boxes, and in each box a ball lies. I know that some the balls are white and that the number of white balls is even. In each case I may point to two arbitrary boxes and ask whether in the box contains at least a white ball lies. After which minimum number of questions I can indicate two boxes for sure, in which white balls lie?

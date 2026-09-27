@@ -1,0 +1,1 @@
+Find the exact minimum value of the function \(f(x,y,z)=(7(x^2+y^2+z^2)+6(xy+yz+zx))(x^2y^2+y^2z^2+z^2x^2)\) subject to the constraint \(xyz=1\).

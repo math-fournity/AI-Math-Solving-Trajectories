@@ -1,0 +1,1 @@
+Let \( d(a, b) \) be the number of divisors of the natural number \( a \) that are greater than \( b \). Find all natural numbers \( n \) for which

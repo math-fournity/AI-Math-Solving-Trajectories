@@ -1,0 +1,1 @@
+Ten pairwise distinct non-zero real numbers $x_1, x_2, \dots, x_{10}$ are such that for any two distinct indices $i, j \in \{1, \dots, 10\}$, either their sum $x_i + x_j$ or their product $x_i x_j$ is a rational number. Let $S = \{x_1^2, x_2^2, \dots, x_{10}^2\}$. Determine the maximum possible number of irrational values in the set $S$.

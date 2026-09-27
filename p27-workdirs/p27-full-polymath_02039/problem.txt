@@ -1,0 +1,1 @@
+10.5. Given an odd number $n>10$. Find the number of ways to arrange the natural numbers $1,2,3, \ldots, n$ in a circle in some order so that each number is a divisor of the sum of the two adjacent numbers. (Ways that differ by rotation or reflection are considered the same.) (D. Khramov)

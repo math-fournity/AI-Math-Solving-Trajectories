@@ -1,0 +1,1 @@
+In a specialized quantum computing lab, a researcher is calibrating a series of $q$ high-frequency resonators, where $q = p^r$ ($p$ is a prime number and $r$ is a positive integer). The phase shift of the $k$-th resonator is represented by the complex value $\zeta^k$, where $\zeta = e^{\frac{2\pi i}{q}}$.

@@ -1,0 +1,1 @@
+Determine the largest positive integer \( n \) for which there is a unique integer \( m \) such that \( m < n^2 \) and \( \sqrt{n + \sqrt{m}} + \sqrt{n - \sqrt{m}} \) is a positive integer.

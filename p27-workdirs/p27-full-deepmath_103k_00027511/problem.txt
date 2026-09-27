@@ -1,0 +1,1 @@
+Determine whether every positive integer can be expressed as the difference between powers of two different integers greater than 1.

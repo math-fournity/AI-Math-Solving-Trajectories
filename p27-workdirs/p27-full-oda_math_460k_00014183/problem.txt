@@ -1,0 +1,1 @@
+Let $f(x)$ be a monic quartic polynomial with complex coefficients such that the roots of $f(f(x))=0$ form a regular pentagon centered at the origin in the complex plane. What is the least possible value of the largest real root of $f(x) = 0$?

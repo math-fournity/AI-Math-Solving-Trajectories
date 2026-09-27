@@ -1,0 +1,1 @@
+A high-tech digital storage facility contains exactly $2^n$ unique data servers, labeled $1, 2, \ldots, 2^n$. A security architect is designing a system of "Authorized Access Groups," which is a collection $\mathcal{C}$ of specific subsets of these servers. To ensure system resilience and administrative flexibility, the collection must satisfy two strict protocols:

@@ -1,0 +1,1 @@
+Let $X$ be a locally compact, metrizable, and path-connected space that is not compact. Determine if the one-point compactification of $X$ is path-connected.

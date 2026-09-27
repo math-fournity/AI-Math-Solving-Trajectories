@@ -1,0 +1,1 @@
+In a sprawling vineyard, a massive square plot of land is divided into a grid of exactly 1001 by 1001 small planting plots. To protect the harvest, the owner must install automated moisture sensors in certain plots.

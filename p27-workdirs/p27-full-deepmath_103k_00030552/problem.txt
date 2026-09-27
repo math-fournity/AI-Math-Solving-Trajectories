@@ -1,0 +1,1 @@
+Find all integer solutions \((a, b)\) to the equation \(a^{2017} + a - 2 = (a-1)(b^{11})\).

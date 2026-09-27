@@ -1,0 +1,1 @@
+2. A2 (SWE) Let $a$ and $b$ be nonnegative integers such that $a b \geq c^{2}$, where $c$ is an integer. Prove that there is a number $n$ and integers $x_{1}, x_{2}, \ldots, x_{n}, y_{1}, y_{2}, \ldots, y_{n}$ such that  $$ \sum_{i=1}^{n} x_{i}^{2}=a, \quad \sum_{i=1}^{n} y_{i}^{2}=b, \quad \text { and } \quad \sum_{i=1}^{n} x_{i} y_{i}=c $$

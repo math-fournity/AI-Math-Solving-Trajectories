@@ -1,0 +1,1 @@
+A specialized logistics company operates a fleet of transport drones to move cargo between $m$ distinct distribution hubs. For any given setup involving $m$ hubs, the company must assign a specific "service route" index $a_i$ to each of the $m-1$ gaps between consecutive hubs.

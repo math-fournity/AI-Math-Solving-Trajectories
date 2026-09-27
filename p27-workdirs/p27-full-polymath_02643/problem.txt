@@ -1,0 +1,1 @@
+Find the smallest natural number \(d\) with the property: for every natural number \(m\), there exist natural numbers \(a > b > c\) in the interval \(\left[m^{4}+2, m^{4}+m^{2}+d m\right]\), such that \(c\) divides the product \(ab\).

@@ -1,0 +1,1 @@
+A rectangle \(9 \times 1\) is cut into unit squares. A non-self-intersecting broken line must be drawn from the lower left to the upper right corner, passing through all \(20\) vertices of the squares and dividing them into \(19\) segments. How many such lines are there?

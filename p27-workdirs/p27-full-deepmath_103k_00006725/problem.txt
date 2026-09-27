@@ -1,0 +1,1 @@
+Evaluate the integral \( \iiint (x+y+z)(x-y-z)(x+y-z) \, dV \) using a change of variables under the planes: \( x+y+z=0 \), \( x+y-z=0 \), and \( x-y-z=0 \).

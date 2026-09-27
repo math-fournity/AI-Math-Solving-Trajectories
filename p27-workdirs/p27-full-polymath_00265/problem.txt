@@ -1,0 +1,1 @@
+Let \( n \) be a positive integer. Let \( S \) be a set of ordered pairs \((x, y)\) such that \(1 \leq x \leq n\) and \(0 \leq y \leq n\), and there are no pairs \((a, b)\) and \((c, d)\) of different elements in \( S \) such that \( a^2 + b^2 \) divides both \( ac + bd \) and \( ad - bc \). Determine the size of the largest possible set \( S \) in terms of \( n \).

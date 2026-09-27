@@ -1,0 +1,1 @@
+Given a positive integer \( n \), find the largest constant \( \lambda \) such that for all positive real numbers \( x_1, x_2, \cdots, x_{2n} \) satisfying

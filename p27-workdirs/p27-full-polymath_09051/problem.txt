@@ -1,0 +1,1 @@
+A botanical research station is monitoring a plot of land containing 100 rare succulents. Due to the species' root structures, the distance between the centers of any two succulents in the plot is at least 1 meter.

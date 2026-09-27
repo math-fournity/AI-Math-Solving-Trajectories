@@ -1,0 +1,1 @@
+Let $F$ be a field of characteristic $p$, and let $f(x)$ be a non-constant irreducible polynomial over $F$. Let $E$ be a splitting field of $f(x)$. Determine whether $E$ can be expressed as $F(\alpha)$ for some $\alpha \in E$. In other words, does $E$ contain a primitive element?

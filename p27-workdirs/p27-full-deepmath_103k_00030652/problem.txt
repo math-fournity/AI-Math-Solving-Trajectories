@@ -1,0 +1,1 @@
+Determine the number of ways to color each rational number either white or red such that for any two distinct rational numbers \( x \) and \( y \), if they satisfy any of the following conditions: (a) \( xy = 1 \), (b) \( x + y = 0 \), or (c) \( x + y = 1 \), then \( x \) and \( y \) are painted different colors. How many such colorings, called "sanferminera" colorings, exist?

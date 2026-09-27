@@ -1,0 +1,1 @@
+Example 7 Fill a 9-row, 1000-column table (one number per cell) with 9 ones, 9 twos, 9 threes, ..., and 9 thousands, totaling 9000 numbers, such that the absolute difference between any two numbers in the same column does not exceed 3. Let the minimum value of the sum of the numbers in each column (a total of 1000 column sums) be $M$. Find the maximum value of $M$.

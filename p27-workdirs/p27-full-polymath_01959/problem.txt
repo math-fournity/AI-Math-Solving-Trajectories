@@ -1,0 +1,1 @@
+Three. (50 points) If a positive integer $n$ has the sum of its digits in base 3 divisible by 3, then $n$ is called a "proper number." Find the sum of all proper numbers in $S=\{1,2, \cdots, 2005\}$.

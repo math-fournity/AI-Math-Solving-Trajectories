@@ -1,0 +1,1 @@
+Cat and Claire are playing a crossword game. Cat says: "I know the digits of 2-Across are all the same, and 3-Down is a perfect square whose digits are in strictly ascending order." Claire, who knows the number in 1-Down, says "The number in 1-Down is divisible by 13, and I know how to complete the grid." What is 1-Down?

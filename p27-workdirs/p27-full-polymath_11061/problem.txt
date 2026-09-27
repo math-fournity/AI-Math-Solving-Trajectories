@@ -1,0 +1,1 @@
+A supply chain consists of 2023 consecutive logistics hubs, indexed from 1 to 2023. Each hub $i$ is assigned a "flow direction" $s_i$, which is either a value of 1 (forward) or -1 (reverse).

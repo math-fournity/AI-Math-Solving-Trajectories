@@ -1,0 +1,1 @@
+Find a quadratic transformation of the curve \( Y^{2} Z^{2} - X^{4} - Y^{4} \) such that the transformed curve has only ordinary multiple points. Similarly, find a quadratic transformation for the curve \( Y^{4} + Z^{4} - 2 X^{2}(Y - Z)^{2} \).

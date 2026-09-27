@@ -1,0 +1,1 @@
+A specialized logistics company is tasked with distributing 300 identical high-security data servers between two rival tech firms, Alpha and Beta. The distribution protocol is governed by a strict sequential procedure:

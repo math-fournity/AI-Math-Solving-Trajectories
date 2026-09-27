@@ -1,0 +1,1 @@
+6.68 A swinging number is a positive integer, whose digits in decimal notation alternate between non-zero and zero, with the units digit being non-zero. Determine all positive integers that cannot divide any swinging number.

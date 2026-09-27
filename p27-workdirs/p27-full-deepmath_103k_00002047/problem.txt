@@ -1,0 +1,1 @@
+Let $n > 1$ and $K = \mathrm{GF}(2^n)$. Let $k$ be coprime to $2^n - 1$. Determine whether there always exists $a \neq 0$ in $K$ such that the curve $y^2 + y = x^k + ax$ has exactly $2^n$ affine solutions.

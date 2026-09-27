@@ -1,0 +1,1 @@
+We denote $S(k)$ as the sum of the digits of an integer $k$. We say that an integer $a$ is of order $n$ if there exists a sequence of integers $a_{0}, a_{1}, \ldots, a_{n}$ such that $a_{n}=a$ and $a_{i+1}=a_{i}-S\left(a_{i}\right)$ for all $i=0,1, \ldots, n-1$. Show that for every integer $n \geqslant 1$ there exists an integer $b$ which is of order $n$ but not of order $n+1$.

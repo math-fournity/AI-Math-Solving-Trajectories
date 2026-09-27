@@ -1,0 +1,1 @@
+Two straight lines perpendicular to each other meet each side of a triangle in points symmetric with respect to the midpoint of that side. Prove that these two lines intersect in a point on the nine-point circle.

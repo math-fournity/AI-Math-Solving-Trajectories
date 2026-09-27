@@ -1,0 +1,1 @@
+Suppose that $K_{S}$ is nef, that $\left(K_{S}, K_{S}\right)=0$ and that $\kappa(S)=0$. Then $S$ is bi-elliptic, an abelian surface, a K3-surface or an Enriques surface.

@@ -1,0 +1,1 @@
+Given is a parallelogram  $ABCD$ , with  $AB <AC <BC$ . Points  $E$  and  $F$  are selected on the circumcircle   $\omega$  of  $ABC$  so that the tangenst to  $\omega$  at these points pass through point  $D$  and the segments  $AD$  and  $CE$  intersect.

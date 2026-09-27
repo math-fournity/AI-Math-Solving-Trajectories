@@ -1,0 +1,1 @@
+In a remote industrial network, a sequence of $n$ pressure valves is arranged in a line, with their pressure levels denoted as $a_0, a_1, \ldots, a_n$. Due to safety stabilization protocols, the pressure at the two boundary terminals must be zero, such that $a_0 = a_n = 0$.

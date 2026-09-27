@@ -1,0 +1,1 @@
+In a Noetherian ring $R$, if a prime ideal $p$ contains only zero divisors, does it necessarily correspond to an associated prime? In other words, is there an element $x \in R$ such that $p = \text{Ann}(x)$?

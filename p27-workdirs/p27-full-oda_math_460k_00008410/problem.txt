@@ -1,0 +1,1 @@
+There are $10^{1000}$ natural numbers arranged in a circle. Between each pair of adjacent numbers, the least common multiple (LCM) of those two numbers is written.

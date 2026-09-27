@@ -1,0 +1,1 @@
+Ana and Bogdan play the following game: at the beginning, there is a pile of $n$ stones on the table, where $n \geq 3$. The two players take turns, with Ana moving first. On a turn, the player whose turn it is splits one of the piles of stones on the table into two smaller piles. The player who, by their move, makes all the piles on the table contain at most two stones wins.

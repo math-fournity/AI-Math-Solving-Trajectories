@@ -1,0 +1,1 @@
+Determine whether there exists a function \( f: \mathbb{R} \to \mathbb{R} \) that is continuous on a dense \( G_{\delta} \) subset of \( \mathbb{R} \) and discontinuous almost everywhere on \( \mathbb{R} \).

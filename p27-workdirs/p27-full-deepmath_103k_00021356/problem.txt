@@ -1,0 +1,1 @@
+Let $G$ be a finite group. Define a simple graph $X(G)$, called the commuting graph, where the vertices are the elements of $G$ and two distinct vertices $x, y$ are connected by an edge if and only if $xy = yx$. If $c$ is the chromatic number of $X(G)$, does $G$ contain an abelian subgroup of order $c$?

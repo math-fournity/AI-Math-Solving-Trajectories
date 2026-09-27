@@ -1,0 +1,1 @@
+In a specialized digital archive, a master directory contains exactly $999,999$ unique data packets, indexed by the positive integers from $1$ to $10^6 - 1$. A technician is tasked with identifying a specific subset of these packets, denoted as $S$.

@@ -1,0 +1,1 @@
+Find the sum of all possible values of $f(-2) + f(0) + f(2)$ for all functions $f: \mathbb{Z} \rightarrow \mathbb{Z}$ that satisfy the equation

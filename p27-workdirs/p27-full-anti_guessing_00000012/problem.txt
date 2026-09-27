@@ -1,0 +1,1 @@
+We denote by $\mathcal{F}$ the set of functions $f: \mathbb{R} \mapsto \mathbb{R}$ such that

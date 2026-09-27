@@ -1,0 +1,1 @@
+Determine all natural numbers $n$ such that $\phi(n) = 2020!$.

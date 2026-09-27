@@ -1,0 +1,1 @@
+In a specialized logistics center, a security protocol monitors the temperature of a cryogenic storage unit. The system triggers an alert if the current internal temperature, calculated as $16,883$ degrees minus an adjustment factor $a$, drops below a critical threshold of $16,878$ degrees (where $a$ is a positive integer).

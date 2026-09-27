@@ -1,0 +1,1 @@
+In a vast logistics hub, there are 2000 identical circular hover-pads positioned on a flat floor. The layout of these pads follows two strict safety protocols: first, no two pads are allowed to be perfectly tangent (meaning if they touch, they must overlap); second, every single pad must overlap with at least two other pads to ensure stability.

@@ -1,0 +1,1 @@
+Find the smallest positive real \( k \) such that for any positive integer \( n \ge 2 \) and positive reals \( a_0, a_1, \ldots, a_n \),

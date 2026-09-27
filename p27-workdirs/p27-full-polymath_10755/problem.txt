@@ -1,0 +1,1 @@
+In a vast honeycomb-shaped server farm, the floor is tiled with identical regular hexagonal cooling vents, each having a side length of exactly 1 meter. A maintenance robot moves exclusively along the metal borders (the edges) of these hexagons. A "route" is defined as a continuous sequence of these 1-meter segments where each segment must share an endpoint with the next.

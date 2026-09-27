@@ -1,0 +1,1 @@
+Determine the expected size of the largest connected component of the graph $H(s_1, s_2)$ as a function of $n$, where $s_1$ and $s_2$ are two binary strings of length $n$. The graph $H(s_1, s_2)$ is constructed based on the principles of Hitomezashi Sashiko, a form of decorative mending.

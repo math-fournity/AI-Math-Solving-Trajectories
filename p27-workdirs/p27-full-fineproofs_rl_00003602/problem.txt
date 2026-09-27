@@ -1,0 +1,1 @@
+Let $A B C$ be an acute triangle with circumcircle $\omega$. Let $t$ be a tangent line to $\omega$. Let $t_{a}, t_{b}$, and $t_{c}$ be the lines obtained by reflecting $t$ in the lines $B C, C A$, and $A B$, respectively. Show that the circumcircle of the triangle determined by the lines $t_{a}, t_{b}$, and $t_{c}$ is tangent to the circle $\omega$.

@@ -1,0 +1,1 @@
+A high-tech manufacturing plant utilizes a massive 3D storage grid organized into a $10 \times 10 \times 10$ arrangement of exactly $1,000$ modular storage bins. Every individual bin is assigned a specific "Access Code" (a designation that represents its color).

@@ -1,0 +1,1 @@
+Consider a geodesically convex Riemannian manifold $M$, where for any two points $p, q \in M$, there is a unique minimizing geodesic connecting them. For a point $p \in M$, is the function $f(x) = (d(x, p))^2$ smooth, where $d$ is the distance function on $M$?

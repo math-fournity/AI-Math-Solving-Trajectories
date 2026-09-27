@@ -1,0 +1,1 @@
+In a remote industrial facility, a central storage unit initially holds a stockpile of exactly 2014 fuel canisters. All other automated technicians in the facility currently have 0 canisters. The facility operates under a strict resource-sharing protocol: whenever two technicians meet, they must pool their canisters and redistribute them.

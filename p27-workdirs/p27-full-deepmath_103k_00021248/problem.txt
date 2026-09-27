@@ -1,0 +1,1 @@
+Evaluate the integral: $$I=\int_{-4}^4\int_{-3}^3 \int_{-2}^2 \int_{-1}^1 \frac{x_1-x_2+x_3-x_4}{x_1+x_2+x_3+x_4} \, dx_1 \, dx_2 \, dx_3 \, dx_4$$

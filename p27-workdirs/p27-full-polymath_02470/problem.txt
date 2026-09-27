@@ -1,0 +1,1 @@
+Let \( a_1, a_2, \ldots, a_n, k \), and a positive constant \( C \) be real numbers such that \( \left| a_i^2 + \frac{k}{a_j^2} \right| = C \) for all distinct \( i, j \). What is the largest number of distinct numbers in the set \( \{a_1, a_2, \ldots, a_n\} \)?

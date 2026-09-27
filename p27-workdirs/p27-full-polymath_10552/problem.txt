@@ -1,0 +1,1 @@
+In a remote territory, an engineering team is mapping five strategic outposts: Alpha ($A$), Bravo ($B$), Charlie ($C$), Delta ($D$), and Echo ($E$). To establish a secure communication perimeter, they have recorded the following spatial data:

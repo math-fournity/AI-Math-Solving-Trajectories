@@ -1,0 +1,1 @@
+In a remote industrial refinery, a central storage tank initially holds a single chemical compound with a concentration level of $x$. The refinery's processing unit can synthesize new concentrations from existing ones stored in the system according to two strict protocols:

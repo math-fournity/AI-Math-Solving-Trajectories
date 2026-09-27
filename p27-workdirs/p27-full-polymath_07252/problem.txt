@@ -1,0 +1,1 @@
+In a specialized testing facility, a team of acoustic engineers is calibrating a series of sound-canceling transducers. Each transducer $n$ generates a sound wave represented by a complex signal $z_n$. A sequence of these signals is classified as "Stable" if it adheres to two specific physical constraints:

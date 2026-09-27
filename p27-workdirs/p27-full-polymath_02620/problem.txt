@@ -1,0 +1,1 @@
+At ARML, Santa is asked to give rubber duckies to $2013$ students, one for each student.   The students are conveniently numbered $1,2,\cdots,2013$, and for any integers $1 \le m < n \le 2013$, students $m$ and $n$ are friends if and only if $0 \le n-2m \le 1$.

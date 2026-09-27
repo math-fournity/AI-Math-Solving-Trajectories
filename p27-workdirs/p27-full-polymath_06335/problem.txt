@@ -1,0 +1,1 @@
+In a specialized logistics network operating in a 10-dimensional resource space, a central hub must be established. To determine the service coverage area, a system architect selects 11 coordinate locations, $p_0, p_1, \dots, p_{10}$, within this space. These locations are sampled independently and identically from a fixed, but unknown, continuous probability distribution $\pi$.

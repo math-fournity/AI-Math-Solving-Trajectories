@@ -1,0 +1,1 @@
+In a specialized logistics network, a system’s efficiency is governed by a performance function $P(x)$, which is a non-constant polynomial of degree $n$ with strictly integer coefficients. A delivery hub is considered "perfectly balanced" if the square of its performance value at a specific integer coordinate $k$ is exactly equal to 1.

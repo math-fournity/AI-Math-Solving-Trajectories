@@ -1,0 +1,1 @@
+A positive interger number $k$ is called “$t-m$”-property if forall positive interger number $a$, there exists a positive integer number $n$ such that

@@ -1,0 +1,1 @@
+A specialized deep-sea research station utilizes a security console with four vertical pressure valves, each displaying a discrete integer reading from 0 to 9. The readings are currently calibrated to a baseline state of (0, 0, 0, 0).

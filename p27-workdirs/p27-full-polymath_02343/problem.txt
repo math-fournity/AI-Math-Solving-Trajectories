@@ -1,0 +1,1 @@
+For a positive integer $n$, let $f(n)$ be the greatest common divisor of all numbers obtained by permuting the digits of $n$, including permutations with leading zeroes. Among all positive integers $n$ with $f(n) \neq n$, what is the largest possible value of $f(n)$?

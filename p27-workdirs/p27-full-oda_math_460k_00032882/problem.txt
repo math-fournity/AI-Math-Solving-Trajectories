@@ -1,0 +1,1 @@
+Given a finite set of points on a plane, where no three points are collinear, and the orthocenter of triangle $ABC$ formed by any three points $A, B, C$ in the set is also in the set. Find all such sets.

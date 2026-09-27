@@ -1,0 +1,1 @@
+Is it true that in a finite simple group with abelian Sylow 2-subgroups, a Sylow 2-subgroup is not centralized by a nontrivial element of odd order?

@@ -1,0 +1,1 @@
+Given that triangle ABC is inscribed in a circle with angle BAC = 60 degrees. The tangent to the circle at A intersects the extension of CB at P. The bisector of angle APC intersects AB and AC at D and E respectively. Given that AD = 15 and AC = 40, find the length of BC.

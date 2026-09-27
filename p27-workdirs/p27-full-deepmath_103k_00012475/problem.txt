@@ -1,0 +1,1 @@
+Let $x_1$ and $x_2$ be positive real numbers and define, for $n>2$: $$x_{n+1} = \sum_{k=1}^{n} \sqrt[n]{x_k}.$$ Evaluate $\lim_{n \to \infty} \frac{x_n - n}{\ln n}$. Provide your answer as a single value.

@@ -1,0 +1,1 @@
+In a specialized logistics network, there are infinite storage hubs indexed by every integer $n$ in the set $\mathbb{Z}$. A central management protocol, defined as a function $f$, dictates that if a request originates at hub $n$, it is routed to hub $f(n)$. If the protocol is applied twice, the request reaches hub $f(f(n))$.

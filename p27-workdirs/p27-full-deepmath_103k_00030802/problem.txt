@@ -1,0 +1,1 @@
+Determine the least number of sets in a partition of all \(n!\) permutations of \(1, 2, 3, \ldots, n\), such that any two permutations in the same set can be transformed into each other by a sequence of the following moves:

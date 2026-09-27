@@ -1,0 +1,1 @@
+A specialized digital security system is governed by a prime-order encryption key $p = 2^{16} + 1$. The system’s integrity is measured through a complex sequence of data packets indexed from $n=1$ to $p-1$.

@@ -1,0 +1,1 @@
+A function \( f:\{1,2,3,4,5,6,7\} \rightarrow\{2,3,4,5,6\} \) is called roughly monotonic if for every integer \( 2 \leq k \leq 5 \) in which there is some integer \( 1 \leq a \leq 7 \) with \( f(a)=k \), then there exist integers \( 1 \leq a_{0}<b \leq 7 \) such that \( f(a_{0})=k, f(b)=k+1 \). Compute the number of roughly monotonic functions \( f \).

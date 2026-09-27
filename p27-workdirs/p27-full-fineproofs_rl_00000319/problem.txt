@@ -1,0 +1,1 @@
+2. A2 (YUG 1) Let $K$ be a convex polygon in the plane and suppose that $K$ is positioned in the coordinate system in such a way that  $$ \operatorname{area}\left(K \cap Q_{i}\right)=\frac{1}{4} \text { area } K(i=1,2,3,4,), $$  where the $Q_{i}$ denote the quadrants of the plane. Prove that if $K$ contains no nonzero lattice point, then the area of $K$ is less than 4.

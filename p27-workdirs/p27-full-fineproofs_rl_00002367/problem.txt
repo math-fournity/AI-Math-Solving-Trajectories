@@ -1,0 +1,1 @@
+Let  $ ABCD$  be a cyclic quadrilateral and  $ O$  be the intersection of diagonal  $ AC$  and  $ BD$ . The circumcircles of triangle  $ ABO$  and the triangle  $ CDO$  intersect at  $ K$ . Let  $ L$  be a point such that the triangle  $ BLC$  is similar to  $ AKD$  (in that order). Prove that if  $ BLCK$  is a convex quadrilateral, then it has an incircle.

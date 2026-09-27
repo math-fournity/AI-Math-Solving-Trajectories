@@ -1,0 +1,1 @@
+Let \( p = 2^{16} + 1 \) be a prime, and let \( S \) be the set of positive integers not divisible by \( p \). Let \( f: S \rightarrow \{0, 1, 2, \ldots, p-1\} \) be a function satisfying

@@ -1,0 +1,1 @@
+In a remote industrial outpost, there are 20 specialized technicians and one central supervisor. Currently, the supervisor's fuel reservoir is completely empty. Each technician carries a portable fuel canister that contains either exactly 2 liters or exactly 5 liters of high-grade propellant.

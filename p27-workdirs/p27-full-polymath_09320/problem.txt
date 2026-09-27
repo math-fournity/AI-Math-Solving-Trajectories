@@ -1,0 +1,1 @@
+In the remote valley of Arithmos, three ancient survey markers—Alpha ($A$), Beta ($B$), and Gamma ($C$)—form a triangular territory. A specialized geological survey team has noted that the terrain inclination at marker Beta is exactly $30^\circ$ greater than the inclination at marker Gamma ($\angle B - \angle C = 30^\circ$).

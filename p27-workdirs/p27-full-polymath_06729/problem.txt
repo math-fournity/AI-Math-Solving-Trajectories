@@ -1,0 +1,1 @@
+In a vast digital library, a security architect is designing unique authentication codes. To be valid, a code must be a positive integer strictly less than $1,000,000$. Furthermore, the architect dictates a strict structural rule for these codes: each number must be the product of exactly two distinct prime numbers.

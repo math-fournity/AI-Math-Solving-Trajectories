@@ -1,0 +1,1 @@
+Let $f : \mathbb{R} \to \mathbb{R}$ be a smooth function such that $f'(0) = 1$ and $|f^{(n)}(x)| \le 1$ for all $x \in \mathbb{R}$ and for all $n \ge 0$. Is it true that $f(x) = \sin x$ for all $x \in \mathbb{R}$?

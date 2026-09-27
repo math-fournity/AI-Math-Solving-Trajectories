@@ -1,0 +1,1 @@
+In a futuristic energy grid, a central AI manages a variable power load represented by a sequence $a_n$ (measured in megawatts). The initial output levels for the first three cycles are recorded as $a_0 = 1$, $a_1 = 0$, and $a_2 = 2005$. For all subsequent cycles where $n = 1, 2, \dots$, the AI updates the power level according to the protocol $a_{n+2} = -3a_n - 4a_{n-1} + 2008$.

@@ -1,0 +1,9 @@
+/-!
+# International Mathematical Olympiad 1998, Problem 3
+
+For any positive integer $n$,
+let $d(n)$ denote the number of positive divisors of $n$ (including 1 and $n$ itself).
+Determine all positive integers $k$ such that $d(n^2)/d(n) = k$ for some $n$.
+-/
+
+##

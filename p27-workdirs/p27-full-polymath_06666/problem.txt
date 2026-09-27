@@ -1,0 +1,1 @@
+In the city of Graphia, a specialized power grid is composed of $n$ interconnected substations. A "Power Cell" is formed whenever exactly three substations are all directly connected to one another by transmission lines.

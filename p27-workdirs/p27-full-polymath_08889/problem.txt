@@ -1,0 +1,1 @@
+A specialized telecommunications network consists of $53$ server nodes. Every pair of nodes is either linked by a single direct two-way fiber-optic cable or has no direct physical connection. In total, there are exactly $312$ cables installed across the network. The system is designed such that any server can communicate with any other server through some sequence of cables.

@@ -1,0 +1,1 @@
+Does there exist a Galois extension $L/\mathbb{Q}$ with Galois group $A_4$ such that all the decomposition groups are cyclic?

@@ -1,0 +1,1 @@
+In a sprawling metropolitan district, an urban planning commission is designing a rectangular park divided into a grid of $n \times n$ individual garden plots. Each plot must be designated as either a "Botanical zone" (B) or a "Wilderness zone" (W). To ensure the park remains navigable and aesthetically balanced, the planners have established three strict zoning laws:

@@ -1,0 +1,1 @@
+Determine whether there are only a finite number of connected, locally compact Hausdorff topological spaces $X$, up to homeomorphism, such that $X$ has an open set $U$ homeomorphic to $\mathbb{R}$ and $X - U$ is also homeomorphic to $\mathbb{R}$. Assume connectedness to exclude the single disconnected possibility.

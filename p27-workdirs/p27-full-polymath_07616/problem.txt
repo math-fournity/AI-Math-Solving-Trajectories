@@ -1,0 +1,1 @@
+In a specialized digital vault, a master security key is represented by a unique prime number $p$ greater than 5. To verify the integrity of the key, a cryptographic algorithm calculates the decimal expansion of its reciprocal, $1/p$. The algorithm confirms that the sequence of digits in this expansion repeats with a cycle length (period) of exactly 294.

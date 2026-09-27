@@ -1,0 +1,1 @@
+A high-security data center uses a fiber-optic backbone consisting of 30 nodes arranged in a perfectly straight, equally spaced sequence. Among these nodes, 10 are "Master Servers" (high-priority targets) and 20 are "Relay Hubs" (low-priority targets). The exact distribution of these 10 Master Servers among the 30 positions is unknown to outside observers.

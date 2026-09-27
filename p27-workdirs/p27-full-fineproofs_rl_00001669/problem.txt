@@ -1,0 +1,1 @@
+For any odd positive integer $n$, let $r(n)$ be the odd positive integer such that the binary representation of $r(n)$ is the binary representation of $n$ written backwards. For example, $r(2023)=$

@@ -1,0 +1,1 @@
+Example 1 In an exam, there are 5 multiple-choice questions, each with 4 different options, and each person selects exactly 1 option for each question. In 2000 answer sheets, it is found that there exists an $n$, such that in any $n$ answer sheets, there are 4 sheets where any 2 sheets have at most 3 answers the same. Find the minimum possible value of $n$.

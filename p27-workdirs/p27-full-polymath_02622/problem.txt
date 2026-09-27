@@ -1,0 +1,1 @@
+Let $ N$ be the number of ordered pairs of nonempty sets $ \mathcal{A}$ and $ \mathcal{B}$ that have the following properties:

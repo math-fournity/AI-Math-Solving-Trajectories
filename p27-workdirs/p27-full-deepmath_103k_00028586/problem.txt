@@ -1,0 +1,1 @@
+Determine whether it is possible to construct a continuous, strictly increasing function \( f: [0,1]\rightarrow [0,1] \) such that \( f(0)=0 \), \( f(1)=1 \), and the derivative \( f' \) either does not exist or is infinite at every point in a dense subset of \([0,1]\).

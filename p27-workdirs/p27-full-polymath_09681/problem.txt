@@ -1,0 +1,1 @@
+In a specialized botanical research facility, there is a circular cultivation pod containing exactly nine planting slots arranged in a ring. A robotic sorter is programmed to randomly distribute nine rare seeds into these slots: three seeds are of a Crimson Orchid variety, three are of a Cobalt Lily variety, and three are of a Golden Fern variety.

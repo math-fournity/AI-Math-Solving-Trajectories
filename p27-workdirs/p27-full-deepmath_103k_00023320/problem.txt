@@ -1,0 +1,1 @@
+Determine whether there exists a prime number $p$ greater than 2 that is never a factor of any Carmichael number $C_n$. Provide a justification for your answer.

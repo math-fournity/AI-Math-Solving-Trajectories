@@ -1,0 +1,1 @@
+A high-tech manufacturing facility is designed in the shape of a perfectly regular $n$-sided polygon ($n \geq 5$), with a central control hub located at point $O$. The outer perimeter of the facility consists of walls, each of length $a$. Two adjacent corners of the perimeter are designated as points $A$ and $B$.

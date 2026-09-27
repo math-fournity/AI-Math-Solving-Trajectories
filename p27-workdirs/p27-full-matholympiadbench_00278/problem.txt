@@ -1,0 +1,13 @@
+/-!
+# IMO 2011 A4
+
+Find all functions $f, g : ℕ → ℕ$ such that, for any $k ∈ ℕ$,
+$$ f^{g(k) + 2}(k) + g^{f(k) + 1}(k) + g(k + 1) + 1 = f(k + 1). $$
+
+### Extra Notes
+
+The original version using signature $ℕ^+ → ℕ^+$ is:
+$$ f^{g(k) + 1}(k) + g^{f(k)}(k) + g(k + 1) = f(k + 1) + 1. $$
+-/
+
+##

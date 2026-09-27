@@ -1,0 +1,1 @@
+Given  $\vartriangle ABC$  with circumcircle  $\Omega$ . Assume  $\omega_a, \omega_b, \omega_c$  are circles which tangent internally to  $\Omega$  at  $T_a,T_b, T_c $  and tangent to  $BC,CA,AB$  at  $P_a, P_b, P_c$ , respectively. If  $AT_a,BT_b,CT_c$  are collinear, prove that  $AP_a,BP_b,CP_c$  are collinear.

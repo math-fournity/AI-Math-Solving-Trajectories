@@ -1,0 +1,1 @@
+In a remote desert region, three observation outposts—Alpha, Bravo, and Charlie—form a triangular perimeter. Sensors indicate that the interior angle at Bravo is $36^\circ$ and the interior angle at Charlie is $76^\circ$.

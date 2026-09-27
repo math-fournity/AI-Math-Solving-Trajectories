@@ -1,0 +1,1 @@
+Find integer $ n$ with $ 8001 < n < 8200$ such that $ 2^n \minus{} 1$ divides $ 2^{k(n \minus{} 1)! \plus{} k^n} \minus{} 1$ for all integers $ k > n$.

@@ -1,0 +1,12 @@
+/-!
+Polish Mathematical Olympiad 1998, Problem 4
+
+Prove that the sequence {a_n} defined by a_1 = 1 and
+
+     a_n = a_{n - 1} + a_{⌊n/2⌋}        n = 2,3,4,...
+
+contains infinitely many integers divisible by 7.
+
+-/
+
+##

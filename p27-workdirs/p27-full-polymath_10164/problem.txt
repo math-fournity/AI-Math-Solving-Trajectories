@@ -1,0 +1,1 @@
+A massive logistics center is tasked with distributing exactly 1,000,000 kilograms of specialized grain into standardized storage silos. The management is evaluating the efficiency of different loading configurations based on a positive integer capacity, $n$.

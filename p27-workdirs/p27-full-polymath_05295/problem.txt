@@ -1,0 +1,1 @@
+Consider words formed using the letters $A, B$, and $C$. Two operations are allowed on any word:

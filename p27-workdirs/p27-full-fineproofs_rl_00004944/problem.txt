@@ -1,0 +1,1 @@
+There are  $n$  positive real numbers on the board  $a_1,\ldots, a_n$ . Someone wants to write  $n$  real numbers  $b_1,\ldots,b_n$ ,such that: $b_i\geq a_i$ If  $b_i \geq b_j$  then  $\frac{b_i}{b_j}$  is integer.

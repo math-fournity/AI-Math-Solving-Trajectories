@@ -1,0 +1,1 @@
+Let $x \in (-\pi/2, \pi/2)$ be a real number satisfying the equation:

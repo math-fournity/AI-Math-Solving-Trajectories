@@ -1,0 +1,1 @@
+Let $R$ be an $\mathbb{R}$-algebra. If $A = R \otimes_{\mathbb{R}} \mathbb{C}$ is a finitely generated $\mathbb{C}$-algebra, is $R$ necessarily a finitely generated $\mathbb{R}$-algebra? Provide a justification for your answer.

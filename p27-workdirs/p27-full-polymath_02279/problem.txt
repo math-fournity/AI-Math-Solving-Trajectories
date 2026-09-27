@@ -1,0 +1,1 @@
+Let \( a, b > 0 \). Find the largest constant \( k \) such that the inequality \( a^3 + b^3 \geq 2ab \sqrt[k]{\frac{a^k + b^k}{2}} \) holds.

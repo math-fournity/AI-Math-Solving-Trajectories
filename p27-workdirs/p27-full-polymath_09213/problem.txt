@@ -1,0 +1,1 @@
+A specialized logistics hub manages a fleet of transport drones, each assigned a unique identification code ranging from 1 to 100. The hub manager, Height-137 (an automated supervisor), needs to select a squad of these drones, denoted as set $S$, to operate under a specific security protocol.

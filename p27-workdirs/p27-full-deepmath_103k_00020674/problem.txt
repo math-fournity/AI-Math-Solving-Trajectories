@@ -1,0 +1,1 @@
+Determine whether any polynomial $P \in \mathbb{C}[X]$ can be decomposed into a sum of three polynomials $Q$, $R$, and $S$, such that all roots of $Q$, $R$, and $S$ lie on the unit circle.

@@ -1,0 +1,1 @@
+Given that $k$ is a field of characteristic zero, and $P$ and $Q$ are commuting elements in the first Weyl algebra, determine if there exists a third element $H$ such that $P$ and $Q$ can be expressed as polynomials in $H$. Assume that each of $P$ and $Q$ is homogeneous of some degree.

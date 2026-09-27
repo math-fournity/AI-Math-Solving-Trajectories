@@ -1,0 +1,4 @@
+Let \( E \) be a subfield of \( \mathbb{R} \) and let \( K/E \) be a finite Galois extension of odd degree \( > 1 \). Prove that \( K \) cannot be \( E \)-embedded into a radical tower that is a subfield of \( \mathbb{R} \).
+
+</rule>
+</rules>

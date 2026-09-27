@@ -1,0 +1,1 @@
+Let  $M$  be a positive integer.  $f(x):=x^3+ax^2+bx+c\in\mathbb Z[x]$  satisfy  $|a|,|b|,|c|\le M.$   $x_1,x_2$  are different roots of  $f.$  Prove that   $$ |x_1-x_2|>\frac 1{M^2+3M+1}. $$  *Created by Jingjun Han*

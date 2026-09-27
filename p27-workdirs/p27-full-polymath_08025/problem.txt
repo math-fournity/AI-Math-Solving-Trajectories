@@ -1,0 +1,1 @@
+In a specialized research laboratory, an engineer is designing a automated cooling sequence governed by a power-load function $P(x) = a x^n + x^{2014} + 1$.

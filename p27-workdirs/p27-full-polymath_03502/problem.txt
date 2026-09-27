@@ -1,0 +1,1 @@
+Elmo has 2023 cookie jars, all initially empty. Every day, he chooses two distinct jars and places a cookie in each. Every night, Cookie Monster finds a jar with the most cookies and eats all of them. If this process continues indefinitely, what is the maximum possible number of cookies that the Cookie Monster could eat in one night?

@@ -1,0 +1,1 @@
+Consider a finite-dimensional Lie group $G$ and two conjugacy classes $H$ and $I$ of isomorphic subgroups of $G$. Is there a finite-dimensional Lie overgroup of $G$ that fuses $H$ and $I$ into a single conjugacy class?

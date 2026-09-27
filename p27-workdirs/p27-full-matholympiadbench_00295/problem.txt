@@ -1,0 +1,10 @@
+/-!
+# IMO 2014 C4
+
+Consider 4 types of skew-tetrominoes in $ℕ^2$, classified by its orientation.
+Let $S ⊆ ℕ^2$ be a multiset, and suppose that it can be partitioned into skew-tetrominos.
+Prove that the parity of the number of skew-tetrominoes used for
+  each type in the partition does not depend on the partition.
+-/
+
+##

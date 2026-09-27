@@ -1,0 +1,1 @@
+Find the minimum value of the function \( f(x) = \sum_{n=1}^\infty \frac{n^x}{x^n} \) for \( x > 1 \).

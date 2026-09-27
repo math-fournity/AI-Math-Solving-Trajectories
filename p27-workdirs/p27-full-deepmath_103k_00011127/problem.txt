@@ -1,0 +1,1 @@
+Calculate \( \lim\limits_{n \to \infty} f_n(x) \) for the sequence \((f_n)\) defined by \( f_n(x) = \sqrt{\int_0^x f_{n-1}(t) \, \mathrm{d}t} \), where \( f_0(x) \) is integrable on \([0,1]\) and \( f_0(x) > 0 \).

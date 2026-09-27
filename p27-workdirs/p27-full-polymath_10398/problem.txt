@@ -1,0 +1,1 @@
+A specialized logistics firm operates twenty unique distribution centers located at distinct mile markers along a long, straight highway. The manager of the firm is analyzing the network's connectivity and notices a specific property regarding the "Combined Reach" of these centers.

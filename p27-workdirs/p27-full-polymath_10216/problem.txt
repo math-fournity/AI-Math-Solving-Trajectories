@@ -1,0 +1,1 @@
+An industrial quality inspector is tasked with examining a new fleet of 40 specialized transport drones, labeled $D_1, D_2, \dots, D_{40}$. Each drone requires exactly three specific safety certifications: an Engine Check, a Battery Check, and a Navigation Check.

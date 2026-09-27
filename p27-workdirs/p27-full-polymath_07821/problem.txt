@@ -1,0 +1,1 @@
+A specialized laser-guided drone is navigating a triangular testing field with base stations positioned at points $A$, $B$, and $C$. The distance between station $A$ and $B$ is $7$ kilometers, between $B$ and $C$ is $5$ kilometers, and between $C$ and $A$ is $6$ kilometers.

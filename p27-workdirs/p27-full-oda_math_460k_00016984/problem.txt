@@ -1,0 +1,1 @@
+Find the smallest positive integer \( n \) such that the first 2018 digits of \( n! \) are all 9.

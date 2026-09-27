@@ -1,0 +1,1 @@
+Let \( F \) be the set of all functions \( f \) such that \( f: \mathbf{R} \rightarrow \mathbf{R} \) and for any positive real number \( x \), \[ f(3x) \geq f[f(2x)] + x. \] Determine the maximum real number \( \alpha \) such that \( f(x) \geq \alpha x \) for all functions \( f \in F \) and for all positive real numbers \( x \).

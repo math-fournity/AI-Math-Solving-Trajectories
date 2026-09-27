@@ -1,0 +1,1 @@
+Find the closed-form expression for the continued fraction:

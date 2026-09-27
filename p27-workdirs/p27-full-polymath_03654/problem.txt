@@ -1,0 +1,1 @@
+Twenty numbers are written: 1, 2, ..., 20. Two players take turns placing the signs "+" or "-" in front of these numbers (the sign can be placed in front of any free number). The first player aims to make the resulting sum, after placing all 20 signs, as small as possible in absolute value. What is the largest absolute sum that the second player can ensure for himself?

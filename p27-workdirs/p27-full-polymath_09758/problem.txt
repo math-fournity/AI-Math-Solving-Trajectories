@@ -1,0 +1,1 @@
+A remote-controlled survey drone is deployed from a base station (Point $A$) to map a triangular plot of land bounded by two landmarks, $B$ and $C$. The drone’s internal navigation system records that the angle between the paths to the two landmarks, $\angle BAC$, has a sine value of $4/5$, and this angle is known to be acute.

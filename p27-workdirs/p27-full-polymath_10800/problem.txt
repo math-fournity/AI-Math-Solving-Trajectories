@@ -1,0 +1,1 @@
+A specialized deep-sea research facility operates a sequence of $n$ modular filtration units. Each unit $i$ has an internal capacity $a_i$, where $a_i$ is a positive integer. The total pressure resistance of the system at any external depth setting $x$ is determined by the product of the individual unit tolerances: $f(x) = (x + a_1)(x + a_2) \cdots (x + a_n)$.

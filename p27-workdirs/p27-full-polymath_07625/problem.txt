@@ -1,0 +1,1 @@
+In a massive industrial simulation, 200 autonomous processing units are undergoing a long-term efficiency trial. Every 24-hour cycle, each unit is tasked with a single computational duel against another unit. At the end of each duel, the unit that completes the task faster is awarded 1 energy credit, while the slower unit receives 0 credits.

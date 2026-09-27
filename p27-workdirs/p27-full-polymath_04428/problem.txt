@@ -1,0 +1,1 @@
+Given a natural number \( x \) chosen from the set \([1, \ldots, n]\), one can ask 10 questions of the form "Is \( x \) less than \( a \)?" where \( a \) is chosen for each question. The answer to each question except the last one is revealed only after the next question is asked. What is the maximum value of \( n \) that can be determined with 10 questions?

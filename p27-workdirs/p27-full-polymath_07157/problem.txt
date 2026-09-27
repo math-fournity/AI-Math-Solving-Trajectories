@@ -1,0 +1,1 @@
+A grand international culinary competition features a panel of 2005 judges, and 2005 different signature dishes are being evaluated. Each judge must taste every dish and assign it a spice level chosen from a specific pantry of $n$ available spices, labeled $\{1, 2, \ldots, n\}$.

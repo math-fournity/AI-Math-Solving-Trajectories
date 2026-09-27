@@ -1,0 +1,1 @@
+Does there exist an \(\mathcal{O}(n^3)\) algorithm for deciding whether there exists a permutation matrix \(P\), a lower unit triangular matrix \(L\), an upper unit triangular matrix \(U\), and a block-diagonal matrix \(D\) with \(1\times1\) and \(2\times2\) blocks such that for a given real square matrix \(A\), the equation \(P A P^T = LDU\) holds?

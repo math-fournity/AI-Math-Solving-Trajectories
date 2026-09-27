@@ -1,0 +1,1 @@
+5. Natural numbers divisible by 3 were painted in two colors: red and blue, such that the sum of a blue and a red number is red, and the product of a blue and a red number is blue. In how many ways can the numbers be colored so that the number 546 is blue?

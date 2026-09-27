@@ -1,0 +1,1 @@
+Consider a sequence of positive integers $a_{1}, a_{2}, a_{3}, \ldots$ such that for $k \geqslant 2$ we have

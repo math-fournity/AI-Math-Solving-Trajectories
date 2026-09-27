@@ -1,0 +1,1 @@
+A natural number $n$ is given. Determine the unique $(n-1)$-tuple of nonnegative integers $a_{1}, a_{2}, \ldots, a_{n-1}$ such that

@@ -1,0 +1,1 @@
+Determine whether there exists an infinite topological space $X$ such that there are only countably many continuous functions from $X$ to itself.

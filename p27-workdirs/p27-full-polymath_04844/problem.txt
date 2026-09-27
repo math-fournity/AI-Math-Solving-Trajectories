@@ -1,0 +1,1 @@
+Let \( p, u, m, a, c \) be positive real numbers satisfying the equation \( 5p^{5} + 4u^{5} + 3m^{5} + 2a^{5} + c^{5} = 91 \). Find the maximum possible value of the expression

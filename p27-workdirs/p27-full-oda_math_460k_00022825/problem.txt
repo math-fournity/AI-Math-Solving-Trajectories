@@ -1,0 +1,1 @@
+Under what condition is the space $C_p(X)$ (the space of continuous real-valued functions on $X$ with the topology of pointwise convergence) $\sigma$-compact?

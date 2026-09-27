@@ -1,0 +1,1 @@
+Determine whether it is possible to divide an equilateral triangle into 1,000,000 convex polygons such that any straight line intersects no more than 40 of these polygons.

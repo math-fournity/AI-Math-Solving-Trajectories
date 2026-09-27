@@ -1,0 +1,1 @@
+Determine the even natural numbers \( n \) for which there exist an injective function \( f: I \to \mathbb{R} \) and a positive function \( p: I \to \mathbb{R} \) such that for all \( x_1, \ldots, x_n \in I \), the following equation holds:

@@ -1,0 +1,1 @@
+Given that 10 people each buy 3 books and any two people have at least one identical book, find the minimum number of distinct books available.

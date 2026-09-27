@@ -1,0 +1,1 @@
+Determine whether the cyclotomic polynomial \( \Phi_r(X) \) can always be represented with coefficients in the finite field \( F_p \), where \( F_p \) is a field with prime characteristic \( p \).

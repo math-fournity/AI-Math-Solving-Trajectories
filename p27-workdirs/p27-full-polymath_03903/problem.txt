@@ -1,0 +1,1 @@
+Find the smallest odd integer $ k$ such that: for every $ 3\minus{}$degree polynomials $ f$ with integer coefficients, if there exist $ k$ integer $ n$ such that $ |f(n)|$ is a prime number, then $ f$ is irreducible in $ \mathbb{Z}[n]$.

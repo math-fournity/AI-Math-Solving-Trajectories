@@ -1,0 +1,1 @@
+In a futuristic data center, a network of server racks is arranged in a perfect $2021 \times 2021$ grid. To monitor the health of the system, a technician installs a limited number of diagnostic sensors, ensuring that each rack contains at most one sensor.

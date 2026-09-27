@@ -1,0 +1,1 @@
+In the cells of a \(5 \times 5\) square, Vasya wants to place 25 different natural numbers such that any two numbers in adjacent cells are not coprime. What is the minimum possible value of the largest number in such a table?

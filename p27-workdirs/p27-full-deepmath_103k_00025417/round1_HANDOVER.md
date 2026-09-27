@@ -1,0 +1,233 @@
+# 交接文档 · deepmath_103k_00025417 · Round 1 探索历程
+
+> **交接给**：下一个AI，请在此基础上继续完成解答
+> **来源**：deepmath_103k_00025417 Round 1（1个agent step，被截断）
+> **制作时间**：2026-08-21
+> **模型**：GLM-5.2 High
+> **截断判定**：reasoning_content=70148c，message=0c，tool_calls=0，completion_tokens=25000（撞上限）
+
+---
+
+## 1. 题目
+
+Let $K$ be a global field, and let $A$ be a finite-dimensional $K$-algebra. Suppose $B$ is a central simple algebra over $K$. If $A \otimes_K K_v$ embeds in $B \otimes_K K_v$ for all places $v$ of $K$, is it true that $A$ can be embedded in $B$?
+
+**解题约束**：不使用任何工具，只在thinking中推理，最终在TUI中直接输出证明（英文），结尾输出 `### PROOF COMPLETE`。
+
+---
+
+## 2. 答案猜想
+
+**猜想：答案是 YES（local-global principle 成立）。** 置信度较高但未完全确认。
+
+**猜想演变过程**：
+- 初始：AI回忆起"Hasse principle for embeddings"（归功于 Brusamolino / Jacobowitz），认为答案是 yes。
+- 中期：通过 quaternion + quadratic field 案例和 cubic division algebra 案例验证，均未找到反例，增强了 yes 的信心。
+- 后期：在分析 $A = L_1 \times L_2$（product of fields）嵌入 $B = M_n(D)$ 时，识别出"组合/积分 local-global"问题的潜在风险——全局秩方程的分解 $m_1 + m_2 = n$ 必须满足来自 Brauer 类的整除条件，而局部允许在不同 place 用不同分解。AI开始构造具体反例（$n=4, d=6$），**在验证局部条件是否能全部满足时被截断**。
+- 截断时的倾向：仍偏向 yes，但承认存在反例的可能性，尚未排除。
+
+---
+
+## 3. 已确认的结论
+
+> 来源：steps[7].reasoning_content（唯一的agent step，全部在thinking中）
+
+### 3.1 非半单情形的归约（已确认 ✅）
+
+**结论**：若 $A$ 非半单（$J(A) \neq 0$），则 $A$ 不能嵌入 $B$（因 $B$ 半单，无非零幂零理想），且 $A \otimes K_v$ 也不能嵌入 $B \otimes K_v$（因 $K_v/K$ 可分，故 $J(A \otimes K_v) = J(A) \otimes K_v \neq 0$）。因此假设"对所有 $v$ 局部嵌入"永不成立，蕴含关系**空虚真**。
+
+**推导要点**：
+- $B$ central simple ⇒ $B$ 半单 ⇒ 无非零幂零理想
+- 任何 $K$-代数同态 $A \to B$ 必须杀死 $J(A)$（$J(A)$ 幂零）
+- 故单射同态（嵌入）要求 $J(A)=0$
+- 对 global field，$K_v/K$ 可分，故 $J(A \otimes K_v) = J(A) \otimes K_v$（可分扩张下 Jacobson radical 的_extension 公式）
+
+### 3.2 嵌入的 bimodule 刻画（已确认 ✅）
+
+**结论**：$A$ 嵌入 $B = M_n(D)$（$D$ central division over $K$，$\deg D = d$）当且仅当存在忠实 $(A, D)$-bimodule $M$，其 $D$-秩为 $n$。
+
+**推导要点**：
+- $\operatorname{End}_D(D^n_D) \cong M_n(D)$（右 $D$-模的自同态环，左乘给出 $D$ 的作用）
+- $A \hookrightarrow M_n(D)$ ⇔ $D^n$ 是忠实左 $A$-模 + 右 $D$-模，作用交换
+
+### 3.3 半单情形的分解（已确认 ✅）
+
+**结论**：$A = \prod_{i=1}^r A_i$，$A_i = M_{n_i}(D_i)$，$D_i$ division algebra，center $K_i$（$K$ 的有限扩张）。嵌入 $A \hookrightarrow B = M_n(D)$ ⇔ 存在 $(A_i, D)$-bimodule $M_i$（每个非零，因 $A_i$ 单 ⇒ 非零模自动忠实），$\sum_i \operatorname{rank}_D(M_i) = n$。
+
+**推导要点**：
+- $M_i$ 是 $D \otimes_K A_i^{op}$ 的右模，经 Morita 等价 $\sim_D D \otimes_K D_i^{op}$
+- $D \otimes_K D_i^{op}$ 是 $K_i$ 上 central simple，degree $= d \cdot d_i$（$d_i = \deg D_i$）
+- 设 $D \otimes_K D_i^{op} \cong M_{s_i}(E_i)$，$E_i$ central division over $K_i$，$\deg(E_i) = e_i$，$s_i \cdot e_i = d \cdot d_i$
+- $M_i$ 对应 $E_i$ 上秩 $t_i \geq 1$ 的右模
+- $\operatorname{rank}_D(M_i) = t_i \cdot e_i^2 \cdot [K_i:K] / d^2$
+
+### 3.4 全局嵌入条件（已确认 ✅）
+
+**结论**：$A$ 嵌入 $B = M_n(D)$ 的充要条件是：存在正整数 $t_1, \ldots, t_r$ 使得
+$$\sum_{i=1}^r \frac{t_i \cdot e_i^2 \cdot [K_i:K]}{d^2} = n$$
+其中 $e_i$ 是 $[D \otimes_K D_i^{op}] \in \operatorname{Br}(K_i)$ 的 index。
+
+### 3.5 全局 index 与局部 index 的关系（已确认 ✅）
+
+**结论**：$e_i = \operatorname{lcm}_w(e_{i,w})$，其中 $e_{i,w}$ 是 $[D \otimes_K D_i^{op}]$ 在 $\operatorname{Br}(K_{i,w})$ 中的局部 index。这是 Hasse principle for the Brauer group 的推论（$\operatorname{Br}(K_i) \hookrightarrow \bigoplus_w \operatorname{Br}(K_{i,w})$）。
+
+### 3.6 单域情形的验证（已确认 ✅）
+
+**$A = L$（域扩张），$B = M_n(D)$**：
+- $L$ 嵌入 $M_n(D)$ ⇔ $t = n d^2 / (m e^2)$ 为正整数，其中 $m = [L:K]$，$e$ = index of $D \otimes_K L$ in $\operatorname{Br}(L)$，$s = d/e$，$t = n s^2 / m$。
+- 条件：$m \mid n s^2$ 且 $n s^2 \geq m$。
+
+**Quaternion 案例**（$A = \mathbb{Q}(\sqrt{-1})$，$B$ quaternion over $\mathbb{Q}$）：
+- 对 quaternion 代数，degree 2 域扩张嵌入 ⇔ 分裂。局部条件 = Hasse principle for Brauer group ⇒ 成立。✅ 无反例。
+
+**Cubic 案例**（$A = L$ cubic，$B = D$ degree 3 division）：
+- $L$ 嵌入 $D$ ⇔ $L$ 分裂 $D$（因 $s=3,e=1,t=3$ valid 或 $s=1,e=3,t=1/3$ invalid）。
+- 局部条件（ramified $v$ 处：$v$ 在 $L$ 中不分裂且 $L_w$ 分裂 $D_v$）⇒ 全局 $L$ 分裂 $D$（由 Hasse）。✅ 无反例。
+
+### 3.7 局部嵌入条件的形式（部分确认 ⚠️）
+
+**结论**：在 place $v$ 处，$D \otimes K_v \cong M_{a_v}(\Delta_v)$，$\deg(\Delta_v) = \delta_v$，$a_v \delta_v = d$。$B \otimes K_v \cong M_{na_v}(\Delta_v)$。局部嵌入条件涉及将 $na_v$ 分解为 $\sum m_{i,w_i} = na_v$，每个分量满足基于局部 index $e_{i,w}$ 的整除条件。
+
+**⚠️ 未完成**：局部条件到全局条件的等价性证明未完成——特别是"局部可解性（各 place 允许不同分解）⇒ 全局可解性（单一分解）"这一步。
+
+---
+
+## 4. 已尝试的方向
+
+### 4.1 直接引用 "Hasse principle for embeddings" ⚠️ 未完成
+- **方向**：回忆并引用 Brusamolino / Jacobowitz 的定理，直接断言 local-global principle 成立。
+- **结果**：AI 记得定理大意但不确定精确陈述和归功，不确定是否对**所有**半单 $A$（不仅是域）成立。未给出完整引用。
+- **原因**：无工具可用（题目约束禁止搜索），只能凭记忆。
+
+### 4.2 Quaternion + quadratic field 案例 ✅ 成功（无反例）
+- **方向**：取 $K=\mathbb{Q}$，$A=\mathbb{Q}(\sqrt{-1})$，$B$ quaternion，验证局部⇒全局。
+- **结果**：嵌入=分裂（quaternion 特有性质），局部条件等价于 Hasse principle for Brauer group，成立。
+- **原因**：quaternion 代数的 degree-2 子域恰好是其 degree-2 分裂域。
+
+### 4.3 Cubic division algebra 案例 ✅ 成功（无反例）
+- **方向**：$A=L$ cubic，$B=D$ degree 3 division，验证局部⇒全局。
+- **结果**：$L$ 嵌入 $D$ ⇔ $L$ 分裂 $D$；局部条件蕴含全局分裂（Hasse）。
+- **原因**：degree 3 时 $t=3/e^2$，仅 $e=1$ 给出整数解。
+
+### 4.4 Product of fields $A = L_1 \times L_2$ 的一般分析 ⚠️ 未完成
+- **方向**：分析 $A = L_1 \times L_2$ 嵌入 $B = M_n(D)$，识别"组合 local-global"风险。
+- **结果**：识别出核心困难——全局需要单一分解 $m_1 + m_2 = n$ 满足整除条件，局部允许各 place 不同分解。这是潜在反例的来源。
+- **原因**：分析复杂，尚未完成局部⇒全局的等价性论证。
+
+### 4.5 具体反例构造尝试 ⚠️ 未完成（截断点）
+- **方向**：构造 $K=\mathbb{Q}$，$A = L_1 \times L_2$，$[L_1:\mathbb{Q}]=2$，$[L_2:\mathbb{Q}]=3$，$B = M_4(D)$，$D$ degree 6 division，$e_1 = 2$，$e_2 = 3$。
+- **全局条件**：$m_1$ 偶，$m_2 \equiv 0 \pmod{3}$，$m_1 + m_2 = 4$，$m_1, m_2 \geq 1$。**无解**（$m_1=1$非偶/$m_1=4,m_2=0$/$m_1=2,m_2=2$但$3\nmid 2$）。故 $A$ **不**嵌入 $B$。
+- **局部条件检查**：在 split place（$\delta_v=1$），条件为 $\dim A = 5 \leq 24 = na_v$，满足。在 ramified place（$\delta_v=2$，$a_v=3$，$B\otimes\mathbb{Q}_v \cong M_{12}(\Delta_v)$），需要 $m_{1,v}+m_{2,v}=12$ 且各分量满足基于局部 index 的整除条件。
+- **结果**：**截断时正在计算局部 $\Delta$-秩公式**：`The Δ-rank is t_{i,w}·e_{i,w}²·[K_{i,w_i}:K_v]/δ_v²`——句子在公式中间被切断。
+- **原因**：completion_tokens 达到 25000 上限，thinking 被截断。
+
+### 4.6 简单案例排除反例 ✅
+- $A = L_1 \times L_2$（两个二次域），$B = M_2(\mathbb{Q})$：全局和局部条件均不满足（空间不够），空虚真，无反例。
+- $A = L_1 \times L_2$（两个二次域），$B = M_4(D)$（$D$ quaternion）：所有 Brauer 情形下全局条件均有解，无反例。
+
+---
+
+## 5. 关键文献/参考
+
+> 注意：AI 未使用任何搜索工具（题目约束禁止），以下均为凭记忆引用，**未经核实**。
+
+| 文献/定理 | 内容 | 对本题的作用 | 核实状态 |
+|---|---|---|---|
+| Hasse principle for the Brauer group | $\operatorname{Br}(K) \hookrightarrow \bigoplus_v \operatorname{Br}(K_v)$（单射） | 核心工具：Brauer 类由局部不变量决定 | 凭记忆，未核实 |
+| Hasse principle for embeddings（Brusamolino / Jacobowitz） | 半单 $A$ + central simple $B$，局部嵌入⇒全局嵌入 | 直接给出答案 yes，但 AI 不确定精确条件和归功 | **未核实**，不确定是否对所有半单 $A$ 成立 |
+| Brauer-Hasse-Noether 定理 | 可在 $\mathbb{Q}$ 上构造指定局部不变量的 division algebra | 构造反例时确认 degree 6 division algebra 存在 | 凭记忆 |
+| Double centralizer theorem | $L \subset B$ ⇒ $C_B(L)$ central simple over $L$，$\deg C_B(L) = \deg B / [L:K]$ | 分析域嵌入的结构 | 凭记忆 |
+| Morita equivalence | $M_n(C)$-模 ⇔ $C$-模 | 将一般半单 $A$ 归约到 division algebra 分量 | 凭记忆 |
+| Kneser-Harder-Chernousov | Hasse principle for simply connected groups | 可能的证明途径（torsor 论证） | 仅提及，未展开 |
+| Prasad-Rapinchuk | 可能的 embedding local-global 原理归功 | 可能的文献来源 | 仅提及，未展开 |
+| 局部域 Brauer 群 | $\operatorname{Br}(K_v) \cong \mathbb{Q}/\mathbb{Z}$，index = exponent | 局部 index 计算的基础 | 凭记忆 |
+
+---
+
+## 6. 已有的中间产物
+
+**Round 1 没有写出任何脚本或文件。** 题目约束明确禁止使用任何工具（不写文件、不执行命令、不搜索）。所有分析均在 thinking 中完成。
+
+- tool_calls: 0
+- 创建的文件: 无
+- 执行的命令: 无
+- 搜索: 无
+
+---
+
+## 7. 当前卡在哪里
+
+### 截断时的具体动作
+
+AI 正在验证一个**潜在反例**的局部条件是否能全部满足，以判断答案是 yes 还是 no。
+
+**反例设定**：
+- $K = \mathbb{Q}$
+- $A = L_1 \times L_2$，$[L_1:\mathbb{Q}] = 2$，$[L_2:\mathbb{Q}] = 3$
+- $B = M_4(D)$，$D$ 为 degree 6 的 central division algebra over $\mathbb{Q}$
+- 全局 Brauer index：$e_1 = 2$（$D \otimes L_1$ 在 $\operatorname{Br}(L_1)$ 中的 index），$e_2 = 3$（$D \otimes L_2$ 在 $\operatorname{Br}(L_2)$ 中的 index）
+
+**已确认全局条件无解**：需要 $m_1$ 偶、$m_2 \equiv 0 \pmod{3}$、$m_1 + m_2 = 4$、$m_1, m_2 \geq 1$，无满足的分解。故 $A$ 不嵌入 $B$。
+
+**截断时正在做**：检查各 place 的局部嵌入条件。已分析：
+- split place（$\delta_v = 1$）：条件 $\dim A = 5 \leq 24$，满足。
+- ramified place $\delta_v = 2$（$a_v = 3$，$B \otimes \mathbb{Q}_v \cong M_{12}(\Delta_v)$）：正在推导 $L_{i,w}$ 嵌入 $M_{m_{i,v}}(\Delta_v)$ 的条件，计算 $\Delta$-秩公式时被截断。
+
+**截断的最后一行**（reasoning_content 末尾）：
+> The $\Delta$-rank is $t_{i,w} \cdot e_{i,w}^2 \cdot [K_{i,w_i}:K_v] / \delta_v^2$
+
+### 为什么这个任务困难
+
+1. **组合 local-global 问题**：核心困难不在 Brauer 群（Hasse principle 已知成立），而在于**秩方程的整数可解性**。全局需要单一分解 $m_1 + \cdots + m_r = n$ 满足所有整除约束，而局部允许各 place 用不同分解。这是"积分 local-global"型问题，不直接由 Hasse principle 覆盖。
+2. **局部条件的复杂性**：每个 ramified place 的条件涉及局部 index $e_{i,w}$（$\Delta_v \otimes L_{i,w}$ 在 $\operatorname{Br}(L_{i,w})$ 中的阶），这些又由 $D$ 的局部不变量和 $L_i$ 在 $v$ 的分裂行为共同决定。需要同时安排 $D$ 的局部不变量和 $L_1, L_2$ 的分裂行为。
+3. **无工具约束**：不能搜索文献确认定理精确陈述，不能计算具体 Brauer 不变量，全凭推理。
+
+---
+
+## 8. 建议的下一步
+
+### 8.1 优先：完成反例验证（决定答案 yes/no）
+
+**具体步骤**：
+1. 完成 $\delta_v = 2$ place 的局部条件推导：对 $L_1$（degree 2 over $\mathbb{Q}_v$）和 $L_2$（degree 3 over $\mathbb{Q}_v$）嵌入 $M_{m_{i,v}}(\Delta_v)$（$\Delta_v$ degree 2 division over $\mathbb{Q}_v$）的条件。
+   - $L_{1,v}$ 嵌入 $M_{m_{1,v}}(\Delta_v)$：若 $L_{1,v}$ 分裂 $\Delta_v$（$e=1,s=2$）⇒ $t=2m_{1,v}$，需 $m_{1,v}\geq 1$；若不分裂（$e=2,s=1$）⇒ $t=m_{1,v}/2$，需 $2\mid m_{1,v}$，$m_{1,v}\geq 2$。
+   - $L_{2,v}$ 嵌入 $M_{m_{2,v}}(\Delta_v)$：若 $L_{2,v}$ 分裂 $\Delta_v$（$e=1,s=2$）⇒ $t=4m_{2,v}/3$，需 $3\mid m_{2,v}$；若不分裂（$e=2,s=1$）⇒ $t=m_{2,v}/3$，需 $3\mid m_{2,v}$，$m_{2,v}\geq 3$。
+2. 检查 $\delta_v = 3$ place（$a_v=2$，$B\otimes\mathbb{Q}_v\cong M_8(\Delta_v)$，$\Delta_v$ degree 3）和 $\delta_v = 6$ place（$a_v=1$，$B\otimes\mathbb{Q}_v\cong M_4(\Delta_v)$，$\Delta_v$ degree 6）的局部条件。
+3. **关键判定**：能否选择 $D$ 的局部不变量和 $L_1, L_2$ 的分裂行为，使得**所有** ramified place 的局部分解方程有解，而全局方程无解？
+   - 若能 ⇒ **答案 NO**，此为反例。
+   - 若不能（局部可解强制全局可解）⇒ **答案 YES**。
+
+### 8.2 备选：直接证明 yes（若反例验证排除）
+
+若 8.1 的分析表明局部可解性总蕴含全局可解性，则：
+1. 用 Hasse principle for Brauer group + 秩方程的局部-全局整数可解性论证完成证明。
+2. 关键引理需证：若对每个 place $v$，局部秩方程有正整数解，则全局秩方程 $\sum_i t_i e_i^2 [K_i:K]/d^2 = n$ 有正整数解。
+3. 可能需要用到：全局 index $e_i = \operatorname{lcm}_w e_{i,w}$，以及局部解的"柔性"（split place 几乎无约束）来论证全局解存在。
+
+### 8.3 备选：查证文献（若续传AI允许使用工具）
+
+若续传 AI 允许搜索：
+1. 搜索 "Hasse principle embeddings central simple algebra" 确认 Jacobowitz / Prasad-Rapinchuk 的精确定理陈述。
+2. 确认定理是否对**所有**半单 $A$（含 product of fields）成立，还是仅对域扩张成立。
+3. 若文献确认定理对一般半单 $A$ 成立 ⇒ 直接引用完成证明。
+
+### 8.4 注意事项
+
+- **不要从头开始**：§3 的归约（非半单→空虚真；半单→bimodule→秩方程）已确认，直接从秩方程的局部-全局分析继续。
+- **保留 LaTeX**：最终证明用英文输出，LaTeX 格式。
+- **反例方向值得认真检查**：$n=4, d=6, e_1=2, e_2=3$ 的设定使全局方程明确无解，若局部条件能全部满足则是一个干净的反例。
+
+---
+
+## 附录：探索历程时间线
+
+| Step | 来源 | 内容摘要 |
+|---|---|---|
+| steps[0] | system | Devin CLI 系统提示（18653c） |
+| steps[1] | system | subagent profiles 说明（775c） |
+| steps[2] | system | "You are powered by GLM-5.2 High."（32c） |
+| steps[3] | system | 工作目录环境信息（305c） |
+| steps[4] | system | always-on rules 注入（10388c） |
+| steps[5] | user | "请按AGENTS.md中的题目直接解答。直接在TUI中输出证明，不要写任何文件，结尾输出 ### PROOF COMPLETE"（63c） |
+| steps[6] | system | available_skills 列表（18107c） |
+| steps[7] | agent | **唯一思考步骤**：reasoning_content=70148c，0 tool_calls，0 message，completion_tokens=25000（**截断**）。内容：从问题分析→Hasse principle 回忆→非半单归约→bimodule 刻画→半单分解→秩方程→quaternion/cubic 案例验证→product of fields 分析→反例构造（$n=4,d=6$）→局部条件推导→**截断于 $\Delta$-秩公式中间**。 |

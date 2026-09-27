@@ -1,0 +1,1 @@
+Let $p$ be a prime number greater than 2. Patricia wants to assign 7 not necessarily distinct numbers from $\{1,2, \ldots, p\}$ to the black dots in the figure below, in such a way that the product of the three numbers on a line or circle always has the same remainder when divided by $p$.

@@ -1,0 +1,1 @@
+(a) Show how to represent the interior of any convex planar polygon as a sum of signed angular regions.\n\n   (b) Show how to represent the interior of a tetrahedron as a sum of signed solid angular regions, that is, regions bounded by three planes intersecting at a vertex and provided with a + or – sign.

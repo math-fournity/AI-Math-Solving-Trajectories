@@ -1,0 +1,1 @@
+In a sprawling global network, there are $n = 2024$ secure data centers arranged in a perfect ring. Every possible pair of these data centers is connected by a direct fiber-optic link (comprising both the perimeter links and all internal cross-connections). Each link is assigned exactly one encryption protocol from a set of $k$ available protocols.

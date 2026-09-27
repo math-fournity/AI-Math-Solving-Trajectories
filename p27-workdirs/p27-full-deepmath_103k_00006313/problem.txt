@@ -1,0 +1,1 @@
+Suppose that \(|A(n)| < B\) and \(\lim_{s \to 0^{+}}\sum_{n=1}^{\infty}a_{n}n^{-s}=a\) where \(A(x)=\sum_{n \leq x}a_{n}\). Prove that:

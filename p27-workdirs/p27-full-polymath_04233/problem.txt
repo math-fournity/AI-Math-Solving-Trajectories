@@ -1,0 +1,1 @@
+The positive integer-valued function $f(n)$ satisfies $f(f(n)) = 4n$ and $f(n + 1) > f(n) > 0$ for all positive integers $n$. Compute the number of possible 16-tuples $(f(1), f(2), f(3), \dots, f(16))$.

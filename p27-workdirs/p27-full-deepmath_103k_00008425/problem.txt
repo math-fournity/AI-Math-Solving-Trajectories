@@ -1,0 +1,1 @@
+Determine whether the following statement is true: If dilators $D_0$ and $D_1$ are bi-embeddable, meaning there exist embeddings $T_0: D_0 \Rightarrow D_1$ and $T_1: D_1 \Rightarrow D_0$, then $D_0 = D_1$. Provide a justification for your answer.

@@ -1,0 +1,1 @@
+Consider the sequence of partial sums \( S_n(t) = \sum_{1 \le |k| \le n} \frac{e^{ikt}}{k} \). Let \( C_n = \sup_{t \in \mathbb{R}} |S_n(t)| \). Find the smallest integer \( M \) such that \( \sup_{n \in \mathbb{N}} C_n \le M \).

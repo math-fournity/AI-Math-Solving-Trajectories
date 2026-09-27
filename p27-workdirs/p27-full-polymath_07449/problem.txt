@@ -1,0 +1,1 @@
+In a specialized logistics hub, there are nine distinct shipping containers identified by the set $S = \{a, b, c, d, e, f, g, h, i\}$. These containers are organized into three high-security zones: Zone 1 contains $\{a, b, c\}$, Zone 2 contains $\{d, e, f\}$, and Zone 3 contains $\{g, h, i\}$.

@@ -1,0 +1,1 @@
+Compute the Cheeger constant of the unit disc in \(\mathbb{R}^2\), defined as \(\inf_E\frac{S(E)}{\min(V(A),V(B))}\), where \(E\) is a 1-dimensional submanifold dividing the disc into disjoint subsets \(A\) and \(B\), \(S(E)\) denotes the 1-dimensional volume (length) of \(E\), and \(V\) denotes 2-dimensional volume (area).

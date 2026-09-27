@@ -1,0 +1,1 @@
+Let $E$ be a measure zero set of $\mathbb{R}$. Is there a finite positive measure set $F$ such that for every $x \in E$, the following conditions hold?

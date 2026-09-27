@@ -1,0 +1,1 @@
+Determine whether there exists a pair of continuous surjective functions \( f_1 \) and \( f_2 \) from \( \mathbb{Q} \) to itself such that for every \( x, y \in \mathbb{Q} \), the intersection \( f_1^{-1}(x) \cap f_2^{-1}(y) \) is non-empty.

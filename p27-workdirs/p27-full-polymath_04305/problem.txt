@@ -1,0 +1,1 @@
+A teacher has established an order for testing 30 students but has not communicated it. Students can form groups of 3 and ask the teacher who is the first or the last in the testing order within that group. Determine the largest integer \( n \) such that students can be confident of determining the order of testing for a group of \( n \) students.

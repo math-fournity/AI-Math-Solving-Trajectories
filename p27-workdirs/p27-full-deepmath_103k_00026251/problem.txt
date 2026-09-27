@@ -1,0 +1,1 @@
+Let $a, b, c \ge 0$ such that $a^2 + b^2 + c^2 + abc = 4$. Find the minimum value of the expression:

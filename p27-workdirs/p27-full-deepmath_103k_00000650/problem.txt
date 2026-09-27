@@ -1,0 +1,1 @@
+Is it possible to choose a countable sequence $(A_n)_{n\in\mathbb{N}}$ of subsets of a metric space $X$ such that $X=\bigcup_{n\in\mathbb{N}} A_n$ and a bounded continuous function $f:X\to\mathbb{R}$ is uniformly continuous on each $A_n$? Provide a justification for your answer.

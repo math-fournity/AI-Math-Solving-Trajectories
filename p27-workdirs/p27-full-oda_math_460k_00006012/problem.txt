@@ -1,0 +1,1 @@
+Let \(a_{1}, \ldots, a_{n}\) be distinct real numbers, and let \(\delta_{k} = \min_{\ell, \ell \neq k} |a_{\ell} - a_{k}|\). Given complex numbers \(x_{1}, \ldots, x_{n}\), define

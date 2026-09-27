@@ -1,0 +1,1 @@
+In the competitive world of artisanal glassblowing, two master craftsmen, Marco and Nico, are collaborating on a commemorative project. They are producing batches of "Unity Orbs" ($m$) and "Prism Cubes" ($n$), where both $m$ and $n$ must be positive whole numbers.

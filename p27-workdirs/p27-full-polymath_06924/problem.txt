@@ -1,0 +1,1 @@
+In the city-state of Arithmos, a shipment of cargo is classified as a "Royal Parcel" if the first and last digits of its identification number are identical. For example, a parcel with the ID code 4 is a Royal Parcel, as is one with the code 4104; however, a parcel labeled 10 is not.

@@ -1,0 +1,1 @@
+Let $A$ and $B$ be two $C^*$-algebras, and let $\psi: A \rightarrow B$ be a non $*$-homomorphism. Suppose $b$ is a nonzero normal element in $B$. We have a $*$-isometric isomorphism $\phi: C(\sigma_B(b)) \to C^*(b,b^*)$, given by $f \mapsto f(b)$. Does there exist a function $f \in C(\sigma_B(b))$ and an element $a \in A$ such that $\psi(a) = f(b)$ is nonzero?

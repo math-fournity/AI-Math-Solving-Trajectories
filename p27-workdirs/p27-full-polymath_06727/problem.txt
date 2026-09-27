@@ -1,0 +1,1 @@
+A network architecture firm is designing an $n \times n$ grid of data processors for a high-security server farm. Each grid contains $n^2$ identical processing nodes arranged in a square. To manage the flow of data packets, engineers can install physical "firewall barriers" between any two adjacent nodes.

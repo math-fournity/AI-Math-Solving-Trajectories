@@ -1,0 +1,1 @@
+In the city of Arithmos, two rival logistics managers, Jacob and Laban, are tasked with filling a central silo. Each manager has a private warehouse containing exactly 2021 crates. The weights of the crates in each warehouse are the squares of the integers from 1 to 2021 (i.e., $1^2, 2^2, 3^2, \dots, 2021^2$ units).

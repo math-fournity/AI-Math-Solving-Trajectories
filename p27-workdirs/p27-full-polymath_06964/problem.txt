@@ -1,0 +1,1 @@
+In a specialized logistics hub, the efficiency rating of a cargo shipment, denoted as $n$, is calculated using a specific balancing formula. This rating must be a natural number for the shipment to be cleared for transport.

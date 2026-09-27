@@ -1,0 +1,1 @@
+Let $H$ be a Banach space and $C \subset H$ be a convex cone. Consider $H' \subset H$ as a subspace and a functional $\phi: H' \to \mathbb{R}$ that is continuous in the norm of $H$ and nonnegative on $H' \cap C$. Does there exist an extension $\tilde{\phi}: H \to \mathbb{R}$ that is both bounded on $H$ and nonnegative on $C$?

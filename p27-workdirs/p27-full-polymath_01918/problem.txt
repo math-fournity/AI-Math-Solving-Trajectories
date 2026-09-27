@@ -1,0 +1,1 @@
+A total of 2010 coins are distributed in 5 boxes with consecutive natural numbers of coins. Martha can perform the following transformation finitely many times: from a box with at least 4 coins, she can transfer one coin to each of the other boxes. What is the maximum number of coins that Martha can take away after performing these transformations?

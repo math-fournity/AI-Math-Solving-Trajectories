@@ -1,0 +1,1 @@
+Let $p_1, p_2, \ldots, p_k$ be $k$ distinct prime numbers in the set of natural numbers $\mathbb{N}$, and let $n > 1$. Determine if the degree of the extension $[\mathbb{Q}(\sqrt[n]{p_1}, \ldots, \sqrt[n]{p_k}):\mathbb{Q}]$ is equal to $n^k$. Assume all roots are positive real numbers.

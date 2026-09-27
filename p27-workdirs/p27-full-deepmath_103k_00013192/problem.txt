@@ -1,0 +1,1 @@
+Calculate the total number of unique color patterns possible on a stickered Rubik's Cube, taking into account permutations from twisting corners, flipping edges, and reapplying stickers in different color schemes, with colors allowed to be adjacent or opposite.

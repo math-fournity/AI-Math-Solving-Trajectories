@@ -1,0 +1,1 @@
+In a digital signal processing laboratory, a team of engineers is studying "Complexity Ratings." For any positive integer signal strength $k$, the Complexity Rating $S(k)$ is defined as the sum of the digits of its decimal representation.

@@ -1,0 +1,11 @@
+/-!
+# IMO 2016 N5
+
+Fix some $k, a ∈ ℤ$ with $k ≥ 0$ and $a > 0$.
+A pair $(x, y) ∈ ℤ^2$ is called *nice* if $(k + 1) y^2 - k x^2 = a$.
+Prove that the following two statements are equivalent:
+* There exists a nice pair $(x, y)$ with $x ≥ 0$ and $x^2 > a$;
+* There exists a nice pair $(x, y)$ with $x ≥ 0$ and $x^2 ≤ a$.
+-/
+
+##

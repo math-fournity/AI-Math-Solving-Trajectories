@@ -1,0 +1,1 @@
+At an international conference there are 100 participants and four official languages. It is known that any two participants share at least one language that they both speak. Let $k$ be the minimum number of participants that must speak the same language. Find the value of $k$.

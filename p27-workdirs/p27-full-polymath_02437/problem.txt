@@ -1,0 +1,1 @@
+How many real roots are there for the equation \((x^4-5)^5 = 5 - \frac{24}{x^4}\)?

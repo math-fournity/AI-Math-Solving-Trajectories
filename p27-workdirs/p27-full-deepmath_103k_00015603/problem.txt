@@ -1,0 +1,1 @@
+Find the minimum value of $n$ such that the set of all positive integers can be partitioned into $n$ disjoint subsets, with none of the subsets containing an arithmetic progression of length 3 or more.

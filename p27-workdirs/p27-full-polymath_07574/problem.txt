@@ -1,0 +1,1 @@
+In a bustling telecommunications hub, there are $n$ distinct fiber-optic cables ($n \ge 4$) laid out across a flat layout board.

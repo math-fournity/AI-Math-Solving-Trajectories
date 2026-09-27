@@ -1,0 +1,1 @@
+In the remote digital archipelago of Gridlandia, a cyber-security firm has partitioned a massive $100 \times 100$ grid of server units into a total of $20,000$ triangular "data-nodes" (each server unit is a square divided by a diagonal into two equal right-triangular halves).

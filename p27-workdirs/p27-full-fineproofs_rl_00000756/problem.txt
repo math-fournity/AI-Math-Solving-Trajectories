@@ -1,0 +1,1 @@
+Alice and Bob are playing a game. First, Alice chooses a partition $\mathcal{C}$ of the positive integers into a (not necessarily finite) set of sets, such that each positive integer is in exactly one of the sets in $\mathcal{C}$. Then Bob does the following operation a finite number of times.

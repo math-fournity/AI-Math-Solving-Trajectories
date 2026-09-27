@@ -1,0 +1,1 @@
+In the city of Metropolia, two urban planning inspectors, Mr. Alpha and Mr. Gamma, are evaluating the grid of a new high-tech district. The district is defined as a square plot of land with coordinates $(x, y)$ where $0 < x < 1$ and $0 < y < 1$.

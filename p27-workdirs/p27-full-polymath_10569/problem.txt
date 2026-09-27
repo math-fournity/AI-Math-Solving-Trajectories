@@ -1,0 +1,1 @@
+In a futuristic data-encoding facility, a security clearance level $n$ (where $n$ is a positive integer) is classified as "Poly-Stable" if there exist two specific encryption keys $a$ and $b$ such that $1 < a < b < n$.

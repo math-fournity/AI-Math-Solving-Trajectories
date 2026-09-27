@@ -1,0 +1,1 @@
+Given a positive integer  $n$ , let  $D$  is the set of positive divisors of  $n$ , and let  $f: D \to \mathbb{Z}$  be a function. Prove that the following are equivalent:

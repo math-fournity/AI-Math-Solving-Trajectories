@@ -1,0 +1,1 @@
+What is the smallest positive real number $c$ so that for all positive integers $k, n$, $50{x}^{50}\cdot\arctan(x^{1000})<c{k}{(1+x^{2n})}$ holds for all $x$?

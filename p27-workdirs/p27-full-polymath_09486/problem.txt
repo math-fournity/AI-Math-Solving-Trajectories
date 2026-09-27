@@ -1,0 +1,1 @@
+In a futuristic circular server farm, there are 100 data terminals arranged in a perfect ring, indexed sequentially from 1 to 100. A single malicious data packet, known as the "Ghost Code," is hidden within exactly one of these terminals.

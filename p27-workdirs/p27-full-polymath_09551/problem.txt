@@ -1,0 +1,1 @@
+In a futuristic industrial zone, there are $10^{10}$ different processing plants, indexed by their ID number $n$ from $1$ to $10^{10}$. Each plant $n$ is searching for a specific safety rating $m$ (where $m$ is a positive integer).

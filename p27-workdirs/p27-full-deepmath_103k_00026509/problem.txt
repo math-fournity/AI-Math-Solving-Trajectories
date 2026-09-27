@@ -1,0 +1,1 @@
+Let $A$ be a possibly non-finitely generated torsion-free abelian group. If $A$ contains no infinitely $p$-divisible elements, does the same hold for $A \otimes \mathbb{Z}_p$, where $\mathbb{Z}_p$ denotes the $p$-adic integers? Provide a justification for your answer.

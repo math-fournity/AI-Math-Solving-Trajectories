@@ -1,0 +1,1 @@
+Eleven teachers run a conference. Every hour, one or more teachers give one-hour presentations, while all other teachers observe the presentations. Find the least amount of time during which it is possible for each teacher to observe all other presentations at least once.

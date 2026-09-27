@@ -1,0 +1,1 @@
+Let $\mathrm{P}, \mathrm{Q}$ be two non-constant polynomials with real coefficients and coprime. Show that there are at most three real numbers $\lambda$ such that:

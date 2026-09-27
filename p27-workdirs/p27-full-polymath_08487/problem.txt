@@ -1,0 +1,1 @@
+In a specialized urban planning simulation, architects are designing "Convex District Plazas." These plazas must be constructed as convex $n$-sided polygons by tiling two specific types of prefabricated stone tiles:

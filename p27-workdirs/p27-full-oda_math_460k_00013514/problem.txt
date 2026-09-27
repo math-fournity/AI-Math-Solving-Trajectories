@@ -1,0 +1,1 @@
+For the real numbers \(a, b, c > 0\), find the best constant real numbers \(k, q > 0\) such that the following inequality holds:

@@ -1,0 +1,1 @@
+A specialized logistics hub is organized into a rigid $25 \times 25$ grid of storage bays. In total, there are 625 bays, and each bay contains a cargo container labeled with a specific identification integer.

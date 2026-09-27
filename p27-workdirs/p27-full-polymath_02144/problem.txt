@@ -1,0 +1,1 @@
+Find the largest integer $N \in \{1, 2, \ldots , 2019 \}$ such that there exists a polynomial $P(x)$ with integer coefficients satisfying the following property: for each positive integer $k$, $P^k(0)$ is divisible by $2020$ if and only if $k$ is divisible by $N$.  Here $P^k$ means $P$ applied $k$ times, so $P^1(0)=P(0), P^2(0)=P(P(0)),$ etc.

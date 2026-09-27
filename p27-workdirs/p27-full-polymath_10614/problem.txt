@@ -1,0 +1,1 @@
+In a futuristic data-processing facility, an engineer is analyzing the stability of a specialized power-grid model. The system's output efficiency is represented by a complex performance function $P_{n}(x)$, where $n$ is a tunable hardware cycle frequency and $x$ is the input voltage. The function is defined by the following configuration:

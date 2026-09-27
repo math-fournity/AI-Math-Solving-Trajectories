@@ -1,0 +1,1 @@
+Let $\{a_k\}$ be a sequence of non-negative integers, and $\{b_k\}$ be a sequence of positive real numbers. Given that:

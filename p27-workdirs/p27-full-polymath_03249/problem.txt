@@ -1,0 +1,1 @@
+Let $a, b, c$ be nonnegative real numbers, and let $f(x) = \sum_{\text{cyc}} a^x(a - b)(a - c)$. Let $p$ be the greatest real number such that for all real numbers $r, k$ satisfying $\frac{r}{k} \geq 1$, the inequality

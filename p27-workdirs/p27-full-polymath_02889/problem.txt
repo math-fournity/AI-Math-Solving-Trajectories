@@ -1,0 +1,1 @@
+Let $\triangle ABC$ have its vertices at $A(0, 0), B(7, 0), C(3, 4)$ in the Cartesian plane. Construct a line through the point $(6-2\sqrt 2, 3-\sqrt 2)$ that intersects segments $AC, BC$ at $P, Q$ respectively. If $[PQC] = \frac{14}3$, what is $|CP|+|CQ|$?

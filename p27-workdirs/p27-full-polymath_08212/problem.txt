@@ -1,0 +1,1 @@
+A deep-sea research vessel is tasked with a 100-day expedition. Each day, the crew must choose between two exclusive tasks: "Biological Sampling" (Task B) or "Atmospheric Monitoring" (Task A). Over the course of the 100-day mission, the crew is strictly required to perform Task B exactly 50 times and Task A exactly 50 times.

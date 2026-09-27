@@ -1,0 +1,1 @@
+Two players $A$ and $B$ play a game in which they choose numbers alternately according to the following rules:

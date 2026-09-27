@@ -1,0 +1,1 @@
+In a high-security server farm, an $8 \times 8$ grid of server racks is used to host $n$ specialized security drones ($n > 1$). Each drone is programmed to monitor its own row and column. A drone is said to "visually lock" onto another drone if it is the closest drone in any of the four cardinal directions (North, South, East, or West) within the grid.

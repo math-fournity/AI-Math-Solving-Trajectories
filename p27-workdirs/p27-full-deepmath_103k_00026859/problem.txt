@@ -1,0 +1,1 @@
+Determine whether the limit \( \lim_{x\to-\infty}\sum_{n=1}^\infty\lambda(n)\frac{x^n}{\Gamma(n)} \) is finite.

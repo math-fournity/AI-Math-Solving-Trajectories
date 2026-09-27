@@ -1,0 +1,1 @@
+Given 10 distinct positive integers, all pairwise greatest common divisors (gcds) and least common multiples (lcms) are provided, totaling 90 numbers. Is it always possible to determine the original 10 integers from these 90 numbers?

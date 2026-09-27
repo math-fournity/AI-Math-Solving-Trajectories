@@ -1,0 +1,7 @@
+/-!
+# IMO 2007 N1
+
+Find all pairs $(k, n) \in \mathbb{N}^2$ such that $7^k - 3^n \mid k^4 + n^2$.
+-/
+
+##

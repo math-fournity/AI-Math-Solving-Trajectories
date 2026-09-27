@@ -1,0 +1,1 @@
+A positive integer is called uphill if the digits in its decimal representation form a non-decreasing sequence from left to right. That is, a number with decimal representation $\overline{a_{1} a_{2} \ldots a_{d}}$ is uphill if $a_{i} \leq a_{i+1}$ for all $i$. (All single-digit integers are uphill.)

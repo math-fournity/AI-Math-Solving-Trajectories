@@ -1,0 +1,1 @@
+Given a horizontal row of 2017 zeros, each time we select 10 consecutive numbers and increase each by 1. After a finite number of steps, how many equal numbers are there in the horizontal row?

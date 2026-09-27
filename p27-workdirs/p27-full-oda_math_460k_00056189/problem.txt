@@ -1,0 +1,1 @@
+In the doubly connected domain $D$, containing the point at infinity, construct the flow streamlining the boundary contours with given circulations $\Gamma_1, \Gamma_2$ and having at $\infty$ the velocity $\mathbf{V}_\infty = V e^{i\alpha}$.

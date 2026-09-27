@@ -1,0 +1,1 @@
+In a remote industrial sector, 9 specialized quality inspectors are assigned to evaluate 12 different shipments of raw minerals. For each shipment, an inspector must assign a unique "impurity rank" from 1 to 12, where a rank of 1 indicates the highest purity and a rank of 12 indicates the lowest purity. Each of the 12 ranks must be used exactly once by every inspector.

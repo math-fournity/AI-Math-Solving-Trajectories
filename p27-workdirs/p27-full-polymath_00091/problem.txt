@@ -1,0 +1,1 @@
+The rows and columns of a \(7 \times 7\) grid are each numbered \(1, 2, \ldots, 7\). In how many ways can one choose \(8\) cells of this grid such that for every two chosen cells \(X\) and \(Y\), either the positive difference of their row numbers is at least \(3\), or the positive difference of their column numbers is at least \(3\)?

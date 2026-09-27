@@ -1,0 +1,1 @@
+There are 18 points on a plane, where no three points are collinear. Each pair of points is connected by a line segment, and these line segments are colored either red or blue, with each line segment being only one color. It is known that a certain point $A$ has an odd number of red line segments, and the number of red line segments from the other 17 points are all distinct.

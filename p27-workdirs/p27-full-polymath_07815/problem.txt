@@ -1,0 +1,1 @@
+A high-security data storage facility operates several independent encrypted servers. A systems architect is testing the storage capacity requirements for various combinations of these servers.

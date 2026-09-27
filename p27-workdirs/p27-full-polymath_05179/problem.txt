@@ -1,0 +1,1 @@
+Find the sum of the smallest 10 positive integers $k$ for which the following statement is true:

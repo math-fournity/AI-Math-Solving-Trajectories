@@ -1,0 +1,1 @@
+A circular park is surrounded by $2n$ security stations, labeled consecutively from $1$ to $2n$. To monitor the park’s interior, the security team installs $n$ straight laser fences. Each fence connects a pair of opposite stations: specifically, for every station $i$ (where $1 \leq i \leq n$), a laser beam is fired in a perfectly straight line to station $n+i$.

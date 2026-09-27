@@ -1,0 +1,1 @@
+Let \( M \) be the answer to problem 23. Compute the number of integers \( 0 \leq k \leq 2196-M \) such that \(\frac{2196!}{M!k!(2196-M-k)!} \equiv 0 \pmod{13}\).

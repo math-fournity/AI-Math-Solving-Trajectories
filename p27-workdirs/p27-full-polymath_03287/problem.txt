@@ -1,0 +1,1 @@
+Let $a_{1}$, $a_{2}$, …, $a_{6}$; $b_{1}$, $b_{2}$, …, $b_{6}$ and $c_{1}$, $c_{2}$, …, $c_{6}$ are all permutations of $1$, $2$, …, $6$, respectively. Find the minimum value of $\sum_{i=1}^{6}a_{i}b_{i}c_{i}$.

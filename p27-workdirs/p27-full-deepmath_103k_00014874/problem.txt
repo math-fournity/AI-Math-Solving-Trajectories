@@ -1,0 +1,1 @@
+Evaluate the regularized improper integral \( \int_{-\infty}^{\infty} te^{-2it} e^{-\epsilon t^2} \, dt \) as \( \epsilon \to 0^+ \).

@@ -1,0 +1,1 @@
+A high-tech security firm is designing a network within a polygonal city-state surrounded by a boundary wall with exactly 2011 watchtowers (the vertices of a convex 2011-gon). Inside the city, 2011 signal relays have been placed such that no three locations—among the 2011 watchtowers and 2011 relays—are collinear.

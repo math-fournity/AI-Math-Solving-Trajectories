@@ -1,0 +1,1 @@
+Let \( f \) and \( g \) be two integer-valued functions defined on the set of all integers such that

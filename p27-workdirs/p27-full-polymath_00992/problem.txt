@@ -1,0 +1,1 @@
+Let \( n \) be a positive integer. Let \( S \) be a set of ordered pairs \((x, y)\) with the following properties:

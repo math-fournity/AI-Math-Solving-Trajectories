@@ -1,0 +1,1 @@
+Let $X^{n} \subset \mathbb{P}^{n+a}$ be a variety, and let $x \in X$ be a general point. The set $\text{singloc } |II|_{x}$ consists of directions $[v] \in \mathbb{P} T_{x} X$ such that the embedded tangent space $\tilde{T}_{x} X$ does not move to first order in the direction of $v$. If $\text{singloc } |II|_{x} \neq \emptyset$, what can be concluded about the singularity of $X$?

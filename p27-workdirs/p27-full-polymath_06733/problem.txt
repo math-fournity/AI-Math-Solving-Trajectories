@@ -1,0 +1,1 @@
+In a specialized network of 30 server nodes, every node is connected to exactly the same number of other nodes via bidirectional data links. In this network, performance is measured by processing speed, and it is established that no two nodes have identical speeds; for any pair, one is always strictly faster than the other.

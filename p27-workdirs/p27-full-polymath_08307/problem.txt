@@ -1,0 +1,1 @@
+In the competitive world of high-end logistics, three regional shipping hubs—Alpha, Beta, and Gamma—are managing their inventory of heavy-duty containers. Each hub currently holds a specific integer number of containers, represented by the quantities $a$, $b$, and $c$, respectively.

@@ -1,0 +1,1 @@
+Given a right triangle $ABC$ with legs $AB = 42$ and $BC = 56$. A circle passing through point $B$ intersects side $AB$ at point $P$, side $BC$ at point $Q$, and side $AC$ at points $K$ and $L$. It is known that $PK = KQ$ and $QL : PL = 3 : 4$. Find $PQ^{2}$.

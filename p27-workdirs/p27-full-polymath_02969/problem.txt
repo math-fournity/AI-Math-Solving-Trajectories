@@ -1,0 +1,1 @@
+A rectangular table $ 9$ rows $ \times$ $ 2008$ columns is fulfilled with numbers $ 1$, $ 2$, ...,$ 2008$ in a such way that each number appears exactly $ 9$ times in table and difference between any two numbers from same column is not greater than $ 3$. What is maximum value of minimum sum in column (with minimal sum)?

@@ -1,0 +1,1 @@
+Suppose $(M, \omega)$ is a symplectic manifold and $X$ is a smooth vector field defined on $M$. If the Lie derivative $\mathcal{L}_X \omega = 0$, is the flow $\{g_s\}_{s\in\mathbb{R}}$ symplectic, i.e., does $g_s^*\omega = \omega$ hold for all $s$?

@@ -1,0 +1,1 @@
+You have 50 cards, each with numbers from 1 to 100 written on each side. The cards are placed on a table, and you can flip each card exactly once to maximize the sum of the numbers on the upper sides. What is the largest sum you can always ensure?

@@ -1,0 +1,1 @@
+Let \( G \) be a group and \( m, n \) be two coprime natural numbers. Suppose the applications \( G \ni x \mapsto x^{m+1} \) and \( G \ni x \mapsto x^{n+1} \) are surjective endomorphisms. If \( G \) has 120 elements, find the number of distinct pairs \((m, n)\) such that \( G \) is guaranteed to be commutative.

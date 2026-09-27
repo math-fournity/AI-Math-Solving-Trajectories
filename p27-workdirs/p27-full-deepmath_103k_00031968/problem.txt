@@ -1,0 +1,1 @@
+Is it possible to arrange six pairwise non-intersecting opaque parallelepipeds in space such that there exists a point in space, not belonging to any of them, from which none of their vertices are visible?

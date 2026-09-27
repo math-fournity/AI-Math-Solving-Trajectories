@@ -1,0 +1,1 @@
+A positive integer \( n \) is called an \( MTRP \) number if it satisfies the following conditions:

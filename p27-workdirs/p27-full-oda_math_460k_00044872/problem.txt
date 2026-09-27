@@ -1,0 +1,1 @@
+(Whitney's Criterion) A connected graph \( G \) is planar iff there exists another graph \( G^* \) and a one-to-one mapping \( \varphi \) of \( E(G) \) onto \( E(G^*) \) such that whenever \( T \) is a spanning tree of \( G \), \( \varphi(E(G) - E(T)) \) gives a spanning tree in \( G^* \) and vice versa.

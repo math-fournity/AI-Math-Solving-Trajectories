@@ -1,0 +1,8 @@
+/-!
+# IMO 2015 N2
+
+Let $a, b ∈ ℕ$ such that $a! + b! ∣ a! b!$.
+Prove that $3a ≥ 2b + 2$, and find all the equality cases.
+-/
+
+##

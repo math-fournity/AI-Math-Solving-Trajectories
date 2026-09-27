@@ -1,0 +1,1 @@
+Suppose that each of the vertices of $\triangle ABC$ is a lattice point in the $(x, y)$-plane and that there is exactly one lattice point $P$ in the interior of the triangle. The line $AP$ is extended to meet $BC$ at $E$. Determine the largest possible value for the ratio

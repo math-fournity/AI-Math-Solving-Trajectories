@@ -1,0 +1,1 @@
+Verify the identity for any $c \in C$ in a coalgebra with comultiplication $\Delta: C \rightarrow C \otimes C$ and counit $\varepsilon: C \rightarrow \mathbb{k}$:

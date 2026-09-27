@@ -1,0 +1,1 @@
+In a vast desert, an engineering team has installed 100 sensors along a perfectly straight communication cable. To monitor the signals from these sensors, a single satellite has been positioned at a fixed point in the sky, not directly above the cable.

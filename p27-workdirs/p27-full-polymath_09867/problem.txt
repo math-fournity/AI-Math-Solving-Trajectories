@@ -1,0 +1,1 @@
+A specialized quantum computer uses a series of energy state functions, denoted as $P_0, P_1, P_2, \ldots$. The baseline state is defined as $P_0(x) = 1$, and the primary excited state is $P_1(x) = x$. For all subsequent states where $n \geq 1$, the energy function follows the recursive stabilization protocol: $P_{n+1}(x) = 2xP_n(x) - P_{n-1}(x)$.

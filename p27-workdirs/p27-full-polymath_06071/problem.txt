@@ -1,0 +1,1 @@
+In the remote sector of the Aetheris power grid, a large triangular solar array is partitioned into $n^2 = 25$ identical smaller triangular photovoltaic cells. To monitor the energy output, a technician must assign a unique frequency ID to each cell using the integer set $\{1, 2, \dots, 25\}$.

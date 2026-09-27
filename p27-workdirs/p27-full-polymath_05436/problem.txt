@@ -1,0 +1,1 @@
+In a regular polygon with 2019 sides, a medal is hidden at one of the vertices. Each move costs 1000 olcolones and involves selecting a vertex, which turns green if the medal is on it or in one of the four adjacent vertices, or red otherwise. Determine the minimum number of olcolones Olcoman needs to identify the exact position of the medal with certainty.

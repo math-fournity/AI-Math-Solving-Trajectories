@@ -1,0 +1,1 @@
+Determine all positive integers $n{}$ for which there exist pairwise distinct integers $a_1,\ldots,a_n{}$ and $b_1,\ldots, b_n$ such that \[\prod_{i=1}^n(a_k^2+a_ia_k+b_i)=\prod_{i=1}^n(b_k^2+a_ib_k+b_i)=0, \quad \forall k=1,\ldots,n.\]

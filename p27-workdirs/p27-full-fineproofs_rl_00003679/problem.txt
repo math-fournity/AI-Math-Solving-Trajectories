@@ -1,0 +1,1 @@
+Let $H=\left\{\lfloor i \sqrt{2}\rfloor: i \in \mathbb{Z}_{>0}\right\}=\{1,2,4,5,7, \ldots\}$, and let $n$ be a positive integer. Prove that there exists a constant $C$ such that, if $A \subset\{1,2, \ldots, n\}$ satisfies $|A| \geqslant C \sqrt{n}$, then there exist $a, b \in A$ such that $a-b \in H$.  (Brazil)

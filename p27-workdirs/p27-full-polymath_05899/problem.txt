@@ -1,0 +1,1 @@
+In a remote industrial complex, a specialized automated control system $P$ is programmed using a unique logical protocol where the input settings must be integers and the resulting system outputs are governed by a specific polynomial function with integer coefficients.

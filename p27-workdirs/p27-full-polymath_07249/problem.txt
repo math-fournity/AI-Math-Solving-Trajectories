@@ -1,0 +1,1 @@
+A grand international culinary festival is hosting a competition involving $n^2$ unique spice blends, each assigned a distinct intensity rating from $1$ to $n^2$. The festival organizers have arranged these spices into a perfect $n \times n$ grid for display.

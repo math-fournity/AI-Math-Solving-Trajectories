@@ -1,0 +1,1 @@
+38. (ROM 4) Let $m_{j}>0$ for $j=1,2, \ldots, n$ and $a_{1} \leq \cdots \leq a_{n}<b_{1} \leq \cdots \leq$ $b_{n}<c_{1} \leq \cdots \leq c_{n}$ be real numbers. Prove:  $$ \left[\sum_{j=1}^{n} m_{j}\left(a_{j}+b_{j}+c_{j}\right)\right]^{2}>3\left(\sum_{j=1}^{n} m_{j}\right)\left[\sum_{j=1}^{n} m_{j}\left(a_{j} b_{j}+b_{j} c_{j}+c_{j} a_{j}\right)\right] . $$

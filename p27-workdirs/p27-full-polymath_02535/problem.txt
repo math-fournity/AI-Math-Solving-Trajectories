@@ -1,0 +1,1 @@
+There is a unique triplet of integers \((a, b, c)\) such that \(0<a<b<c<1000\) and

@@ -1,0 +1,1 @@
+Determine whether the statement \( \sum_{k=0}^n{e^{ik^2}} = o(n^\alpha) \) holds for all \( \alpha > 0 \) as \( n \to +\infty \).

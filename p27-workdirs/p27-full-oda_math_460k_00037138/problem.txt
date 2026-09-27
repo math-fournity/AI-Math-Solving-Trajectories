@@ -1,0 +1,1 @@
+If a graph \( G \) has a high chromatic number (i.e., \(\chi(G) \geq t\)), must \( G \) necessarily contain a subgraph that is a \( t \)-clique minor, as conjectured by Hadwiger?

@@ -1,0 +1,1 @@
+Find the largest real number $k$ for which the inequality

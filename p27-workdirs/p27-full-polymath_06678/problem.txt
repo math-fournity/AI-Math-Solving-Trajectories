@@ -1,0 +1,1 @@
+In a specialized logistics hub, two security codes, $a$ and $b$ ($a \le b$), were generated. Both codes are integers strictly greater than 1. An automated system assigned the product of these two codes to an analyst named Alex, while the sum of the codes was assigned to a coordinator named Blake.

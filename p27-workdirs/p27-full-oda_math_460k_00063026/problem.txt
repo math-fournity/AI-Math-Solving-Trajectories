@@ -1,0 +1,1 @@
+Find the remainder when the number of trailing zeros of ${(2006^{2005})!}$ is divided by 1000.

@@ -1,0 +1,1 @@
+Let $M$ be the set of natural numbers such that there exists a group of this order which is not solvable. Determine the minimal distance $D$ between two numbers in $M$. Given examples show $D \leq 12$, and the Feit-Thompson theorem implies $D > 1$. What is the value of $D$?

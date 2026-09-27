@@ -1,0 +1,1 @@
+Let $C$ be a fixed unit circle in the cartesian plane. For any convex polygon $P$ , each of whose sides is tangent to $C$, let $N( P, h, k)$ be the number of points common to $P$ and the unit circle with center at $(h, k).$ Let $H(P)$ be the region of all points $(x, y)$ for which $N(P, x, y) \geq 1$ and $F(P)$ be the area of $H(P).$ Find the smallest number $u$ with

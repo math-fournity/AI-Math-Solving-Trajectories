@@ -1,0 +1,1 @@
+Given  $19$  red boxes and  $200$  blue boxes filled with balls. None of which is empty.

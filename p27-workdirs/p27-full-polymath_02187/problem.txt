@@ -1,0 +1,1 @@
+Determine maximum real $ k$ such that there exist a set $ X$ and its subsets $ Y_{1}$, $ Y_{2}$, $ ...$, $ Y_{31}$ satisfying the following conditions:

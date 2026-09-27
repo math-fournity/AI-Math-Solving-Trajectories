@@ -1,0 +1,1 @@
+In the remote logistics hub of Port Apex, a specialized team of seven cargo drones is commissioned to deliver a critical sensor to a Deep Sea Outpost. Each drone is equipped with a battery capacity that allows for exactly 4 days of operation. Due to the high-pressure environment, a drone can never carry more than 4 days' worth of energy at any time.

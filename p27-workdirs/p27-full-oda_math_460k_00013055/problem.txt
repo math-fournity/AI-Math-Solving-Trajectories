@@ -1,0 +1,1 @@
+Given an acute triangle \(ABC\), points \(P\) and \(Q\), the \(P\)-cevian triangle \(A'B'C'\) of \(ABC\), and the \(Q\)-circumcevian triangle \(A''B''C''\) of \(ABC\), determine the conditions on points \(P\) and \(Q\) such that the circumcircles of triangles \(AA'A''\), \(BB'B''\), and \(CC'C''\) are coaxial.

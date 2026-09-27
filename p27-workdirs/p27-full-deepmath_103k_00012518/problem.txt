@@ -1,0 +1,1 @@
+Calculate the integral \( I = \int_0^1 |f(x) - f^{-1}(x)| \, dx \), where \( f: [0, 1] \to [0, 1] \) is defined by \( f(x) = x e^{x^2 - 1} \).

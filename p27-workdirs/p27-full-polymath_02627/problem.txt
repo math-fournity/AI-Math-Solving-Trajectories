@@ -1,0 +1,1 @@
+Consider a set of cards numbered with $k$-digit strings $d_1 d_2 \dots d_k$, where each $d_i \in \{0, 1, \dots, s-1\}$. There are boxes numbered with 2-digit strings $b_1 b_2$, where $b_j \in \{0, 1, \dots, s-1\}$. A card can be placed in a box if the box's number can be obtained by deleting $k-2$ digits from the card's number.

@@ -1,0 +1,1 @@
+Is the homeomorphism group of a compactly generated, weak Hausdorff space with the compactly generated topology stemming from the CO topology necessarily a topological group?

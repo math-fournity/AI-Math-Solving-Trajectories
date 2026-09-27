@@ -1,0 +1,1 @@
+Find all non-constant monic polynomials \( f(x) \) with integer coefficients such that there exists a natural number \( M \) for which, for all \( n \geq M \), \( f(n) \) divides \( f(2^n) - 2^{f(n)} \).

@@ -1,0 +1,1 @@
+Determine whether the barycenter of a convex plane curve is Lipschitz with respect to the Hausdorff distance. Specifically, for a convex curve $C$, define its barycenter as

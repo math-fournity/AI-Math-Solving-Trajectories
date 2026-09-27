@@ -1,0 +1,1 @@
+The plane is partitioned into parabolas such that each point belongs to exactly one parabola. Determine if it necessarily follows that all the parabolas have their axes in the same direction.

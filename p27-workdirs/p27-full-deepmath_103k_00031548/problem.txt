@@ -1,0 +1,1 @@
+Determine whether there exists a set of 1992 positive integers such that the sum of the elements of every subset is a perfect power (square, cube, or higher power).

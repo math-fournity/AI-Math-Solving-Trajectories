@@ -1,0 +1,1 @@
+Consider the integral domain \(R=\mathbb{Z}[a_1,\ldots,a_n]\), which is finitely generated over \(\mathbb{Z}\). Determine whether the quotient group \((R,+)/(\mathbb{Z},+)\) can contain a divisible element, where a "divisible element" is defined as an element \(e \neq 0\) such that for every positive integer \(n\), there exists an element \(f\) satisfying \(e = nf\).

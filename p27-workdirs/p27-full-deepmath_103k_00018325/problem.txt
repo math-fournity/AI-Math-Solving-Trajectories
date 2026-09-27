@@ -1,0 +1,1 @@
+Evaluate the limit: \( \lim_{x \rightarrow 0^+} \sum_{n=1}^{\infty} \frac{1}{n^2 x} \) using the technique of convolution with an approximate identity.

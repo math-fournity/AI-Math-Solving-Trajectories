@@ -1,0 +1,1 @@
+Let  $ABC$  be a triangle with  $AB \ne AC$ . The incirle of triangle  $ABC$  is tangent to  $BC, CA, AB$  at  $D, E, F$ , respectively. The perpendicular line from  $D$  to  $EF$  intersects  $AB$  at  $X$ . The second intersection point of circumcircles of triangles  $AEF$  and  $ABC$  is  $T$ . Prove that  $TX \perp T F$

@@ -1,0 +1,1 @@
+For a given natural number $n \geq 2$, let $C(n)$ be the smallest positive real constant for which there exist $n$ real numbers $x_{1}, x_{2}, \ldots, x_{n}$ that are not all zero and satisfy the conditions:

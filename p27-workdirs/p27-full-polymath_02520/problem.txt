@@ -1,0 +1,1 @@
+Let \(a, b, c\) be the sides of triangle \(ABC\) such that \(a^2 + b^2 + c^2 = 2\). Find the minimum possible value of the expression:

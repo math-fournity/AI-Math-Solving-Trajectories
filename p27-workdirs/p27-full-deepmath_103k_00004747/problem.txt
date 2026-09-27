@@ -1,0 +1,1 @@
+Determine the minimum number of Fourier coefficients needed to uniquely identify a sparse signal \( f = \sum_{n=1}^N c_n \delta_{t_n} \), where \( N \in \mathbb{N} \), \( c_n \in \mathbb{C} \), and \( t_n \in \mathbb{R} \) for \( n=1, \dots, N \). The \( k \)-th Fourier coefficient of \( f \) is given by

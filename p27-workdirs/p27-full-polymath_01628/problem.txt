@@ -1,0 +1,1 @@
+24.3.9 * A shape obtained by removing a unit square from each corner of a $3 \times 3$ square is called a “cross-shape”.

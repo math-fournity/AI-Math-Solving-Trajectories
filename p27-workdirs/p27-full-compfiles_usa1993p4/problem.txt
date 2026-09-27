@@ -1,0 +1,7 @@
+The sequence aₙ of odd positive integers is defined as follows:
+a₁ = r, a₂ = s, and aₙ is the greatest odd divisor of aₙ₋₁ + aₙ₋₂.
+Show that, for sufficiently large n, aₙ is constant and find this
+constant (in terms of r and s).
+
+</rule>
+</rules>

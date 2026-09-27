@@ -1,0 +1,1 @@
+Let \( c \) be the smallest positive real number such that for all positive integers \( n \) and all positive real numbers \( x_{1}, \ldots, x_{n} \), the inequality

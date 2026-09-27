@@ -1,0 +1,1 @@
+Find the total number of occurrences of the digits \(0, 1, \ldots, 9\) in the entire guts round.

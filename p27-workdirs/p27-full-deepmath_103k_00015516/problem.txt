@@ -1,0 +1,1 @@
+Determine whether the generating function of the language $L = \{w \in \Sigma^* \mid w \neq uvu', \text{ with } u, u' \in \Sigma^*, v \in W\}$, where $W$ is the set of all words over the alphabet $\Sigma$, is rational. Provide a justification for your answer.

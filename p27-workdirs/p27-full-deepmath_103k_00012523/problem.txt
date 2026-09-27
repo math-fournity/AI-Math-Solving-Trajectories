@@ -1,0 +1,1 @@
+Determine whether the function \( f(\epsilon) = \lim_{n \rightarrow \infty}\frac{\sum_{i=1}^n\left|\{k\le i^\epsilon: k |i\} \right|}{\sum_{i=1}^n\left|\{k |i\} \right|} \) is well-defined for all \( \epsilon \in [0,1] \).

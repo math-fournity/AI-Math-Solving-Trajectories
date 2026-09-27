@@ -1,0 +1,1 @@
+A high-security digital vault uses a set of unique encryption keys denoted as $P^*$, which consists of all prime numbers less than $10,000$. Each key $p \in P^*$ has an associated "activation value" defined as $p+1$.

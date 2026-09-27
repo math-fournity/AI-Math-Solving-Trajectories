@@ -1,0 +1,1 @@
+For which values of $\alpha \in [0, 2\pi)$ is the series $\sum\limits_{n=1}^{\infty}\frac{\cos (p_{n}\alpha)}{p_{n}}$ convergent?

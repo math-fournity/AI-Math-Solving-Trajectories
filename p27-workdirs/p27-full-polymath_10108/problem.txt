@@ -1,0 +1,1 @@
+In a remote region of the deep sea, three research stations—Alpha, Bravo, and Charlie—are positioned such that they form a triangle. An oceanographic survey team intends to deploy a high-speed fiber optic cable in the shape of a perfect parabola to connect all three stations simultaneously.

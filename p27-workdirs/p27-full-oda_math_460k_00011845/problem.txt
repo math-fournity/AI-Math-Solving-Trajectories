@@ -1,0 +1,1 @@
+Find the minimum positive integer $n$ such that for any graph $G(V,E)$ with $|V|=2019$ and $|E|=n$, there exist 908 distinct 2-element subsets of $E$ where each subset contains two edges that share exactly one common vertex, and no two subsets intersect.

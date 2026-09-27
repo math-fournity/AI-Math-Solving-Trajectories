@@ -1,0 +1,1 @@
+Determine whether there exists a continuous function whose Fourier series converges everywhere, but not uniformly to the function itself.

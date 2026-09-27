@@ -1,0 +1,1 @@
+Determine the maximum number $n$ such that it is possible to arrange $n$ rectangular parallelepipeds $P_1, P_2, \ldots, P_n$ in space with edges parallel to the coordinate axes such that each $P_i$ intersects with all other parallelepipeds except for $P_{i-1}$ and $P_{i+1}$ (with indices taken modulo $n$).

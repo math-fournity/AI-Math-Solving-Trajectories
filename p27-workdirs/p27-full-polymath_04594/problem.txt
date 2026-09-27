@@ -1,0 +1,1 @@
+Let \( X \) be a given number. Let \( Y \) be the number of ways to order \( X \) crimson flowers, \( X \) scarlet flowers, and \( X \) vermillion flowers in a row so that no two flowers of the same hue are adjacent. (Flowers of the same hue are mutually indistinguishable.) Find \( Y \).

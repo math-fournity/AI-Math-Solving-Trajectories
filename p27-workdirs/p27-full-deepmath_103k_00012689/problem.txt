@@ -1,0 +1,1 @@
+Let $f$ be a continuous function on the interval $[0,1]$. Given that $\int_{0}^{1} f(x) x^n \, dx = 0$ for all non-negative integers $n$, prove that $\int_{0}^{1} f^2(x) \, dx = 0$. Provide a detailed justification for your answer.

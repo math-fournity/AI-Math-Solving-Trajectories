@@ -1,0 +1,1 @@
+In the coastal territory of Arcania, three watchtowers—Alpha ($A$), Bravo ($B$), and Charlie ($C$)—form a triangular defensive perimeter. The distance between Alpha and Bravo is exactly 34 leagues, the distance between Bravo and Charlie is 15 leagues, and the distance between Alpha and Charlie is 35 leagues.

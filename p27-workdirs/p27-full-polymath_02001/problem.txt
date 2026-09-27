@@ -1,0 +1,1 @@
+Compute the number of ordered triples of positive integers $(a,b,n)$ satisfying $\max(a,b) \leq \min(\sqrt{n}, 60)$ and \[ \operatorname{Arcsin}\left( \frac{a}{\sqrt{n}} \right) + \operatorname{Arcsin}\left( \frac{b}{\sqrt{n}} \right) = \frac{2\pi}{3}. \]

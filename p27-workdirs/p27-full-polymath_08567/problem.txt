@@ -1,0 +1,1 @@
+In a specialized digital archive, security protocols are defined by "bit-depth" settings $m$ and $n$, which must both be positive integers. The facility operates using two primary encryption keys, calculated as $K_1 = 2^m - 1$ and $K_2 = 2^n - 1$.

@@ -1,0 +1,1 @@
+Define \( f(n) = \left\lfloor \left\{ \frac{1}{\ln n} \right\} \right\rfloor \) for all positive integers \( n \), where \( \{ \cdot \} \) denotes the fractional part and \( \lfloor \cdot \rfloor \) denotes the integer part. Find the smallest positive integer \( N \) such that \( f(n) \) takes on all integer values from 0 to 99 inclusive for some \( n \leq N \).

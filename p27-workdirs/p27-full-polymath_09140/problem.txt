@@ -1,0 +1,1 @@
+A high-tech server farm consists of an $8 \times 8$ grid of processing units. To monitor the health of the system, a company installs specialized security sensors on the units according to two strict safety protocols:

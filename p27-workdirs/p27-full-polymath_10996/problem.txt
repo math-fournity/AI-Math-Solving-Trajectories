@@ -1,0 +1,1 @@
+In a specialized carbon-offset facility, there are 31 unique experimental filtration units. Each unit $i$ is assigned a specific performance coefficient, represented by a real number $x_i$.

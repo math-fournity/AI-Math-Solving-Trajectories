@@ -1,0 +1,1 @@
+22. G7 (RUS) For a given triangle $A B C$, let $X$ be a variable point on the line $B C$ such that $C$ lies between $B$ and $X$ and the incircles of the triangles $A B X$ and $A C X$ intersect at two distinct points $P$ and $Q$. Prove that the line $P Q$ passes through a point independent of $X$.

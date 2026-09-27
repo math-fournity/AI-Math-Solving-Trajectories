@@ -1,0 +1,1 @@
+Evaluate the integral \( \int_0^{+\infty} \frac{\sin^4{x}}{x^4} \, dx \).

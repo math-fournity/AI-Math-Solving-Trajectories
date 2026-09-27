@@ -1,0 +1,1 @@
+Let  $n\ge 4$  be a positive integer and let  $M$  be a set of  $n$  points in the plane, where no three points are collinear and not all of the  $n$  points being concyclic. Find all real functions  $f:M\to\mathbb{R}$  such that for any circle  $\mathcal{C}$  containing at least three points from  $M$ , the following equality holds:

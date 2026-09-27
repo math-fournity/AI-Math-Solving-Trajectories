@@ -1,0 +1,1 @@
+In a remote industrial district, a specialized chemical processing pipe exactly 1 kilometer long is monitored for pressure levels. Let $L$ represent the position along the pipe, where $L=0$ is the start and $L=1$ is the end. The pressure intensity, denoted by the function $f(L)$, is continuous throughout the pipe and is governed by the following operational constraints:

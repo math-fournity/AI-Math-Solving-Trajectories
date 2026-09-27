@@ -1,0 +1,1 @@
+Let \( T = \text{TNFTPP} \). Three distinct positive Fibonacci numbers, all greater than \( T \), are in arithmetic progression. Let \( N \) be the smallest possible value of their sum. Find the remainder when \( N \) is divided by 2007.

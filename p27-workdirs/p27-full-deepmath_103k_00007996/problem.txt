@@ -1,0 +1,1 @@
+Let $X \subseteq \mathbf{R}^n$ be such that $H^d(X) = \infty$, where $H^d$ is the $d$-dimensional Hausdorff outer measure. Given a constant $c$, determine if there exists a subset $Y \subseteq X$ such that $H^d(Y) \in [c, \infty)$. Provide a justification for your answer.

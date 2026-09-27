@@ -1,0 +1,6 @@
+Let P(z) = zⁿ + c₁zⁿ⁻¹ + ⋯ + cₙ be a polynomial in the complex variable z,
+with real coefficients cₖ. Suppose that |P(i)| < 1. Prove that there exist
+real numbers a and b such that P(a + bi) = 0 and (a² + b² + 1)² < 4b² + 1.
+
+</rule>
+</rules>

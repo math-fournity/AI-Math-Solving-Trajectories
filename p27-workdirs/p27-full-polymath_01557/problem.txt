@@ -1,0 +1,1 @@
+Find the largest real number $c$ such that for any integer $s > 1$ and positive integers $m, n$ coprime to $s$, the following inequality holds:

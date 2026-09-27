@@ -1,0 +1,1 @@
+A specialized automated courier drone is programmed to deliver supplies to 10 research stations, labeled Station 1 through Station 10, arranged in a large circular loop. The drone follows a strict protocol: it starts at Station 1, and after visiting Station $i$, it moves to Station $i+1$ (where Station 11 is defined as Station 1).

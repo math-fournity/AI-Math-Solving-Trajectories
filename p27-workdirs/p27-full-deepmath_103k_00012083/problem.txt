@@ -1,0 +1,1 @@
+Consider the group $G = \mathrm{SL}(2, \mathbb{R})$. Using the Iwasawa decomposition, a Haar measure on $G$ can be expressed as $\mathrm{d}x = \mathrm{d}a \, \mathrm{d}n \, \mathrm{d}k$. This implies that for a suitable function $f$, the integral over $G$ is given by:

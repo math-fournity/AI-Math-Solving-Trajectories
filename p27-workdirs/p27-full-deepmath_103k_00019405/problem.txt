@@ -1,0 +1,1 @@
+Determine the number of inequivalent complete norms that exist on an infinite-dimensional vector space $X$.

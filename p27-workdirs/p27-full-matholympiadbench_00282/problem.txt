@@ -1,0 +1,9 @@
+/-!
+# IMO 2012 A5
+
+Let $R$ be a ring and $S$ be a domain (a ring with no zero divisors).
+Find all functions $f : R \to S$ such that for any $x, y \in R$,
+$$ f(xy + 1) = f(x) f(y) + f(x + y). $$
+-/
+
+##

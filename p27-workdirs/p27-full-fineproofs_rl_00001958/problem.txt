@@ -1,0 +1,1 @@
+Given six positive numbers $a, b, c, d, e, f$ such that $a<b<c<d<e<f$. Let $a+c+e=S$ and $b+d+f=T$. Prove that  $$ 2 S T>\sqrt{3(S+T)(S(b d+b f+d f)+T(a c+a e+c e))} $$  (South Korea)

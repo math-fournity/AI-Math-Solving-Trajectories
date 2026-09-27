@@ -1,0 +1,1 @@
+Calculate the integral of the Cantor function $f$ over the entire real line $\mathbb{R}$ with respect to the Lebesgue-Stieltjes measure induced by $f$ itself, denoted as $u$. Given that the integral of $f$ under the Lebesgue measure is $\frac{1}{2}$, determine if the value changes when computed with respect to $u$. Provide your answer as a numerical value or a decision.

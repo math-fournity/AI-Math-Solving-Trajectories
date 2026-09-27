@@ -1,0 +1,1 @@
+Given a bounded open holdall \( D \subset \mathbb{R}^N \), consider the problem of minimizing the objective function \( J(\Omega) = \frac{1}{2} \int_{\Omega} |u_\Omega - g|^2 \, dx \) over open subsets \( \Omega \subset D \), where \( u_\Omega \in H^1(\Omega) \) is the solution to the homogeneous Neumann boundary value problem:

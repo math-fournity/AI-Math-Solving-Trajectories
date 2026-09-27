@@ -1,0 +1,1 @@
+In a specialized data processing facility, three primary servers are initialized with specific storage capacities measured in bytes: Server 1 is set to $11^{11}$, Server 2 to $12^{12}$, and Server 3 to $13^{13}$.

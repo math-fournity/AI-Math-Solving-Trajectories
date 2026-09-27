@@ -1,0 +1,1 @@
+In a category with directed colimits and finite limits, determine if the directed colimit of a subobject can be expressed as a colimit of subobjects of the original objects in the direct system. Answer with 'True' or 'False'.

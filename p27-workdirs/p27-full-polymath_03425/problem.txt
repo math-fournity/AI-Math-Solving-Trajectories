@@ -1,0 +1,1 @@
+Consider a regular cube with side length $2$.  Let $A$ and $B$ be $2$ vertices that are furthest apart.  Construct a sequence of points on the surface of the cube $A_1$, $A_2$, $\ldots$, $A_k$ so that $A_1=A$, $A_k=B$ and for any $i = 1,\ldots, k-1$, the distance from $A_i$ to $A_{i+1}$ is $3$.  Find the minimum value of $k$.

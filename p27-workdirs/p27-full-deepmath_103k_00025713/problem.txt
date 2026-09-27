@@ -1,0 +1,1 @@
+Consider the vector space $V_h = \{ f \in C^{\infty}(\mathbb{D}^n;\mathbb{R}^k) \mid (df_x)^T(h(x)) = 0 \text{ for all } x \in \mathbb{D}^n \}$, where $h: \mathbb{D}^n \to \mathbb{R}^k$ is a smooth function with $h(x) \neq 0$ almost everywhere on $\mathbb{D}^n$. For $k=1$, $V_h$ is the space of constant functions. For $k>1$, can $V_h$ ever be finite-dimensional?

@@ -1,0 +1,1 @@
+In a specialized fiber-optic communication hub, there are two parallel routing rails, designated as Rail Alpha and Rail Beta. On Rail Alpha, four distinct input ports are mounted: $P_1, P_2, P_3,$ and $P_4$. Directly opposite on Rail Beta, four distinct output ports are mounted: $Q_1, Q_2, Q_3,$ and $Q_4$.

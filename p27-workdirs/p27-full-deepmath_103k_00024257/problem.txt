@@ -1,0 +1,1 @@
+Suppose $A_1$ and $A_2$ are measurable sets in $[0, 1]$. If \( \int_{A_1} e^{-|y|a_n} \, dy = \int_{A_2} e^{-|y|a_n} \, dy \) for an unbounded set of positive \( a_n \), does this imply that \( m(A_1 \setminus A_2) = m(A_2 \setminus A_1) = 0 \)? Answer yes or no.

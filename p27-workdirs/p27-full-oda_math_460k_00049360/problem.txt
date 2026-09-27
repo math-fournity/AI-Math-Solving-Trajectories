@@ -1,0 +1,1 @@
+Proof that there exist constant $\lambda$, so that for any positive integer $m(\ge 2)$, and any lattice triangle $T$ in the Cartesian coordinate plane, if $T$ contains exactly one $m$-lattice point in its interior(not containing boundary), then $T$ has area $\le \lambda m^3$.

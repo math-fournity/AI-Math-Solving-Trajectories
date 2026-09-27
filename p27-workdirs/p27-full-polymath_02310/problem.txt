@@ -1,0 +1,1 @@
+Three strictly increasing sequences $a_1, a_2, a_3, \dots$, $b_1, b_2, b_3, \dots$, and $c_1, c_2, c_3, \dots$ of positive integers partition the set of all positive integers. For every positive integer $n$, the following conditions hold:

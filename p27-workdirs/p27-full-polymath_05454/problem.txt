@@ -1,0 +1,1 @@
+Find the smallest positive integer $k$ with the following property: if each cell of a $100\times 100$ grid is dyed with one color and the number of cells of each color is not more than $104$, then there is a $k\times1$ or $1\times k$ rectangle that contains cells of at least three different colors.

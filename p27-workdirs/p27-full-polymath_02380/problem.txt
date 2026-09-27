@@ -1,0 +1,1 @@
+Find the smallest positive integer \( N \) for which the equation \((x^{2}-1)(y^{2}-1)=N\) is satisfied by at least two pairs of integers \((x, y)\) with \(1 < x \leq y\).

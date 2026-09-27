@@ -1,0 +1,1 @@
+Determine whether there exists an infinite sequence of nonzero digits $a_{1}, a_{2}, a_{3}, \ldots$ and a positive integer $N$ such that for every integer $k>N$, the number $\overline{a_{k} a_{k-1} \ldots a_{1}}$ is a perfect square.  (Iran)

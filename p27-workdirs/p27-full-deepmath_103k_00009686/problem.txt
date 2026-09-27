@@ -1,0 +1,1 @@
+Let $F$ be an infinite field such that $F^*$, the multiplicative group of $F$, is a torsion group. Determine whether $F^*$ has a proper subgroup with finite index.

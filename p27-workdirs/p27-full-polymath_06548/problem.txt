@@ -1,0 +1,1 @@
+On a vast circular space station, there are 20 distinct research sectors arranged in a ring. Each sector employs 20 unique robotic security units, for a total of 400 robots across the station. Every single robot has a unique power output rating, meaning no two robots are equally powerful.

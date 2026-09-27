@@ -1,0 +1,1 @@
+A high-tech manufacturing firm operates a production line with $n$ specialized modules, indexed from $1$ to $n$ and arranged in a fixed linear sequence. Each module $k$ initially possesses a "power rating" equal to its index $k$.

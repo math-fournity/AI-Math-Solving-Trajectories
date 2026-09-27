@@ -1,0 +1,1 @@
+In a specialized laboratory, a team of researchers is testing the stability of a circular chemical chain. They are experimenting with $n$ distinct chemical concentrations, $x_1, x_2, \dots, x_n$, where $n$ is an integer such that $4 \leq n \leq 30$.

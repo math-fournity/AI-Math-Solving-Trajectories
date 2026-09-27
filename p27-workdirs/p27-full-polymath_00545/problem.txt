@@ -1,0 +1,1 @@
+There are $n+1$ containers arranged in a circle. One container has $n$ stones, the others are empty. A move consists of choosing two containers $A$ and $B$, taking a stone from $A$ and placing it in one of the containers adjacent to $B$, and taking a stone from $B$ and placing it in one of the containers adjacent to $A$. We can choose $A = B$.

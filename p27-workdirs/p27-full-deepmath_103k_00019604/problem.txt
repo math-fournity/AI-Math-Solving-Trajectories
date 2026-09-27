@@ -1,0 +1,1 @@
+Let $(a_n)$ be a sequence of rational numbers such that the series $\sum_{n=1}^\infty v_p(a_n)$ converges for all prime numbers $p$. If $\prod_{n=1}^\infty a_n$ converges to a real number $b$, does it follow that $v_p(b) = \sum_{n=1}^\infty v_p(a_n)$ for all primes $p$? Answer yes or no and justify your answer.

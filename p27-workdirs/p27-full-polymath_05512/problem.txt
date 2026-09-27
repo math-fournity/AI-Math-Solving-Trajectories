@@ -1,0 +1,1 @@
+Prime $p>2$ and a polynomial $Q$ with integer coefficients are such that there are no integers $1 \le i < j \le p-1$ for which $(Q(j)-Q(i))(jQ(j)-iQ(i))$ is divisible by $p$. What is the smallest possible degree of $Q$?

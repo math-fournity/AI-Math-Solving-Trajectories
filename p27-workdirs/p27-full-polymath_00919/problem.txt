@@ -1,0 +1,1 @@
+Random sequences \(a_{1}, a_{2}, \ldots\) and \(b_{1}, b_{2}, \ldots\) are chosen so that every element in each sequence is chosen independently and uniformly from the set \(\{0,1,2,3, \ldots, 100\}\). Compute the expected value of the smallest nonnegative integer \(s\) such that there exist positive integers \(m\) and \(n\) with

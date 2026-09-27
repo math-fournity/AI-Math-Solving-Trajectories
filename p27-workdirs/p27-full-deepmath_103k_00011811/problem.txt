@@ -1,0 +1,1 @@
+Determine whether the statement "If $\kappa$ is an infinite cardinal number, then $[0,\kappa]$ is not homeomorphic to $[0,\kappa+\kappa]$" is true or false, and justify your answer.

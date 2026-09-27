@@ -1,0 +1,1 @@
+Let $A$ and $B$ be Hausdorff topological spaces, where $A$ is compactly generated. A function $f: A \times B \rightarrow \mathbb{R}$ is continuous on $K \times B$ for every compact subset $K$ of $A$. Is $f$ necessarily continuous on $A \times B$ when the product sets are given the product topology? Answer yes or no.

@@ -1,0 +1,1 @@
+A test contains 5 multiple choice questions, each with 4 options. Among 2000 sheets of answer papers, find the minimum value of \( n \) such that any \( n \) sheets guarantee the existence of 4 sheets where any two of them have at most 3 questions with the same answers.

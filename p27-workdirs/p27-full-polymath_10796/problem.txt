@@ -1,0 +1,1 @@
+A metropolitan logistics center manages a shipping zone represented by a $10 \times 11$ grid of loading bays. The management team utilizes standardized $2 \times 1$ shipping containers to pave the floor of this zone. Each "layer" of the operation involves placing exactly $55$ containers horizontally on the floor such that they perfectly tile the $10 \times 11$ rectangular area.

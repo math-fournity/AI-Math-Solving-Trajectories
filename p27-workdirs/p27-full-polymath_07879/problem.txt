@@ -1,0 +1,1 @@
+In a specialized logistics network, there are two fleets of drones: Fleet $S$ and Fleet $T$. Each drone is identified by a positive integer representing its battery capacity in kilowatt-hours (kWh). A drone $a$ from Fleet $S$ is considered "compatible" with a drone $b$ from Fleet $T$ if and only if both of the following energy-sharing conditions are met:

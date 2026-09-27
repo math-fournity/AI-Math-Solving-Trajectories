@@ -1,0 +1,1 @@
+Let $G$ be a graph whose vertices are the integers $\mathbb{Z}$. Assume that any two integers are connected by a finite path in $G$. For two integers $x$ and $y$, let $d(x, y)$ denote the length of the shortest path from $x$ to $y$. Assume that $d(x, y) \mid x-y$ for all integers $x, y$ and define $S(G)=\{d(x, y) | x, y \in \mathbb{Z}\}$.

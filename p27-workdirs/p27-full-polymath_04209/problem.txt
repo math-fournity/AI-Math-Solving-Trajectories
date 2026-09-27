@@ -1,0 +1,1 @@
+Find the number of infinite sequences $a_1, a_2, a_3, \dots$ with each term in $\{1, -1\}$ such that the following two conditions hold:

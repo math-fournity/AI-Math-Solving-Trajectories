@@ -1,0 +1,1 @@
+Three consecutive positive integers $n, n+1, n+2$ are chosen such that the following statements are true:

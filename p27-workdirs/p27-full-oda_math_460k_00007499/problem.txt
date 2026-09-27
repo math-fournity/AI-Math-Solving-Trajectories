@@ -1,0 +1,1 @@
+Let \( E \subset (-\pi, \pi) \), \( m(E) > 0 \), and \( \delta > 0 \). Define \( S \) as the set of all integers \( n \) such that \( \sin nx \geq \delta \) for all \( x \in E \). Calculate the maximum possible size of \( S \) in terms of \( m(E) \) and \( \delta \).

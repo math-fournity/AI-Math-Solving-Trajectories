@@ -1,0 +1,1 @@
+A specialized logistics company manages a high-security warehouse containing several individual storage vaults, each identified by a unique positive integer ID ranging from $1$ to $n$. An auditor arrives to select exactly 9 distinct vaults from this set to form a 3x3 grid of secure data nodes.

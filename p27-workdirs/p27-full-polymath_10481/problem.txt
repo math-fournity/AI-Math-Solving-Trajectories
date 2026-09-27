@@ -1,0 +1,1 @@
+In a specialized logistics warehouse, there are $n$ distinct packages labeled with identification numbers from $\{1, 2, \cdots, n\}$. These packages must be distributed into three specific storage bays: Bay 1, Bay 2, and Bay 3. To maintain structural stability and organizational efficiency, the warehouse manager enforces two strict protocols:

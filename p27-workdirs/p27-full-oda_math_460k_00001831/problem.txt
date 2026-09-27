@@ -1,0 +1,1 @@
+Find all infinite sequences of positive integers  $\{a_{n}\}_{n\geq 1}$  satisfying the following condition : there exists a positive constant  $c$  such that  $\gcd(a_{m}+n,a_{n}+m)>c(m+n)$  holds for all pairs of positive integers  $(m,n)$ .

@@ -1,0 +1,1 @@
+A specialized logistics company is managing 672 cargo containers, each assigned a weight in tons denoted by $a_1, a_2, \dots, a_{672}$. These weights are organized in non-decreasing order such that $a_1 \leq a_2 \leq \dots \leq a_{672}$, and the total combined weight of all 672 containers is exactly 2018 tons.

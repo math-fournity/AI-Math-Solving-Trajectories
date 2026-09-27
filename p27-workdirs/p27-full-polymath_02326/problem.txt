@@ -1,0 +1,1 @@
+In a country with $n$ cities connected by two-way roads, if the country is split into two parts in any way, there are at most $kn$ roads between the two parts. Let $m(n, k)$ be the largest integer such that there is guaranteed to be a set of $m(n, k)$ cities, no two of which are directly connected by a road.

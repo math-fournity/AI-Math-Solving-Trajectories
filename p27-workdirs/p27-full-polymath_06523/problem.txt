@@ -1,0 +1,1 @@
+In a highly advanced quantum encryption protocol, a universal constant $n$ is defined as the product of the first $2013$ prime numbers. Security engineers are auditing a specific class of "vulnerability primes" $p$ within the range $20 \le p \le 150$.

@@ -1,0 +1,1 @@
+Let $m = 2023$ and $n = 2025$. A rectangle with vertices at $(0,0),(0, m),(n, m),(n, 0)$ in the coordinate plane is divided into $T$ triangles. A side of a triangle is called a "good side" if it lies on a line of the form $x=j$ or $y=k$ for $j, k \in \mathbb{N}_0$; otherwise, it is called a "bad side". Suppose this division satisfies:

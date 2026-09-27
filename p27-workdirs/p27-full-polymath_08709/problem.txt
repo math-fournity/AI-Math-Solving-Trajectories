@@ -1,0 +1,1 @@
+In a specialized urban planning competition, architects are designing "Unit-Loop Plazas." These are closed, convex polygonal pedestrian zones where every perimeter wall has a length of exactly 1 kilometer.

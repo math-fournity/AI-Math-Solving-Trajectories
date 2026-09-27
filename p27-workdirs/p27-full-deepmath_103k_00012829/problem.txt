@@ -1,0 +1,1 @@
+In \( \mathbb{R}^n \) with the usual topology and the Borel sigma-algebra, let \( A \) be an open set, \( B \) be a closed set, and \( C \) be a compact set. Is the set \((A \cap B) \oplus C\) always Borel measurable?

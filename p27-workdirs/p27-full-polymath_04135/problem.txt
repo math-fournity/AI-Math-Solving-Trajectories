@@ -1,0 +1,1 @@
+In a rectangle, two circles are tangent to each other and to the edges of the rectangle. The radius of the larger circle is 1. Determine the area of the rectangle.

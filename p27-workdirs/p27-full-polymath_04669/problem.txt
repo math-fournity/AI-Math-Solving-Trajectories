@@ -1,0 +1,1 @@
+Let $S = \{0, 1, 4, 9\}$ be the set of quadratic residues modulo 12. Let $n$ be the smallest positive integer such that for any multiset of $n$ elements from $S$, there exist two disjoint subsets of size 3, say $\{a_1, a_2, a_3\}$ and $\{b_1, b_2, b_3\}$, such that

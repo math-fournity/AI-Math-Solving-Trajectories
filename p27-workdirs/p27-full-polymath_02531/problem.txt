@@ -1,0 +1,1 @@
+In a country with $100$ cities, between any two cities there is either no connection, an air connection, or a railway connection (but not both). The following conditions hold:

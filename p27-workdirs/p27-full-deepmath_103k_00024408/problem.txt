@@ -1,0 +1,1 @@
+Let $X$ be a Banach space, and consider a bounded operator $T: X \to X$. If there exists an integer $n \in \mathbb{N}$ such that $T^{n+1}(X) = T^n(X)$, is $T^n(X)$ necessarily closed? Provide a justification for your answer.

@@ -1,0 +1,1 @@
+In a specialized chemistry lab, three types of unstable isotopes are stored in a containment chamber: 6 atoms of Alpha-Isotope, 17 atoms of Beta-Isotope, and 55 atoms of Gamma-Isotope. These isotopes undergo specific transformation reactions when they collide:

@@ -1,0 +1,1 @@
+What is the smallest possible sum of six distinct positive integers for which the sum of any five of them is prime?

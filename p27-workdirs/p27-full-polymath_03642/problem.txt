@@ -1,0 +1,1 @@
+In a city, there are several markets, and from each market, there are exactly two one-way streets leading to other markets. We wish to partition the markets into $K$ districts such that the following conditions are met:

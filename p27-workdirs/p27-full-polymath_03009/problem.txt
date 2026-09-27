@@ -1,0 +1,1 @@
+Let $N$ be the smallest integer such that any set $X$ of $N$ real numbers is guaranteed to contain a monotone sequence $\{x_{i}\}_{i=1}^{6} \subseteq X$ of length 6 such that

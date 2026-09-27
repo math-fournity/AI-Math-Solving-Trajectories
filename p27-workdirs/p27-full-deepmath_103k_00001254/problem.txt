@@ -1,0 +1,1 @@
+Determine the number of infinite planar graphs with the degree sequence \(D=(4^4,6^\infty)\), where the superscripts denote the number of vertices with that degree.

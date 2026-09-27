@@ -1,0 +1,1 @@
+In a remote desert, three observation outposts—Alpha ($A$), Bravo ($B$), and Charlie ($C$)—form a triangular perimeter. The terrain within this triangle is an acute-angled valley.

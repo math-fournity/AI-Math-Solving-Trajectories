@@ -1,0 +1,1 @@
+Call a $2n$-digit base-10 number special if we can split its digits into two sets of size $n$ such that the sum of the numbers in the two sets is the same (leading zeros are allowed). Let $p_n$ be the probability that a randomly-chosen $2n$-digit number is special. It is known that $p_n$ converges to a constant $c$ as $n \to \infty$.

@@ -1,0 +1,1 @@
+In a certain power grid project involving $n$ specialized transmission hubs ($n \geq 2$), two specific hubs are designated as "Power Sources." Initially, no cables exist between any of the $n$ hubs. Two engineers, Alice and Bob, take turns installing a single high-voltage cable between any two hubs $H_1$ and $H_2$ that are not yet directly connected.

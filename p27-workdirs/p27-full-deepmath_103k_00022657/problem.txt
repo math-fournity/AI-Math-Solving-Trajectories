@@ -1,0 +1,1 @@
+Consider a convex polytope in $\mathbb{R}^n$ with $k$ vertices, where $k+1 \ge n$. Each vertex moves along a constant velocity path from time $t=0$ to $t=1$, maintaining convexity with $k$ vertices at all times. Can the volume of the polytope be expressed as a polynomial function of time $t$? If so, determine the degree of this polynomial.

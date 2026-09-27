@@ -1,0 +1,1 @@
+Let \( k, k > 1 \) be a given natural number. A set \( S \) of natural numbers is called good if all natural numbers can be colored in \( k \) colors such that no number from \( S \) can be represented as the sum of two different natural numbers that are colored in the same color. Find the largest natural number \( t \) for which the set

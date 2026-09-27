@@ -1,0 +1,1 @@
+Does the statement "A function $f: \mathbb R \to \mathbb R$ is continuous at $x \in \mathbb R$, if and only if it is sequentially continuous" imply the Axiom of Choice for countable collections of non-empty subsets of $\mathbb R$?

@@ -1,0 +1,1 @@
+In the city of Arithmos, an architectural project is deemed "Synchronized" if it satisfies a specific structural requirement regarding its blueprint. For any given building height $n$ (a positive integer), let the set of all possible room lengths be defined by the divisors of $n$.

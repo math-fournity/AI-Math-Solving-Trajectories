@@ -1,0 +1,1 @@
+Among the plane points with both coordinates in the set \(\{1, 2, \ldots, 106\}\), some points have been marked such that for every two marked points \((x, y)\) and \((x', y')\), at least one of the following conditions is met:

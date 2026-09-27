@@ -1,0 +1,1 @@
+Calculate the radius of the symmetric random walk on \(\mathbb{Z}\), given by \(\limsup_k (p^{(k)}(0,0))^\frac{1}{k}\), where \(p^{(k)}(0,0)\) denotes the probability of returning to 0 in \(k\) steps, and the transition probabilities are \(p(n,n+1)=p(n,n-1)=\frac{1}{2}\).

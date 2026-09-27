@@ -1,0 +1,1 @@
+In a specialized logistics warehouse, a storage zone is organized into a perfect $10 \times 10$ grid of cargo slots. The facility manager wants to assign a unique identification color to as many individual slots as possible to distinguish different product types.

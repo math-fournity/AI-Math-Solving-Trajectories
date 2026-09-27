@@ -1,0 +1,1 @@
+3. Given the set $S=\{1,2,3, \cdots, N\}$ and its four 500-element subsets $A_{1}, A_{2}, A_{3}, A_{4}$ that satisfy: for any $x, y \in S$, there exists some $i \in\{1,2,3,4\}$, such that $x, y \in A_{i}$. Find the maximum possible value of the positive integer $N$.

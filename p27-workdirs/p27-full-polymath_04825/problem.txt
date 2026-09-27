@@ -1,0 +1,1 @@
+Find all triples $(a, b, c)$ of positive integers such that the expression $\frac{32a + 3b + 48c}{4abc}$ is an integer. Let $S$ be the set of all such triples. Calculate the sum of all components of all triples in $S$. That is, compute $\sum_{(a,b,c) \in S} (a + b + c)$.

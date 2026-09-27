@@ -1,0 +1,1 @@
+Let $S=\{1,2,\dots,3000\}$. Determine the maximum possible integer $X$ that satisfies the condition:

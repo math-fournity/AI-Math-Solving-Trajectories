@@ -1,0 +1,1 @@
+Determine whether the functions $f(t)=e^{\pm it}=\cos(t)+i\sin(t)$ are the only functions $f:\Bbb R \to \Bbb C$ such that $|f^{(n)}(t)|\leq 1$ for all $n=0,1,\ldots$ and $t\in \Bbb R$ with $f(0)=|f'(0)|=1$. Provide a justification for your answer.

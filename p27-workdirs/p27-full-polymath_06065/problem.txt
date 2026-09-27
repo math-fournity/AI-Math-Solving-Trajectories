@@ -1,0 +1,1 @@
+A luxury watchmaker is designing a limited-edition collection of timepieces. To create these watches, the artisan has selected a signature set $A$ consisting of $n$ distinct, non-zero real numbers (where $n \ge 3$), which represent specific calibration frequencies for the internal gears.

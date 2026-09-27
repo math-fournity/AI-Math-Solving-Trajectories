@@ -1,0 +1,1 @@
+Two circles  $\Gamma_1,\Gamma_2$  intersect at  $A,B$ . Through  $B$  a straight line  $\ell$  is drawn and  $\ell\cap \Gamma_1=K,\ell\cap\Gamma_2=M\;(K,M\neq B)$ . We are given  $\ell_1\parallel AM$  is tangent to  $\Gamma_1$  at  $Q$ .  $QA\cap \Gamma_2=R\;(\neq A)$  and further  $\ell_2$  is tangent to  $\Gamma_2$  at  $R$ .

@@ -1,0 +1,1 @@
+Suppose that $n = 100$ and $x_1, x_2, \dots, x_{100}$ are real numbers such that $0 \le x_j \le 1$ for all $j$. Let $C$ be the largest real number such that the inequality

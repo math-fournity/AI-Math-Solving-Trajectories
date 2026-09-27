@@ -1,0 +1,1 @@
+In the city of Arithmos, a residential property is classified as "Elite" if its address number $n$ can be calculated by the formula $n = 2^{x} + y^{2}$, where $x$ and $y$ are both non-negative integers.

@@ -1,0 +1,1 @@
+Find all functions \( g: \mathbb{N} \rightarrow \mathbb{N} \) such that for every \( m, n \in \mathbb{N} \), the following equation holds: \[ g(g(m)+n)+g(m)=g(n)+g(3m)+2014. \]

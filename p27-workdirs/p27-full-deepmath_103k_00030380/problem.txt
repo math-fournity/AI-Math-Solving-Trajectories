@@ -1,0 +1,1 @@
+Determine whether there exists a positive integer $k$ such that there are infinitely many positive integers $n$ satisfying the equation:

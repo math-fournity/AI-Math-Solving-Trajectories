@@ -1,0 +1,1 @@
+Let $A B C D$ be a convex quadrilateral and let $P$ and $Q$ be points in $A B C D$ such that $P Q D A$ and $Q P B C$ are cyclic quadrilaterals. Suppose that there exists a point $E$ on the line segment $P Q$ such that $\angle P A E=\angle Q D E$ and $\angle P B E=\angle Q C E$. Show that the quadrilateral $A B C D$ is cyclic.

@@ -1,0 +1,1 @@
+What is the maximal number of matrices \( A_1, \ldots, A_k \in M_n(\mathbb{C}) \) such that they pairwise anticommute, i.e., \( A_i A_j = -A_j A_i \) for all \( i \neq j \)?

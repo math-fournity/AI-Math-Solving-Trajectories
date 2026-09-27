@@ -1,0 +1,1 @@
+Find the Taylor series of the function \( f(x) = e^{-1/x^2} \) about 0, where the function is defined as \( f(x) = e^{-1/x^2} \) for \( x \neq 0 \) and \( f(x) = 0 \) for \( x = 0 \). What can you conclude from the resulting series?

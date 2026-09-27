@@ -1,0 +1,1 @@
+Let \( f_n \in C(a,b) \) and suppose \( f_n \rightrightarrows f \) on \([a+\delta,b-\delta]\) for all \( \delta > 0 \). Assume the improper integrals \( \int_a^b f_n \) and \( \int_a^b f \) exist, and \( \lim_{n\to\infty} \int_a^b f_n = \int_a^b f \). Prove that \( \lim_{n\to\infty} \int_a^b |f_n-f| = 0 \).

@@ -1,0 +1,1 @@
+In a convex $2n$-gon $M = A_1A_2 \ldots A_{2n}$, diagonals $A_iA_{n+i}$ are drawn for $i = 1, 2, \ldots, n$. It is given that no three diagonals intersect at one point. The interior of the polygon is divided into smaller polygons by these diagonals. What is the smallest number of these smaller polygons that can be triangles?

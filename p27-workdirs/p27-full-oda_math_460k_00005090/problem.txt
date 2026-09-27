@@ -1,0 +1,1 @@
+Find and classify the fixed points of the damped pendulum equation \(\ddot{\theta} + b \dot{\theta} + \sin \theta = 0\) for all \( b > 0 \), and describe the phase portraits for the qualitatively different cases.

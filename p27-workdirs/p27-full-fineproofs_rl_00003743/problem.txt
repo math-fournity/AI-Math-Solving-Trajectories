@@ -1,0 +1,1 @@
+Let $\left(a_{n}\right)_{n \geqslant 1}$ be a sequence of non-zero natural numbers such that $a_{n+2 m}$ divides $a_{n}+a_{n+m}$ for all integers $m \geqslant 1$ and $n \geqslant 1$. Prove that this sequence is ultimately periodic, that is, there exist two integers $N \geqslant 1$ and $d \geqslant 1$ such that $a_{n}=a_{n+d}$ for all $n \geqslant N$.

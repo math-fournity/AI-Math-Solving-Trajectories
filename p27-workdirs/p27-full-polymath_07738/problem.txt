@@ -1,0 +1,1 @@
+A high-security logistics firm is testing a new automated sorting system involving 100 uniquely serialized packages, labeled 1 through 100, which arrive in a completely random order. The system’s supervisor, Alice, is monitoring a sequence of exactly 61 packages as they are unloaded one by one.

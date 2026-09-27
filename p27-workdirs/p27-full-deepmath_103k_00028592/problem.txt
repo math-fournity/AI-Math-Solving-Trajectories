@@ -1,0 +1,1 @@
+Determine the number of $6 \times 6$ Latin squares that do not contain a $3 \times 2$ saturated sub-matrix (SSM).

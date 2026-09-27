@@ -1,0 +1,1 @@
+What condition must the numbers \( \lambda_1, \ldots, \lambda_k \in \mathbb{R} \) satisfy in order that the system of equations\n\n\[\n\lambda_i t \overset{\varepsilon}{=} 0 \ (\text{mod } 1), \quad i = 1, 2, \ldots, k,\n\]\n\nhave for any \( \varepsilon > 0 \) a solution \( t \) with \( |t| > |\lambda_i|^{-1} \) for some \( i \)?

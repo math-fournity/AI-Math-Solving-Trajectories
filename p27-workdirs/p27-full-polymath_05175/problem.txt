@@ -1,0 +1,1 @@
+Let \( n \) be a positive integer. Let \( S \) be the set of \( n^{2} \) cells in an \( n \times n \) grid. Call a subset \( T \) of \( S \) a double staircase if

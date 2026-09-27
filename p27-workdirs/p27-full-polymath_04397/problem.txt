@@ -1,0 +1,1 @@
+Eve picked some apples, each weighing at most $\frac{1}{2}$ pound. Her apples weigh a total of $W = 10$ pounds. She places all her apples into $n$ baskets, where each basket holds up to 1 pound of apples. Find the minimum integer $n$ that is guaranteed to be sufficient for any such set of apples.

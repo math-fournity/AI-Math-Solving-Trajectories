@@ -1,0 +1,1 @@
+Let f be a function from $\{1, 2, . . . , 22\}$ to the positive integers such that $mn | f(m) + f(n)$ for all $m, n \in \{1, 2, . . . , 22\}$. If $d$ is the number of positive divisors of $f(20)$, compute the minimum possible value of $d$.

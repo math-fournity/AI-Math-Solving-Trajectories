@@ -1,0 +1,1 @@
+A mysterious deep-space probe is programmed to transmit data packets using a specific encryption protocol. The protocol relies on a "Frequency Shift Factor," which is an integer $a$. For any two integer input signals $k$ and $l$, the probe calculates a secondary transmission value using the polynomial function $P(x) = x^5 + ax$.

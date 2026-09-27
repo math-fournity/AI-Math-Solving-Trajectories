@@ -1,0 +1,1 @@
+Let $m = 101$ and $n = 2023$ be the number of rows and columns, respectively, of a table filled with distinct real numbers. A number in the table is called "happy" if it satisfies one of the following two conditions:

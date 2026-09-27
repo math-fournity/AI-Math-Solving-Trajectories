@@ -1,0 +1,1 @@
+Determine the largest constant \(c > 1\) such that every triangle-free graph with chromatic number \(n\) has at least \(\Theta(c^n)\) vertices.

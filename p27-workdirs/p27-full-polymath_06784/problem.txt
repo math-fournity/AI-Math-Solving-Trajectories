@@ -1,0 +1,1 @@
+In a remote desert, there is a large, triangular plot of land designated as a "Solar Base," forming an equilateral triangle $ABC$ with side lengths of 4 kilometers. A single sensor, $P$, is dropped from a plane and lands at a completely random, uniform position anywhere within the interior of the triangular plot.

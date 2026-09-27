@@ -1,0 +1,1 @@
+Consider a set of points in the plane, colored either red or blue, with no three points collinear. Let \( f(n) \) be the minimum number \( N \) such that any set of \( n > N \) points in general position contains a monochromatic empty 4-gon. Determine \( f(100) \).

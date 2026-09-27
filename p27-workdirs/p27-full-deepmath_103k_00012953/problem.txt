@@ -1,0 +1,1 @@
+Calculate the surface integral \( \int \int_S (2z^2 - x^2 - y^2) \, dS \), where \( S \) is the surface defined by the intersection of the cone \( z = \sqrt{x^2 + y^2} \) and the cylinder \( (x-1)^2 + y^2 = 1 \).

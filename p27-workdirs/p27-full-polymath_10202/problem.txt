@@ -1,0 +1,1 @@
+In a remote automated logistics facility, a machine processes two raw signals, $x$ and $y$, which are independently and uniformly sampled from a continuous range of intensities between $-2$ and $2$.

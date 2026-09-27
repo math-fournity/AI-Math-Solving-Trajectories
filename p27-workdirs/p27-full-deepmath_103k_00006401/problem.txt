@@ -1,0 +1,1 @@
+Given a positive number $d \in \mathbb{R}$ and a sequence of numbers $a_n \in [0,d]$ for $n \in \mathbb{N}$ with the properties that \( \sum_{i=1}^{\infty} a_i^r \in \mathbb{Z} \) for all \( r \in \mathbb{N} \) and \( \sum_{i=1}^{\infty} a_i \leq d \), determine whether it follows that only finitely many of the $a_i$ are non-zero.

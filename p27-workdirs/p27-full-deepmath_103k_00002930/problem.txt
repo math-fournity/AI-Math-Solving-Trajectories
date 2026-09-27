@@ -1,0 +1,1 @@
+Let $T:[0,1]\to [0,1]$ be a piecewise smooth expanding map, meaning $|T'(x)|>1$ for all $x$. Consider a sequence of nested intervals $I_n$ such that $I_{n+1}\subset I_n$ and the length of $I_n$ tends to 0 as $n\to\infty$. Define the survivor set for $I_n$ as:

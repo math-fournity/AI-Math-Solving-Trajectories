@@ -1,0 +1,1 @@
+In 3-dimensional topology, determine whether a closed surface embedded within a 3-sphere (S³) necessarily bounds a handlebody.

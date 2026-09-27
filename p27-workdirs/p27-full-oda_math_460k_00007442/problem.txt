@@ -1,0 +1,1 @@
+Find the coefficient of the term $t^{q^2+q+1}$ in the polynomial \( \left(\frac{1-t^{q+1}}{1-t}\right)^{2q-1} \), where $q$ is a positive integer. Assume $q$ is a prime power and work in the field $\mathbb{F}_q[t]$ if necessary.

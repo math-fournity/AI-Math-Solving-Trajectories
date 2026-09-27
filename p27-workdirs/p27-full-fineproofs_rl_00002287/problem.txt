@@ -1,0 +1,1 @@
+Initially, three non-collinear points, $A, B$, and $C$, are marked on the plane. You have a pencil and a double-edged ruler of width 1. Using them, you may perform the following operations:

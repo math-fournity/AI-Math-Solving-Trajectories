@@ -1,0 +1,1 @@
+Determine the density of the set \( S_1 \) in \( \mathbb{N} \), where \( S_1 = \{a \mid \exists m \in \mathbb{N}; \sigma_1(m) = a\} \), and \( \sigma_1(n) \) is the sum of divisors function of \( n \).

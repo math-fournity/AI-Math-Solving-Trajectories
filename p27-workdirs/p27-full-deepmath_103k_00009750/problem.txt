@@ -1,0 +1,1 @@
+Is there a normal bitstream $s$ such that there are infinitely many finite $01$-strings that are frequent in $s$?

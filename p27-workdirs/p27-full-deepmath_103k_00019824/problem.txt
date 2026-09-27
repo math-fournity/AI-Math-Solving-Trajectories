@@ -1,0 +1,1 @@
+Let $Y$ be an integrable, nonnegative random variable on a probability space $X$, and let $F: [0, \infty) \to \mathbb{R}$ be a continuous function such that $F(Y) \in L^1(X)$. Determine whether there always exist non-negative simple functions $Y_n$ on $X$ that satisfy the following simultaneously as $n \to \infty$:

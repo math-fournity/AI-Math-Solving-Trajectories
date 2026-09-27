@@ -1,0 +1,1 @@
+In triangle \(ABC\), points \(K\) and \(L\) are marked on side \(AB\) such that \(\angle ACK = \angle KCL = \angle LCB\). Point \(M\) lies on side \(BC\) such that \(\angle MKC = \angle BKM\). Given that point \(L\) lies on the bisector of \(\angle KMB\), find the value of \(\angle MLC\).

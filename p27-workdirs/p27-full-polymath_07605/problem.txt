@@ -1,0 +1,1 @@
+In a remote digital archive, there are two primary data servers: Server A and Server B. At the start of the simulation, Server B is completely empty, while Server A contains 29 unique, encrypted data files.

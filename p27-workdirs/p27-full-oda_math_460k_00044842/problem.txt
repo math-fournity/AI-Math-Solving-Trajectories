@@ -1,0 +1,1 @@
+Evaluate the series $$\sum_{n=0}^{\infty} \frac{\left( \begin{array}{c} 2n \\ n \end{array} \right)^3}{16^{3n}} \frac{42n + 5}{16}.$$

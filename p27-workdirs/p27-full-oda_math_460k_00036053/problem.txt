@@ -1,0 +1,1 @@
+Let  $n$  be a positive integer. Let  $S$  be a subset of points on the plane with these conditions:  $i)$   There does not exist  $n$  lines in the plane such that every element of  $S$  be on at least one of them.   $ii)$  for all  $X \in S$  there exists  $n$  lines in the plane such that every element of  $S - {X} $  be on at least one of them.

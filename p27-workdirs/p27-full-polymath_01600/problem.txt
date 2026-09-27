@@ -1,0 +1,1 @@
+Find all positive integers $n$ for which it is possible to partition the set $\{1, 2, \dots, 3n\}$ into $n$ disjoint triples $\{a, b, c\}$ such that $b-a$ and $c-b$ are two distinct elements of the set $\{n-1, n, n+1\}$. Let $S$ be the set of all such $n$. Compute the sum of the four smallest elements in $S$.

@@ -1,0 +1,1 @@
+Let $R$ be a regular local ring and $M$ be a faithfully flat $R$-module. Does there exist a surjective $R$-module homomorphism from $M$ to $R$?

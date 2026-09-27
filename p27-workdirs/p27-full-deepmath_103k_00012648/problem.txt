@@ -1,0 +1,1 @@
+Let $f(x)$ be an irreducible quartic polynomial over $\mathbb{Q}$. Let $L$ be the splitting field of $f(x)$. Suppose $\mathbb{Q}(\alpha) \cap \mathbb{Q}(\beta)=\mathbb{Q}$ for any two distinct roots $\alpha$ and $\beta$ of $f(x)$. Determine the Galois group of $f(x)$ over $\mathbb{Q}$.

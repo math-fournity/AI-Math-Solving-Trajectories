@@ -1,0 +1,1 @@
+Suppose $X$ is a connected, separable, metric space with the property that for every point $x \in X$, removing $x$ results in exactly two connected components. If $X$ is also locally connected and locally compact, determine whether $X$ is homeomorphic to the real line $\mathbb{R}$.

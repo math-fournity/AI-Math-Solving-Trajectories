@@ -1,0 +1,1 @@
+Find all  $\mathbb Q$ -linear maps  $\Phi:\mathbb Q[x]\to\mathbb Q[x]$  such that for any irreducible polynomial  $p\in\mathbb Q[x]$  the polynomial  $\Phi(p)$  is also irreducible.

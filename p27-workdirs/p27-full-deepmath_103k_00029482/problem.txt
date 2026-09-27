@@ -1,0 +1,1 @@
+Can a non-measurable set in the interval $[0,1]$ be constructed with a specified outer measure $x \in (0,1]$ using the Axiom of Choice?

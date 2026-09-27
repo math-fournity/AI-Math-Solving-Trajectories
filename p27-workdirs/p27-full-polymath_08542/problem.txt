@@ -1,0 +1,1 @@
+In a specialized greenhouse, a robotic planter operates on a square grid of 36 planting modules arranged in 6 rows and 6 columns, represented by coordinates $(x,y)$ where $x,y \in \{1,2,3,4,5,6\}$.

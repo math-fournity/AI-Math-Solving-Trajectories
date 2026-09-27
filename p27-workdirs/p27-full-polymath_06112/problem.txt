@@ -1,0 +1,1 @@
+In the high-tech sector of Neo-Tokyo, a massive server network is organized such that every server node has exactly 2 outgoing fiber-optic data cables. These cables are strictly one-way, and no two nodes are directly connected by more than one cable.

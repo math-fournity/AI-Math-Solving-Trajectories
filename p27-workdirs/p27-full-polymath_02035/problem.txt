@@ -1,0 +1,1 @@
+If $f$ is a function from the set of positive integers to itself such that $f(x) \leq x^2$ for all natural $x$, and $f\left( f(f(x)) f(f(y))\right) = xy$ for all naturals $x$ and $y$. Find the number of possible values of $f(30)$.

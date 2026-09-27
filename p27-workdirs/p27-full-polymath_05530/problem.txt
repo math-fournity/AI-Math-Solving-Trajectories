@@ -1,0 +1,1 @@
+Let \( M \) be a set of 99 different rays with a common origin, lying in a plane. It is known that two of these rays form an obtuse angle, within which there are no rays from \( M \). What is the maximum possible number of obtuse angles whose sides are rays from \( M \)?

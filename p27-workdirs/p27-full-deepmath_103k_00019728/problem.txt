@@ -1,0 +1,1 @@
+Let $f: \Bbb R \rightarrow \Bbb R$ be an $n$-times differentiable function that is uniformly continuous. If $f^{(n+1)}$ is bounded, determine whether $f'$ is necessarily bounded.

@@ -1,0 +1,1 @@
+If a family of congruent convex prisms tiles space, must there exist a tiling of the plane with polygons congruent to the prism's base?

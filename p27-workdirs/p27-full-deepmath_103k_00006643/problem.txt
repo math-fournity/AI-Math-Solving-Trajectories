@@ -1,0 +1,1 @@
+Consider a subalgebra $\cal S$ of the algebra of linear operators on a finite-dimensional vector space $V$ over a field. If \( \bigcap_{A\in\cal S}\ker A=\{0\} \) and \( \bigcup_{A\in\cal S}A(V)=V \), does it follow that there exists some $A\in\cal S$ that is non-singular?

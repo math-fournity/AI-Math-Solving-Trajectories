@@ -1,0 +1,1 @@
+Determine the degree of extension of the algebraic closure over the field \(\mathbb{Q}_p^{ext}\), where \(\mathbb{Q}_p^{ext} = \mathbb{Z}((X))_{conti}/(X-p)\) for a prime number \(p\).

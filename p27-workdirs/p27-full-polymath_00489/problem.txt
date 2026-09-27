@@ -1,0 +1,1 @@
+In a $n\times n$ table ($n>1$) $k$ unit squares are marked.One wants to rearrange rows and columns so that all the marked unit squares are above the main diagonal or on it.For what maximum $k$ is it always possible?

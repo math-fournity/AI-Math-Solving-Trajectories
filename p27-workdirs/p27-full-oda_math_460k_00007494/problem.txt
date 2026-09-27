@@ -1,0 +1,1 @@
+Determine which ordinal is larger: \(\tau_1\), the supremum of ordinals writable by iterated Infinite Time Turing Machines, or \(\tau_2\), the smallest \(\Sigma_2^1\)-reflecting ordinal.

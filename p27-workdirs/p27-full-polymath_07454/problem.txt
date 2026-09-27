@@ -1,0 +1,1 @@
+In a specialized digital archive, every data file is identified by a square-numbered code. A lead architect is designing a composite security key by concatenating two specific identification codes, $a^2$ and $b^2$, both of which must be positive integers and perfect squares.

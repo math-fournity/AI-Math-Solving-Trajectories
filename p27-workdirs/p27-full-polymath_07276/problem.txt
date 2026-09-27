@@ -1,0 +1,1 @@
+In the futuristic city of Hexagon-Zero, a grid-based automated greenhouse is organized into a $5 \times 5$ layout of planting zones. Currently, $n$ zones are occupied by fragile "Alabaster Orchids," while the remaining zones are empty. Each zone can hold at most one plant.

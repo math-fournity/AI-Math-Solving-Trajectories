@@ -1,0 +1,1 @@
+In a triangle with medians \( m_a, m_b, m_c \) and circumradius \( R \), the medians extended to the circumcircle have lengths \( M_a, M_b, M_c \). If the triangle satisfies the condition that \( \frac{M_a + 1}{m_a} + \frac{M_b + 1}{m_b} + \frac{M_c + 1}{m_c} = \frac{2(2R + 1)}{R} \), calculate the value of \( R \) given that \( m_a = 6, m_b = 8, m_c = 10 \).

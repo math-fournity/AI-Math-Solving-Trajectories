@@ -1,0 +1,1 @@
+A positive integer  $m$ has the property that  $m^2$ is expressible in the form $4n^2-5n+16$ where $n$ is an integer (of any sign). Find the maximum value of $|m-n|.$

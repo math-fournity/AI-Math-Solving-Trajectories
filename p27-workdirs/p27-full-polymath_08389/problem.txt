@@ -1,0 +1,1 @@
+In a specialized digital circuit, a signal processor manages data streams composed of two types of pulses: Type-Alpha and Type-Beta. The processor operates according to two fundamental transformation protocols:

@@ -1,0 +1,1 @@
+A high-security facility uses a digital authentication system consisting of $m$ unique fiber-optic cables (links) connecting various communication hubs. The system design is "simple," meaning no cable connects a hub to itself and no two hubs are connected by more than one cable.

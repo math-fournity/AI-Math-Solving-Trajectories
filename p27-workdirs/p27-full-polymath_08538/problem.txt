@@ -1,0 +1,1 @@
+A specialized digital clock system operates on a cycle of $s$ discrete pulses, where $s$ is an integer greater than 1. Two signals, $m$ and $n$, are broadcast through the system such that both their frequencies are coprime to the cycle length $s$.

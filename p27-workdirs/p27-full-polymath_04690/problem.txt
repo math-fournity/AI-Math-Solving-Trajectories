@@ -1,0 +1,1 @@
+Given $\triangle ABC$, for which the circumcircle of the triangle inscribed to side $AB$ is tangent to the circle with diameter $BC$. Find $\angle ACB$, if the sides $BC, CA,$ and $AB$ form an arithmetic progression in this order.

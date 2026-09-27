@@ -1,0 +1,1 @@
+The sequence of integers \(\{a_i\}_{i=0}^{\infty}\) satisfies \(a_0 = 3\), \(a_1 = 4\), and

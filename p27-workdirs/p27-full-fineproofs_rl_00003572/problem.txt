@@ -1,0 +1,1 @@
+Let $A B C D$ be an isosceles trapezoid with $A B \| C D$. The inscribed circle $\omega$ of triangle $B C D$ meets $C D$ at $E$. Let $F$ be a point on the (internal) angle bisector of $\angle D A C$ such that $E F \perp C D$. Let the circumscribed circle of triangle $A C F$ meet line $C D$ at $C$ and $G$. Prove that the triangle $A F G$ is isosceles.

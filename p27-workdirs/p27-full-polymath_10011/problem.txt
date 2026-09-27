@@ -1,0 +1,1 @@
+In a specialized circular data center, there are 2022 server terminals arranged in a convex ring. To ensure network redundancy, physical fiber-optic cables (diagonals) must be installed between certain pairs of non-adjacent terminals. The internal architecture of the center is such that no three potential fiber-optic paths intersect at the same interior point.

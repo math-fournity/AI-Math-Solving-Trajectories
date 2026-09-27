@@ -1,0 +1,1 @@
+Determine all real numbers \(x\) for which the series \(\sum_{n=1}^\infty \left(1+\frac{1}{2}+\cdots+\frac{1}{n}\right)\frac{\sin nx}{n}\) converges.

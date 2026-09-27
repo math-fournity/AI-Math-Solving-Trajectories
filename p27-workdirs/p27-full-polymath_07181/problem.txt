@@ -1,0 +1,1 @@
+In a remote archipelago, an architect is designing a modular hexagonal compound defined by six vertices, $A_1$ through $A_6$. The perimeter and layout are constrained by specific logistical requirements for the structural supports.

@@ -1,0 +1,1 @@
+In the coastal city of Gridhaven, an operations center manages a rectangular array of $15$ rows and $20$ columns of independent power stations. Each station can either be "Active" or "Deactivated."

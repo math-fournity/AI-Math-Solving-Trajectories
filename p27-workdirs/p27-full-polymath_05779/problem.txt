@@ -1,0 +1,1 @@
+Gooovanovo A.C.  Positive rational numbers $a$ and $b$ are written as decimal fractions, each of which has a minimal period consisting of 30 digits. The decimal representation of the number $a-b$ has a minimal period length of 15. For what smallest natural $k$ can the minimal period length of the decimal representation of the number $a+k b$ also be 15?

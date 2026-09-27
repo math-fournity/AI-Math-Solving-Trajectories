@@ -1,0 +1,1 @@
+If $x, y, z$ are non-negative real numbers such that $x^{2}+y^{2}+z^{2}=x+y+z$, then show that:

@@ -1,0 +1,1 @@
+Let \( n \) be a positive integer. Two players \( A \) and \( B \) play a game in which they take turns choosing positive integers \( k \leq n \). The rules are:

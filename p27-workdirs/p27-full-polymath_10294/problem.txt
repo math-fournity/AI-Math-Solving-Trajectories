@@ -1,0 +1,1 @@
+In a futuristic circular space station, there are 50 docking bays arranged at equal intervals along the outer hull, forming a perfect 50-sided perimeter. The station’s central hub can be reconfigured by installing internal pressurized corridors (diagonals) that connect any two docking bays, provided these corridors do not cross one another.

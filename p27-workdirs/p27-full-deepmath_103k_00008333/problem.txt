@@ -1,0 +1,1 @@
+Suppose $X$ and $Y$ are two independent non-negative random variables such that $E[X] = E[Y] = 1$. Determine the value of $\sup_X \{ \inf_Y \{P(X > Y)\}\}$.

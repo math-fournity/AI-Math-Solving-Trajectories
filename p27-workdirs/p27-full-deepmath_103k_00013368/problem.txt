@@ -1,0 +1,1 @@
+If the Lindelöf degree of $(R)^I$ is a cardinal $\lambda$, can we conclude that the cardinality of $I$ does not exceed $\lambda$? Answer yes or no.

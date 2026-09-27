@@ -1,0 +1,1 @@
+A floor is tiled with equilateral triangles of side length 1. If you drop a needle of length 2 somewhere on the floor, what is the largest number of triangles it could end up intersecting? (Only count the triangles whose interiors are met by the needle - touching along edges or at corners doesn't qualify.)

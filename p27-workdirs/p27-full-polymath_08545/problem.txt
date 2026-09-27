@@ -1,0 +1,1 @@
+In the high-stakes world of digital logistics, two competing algorithms, Max (the "Requester") and Min (the "Assigner"), are determining the final output of a specialized subtraction engine. The engine consists of two four-digit memory registers, represented as:

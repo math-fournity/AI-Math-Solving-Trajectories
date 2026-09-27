@@ -1,0 +1,1 @@
+There is a population $P$ of 10000 bacteria, some of which are friends (friendship is mutual), so that each bacterion has at least one friend and if we wish to assign to each bacterion a coloured membrane so that no two friends have the same colour, then there is a way to do it with 2021 colours, but not with 2020 or less.

@@ -1,0 +1,1 @@
+A subset \( M \) of the set \( \{1,2, \ldots, 2018\} \) is called "good" if for every two numbers \( a \) and \( b \) from \( M \), for which \( b>a \) and \( b-a \) is divisible by \( 30 \), the numbers

@@ -1,0 +1,1 @@
+In a remote industrial terminal, a logistics grid is defined by 21 horizontal conveyor tracks and 26 vertical conveyor tracks, creating a network of 20 by 25 rectangular storage zones. This grid contains a set of "internal junction points" where the interior tracks intersect, excluding any points on the outer boundary of the terminal.

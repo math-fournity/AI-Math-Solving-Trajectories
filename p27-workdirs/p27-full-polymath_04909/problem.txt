@@ -1,0 +1,1 @@
+We have $n$ kilograms of watermelons, where each watermelon weighs an integer amount between 1 and 7 kilograms. There are 11 farmers, and each farmer can lift up to 30 kilograms. In all possible situations, the 11 farmers can lift the total $n$ kilograms of watermelons. What is the maximum value of $n$?

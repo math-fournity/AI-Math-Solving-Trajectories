@@ -1,0 +1,1 @@
+Find the value of \( \lambda \in (0, \infty) \) that maximizes \( \|f_{\lambda}\|_{L^2} \), given that \( \lim_{\lambda \to 0}\|f_{\lambda}\|_{L^2} = 0 \) and \( \lim_{\lambda \to \infty}\|f_{\lambda}\|_{L^2} = 0 \).

@@ -1,0 +1,1 @@
+Let $a, b$ be integers such that $\mathrm{pgcd}(\mathrm{a}, \mathrm{b})$ has at least two distinct prime factors. Let $S=\{x \in \mathbb{N} \mid x \equiv a[b]\}$. An element of $S$ is said to be irreducible if it cannot be written as a product of at least two elements of $S$ (not necessarily distinct).

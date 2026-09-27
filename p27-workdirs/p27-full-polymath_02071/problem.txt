@@ -1,0 +1,1 @@
+Given a table with 100 piles of 100 stones each, find the largest $n \leq 10000$ such that after removing any $n$ stones, it is still possible to find 50 piles numbered from 1 to 50 where the $i$-th pile contains at least $i$ stones.

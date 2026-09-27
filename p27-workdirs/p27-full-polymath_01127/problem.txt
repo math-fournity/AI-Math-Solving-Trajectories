@@ -1,0 +1,1 @@
+Let $f(n)$ be the minimum possible number of blue edges in a graph with $2n$ vertices ($n \ge 4$) such that the edges are colored blue and red with no blue triangle and no red complete subgraph with $n$ vertices. Find the value of $f(4) + f(7)$.

@@ -1,0 +1,1 @@
+Find all functions \( f: \mathbb{Z} \to \mathbb{Z} \) such that \( f(p) > 0 \) for every prime \( p \) and for every prime \( p \) and every integer \( x \), the following condition holds:

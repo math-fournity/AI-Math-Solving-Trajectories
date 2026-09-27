@@ -1,0 +1,1 @@
+In a specialized laboratory, a lead engineer is designing a $5 \times 5$ grid of secure storage vaults. Each of the 25 vaults must be assigned a unique ID number chosen from the set of positive integers $\{1, 2, 3, \dots\}$.

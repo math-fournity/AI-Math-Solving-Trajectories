@@ -1,0 +1,1 @@
+Let \( S \) be the set of ordered integer pairs \((x, y)\) such that \(0 < x < y < 42\) and there exists some integer \(n\) such that \(x^{6} - y^{6} \mid n^{2} + 2015^{2}\). What is the sum \(\sum_{(x_{i}, y_{i}) \in S} x_{i} y_{i}\)?

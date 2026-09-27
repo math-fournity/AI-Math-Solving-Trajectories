@@ -1,0 +1,1 @@
+Let $G$ be a locally finite group such that $G=\bigcup_{i=1}^\infty S_i$, where $S_i$ is a finite group and $S_i \triangleleft S_{i+1}$ for all $i \in \mathbb{N}$. Let $P$ be a Sylow $p$-subgroup of $G$. For each $i \in \mathbb{N}$, define $P_i=S_i \cap P$. Is $P_i$ a Sylow $p$-subgroup of $S_i$ for all $i \in \mathbb{N}$?

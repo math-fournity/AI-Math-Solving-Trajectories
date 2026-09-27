@@ -1,0 +1,1 @@
+For positive integers $m, n$, let $f(m, n)$ denote the number of ordered integer triples $(x, y, z)$ satisfying the system:

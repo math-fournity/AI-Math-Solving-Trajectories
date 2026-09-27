@@ -1,0 +1,1 @@
+In a remote territory, three supply depots—Alpha ($A$), Bravo ($B$), and Charlie ($C$)—form a triangular logistics network. A central distribution hub, Gamma ($G$), is located exactly at the centroid of this triangle (the unique point where the three straight paths connecting each depot to the midpoint of the opposite side intersect).

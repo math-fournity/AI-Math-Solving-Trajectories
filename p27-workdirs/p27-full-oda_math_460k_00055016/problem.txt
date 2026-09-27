@@ -1,0 +1,1 @@
+For every triple of functions \( f, g, h: [0,1] \to \mathbb{R} \), find the smallest constant \( C \) such that there exist numbers \( x, y, z \) in \([0,1]\) satisfying

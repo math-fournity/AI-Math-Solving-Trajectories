@@ -1,0 +1,1 @@
+In a remote research outpost, five specialized batteries—$a_1, a_2, a_3, a_4,$ and $a_5$—store varying amounts of energy measured in Gigajoules. The system is governed by two strict operational constraints:

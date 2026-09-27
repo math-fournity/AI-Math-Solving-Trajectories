@@ -1,0 +1,1 @@
+A high-security logistics firm operates a warehouse containing $2n$ storage crates. Within these crates are $n$ distinct types of industrial components, where each component type $i \in \{1, \dots, n\}$ is stored in exactly two separate crates. Initially, an automated system distributes all $2n$ crates into a single row of docking bays in a randomized, hidden configuration.

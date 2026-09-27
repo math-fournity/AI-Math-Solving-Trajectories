@@ -1,0 +1,1 @@
+Determine the least "20^15-good" number $k \in \mathbb{N}$, where a number $k$ is called "20^15-good" if there exists a natural number $n$ such that the sums $1^k + 2^k + \cdots + n^k$ form a complete system of residues modulo $20^{15}$.

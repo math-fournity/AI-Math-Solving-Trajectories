@@ -1,0 +1,1 @@
+A scientist invented a time machine that operates on a circular track with 2009 platforms numbered $1, 2, \ldots, 2009$. Platform 1 corresponds to the year 2010. For $k \in \{2, 3, \ldots, 2009\}$, platform $k$ corresponds to the year $2010 + (k-1)$. Platform 2009 is followed by platform 1.

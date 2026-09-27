@@ -1,0 +1,1 @@
+Let $A$ and $B$ be two disjoint sets of points in a plane, with $|A|=|B|=n$, where no three points are collinear. A set $S$ of line segments is formed by connecting points in $A$ to points in $B$, with at most one segment between any two points. A set $S$ is called "$l$-good" if every point in $A \cup B$ is an endpoint of at least $l$ segments.

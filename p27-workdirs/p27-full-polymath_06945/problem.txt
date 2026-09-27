@@ -1,0 +1,1 @@
+A network of $n$ satellite ground stations is deployed across a vast, flat desert plain. To ensure high-quality data transmission, the network's geometry must satisfy two strict technical constraints:

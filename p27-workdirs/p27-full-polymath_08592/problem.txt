@@ -1,0 +1,1 @@
+A network of secure servers $S$ is established within a grid of positive integer IDs, $\mathbb{Z}^+$. The network must satisfy two operational protocols:

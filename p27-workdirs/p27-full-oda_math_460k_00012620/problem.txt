@@ -1,0 +1,1 @@
+Let \( r \leq m \leq n \) and \( U \subset M_{m,n} \) be a linear subspace such that the greatest rank of the elements in \( U \) is \( r \). Find the maximum possible value of \( \dim U \) in terms of \( n \) and \( r \).

@@ -1,0 +1,1 @@
+In the competitive world of high-frequency automated logistics, three independent contractors—Xavier, Yolanda, and Zane—are assigned to manage three separate segments of a supply chain, each represented by a standardized time interval from $0$ to $1$.

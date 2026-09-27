@@ -1,0 +1,1 @@
+Determine whether it is possible to arrange the numbers from 1 to 500 such that the absolute value of the difference between any two consecutive numbers is neither a perfect square nor a prime number.

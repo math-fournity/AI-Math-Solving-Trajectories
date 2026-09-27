@@ -1,0 +1,1 @@
+A specialized assembly line consists of $n$ workstations arranged in a straight sequence, labeled from Station 1 to Station $n$. A quality control robot is tasked with testing the connections between these stations.

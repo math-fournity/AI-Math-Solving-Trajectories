@@ -1,0 +1,1 @@
+In the futuristic city of Orizon, a specialized maintenance drone is programmed to inspect a grid of solar panels arranged in a $15 \times 15$ square formation. To prevent electromagnetic interference, the drone’s navigation software is restricted by two strict protocols:

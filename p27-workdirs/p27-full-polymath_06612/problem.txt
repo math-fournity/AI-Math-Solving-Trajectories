@@ -1,0 +1,1 @@
+In a specialized carbon-capture facility, three processing modules—Alpha, Beta, and Gamma—operate with individual efficiency ratings denoted by $p, q$, and $r$. These ratings are the three distinct roots of the performance characteristic polynomial $f(t) = t^3 - 2022 t^2 + 2022 t - 337$.

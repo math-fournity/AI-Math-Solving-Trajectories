@@ -1,0 +1,1 @@
+In triangle \(ABC\), \(AB = 6\), \(BC = 7\), and \(CA = 8\). Let \(D\), \(E\), \(F\) be the midpoints of sides \(BC\), \(AC\), and \(AB\), respectively. Also, let \(O_A\), \(O_B\), \(O_C\) be the circumcenters of triangles \(AFD\), \(BDE\), and \(CEF\), respectively. Find the area of triangle \(O_A O_B O_C\).

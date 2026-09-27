@@ -1,0 +1,1 @@
+Let \( A \in M_n(\mathbb{C}) \) be a non-scalar matrix. Find the minimum value of \( n \) such that \( A \) is guaranteed to be similar to a matrix with no zero complex entries.

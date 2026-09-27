@@ -1,0 +1,1 @@
+Evaluate the integral \( \frac{1}{2\pi}\int_{0}^{2\pi}e^{\cos\theta}\cos(n\theta) \,d\theta \) using the residue theorem.

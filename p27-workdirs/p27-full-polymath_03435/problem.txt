@@ -1,0 +1,1 @@
+Let \( n > 3 \) be a fixed integer and \( x_{1}, x_{2}, \ldots, x_{n} \) be positive real numbers. Consider the sum

@@ -1,0 +1,1 @@
+Let $V$ be a smooth algebraic variety defined over the complex numbers, and suppose that $G$ admits a free discrete action on $V$ such that $V/G$ is compact and Kähler (or algebraic). Is it true that $G$ is virtually abelian, meaning it contains an abelian subgroup of finite index?

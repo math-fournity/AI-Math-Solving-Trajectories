@@ -1,0 +1,1 @@
+Consider a compact orientable surface \( M_g \) of genus \( g \). Let \( f : M_g \to S^2 \) be a continuous map. Define \( N(g) \) as the minimum number of critical points of \( f \) that ensures \( f \) is not homotopic to a constant map. Find \( N(2) \).

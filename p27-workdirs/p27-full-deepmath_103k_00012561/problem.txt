@@ -1,0 +1,1 @@
+Compute the radius of convergence of the power series \( \sum_{n \ge 0} f_n(z) \), where each function \( f_n: \mathbb{C} \rightarrow \mathbb{C} \) is defined by:

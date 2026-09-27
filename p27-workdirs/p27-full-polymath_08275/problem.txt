@@ -1,0 +1,1 @@
+In a specialized industrial chemical facility, three types of pressurized canisters—Type X, Type Y, and Type Z—are used to store volatile gases. The safety pressure rating of each canister is defined by its volume.

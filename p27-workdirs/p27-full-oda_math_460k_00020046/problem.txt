@@ -1,0 +1,1 @@
+What is the maximum average area of the cells in a decomposition of the plane into cells of diameter at most one?

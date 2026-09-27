@@ -1,0 +1,1 @@
+4. Find the smallest positive number $c$ such that for any integer $n \geqslant 4$, and any set $A \subseteq\{1,2, \cdots, n\}$, if $|A|>c n$, then there exists a function $f: A \rightarrow\{1,-1\}$, satisfying $\left|\sum_{a \in A} f(a) \cdot a\right| \leqslant 1$.

@@ -1,0 +1,1 @@
+Each entry of a \(100 \times 25\) array is a non-negative real number such that the sum of the 25 numbers in each row is at most 1. The 100 numbers in each column are rearranged from top to bottom in descending order. Determine the smallest value of \(k\) such that the sum of the 25 numbers in each row from the \(k\)-th row on down will always be at most 1.

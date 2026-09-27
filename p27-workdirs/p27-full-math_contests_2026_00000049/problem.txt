@@ -1,0 +1,1 @@
+There are several coins, each with a positive integer value, and the total value is $S$. Prove that there exists a positive integer $S_0$ such that whenever $S \ge S_0$, one can select some of the coins (possibly a single coin) and split them into several piles (possibly one pile) satisfying:

@@ -1,0 +1,1 @@
+Let \( f \) be a homogeneous polynomial with integral coefficients in four variables \( a, b, c, \) and \( d \). Suppose \( f \) is invariant under simultaneous rotation of \((a,b)\) and \((c,d)\) by the same angle. Define \( V = f^{-1}(0) \). For \( R > 0 \), let \( B_R \) be the ball of radius \( R \) in \( \mathbb{R}^4 \). Determine the smallest exponent \( n \) such that:

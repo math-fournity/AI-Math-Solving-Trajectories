@@ -1,0 +1,1 @@
+A shipping logistics hub manages a square grid of 100 loading docks by 100 storage bays, creating a total of 10,000 designated storage zones. Each zone contains a specialized battery that can hold a charge state ranging from -1 units (fully discharged) to 1 unit (fully charged).

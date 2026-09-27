@@ -1,0 +1,1 @@
+In a remote industrial outpost, an automated shipping system processes packages weighing between 1 and 99 kilograms (inclusive). To streamline operations, the warehouse uses exactly three types of standardized weights: a 1-kg weight, an $a$-kg weight, and a $b$-kg weight, where $a$ and $b$ are integers such that $1 < a < b < 100$.

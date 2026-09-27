@@ -1,0 +1,1 @@
+Let \(a\), \(b\), and \(c\) be positive real numbers such that \(11 \ge 21ab + 2bc + 8ca\). Find the minimum value of \(P\), where

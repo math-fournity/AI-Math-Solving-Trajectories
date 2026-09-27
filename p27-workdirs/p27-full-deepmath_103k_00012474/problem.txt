@@ -1,0 +1,1 @@
+Compute the limit: \[ \lim_{n\to+\infty}n\int_{0}^{\pi/2}x f(x) \cos^n x \, dx \] where \( f \in C([0,\pi/2]) \).

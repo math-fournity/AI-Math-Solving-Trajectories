@@ -1,0 +1,1 @@
+Let  $ABC$  be a scalene acute-angled triangle with its incenter  $I$  and circumcircle  $\Gamma$ .

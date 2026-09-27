@@ -1,0 +1,1 @@
+A metropolitan city is planned as a perfect $n \times n$ grid of $n^2$ identical square land parcels. The Department of Urban Planning is designing a specific zoning district called a "Dual-Flow Zone," which must satisfy two independent structural requirements for infrastructure efficiency:

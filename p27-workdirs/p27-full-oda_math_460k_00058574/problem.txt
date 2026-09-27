@@ -1,0 +1,1 @@
+What is the maximum positive integer \( n \) such that for positive integers \( A \), \( B \), and \( C \) with \( A + B = C \), the inequality \( C > 10^n \cdot \text{rad}(A \cdot B \cdot C) \) holds?

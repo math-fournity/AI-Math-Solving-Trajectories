@@ -1,0 +1,1 @@
+In a high-security data center, two fragmented encrypted data packets were recovered and merged to restore a final master key.

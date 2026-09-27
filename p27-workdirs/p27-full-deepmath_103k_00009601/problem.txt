@@ -1,0 +1,1 @@
+Determine if there is a computable bound on the size of solutions for the set \( \mathcal{S}(z) \) when it is finite, where \( \mathcal{S}(z) \) is defined as the set of all solutions \( ab+cd=z \) satisfying \( \min(\vert a\vert,\vert b\vert)>\max(\vert c\vert,\vert d\vert) \) with \( a,b,c,d \) in the set \( \mathbb{Z}[i] \) of Gaussian integers.

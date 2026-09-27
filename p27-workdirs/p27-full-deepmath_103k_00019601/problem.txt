@@ -1,0 +1,1 @@
+In a finite group $G$, determine the lower bound for the proportion of irreducible rational-valued characters that take the values $0$ or $\pm 1$. Provide your answer as a fraction or decimal.

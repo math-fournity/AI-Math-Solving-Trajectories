@@ -1,0 +1,10 @@
+Let n ≥ 2 be an integer. Let x₁ ≥ x₂ ≥ ⋯ ≥ xₙ and y₁ ≥ y₂ ≥ ⋯ ≥ yₙ be 2n real
+numbers such that
+0 = x₁ + x₂ + ⋯ + xₙ = y₁ + y₂ + ⋯ + yₙ,
+and
+1 = x₁² + x₂² + ⋯ + xₙ² = y₁² + y₂² + ⋯ + yₙ².
+Prove that
+∑_{i=1}^{n} (xᵢyᵢ − xᵢyₙ₊₁₋ᵢ) ≥ 2/√(n−1).
+
+</rule>
+</rules>

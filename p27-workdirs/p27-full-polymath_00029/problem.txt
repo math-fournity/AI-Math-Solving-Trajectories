@@ -1,0 +1,1 @@
+In the plane rectangular coordinate system \(xOy\), the circle \(\odot P\) is given by \((x-1)^2 + (y+3)^2 = 25\). Line \(l\) is a tangent to \(\odot P\), intersecting the \(x\)-axis at point \(A\) and the \(y\)-axis at point \(B\). Find the minimum value of the perimeter of \(\triangle ABP\).

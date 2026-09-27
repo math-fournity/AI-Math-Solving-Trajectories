@@ -1,0 +1,1 @@
+Numbers $0, 1$ and $2$ are placed in a table $2005 \times 2006$ so that total sums of the numbers in each row and in each column are factors of $3$. Find the maximal possible number of $1$'s that can be placed in the table.

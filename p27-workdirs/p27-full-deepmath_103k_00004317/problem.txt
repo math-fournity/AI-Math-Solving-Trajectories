@@ -1,0 +1,1 @@
+Let $A$ and $B$ be $n \times n$ skew-symmetric matrices. Suppose there exist permutations $g, h: \{1, \ldots, n\} \to \{1, \ldots, n\}$ such that $A_{i,j} = B_{g(i),h(j)}$ for all $1 \leq i, j \leq n$. Must there exist a permutation $f: \{1, \ldots, n\} \to \{1, \ldots, n\}$ such that $A_{i,j} = B_{f(i),f(j)}$ for all $1 \leq i, j \leq n$?

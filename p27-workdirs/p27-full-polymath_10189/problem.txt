@@ -1,0 +1,1 @@
+In a futuristic city, there are two distinct circular plazas. The first plaza is surrounded by exactly 15 equidistantly spaced security drones, while the second plaza is surrounded by 17 equidistantly spaced security drones.

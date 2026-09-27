@@ -1,0 +1,1 @@
+Let \( A \in \mathcal{M}_n(\mathbb{C}) \) and \( H(A) = \{ X^*AX \mid X \in \mathbb{C}^n, X^*X = 1 \} \) where \( X^* \) denotes the transpose conjugate. Suppose \( H(A) \) is the convex hull of the eigenvalues of \( A \). Find the smallest value of \( n \in \mathbb{N}^* \) such that \( A \) must be normal.

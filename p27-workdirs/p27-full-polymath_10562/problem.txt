@@ -1,0 +1,1 @@
+In the city of Arithmos, a series of $n$ storage lockers are arranged in a single row, numbered consecutively from $1$ to $n$. A logistics company decides to organize these lockers by assigning each one a specific security clearance level: Level Red, Level Blue, or Level Green. Every single locker must be assigned exactly one of these three levels.

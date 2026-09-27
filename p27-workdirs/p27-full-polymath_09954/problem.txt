@@ -1,0 +1,1 @@
+In a remote archipelago, there are 2023 unique radio beacons positioned across a vast maritime region. Navigational surveys have confirmed that no two pairs of beacons are exactly the same distance apart; every single pairwise distance between any two beacons is unique.

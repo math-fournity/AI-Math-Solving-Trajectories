@@ -1,0 +1,1 @@
+Determine the points of continuity for the function \( f(x) = \sum_{n=1}^{\infty} \frac{\sin nx}{n^{1/2}} \).

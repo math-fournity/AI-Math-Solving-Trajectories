@@ -1,0 +1,1 @@
+In a remote sector of the ocean, three research buoys—Alpha ($A$), Bravo ($B$), and Charlie ($C$)—form a triangular perimeter. A central data hub, Giga ($G$), is located at the exact geometric center (centroid) of the triangle formed by these three buoys.

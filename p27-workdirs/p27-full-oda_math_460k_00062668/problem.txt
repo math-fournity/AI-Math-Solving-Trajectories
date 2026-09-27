@@ -1,0 +1,1 @@
+Let $S(N)$ denote the $N$-th square-free number. Calculate the smallest value of $N$ for which $S(N) - N \cdot \frac{\pi^2}{6} > 100$.

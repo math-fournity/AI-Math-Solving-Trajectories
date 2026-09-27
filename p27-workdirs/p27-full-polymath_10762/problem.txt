@@ -1,0 +1,1 @@
+An architect is designing a modular structural frame composed of a sequence of right-angled support brackets. Each bracket in the sequence is geometrically similar to the others. The arrangement is built such that the horizontal bracket of one pair is congruent to the vertical bracket positioned directly above it.

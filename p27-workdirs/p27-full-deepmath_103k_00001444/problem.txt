@@ -1,0 +1,1 @@
+Let $(X,d)$ be a complete separable metric space (Polish space) with a Borel probability measure $\mu$. Given $\varepsilon_1, \varepsilon_2 > 0$, determine if there exists a finite set of disjoint open balls $B_1,\ldots, B_n$ of diameter $< \varepsilon_1$ such that $\mu(B_1) + \ldots + \mu(B_n) > 1-\varepsilon_2$. Provide a justification for your answer.

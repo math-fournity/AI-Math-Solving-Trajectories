@@ -1,0 +1,1 @@
+Find the greatest positive integer \( n \) such that for all positive \( x_1, x_2, \dots, x_n \) with \( x_1 + x_2 + \dots + x_n = 1 \), the inequality \[ x_1^{x_2} x_2^{x_3} \dots x_n^{x_1} \leq \frac{1}{n} \] holds.

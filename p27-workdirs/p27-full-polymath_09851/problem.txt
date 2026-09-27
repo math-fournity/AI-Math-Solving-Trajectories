@@ -1,0 +1,1 @@
+In a remote glacial territory, a team of researchers has established eight observation outposts—labeled $A, B, C, D, E, F, G,$ and $H$—arranged in the shape of a perfect regular octagon. Each straight-line path between adjacent outposts (such as from $A$ to $B$ or $B$ to $C$) measures exactly $\sqrt{60}$ kilometers.

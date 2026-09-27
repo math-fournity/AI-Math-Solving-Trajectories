@@ -1,0 +1,1 @@
+The circles $\Gamma_{1}$ and $\Gamma_{2}$ intersect at $D$ and $P$. The common tangent of the two circles closest to point $D$ touches $\Gamma_{1}$ at $A$ and $\Gamma_{2}$ at $B$. The line $A D$ intersects $\Gamma_{2}$ again at $C$. Let $M$ be the midpoint of segment $B C$.

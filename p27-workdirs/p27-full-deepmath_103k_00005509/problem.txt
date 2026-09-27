@@ -1,0 +1,1 @@
+For a given positive integer \( N \), determine if there exists an integer \( n > N \) such that the first \( n \) prime numbers can be divided into two sets with equal sum.

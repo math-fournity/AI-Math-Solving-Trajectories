@@ -1,0 +1,1 @@
+Let $T = \{v_1, \dots, v_{2n}\} \subseteq \mathbb{C}^n$ be a $\mathbb{R}$-linearly independent set of vectors. Consider the $2^n$ subsets $S \subseteq T$ of size $n$ which contain exactly one of $v_1$ and $v_{n+1}$, exactly one of $v_2$ and $v_{n+2}$, and so on. Is one of these subsets necessarily a $\mathbb{C}$-basis for $\mathbb{C}^n$?

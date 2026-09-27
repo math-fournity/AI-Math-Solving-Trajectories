@@ -1,0 +1,1 @@
+Determine whether a smooth surjective map $f: X \to Y$ between smooth manifolds, with connected and compact fibers, is necessarily a closed map.

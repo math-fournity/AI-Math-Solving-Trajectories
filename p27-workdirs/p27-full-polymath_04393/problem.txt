@@ -1,0 +1,1 @@
+We number the edges of a cube with integers from 1 to 12. A triple of integers $(i, j, k)$ with $1 \leq i < j < k \leq 12$ is called "path-ordered" if the edges numbered $i, j, k$ form a path of length 3 (three consecutive sides of a broken line). Let $N$ be the minimum possible number of such path-ordered triples over all possible numberings of the edges. Find the value of $N$.

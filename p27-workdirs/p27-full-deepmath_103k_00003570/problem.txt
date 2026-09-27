@@ -1,0 +1,1 @@
+Determine whether there exists a Noetherian local domain $A$ with a prime ideal $P$ such that $\operatorname{ht}P + \dim A/P < \dim A$. Provide a justification for your answer.

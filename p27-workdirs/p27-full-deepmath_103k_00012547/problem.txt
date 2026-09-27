@@ -1,0 +1,1 @@
+Let $E$ be a separable Banach space and $A$ an uncountable subset of the unit sphere $S_E = \{x \in E \mid \|x\| = 1\}$. Must $A$ have an accumulation point?

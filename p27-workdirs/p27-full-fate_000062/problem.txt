@@ -1,0 +1,4 @@
+Show that $\operatorname{Aut}(\mathbb{Q})$ is a group with only a single element.
+
+</rule>
+</rules>

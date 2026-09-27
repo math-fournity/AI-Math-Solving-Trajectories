@@ -1,0 +1,1 @@
+Suppose $R$ is an excellent discrete valuation ring and consider a local injection $R \hookrightarrow R^{\prime}$ of discrete valuation rings such that the induced residue field extension is separable and a uniformizer of $R$ is also a uniformizer of $R^{\prime}$. Is $R^{\prime}$ necessarily excellent?

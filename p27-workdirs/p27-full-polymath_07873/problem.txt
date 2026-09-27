@@ -1,0 +1,1 @@
+A specialized logistics firm manages a sequence of $n$ cargo containers, labeled consecutively from $1$ to $n$. Each container must be assigned to one of three shipping lines: the Red Fleet, the Blue Fleet, or the Yellow Fleet. The assignment process is governed by the following strict operational protocols:

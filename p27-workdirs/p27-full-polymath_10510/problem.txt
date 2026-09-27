@@ -1,0 +1,1 @@
+In a circular high-security server facility, there are 100 access terminals arranged evenly around a central hub. Data transmissions are conducted via "network segments," which are defined as continuous circular arcs of fiber optic cable connecting any two of these terminals.

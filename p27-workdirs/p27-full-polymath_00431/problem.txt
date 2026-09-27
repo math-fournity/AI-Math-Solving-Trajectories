@@ -1,0 +1,1 @@
+Real numbers $x,y,z$ are chosen such  that $$\frac{1}{|x^2+2yz|} ,\frac{1}{|y^2+2zx|} ,\frac{1}{|x^2+2xy|} $$

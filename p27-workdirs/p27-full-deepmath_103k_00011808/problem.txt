@@ -1,0 +1,1 @@
+Let $\mathcal{FG}$ be the category of finite groups, and let $S$ be a full subcategory of $\mathcal{FG}$. Assume that $G \in \mathcal{FG}$ and $P \in S$ is a subgroup of $G$. We say that $P$ is $S$-maximal if there is no object $P' \in S$ with $P \subset P' \subset G$. Assume that $S$ satisfies the following conditions:

@@ -1,0 +1,1 @@
+Determine the least ordinal \( \beta \) such that it is provable in \( \mathsf{ZFC} \) that \( 2^{\aleph_0} \leq \aleph_{\aleph_\beta} \).

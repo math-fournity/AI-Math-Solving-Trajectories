@@ -1,0 +1,1 @@
+Let $M$ be an $n$-cell, a metric space homeomorphic to the closed unit disk $D^n \subset \mathbb{R}^n$. Consider the group $\text{Isom}(M)$ of bijective isometries from $M$ to itself. Determine whether there exists a point $p \in M$ such that $\varphi(p) = p$ for all $\varphi \in \text{Isom}(M)$. Note that such a point $p$ may not be unique.

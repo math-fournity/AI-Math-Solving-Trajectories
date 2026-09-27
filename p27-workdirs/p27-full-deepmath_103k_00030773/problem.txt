@@ -1,0 +1,1 @@
+In a plane, six lines are drawn such that for any three of them, there exists a fourth line from this set making all four lines tangent to some circle. Determine if it is necessary for all six lines to be tangent to the same circle.

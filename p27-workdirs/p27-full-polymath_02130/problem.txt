@@ -1,0 +1,1 @@
+In a triangle \(ABC\), \(\angle ABC = 48^\circ\) and \(\angle ACB = 22^\circ\). Point \(M\) is inside \(\triangle ABC\) such that \(\angle MBC = 38^\circ\) and \(\angle MCB = 18^\circ\). Find \(\angle MAB\).

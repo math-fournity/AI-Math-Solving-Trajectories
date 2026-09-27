@@ -1,0 +1,1 @@
+A specialized logistics firm manages $n$ different shipping routes, where $n$ is an integer ranging from 2 to 20. For each route $i$, the company assigns a performance coefficient $x_i$, which can be any real number.

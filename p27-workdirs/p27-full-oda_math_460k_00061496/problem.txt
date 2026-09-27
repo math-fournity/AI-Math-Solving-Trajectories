@@ -1,0 +1,1 @@
+Consider the sequence defined by \(a_0 = 2\) and \(a_{n+1} = 2a_n^2 - 1\). Let \(p\) be the smallest odd prime divisor of \(a_m\). Find the value of \(m\) such that \(p^2 - 1\) is divisible by \(2^{11}\).

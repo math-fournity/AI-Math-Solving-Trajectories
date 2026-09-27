@@ -1,0 +1,1 @@
+The vertices of a convex polygon with \( n \geq 4 \) sides are colored with black and white. A diagonal is called multicolored if its vertices have different colors. A coloring of the vertices is good if the polygon can be partitioned into triangles using only multicolored diagonals that do not intersect in the interior of the polygon. Find the number of good colorings.

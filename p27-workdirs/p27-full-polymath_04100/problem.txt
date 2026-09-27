@@ -1,0 +1,1 @@
+In a 25x25 table, 625 integers are written such that any one row or column contains at most 5 different values. What is the maximum number of different integer values possible in the entire table?

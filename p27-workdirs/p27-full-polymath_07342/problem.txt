@@ -1,0 +1,1 @@
+An industrial logistics company is managing three resource metrics—**x**, **y**, and **z**—all of which must be represented by strictly positive values. Due to operational constraints, the sum of the first two metrics must be at least 4 (specifically, **x + y ≥ 4**).

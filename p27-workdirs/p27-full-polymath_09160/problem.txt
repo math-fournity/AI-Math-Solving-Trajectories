@@ -1,0 +1,1 @@
+In a futuristic city, an architect is designing a massive circular plaza featuring 2011 laser-emitter pedestals positioned as the vertices of a convex polygon. To create a light show, the architect plans to connect these pedestals using laser beams that act as diagonals (beams that connect two non-adjacent pedestals).

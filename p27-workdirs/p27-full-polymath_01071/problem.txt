@@ -1,0 +1,1 @@
+Find the smallest positive integer \( n \) such that the following is true: for any set \( A \) with \( n \) elements that are larger than 1 and less than 2013, there exist \( a, b \in A, a \neq b \) such that \(|(a-b)(ab-100)|<10ab\).

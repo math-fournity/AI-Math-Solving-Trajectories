@@ -1,0 +1,1 @@
+Consider the upper half-plane \( \mathbb{H} = \{ x \in \mathbb{R}^n : x_n > 0 \} \). Let \( u \in C^2(\mathbb{H}) \cap C(\bar{\mathbb{H}}) \) be a bounded harmonic function such that \( u \leq 0 \) on \( \partial\mathbb{H} = \{ x_n = 0 \} \). Determine if it is possible to conclude that \( u \leq 0 \) in all of \( \mathbb{H} \) for \( n \geq 3 \).

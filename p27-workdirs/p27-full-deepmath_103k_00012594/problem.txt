@@ -1,0 +1,1 @@
+Find the degree of the field extension $[\mathbb{Q}(\alpha):\mathbb{Q}(\alpha^2 + 3)]$, where $\alpha$ is a root of the polynomial $P(x) = x^4 + 9x^2 + 15$.

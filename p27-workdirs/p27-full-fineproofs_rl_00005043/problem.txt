@@ -1,0 +1,1 @@
+Two circles  $\omega_1$  and  $\omega_2$  meeting at point  $A$  and a line  $a$  are given. Let  $BC$  be an arbitrary chord of  $\omega_2$  parallel to  $a$ , and  $E$ ,  $F$  be the second common points of  $AB$  and  $AC$  respectively with  $\omega_1$ . Find the locus of common points of lines  $BC$  and  $EF$ .

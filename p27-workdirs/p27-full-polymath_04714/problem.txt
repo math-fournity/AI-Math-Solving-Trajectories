@@ -1,0 +1,1 @@
+Determine the maximal length \( L \) of a sequence \( a_{1}, \ldots, a_{L} \) of positive integers satisfying both the following properties:

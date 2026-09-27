@@ -1,0 +1,1 @@
+Given $\triangle ABC$, let $\triangle A_1 B_1 C_1$ be its orthic triangle, and $\triangle A_2 B_2 C_2$ be the orthic triangle of $\triangle A_1 B_1 C_1$. Let $P$ be the point of concurrency of $AA_2$, $BB_2$, and $CC_2$. If the Euler line of $\triangle ABC$ intersects $BC$ at point $D$, calculate the ratio $\frac{PD}{AD}$.

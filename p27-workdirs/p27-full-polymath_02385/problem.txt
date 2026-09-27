@@ -1,0 +1,1 @@
+Given a sequence of positive integers \(a_{1}, a_{2}, a_{3}, \ldots, a_{n}\), define the power tower function

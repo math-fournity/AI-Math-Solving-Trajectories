@@ -1,0 +1,1 @@
+In a city with 120 underground lines, every station can be reached from any other station with no more than 15 changes. Two stations are considered distant if at least 5 changes are needed to travel between them. What is the maximum number of pairwise distant stations that can exist in this city?

@@ -1,0 +1,1 @@
+Find all positive real numbers $t$ such that there exists an infinite set $X$ of real numbers satisfying the inequality \[ \max\{|x-(a-d)|,|y-a|,|z-(a+d)|\}>td \] for all $x,y,z\in X$, all real numbers $a$, and all positive real numbers $d$.

@@ -1,0 +1,1 @@
+Find the sum of all natural numbers $n$ that can be expressed in the form

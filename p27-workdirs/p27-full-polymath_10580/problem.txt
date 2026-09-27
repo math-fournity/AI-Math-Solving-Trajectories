@@ -1,0 +1,1 @@
+A massive logistics grid consists of a square array of $n \times n$ shipping bays, where $n=2007$. Each bay contains a certain number of cargo crates (represented by non-negative integers).

@@ -1,0 +1,1 @@
+Let \( T \) be the group of diagonal \( 3 \times 3 \) matrices with determinant \( 1 \). Let \( U = \mathbb{C}^3 \) be the standard \( T \)-module with the action defined by \( \text{diag}(t_1, t_2, t_3)(x_1, x_2, x_3) := (t_1 x_1, t_2 x_2, t_3 x_3) \). Consider the 9-dimensional \( T \)-module \( W = U^{\otimes 2} \). Determine the irreducible \( T \)-submodules of \( W \).

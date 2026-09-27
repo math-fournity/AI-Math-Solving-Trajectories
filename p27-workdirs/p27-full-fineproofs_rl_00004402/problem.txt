@@ -1,0 +1,1 @@
+Prove that there are infinitely many triples $(a, b, p)$ of integers, with $p$ prime and $0<a \leq b<p$, for which $p^{5}$ divides $(a+b)^{p}-a^{p}-b^{p}$.

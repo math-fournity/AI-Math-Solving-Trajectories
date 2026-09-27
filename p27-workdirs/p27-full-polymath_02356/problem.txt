@@ -1,0 +1,1 @@
+All the squares of a board of $(n+1)\times(n-1)$ squares

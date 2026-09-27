@@ -1,0 +1,1 @@
+Given the generating function \( P(x) = \sum_{n=0}^{\infty} p_n x^n = 1 + x + 2x^2 + 3x^3 + 5x^4 + 7x^5 + 11x^6 + \cdots \), which represents the partition generating function, and \( Q(x) = \sum_{n=0}^{\infty} q_n x^n \), where \( q_n \) is the number of partitions of \( n \) containing no 1s, find the polynomial \( \frac{Q(x)}{P(x)} \).

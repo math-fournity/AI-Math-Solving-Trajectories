@@ -1,0 +1,1 @@
+Suppose \( \sum a_n \) is a series of complex numbers such that \( \sum a_n \) and every rearrangement of it converge to the same sum. Does \( \sum a_n \) converge absolutely?

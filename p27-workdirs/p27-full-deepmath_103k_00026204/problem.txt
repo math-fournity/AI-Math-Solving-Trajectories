@@ -1,0 +1,1 @@
+What is the minimum number of points required to color an entire 3D space black using a device that colors all points at an irrational distance from each given point, assuming the initial color of the space is white?

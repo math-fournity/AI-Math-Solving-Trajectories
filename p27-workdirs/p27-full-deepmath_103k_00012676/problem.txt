@@ -1,0 +1,1 @@
+Determine the values of \( \lambda > 0 \) for which the set \( I_{\lambda} \), consisting of all irrational numbers \( \rho = [a_{1}, a_{2}, \ldots, a_{n}, \ldots] \in (0,1) \) with continued fraction partial quotients satisfying \( a_{n} \leq \text{const} \cdot n^{\lambda} \), has a positive Lebesgue measure.

@@ -1,0 +1,1 @@
+Let $\mathcal{F}$ be a finite collection of $n = 100$ subsets of the real number line. Each subset $S \in \mathcal{F}$ is the union of two closed intervals. Suppose that any three subsets in $\mathcal{F}$ have a common point. Find the maximum value $k$ such that there must exist a point $x \in \mathbb{R}$ that belongs to at least $k$ subsets in the collection.

@@ -1,0 +1,1 @@
+In a specialized research laboratory, a team of $n$ robotic sensors is tasked with monitoring deep-sea pressure levels. Each sensor $i$ (where $1 \leq i \leq n$) is calibrated to a unique, non-zero real frequency $a_i$.

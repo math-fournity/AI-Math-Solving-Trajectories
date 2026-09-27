@@ -1,0 +1,1 @@
+Let \( k \) be a positive integer. What is the least integer \( g(k) \) such that all but a finite number of \( g(k) \)-strong tournaments contain a \( k \)-cycle factor (a partition of the vertex set into \( k \) disjoint cycles)?

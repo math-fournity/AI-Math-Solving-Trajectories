@@ -1,0 +1,1 @@
+A pirate wants to divide a treasure consisting of 1000 gold coins, each weighing at least 1 g and together exactly 2 kg, into two parts, each of which may deviate from 1 kg in mass by at most 1 g. Prove that this is possible.

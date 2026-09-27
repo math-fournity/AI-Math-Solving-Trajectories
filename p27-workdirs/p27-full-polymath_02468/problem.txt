@@ -1,0 +1,1 @@
+Aaron takes a square sheet of paper, with one corner labeled $A$. Point $P$ is chosen at random inside of the square and Aaron folds the paper so that points $A$ and $P$ coincide. He cuts the sheet along the crease and discards the piece containing $A$. Let $p$ be the probability that the remaining piece is a pentagon. Find the integer nearest to $100p$.

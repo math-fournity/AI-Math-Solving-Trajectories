@@ -1,0 +1,1 @@
+In a remote digital galaxy, a network architect is designing a secure communication cluster. The network is governed by the following strict connectivity protocols:

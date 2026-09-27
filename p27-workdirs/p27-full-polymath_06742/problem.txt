@@ -1,0 +1,1 @@
+In the high-tech city of Quadrata, a central server farm is contained within a perfectly square perimeter with a side length of $x$ kilometers. Within this perimeter, four specialized circular signal jamming zones—Zone A, Zone B, Zone C, and Zone D—have been established. Each jamming zone has a radius of exactly 1 kilometer.

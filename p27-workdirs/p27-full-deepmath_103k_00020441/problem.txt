@@ -1,0 +1,1 @@
+Determine whether the following statement is true or false: For any $\epsilon$-isometry $f$ of a compact metric space $X$, we have $X = \overline{B_\epsilon f(X)}$.

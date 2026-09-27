@@ -1,0 +1,1 @@
+Calculate the sum of the infinite series: \[ \sum_{n=0}^\infty \frac{5^{2n-5^n}}{1+5^{-5^n}} \]

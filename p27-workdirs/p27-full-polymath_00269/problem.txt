@@ -1,0 +1,1 @@
+Seven lattice points form a convex heptagon with all sides having distinct lengths. Find the minimum possible value of the sum of the squares of the sides of the heptagon.

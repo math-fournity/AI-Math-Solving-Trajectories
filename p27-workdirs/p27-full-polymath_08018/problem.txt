@@ -1,0 +1,1 @@
+In a remote digital archipelago, the security of a central vault depends on three unique encryption keys, represented by prime numbers $p, q,$ and $r$. These keys are used to generate two security checksums for the system:

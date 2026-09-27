@@ -1,0 +1,1 @@
+In a specialized digital archive, data sequences are composed using three distinct bits: $\{x, y, z\}$. A sequence $W$ is classified as "Stable" if it can be generated from an empty drive $\lambda$ through a series of "Conservation Edits."

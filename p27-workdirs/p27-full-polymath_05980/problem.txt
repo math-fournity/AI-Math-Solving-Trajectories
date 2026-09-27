@@ -1,0 +1,1 @@
+A logistics company operates a square storage hub divided into a grid of $n \times n$ individual storage units ($n \geq 3$). The manager needs to fill the entire hub using two specific types of shipping containers:

@@ -1,0 +1,1 @@
+Can the friendship graph $F_n$ be determined by its adjacency spectrum? The friendship graph $F_n$ is constructed by coalescing $n$ copies of the cycle graph $C_3$ with a common vertex. A graph $G$ is said to be determined by its adjacency spectrum if, whenever $Spec(G) = Spec(H)$ for some graph $H$, then $G \cong H$. Determine if $F_n$ is determined by its adjacency spectrum.

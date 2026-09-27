@@ -1,0 +1,1 @@
+19. $\mathbf{G} 4 \mathbf{( P O L})^{\mathrm{IMO}}$ In a convex quadrilateral $A B C D$ the diagonal $B D$ does not bisect the angles $A B C$ and $C D A$. The point $P$ lies inside $A B C D$ and satisfies  $$ \angle P B C=\angle D B A \quad \text { and } \quad \angle P D C=\angle B D A . $$  Prove that $A B C D$ is a cyclic quadrilateral if and only if $A P=C P$.

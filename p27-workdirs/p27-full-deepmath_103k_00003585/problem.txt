@@ -1,0 +1,1 @@
+Let $\kappa \geq \aleph_0$ be an infinite cardinal, and let $\mathcal{A}$ be a collection of subsets of $\kappa$ such that for all $A \in \mathcal{A}$, $|A| = \kappa$, and for $A, B \in \mathcal{A}$ with $A \neq B$, $|A \cap B| < \kappa$. Does there exist a set $D \subseteq \kappa$ such that for all $A \in \mathcal{A}$, $A \cap D \neq \emptyset$ and $A \not\subseteq D$?

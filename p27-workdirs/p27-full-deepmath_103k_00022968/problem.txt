@@ -1,0 +1,1 @@
+Consider a rigid rod of unit length and a curve in 3D space that is linear except for a finite portion, where the linear segments extend infinitely in opposite directions. The rod is considered "on the curve" if its endpoints lie on the curve. Is it possible to move the rod from one infinite end of the curve to the other while remaining on the curve at all times?

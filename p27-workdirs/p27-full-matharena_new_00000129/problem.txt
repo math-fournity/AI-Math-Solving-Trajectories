@@ -1,0 +1,1 @@
+Let $\mathbb{Z}_{>0}$ be the set of positive integers. Find all nonempty subsets $M \subseteq \mathbb{Z}_{>0}$ satisfying both of the following properties:

@@ -1,0 +1,1 @@
+A boutique electronics manufacturer is designing a series of triangular signal-processing modules. For a module of size $n$, the top row (Row 1) consists of a sequence of $n$ micro-switches, $a_1, a_2, \dots, a_n$, each set to either "off" (0) or "on" (1).

@@ -1,0 +1,1 @@
+For integers $a, b > 0$ where the ratio $\frac{a}{b}$ is not a power of 10, determine if the set of integers $n \ge 0$ such that the digit sum $s(an) = s(bn)$ has zero density.

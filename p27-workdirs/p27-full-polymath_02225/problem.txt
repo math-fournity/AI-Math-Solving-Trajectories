@@ -1,0 +1,1 @@
+How many prime-looking numbers are there less than $2023$? A prime-looking number is defined as a composite number that is not divisible by $2, 3,$ or $5$.

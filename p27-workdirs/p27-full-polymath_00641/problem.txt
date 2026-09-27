@@ -1,0 +1,1 @@
+On the shore of a circular island without roads, there are eight different cities. Five straight two-way roads must be built that do not intersect, so that from each city one or two roads depart. In how many ways can this be done?

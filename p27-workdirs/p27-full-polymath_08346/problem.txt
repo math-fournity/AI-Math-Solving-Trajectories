@@ -1,0 +1,1 @@
+A high-security communications network consists of 1,000 satellite ground stations positioned in a perfect circle around a restricted zone. To ensure signal isolation, each station is assigned a specific frequency band from a pool of $k$ available colors.

@@ -1,0 +1,1 @@
+Let $G$ be a $2$-edge-connected graph drawn in the plane, where edges intersect only at their endpoints. Determine whether it is always possible to orient the edges of $G$ such that for each vertex $v$, there are no three consecutive edges (in the clockwise direction) all oriented towards $v$ or all oriented away from $v$.

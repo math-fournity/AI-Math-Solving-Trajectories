@@ -1,0 +1,1 @@
+Find an affine connection on \((\mathbb{R}^2, \langle \cdot, \cdot \rangle)\) that is metric but not torsion-free.

@@ -1,0 +1,1 @@
+Let $n \geq 2$ be an integer. Let $P\left(x_{1}, x_{2}, \ldots, x_{n}\right)$ be a nonconstant $n$-variable polynomial with real coefficients. Assuming that $P$ vanishes whenever two of its arguments are equal, prove that $P$ has at least $n$ ! terms.

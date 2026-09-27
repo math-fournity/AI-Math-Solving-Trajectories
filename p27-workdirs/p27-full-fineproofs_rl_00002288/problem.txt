@@ -1,0 +1,1 @@
+Inside of convex quadrilateral  $ABCD$  found a point  $M$  such that  $\angle AMB=\angle ADM+\angle BCM$  and  $\angle AMD=\angle ABM+\angle DCM$ .Prove that   $$ AM\cdot CM+BM\cdot DM\ge \sqrt{AB\cdot BC\cdot CD\cdot DA}. $$

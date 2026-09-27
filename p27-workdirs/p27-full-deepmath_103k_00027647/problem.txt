@@ -1,0 +1,1 @@
+Is there a collection of subsets of the natural numbers, \( \omega \), that has the doughnut property but does not have the Ramsey property?

@@ -1,0 +1,1 @@
+Determine all convex polytopes \( P \) with the property that every polytope combinatorially equivalent to \( P \) admits a circumscribed ellipsoid.

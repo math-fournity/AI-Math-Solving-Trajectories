@@ -1,0 +1,1 @@
+Find all ordered pairs $(a, b)$ of positive integers such that $a^2 + b^2 + 25 = 15ab$ and $a^2 + ab + b^2$ is prime. Report the sum of $a + b$ for all such pairs.

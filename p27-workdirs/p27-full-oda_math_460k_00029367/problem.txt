@@ -1,0 +1,1 @@
+For each positive integer $n$ find the largest subset $M(n)$ of real numbers possessing the property: \[n+\sum_{i=1}^{n}x_{i}^{n+1}\geq n \prod_{i=1}^{n}x_{i}+\sum_{i=1}^{n}x_{i}\quad \text{for all}\; x_{1},x_{2},\cdots,x_{n}\in M(n)\] When does the inequality become an equality ?

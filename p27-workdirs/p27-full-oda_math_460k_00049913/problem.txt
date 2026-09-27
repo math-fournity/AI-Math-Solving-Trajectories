@@ -1,0 +1,1 @@
+Find a general class of strictly monotonic functions \( f : (0,\infty) \to (0,\infty) \) such that

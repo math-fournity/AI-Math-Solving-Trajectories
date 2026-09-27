@@ -1,0 +1,1 @@
+A circle is divided into equal arcs by 24 points. What is the largest \( k \) for which there exists a convex \( k \)-gon with vertices among these points, none of whose sides are parallel?

@@ -1,0 +1,1 @@
+A high-tech industrial zone consists of 20 server hubs arranged in a perfect circle around a central cooling plant. Each hub houses 20 specialized cybersecurity agents. Across the entire zone, no two agents possess the exact same skill level; in any simulated digital confrontation between two agents, the one with the higher skill level always succeeds.

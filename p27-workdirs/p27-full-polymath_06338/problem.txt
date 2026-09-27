@@ -1,0 +1,1 @@
+In a remote digital archipelago, there are $2^{n+1}$ server nodes arranged in a fixed physical ring, indexed sequentially from $1$ to $2^{n+1}$ in a clockwise direction. These nodes are competing for ultimate bandwidth control through a series of $n+1$ elimination cycles.

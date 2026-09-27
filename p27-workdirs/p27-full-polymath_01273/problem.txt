@@ -1,0 +1,1 @@
+Find the sum of all $x + y + z$ for all triplets of positive integers $(x, y, z)$ such that $x^2 + y^2 + x + y + z = xyz + 1$.

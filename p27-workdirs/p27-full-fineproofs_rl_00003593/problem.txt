@@ -1,0 +1,1 @@
+Let $A B C$ be a triangle. Prove that there is a line $\ell$ (in the plane of triangle $A B C$ ) such that the intersection of the interior of triangle $A B C$ and the interior of its reflection $A^{\prime} B^{\prime} C^{\prime}$ in $\ell$ has area more than $\frac{2}{3}$ the area of triangle $A B C$.

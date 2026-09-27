@@ -1,0 +1,1 @@
+Characterize all actions of the group \( D_{4p} \) on itself up to isomorphism, where \( p \) is an odd prime.

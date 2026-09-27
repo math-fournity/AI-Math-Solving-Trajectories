@@ -1,0 +1,1 @@
+Let $p_1, \ldots, p_k$ be $k$ distinct prime numbers in $\mathbb{N}$ and let $n > 1$. Determine whether the equality $[\mathbb{Q}(\sqrt[n]{p_1}, \ldots, \sqrt[n]{p_k}):\mathbb{Q}] = n^k$ holds, given that all roots are in $\mathbb{R}^+$. Provide a justification for your answer.

@@ -1,0 +1,1 @@
+In a remote digital library, an automated archivist organizes "Volume ID" numbers using a specific data-compaction protocol. When the archivist processes a Volume ID $x$, it generates a new ID, known as the "Next-Gen ID," based on the following rules:

@@ -1,0 +1,1 @@
+For every natural number $n \ge 1$, let $S$ be the set of all polynomials of the form $P(x) = x^2 + ax + b$, where $a, b \in \mathbb{R}$ and $a^2 \ge 4b$, such that $x^2 + ax + b$ divides $x^{2n} + ax^n + b$.

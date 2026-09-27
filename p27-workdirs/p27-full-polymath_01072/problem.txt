@@ -1,0 +1,1 @@
+Students in a school are arranged in an order that when you count from left to right, there will be $n$ students in the first row, $n-1$ students in the second row, $n - 2$ students in the third row,... until there is one student in the $n$th row. All the students face to the first row. For example, here is an arrangement for $n = 5$, where each $*$ represents one student:

@@ -1,0 +1,7 @@
+Find all pairs of positive integers m,n ≥ 3 for which
+there exist infinitely many positive integers a such that
+(aᵐ + a - 1) / (aⁿ + a² - 1)
+is itself an integer.
+
+</rule>
+</rules>

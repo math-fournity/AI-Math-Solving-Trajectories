@@ -1,0 +1,1 @@
+A natural number is called a *dodecax* if it is divisible by 12 or has exactly 12 divisors.

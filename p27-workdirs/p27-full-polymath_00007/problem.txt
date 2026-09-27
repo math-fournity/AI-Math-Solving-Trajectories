@@ -1,0 +1,1 @@
+Example 10 Suppose there are 2009 points in a plane, among any 17 points, there exist 11 points that can be covered by a circle of diameter 1. If $n$ circles of diameter 2 can cover all 2009 points. Find the minimum value of $n$.

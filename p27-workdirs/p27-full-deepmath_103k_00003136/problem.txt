@@ -1,0 +1,1 @@
+Let \( X \) be an infinite set and \( f: X \to X \) a function. Determine if the cardinality of the set of functions \( \{g: X \to X : g \circ f = f \circ g\} \) is at least \( |X| \).

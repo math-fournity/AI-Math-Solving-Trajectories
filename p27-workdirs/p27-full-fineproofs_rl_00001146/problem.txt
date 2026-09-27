@@ -1,0 +1,1 @@
+Determine with proof whether there is a subset $X \subseteq \mathbb{Z}$ with the following property: for any $n \in \mathbb{Z}$, there is exactly one solution to $a+2 b=n$, with $a, b \in X$.

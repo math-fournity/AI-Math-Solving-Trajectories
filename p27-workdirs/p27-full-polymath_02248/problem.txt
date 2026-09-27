@@ -1,0 +1,1 @@
+A square board of dimensions $6 \times 6$ is divided into 36 unit squares and covered with 18 dominoes of size $2 \times 1$. Let $n$ be the minimum possible number of horizontal or vertical grid lines that do not intersect any of the dominoes. Determine the value of $n$.

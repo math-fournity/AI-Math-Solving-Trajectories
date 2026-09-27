@@ -1,0 +1,1 @@
+Let $l$ be a tangent line at the point $T\left(t,\ \frac{t^2}{2}\right)\ (t>0)$ on the curve $C: y=\frac{x^2}{2}.$ A circle $S$ touches the curve $C$ and the $x$ axis.

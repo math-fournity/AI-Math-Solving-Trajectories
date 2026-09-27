@@ -1,0 +1,1 @@
+Determine the number of closed subsets of \(\mathbb{R}\) up to homeomorphism.

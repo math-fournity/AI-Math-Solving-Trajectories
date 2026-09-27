@@ -1,0 +1,1 @@
+A specialized logistics hub manages a collection of $n$ different industrial machines, each assigned a unique positive integer ID. To test system redundancy, the hub must be divided into two separate, non-empty operational zones, $A_1$ and $A_2$, such that every machine belongs to exactly one zone.

@@ -1,0 +1,1 @@
+Let \( N = 2018 \). A permutation \((a_{1}, a_{2}, \ldots, a_{N})\) of the numbers \((1, 2, \ldots, N)\) is called good if \(|a_{i} - i| \leq n\) for every \(i = 1, 2, \ldots, N\). Find the sum of all natural numbers \(n\) for which the number of good permutations is odd.

@@ -1,0 +1,1 @@
+6. a regular 2008-vertical is somehow divided into many triangles with 2005 non-intersecting diagonals. Determine the smallest possible number of non-isosceles triangles that can occur in such a decomposition.

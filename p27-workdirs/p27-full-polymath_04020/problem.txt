@@ -1,0 +1,1 @@
+Let \(a, b, c\) be real numbers such that \((a-b)(b-c)(c-a) \neq 0\). Define the function \[P(n) = \left[(a-b)^n + (b-c)^n + (c-a)^n\right] \left[\frac{1}{(a-b)^n} + \frac{1}{(b-c)^n} + \frac{1}{(c-a)^n}\right].\] For \(n = 2k+1\) where \(k \ge 1\), find \(\max P(n)\).

@@ -1,0 +1,1 @@
+Determine the conditions that a function $g(x)$ must satisfy for there to exist a real-valued function $f(x)$ such that the functional equation \[ f(x+y) = f(x) + f(y) + g(xy) \] holds for all real numbers $x$ and $y$. Provide the necessary and sufficient conditions on $g(x)$.

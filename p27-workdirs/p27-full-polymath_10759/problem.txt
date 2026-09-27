@@ -1,0 +1,1 @@
+In a specialized logistics network, a delivery route is classified as "Optimized" if the sequence of its service station IDs $a_1 a_2 \dots a_d$ never decreases (i.e., $a_i \leq a_{i+1}$ for all $i$ in the sequence). Every single-digit station ID is considered naturally Optimized.

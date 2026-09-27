@@ -1,0 +1,1 @@
+In a bustling logistical hub, there are $n$ shipping bays and $n$ departure docks ($n > 1$). The hub operates on a strict schedule where each bay is assigned to exactly one dock, forming an $n \times n$ grid of possible connection pairs.

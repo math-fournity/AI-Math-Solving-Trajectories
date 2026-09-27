@@ -1,0 +1,1 @@
+Determine whether Besicovitch's theorem, which states that \([\mathbb{Q}(\sqrt[n]{p_1},\ldots,\sqrt[n]{p_k}):\mathbb{Q}]=n^k\) for distinct primes \(p_1,\ldots,p_k\), holds true for even values of \(n\).

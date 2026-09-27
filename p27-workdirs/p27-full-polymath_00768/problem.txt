@@ -1,0 +1,1 @@
+Determine the least possible number of L-shaped trominoes that can be placed on a 10x10 square board such that no additional L-shaped tromino can be placed without overlapping existing trominoes or the edges of the board.

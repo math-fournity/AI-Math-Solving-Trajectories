@@ -1,0 +1,1 @@
+In a specialized logistics hub, high-security cargo is organized into "Shipping Profiles." Each profile consists of a sequence of three specific weight-class ratings $(w_1, w_2, w_3)$, where each rating is a positive whole number.

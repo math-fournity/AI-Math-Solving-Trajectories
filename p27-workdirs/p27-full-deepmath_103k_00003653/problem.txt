@@ -1,0 +1,1 @@
+Determine the smallest positive integer \( m \) such that the symmetric group \( S_n \) can be embedded into the general linear group \( GL_m(F) \), where \( F \) is a field.

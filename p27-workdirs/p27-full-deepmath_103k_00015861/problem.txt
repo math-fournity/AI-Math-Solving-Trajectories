@@ -1,0 +1,1 @@
+Determine whether there exists an idempotent semiring where the natural order relation is not a total order, but the underlying set is totally ordered.

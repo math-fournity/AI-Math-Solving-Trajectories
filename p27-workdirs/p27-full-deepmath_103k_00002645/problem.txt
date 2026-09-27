@@ -1,0 +1,1 @@
+Find the smallest constant \( M \in \mathbb{N} \) such that for all \( n \in \mathbb{N} \), the inequality \( \pi(n) \leq \frac{Mn}{\log n} \) holds, where \( \pi(n) \) is the prime-counting function.

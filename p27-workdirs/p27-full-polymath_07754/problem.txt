@@ -1,0 +1,1 @@
+In the remote Archipelago of Geometry, a triangular marine sanctuary is defined by three research stations: $A$, $B$, and $C$, forming an acute triangle. At the exact center of this sanctuary sits a central monitoring buoy, $O$, which is equidistant from all three stations.

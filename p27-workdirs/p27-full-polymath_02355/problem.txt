@@ -1,0 +1,1 @@
+Daud want to paint some faces of a cube with green paint. At least one face must be painted. How many ways are there for him to paint the cube?

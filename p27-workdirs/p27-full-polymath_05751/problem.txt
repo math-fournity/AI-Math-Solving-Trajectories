@@ -1,0 +1,1 @@
+Let \( A \) be a finite set, and \( A_1, A_2, \ldots, A_n \) be subsets of \( A \) with the following conditions:

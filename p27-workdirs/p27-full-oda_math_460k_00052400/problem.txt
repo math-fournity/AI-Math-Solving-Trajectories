@@ -1,0 +1,1 @@
+We call a set of positive integers *good* if the greatest common divisor of all elements in the set is $1$. Let $a_n$ be the number of *good* subsets of $\{1, 2, \ldots, n\}$. Find all integers $n \ge 2019$ such that for all $0 < k < n$, $k \in \mathbb{Z}$, the inequality $\frac{a_{n+k}}{a_n} < \frac{a_n}{a_{n-k}}$ holds.

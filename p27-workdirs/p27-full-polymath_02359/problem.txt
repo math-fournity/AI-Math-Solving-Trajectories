@@ -1,0 +1,1 @@
+Consider a game involving two players, $A$ and $B$, and two integers $N$ and $S$.

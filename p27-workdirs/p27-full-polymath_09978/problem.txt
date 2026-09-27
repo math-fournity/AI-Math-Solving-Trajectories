@@ -1,0 +1,1 @@
+In the competitive world of data transmission, a specialized server node generates a "System Capacity Score," denoted as $f(n)$. This score is calculated by taking every prime-numbered data frequency less than or equal to a chosen integer bandwidth level $n$ and multiplying them together.

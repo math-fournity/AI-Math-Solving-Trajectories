@@ -1,0 +1,1 @@
+In a specialized laboratory, two rival engineers, Dr. Aris and Dr. Gault, are designing a sequence of 15 automated defensive shields to test against each other in a series of direct energy pulses. Each shield in the 15-slot sequence must be tuned to one of three frequencies: Red, Green, or Blue.

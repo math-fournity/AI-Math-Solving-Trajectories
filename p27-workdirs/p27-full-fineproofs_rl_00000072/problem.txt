@@ -1,0 +1,1 @@
+$N$  oligarchs built a country with  $N$  cities with each one of them owning one city. In addition, each oligarch built some roads such that the maximal amount of roads an oligarch can build between two cities is  $1$  (note that there can be more than  $1$  road going through two cities, but they would belong to different oligarchs).

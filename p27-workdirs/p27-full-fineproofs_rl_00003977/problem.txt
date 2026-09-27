@@ -1,0 +1,1 @@
+Let $n \geqslant 3$ be an integer, and let $x_{1}, x_{2}, \ldots, x_{n}$ be real numbers in the interval $[0,1]$. Let $s=x_{1}+x_{2}+\ldots+x_{n}$, and assume that $s \geqslant 3$. Prove that there exist integers $i$ and $j$ with $1 \leqslant i<j \leqslant n$ such that  $$ 2^{j-i} x_{i} x_{j}>2^{s-3} $$  (Trinidad and Tobago)

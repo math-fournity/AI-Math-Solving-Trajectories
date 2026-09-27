@@ -1,0 +1,1 @@
+Given a decreasing sequence of Borel subsets $(A_n)_{n=1}^\infty$ of $[0,1]$ such that $\bigcap_{n=1}^\infty A_n = \emptyset$, and a positive number $\epsilon > 0$, determine whether there exists an open set $U \subseteq [0,1]$ such that:

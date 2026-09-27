@@ -1,0 +1,1 @@
+What is the formula for the field discriminant of \(\mathbb{Q}(\zeta)\), where \(\zeta\) is a primitive \(n^{\text{th}}\) root of unity?

@@ -1,0 +1,1 @@
+A high-security data vault contains 56 unique encrypted drive sectors. A cybersecurity team is testing the vulnerability of 15 different access keys. Each access key provides entry to a specific subset of these 56 sectors.

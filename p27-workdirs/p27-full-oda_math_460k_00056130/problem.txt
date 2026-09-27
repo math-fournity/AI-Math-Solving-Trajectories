@@ -1,0 +1,1 @@
+Find as much as possible (e.g., lower bounds and upper bounds) on the function \( f(n) \), where \( f(n) \) is the smallest number such that, given \( f(n) \) points in the plane in general position, there must be some \( n \) of them whose vertices form a convex \( n \)-gon.

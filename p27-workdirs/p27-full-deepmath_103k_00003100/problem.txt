@@ -1,0 +1,1 @@
+Consider a set $A$ of points on the two-dimensional sphere $S^2$ such that for every great circle $c(\theta, \phi)$, the intersection $A \cap c(\theta, \phi)$ is countable. Can the set $A$ have nonzero Lebesgue measure on the sphere?

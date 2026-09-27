@@ -1,0 +1,1 @@
+In a specialized logistics simulation, two project managers, Alice and Bob, are tasked with loading cargo into a shared transport vessel. For each simulation, two parameters are defined: a capacity limit $n$ and a target weight $m$. The capacity limit $n$ must be an integer of at least 4, and the target weight $m$ is a positive integer no greater than $2n + 1$.

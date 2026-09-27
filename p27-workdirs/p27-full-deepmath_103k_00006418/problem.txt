@@ -1,0 +1,1 @@
+Determine whether there exists an infinite Hausdorff space \((X, \tau)\) such that for every proper equivalence relation \(\vartheta\) on \(X\), the space \(X\) is not homeomorphic to the quotient space \(X/\vartheta\).

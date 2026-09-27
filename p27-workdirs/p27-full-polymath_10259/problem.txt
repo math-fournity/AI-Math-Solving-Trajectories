@@ -1,0 +1,1 @@
+In the competitive world of skyscraper architecture, a developer is testing a structural stability index, $k$, defined by the formula $k = \frac{x^2 - 7}{x^2 - y^2}$. In this model, $x$ and $y$ represent specific integer-based load-bearing coordinates. For the model to be valid, $k$ must result in a positive integer.

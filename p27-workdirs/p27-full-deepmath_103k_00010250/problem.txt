@@ -1,0 +1,1 @@
+Consider a continuous map \( f: B \to \mathbb{R}^n \) where \( B \) is the \( n \)-ball and \( B \subset f(B) \). Does such a map \( f \) necessarily have a fixed point? Justify your answer.

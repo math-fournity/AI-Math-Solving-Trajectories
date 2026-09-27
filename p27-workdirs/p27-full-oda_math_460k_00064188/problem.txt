@@ -1,0 +1,1 @@
+Find the largest positive integer \( n \) such that one can choose 2007 distinct integers from the interval \([2 \cdot 10^{n-1}, 10^n)\) with the property that for any \( i, j \) with \( 1 \leq i < j \leq n \), there is at least one selected number \( a_1a_2 \ldots a_n \) (written in decimal system) for which \( a_j \geq a_i + 2 \).

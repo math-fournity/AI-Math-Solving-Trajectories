@@ -1,0 +1,1 @@
+The equatorial algebra is defined as the real numbers equipped with the three binary operations \(\bigsqcup, \sharp, b\) such that for all \(x, y \in \mathbb{R}\), we have

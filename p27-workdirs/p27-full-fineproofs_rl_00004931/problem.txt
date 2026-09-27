@@ -1,0 +1,1 @@
+There are  $30$  students in a class. In an examination, their results were all different from each other. It is given that everyone has the same number of friends. Find the maximum number of students such that each one of them has a better result than the majority of his friends.

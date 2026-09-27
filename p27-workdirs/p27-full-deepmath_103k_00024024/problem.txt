@@ -1,0 +1,1 @@
+Given a 3-fold covering $X \to Y$ of a manifold $Y$ ramified over $m$ disjoint submanifolds, and knowing that the Euler characteristic of $Y$ is $\chi(Y) = 1$, determine the Euler characteristic of $X$. Express your answer as a single number.

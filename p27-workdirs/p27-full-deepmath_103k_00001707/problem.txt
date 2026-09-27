@@ -1,0 +1,1 @@
+Let $p, \ell_1, \ell_2$ be distinct prime numbers, and $x_1, x_2 \in \overline{\mathbf{Q}}^\times$. If \( \frac{\log_p x_1}{\log_p \ell_1} = \frac{\log_p x_2}{\log_p \ell_2} \), does it follow that both ratios \( \frac{\log_p x_i}{\log_p \ell_i} \) must be in \( \mathbf{Q} \)?

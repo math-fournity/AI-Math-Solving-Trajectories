@@ -1,0 +1,1 @@
+Problem 10.8. Two bandits stole 300 gold coins. They decided to divide them as follows: the first bandit puts some coins (possibly all) into a bag, and the second bandit chooses who gets this bag; then this action is repeated several times. The division ends when

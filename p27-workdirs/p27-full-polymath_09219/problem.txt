@@ -1,0 +1,1 @@
+A specialized artificial intelligence, "System 4N," processes data packets through a security protocol represented by a strictly increasing sequence of positive integer codes. Let $f(n)$ denote the encrypted ID assigned to the $n$-th data packet. The protocol is governed by two strict operational constraints:

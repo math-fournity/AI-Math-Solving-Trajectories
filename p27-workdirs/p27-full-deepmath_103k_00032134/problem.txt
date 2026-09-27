@@ -1,0 +1,1 @@
+Find the smallest constant \( C \) such that for all non-negative reals \( x_1, x_2, \ldots, x_n \) where \( n \geq 2 \):

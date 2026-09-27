@@ -1,0 +1,1 @@
+Is it possible to arrange six pairwise disjoint opaque parallelepipeds in space such that there exists a point outside of them from which none of their vertices are visible?

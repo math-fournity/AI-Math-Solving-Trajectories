@@ -1,0 +1,1 @@
+In each cell of a \(5 \times 5\) grid, one of the numbers \(-1, 0\), or \(1\) was written. It turned out that in each \(2 \times 2\) square composed of the cells of the grid, the sum of certain three out of the four written numbers is equal to zero. What is the largest possible sum of all the numbers written in the cells of the grid? Justify your answer.

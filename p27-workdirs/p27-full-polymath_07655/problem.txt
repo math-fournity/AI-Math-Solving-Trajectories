@@ -1,0 +1,1 @@
+In a specialized logistics hub, three cargo containers are assigned weights of $a, b$, and $c$ units, where $a, b$, and $c$ are positive integers. To maintain organizational efficiency, the containers are always tracked in non-decreasing order of weight, such that $a \le b \le c$.

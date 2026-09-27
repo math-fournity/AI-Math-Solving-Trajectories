@@ -1,0 +1,1 @@
+Lucy starts by writing \( s \) integer-valued 2022-tuples on a blackboard. After doing that, she can take any two (not necessarily distinct) tuples \(\mathbf{v}=\left(v_{1}, \ldots, v_{2022}\right)\) and \(\mathbf{w}=\left(w_{1}, \ldots, w_{2022}\right)\) that she has already written, and apply one of the following operations to obtain a new tuple:

@@ -1,0 +1,1 @@
+7. [12] There are 100 piles, each with 400 stones. In one move, Petya selects two piles, removes one stone from each, and earns as many points as the absolute difference in the number of stones in these two piles. Petya must remove all the stones. What is the maximum total number of points he can earn?

@@ -1,0 +1,1 @@
+In a remote digital archives facility, 21 specialized data-recovery bots are assigned to scan a corrupted mainframe. The diagnostic process consists of exactly 15 sequential security gates. For each gate, a bot either successfully bypasses it (a "correct" validation) or fails it.

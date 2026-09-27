@@ -1,0 +1,1 @@
+A circular high-security research facility features 100 laboratory suites arranged in a perfect ring, numbered sequentially from 1 to 100. Each suite is connected to its two immediate neighbors by a pressurized airlock door, forming exactly 100 corridors between adjacent suites (Suite 100 also connects back to Suite 1).

@@ -1,0 +1,1 @@
+Let $(\Omega,F,P)$ be a probability space. Suppose $f\colon \mathbb R\to\mathbb R$ is a function such that $f(X)$ is measurable for every real-valued random variable $X$. Is $f(X)$ necessarily $\sigma(X)$-measurable? Provide a justification for your answer.

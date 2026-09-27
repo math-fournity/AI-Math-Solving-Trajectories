@@ -1,0 +1,1 @@
+In a plane, there are 109 points, no three of which lie on the same line. Each point is colored in one of seven possible colors, and there are at least eight points of each color. A triangle is called monochromatic if all three of its vertices have the same color. Let $S$ be the minimum possible number of monochromatic scalene triangles. Determine the value of $S$.

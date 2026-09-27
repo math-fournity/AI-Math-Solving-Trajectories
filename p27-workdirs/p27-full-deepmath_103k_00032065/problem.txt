@@ -1,0 +1,1 @@
+Find the smallest number \( n \) such that for any set of \( n \) lattice points in 10-dimensional space, it is possible to perform a finite number of jumps so that some two points coincide.

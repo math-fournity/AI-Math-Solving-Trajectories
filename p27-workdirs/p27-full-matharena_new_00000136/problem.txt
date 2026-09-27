@@ -1,0 +1,1 @@
+A proper divisor of a positive integer $N$ is a positive divisor of $N$ other than $N$ itself.

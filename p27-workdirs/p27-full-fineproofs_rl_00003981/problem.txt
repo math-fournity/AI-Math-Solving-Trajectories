@@ -1,0 +1,1 @@
+Let $n \geqslant 6$ be an integer. In the plane, we have arranged $n$ pairwise disjoint disks $D_{1}, D_{2}, \ldots, D_{n}$ with radii $r_{1} \geqslant r_{2} \geqslant \ldots \geqslant r_{n}$. For every integer $i \leqslant n$, consider a point $P_{i}$ inside the disk $D_{i}$. Finally, let $A$ be any point in the plane. Prove that

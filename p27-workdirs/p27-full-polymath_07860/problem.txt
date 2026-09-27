@@ -1,0 +1,1 @@
+In a remote territory, three supply depots—Alpha ($A$), Bravo ($B$), and Charlie ($C$)—form a triangular logistics network. Aerial surveys determine that the direct flight path from Alpha to Bravo is exactly 10 kilometers, while the path from Alpha to Charlie is 11 kilometers.

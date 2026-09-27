@@ -1,0 +1,1 @@
+Determine a tight asymptotic upper bound for the expected maximum load \( \mathbb{E}(X_n) \) when \( n \) balls are thrown into \( n \) bins. Each ball is placed in the least full of two bins chosen uniformly and independently at random, with the bins selected with pairwise independence.

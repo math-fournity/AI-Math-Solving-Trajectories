@@ -1,0 +1,1 @@
+Let $(R, \mathfrak{m})$ be a local ring of dimension $d > 0$, and let $M$ be a finitely generated Cohen-Macaulay $R$-module. If $P$ is a minimal prime ideal of $M$, is $P$ also a minimal prime of $R$? In other words, if $\dim M_P = 0$, does it follow that $\dim R_P = 0$?

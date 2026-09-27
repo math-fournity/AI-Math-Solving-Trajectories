@@ -1,0 +1,1 @@
+In a remote industrial park, a rectangular plot of land labeled $ABCD$ occupies exactly $30$ acres. At each corner of the plot, a circular storage silo has been constructed. The silo at corner $A$ has a radius of $2$ miles; the silo at corner $B$ has a radius of $3$ miles; the silo at corner $C$ has a radius of $5$ miles; and the silo at corner $D$ has a radius of $4$ miles.

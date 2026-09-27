@@ -1,0 +1,1 @@
+Consider a convex polyhedron floating in the sea. Is it possible for 90% of its volume to be submerged below the water level while more than half of its surface area is above the water level?

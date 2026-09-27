@@ -1,0 +1,1 @@
+Find all $n > 1$, $n \in \mathbb{N}$ such that for all $a \in \mathbb{N}$, if $a^n - 1$ is divisible by $n$, then $a^n - 1$ is also divisible by $n^2$.

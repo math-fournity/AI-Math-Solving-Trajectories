@@ -1,0 +1,1 @@
+Let \( B = \{ z \in \mathbb{C} \mid |z| \leq 1 \} \). Find all the continuous one-to-one mappings \( f \) of the disk \( B \) onto itself satisfying the condition \( f(z^2) = (f(z))^2 \) for all \( z \in B \).

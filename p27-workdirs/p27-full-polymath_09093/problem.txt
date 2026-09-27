@@ -1,0 +1,1 @@
+In the futuristic city of Oakhaven, a long skyscraper is being constructed with a structural facade consisting of a grid of windows arranged in 2 rows and 2001 columns. Each window must be fitted with either a Blue-tinted pane or a Green-tinted pane.

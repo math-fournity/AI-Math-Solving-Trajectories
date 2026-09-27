@@ -1,0 +1,1 @@
+Let  $ABC$  be a triangle with circumcircle  $w$ . Let  $D$  be the midpoint of arc  $BC$  that contains  $A$ . Define  $E$  and  $F$  similarly. Let the incircle of  $ABC$  touches  $BC,CA,AB$  at  $K,L,M$  respectively. Prove that  $DK,EL,FM$  are concurrent.

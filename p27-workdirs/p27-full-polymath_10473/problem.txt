@@ -1,0 +1,1 @@
+In a remote research facility, a high-precision robotic arm is undergoing a stability stress test that lasts exactly 40 minutes. The arm begins at a centered "zero" calibration point on a linear sliding track.

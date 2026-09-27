@@ -1,0 +1,1 @@
+A specialized logistics company, "Divisor Solutions," manages exactly $k$ storage units, numbered $d_1, d_2, \dots, d_k$. These unit numbers correspond precisely to the full set of positive integer divisors of their total inventory capacity, $n$, arranged in strictly increasing order (where $1 = d_1 < d_2 < \dots < d_k = n$).

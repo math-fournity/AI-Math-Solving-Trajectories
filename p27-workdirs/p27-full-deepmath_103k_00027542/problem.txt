@@ -1,0 +1,1 @@
+Let $A$ be a set in a metric space with no limit points in $A$ (i.e., $A$ and $A'$ are disjoint). Determine whether it is possible to find two subsets $B$ and $C$ of $A$ such that $B \cap C = \emptyset$ and $B' = C' = A'$. Provide a justification for your answer.

@@ -1,0 +1,1 @@
+John starts with $1$ dollar on the morning of day $1$. Each day, he performs a transaction where he loses a positive integer $x$ dollars and then wins $3x$ dollars $x$ days later in the morning. What is the maximum amount of money John can have at the end of the $10$th day?

@@ -1,0 +1,1 @@
+In a non-isosceles triangle \(ABC\), the common tangent of the Nine Points Circle and the inscribed circle is parallel to the Euler line. If the angles of the triangle form an arithmetic progression, find the value of \(\cos A + \cos B + \cos C\).

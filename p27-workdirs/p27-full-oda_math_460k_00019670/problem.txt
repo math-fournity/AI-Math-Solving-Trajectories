@@ -1,0 +1,1 @@
+Assume the continuum hypothesis \( c = \aleph_1 \). Construct a family \( \{f_\beta : 0 \leq \beta < \omega_1\} \) of \( \aleph_1 \) distinct analytic functions on \( \mathbb{C} \) such that for each \( z \in \mathbb{C} \), the set of values \( \{f_\beta(z)\} \) is at most countable.

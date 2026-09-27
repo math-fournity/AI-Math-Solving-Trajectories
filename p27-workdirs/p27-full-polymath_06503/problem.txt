@@ -1,0 +1,1 @@
+In a remote digital frontier, a global network is composed of $n = 500$ distinct data servers. Every single pair of unique servers is linked by a dedicated fiber-optic cable that allows data to flow in both directions. There are $k$ different telecommunications conglomerates, and each cable in the entire network is owned and operated by exactly one of these $k$ companies.

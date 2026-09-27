@@ -1,0 +1,1 @@
+In a remote industrial warehouse, there are 33 specialized storage canisters, each labeled with a unique identification integer from 1 to 33. The facility operates under a strict chemical stabilization protocol: a technician may select any two canisters containing chemicals with identification values $a$ and $b$ only if the product of their values, $ab$, is a perfect square.

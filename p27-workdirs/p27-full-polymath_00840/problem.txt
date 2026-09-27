@@ -1,0 +1,1 @@
+Find the sum $a + b$ for all pairs of odd integers $(a, b)$ such that there exists a natural number $c$ for which the number $\frac{c^n + 1}{2^n a + b}$ is an integer for all natural numbers $n$.

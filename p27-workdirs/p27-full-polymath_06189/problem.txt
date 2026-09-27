@@ -1,0 +1,1 @@
+In the distant star system of Prime-2017, a grand architectural project is underway to construct an infinite series of "Logic Grids." For any positive integer $n$, a Logic Grid is an $n \times n$ array of crystals. Each crystal $a_{ij}$ is assigned a resonance frequency chosen uniformly at random from the set of integers $\{0, 1, \ldots, 2016\}$.

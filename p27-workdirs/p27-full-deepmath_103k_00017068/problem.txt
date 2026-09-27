@@ -1,0 +1,1 @@
+Determine whether there exists a continuous function \( f: \mathbb{R} \to \mathbb{R} \) such that for every algebraic number \( q \), \( f(q) \) is a rational number.

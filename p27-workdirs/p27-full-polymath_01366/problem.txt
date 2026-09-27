@@ -1,0 +1,1 @@
+Write $n$ natural numbers from $1$ to $n$ in ascending order from left to right. $A$ and $B$ play the following game: On each turn, a player deletes two adjacent numbers and replaces them with their sum or product. The game continues until only one number remains. If the final number is odd, $A$ wins; otherwise, $B$ wins. $A$ plays first.

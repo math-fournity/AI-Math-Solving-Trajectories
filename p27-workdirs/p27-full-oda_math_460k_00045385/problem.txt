@@ -1,0 +1,1 @@
+Let $S$ and $T$ be subsets of $\mathbb{F}_p^d$, with $p$ a prime number and $d\geq 2$. Suppose that $|S|+|T|\leq p+1$. Then there exists $\lambda \in \mathbb{F}_p^{\times}$ such that $\lambda S \subset T$ or $\lambda S \subset S+T$.

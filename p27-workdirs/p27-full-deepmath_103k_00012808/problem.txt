@@ -1,0 +1,1 @@
+Compute the fundamental group \( \pi_1(X) \) of the space \( X \) obtained from the 3-sphere \( S^3 \) by identifying antipodal points on the equator \( S^2 \).

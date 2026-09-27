@@ -1,0 +1,1 @@
+Let $G$ be a subcubic graph with vertices of degree 1 or 3. Suppose $G$ has an edge coloring $\varphi$ using colors from $\{1,2,3,4,5\}$ such that:

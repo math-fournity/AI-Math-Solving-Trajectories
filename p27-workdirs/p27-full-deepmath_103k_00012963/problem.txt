@@ -1,0 +1,1 @@
+Determine if there is a closed form for the integral \( I = \int_{-\infty}^{\infty} e^{-e^x-e^{-x}+x}~ dx \).

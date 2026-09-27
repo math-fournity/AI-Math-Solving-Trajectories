@@ -1,0 +1,1 @@
+Find all integer pairs $(m,n)$ with $m, n \in \{1, 2, 3, \dots, 20\}$ such that there exist two monic polynomials $P(x)$ and $Q(x)$ with $\deg P = m$ and $\deg Q = n$, satisfying $P(Q(t)) \neq Q(P(t))$ for any real number $t$. Let $S$ be the set of all such pairs $(m,n)$. Compute the sum of all $m+n$ for $(m,n) \in S$.

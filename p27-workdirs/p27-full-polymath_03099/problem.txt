@@ -1,0 +1,1 @@
+Given a positive integer $n \ge 2$, find the largest $\lambda$ such that: if there are $n$ bags, each containing some balls whose weights are integer powers of 2 grams, and the total weight of the balls in each bag is the same, then there must be at least $\lambda$ balls of some specific weight across all bags.

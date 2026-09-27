@@ -1,0 +1,1 @@
+Let $\nu$ be an integer greater than or equal to $1$. Calculate the value of

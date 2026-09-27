@@ -1,0 +1,1 @@
+How many 4-digit numbers \(ABCD\) are there with the property that \(|A-B| = |B-C| = |C-D|\)? Note that the first digit \(A\) of a four-digit number cannot be zero.

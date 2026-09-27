@@ -1,0 +1,1 @@
+In a massive industrial complex, a specialized chemical reactor operates using two distinct filtration protocols to neutralize waste. The efficiency of these protocols is determined by an even-numbered power cycle, $n$. For the current high-capacity run, the power cycle is set to $n = 120$.

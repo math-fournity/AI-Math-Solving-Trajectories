@@ -1,0 +1,1 @@
+Let \( A_1, A_2, \ldots, A_k \in M_n(\mathbb{R}) \) be invertible matrices such that for any different \( i, j \), \( A_i + A_j \) is singular. Find the maximum value of \( k \).

@@ -1,0 +1,1 @@
+Determine if there exists a constant $D > 0$ such that for the function \( g(x) = \frac{x}{(x+1)(x+2) - 2e^{-3x}} \), the inequality \( |g^{(n)}(x)| \le D n! \frac{1}{x^{n+1}} \) holds for all non-negative integers \( n \) and all \( x > 0 \).

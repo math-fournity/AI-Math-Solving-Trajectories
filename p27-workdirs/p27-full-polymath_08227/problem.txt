@@ -1,0 +1,1 @@
+In a bustling coastal region, there is a network of $n$ unique lighthouse stations. The maritime communication protocol dictates that for every possible pair of stations, at least one station must have successfully transmitted a signal to the other.

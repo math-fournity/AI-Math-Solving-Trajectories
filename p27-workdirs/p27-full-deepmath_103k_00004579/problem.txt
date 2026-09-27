@@ -1,0 +1,1 @@
+Let $(R, \frak m)$ be a Cohen-Macaulay local ring. If there exists a maximal Cohen-Macaulay $R$-module $M$ with finite injective dimension, does $R$ necessarily have a canonical module?

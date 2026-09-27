@@ -1,0 +1,1 @@
+A set of 4031 lines is drawn on a plane such that no two lines are parallel or perpendicular, and no three lines meet at a point. Determine the maximum number of acute-angled triangles that can be formed by these lines.

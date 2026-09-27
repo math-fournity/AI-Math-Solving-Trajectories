@@ -1,0 +1,1 @@
+What is the maximum volume of a central hyperplane section of the unit cube \([-\frac{1}{2}, \frac{1}{2}]^d\) in \(\mathbb{R}^d\), and for which hyperplanes is this maximum attained?

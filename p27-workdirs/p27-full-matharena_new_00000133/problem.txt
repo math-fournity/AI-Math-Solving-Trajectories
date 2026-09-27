@@ -1,0 +1,1 @@
+A line in the plane is called \\emph{sunny} if it is not parallel to any of the $x$-axis, the $y$-axis, or the line $x+y=0$.

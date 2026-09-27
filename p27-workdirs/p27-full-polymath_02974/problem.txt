@@ -1,0 +1,1 @@
+Let \( n \) be a positive integer. Beto writes a list of \( n \) non-negative integers on the board. Then he performs a succession of moves (two steps) of the following type:

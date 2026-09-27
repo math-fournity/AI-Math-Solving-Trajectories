@@ -1,0 +1,1 @@
+In a specialized chemistry lab, three volatile compounds are stored in quantities $a$, $b$, and $c$ (where $a, b, c \ge 0$ and at least two are non-zero). A safety inspector is calculating the "Stability Index" of the mixture.

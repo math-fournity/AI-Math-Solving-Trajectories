@@ -1,0 +1,1 @@
+Let \( n > 2 \) be an integer. Let \( f(n) \) be the smallest integer such that for any connected simple graph \( G \) with \( n \) vertices and \( f(n) \) edges, there always exists a cycle \( C \) in \( G \) such that if all the edges in \( C \) are removed, the graph remains connected. Compute the sum \( \sum_{n=4}^{100} f(n) \).

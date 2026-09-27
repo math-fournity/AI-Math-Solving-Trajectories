@@ -1,0 +1,1 @@
+Consider a symmetric positive definite matrix $X \in \mathbb{R}^{n \times n}$. Suppose there exists a matrix $Y \in \mathbb{R}^{n \times n}$ such that $X - Y^TXY$ is also symmetric positive definite. Prove that the spectral radius of $Y$, denoted as $\max{ |\lambda_i(Y)| }$, is less than 1, where $\lambda_i(Y)$ are the eigenvalues of $Y$.

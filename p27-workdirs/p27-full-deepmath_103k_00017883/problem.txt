@@ -1,0 +1,1 @@
+Determine if there exists any integer \( k \geq 4 \) such that the polynomial \( P_k(n) = \sum_{m=1}^n m^k \) is a perfect square of a polynomial in \( n \).

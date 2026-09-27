@@ -1,0 +1,1 @@
+In a specialized logistics hub designed as a perfect circle, a series of high-speed transit cables are installed between various docking stations located on the perimeter. For this specific installation, every docking station used must be a terminal for at least $d=20$ distinct transit cables.

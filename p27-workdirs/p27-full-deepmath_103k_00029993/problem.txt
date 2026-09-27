@@ -1,0 +1,1 @@
+Consider an irreducible, aperiodic, recurrent positive Markov chain $M_n$ taking values in $\mathbb{N}$. Is there such a chain for which, given some initial state $k_0$, the expectation $E_{k_0} M_n$ does not converge to $E_{X\sim \mu} X=\sum_{k\in\mathbb{N}}k\mu_k$, where $\mu$ is the unique invariant distribution and $E_{X\sim \mu} X$ is finite?

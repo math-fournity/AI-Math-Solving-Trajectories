@@ -1,0 +1,1 @@
+Is the function \( f: \mathbb{N} \rightarrow \mathbb{N} \) well-defined, where \( f(n) \) is the smallest \( m \in \mathbb{N} \) such that the decimal expansion of \( 2^m \) contains \( n \) consecutive zeros?

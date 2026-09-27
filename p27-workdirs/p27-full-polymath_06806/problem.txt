@@ -1,0 +1,1 @@
+A specialized logistics company manages two distinct fleets of delivery drones. Fleet Alpha consists of 2000 drones, each assigned a unique integer frequency for its communication channel. Fleet Beta consists of 2016 drones, each also assigned a unique integer frequency.

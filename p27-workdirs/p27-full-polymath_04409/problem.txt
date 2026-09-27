@@ -1,0 +1,1 @@
+There exist complex numbers $z_1,z_2,\dots,z_{10}$ which satisfy$$|z_ki^k+ z_{k+1}i^{k+1}| = |z_{k+1}i^k+ z_ki^{k+1}|$$for all integers $1 \leq k \leq 9$, where $i = \sqrt{-1}$. If $|z_1|=9$, $|z_2|=29$, and for all integers $3 \leq n \leq 10$, $|z_n|=|z_{n-1} + z_{n-2}|$, find the minimum value of $|z_1|+|z_2|+\cdots+|z_{10}|$.

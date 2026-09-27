@@ -1,0 +1,1 @@
+A robot starts in the bottom left corner of a \(4 \times 4\) grid of squares. How many ways can it travel to each square exactly once and then return to its start if it is only allowed to move to an adjacent (not diagonal) square at each step?

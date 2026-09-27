@@ -1,0 +1,1 @@
+Return your final response within \boxed{}. A finite set  $S$  of points in the coordinate plane is called *overdetermined* if  $|S|\ge 2$  and there exists a nonzero polynomial  $P(t)$ , with real coefficients and of degree at most  $|S|-2$ , satisfying  $P(x)=y$  for every point  $(x,y)\in S$ .

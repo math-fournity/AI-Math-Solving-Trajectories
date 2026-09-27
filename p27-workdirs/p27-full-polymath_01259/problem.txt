@@ -1,0 +1,1 @@
+2. Given an integer $n \geqslant 3$. Find the smallest positive integer $k$, such that there exists a $k$-element set $A$ and $n$ pairwise distinct real numbers $x_{1}, x_{2}, \cdots, x_{n}$, satisfying $x_{1}+x_{2}, x_{2}+x_{3}, \cdots$, $x_{n-1}+x_{n}, x_{n}+x_{1}$ all belong to $A$. (Xiong Bin provided)

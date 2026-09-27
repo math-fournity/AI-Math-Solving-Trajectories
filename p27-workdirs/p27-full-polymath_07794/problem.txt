@@ -1,0 +1,1 @@
+In a specialized cyber-security facility, two digital encryption keys, $x_1$ and $x_2$, are generated. Both keys are represented by positive integers strictly less than $10,000$.

@@ -1,0 +1,1 @@
+Trevor and Edward play a game where they take turns adding or removing beans from a pile. On each turn, a player must either add or remove the largest perfect square number of beans $s$ such that $s \le n$, where $n$ is the current number of beans in the heap. The player who empties the pile wins (by moving to 0).

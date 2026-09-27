@@ -1,0 +1,1 @@
+For a permutation of $(1,2,\cdots,2018)$, a 'change' is defined as arbitrarily grouping consecutive numbers of the permutation and reversing each group. What is the smallest number $N$ such that any permutation $\sigma$ can be transformed into $(1,2,\cdots,2018)$ by performing $N$ or fewer changes?

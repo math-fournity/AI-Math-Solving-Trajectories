@@ -1,0 +1,1 @@
+Determine the values of $z$ for which the generating function $\sum_{n=1}^{\infty} g_{n} z^{n}$, where $g_{n}$ is the number of isomorphism classes of groups of order $n$, converges.

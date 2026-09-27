@@ -1,0 +1,1 @@
+How many real roots does the equation $(x-1)(x-2)(x-3)\cdots(x-k) = -1$ have, where $k$ is an even integer greater than or equal to 2?

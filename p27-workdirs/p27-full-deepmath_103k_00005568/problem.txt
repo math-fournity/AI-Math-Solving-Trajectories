@@ -1,0 +1,1 @@
+Does there exist a variety of groups \(\mathfrak{V}\) such that the relatively \(\mathfrak{V}\)-free group of rank 2 is finite, but the relatively \(\mathfrak{V}\)-free group of rank 3 is infinite?

@@ -1,0 +1,1 @@
+A network security firm is designing a series of $n \times n$ square server grids, where $n$ is a positive integer. Each cell in the grid can host at most one security probe. A grid configuration is classified as "Optimally Encrypted" if it satisfies the following three conditions:

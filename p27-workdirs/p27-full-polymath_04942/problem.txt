@@ -1,0 +1,1 @@
+There are 100 mutually hostile kingdoms on Mars. For the sake of peace, it was decided to establish several alliances, each of which consists of at most 50 kingdoms, such that every two kingdoms meet in at least one alliance. What is the smallest possible number of alliances?

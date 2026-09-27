@@ -1,0 +1,1 @@
+$p$ is a prime. Let $K_p$ be the set of all polynomials with coefficients from the set $\{0,1,\dots ,p-1\}$ and degree less than $p$. Assume that for all pairs of polynomials $P,Q\in K_p$ such that $P(Q(n))\equiv n\pmod p$ for all integers $n$, the degrees of $P$ and $Q$ are equal.

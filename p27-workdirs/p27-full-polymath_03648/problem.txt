@@ -1,0 +1,1 @@
+For every positive integer $n$, let $F_n$ be the number of permutations $(a_1, a_2, \ldots, a_n)$ of the set $\{1, 2, \ldots, n\}$ such that $2(a_1 + a_2 + \cdots + a_k)$ is divisible by $k$ for each $k = 1, 2, \ldots, n$. Find the value of $F_{10}$.

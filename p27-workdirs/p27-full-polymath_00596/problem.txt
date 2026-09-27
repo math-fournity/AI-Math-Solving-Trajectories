@@ -1,0 +1,1 @@
+Five. (15 points) Let $\left\{a_{n}\right\}$ be an integer sequence, and it satisfies: for any $n\left(n \in \mathbf{N}_{+}\right)$, we have

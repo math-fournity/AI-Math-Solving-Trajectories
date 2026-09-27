@@ -1,0 +1,1 @@
+In a remote sector of the ocean, a maritime surveillance network is established with four sensor buoys located at points $A, B, C$, and $D$, all positioned along a single circular patrol perimeter. Two main undersea communication cables connect buoy $A$ to $C$ and buoy $B$ to $D$, intersecting at a central relay hub $E$.

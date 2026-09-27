@@ -1,0 +1,1 @@
+Let $T^2$ be a compact smooth surface and let $p \in T^2$. Suppose that $T^2$ admits a symmetric $(0,2)$-tensor which is a flat Riemannian metric restricted to $T^2 - \{p\}$. Determine if it is true that the Euler characteristic $\chi(T^2) = 0$. Provide a justification for your answer.

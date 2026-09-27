@@ -1,0 +1,1 @@
+A class has $25$ students. The teacher wants to stock $N$ candies, hold the Olympics and give away all $N$ candies for success in it (those who solve equally tasks should get equally, those who solve less  get less, including, possibly, zero candies). At what smallest $N$ this will be possible, regardless of the number of tasks on Olympiad and the student successes?

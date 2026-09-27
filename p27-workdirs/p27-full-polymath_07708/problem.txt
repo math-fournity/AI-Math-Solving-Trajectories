@@ -1,0 +1,1 @@
+In the digital city of Hex-16, a master programmer is designing automated security protocols for a network of 16 interconnected nodes, indexed as $a \in \{0, 1, 2, \dots, 15\}$. The network operates under modulo 16 arithmetic, meaning any connection between two nodes $a$ and $b$ results in a destination node $a+b \pmod{16}$.

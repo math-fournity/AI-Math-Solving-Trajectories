@@ -1,0 +1,1 @@
+The vertices of a convex  $2550$ -gon are colored black and white as follows: black, white, two black, two white, three black, three white, ..., 50 black, 50 white. Dania divides the polygon into quadrilaterals with diagonals that have no common points. Prove that there exists a quadrilateral among these, in which two adjacent vertices are black and the other two are white.

@@ -1,0 +1,1 @@
+Let $X_1, X_2, \ldots$ be an i.i.d. sequence of random variables with a distribution that has a continuous density function on $[0,1]$. Determine whether the following limit holds almost surely:

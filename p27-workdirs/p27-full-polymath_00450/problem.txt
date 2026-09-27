@@ -1,0 +1,1 @@
+How many ways can we select subsets \( A_1, A_2, \ldots, A_{n-2} \) of the set \( S = \{1, 2, \ldots, n\} \) such that for \( i < j \), \( |A_i| < |A_j| \) and \( A_i \not\subseteq A_j \)?

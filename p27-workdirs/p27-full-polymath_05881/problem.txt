@@ -1,0 +1,1 @@
+Find the maximum value of \( k \) such that the inequality

@@ -1,0 +1,1 @@
+Consider the sequence defined by \(a_n=\sum_{k=1}^n\binom{n}{k}\frac{k}{n+k}\). Let \(s(n)\) be the sum of the binary digits of \(n\). Determine if the 2-adic valuation of the denominator of \(a_n\) is equal to \(s(n)\).

@@ -1,0 +1,1 @@
+Let $G$ be an infinite, at most countable discrete group acting freely on a standard probability measure space $X$ in a measure-preserving way. Given a natural number $N_0$ and a positive real number $\varepsilon_0$, does there exist an $(\varepsilon, N)$-fundamentalish domain with $\varepsilon < \varepsilon_0$ and $N > N_0$?

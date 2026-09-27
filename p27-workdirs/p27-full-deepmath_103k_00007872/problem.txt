@@ -1,0 +1,1 @@
+Find the limit: \[ \lim_{n \to \infty} \frac{\gamma_{n-1}}{\gamma_{n}} \] where \( \gamma_{n} \) is the \( n \)-th Stieltjes Constant.

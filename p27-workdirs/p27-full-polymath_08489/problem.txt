@@ -1,0 +1,1 @@
+A specialized telecommunications company is designing a regional network involving $n$ distinct cities, where $n \geq 4$. The engineers plan to establish direct fiber-optic links between every possible pair of cities in the region.

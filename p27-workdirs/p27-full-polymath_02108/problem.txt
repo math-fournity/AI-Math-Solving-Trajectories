@@ -1,0 +1,1 @@
+Let $ABCD$ be a parallelogram with $AB>BC$ and $\angle DAB$ less than $\angle ABC$. The perpendicular bisectors of sides $AB$ and $BC$ intersect at the point $M$ lying on the extension of $AD$. If $\angle MCD=15^{\circ}$, find the measure of $\angle ABC$

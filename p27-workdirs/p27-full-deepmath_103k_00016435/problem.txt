@@ -1,0 +1,1 @@
+Given an $n \times n$ matrix $C$, where $\operatorname{tr}(C^{2m-1}) = 0$ for all $m \in \mathbb{N}$, and all entries in $C$ are natural numbers with their sum being less than $2n$, evaluate the infinite sum:

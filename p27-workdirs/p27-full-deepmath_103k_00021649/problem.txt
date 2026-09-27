@@ -1,0 +1,1 @@
+Find all functions \( g: \mathbb{N}_0 \to \mathbb{N}_0 \) such that for all non-negative integers \( m \) and \( n \) with \( m \geq n \), the following equation holds: \[ g(g(n)) + g(m-n) = g(mg(n) - m). \]

@@ -1,0 +1,1 @@
+What is the smallest known constant \(c\) such that for any integer \(n \geq 2\), there are at least \(\frac{n}{\log_2{n}}\) primes in the interval \([n, cn]\]?

@@ -1,0 +1,1 @@
+Two players in turns color the sides of an $n$-gon. The first player colors any side that has $0$ or $2$ common vertices with already colored sides. The second player colors any side that has exactly $1$ common vertex with already colored sides. The player who cannot move loses.

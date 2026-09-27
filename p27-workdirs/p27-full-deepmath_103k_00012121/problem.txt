@@ -1,0 +1,1 @@
+Determine a bound for the number of generators of prime ideals in the polynomial ring $K[x_1,x_2,...,x_n]$. For instance, consider the case of $K[x,y]$. It is known that maximal ideals of $K[x_1,x_2,...,x_n]$ have $n$ generators.

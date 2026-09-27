@@ -1,0 +1,1 @@
+Exercise 17. Let $\mathrm{k}, \mathrm{n} \geqslant 1$ be two fixed integers. Thanima had $2 \mathrm{n}$ candies of each color. She gave two candies of different colors to each of the children in her family. Knowing that no matter how $k+1$ children are chosen, there are two among them who received a candy of the same color, find the maximum possible number of children.

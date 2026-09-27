@@ -1,0 +1,1 @@
+Evaluate the limit \(\lim_{n\to+\infty}\int_{-\pi}^{\pi}\frac{n!2^{2n\cos\theta}}{\Big|\prod_{k=1}^{n}(2ne^{i\theta}-k)\Big|}\,d\theta\).

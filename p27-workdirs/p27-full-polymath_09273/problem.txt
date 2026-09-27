@@ -1,0 +1,1 @@
+In a remote sector of the galaxy, two rival logistics commanders, Alara and Bron, are competing to determine the final power balance of a modular energy core. The core is powered by 20 distinct fuel rods, each assigned a fixed integer potency from 1 to 20.

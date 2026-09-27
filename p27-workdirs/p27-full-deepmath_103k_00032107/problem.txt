@@ -1,0 +1,1 @@
+Find all positive integers \(m, n \geq 2\) such that:

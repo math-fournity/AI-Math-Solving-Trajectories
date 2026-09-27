@@ -1,0 +1,1 @@
+Let \(\mathcal{E}\) be an ellipse with foci \(A\) and \(B\). Suppose there exists a parabola \(\mathcal{P}\) such that:

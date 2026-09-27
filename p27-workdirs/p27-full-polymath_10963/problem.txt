@@ -1,0 +1,1 @@
+A circular offshore wind farm consists of 320 turbine foundation sites, spaced evenly around the perimeter of a large reef. To help the maintenance crews, the sites are assigned ID numbers in a repeating sequence: the first site is ID 1, the second is ID 2, continuing up to ID 8, then the sequence restarts at 1 for the ninth site, and so on, until all 320 sites are labeled.

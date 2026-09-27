@@ -1,0 +1,1 @@
+In a remote high-security facility, a circular control hub is monitored by $n$ security consoles arranged in a fixed ring (where $n \ge 3$). To maintain system integrity, each console must be assigned one of three possible signal frequencies: Red, Green, or Blue.

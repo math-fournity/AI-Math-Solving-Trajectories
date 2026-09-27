@@ -1,0 +1,1 @@
+In a square city district, the layout is organized into an $n \times n$ grid of identical building plots. Within this grid, exactly 101 plots are designated as "Central Hubs" and are equipped with a specialized fiber-optic transmitter.

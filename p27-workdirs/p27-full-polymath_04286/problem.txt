@@ -1,0 +1,1 @@
+Let $n \geq 2$ be an integer. Ariane and Bérénice are playing a game on the set of residue classes modulo $n$. At the beginning, the residue class 1 is written on a piece of paper. In each turn, the player whose turn it is replaces the current residue class $x$ either by $x+1$ or by $2x$. The two players take turns, with Ariane starting.

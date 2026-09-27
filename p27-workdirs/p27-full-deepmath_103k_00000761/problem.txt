@@ -1,0 +1,1 @@
+Let \( \{X_n\} \) be a sequence of i.i.d. exponentially distributed random variables with mean 1. Define \( M_n = \max(X_1, X_2, \ldots, X_n) \). Find a sequence \( \{a_n\} \) such that \( P[M_n - a_n \leq x] \) converges to a non-degenerate distribution function \( G(x) \) as \( n \to \infty \), for every \( x \in \mathbb{R} \) where \( G(x) \) is continuous.

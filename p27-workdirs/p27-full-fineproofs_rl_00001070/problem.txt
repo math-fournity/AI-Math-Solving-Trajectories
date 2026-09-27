@@ -1,0 +1,1 @@
+Determine all infinite sets  $A$  of positive integers with the following propety:

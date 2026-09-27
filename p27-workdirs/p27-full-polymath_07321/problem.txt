@@ -1,0 +1,1 @@
+In a specialized data-processing facility, a technician is configuring a chain of $n$ high-capacity storage servers, labeled $S_1, S_2, \dots, S_n$. Each server must be assigned a unique ID number, which must be a positive integer.

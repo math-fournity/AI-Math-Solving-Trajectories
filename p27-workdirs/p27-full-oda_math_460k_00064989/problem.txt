@@ -1,0 +1,1 @@
+Determine the exact value of the Hausdorff measure \( \mathcal{H}_{2\alpha}(\mathcal{C} \times \mathcal{C}) \) for the two-dimensional Cantor set, where \( \mathcal{C} \) is the classical Cantor set with Hausdorff dimension \( \alpha = \ln 2 / \ln 3 \).

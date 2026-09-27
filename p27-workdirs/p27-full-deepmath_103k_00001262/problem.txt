@@ -1,0 +1,1 @@
+Assume $f(x)$ is a decreasing positive function such that $f(0)$ is infinite and $f(x)$ is comparable to $1/x$ near $x=0$. Consider only positive $x$. If the limit \( \lim_{a\to 0^+}\int_{a}^{2a} f(t)dt \) exists as a positive finite number, does it imply that \( \lim_{n\to\infty} f(2^{-n})\cdot 2^{-n} \) exists?

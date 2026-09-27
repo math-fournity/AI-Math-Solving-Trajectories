@@ -1,0 +1,1 @@
+Let \(ABC\) be a non-right triangle with sides \(AB\), \(BC\), \(CA\) and centroids \(K\), \(L\), \(M\) of the externally drawn triangles on these sides, respectively. Let \(\alpha\), \(\beta\), \(\gamma\) be the distances from the vertices \(A\), \(B\), \(C\) to the segments \(KM\), \(KL\), and \(LM\), respectively. Calculate the minimum value of the expression:

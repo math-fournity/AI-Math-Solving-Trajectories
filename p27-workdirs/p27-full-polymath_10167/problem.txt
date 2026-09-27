@@ -1,0 +1,1 @@
+A shipping terminal consists of an $8 \times 8$ grid of storage bays. In the northernmost row of eight bays, there are eight black shipping containers (one per bay). In the southernmost row of eight bays, there are eight white shipping containers (one per bay). All other bays in the grid are currently empty.

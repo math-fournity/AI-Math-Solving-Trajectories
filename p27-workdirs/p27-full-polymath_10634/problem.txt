@@ -1,0 +1,1 @@
+In the competitive world of high-speed data transmission, a communications firm is testing the signal integrity of various digital "packets." A packet is defined by its intensity value $x$, which must be an integer greater than $10^{10}$.

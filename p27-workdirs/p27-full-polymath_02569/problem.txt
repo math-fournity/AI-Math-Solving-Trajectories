@@ -1,0 +1,1 @@
+Find the largest constant $c$ such that for any positive real numbers $a_1, a_2, \ldots, a_{17}$ satisfying

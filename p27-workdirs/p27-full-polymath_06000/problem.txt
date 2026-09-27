@@ -1,0 +1,1 @@
+A high-tech laboratory has a circular cooling ring with $n$ available connection ports ($n \geq 3$). Two engineers, Alice and Bob, are tasked with installing triangular cooling modules. Alice goes first, and they alternate turns.

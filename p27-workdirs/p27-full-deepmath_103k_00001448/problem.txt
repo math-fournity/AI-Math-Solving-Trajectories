@@ -1,0 +1,1 @@
+For any integer \( M \), determine if there exists a finite sequence of positive integers \((n_i)_{i \in I}\) such that \( \sum_{i \in I} \frac{1}{n_i} = M \) and no subsequence \((n_i)_{i \in J}\) of \((n_i)_{i \in I}\) satisfies \( \sum_{i \in J} \frac{1}{n_i} \) being an integer.

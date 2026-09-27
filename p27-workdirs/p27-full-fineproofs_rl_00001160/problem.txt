@@ -1,0 +1,1 @@
+Do there exist strictly positive integers $a$ and $b$ such that $a^{n}+n^{b}$ and $b^{n}+n^{a}$ are coprime for all integers $n \geqslant 0$?

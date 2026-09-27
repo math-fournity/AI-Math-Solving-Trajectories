@@ -1,0 +1,1 @@
+Consider a partially ordered set (poset) $P$ where for every natural number $n$, there exists an antichain $S_n$ of size $n$ such that no two elements in $S_n$ have a common lower bound. Does $P$ necessarily contain an infinite antichain?

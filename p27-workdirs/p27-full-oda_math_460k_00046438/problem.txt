@@ -1,0 +1,1 @@
+Determine all $a, b, c \in \mathbb{R}^{+}$ such that $|ax^2 + bx + c| + |bx^2 + cx + a| + |cx^2 + ax + b| \leq \left(x - \frac{1}{a}\right)^2 + \left(x - \frac{1}{b}\right)^2 + \left(x - \frac{1}{c}\right)^2$ for all $x \in \mathbb{R}$.

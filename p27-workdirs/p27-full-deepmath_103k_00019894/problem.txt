@@ -1,0 +1,1 @@
+Determine whether the gap between consecutive prime numbers, denoted by \( g_n = p_{n+1} - p_n \), is always bounded by \( g_n \le n \) for all natural numbers \( n \).

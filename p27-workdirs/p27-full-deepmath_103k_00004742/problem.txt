@@ -1,0 +1,1 @@
+Let $A$ and $B$ be $n \times n$ complex matrices such that $A$, $B$, and $[A,B] = AB - BA$ are all nilpotent matrices. Is it necessarily true that $\operatorname{trace}(AB) = 0$?

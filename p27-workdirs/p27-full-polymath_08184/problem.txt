@@ -1,0 +1,1 @@
+In a specialized research facility, there are five female scientists and five male scientists, each assigned a numerical ID from 1 to 5 within their respective gender groups. The facility tracks professional citations between these ten individuals (where "Scientist A knows Scientist B" is defined as Scientist A citing the work of Scientist B).

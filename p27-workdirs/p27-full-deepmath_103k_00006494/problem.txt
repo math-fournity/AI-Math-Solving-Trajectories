@@ -1,0 +1,1 @@
+Suppose $U$ and $V$ are two irreducible complex representations of a finite group $G$ such that the tensor product $U \otimes V$ is also irreducible. Must it be the case that either $U$ or $V$ (or both) are one-dimensional?

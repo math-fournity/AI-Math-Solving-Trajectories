@@ -1,0 +1,1 @@
+In a remote digital architecture firm, a designer is tasked with creating "Safety Tilesets" for various rectangular server rooms. Each room is paved with a grid of $m \times n$ tiles. To meet security protocols, every tile must be set to one of two states: **Encrypted (E)** or **Open (O)**.

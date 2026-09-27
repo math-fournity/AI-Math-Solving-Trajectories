@@ -1,0 +1,1 @@
+Given that $f(x)$ is a polynomial of degree 98 such that $f(k) = \frac{1}{k}$ for $k = 1, 2, 3, \ldots, 98, 99$, find the value of $f(100)$. A polynomial of this form exists.

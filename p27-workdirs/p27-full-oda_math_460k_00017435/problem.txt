@@ -1,0 +1,1 @@
+Find the Galois group of \(x^{13} - 2\) over \(\mathbb{Q}\). Find all intermediate fields in as explicit a form as possible.

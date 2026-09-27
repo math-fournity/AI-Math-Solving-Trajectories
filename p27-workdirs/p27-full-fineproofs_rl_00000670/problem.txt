@@ -1,0 +1,1 @@
+A real number sequence  $a_1, \cdots ,a_{2021}$  satisfies the below conditions.  $$ a_1=1, a_2=2, a_{n+2}=\frac{2a_{n+1}^2}{a_n+a_{n+1}} (1\leq n \leq 2019) $$  Let the minimum of  $a_1, \cdots ,a_{2021}$  be  $m$ , and the maximum of  $a_1, \cdots ,a_{2021}$  be  $M$ .

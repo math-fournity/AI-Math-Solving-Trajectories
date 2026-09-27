@@ -1,0 +1,1 @@
+For each odd three-digit integer $m$ such that $990 < m < 1000$, find the smallest natural number $n > 1$ such that all digits in the decimal representation of the product $m \cdot n$ are odd. Let these values of $n$ corresponding to $m = 991, 993, 995, 997, 999$ be $n_1, n_2, n_3, n_4, n_5$ respectively. Calculate the sum $S = n_1 + n_2 + n_3 + n_4 + n_5$.

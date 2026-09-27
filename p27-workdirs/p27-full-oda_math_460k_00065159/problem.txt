@@ -1,0 +1,1 @@
+Let \( f \) be a function which, with each line \( d \) of the plane, associates a point \( f(d) \) belonging to \( d \). Suppose that for any three concurrent lines \( d_1, d_2, \) and \( d_3 \) intersecting at a point \( X \), the points \( f(d_1), f(d_2), f(d_3), \) and \( X \) are concyclic.

@@ -1,0 +1,1 @@
+In a remote territory, four key settlements are established at coordinates $A$, $B$, $C$, and $D$, forming the vertices of a parallelogram $ABCD$. The trade route distances between them are such that $AB < AC < BC$.

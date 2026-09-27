@@ -1,0 +1,1 @@
+Given a circumscribed quadrilateral $ABCD$, the angle bisectors of $\angle ADC$ and $\angle BCD$ intersect at point $E$ on $AB$. If $\frac{AB}{BC} = k$, find $\frac{S_{ADE}}{S_{BCE}}$.

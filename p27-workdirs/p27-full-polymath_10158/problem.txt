@@ -1,0 +1,1 @@
+In a specialized laboratory, a row of 2021 industrial sensors is aligned in a single track, indexed 1 to 2021. Each sensor can be in one of two states: "Active" or "Standby." Initially, every sensor is in the Active state except for a single sensor located at position $n$ (where $1 \le n \le 2021$), which is in the Standby state.

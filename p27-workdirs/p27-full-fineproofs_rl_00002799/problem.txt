@@ -1,0 +1,1 @@
+Let  $D$  be the midpoint of the side  $BC$  of a triangle  $ABC$  and  $P$  be a point inside the  $ABD$  satisfying  $\angle PAD=90^\circ - \angle PBD=\angle CAD$ . Prove that  $\angle PQB=\angle BAC$ , where  $Q$  is the intersection point of the lines  $PC$  and  $AD$ .

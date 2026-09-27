@@ -1,0 +1,1 @@
+In a remote high-tech vertical farm, there is a square grid of 25 planting pods arranged in a $5 \times 5$ layout. Each pod is currently set to one of three specific nutrient levels: $-1$ unit (depletion), $0$ units (neutral), or $1$ unit (enrichment).

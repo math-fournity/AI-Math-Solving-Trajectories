@@ -1,0 +1,1 @@
+Carlson can eat no more than $5$ kg of jam in one meal. If he opens a new jar of jam, he must eat it completely in that meal. (Carlson will not open a new jar if he has to eat more than $5$ kg of jam along with what he has just eaten.)

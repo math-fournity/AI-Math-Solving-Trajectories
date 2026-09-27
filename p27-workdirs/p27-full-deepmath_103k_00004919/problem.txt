@@ -1,0 +1,1 @@
+Let \( n \) be a positive integer and \( a_1, a_2, \ldots, a_n \) be non-negative numbers such that \( a_1 + a_2 + \cdots + a_n = n \). Find the maximum value of the expression:

@@ -1,0 +1,1 @@
+For all integers \( n \geq 1 \), \( x_{n+1} = x_1^2 + x_2^2 + \cdots + x_n^2 \) where \( x_1 \) is a positive integer. Find the least \( x_1 \) such that 2006 divides \( x_{2006} \).

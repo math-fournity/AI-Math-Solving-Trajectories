@@ -1,0 +1,1 @@
+A specialized architecture firm is designing a polygonal headquarters with $n$ outer glass walls, where $n \geq 3$. The CEO, John, is tasked with assigning energy efficiency ratings to these $n$ walls. He must use each integer from the set $\{1, 2, \ldots, n\}$ exactly once, and he wants to arrange them to maximize the total heat retention of the building.

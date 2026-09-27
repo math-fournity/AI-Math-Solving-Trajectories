@@ -1,0 +1,1 @@
+A specialized thermal stabilization unit is used to regulate the temperature of a chemical reactor. The temperature of the unit at the end of the $n$-th hour of operation is denoted by the function $f(n)$, where $n$ is a positive integer.

@@ -1,0 +1,1 @@
+Determine the value of $R$ that minimizes the residuals in the following model:

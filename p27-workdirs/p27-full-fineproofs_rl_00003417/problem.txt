@@ -1,0 +1,1 @@
+Let  $p > 2$  be a prime number. Prove that there is a permutation  $k_1, k_2, ..., k_{p-1}$  of numbers  $1,2,...,p-1$  such that the number  $1^{k_1}+2^{k_2}+3^{k_3}+...+(p-1)^{k_{p-1}}$   is divisible by  $p$ .

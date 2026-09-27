@@ -1,0 +1,1 @@
+Consider the category \(\mathbf{FSet}\) of finite sets as an algebraic theory. What is the category of models for this theory?

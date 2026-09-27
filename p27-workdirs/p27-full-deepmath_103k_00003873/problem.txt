@@ -1,0 +1,1 @@
+Let \( T = \{v_1, \dots, v_{2n}\} \subseteq \mathbb{C}^n \) be a set of \( \mathbb{R} \)-linearly independent vectors. Consider the \( 2^n \) subsets \( S \subseteq T \) of size \( n \) that contain exactly one of \( v_i \) and \( v_{n+i} \) for each \( i = 1, \dots, n \). Is one of these subsets necessarily a \( \mathbb{C} \)-basis for \( \mathbb{C}^n \)?

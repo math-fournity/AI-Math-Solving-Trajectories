@@ -1,0 +1,1 @@
+In a specialized digital manufacturing grid, a robotic arm operates on a square workspace defined by a coordinate system. The grid contains $4n^2$ specific anchor points, where $n$ is a fixed positive integer. These points are defined as all locations $(x, y)$ where both $x$ and $y$ are non-negative integers strictly less than $2n$.

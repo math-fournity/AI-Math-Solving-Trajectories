@@ -1,0 +1,1 @@
+In the futuristic city of Numeria, a massive power grid is structured as a $2022 \times 2022$ square grid of batteries. Initially, every battery has a charge level of $0$. A Grid Operator and a System Glitch interact with the grid in a series of turns, with the Operator acting first:

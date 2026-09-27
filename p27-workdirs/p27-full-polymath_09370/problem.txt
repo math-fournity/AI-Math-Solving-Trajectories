@@ -1,0 +1,1 @@
+A specialized circular communication network is controlled by four satellite ground stations positioned at points $A, B, C$, and $D$ in clockwise order along its perimeter.

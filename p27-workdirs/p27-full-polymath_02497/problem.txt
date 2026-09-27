@@ -1,0 +1,1 @@
+Find the maximum possible sum $S$ such that any set of (not necessarily different) positive integers, each not exceeding 10, with total sum $S$, can always be partitioned into two groups such that the sum of the numbers in each group does not exceed 70.

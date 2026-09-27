@@ -1,0 +1,1 @@
+Find the least (minimum) $n$ such that $10$ divides $n$ ($n \neq 0$) and the number of digit $1$ that appears in the sequence $1, 2, 3, \ldots, n$ is equal to $n$.

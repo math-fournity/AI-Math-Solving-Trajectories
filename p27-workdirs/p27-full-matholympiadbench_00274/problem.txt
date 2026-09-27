@@ -1,0 +1,13 @@
+/-!
+# IMO 2010 C4 (P5)
+
+In the board, $N = 6$ stacks of coins are given, with each stack initially containing one coin.
+At any time, one of the following operations can be performed:
+* **Type 1:** Remove one coin from a non-empty stack $k+1$ and add two coins to stack $k$ (for $k < 5$).
+* **Type 2:** Remove one coin from a non-empty stack $k+2$ and swap the contents of stacks $k$ and $k+1$ (for $k < 4$).
+
+Is it possible that, after some operations, we are left with stack 0
+  containing $A = 2010^{2010^{2010}}$ coins and all other stacks empty?
+-/
+
+##

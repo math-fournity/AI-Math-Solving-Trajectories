@@ -1,0 +1,1 @@
+Let $f: D(0,1) \to \mathbb{C}$ be a holomorphic and bounded function. Do the antiderivatives of $f$ belong to the disc algebra, which consists of functions that are holomorphic on $D(0,1)$ and continuous on the closed disc?

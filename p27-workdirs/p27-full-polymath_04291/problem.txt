@@ -1,0 +1,1 @@
+6. On a $200 \times 200$ chessboard, some cells contain a red or blue piece, while others are empty. If two pieces are in the same row or column, one piece is said to "see" the other. Assume each piece sees exactly five pieces of the opposite color (it may also see some pieces of the same color). Find the maximum number of pieces on the chessboard.

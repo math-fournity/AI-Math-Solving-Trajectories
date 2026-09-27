@@ -1,0 +1,1 @@
+Given a triangle \(ABC\) with centroid \(G\), where \(\angle ACB = 85^\circ\) and \(\angle AGB = 140^\circ\). The points \(K\) and \(L\) on the segments \(BG\) and \(AG\) are such that \(\angle CAK = \angle CBL = 40^\circ\). Find the measure of \(\angle KCL\).

@@ -1,0 +1,1 @@
+A $2 \times 100$ grid is colored such that each of the 200 grid squares is either red or blue. The coloring must satisfy the following conditions:

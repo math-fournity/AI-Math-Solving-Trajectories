@@ -1,0 +1,1 @@
+A specialized circular radar station, designated as Zone $O$, monitors a quadrilateral network of four signal towers: Alpha ($A$), Bravo ($B$), Charlie ($C$), and Delta ($D$), all located exactly on the station's circular perimeter.

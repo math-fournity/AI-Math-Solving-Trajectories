@@ -1,0 +1,1 @@
+Let \( D \) be a UFD. Which of the following rings are UFDs?

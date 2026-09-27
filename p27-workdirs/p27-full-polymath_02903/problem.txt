@@ -1,0 +1,1 @@
+Let $n \geqslant 3$ be integer. Given convex $n-$polygon $\mathcal{P}$. A $3-$coloring of the vertices of $\mathcal{P}$ is called [i]nice[/i] such that every interior point of $\mathcal{P}$ is inside or on the bound of a triangle formed by polygon vertices with pairwise distinct colors. Determine the number of different nice colorings.

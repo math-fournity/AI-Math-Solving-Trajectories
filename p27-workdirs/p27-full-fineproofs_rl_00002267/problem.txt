@@ -1,0 +1,1 @@
+In triangle  $ABC$ ,  $\omega$  is its circumcircle and  $O$  is the center of this circle. Points  $M$  and  $N$  lie on sides  $AB$  and  $AC$  respectively.  $\omega$  and the circumcircle of triangle  $AMN$  intersect each other for the second time in  $Q$ . Let  $P$  be the intersection point of  $MN$  and  $BC$ . Prove that  $PQ$  is tangent to  $\omega$  iff  $OM=ON$ .

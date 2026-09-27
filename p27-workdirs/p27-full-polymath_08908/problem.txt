@@ -1,0 +1,1 @@
+In a futuristic data-storage facility, a maintenance drone is assigned to inspect a grid of memory modules arranged in 3 horizontal rows and 24 vertical columns. Each intersection in this $3 \times 24$ grid contains exactly one module, represented by the coordinates $(i, j)$ where $1 \leq i \leq 3$ and $1 \leq j \leq 24$.

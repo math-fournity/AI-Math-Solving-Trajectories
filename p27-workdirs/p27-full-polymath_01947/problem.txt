@@ -1,0 +1,1 @@
+In a regular hexagon $ABCDEF$, a bug is standing at each vertex. Each bug simultaneously moves to a different vertex in a straight line at the same speed. How many ways can the bugs move to the vertices so that no two bugs are ever in the same spot at the same time?

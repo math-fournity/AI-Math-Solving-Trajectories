@@ -1,0 +1,1 @@
+Suppose a torus $T$ acts on a compact manifold $M$ such that every isotropy subgroup has codimension greater than one. Determine whether there exists a circle inside $T$ that acts freely on $M$. Provide a justification for your answer.

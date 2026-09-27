@@ -1,0 +1,1 @@
+Evaluate the limit: \[ \lim_{n \to \infty} \left( \frac{\sin \left\{ \frac{2}{n} \right\}}{\left[ 2n \tan \frac{1}{n} \right] \left( \tan \frac{1}{n} \right)} + \frac{1}{n^2 + \cos n} \right)^{n^2}, \] where \([.]\) denotes the greatest integer function and \(\{.\}\) denotes the fractional part function.

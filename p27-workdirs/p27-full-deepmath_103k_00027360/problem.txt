@@ -1,0 +1,1 @@
+Given monic polynomials $P(x)$ and $Q(x)$ with integer coefficients, where $P$ has degree $n$ and $Q$ has degree $d$, and $d$ divides $n$, determine if there exists a polynomial $R(x)$ with integer coefficients such that $P(x) = Q(R(x))$, given that there are infinitely many pairs of positive integers $(a, b)$ satisfying $P(a) = Q(b)$. Provide a justification for your answer.

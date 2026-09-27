@@ -1,0 +1,1 @@
+The cells of an \(8 \times 8\) table are filled with the numbers from \(1\) to \(64\), one in each cell, such that every two numbers with a difference of \(1\) are in adjacent (by a common side) cells. What is the largest possible sum of the numbers on the main diagonal?

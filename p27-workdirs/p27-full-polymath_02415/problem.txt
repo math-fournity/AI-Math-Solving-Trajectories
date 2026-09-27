@@ -1,0 +1,1 @@
+The distance between the numbers \(\overline{a_{1} a_{2} a_{3} a_{4} a_{5}}\) and \(\overline{b_{1} b_{2} b_{3} b_{4} b_{5}}\) is defined as the maximum \(i\) for which \(a_{i} \neq b_{i}\). All five-digit numbers are listed one after another in some order. What is the minimum possible sum of distances between neighboring numbers?

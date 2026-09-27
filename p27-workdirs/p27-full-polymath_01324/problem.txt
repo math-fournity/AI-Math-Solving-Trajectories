@@ -1,0 +1,1 @@
+Find the smallest real number $M$ such that $\{a\} + \{b\} + \{c\} \leq M$ for any real positive numbers $a, b, c$ satisfying $abc = 2024$, where $\{x\}$ denotes the fractional part of $x$.

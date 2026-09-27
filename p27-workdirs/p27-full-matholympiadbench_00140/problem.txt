@@ -1,0 +1,9 @@
+/-!
+# International Mathematical Olympiad 2017, Problem 2
+
+Find all functions `f : ℝ → ℝ` that satisfy
+
+  ∀ x,y ∈ ℝ, f(f(x)f(y)) + f(x + y) = f(xy).
+-/
+
+##

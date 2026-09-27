@@ -1,0 +1,1 @@
+Let \( A = \{0, 1, \cdots, 2016\} \). A function \( f: \mathbf{N} \rightarrow A \) is called a "harmonic function" if it is surjective and satisfies \( f(i+2017) = f(i) \) for any \( i \in \mathbf{N} \).

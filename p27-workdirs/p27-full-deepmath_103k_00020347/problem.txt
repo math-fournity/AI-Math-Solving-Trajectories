@@ -1,0 +1,1 @@
+Given a non-orientable smooth manifold $M$ and a point $p \in M$, determine whether there exists a diffeomorphism $f: M \rightarrow M$ such that $f(p) = p$ and the differential $df: T_pM \rightarrow T_pM$ is orientation-reversing.

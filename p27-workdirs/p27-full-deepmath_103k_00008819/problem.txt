@@ -1,0 +1,1 @@
+Compute the expression \(L - R_1 - R_2\), where

@@ -1,0 +1,1 @@
+Determine whether there exists a submodule $I$ of a module $M$ such that $I$ contains no irreducible submodules of $M$, yet $I$ is not the zero module. Consider the case where $M$ is not semisimple.

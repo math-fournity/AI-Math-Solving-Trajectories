@@ -1,0 +1,1 @@
+In a massive logistics warehouse, there is a storage rack organized into 9 horizontal shelves and 2004 vertical columns, creating a $9 \times 2004$ grid of storage slots. The warehouse inventory consists of 18,036 packages. Specifically, for every integer $k$ from 1 to 2004, there are exactly 9 identical packages labeled with the value $k$.

@@ -1,0 +1,1 @@
+In a specialized micro-electronics manufacturing facility, four specific chemical catalysts—Alpha ($a$), Beta ($b$), Gamma ($c$), and Delta ($d$)—are mixed in precise volumes (positive real numbers) to produce high-grade semiconductors.

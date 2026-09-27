@@ -1,0 +1,1 @@
+A palindrome is a natural number that reads the same forwards and backwards in the decimal system. Let $S_k$ denote the number consisting of $k$ ones in its decimal representation (e.g., $S_3 = 111$). Determine the number of pairs $(m, n)$ of natural numbers with $1 \le m, n \le 20$ such that the product $S_m \cdot S_n$ is a palindrome.

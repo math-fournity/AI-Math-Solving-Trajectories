@@ -1,0 +1,1 @@
+In a remote industrial district, three specialized power plants—Alpha, Beta, and Gamma—are connected in a triangular grid. The lengths of the high-voltage transmission lines connecting them are denoted as $a$, $b$, and $c$. Because these lines form a physical triangle, they must satisfy the triangle inequality.

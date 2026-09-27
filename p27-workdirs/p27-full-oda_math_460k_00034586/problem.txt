@@ -1,0 +1,1 @@
+Determine the accumulation points of the sequence \( \{x_n\} \) where \( x_n = n\sin(n) \) for \( n \in \mathbb{N} \).

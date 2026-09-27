@@ -1,0 +1,1 @@
+Determine the number of integers \( n \) for which the ratio \( R = \frac{p(n+2)}{p(n)} \) is an integer, where \( p(n) \) is the partition function of \( n \). For example, \( p(6) = 11 \) and \( p(8) = 22 \), so \( R = 2 \) is an integer in this case. Is this the only case?

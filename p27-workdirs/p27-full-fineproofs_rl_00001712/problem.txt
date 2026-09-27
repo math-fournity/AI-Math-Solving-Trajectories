@@ -1,0 +1,1 @@
+For every $n \geq 3$, determine all the configurations of $n$ distinct points $X_{1}, X_{2}, \ldots, X_{n}$ in the plane, with the property that for any pair of distinct points $X_{i}, X_{j}$ there exists a permutation $\sigma$ of the integers $\{1, \ldots, n\}$, such that $\mathrm{d}\left(X_{i}, X_{k}\right)=\mathrm{d}\left(X_{j}, X_{\sigma(k)}\right)$ for all $1 \leq k \leq n$.

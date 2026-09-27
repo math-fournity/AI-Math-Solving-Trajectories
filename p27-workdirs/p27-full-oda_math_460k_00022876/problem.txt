@@ -1,0 +1,1 @@
+Let \( G \) be a \( C_6 \)-free plane graph on \( n \) vertices where \( n \geq 18 \). Calculate the maximum possible value of \( |E(G)| - \frac{5}{2}n \).

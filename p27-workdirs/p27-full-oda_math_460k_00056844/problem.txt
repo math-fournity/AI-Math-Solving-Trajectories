@@ -1,0 +1,1 @@
+Let \( n \ge 3 \) be a positive integer. Find the range of positive real number \( k = k(n) \) such that the following inequality holds for any positive reals \( a_1, a_2, \ldots, a_n \):

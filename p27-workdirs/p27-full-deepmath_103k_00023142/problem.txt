@@ -1,0 +1,1 @@
+Determine whether the torus \(\mathbb{R}^2 \mod((4,1),(1,-4))\) can be covered by seventeen labelled tiles in four different ways, up to translations, such that the tiles follow an isohedral relationship.

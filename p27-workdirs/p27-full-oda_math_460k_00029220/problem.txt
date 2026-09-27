@@ -1,0 +1,1 @@
+In the theory of a neutral vector field of mass \( m \neq 0 \), what is the wave function in field space for the vacuum state? Additionally, use this result to derive the form of the \( i\epsilon \) terms in the propagator of this field.

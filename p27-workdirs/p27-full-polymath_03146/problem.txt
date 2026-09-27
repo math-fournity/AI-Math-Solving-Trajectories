@@ -1,0 +1,1 @@
+In a two-player game starting with two sticks, one of length $n$ and one of length $n + 1$ (where $n$ is a positive integer), players alternate turns. A turn consists of either:

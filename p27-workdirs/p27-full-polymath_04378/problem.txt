@@ -1,0 +1,1 @@
+In the drawing, points \(A, B\), and \(C\) lie on a straight line. \(AD\) intersects \(BE\) and \(CE\) at points \(G\) and \(F\), respectively, and \(BD\) and \(EC\) intersect at point \(H\). The triangles \(ABG, EFG\), and \(DHF\) have the same area \(S\). The area of triangle \(BCH\) is \(20 \, \text{cm}^2\), and the area of \(GBHF\) is \(12 \, \text{cm}^2\).

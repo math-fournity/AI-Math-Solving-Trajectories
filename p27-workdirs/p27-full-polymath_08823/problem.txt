@@ -1,0 +1,1 @@
+In a specialized digital logistics network, there are 300 unique server hubs, each assigned an identification number $m$ ranging from $1$ to $300$. Each hub $m$ has a maximum processing capacity defined by the value $2013m$.

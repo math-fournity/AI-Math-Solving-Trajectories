@@ -1,0 +1,1 @@
+In a remote digital manufacturing plant, an engineer is programmed to construct a rectangular silicon wafer with dimensions exactly $2^{2014}$ micrometers by $3^{2014}$ micrometers. The surface of the wafer is etched with a grid of lines, spaced precisely 1 micrometer apart.

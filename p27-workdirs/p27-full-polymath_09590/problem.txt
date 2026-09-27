@@ -1,0 +1,1 @@
+In a remote territory, a telecommunications company is designing a network consisting of 100 signal towers. To ensure optimal coverage, the towers must be positioned such that they form the vertices of a convex 100-sided polygon on a flat plain.

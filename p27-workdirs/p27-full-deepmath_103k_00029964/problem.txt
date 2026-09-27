@@ -1,0 +1,1 @@
+In a Hilbert space $H$ over the reals, consider a closed subset $K$. If for every point $p \in H$, there exists a unique point $p' \in K$ that is closest to $p$, is $K$ necessarily convex? Provide a justification for your answer.

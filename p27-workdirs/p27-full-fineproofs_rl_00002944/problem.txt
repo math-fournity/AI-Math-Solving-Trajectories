@@ -1,0 +1,1 @@
+Let  $S$  denote the set of rational numbers in the interval  $(0,1)$ . Determine, with proof, if there exists a subset  $T$  of  $S$  such that every element in  $S$  can be uniquely written as the sum of finitely many distinct elements in  $T$ .

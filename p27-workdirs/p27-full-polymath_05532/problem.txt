@@ -1,0 +1,1 @@
+Let \( N \) be the number of functions \( f: \mathbb{Z} / 16 \mathbb{Z} \rightarrow \mathbb{Z} / 16 \mathbb{Z} \) such that for all \( a, b \in \mathbb{Z} / 16 \mathbb{Z} \):

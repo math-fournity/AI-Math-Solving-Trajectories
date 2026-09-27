@@ -1,0 +1,1 @@
+Evaluate the series \(\sum_{n=1}^{\infty} \left( \arctan \left( \frac{1}{F_{4n-3}} \right) + \arctan \left( \frac{1}{F_{4n-2}} \right) + \arctan \left( \frac{1}{F_{4n-1}} \right) - \arctan \left( \frac{1}{F_{4n}} \right) \right)\), where \(F_n\) is the \(n\)-th Fibonacci number (with \(F_1 = F_2 = 1\)) and \(\varphi = \frac{1 + \sqrt{5}}{2}\) is the golden ratio.

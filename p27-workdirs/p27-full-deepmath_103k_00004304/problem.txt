@@ -1,0 +1,1 @@
+Calculate the value of \( \sup_{f \in \mathscr{H}} \inf_{z \in D} [f_x^2(z) + f_y^2(z)] \), where \( f: \mathbb{R}^2 \to \mathbb{R} \) is continuous, has partial derivatives in \( D = \{(x,y) : x^2 + y^2 \leq 1\} \), and satisfies \( \sup_D |f| \leq 1 \).

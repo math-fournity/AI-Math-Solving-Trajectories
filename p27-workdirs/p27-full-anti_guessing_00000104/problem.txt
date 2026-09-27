@@ -1,0 +1,1 @@
+C5. Given a permutation of $1,2,3, \ldots, n$, with consecutive elements $a, b, c$ (in that order), we may perform either of the moves:

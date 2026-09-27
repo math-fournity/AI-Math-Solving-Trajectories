@@ -1,0 +1,1 @@
+In a remote industrial complex, three chemical tanks contain volumes of reagents denoted by $a$, $b$, and $c$ (all strictly positive). The facility operates under a strict equilibrium constraint: the total volume of the reagents must be exactly equal to the sum of their reciprocal concentrations, expressed by the equation $a + b + c = \frac{1}{a} + \frac{1}{b} + \frac{1}{c}$.

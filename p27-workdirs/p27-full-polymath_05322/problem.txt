@@ -1,0 +1,1 @@
+Four. (50 points) Let $n \in \mathbf{N}_{+}, f(n)$ be the number of all integer sequences $\left\{a_{k} \mid k=0,1, \cdots, n\right\}$ that satisfy the following conditions:

@@ -1,0 +1,1 @@
+Calculate the residue of the function \( \frac{f'(z)}{f(z)} \) at \( z = w \), where \( f(z) = \sum_{n=m}^\infty a_n (z-w)^n \) with \( 0 < | z-w | < r \) and \( a_m \neq 0 \).

@@ -1,0 +1,1 @@
+Find all functions \( f: \mathbb{N} \to \mathbb{N} \) such that for all \( m, n \in \mathbb{N} \), the number \( f^2(m) + f(n) \) is a divisor of \( (m^2 + n)^2 \).

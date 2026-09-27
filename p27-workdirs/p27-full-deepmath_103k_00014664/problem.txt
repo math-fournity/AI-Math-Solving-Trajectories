@@ -1,0 +1,1 @@
+Let \( \{X_n\}_{n=1}^\infty \) be a sequence of i.i.d. random variables with mean zero. Prove that there exists a constant \( K > 0 \) such that the probability that the partial sums \( |X_1 + \cdots + X_n| \) are bounded by \( K \) infinitely often is equal to 1.

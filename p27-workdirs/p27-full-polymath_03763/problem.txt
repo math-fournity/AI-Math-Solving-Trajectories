@@ -1,0 +1,1 @@
+Find the smallest integer \( b \) with the following property: For each way of coloring exactly \( b \) squares of an \( 8 \times 8 \) chessboard green, one can place \( 7 \) bishops on \( 7 \) green squares so that no two bishops attack each other.

@@ -1,0 +1,1 @@
+Given an integer $n=10$, on a sphere of radius 1, let $L$ be the supremum of the lengths $\alpha$ such that there exist $n$ pairwise non-intersecting arcs of great circles on the sphere, each having length $\alpha$. Determine the value of $L$.

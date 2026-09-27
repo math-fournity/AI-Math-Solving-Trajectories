@@ -1,0 +1,1 @@
+Compute the Euler characteristic \(\chi(\mathbb{C}\mathrm{P}^2)\) using techniques from differential topology.

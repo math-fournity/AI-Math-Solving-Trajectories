@@ -1,0 +1,1 @@
+A specialized logistics company manages a sequence of storage units numbered $1, 2, 3, \ldots, n$. The company uses a security protocol where two units are considered "COMPATIBLE" if the positive difference between their identification numbers is a perfect square (such as 1, 4, or 9).

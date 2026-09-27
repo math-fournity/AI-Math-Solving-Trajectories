@@ -1,0 +1,11 @@
+/-!
+# IMO 2016 N4
+
+Consider some $k, ℓ, m, n ∈ ℕ^+$ with $n > 1$ such that
+$$ n^k + mn^ℓ + 1 ∣ n^{k + ℓ} - 1. $$
+Prove that one of the following holds:
+* $m = 1$ and $ℓ = 2k$; or
+* $k = (t + 1)ℓ$ and $m(n^ℓ - 1) = n^{t ℓ} - 1$ for some $t > 0$.
+-/
+
+##

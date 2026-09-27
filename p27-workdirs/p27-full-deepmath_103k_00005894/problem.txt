@@ -1,0 +1,1 @@
+Which plane figure, having the same area as others, minimizes the mean distance between two randomly selected points on its perimeter? Assume the points are selected independently and uniformly along the perimeter. Provide a justification for your answer.

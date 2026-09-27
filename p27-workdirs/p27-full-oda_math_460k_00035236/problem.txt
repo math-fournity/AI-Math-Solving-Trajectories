@@ -1,0 +1,1 @@
+Let \( f(n) \) be the number of triples of positive integers \((a, b, c)\) such that \(0 < a, b, c < n\) and the equation \(ax^2 + bx + c = 0\) has an integer solution. Find the smallest integer \(N\) such that for all \(n \geq N\), \(f(n) < 2n^{\frac{2025}{2024}}\).

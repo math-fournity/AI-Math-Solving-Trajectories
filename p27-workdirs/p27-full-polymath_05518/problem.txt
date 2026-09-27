@@ -1,0 +1,1 @@
+Let \( n \) be a positive integer, and let \( V_{n} \) be the set of integer \((2n+1)\)-tuples \(\mathbf{v} = (s_0, s_1, \ldots, s_{2n})\) for which \( s_0 = s_{2n} = 0 \) and \( |s_j - s_{j-1}| = 1 \) for \( j = 1, 2, \ldots, 2n \). Define

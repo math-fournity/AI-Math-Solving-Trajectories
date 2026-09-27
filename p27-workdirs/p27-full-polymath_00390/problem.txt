@@ -1,0 +1,1 @@
+Find the value of $a_7$ for the unique $14$-tuple of nonnegative integers $a_1, a_2, \ldots, a_{14}$ such that the equation

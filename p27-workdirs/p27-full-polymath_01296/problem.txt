@@ -1,0 +1,1 @@
+Suppose that the numbers \(\{1,2, \ldots, 25\}\) are written in some order in a \(5 \times 5\) array. Find the maximal positive integer \(k\), such that the following holds. There is always a \(2 \times 2\) subarray whose numbers have a sum not less than \(k\).

@@ -1,0 +1,1 @@
+In a specialized digital vault, there are 215 unique storage modules, each labeled with an identification number $n$ ranging from $n = 2$ to $n = 216$. Inside each module is a data cluster consisting of $n^n$ individual files.

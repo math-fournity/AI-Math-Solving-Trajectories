@@ -1,0 +1,1 @@
+Dissect a square into several congruent pieces meeting at the center. Each piece is an open set, and the dissection should cover the square up to a set of measure 0. The center must belong to the closure of each piece. Two solutions are considered equivalent if the rigid motions moving the pieces to each other are the same. Find all such solutions up to this equivalence.

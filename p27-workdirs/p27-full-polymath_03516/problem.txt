@@ -1,0 +1,1 @@
+Suppose that \( p \) is the unique monic polynomial of minimal degree such that its coefficients are rational numbers and one of its roots is \(\sin \frac{2 \pi}{7} + \cos \frac{4 \pi}{7}\). If \( p(1) = \frac{a}{b} \), where \( a, b \) are relatively prime integers, find \(|a+b|\).

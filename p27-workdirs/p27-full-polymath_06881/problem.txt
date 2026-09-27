@@ -1,0 +1,1 @@
+In a specialized logistics hub, there are four secure storage vaults identified by the unique positive integer ID numbers $a_1, a_2, a_3, a_4$. These vaults are designed with a specific security constraint: it is impossible to arrange all four vaults in a physical circle such that every pair of adjacent vaults has a greatest common divisor (GCD) of their IDs equal to 1.

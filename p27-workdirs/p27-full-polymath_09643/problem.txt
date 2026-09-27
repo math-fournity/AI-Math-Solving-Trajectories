@@ -1,0 +1,1 @@
+In a specialized automated warehouse, a logistics drone must navigate a strictly defined grid system to transport a package. The warehouse floor is modeled as a coordinate plane where $n$ is a fixed, positive odd integer representing the grid's scale.

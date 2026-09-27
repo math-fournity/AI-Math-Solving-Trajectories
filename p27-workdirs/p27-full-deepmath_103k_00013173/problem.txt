@@ -1,0 +1,1 @@
+Determine whether there exists a set $E$ in $\mathbb{R}^{m}$ for $m\geq2$ with respect to the Euclidean topology such that: (1) The interior of $E$ is empty, (2) The Lebesgue measure of $E$ is positive, and (3) $E$ is connected.

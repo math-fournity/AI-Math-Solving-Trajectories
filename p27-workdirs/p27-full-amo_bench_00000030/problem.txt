@@ -1,0 +1,1 @@
+Let \((a_i, b_i)\), for \(1 \leq i \leq 2025\), be 2025 distinct points on the curve

@@ -1,0 +1,1 @@
+Thinking Question 2 (40th IMO Problem) Let $n$ be a fixed integer, $n \geqslant 2$.

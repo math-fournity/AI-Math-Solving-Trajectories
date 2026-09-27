@@ -1,0 +1,1 @@
+52. Let positive real numbers $x, y, z$ satisfy $x+y+z=x y z$, find the minimum value of $x^{7}(y z-1)+y^{7}(z x-1)+$ $z^{7}(x y-1)$. (2003 China National Training Team Problem)

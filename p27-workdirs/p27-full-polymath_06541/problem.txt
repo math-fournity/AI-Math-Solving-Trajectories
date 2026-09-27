@@ -1,0 +1,1 @@
+In a specialized semiconductor fabrication facility, a wafer is organized into an $n \times n$ grid of microscopic processing zones. A localized chemical contamination occurs at the zone located at coordinates $(1, c)$, where $c \leq \frac{n}{2}$.

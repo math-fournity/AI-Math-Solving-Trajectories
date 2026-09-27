@@ -1,0 +1,1 @@
+In the competitive world of data encryption, a "Code-Breaker" is an integer $n > 2$ that defines a specific security protocol. Within this protocol, we test "Key-Signals," which are integers $a$ such that $0 < a < n$ and $\gcd(a, n) = 1$.

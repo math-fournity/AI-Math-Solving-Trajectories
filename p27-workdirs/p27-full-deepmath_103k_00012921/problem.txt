@@ -1,0 +1,1 @@
+Let $E$ be a complex Hilbert space. Let $A \in \mathcal{L}(\mathcal{H})$ and $B \in \mathcal{L}(E)^+$. Assume that $B^{1/2}A = AB^{1/2}$. Is it true that $AB = BA$?

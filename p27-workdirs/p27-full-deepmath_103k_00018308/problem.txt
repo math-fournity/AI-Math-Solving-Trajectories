@@ -1,0 +1,1 @@
+Given a set of linearly independent $d \times d$ complex unitary matrices $\{U_i\}_{i=1}^n \subseteq M_d$ with $n \geq d$, determine if there exists a vector $v \in \mathbb{C}^d$ such that the span of $\{U_1v, U_2v, \ldots , U_nv\}$ is $\mathbb{C}^d$. Answer with 'yes' or 'no'.

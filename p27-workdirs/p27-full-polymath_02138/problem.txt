@@ -1,0 +1,1 @@
+Mr. Alex plays the following game: At the beginning, there are nine empty boxes arranged in a row. In each operation, Alex chooses one of the following two actions:

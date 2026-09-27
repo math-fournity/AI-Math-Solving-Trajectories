@@ -1,0 +1,1 @@
+【Question 14】Select 5 digits from $1 \sim 9$, to form a five-digit number, such that this five-digit number can be evenly divided by any of the 5 selected digits, but cannot be evenly divided by any of the 4 unselected digits. Then, the smallest value of this five-digit number is $\qquad$.

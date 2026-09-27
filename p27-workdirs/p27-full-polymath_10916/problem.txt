@@ -1,0 +1,1 @@
+A high-security data vault is protected by a system of $n$ biometric sensors, where $n \geq 4$. Each sensor $k$ can be in one of two states: "Active" ($x_k = 1$) or "Inverted" ($x_k = -1$).

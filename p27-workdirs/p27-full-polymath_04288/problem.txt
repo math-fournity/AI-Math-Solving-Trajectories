@@ -1,0 +1,1 @@
+Find the maximum value of $k$ so that the inequality $\frac{a^4}{b^2}+\frac{b^4}{c^2}+\frac{c^4}{a^2} +k(ab+bc+ca)\geq (k+1)(a^2+b^2+c^2)$ holds for all positive real numbers $a, b, c$.

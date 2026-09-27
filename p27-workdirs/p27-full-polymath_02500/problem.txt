@@ -1,0 +1,1 @@
+Initially, Alice is given a positive integer $a_0$. At each step $i \in \{1, 2, 3, \dots\}$, Alice chooses one of the following operations:

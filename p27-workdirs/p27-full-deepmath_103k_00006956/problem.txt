@@ -1,0 +1,1 @@
+Determine the asymptotic value of \(\underset{c \in \text{Coloring}}{\min} \text{ score}(c) = \underset{c \in \text{Coloring}}{\min} \left(\underset{\begin{subarray}{c} B \subset \text{Colors}, \\ |B|\leq n  \end{subarray}}{\max} V_c(B)\right)\). Is it \(\Theta(n^2)\) or \(o(n^2)\)?

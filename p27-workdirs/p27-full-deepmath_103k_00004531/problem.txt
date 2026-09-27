@@ -1,0 +1,1 @@
+Let \( f: \mathbf{R} \to \mathbf{R} \) be an analytic function. Determine whether there exists a harmonic function \( u \) on the circular cylinder \( D \times \mathbf{R} \subset \mathbf{R}^3 \) such that \( u = f \) along the axis \( \{ (0,0) \} \times \mathbf{R} \).

@@ -1,0 +1,1 @@
+Is it possible to fill a 100x100 grid with the numbers 0, 1, or 2 such that the sum of the numbers in each row, each column, and one of the main diagonals are all different?

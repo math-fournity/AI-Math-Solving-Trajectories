@@ -1,0 +1,1 @@
+For the unit cube \( \text{Cub}_d = [-\frac{1}{2}, \frac{1}{2}]^d \) in \( \mathbb{R}^d \), what are the minimum and maximum volumes of its central hyperplane sections \( \text{Vol}(\text{Cub}_d \cap H) \), where \( H \) is a hyperplane passing through the origin? Under what conditions are these extrema achieved?

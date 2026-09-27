@@ -1,0 +1,1 @@
+One thousand people are in a tennis tournament where each person plays against each other person exactly once, and there are no ties. Prove that it is possible to put all the competitors in a line so that each of the 998 people who are not at an end of the line either defeated both their neighbors or lost to both their neighbors

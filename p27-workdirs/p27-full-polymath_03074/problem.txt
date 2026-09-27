@@ -1,0 +1,1 @@
+4. (22 points) Suppose a set of planar points $S$ has the following properties:

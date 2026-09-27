@@ -1,0 +1,1 @@
+In a remote digital archives facility, a sequence of data packets is processed over a series of 124 distinct time intervals, labeled $n = 1, 2, 3, \dots, 124$. For each interval $n$, the system calculates a "Cumulative Signal Density" value, $H_n$, which is the sum of the reciprocal transmission rates from the first interval up to the current interval $n$:

@@ -1,0 +1,1 @@
+A regular  $2004$ -sided polygon is given, with all of its diagonals drawn. After some sides and diagonals are removed, every vertex has at most five segments coming out of it. Prove that one can color the vertices with two colors such that at least  $\frac{3}{5}$  of the remaining segments have ends with different colors.

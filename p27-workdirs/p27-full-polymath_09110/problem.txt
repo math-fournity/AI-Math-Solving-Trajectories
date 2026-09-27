@@ -1,0 +1,1 @@
+In a highly secure digital vault, the access protocol is governed by a prime modulus $p = 1,000,000,007$. Scientists have identified a specific set of "Primary Keys," which are all prime numbers $p_1, p_2, \dots, p_m$ strictly less than $\sqrt[4]{\frac{1}{2}p}$, ordered from smallest to largest.

@@ -1,0 +1,9 @@
+Prove that
+
+$$
+\left(a^{2}+2\right)\left(b^{2}+2\right)\left(c^{2}+2\right) \geq 9(a b+b c+c a)
+$$
+
+for all real numbers $a, b, c>0$.
+
+##

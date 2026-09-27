@@ -1,0 +1,1 @@
+Find the smallest positive integer $N$ with 2000 digits such that $N$ is composite and for any three consecutive digits of $N$, replacing them with any three new digits results in a composite number. Calculate the sum of the first three digits of $N$.

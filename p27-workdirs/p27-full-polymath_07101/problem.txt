@@ -1,0 +1,1 @@
+A specialized deep-space communication array uses a cryptographic frequency key $p$. This key is a unique prime number greater than 5 that satisfies a specific resonance property: when the unit signal 1 is divided by $p$, the resulting digital sequence enters an infinitely repeating pattern with a cycle length of exactly 294 digits.

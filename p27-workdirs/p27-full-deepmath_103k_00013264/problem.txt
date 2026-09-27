@@ -1,0 +1,1 @@
+Determine the Galois group of the polynomial $x^{4}-4x^{2}+5$ over the field $\mathbb{Q}$. Provide your answer in terms of a well-known group, if possible.

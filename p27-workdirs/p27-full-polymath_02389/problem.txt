@@ -1,0 +1,1 @@
+Svitlana writes the number \(147\) on a blackboard. Then, at any point, if the number on the blackboard is \(n\), she can perform one of the following three operations:

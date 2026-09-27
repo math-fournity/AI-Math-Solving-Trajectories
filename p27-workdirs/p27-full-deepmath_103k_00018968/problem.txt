@@ -1,0 +1,1 @@
+Given a sequence of random variables $Y_{n,b}$ for $n,b \in \mathbb{N}$, satisfying:

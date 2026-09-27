@@ -1,0 +1,1 @@
+In the high-tech digital vault of the Ouroboros Corporation, a security protocol is governed by a modular arithmetic system based on a prime cycle of 13 units (the integers 0 through 12, where all calculations are performed modulo 13).

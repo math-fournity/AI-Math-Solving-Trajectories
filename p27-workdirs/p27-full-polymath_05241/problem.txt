@@ -1,0 +1,1 @@
+Let $A=(a_1, a_2, \dots, a_k)$ be an array of positive integers. A set of positive integers $M$ is called "$A$-good" if for any $x_1, x_2, \dots, x_k \in M$, the sum $a_1 x_1 + a_2 x_2 + \dots + a_k x_k \notin M$.

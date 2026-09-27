@@ -1,0 +1,1 @@
+Let $S_2(n)$ denote the sum of digits of $n$ written in base 2. Let $K$ be an odd number such that $S_2(K) = 2$. Suppose $K = ab$ for some positive integers $a, b > 1$. Let $l, m > 2$ be integers such that $S_2(a) < l$ and $S_2(b) < m$.

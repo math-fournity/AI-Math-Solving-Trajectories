@@ -1,0 +1,1 @@
+In the interconnected kingdom of Othellia, there are $n$ distinct cities. To ensure total connectivity, a high-speed maglev track has been built between every possible pair of cities, such that every city is directly linked to every other city.

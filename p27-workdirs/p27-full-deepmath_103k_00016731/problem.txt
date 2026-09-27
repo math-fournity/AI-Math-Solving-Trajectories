@@ -1,0 +1,1 @@
+Determine all surjective functions \( f: \mathbb{R} \to \mathbb{R} \) such that for all \( x, y \in \mathbb{R} \), the following equation holds: \[ f(x + f(x) + 2f(y)) = f(2x) + f(2y) \]

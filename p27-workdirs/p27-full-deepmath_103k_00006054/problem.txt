@@ -1,0 +1,1 @@
+Determine whether every regular Noetherian domain has finite Krull dimension. Provide a justification for your answer.

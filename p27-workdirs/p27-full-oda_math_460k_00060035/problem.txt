@@ -1,0 +1,1 @@
+Consider the function \( F(k) = \int_{0}^\infty \frac{\cos(k x)}{e^{2k\sqrt{x}}-1} \, dx \). Calculate the value of \( 4F\left(\frac{\pi}{2}\right) \).

@@ -1,0 +1,1 @@
+A limping chess knight alternates between a normal move and a short move (to any diagonally neighboring cell) on a $5 \times 6$ chessboard. Starting with a normal move, what is the largest number of moves the knight can make without visiting any cell more than once?

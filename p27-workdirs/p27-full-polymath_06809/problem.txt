@@ -1,0 +1,1 @@
+A high-security data warehouse consists of a square grid of 100 storage vaults, organized into 10 rows and 10 columns. To minimize the risk of a chain-reaction breach, a security consultant must assign a unique security clearance level—represented by the integers from 1 to 100—to each individual vault.

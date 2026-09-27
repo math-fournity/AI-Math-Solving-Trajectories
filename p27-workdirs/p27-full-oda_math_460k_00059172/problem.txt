@@ -1,0 +1,1 @@
+Let \( K \) be a field with characteristic \( p \geq 2 \) and \( m, n \) natural numbers such that \( (m, p) = 1 \). Let \( A, B \in M_n(K) \) such that \( A^{p^m} = A \) and \( B^p = B + I_n \). Find the trace of the matrix \( X \in M_n(K) \) such that \( AX + XB = I_n \).

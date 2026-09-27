@@ -1,0 +1,1 @@
+Given a positive integer $a$, find the maximum value of the expression:

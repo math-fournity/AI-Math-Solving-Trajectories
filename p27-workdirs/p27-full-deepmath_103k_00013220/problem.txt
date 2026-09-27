@@ -1,0 +1,1 @@
+Determine whether a measurable function $F:[0,1]\rightarrow \mathbb{R}$ that is bounded almost everywhere necessarily has bounded variation on $[0,1]$. Provide a justification for your answer.

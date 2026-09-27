@@ -1,0 +1,1 @@
+Given real numbers  $b_0,b_1,\ldots, b_{2019}$  with  $b_{2019}\neq 0$ , let  $z_1,z_2,\ldots, z_{2019}$  be the roots in the complex plane of the polynomial

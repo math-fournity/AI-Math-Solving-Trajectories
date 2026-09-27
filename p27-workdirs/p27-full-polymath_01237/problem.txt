@@ -1,0 +1,1 @@
+Given the sequence $\{y_n\}_{n=1}^{\infty}$ defined by $y_1=y_2=1$ and

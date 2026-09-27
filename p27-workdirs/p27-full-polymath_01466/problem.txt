@@ -1,0 +1,1 @@
+In a regular $21$-gon, $m$ vertices are painted red and $n$ vertices are painted blue. Let $R$ be the set of all triangles whose vertices are red, and let $B$ be the set of all triangles whose vertices are blue. Determine the smallest positive integer $n$ such that for $m = 6$, there must always exist a triangle in $R$ and a triangle in $B$ that are congruent.

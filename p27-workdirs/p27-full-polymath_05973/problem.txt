@@ -1,0 +1,1 @@
+In a remote digital frontier, a server cluster's capacity is defined by a "Stability Index" $n$, where $n$ is an integer greater than 2. The cluster operates by splitting its total capacity $n$ into two separate data streams, $a$ and $b$. These streams are measured in positive integer units such that their sum $a + b$ always equals the Stability Index $n$.

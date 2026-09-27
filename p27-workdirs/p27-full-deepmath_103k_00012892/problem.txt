@@ -1,0 +1,1 @@
+Evaluate the integral \( \int _C \frac{\exp(z^2)}{z^2\left(z-1-i\right)}dz \), where \( C \) consists of the contour \(|z|=2\) oriented counterclockwise and \(|z|=1\) oriented clockwise.

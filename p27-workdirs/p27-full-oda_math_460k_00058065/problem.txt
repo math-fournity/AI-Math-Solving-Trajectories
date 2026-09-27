@@ -1,0 +1,1 @@
+Determine all domains \( \Omega \) in \( \mathbb{R}^n \), \( n \geq 2 \), satisfying the identity \( \int_{\Omega} h(x) \, dx = 0 \) for every function \( h \) harmonic and integrable on \( \Omega \).\n\nIn the case \( n = 2 \), the answer is given by Sakai [874].\n\n(M. Sakai)

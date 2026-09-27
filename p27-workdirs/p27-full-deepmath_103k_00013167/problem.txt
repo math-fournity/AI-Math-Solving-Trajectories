@@ -1,0 +1,1 @@
+Determine the number of functions \( f: \mathbb{R} \rightarrow \mathbb{R} \) that satisfy the equation \( f(x+y)+f(xy)=f(x)f(y)+1 \) for all real numbers \( x \) and \( y \).

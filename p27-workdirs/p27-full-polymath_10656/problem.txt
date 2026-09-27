@@ -1,0 +1,1 @@
+A high-security data center consists of a square server rack grid measuring $2n$ units by $2n$ units. A technician is installing cooling modules to prevent overheating. Each cooling module is a rectangular unit that occupies a footprint of exactly $1 \times n$ units or $n \times 1$ units.

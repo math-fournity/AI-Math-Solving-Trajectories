@@ -1,0 +1,1 @@
+Let $d$ be a positive integer. Show that for every integer $S$, there exists an integer $n>0$ and a sequence $\epsilon_{1}, \epsilon_{2}, \ldots, \epsilon_{n}$, where for any $k, \epsilon_{k}=1$ or $\epsilon_{k}=-1$, such that

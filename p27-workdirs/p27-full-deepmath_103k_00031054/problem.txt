@@ -1,0 +1,1 @@
+Determine the smallest natural number \( n \) such that in any two-coloring of the edges of the complete graph \( K_n \), there are always two monochromatic triangles that share exactly one common vertex.

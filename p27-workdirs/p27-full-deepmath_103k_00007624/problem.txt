@@ -1,0 +1,1 @@
+Let $A \subset \mathbb{R}^n$ be a Lebesgue null set, and let $\mu$ be a positive $\sigma$-finite measure such that $\mu(A^c) = 0$ and $\mu(A + r) = \mu(A)$ for all $r \in \mathbb{R}^n$. Does this imply that $\mu = 0$?

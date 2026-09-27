@@ -1,0 +1,1 @@
+Person A erases 10 elements from the set \(\{1, 2, \ldots, n\}\). Person B then tries to find an arithmetic progression of length 11. Find the smallest number \(n\) such that Person A cannot prevent Person B from finding such an arithmetic progression.

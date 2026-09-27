@@ -1,0 +1,1 @@
+Let $m$ be the product of the first 100 primes, and let $S$ denote the set of divisors of $m$ greater than 1 (hence $S$ has exactly $2^{100} - 1$ elements).  We wish to color each element of $S$ with one of $k$ colors such that

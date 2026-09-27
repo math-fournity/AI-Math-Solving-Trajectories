@@ -1,0 +1,1 @@
+Find all functions \( f : \mathbb{R} \to \mathbb{R} \) that satisfy the functional equation \( f(f(x)+3y)=12x + f(f(y)-x) \).

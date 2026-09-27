@@ -1,0 +1,1 @@
+In a remote sector of the stratosphere, a specialized triangular communication platform is anchored by three high-altitude drones located at points $A$, $B$, and $C$. A central signal relay hub, designated as point $O$, is positioned such that its direct line-of-sight distance to each of the three drones is exactly 4 units ($OA = OB = OC = 4$).

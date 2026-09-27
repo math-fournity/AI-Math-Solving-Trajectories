@@ -1,0 +1,1 @@
+In a remote 4-kilometer by 4-kilometer forest, a forest ranger has divided the terrain into 16 identical 1-square-kilometer zones, arranged in a perfect $4 \times 4$ square grid. The ranger’s station is located in the clearing at the center of the zone in the extreme southwest corner of the grid.

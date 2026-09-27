@@ -1,0 +1,1 @@
+Now suppose that before the game begins, the players choose the initial game state as follows:

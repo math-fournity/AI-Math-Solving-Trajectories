@@ -1,0 +1,1 @@
+Let $K$ be an algebraically closed field of characteristic zero, equipped with an involution $x \mapsto \overline{x}$, an order-2 field automorphism. The fixed field $F := \{x \in K: \overline{x} = x\}$ is a proper subfield of $K$. Is $F$ always real-closed for any such involution?

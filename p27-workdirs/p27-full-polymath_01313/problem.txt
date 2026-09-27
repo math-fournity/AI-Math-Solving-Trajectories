@@ -1,0 +1,1 @@
+Example 10 Find the largest integer $n$ such that all non-zero solutions of the equation $(z+1)^{n}=z^{n}+1$ lie on the unit circle.

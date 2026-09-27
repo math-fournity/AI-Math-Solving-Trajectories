@@ -1,0 +1,1 @@
+Consider the set of all strictly decreasing sequences of $n$ natural numbers $(a_1, a_2, \ldots, a_n)$ such that no term in a sequence divides any other term in the same sequence. Define an ordering on these sequences where sequence $A = (a_j)$ precedes sequence $B = (b_j)$ if there exists some $k$ such that $a_k < b_k$ and $a_i = b_i$ for all $i < k$.

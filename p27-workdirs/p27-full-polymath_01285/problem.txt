@@ -1,0 +1,1 @@
+Using the digit 9 and the four basic operations (+, −, *, /), parentheses, exponentiation, factorial, and square root, construct the number 2023 using as few 9's as possible.

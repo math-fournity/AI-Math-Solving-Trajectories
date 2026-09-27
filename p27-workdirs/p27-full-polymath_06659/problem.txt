@@ -1,0 +1,1 @@
+In a futuristic data-processing facility, the energy output of a core reactor is governed by a specific polynomial function. Engineers measure the reactor's stability index, represented by a positive integer $x$, which generates a total power output according to the formula:

@@ -1,0 +1,1 @@
+On a blackboard, there are $n$ positive numbers $a_{1}, a_{2}, \dots, a_{n}$. A sequence $b_{1}, b_{2}, \dots, b_{n}$ is called "divisible" if $b_i \ge a_i$ for all $i=1, \dots, n$ and for any $i, j \in \{1, \dots, n\}$, either $b_i/b_j$ or $b_j/b_i$ is an integer.

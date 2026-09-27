@@ -1,0 +1,1 @@
+Find the sum of the digits of the nine-digit number $aaaabbbbb$ which can be written as the sum of fifth powers of two positive integers.

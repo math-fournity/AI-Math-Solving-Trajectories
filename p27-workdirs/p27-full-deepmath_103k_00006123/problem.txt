@@ -1,0 +1,1 @@
+Determine whether there exists a natural number \( n > 1 \) that satisfies the following conditions:

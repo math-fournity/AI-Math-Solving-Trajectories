@@ -1,0 +1,1 @@
+Determine the value of \( c \in \mathbb{R} \) such that the function \( \kappa(t) = ct^4(1-t)^4 \) can be the signed curvature of a regular, closed, and convex curve \( \alpha: [0,1] \rightarrow \mathbb{R}^2 \).

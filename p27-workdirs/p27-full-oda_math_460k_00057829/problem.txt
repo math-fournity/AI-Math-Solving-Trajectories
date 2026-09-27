@@ -1,0 +1,1 @@
+Determine the lowest degree of a polynomial with integer coefficients that has a root of \( \tan \frac{p}{q}\pi \), where \( p \) and \( q \) are positive integers with \( \gcd(p, q) = 1 \).

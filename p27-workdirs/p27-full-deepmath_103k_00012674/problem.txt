@@ -1,0 +1,1 @@
+Consider a connected complex manifold $X$ with a complex submanifold $Y$ such that a function $f:Y \to \mathbb{C}$ is holomorphic if and only if $f$ is constant. If $Y$ is not a closed submanifold, can $X$ have non-constant holomorphic functions?

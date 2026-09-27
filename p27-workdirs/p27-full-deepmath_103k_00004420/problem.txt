@@ -1,0 +1,1 @@
+Is it true that for every IA automorphism \(\alpha \in \text{Aut}(F(X_n))\), the map \(x_i \mapsto \varphi(\alpha(x_i))\) for \(1 \le i \le n-1\) defines an element in \(\text{Aut}(F(X_{n-1}))\)?

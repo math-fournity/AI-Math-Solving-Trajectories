@@ -1,0 +1,1 @@
+What is the equation of the discriminant quartic for the web of harmonic quadrics corresponding to the group \( G = \mathbb{T} \), given the parameter constraints \( b = d = 1 \) and \( e \neq \pm 2 \)?

@@ -1,0 +1,1 @@
+Let $\sigma=\{a_{1}, a_{2}, \dots, a_{n}\}$ be a permutation of $\{1, 2, \dots, n\}$, and define $F(\sigma)=\sum_{i=1}^{n} a_{i} a_{i+1}$, where $a_{n+1}=a_{1}$. Let $M(n) = \min_{\sigma} F(\sigma)$ denote the minimum possible value of this sum for a given $n$.

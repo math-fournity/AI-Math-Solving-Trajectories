@@ -1,0 +1,1 @@
+Let $n$ be a natural number. A staircase of size $n$ is made up of small $1 \times 1$ squares, with 1 square for the first step, 2 squares for the second step, and so on, up to $n$ squares for the $n^{\text{th}}$ step.

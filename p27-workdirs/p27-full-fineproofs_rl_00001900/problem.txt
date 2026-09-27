@@ -1,0 +1,1 @@
+Given an inscribed quadrangle  $ ABCD $ , whose sides intersect at points  $ K $  and  $ M $ . The bisectors of the angles  $ K $  and  $ M $  intersect the sides of  $ ABCD $  at four points. Prove that these four points form a rhombus.

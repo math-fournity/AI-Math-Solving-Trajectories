@@ -1,0 +1,1 @@
+A specialized deep-sea research probe tracks its vertical velocity relative to its depth using a cubic function $f(x)$, where $x$ represents the probe's displacement from a sea-level reference point (in kilometers) and $f(x)$ is the resulting pressure index. The probe’s design ensures that the coefficient of the $x^3$ term is exactly $1$.

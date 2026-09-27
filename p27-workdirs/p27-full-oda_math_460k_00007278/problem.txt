@@ -1,0 +1,1 @@
+Up to permutation of the variables, find the parametrization of the equation \( w^{3} + x^{3} + y^{3} + z^{3} = 0 \) in \(\mathbb{Q}\).

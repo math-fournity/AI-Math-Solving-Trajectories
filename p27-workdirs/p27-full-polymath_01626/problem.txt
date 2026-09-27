@@ -1,0 +1,1 @@
+Let \( n \geq 3 \) points in the plane such that no three points are collinear. Join two points by an edge and color each edge with one of four colors such that if a triangle has two sides with the same color, the remaining side also has this color. Each color is used at least once. Find the maximum value of \( n \).

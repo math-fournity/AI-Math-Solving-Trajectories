@@ -1,0 +1,1 @@
+In a vast digital network, there are $N$ server nodes connected by $N-1$ fiber-optic cables. Each cable is assigned a unique security clearance level from the set $\{1, 2, \ldots, N-1\}$.

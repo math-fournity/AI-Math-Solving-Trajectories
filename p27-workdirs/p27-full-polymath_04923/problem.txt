@@ -1,0 +1,1 @@
+For a function \( f: \mathbb{Z}_{>0} \to \mathbb{Z}_{>0} \), define the set

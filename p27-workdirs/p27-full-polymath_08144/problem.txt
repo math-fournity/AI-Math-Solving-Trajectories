@@ -1,0 +1,1 @@
+A digital archivist is organizing a massive database consisting of $n$ data blocks. For any given total number of blocks $n$, the system calculates a "Total Processing Load" by summing the fractional processing time of each block from the 1st to the $n$-th. Specifically, the load is the sum of the reciprocals of the integers from 1 to $n$.

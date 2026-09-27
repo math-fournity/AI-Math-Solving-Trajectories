@@ -1,0 +1,1 @@
+**5.** Prove that neither the closed nor the open interval can be decomposed into finitely many mutually disjoint proper subsets which are all congruent by translation. **(St. 2)**

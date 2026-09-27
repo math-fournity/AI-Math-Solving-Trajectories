@@ -1,0 +1,1 @@
+For a closed surface of genus \( g \geq 3 \), is the Torelli subgroup of \( \mathcal{M}_{g,m} \) undistorted? More generally, find a distorted finitely generated subgroup of \( \mathcal{M}_{g,m} \).

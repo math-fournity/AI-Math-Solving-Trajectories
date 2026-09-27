@@ -1,0 +1,1 @@
+In a specialized semiconductor cleanroom, a micro-grid circuit is etched onto a silicon wafer. The grid is constructed using exactly 14 silver conduction zones and 10 copper conduction zones, each shaped as a perfect isosceles right triangle. These 24 zones are arranged edge-to-edge to form a larger geometric layout.

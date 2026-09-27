@@ -1,0 +1,1 @@
+Find all $z \in \mathbb{C}$ such that $\exp z = \ln z$, where $\ln z := \ln |z| + i \arg z$ and $\exp$ is its functional inverse.

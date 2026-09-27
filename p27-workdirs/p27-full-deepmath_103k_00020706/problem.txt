@@ -1,0 +1,1 @@
+Given a function $f: \mathbb{R} \to \mathbb{R}$, assume the following conditions hold:

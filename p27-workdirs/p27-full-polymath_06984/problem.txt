@@ -1,0 +1,1 @@
+In a futuristic data-management center, two security protocols, Aino and Väinö, are competing to purge corrupted files from each other’s storage partitions. Each protocol controls a local server containing a specific number of files.

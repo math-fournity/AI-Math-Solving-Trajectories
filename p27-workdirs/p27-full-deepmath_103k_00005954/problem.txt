@@ -1,0 +1,1 @@
+Let \((R, m)\) be a commutative regular local Noetherian ring. Determine whether it is true that for every prime \(p \in \text{Spec}(R)\), the factor ring \(R/p\) has a maximal Cohen-Macaulay \(R/p\)-module.

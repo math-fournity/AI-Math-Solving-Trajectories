@@ -1,0 +1,1 @@
+A square grid consists of 36 intersection points labeled from 1 to 36 in a $6 \times 6$ array, where point 1 is the top-left corner and point 36 is the bottom-right corner. A path is to be constructed such that:

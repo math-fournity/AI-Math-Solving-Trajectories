@@ -1,0 +1,1 @@
+Let $f(X)$ be a monic and irreducible polynomial of degree $n$ in $\mathbb{Z}[X]$. Determine if the quotient $\mathbb{Z}[X]/ \langle f(X) \rangle$ is a commutative ring with unity, and if so, find its characteristic.

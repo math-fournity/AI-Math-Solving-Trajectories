@@ -1,0 +1,1 @@
+Let $f: X \to Y$ be a finite map of compact complex manifolds, and let $a \in H^2(X)$ be a cohomology class containing a Kähler form. Determine if $f_* a$ also contains a Kähler form.

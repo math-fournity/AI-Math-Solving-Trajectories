@@ -1,0 +1,1 @@
+A specialized irrigation firm is designing a remote monitoring system for a triangular nature reserve defined by three landmark stations: Station A, Station B, and Station C. The straight-line distances between these stations are measured as follows: the path from A to B is 7 km, from B to C is 5 km, and from C to A is 6 km.

@@ -1,0 +1,1 @@
+Five airlines operate in a country consisting of $36$ cities. Between any pair of cities exactly one airline operates two way

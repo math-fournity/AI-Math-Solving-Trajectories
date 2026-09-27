@@ -1,0 +1,1 @@
+In a standard deck of 52 cards numbered from 1 to 52, 26 cards are selected at random without replacement. Determine the number of ways to select these 26 cards such that the sum of the reciprocals of their ranks equals exactly 2.

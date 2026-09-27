@@ -1,0 +1,1 @@
+Let there be 320 points arranged on a circle, labeled \(1, 2, 3, \ldots, 8, 1, 2, 3, \ldots, 8, \ldots\) in order. Line segments may only be drawn to connect points labeled with the same number. What is the largest number of non-intersecting line segments one can draw? (Two segments sharing the same endpoint are considered to be intersecting).

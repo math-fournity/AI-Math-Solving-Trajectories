@@ -1,0 +1,1 @@
+A high-tech server farm is organized into an $8 \times 8$ grid of 64 data nodes. Each node has a specific power output measured in megawatts (MW). The outputs are assigned row by row, from top to bottom and left to right: the first row contains nodes with outputs 1 through 8, the second row 9 through 16, and so on, until the eighth row, which contains nodes 57 through 64.

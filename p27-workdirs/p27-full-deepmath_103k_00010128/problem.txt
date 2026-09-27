@@ -1,0 +1,1 @@
+Consider finitely generated modules over an Artin algebra. Let $X$ be an indecomposable module and $f: X \longrightarrow X \oplus X$ be a monomorphism. Determine whether $f$ must always be a split monomorphism.

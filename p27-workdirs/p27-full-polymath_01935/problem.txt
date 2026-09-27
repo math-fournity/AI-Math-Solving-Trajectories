@@ -1,0 +1,1 @@
+A regular $n$-gon is divided into triangles using $n-3$ diagonals, none of which share interior points. Let $f(n)$ be the maximum possible number of mutually non-congruent triangles in such a division. Compute the sum $\sum_{n=3}^{20} f(n)$.

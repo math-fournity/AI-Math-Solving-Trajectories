@@ -1,0 +1,10 @@
+/-!
+# IMO 2021 A6 (P6)
+
+Let $m ∈ ℕ$ and $a_0, a_1, …, a_{k - 1}$ be integers.
+Suppose that there exists subsets $B_0, B_1, …, B_{m - 1}$ of $[k]$
+  such that for each $i ∈ [m]$, $$ \sum_{j ∈ B_i} a_j = m^{i + 1}. $$
+Prove that $k ≥ m/2$.
+-/
+
+##

@@ -1,0 +1,1 @@
+A specialized chemical processing plant operates three interconnected filtration chambers, where the efficiency of each chamber depends on the flow rates of three distinct catalysts: $a$, $b$, and $c$ (all measured in positive liters per hour).

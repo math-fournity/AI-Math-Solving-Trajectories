@@ -1,0 +1,1 @@
+Consider a function $f:\mathbb{R}^n\longrightarrow\mathbb{R}^m$ with partial derivatives everywhere so that the Jacobian matrix is well-defined. Let $L>0$ be a real number. Determine if the following statement is true:

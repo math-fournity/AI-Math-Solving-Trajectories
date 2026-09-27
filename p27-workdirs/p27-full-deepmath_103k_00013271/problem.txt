@@ -1,0 +1,1 @@
+For large $n$, approximate the probability that the expression \( Y = \frac{V_1 + V_2 + \cdots + V_n} {\sqrt{V_1^2 + V_2^2 + \cdots + V_n^2}} \) is greater than 0.5, where \( V_i \) are independent and identically distributed random variables with a uniform distribution over \([-2, 2]\).

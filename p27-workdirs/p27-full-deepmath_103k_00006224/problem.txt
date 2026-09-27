@@ -1,0 +1,1 @@
+Let $a > 1$ be a fixed positive integer and $f(x)$ be a polynomial with integer coefficients and a positive leading coefficient. Define the set $S$ as follows:

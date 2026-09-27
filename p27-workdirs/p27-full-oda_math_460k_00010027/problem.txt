@@ -1,0 +1,1 @@
+Let $K=\mathbb{Q}\left(2 \cos \frac{2 \pi}{n}\right)$, where $n$ is odd and $\neq 3$. Is there a generic $C_{n}$-polynomial over $K$ with one parameter?

@@ -1,0 +1,1 @@
+Given a triangle \(ABC\) with inradius \(r\) and side lengths \(a\), \(b\), and \(c\), and any point \(M\) on the plane, let \(R_{M}\) be the circumradius of the pedal triangle of \(M\). Find the minimum value of the expression

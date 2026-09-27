@@ -1,0 +1,1 @@
+In the competitive world of urban planning, a developer is designing a $5 \times 5$ grid of residential plots. To ensure a diverse neighborhood, the developer assigns each of the 25 plots a unique "prestige rating" using every integer from $1$ to $25$ exactly once.

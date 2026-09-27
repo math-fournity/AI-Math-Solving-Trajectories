@@ -1,0 +1,1 @@
+Find the number of ways to arrange the set of numbers $\{1, 2, 3, \dots, 500\}$ on a circle such that for any four distinct numbers $a, b, c, d$ satisfying $a + b \equiv c + d \pmod{500}$, the segments joining $a, b$ and $c, d$ do not intersect inside the circle. Two arrangements are considered identical if one can be obtained from the other by rotation.

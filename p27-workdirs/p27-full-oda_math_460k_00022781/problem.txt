@@ -1,0 +1,1 @@
+Given a prime \( p \), choose \( p+1 \) integers \( a_1, a_2, \ldots, a_{p+1} \) such that the set \( \{a_i - a_j \mid 1 \leq i, j \leq p+1\} \) is a complete residue system modulo \( p^2 + p + 1 \). Calculate the sum of all possible values of \( a_{p+1} \) if \( a_1 = 0 \) and \( a_2 = 1 \).

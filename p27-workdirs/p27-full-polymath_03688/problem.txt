@@ -1,0 +1,1 @@
+Given a height of 137, find the maximum number of elements in a set $S$ that satisfies the following conditions:

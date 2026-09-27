@@ -1,0 +1,1 @@
+A logistics company is designing an automated sorting protocol $f$ that assigns a positive integer priority level to every package based on its ID number $n \in \{1, 2, 3, \dots\}$. To ensure efficiency, the protocol must satisfy two operational constraints:

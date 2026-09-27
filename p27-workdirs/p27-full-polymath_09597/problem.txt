@@ -1,0 +1,1 @@
+In a specialized logistics network, there are 100 regional distribution hubs arranged in a large circle. Each hub $i$ (where $i = 1, 2, \ldots, 100$) is assigned a positive integer $a_i$ representing its fleet capacity.

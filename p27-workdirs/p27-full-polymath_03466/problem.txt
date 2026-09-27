@@ -1,0 +1,1 @@
+A convex hexagon \(A_{1} A_{2} A_{3} A_{4} A_{5} A_{6}\) satisfies \(A_{1} A_{2} + A_{1} A_{6} = 2\), \(A_{2} A_{3} = 2\), and \(A_{1} A_{4} = 4\). \(\square A_{2} A_{3} A_{5} A_{6}\) is a parallelogram, and \(\triangle A_{3} A_{4} A_{5}\) is an equilateral triangle. Let the area of this hexagon be \(S\). Find the product of the minimum and maximum value of \(S\).

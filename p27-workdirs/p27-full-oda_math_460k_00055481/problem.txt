@@ -1,0 +1,1 @@
+Consider the sequence defined by $a_1 = n$ and $a_{k+1} = a_k^2 - 2$ for $k \geq 1$, where $n$ is a natural number. Let $P(n)$ be the smallest positive integer $k$ such that $a_k$ is divisible by $n^2$. Find $P(1009)$.

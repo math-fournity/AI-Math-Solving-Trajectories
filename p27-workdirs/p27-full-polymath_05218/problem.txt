@@ -1,0 +1,1 @@
+Let \( M = \{0, 1, 2\} \) and the power set algebra \( \mathcal{A} = (\mathcal{P}(M), \cup, \cap) \). How many generating systems are there?

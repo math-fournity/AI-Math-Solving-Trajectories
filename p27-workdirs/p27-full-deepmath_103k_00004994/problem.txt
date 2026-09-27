@@ -1,0 +1,1 @@
+Given a prime number $p$ and a positive integer $k$, consider integer-valued polynomials $f(x)$ satisfying the property that $p \mid f(x)$ if and only if $p^k \mid x$. What is the smallest degree of such a polynomial $f(x)$?

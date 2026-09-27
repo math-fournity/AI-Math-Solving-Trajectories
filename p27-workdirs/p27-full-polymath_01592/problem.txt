@@ -1,0 +1,1 @@
+For a natural number $p > 1$, we define the sequence $\{a_{n}\}_{n=1}^{\infty}$ by $a_{1}=1$ and $a_{n+1}=p a_{n} \pmod{2^{n}}$ for $n \geq 1$. The sequence $\{b_{n}\}_{n=1}^{\infty}$ is defined as $b_{n}=a_{n} \pmod{p}$. Consider the set $S = \{p \in \mathbb{N} \mid p > 1, \{b_n\}_{n=1}^{\infty} \text{ is periodic}\}$. Determine the sum of all $p \in S$ such that $p \leq 20$.

@@ -1,0 +1,1 @@
+Let \( m \) be any natural number. Determine the smallest natural number \( k \) in terms of \( m \) such that: If \(\{m, m+1, \ldots, k\} = A \cup B\) is any partition into two sets \( A \) and \( B \), then either \( A \) or \( B \) contains three elements \( a, b, c \) (which need not be distinct) such that \( a^{b} = c \).

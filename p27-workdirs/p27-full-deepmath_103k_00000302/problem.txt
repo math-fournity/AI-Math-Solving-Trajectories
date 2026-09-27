@@ -1,0 +1,1 @@
+Let \( \text{Com}(\mathbb{R}^2) \) denote the space of nonempty compact subsets of the plane, equipped with the Hausdorff metric. Consider a continuous path \( S_\bullet:[0,1]\to\text{Com}(\mathbb{R}^2) \). If \( p\in S_0 \), must there exist a path \( \gamma:[0,1]\to\mathbb{R}^2 \) such that \( \gamma(0)=p \) and \( \gamma(t)\in S_t \) for all \( t\in[0,1] \)?

@@ -1,0 +1,1 @@
+Let \( I = [0,1] \) and \( A = [0,1] \setminus \mathbb{Q} \). Verify each of the following statements:

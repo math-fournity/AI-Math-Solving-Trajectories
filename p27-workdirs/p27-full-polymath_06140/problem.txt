@@ -1,0 +1,1 @@
+In a specialized logistics center, a drone’s flight path is constrained to a perfect elliptical circuit $E$. The maximum diameter of this circuit is 26 kilometers, while its minimum diameter is 24 kilometers. Two stationary charging hubs, labeled $R$ and $S$, are positioned at the foci of this elliptical path.

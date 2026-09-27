@@ -1,0 +1,1 @@
+Determine the asymptotic density of positive integers \( n \) such that \( \gcd(n, \sigma(n^2)) = \gcd(n^2, \sigma(n^2)) \), where \( \sigma(x) \) denotes the sum of divisors of \( x \).

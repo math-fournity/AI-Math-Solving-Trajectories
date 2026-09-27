@@ -1,0 +1,1 @@
+Each diagonal of a regular \(n\)-gon \(A_1A_2A_3\ldots A_n\) is colored blue or black. There are no three vertices connected by three monochromatic diagonals. Find the largest possible value of \(n\).

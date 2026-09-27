@@ -1,0 +1,1 @@
+Compute the equation that defines the quotient variety $V/(\mathbb{C}^*)^2$, where $V = \{ (x,y,z) \in \mathbb{A}^3\ |\ x = yz \}$ and the action of $(\mathbb{C}^*)^2$ on $V$ is given by $(\lambda, \mu) \star (x,y,z) = (\lambda \mu\ x , \lambda\ y,\mu\ z)$.

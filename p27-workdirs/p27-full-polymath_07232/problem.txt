@@ -1,0 +1,1 @@
+In a remote digital archipelago, a network administrator is configuring sensors across three different square server clusters of sizes $4 \times 4$, $5 \times 5$, and $6 \times 6$. Each cluster is a grid of $n \times n$ nodes.

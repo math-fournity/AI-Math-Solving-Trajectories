@@ -1,0 +1,1 @@
+14. Feifei separately counted the number of divisors of $\mathrm{A}$, the number of divisors of $\mathrm{A}$'s 2 times, the number of divisors of $\mathrm{A}$'s 3 times, ..., and the number of divisors of $\mathrm{A}$'s 10 times, and obtained the following table. If there is only one incorrect statistic in this table, then the integer $\mathbf{A}$ is

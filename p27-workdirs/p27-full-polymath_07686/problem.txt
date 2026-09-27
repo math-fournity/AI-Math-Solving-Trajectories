@@ -1,0 +1,1 @@
+In a specialized logistics competition, a head dispatcher named Bob and an operations manager named Alice are tasked with organizing inventory layouts. There are 2011 distinct storage warehouses, each featuring a square floor plan of $2011 \times 2011$ designated storage slots. Bob is assigned 1 warehouse, while Alice is assigned the remaining 2010 warehouses.

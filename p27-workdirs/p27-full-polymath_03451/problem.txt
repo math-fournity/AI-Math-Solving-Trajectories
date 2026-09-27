@@ -1,0 +1,1 @@
+Determine the diameter of any set \( \{A_1, \ldots, A_5\} \) for which the maximum value of \( \min_{1 \leq i,j \leq 5} A_iA_j \) is attained.

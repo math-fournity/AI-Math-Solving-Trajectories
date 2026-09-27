@@ -1,0 +1,1 @@
+Find the best constant \( k \) such that the inequality

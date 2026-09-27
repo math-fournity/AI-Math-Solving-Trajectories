@@ -1,0 +1,1 @@
+Let $M$ and $M'$ be simply connected manifolds of dimension $m > 0$. Is it true that if $M$ is homotopic to $M'$, then for $k \geq m$, the spaces $Imm(M, \mathbb{R}^{m+k})$ and $Imm(M', \mathbb{R}^{m+k})$ are homotopic? In other words, if $k \geq m$, does $M \simeq M'$ imply $Imm(M, \mathbb{R}^{m+k}) \simeq Imm(M', \mathbb{R}^{m+k})$?

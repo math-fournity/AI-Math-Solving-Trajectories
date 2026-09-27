@@ -1,0 +1,1 @@
+A specialized laboratory is testing the durability of 20 different alloy samples, labeled $S = \{x_1, x_2, \dots, x_{20}\}$. Each sample has been assigned a "wear-resistance coefficient" measured as a real number within the continuous range $[0, 1]$.

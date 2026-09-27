@@ -1,0 +1,1 @@
+Find the smallest natural numbers which can be written as $\frac{a^2}{24}+\frac{b^2}{25}+\frac{c^2}{26}+\frac{d^2}{27}+\frac{e^2}{28}$, where $a, b, c, d, e$ are natural numbers.

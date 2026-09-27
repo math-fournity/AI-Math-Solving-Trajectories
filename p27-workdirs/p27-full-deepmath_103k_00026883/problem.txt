@@ -1,0 +1,1 @@
+Does there exist an $F_{\sigma\delta}$-set $E \subseteq \mathbb{R}$ for which a sequence of continuous functions $\langle g_n: n \in \mathbb{N} \rangle$ can be found such that $\{x \in \mathbb{R}: \lim_{n \to \infty} g_n(x) \text{ exists}\} = E$?

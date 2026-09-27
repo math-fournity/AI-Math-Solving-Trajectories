@@ -1,0 +1,1 @@
+Consider a triangle $ABC$ with sides $a$, $b$, and $c$, and let $r$ be the inradius. If the orthocenter of triangle $ABC$ lies on the incircle, determine the value of $\frac{a^2 + b^2 + c^2}{r^2}$.

@@ -1,0 +1,1 @@
+For any two convex polygons $P_1$ and $P_2$ with mutually distinct vertices, denote by $f(P_1, P_2)$ the total number of their vertices that lie on a side of the other polygon. Let $M(n)$ be the maximum value of $f(P_1, P_2)$ over all pairs of convex $n$-gons. Calculate the sum of $M(n)$ for all $n$ from 4 to 10.

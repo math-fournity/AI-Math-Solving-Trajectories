@@ -1,0 +1,1 @@
+There are more than  $n^2$  stones on the table. Peter and Vasya play a game, Peter starts. Each turn, a player can take any prime number less than  $n$  stones, or any multiple of  $n$  stones, or  $1$  stone. Prove that Peter always can take the last stone (regardless of Vasya's strategy).

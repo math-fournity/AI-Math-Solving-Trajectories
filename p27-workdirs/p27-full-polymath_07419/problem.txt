@@ -1,0 +1,1 @@
+In the city of Axioma, there are $n$ distinct high-tech sensors, labeled $1$ through $n$. A surveillance agency needs to create a security protocol consisting of an ordered sequence of $n-2$ distinct activation zones, $A_1, A_2, \ldots, A_{n-2}$. Each activation zone $A_k$ is defined as a specific subset of the $n$ sensors.

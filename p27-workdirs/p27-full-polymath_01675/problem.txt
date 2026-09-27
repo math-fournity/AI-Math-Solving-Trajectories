@@ -1,0 +1,1 @@
+Let $A, B \in \mathcal{M}_4(\mathbb{R})$ be matrices such that $AB = BA$ and $\det(A^2 + AB + B^2) = 0$. Given that $\det(A) = 3$ and $\det(B) = 5$, find the value of $\det(A + B) + 3\det(A - B)$.

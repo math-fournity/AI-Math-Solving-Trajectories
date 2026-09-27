@@ -1,0 +1,1 @@
+Let \( a_n \) be the smallest number that is the sum of the squares of each digit of \( n \). If \( a_k = \overline{13d6} \) where \( d \) is a digit, determine \( k \).

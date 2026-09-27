@@ -1,0 +1,1 @@
+In the city of Arithmos, there are 49 specialized logistics hubs, indexed by an identification number $n$ ranging from $2$ to $50$ inclusive. Each hub is tasked with designing a security protocol based on a unique set of access keys.

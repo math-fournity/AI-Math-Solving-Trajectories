@@ -1,0 +1,1 @@
+Evaluate the limit \(\lim_{n\to \infty} \{(3+2\sqrt 2)^n\}\), where \(\{x\}\) denotes the fractional part of \(x\).

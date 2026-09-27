@@ -1,0 +1,1 @@
+An architect is designing a modular structural layout where a large triangular plaza is to be perfectly partitioned into $N$ identical tiles. Each of these $N$ tiles must be a quadrilateral, and every tile must be similar to all the others (meaning they share the exact same proportions and interior angles, though they may differ in size or orientation).

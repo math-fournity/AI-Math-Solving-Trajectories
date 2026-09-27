@@ -1,0 +1,1 @@
+let the incircle of a triangle ABC touch BC,AC,AB at A1,B1,C1 respectively. M and N are the midpoints of AB1 and AC1 respectively. MN meets A1C1 at T . draw two tangents TP and TQ through T to incircle. PQ meets MN at L and B1C1 meets PQ at K . assume I is the center of the incircle .

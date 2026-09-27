@@ -1,0 +1,1 @@
+Solve the equation: \(\frac{\tan x}{\sqrt{2} - \sqrt{\tan x}} + \frac{\tan 5x}{\sqrt{2} + \sqrt{\tan 5x}} = \sqrt{2}\).

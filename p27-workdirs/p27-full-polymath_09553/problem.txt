@@ -1,0 +1,1 @@
+In the city of Neo-Grid, there is a square server farm consisting of a $10 \times 10$ array of server racks. A technician is installing high-speed cooling modules in $n$ of these racks.

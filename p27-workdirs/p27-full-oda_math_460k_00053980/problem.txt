@@ -1,0 +1,1 @@
+Find all integer-valued polynomials   $$ f, g : \mathbb{N} \rightarrow \mathbb{N} \text{ such that} \; \forall \; x \in \mathbb{N}, \tau (f(x)) = g(x) $$  holds for all positive integer  $x$ , where  $\tau (x)$  is the number of positive factors of  $x$ *Proposed By - ckliao914*

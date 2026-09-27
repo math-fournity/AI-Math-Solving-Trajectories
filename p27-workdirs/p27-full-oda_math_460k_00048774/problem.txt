@@ -1,0 +1,1 @@
+Find the expected area of a triangle formed by three random points inside a triangle with unit area.

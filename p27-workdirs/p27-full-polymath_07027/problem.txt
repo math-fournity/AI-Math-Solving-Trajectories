@@ -1,0 +1,1 @@
+In a specialized logistics hub, there are 100 uniquely numbered storage crates, originally intended to be arranged in a perfect sequence from 1 to 100 along a single corridor. However, a system error has occurred, and the crates are currently distributed in a completely random permutation across the 100 available slots.

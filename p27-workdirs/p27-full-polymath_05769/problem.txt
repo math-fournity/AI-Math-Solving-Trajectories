@@ -1,0 +1,1 @@
+8. (30th Russian Mathematical Olympiad) There is a $9 \times 2004$ grid, in which the positive integers from 1 to 2004 are each filled in 9 times, and the difference between the numbers in each column does not exceed 3. Find the minimum possible value of the sum of the numbers in the first row.

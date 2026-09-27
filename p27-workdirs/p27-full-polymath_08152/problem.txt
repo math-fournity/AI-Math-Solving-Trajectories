@@ -1,0 +1,1 @@
+In a remote industrial complex, three automated production modules—identified as Unit $x$, Unit $y$, and Unit $z$—operate using a shared resource grid. Each unit’s efficiency is governed by its specific integer rating, and to ensure stable power flow, all ratings must be positive integers.

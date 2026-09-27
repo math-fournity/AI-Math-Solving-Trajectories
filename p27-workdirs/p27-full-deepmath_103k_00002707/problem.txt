@@ -1,0 +1,1 @@
+Let $R$ be a commutative ring with unity that has property P, meaning there exists a unique field among all proper subrings of $R$ (with the same unity as that of $R$). Assume $R$ is not a field. Does the polynomial ring $R[X]$ also have property P?

@@ -1,0 +1,1 @@
+In a specialized logistics hub, there are 46 unique cargo containers, each marked with a distinct identification number $n$ ranging from $49$ to $94$ (inclusive). A manager needs to assign these containers into different security categories, represented by colors.

@@ -1,0 +1,1 @@
+Let $A, B, C, D$ and $E$ be five points in the plane in general position (that is, such that no three of them are collinear, and no four of them are concyclic). A separator is defined as a circle passing through three of these points, such that one of the two remaining points is located inside the circle, and the other outside. How many separators are there?

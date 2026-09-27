@@ -1,0 +1,1 @@
+Let $\mathbb{Q}$ and $\mathbb{R}$ be the set of rational numbers and the set of real numbers, respectively. Consider a function $f : \mathbb{Q} \rightarrow \mathbb{R}$ with the property that for every $h \in \mathbb{Q}$ and $x_0 \in \mathbb{R}$, \[ f(x+h)-f(x) \rightarrow 0 \] as $x \in \mathbb{Q}$ tends to $x_0$. Does it follow that $f$ is bounded on some interval?

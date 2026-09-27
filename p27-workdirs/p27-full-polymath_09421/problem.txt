@@ -1,0 +1,1 @@
+A specialized deep-sea salvage team is searching for a historic shipwreck located in one of three underwater sectors: Sector A (West), Sector B (Center), or Sector C (East). To locate the wreck, the team can deploy two types of sonar pings: a "West-Ping" to check if the wreck is in Sector A, or an "East-Ping" to check if it is in Sector C.

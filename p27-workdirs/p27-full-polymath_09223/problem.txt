@@ -1,0 +1,1 @@
+In the high-tech logistics hub of Prime-Net, a sequence of specialized data processors is indexed by their order of creation. The capacity of each processor is measured by the $i$-th prime number, denoted as $p_i$ (where $p_1 = 2, p_2 = 3, p_3 = 5$, and so on).

@@ -1,0 +1,1 @@
+Find the smallest positive constant $c$ satisfying: For any simple graph $G=G(V,E)$, if $|E|\geq c|V|$, then $G$ contains $2$ cycles with no common vertex, and one of them contains a chord.

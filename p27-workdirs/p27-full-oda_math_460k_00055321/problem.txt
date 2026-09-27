@@ -1,0 +1,1 @@
+How would you approximate the sum \( \sum_{k = 2}^{\infty} \frac{\csc(k\pi\sqrt{2})}{k^2\ln(k)} \)?

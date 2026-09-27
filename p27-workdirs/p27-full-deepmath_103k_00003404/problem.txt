@@ -1,0 +1,1 @@
+Evaluate the contour integral \( \oint_{|z|=1}\log\left|\frac{1}{1+z^p}\right|\frac{dz}{z} \) where \(0<p<\frac{1}{2}\).

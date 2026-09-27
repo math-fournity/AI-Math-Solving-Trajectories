@@ -1,0 +1,1 @@
+$1991$ students sit around a circle and play the following game. Starting from some student $A$ and counting clockwise, each student on turn says a number. The numbers are $1,2,3,1,2,3,...$ A student who says $2$ or $3$ must leave the circle. The game is over when there is only one student left. What position was the remaining student sitting at the beginning of the game?

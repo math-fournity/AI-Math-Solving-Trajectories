@@ -1,0 +1,1 @@
+Determine (with proof) the least positive integer \( n \) such that in every way of partitioning \( S = \{1, 2, \ldots, n\} \) into two subsets, one of the subsets will contain two distinct numbers \( a \) and \( b \) such that \( ab \) is divisible by \( a+b \).

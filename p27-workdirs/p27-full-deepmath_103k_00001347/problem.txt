@@ -1,0 +1,1 @@
+Determine whether the following statement is true or false: Every permutation of a basic sequence is equivalent to the entire sequence, where a sequence \((x_n)\) in a Banach space \(X\) is called basic if it is a basis of \([x_1, x_2, x_3, \ldots]\) (its closed span).

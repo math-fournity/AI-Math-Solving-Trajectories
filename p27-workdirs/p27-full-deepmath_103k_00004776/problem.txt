@@ -1,0 +1,1 @@
+Determine the optimal constant \( C_{nr} \) such that for all matrices \( A, B \) in \( \mathbf{M}_n(\mathbb{C}) \), the inequality \( r([A,B]) \le C_{nr} r(A)r(B) \) holds, where \( r(A) \) is the numerical radius of \( A \).

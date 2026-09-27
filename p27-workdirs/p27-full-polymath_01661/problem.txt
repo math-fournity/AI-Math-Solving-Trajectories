@@ -1,0 +1,1 @@
+Let \(a, b, c > 0\) and \(a + b + c = 3\). Find the maximum value of \(k\) such that the inequality

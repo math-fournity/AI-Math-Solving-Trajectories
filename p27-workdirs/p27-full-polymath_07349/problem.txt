@@ -1,0 +1,1 @@
+In a sprawling metropolitan district, several long, straight fiber-optic cables are laid across the city. A layout of $n$ cables is classified as "efficient" if no three cables intersect at the exact same point. These cables partition the city into various distinct polygonal sectors.

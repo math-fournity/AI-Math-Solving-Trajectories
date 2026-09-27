@@ -1,0 +1,1 @@
+In a remote digital archipelago, two data grids have been constructed: a square server farm of size $100 \times 100$ and a rectangular logistics hub of size $100 \times 101$. Within these grids, individual processing units are arranged in rows and columns.

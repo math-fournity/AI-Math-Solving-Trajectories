@@ -1,0 +1,1 @@
+Let $n = 10$ and $X = \{1, 2, \dots, n^2\}$. We wish to find the maximum positive integer $k$ such that for any subset $A \subseteq X$ with $|A| = k$, the set $X \setminus A$ must contain an arithmetic sequence of length $n$.

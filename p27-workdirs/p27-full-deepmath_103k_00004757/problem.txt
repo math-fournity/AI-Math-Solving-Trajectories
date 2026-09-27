@@ -1,0 +1,1 @@
+Find all positive integer solutions \((k, n)\) to the equation \(1^n + 2^n + \ldots + n^n = k!\), where \(k!\) denotes the factorial of \(k\).

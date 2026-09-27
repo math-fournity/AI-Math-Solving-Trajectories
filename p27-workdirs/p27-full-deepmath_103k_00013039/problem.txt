@@ -1,0 +1,1 @@
+Evaluate the improper integral: $$\int_{\mathbb{R}} \frac{\sin^{4}(x)}{x^2}dx$$.

@@ -1,0 +1,1 @@
+legitimate/effectual polynomials exist so that $\sqrt{6}=a_1+x(a_1+x(a_2+x(a_3+x(a_4+x(a_5+x(a_6+x(a_7+x(a_8+x(a_9+x(a_{10}+x)))))))))$, where all but one of the coefficients, $a_i$, is 16, and the one exception is subtracted from 16.

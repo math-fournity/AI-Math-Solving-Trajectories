@@ -1,0 +1,1 @@
+Place the 21 two-digit prime numbers (11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97) into the white squares of a $5 \times 5$ grid such that each prime is used exactly once.

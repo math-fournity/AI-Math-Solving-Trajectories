@@ -1,0 +1,1 @@
+In a futuristic data-processing facility, an encryption engineer is designing a special "Mapping Engine," which is a bijective function $f$ that transforms any real-number input $x$ into a unique real-number output $f(x)$.

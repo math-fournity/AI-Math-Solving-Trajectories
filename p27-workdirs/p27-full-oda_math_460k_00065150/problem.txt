@@ -1,0 +1,1 @@
+a) Does there exist a sequence of natural numbers \( a_{1}, a_{2}, a_{3}, \ldots \) with the following property: no term of the sequence equals the sum of several other terms and \( a_{n} \leq n^{10} \) for any \( n \)?

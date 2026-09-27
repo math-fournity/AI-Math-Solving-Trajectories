@@ -1,0 +1,1 @@
+At an international conference, there are four official languages. It is known that any two conference delegates can communicate in at least one of these four languages. Let $n$ be the total number of delegates. Determine the largest possible constant $C$ such that there must exist at least one language spoken by at least $C \cdot n$ of the delegates.

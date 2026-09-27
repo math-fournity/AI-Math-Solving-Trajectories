@@ -1,0 +1,1 @@
+Given convex hexagon  $ABCDEF$ , inscribed in the circle. Prove that  $AC*BD*DE*CE*EA*FB \geq 27 AB * BC * CD * DE * EF * FA$

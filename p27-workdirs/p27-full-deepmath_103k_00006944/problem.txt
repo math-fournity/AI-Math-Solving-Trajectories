@@ -1,0 +1,1 @@
+Determine whether there are any solutions to the Diophantine equation \(p^{2n} + 2 = 3^m\) other than \((p, m, n) = (5, 3, 1)\), where \(p\) is a prime and \(m, n\) are positive integers.

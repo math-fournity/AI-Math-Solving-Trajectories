@@ -1,0 +1,1 @@
+On a plane, six lines are drawn. For any three of these lines, there exists a fourth line from the same set such that all four lines are tangent to some circle. Must all six lines be tangent to the same circle?

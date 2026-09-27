@@ -1,0 +1,1 @@
+Let $G$ be a finite group of order $n$, and $R$ a ring on which $n$ is invertible. Is taking $G$-invariants an exact functor on the category of $R[G]$-modules?

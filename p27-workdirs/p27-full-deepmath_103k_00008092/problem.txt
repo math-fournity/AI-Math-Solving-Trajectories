@@ -1,0 +1,1 @@
+Determine whether the set $S'$, constructed from $S \cup (-S)$ by closing it under the operation of taking divisors in $\mathbb{Z}[X]$, is maximal for the property that if $A$ is a ring such that for every $a \in A$ there is an $f \in S'$ such that $f(a) = 0$, then $A$ is commutative. Is $S'$ maximal for this property?

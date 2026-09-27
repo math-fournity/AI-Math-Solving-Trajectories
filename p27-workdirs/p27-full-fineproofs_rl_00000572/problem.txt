@@ -1,0 +1,1 @@
+A finite family of finite sets  $F$  is given, satisfying two conditions:

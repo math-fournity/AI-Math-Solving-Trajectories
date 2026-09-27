@@ -1,0 +1,1 @@
+What is the maximal dimension of a subspace $F$ of $M_{2n}(\mathbb{R})$ in which the determinant of every matrix is nonnegative?

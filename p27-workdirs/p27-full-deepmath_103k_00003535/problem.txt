@@ -1,0 +1,1 @@
+Let $G$ be an uncountable group, $H$ a countable subgroup of $G$, and $g \in G \setminus H$. Is there necessarily an element $x \in G \setminus H$ such that $g \notin \langle H \cup \{x\} \rangle$?

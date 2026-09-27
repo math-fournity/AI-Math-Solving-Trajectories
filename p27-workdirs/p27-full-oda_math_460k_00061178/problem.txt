@@ -1,0 +1,1 @@
+Consider a sequence \((a_n)\) of natural numbers where the differences \(\{a_{n+1} - a_n\}\) take every natural value exactly once and the differences \(\{a_{n+2} - a_n\}\) take every natural value greater than 2015 exactly once. If such a sequence exists, find the smallest possible value of \(a_{2016} - a_1\).

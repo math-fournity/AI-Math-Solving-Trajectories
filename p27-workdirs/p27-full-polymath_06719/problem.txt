@@ -1,0 +1,1 @@
+In a large logistics hub, a warehouse floor is divided into a grid of $2K$ rows and $2L$ columns of storage bays ($K, L \in \mathbb{Z}^+$). A specialized automated guided vehicle (AGV) is programmed to move from the bay in the bottom-left corner $(1,1)$ to the bay in the top-right corner $(2K, 2L)$.

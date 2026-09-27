@@ -1,0 +1,1 @@
+Determine whether there exists a constant $C$ such that \( \lim_{n\to\infty} L_n = C \), where \( L_n = \left(\frac{\log(p_{n+1})}{\log(p_n)}\right)^n \) and \( p_n \) is the \( n \)-th prime.

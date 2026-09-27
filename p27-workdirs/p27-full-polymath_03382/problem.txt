@@ -1,0 +1,1 @@
+Let $n = 5$ be a positive integer. On a circle, there are $2n = 10$ points of $n = 5$ different colors, with two points of each color. A placement scheme of these points is called "good" if for any circular arc $L$ containing between 1 and $2n-1$ points inclusive, there exists at least one color such that $L$ contains exactly one point of that color.

@@ -1,0 +1,1 @@
+In a specialized logistics hub, a manager is testing a fleet of $n$ delivery drones, labeled with unique identification numbers from $1$ to $n$. The manager wants to organize these $n$ drones into a single-file flight formation.

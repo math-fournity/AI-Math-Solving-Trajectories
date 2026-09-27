@@ -1,0 +1,1 @@
+Jesse has ten squares, which are labeled $1, 2, \dots, 10$. In how many ways can he color each square either red, green, yellow, or blue such that for all $1 \le i < j \le 10$, if $i$ divides $j$, then the $i$-th and $j$-th squares have different colors?

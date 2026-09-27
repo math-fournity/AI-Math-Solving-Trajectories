@@ -1,0 +1,1 @@
+Given a triangle  $ ABC$ . A circle passes through vertices  $ B$  and  $ C$  and intersects sides  $ AB$  and  $ AC$  at points  $ D$  and  $ E$ , respectively. Segments  $ CD$  and  $ BE$  intersect at point  $ O$ . Denote the incenters of triangles  $ ADE$  and  $ ODE$  by  $ M$  and  $ N$ , respectiely. Prove that the midpoint of the smaller arc  $ DE$  lies on line  $ MN$ .

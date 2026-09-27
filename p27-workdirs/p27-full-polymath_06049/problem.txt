@@ -1,0 +1,1 @@
+A specialized digital security firm, BinaryVault, manages a network of 26 unique access codes, $n_1, n_2, \dots, n_{26}$. These codes are distinct positive integers generated under a very specific security protocol:

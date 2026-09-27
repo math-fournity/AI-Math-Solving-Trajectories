@@ -1,0 +1,1 @@
+Find the least positive integer \( m \) such that for any polynomial \( f(x) \) with real coefficients, there exists a polynomial \( g(x) \) with real coefficients and degree not greater than \( m \), and 2017 distinct numbers \( a_1, a_2, \ldots, a_{2017} \) such that \( g(a_i) = f(a_{i+1}) \) for \( i = 1, 2, \ldots, 2017 \), with indices taken modulo 2017.

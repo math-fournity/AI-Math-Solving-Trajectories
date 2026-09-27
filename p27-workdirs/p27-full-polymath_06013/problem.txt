@@ -1,0 +1,1 @@
+In a remote high-frequency trading hub, a network engineer is calibrating a signal phase $x$. Due to hardware limitations, the phase angle must be strictly between $-90^\circ$ and $90^\circ$ (exclusive).

@@ -1,0 +1,1 @@
+Consider the curve \( C: Y^2 = 2 - 2pX^4 \), where \( p \equiv 1 \mod 8 \). What can be said about the existence of points on \( C \) over the fields \( \mathbb{Q} \), \( \mathbb{R} \), and \( \mathbb{Q}_p \) for all primes \( p \)?

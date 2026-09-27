@@ -1,0 +1,1 @@
+For any finite group \( G \), determine if there always exist subgroups \( A, B, \) and \( C \) such that \( A \) is a proper subgroup of both \( B \) and \( C \), and \(|A \cap B| \neq |A \cap C|\).

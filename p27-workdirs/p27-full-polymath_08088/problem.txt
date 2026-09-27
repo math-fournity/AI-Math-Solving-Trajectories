@@ -1,0 +1,1 @@
+A futuristic vertical farming facility consists of a grid-based hydroponic wall measuring 20 rows by 20 columns, creating a total of 400 individual planting chambers. The facility manager wants to install high-intensity ultraviolet (UV) growth lamps in some of these chambers to boost crop yields.

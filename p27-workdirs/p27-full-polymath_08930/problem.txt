@@ -1,0 +1,1 @@
+A high-security research facility is divided into a $3 \times 3$ grid of nine specialized containment vaults. To balance the facility's power grid, nine unique energy cores—with power ratings of exactly $1, 2, 3, 4, 5, 6, 7, 8,$ and $9$ units—must be distributed such that each vault contains exactly one core.

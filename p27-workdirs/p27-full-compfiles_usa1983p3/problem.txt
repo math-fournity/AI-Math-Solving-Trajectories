@@ -1,0 +1,6 @@
+S₁, S₂, ..., Sₙ are subsets of the real line. Each Sᵢ is the union of two
+closed intervals. Any three Sᵢ have a point in common. Show that there is a
+point which belongs to at least half the Sᵢ.
+
+</rule>
+</rules>

@@ -1,0 +1,1 @@
+Each of $2021$ points on a circle is colored with one of the colors $1,2, \ldots, k$. For every point and every color $1 \leq r \leq k$, there exists an arc containing that point such that at least half of the points on the arc are colored $r$. Find the largest possible value of $k$.

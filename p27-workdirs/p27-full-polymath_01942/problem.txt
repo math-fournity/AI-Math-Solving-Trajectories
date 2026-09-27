@@ -1,0 +1,1 @@
+Let \( A = \{1, 2, \ldots, n\}, n \geq 4 \). For each function \( f: A \rightarrow A \) and each \( a \in A \), we define \( f_{1}(a) = f(a), f_{i+1}(a) = f(f_{i}(a)) \), \( i \geq 1 \). Find the number of functions \( f: A \rightarrow A \) for which \( f_{n-2} \) is constant, but \( f_{n-3} \) is not constant.

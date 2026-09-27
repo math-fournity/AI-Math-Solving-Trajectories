@@ -1,0 +1,1 @@
+Let $X$ be a metric space and $\{x_\alpha\}$ be a net in $X$, where $\alpha$ is a possibly uncountable infinite directed index set. If every subsequence extracted from this net $\{x_\alpha\}$ is Cauchy, can we conclude that the entire net $\{x_\alpha\}$ itself is Cauchy? Provide a justification for your answer.

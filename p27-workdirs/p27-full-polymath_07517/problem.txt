@@ -1,0 +1,1 @@
+A specialized laser security grid is controlled by five high-powered beams, labeled $g_1, g_2, g_3, g_4,$ and $g_5$. These beams crisscross a laboratory floor, intersecting at exactly ten sensor nodes designated as $A, B, C, D, E, F, G, H, J,$ and $K$.

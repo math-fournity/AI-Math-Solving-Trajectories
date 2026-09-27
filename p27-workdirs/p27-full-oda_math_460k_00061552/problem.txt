@@ -1,0 +1,1 @@
+How many solutions does the equation \( x^2 + y^2 + z^2 \equiv 1 \pmod{p^n} \) have, where \( p \) is a prime number and \( n \) is an odd number?

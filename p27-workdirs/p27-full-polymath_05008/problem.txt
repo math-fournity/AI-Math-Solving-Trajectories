@@ -1,0 +1,1 @@
+Given the real line with two marked points $0$ and $1$, we can perform an operation of marking the reflection of any marked point $a$ over another marked point $b$ to get a new marked point $2b - a$. Let $f(n)$ be the minimum number of operations needed to mark the integer $n$ on the real line. Calculate the value of $\sum_{n=1}^{100} f(n)$.

@@ -1,0 +1,1 @@
+Let \( X \) be a set with 56 elements. Determine the smallest positive integer \( n \) such that for any 15 subsets of \( X \), if the union of any 7 of these subsets contains at least \( n \) elements, then there must exist 3 of these 15 subsets whose intersection is non-empty.

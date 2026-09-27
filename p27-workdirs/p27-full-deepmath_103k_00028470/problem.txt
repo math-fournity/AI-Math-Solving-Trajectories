@@ -1,0 +1,1 @@
+Let $G$ be a subset of $GL_n(\mathbb{C})$ such that there exists a positive integer $r$ and elements $g_1, \ldots, g_r \in G$ for which every element $g \in G$ is conjugate to one of the $g_i$'s within $G$. Is $G$ necessarily finite? Provide a justification for your answer.

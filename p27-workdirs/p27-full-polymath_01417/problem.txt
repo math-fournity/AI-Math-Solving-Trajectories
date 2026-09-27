@@ -1,0 +1,1 @@
+There are $10$ cups, each having $10$ pebbles in them. Two players $A$ and $B$ play a game, repeating the following in order each move:

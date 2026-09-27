@@ -1,0 +1,1 @@
+How many real roots does the equation $\sum\limits_{k=0}^{n} {n \choose k}^p X^k = 0$ have, where $p \in \mathbb{N}^*$?

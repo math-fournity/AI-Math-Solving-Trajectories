@@ -1,0 +1,1 @@
+Find the minimum value of \( n \) such that in an \( n \times n \) board where each cell is colored red, blue, or green, there is guaranteed to be a rectangle with four vertices of the same color.

@@ -1,0 +1,1 @@
+Given a real number \( \alpha \) contained in a tower of fields with each extension of degree at most 5, determine if it is possible to construct a tower of real fields containing \( \alpha \) with each extension of degree at most 5. Provide a justification for your answer.

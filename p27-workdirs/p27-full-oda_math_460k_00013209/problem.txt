@@ -1,0 +1,1 @@
+Let $m'$ be the smallest natural number such that for any triangle that can be embedded in $\mathbb{Q}^{9}$, there exists a triangle similar to it that can be embedded in $\mathbb{Q}^{m'}$. Calculate $m'$.

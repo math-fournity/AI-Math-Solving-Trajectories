@@ -1,0 +1,1 @@
+Find all functions \( f: \mathbb{N^{*}}\to \mathbb{N^{*}} \) satisfying the condition \( \left(f^{2}\left(m\right)+f\left(n\right)\right) \mid \left(m^{2}+n\right)^{2} \) for any two positive integers \( m \) and \( n \).

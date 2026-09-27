@@ -1,0 +1,1 @@
+How can the local search algorithm for the Steiner tree problem be adapted to ensure that the maximum degree of the resulting Steiner tree is at most \( \text{OPT} + 1 \), where \( \text{OPT} \) is the maximum degree of a minimum-degree Steiner tree?

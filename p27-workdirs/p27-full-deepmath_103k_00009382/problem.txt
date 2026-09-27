@@ -1,0 +1,1 @@
+Is the norm on a unital semi-simple commutative Banach algebra with \(\|I\|=1\) unique?

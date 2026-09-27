@@ -1,0 +1,1 @@
+Let $G$ be a graph such that all of its edge-deleted subgraphs are isomorphic. Is $G$ necessarily edge-transitive?

@@ -1,0 +1,1 @@
+Let $(G,+,\le)$ be a partially ordered group with identity $0$. Suppose that for each positive $g \in G$, there exists $g' \in G$ such that $0 < g' < g$. Determine whether there exists a sequence $(g_n)_{n \ge 1}$ of positive elements of $G$ such that $\inf \{g_n\} = 0$. Provide a proof or counterexample.

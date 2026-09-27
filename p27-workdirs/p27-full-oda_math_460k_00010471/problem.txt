@@ -1,0 +1,1 @@
+Let \( G \) be a finite subgroup of \( GL_n(\mathbb{Q}) \). Find the minimum positive integer \( k \) such that there exists a matrix \( P \in GL_n(\mathbb{Q}) \) and a subgroup \( F \) of \( GL_n(\mathbb{Z}) \) with \( G = P^{-1}FP \) and the determinant of \( P \) is \( k \).

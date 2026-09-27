@@ -1,0 +1,1 @@
+Determine whether there exists a CW-structure on a connected topological space $Y$ that is covered by a connected CW-complex $X$ via a covering map $p: X \to Y$. Provide a justification for your answer.

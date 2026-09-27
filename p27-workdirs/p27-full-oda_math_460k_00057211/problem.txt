@@ -1,0 +1,1 @@
+Determine all gauge natural operators transforming connections on a principal bundle $P$ with structure group $G$ into sections of the bundle $\tilde{V}(P) \otimes \Lambda T^{*} B$, where $\tilde{V}(P)$ is the vector bundle associated to a linear action of $G$ on a vector space $V$.

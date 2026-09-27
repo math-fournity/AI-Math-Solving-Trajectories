@@ -1,0 +1,1 @@
+Verify if the conclusion that the minimum of $x^TAy$ is 0, based on the given KKT conditions, is correct.

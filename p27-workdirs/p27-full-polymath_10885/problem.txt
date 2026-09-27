@@ -1,0 +1,1 @@
+A digital security architect is designing a "signal grid" for a new encryption protocol. The grid consists of various nodes, where each node is identified by a pair of coordinates $(x, y)$. Each coordinate must be an integer such that the horizontal index $x$ satisfies $1 \le x \le n$ and the vertical index $y$ satisfies $0 \le y \le n$.

@@ -1,0 +1,1 @@
+Is there a simple $C^*$ algebra $A$, not isomorphic to $M_2(\mathbb{C})$, such that for every commutator element $x = ab - ba$, $x^2$ is a scalar element?

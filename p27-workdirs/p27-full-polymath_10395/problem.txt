@@ -1,0 +1,1 @@
+In the remote logistics hub of Quad-City, four main warehouses are positioned at the corners of a quadrilateral district, designated as $A$, $B$, $C$, and $D$ in clockwise order. Two main transit roads, $AC$ and $BD$, intersect at a central command tower, $R$.

@@ -1,0 +1,1 @@
+Let \(ABC\) be a triangle with incircle \(\omega\). \(X\) is a point on \(\omega\). \(\ell\) is the line tangent to \(\omega\) at \(X\). The line \(\ell\) and its three reflections with respect to the sides of \(ABC\) form a complete quadrilateral \(\Delta\). As \(X\) varies on \(\omega\), find the locus of the Miquel point of \(\Delta\).

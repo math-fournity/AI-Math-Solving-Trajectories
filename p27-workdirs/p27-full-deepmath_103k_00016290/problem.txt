@@ -1,0 +1,1 @@
+Determine whether an infinite product of copies of $\mathbb{Z}$ is isomorphic to a direct sum of copies of $\mathbb{Z}$. Provide a true or false answer.

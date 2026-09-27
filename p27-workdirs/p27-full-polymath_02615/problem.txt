@@ -1,0 +1,1 @@
+The base of a right prism is a triangle with two sides of lengths \(3 \, \text{cm}\) and \(5 \, \text{cm}\), and the angle between them is \(120^{\circ}\). The surface area of the lateral side with the largest area is \(35 \, \text{cm}^2\). Calculate the surface area of the prism.

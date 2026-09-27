@@ -1,0 +1,1 @@
+Suppose that \( f(t) \) is a positive valued, never decreasing function, defined on the interval \( 0 \leq t < 1 \) and that its integral \(\int_0^1 f(t)\,dt\) is finite. The entire function\n\n\[\n\int_0^1 f(t) \cos zt \, dt\n\]\n\nhas real zeros only. [185.]

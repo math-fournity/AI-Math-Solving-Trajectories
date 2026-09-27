@@ -1,0 +1,1 @@
+Let \( v \) and \( w \) be real numbers such that, for all real numbers \( a \) and \( b \), the inequality

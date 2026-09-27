@@ -1,0 +1,1 @@
+A PUMaC grader is grading the submissions of forty students $s_1, s_2, ..., s_{40}$ for the individual finals round, which has three problems. After grading a problem of student $s_i$, the grader either:

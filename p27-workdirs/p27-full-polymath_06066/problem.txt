@@ -1,0 +1,1 @@
+In a remote industrial refinery, a master mixing console processes two liquid chemicals, $x$ and $y$, to produce a specific compound through a secret formulation $f(x, y)$. The refinery’s manual documents only one specific output: mixing 1 unit of chemical A and 1 unit of chemical B yields exactly 2 units of the final compound, denoted as $f(1, 1) = 2$.

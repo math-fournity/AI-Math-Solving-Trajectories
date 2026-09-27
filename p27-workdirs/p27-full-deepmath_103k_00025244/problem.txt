@@ -1,0 +1,1 @@
+Let $L$ be a finite-dimensional complex semisimple Lie algebra. Determine whether every element of $L$ can be expressed as a commutator.

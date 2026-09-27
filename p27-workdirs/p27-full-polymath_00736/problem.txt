@@ -1,0 +1,1 @@
+Each square of a $7 \times 8$ board is painted black or white, in such a way that each $3 \times 3$ subboard has at least two black squares that are neighboring. What is the least number of black squares that can be on the entire board?

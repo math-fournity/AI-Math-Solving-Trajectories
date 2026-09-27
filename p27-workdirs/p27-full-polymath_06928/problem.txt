@@ -1,0 +1,1 @@
+In a specialized urban planning project, a square-shaped plaza named the "Centurion Court" is defined by four corner markers: $A$, $B$, $D$, and $E$, ordered consecutively. The plaza has a side length of $12$ meters.

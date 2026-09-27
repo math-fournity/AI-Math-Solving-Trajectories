@@ -1,0 +1,1 @@
+Compute \( \lim_{k \to \infty} \int_{\mathbb{R}} f_k \, \mathrm{d}\lambda \), where \( f_k(x) = \frac{k}{\lfloor \sqrt{k^2x} \rfloor} \chi_{[4/k^2,1]}(x) \).

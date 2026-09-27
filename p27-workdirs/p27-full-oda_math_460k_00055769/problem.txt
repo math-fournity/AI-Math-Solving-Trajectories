@@ -1,0 +1,1 @@
+Construct a triangle \( ABC \) given, in position, the projections \( X, Y, Z \) of its Lemoine point \( K \) upon the three sides \( BC, CA, AB \), respectively.

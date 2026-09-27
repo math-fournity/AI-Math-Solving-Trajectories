@@ -1,0 +1,1 @@
+In a remote industrial region, three rival mining corporations—Aurelius, Borealis, and Caelum—are competing to clear a series of underground tunnels. Each corporation employs exactly five specialized engineers, labeled by their rank: $A_1, \dots, A_5$; $B_1, \dots, B_5$; and $C_1, \dots, C_5$.

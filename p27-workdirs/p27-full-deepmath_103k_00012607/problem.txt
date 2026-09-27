@@ -1,0 +1,1 @@
+Let $g:B(x, 2r) \to \mathbb R$ be a real analytic function, and let $u$ be the harmonic function in $B(x, r)$ such that $u=g$ on $\partial B(x, r)$. Is it possible to extend $u$ to a harmonic function $\tilde u$ in $B(x, (1+\delta)r)$ for some $\delta >0$, such that $\tilde u = u$ in $\overline{B(x,r)}$ and $\tilde u$ is harmonic in $B(x, (1+\delta)r)$?

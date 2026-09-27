@@ -1,0 +1,1 @@
+Let \( G = (V, E) \) be a graph on \( n \ge 10 \) vertices. Suppose that adding any edge not in \( G \) increases the number of copies of a complete graph on 10 vertices in \( G \). Determine the minimum possible value of \( |E| \) in terms of \( n \).

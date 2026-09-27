@@ -1,0 +1,1 @@
+Let $n, m, k$ and $l$ be positive integers with $n > 1$ such that $n^{k}+m n^{l}+1$ divides $n^{k+l}-1$. For $n=2$ and $k=12$, find the sum of all possible values of the product $m \cdot l$.

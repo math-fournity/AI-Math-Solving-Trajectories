@@ -1,0 +1,1 @@
+Show the following for the category **Cat** (the category of small categories and functors):

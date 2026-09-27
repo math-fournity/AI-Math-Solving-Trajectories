@@ -1,0 +1,1 @@
+In a bustling logistical grid, a rectangular warehouse district is mapped out on a coordinate plane with corners at $(0,0), (0, 11), (13, 11),$ and $(13, 0)$. This district must be partitioned into several triangular delivery zones. The zoning regulations are strictly defined as follows:

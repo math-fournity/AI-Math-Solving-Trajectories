@@ -1,0 +1,1 @@
+For a given \( \phi \in \left[\frac{\pi}{3}, \pi\right) \), consider all triangles \( ABC \) for which \( \max\{A, B, C\} \le \phi \). Find \( f(\phi) = \max_{ABC} \frac{IH}{IO} \), where \( O \), \( I \), and \( H \) are the circumcenter, incenter, and orthocenter of \( \triangle ABC \) respectively.

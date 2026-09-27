@@ -1,0 +1,1 @@
+An ancient mosaic artisan is commissioned to floor a large $23 \times 23$ foot square room with marble tiles. However, exactly one specific $1 \times 1$ foot square section $(r, c)$ contains a structural pillar, where $r$ represents the row and $c$ represents the column of the section, with $1 \le r, c \le 23$.

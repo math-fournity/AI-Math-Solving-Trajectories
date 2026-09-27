@@ -1,0 +1,1 @@
+Given the rectangle \(ABCD\). Point \(F\) is the midpoint of side \(AB\), and \(E\) and \(G\) are on side \(CD\). The area of triangle \(BCJ\) is equal to \(12\), and the areas of the other colored triangles (in some order) are \(2.4\), \(4.8\), and \(14.4\). Find the area of the given rectangle.

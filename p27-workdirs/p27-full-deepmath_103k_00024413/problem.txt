@@ -1,0 +1,1 @@
+Given the theorem that if the n'th moment of a random variable X exists, its characteristic function can be differentiated n times, and $E[X^n] = i^{-n} \phi_X^{(n)}(0)$, determine if it can be concluded that if a non-negative random variable X has a differentiable characteristic function at 0, its first moment exists.

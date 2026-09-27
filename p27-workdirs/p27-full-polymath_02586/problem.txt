@@ -1,0 +1,1 @@
+The tenth question, set $\mathrm{X}=\{1,2, \ldots, 100\}$, function $\mathrm{f}: \mathrm{X} \rightarrow \mathrm{X}$ simultaneously satisfies: (1) For any $\mathrm{x} \in \mathrm{X}$, $f(x) \neq x$; (2) For any 40-element subset $A$ of $X$, there is $A \cap f(A) \neq \Phi$.

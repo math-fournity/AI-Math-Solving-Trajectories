@@ -1,0 +1,1 @@
+Let $\bar D=\{z\in \mathbb{C}: |z|\leq 1\}$. Consider a monic polynomial $p: \bar D \longrightarrow \mathbb{C}$ that has no roots in $\bar D$. Prove or disprove that the uniform norm of $p$, denoted by $\|p\|_\infty = \sup\{|p(z)| : z \in \bar D\}$, is greater than or equal to 2.

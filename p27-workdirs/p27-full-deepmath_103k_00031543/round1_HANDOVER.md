@@ -1,0 +1,267 @@
+# 交接文档 · deepmath_103k_00031543 · Round 1 探索历程
+
+> **交接给**：下一个AI，请在此基础上继续完成解答
+> **来源**：deepmath_103k_00031543 Round 1（1个agent step，被截断）
+> **制作时间**：2026-08-22
+> **截断判定**：completion_tokens=25000（达到上限），message=0c（无TUI输出），tool_calls=[]（无工具调用），reasoning_content=57423c（纯thinking spin被截断）
+
+---
+
+## 1. 题目
+
+Given an integer \( n \geq 3 \), determine the largest real number \( M \) such that for any sequence of positive real numbers \( x_{1}, x_{2}, \ldots, x_{n} \), there exists a permutation \( y_{1}, y_{2}, \ldots, y_{n} \) satisfying the inequality:
+\[
+\sum_{i=1}^{n} \frac{y_{i}^{2}}{y_{i+1}^{2} - y_{i+1} y_{i+2} + y_{i+2}^{2}} \geq M,
+\]
+where \( y_{n+1} = y_{1} \) and \( y_{n+2} = y_{2} \).
+
+---
+
+## 2. 答案猜想
+
+**猜想：\( M = n - 1 \)（对所有 \( n \geq 3 \)）**
+
+置信度：较高。基于大量case分析（n=3,4,5），所有extremal sequence都给出 \( n-1 \)，且未能找到任何sequence使所有permutation的和低于 \( n-1 \)。但**尚未完成证明**——尝试了多种下界方法，均不够tight。
+
+猜想演变过程：
+- 初始考虑 \( M = n \)（all equal时sum=n），但发现one-outlier sequence给出 \( n-1 \)，推翻
+- 考虑 \( M = n/2 \)（Nesbitt-type），但n=3实际infimum是2≠1.5，推翻
+- 考虑 \( M = 2n/3 \)，但n=4实际是3≠8/3，推翻
+- 最终收敛到 \( M = n-1 \)，与所有case一致
+
+---
+
+## 3. 已确认的结论
+
+> 以下结论均来自 steps[7]（唯一的agent step）的reasoning_content
+
+### 3.1 分母的基本性质
+
+记 \( f(a,b) = a^2 - ab + b^2 \)，则：
+
+- \( f(a,b) = \frac{(a-b)^2 + a^2 + b^2}{2} \geq \frac{a^2 + b^2}{2} \)（来源：step 7前段）
+- \( f(a,b) \leq a^2 + b^2 \)（因为 \( ab \geq 0 \)）（来源：step 7前段）
+- \( f(a,b) = (a - b/2)^2 + 3b^2/4 \geq \frac{3}{4}b^2 \)，同理 \( \geq \frac{3}{4}a^2 \)（来源：step 7中段）
+- 当 \( a = b \) 时 \( f(a,b) = a^2 \)（分母最小，term最大）（来源：step 7中段）
+
+**推论**：\( \frac{a^2}{a^2+b^2} \leq \frac{y_i^2}{f(y_{i+1},y_{i+2})} \leq \frac{2a^2}{a^2+b^2} \)（来源：step 7前段）
+
+### 3.2 All equal的情况
+
+当所有 \( y_i \) 相等时，每个term \( = \frac{y^2}{y^2 - y^2 + y^2} = 1 \)，sum \( = n \)。因此 **\( M \leq n \)**。（来源：step 7前段）
+
+### 3.3 n=3的完整分析：\( M = 2 \)
+
+**上界**：取 sequence \( \{1, 1, \epsilon\} \)，\( \epsilon \to 0^+ \)。所有permutation给出相同的sum（因为两个值相等）：
+
+\[
+S = \frac{2}{1 - \epsilon + \epsilon^2} + \epsilon^2 \to 2 \quad (\epsilon \to 0)
+\]
+
+且对所有 \( \epsilon > 0 \)，\( S > 2 \)（因为 \( 1 - \epsilon + \epsilon^2 < 1 \) 当 \( 0 < \epsilon < 1 \)）。所以infimum = 2，不取到。因此 **\( M = 2 \) 对 \( n = 3 \)**。（来源：step 7前段）
+
+**验证其他sequence不会更低**：
+- \( \{1, t, t\} \)（\( t \to \infty \)）：所有permutation给出 \( \to 2 \)（来源：step 7前段）
+- \( \{1, 2, \epsilon\} \)：所有permutation给出 \( \to 4.25 > 2 \)（来源：step 7中段）
+- \( \{1, 2, 3\} \)：所有permutation给出 \( > 3.6 \)（来源：step 7中段）
+- \( \{1, t, t^2\} \)（\( t \to \infty \)）：所有permutation给出 \( \to \infty \)（来源：step 7中段）
+
+### 3.4 n=4的分析：\( M = 3 \)（猜想）
+
+**上界**：取 \( \{1, t, t, t\} \)（\( t \to \infty \)），所有permutation给出 \( \to 3 \)：
+- 位置 \( j \)（\( y_j = 1 \)）：\( \frac{1}{t^2} \to 0 \)
+- 其余3个位置：每个 \( \to 1 \)
+- Sum \( \to 0 + 1 + 1 + 1 = 3 = n - 1 \)（来源：step 7中段）
+
+等价地，\( \{1, 1, 1, \epsilon\} \)（\( \epsilon \to 0 \)）也给出 \( \to 3 \)。（来源：step 7中段）
+
+**其他sequence不会更低**：
+- \( \{1, 1, \epsilon, \epsilon\} \)：adjacent \( \epsilon \)'s 给出 \( \to \infty \)，所以max over permutations \( = \infty \)（来源：step 7中段）
+- \( \{1, 1, t, t\} \)（\( t \to \infty \)）：某些permutation给出 \( \to \infty \)（来源：step 7中段）
+- \( \{1, s, t, t\} \)（\( s = \sqrt{t} \)）：所有permutation给出 \( \to \infty \)（来源：step 7后段）
+- 几何序列 \( \{1, r, r^2, r^3\} \)：总有permutation给出 \( \to \infty \)（来源：step 7后段）
+
+### 3.5 n=5的分析：\( M = 4 \)（猜想）
+
+取 \( \{1, t, t, t, t\} \)（\( t \to \infty \)），所有permutation给出 \( \to 4 = n - 1 \)。（来源：step 7后段）
+
+其他sequence（如 \( \{1, 1, t, t, t\} \)、\( \{1, 1, 1, t, t\} \)）总有permutation给出 \( \to \infty \)。（来源：step 7后段）
+
+### 3.6 Extremal sequence的结构
+
+**关键认知**：adversary的最优策略是用**恰好一个outlier + n-1个相等值**（如 \( \{1, t, t, \ldots, t\} \) 或 \( \{1, 1, \ldots, 1, \epsilon\} \)），给出 \( n - 1 \)。
+
+如果有**两个或更多outlier**，permutation chooser总能将它们adjacent放置使sum \( \to \infty \)，所以adversary不会用。（来源：step 7中后段）
+
+### 3.7 Nesbitt-type下界（不够tight）
+
+对 \( n = 3 \)，利用 \( f(b,c) \leq b^2 + c^2 \)：
+
+\[
+S \geq \sum \frac{a^2}{b^2 + c^2} \geq \frac{(a^2+b^2+c^2)^2}{2(a^2b^2+b^2c^2+c^2a^2)} \geq \frac{3}{2}
+\]
+
+最后一个不等式来自 \( a^2b^2 + b^2c^2 + c^2a^2 \leq \frac{(a^2+b^2+c^2)^2}{3} \)（AM-GM）。
+
+但实际infimum是2，所以这个 \( \frac{3}{2} \) 下界**不够tight**。（来源：step 7中段）
+
+### 3.8 Cauchy-Schwarz (Titu's lemma) 下界（很弱）
+
+\[
+S \geq \frac{(a+b+c)^2}{\sum f(b,c)} = \frac{p + 2q}{2p - q}
+\]
+
+其中 \( p = a^2+b^2+c^2 \)，\( q = ab+bc+ca \)。这个表达式关于 \( q \) 递增，minimum在 \( q = 0 \) 时取到 \( = \frac{1}{2} \)。**非常弱**。（来源：step 7中段）
+
+且对 \( n = 3 \)，\( p \) 和 \( q \) 都是permutation-invariant的，所以这个bound对所有permutation相同，无法利用permutation choice。（来源：step 7中段）
+
+---
+
+## 4. 已尝试的方向
+
+### ❌ 方向1：通过 \( \sum \frac{a_i^2}{a_{i+1}^2 + a_{i+2}^2} \) 的下界
+- **思路**：利用 \( f(y_{i+1}, y_{i+2}) \leq y_{i+1}^2 + y_{i+2}^2 \)，将问题reduce到证明 \( \sum \frac{y_i^2}{y_{i+1}^2 + y_{i+2}^2} \geq n-1 \)
+- **结果**：失败。Nesbitt-type只给出 \( \frac{3}{2} \)（n=3），不够tight。Shapiro不等式对大n甚至不成立。
+- **原因**：分母的上界 \( f \leq a^2 + b^2 \) 太松，丢失了 \( -ab \) 项的贡献（来源：step 7前中段）
+
+### ❌ 方向2：Cauchy-Schwarz (Titu's lemma)
+- **思路**：用Engel form直接对原sum用Cauchy-Schwarz
+- **结果**：失败。给出 \( \frac{p+2q}{2p-q} \geq \frac{1}{2} \)，极弱
+- **原因**：Cauchy-Schwarz的equality条件与问题结构不匹配（来源：step 7中段）
+
+### ❌ 方向3：Sorted permutation + AM-GM on \( \sum \frac{a_i^2}{a_{i+2}^2} \)
+- **思路**：排序 \( a_1 \leq \ldots \leq a_n \)，用sorted permutation。当 \( a_{i+1} \leq a_{i+2} \) 时分母 \( \leq a_{i+2}^2 \)，所以 \( \frac{a_i^2}{\text{denom}} \geq \frac{a_i^2}{a_{i+2}^2} \)。然后用AM-GM（product = 1）得 \( \sum \frac{a_i^2}{a_{i+2}^2} \geq n \)。
+- **结果**：失败。**关键flaw**：分母 \( \leq a_{i+2}^2 \) 只在 \( a_{i+1} \leq a_{i+2} \) 时成立。在cyclic排列中，wraparound处 \( a_n \leq a_1 \) 不成立（\( a_n \) 最大，\( a_1 \) 最小），所以 \( i = n-1 \) 这一项bound方向反了。
+- **验证**：n=3, sorted \( (\epsilon, 1, 1) \)，实际sum \( \to 1.5 \)，而 \( \sum \frac{a_i^2}{a_{i+2}^2} \to \infty \)，确认bound在wraparound处失效。
+- **原因**：cyclic结构导致sorted order在wraparound处不满足单调性（来源：step 7后段）
+
+### ⚠️ 方向4：Reverse sorted permutation（未完成，截断处）
+- **思路**：用decreasing order \( (a_n, a_{n-1}, \ldots, a_1) \)。此时 \( y_{i+1} \geq y_{i+2} \) 对 \( i = 1, \ldots, n-2 \) 成立，所以 \( y_{i+1}^2 - y_{i+1}y_{i+2} \geq 0 \)，分母 \( \geq y_{i+2}^2 \)。
+- **状态**：截断时正在分析这个方向。AI正在推导：当 \( y_{i+1} \geq y_{i+2} \) 时，分母 \( \geq y_{i+2}^2 \) 且 \( \leq y_{i+1}^2 + y_{i+2}^2 \leq 2y_{i+1}^2 \)...
+- **问题**：这个方向同样有cyclic wraparound问题——在 \( i = n-1 \) 和 \( i = n \) 处单调性被打破。AI尚未意识到或处理这个问题就被截断了。（来源：step 7末尾，截断处）
+
+### ⚠️ 方向5：Averaging over permutations（提到但未深入）
+- **思路**：证明所有permutation的average sum \( \geq n-1 \)，则max \( \geq n-1 \)。
+- **状态**：AI提到这个思路，计算了average的结构（每个position的expectation相同），但发现对extremal sequence \( \{1, 1, \ldots, 1, \epsilon\} \)，average = 任意permutation的值 \( = n-1 \)，所以average方法如果成立需要证明average \( \geq n-1 \)。AI没有继续深入这个方向。（来源：step 7后段）
+
+---
+
+## 5. 关键文献
+
+**无**。AI没有进行任何web search，没有引用任何外部论文或定理名称。所有分析都是从头进行的。
+
+AI提到但未正式引用的相关概念：
+- **Nesbitt's inequality**：\( \sum \frac{a}{b+c} \geq \frac{3}{2} \)（n=3），AI用了其squares版本
+- **Shapiro's inequality**：\( \sum \frac{a_i}{a_{i+1}+a_{i+2}} \geq \frac{n}{2} \)，AI提到对大n不成立
+- **Cauchy-Schwarz (Engel/Titu form)**：\( \sum \frac{a_i^2}{b_i} \geq \frac{(\sum a_i)^2}{\sum b_i} \)
+- **AM-GM**：用于 \( \prod \frac{a_i^2}{a_{i+2}^2} = 1 \Rightarrow \sum \geq n \)
+
+---
+
+## 6. 已有的中间产物
+
+**无**。Round 1没有写出任何脚本或文件。所有分析都在thinking中完成，没有tool calls（tool_calls=[]），没有TUI输出（message=0c）。
+
+---
+
+## 7. 当前卡在哪里
+
+### 截断时的具体状态
+
+AI正在分析**reverse sorted permutation**方向（方向4）。具体来说，AI在推导：
+
+> 对decreasing order \( (a_n, a_{n-1}, \ldots, a_1) \)，当 \( y_{i+1} \geq y_{i+2} \) 时（\( i = 1, \ldots, n-2 \)），分母 \( y_{i+1}^2 - y_{i+1}y_{i+2} + y_{i+2}^2 \geq y_{i+2}^2 \) 且 \( \leq y_{i+1}^2 + y_{i+2}^2 \leq 2y_{i+1}^2 \)...
+
+在 `... ≤ 2y` 处被截断（completion_tokens=25000达到上限）。
+
+### 为什么卡住
+
+1. **核心困难**：需要证明对任意sequence存在permutation使sum \( \geq n-1 \)。已通过case分析强烈猜想 \( M = n-1 \)，但**缺乏有效的证明技术**。
+
+2. **已尝试的bound都不够tight**：
+   - Nesbitt-type：\( \frac{3}{2} \)（需要2）
+   - Cauchy-Schwarz：\( \frac{1}{2} \)（更弱）
+   - Sorted + AM-GM：cyclic wraparound破坏了bound
+
+3. **cyclic wraparound是反复出现的障碍**：sorted和reverse sorted permutation在cyclic排列的wraparound处（最大值→最小值的transition）单调性被打破，导致bound失效。
+
+4. **分母 \( f(a,b) = a^2 - ab + b^2 \) 的特殊性未被充分利用**：AI尝试的bounds都用了 \( f \leq a^2 + b^2 \) 或 \( f \geq \frac{a^2+b^2}{2} \)，但这些bound太粗。\( f \) 在 \( a = b \) 时取最小值 \( a^2 \) 这一性质（使term最大）可能是关键，但未被有效利用。
+
+---
+
+## 8. 建议的下一步
+
+### 8.1 最优先：尝试averaging方法（方向5的深化）
+
+证明所有permutation的average sum \( \geq n-1 \)。如果成立，则max \( \geq n-1 \)。
+
+具体计算：average \( = n \cdot \mathbb{E}\left[\frac{y_1^2}{f(y_2, y_3)}\right] \)，其中 \( y_1, y_2, y_3 \) 是从 \( \{x_1, \ldots, x_n\} \) 中无放回抽取的有序三元组。需要证明：
+
+\[
+\frac{n}{n(n-1)(n-2)} \sum_{\substack{i,j,k \text{ distinct}}} \frac{x_i^2}{x_j^2 - x_j x_k + x_k^2} \geq n - 1
+\]
+
+即 \( \sum_{\substack{i,j,k \text{ distinct}}} \frac{x_i^2}{x_j^2 - x_j x_k + x_k^2} \geq (n-1)(n-1)(n-2) \)。
+
+### 8.2 尝试利用 \( f(a,a) = a^2 \) 的性质
+
+当consecutive两个值相等时，分母取最小值，term取最大值。可以尝试构造permutation使足够多的consecutive pair相等或接近。
+
+### 8.3 尝试特定的permutation策略
+
+- **Zigzag permutation**：\( a_1, a_n, a_2, a_{n-1}, a_3, \ldots \)（交替大小），使每个值后面跟的是量级差异大的值
+- **需要分析**：这个permutation在cyclic wraparound处是否也有问题
+
+### 8.4 尝试更tight的逐项bound
+
+不使用 \( f \leq a^2 + b^2 \) 的粗bound，而是利用 \( f(a,b) = a^2 - ab + b^2 \) 的精确形式。例如：
+- \( \frac{a^2}{f(b,c)} = \frac{a^2}{b^2 - bc + c^2} \)，当 \( b \approx c \) 时 \( \approx \frac{a^2}{b^2} \)
+- 可能需要对不同位置用不同的bound，然后组合
+
+### 8.5 先严格证明 n=3 的 \( M = 2 \)
+
+n=3的case虽然通过数值验证了 \( M = 2 \)，但还没有严格证明 \( S \geq 2 \) 对所有正实数和所有permutation成立。可以先解决n=3，然后推广。
+
+可能的途径：直接分析 \( S(1,1,t) = \frac{2}{1-t+t^2} + t^2 \) 的最小值（AI已计算导数，找到critical point \( t=1 \) 和 \( t \approx 0.74 \)，但未完成完整的最小值分析）。
+
+### 8.6 考虑问题是否可能有不同的答案形式
+
+虽然case分析强烈支持 \( M = n-1 \)，但应考虑：
+- 是否对某些特殊的n（如n=3 vs n≥4）答案不同？
+- extremal sequence是否一定是"one outlier"型？是否存在更复杂的extremal sequence？
+
+---
+
+## 附录：探索历程时间线
+
+| Step | Source | 内容 |
+|------|--------|------|
+| steps[0] | system | Devin系统prompt（18653c） |
+| steps[1] | system | Subagent profiles说明（775c） |
+| steps[2] | system | "You are powered by GLM-5.2 High."（32c） |
+| steps[3] | system | 工作目录信息（305c） |
+| steps[4] | system | AGENTS.md规则注入（10539c） |
+| steps[5] | user | "请按AGENTS.md中的题目直接解答。直接在TUI中输出证明，不要写任何文件，结尾输出 ### PROOF COMPLETE"（63c） |
+| steps[6] | system | Available skills列表（18107c） |
+| steps[7] | agent | **纯thinking spin（57423c），无tool calls，无TUI输出，completion_tokens=25000达到上限被截断** |
+
+### steps[7] thinking内容的时间线
+
+1. **前段（0-9000c）**：问题分析，n=3的case分析，发现{1,1,ε}给出sum→2
+2. **中段（9000-21000c）**：n=3深入分析，n=4的case分析，{1,t,t,t}给出→3，发现one-outlier是extremal pattern
+3. **中后段（21000-33000c）**：猜想M=n-1，验证n=4的各种sequence，n=5的case分析，开始尝试证明
+4. **后段（33000-45000c）**：Nesbitt-type下界（3/2，不够tight），Cauchy-Schwarz下界（1/2，很弱），sorted permutation + AM-GM方法（发现cyclic wraparound flaw）
+5. **末段（45000-57423c）**：开始分析reverse sorted permutation方向，在推导分母bound时被截断
+
+### 关键数据
+
+- **总steps**：8（6 system + 1 user + 1 agent）
+- **agent steps**：1（steps[7]）
+- **tool calls**：0
+- **observations**：0
+- **截断step数**：1（最后step）
+- **completion_tokens**：25000（上限）
+- **prompt_tokens**：22605
+- **cached_tokens**：12398
+- **模型**：GLM-5.2 High
+- **session_id**：charm-catshark

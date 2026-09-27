@@ -1,0 +1,1 @@
+In the industrial sector of a metropolitan power grid, there are exactly 19,998 electrical substations. These substations can be connected to one another via high-voltage transmission lines.

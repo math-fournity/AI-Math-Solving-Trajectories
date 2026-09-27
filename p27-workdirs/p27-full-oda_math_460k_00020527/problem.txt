@@ -1,0 +1,1 @@
+List, up to similarity, all triangles \( T \subset \mathbb{R}^2 \) such that the reflections in the sides of \( T \) generate a group acting on \( \mathbb{R}^2 \) properly discontinuously. (A group action is properly discontinuous if for any compact set \( C \subset \mathbb{R}^2 \), the set \(\{ g \in G \mid gC \cap C \neq \emptyset \}\) is finite.)

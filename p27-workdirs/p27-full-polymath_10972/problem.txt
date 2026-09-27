@@ -1,0 +1,1 @@
+In a specialized particle physics simulation, scientists are modeling the trajectory of a "Monic Waveform" consisting of $n = 2012$ distinct energy stages. The waveform is defined by a characteristic function $P(x) = x^n + a_{n-1}x^{n-1} + \dots + a_1x + a_0$, where each coefficient $a_i$ represents a real-valued physical measurement.

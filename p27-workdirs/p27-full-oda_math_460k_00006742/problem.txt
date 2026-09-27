@@ -1,0 +1,1 @@
+Let \( f:(0,1) \rightarrow (0,1) \) be a differentiable function with a continuous derivative such that for every positive integer \( n \) and odd positive integer \( a < 2^n \), there exists an odd positive integer \( b < 2^n \) such that \( f\left(\frac{a}{2^n}\right) = \frac{b}{2^n} \). Determine the set of possible values of \( f'\left(\frac{1}{2}\right) \).

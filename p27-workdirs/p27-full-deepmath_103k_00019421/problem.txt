@@ -1,0 +1,1 @@
+Let $(X_n)_{n\geq 1}$ be a sequence of independent and identically distributed (i.i.d.) random variables. Consider the following quantities:

@@ -1,0 +1,1 @@
+Given two random variables $X$ and $Y$, does the existence of a function $f: \mathbb{R} \to \mathbb{R}$ such that $Y = f(X)$ imply the existence of a Borel-measurable function $g: \mathbb{R} \to \mathbb{R}$ such that $Y = g(X)$ almost surely?

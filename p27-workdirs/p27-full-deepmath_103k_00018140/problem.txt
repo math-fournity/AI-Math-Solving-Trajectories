@@ -1,0 +1,1 @@
+Determine whether the following statement is true or false: For holomorphic Jacobi forms, if the Taylor development begins with $\alpha \cdot \Delta(\tau)\cdot z^{8}$ or $\beta\cdot \Delta(\tau) \cdot E_{4}(\tau)\cdot z^{12}$, the weight cannot be less than 12.

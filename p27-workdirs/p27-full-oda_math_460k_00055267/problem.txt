@@ -1,0 +1,1 @@
+$4 \cdot 37$ Find the smallest positive integer $n$, such that when $K_{n}$ is colored in two colors in any way, there always exist two monochromatic triangles, each of which shares exactly 1 edge.

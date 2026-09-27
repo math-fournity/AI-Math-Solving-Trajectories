@@ -1,0 +1,1 @@
+Let \(f(x) = \sum_{k=0}^\infty a_kx^k\) be a power series with nonnegative coefficients and a radius of convergence of 1. Suppose \(f'(x_0)\) exists for \(x_0 \in (-1,1]\), considering the one-sided limit if \(x_0 = 1\). Is it always true that \(f'(x_0) = \sum_{k=0}^\infty ka_kx^{k-1}\)? Justify your answer for the case when \(x_0 = 1\).

@@ -1,0 +1,1 @@
+Renata the robot packs boxes in a warehouse. Each box is a cube of side length $1$ foot. The warehouse floor is a square, $n$ feet on each side, and is divided into an $n \times n$ grid of square tiles $1$ foot on a side. Each tile can either support one box or be empty. The warehouse has exactly one door, which opens onto one of the corner tiles.

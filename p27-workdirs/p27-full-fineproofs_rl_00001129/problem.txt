@@ -1,0 +1,1 @@
+Determine the maximum integer  $ n $  such that for each positive integer  $ k \le \frac{n}{2} $  there are two positive divisors of  $ n $  with difference  $ k $ .

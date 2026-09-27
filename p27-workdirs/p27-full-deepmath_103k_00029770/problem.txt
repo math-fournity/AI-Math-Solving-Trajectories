@@ -1,0 +1,1 @@
+Given a prime $q$ (odd) and $	ext{gcd}(q, n) = 1$, let $\sigma(x) = \sigma_1(x)$ denote the classical sum of divisors of a positive integer $x$. A number $N$ is perfect if $\sigma(N) = 2N$. If $\text{gcd}(n^2, \sigma(n^2)) = q\sigma(n^2) - 2(q - 1)n^2$, determine whether it follows that $qn^2$ is a perfect number.

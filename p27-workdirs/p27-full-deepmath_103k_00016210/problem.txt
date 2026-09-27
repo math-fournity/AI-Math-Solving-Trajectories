@@ -1,0 +1,1 @@
+Consider a Hausdorff space $X$ with cardinality greater than $2^{\aleph_0}$. Determine whether there exists a subspace $Y \subseteq X$ such that $|Y| = 2^{\aleph_0}$ and $Y$ is not second-countable.

@@ -1,0 +1,1 @@
+Find the maximal possible number of faces \( n \) for a convex polyhedron with integer coordinates for all its vertices, such that there are no other integer points inside the polyhedron or on its faces.

@@ -1,0 +1,1 @@
+A specialized microchip architecture consists of a grid-like circuit board with 4 horizontal copper power rails and 100 vertical signal buses. These rails and buses intersect at 400 distinct junction points. These junctions divide each horizontal rail into 99 individual segments and each vertical bus into 3 individual segments.

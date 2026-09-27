@@ -1,0 +1,1 @@
+For a fixed integer $k > 2$, can a word $w$ in the generators of the group $B_n^{(k)}$, defined by the relations of the braid group $B_n$ with additional relations $\sigma_i^k = 1$ for $i=1,\ldots,n-1$, be reduced to a normal form in polynomial time with respect to $n$ and $|w|$?

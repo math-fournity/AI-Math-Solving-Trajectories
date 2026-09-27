@@ -1,0 +1,1 @@
+On a circle there are 2009 nonnegative integers not greater than 100. If two numbers sit next to each other, we can increase both of them by 1. We can do this at most $ k$ times. What is the minimum $ k$ so that we can make all the numbers on the circle equal?

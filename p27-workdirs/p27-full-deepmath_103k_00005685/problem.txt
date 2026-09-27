@@ -1,0 +1,1 @@
+Determine whether the function \( f(n) = \sum_{k=1}^n \frac{\mu(k)}{k} \) changes sign infinitely many times as \( n \to +\infty \).

@@ -1,0 +1,1 @@
+What are the necessary and sufficient conditions for a map \( f: X \rightarrow Y \) between connected CW complexes to have a Moore-Postnikov tower of principal fibrations, and why is the triviality of the action of \( \pi_1(X) \) on \( \pi_n(M_f, X) \) for all \( n > 1 \) required?

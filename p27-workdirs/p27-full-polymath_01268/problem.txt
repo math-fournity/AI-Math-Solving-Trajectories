@@ -1,0 +1,1 @@
+Let $n = 2012$. Find the smallest possible value of a real number $c$ such that for any $n$-degree monic polynomial

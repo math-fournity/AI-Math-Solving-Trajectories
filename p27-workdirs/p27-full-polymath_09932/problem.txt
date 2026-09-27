@@ -1,0 +1,1 @@
+A high-security data center uses access codes consisting of $k$ digits, ranging from $000 \ldots 0$ to $999 \ldots 9$. To manage these codes, the facility uses specialized storage modules, each identified by a unique two-digit ID from $00$ to $99$.

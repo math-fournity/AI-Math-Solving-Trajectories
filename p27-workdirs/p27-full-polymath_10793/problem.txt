@@ -1,0 +1,1 @@
+A specialized deep-space exploration agency uses a classification system for energy crystals based on their resonance levels. For any positive integer $m$, a "Resonance Sequence" $P_m$ is defined as the set of all energy levels that are integer powers of $m$, specifically $P_m = \{m^k \mid k = 0, 1, 2, \dots\}$.

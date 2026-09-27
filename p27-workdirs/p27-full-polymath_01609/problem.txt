@@ -1,0 +1,1 @@
+Gaspard has $m$ balls in one bag and $n$ in another bag, where $m, n \geq 1$. He can perform two types of operations:

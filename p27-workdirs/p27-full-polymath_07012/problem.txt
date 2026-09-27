@@ -1,0 +1,1 @@
+In a sprawling logistics hub designed as a perfect $n \times n$ grid of cargo bays, an automated transport drone is stationed at the very center of the bay in the bottom-left corner. This drone is programmed with a specific "L-shaped" propulsion jump: it must travel exactly two units along one axis and one unit along the perpendicular axis to land in the center of a new bay.

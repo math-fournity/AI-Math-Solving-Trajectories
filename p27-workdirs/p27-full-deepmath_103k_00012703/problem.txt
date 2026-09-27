@@ -1,0 +1,1 @@
+Let \( P(x) = 5x^{2015} + x^2 + x + 1 \) be a polynomial with roots \( x_1, x_2, x_3, \ldots, x_{2015} \). Find the value of the expression:

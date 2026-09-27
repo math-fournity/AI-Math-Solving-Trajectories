@@ -1,0 +1,1 @@
+In a specialized urban planning simulation, two rival architects are tasked with designing separate corporate headquarters, represented as two convex $n$-sided plazas, $P_1$ and $P_2$. To ensure the designs are distinct, no two cornerstones (vertices) of the two plazas may occupy the same coordinates.

@@ -1,0 +1,1 @@
+Determine whether the following statement is true or false: Let $f \in L^1(\mathbb{R})$ and $g \in L^1(\mathbb{R}) \cap L^\infty(\mathbb{R})$. If $f \ast g$ is continuous and $f \ast g \in L^1(\mathbb{R})$, then $\lim_{x \to \infty} f \ast g (x) = 0$. Is this statement true or false?

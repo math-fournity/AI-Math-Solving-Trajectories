@@ -1,0 +1,1 @@
+In a remote digital archipelago, there are $n$ server nodes arranged in a perfect circle, located at the precise coordinates of the $n$th roots of unity on a complex grid. To test the network's resilience, a security administrator executes a series of "Data Purge" cycles.

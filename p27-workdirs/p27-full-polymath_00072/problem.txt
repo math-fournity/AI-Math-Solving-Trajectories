@@ -1,0 +1,1 @@
+A table $110\times 110$ is given, we define the distance between two cells $A$ and $B$ as the least quantity of moves to move a chess king from the cell $A$ to cell $B$. We marked $n$ cells on the table $110\times 110$ such that the distance between any two cells is not equal to $15$. Determine the greatest value of $n$.

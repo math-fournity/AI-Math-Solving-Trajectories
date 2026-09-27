@@ -1,0 +1,1 @@
+What is the minimum possible sum of the edge lengths \( L \) of a convex polyhedron \( P \) with a given inradius \( r \)?

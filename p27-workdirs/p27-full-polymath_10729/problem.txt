@@ -1,0 +1,1 @@
+In a remote digital landscape, two servers, Alpha and Beta, each start with a data load of 150 gigabytes. The servers engage in a protocol where they transfer data packets back and forth. On each turn, one server must transfer a non-zero integer number of gigabytes from its current load to the other server's load.

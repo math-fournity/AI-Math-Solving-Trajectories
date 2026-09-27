@@ -1,0 +1,1 @@
+In a specialized laboratory, a robot named Alpha is programmed to navigate a linear track marked with integers from $-6$ to $6$. The robot’s movement is governed by a strict protocol to ensure it never visits the same coordinate twice.

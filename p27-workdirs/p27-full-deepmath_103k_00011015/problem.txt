@@ -1,0 +1,1 @@
+Determine whether the set \( A = \{\sqrt{2}\sin(\sqrt{n^2+a} \pi x)\}_{n=1}^\infty \), where \( a \) is a positive real number, is a Riesz basis for \( L^2(0,1) \).

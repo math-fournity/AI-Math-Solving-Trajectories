@@ -1,0 +1,1 @@
+Given that for each \(a \in (0,1)\), the limit \(\lim_{h \to 0^+} \int_{h}^{1-h} t^{-a} (1-t)^{a-1} dt\) exists and is denoted by \(g(a)\), and that \(g(a)\) is differentiable on \((0,1)\), find the value of \(g'\left(\frac{1}{2}\right)\).

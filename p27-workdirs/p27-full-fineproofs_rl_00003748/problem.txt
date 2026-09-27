@@ -1,0 +1,1 @@
+Let $\mathbb{N}$ be the set of positive integers. Let $f: \mathbb{N} \rightarrow \mathbb{N}$ be a function satisfying the following two conditions: (a) $f(m)$ and $f(n)$ are relatively prime whenever $m$ and $n$ are relatively prime. (b) $n \leq f(n) \leq n+2012$ for all $n$.  Prove that for any natural number $n$ and any prime $p$, if $p$ divides $f(n)$ then $p$ divides $n$.

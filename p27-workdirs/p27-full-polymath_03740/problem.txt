@@ -1,0 +1,1 @@
+For each positive $x \in \mathbb{R}$, define $E(x) = \{[nx] : n \in \mathbb{N}\}$, where $[y]$ denotes the floor function of $y$. Let $S$ be the set of all irrational numbers $\alpha > 1$ such that if a positive real $\beta$ satisfies $E(\beta) \subsetneq E(\alpha)$, then $\frac{\beta}{\alpha}$ is a natural number.

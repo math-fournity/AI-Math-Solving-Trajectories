@@ -1,0 +1,1 @@
+Consider the transformation \( T: [0,1) \to [0,1) \) defined by \( T(x) = 2x \mod 1 \), which preserves the Lebesgue measure \( m \). Let \( \phi: [0,1) \to [0,1) \) be defined as \( \phi(x) = x^3 \). Determine the value of \( \lim_{n \to \infty} \frac{1}{n} \sum_{j=0}^{n-1} \phi(T^j x) \) for \( m \)-almost every point \( x \in [0,1) \).

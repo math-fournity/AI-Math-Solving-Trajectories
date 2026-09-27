@@ -1,0 +1,1 @@
+In a remote industrial logistics hub, three competing logistics managers—Alice, Bob, and Chebyshev—are tasked with clearing a warehouse containing four distinct shipments of rare minerals. The shipment weights are currently recorded as 43 tons, 99 tons, $x$ tons, and $y$ tons, where $x$ and $y$ are positive integer values.

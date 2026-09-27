@@ -1,0 +1,1 @@
+In a futuristic data center, there is an $8 \times 8$ grid of server slots. Every single slot is occupied by a specialized security drone, which is either a "Shadow" model (black) or a "Light" model (white).

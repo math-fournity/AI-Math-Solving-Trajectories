@@ -1,0 +1,1 @@
+Let  $ P\subseteq \mathbb{R}^m$  be a non-empty compact convex set and  $ f: P\rightarrow \mathbb{R}_{ \plus{} }$  be a concave function. Prove, that for every  $ \xi\in \mathbb{R}^m$

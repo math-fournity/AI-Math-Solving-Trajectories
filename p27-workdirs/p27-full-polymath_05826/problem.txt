@@ -1,0 +1,1 @@
+Consider lattice points of a $6*7$ grid.We start with two points $A,B$.We say two points $X,Y$ connected if one can reflect several times WRT points $A,B$ and reach from $X$ to $Y$.Over all choices of $A,B$ what is the minimum number of connected components?

@@ -1,0 +1,1 @@
+Find the smallest constant $C > 1$ such that the following statement holds: for every integer $n \geq 2$ and sequence of non-integer positive real numbers $a_1, a_2, \dots, a_n$ satisfying

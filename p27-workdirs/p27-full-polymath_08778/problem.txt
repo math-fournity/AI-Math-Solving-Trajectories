@@ -1,0 +1,1 @@
+In the coastal province of Numeria, there are 82 historic lighthouses, each assigned a unique identification frequency from the set $\{0, 1, 2, \dots, 81\}$. Two rival signal operators, Admiral Amy and Baron Bob, are competing to claim these lighthouses for their respective networks.

@@ -1,0 +1,1 @@
+Evaluate the integral: $$\int_{-\infty}^\infty \frac{\cos(x)}{x+i}\,dx.$$

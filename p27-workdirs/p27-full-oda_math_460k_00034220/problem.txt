@@ -1,0 +1,1 @@
+Let $p$ be a prime number. Calculate the remainder when $(-1)^{(p-1)/2}\binom{p-1}{(p-1)/2} - 4^{p-1}$ is divided by $p^3$.

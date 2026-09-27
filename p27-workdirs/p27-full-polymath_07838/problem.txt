@@ -1,0 +1,1 @@
+In a remote industrial sector, a black-box automated manufacturing unit is programmed with a hidden production function $P(x)$, which is a polynomial of degree at most $n$ with integer coefficients. The unit takes an integer resource input $x$ and outputs a specific quantity of product.

@@ -1,0 +1,1 @@
+In the coastal territory of Planimetria, a surveyor is mapping a triangular plot of land, $\triangle ABC$. A circular reservoir (the incircle) is nested within the plot, touching the southern border $BC$ at a specific marker $D$.

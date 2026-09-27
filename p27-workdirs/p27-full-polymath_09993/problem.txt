@@ -1,0 +1,1 @@
+In a sprawling logistics center, a security grid is composed of a square array of $8 \times 8$ storage bays. To manage inventory, managers can place one of two types of high-density pallets into these bays: a "Double-Stack" (valued at $2$ units) or a "Single-Stack" (valued at $1$ unit). Some bays may also be left completely empty.

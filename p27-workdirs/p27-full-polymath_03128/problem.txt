@@ -1,0 +1,1 @@
+Positive integers $a_0<a_1<\dots<a_n$, are to be chosen so that $a_j-a_i$ is not a prime for any $i,j$ with $0 \le i <j \le n$. For each $n \ge 1$, determine the smallest possible value of $a_n$.

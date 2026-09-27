@@ -1,0 +1,1 @@
+For nonnegative integers $n$, let $f(n)$ be the number of digits of $n$ that are at least $5$. Let $g(n)=3^{f(n)}$. Compute

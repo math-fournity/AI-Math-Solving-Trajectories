@@ -1,0 +1,1 @@
+In a remote digital archipelago, there are $n = 999$ unique server nodes. Every possible pair of nodes is linked by exactly one encrypted data stream, and each data stream is shared by exactly 3 specific nodes. In this network architecture, any set of three nodes that shares a common data stream forms a "Data Cluster."

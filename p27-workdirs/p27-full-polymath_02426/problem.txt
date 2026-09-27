@@ -1,0 +1,1 @@
+If $N$ is the number of triangles of different shapes (i.e., not similar) whose angles are all integers (in degrees), what is $\frac{N}{100}$?

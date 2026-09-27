@@ -1,0 +1,1 @@
+In a specialized archives building, there are 2,015 individual storage lockers numbered sequentially from 1 to 2015. The facility uses a unique weight-based locking system. A locker can only be activated if the total weight placed inside it is exactly equal to that locker's identification number.

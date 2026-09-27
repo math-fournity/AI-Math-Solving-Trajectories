@@ -1,0 +1,1 @@
+Determine the values of \( n \ge 4 \) for which the local ring \( R_n = k[[x,y,z,w]]/(x^2y+y^{n-1}+z^2+w^2) \) is not a unique factorization domain (UFD), where \( k \) is an algebraically closed field of characteristic 0.

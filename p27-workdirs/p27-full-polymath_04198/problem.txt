@@ -1,0 +1,1 @@
+The total mass of $100$ given weights with positive masses equals $2S$.  A natural number $k$ is called [i]middle[/i] if some $k$ of the given weights have the total mass $S$.  Find the maximum possible number of middle numbers.

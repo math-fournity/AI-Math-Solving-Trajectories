@@ -1,0 +1,1 @@
+Determine whether the function \( f(x) = \sum_{n=1}^\infty \frac{\sin(nx^2)}{1+n^4} \) has a continuous second derivative on \( \mathbb{R} \).

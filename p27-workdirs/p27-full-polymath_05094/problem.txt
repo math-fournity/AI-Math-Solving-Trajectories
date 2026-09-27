@@ -1,0 +1,1 @@
+Each integer point $(x, y)$ on the Cartesian plane is the center of a disk with radius $r = 1/1000$. Consider all equilateral triangles whose three vertices $A, B, C$ are located in three distinct disks. Let $L$ be the minimum possible side length of such an equilateral triangle. Find the smallest integer $n$ such that $L > n$.

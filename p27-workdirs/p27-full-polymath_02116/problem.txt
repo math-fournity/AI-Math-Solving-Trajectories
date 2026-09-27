@@ -1,0 +1,1 @@
+Thomas and Nils are playing a game with cards numbered $1, 2, \dots, n$. All cards are initially face up. Players take alternate turns choosing a card and either keeping it or giving it to the other player. After all cards are gone, each player calculates the sum of their own cards. If the difference between these sums is divisible by $3$, Thomas wins; otherwise, Nils wins.

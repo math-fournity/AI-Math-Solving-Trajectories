@@ -1,0 +1,1 @@
+In a remote desert, a security firm is contracted to protect a high-value facility containing exactly 101 sensors placed at distinct locations. A survey of the terrain confirms that no three sensors are positioned in a perfectly straight line.

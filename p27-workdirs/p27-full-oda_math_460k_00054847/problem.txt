@@ -1,0 +1,1 @@
+Consider a set of \( n \) distinct positive integers. Let \( f(n) \) be the smallest positive real number such that there exist 3 integers in the set whose least common multiple (LCM) is at least \( f(n) \cdot n^{2.99} \). Find \( \lfloor 1000 f(100) \rfloor \).

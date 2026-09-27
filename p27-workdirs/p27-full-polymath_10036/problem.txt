@@ -1,0 +1,1 @@
+In the competitive world of cloud computing, three data centers—Alpha, Beta, and Gamma—operate with processing capacities of $A, B$, and $C$ petaflops, respectively ($A, B, C > 0$).

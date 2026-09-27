@@ -1,0 +1,1 @@
+In a remote sector of the sea, a naval commander is overseeing a triangular patrol zone defined by three buoys. The distances between these buoys are exactly 3 miles, 4 miles, and 5 miles, forming a perfect right-angled triangle.

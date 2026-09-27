@@ -1,0 +1,1 @@
+Let $S$ be a set of $n = 100$ elements and $S_1, S_2, \dots, S_{10}$ be subsets of $S$ such that each subset has at least $r = 50$ elements. There exist indices $i$ and $j$ with $1 \leq i < j \leq 10$ such that the number of common elements of $S_i$ and $S_j$ is at least $m$. Find the value of $m$ given by the bound $r - \frac{nk}{4(k-1)}$.

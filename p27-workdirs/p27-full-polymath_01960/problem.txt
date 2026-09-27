@@ -1,0 +1,1 @@
+An \( n \)-folding process on a rectangular piece of paper with sides aligned vertically and horizontally consists of repeating the following process \( n \) times:

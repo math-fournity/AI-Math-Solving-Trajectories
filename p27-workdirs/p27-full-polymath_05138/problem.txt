@@ -1,0 +1,1 @@
+Let $n = 100$. Find the maximum number of disjoint pairs of elements of the set $\{1, 2, \ldots, n\}$ such that the sums of the elements in each pair are distinct integers not exceeding $n$.

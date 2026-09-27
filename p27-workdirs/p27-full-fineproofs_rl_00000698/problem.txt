@@ -1,0 +1,1 @@
+A sequence of real numbers $a_{1}, a_{2}, \ldots$ satisfies the relation  $$ a_{n}=-\max _{i+j=n}\left(a_{i}+a_{j}\right) \quad \text { for all } n>2017 $$  Prove that this sequence is bounded, i.e., there is a constant $M$ such that $\left|a_{n}\right| \leqslant M$ for all positive integers $n$.

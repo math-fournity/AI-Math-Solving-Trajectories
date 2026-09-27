@@ -1,0 +1,1 @@
+Is there a countable connected topological space \((X, \tau)\) such that for every point \(x \in X\), the space \(X \setminus \{x\}\) is disconnected with the induced subspace topology?

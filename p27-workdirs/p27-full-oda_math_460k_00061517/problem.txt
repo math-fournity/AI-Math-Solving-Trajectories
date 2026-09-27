@@ -1,0 +1,1 @@
+Find the best positive number \( k \) such that for real numbers \( a, b, c \) with \( ab + bc + ca > 0 \),

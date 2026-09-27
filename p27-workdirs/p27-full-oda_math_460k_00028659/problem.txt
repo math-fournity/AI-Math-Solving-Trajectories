@@ -1,0 +1,1 @@
+Let us call a function f smooth iff lim_{h → 0} (f(x-h) + f(x+h) - 2f(x))/h = 0. Question 1: A smooth function must it be measurable? (If it were measurable this is of Baire’s first class.) Question 2: Determine the category and the measure of the set of points where a continuous smooth function has the derivative.

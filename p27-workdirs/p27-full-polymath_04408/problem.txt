@@ -1,0 +1,1 @@
+Find the smallest real $\alpha$, such that for any convex polygon $P$ with area $1$, there exist a point $M$ in the plane, such that the area of convex hull of $P\cup Q$ is at most $\alpha$, where $Q$ denotes the image of $P$ under central symmetry with respect to $M$.

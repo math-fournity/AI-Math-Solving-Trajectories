@@ -1,0 +1,1 @@
+Find the maximum value \( c \) such that \( P(x) > c \) for every \( x \), where \( P(x) \) is a polynomial with a leading coefficient of 1 and four different roots in the interval \([-1, 1]\).

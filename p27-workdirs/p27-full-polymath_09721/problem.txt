@@ -1,0 +1,1 @@
+A team of civil engineers is designing a modular irrigation system consisting of $n$ parallel pipes, where $n$ is an integer at least 2. Each pipe $i$ has a non-integer, positive flow resistance $a_i$. These pipes are calibrated such that their total efficiency is perfectly balanced, meaning the sum of their reciprocal resistances equals exactly 1:

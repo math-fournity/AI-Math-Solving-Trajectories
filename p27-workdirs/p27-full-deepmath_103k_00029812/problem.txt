@@ -1,0 +1,1 @@
+Determine the number of \(n \times n\) matrices \(C\) that contain all the numbers \(1, 2, \ldots, n^2\) and satisfy the following conditions:

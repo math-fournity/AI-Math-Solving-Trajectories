@@ -1,0 +1,1 @@
+Find all injective functions \( f : \mathbb{Z}_+ \to \mathbb{Z}_+ \) such that for all positive integers \( m \) and \( n \), the following conditions are satisfied: \( a) \ f(mn) = f(m)f(n) \) and \( b) \ f(m^2 + n^2) \mid f(m^2) + f(n^2). \)

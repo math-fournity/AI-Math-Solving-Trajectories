@@ -1,0 +1,1 @@
+In a specialized logistics warehouse, there are 2017 storage lockers, numbered sequentially from 1 to 2017. A security manager needs to select a specific set of lockers, denoted as Set $B$, to undergo a mandatory safety inspection.

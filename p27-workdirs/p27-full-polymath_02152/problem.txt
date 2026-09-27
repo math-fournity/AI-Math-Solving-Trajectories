@@ -1,0 +1,1 @@
+A triangular array of positive integers is called remarkable if all of its entries are distinct, and each entry, other than those in the top row, is the quotient of the two numbers immediately above it. For example, the following triangular array is remarkable:

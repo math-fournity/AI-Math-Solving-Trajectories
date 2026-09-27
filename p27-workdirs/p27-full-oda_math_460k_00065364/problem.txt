@@ -1,0 +1,1 @@
+For each integer \( k \) satisfying \( 2 \leq k \leq 100 \), let \( S(k) \) be the smallest positive integer such that there exist positive integers \( b_2, b_3, \cdots, b_{101} \) satisfying:

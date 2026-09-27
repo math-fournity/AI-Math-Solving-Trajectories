@@ -1,0 +1,1 @@
+Find $C_{\max}$ such that $\forall x, y, z \in \mathbb{R}$,$$f = 1 + |x+y+z| + |xy+yz+zx| + |xyz| \geq C(|x| + |y| + |z|)$$

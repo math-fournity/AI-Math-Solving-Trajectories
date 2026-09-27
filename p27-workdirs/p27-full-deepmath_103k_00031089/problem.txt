@@ -1,0 +1,1 @@
+Consider the set \( S = \{1, 2, 3, \ldots, 2022\} \) and a permutation \( A = \{a_{1}, a_{2}, a_{3}, \ldots, a_{2022}\} \) of \( S \). It is known that for any \(1 \leq n, m \leq 2022\), the sum \( a_{n} + a_{m} \) is divisible by the greatest common divisor (GCD) of \( n \) and \( m \). Determine the number of possible permutations \( A \).

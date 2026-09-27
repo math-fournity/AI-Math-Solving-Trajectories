@@ -1,0 +1,1 @@
+Determine the constant \( k \) such that for any sequence of positive numbers \( a_i \), the inequality \[ \sum_{n=1}^{\infty} \frac{n}{a_1 + a_2 + \ldots + a_n} \leq k \sum_{n=1}^{\infty} \frac{1}{a_n} \] holds.

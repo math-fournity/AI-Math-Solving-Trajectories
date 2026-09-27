@@ -1,0 +1,1 @@
+A super-integer triangle is a triangle whose side lengths and at least one height are all positive integers. A set $S$ of positive integers is called "complete" if whenever the lengths of two sides of a super-integer triangle are in $S$, the length of the third side must also be in $S$.

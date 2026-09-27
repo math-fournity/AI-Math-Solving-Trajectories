@@ -1,0 +1,1 @@
+Let $n \geq 2$ and $1 \neq g \in F_n$, where $F_n$ is the free group of rank $n$. Is there an epimorphism $\phi : F_n \to F_2$ such that $\phi(g) \neq 1$?

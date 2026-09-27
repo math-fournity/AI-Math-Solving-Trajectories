@@ -1,0 +1,1 @@
+Let $A$ be a Banach algebra with an identity element 1, and let $B$ be a closed subalgebra of $A$ that also contains 1. If an element $a \in B$ has an inverse in $A$, must $a$ also have an inverse in $B$? Provide a justification for your answer.

@@ -1,0 +1,1 @@
+Determine the asymptotic distribution of the likelihood ratio test statistic \( \text{LR}(\mu_0,\mu_1) = -2\ln\frac{L(\mathbf{x}\mid\mu_0,\sigma^2)}{\max\{ L(\mathbf{x}\mid\mu_0,\sigma^2), L(\mathbf{x}\mid\mu_1,\sigma^2) \}} \) under the null hypothesis \( H_0: \mu = \mu_0 \).

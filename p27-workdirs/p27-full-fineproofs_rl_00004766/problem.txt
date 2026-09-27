@@ -1,0 +1,1 @@
+The head of the Mint wants to release 12 coins denominations (each - a natural number rubles) so that any amount from 1 to 6543 rubles could be paid without having to pass, using no more than 8 coins. Can he do it? (If the payment amount you can use a few coins of the same denomination.)

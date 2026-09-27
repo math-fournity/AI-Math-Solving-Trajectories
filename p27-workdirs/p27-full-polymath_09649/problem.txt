@@ -1,0 +1,1 @@
+In a bustling coastal logistics hub, there are $n$ different shipping containers destined for export. The $i$-th container holds $c_i$ crates of fragile electronics, where each container is partially filled such that $1 \leq c_i \leq 39$. The total number of crates across all $n$ containers is exactly $\sum_{i=1}^{n} c_i = 1990$.

@@ -1,0 +1,1 @@
+A master perfume designer is working with a palette of exactly 6 base essences, denoted as the set $R$. The designer wants to create a signature collection of fragrance blends, where each blend is a unique subset of these 6 essences. This collection, referred to as an "S-family" $F$, must adhere to the following strict industry regulations:

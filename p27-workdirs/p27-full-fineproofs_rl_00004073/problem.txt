@@ -1,0 +1,1 @@
+Let $t$ be a non-zero natural number. Show that there exists an integer $n>1$ coprime with $t$ such that for any integer $k \geq 1$, the integer $n^{k}+t$ is not a power (i.e., it is not of the form $m^{r}$ with $m \geq 1$ and $r \geq 2$).

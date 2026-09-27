@@ -1,0 +1,1 @@
+Given a positive integer $n$, all of its positive integer divisors are written on a board. Two players $A$ and $B$ play the following game:

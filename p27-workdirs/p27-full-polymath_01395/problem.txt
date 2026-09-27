@@ -1,0 +1,1 @@
+In a $12 \times 12$ square table, some stones are placed in the cells with at most one stone per cell. If the number of stones on each line, column, and diagonal is even, what is the maximum number of stones that can be placed? Note: Each diagonal is parallel to one of the two main diagonals of the table and consists of $1, 2, \ldots, 11,$ or $12$ cells.

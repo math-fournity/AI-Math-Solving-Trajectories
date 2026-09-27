@@ -1,0 +1,1 @@
+A lottery ticket has  $50$  cells into which one must put a permutation of  $1, 2, 3, ... , 50$ . Any ticket with at least one cell matching the winning permutation wins a prize. How many tickets are needed to be sure of winning a prize?

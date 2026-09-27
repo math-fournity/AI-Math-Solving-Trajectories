@@ -1,0 +1,1 @@
+Let \(7^{7^n} + 1 = p_1^{\alpha_1} p_2^{\alpha_2} \cdots p_s^{\alpha_s}\). Calculate the minimum possible value of \(\alpha_1 + \alpha_2 + \cdots + \alpha_s\) for \(n = 4\).

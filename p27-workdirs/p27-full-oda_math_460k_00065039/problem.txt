@@ -1,0 +1,1 @@
+Given $3n$ people and a set of circles of interest where each circle has an odd number of members, the number of common members in every $2^{n-1} + 1$ circles is even. Determine the maximum possible number of circles under these conditions. Express your answer in terms of $n$.

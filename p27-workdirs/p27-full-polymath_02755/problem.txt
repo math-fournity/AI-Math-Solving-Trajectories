@@ -1,0 +1,1 @@
+Let \( x_{1}, x_{2}, \ldots, x_{2023} \) be distinct real positive numbers such that

@@ -1,0 +1,1 @@
+A logistics manager is organizing a warehouse floor measuring 6 units wide by 4 units long. The entire floor must be covered with exactly 8 modular cargo pallets. Each pallet is an L-shaped "trimino" covering 3 square units. These pallets come in four distinct orientations, each formed by taking a 2x2 square and removing one specific corner:

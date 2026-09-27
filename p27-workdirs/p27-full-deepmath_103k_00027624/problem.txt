@@ -1,0 +1,1 @@
+Determine the values of $p \geq 1$ for which the minimizer of the function \( \min_{X} \sum_{i=1}^n\|X-X_i\|_p \) lies in the convex hull of the points \( \{X_i\}_{i=1}^n \) in $d$-dimensional Euclidean space $\mathbb{R}^d$. Provide your answer as a set of values for $p$. \( \boxed{} \)

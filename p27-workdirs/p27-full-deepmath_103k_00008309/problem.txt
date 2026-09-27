@@ -1,0 +1,1 @@
+Is there a Hausdorff compactification of the irrational numbers with its usual topology such that the remainder is a discrete space?

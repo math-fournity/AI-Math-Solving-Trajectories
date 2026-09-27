@@ -1,0 +1,1 @@
+Is it true that every finite rank Euclidean building can be biLipschitz embedded into a finite product of metric \(\mathbb{R}\)-trees with the condition that \(p=1\) in the biLipschitz inequality?

@@ -1,0 +1,1 @@
+In a remote industrial refinery, three chemical processors—Alpha ($x$), Beta ($y$), and Gamma ($z$)—manage non-negative quantities of raw catalysts. The total energy output of the facility is determined by a complex interaction between these processors.

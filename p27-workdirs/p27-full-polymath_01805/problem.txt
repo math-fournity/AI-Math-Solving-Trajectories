@@ -1,0 +1,1 @@
+Let $k, n$ be positive integers such that $k, n > 1$ and $k < n$. An $n \times n$ grid of unit squares is given. A configuration of black squares is called "valid" if no two black cells have a common side or vertex.

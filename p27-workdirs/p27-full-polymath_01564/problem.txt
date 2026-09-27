@@ -1,0 +1,1 @@
+Let's determine the cube, given the following 7 points:

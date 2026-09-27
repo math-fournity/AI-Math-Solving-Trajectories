@@ -1,0 +1,1 @@
+For any Banach space $X$, does there exist a Banach space $Y$ and an injective compact operator $T: X \to Y$?

@@ -1,0 +1,1 @@
+Find all functions such that  $ f: \mathbb{R}^\plus{} \rightarrow \mathbb{R}^\plus{}$  and  $ f(x\plus{}f(y))\equal{}yf(xy\plus{}1)$  for every  $ x,y\in \mathbb{R}^\plus{}$ .

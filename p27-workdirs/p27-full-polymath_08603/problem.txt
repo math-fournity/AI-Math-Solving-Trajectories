@@ -1,0 +1,1 @@
+In a futuristic city, an engineer is designing high-speed transit tracks modeled by the trajectory equation $x^2 + 2x - my^2 = 0$, where $m$ is a positive "friction coefficient." The origin $O(0,0)$ represents the central control tower.

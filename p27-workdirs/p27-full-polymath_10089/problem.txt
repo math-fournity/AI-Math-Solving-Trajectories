@@ -1,0 +1,1 @@
+In a futuristic data center, a massive storage array is arranged in a 300-row by 300-column grid of memory cells. To optimize the cooling system, technicians have permanently deactivated and removed the 100-by-100 blocks of cells from each of the four corners of the grid.

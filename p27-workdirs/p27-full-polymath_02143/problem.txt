@@ -1,0 +1,1 @@
+Consider pairs $(f, g)$ of functions from the set of nonnegative integers to itself such that

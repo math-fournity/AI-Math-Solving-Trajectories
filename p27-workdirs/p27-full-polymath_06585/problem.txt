@@ -1,0 +1,1 @@
+In a specialized logistics hub, security codes are generated to manage automated drones. A systems architect needs to determine the maximum capacity of the "Delta-Protocol" code library. The codes must adhere to these three strict security constraints:

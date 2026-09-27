@@ -1,0 +1,1 @@
+In the competitive world of high-performance server cooling, a system’s "Efficiency Rating" is a function $f$ that maps an integer workload level $x \in \mathbb{Z}$ to an integer power consumption value $f(x) \in \mathbb{Z}$.

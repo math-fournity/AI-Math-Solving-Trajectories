@@ -1,0 +1,1 @@
+Let \( n \geq 2 \). Let \( N \in M_n(\mathbb{R}) \) be a non-zero nilpotent matrix and let \( Z = N \otimes N^T + N^T \otimes N \). If \( \lambda_1, \lambda_2, \ldots, \lambda_k \) are the distinct non-zero eigenvalues of \( Z \), calculate the value of \( \lambda_1^2 + \lambda_2^2 + \cdots + \lambda_k^2 \).

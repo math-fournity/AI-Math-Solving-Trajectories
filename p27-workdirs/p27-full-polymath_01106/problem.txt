@@ -1,0 +1,1 @@
+Petya and Vasya are given equal sets of $ N$ weights, in which the masses of any two weights are in ratio at most $ 1.25$. Petya succeeded to divide his set into $ 10$ groups of equal masses, while Vasya succeeded to divide his set into $ 11$ groups of equal masses. Find the smallest possible $ N$.

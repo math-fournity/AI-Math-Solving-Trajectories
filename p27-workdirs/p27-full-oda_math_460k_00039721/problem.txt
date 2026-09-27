@@ -1,0 +1,1 @@
+Find a 2-coloring of the edges of the complete graph \( K_{17} \) such that it avoids monochromatic triangles and monochromatic \( K_6 \) subgraphs.

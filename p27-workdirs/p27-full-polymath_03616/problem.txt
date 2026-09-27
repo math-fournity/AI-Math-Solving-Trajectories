@@ -1,0 +1,1 @@
+Exercise 4. A gardener and a woodpecker play the following game in their garden, which is shaped like a $2022 \times 2022$ grid consisting of $2022^{2}$ cells. Two cells are considered neighbors if they share a vertex or an edge. Initially, each cell contains a tree of size 0. Then, on each turn of the game,

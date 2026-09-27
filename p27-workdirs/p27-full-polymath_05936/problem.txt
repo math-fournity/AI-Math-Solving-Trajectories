@@ -1,0 +1,1 @@
+In a remote industrial sector, two logistics managers, Aris and Bron, are competing for control over a chemical distribution network. The network begins with two storage vats containing $a$ and $b$ liters of a volatile reagent, where $1 \le a, b \le 100$ and both are integers.

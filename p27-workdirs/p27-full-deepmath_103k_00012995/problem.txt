@@ -1,0 +1,1 @@
+Evaluate the limit of the improper integral: \[ \lim_{r \to 0^+} \int_{A} \frac{1}{|u|} \, du \] where \( A = \{ u \in \mathbb{R}^3 : r \leq |u| \leq 1 \} \) and \( r \in (0,1) \). Determine if the limit exists, and if not, explain why.

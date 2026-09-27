@@ -1,0 +1,1 @@
+A specialized logistics company manages $n$ storage hubs (where $n > 1$). They are testing two different distribution protocols for a specific chemical compound: Protocol A and Protocol B. Under these protocols, the volumes of the compound stored at the hubs are represented by non-negative values $a_1, a_2, \dots, a_n$ for Protocol A and $b_1, b_2, \dots, b_n$ for Protocol B.

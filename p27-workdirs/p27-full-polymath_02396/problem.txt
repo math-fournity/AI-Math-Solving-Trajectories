@@ -1,0 +1,1 @@
+On a plane, there is a complete graph of order $n$ ($n \geq 3$). The edges of the graph are colored with three colors. We want to find the minimum number $k$ such that for any initial coloring, we can always select $k$ edges and change their colors to one of the three given colors so that the subgraph formed by all edges of that color is connected and spans all $n$ vertices.

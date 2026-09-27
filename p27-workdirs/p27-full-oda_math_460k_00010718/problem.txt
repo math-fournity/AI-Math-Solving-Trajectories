@@ -1,0 +1,1 @@
+Let \(ABC\) be a triangle with circumcenter \(O\) and nine-point center \(N\). Let \(A'B'C'\) be the pedal triangle of \(O\). Let \(A''\), \(B''\), and \(C''\) be the reflections of \(N\) through \(BC\), \(CA\), and \(AB\) respectively. Calculate the sum of the radii of the circles \((OA'A'')\), \((OB'B'')\), and \((OC'C'')\).

@@ -1,0 +1,1 @@
+The 34th question: Given an integer $n \geq 4$, find the smallest $\lambda(n)$ such that for any non-negative real numbers $a_{1}, a_{2}, \ldots, a_{n}$ (indices taken modulo $n$), the inequality $\sum_{i=1}^{n}\left\{a_{i}\right\} a_{i+1} \leq \lambda(n)$ always holds.

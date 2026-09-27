@@ -1,0 +1,1 @@
+We define a $w$-strip as the set of all points in the plane that are between or on two parallel lines on a mutual distance $w$. Let $S$ be a set of $n$ points in the plane such that any three points from $S$ can be covered by a 1 -strip. Show that the entire set $S$ can be covered by a 2 -strip.

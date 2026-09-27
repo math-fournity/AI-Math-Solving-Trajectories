@@ -1,0 +1,1 @@
+An $5 \times 5$ array must be completed with all numbers $\{1,2, \ldots, 25\}$, one number in each cell. Find the maximal positive integer $k$, such that for any completion of the array there is a $2 \times 2$ square (subarray), whose numbers have a sum not less than $k$.

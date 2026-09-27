@@ -1,0 +1,1 @@
+A high-security vault contains 2013 unique storage canisters, each marked with a distinct prime number serial code. A master technician, Ivan, has secretly selected a pair of distinct canisters $(p, q)$ from this set for a specific project.

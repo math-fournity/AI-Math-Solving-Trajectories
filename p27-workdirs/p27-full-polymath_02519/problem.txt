@@ -1,0 +1,1 @@
+Four. (50 points) There are 12 points on a plane, and no three points are collinear. Using any one of these points as the starting point and another point as the endpoint, draw all possible vectors. A triangle whose three side vectors sum to the zero vector is called a "zero triangle." Find the maximum number of zero triangles that can be formed with these 12 points as vertices.

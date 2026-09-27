@@ -1,0 +1,1 @@
+An environmental research station is testing three different carbon-capture prototypes: Alpha, Beta, and Gamma. Let $a, b,$ and $c$ represent the non-negative performance ratings (measured in gigatons) for each respective prototype.

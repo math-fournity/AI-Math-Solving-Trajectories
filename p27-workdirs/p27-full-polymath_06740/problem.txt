@@ -1,0 +1,1 @@
+A central logistics hub manages 100 distinct warehouse identification codes, labeled $a_1, a_2, \dots, a_{100}$, each being a positive integer. To update the system, a technician calculates a new security key $b_i$ for each warehouse.

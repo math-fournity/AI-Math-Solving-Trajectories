@@ -1,0 +1,1 @@
+In a cutting-edge data center, an engineer is organizing 100 unique server modules, labeled with identification codes from 1 to 100, into a square high-density rack system. The rack is configured as a 10x10 grid, containing exactly 100 slots arranged in 10 horizontal shelves and 10 vertical columns.

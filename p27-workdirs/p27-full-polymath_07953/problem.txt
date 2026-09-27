@@ -1,0 +1,1 @@
+In a massive urban data center, there is a square grid of $1000 \times 1000$ server towers. Each of these $1,000,000$ towers has a unique height, ensuring no two towers are exactly the same.

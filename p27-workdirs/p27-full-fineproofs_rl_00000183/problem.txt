@@ -1,0 +1,1 @@
+. Let $n \geqslant 2$ be an integer and let $x_{1}, \ldots, x_{n}$ be positive real numbers such that $x_{1} x_{2} \cdots x_{n}=1$. Show that

@@ -1,0 +1,1 @@
+Compute the fundamental group of the space \( \mathbb{R}^{3} \smallsetminus A \), where \( A = \{(x,y,z): y=0,x^{2}+z^{2}=1\} \cup \{(x,y,z): y=z=0, x \ge 1\} \).

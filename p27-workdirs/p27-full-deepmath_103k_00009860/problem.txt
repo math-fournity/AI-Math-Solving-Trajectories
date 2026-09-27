@@ -1,0 +1,1 @@
+Is it true that for any function of the first Baire class \(f:X\to\mathbb{R}\) on the Cantor cube \(X=2^\omega\), there exists a continuous function \(g:X\to[0,1]\) such that the image \((f+g)(X)\) is disjoint from the set \(\mathbb{Z}\) of integers?

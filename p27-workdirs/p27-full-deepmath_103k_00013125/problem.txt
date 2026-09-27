@@ -1,0 +1,1 @@
+Find the natural number \( n \) such that the field \( \mathbf{Q}(z_{5},z_{7}) \) is equal to \( \mathbf{Q}(z_{n}) \), where \( z_{k} = e^{2\pi i / k} \) is a primitive \( k \)th root of unity.

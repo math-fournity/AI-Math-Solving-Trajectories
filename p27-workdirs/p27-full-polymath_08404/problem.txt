@@ -1,0 +1,1 @@
+In a high-tech warehouse, a grid of charging pads is arranged in an $m \times n$ rectangular formation. Each pad can be in one of two states: "Active" (emitting a signal) or "Inactive" (silent). The system updates its configuration every minute according to a rigid automated protocol:

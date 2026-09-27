@@ -1,0 +1,1 @@
+Determine whether there exists a finite minimal nonsolvable group $G$ with the following properties:

@@ -1,0 +1,1 @@
+Let $\phi$ be the golden ratio. Calculate the value of the sum

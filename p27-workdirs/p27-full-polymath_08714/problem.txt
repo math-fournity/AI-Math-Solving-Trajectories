@@ -1,0 +1,1 @@
+A specialized global logistics firm, "Vector Flow," is optimizing a shipping corridor consisting of $n$ distinct hub segments. For each segment $i$ (where $i=1$ to $n$), the firm assigns a resource allocation value $x_i$, which is a positive real number.

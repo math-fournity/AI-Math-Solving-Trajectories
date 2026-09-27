@@ -1,0 +1,1 @@
+Example 4.2.12 Use various regular polygons as tiles to cover the ground, without allowing the vertices of the regular polygons to be placed on the edges of another regular polygon, and requiring that the placement of regular polygons at each vertex be the same. How many choices are there?

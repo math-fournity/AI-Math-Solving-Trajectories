@@ -1,0 +1,1 @@
+8. (5 points) In the cells of a $(2 k+1) \times(2 n+1)$ table, where $k \leqslant n$, the numbers 1, 2, and 3 are arranged such that in any $2 \times 2$ square, there are all three different numbers. What is the maximum value that the sum of the numbers in the entire table can take?

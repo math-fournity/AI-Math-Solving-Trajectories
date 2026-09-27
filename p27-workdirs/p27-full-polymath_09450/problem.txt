@@ -1,0 +1,1 @@
+A high-tech manufacturing firm operates a sequence of $(n + 1)$ specialized server ports, indexed from $0$ to $n$. Two security engineers, Aino and Eino, are testing the system's vulnerability by alternately claiming ownership of these ports. Aino begins the exercise by selecting one available port, then Eino selects a different available port, and they continue taking turns.

@@ -1,0 +1,1 @@
+Let $a_1$, $a_2$,..., $a_{101}$ be nonzero constants such that \[\left|\sum_{k=1}^{101}a_kx^k\right|\leq 1\]whenever $|x|\leq 1$. Find the smallest possible value of $|a_1|+|a_2|+\cdots+|a_{101}|$.

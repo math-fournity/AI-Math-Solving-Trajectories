@@ -1,0 +1,1 @@
+In a remote industrial park, there are seven power substations arranged in a perfect ring. Each substation must be assigned a positive integer megawatt capacity to handle an upcoming surge. To ensure the safety and stability of the local grid, the chief engineer has established the following operational requirements:

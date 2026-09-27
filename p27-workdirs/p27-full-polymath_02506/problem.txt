@@ -1,0 +1,1 @@
+Let $ABCDEF$ be a convex hexagon and let $A_1, B_1, C_1, D_1, E_1, F_1$ be the midpoints of the sides $AB, BC, CD, DE, EF, FA$ respectively. Denote by $p$ the perimeter of the hexagon $ABCDEF$ and by $p_1$ the perimeter of the hexagon $A_1B_1C_1D_1E_1F_1$. Suppose that all inner angles of the hexagon $A_1B_1C_1D_1E_1F_1$ are equal.

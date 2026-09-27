@@ -1,0 +1,1 @@
+Does the Banach space $l^1(\Gamma)$, where $\Gamma$ is an uncountable index set, have a separable pre-dual space?

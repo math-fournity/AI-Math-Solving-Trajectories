@@ -1,0 +1,1 @@
+In a remote industrial zone, three automated cargo drones—Alpha, Beta, and Gamma—are positioned on a straight tracking rail. Alpha is docked at the 0-meter mark, Beta at the 6-meter mark, and Gamma at the 8-meter mark.

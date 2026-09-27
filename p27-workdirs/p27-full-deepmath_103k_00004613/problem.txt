@@ -1,0 +1,1 @@
+Determine the best constant \( c \) such that \( n^{\pi(2n) - \pi(n)} \le c^n \) holds for all positive integers \( n \).

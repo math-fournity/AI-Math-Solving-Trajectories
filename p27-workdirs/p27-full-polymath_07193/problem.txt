@@ -1,0 +1,1 @@
+A specialized architecture firm is designing a modular floor plan composed of $n$ distinct square rooms, where $n > 1$. The side length of each room $i$ is represented by a positive integer $a_i$ meters.

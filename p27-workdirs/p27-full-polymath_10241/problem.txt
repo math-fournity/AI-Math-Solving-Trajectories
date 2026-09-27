@@ -1,0 +1,1 @@
+In a specialized digital archive, data is stored in "Master Strings" consisting of exactly 2015 individual bits, where each bit is either a 0 or a 1.

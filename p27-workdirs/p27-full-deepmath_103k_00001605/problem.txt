@@ -1,0 +1,1 @@
+Consider the non-separable abstract $L_1$ space $L_1([0,1]^I)$, where $I$ is an uncountable set and $[0,1]^I$ is endowed with the product measure associated with the Lebesgue measure on $[0,1]$. Does this space contain subspaces isomorphic to $L_p([0,1]^I)$ for $1 < p \leq 2$?

@@ -1,0 +1,1 @@
+Let  $n \ge 3$  be an integer. Let  $\mathcal{P}$  denote the set of vertices of a regular  $n$ -gon on the plane. A polynomial  $f(x, y)$  of two variables with real coefficients is called  $\textit{regular}$  if   $$ \mathcal{P} = \{(u, v) \in \mathbb{R}^2 \, | \, f(u, v) = 0 \}. $$   Find the smallest possible value of the degree of a regular polynomial.

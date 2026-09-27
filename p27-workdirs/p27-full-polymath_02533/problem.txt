@@ -1,0 +1,1 @@
+Let \( G \) be a 4-regular graph. For every two non-adjacent vertices \( u \) and \( v \), there exists at least one vertex \( c \) such that \( c \) is adjacent to both \( u \) and \( v \). Find the maximum number of vertices of graph \( G \).

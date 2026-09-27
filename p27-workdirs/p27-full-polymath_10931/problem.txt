@@ -1,0 +1,1 @@
+A specialized cybersecurity firm is testing the security protocols of $n$ different servers ($n \ge 3$). In this diagnostic phase, every unique pair of servers undergoes a "direct breach test" exactly once, where one server always manages to successfully penetrate the firewalls of the other.

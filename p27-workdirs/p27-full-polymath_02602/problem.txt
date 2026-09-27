@@ -1,0 +1,1 @@
+Let $F_n$ be the set of all bijective functions $f:\left\{1,2,\ldots,n\right\}\rightarrow\left\{1,2,\ldots,n\right\}$ that satisfy the conditions:

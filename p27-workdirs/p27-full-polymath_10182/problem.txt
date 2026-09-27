@@ -1,0 +1,1 @@
+In a specialized laboratory, a chemical engineer is calibrating a machine that processes two fluid inputs: a continuous flow $x$ (any real volume) and a discrete reagent $y$ (any real volume). The machine operates according to a internal transformation function $f$, which converts an input volume into a standardized output pressure.

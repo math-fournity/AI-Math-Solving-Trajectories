@@ -1,0 +1,1 @@
+Given a continuous map $f: D^2 \rightarrow S^2$ such that $f(-x) = -f(x)$ for $x \in S^1$, determine if the degree of the restriction $f|_{S^1}$ is zero. Justify your answer.

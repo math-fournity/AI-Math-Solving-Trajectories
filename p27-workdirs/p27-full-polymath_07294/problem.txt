@@ -1,0 +1,1 @@
+In a specialized database architecture, there is a master directory containing $n$ unique encryption keys. Engineers organize these keys into "Security Clusters," where each cluster is a set of exactly $5$ distinct keys. A cluster is considered valid as long as its specific combination of 5 keys is unique within the system.

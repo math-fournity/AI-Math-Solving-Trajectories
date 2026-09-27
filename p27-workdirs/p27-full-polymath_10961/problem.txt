@@ -1,0 +1,1 @@
+A specialized chemical refinery operates using two types of thermal catalysts, Code-5 and Code-2. The efficiency of a reaction is determined by a "Stability Index" ($I$), which must be a perfect square of an integer to prevent equipment failure.

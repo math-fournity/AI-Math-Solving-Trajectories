@@ -1,0 +1,1 @@
+For every positive integer  $k>1$  prove that there exist a real number  $x$  so that for every positive integer  $n<1398$ :  $$ \left\{x^n\right\}<\left\{x^{n-1}\right\} \Longleftrightarrow k\mid n. $$  *Proposed by Mohammad Amin Sharifi*

@@ -1,0 +1,1 @@
+In a futuristic data-storage facility, a quantum encryption protocol generates a sequence of bit-lengths based on a growth factor $\alpha$. The security of the system relies on $\alpha$ being an irrational number greater than 1.

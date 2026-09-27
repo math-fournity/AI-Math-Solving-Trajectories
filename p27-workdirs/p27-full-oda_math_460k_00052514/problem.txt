@@ -1,0 +1,1 @@
+Consider the composition of rotations in the $\mathcal{SU}(2)$ formalism:

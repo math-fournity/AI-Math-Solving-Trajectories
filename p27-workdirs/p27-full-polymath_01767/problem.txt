@@ -1,0 +1,1 @@
+James has a red jar, a blue jar, and a pile of $100$ pebbles. Initially, both jars are empty. A move consists of moving a pebble from the pile into one of the jars or returning a pebble from one of the jars to the pile. The numbers of pebbles in the red and blue jars determine the state of the game. The following conditions must be satisfied:

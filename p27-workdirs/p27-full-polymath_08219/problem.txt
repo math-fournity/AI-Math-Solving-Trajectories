@@ -1,0 +1,1 @@
+A high-security data facility contains $n$ active servers ($n \geq 2$) arranged on an infinite grid of rack slots. Each active server is designated as a "Node."

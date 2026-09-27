@@ -1,0 +1,1 @@
+A rectangular box with a base of $17 \times 17$ and a height of $7$ is tightly filled with $289$ sticks, which are rectangular prisms of size $1 \times 1 \times 7$. A stick is called upright if its longest edge is perpendicular to the base of the box. Determine the minimum possible number of sticks that are positioned upright.

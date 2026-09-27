@@ -1,0 +1,1 @@
+Is every field of characteristic zero, where each nonzero element is either a square or the additive inverse of a square but not both, a Euclidean ordered field? A Euclidean ordered field is an ordered field where every positive element is a square. Determine if every such 'quasi-Euclidean' field of characteristic zero is indeed a Euclidean ordered field.

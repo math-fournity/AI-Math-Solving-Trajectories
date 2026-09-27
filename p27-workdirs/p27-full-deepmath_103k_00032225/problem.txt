@@ -1,0 +1,1 @@
+Find all functions \(f: \mathbb{Q}^{+} \rightarrow \mathbb{Q}^{+}\) such that for all positive rational numbers \(x\) and \(y\), the following equation holds:

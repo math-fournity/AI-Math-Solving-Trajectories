@@ -1,0 +1,1 @@
+A high-security data vault is protected by a master set of $S$ biometric data points, where $|S| > n+1$ and $n$ is a fixed integer greater than 1. To ensure redundancy, the facility manager designs various access protocols. Each protocol consists of a collection $A$ of specific security keys (subsets of data points).

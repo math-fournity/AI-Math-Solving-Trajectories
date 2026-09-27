@@ -1,0 +1,1 @@
+Suppose $f \in \mathbb{Z}[x_1, \dotsc, x_k]$ is a polynomial function such that for any roots $r_1, \dotsc, r_k$ of a monic polynomial of degree $k$ with integer coefficients, $f(r_1, \dotsc, r_k) \in \mathbb{Z}$. Is $f$ necessarily a symmetric function of its arguments?

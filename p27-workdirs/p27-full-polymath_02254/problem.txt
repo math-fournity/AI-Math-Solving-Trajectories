@@ -1,0 +1,1 @@
+With a number written on the board, two operations are allowed:

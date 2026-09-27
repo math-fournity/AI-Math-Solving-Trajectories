@@ -1,0 +1,1 @@
+Does there exist a finite basis for the polynomial identities of a finite-dimensional complex Lie algebra \( \mathfrak{g} \) that satisfies the identity \( [[X,Y],[U,V]] = 0 \) for all \( X,Y,U,V \in \mathfrak{g} \)?

@@ -1,0 +1,1 @@
+A specialized circular circuit board is designed with twelve diagnostic ports labeled sequentially from 1 to 12, arranged evenly around the perimeter like the hours on an analog clock. To prevent overheating, a technician needs to isolate the ports into $k$ distinct cooling zones by etching straight partition lines through the board.

@@ -1,0 +1,1 @@
+Derive the Cauchy estimates for the coefficients \( c_j \) of the power series expansion of a holomorphic function \( f: U \rightarrow \mathbb{C} \) on a domain \( U \subset \mathbb{C} \), centered at a point \( a \in U \). Assume \( f \) is holomorphic on a disc \( \Delta_\rho(a) \) with boundary \( \gamma \).

@@ -1,0 +1,1 @@
+Given are  $n$  pairwise intersecting convex  $k$ -gons on the plane. Any of them can be transferred to any other by a homothety with a positive coefficient. Prove that there is a point in a plane belonging to at least  $1 +\frac{n-1}{2k}$  of these  $k$ -gons.

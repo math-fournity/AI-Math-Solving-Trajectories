@@ -1,0 +1,1 @@
+In a vast grid-based industrial shipyard, every intersection point (where integer coordinates meet) is assigned one of three possible safety inspection codes: Red, Blue, or Green. The shipyard supervisor is looking for a specific area value, $S$, that guarantees a "monochromatic" formation regardless of how the codes are distributed across the infinite grid.

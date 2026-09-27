@@ -1,0 +1,1 @@
+A specialized architectural firm is designing a triangular plaza, defined by three straight walkways meeting at corners $A$, $B$, and $C$. To serve as a centerpiece, the firm must install a fountain at point $I$, positioned at the exact center of the plaza’s inscribed circular garden (the point equidistant from all three walkways).

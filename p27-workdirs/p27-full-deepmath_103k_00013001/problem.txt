@@ -1,0 +1,1 @@
+Is there always a partition $P$ such that the upper sum $U(f, P)$ equals the infimum of all upper sums $U(f)$ for a bounded function $f$ on a compact set $A$? Consider the definition of the Riemann Integral where $U(f) = \inf\{U(f,P) \mid P \in \mathcal{P}\}$. Determine if such a partition $P$ always exists.

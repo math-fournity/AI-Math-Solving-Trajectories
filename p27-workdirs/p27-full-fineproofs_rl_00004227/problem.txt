@@ -1,0 +1,1 @@
+On the side  $AC$  of triangle  $ABC$  point  $D$  is chosen. The perpendicular bisector of segment  $BD$  intersects the circumcircle  $\Omega$  of triangle  $ABC$  at  $P$ ,  $Q$ . Point  $E$  lies on the arc  $AC$  of circle  $\Omega$ , that doesn't contain point  $B$ , such that  $\angle ABD=\angle CBE$ .

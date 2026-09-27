@@ -1,0 +1,1 @@
+Is it true that for any smooth complex projective Fano threefold $X$, the class $c_2(X)$ can be realized as an effective curve?

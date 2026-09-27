@@ -1,0 +1,1 @@
+Let $X$ be a Polish space and $(\mu_n)_{n \geq 1}$ be a sequence of Borel probability measures on $X$. If for every continuous bounded function $f : X \to \mathbb{R}$, the limit $\lim_{n \to \infty} \int_X f \, d \mu_n$ exists, does it follow that the sequence $(\mu_n)$ is tight? Answer yes or no.

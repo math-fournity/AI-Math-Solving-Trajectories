@@ -1,0 +1,1 @@
+Let $f_n$ be Riemann integrable on $[a,b]$ for all $n$, and let $f, g \in C[a, b]$ be continuous functions. Suppose $f_n \rightarrow f$ in $L^2$ and $f_n \rightarrow g$ pointwise. Is it necessarily true that $f = g$?

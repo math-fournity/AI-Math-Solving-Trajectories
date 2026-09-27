@@ -1,0 +1,1 @@
+Three circles, with radii of 1, 1, and 2, are externally tangent to each other. The minimum possible area of a quadrilateral that contains and is tangent to all three circles can be written as \(a+b \sqrt{c}\) where \(c\) is not divisible by any perfect square larger than 1. Find \(a+b+c\).

@@ -1,0 +1,1 @@
+A specialized deep-sea mining station is positioned at the coordinates $(1, -1)$ on a grid representing a section of the ocean floor. A linear transport pipeline is to be laid starting from this station, passing through a survey point $N$ located on the horizontal baseline (the $x$-axis).

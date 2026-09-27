@@ -1,0 +1,1 @@
+Determine the minimum degree of a monic polynomial \( q(x) \) with integer coefficients such that \( q(0), q(1), \ldots, q(p-1) \) are all \((p-1)\)-powers of distinct integers, given that \( p \) is a prime number and \( p \) divides \( a_k \) for some \( 0 \le k \le p-1 \).

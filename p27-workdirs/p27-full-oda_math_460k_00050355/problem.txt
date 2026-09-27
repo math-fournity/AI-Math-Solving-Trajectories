@@ -1,0 +1,1 @@
+Consider a directed graph on $n$ vertices where each vertex has an outdegree of at least $\log_2 n - 10\log_2\log_2 n$. Let $g(n)$ be the minimum value of $n$ such that any such graph contains an even simple directed cycle. Find $g(2^{16})$.

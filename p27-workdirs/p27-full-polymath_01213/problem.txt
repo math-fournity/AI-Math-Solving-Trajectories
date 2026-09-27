@@ -1,0 +1,1 @@
+$12$ people stand in a row. Each person is given a red shirt or a blue shirt. Every minute, exactly one pair of two people with the same color currently standing next to each other in the row leave. After $6$ minutes, everyone has left. How many ways could the shirts have been assigned initially?

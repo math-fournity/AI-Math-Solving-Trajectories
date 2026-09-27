@@ -1,0 +1,1 @@
+Let \( X \) be a symmetric space. Define the rank of \( X \) as the largest natural number \( r \), such that \( X \) contains an \( r \)-dimensional flat.

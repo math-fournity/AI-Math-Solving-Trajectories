@@ -1,0 +1,1 @@
+Find all natural numbers $n > 4$ for which the following statement is true: in any triangulation of a convex $n$-gon $P$, there is a diagonal that divides $P$ into a quadrangle and a $(n - 2)$-gon.

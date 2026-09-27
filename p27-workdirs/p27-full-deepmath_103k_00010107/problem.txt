@@ -1,0 +1,1 @@
+Consider two regular maps between affine algebraic sets over \(\mathbb{C}\): \(f:X\to Y\) and \(g:X\to Z\). Suppose \(Z\) is normal, \(g\) is onto, and for every \(x_1,x_2\), \(g(x_1)=g(x_2)\) implies \(f(x_1)=f(x_2)\). Does this imply that \(f\) factors through \(g\), i.e., \(f=hg\) for some \(h:Z\to Y\)? Justify your answer.

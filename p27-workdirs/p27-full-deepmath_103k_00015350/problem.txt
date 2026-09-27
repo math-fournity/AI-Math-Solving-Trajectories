@@ -1,0 +1,1 @@
+Given a number field $L$ and a non-zero ideal $I$ of the ring of integers $O$ of $L$, determine if there exists a prime ideal $\mathcal{P} \subseteq O$ in the ideal class of $I$ such that $p = \mathcal{P} \cap \mathbb{Z}$ splits completely in $O$. Provide a justification for your answer.

@@ -1,0 +1,1 @@
+Inside the triangle $A B C$ a point $M$ is given. The line $B M$ meets the side $A C$ at $N$. The point $K$ is symmetrical to $M$ with respect to $A C$. The line $B K$ meets $A C$ at $P$. If $\angle A M P=\angle C M N$, prove that $\angle A B P=\angle C B N$.

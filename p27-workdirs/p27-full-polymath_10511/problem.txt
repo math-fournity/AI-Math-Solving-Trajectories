@@ -1,0 +1,1 @@
+In the city of Aethelgard, there are 22 distinct research guilds, numbered 1 through 22. Each guild stores a specific positive integer number of ancient scrolls in their archives. We denote the number of scrolls held by guild $k$ as $G(k)$.

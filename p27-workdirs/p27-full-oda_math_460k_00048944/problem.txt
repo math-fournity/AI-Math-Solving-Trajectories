@@ -1,0 +1,1 @@
+Given 123456789 points in a plane such that no line can pass through exactly 2 points, what is the minimum number of points that a line can pass through?

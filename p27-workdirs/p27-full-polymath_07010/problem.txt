@@ -1,0 +1,1 @@
+In a specialized logistics simulation, a researcher is testing the efficiency of two independent automated conveyor systems, System X and System Y. Each system manages 2,024 robotic carriers.

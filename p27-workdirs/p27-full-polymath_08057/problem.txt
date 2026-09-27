@@ -1,0 +1,1 @@
+In a specialized logistics network, an engineer is designing a filtration system for a series of $n$ high-precision sensors, where $n$ is a positive integer. The cost efficiency of the system is modeled by a monic polynomial $P(x)$ of degree $n$ with real coefficients.

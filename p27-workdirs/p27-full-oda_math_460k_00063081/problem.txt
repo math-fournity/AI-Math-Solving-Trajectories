@@ -1,0 +1,1 @@
+Consider the set of numbers $\{1, 2, \ldots, n\}$ covered by $k$ geometric progressions. Let $f(n)$ be the minimum value of $k$ such that this covering is possible. Calculate the smallest integer value of $n$ for which $f(n) > n/\ln n$.

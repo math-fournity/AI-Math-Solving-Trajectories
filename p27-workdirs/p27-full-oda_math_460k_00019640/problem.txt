@@ -1,0 +1,1 @@
+Find the cardinality of the set of all algebraic extensions of an infinite field $k$ that have the same cardinality as $k$. Provide your answer as a cardinal number.

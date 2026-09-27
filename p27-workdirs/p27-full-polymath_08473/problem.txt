@@ -1,0 +1,1 @@
+In a specialized logistics facility, a team is organizing numbered cargo crates labeled $\{1, 2, \dots, R\}$. The manager intends to distribute every single crate into one of two different warehouses, labeled Alpha and Beta.

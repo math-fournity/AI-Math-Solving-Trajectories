@@ -1,0 +1,1 @@
+Let \( G \) be a finite group, and consider the commuting graph \( X(G) \) where vertices are the elements of \( G \), and two distinct vertices \( x \) and \( y \) are connected by an edge if and only if \( xy = yx \). If \( c \) denotes the chromatic number of \( X(G) \), does \( G \) necessarily contain an abelian subgroup of order \( c \)?

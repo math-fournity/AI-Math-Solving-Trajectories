@@ -1,0 +1,1 @@
+In a remote industrial network, there are $n$ distinct data modules, $v_1, v_2, \dots, v_n$, arranged in a fixed linear sequence. To process these modules into a final output, an engineer must insert $n-1$ binary operations and $n-1$ sets of balanced parentheses such that every operation is enclosed within a pair of parentheses, forming a fully parenthesized expression.

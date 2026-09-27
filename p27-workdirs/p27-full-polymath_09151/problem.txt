@@ -1,0 +1,1 @@
+Fifteen master perfumers are evaluating 50 unique fragrance base oils for a new luxury collection. Each perfumer must rank all 50 oils by intensity, assigning each oil a unique integer rank from 1 (most intense) to 50 (least intense).

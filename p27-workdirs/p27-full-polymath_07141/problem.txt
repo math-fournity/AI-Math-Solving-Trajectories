@@ -1,0 +1,1 @@
+A specialized logistics company, "Prime-Line Dynamics," manages a vertical warehouse with 41 numbered docking bays, ranging from 1 to 41. The manager is identifying specific "optimal pairs" of docking bays $(x, y)$ to assign to a high-priority project.

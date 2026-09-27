@@ -1,0 +1,1 @@
+Given a cyclic quadrilateral  $ABCD$ . There is a point  $P$  on side  $BC$  such that  $\angle PAB=\angle PDC=90^\circ$ . The medians of vertexes  $A$  and  $D$  in triangles  $PAB$  and  $PDC$  meet at  $K$  and the bisectors of  $\angle PAB$  and  $\angle PDC$  meet at  $L$ . Prove that  $KL\perp BC$ .

@@ -1,0 +1,1 @@
+Let \( n \) be a positive integer. Find the smallest positive integer \( k \) such that for any set \( S \) of \( n \) points in the interior of the unit square, there exists a set of \( k \) rectangles with sides parallel to the sides of the unit square, such that:

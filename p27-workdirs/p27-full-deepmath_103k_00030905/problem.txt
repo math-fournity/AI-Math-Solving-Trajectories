@@ -1,0 +1,1 @@
+Consider an infinite grid composed of equilateral triangles with a side length of 1 cm, where each edge is painted in one of three colors. Determine if it is necessarily true that there exists a vertex from which a snail can crawl along monochromatic edges for 100 cm without traversing the same edge twice.

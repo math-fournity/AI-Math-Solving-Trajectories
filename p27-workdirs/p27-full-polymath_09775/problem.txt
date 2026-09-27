@@ -1,0 +1,1 @@
+In a specialized chemical processing plant, three storage tanks—Alpha, Beta, and Gamma—contain quantities of a specific catalyst, denoted by $a, b,$ and $c$ tons respectively. Due to strict storage regulations, the total mass of the catalyst across all three tanks must be exactly $3$ tons ($a + b + c = 3$), where the amount in each tank cannot be negative.

@@ -1,0 +1,1 @@
+Let $A$ be a set of integers. We say $A$ is "admissible" if for any $x, y \in A$ (allowing $x = y$) and for every integer $k$, the value $x^{2}+k x y+y^{2}$ is in $A$.

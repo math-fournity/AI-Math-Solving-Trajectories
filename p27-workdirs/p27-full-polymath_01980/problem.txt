@@ -1,0 +1,1 @@
+Given positive integers $m$ and $n$, let $N(m, n)$ be the smallest integer $N \geq m$ such that any set of $N$ integers containing a complete residue system modulo $m$ must have a non-empty subset whose elements sum to a multiple of $n$.

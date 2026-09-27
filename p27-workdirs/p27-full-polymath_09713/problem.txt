@@ -1,0 +1,1 @@
+In the futuristic city of Hyperbolia, the urban planning commission has established a special regulatory zone defined by the coordinate boundaries of two mirrored curves. This zone, known as the "Safe Sector" ($S$), consists of every location $(x, y)$ in the regional grid where the product of the coordinates satisfies the safety rating $-1 \leq xy \leq 1$.

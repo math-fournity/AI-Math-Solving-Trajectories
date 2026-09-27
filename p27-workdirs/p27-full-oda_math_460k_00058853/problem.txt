@@ -1,0 +1,1 @@
+Find the extremals of the functional\n\n\[\nJ[y(x), z(x)] = \int_{0}^{\pi} (2yz - 2y^2 + y'^2 - z'^2) \, dx\n\]\n\nif\n\n\[\ny(0) = 0, \quad y(\pi) = 1, \quad z(0) = 0, \quad z(\pi) = -1\n\]

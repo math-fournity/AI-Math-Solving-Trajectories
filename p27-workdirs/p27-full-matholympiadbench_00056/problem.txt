@@ -1,0 +1,14 @@
+/-!
+# International Mathematical Olympiad 1968, Problem 5
+
+Let f be a real-valued function defined for all real numbers x such that,
+for some positive constant a, the equation
+
+  f(x + a) = a/2 + √(f(x) - (f(x))²)
+
+holds for all x.
+
+(a) Prove that the function f is periodic.
+-/
+
+##

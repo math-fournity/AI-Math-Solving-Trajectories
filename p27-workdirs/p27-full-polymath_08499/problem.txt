@@ -1,0 +1,1 @@
+A high-tech manufacturing firm specializes in producing specialized triangular solar panels. Each panel is designed according to a specific "Efficiency Profile" defined by three distinct points $(x, y)$ on a digital coordinate grid where $x$ and $y$ must be integers.

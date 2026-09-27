@@ -1,0 +1,1 @@
+There is three-dimensional space. For every integer  $n$  we build planes  $ x \pm y\pm z = n$ . All space is divided on octahedrons and tetrahedrons.

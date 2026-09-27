@@ -1,0 +1,1 @@
+Determine all positive integers \( N \) for which there exists a strictly increasing sequence of positive integers \( s_{0} < s_{1} < s_{2} < \cdots \) satisfying the following properties:

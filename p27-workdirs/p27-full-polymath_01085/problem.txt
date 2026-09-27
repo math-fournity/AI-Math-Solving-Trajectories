@@ -1,0 +1,1 @@
+Alice has a deck of 2000 cards, numbered 1 through 2000. Alice chooses an integer \(1 \leq n < 1000\) and deals Cheshire a random subset of \(2n-1\) of the cards without repetition. Cheshire wins if the cards dealt contain any \(n\) consecutively numbered cards. Compute the value of \(n\) Alice should choose to minimize Cheshire's chances of winning.

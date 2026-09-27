@@ -1,0 +1,1 @@
+Determine whether there exists an infinite set $S$ and a binary operation $b: S \times S \to S$ that is non-constant for almost all pairs of elements, such that the number of subsets of $S$ which are closed under $b$ is strictly greater than the cardinality of $S$ itself.

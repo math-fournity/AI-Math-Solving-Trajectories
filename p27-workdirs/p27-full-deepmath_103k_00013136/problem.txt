@@ -1,0 +1,1 @@
+Determine the number of $3 \times 3$ matrices $\rm A$ with integer entries such that $\rm AA^{\top} = I_3$, where $I_3$ is the $3 \times 3$ identity matrix.

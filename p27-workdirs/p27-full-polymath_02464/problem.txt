@@ -1,0 +1,1 @@
+Let \( N \) be the answer to a previous problem. Define the polynomial \( f(x) = x^{34} + x^{33} + x^{32} + \cdots + x + 1 \). Compute the number of primes \( p < N \) such that there exists an integer \( k \) with \( f(k) \) divisible by \( p \).

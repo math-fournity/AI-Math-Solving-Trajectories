@@ -1,0 +1,1 @@
+Let $\alpha$ be a positive real number and $c_{n}$ be a sequence of positive integers such that $c_{n} \geq \alpha n$ for all $n$. Find all integers $k \geq 2$ and a sequence of natural numbers $a_{1}, a_{2}, \ldots, a_{k}$ such that there exists another sequence of natural numbers $b_{n}$ satisfying $\sum_{i=1}^n a_{i}^k = b_{n}^{c_{n}}$ for all $n$.

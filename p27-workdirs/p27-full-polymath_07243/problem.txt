@@ -1,0 +1,1 @@
+In a specialized digital cryptography system, every data packet is assigned a security status based on its prime factorization. A packet is classified as "Stable" if the number of its prime factors (counting multiplicities) is even, or if the packet value is 1. If the number of prime factors is odd, the packet is classified as "Volatile."

@@ -1,0 +1,1 @@
+In a specialized digital logistics network, a central server manages $n$ processing nodes, where $n$ is an integer in the range $2 < n \leq 100$. Data packets are assigned an identification tag $a$, where $a$ is an integer such that $0 < a < n$ and $\gcd(a, n) = 1$.

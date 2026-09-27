@@ -1,0 +1,1 @@
+In a cyclic quadrilateral $ABCD$, let $Q = [AD) \cap [BC)$, $P = [AB) \cap [DC)$, and $M = AC \cap BD$. Let $O$ and $R$ be the center and radius of the circumcircle of quadrilateral $ABCD$, respectively. Given that $OM = 5$, $OP = 7$, $OQ = 8$, and $R = 4$, the triangle $PQM$ has side lengths $x, y, z$. Determine the value of $x^2 + y^2 + z^2$.

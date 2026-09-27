@@ -1,0 +1,1 @@
+A specialized digital signal processing unit consists of a sequence of $2023$ logic gates. Each gate is manufactured as either a Type-R (Rectifier) or a Type-B (Buffer).

@@ -1,0 +1,1 @@
+On a corner of a cube with an edge length of \(1 \, \text{cm}\) sits an ant. Along each edge of the cube, \(1 \, \text{g}\) of honey is distributed. The ant is to reach the endpoint of the body diagonal at which it is located. It is to cover a distance of exactly \(7 \, \text{cm}\) and consume exactly \(7\) grams of honey.

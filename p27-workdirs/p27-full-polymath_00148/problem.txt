@@ -1,0 +1,1 @@
+Suppose that \( f: \mathbb{Z} \times \mathbb{Z} \rightarrow \mathbb{R} \), such that \( f(x, y) = f(3x + y, 2x + 2y) \). Determine the maximal number of distinct values of \( f(x, y) \) for \( 1 \leq x, y \leq 100 \).

@@ -1,0 +1,1 @@
+In a specialized laboratory, researchers are studying the stability of electromagnetic particles constrained within a two-dimensional containment field. The position of each particle $i$ is represented by a coordinate vector $z_i$ in the plane.

@@ -1,0 +1,1 @@
+Calculate the Riemann integral of the characteristic function of the Cantor set over the interval \([0,1]\), where the middle third of each interval is removed.

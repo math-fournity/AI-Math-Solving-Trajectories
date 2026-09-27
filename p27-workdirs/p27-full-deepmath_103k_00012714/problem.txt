@@ -1,0 +1,1 @@
+Let $G$ be a torsion-free, finitely generated abelian group. Suppose that $f : G \to G$ is a surjective homomorphism. Does it follow that $f$ is an isomorphism?

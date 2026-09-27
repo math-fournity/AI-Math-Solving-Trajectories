@@ -1,0 +1,1 @@
+Define a sequence of integers by  $a_0=1$  , and  $a_n=\sum_{k=0}^{n-1} \binom{n}{k}a_k$   ,  $n \geq 1$  . Let  $m$  be a positive integer , let  $p$  be a prime , and let  $q$  and  $r$  be non-negative integers . Prove that :  $$ a_{p^mq+r} \equiv a_{p^{m-1}q+r} \pmod{p^m} $$

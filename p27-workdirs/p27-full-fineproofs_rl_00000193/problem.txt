@@ -1,0 +1,1 @@
+1. (BUL 1) Let $A B C$ be a triangle with bisectors $A A_{1}, B B_{1}, C C_{1}\left(A_{1} \in\right.$ $B C$, etc.) and $M$ their common point. Consider the triangles $M B_{1} A$, $M C_{1} A, M C_{1} B, M A_{1} B, M A_{1} C, M B_{1} C$, and their inscribed circles. Prove that if four of these six inscribed circles have equal radii, then $A B=$ $B C=C A$.

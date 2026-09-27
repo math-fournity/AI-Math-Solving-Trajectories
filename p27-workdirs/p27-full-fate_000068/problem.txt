@@ -1,0 +1,4 @@
+A finite group cannot be isomorphic to a proper subgroup of itself.
+
+</rule>
+</rules>

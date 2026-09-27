@@ -1,0 +1,1 @@
+For a positive integer $n > 1$, let $S_n$ be the set of all bijective maps $\pi: \{1, \ldots, n\} \to \{1, \ldots, n\}$. Define the neighboring number $N_n(\pi)$ for $\pi \in S_n$ as:

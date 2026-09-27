@@ -1,0 +1,1 @@
+Let $R$ be a commutative ring with identity, and let $a, b$ be elements of $R$. If $b + (a)$ is not a zero divisor in $R/(a)$, does it follow that $(a, b) = R$?

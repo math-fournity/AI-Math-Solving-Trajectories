@@ -1,0 +1,1 @@
+There are $2012$ points marked on a circle, dividing it into equal arcs. From them, $k$ points are chosen, and a convex $k$-gon is constructed with vertices at the chosen points. What is the largest $k$ such that this polygon has no parallel sides?

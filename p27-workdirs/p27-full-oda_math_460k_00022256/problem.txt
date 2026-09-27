@@ -1,0 +1,1 @@
+Let \(ABCD\) be a convex quadrilateral and let \(P\) be a point inside \(ABCD\). Let \(K\), \(L\), \(M\), and \(N\) be the intersections of \(AB\), \(BC\), \(CD\), and \(AD\) with the bisectors of the angles \(\angle APB\), \(\angle BPC\), \(\angle CPD\), and \(\angle APD\). Find the locus of all points \(P\) such that \(KLMN\) is a parallelogram.

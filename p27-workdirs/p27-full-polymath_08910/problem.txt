@@ -1,0 +1,1 @@
+A specialized telecommunications company is testing the stability of a signal transmission line of length $d$ kilometers, represented by the interval $[0, d]$. A "sustainable" length $d$ is defined by the following experimental capability:

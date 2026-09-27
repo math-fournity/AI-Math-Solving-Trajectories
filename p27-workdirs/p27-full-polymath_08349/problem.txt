@@ -1,0 +1,1 @@
+In the high-tech logistics hub of Sector 7, a security clearance code is defined by a positive integer $n > 3$. A code is officially designated as "Optimal" if and only if both the value $(n + 1)$ and the value $(8n + 1)$ are perfect squares of integers.

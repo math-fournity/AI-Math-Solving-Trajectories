@@ -1,0 +1,1 @@
+Determine whether there exist two vectors $x, y$ in a Hilbert space $H$ such that \((x,y) \geqslant \frac{k}{\|x-y\|^{2}}\), where $(x,y)$ denotes the inner product, $\|x\|$ denotes the norm, and $k > 0$.

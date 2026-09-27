@@ -1,0 +1,1 @@
+Given is a triangle  $ABC$  with circumcircle  $\gamma$ . Points  $E, F$  lie on  $AB, AC$  such that  $BE=CF$ . Let  $(AEF)$  meet  $\gamma$  at  $D$ . The perpendicular from  $D$  to  $EF$  meets  $\gamma$  at  $G$  and  $AD$  meets  $EF$  at  $P$ . If  $PG$  meets  $\gamma$  at  $J$ , prove that  $\frac {JE} {JF}=\frac{AE} {AF}$ .

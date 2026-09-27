@@ -1,0 +1,1 @@
+Determine the number of unique closed paths on the edges of a given Platonic solid, where each edge can be traversed only once, and paths that are related by a rotation of the solid are considered identical.

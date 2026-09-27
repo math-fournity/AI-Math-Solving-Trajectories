@@ -1,0 +1,1 @@
+A high-tech server farm is laid out in a perfect square configuration of $n \times n$ server racks. Due to a security protocol, exactly 101 of these racks have been equipped with an encrypted blue light.

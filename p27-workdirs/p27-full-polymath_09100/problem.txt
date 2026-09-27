@@ -1,0 +1,1 @@
+A high-security facility is protected by a series of perimeter walls forming a convex polygon with $n$ vertices, where $n \geq 5$. These vertices are designated as sensor stations $A_1, A_2, \ldots, A_n$ in order around the perimeter.

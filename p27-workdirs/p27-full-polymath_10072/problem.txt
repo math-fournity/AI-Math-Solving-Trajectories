@@ -1,0 +1,1 @@
+In a futuristic data-security firm, an engineer is designing a series of encryption keys based on an integer "security level" $n$, where $n$ is a positive whole number.

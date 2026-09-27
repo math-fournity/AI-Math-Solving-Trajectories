@@ -1,0 +1,1 @@
+A corner trimino consists of three unit squares that meet at a common vertex (an L-shaped tile). A square board of size $(2n+1) \times (2n+1)$ is colored in a checkerboard pattern such that the four corner squares are black. Find the smallest integer $n \ge 1$ for which it is possible to cover all black squares of the board with non-overlapping corner triminos.

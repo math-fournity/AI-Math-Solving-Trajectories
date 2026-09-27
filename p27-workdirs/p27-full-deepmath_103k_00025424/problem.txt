@@ -1,0 +1,1 @@
+Determine whether the limit \( \lim_{x \to \infty} \ln\left(\frac{x}{m}\right) \sum_{p \le x} \frac{1}{\ln p} \) converges, where \( p \) denotes all primes and \( m \) is the largest prime less than \( x \).

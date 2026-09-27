@@ -1,0 +1,1 @@
+A specialized logistics firm manages cargo using three distinct types of containers: Type-A, Type-B, and Type-C. The total weight of a shipment is determined by the formula $32a + 3b + 48c$ units, where $a$, $b$, and $c$ represent the positive integer quantities of each container type respectively.

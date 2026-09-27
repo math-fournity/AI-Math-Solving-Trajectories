@@ -1,0 +1,1 @@
+Determine whether there exists a ring $R$ such that $R \cap \mathbb{Q} = \mathbb{Z}$ and $R$ cannot be expressed as an internal direct sum of $\mathbb{Z}$-submodules.

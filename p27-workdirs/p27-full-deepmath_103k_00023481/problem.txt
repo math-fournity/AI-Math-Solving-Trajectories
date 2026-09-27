@@ -1,0 +1,1 @@
+Determine the asymptotic behavior of the function $f(n)$, where $f(n)$ is the minimal length such that there exist $n$ binary sequences of length $f(n)$, and any pair of these sequences has a unique Hamming distance.

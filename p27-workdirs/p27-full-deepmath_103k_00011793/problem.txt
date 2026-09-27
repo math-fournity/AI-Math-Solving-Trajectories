@@ -1,0 +1,1 @@
+Determine the additive upper density \( \operatorname{\delta}_{(u, +)}(A_i) \) for the sets \( A_i = \{n \in \mathbb{N} : L(n) \sim_i c_i \sqrt{n} \} \) where \( i \in \{1, 2\} \), \( L(n) = \sum_{i=1}^{n} \lambda(i) \), and \( \lambda(n) = (-1)^{\Omega(n)} \) with \( \Omega(n) \) being the number of prime divisors of \( n \) (counting with multiplicity).

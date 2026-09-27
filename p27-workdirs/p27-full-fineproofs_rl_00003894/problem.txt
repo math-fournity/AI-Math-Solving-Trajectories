@@ -1,0 +1,1 @@
+Let $a_{1}, a_{2}, a_{3}$ be strictly positive integers. For any integer $n \geqslant 3$, we set

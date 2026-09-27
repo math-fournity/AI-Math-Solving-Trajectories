@@ -1,0 +1,1 @@
+Let $(P, \le)$ be a partially ordered set where $P = [\kappa]^{< \omega}$, the set of all finite subsets of an uncountable cardinal $\kappa$, ordered by inclusion. For a subset $T \subset P$ and $n < \omega$, define $T_n = \{a \in T: |a| = n\}$. If $T$ is cofinal in $P$, does $T$ necessarily contain an antichain of size $\kappa$? Justify your answer.

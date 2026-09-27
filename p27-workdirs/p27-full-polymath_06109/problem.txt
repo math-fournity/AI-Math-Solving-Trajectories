@@ -1,0 +1,1 @@
+In a specialized logistics network, a central warehouse is assigned a base inventory value of $330$ units. A group of regional distribution centers is considered "Stable" if there exists a standardized resource allocation function $P(x)$—defined as a polynomial with integer coefficients—where the input $x$ represents a center's identification code (a non-zero integer).

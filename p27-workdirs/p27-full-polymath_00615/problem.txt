@@ -1,0 +1,1 @@
+Let $n$ be an integer greater than 1. There are $n$ lamps $L_{0}, L_{1}, \dots, L_{n-1}$ arranged in a circle. Each lamp is either "on" or "off". A sequence of operations $S_0, S_1, \dots, S_j, \dots$ is performed, where operation $S_j$ affects the state of lamp $L_{j \pmod n}$ based on the state of $L_{(j-1) \pmod n}$:

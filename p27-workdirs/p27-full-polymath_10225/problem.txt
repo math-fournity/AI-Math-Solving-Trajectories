@@ -1,0 +1,1 @@
+In a futuristic circular city, a ring of $n$ high-tech docking stations is arranged such that they form the vertices of a regular $n$-gon. To ensure the city's aesthetic diversity, the Grand Architect mandates that each station must be assigned exactly one of three neon signal lights: Red, Yellow, or Blue.

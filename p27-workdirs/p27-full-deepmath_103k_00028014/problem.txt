@@ -1,0 +1,1 @@
+Determine whether the harmonic series can be rearranged such that its partial sums equal infinitely many integers.

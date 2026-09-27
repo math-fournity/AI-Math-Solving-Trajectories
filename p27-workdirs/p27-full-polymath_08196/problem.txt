@@ -1,0 +1,1 @@
+In a remote digital archipelago, there are $n$ servers arranged in a physical ring ($5 \leq n \leq 100$). Each server is currently in an "Active" state. A systems administrator can modify the states of these servers using only two specific maintenance protocols:

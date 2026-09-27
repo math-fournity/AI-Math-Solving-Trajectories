@@ -1,0 +1,1 @@
+Let \( A = \{1, 2, \cdots, 17\} \). For the mapping \( f: A \rightarrow A \), define

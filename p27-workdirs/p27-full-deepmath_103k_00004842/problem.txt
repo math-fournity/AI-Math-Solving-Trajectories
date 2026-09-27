@@ -1,0 +1,1 @@
+Solve Burgers' equation \(u_t + uu_x = 0\) with the initial condition \(u(x,-1) = x^2\). Find the value of \(u(1,2)\).

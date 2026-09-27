@@ -1,0 +1,1 @@
+A high-tech research facility is built in the shape of a massive, convex 2019-sided polygon, where each vertex represents a specialized communication node, labeled sequentially from $N_{1}$ to $N_{2019}$. To enhance the facility's security and internal infrastructure, the architects decide to install laser security partitions.

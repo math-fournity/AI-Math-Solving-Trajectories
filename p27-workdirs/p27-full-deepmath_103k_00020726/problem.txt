@@ -1,0 +1,1 @@
+Determine whether there exists a function $f \in C^n(\mathbb{R}, \mathbb{R})$ for $n \ge 2$ such that $f^{(n)}$ has exactly $n$ zeros, $f^{(n-1)}$ has exactly $n-1$ zeros, and so on.

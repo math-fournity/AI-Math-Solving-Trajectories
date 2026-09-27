@@ -1,0 +1,1 @@
+Find the value of the limit: \[ \lim_{n\to\infty} \frac{a_n}{b_n} \] where \( a_n = \sum_{m=1}^{\lfloor n/2 \rfloor} \frac {n!}{2^m(n-2m)!} \) is the number of elements of order 2 in the symmetric group \( S_n \), and \( b_n = \sum_{m=1}^{\lfloor n/4 \rfloor} \frac {n!}{2^{2m}(n-4m)!} \) is the number of elements of order 2 in the alternating group \( A_n \).

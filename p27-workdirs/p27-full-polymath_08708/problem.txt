@@ -1,0 +1,1 @@
+In a specialized digital archive, data packets are stored as sequences of exactly $2n$ decimal digits. A packet is classified as "Balanced" if its digits can be partitioned into two groups of $n$ digits each such that the sum of the digits in the first group equals the sum of the digits in the second group.

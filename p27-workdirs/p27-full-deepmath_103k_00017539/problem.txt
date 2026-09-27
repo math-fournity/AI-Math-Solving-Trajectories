@@ -1,0 +1,1 @@
+Determine the group that is isomorphic to the group $G$ using the concept of semidirect products.

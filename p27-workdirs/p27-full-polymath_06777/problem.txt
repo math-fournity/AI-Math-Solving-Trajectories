@@ -1,0 +1,1 @@
+There are 24 strategic observation outposts positioned across a flat desert territory. Each outpost is equipped with a high-powered surveillance camera that has a fixed horizontal scanning range of exactly $70^{\circ}$. The cameras can be rotated to face any direction, but their angular span remains locked at $70^{\circ}$.

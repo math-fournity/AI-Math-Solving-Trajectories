@@ -1,0 +1,1 @@
+Is $577^3$ the smallest cube that can be expressed as the sum of three positive cubes in six different ways? Verify if $577^3$ satisfies this condition.

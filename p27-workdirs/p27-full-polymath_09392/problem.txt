@@ -1,0 +1,1 @@
+A high-tech microchip is designed as a perfect square plate, oriented with its edges aligned to a standard grid. Engineers have etched a series of straight laser-cut grooves across the surface, each parallel to one of the plate's edges. The layout of these grooves follows two strict precision rules:

@@ -1,0 +1,1 @@
+Consider the random variable $Z = \int_0^1 B_s^4 \, ds$, where $(B_s, s \in [0,1])$ is a fractional Brownian motion. Does $Z$ have a density? In other words, is the measure induced on $(\mathbb{R}, \mathcal{B}(\mathbb{R}))$ by $Z$ absolutely continuous?

@@ -1,0 +1,1 @@
+A logistics company is managing a sequence of 100 shipping containers, each assigned a unique weight value from 1 ton to 100 tons (specifically, one container of each integer weight: $\{1, 2, 3, \dots, 100\}$).

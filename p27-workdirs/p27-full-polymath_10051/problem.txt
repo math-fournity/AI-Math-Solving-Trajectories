@@ -1,0 +1,1 @@
+In a remote research facility, a diamond-shaped array of 25 sensor nodes is laid out on a coordinate grid. Each node must be assigned a unique frequency channel from the set $\{1, 2, 3, \dots, 25\}$. The nodes are positioned at the following coordinates $(row, column)$:

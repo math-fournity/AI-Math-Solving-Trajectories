@@ -1,0 +1,1 @@
+In Euclidean space, determine whether there exists an open but not closed subset \( X \) and a bounded but not open subset \( Y \) such that they are homeomorphic.

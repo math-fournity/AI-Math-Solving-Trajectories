@@ -1,0 +1,1 @@
+Find the maximum possible value of $n$ such that the integers $1, 2, \ldots, n$ can be filled once each in distinct cells of a $2015 \times 2015$ grid and satisfy the following conditions:

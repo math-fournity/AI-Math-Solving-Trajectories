@@ -1,0 +1,1 @@
+Factorize the polyphase matrix \( \tilde{P}(z) \) of the \( D_4 \) orthogonal filter bank into a lifting scheme, showing the steps or matrices involved in the factorization.

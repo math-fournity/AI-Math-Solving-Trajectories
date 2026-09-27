@@ -1,0 +1,1 @@
+Some chess pieces are placed on a $17 \times 17$ chessboard, satisfying the following conditions:

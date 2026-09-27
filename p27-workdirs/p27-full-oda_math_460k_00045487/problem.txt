@@ -1,0 +1,1 @@
+Consider the set of all positive integers $d$ such that there exists a polynomial $P\in\mathbb{Z}[x]$ of degree $d$ and a natural number $N$ such that for all integers $x>N$ and any prime $p$, the inequality $$\nu_p(P(x)^3+3P(x)^2-3)<\frac{d\cdot\log(x)}{2024^{2024}}$$ holds. Let $S$ be the sum of the reciprocals of the first $10$ smallest elements in this set. Calculate $100S$.

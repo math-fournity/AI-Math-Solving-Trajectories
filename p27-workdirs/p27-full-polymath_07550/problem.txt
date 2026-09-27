@@ -1,0 +1,1 @@
+A high-tech server farm consists of 100 processing units arranged in a perfect $10 \times 10$ grid. Each unit has a unique clock speed, measured in gigahertz. To prevent data bottlenecks, a unit is considered "stable" only if it is faster than at least three of its immediate neighbors.

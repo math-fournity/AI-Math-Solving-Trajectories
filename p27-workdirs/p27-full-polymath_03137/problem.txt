@@ -1,0 +1,1 @@
+Find the smallest constant $C$ such that for every real polynomial $P(x)$ of degree $3$ that has at least one root in the interval $[0,1]$, the following inequality holds:

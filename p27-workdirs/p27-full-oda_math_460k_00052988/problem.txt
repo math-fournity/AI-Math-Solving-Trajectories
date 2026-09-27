@@ -1,0 +1,1 @@
+Consider a real number \( x \) such that for every positive integer \( n \), the fractional part \( \{x^n\} \) lies in the interval \(\left[\frac{1}{3}, \frac{2}{3}\right]\). If \( x \) is of the form \( x = \sqrt[a]{b} \) where \( a \) and \( b \) are positive integers and \( b \) is not a perfect \( a \)-th power, find the smallest possible value of \( a + b \).

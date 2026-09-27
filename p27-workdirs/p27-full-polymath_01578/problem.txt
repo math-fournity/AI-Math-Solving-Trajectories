@@ -1,0 +1,1 @@
+In chess, a knight moves either two squares vertically and one square horizontally, or two squares horizontally and one square vertically in each move. A knight's tour is a sequence of moves where the knight visits every square on an $m \times n$ chessboard exactly once.

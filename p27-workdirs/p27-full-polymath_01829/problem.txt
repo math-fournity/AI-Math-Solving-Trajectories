@@ -1,0 +1,1 @@
+Initially, the following $31$-tuples, each with $31$ coordinates, are written on the board:

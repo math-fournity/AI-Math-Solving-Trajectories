@@ -1,0 +1,1 @@
+In a specialized laboratory, an experimental sequence is determined by a sequence of five distinct non-zero pressure settings, each represented by a single-digit integer (1 through 9). These settings are arranged in five consecutive slots to form a five-digit control code.

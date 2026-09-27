@@ -1,0 +1,1 @@
+In the city of Aethelgard, the Royal Archivist is tasked with storing 2012 enchanted satchels into a set of $k$ mystical vaults. Each satchel contains various colored gemstones. To ensure the magical stability of the vaults, the Archivist must follow a strict safety protocol. For every vault, at least one of the following two conditions must be satisfied:

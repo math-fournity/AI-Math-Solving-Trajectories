@@ -1,0 +1,1 @@
+In a vast desert, a group of $n$ nomadic tribes has established long, straight trade routes that stretch across the horizon. These routes are positioned in "general orientation": no two routes are parallel to each other, and no three routes ever cross at the same single point.

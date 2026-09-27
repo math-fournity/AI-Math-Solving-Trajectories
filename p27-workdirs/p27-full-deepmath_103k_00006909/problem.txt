@@ -1,0 +1,1 @@
+Let $a$ be an integer. Determine if it is true that, if every factor of $2^{2^n}a+1$ has the form $2^{n+2}k+1$, then $a=1$.

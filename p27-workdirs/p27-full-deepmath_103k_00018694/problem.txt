@@ -1,0 +1,1 @@
+Let \( \alpha \) be a cardinal number with \( \alpha \geq c := \operatorname{card}(\mathbb{R}) \). Determine whether there exists a Banach space \( X \) such that \( \operatorname{card}(X) = \alpha \).

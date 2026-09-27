@@ -1,0 +1,1 @@
+What is the smallest integer \( a_{0} \) such that, for every positive integer \( n \), there exists a sequence of distinct positive integers \( a_{0}, a_{1}, \ldots, a_{n-1}, a_{n} \) such that \( a_{0}=a_{n} \), and for \( 0 \leq i \leq n-1 \), \( a_{i}^{a_{i+1}} \) ends in the digits \(\overline{0 a_{i}}\) when expressed without leading zeros in base 10?

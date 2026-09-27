@@ -1,0 +1,1 @@
+In a futuristic industrial colony, a head engineer is optimizing the energy consumption of a multi-stage power grid. The grid consists of $n$ independent power cells, where $n$ is any positive integer. Each cell $i$ has an assigned performance parameter $x_i$, which is a positive real number.

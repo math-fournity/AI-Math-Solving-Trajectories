@@ -1,0 +1,1 @@
+Find the norm of the linear functional \( f(x) = \sum_{j=1}^{\infty} \xi_j \frac{1}{\sqrt{j(j+1)}} \) defined by \( f: l^2 \rightarrow \mathbb{R} \) for all \( x = (\xi) \in l^2 \).

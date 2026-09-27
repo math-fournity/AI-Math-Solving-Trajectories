@@ -1,0 +1,1 @@
+A specialized automated filtration system in a chemical plant is controlled by a secret "Reaction Profile," which is a polynomial $F(x)$ with integer coefficients. This profile determines the purity levels at specific hourly checkpoints.

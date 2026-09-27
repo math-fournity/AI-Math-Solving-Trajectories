@@ -1,0 +1,1 @@
+In a specialized logistics network, three distinct automated cargo hubs—codenamed $x$, $y$, and $z$—process discrete units of freight. Each hub’s inventory must be represented by an integer value.

@@ -1,0 +1,1 @@
+Let $p_1(x) = 4x^3 - 3x$ and $p_{n+1}(x) = p_1(p_n(x))$ for each positive integer $n$. Let $A(n)$ be the set of all real roots of the equation $p_n(x) = x$. Let $P(n)$ be the product of the elements in $A(n)$, and let $M(n)$ be the arithmetic mean of the elements in $A(n)$. Find the value of $\frac{M(8)}{P(4)}$.

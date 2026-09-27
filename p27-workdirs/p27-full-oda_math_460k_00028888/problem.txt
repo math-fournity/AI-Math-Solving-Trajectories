@@ -1,0 +1,1 @@
+Given \( n, k \in \mathbb{Z}_{+} \) with \( n > k \). For real numbers \( a_{1}, a_{2}, \ldots, a_{n} \in (k-1, k) \), let positive real numbers \( x_{1}, x_{2}, \ldots, x_{n} \) satisfy that for any set \( I \subseteq \{1,2, \ldots, n\} \), \( |I|=k \), we have \( \sum_{i \in I} x_{i} \leq \sum_{i \in I} a_{i} \). Find the maximum value of \( x_{1} x_{2} \cdots x_{n} \).

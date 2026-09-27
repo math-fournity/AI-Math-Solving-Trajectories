@@ -1,0 +1,1 @@
+True or False: In the constrained optimization problem with integer parameters $N$ and $M$ where $1 \leq M \leq N$, consider the optimization of $P = (p_1, p_2, \ldots, p_{N+M})$ under the following constraints:

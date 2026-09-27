@@ -1,0 +1,1 @@
+Let $f: \mathbb{N} \rightarrow \mathbb{N}$ be a function satisfying $f(f(n)+n)=n$ and $f(a+b-1) \leq f(a)+f(b)$ for all positive integers $a, b, n$. It is known that $f$ must be non-decreasing. Find the sum of all possible values of $f(2025)$.

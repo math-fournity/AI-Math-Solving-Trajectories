@@ -1,0 +1,1 @@
+Given a flat morphism of algebraic varieties $\mathrm{Spec}\,A \rightarrow \mathrm{Spec}\,B$ over a field $k$ with reduced scheme-theoretic fibers, and an element $a \in A$ that is constant on each fiber, determine whether there exists an element $b \in B$ that maps to $a$. Provide a justification for your answer.

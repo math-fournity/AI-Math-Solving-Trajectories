@@ -1,0 +1,1 @@
+Find the asymptotic value of \( \binom{2n}{n} \) with a relative error of \( O(n^{-3}) \) using Stirling's approximation.

@@ -1,0 +1,1 @@
+Let \( \Omega \subset \mathbb{R}^N \) be a bounded regular domain and \( p \in (1,\infty) \). Suppose that \( u \in W_0^{1,p}(\Omega) \) and \( u \) is locally essentially bounded. Does this imply that \( u \) is globally essentially bounded in \( \Omega \)?

@@ -1,0 +1,1 @@
+Let $f: \mathbb{Z} \rightarrow \mathbb{Z}$ be a monotone function such that for all $x, y \in \mathbb{Z}$, the following functional equation holds:

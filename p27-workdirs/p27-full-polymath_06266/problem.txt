@@ -1,0 +1,1 @@
+In a remote digital library, an automated archivist is tasked with assigning nine unique security clearance levels, represented by the set $\{1, 2, \dots, 9\}$, to nine distinct data terminals labeled $T_1$ through $T_9$. Each terminal must be assigned exactly one unique clearance level from the set such that no two terminals share the same level.

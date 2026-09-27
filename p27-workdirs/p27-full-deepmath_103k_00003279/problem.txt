@@ -1,0 +1,1 @@
+Let $H$ be a closed hypersurface in $\mathbb{A}^{n}$, where $n$ is sufficiently large, over $\mathbb{C}$. Let $U$ be the open subset that is the complement of $H$. Given a point $x \in H$, determine if there exists a curve $C \subset \mathbb{A}^{n}$ such that $C \cap H = \{x\}$. Provide a justification for your answer.

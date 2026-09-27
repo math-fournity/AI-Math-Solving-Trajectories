@@ -1,0 +1,1 @@
+Let $A=\{a^3+b^3+c^3-3abc|a,b,c\in\mathbb{N}\}$, $B=\{(a+b-c)(b+c-a)(c+a-b)|a,b,c\in\mathbb{N}\}$, $P=\{n|n\in A\cap B,1\le n\le 2016\}$, find the value of $|P|$.

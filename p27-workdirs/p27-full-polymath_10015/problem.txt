@@ -1,0 +1,1 @@
+In a remote digital archives facility, there is a single long corridor containing a row of 2012 data storage slots, indexed sequentially from 1 to 2012. Today, 2012 unique data packets are scheduled to be uploaded into these slots, one packet at a time, until every slot is occupied.

@@ -1,0 +1,1 @@
+Determine if there exists a smooth, 1-periodic, positive function \(c:\mathbb{R}\rightarrow (0,\infty)\) such that the given ODE system has solutions that are defined only for a finite interval of time.

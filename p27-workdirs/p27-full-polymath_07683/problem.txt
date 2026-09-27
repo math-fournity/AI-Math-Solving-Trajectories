@@ -1,0 +1,1 @@
+A high-tech automated warehouse consists of a square grid of storage bays measuring $n \times n$. The warehouse manager needs to install specialized robotic cooling units in some of these bays. To ensure the facility operates according to safety and efficiency protocols, the following constraints must be met:

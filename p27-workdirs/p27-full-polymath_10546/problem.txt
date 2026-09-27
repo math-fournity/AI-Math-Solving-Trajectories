@@ -1,0 +1,1 @@
+In a remote storage facility, an experimental energy array is arranged in a grid of 3 rows and 9 columns, forming 27 individual power cells. Each cell generates a steady output of energy, measured as a positive integer of "micro-joules."

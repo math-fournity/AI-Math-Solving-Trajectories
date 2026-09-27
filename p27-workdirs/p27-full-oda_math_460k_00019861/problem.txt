@@ -1,0 +1,1 @@
+We call a rational number "good" if it satisfies the following conditions: \( x = \frac{p}{q} > 1 \), where \( p \) and \( q \) are coprime positive integers, and there exist constants \( \alpha \) and \( N \) such that for any positive integer \( n \geqslant N \), the inequality holds:

@@ -1,0 +1,1 @@
+In a specialized logistics hub, there is a master inventory containing $2n$ unique high-precision components, where $n$ is an integer strictly greater than 10. The facility manager is tasked with organizing "Standard Kits" for various assembly lines.

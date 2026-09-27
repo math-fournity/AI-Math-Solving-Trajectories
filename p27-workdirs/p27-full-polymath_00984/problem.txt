@@ -1,0 +1,1 @@
+Let $ABC$ be a triangle with circumcenter $O$, orthocenter $H$, and circumradius $R$. Let $D, E, F$ be the reflections of the vertices $A, B, C$ across the opposite sides $BC, CA, AB$ respectively. It is known that the points $D, E, F$ are collinear if and only if the distance $OH$ satisfies $OH^k = n R^k$ for some positive integers $n$ and $k$. Find the value of $n + k$.

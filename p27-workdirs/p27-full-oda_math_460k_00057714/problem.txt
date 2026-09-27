@@ -1,0 +1,1 @@
+a) Use the inequality\n\n\[\sum_{a_n \leq 2} \sum_{n \geq 1} \left( \frac{a_n}{2} \sum_{1 \leq k \leq n} k \right) = 2 \sum_{k \geq 1} \left(k \sum_{n \geq k} \frac{a_n}{n^2} \right).\]\n\nEstimate the inside sum with the help of the Hölder inequality.\n\nb) Apply the assertion a) to the remainder of the series \(\sum_{k \geq 1} a_k^q k^q\).

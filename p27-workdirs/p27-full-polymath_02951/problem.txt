@@ -1,0 +1,1 @@
+In any triangle $ABC$ with sides $a, b, c$ and corresponding altitudes $h_a, h_b, h_c$, let $k(m)$ be the maximum constant such that the inequality

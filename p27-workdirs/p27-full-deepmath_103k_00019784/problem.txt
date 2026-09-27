@@ -1,0 +1,1 @@
+Determine the maximum value of $|f(z)|$ for functions that are analytic in $|z| \leq R$, with $|f(z)| \leq M$ on $|z| = R$, and have $n$ zeros inside the circle. Identify the functions for which this maximum is attained.

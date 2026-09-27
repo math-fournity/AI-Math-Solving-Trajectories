@@ -1,0 +1,1 @@
+A square is contained in a cube when all of its points are in the faces or in the interior of the cube. Determine the biggest $\ell > 0$ such that there exists a square of side $\ell$ contained in a cube with edge $1$.

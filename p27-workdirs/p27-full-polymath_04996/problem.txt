@@ -1,0 +1,1 @@
+Let $n = 1999$. Let $a_{1}, a_{2}, \dots, a_{n}$ be non-negative real numbers satisfying the following conditions:

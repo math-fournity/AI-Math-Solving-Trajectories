@@ -1,0 +1,1 @@
+(E. van Douwen) For which \(\lambda\) are there compact homogeneous spaces of cellularity \(\lambda\)? \(\lambda = \aleph_0\) trivially is possible and \(\lambda = \aleph_1\) is possible if \(\diamondsuit\).

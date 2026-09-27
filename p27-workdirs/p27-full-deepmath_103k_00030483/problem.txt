@@ -1,0 +1,1 @@
+Let $f$ be a strictly positive function such that \( \int_{0}^{\infty}f(x)dx=\int_{0}^{\infty}xf(x)dx=1 \) (i.e., a probability density function with expectation one). Let $g$ be a nonnegative nonconstant function satisfying \( \int_{0}^{\infty}g(ax)f(x)dx=a \) for all \( a>0 \). Does this imply that \( g(x)=x \) almost everywhere?

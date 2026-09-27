@@ -1,0 +1,1 @@
+In a remote high-security server facility, there is a grid of 16 data storage bays arranged in a perfect 4-by-4 square. At the start of a system maintenance cycle, 15 of these bays are occupied by active server units, while exactly one bay remains empty.

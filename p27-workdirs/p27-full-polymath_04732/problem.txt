@@ -1,0 +1,1 @@
+Gerd and Bernd play a card game with 6 cards numbered 1, 2, 3, 4, 5, 6. Each player is dealt 3 cards. Gerd plays first in the first trick. The winner of a trick (the player who played the higher card) leads the next trick. A player wins a round by winning at least 2 of the 3 tricks. Both players play optimally to win the round.

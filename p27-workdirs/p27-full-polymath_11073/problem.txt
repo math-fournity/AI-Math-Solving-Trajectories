@@ -1,0 +1,1 @@
+In a futuristic data center, a mainframe contains a specific set of active processing ports. Initially, the set of active ports consists of the $n$ smallest integers and the $n$ largest integers from the range $\{1, 2, 3, \ldots, 99\}$, where $n$ is a fixed natural number less than 50.

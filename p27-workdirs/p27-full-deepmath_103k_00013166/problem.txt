@@ -1,0 +1,1 @@
+Determine the fixed point of the operator \( T(f) = \int_0^x f(y) \left(\frac{1}{2} + \frac{y}{2}\right) \, dy \) using the Banach fixed point theorem.

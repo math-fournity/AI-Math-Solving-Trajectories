@@ -1,0 +1,1 @@
+Given a positive integer number $n \geq 3$, colour each cell of an $n \times n$ square array one of $\left[(n+2)^{2} / 3\right]$ colours, each colour being used at least once. Prove that the cells of some $1 \times 3$ or $3 \times 1$ rectangular subarray have pairwise distinct colours.

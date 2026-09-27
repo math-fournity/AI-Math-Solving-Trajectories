@@ -1,0 +1,1 @@
+$n$ points are given on a plane where $n\ge4$. All pairs of points are connected with a segment. Find the maximal number of segments which don't intersect with any other segments in their interior.

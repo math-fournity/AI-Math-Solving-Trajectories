@@ -1,0 +1,1 @@
+Consider a standard Brownian motion \((W_t)_{t \ge 0}\) and a stopping time \(\tau\) that lies in the interval \([1,2]\). For given positive constants \(x\) and \(y\), determine if the expectation \(\mathbb{E}\left[\mathbf{1}_{\{x+\inf_{0 \le t \le 2} W_t > 0\}} (W_{\tau} - y)^+\right]\) is strictly positive.

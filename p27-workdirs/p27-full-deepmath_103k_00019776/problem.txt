@@ -1,0 +1,1 @@
+Let $f:[0,1]\rightarrow \mathbb{R}$ be a differentiable function with $f(0) = f(1) = 0$. If $f$ satisfies the inequality $f''(x) - 4f'(x) + 4f(x) \geq e^{2x}$ for $x \in [0,1]$, find the minimum value of $\frac{f'(x)}{f(x)}$ in the interval $(0, \frac{1}{2})$. Provide your answer as a single value.

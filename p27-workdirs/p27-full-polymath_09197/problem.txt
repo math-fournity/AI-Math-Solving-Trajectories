@@ -1,0 +1,1 @@
+In a specialized testing facility, a robotic surveyor is programmed to inspect a straight track containing 100 markers, labeled sequentially from 1 to 100 meters. The robot begins its mission parked exactly at Marker 1.

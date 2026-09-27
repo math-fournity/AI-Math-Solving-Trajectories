@@ -1,0 +1,1 @@
+Determine whether the inequality \( \binom{2 \cdot 2^{1000000}}{2^{1000000}} > 2^{2 \cdot 2^{1000000}} \) is true or false.

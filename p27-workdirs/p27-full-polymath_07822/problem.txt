@@ -1,0 +1,1 @@
+In a remote digital archipelago, a grid-based sensor network is deployed across two separate regions: Sector Alpha, a $5 \times 5$ square grid of signal towers, and Sector Beta, a $6 \times 6$ square grid of signal towers. Each tower in these grids broadcasts a specific integer frequency.

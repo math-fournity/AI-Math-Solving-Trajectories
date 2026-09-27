@@ -1,0 +1,1 @@
+In the Oldenburger-Kolakoski sequence, does the number of 1s equal the number of 2s infinitely many times? The Oldenburger-Kolakoski sequence, $OK$, is the unique sequence of $1$s and $2$s that starts with $1$ and is its own runlength sequence:

@@ -1,0 +1,1 @@
+Find all pairs of natural numbers $(m, n)$ such that it is possible to color each unit square of an $m \times n$ rectangle either white or black so that for each unit square, the number of unit squares (including itself) that share at least one vertex and have the same color is even.

@@ -1,0 +1,1 @@
+Let $(x_n)$ be a sequence of positive integers defined by the recurrence relation $x_{n+2} = \gcd(x_n, x_{n+1}) + K$ for all positive integers $n$, where $K$ is a positive integer. We say that the sequence $(x_n)$ is $L$-distinct if it contains at least $L$ distinct terms.

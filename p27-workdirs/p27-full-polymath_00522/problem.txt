@@ -1,0 +1,1 @@
+Find the number of functions $f: \mathbb{Z} \rightarrow \mathbb{Z}$ that satisfy the equation $n^{2}+4 f(n)=f(f(n))^{2}$ for all $n \in \mathbb{Z}$ and also satisfy the conditions $f(10) = 11$ and $f(-10) = 11$.

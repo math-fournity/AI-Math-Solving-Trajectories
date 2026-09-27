@@ -1,0 +1,1 @@
+In a specialized logistics network, a "stable hub distribution" is defined as a collection of $n$ regional distribution centers. Each center is assigned a specific operational frequency (represented by a color).

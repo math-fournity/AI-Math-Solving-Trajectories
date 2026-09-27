@@ -1,0 +1,1 @@
+Let $D$ be an integral domain with fraction field $K$. Let $V$ and $W$ be multiplicatively closed subsets of $D$. Consider the rings of fractions $V^{-1}D$ and $W^{-1}D$ as subrings of $K$. Is the intersection $(V^{-1}D) \cap (W^{-1}D)$ a ring of fractions of $D$? Specifically, does there exist a multiplicative subset $S$ of $D$ such that $(V^{-1}D) \cap (W^{-1}D) = S^{-1}D$?

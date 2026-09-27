@@ -1,0 +1,1 @@
+Equilateral triangle \(ABC\) of side length 2 is drawn. Three squares external to the triangle, \(ABDE\), \(BCFG\), and \(CAHI\), are drawn. What is the area of the smallest triangle that contains these squares?

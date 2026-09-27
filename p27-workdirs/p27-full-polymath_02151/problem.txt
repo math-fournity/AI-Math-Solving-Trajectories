@@ -1,0 +1,1 @@
+Let $P$ be a convex polygon with $n$ sides, where $n > 7$. A triangulation of $P$ is formed by $n-3$ non-intersecting diagonals that divide $P$ into $n-2$ triangles. In such a triangulation, a triangle is called an "inner triangle" if all three of its sides are diagonals of $P$.

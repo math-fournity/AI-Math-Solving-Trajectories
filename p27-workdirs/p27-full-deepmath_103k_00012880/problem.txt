@@ -1,0 +1,1 @@
+Determine whether the Lebesgue integral \( \int\limits_\Omega d\mu \) over an unbounded domain \( \Omega \) is equal to the measure \(|\Omega|\). Is this statement true?

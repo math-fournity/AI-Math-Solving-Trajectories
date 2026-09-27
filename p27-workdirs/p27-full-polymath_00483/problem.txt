@@ -1,0 +1,1 @@
+On a $7 \times 7$ chessboard, place the minimum number of traps such that a "knight-rook" (which moves horizontally or vertically but must alternate directions after each move) has only a finite number of moves before it either lands on or passes through a trap. The starting position of the "knight-rook" is arbitrary. Find the minimum number of traps needed.

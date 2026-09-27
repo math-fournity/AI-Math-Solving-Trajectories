@@ -1,0 +1,8 @@
+/-!
+# IMO 2013 A5
+
+Find all functions $f : \mathbb{N} \to \mathbb{N}$ such that for any $n \in \mathbb{N}$,
+$$ f(f(f(n))) = f(n + 1) + 1. $$
+-/
+
+##

@@ -1,0 +1,1 @@
+Two lines, $l_1$ and $l_2$, are tangent to the parabola $x^2-4(x+y)+y^2=2xy+8$ such that they intersect at a point whose coordinates sum to $-32$. The minimum possible sum of the slopes of $l_1$ and $l_2$ can be written as $\frac{m}{n}$ for relatively prime integers $m$ and $n$. Find $m+n$.

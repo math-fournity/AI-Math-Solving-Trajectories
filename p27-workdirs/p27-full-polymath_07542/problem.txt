@@ -1,0 +1,1 @@
+A network security firm is testing a new encryption protocol for a cluster of $n$ distinct servers ($n \ge 2$). The protocol is deemed "triple-key stable" if there exists a specific set of three distinct prime numbers $\{p, q, r\}$ that governs data packet interference.

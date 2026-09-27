@@ -1,0 +1,1 @@
+Adithya and Bill are playing a game on a connected graph with $n > 2$ vertices and $m$ edges. First, Adithya labels two of the vertices $A$ and $B$, so that $A$ and $B$ are distinct and non-adjacent, and announces his choice to Bill. Then Adithya starts on vertex $A$ and Bill starts on $B$.

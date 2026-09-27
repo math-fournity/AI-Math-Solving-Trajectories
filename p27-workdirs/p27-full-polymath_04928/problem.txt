@@ -1,0 +1,1 @@
+Let \(\triangle ABC\) be an equilateral triangle with side length \(4\). Let \(P\) be a point chosen uniformly and at random in the interior of \(\triangle ABC\). Determine the probability that a square of side length \(1\) with a corner at \(P\) can be rotated to lie entirely within \(\triangle ABC\).

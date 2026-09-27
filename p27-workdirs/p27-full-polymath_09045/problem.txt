@@ -1,0 +1,1 @@
+A specialized deep-space refinery processes two types of unstable isotopes, Alpha and Beta. The refinery’s efficiency on any given day $n$ is calculated by the ratio of the decay potential of the two isotopes.

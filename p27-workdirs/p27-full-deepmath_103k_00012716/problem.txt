@@ -1,0 +1,1 @@
+Suppose $R$ is a commutative ring such that for every ascending chain of ideals $I_1 \subseteq I_2 \subseteq I_3 \subseteq \cdots$, there exist infinitely many $n \in \mathbb{N}$ such that $I_n = I_{n+1}$. Does it follow that $R$ is Noetherian?

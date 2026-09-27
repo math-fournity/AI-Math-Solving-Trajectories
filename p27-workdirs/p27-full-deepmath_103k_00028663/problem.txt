@@ -1,0 +1,1 @@
+Determine whether there exists a unique, well-defined field $\mathbb{G}$ of algebraic expressions over $\mathbb{F}$ such that for every $n \in \mathbb{N}$ and every $a \in \mathbb{G}$, there exists $b \in \mathbb{G}$ such that $a = b^n$. Provide a justification for your answer.

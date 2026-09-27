@@ -1,0 +1,1 @@
+A specialized automated assembly line consists of $100N$ circuit boards arranged in a single linear track. A Quality Control Engineer and a Maintenance Bot are processing the line.

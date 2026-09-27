@@ -1,0 +1,1 @@
+In the drawing with \(a_{1}, a_{2}, \ldots, a_{12}\) are marked the natural numbers from \(1\) to \(12\), arranged in some order. If the sum of the four numbers on each segment is the same, find the smallest possible value of the sum

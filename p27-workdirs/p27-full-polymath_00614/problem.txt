@@ -1,0 +1,1 @@
+Suppose that $F$ is a field with exactly $5^{14}$ elements. We say that a function $f:F \rightarrow F$ is [i]happy[/i], if, for all $x,y \in F$, $$\left(f(x+y)+f(x)\right)\left(f(x-y)+f(x)\right)=f(y^2)-f(x^2).$$

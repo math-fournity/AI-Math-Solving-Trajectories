@@ -1,0 +1,1 @@
+Several numbers are written in a line. Thanima has the right to choose two adjacent numbers such that the number on the left is strictly greater than the number on the right, she then swaps these two numbers and multiplies them by 2. Show that Thanima can only perform a finite number of such operations.

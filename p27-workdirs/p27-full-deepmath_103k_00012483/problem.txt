@@ -1,0 +1,1 @@
+Evaluate the limit: $$\lim_{x\to 0}\frac{\cos^2(1-\cos^2(1-\cos^2(1-\cos^2(\ldots 1\ldots \cos^2 x))\ldots))}{\sin\left(\pi\left(\frac{\sqrt{x+4}-2}{x}\right)\right)}$$

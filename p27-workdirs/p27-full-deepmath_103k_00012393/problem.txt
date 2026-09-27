@@ -1,0 +1,1 @@
+Consider the plane $\mathbb{R}^2$ with a complete metric $g$ that has no conjugate points. Let $K$ denote the Gaussian curvature. Determine if there exists a constant $C > 0$ such that $K(p) \leq C$ for every point $p \in \mathbb{R}^2$. Provide a justification for your answer.

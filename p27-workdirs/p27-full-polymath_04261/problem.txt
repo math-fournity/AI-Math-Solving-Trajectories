@@ -1,0 +1,1 @@
+Given an ellipse (Conic $A$) with foci at $(-4,0)$ and $(4,0)$, a circle (Conic $B$) centered at $(-4,0)$ and tangent to the ellipse, a circle (Conic $C$) centered at $(4,0)$ and tangent to the ellipse, and a circle (Conic $D$) centered at $(0,0)$ and tangent to the ellipse, circle $B$, and circle $C$, find the radius of a circle that is tangent to Conics $A$, $C$, and $D$.

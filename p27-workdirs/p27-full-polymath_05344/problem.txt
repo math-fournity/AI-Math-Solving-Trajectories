@@ -1,0 +1,1 @@
+In how many ways can a $5 \mathrm{Ft}$ coin be exchanged for $2 \mathrm{Ft}$, $1 \mathrm{Ft}$, $50 \mathrm{f}$, $20 \mathrm{f}$, and $10 \mathrm{f}$ coins so that among the coins given in change, there are 3 types - possibly more - from which at least 2 are given?

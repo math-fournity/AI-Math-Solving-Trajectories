@@ -1,0 +1,1 @@
+Let $n$ be a positive integer. For any positive integer $j$ and positive real number $r$, define

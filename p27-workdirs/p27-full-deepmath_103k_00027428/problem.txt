@@ -1,0 +1,1 @@
+Let \( X \) be a Banach space and suppose we have a sequence \( \{x_n\} \) which is convergent weakly but not strongly. Define \( y_n = \sum_{k=1}^{n} x_k \). Determine the values of \( \limsup_{n \to \infty} \|y_n\|^{\frac{1}{n}} \) and \( \liminf_{n \to \infty} \|y_n\|^{\frac{1}{n}} \).

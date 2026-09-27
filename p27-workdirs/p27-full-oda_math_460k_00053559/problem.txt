@@ -1,0 +1,1 @@
+Give a polynomial-time algorithm for the Node-Disjoint Paths Problem for the special case in which the undirected graph $G$ has tree-width 2, and we are also given a tree decomposition $T$ of $G$ with width 2.

@@ -1,0 +1,1 @@
+A specialized industrial mixing machine operates according to a complex efficiency function $f(x)$, modeled by the fourth-degree polynomial expression $ax^4 + bx^3 + cx^2 + dx$. The system's performance is governed by four calibration constants, $a, b, c$, and $d$, all of which are known to be non-zero values.

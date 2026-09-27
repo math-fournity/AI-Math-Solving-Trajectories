@@ -1,0 +1,1 @@
+Given a homomorphism $f:A \to B$, where $A$ and $B$ are algebras in any variety, determine if it is true that if $f(S)$ is isomorphic to $S$ for all subalgebras $S$ of $A$, then $f$ is necessarily injective.

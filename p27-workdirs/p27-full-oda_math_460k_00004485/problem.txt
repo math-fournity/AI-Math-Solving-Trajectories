@@ -1,0 +1,1 @@
+Consider the equation \( x^{2^s + 1} + \alpha x^{2^s} + \beta x + \eta = 0 \) where \( x \in \mathbb{F}_{2^n} \), gcd(s, n) = 1, and s is odd. Find the maximum number of solutions this equation can have.

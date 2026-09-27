@@ -1,0 +1,1 @@
+Let $k$ be a field and $k(Y)$ be the field of rational functions in the variable $Y$. If $f \in k[X,Y]$ is an irreducible polynomial, is it true that $f$ is also irreducible as a polynomial in $k(Y)[X]$? Provide a justification for your answer.

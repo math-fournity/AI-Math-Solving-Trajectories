@@ -1,0 +1,1 @@
+Let \( n \geq 2 \) be an integer. Let \( a_{ij}, \ i,j=1,2,\ldots,n \) be \( n^2 \) positive real numbers satisfying the following conditions:

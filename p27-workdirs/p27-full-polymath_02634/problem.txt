@@ -1,0 +1,1 @@
+Find the smallest value of \( k_1 \) such that the inequality

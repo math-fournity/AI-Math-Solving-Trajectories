@@ -1,0 +1,1 @@
+Find the area of a square inscribed in an equilateral triangle, with one edge of the square on an edge of the triangle, if the side length of the triangle is $ 2\plus{}\sqrt{3}$.

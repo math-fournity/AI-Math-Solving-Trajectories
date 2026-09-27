@@ -1,0 +1,1 @@
+Given an integer $n \geq 1$, find the smallest possible value of the real number $b - a$ such that the interval $I = [a, b]$ contains $4n$ red reals and $3n$ blue reals with the following conditions:

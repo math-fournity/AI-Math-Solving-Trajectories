@@ -1,0 +1,1 @@
+In an equilateral triangle $\triangle ABC$, $M$ is the midpoint of side $AB$. Point $D$ on side $BC$ is such that $BD : DC = 3 : 1$. A line through $C$ parallel to $MD$ intersects the interior of $\triangle ABC$ at point $T$ such that $\angle CTA = 150^\circ$. Find the measure of $\angle MTD$.

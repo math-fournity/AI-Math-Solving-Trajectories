@@ -1,0 +1,1 @@
+Find the triangle of the smallest area that can cover any triangle with sides not exceeding 1.

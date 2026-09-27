@@ -1,0 +1,1 @@
+Let $a$ be an even positive integer. Find all real numbers $x$ such that

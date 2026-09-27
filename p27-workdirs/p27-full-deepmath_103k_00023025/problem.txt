@@ -1,0 +1,1 @@
+Determine whether the following statement is true or false: If $V \in E_r$, where $E_r$ denotes the set of polynomials in $\mathbb{R}[x_1,x_2,\dots,x_d]$ with degree at most $r$, and if $e^{-V(x)}$ is square-integrable over $\mathbb{R}^d$, then the limit of $V$ as the Euclidean norm $|x|$ approaches infinity is $+\infty$. Provide a justification for your answer.

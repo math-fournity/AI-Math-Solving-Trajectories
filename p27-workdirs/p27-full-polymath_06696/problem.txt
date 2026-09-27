@@ -1,0 +1,1 @@
+In a vast, automated textile mill, a single infinite conveyor belt loops through a sequence of two types of weaving patterns, denoted as Pattern A and Pattern B. This sequence, $W$, is perfectly periodic, and the shortest repeating segment of patterns has a total length of exactly $2^{2016}$.

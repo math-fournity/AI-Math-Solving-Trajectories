@@ -1,0 +1,1 @@
+A shipping logistics manager is tasked with decommissioning a warehouse containing 100 identical storage containers, each holding 400 specialized engine parts. To clear the facility, the manager must execute a series of shipments. In each shipment, he must select exactly two containers and remove one engine part from each.

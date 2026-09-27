@@ -1,0 +1,1 @@
+In the city of Arithmos, two logistics managers, Alice and Bob, are tasked with decommissioning a cargo shipment of $n$ identical containers, where $n$ is a two-digit natural number. The decommissioning process follows a strict protocol of partitioning:

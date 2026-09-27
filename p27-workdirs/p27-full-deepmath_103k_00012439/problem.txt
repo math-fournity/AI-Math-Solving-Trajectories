@@ -1,0 +1,1 @@
+Given a countably infinite set, what is the minimum number of infinite subsets that must be added to a cofinite topology to transform it into a discrete topology?

@@ -1,0 +1,1 @@
+Let $ABCDEFGH$ be a regular octagon with side length $\sqrt{60}$. Let $\mathcal{K}$ denote the locus of all points $K$ such that the circumcircles (possibly degenerate) of triangles $HAK$ and $DCK$ are tangent. Find the area of the region that $\mathcal{K}$ encloses.

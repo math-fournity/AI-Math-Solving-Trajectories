@@ -1,0 +1,1 @@
+Find all functions $\theta : \mathbb{Z}[x] \to \mathbb{Z}[x]$ such that:

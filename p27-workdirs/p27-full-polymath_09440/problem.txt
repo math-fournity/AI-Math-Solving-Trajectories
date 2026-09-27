@@ -1,0 +1,1 @@
+A specialized satellite network is positioned in a circular orbit, denoted as Orbit $O$. Around this orbit, 36 relay stations, $A_1, A_2, \dots, A_{36}$, are spaced at perfectly equal intervals (forming a regular 36-gon).

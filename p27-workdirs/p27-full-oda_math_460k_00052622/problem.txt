@@ -1,0 +1,1 @@
+For every subset $\mathcal{P}$ of the plane, let $S(\mathcal{P})$ denote the set of circles and lines that intersect $\mathcal{P}$ in at least three points. Find all sets $\mathcal{P}$ consisting of 2024 points such that for any two distinct elements of $S(\mathcal{P})$, their intersection points all belong to $\mathcal{P}$.

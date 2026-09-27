@@ -1,0 +1,1 @@
+Find all positive integers $n$ such that the equation $(x + y + z)^2 = nxyz$ has a solution in positive integers $(x, y, z)$. Let $S$ be the set of all such integers $n$. Compute the sum of the elements in $S$.

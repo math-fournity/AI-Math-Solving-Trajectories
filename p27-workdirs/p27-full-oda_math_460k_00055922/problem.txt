@@ -1,0 +1,1 @@
+Evaluate the surface integral \(\iint_{S} \frac{\mathbf{x}}{||\mathbf{x}||} \cdot d\mathbf{S}\), where \(S\) is the surface defined by \(x^3 + y^3 + z^3 = a^3\).

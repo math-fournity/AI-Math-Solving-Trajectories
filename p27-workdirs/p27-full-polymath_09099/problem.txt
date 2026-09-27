@@ -1,0 +1,1 @@
+In a specialized botanical garden, a collection of $n = 100$ unique rare plant species is being studied. A research team has identified $m$ specific "Incompatible Trios." Each trio, denoted as $A_i$ (for $i = 1, \ldots, m$), consists of exactly $|A_i| = 3$ distinct species that, if planted together in the same greenhouse, would cause a chemical reaction that kills all three.

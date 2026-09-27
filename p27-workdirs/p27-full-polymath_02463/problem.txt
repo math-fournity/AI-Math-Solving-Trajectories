@@ -1,0 +1,1 @@
+Suppose we mark \( n \) points on a rod so that it is divided into \( n + 1 \) parts. If \( L \) is the total length of the rod, what is the probability that the length of each part is \( \leq \frac{L}{n} \)?

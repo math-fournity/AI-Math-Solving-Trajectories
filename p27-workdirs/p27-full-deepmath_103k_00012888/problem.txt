@@ -1,0 +1,1 @@
+Is it true that every $n$-dimensional real Lie algebra is isomorphic to $(\mathbb{R}^n, [\cdot, \cdot])$ for some Lie bracket $[\cdot, \cdot]$ on $\mathbb{R}^n$?

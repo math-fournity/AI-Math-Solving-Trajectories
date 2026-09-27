@@ -1,0 +1,1 @@
+Place points $A$, $B$, $C$, $D$, $E$, and $F$ evenly spaced on a unit circle. Compute the area of the shaded $12$-sided region, where the region is bounded by line segments $AD$, $DF$, $FB$, $BE$, $EC$, and $CA$.

@@ -1,0 +1,1 @@
+Let  $ABC$  be a triangle with incenter  $I$  and let  $AI$  meet  $BC$  at  $D$ . Let  $E$  be a point on the segment  $AC$ , such that  $CD=CE$  and let  $F$  be on the segment  $AB$  such that  $BF=BD$ . Let  $(CEI) \cap (DFI)=P \neq I$  and  $(BFI) \cap (DEI)=Q \neq I$ . Prove that  $PQ \perp BC$ .

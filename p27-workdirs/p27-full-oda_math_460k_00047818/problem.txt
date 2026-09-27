@@ -1,0 +1,1 @@
+Identify the space obtained as the $L^2$-closure of polynomials $p(z)$ in the $z$-variable, where $z \in \Omega \subset \mathbb{C}$ for a given open and bounded set $\Omega$. Does this space have a classical interpretation in complex analysis?

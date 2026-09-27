@@ -1,0 +1,1 @@
+In a remote logistics hub, an inventory manager organizes 30 storage containers into a rectangular formation of 5 rows and 6 columns. Each container is labeled with a security clearance level, represented by a single digit from 0 to 9. To ensure balanced security, each digit from 0 to 9 is assigned to exactly 3 containers.

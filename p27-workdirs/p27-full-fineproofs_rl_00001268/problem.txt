@@ -1,0 +1,1 @@
+Find all functions  $f:\mathbb {Z}\to\mathbb Z$ , satisfy that for any integer  ${a}$ ,  ${b}$ ,  ${c}$ ,  $$ 2f(a^2+b^2+c^2)-2f(ab+bc+ca)=f(a-b)^2+f(b-c)^2+f(c-a)^2 $$

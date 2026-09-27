@@ -1,0 +1,1 @@
+In an alphabet with $n$ letters, a sequence of letters (word) is called a simple-word if and only if between any two occurrences of the same letter, no letter is repeated. Find the number of simple-words of the longest possible length.

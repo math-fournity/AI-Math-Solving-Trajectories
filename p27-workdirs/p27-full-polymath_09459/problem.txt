@@ -1,0 +1,1 @@
+A network architecture firm is designing a ring-topology security system for a global data center. The system requires $2n$ security nodes (where $n \ge 2$) to be linked in a single continuous circle.

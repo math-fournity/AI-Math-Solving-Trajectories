@@ -1,0 +1,1 @@
+Let \( f: \mathbb{R}^+ \to \mathbb{R}^+ \) be a \( C^\infty \) function such that \( f^{(k)}(x) > 0 \) for all \( k \in \mathbb{N} \) and \( f(m) \) is an integer for all natural numbers \( m \). Does \( f(x)/f'(x) \) necessarily remain bounded on \([1, \infty)\)? Provide a justification for your answer.

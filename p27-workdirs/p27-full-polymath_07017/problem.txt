@@ -1,0 +1,1 @@
+In a remote digital archipelago, there are 2022 independent server nodes. Some of these nodes are linked by direct fiber-optic cables. The network architecture is strictly hierarchical, meaning there are no circular pathways or loops (it is an acyclic network).

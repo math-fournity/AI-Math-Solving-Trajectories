@@ -1,0 +1,1 @@
+Find the set of numbers $k$ such that there exist infinitely many distinct positive integers $x, y$ such that $(x+i)(y+i)$ is a perfect square for each $i = 1, 2, \ldots, k$.

@@ -1,0 +1,1 @@
+Let $X$ be a metric space such that every continuous function $f: X \to \mathbb{R}$ is uniformly continuous. Determine whether it is true that for any metric space $Y$, every continuous function $f: X \to Y$ is also uniformly continuous.

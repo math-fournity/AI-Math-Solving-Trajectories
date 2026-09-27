@@ -1,0 +1,1 @@
+The acute triangle  $ABC$  satisfies  $\overline {AB}<\overline {BC}<\overline {CA}$ . Let  $H$  a orthocenter of  $ABC$ ,   $D$  a intersection point of  $AH$  and  $BC$ ,  $E$  a intersection point of  $BH$  and  $AC$ , and  $M$  a midpoint of segment  $BC$ .

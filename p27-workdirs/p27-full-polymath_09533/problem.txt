@@ -1,0 +1,1 @@
+In a specialized circular naval defense zone, denoted by the perimeter $\omega$, three strategic buoys—Alpha ($A$), Bravo ($B$), and Charlie ($C$)—are anchored. The direct distance between buoys Alpha and Bravo is exactly $24$ kilometers, while the distance between Bravo and Charlie is $23$ kilometers. The defense zone's radius is exactly $15$ kilometers.

@@ -1,0 +1,1 @@
+A network security firm has been commissioned to distribute 2,009 terabytes (TB) of encrypted data across three storage servers. The distribution process involves a Lead Architect and three Junior Engineers.

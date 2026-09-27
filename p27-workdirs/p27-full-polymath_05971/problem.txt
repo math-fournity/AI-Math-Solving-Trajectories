@@ -1,0 +1,1 @@
+An elite logistics firm is designing a pipeline route through 10 specific survey stations, denoted sequentially as $a_1, a_2, \ldots, a_{10}$, where the value of each $a_i$ represents the positive distance from a central hub to that station.

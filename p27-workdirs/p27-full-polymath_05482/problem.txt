@@ -1,0 +1,1 @@
+In a wooden block shaped like a cube, all the vertices and edge midpoints are marked. The cube is cut along all possible planes that pass through at least four marked points. Let \( N \) be the number of pieces the cube is cut into. Estimate \( N \).

@@ -1,0 +1,1 @@
+In a specialized data storage facility, a grid-based server rack is configured as an $n \times n$ square array of individual memory slots, where $n$ is a fixed integer greater than 2. The facility manager is tasked with distributing exactly $n^2$ unique encryption keys—labeled with the integers $1, 2, \dots, n^2$—into these slots, with exactly one key per slot.

@@ -1,0 +1,10 @@
+/-!
+# IMO 2011 N5
+
+Let $G$ be an additive group. Find all functions $f : G \to \mathbb{Z}$ such that
+for any $x, y \in G$:
+1. $f(x) > 0$
+2. $f(x - y)$ divides $f(x) - f(y)$.
+-/
+
+##

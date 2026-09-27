@@ -1,0 +1,1 @@
+A specialized materials lab is testing two types of experimental conductive films, Type-X and Type-Y. The electrical resistance of these films is governed by a specific polynomial function $P$ with real coefficients.

@@ -1,0 +1,1 @@
+For ordered pairs of positive integers \((m, n)\), let

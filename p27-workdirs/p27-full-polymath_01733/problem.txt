@@ -1,0 +1,1 @@
+Let $n \geqslant 2$ be an integer. Alice and Bob play a game on $n$ islands. Exactly two of these $n$ islands have a factory. Initially, there are no bridges. Alice and Bob take turns building a bridge between two islands $I_1$ and $I_2$ such that:

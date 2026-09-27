@@ -1,0 +1,1 @@
+In the diagram, each vertex is labeled with a different positive factor of 2008, such that if two vertices are connected by an edge, then the label of one vertex divides the label of the other vertex. In how many different ways can the vertices be labeled? Two labelings are considered the same if one labeling can be obtained by rotating and/or reflecting the other labeling.

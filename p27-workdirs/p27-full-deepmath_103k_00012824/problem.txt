@@ -1,0 +1,1 @@
+Find the minimum value of \( \int_0^1 f(x)^2 \, dx \) subject to the conditions \( \int_0^1 f(x) \, dx = 0 \) and \( \int_0^1 x f(x) \, dx = 1 \). Assume suitable smoothness conditions for \( f(x) \).

@@ -1,0 +1,1 @@
+Determine whether a continuous function \( f: [0,1] \to [0,1] \) can make the set \( S = \{(a,b) \mid f(a) = b\} \) dense in \([0,1] \times [0,1]\).

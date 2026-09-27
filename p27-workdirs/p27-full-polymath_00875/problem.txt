@@ -1,0 +1,1 @@
+An infinite sequence $(a_0, a_1, a_2, \dots)$ of positive integers is called a *ribbon* if the sum of any eight consecutive terms is at most $16$; that is, for all $i \ge 0$,

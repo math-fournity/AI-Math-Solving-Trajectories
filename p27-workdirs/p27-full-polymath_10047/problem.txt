@@ -1,0 +1,1 @@
+In a specialized logistics hub, there are $N$ distinct parcels waiting to be processed. The facility uses four high-capacity shipping containers, labeled $C_1, C_2, C_3,$ and $C_4$.

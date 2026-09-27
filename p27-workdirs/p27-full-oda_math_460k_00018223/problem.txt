@@ -1,0 +1,1 @@
+Let f^{right}(n) denote the largest number such that from any set of n points in the plane one can select f^{right}(n) elements such that no three of them determine a right angle. What is the largest constant c such that f^{right}(n) ≥ (c + o(1))√n?

@@ -1,0 +1,1 @@
+In a futuristic data center, an administrator is organizing a square server rack consisting of an $n \times n$ grid of processing slots. To prevent the system from overheating, the administrator must install cooling units in some of the slots.

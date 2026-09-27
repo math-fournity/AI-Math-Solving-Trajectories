@@ -1,0 +1,1 @@
+Let $a_1, a_2, \ldots, a_n$ be a sequence of $n \geq 3$ natural numbers such that the quantities

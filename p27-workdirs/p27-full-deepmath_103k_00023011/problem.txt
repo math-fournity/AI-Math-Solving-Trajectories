@@ -1,0 +1,1 @@
+Determine whether Proposition 5.47 holds if $M$ is a smooth manifold with corners instead of a smooth manifold with boundary.

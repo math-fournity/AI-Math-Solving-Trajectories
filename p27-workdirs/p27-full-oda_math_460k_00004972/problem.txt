@@ -1,0 +1,1 @@
+Find the smallest positive real number \( c \) such that for all \( n \geq 3 \),

@@ -1,0 +1,1 @@
+In a specialized cyber-security competition, the Global Intelligence Agency has ranked 1,024 elite hackers based on their skill levels. The most skilled hacker is assigned Rank 1, the second most skilled Rank 2, and so on, down to Rank 1024.

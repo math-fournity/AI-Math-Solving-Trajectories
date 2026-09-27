@@ -1,0 +1,1 @@
+Let $k$ be the circumcircle of $\triangle ABC$, and $k_{a}$ the excircle opposite to vertex $A$. The two common tangents of circles $k$ and $k_{a}$ intersect the line $BC$ at points $P$ and $Q$. Prove that $\varangle P A B = \varangle Q A C$.

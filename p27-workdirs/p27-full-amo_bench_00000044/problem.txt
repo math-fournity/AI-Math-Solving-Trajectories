@@ -1,0 +1,1 @@
+Find the largest positive integer \(n\) that satisfies the following property: there exists a sequence of \(n\) positive integers \({a}_{1},\cdots ,{a}_{n}\) such that \({a}_{i} \leq  {2}^{2025}\left( {\forall 1 \leq  i \leq  n}\right)\), and for any \(1 \leq  i < j \leq  n\), there is no non-empty proper subset \(A \subset  \{ i,i + 1,\cdots ,j\}\) such that

@@ -1,0 +1,1 @@
+Given the joint characteristic function of the random variables $(X, Y)$, determine the probability $P(X < Y)$. Provide your answer as a numerical value.

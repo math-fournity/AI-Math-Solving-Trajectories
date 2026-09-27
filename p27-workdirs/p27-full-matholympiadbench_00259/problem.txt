@@ -1,0 +1,10 @@
+/-!
+# IMO 2009 A6 (P3)
+
+Let $f : ℕ → ℕ$ be a strictly increasing function.
+Suppose that there exists $A, B, C, D ∈ ℕ$ such that
+  $f(f(n)) = An + B$ and $f(f(n) + 1) = Cn + D$ for any $n ∈ ℕ$.
+Prove that there exists $M, N ∈ ℕ$ such that $f(n) = Mn + N$ for all $n ∈ ℕ$.
+-/
+
+##

@@ -1,0 +1,1 @@
+Let $n$ be the smallest positive integer such that for any partition of the set $M = \{1, 2, \dots, n\}$ into two disjoint subsets $A$ and $B$, the equation $x_1 + x_2 + x_3 + x_4 + x_5 + x_6 + x_7 + x_8 + x_9 = x_{10}$ has at least one solution where all $x_i$ (for $i=1, \dots, 10$) belong to the same subset. Find $n$.

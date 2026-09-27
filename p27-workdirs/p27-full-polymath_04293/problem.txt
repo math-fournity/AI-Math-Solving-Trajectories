@@ -1,0 +1,1 @@
+Let \(ABCD\) be a quadrilateral such that \(AB = BC\) and \(AD = CD\). Given \(\angle BAD = 92^\circ\), and \(E\) is a point on \(CD\) such that \(BE\) is parallel to \(AD\). Find \(\angle CBE\).

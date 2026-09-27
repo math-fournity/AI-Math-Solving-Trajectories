@@ -1,0 +1,1 @@
+Determine whether a rational function $P(x)$ with rational coefficients can be integrated over a rational interval $[a, b]$ to yield a rational multiple of the transcendental number $e$. Provide a justification for your answer.

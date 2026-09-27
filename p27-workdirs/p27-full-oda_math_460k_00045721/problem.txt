@@ -1,0 +1,1 @@
+For $\lambda > 0$, consider the problem in a smooth, bounded domain $\Omega \subset \mathbf{R}^n$:

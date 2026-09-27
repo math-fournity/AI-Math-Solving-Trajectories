@@ -1,0 +1,1 @@
+In a bustling telecommunications network, there are $n$ server hubs (where $n \ge 3$). To ensure total redundancy, every single hub is directly connected to every other hub by a dedicated fiber-optic line.

@@ -1,0 +1,1 @@
+In a remote digital galaxy, a massive server cluster is powered by $2^n$ individual processing nodes and one central Command Core. The system operates using two types of energy packets: high-capacity "Data Blocks" worth $2^n$ units of energy and smaller "Micro-Charges" worth $2^{a}$ units (where $a \in \{0, 1, \dots, n-1\}$).

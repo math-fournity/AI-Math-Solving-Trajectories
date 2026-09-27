@@ -1,0 +1,1 @@
+In a boutique coffee roasting facility, a master roaster is evaluating a batch of $N$ experimental coffee bags, where $N$ is a whole number less than 40. Each bag is assigned a quality score based on flavor profile. A bag is classified as "Premium Grade" if it earns a score of at least 65 points; otherwise, it is classified as "Standard Grade."

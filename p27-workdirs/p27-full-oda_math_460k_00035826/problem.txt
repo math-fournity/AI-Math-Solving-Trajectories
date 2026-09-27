@@ -1,0 +1,1 @@
+Let \( G \) be a finite group and \( H \) be a maximal subgroup of \( G \). Assume that \( H \) is abelian and \( [G:H] = p^n \) where \( p \) is a prime number, and \( H \) does not contain any non-trivial normal subgroup of \( G \). Set \( S = \{x \in G \mid \text{for all } y \in H - \{e\}, x \text{ does not conjugate with } y\} \). Calculate the value of \( |S| \).

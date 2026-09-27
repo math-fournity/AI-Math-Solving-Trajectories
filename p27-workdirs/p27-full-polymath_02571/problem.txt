@@ -1,0 +1,1 @@
+Let \( S = \{ n \mid n = a^2 + b^2, a, b, n \in \mathbb{N}, a, b > 0 \} \). Find an integer \( m \) such that \( \{ m, m+1, m+2 \} \subset S \).

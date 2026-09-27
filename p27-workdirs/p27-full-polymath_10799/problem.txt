@@ -1,0 +1,1 @@
+A specialized deep-sea research station is housed within a spherical pressure hull located in a four-dimensional experimental zone. The interior volume of the station is defined by the inequality $x_{1}^{2} + x_{2}^{2} + x_{3}^{2} + x_{4}^{2} \leq 1$.

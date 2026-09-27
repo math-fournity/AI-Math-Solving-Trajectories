@@ -1,0 +1,1 @@
+Determine the maximum number of vertices of an \((n + 3)\)-dimensional hypercube that can be visited by a polygonal chain of size \(n\).

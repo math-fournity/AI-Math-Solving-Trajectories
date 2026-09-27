@@ -1,0 +1,1 @@
+Determine whether the series \( S = \sum_{r=1}^\infty \tan^{-1}\left(\frac{2r}{2+r^2+r^4}\right) \) is finite. If it is finite, find the value of \( S \).

@@ -1,0 +1,1 @@
+Let $n$ be a positive integer. Consider the set of points in the Cartesian coordinate system $xOy$ defined by $T=\{(x, y) \mid |x|=|y| \le n, x, y \in \mathbb{Z}\}$.

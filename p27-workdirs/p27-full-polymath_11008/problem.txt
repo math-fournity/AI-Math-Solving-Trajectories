@@ -1,0 +1,1 @@
+In the city of Centuria, an architect is designing a massive plaza in the shape of a convex polygon with 101 distinct marble pedestals as vertices. To connect these pedestals, the architect has mapped out every possible straight-line walkway that does not follow the perimeter (the diagonals of the 101-gon).

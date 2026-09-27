@@ -1,0 +1,1 @@
+What is the greatest number of diagonals that can be drawn in a convex 2011-gon such that each newly drawn diagonal intersects no more than one of the already drawn diagonals?

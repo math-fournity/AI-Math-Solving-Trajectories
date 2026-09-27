@@ -1,0 +1,1 @@
+Evaluate the integral $\int_{0}^{\frac{\pi}{2}} \ln^2(\sin x) \ln(\cos x) \ln(1+\sin^2 x) \cot x \, dx$.

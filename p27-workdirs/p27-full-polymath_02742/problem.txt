@@ -1,0 +1,1 @@
+Let \( f(x, y) \) be a two-variable function such that \( f(1, 1) = 2 \) and for any \( x, y, z \),

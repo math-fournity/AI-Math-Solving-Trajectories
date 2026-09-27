@@ -1,0 +1,1 @@
+In a specialized chemistry laboratory, a researcher is monitoring a sequence of $n$ consecutive chemical reactions, indexed $i = 1, 2, \ldots, n$. The energy output of the $i$-th reaction is precisely $m + i$ units, where $m$ and $n$ are positive integers.

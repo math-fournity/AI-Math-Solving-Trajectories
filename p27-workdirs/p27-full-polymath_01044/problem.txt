@@ -1,0 +1,1 @@
+Find all natural numbers $(x, y, z)$ with $1 \le x \le y \le z$ such that $(x-y)^2 + (y-z)^2 + (z-x)^2 = xyz$. Let $S$ be the set of all such triples. Calculate the sum of all components of all triples in $S$. For example, if $S = \{(a, b, c), (d, e, f)\}$, you should output $(a+b+c) + (d+e+f)$.

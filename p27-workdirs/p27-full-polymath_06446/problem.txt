@@ -1,0 +1,1 @@
+In a specialized logistics warehouse, the floor is mapped as a grid of storage bays denoted by coordinates $(x, y)$, where both $x$ and $y$ are integers ranging from $-4$ to $4$ inclusive. This grid defines a region $\Gamma$ containing all possible bay locations.

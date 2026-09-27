@@ -1,0 +1,1 @@
+In a specialized laboratory, there are five identical prototype batteries, each currently holding exactly 1 gigajoule of energy. There are also two digital counters, labeled Alpha and Beta, both initially set to zero.

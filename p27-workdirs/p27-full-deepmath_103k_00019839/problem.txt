@@ -1,0 +1,1 @@
+Find all functions \( f: \mathbb{R^+} \to \mathbb{R^+} \) satisfying the functional equation \[ \frac{f(f(y)^2 + xy)}{f(y)} = f(x) + y \] for all \( x, y \in \mathbb{R^+} \).

@@ -1,0 +1,1 @@
+Consider the Banach spaces $l^1(N)=\{\xi:N\rightarrow \mathbb{C}:||\xi||_1=\sum_{n=1}^\infty |\xi(n)|<\infty \}$ and $l^2(N)=\{\xi:N\rightarrow \mathbb{C}:||\xi||_2=(\sum_{n=1}^\infty |\xi(n)|^2)^{1/2}<\infty \}$. Determine if the linear map $J:l^1(N)\rightarrow l^2(N)$, defined by $J(\xi)=\xi$, is continuous. If it is, find its norm.

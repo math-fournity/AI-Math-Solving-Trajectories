@@ -1,0 +1,1 @@
+Given six positive numbers $a, b, c, d, e, f$ such that $a\sqrt{3(S+T)(S(b d+b f+d f)+T(a c+a e+c e))} $$  (South Korea)

@@ -1,0 +1,1 @@
+Prove that for positive real numbers $a, b$, and $c$ such that $a+b+c=1$, the inequality

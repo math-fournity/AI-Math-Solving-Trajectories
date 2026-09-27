@@ -1,0 +1,1 @@
+What is the largest $k$ such that for positive reals $x, y, z$, the inequality $$\sum_{sym}x^6 + k\sum_{sym}x^3y^3 \ge (k+1)\sum_{sym}x^4y^2$$ holds true?

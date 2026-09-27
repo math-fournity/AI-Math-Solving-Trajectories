@@ -1,0 +1,1 @@
+Let $R$ be a commutative ring with unity. Suppose $M$ is a finitely generated $R$-module with a submodule $N$ such that $M/N$ is a free module. Is it true that $N$ is finitely generated?

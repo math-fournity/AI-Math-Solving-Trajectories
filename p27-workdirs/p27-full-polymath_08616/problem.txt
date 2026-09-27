@@ -1,0 +1,1 @@
+In a futuristic circular city, there are $n$ distinct districts arranged in a perfect ring, where $n$ is an integer such that $3 \leq n \leq 100$. Each district is currently powered by one of three types of energy sources: Solar (S), Bio-fuel (B), or Radium (R).

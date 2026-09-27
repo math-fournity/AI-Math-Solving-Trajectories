@@ -1,0 +1,1 @@
+Are the traces of the elements in a discrete subgroup $\Gamma \subset SL(2, \mathbb{C})$ forming a once-punctured torus bundle in $H^3$ necessarily integral?

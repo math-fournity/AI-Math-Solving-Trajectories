@@ -1,0 +1,1 @@
+In a remote archipelago, two architects, Captain Liora and Commander Jace, are competing to establish outposts on an $m \times n$ grid of islands, where both $m$ and $n$ are integers greater than 2.

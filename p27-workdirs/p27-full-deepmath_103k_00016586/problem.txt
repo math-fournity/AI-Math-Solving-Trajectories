@@ -1,0 +1,1 @@
+Determine whether there exists a constant \( M \) such that for all integers \( c \ge M \), there is no prime number \( p \) for which \( p^c \) divides \((p-1)!+1\).

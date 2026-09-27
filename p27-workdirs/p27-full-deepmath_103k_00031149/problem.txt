@@ -1,0 +1,1 @@
+Find the maximal number of red points in a critical coloring of the plane, where each point has coordinates in the set $S=\{0,1,\ldots,99\}$, such that for each $i,j\in S$, at least one of the four points $(i,j),(i + 1,j),(i,j + 1)$, and $(i + 1, j + 1)$ $(99 + 1\equiv0)$ is red. The coloring should lose its critical property if any red point is recolored to white.

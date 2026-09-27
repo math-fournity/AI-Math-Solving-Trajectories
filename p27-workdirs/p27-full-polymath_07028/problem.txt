@@ -1,0 +1,1 @@
+In a futuristic automated factory, a robotic assembly line produces modular power cores. These cores are composed of a linear sequence of two types of components: **Actuators (A)** and **Batteries (B)**. The factory’s operating protocol strictly dictates which sequences are valid configurations:

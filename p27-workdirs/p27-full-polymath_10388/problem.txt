@@ -1,0 +1,1 @@
+In a futuristic city, an architectural guild is designing a "Polygonal Plaza" with $n$ vertices, where $n \geq 3$. To maintain the aesthetic harmony of the city’s grid, the Lead Architect has imposed two strict structural constraints regarding the internal angles of the plaza:

@@ -1,0 +1,1 @@
+Given an infinite cardinal \(\kappa\), determine if there exists a graph on \(\kappa\) vertices that contains \(2^\kappa\) pairwise non-isomorphic induced subgraphs.

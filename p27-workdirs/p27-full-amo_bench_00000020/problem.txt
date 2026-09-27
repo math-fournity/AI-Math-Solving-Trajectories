@@ -1,0 +1,1 @@
+Given that \(x, y, z\) are integers satisfying the system

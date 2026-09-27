@@ -1,0 +1,1 @@
+On the reverse sides of 2005 cards, different numbers are written (one number on each). In one question, you can point to any three cards and find out the set of numbers written on them. What is the minimum number of questions needed to determine which numbers are written on each card?

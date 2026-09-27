@@ -1,0 +1,1 @@
+Does there exist a noncommutative ring $R$ with an idempotent $e \neq 1$ such that $ReR = R$ and the corner ring $eRe$ is isomorphic to $R$, for which there are autoequivalences of the category of left or right $R$-modules that are not naturally isomorphic to the autoequivalences induced by ring automorphisms of $R$?

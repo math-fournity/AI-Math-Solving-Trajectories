@@ -1,0 +1,1 @@
+In the competitive world of high-performance computing, the **Processing Power** of a custom-built supercomputer is determined by the **Least Common Multiple (LCM)** of the individual frequencies of its processors. Each processor must be tuned to a positive integer frequency (measured in GHz).

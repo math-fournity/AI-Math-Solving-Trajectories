@@ -1,0 +1,1 @@
+In a specialized logistics hub, there are 20 numbered storage bays, labeled 1 through 20. A logistics manager must select a specific fleet of $m = 10$ distinct bay IDs to form an "Active Set" $A = \{a_1, a_2, \ldots, a_{10}\}$.

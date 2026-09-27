@@ -1,0 +1,1 @@
+Determine whether the Fourier inversion theorem holds for a function $f$ such that $\int_{-\infty}^{\infty}|f(x)|dx<\infty$. Specifically, is it true that for almost every $x\in\mathbb{R}$, the Fourier transform of $f$, denoted by $\hat{f}$, satisfies $$f(x)=\lim_{R\rightarrow+\infty}\int_{-R}^{R}\hat{f}(w)e^{2i\pi x w}dw?$$

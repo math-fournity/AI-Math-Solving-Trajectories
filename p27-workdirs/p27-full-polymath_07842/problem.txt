@@ -1,0 +1,1 @@
+In the city of Gridhaven, a security firm is designing a surveillance system for an $8 \times 8$ grid of city blocks. To ensure public safety, the firm must install a specific number of specialized sensors on the street corners (the squares of the grid).

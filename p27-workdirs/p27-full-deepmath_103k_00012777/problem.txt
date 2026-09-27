@@ -1,0 +1,1 @@
+Determine the smallest dimension of a faithful representation of the group $D_8 \times Q_8$ over a field $F$, where $D_8$ is the dihedral group of order 8, $Q_8$ is the quaternion group, and $F$ is a field of characteristic not equal to 2.

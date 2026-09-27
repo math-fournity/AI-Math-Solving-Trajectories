@@ -1,0 +1,1 @@
+Let  $n,k,m$  be positive integers, where  $k\ge 2$  and  $n\le m < \frac{2k-1}{k}n$ . Let  $A$  be a subset of  $\{1,2,\ldots ,m\}$  with  $n$  elements. Prove that every integer in the range  $\left(0,\frac{n}{k-1}\right)$  can be expressed as  $a-b$ , where  $a,b\in A$ .

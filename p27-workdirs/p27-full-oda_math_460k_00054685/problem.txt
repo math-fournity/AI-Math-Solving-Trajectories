@@ -1,0 +1,1 @@
+Derive Einstein’s equations from the Einstein-Hilbert action when the metric has arbitrary signature. Derive the equations for Yang-Mills fields coupled to gravity from the Lagrangian \( R \text{vol} + \frac{1}{4} \text{tr} (F \wedge *F) \) by varying both the metric and the Yang-Mills vector potential \( A \).

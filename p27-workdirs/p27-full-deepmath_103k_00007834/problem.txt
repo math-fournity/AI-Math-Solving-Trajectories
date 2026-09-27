@@ -1,0 +1,1 @@
+Consider a differentiable function \( f: U \to \mathbb{R}^m \) where \( U \subseteq \mathbb{R}^n \) is open and convex. For any \( x, x+h \in U \), is it true that there exists some \( A \) in the closure of the convex hull of \( \{ f'(x+th) \mid 0 < t < 1 \} \) such that \( f(x+h) - f(x) = Ah \)? Justify your answer.

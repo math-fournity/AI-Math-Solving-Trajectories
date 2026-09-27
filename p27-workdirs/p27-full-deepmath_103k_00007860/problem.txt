@@ -1,0 +1,1 @@
+Determine the range of values for $1 \le p \le \infty$ such that a function $u$ belongs to the Sobolev space $W^{1,p}(\Omega)$. Specifically, find the values of $p$ for which the following condition holds:

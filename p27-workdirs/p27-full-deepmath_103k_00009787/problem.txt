@@ -1,0 +1,1 @@
+Determine whether every non-abelian finite group $G$ with the property that every subgroup of $G$ is normal is isomorphic to $G' \times Q_8$, where $G'$ is an abelian group that does not contain $C_4$ as a subgroup.

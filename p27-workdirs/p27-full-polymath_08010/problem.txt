@@ -1,0 +1,1 @@
+In a specialized logistics simulation, a company tracks two distinct performance metrics, $f$ and $g$, which are modeled as continuous functions of a variable $x$, representing an adjustment factor.

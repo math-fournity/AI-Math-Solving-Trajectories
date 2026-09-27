@@ -1,0 +1,1 @@
+For which subsets $A \subseteq \mathbb{R}$ is the restriction of the map $p: \mathbb{R} \rightarrow S^1$, given by $p(x) = e^{2\pi i x}$, a covering map?

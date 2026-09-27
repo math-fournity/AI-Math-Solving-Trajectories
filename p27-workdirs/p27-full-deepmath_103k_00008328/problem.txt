@@ -1,0 +1,1 @@
+Let $(M^n,g)$ be a complete Riemannian manifold with $|Rm| \le 1$. Determine whether there exist two positive constants $C$ and $\epsilon$, depending only on $n$, such that in the normal coordinates $(g_{ij})$ with respect to any point $p \in M$, the inequality

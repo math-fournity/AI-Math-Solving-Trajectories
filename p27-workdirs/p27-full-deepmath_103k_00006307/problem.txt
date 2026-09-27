@@ -1,0 +1,1 @@
+Let $p_1, p_2, \ldots, p_k$ be distinct prime numbers. Define $f(n, l)$ as the number of elements in the set $\{n+1, n+2, \ldots, n+l\}$ that are divisible by at least one of the primes $p_1, p_2, \ldots, p_k$. Determine if the following statement is true:

@@ -1,0 +1,1 @@
+Let \( R \) be a set of exactly 6 elements. A set \( F \) of subsets of \( R \) is called an \( S \)-family over \( R \) if and only if it satisfies the following three conditions:

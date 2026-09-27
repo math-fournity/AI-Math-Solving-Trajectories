@@ -1,0 +1,1 @@
+Determine the condition on $p$ for which the series \( \sum_{n=1}^\infty \frac{|g(nx)|}{n^p} \) converges almost everywhere, where \( g:\mathbb{R}^m\rightarrow\bar{\mathbb{R}} \) is a Lebesgue integrable function with \( \int |g|>0 \).

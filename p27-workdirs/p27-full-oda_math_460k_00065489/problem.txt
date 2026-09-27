@@ -1,0 +1,1 @@
+Define the sequences $c_n$ and $d_n$ as follows: $c_1 = 6$, $c_{n+1} = (c_n + 1)!$, $d_1 = 6$, $d_{n+1} = 6^{d_n + 1}$. Determine which is larger, $c_{d_2}$ or $d_{c_2}$.

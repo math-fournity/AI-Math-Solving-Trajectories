@@ -1,0 +1,1 @@
+In triangle $ABC$, let $I$ be the incenter. Let $B_1$ and $C_1$ be the midpoints of sides $AC$ and $AB$, respectively. It is known that $\angle BIC_1 + \angle CIB_1 = 180^\circ$. If the side length $BC = 12$, find the value of the sum of the side lengths $AB + AC$.

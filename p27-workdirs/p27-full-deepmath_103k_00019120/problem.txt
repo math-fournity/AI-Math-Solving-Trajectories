@@ -1,0 +1,1 @@
+Determine whether there exists a natural number \( M \) such that for all \( c \geq M \), there is no prime \( p \) satisfying \( p^c \mid (p-1)! + 1 \).

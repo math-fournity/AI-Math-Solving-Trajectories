@@ -1,0 +1,1 @@
+Let \( R \) be a commutative ring with \( 1 \), and let \( X \) be a finite set of prime ideals of \( R \). Suppose \( R \) has only one maximal ideal \( m \), and none of the members of \( X \) is maximal. Additionally, assume \( m - m^2 \subseteq \cup_{p \in X} p \). If \( m \) is finitely generated, calculate the number of elements in \( X \).

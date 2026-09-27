@@ -1,0 +1,1 @@
+The plane is divided into unit squares by means of two sets of parallel lines. The unit squares are colored in $1201$ colors so that no rectangle of perimeter $100$ contains two squares of the same color. Let $S$ be a rectangle of size $1 \times 1201$. Find the maximum possible number of squares of the same color that $S$ can contain.

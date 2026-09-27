@@ -1,0 +1,1 @@
+Consider in a plane $\Pi$ the points $O, A_{1}, A_{2}, A_{3}, A_{4}$ such that the area of the triangle $\sigma\left(O A_{i} A_{j}\right) \geq 1$ for all $i, j \in \{1, 2, 3, 4\}$ with $i \neq j$. Let $M$ be the minimum possible value for the maximum of the areas of all such triangles formed by $O$ and any two of the points $\{A_1, A_2, A_3, A_4\}$. Determine the value of $M^2$.

@@ -1,0 +1,1 @@
+An international logistics company operates a fleet of automated cargo bays, each designed as a rectangular grid of storage slots. To maintain structural integrity, a cargo bay is deemed **Stable** only if it meets the following safety protocols:

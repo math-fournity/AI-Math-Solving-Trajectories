@@ -1,0 +1,1 @@
+Determine the greatest real number \( s \) such that there exists an infinite sequence of positive integers \( (a_n) \) such that for each positive integer \( n \), we have \( a_n > 2008^n \) and \( a_n^s \le u_n \), where \( u_n \) is the greatest common divisor of the set of integers \( \{a_i + a_j \mid i + j = n\} \).

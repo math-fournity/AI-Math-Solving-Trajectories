@@ -1,0 +1,1 @@
+Let $X$ be a projective Noetherian scheme over $\mathbb{C}$. Determine whether $H^0(\mathcal{O}_X(-t))=0$ for any $t>0$.

@@ -1,0 +1,1 @@
+Find the explicit description of the ring of invariants for a binary icosahedral group of order 120, including the generators and the relation they satisfy.

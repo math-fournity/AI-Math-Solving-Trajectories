@@ -1,0 +1,1 @@
+In a remote digital archives facility, a master encryption key is represented by a set $S$ of distinct integers. The facility uses a specific "Data Synthesis Protocol" to expand the set of numbers available in the archive. Each time the protocol is run, an archivist must perform the following three steps:

@@ -1,0 +1,1 @@
+In a remote digital frontier, a System Administrator and a Malicious Script engage in a persistent battle over a server cluster organized as a $2022 \times 2022$ grid of data nodes. Each node represents a storage unit, and two nodes are considered linked if they share a vertex or an edge in the grid layout. Initially, every node contains a data file with a security level of 0.

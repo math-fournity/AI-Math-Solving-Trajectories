@@ -1,0 +1,1 @@
+Given a positive integer \(k\), find all positive integers \(n\) that can be expressed in the form \[\frac{a}{b}+\frac{a+k}{b+k},\] where \(a, b \in \mathbb{N}^{+}\).

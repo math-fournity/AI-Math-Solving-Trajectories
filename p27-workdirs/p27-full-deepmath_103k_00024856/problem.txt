@@ -1,0 +1,1 @@
+Find the value of \( \displaystyle{\lim_{k \to \infty}} \ln(2k+1) \cdot ((2k+1)!)^{-1/(2k+1)} + \displaystyle{\lim_{k \to \infty}} \ln(3k) \cdot ((3k)!)^{-1/(3k)} \).

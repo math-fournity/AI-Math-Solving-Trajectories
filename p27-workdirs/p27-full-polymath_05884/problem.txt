@@ -1,0 +1,1 @@
+Given a cyclic quadrilateral $PQRS$ with $\angle SPQ = 110^\circ$ and $\angle PQR = 50^\circ$, let $A$ and $B$ be the midpoints of $PQ$ and $RS$, respectively. Join $AB$ and take a point $X$ on $AB$ such that $PX = RX$ and $\frac{AX}{BX} = \frac{PQ}{RS}$. Find $\angle PXR$.

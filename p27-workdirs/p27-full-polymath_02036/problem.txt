@@ -1,0 +1,1 @@
+Let $S$ be the set of all positive integers $n$ with the following property: for every triple $(a, b, c)$ of positive real numbers, there exists a triple $(k, \ell, m)$ of non-negative integers such that $a n^{k}$, $b n^{\ell}$, and $c n^{m}$ are the lengths of the sides of a non-degenerate triangle. Find the sum of the elements in $S$.

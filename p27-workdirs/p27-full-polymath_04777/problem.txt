@@ -1,0 +1,1 @@
+Determine the minimum value of \( k \) for which player B has a winning strategy in the following game: On a \( 5 \times 5 \) board, players A and B alternately mark a total of \( k \) unit squares. B wins if every "good" placement of L-shapes (each L-shape covers exactly three unmarked unit squares without overlapping) leaves at least three unmarked unit squares uncovered.

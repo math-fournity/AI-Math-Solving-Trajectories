@@ -1,0 +1,1 @@
+How can the 0.878-approximation algorithm for MAX 2SAT be used to derive a \((\frac{3}{4} + \epsilon)\)-approximation algorithm for the maximum satisfiability problem, for some \(\epsilon > 0\)?

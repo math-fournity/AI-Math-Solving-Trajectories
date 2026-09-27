@@ -1,0 +1,1 @@
+Assume that $X$ is a path-wise connected Hausdorff space with a non-trivial fundamental group. Does there always exist a simple closed curve in $X$ which is non-null-homotopic?

@@ -1,0 +1,1 @@
+Determine all positive integers $(x_1, x_2, x_3, y_1, y_2, y_3)$ such that $y_1 + ny_2^n + n^2y_3^{2n}$ divides $x_1 + nx_2^n + n^2x_3^{2n}$ for all positive integers $n$.

@@ -1,0 +1,1 @@
+If every partitioning of a set $X$ has a choice function, is $X$ necessarily well-orderable?

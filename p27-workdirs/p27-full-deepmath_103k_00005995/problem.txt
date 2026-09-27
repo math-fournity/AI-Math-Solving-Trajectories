@@ -1,0 +1,1 @@
+Consider a homogeneous manifold $X = G/H$, where $G$ and $H$ are connected Lie groups, and there is a $G$-invariant Riemannian metric on $X$. Let $B(R)$ be the closed ball of radius $R > 0$ around the base point $eH$, and let $b(R)$ denote its volume. Determine if the following limit holds:

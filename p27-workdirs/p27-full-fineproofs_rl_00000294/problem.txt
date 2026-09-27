@@ -1,0 +1,1 @@
+18. (GBR) The altitudes through the vertices $A, B, C$ of an acute-angled triangle $A B C$ meet the opposite sides at $D, E, F$, respectively. The line through $D$ parallel to $E F$ meets the lines $A C$ and $A B$ at $Q$ and $R$, respectively. The line $E F$ meets $B C$ at $P$. Prove that the circumcircle of the triangle $P Q R$ passes through the midpoint of $B C$.

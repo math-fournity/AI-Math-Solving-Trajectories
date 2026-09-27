@@ -1,0 +1,1 @@
+A specialized agricultural firm manages a pentagonal territory with five observation outposts located at its vertices, labeled $A, B, C, D$, and $E$ in clockwise order. To monitor the land, the firm has established straight-line irrigation pipes connecting several outposts: $AC$, $AD$, $BD$, $BE$, and $CE$.

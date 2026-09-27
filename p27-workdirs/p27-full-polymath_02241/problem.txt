@@ -1,0 +1,1 @@
+Let $a \geqslant 2$ and $d \geqslant 2$ be two coprime integers. We define a sequence $x_k$ by $x_1 = 1$, and for $k \geqslant 1$:

@@ -1,0 +1,1 @@
+In a remote desert, three observation outposts—Alpha ($A$), Bravo ($B$), and Charlie ($C$)—form a triangular perimeter. A circular supply depot, $\omega$, is positioned within this perimeter such that its perimeter wall is tangent to the straight supply roads $BC$ and $CA$. The points of tangency are marked as Depot Gate $D$ (on road $BC$) and Depot Gate $E$ (on road $CA$).

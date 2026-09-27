@@ -1,0 +1,1 @@
+Suppose $U$ is a convex open set in $\mathbb{R}^n$, and $f$ is a bounded convex function on $U$. Is it always possible to extend $f$ continuously to the closure $\bar{U}$?

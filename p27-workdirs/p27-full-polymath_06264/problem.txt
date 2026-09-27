@@ -1,0 +1,1 @@
+In a bustling logistical warehouse, a manager is designing a storage system on a grid-based floor. The storage area is shaped like a staircase with a height and base of 6 units: the first column has 1 cell, the second has 2, the third has 3, the fourth has 4, the fifth has 5, and the sixth has 6, for a total of 21 cells.

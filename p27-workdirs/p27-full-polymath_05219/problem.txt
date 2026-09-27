@@ -1,0 +1,1 @@
+Let $n = 101$. For a subset $F$ with $n$ elements from $\{1, 2, \ldots, 2n\}$, we define $m(F)$ as the minimum of all $\operatorname{lcm}(x, y)$, where $x$ and $y$ are two distinct elements of $F$. Find the maximum value that $m(F)$ can achieve across all possible choices of $F$.

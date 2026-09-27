@@ -1,0 +1,1 @@
+If $\omega$ is a faithful normal state on a von Neumann algebra $R$, and $P_1, P_2, \ldots$ are projection operators in $R$ such that $\omega(P_n) \rightarrow 0$ as $n \rightarrow \infty$, determine whether the $P_n$ must converge to $0$ in the strong operator topology.

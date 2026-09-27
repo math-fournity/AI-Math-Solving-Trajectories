@@ -1,0 +1,1 @@
+In a bustling logistics hub, there are exactly $2n$ independent delivery stations. In this network, some stations are connected by direct two-way transport routes.

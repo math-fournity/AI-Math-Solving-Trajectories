@@ -1,0 +1,1 @@
+Determine whether it is possible to construct a sequence of continuous, non-negative functions $f_n: H \to \mathbb{R}$, for $n \in \mathbb{N}$, such that $f_n$ converges pointwise to $\mathbf{1}_U$ and $f_n \in C_b(\mathbb{R}^d)$ for each $n$, where $d=d_n$ is allowed to depend on $n$. Provide a justification for your answer.

@@ -1,0 +1,1 @@
+In a remote territory, three supply depots—Alpha ($A$), Bravo ($B$), and Charlie ($C$)—form a triangular logistics network. The straight-line distance between Alpha and Bravo is exactly 13 kilometers, Bravo to Charlie is 14 kilometers, and Alpha to Charlie is 15 kilometers.

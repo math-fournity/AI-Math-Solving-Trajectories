@@ -1,0 +1,1 @@
+Let $m, n$ be two positive integers, and let $A, B$ be two sets of real numbers with $|A|=m$ and $|B|=n$. The set $A$ has the property that for any $x, y, u, v \in A$, if $x+y=u+v$, then either $\{x, y\}=\{u, v\}$ or $x=y=u=v$. Let $A+B = \{a+b \mid a \in A, b \in B\}$ and let $f(m, n)$ be the minimum possible value of $|A+B|$.

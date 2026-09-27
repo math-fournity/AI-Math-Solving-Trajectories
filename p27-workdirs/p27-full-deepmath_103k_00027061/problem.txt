@@ -1,0 +1,1 @@
+Does there exist a sequence consisting only of prime numbers such that \(\lim_{n \to \infty} \frac{a_n}{p_n} = 1\), where \(p_n\) is the \(n\)th prime, and the sequence can be generated using a constant number of operations (0, 1, +, -, *, /), powers to a constant, and any constant number of the previous elements?

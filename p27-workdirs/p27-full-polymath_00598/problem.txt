@@ -1,0 +1,1 @@
+Let \(ABC\) be a triangle whose vertices lie in the interior or on the boundary of the unit square. Determine the maximal possible value of the inradius of \(ABC\).

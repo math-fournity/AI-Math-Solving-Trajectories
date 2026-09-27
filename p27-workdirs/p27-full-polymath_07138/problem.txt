@@ -1,0 +1,1 @@
+In the high-tech city of Centuria, there are $103^2 - 1$ unique frequency channels available for secure communication. Each channel is identified by a unique coordinate pair $(i, j)$, where $i$ and $j$ are integers from the set $\{0, 1, \dots, 102\}$, excluding the dead-zone channel $(0,0)$.

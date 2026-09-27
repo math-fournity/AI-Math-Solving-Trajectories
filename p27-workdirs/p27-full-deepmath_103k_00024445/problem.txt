@@ -1,0 +1,1 @@
+Let $G \subset GL_n(\mathbb{C})$ be a subgroup such that there exist some $r \in \mathbb{N}^{*}$ and $g_1, \ldots, g_r \in G$ so that for all $g \in G$, $g$ is conjugate to some $g_i, i \in [[1, r]]$ in $G$. Is $G$ finite?

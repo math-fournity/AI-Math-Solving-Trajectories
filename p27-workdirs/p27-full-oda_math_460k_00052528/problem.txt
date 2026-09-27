@@ -1,0 +1,1 @@
+Let \( x_1, \dotsc, x_m, y_1, \dotsc, y_m, z_1, \dotsc, z_m \in \mathbb{F}_2^n \). Suppose that the equation \( x_i + y_j + z_k = 0 \) holds if and only if \( i = j = k \). Define \( f(n) \) as the maximum value of \( m \) for which such a configuration exists. Find the smallest integer \( k \) such that \( f(5) \leq k \).

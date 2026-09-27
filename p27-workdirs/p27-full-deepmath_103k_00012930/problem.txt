@@ -1,0 +1,1 @@
+Let $H_0^1$ be the space of all functions $g:[0,1]\to \mathbb{R}$ such that $g'$ is in $L^2[0,1]$ and $g(0)=g(1)=0$. Given that $H_0^1$ is a Hilbert space, and let $f\in C[0,1]$. Suppose $u\in C^{(2)}[0,1] \cap H_0^1$ satisfies the equation \( \int_0^1 u'v'\,dx = \int_0^1 fv\,dx \) for all $v\in H^1_0$. Prove that $-u'' = f$.

@@ -1,0 +1,1 @@
+Assume $A, B \subsetneq \mathbb{R}^{n}$ ($n\ge 2$ arbitrary) are bounded connected sets with disjoint connected boundaries and $A\cap B\neq \emptyset$. Determine whether it is necessarily true that either $A \subsetneq B$ or $B \subsetneq A$.

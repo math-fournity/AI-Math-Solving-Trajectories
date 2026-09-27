@@ -1,0 +1,1 @@
+In a specialized logistics network consisting of $m$ distribution hubs, every hub is directly connected to exactly $12$ other hubs by bidirectional transport cables. A central coordinator needs to assign each hub to one of exactly $4$ different regional service zones.

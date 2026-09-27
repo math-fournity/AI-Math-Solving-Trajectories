@@ -1,0 +1,1 @@
+Three pairwise distinct positive integers $a, b, c$, with $\operatorname{gcd}(a, b, c)=1$, satisfy

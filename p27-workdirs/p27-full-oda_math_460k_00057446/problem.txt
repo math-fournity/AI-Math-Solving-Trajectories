@@ -1,0 +1,1 @@
+In \( \triangle ABC \), let \( l_a, l_b, l_c \) be the lengths of the three internal angle bisectors, and \( R \) be the radius of the circumcircle. If \( \cos A + \cos B = \frac{1}{2} \), \( \cos B + \cos C = \frac{1}{3} \), and \( \cos C + \cos A = \frac{1}{6} \), calculate the minimum possible value of \( \frac{l_a + l_b + l_c}{R} \).

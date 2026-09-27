@@ -1,0 +1,1 @@
+Let $H$ be a separable Hilbert space. Let $A$ be a maximal abelian von Neumann subalgebra of $B(H)$, and $B$ an abelian von Neumann algebra with $A \cap B = \mathbb{C}I$, where $I$ is the identity element of $B(H)$. Does there exist another maximal abelian von Neumann subalgebra of $B(H)$, say $C$, such that $C \supseteq B$ and $A \cap C = \mathbb{C}I$?

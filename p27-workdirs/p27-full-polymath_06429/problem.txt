@@ -1,0 +1,1 @@
+In a futuristic data-storage facility, a security grid is composed of a $5 \times 5$ array of servers. Each server must be assigned a unique security clearance level from $1$ to $5$, such that every row and every column contains each of the five clearance levels exactly once.

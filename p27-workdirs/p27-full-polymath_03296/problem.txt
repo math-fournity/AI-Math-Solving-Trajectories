@@ -1,0 +1,1 @@
+We say a nondegenerate triangle whose angles have measures $\theta_{1}, \theta_{2}, \theta_{3}$ is quirky if there exists integers $r_{1}, r_{2}, r_{3}$, not all zero, such that

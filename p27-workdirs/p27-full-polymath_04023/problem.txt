@@ -1,0 +1,1 @@
+Let $n \geq 3$ be an integer. A sequence $P_1, P_2, \ldots, P_n$ of distinct points in the plane is called [i]good[/i] if no three of them are collinear, the polyline $P_1P_2 \ldots P_n$ is non-self-intersecting and the triangle $P_iP_{i + 1}P_{i + 2}$ is oriented counterclockwise for every $i = 1, 2, \ldots, n - 2$.

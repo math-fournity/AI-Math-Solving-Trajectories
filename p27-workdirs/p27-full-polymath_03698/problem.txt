@@ -1,0 +1,1 @@
+Determine the maximum possible total length of the border between horizontal and vertical dominoes on an $8 \times 8$ board.

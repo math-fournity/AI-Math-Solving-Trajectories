@@ -1,0 +1,1 @@
+A regular dodecahedron is projected orthogonally onto a plane, and its image is an \(n\)-sided polygon. What is the smallest possible value of \(n\)?

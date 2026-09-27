@@ -1,0 +1,1 @@
+Evaluate the integral: $$\int \frac{e^x + \sin x + \cos x + 1 + \frac{x}{1!} + \frac{x^2 }{2!} + \cdots }{2n!\sin x + x^n}\, dx$$ where $n \to \infty$. Provide your answer in a simplified form.

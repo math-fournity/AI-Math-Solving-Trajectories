@@ -1,0 +1,1 @@
+In a remote industrial warehouse, a logistics floor is divided into a grid of 8 rows and 12 columns of storage bays. Currently, $N$ specific bays are occupied by heavy black crates, while the remaining bays are empty (white).

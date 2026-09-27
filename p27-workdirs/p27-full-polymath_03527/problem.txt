@@ -1,0 +1,1 @@
+In a $30 \times 30$ table, color some unit squares such that each colored square has at most 6 neighbors. What is the maximum possible number of colored squares?

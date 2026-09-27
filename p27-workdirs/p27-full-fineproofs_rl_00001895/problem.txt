@@ -1,0 +1,1 @@
+Given an acute-angled triangle  $ABC$  with orthocenter  $H$ . Reflection of nine-point circle about  $AH$  intersects circumcircle at points  $X$  and  $Y$ . Prove that  $AH$  is the external bisector of  $\angle XHY$ .

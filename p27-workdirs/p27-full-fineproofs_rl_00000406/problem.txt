@@ -1,0 +1,1 @@
+4. (ARM) Let $M$ and $N$ be points inside triangle $A B C$ such that  $$ \angle M A B=\angle N A C \quad \text { and } \quad \angle M B A=\angle N B C . $$  Prove that  $$ \frac{A M \cdot A N}{A B \cdot A C}+\frac{B M \cdot B N}{B A \cdot B C}+\frac{C M \cdot C N}{C A \cdot C B}=1 $$

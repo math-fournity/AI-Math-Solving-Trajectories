@@ -1,0 +1,1 @@
+Let $A\subset\mathbb{R}^N\setminus\{0\}$ be a closed symmetric set such that if $x\in A$, then $-x\in A$. Suppose that $A$ is homeomorphic to a sphere $S^n$, where $n\leq N$. Is it possible to construct an odd homeomorphism $F:A\to S^n$?

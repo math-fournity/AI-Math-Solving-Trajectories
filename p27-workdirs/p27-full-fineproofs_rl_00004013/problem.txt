@@ -1,0 +1,1 @@
+Let $n$ be a positive integer. For a real number $x \geq 1$, it holds that $\left\lfloor x^{n+1}\right\rfloor$, $\left\lfloor x^{n+2}\right\rfloor, \ldots,\left\lfloor x^{4 n}\right\rfloor$ are all squares of positive integers. Prove that $\lfloor x\rfloor$ is also the square of a positive integer.

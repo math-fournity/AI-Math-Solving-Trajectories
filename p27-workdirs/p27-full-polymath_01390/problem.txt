@@ -1,0 +1,1 @@
+A $100 \times 100$ grid is colored black and white. Each column contains the same number of black cells, while each row contains a different number of black cells. What is the maximum possible number of pairs of adjacent cells of different colors?

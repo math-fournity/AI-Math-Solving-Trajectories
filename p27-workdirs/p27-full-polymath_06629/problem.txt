@@ -1,0 +1,1 @@
+In a specialized digital vault, a security system generates encryption keys based on a strict set of protocols. Initially, the vault's display is empty. A technician can perform only two types of operations to modify the sequence of integers on the screen:

@@ -1,0 +1,1 @@
+Suppose that $S$ is a set of 2001 positive integers, and $n$ different subsets of $S$ are chosen so that their sums are pairwise relatively prime. Find the maximum possible value of $n$. (Here the "sum" of a finite set of numbers means the sum of its elements; the empty set has sum 0.)

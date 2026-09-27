@@ -1,0 +1,1 @@
+Let \( P \) and \( Q \) be two isogonal conjugate points in triangle \( ABC \). If \( PQ \) is parallel to the Euler line of \( \triangle ABC \), calculate the value of \( k \) such that the area of the triangle formed by the circumcenters of \( \triangle PAB \), \( \triangle PBC \), and \( \triangle PCA \) is \( k \) times the area of \( \triangle ABC \).

@@ -1,0 +1,1 @@
+Given positive integers \( n \) and \( t \) with \( 1 \leq t < n \). There are \( n \) cups, all initially upright. An operation consists of choosing \( t \) cups and turning them over. If it is possible to turn all \( n \) cups upside down in \(m\) operations, find the minimum value of \(m\). (expressed in terms of \( n \) and \( t \))

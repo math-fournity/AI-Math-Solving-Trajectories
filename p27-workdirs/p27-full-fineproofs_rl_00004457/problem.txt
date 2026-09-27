@@ -1,0 +1,1 @@
+Quadrilateral  $ABCD$  is a cyclic,  $AB = AD$ . Points  $M$  and  $N$  are chosen on sides  $BC$  and  $CD$  respectfully so that  $\angle MAN =1/2 (\angle BAD)$ . Prove that  $MN = BM + ND$ .

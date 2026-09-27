@@ -1,0 +1,1 @@
+6.55 21 people participate in an exam, the test paper contains 15 true/false questions. It is known that any two people have at least 1 question that they both answered correctly. What is the minimum number of people who answered the question with the most correct answers? Explain your reasoning.

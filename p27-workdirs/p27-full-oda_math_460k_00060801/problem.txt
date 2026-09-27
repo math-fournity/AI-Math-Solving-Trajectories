@@ -1,0 +1,1 @@
+A tetrahedron is called a MEMO-tetrahedron if all six side lengths are different positive integers where one of them is \( 2 \) and one of them is \( 3 \). Let \( l(T) \) be the sum of the side lengths of the tetrahedron \( T \).

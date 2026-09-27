@@ -1,0 +1,1 @@
+In the city of Metrica, a high-security server room is designed as a perfect cube with an interior edge length of 10 meters. This room is packed solid with 250 identical server modules, each measuring 2 meters by 2 meters by 1 meter.

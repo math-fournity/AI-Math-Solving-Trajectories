@@ -1,0 +1,1 @@
+Example 3 Real-coefficient polynomials $f_{i}(x)=a_{i} x^{2}+b_{i} x+c_{i}$ $\left(a_{i}>0, i=1,2, \cdots, 2011\right)$, and $\left\{a_{i}\right\} 、\left\{b_{i}\right\} 、\left\{c_{i}\right\}$ are all arithmetic sequences. If $F(x)=\sum_{i=1}^{204} f_{i}(x)$ has real roots, then at most how many polynomials in $\left\{f_{i}(x)\right\}$ have no real roots?

@@ -1,0 +1,1 @@
+Determine if there exists a number \(a\) such that all derivatives of \(x^x\) are positive on the interval \((a, \infty)\). If such a number exists, find the smallest possible value of \(a\).

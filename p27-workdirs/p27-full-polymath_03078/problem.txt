@@ -1,0 +1,1 @@
+In rhombus $NIMO$, $MN = 150\sqrt{3}$ and $\measuredangle MON = 60^{\circ}$.  Denote by $S$ the locus of points $P$ in the interior of $NIMO$ such that $\angle MPO \cong \angle NPO$.  Find the greatest integer not exceeding the perimeter of $S$.

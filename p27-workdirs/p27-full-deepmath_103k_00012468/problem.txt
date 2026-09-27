@@ -1,0 +1,1 @@
+Calculate the principal value of the integral \( P.V.\int_{-\infty}^{+\infty} \frac{1}{(2-x) (x^2+4)} \, dx \). Verify if the result is \( \frac{\pi}{8} \).

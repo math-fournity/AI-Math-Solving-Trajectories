@@ -1,0 +1,1 @@
+In the coastal territory of Aethelgard, four watchtowers—Alpha ($A$), Bravo ($B$), Charlie ($C$), and Delta ($D$)—form a quadrilateral boundary where the inland angles at $C$ and $D$ are perfectly equal ($\angle BCD = \angle CDA$). The northern walls, if extended from $D$ through $A$ and from $C$ through $B$, meet at a central Command Post ($E$).

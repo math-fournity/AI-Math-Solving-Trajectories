@@ -1,0 +1,1 @@
+In a futuristic city, an architect is designing an $8 \times 8$ grid of high-tech server modules. Each module is a rectangle that covers exactly two grid cells, representing a single "data unit."

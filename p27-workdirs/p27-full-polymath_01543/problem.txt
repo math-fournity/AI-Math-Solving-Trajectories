@@ -1,0 +1,1 @@
+Let $n > 1$ be a positive integer. Each unit square in an $n \times n$ grid of squares is colored either black or white, such that:

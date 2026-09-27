@@ -1,0 +1,1 @@
+A circular high-security server farm contains 2018 individual data storage nodes arranged in a perfect ring. Each node is assigned a specific integer security clearance level.

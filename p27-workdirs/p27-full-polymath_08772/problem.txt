@@ -1,0 +1,1 @@
+In the city of Hexopolis, there are exactly 6 specialized research stations, labeled 1 through 6. To facilitate communication, the city planning committee has decided to install exactly 6 high-speed fiber-optic cables, each connecting a unique pair of stations.

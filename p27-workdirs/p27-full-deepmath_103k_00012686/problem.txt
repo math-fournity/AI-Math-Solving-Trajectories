@@ -1,0 +1,1 @@
+Calculate the variance of the Ito integral \( \int_{0}^{t} W^{2}_{s} \, dW_{s} \).

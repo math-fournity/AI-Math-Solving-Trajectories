@@ -1,0 +1,1 @@
+For a sequence \( t_n \) of integers such that \( t_n > n^{\frac{1}{2}} \), define \( f(n) = \frac{d((n + t_n)!)}{d(n!)} \). Calculate the smallest integer \( N \) such that \( f(n) > 1000 \) for all \( n \geq N \).

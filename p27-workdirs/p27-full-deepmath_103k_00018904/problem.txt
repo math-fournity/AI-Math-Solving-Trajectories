@@ -1,0 +1,1 @@
+Suppose $f(z)$ is an analytic function defined on a closed disc $D$ in the complex plane, where it is complex-differentiable inside $D$ and on the boundary of $D$ using the relative topology of the disc. Must the derivative $f'$ be continuous or bounded on the boundary of $D$?

@@ -1,0 +1,1 @@
+Let $n = 100$. Consider a periodic sequence of positive integers $a_1, a_2, \dots, a_n$ such that $a_{i+n} = a_i$ for all $i \ge 1$. Suppose that $a_1 \le a_2 \le \dots \le a_n \le a_1 + n$, and for each $i = 1, 2, \dots, n$, we have $a_{a_i} \le n + i - 1$. Find the maximum possible value of the sum $S = a_1 + a_2 + \dots + a_n$.

@@ -1,0 +1,1 @@
+Let $N(n, k)$ denote the number of ways to distribute cards numbered from 1 to $n$ among $k$ children such that each child receives at least one card. Determine the value of $v_2(N(2^{10}, 100))$, where $v_2(m)$ denotes the exponent of the highest power of 2 that divides $m$.

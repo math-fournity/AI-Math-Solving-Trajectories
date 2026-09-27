@@ -1,0 +1,1 @@
+Let trapezoid $ABCD$ inscribed in a circle $O$, $AB||CD$. Tangent at $D$ wrt $O$ intersects line $AC$ at $F$, $DF||BC$. If $CA=5, BC=4$, then find $AF$.

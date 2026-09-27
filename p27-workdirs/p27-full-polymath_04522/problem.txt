@@ -1,0 +1,1 @@
+At a party, there are $n = 101$ couples. The $n$ husbands are seated at a round table, and the $n$ wives are seated at another round table. The king and queen (who are not part of the couples) shake hands with the guests in two different ways:

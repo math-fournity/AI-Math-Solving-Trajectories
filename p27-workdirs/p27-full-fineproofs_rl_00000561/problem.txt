@@ -1,0 +1,1 @@
+A convex quadrilateral  $ABCD$  with  $AC \neq BD$  is inscribed in a circle with center  $O$ . Let  $E$  be the intersection of diagonals  $AC$  and  $BD$ . If  $P$  is a point inside  $ABCD$  such that  $\angle PAB+\angle PCB=\angle PBC+\angle PDC=90^\circ$ , prove that  $O$ ,  $P$  and  $E$  are collinear.

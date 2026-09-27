@@ -1,0 +1,1 @@
+In a remote sector of the galaxy, a colonial fleet has established a triangular defensive perimeter defined by three space stations: Base Alpha ($A$), Base Beta ($B$), and Base Gamma ($C$). Long-range scans confirm that the flight path from Alpha to Beta measures exactly 7 parsecs, while the path from Alpha to Gamma measures 9 parsecs.

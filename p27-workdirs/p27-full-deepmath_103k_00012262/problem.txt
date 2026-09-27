@@ -1,0 +1,1 @@
+Determine whether the group $E_6^3/\mathbb{Z}_3$, where the quotient is over the diagonal $\mathbb{Z}_3$, has an outer automorphism.

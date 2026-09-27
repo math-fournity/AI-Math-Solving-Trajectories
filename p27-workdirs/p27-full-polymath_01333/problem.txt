@@ -1,0 +1,1 @@
+Let $(a_n)_{n \geq 1}$ be a sequence of strictly positive integers such that $a_1$ and $a_2$ are coprime and, for all $n \geq 1$, $a_{n+2} = a_n a_{n+1} + 1$.

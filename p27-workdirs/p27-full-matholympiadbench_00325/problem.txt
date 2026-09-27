@@ -1,0 +1,8 @@
+/-!
+# IMO 2018 N5
+
+Determine whether there exists $x, y, z, t ∈ ℕ^+$ such that
+  $xy - zt = x + y = z + t$ and both $xy$ and $zt$ are perfect squares.
+-/
+
+##

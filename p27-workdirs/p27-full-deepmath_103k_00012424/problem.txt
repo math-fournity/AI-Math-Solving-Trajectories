@@ -1,0 +1,1 @@
+Provide an example of a non-commutative ring that has only the trivial ideals \( \{0\} \) and the ring itself, but is not a field.

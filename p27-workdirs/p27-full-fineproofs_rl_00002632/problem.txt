@@ -1,0 +1,1 @@
+Let  $ABC$  be a triangle. Let  $ABC_1, BCA_1, CAB_1$  be three equilateral triangles that do not overlap with  $ABC$ .

@@ -1,0 +1,1 @@
+Determine all integers $n > 1$ such that the set of positive integers can be partitioned into $n$ non-empty, pairwise disjoint subsets $A_1, A_2, \dots, A_n$ satisfying $\bigcup_{i=1}^{n} A_i = \mathbb{N}^*$ and for each $1 \le i \le n$, the set $f(A_i) = \{abc - b - c + 2 \mid a, b, c \in A_i\}$ is a subset of $A_i$.

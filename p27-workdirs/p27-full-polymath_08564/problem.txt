@@ -1,0 +1,1 @@
+In a vast salt flat, two specialized survey beacons, Alpha ($A$) and Charlie ($C$), are permanently anchored at a distance of exactly $200$ units apart. A central coordinate marker, Kilo ($K$), is placed exactly at the midpoint of the segment connecting Alpha and Charlie.

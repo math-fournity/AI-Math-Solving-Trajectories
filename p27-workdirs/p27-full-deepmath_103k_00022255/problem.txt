@@ -1,0 +1,1 @@
+Does there exist a topological space $X$ such that $C_0(X) \neq \overline{C_c(X)}$, where $\overline{C_c(X)}$ denotes the closure of $C_c(X)$?

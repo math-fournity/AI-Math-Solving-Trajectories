@@ -1,0 +1,1 @@
+Let \( \{a_i\} \) be real numbers and \( P(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots + a_1x \), where \( n \) is fixed. Determine if there exists a constant \( C \), independent of \( a_i \) and \( N \), such that \[ \left| \int_0^N \frac{\sin(P(x))}{x} \, dx \right| \le C. \]

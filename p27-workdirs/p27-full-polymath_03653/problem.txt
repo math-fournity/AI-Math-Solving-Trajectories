@@ -1,0 +1,1 @@
+In a 100x100 grid where each square contains a positive integer, a rectangle is called "good" if the sum of the numbers in its squares is divisible by 17. You are allowed to paint all squares in some good rectangle, but no square can be painted more than once. Determine the maximum value of \( d \) such that it is always possible to paint \( d \) squares.

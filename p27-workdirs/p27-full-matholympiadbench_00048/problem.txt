@@ -1,0 +1,12 @@
+/-!
+# International Mathematical Olympiad 2018, Problem 2
+
+Determine all integers n ≥ 3 such that there exist real numbers
+a₁, a₂, ..., aₙ satisfying
+
+  aᵢaᵢ₊₁ + 1 = aᵢ₊₂,
+
+where the indices are taken mod n.
+-/
+
+##

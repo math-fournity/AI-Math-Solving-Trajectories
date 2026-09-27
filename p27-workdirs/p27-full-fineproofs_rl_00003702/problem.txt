@@ -1,0 +1,1 @@
+Let $P(x), Q(x), R(x)$ and $S(x)$ be non-constant polynomials with real coefficients such that $P(Q(x))=R(S(x))$. Suppose that the degree of $P(x)$ is divisible by the degree of $R(x)$.

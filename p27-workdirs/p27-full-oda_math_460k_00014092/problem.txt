@@ -1,0 +1,1 @@
+Determine the values of \(\alpha > 1\) for which the series \(\sum_{n=1}^{\infty} |\sin n|^{cn^\alpha}\) converges.

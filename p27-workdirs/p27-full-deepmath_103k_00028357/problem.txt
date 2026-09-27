@@ -1,0 +1,1 @@
+Let \( u_m \) weakly converge to \( u \) in \( L^\infty(0,T;L^2(\Omega)) \cap L^2(0,T;H^1(\Omega)) \), denoted as \( u_m \rightharpoonup u \). Consider a Lipschitz continuous, invertible function \( f: \mathbb{R} \to \mathbb{R} \) with the properties:

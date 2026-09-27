@@ -1,0 +1,1 @@
+Determine the largest value of $C$ such that any shape in the plane with an area less than $C$ can be translated and rotated to avoid touching any point in the integer lattice $\mathbb{Z}^2$. What is this largest value of $C$?

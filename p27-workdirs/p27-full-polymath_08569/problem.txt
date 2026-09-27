@@ -1,0 +1,1 @@
+A network of 22 specialized data servers, labeled $1, 2, \ldots, 22$, each stores a positive integer quantity of encrypted files. Let $f(n)$ represent the number of files stored on server $n$.

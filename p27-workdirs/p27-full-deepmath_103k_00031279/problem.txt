@@ -1,0 +1,1 @@
+Is it possible to arrange 1968 segments on a plane such that each segment has both of its endpoints strictly inside other segments?

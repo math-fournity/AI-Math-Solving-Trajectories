@@ -1,0 +1,1 @@
+Determine all positive integers \( n \) such that the quotient \( \frac{Q_n(x,y,z)}{P_n(x,y,z)} \) is a polynomial with rational coefficients, where:

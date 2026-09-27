@@ -1,0 +1,1 @@
+Given two simple graphs on the same vertex set, one red and one blue, and a subset of vertices $V_k = \{v_1, \ldots, v_k\}$ such that for $i=1, \ldots, k$, $\deg(v_i) \ge i$ in both graphs, determine if it is always possible to find a family of vertex-disjoint paths such that:

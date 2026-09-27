@@ -1,0 +1,1 @@
+Let $\mathbb{Q}$ be the set of rational numbers, $\mathbb{Z}$ be the set of integers. On the coordinate plane, given positive integer $m$, define $$A_m = \left\{ (x,y)\mid x,y\in\mathbb{Q}, xy\neq 0, \frac{xy}{m}\in \mathbb{Z}\right\}.$$

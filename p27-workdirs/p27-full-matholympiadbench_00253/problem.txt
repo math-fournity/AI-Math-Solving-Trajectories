@@ -1,0 +1,11 @@
+/-!
+# IMO 2008 A7
+
+Let $F$ be a totally ordered field.
+1. Prove that, for any $a, b, c, d \in F$ positive,
+$$ \frac{(a - b)(a - c)}{a + b + c} + \frac{(b - c)(b - d)}{b + c + d} +
+  \frac{(c - d)(c - a)}{c + d + a} + \frac{(d - a)(d - b)}{d + a + b} \ge 0. $$
+2. Find all cases of equality.
+-/
+
+##

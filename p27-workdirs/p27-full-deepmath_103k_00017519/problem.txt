@@ -1,0 +1,1 @@
+For a continuous function $f$, if the quadratic variation $\mathcal{Q}_f$ is absolutely continuous with density $q_f$, and $S$ is the set of points where $f$ is differentiable, determine whether $q_f(x) = 0$ for all $x \in S$. Provide a justification for your answer.

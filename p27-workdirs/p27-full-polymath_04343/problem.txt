@@ -1,0 +1,1 @@
+Let \( m \) and \( n \) be natural numbers, and \( p \) be a prime number. Find the maximum natural number \( s \) (as a function of \( m, n, \) and \( p \)) such that from any set of \( mnp \) natural numbers, \( snp \) of them can be selected, which have the following property:

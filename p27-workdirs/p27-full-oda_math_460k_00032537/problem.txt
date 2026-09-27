@@ -1,0 +1,1 @@
+Given the '3x+1' function defined as \( T(x) = \begin{cases}

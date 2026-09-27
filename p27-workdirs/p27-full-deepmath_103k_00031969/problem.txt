@@ -1,0 +1,1 @@
+Find all surjective functions \( f : \mathbf{Z}_{+} \rightarrow \mathbf{Z}_{+} \) such that for any sum-free set \( A \subseteq \mathbf{Z}_{+} \), the image \(\{f(a) \mid a \in A\}\) is also a sum-free set.

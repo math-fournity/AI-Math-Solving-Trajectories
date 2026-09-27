@@ -1,0 +1,1 @@
+A remote island's energy grid is powered by a sequence of 2023 battery canisters. Each canister is sealed and contains a specific amount of charge, measured in whole units. In the sequence, there is exactly one canister for every integer value from 1 to 2023 units, but the canisters have been shuffled into a random order by a technician.

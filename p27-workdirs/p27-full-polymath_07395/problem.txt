@@ -1,0 +1,1 @@
+In a remote digital archives facility, a master server rack is organized into a grid of 7 rows and 8 columns of storage modules. To ensure data integrity, each module must be set to one of two states: "Active" (represented by a black status light) or "Standby" (represented by a white status light).

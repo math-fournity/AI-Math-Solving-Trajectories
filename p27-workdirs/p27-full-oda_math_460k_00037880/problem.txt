@@ -1,0 +1,1 @@
+Determine the values of \( \alpha \) for which the generalized Gaussian probability density \( p_{\alpha}(t) \propto \exp (- |t|^\alpha) \) is infinitely divisible, given that \( 0<\alpha<\infty \).

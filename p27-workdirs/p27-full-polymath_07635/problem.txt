@@ -1,0 +1,1 @@
+In a remote logistics hub, an operations manager oversees a shipping yard represented by a $3 \times 9$ grid of storage bays. Every bay contains a certain number of crates, which must be a positive integer.

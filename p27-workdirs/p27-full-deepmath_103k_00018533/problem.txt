@@ -1,0 +1,1 @@
+Determine whether the order of a matrix $A \in GL(n,\mathbb{Z}_p)$ can exceed $p^n - 1$ if the matrix is not diagonalizable.

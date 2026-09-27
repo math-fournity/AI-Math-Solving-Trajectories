@@ -1,0 +1,1 @@
+Two circles with radii 1 meet in points $X, Y$, and the distance between these points also is equal to $1$. Point $C$ lies on the first circle, and lines $CA, CB$ are tangents to the second one. These tangents meet the first circle for the second time in points $B', A'$. Lines $AA'$ and $BB'$ meet in point $Z$. Find angle $XZY$.

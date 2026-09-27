@@ -1,0 +1,1 @@
+In a specialized laboratory, a robotic sensor tracks its horizontal displacement $f(t)$ over time $t$ (measured in seconds), where $f$ is a twice-differentiable function. At the start of the experiment ($t=0$), the sensor is at the origin ($f(0)=0$).

@@ -1,0 +1,1 @@
+Given a function $a(z): \mathbb{R} \rightarrow \mathbb{R}$, let $p_n(z)$ denote its Taylor expansion up to the $n$-th order. Suppose we have a sequence $x_n$ converging to $x$ as $n$ approaches infinity, and $p_m(z)$ converges to $a(z)$ as $m$ approaches infinity. Determine if the sequence $p_n(x_n)$ converges to $a(x)$. Justify your answer.

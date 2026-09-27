@@ -1,0 +1,1 @@
+Is there a nonstandard model $M$ of Peano arithmetic and a nonstandard $c \in N$ such that the operations $\oplus_{<c}$ and $\otimes_{<c}$ are computable?

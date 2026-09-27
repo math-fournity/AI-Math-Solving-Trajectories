@@ -1,0 +1,1 @@
+Determine the optimal way to divide a square into four equal areas using curved lines, such that the total length of the lines is minimized.

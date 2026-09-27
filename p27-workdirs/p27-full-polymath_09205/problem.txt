@@ -1,0 +1,1 @@
+In a remote industrial zone, three monitoring stations $A$, $B$, and $C$ are positioned sequentially along a straight pipeline. A security drone is stationed at point $A$, while a transport unit is located at point $B$, tasked with delivering two sensitive data canisters to a secure vault at point $C$.

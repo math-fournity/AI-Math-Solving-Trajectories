@@ -1,0 +1,1 @@
+Let \( n \) be a positive integer. Let \( S \) be a subset of points on the plane such that:

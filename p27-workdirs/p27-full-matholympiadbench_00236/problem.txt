@@ -1,0 +1,7 @@
+/-!
+# IMO 2006 N7
+
+Prove that for any $b ∈ ℕ$ and $n ∈ ℕ^+$, there exists $m ∈ ℕ$ such that $n ∣ b^m + m$.
+-/
+
+##

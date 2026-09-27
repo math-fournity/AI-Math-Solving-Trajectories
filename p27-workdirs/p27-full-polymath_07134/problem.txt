@@ -1,0 +1,1 @@
+An architect is designing a futuristic rooftop garden situated on a flat, triangular concrete slab \(ABC\). The boundaries of the slab are measured such that the two side edges \(AB\) and \(AC\) both have a length of \(10\sqrt{2}\) meters, while the front edge \(BC\) measures \(10\sqrt{3}\ meters.

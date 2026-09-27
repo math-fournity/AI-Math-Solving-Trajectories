@@ -1,0 +1,1 @@
+find all $k$ distinct integers $a_1,a_2,...,a_k$ such that there exists an injective function $f$ from reals to themselves such that for each positive integer $n$ we have

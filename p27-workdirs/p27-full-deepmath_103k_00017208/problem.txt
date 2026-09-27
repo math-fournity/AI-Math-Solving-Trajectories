@@ -1,0 +1,1 @@
+Let X be a compact metric space, and let V and W be open subsets of X. Suppose there is a homeomorphism from V to W. Let B be a countable basis for X, and let B(V) and B(W) be the relativized bases for V and W, respectively. Are B(V) and B(W) order isomorphic under the subset order?

@@ -1,0 +1,1 @@
+In a remote industrial outpost, two energy-monitoring variables, $a$ and $b$, can fluctuate across any real-number values. The station’s power consumption and stability are governed by two physical constants, $v$ and $w$.

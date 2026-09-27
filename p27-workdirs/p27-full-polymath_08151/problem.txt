@@ -1,0 +1,1 @@
+In a futuristic data-processing facility, a technician is monitoring a stream of encrypted packets $\{y_n\}_{n=1}^{\infty}$. The initial two packets in the stream have a security clearance level of exactly $y_1=y_2=1$.

@@ -1,0 +1,1 @@
+In a remote territory, three specialized survey stations are positioned at locations $A$, $B$, and $C$. To monitor the land between them, three observation outposts—Alpha ($R$), Beta ($P$), and Gamma ($Q$)—have been constructed according to strict geometric protocols:

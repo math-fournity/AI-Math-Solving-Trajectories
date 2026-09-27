@@ -1,0 +1,1 @@
+A square is divided into 25 smaller equal squares by drawing lines parallel to its sides. What is the maximum number of diagonals that can be drawn in these smaller squares such that no two diagonals share a common point?

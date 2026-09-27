@@ -1,0 +1,1 @@
+Consider the unit disc $\Omega$ in $\mathbb{R}^2$ and a real number $p \geq 1$. For a function $u \in W^{1}_{p}(\Omega)$, let $C$ be the smallest constant such that

@@ -1,0 +1,1 @@
+For a positive integer \( n \), denote by \( f(n) \) the smallest positive integer \( m \) such that \( m \) and \( n \) are relatively prime and \( m + 1 \) and \( n + 1 \) are also relatively prime. How many different positive integers appear in \( f(1), f(2), \dots, f(10^{10}) \)?

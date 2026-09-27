@@ -1,0 +1,1 @@
+Determine whether for every positive integer $m$, there exists a second-degree real polynomial $P(x)$ with real coefficients and a natural number $k(m)$, such that the sequence $\{P(k(m)), P(k(m)+1), \ldots, P(k(m)+m-1)\}$ consists entirely of prime numbers.

@@ -1,0 +1,1 @@
+Let $A$ and $B$ be square real symmetric matrices of the same degree $n \geq 3$, without common isotropic vectors (i.e., there is no nonzero vector $x \in \mathbb{R}^n$ such that $x^T A x = x^T B x = 0$). Are all the roots of the equation $\det(A - \lambda B) = 0$ with respect to $\lambda$ real?

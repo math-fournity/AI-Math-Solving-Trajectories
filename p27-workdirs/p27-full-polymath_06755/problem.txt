@@ -1,0 +1,1 @@
+In a circular network of $n+1$ power substations, a technician is managing a load of $n$ energy units. Initially, one substation holds all $n$ units, while the other $n$ substations have zero units.

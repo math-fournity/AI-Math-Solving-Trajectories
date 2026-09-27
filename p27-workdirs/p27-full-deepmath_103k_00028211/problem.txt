@@ -1,0 +1,1 @@
+Determine whether a unital commutative C*-algebra can be constructed such that it has exactly 5 non-trivial projections.

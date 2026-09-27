@@ -1,0 +1,1 @@
+Let $f:[0,1]\to [0,1]$ be a continuous function with a unique fixed point $x_{0}$. Assume that for every $x\in [0,1]$, there exists a natural number $n$ such that $f^{n}(x)=x_{0}$. Does this imply that there exists a uniform natural number $N$ such that for every $x \in [0,1]$, $f^N(x) = x_0$?

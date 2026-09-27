@@ -1,0 +1,1 @@
+In a remote digital frontier, a logistics network is being designed on a grid of server nodes located at every integer coordinate $(x, y)$. A high-speed data corridor is established as a straight segment connecting the central hub at $A = (0,0)$ to a relay station at $B = (51,51)$.

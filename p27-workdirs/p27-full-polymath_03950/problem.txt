@@ -1,0 +1,1 @@
+In a $2n \times 2n$ board filled with $1 \times 2$ dominoes, the following moves are allowed:

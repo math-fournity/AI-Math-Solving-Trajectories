@@ -1,0 +1,1 @@
+Let  $p \in \mathbb{N} \setminus \{0, 1\}$  be a fixed positive integer. Prove that for every  $K > 0$ , there exist infinitely many  $n$  and  $N$  such that there are atleast  $\dfrac{KN}{\log(N)}$  primes among the following  $N$  numbers given by

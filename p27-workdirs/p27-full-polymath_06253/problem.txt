@@ -1,0 +1,1 @@
+In a specialized pharmaceutical warehouse, there is a single long shelf containing exactly 100 medicine vials, indexed sequentially from 1 to 100.

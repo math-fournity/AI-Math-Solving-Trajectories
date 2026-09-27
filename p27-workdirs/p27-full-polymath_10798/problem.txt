@@ -1,0 +1,1 @@
+In a specialized logistics hub, there are 15 automated storage bins that are currently completely empty. The facility operates under a strict "Binary Loading Protocol." In a single synchronized operation (one move), a technician may select any subset of these bins and deposit a shipment of mechanical components into each selected bin.

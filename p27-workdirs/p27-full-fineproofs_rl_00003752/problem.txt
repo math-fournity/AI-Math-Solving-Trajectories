@@ -1,0 +1,1 @@
+Let $\mathbb{Q}_{>0}$ be the set of positive rational numbers. Let $f: \mathbb{Q}_{>0} \rightarrow \mathbb{R}$ be a function satisfying the conditions  $$ f(x) f(y) \geqslant f(x y) \text { and } f(x+y) \geqslant f(x)+f(y) $$  for all $x, y \in \mathbb{Q}_{>0}$. Given that $f(a)=a$ for some rational $a>1$, prove that $f(x)=x$ for all $x \in \mathbb{Q}_{>0}$.  (Bulgaria)

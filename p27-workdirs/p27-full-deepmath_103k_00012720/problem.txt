@@ -1,0 +1,1 @@
+If $D$ is a division ring and $D^*$ is a finitely generated group, is $D^*$ necessarily an abelian group?

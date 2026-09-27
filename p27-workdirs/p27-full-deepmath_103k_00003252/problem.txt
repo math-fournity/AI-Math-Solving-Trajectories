@@ -1,0 +1,1 @@
+Let $F$ be a Banach space with the closed unit ball $B$. Let $E \subset F^*$ be a total subspace such that $B$ is complete with respect to the norm $|||f|||=\sup \limits_{e\in E,~e\ne 0} \frac{|\left<f,e\right>|}{\|e\|}$. Does it follow that $E$ is norming, i.e., there exists $r>0$ such that $|||f||| \ge r\|f\|$ for all $f\in F$?

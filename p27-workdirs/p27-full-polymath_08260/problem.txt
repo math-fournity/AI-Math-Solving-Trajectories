@@ -1,0 +1,1 @@
+In a remote digital archipelago, the High Council is designing security networks across three different square oceanic regions of size $n \times n$ (where $n$ represents the side length in kilometers). The regions under consideration have side lengths of $n=3$, $n=5$, and $n=7$ kilometers.

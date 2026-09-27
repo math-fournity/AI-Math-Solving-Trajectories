@@ -1,0 +1,1 @@
+For \( k \in \mathbb{Z}^{+} \) greater than 7, how many pairs \((x, y) \in \mathbb{Z}^{+}\) such that \(0 < x, y < 2^k\), \(x\) and \(y\) are both odd, and \(137^{137^{x^8 + x}} \equiv 9^{9^{y^8 + y}} \pmod{2^k}\)?

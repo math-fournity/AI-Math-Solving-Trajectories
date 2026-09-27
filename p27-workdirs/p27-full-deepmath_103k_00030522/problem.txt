@@ -1,0 +1,1 @@
+Let $R$ be a non-commutative ring with a subring $S$ of finite index. Determine whether there exists a 2-sided ideal $I$ in $S$ such that the index of $I$ in $R$ is finite.

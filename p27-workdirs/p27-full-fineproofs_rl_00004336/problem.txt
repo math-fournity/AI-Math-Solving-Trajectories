@@ -1,0 +1,1 @@
+Prove that for any  $\lambda > 3$  there is a number  $x$  for which   $$ \sin x + \sin (\lambda  x) \ge  1.8. $$

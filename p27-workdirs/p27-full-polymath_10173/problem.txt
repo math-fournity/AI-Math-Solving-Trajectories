@@ -1,0 +1,1 @@
+A high-tech server facility utilizes a cooling grid consisting of 4 horizontal rows and 3000 vertical columns of sensor nodes. To conserve energy, the facility manager wants to activate as many individual nodes as possible. However, the system's safety protocol dictates that the activated nodes must not form any of the five standard "Tetromino" shapes.

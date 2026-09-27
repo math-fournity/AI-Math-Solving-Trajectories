@@ -1,0 +1,1 @@
+Find all the real numbers $k$ that have the following property: For any non-zero real numbers $a$ and $b$,  it is true that at least one of the following numbers: $$a, b,\frac{5}{a^2}+\frac{6}{b^3}$$is less than or equal to $k$.

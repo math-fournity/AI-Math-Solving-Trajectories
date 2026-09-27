@@ -1,0 +1,1 @@
+Let $n$ and $k$ be integers such that $n \ge k \ge 2$. Alice and Bob play a game on an $n \times n$ table of white cells. They take turns picking a white cell and coloring it black. Alice moves first. The game ends as soon as there is at least one black cell in every $k \times k$ square; the player who made the last move is the winner.

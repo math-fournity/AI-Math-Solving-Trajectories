@@ -1,0 +1,1 @@
+Does there exist a unique probability measure \( \mu: \Sigma \to \mathbb{R} \) such that, when considered as a function from \( \Gamma \) to \( \mathbb{R} \) through Lebesgue integration, \( \mu \) matches the given function?

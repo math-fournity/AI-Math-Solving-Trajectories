@@ -1,0 +1,1 @@
+A high-security data center is managed by a board of 30 specialized AI security protocols. Each protocol is programmed with a permanent, hard-coded assessment regarding the reliability of every other protocol in the system.

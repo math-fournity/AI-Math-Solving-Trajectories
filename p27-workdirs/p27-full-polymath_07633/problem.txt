@@ -1,0 +1,1 @@
+A specialized digital signal processing chip operates using a non-silent output function $p(n)$ defined as a polynomial with integer coefficients. This chip is designed for a modular communication system where every integer input $n$ must result in a signal strength $p(n)$ that is a perfect multiple of $2016$.

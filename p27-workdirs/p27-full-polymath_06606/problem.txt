@@ -1,0 +1,1 @@
+In a futuristic silicon-wafer manufacturing facility, a technician is programming a grid of $n \times n$ microscopic sensor nodes. To prevent signal interference, the technician must activate a specific subset of these nodes such that no four activated nodes form the vertices of a square whose sides are perfectly parallel to the grid’s axes.

@@ -1,0 +1,1 @@
+In the city of Gridville, there is a large public plaza designed as an $8 \times 8$ grid of unit-sized stone tiles. To create a pattern, the tiles are colored in a standard checkerboard fashion: half are jet-black obsidian and half are white marble.

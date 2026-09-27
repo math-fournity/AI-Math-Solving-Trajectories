@@ -1,0 +1,1 @@
+A set \( S \) with a finite number \( n \) of points in the plane, where \( n \geq 4 \) and at most \( n-2 \) of them are collinear, has the property that for any four distinct points \( A, B, C, D \), the intersection point of lines \( AB \) and \( CD \) (if the lines are different and not parallel) also belongs to \( S \). Find the maximum value of \( n \).

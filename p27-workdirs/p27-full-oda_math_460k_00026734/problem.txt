@@ -1,0 +1,1 @@
+State and explain Herbrand's Theorem, which relates the provability of a first-order formula \( P \) to the validity of its Herbrand normal form in finite canonical domains of a certain order \( k \).

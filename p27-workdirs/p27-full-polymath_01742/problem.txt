@@ -1,0 +1,1 @@
+Find the sum of all possible values of \(a\) such that there exists a non-zero complex number \(z\) such that the four roots, labeled \(r_{1}\) through \(r_{4}\), of the polynomial

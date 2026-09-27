@@ -1,0 +1,1 @@
+A high-tech manufacturing firm, "QuantumGrid," has developed a square processor consisting of a $2021 \times 2021$ grid of micro-sensors. Each sensor must be programmed to detect one of four specific signal frequencies: Alpha, Beta, Gamma, or Delta.

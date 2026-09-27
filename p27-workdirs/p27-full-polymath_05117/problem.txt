@@ -1,0 +1,1 @@
+Each of the numbers $1$ up to and including $2014$ has to be coloured; half of them have to be coloured red the other half blue. Then you consider the number $k$ of positive integers that are expressible as the sum of a red and a blue number. Determine the maximum value of $k$ that can be obtained.

@@ -1,0 +1,1 @@
+Let $\triangle ABC$ be an acute triangle with circumcenter $O$, and let $Q\neq A$ denote the point on $\odot (ABC)$ for which $AQ\perp BC$. The circumcircle of $\triangle BOC$ intersects lines $AC$ and $AB$ for the second time at $D$ and $E$ respectively. Suppose that $AQ$, $BC$, and $DE$ are concurrent. If $OD=3$ and $OE=7$, compute $AQ$.

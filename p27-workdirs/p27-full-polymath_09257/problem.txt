@@ -1,0 +1,1 @@
+A specialized logistics company operates a fleet of automated delivery drones within a grid of storage hubs. These hubs are arranged in a rectangular formation consisting of exactly 4 rows and $n$ columns.

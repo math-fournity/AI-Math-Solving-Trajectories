@@ -1,0 +1,1 @@
+Let $S = \{1, 2, \ldots, 2n\}$ be a set with $2n$ elements. We want to find the maximum number of subsets of $S$ such that no subset is contained in another and no two subsets cover the whole set $S$. Let $M(n)$ be this maximum number. Calculate the value of $M(n)$ for $n=5$.

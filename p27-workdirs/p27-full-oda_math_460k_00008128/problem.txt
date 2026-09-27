@@ -1,0 +1,1 @@
+(a) Let \( M \) be a compact \( n \)-manifold. Suppose that \( M \) is homotopy equivalent to \( \Sigma Y \) for some connected based space \( Y \). Use Poincaré duality and properties of the homology of a suspension to deduce that \( M \) has the same integral homology groups as \( S^n \).

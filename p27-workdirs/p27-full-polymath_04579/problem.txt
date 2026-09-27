@@ -1,0 +1,1 @@
+For what smallest natural number $n$ do there exist integers $a_{1}, a_{2}, \ldots, a_{n}$ such that the quadratic trinomial

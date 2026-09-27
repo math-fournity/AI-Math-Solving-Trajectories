@@ -1,0 +1,1 @@
+Let $f: X \to Y$ and $g: Y \to (Z, U'')$ be mappings. Let $U'$ be the uniform structure on $Y$ induced by $g$, and $U$ be the uniform structure on $X$ induced by $f$. Let $U_1$ be the uniform structure on $X$ induced by the composition $g \circ f$. Determine if $U = U_1$. Provide a proof or counterexample.

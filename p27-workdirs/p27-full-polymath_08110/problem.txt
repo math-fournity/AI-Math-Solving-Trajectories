@@ -1,0 +1,1 @@
+In a specialized coastal logistics zone, three observation towers—$A$, $B$, and $C$—form a triangular layout. A straight highway, designated as line $AW$, is constructed such that it is tangent to the unique circle passing through the three towers. This highway $AW$ intersects the straight coastal road connecting towers $B$ and $C$ at a regional hub, point $W$.

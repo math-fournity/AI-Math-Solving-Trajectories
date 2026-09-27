@@ -1,0 +1,1 @@
+Find the smallest integer \( n > 1 \) such that there exist positive integers \( a_1, a_2, \ldots, a_n \) satisfying:

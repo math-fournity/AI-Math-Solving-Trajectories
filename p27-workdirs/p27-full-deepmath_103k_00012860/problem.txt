@@ -1,0 +1,1 @@
+Find a set of elements in $K[x,y]$ that generate $K[x,y]$ as a module over the subring $A$ of symmetric polynomials, where $A$ consists of elements $f \in K[x,y]$ such that $f(x,y) = f(y,x)$. Describe the generating set.

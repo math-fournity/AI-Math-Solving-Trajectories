@@ -1,0 +1,1 @@
+Let $R$ be a finite local ring with identity that has exactly one minimal left ideal. Determine if $R$ necessarily has exactly one minimal right ideal.

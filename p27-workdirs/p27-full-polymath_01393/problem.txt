@@ -1,0 +1,1 @@
+An eel is a polyomino formed by a path of unit squares which makes exactly two turns in opposite directions (the smallest eel has 4 cells). For example, a $1 \times 2$ segment followed by a $1 \times 1$ segment perpendicular to it, followed by another $1 \times 1$ segment perpendicular to the second (turning back toward the original direction) forms an eel.

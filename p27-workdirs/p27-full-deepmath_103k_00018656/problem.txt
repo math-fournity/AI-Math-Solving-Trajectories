@@ -1,0 +1,1 @@
+Evaluate the limit: $$\lim_{n\to\infty} \left( \frac{ g_n^{\gamma}}{\gamma^{g_n}} \right)^{3n},$$ where $g_n$ and $\gamma$ are defined as in the original question.

@@ -1,0 +1,1 @@
+Let $A$ be a unital $C^*$-algebra, and $I_1$ and $I_2$ be closed (two-sided) $C^*$-ideals of $A$ such that $A=I_1+I_2$. Suppose there are two positive elements $a_1 \in I_1$ and $a_2 \in I_2$ such that $a_1^2 + a_2^2 = 1$. Determine if $a_1$ and $1$ define the same class in the quotient $A/I_2$.

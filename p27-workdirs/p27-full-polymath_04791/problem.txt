@@ -1,0 +1,1 @@
+What is the largest number of squares on $9 \times 9$ square board that can be cut along their both diagonals so that the board does not fall apart into several pieces?

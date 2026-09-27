@@ -1,0 +1,1 @@
+In a sprawling urban grid of $200$ East-West streets and $200$ North-South avenues, a tech company is installing $200 \times 200$ potential server nodes. In some of these intersections, a server is installed; others are left empty. Each server is assigned one of two distinct signals: "Infrared" or "Ultraviolet."

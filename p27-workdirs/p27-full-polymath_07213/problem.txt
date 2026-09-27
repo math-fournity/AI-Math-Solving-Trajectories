@@ -1,0 +1,1 @@
+In the world of high-security digital encryption, a "cubic vault" is a security system defined by a polynomial $f$ of degree 3 with integer coefficients. A "breach point" is an integer input $n$ for which the absolute value of the vault's output, $|f(n)|$, is a prime number.

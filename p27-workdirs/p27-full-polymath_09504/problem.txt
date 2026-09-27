@@ -1,0 +1,1 @@
+A high-tech research facility has constructed a prototype data-storage module in the shape of a perfect cube with edge lengths of exactly 1 meter. To optimize the internal cooling system, a single flat laser-cutter makes a straight, planar slice through the entire module, splitting it into two separate solid components.

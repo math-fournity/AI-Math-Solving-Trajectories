@@ -1,0 +1,1 @@
+Let \( a \geq 2 \). The entire function\n\n\[ F(z) = 1 + \frac{z}{a} + \frac{z^2}{a^2} + \frac{z^3}{a^3} + \cdots + \frac{z^n}{a^n} + \cdots \]\n\nas well as all the partial sums of its power series, has only real negative simple zeros. [III 200.]

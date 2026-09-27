@@ -1,0 +1,1 @@
+Given that $X$ is a symmetric positive definite matrix, determine whether there exists a symmetric positive definite matrix $Y$ such that $Y^2 - XY - I = 0$. Provide a justification for your answer.

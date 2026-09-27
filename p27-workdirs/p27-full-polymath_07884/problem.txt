@@ -1,0 +1,1 @@
+In a remote territory, three survey outposts define a large triangular region $ABC$ with a total land area of $I$ square kilometers. A central conservation zone has been established in the shape of a triangle $A_1B_1C_1$, where the corner $A_1$ is located exactly halfway between outposts $B$ and $C$, $B_1$ is halfway between $C$ and $A$, and $C_1$ is halfway between $A$ and $B$.

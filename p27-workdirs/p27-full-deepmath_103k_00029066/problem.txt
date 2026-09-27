@@ -1,0 +1,1 @@
+Determine the number of distinct compact Hausdorff spaces, up to homeomorphism, that exist with a given uncountable cardinality \( \kappa \).

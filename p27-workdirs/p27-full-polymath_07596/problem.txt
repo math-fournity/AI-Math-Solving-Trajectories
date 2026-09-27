@@ -1,0 +1,1 @@
+In a futuristic data-processing facility, a specialized cooling system operates through a series of connected cooling cycles, where each cycle's efficiency is determined by a specific ratio of thermal inputs to dissipation outputs.

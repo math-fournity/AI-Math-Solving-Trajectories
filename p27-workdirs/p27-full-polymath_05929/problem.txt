@@ -1,0 +1,1 @@
+An architect is designing a modular hexagonal plaza defined by six perimeter pillars labeled $A, B, C, D, E, F$. To ensure structural symmetry, each of the six straight walkways forming the perimeter of the plaza (segments $AB, BC, CD, DE, EF$, and $FA$) must have a length of exactly $1$ decameter, and the pillars must be positioned such that the resulting hexagon is convex.

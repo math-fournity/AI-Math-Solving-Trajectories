@@ -1,0 +1,1 @@
+Let  $I$  be the incenter of triangle  $ABC$ ,  $O_1$  a circle through  $B$  tangent to  $CI$ , and  $O_2$  a circle through  $C$  tangent to  $BI$ . Prove that  $O_1$ , $O_2$  and the circumcircle of  $ABC$  have a common point.

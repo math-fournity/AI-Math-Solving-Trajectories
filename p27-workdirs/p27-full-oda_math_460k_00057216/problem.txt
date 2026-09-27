@@ -1,0 +1,1 @@
+An oscillator has an equation of motion given by \( \ddot{x} + f(x) = 0 \), where \( f(x) \) is a piecewise linear restoring force defined by\n\n\[ \n\begin{cases} \n-x & |x| \leq a \\\nb(x \text{sgn} (x) - a) - a & |x| > a \n\end{cases} \n\]\n\nwhere \( a, b > 0 \). Find the equations of the homoclinic paths in the phase plane.

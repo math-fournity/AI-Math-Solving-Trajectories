@@ -1,0 +1,1 @@
+Determine the index of the subgroup $A \ast (ba)B(ba)^{-1}$ in the free product $A \ast B$, where $A$ and $B$ are non-trivial groups, and $a \in A$, $b \in B$ are non-identity elements.

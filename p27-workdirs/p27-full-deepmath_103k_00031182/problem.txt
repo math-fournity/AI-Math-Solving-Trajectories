@@ -1,0 +1,1 @@
+Given a function \( f: \mathbf{N}^{*} \rightarrow \mathbf{N}^{*} \) such that for any positive integers \( s \) and \( t \), the equation \( f\left(t^{2} f(s)\right) = s(f(t))^{2} \) holds, determine the minimum possible value of \( f(1998) \).

@@ -1,0 +1,1 @@
+Given a set \( S \) of 2006 points in the plane, a pair \((A, B)\) in \( S^2 \) is called isolated if the circle with diameter \( AB \) does not contain any other points of \( S \). Find the maximum number of isolated pairs.

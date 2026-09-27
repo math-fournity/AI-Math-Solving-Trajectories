@@ -1,0 +1,1 @@
+Let $X \subset \mathbb{R}^n$ be a closed convex set, and let $L$ be a straight line such that $X \cap L = \emptyset$. Does there exist a hyperplane containing $L$ that does not intersect $X$?

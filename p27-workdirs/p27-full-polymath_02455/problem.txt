@@ -1,0 +1,1 @@
+Problem 6. (8 points) In one move on the board, either two ones are written, or two identical numbers $n$ already written are erased and $n+1$ and $n-1$ are written in their place. What is the minimum number of moves required to obtain the number 2005 on the board? (Initially, nothing is written on the board.)

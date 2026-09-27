@@ -1,0 +1,1 @@
+Find the least possible positive integer $n$ such that for any coloring of the vertices of a regular $n$-gon with red, yellow, or blue, there exists an isosceles trapezoid with all its vertices having the same color.

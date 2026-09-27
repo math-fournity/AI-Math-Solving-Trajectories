@@ -1,0 +1,1 @@
+Let $\{C_\alpha\}_{\alpha \in A}$ be objects in a concrete category, and let the product object $C = \Pi C_{\alpha \in A}$ exist with corresponding projections $\{\pi_\alpha\}$. If $x, y \in C$ and $\pi_\alpha (x) = \pi_\alpha (y)$ for all $\alpha$, does it follow that $x = y$? Answer yes or no.

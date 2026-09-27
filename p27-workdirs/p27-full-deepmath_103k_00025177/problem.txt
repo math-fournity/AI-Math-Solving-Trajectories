@@ -1,0 +1,1 @@
+Determine whether the equation \(A^4 + 4B^4 = C^2\) has any solutions in non-zero integers, given that \(A\), \(B\), and \(C\) have the same parity.

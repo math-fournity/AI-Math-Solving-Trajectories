@@ -1,0 +1,1 @@
+Example 1 Let the two foci of the ellipse $\Gamma$ be $F_{1}$ and $F_{2}$, and a line passing through point $F_{1}$ intersects the ellipse $\Gamma$ at points $P$ and $Q$. If $\left|P F_{2}\right|=\left|F_{1} F_{2}\right|$, and $3\left|P F_{1}\right|=4\left|Q F_{2}\right|$, then the ratio of the minor axis to the major axis of the ellipse $\Gamma$ is $\qquad$ [1]

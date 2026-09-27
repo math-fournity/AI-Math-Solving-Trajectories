@@ -1,0 +1,1 @@
+Let $G$ and $H$ be countable abelian groups. Assume that for every prime number $p$, there is an isomorphism $G \otimes_{\mathbb{Z}} \mathbb{Z}[\frac{1}{p}] \cong H \otimes_{\mathbb{Z}} \mathbb{Z}[\frac{1}{p}]$. Does it follow that $G$ and $H$ are isomorphic as abelian groups?

@@ -1,0 +1,1 @@
+In the city of Gridhaven, a district is laid out in a perfect square grid of 8 columns and 8 rows, creating 64 potential construction plots. A tech mogul wants to install three different types of security automated systems—Type R, Type B, and Type K—with exactly $n$ units of each type deployed on the grid.

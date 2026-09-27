@@ -1,0 +1,1 @@
+Identify the Banach space that is isometrically isomorphic to the quotient space $c/Y$, where $c$ is the space of convergent sequences and $Y$ is the subspace of sequences converging to zero.

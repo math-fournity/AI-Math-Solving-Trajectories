@@ -1,0 +1,1 @@
+In a remote digital network consisting of $n$ server nodes ($n > 2$) and $m$ bidirectional data cables, a Security Admin and a Rogue Virus are engaged in a strategic battle.

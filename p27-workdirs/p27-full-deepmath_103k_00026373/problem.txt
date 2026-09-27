@@ -1,0 +1,1 @@
+Determine whether, for every integer $n$, there exists a number field of degree $n$ whose ring of integers is a unique factorization domain.

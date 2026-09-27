@@ -1,0 +1,1 @@
+Evaluate the integral \( \frac{1}{2\pi i}\int_{\gamma} \frac{1}{z^2(e^{z}-1)}dz \), where \( \gamma=\{z: z=\frac{1}{2}e^{2\pi i t},0\leq t\leq1 \} \). Note that \( z=0 \) is a pole singularity of order 3.

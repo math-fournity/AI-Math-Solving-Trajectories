@@ -1,0 +1,1 @@
+Is the product space of any collection of metric spaces always normal?

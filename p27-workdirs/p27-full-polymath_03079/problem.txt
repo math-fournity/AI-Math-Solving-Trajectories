@@ -1,0 +1,1 @@
+$100$ integers are arranged in a circle. Each number is greater than the sum of the two subsequent numbers (in a clockwise order). Determine the maximal possible number of positive numbers in such circle. [i](S.Berlov)[/i]

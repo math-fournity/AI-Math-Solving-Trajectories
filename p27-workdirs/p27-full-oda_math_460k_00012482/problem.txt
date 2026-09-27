@@ -1,0 +1,1 @@
+Show by explicit computation that the Alexander-Spanier cohomology groups $\bar{H}^{1}(\mathbb{R} ; G)$ and $\bar{H}^{1}\left(S^{1} ; G\right)$ satisfy $\bar{H}^{1}(\mathbb{R} ; G)=0$ and $\bar{H}^{1}\left(S^{1} ; G\right) \cong G$, where $G$ is an abelian group.

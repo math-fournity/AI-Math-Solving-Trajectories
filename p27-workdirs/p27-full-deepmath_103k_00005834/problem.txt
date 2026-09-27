@@ -1,0 +1,1 @@
+Does every continuous action of the circle group $S^1$ on $\mathbb{R}^n$ have a fixed point?

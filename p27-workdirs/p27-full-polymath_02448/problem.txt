@@ -1,0 +1,1 @@
+The function graph $y = x^3 - 3x^2 + 1$ intersects the horizontal axis at three distinct points. The tangents to the graph at these three points intersect at points A, B, and C. Calculate the radius of the circumcircle of triangle ABC.

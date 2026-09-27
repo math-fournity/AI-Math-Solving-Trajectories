@@ -1,0 +1,1 @@
+Determine the abscissa of convergence, \( \sigma_c \), for the Dirichlet series \( \sum_{n=1}^{\infty} \frac{n^{i \alpha n}}{n^s} \), where \( \alpha \in \mathbb{Z} \).

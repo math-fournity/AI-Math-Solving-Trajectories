@@ -1,0 +1,1 @@
+A specialized logistics company, "Norsk Logistics," classifies a shipping container's "Efficiency Rating" as a positive integer. A container is officially certified as "Norwegian Class" if its Efficiency Rating has at least three distinct positive divisors that, when added together, result in a total value of exactly 2022.

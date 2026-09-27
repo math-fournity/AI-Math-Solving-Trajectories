@@ -1,0 +1,1 @@
+28. (GBR 5) The sequence $\left\{a_{n}\right\}$ of integers is defined by $a_{1}=2, a_{2}=7$, and  $$ -\frac{1}{2}<a_{n+1}-\frac{a_{n}^{2}}{a_{n-1}} \leq \frac{1}{2}, \quad \text { for } n \geq 2 $$  Prove that $a_{n}$ is odd for all $n>1$.

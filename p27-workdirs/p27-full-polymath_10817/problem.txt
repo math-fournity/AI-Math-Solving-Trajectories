@@ -1,0 +1,1 @@
+A specialized digital sensor is designed to detect frequencies within a specific window of bandwidth. For any positive integer $n$, the sensor focuses on a frequency range $I$ that is exactly $\frac{1}{n}$ MHz wide (excluding the endpoints).

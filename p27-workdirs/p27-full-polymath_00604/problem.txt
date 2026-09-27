@@ -1,0 +1,1 @@
+In a city with 2024 neighborhoods connected by roads such that any two neighborhoods are connected by exactly one route (forming a tree), what is the minimum number of questions Lavi Dopes needs to ask Gil Bento to find a pair of neighborhoods such that the number of roads in the route connecting them is maximized?

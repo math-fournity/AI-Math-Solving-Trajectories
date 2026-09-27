@@ -1,0 +1,1 @@
+Let $R$ be a commutative integral domain with $I$, $J$, and $K$ as three ideals, where $I$ is a non-zero finitely generated ideal. Determine whether the equality $IJ = IK$ implies that $J = K$. Provide a proof or counterexample.

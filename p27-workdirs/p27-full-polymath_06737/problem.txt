@@ -1,0 +1,1 @@
+A specialized logistics company is testing a new circular power grid divided into $2n$ ($n > 1$) segments. Each segment has a unique, known energy output measured in megawatts. Two engineers, Oliver and Alice, are decommissioning the grid by extracting these energy segments.

@@ -1,0 +1,1 @@
+Calculate the probability that five randomly chosen points form a hyperbola.

@@ -1,0 +1,1 @@
+For a prime \( p \equiv 1 \pmod{8} \), determine the smallest positive integer \( s \) such that the equation \( x_1^{\frac{p-1}{8}} + \cdots + x_s^{\frac{p-1}{8}} \equiv n \pmod{p} \) has an integer solution for any integer \( n \).

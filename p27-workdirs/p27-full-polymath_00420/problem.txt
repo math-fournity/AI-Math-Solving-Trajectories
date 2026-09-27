@@ -1,0 +1,1 @@
+A complex sequence $\{z_n\}$ is called $\textit{compelling}$ if $|z_1|=1$ and $4z_{n+1}^2 + 2z_nz_{n+1} + z_n^2 = 0$ for all $n \geq 1$. Find the maximum real constant $C$ such that $|z_1 + z_2 + \dots + z_m| \geq C$ holds for any $\textit{compelling}$ sequence $\{z_n\}$ and any positive integer $m$.

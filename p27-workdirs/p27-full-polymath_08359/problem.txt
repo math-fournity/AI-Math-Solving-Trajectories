@@ -1,0 +1,1 @@
+A specialized circular nature preserve, denoted as territory $\Omega$, contains three primary ranger stations located at coordinates $A$, $B$, and $C$. The straight-line distances between these stations are $AB=4$ km, $BC=5$ km, and $CA=6$ km. Within this triangular region, there is a circular core conservation zone $\omega$.

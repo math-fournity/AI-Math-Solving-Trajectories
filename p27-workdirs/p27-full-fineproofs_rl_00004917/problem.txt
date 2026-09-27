@@ -1,0 +1,1 @@
+There are  $100$  cities in a country, some of them being joined by roads. Any four cities are connected to each other by at least two roads. Assume that there is no path passing through every city exactly once. Prove that there are two cities such that every other city is connected to at least one of them.

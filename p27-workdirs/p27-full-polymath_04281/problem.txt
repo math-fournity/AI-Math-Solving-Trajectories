@@ -1,0 +1,1 @@
+6 Let the sequence of real numbers $\left\{x_{n}\right\}$ satisfy: $x_{0}=0, x_{2}=\sqrt[3]{2} x_{1}, x_{3}$ is a positive integer, and $x_{n+1}=\frac{1}{\sqrt[3]{4}} x_{n}+\sqrt[3]{4} x_{n-1}+\frac{1}{2} x_{n-2}(n \geqslant 2)$. Question: What is the minimum number of integer terms in such a sequence? (Provided by Huang Yumin)

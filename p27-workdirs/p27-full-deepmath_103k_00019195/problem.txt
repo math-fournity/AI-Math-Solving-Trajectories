@@ -1,0 +1,1 @@
+Determine whether the following statement is true or false: The normalizer of $H = A \times A$ in the symmetric group cannot be doubly transitive if $H$ is non-regular, $A \subseteq H$, and $A$ is a regular permutation group.

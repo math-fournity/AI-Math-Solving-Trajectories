@@ -1,0 +1,1 @@
+In a remote research facility, an automated scanner monitors the structural integrity of a circular particle track with a total circumference of $2\pi$ meters. A sensor moves along this track, starting at position $x = 0$ and ending at $x = 2\pi$.

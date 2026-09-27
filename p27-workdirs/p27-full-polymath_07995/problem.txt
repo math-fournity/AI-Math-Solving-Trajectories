@@ -1,0 +1,1 @@
+A specialized logistics hub is tasked with distributing exactly $\frac{674}{385}$ tons of high-grade compound across three different transport containers. The total load must be split into three distinct shipments, represented by the positive irreducible fractions $\frac{n_1}{d_1}$, $\frac{n_2}{d_2}$, and $\frac{n_3}{d_3}$.

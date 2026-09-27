@@ -1,0 +1,1 @@
+Does a rank 1 bounded operator from $\mathscr{K}:L^2([0,1])\to L^2([0,1])$ have at most 1 non-zero eigenvalue?

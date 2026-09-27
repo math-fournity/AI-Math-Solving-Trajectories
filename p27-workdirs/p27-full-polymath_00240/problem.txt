@@ -1,0 +1,1 @@
+Consider a chessboard of size $n \times n$. Pieces are placed at the centers of the squares. We say that a line is "covered" if it contains at least one piece. We are interested in covering all lines that pass through the center of any square and are parallel to one of the sides or one of the diagonals of the board.

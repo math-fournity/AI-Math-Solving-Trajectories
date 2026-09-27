@@ -1,0 +1,1 @@
+Is it true that the description of automorphisms of $SL(n, \mathbb{Z})$ given by principal congruence subgroups holds for even $n$ as well? Refer to Hau-Reiner's paper for generators of the group of automorphisms of $SL(n, \mathbb{Z})$ induced by automorphisms of $GL(n, \mathbb{Z})$.

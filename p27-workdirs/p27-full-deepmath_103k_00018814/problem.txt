@@ -1,0 +1,1 @@
+Determine the supremum of the ratio between the area of a centrally-symmetric convex curve $B$ and the area of an arbitrary planar convex set $A$, where $B$ is the smallest such curve that circumscribes $A$. Provide your answer as a single value.

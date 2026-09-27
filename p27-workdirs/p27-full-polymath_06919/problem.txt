@@ -1,0 +1,1 @@
+In a remote territory, three survey outposts—Alpha ($A$), Bravo ($B$), and Charlie ($C$)—form a triangular perimeter. A circular communication boundary, $\omega$, perfectly encloses these three outposts.

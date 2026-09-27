@@ -1,0 +1,1 @@
+Two circles  $O_1$  and  $O_2$  intersect at  $A,B$ . Diameter  $AC$  of  $\odot O_1$  intersects  $\odot O_2$  at  $E$ , Diameter  $AD$  of  $\odot O_2$  intersects  $\odot O_1$  at  $F$ .  $CF$  intersects  $O_2$  at  $H$ ,  $DE$  intersects  $O_1$  at  $G,H$ .  $GH\cap O_1=P$ . Prove that  $PH=PK$ .

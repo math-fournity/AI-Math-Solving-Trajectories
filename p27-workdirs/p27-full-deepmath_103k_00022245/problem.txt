@@ -1,0 +1,1 @@
+Evaluate the nested limit: $$\lim_{m\to \infty }\left[\lim_{y\to \,0}\left(1+\cos^2y+\cos^22y+\ldots+\cos^2my\right)^{1/(m^3y^2)}\right]$$

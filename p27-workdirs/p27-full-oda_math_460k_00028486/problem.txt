@@ -1,0 +1,1 @@
+Let \( f: \mathbb{N} \to \mathbb{N} \) be a permutation of the set \(\mathbb{N}\) of all positive integers. Find the smallest positive integer \( k \) such that for any permutation \( f \), there must exist an arithmetic progression \( a, a+d, \cdots, a+kd \), where \( d > 0 \), such that \[ f(a) < f(a+d) < \cdots < f(a+kd). \]

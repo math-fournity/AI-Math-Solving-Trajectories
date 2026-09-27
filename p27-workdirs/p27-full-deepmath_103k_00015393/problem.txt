@@ -1,0 +1,1 @@
+Let $K$ be an algebraic number field, i.e., a finite extension of $\mathbb{Q}$. Let $G$ be a finite abelian group. Determine whether there exists a Galois extension of $K$ whose Galois group is isomorphic to $G$.

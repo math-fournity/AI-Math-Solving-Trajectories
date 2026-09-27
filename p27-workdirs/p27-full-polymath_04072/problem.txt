@@ -1,0 +1,1 @@
+Let $F$ be a finite non-empty set of integers and let $n$ be a positive integer. Suppose that the following conditions hold:

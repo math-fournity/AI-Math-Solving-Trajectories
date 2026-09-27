@@ -1,0 +1,1 @@
+In a specialized digital security firm, a lead architect is designing a diagnostic software system that operates on a series of $k+2$ data nodes, indexed from $0$ to $k+1$. The system's behavior is governed by a configuration function $F(x)$, which must be a polynomial with integer coefficients.

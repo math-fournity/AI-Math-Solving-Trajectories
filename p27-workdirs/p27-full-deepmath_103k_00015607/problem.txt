@@ -1,0 +1,1 @@
+Determine whether there exists an infinite sequence of nonzero rational numbers \((a_n)_{n\in \Bbb{N}}\) such that for all \(n\in \Bbb{N}\), the polynomial \(a_0+a_1X+\cdots+a_nX^n\) has a root at \(x=n\).

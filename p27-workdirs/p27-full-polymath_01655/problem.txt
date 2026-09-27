@@ -1,0 +1,1 @@
+How many coins can be placed on a $10 \times 10$ board (each at the center of its square, at most one per square) so that no four coins form a rectangle with sides parallel to the sides of the board?

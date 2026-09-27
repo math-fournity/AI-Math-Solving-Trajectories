@@ -1,0 +1,1 @@
+Determine the smallest dimension \( n \geq 2 \) such that every coloring with 2 colors of the points in \( \mathbb{R}^n \) contains a monochromatic equilateral triangle with side length 1.

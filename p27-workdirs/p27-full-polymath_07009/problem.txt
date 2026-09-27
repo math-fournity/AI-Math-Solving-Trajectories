@@ -1,0 +1,1 @@
+A specialized architectural firm is designing two connected structural frames, represented as triangles $ABC$ and $DBC$, sharing a common base beam $BC$. The first frame has two supporting struts with fixed lengths: strut $AB$ measures 3 meters and strut $AC$ measures 4 meters.

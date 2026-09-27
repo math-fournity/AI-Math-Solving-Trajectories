@@ -1,0 +1,1 @@
+A natural number is called evil if it has an even number of ones in its binary representation. For example, the number \(18 = (10010)_2\) is evil. Determine the sum of the first \(2012\) evil numbers.

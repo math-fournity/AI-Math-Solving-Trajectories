@@ -1,0 +1,1 @@
+Consider a holomorphic function $f(z)$ such that $(f \circ f)(z) = e^z$. If such a function exists, let $a$ be the value of $f(0)$. Calculate the value of $a^2 + a + 1$.

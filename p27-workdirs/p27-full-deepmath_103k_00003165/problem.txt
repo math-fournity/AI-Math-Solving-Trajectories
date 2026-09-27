@@ -1,0 +1,1 @@
+Let $T_j$ be a sequence of compact operators on a Hilbert space $H$ which converges strongly to the identity, i.e., for each $v \in H$, the sequence $\| T_j v - v \|$ tends to zero. Determine if there must exist an index $j$ such that the spectrum of $T_j$ contains a non-zero number.

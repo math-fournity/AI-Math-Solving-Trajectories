@@ -1,0 +1,1 @@
+Given a natural number \( n \), find the smallest \( \lambda \) such that

@@ -1,0 +1,1 @@
+In the land of wonders, there are $n$ cities. Each pair of cities is connected by a one-way road, which starts from one of the two cities and arrives at the other. To find her way, Alice questions the King of Hearts: with each question, Alice chooses a pair of cities, and the King of Hearts tells her which is the starting city of the road connecting these two cities.

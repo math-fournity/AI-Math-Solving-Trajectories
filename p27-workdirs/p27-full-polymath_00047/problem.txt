@@ -1,0 +1,1 @@
+There are $n$ boxes of matches arranged in a circle. For each set of 4 consecutive boxes $B_i, B_{i+1}, B_{i+2}, B_{i+3}$ (indices modulo $n$), the following adjustment is made: if the sum of the number of matches in these 4 boxes is odd, one match is taken from each box; otherwise, if the sum is even, one match is added to each box.

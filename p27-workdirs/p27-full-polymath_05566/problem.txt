@@ -1,0 +1,1 @@
+A rectangular piece of paper with side lengths \(5\) by \(8\) is folded along the dashed lines shown below, so that the folded flaps just touch at the corners as shown by the dotted lines. Find the area of the resulting trapezoid. If the answer is of the form of an irreducible fraction $\frac{a}{b}$, compute the value of $a + b$.

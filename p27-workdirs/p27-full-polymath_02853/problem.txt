@@ -1,0 +1,1 @@
+Find the largest natural number \( n \) for which \( 3^{n} \) divides \( 1+\left[(3+\sqrt{6})^{69}\right] \) (where \([x]\) is the largest integer not exceeding \( x \)).

@@ -1,0 +1,1 @@
+Suppose \( \kappa \) is a regular cardinal. Determine whether there necessarily exists a poset \( \mathbb{P} \) that collapses \( \kappa^+ \) while preserving all other cardinals.

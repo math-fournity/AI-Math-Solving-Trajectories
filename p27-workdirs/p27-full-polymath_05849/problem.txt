@@ -1,0 +1,1 @@
+Find the sum of all positive integers $k$ such that for every $n \in \mathbb{N}$, if there exist $k$ factors (not necessarily distinct) of $n$ whose squares sum to $n$, then there must also exist $k$ factors (not necessarily distinct) of $n$ whose sum is exactly $n$.

@@ -1,0 +1,1 @@
+In triangle $A B C$, the incircle touches sides $B C, C A, A B$ at $D, E, F$ respectively. Assume there exists a point $X$ on the line $E F$ such that

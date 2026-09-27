@@ -1,0 +1,1 @@
+Let \( X_1, X_2, \cdots, X_{p+q} \) be pairwise disjoint compact non-empty subsets of \( \mathbb{R}^n \). Find the minimum degree of a polynomial \( f(x) = f(x_1, x_2, \cdots, x_n) \) such that \( \inf_{x \in X_i} f(x) > 0 \) for \( i = 1, 2, \cdots, p \) and \( \sup_{x \in X_i} f(x) < 0 \) for \( i = p+1, p+2, \cdots, p+q \).

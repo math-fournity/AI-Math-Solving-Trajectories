@@ -1,0 +1,1 @@
+In the world of professional network engineering, a server cluster of $k$ nodes is classified as $n$-resilient if, upon the failure of any single node, the remaining $k-1$ nodes always contain a fully interconnected sub-network (a clique) of $n$ nodes where every node has a direct high-speed connection to every other node in that sub-network.

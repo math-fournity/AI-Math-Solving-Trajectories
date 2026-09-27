@@ -1,0 +1,1 @@
+Let \( a_{1}, a_{2}, \dots, a_{20} \) be positive integers with the following property: for any nonempty subset \( S \subseteq \{1, 2, \dots, 20\} \), there exists \( s \in S \) such that \( a_{s} \leq \operatorname{gcd}(S) \). Find the largest possible value of the product \( a_{1} a_{2} \cdots a_{20} \).

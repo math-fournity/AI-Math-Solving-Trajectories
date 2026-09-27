@@ -1,0 +1,1 @@
+A shipping company is tasked with transporting a bulk shipment of raw cocoa beans with a total weight of exactly 65 kilograms. The shipment consists of several individual bags, and while the weights of the bags may vary, it is guaranteed that no single bag weighs more than $w$ kilograms.

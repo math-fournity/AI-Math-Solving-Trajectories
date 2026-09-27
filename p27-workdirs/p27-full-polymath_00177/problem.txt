@@ -1,0 +1,1 @@
+Given positive integers $n, k$ with $n \ge 2$, let $c(n, k)$ be the minimum constant such that for any positive integer $m$ and any $kn$-regular graph $G$ with $m$ vertices, there exists a coloring of the vertices of $G$ with $n$ colors such that the number of monochromatic edges is at most $c(n, k)m$.

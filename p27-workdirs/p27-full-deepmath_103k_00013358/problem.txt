@@ -1,0 +1,1 @@
+Determine the number of 16-digit integers $t$ such that $12t+5$, $15t+8$, $20t+11$, and $30t+17$ are all prime numbers.

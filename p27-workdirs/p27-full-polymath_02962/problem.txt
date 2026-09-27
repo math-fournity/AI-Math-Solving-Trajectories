@@ -1,0 +1,1 @@
+Let \( n \) be a non-zero natural number. We will say that a set \( A \) of natural numbers is complete of size \( n \) if its elements are non-zero, and the set of all remainders obtained by dividing an element from \( A \) by an element from \( A \) is \(\{0,1,2, \ldots, n\}\). For example, the set \(\{3,4,5\}\) is a complete set of size \( 4 \).

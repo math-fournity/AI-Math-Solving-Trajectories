@@ -1,0 +1,1 @@
+A high-tech server farm consists of a square grid of processors arranged in $n$ rows and $n$ columns. The facility manager is planning a hardware upgrade and needs to select exactly $\frac{1}{2} n(n+1)$ specific processors to be fitted with secondary cooling heat sinks.

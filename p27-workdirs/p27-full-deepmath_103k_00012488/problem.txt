@@ -1,0 +1,1 @@
+If \( D \) is a finite division ring containing \( q \) elements, is it true that \( a^q = a \) for all \( a \in D \)? Justify your answer.

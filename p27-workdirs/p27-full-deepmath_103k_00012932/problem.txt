@@ -1,0 +1,1 @@
+Determine whether the formula \( \sum_{k=0}^{2n}(-1)^k{2n\choose k}2^kF_{k+1}=5^n \) holds for all integer values of \( n \), where \( F_n \) is the \( n^{th} \) Fibonacci number.

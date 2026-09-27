@@ -1,0 +1,1 @@
+Consider a chain of subrings $C \subset B \subset A$, where $A, B, C$ are commutative Noetherian rings with unity. If $A \cong C$ and $A, B, C$ are Artinian, determine whether it is true that $A \cong B$. Provide a justification for your answer.

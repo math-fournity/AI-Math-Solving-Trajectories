@@ -1,0 +1,1 @@
+In the industrial sector of a specialized logistics hub, two managers, Alpha and Beta, are competing to clear a warehouse containing two raw steel beams. At the start of the simulation, the beams have lengths of $n$ units and $n+1$ units, where $n$ is a positive integer.

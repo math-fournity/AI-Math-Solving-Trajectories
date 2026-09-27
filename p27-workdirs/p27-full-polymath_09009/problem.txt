@@ -1,0 +1,1 @@
+In a specialized laboratory, an automated sorting system processes three types of chemical canisters: **Type A (Alkali)**, **Type B (Boron)**, and **Type C (Carbon)**. Every time the system processes a canister, it generates a heat signature measured in units based on the canisters still waiting in the queue:

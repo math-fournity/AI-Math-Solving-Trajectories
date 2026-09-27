@@ -1,0 +1,1 @@
+Find an integer coefficient polynomial with the lowest degree such that $\frac{1}{\sqrt[5]{2+\sqrt{5}}}-\sqrt[5]{2+\sqrt{5}}-\frac{1}{\sqrt[5]{9+4\sqrt{5}}}-\sqrt[5]{9+4\sqrt{5}}$ is its root.

@@ -1,0 +1,1 @@
+In a high-tech data center, there is a massive $100 \times 100$ grid of server modules. Each module currently holds a specific positive integer representing its active data load. A maintenance technician is looking to perform "Efficiency Cycles" on groups of these modules.

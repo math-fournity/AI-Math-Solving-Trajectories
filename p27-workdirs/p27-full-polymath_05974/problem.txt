@@ -1,0 +1,1 @@
+In a sprawling logistics hub, there are exactly 120 specialized transport drones. Between certain pairs of these drones, a dedicated "sync-link" has been established to allow them to fly in formation.

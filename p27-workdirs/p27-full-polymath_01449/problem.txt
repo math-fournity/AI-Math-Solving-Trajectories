@@ -1,0 +1,1 @@
+Andrew generates a finite random sequence \(\{a_{n}\}\) of distinct integers according to the following criteria:

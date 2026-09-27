@@ -1,0 +1,1 @@
+Is every smooth 1-dimensional distribution on a manifold guaranteed to admit a nowhere vanishing vector field?

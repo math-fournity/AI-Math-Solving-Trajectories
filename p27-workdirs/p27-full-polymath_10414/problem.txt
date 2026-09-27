@@ -1,0 +1,1 @@
+In a bustling logistical hub, two lead engineers, Aris and Bode, are tasked with designing a communication network for a new circular facility. The facility features $n$ specific workstations located around its perimeter, where $n$ is an integer such that $5 \leq n \leq 100$.

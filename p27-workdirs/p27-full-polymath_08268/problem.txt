@@ -1,0 +1,1 @@
+A high-tech circular particle accelerator contains 2024 distinct stabilization chambers, indexed sequentially from 1 to 2024, arranged in a perfect ring. For each chamber $i$, let $a_i$ represent its specific energy level, measured as a strictly positive real number. Due to the ring's geometry, chamber 1 is adjacent to chamber 2024 and chamber 2.

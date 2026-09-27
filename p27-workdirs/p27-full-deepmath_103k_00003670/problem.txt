@@ -1,0 +1,1 @@
+Determine the maximum number of points that can be placed in \(\mathbb{R}^n\) such that no \(n+1\) points lie in the same \(\mathbb{R}^{n-1}\)-plane and the Euclidean distance between every pair of points is an integer.

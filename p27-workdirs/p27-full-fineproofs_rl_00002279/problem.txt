@@ -1,0 +1,1 @@
+In triangle $A B C$, let $M$ be the midpoint of $B C$ and $D$ be a point on segment $A M$. Distinct points $Y$ and $Z$ are chosen on rays $\overrightarrow{C A}$ and $\overrightarrow{B A}$, respectively, such that $\angle D Y C=\angle D C B$ and $\angle D B C=\angle D Z B$. Prove that the circumcircle of $\triangle D Y Z$ is tangent to the circumcircle of $\triangle D B C$.

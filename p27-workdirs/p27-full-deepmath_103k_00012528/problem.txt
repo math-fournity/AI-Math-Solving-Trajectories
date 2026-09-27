@@ -1,0 +1,1 @@
+Let $f \in W^{1,p}(\mathbb{R}^d)$ be a Sobolev map with a weak derivative that is smooth, i.e., it has a representative $x \to df_x$ which is $C^{\infty}$ as a map $\mathbb{R}^d \to \mathbb{R}^d$. Determine if $f$ has a smooth representative.

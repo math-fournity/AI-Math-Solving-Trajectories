@@ -1,0 +1,1 @@
+In the city of Gridville, a specialized solar farm is laid out in a rectangular grid of 20 rows and 23 columns of plots. Each plot is either occupied by a black solar panel or left as a white empty space.

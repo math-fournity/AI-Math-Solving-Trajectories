@@ -1,0 +1,1 @@
+In quadrilateral $ABCD$, diagonals $AC$ and $BD$ intersect at point $P$. Given that $AP=65$, $CP=33$, $\angle BAD + \angle CBD = 90^{\circ}$, $\angle BCA + 2\angle ADB = 90^{\circ}$, and $\angle BCD = 2\angle BAD$, find the length of $BC$.

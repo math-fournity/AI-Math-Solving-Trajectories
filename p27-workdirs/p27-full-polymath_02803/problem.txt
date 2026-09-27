@@ -1,0 +1,1 @@
+In a rectangular table with 9 rows and 2004 columns, the cells contain numbers from 1 to 2004, each appearing 9 times. Moreover, in any column, the numbers differ by no more than 3. Find the minimum possible sum of the numbers in the first row.

@@ -1,0 +1,1 @@
+A high-security data center contains a network of 100 distinct servers, indexed from 1 to 100. Every server is programmed to automatically forward its daily backup data to exactly one other server in the network. Two strict security protocols are in place:

@@ -1,0 +1,1 @@
+A logistics manager is overseeing a distribution network consisting of a grid of 100 regional warehouses arranged in 100 rows and 100 columns. Each warehouse originally stored a specific inventory of crates, where the quantity of crates in any single warehouse was a natural number no greater than 100.

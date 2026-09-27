@@ -1,0 +1,1 @@
+We want to distribute $2012$ bags, each containing balls of various colors, into $k$ boxes such that

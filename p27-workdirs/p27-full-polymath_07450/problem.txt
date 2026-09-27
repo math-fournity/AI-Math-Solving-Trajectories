@@ -1,0 +1,1 @@
+In the city of Arithmos, there is a legendary "Leveling Monument" consisting of $100$ distinct architectural blueprints, indexed by an intensity level $n \in \{1, 2, \dots, 100\}$.

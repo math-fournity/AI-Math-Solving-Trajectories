@@ -1,0 +1,1 @@
+Determine the one-point compactification of the space $S^n \times \mathbb{R}$. Provide your answer in terms of a well-known topological space.

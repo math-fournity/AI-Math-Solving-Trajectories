@@ -1,0 +1,1 @@
+Evaluate the integral \( \int_0^\infty \frac{\sin^2x}{x^2}dx \) using the Residue Theorem.

@@ -1,0 +1,1 @@
+A sequence of $n$ high-frequency signal repeaters is installed in a straight line along a fiber-optic corridor. Initially, every repeater is set to "Mode W." An engineer is tasked with decommissioning the repeaters one by one until only two remain. However, due to the hardware's interlocking circuitry, the decommissioning process must follow a strict protocol:

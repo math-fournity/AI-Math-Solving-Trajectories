@@ -1,0 +1,1 @@
+Let $S_m$ be the leading principal $(n-1)\times(n-1)$ submatrix of a positive definite matrix $A^m$. Determine whether the product $S_{m_1}S_{m_2}\cdots S_{m_r}$, where $m_1, m_2, \dots, m_r$ are positive integers, always has real eigenvalues.

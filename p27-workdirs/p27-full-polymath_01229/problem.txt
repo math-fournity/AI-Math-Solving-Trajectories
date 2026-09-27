@@ -1,0 +1,1 @@
+Let $n$ be a positive integer with exactly twelve positive divisors $1=d_1 < \cdots < d_{12}=n$. We say $n$ is [i]trite[/i] if \[

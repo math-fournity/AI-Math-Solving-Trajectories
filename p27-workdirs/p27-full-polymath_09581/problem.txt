@@ -1,0 +1,1 @@
+A specialized logistics hub is designed with four critical docking stations: Alpha ($A$), Bravo ($B$), Charlie ($C$), and Delta ($D$), forming a quadrilateral perimeter. Two main transit corridors, $AC$ and $BD$, intersect at a central processing hub, $P$.

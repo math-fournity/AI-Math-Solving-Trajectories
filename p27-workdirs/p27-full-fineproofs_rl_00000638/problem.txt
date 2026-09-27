@@ -1,0 +1,1 @@
+A polygon in the plane (with no self-intersections) is called equitable if every line passing through the origin divides the polygon into two (possibly disconnected) regions of equal area.

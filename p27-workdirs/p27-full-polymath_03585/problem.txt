@@ -1,0 +1,1 @@
+How many shortest paths are there between points \( P \) and \( Q \), where movement is allowed only along the edges of a square grid?

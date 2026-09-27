@@ -1,0 +1,1 @@
+Suppose G and H are finite groups of the same order such that the function \( F_G = F_H \), where \( F_G(d_1,d_2) \) is defined as the number of elements in G that have order equal to \( d_1 \) and can be expressed in the form \( x^{d_2} \) for some \( x \in G \). Does there necessarily exist a 1-isomorphism between G and H?

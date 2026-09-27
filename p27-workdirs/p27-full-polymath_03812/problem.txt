@@ -1,0 +1,1 @@
+An equilateral triangle is divided into $n^2 = 25$ congruent equilateral triangles. Each of these small triangles is assigned a unique number from the set $\{1, 2, \dots, 25\}$. Let $k$ be the maximum absolute difference between the numbers assigned to any two small triangles that share a common side. Find the minimum possible value of $k$.

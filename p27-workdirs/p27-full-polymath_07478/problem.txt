@@ -1,0 +1,1 @@
+In a futuristic data-management facility, every server is assigned a unique transmission sequence. For any positive real-world efficiency rating $x$, its transmission set $E(x)$ is defined as the collection of all integer timestamps $\{ \lfloor nx \rfloor : n = 1, 2, 3, \dots \}$, where $\lfloor y \rfloor$ represents the floor of $y$.

@@ -1,0 +1,1 @@
+Is the representation sphere $S(V)$ dualizable in the monoidal category of naive $G$-spectra, where $G$ is a finite group acting on a vector space $V$?

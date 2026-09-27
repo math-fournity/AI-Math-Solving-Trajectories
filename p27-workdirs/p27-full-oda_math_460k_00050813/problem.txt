@@ -1,0 +1,1 @@
+Given non-negative real numbers \(a, b, c\) such that \(ab + bc + ca = q\), find the minimum value of the expression

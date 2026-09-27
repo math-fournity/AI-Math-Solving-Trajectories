@@ -1,0 +1,1 @@
+A country consists of $n$ islands. Some islands are connected by bridges. For any two islands, there is a path connecting them. The distance between two islands is the number of bridges in the shortest path between them. Each island is connected to at least $m$ other islands. Let $f(n, m)$ be the maximum possible distance between any two islands.

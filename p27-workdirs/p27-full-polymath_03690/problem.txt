@@ -1,0 +1,1 @@
+Find all natural numbers $n$ such that there exists a permutation $a_1, a_2, \dots, a_n$ of $1, 2, \dots, n$ such that the absolute differences $|a_1-1|, |a_2-2|, \dots, |a_n-n|$ are pairwise distinct.

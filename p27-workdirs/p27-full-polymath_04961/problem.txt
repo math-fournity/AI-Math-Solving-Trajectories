@@ -1,0 +1,1 @@
+In a $7\times 8$ chessboard, $56$ stones are placed in the squares. Now we have to remove some of the stones such that after the operation, there are no five adjacent stones horizontally, vertically or diagonally. Find the minimal number of stones that have to be removed.

@@ -1,0 +1,1 @@
+In a specialized vertical hydroponic facility, a technician manages a grid of nutrient delivery nodes located at integer coordinates $(x, y)$. The facility's active zone, $S_{100}$, is defined by a strict environmental boundary. A node is considered part of the active zone if its coordinates satisfy the inequality:

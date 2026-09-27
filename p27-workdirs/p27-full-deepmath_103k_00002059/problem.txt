@@ -1,0 +1,1 @@
+Consider a random walker starting at $S_0 = 2$ on the integers. The walker moves according to the following rules:

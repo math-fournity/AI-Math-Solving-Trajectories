@@ -1,0 +1,1 @@
+Determine whether the Bass conjecture is true for any projective regular scheme over the integers.

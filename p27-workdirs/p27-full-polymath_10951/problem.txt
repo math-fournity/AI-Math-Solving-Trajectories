@@ -1,0 +1,1 @@
+A high-security storage facility consists of a $5 \times 5$ grid of storage units. There are 21 specialized climate-controlled units (the "white units") located at every coordinate $(row, column)$ except for $(2,2)$, $(3,2)$, $(3,4)$, and $(4,4)$.

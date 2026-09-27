@@ -1,0 +1,1 @@
+In a specialized logistics network with $n$ distinct delivery hubs ($n \geq 3$), an "Inventory State" is represented by a set of integer values $(x_1, \ldots, x_n)$, where each $x_i$ is the quantity at hub $i$. A "Balanced Protocol" is defined as a polynomial function $f(x_1, \ldots, x_n)$ with integer coefficients that satisfies two conditions:

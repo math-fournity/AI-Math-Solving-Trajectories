@@ -1,0 +1,1 @@
+In a $100 \times 100$ table, some fields are colored. It is known that every colored field is the only one colored in its row or its column. Find the maximum number of colored fields.

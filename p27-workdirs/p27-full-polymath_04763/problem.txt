@@ -1,0 +1,1 @@
+Line segment \(\overline{AE}\) of length \(17\) bisects \(\overline{DB}\) at a point \(C\). If \(\overline{AB}=5\), \(\overline{BC}=6\), and \(\angle BAC=78^\circ\), calculate \(\angle CDE\).

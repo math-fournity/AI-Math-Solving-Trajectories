@@ -1,0 +1,1 @@
+Consider the series $$\sum_{n=1}^\infty\frac{\sin n^2\theta\sin n\theta}{n}.$$ Let $S_N(\theta)$ denote the $N$th partial sum of this series. Find the value of $$\sup_{\theta \in [0, 2\pi]} |S_{100}(\theta) - S_{50}(\theta)|.$$

@@ -1,0 +1,1 @@
+Determine whether the following conjecture is true: For any positive numbers $x$ and $M$ with $x > M$, if we define $g(x) = \sqrt{1 + \sqrt{x} \sqrt{1 + \sqrt{x^2} \sqrt{1 + \sqrt{x^3} \sqrt{...}}}}$, then $\lim_{x \to \infty} (g(x+1) - g(x)) = 1$. Provide a proof or counterexample.

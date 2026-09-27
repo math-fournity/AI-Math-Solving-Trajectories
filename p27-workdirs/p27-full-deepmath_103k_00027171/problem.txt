@@ -1,0 +1,1 @@
+Let $f$ be a smooth function such that the origin is a local minimum point for $f$ on every smooth curve. Determine whether this implies that the origin is necessarily a local minimum point for $f$.

@@ -1,0 +1,1 @@
+A specialized bio-engineering facility monitors the concentration of a specific enzyme in a culture over several days. The daily concentration levels, denoted by $a_n$ for day $n$, are governed by a precise stability protocol: for any day $n$, the concentration three days ahead is determined by the formula $a_{n+3} = a_{n+2} - 2a_{n+1} + a_n$.

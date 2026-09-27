@@ -1,0 +1,1 @@
+Find the value of \( \alpha \in \mathbb{R} \) such that the change of coordinates \( \varphi(p,q) \rightarrow (P,Q) \) is symplectic, where \( Q = q^2 + \alpha\sqrt{q^2+p} \) and \( P = q + \sqrt{q^2+p} \).

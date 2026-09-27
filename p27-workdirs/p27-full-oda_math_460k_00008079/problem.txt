@@ -1,0 +1,1 @@
+Devise RNC algorithms for the decision and search versions of the Exact Matching problem, where given a graph \( G(V, E) \) with a subset of edges \( R \subseteq E \) colored red and a positive integer \( k \), the goal is to determine whether there is a perfect matching using exactly \( k \) red edges (decision version) and to find such a matching if it exists (search version).

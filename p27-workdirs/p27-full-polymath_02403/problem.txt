@@ -1,0 +1,1 @@
+Let $n$ be a positive integer not divisible by $3$. A triangular grid of length $n$ is obtained by dissecting a regular triangle with length $n$ into $n^2$ unit regular triangles. There is an orange at each vertex of the grid, which sums up to

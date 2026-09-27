@@ -1,0 +1,1 @@
+Find the maximum number of colors used in coloring integers $n$ from $49$ to $94$ such that if $a, b$ (not necessarily different) have the same color but $c$ has a different color, then $c$ does not divide $a+b$.

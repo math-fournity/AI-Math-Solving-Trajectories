@@ -1,0 +1,1 @@
+A specialized circular radar station is centered at point $O$. Two signal receivers are located on the perimeter of the circular range at points $A$ and $B$, connected by a direct communication cable $AB$. Two straight transmission lines, tangent to the circular perimeter at $A$ and $B$ respectively, intersect at a control hub $C$.

@@ -1,0 +1,1 @@
+A prestigious culinary academy is hosting a competition where chefs must create unique "Signature Platters." There are 9 distinct ingredients available in the pantry, labeled 1 through 9. A valid Signature Platter is defined as a collection of exactly 5 different ingredients chosen from the pantry.

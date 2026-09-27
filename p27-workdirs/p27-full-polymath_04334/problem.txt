@@ -1,0 +1,1 @@
+Find the number of ordered tuples \((k_{1}, \ldots, k_{n})\) satisfying \(\sum_{i=1}^{n} \frac{1}{k_{i}}=1\) and \(\prod_{i=1}^{n} k_{i} \leq 2024\).

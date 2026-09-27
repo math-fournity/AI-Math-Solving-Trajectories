@@ -1,0 +1,1 @@
+In a remote archival facility, a security vault is protected by a $3 \times 3$ grid of manual rotary dials. To unlock the vault, an agent must set each of the 9 dials to a different positive whole number.

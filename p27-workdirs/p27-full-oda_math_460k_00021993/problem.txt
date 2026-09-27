@@ -1,0 +1,1 @@
+Find all triples $(a, b, c)$ of natural numbers such that for each integer $n > k$, $a^n + b^n + n \mid c^n + n$, where $k$ is a given natural number.

@@ -1,0 +1,1 @@
+In a remote industrial facility, three chemical reactors—Alpha, Beta, and Gamma—operate in a closed-loop pressure stabilization system. The internal pressure levels of these reactors are represented by three real-valued gauges $x$, $y$, and $z$ (measured in megapascals, where negative values indicate vacuum states).

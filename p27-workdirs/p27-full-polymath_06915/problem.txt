@@ -1,0 +1,1 @@
+In a specialized logistics hub, there are 1993 designated shipping docks labeled $k = 1, 2, 3, \dots, 1993$. There is a set of 1993 shipping containers, each uniquely branded with a serial number from the set $\{3, 4, 5, \dots, 1994, 1995\}$.

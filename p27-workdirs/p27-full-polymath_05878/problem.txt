@@ -1,0 +1,1 @@
+In a right triangle $\triangle ABC$ with $AB = AC$, an ellipse passes through points $A$ and $B$. One of its focal points is $C$, and the other focal point is within $\triangle ABC$. The eccentricity of the ellipse can be written in the form $\sqrt{k} - \sqrt{m}$ for some integers $k$ and $m$. Find $k + m$.

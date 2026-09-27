@@ -1,0 +1,1 @@
+Problem 4. Determine the non-constant polynomial functions $f:[0,1] \rightarrow \mathbb{R}^{*}$, with rational coefficients, which have the following property: for any $x$ in the interval $[0,1]$, there exist two polynomial functions $g_{x}, h_{x}:[0,1] \rightarrow \mathbb{R}$, with rational coefficients, such that $h_{x}(x) \neq 0$ and

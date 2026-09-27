@@ -1,0 +1,1 @@
+A rectangle is drawn such that the vertices of a uniform hexagon lie on the sides of the rectangle. If the area of the hexagon is 24, find the area of the rectangle.

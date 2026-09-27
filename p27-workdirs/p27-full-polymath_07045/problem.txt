@@ -1,0 +1,1 @@
+In the center of a desert, an ancient subterranean reservoir is shaped like an inverted pyramid $SABCD$. The ceiling of the reservoir (the base of the pyramid) is a perfectly flat, rhombus-shaped marble floor $ABCD$, where the angle at corner $A$ is acute. The perpendicular distance between the parallel edges of this marble floor is exactly 4 meters.

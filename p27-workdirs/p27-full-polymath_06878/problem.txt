@@ -1,0 +1,1 @@
+In the city of Metros, four distinct neighborhood districts—Alpha ($a$), Bravo ($b$), Charlie ($c$), and Delta ($d$)—are applying for infrastructure grants from the central treasury. The amount of funding each coalition receives is determined by the total population of the districts involved divided by a specific "Urban Growth Index."

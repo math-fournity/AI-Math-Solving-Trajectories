@@ -1,0 +1,1 @@
+In a remote high-security server facility, there is a grid of 49 server nodes arranged in a strict $7 \times 7$ configuration. Each node can be in one of two states: "Fortified" (protected by a heavy firewall) or "Standard" (unprotected).

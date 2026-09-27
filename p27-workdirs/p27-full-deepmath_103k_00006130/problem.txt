@@ -1,0 +1,1 @@
+Let $F:=\{U_j\subseteq \mathbb{R}^d\}_j$ be a countable disjoint collection of bounded open connected sets such that the complement $U_j^c$ is connected for each $j$. Assume that $X:=\overline{\bigcup_{j}U_j}$ is connected. Is the set $X\setminus \left(\bigcup_{j}U_j\right)$ connected?

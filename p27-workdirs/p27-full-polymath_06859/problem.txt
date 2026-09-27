@@ -1,0 +1,1 @@
+In the city of Arithmos, the Central Vault is secured by a series of electronic locks, each labeled with a unique positive integer. The integers on these locks are exactly the set of all positive divisors of a specific master security code $n$.

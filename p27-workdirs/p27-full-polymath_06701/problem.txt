@@ -1,0 +1,1 @@
+In a futuristic automated logistics hub, a central computer manages a sequence of transport pods labeled $\{1, 2, 3, \dots, n\}$, where $n$ is any total number of pods at least equal to $4$. A specific cargo manifest $A$ is selected, which is a subset of these available pods.

@@ -1,0 +1,1 @@
+In a specialized laboratory, three energy-conducting liquids are stored in a pressurized spherical containment unit. The quantities of these liquids, represented by the variables $x$, $y$, and $z$, are constrained by the physical capacity of the unit such that the sum of their squares, $x^2 + y^2 + z^2$, is exactly equal to 1.

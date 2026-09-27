@@ -1,0 +1,1 @@
+In the group $G = \mathbb{Z}_p \times \mathbb{Z}_p$, where $p$ is a prime number, let $S$ and $H$ be subsets of $G$ such that $|S| = |H| = p$ and both contain the identity element $e$. If the product $HS$ is equal to the whole group $G$, does it follow that either $H$ or $S$ must be a subgroup of $G$?

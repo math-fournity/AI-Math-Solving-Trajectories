@@ -1,0 +1,1 @@
+Find the smallest positive integer $k$ such that erasing $k$ factors from each side of the equation $$(x-1)(x-2)\cdots(x-2024)=(x-1)(x-2)\cdots(x-2024)$$ leaves at least one factor on each side and results in a new equation with no real roots.

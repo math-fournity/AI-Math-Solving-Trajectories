@@ -1,0 +1,1 @@
+A high-tech server farm is organized into an $n \times n$ grid of data slots. A system administrator needs to allocate exactly $\frac{1}{2} n(n+1)$ of these slots to store a specific dataset.

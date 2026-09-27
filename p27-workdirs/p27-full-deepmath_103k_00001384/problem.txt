@@ -1,0 +1,1 @@
+Let \( m > 1 \), and \( n \), \( k \) be positive integers. Determine whether there exists a positive integer \( l > m-1 \) such that \( \binom{l}{m} \equiv k \pmod{2^n} \).

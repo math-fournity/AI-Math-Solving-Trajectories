@@ -1,0 +1,1 @@
+Let $H$ be a Hilbert space and let $\mathcal{A}$ be a subalgebra of the algebra $\mathcal{B}(H)$ of all bounded operators on $H$. Suppose $\mathcal{A}$ consists of compact operators only, and each vector $v \in H$ lies in the closure of $\mathcal{A}v$. Determine whether there must exist an irreducible subspace for $\mathcal{A}$. Provide a justification for your answer.

@@ -1,0 +1,1 @@
+In the Cartesian plane, let \( A = (0,0) \), \( B = (200,100) \), and \( C = (30,330) \). Compute the number of ordered pairs \((x, y)\) of integers such that \(\left(x+\frac{1}{2}, y+\frac{1}{2}\right)\) is in the interior of triangle \( ABC \).

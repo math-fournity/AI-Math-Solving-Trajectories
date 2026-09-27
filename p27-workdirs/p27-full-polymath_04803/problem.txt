@@ -1,0 +1,1 @@
+Find the number of ordered triples of integers \((a, b, c)\), each between \(1\) and \(64\), such that

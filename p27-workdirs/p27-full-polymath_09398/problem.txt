@@ -1,0 +1,1 @@
+In a remote mountain range, a kingdom is divided into a territory defined by a convex pentagonal boundary. The High Council is planning to construct "Great Citadels." A Great Citadel is defined as a triangular region formed by connecting exactly three of the five corners of the kingdom's boundary.

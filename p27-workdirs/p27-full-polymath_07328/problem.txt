@@ -1,0 +1,1 @@
+A specialized digital archives department is organizing a massive database of "Hyper-Records." The size of the database is determined by a variable $n$. The total number of records to be indexed is given by the square of the archive size, $n^2$.

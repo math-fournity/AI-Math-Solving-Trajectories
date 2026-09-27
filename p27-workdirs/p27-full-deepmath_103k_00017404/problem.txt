@@ -1,0 +1,1 @@
+Determine whether the equation \(a^\pi + b^\pi = c^\pi\) can hold true for any natural numbers \(a, b, c\).

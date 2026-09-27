@@ -1,0 +1,1 @@
+For each integer \( n \), let \( f(n) \) be the smallest positive integer \( m \) such that the \( m \)-th cyclotomic polynomial \( \Phi_m(x) \) has \( n \) as the coefficient of one of its terms. Find \( f(-3) \).

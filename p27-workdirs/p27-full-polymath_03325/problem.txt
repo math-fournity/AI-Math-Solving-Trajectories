@@ -1,0 +1,1 @@
+At the ball, there were $29$ boys and $15$ girls. Some boys danced with some girls (no more than once in each pair). After the ball, each person told their parents how many times they danced. What is the maximum number of different numbers the children could name?

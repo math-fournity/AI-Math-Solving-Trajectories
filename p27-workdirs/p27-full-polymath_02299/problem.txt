@@ -1,0 +1,1 @@
+What is the smallest natural number $k$ such that $10^k$ divides a number in the first $100000001$ Fibonacci numbers?

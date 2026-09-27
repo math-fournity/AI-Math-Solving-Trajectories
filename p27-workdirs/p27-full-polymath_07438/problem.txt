@@ -1,0 +1,1 @@
+A regional agricultural board has designated a flat triangular plot of land, $ABC$, spanning an area of $\Delta = 100$ acres, for a new irrigation project. To supply water, a drone is positioned at a point $P$ in the airspace above the plane of the field.

@@ -1,0 +1,1 @@
+For a binary string  $S$  (i.e. a string of 0 's and 1's) that contains at least one 0 , we produce a binary string  $f(S)$  as follows:

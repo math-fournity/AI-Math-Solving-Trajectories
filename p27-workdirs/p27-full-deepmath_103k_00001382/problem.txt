@@ -1,0 +1,1 @@
+Estimate the upper bound of the number of solutions \(N_{\sqrt[3]{2}}(1)\) for the inequality:

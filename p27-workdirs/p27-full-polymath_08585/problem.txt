@@ -1,0 +1,1 @@
+In a remote industrial refinery, there is a circular conveyor belt system containing $n$ specialized storage canisters. Each canister has a unique pressure rating, indexed from the lowest to the highest as $P_1 < P_2 < \dots < P_n$. The canisters are currently arranged in a single-file loop, where each canister is positioned directly behind another.

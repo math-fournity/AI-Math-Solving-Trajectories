@@ -1,0 +1,1 @@
+Find the minimum possible value of \( n-m \), where \( n, m \) are real numbers such that \( m \leq \frac{4+b^{2}}{b} + \frac{4+a^{2}}{a} \leq n \) for all positive real numbers \( a, b \) that satisfy \(\frac{a^{2}+1}{a}+\frac{b^{2}+1}{b} \leq 18\) and \(a^{2} b+b^{2} a \leq 3\).

@@ -1,0 +1,1 @@
+A circular space station is equipped with 24 equally spaced docking ports located around its perimeter. A mission commander needs to establish a secure communication network by selecting a specific subset of these ports to serve as nodes for a convex polygonal "Security Perimeter."

@@ -1,0 +1,1 @@
+Let \( T = \text{TNFTPP} \) and \( R = T - 914 \). Find the value of \( \lfloor x \rfloor \) where \( x \) is the smallest real solution of the equation

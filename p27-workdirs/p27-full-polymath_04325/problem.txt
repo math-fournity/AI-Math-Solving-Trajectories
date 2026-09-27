@@ -1,0 +1,1 @@
+In the fields of a \(100 \times 100\) table, numbers are written. In each row, there are at least \(10\) different numbers, but in every three consecutive rows, there are at most \(16\) different numbers. What is the maximum number of different numbers that can be found in the table?

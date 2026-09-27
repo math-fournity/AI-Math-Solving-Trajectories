@@ -1,0 +1,1 @@
+Determine the maximum number of connected closed sets \(A_1, A_2, A_3, \ldots\) that can be drawn in \(\mathbb{R}^2\) such that for each pair \(i, j\), the interiors \(\operatorname{int}(A_i)\) and \(\operatorname{int}(A_j)\) are disjoint, but the intersection \(A_i \cap A_j\) is non-empty for all \(i \neq j\).

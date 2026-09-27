@@ -1,0 +1,1 @@
+Compute the genus of the graph with vertex set \( V(G) = \{u_1, \cdots, u_7, v_1, \cdots, v_9, w_1, \cdots, w_5\} \) and edge set \( E(G) = \bigcup_{i=1}^{11} E_i \), where:

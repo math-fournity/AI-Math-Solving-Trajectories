@@ -1,0 +1,1 @@
+Find all positive integers $k \ge 2$ such that if the set of integers is colored using $k$ colors, there always exist integers $a_1 < a_2 < \ldots < a_{2023}$ for which the differences $a_2 - a_1, a_3 - a_2, \ldots, a_{2023} - a_{2022}$ are all powers of $2$.

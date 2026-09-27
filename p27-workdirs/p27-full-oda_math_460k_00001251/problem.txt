@@ -1,0 +1,1 @@
+A 6x6 grid is divided into 36 unit squares. A "path" is a sequence of distinct squares such that every square shares a side with the previous one. Each square can be colored either red, blue, or green. A "valid path" is a path that visits every square exactly once and starts and ends with a square of the same color. Find the number of valid paths in the 6x6 grid, modulo 1000.

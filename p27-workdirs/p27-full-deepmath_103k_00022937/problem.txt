@@ -1,0 +1,1 @@
+Evaluate the integral \( \int_0^\pi \frac{\sin{mt}\sin{nt}}{a+b\cos{nt}}dt \) for positive integers \(m, n\), and real numbers \(a, b\) with \(a > 0\), \(b < 0\), \(|a| > |b|\), and \(n > 1\). Assume that \(m\) is significantly larger than \(1\).

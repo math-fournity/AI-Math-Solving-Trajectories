@@ -1,0 +1,1 @@
+Determine the possible values of the integral \( \int_{\gamma} \frac{dz}{\sqrt{1-z^2}} \) for a closed curve \( \gamma \) in \( \mathbb{C} \) that intersects the path \( \sigma \) joining \(-1\) and \(+1\).

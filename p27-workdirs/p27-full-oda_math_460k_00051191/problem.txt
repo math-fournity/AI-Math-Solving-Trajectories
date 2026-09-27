@@ -1,0 +1,1 @@
+6. N6 (ROM) ${ }^{\mathrm{IMO3}}$ Find all pairs of positive integers $m, n \geq 3$ for which there exist infinitely many positive integers a such that

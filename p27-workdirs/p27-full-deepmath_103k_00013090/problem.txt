@@ -1,0 +1,1 @@
+Given a square matrix \( M \) with real entries such that \( \operatorname{tr}(M^{2m})=0 \) for all positive integers \( m \), find an expression for the sum \[ T = \sum_{k=1}^\infty \ln \left| e^{M^{2k+1}} \right|. \]

@@ -1,0 +1,1 @@
+Let \( V_{0} = \varnothing \) be the empty set and recursively define \( V_{n+1} \) to be the set of all \( 2^{|V_{n}|} \) subsets of \( V_{n} \) for each \( n=0,1, \ldots \). For example:

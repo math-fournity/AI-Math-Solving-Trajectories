@@ -1,0 +1,1 @@
+Determine whether the field extension $K=\mathbb{Q}(\sqrt{2},\sqrt{5})$ has a power integral basis using Dedekind's Theorem and the prime ideal decomposition in $\mathbb{F}_3[X]$. Provide your answer as either 'Yes' or 'No'.

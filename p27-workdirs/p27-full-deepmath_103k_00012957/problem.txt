@@ -1,0 +1,1 @@
+Let $k > 1$ be an integer. Consider the vector $e \in \mathbb{Z}^k$ that has 1 in the first coordinate and 0 in every other coordinate. Determine the cardinality of the stabilizer of $e$ in the special linear group $\mathrm{SL}_k(\mathbb{Z})$ with respect to the natural action. In other words, how many elements of $\mathrm{SL}_k(\mathbb{Z})$ have $e$ as the first column?

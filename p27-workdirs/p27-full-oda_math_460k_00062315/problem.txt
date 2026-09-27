@@ -1,0 +1,1 @@
+Find all nonzero coprime integer solutions of the equation \( x^3 + y^8 = z^2 \).

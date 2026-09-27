@@ -1,0 +1,1 @@
+Determine whether the cardinality of every $T_2$, first countable, countably compact space is not more than $2^\omega$. Provide a justification for your answer.

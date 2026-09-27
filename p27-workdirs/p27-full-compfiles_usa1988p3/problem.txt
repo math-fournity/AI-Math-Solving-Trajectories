@@ -1,0 +1,6 @@
+Let X be the set {1, 2, ... , 20} and let P be the set of all 9-element
+subsets of X. Show that for any map f : P → X we can find a 10-element
+subset Y of X, such that f(Y - {k}) ≠ k for any k in Y.
+
+</rule>
+</rules>

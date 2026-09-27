@@ -1,0 +1,1 @@
+A sequence of positive integers $a_1, a_2, \dots, a_n$ is defined by $a_1 = 1$, $a_2 = 2$, and $a_n = a_{n - 1} + a_{n - 2}^2$ for all $n \ge 3.$ Three distinct terms $a_i, a_j, a_k$ in the sequence form a geometric progression.  If $i + j + k = 2025$, find the largest possible value of $i$.

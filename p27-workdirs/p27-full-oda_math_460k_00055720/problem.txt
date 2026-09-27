@@ -1,0 +1,1 @@
+Given an undirected graph \( G = (V, E) \) and nonnegative weights \( w_i \geq 0 \) for vertices \( i \in V \), use the primal-dual method to find a minimum-cost subset of vertices \( S \subseteq V \) such that every cycle \( C \) in the graph contains some vertex of \( S \). Explain the algorithm and its analysis.

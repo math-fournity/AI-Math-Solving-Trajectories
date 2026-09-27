@@ -1,0 +1,1 @@
+Determine if the property (*) is preserved for metrics that are Lipschitz equivalent to $d_1$.

@@ -1,0 +1,1 @@
+Four men are named Baker, Fisher, Forester, and Miller. They practice the professions of Baker, Fisher, Forester, and Miller, each having exactly one of these professions. One of the four men is the brother of a fifth man, who is called Mr. $X$. Mr. $X$ has the same name as his brother. The following information is given:

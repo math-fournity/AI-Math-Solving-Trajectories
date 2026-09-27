@@ -1,0 +1,1 @@
+Consider a linearly ordered set $L$ with the property that every order-preserving injection $f : L \rightarrow L$ is expansive, meaning $f(x) \geq x$ for all $x \in L$. Is $L$ necessarily well-ordered?

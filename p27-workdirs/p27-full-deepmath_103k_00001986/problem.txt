@@ -1,0 +1,1 @@
+Suppose $d \ge 2$ and $S$ is a finite simplicial complex of dimension $2d$ that is simply connected, has all its homology in middle degree, and has torsion-free homology in degree $d$. Is $S$ necessarily homotopy equivalent to a wedge of spheres of dimension $d$?

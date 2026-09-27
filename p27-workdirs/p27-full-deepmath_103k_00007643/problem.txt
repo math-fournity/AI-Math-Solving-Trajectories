@@ -1,0 +1,1 @@
+Determine whether the limit \( \lim_{n\to\infty} \left(\frac{\log(p_{n+1})}{\log(p_n)}\right)^n \) exists, and if it does, find its value.

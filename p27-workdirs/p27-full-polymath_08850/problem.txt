@@ -1,0 +1,1 @@
+In a futuristic data-storage facility, a master crystalline processor is shaped like a perfect cube. To enhance its processing power, engineers have identified specific high-resonance nodes on the crystal: every single vertex (corner) of the cube and the exact midpoint of every single edge.

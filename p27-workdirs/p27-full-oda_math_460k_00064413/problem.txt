@@ -1,0 +1,1 @@
+Determine the index of $K^{*n}$ in $K^*$ for an infinite extension field $K/\mathbb{Q}_p$ where $p\nmid n$.

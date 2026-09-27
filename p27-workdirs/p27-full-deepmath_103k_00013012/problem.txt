@@ -1,0 +1,1 @@
+Determine the asymptotic distribution of the statistic \(8nB = - 8n\operatorname{ln}(\sqrt{0.2\hat{p}} + \sqrt{0.8(1-\hat{p})} )\), where \(\hat{p} = (1/n)\sum_i X_i = \bar{X}_n\) is the estimator of \(p\) from a random sample \(X_1, ..., X_n\) taken from a Bernoulli\((p)\) distribution. Assume \(H_0: p=0.2\) and \(H_1: p\neq 0.2\).

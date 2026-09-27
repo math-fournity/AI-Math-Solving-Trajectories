@@ -1,0 +1,1 @@
+Let $X$ be a compact metric space and $\mu$ be a positive, finite, atomless, regular measure on the $\sigma$-algebra of Borel subsets of $X$. Does there exist a set $C \subset X$ such that $C$ is uncountable and has $\mu$-measure zero?

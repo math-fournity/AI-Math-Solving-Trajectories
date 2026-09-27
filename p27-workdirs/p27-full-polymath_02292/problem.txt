@@ -1,0 +1,1 @@
+Given \( n < 100 \), find the number of integers \( n \) such that the equation \(\frac{3xy - 1}{x + y} = n\) has integer solutions for \( x \) and \( y \).

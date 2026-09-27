@@ -1,0 +1,1 @@
+In $\triangle ABC$ with incenter $I$, intouch triangle $DEF$, and Feuerbach point $Fe$, let $P=\overline{DI}\cap\overline{AFe}$ and $Q=\overline{BC}\cap\overline{EF}$. If the radical axis of $(IDQ)$ and $(IPFe)$ intersects $\overline{BC}$ at point $R$, find the ratio $\frac{BR}{RC}$ when $\frac{AB}{AC} = \frac{3}{4}$.

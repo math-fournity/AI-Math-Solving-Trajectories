@@ -1,0 +1,1 @@
+Find a continuous function \( f: [0,1] \rightarrow \mathbb{R} \) that can be expressed as two distinct infinite polynomial series:

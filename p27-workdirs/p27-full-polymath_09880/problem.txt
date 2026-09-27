@@ -1,0 +1,1 @@
+In a futuristic modular research colony shaped like a perfect cube, the eight corners of the habitat are designated as nodes $A$ through $H$. The base of the habitat consists of nodes $A, B, C,$ and $D$ in clockwise order, while the ceiling nodes $E, F, G,$ and $H$ are directly above $A, B, C,$ and $D$ respectively.

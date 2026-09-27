@@ -1,0 +1,1 @@
+Evaluate the limit: $$ \lim_{(n,r) \rightarrow (\infty, \infty)} \frac{\prod\limits_{k=1}^{r} \left( \sum\limits_{i=1}^{n} i^{2k-1} \right)}{n^{r+1} \prod\limits_{k=1}^{r-1} \left( \sum\limits_{i=1}^{n} i^{2k} \right)} $$

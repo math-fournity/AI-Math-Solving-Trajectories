@@ -1,0 +1,1 @@
+26. For each integer $n \geqslant 2$, determine the minimum value of

@@ -1,0 +1,1 @@
+At a candlelit dinner, there are $6k+3$ married couples, where $k$ is a natural number. The guests sit at $12k+6$ evenly spaced places around a round table. Each man among the guests has exactly one sister, and each woman has exactly one brother (a brother and sister cannot be married to each other).

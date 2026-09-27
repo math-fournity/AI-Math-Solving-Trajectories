@@ -1,0 +1,1 @@
+Let $X$ be a Polish space, and consider a sequence of Borel probability measures $(\mu_n)_{n \geq 1}$ on $X$. If, for every continuous and bounded function $f : X \to \mathbb{R}$, the limit $L(f) := \lim_{n \to \infty} \int_X f \, d \mu_n$ exists, does there exist a Borel probability measure $\mu$ such that $L(f) = \int_X f \, d \mu$ for all such functions?

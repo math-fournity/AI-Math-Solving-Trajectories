@@ -1,0 +1,1 @@
+In a remote sector of the galaxy, two logistics commanders, Commander Gerd and Commander Bernd, are competing for a supply contract using six automated delivery drones, each assigned a power frequency level from 1 to 6. At the start of the simulation, the fleet is split evenly: 3 drones are assigned to Gerd and 3 to Bernd.

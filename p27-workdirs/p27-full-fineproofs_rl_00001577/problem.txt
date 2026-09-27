@@ -1,0 +1,1 @@
+Find, with proof, all positive integer palindromes whose square is also a palindrome.

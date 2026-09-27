@@ -1,0 +1,1 @@
+Given 6 points in a plane, lines are drawn connecting each pair of points (resulting in 15 lines). At the intersection of each of these lines, a new point is formed (excluding the original 6 points). What is the minimum number of new points that can be formed?

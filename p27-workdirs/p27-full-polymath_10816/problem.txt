@@ -1,0 +1,1 @@
+In a remote industrial sector, two logistics supervisors, Alex and Blake, oversee a fluctuating inventory of specialized fuel cells. The process begins with an initial quantity of fuel cells, denoted as $n_0$, which is a natural number greater than 1. The two supervisors take turns adjusting the inventory levels according to strict regulatory protocols.

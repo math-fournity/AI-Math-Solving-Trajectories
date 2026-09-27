@@ -1,0 +1,1 @@
+In a high-security facility, a surveillance grid is organized into an $8 \times 8$ array of monitoring zones, mirroring the layout of a standard chessboard. The security director needs to install motion sensors in specific zones to ensure total coverage of the grid.

@@ -1,0 +1,1 @@
+Find all pairs of integers $(c, d)$, both greater than 1, such that the following holds:

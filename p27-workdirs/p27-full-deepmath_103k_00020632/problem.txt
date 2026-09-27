@@ -1,0 +1,1 @@
+Given a commutative ring $R$ and two ideals $A$ and $B$, if $R/AB \cong R/A \times R/B$, are $A$ and $B$ necessarily comaximal? (i.e., is it true that $A + B = R$?)

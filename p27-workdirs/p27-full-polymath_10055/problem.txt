@@ -1,0 +1,1 @@
+A specialized irrigation system is being designed for a triangular vineyard plot, labeled $ABC$. The plot’s layout is such that the difference between the angles at corner $B$ and corner $C$ is exactly $30^{\circ}$.

@@ -1,0 +1,1 @@
+Let $$f(n)=\sum_{i=1}^n\sum_{j=1}^n{n\choose i}{n\choose j}i^{n-j}j^{n-i}.$$ Calculate the value of $$\left\lfloor 1000 \cdot \frac{[f(100)]^{1/{200}}\ln 100}{100} \right\rfloor.$$

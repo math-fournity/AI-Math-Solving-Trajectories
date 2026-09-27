@@ -1,0 +1,1 @@
+In a specialized logistics hub, a freight controller named $x$ represents the precise weight of a standardized cargo module. This facility uses nine different automated sorting arms to process these modules. Each arm has a specific calibration that rounds down the weight of the total load it carries to the nearest whole metric ton.

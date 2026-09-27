@@ -1,0 +1,1 @@
+Determine all functions \( f: \mathbf{R} \rightarrow \mathbf{R} \) such that for all real numbers \( x \) and \( y \), the equation \( f\left(x^{2}+y+f(y)\right)=2 y+f(x)^{2} \) holds.

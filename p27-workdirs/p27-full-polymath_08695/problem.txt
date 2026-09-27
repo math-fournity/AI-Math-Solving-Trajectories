@@ -1,0 +1,1 @@
+A specialized artificial intelligence, "Unit-1," manages a sequence of digital vaults. For every positive integer level $n$ in the system, there is a vault containing a specific number of encrypted data packets, denoted as $a_n$.

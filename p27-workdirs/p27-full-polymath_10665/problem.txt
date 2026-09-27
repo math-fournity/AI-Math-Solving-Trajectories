@@ -1,0 +1,1 @@
+A massive digital server farm is structured as a rectangular grid of processing slots, consisting of 101 rows and 103 columns. To optimize cooling, three specific slots are decommissioned and left vacant: the slot at the intersection of row 2 and column 1, the slot at row 99 and column 103, and the slot at row 101 and column 103.

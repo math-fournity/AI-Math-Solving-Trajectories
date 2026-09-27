@@ -1,0 +1,1 @@
+Let $\{g_n\}$ be an increasing sequence of bounded functions on the interval $[a, b]$ that converges pointwise to 0. Does the upper integral of $g_n(x)$ over $[a, b]$ also converge to 0?

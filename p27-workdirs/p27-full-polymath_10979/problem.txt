@@ -1,0 +1,1 @@
+A digital security system generates a sequence of $n$ unique access codes, labeled $1, 2, \ldots, n$, which must be distributed into three distinct encrypted storage vaults: Alpha, Beta, and Gamma. A vault may remain empty if no codes are assigned to it.

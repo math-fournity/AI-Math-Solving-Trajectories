@@ -1,0 +1,1 @@
+Compute the norm of the linear operator \( T \) on the Hilbert space \( \ell^2(\mathbb{Z}) \), defined by:

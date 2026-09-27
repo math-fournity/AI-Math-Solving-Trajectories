@@ -1,0 +1,1 @@
+Let $\mathbb{N}_2 = \{2, 3, 4, \dots\}$ be the set of integers greater than or equal to 2. Find all functions $f: \mathbb{N}_2 \to \mathbb{N}_2$ satisfying the following conditions for all $x, y \in \mathbb{N}_2$ and $n \in \mathbb{N} = \{1, 2, 3, \dots\}$:

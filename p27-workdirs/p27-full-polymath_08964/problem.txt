@@ -1,0 +1,1 @@
+In a remote digital architecture project, engineers are designing rectangular server grids of dimensions $m \times n$, where $m$ and $n$ are integers ranging from 1 to 10 inclusive. Each individual server node in the grid must be assigned one of two operational states: "Active" (represented by a white light) or "Standby" (represented by a black light).

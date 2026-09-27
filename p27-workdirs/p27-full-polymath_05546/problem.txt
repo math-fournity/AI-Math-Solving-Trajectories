@@ -1,0 +1,1 @@
+In the country of Graphia there are $100$ towns, each numbered from $1$ to $100$. Some pairs of towns may be connected by a (direct) road and we call such pairs of towns  [i]adjacent[/i]. No two roads connect the same pair of towns.

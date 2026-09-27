@@ -1,0 +1,1 @@
+(a) Solve the boundary value problem \[ \frac{\partial^2 y}{\partial t^2} + b^2 \frac{\partial y}{\partial x^4} = 0 \quad 0 < x < L, \quad t > 0 \] \[ y(0, t) = 0, \quad y_x(0, t) = 0, \quad y_t(L, t) = 0, \quad y_x(L, t) = 0, \quad y(x, 0) = f(x), \quad |y(x, t)| < M \] and (b) interpret physically.

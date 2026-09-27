@@ -1,0 +1,1 @@
+On side \( AB \) of triangle \( ABC \), points \( K \) and \( L \) are chosen such that \( \angle ACK = \angle KCL = \angle LCB \). Point \( M \) on side \( BC \) is such that \( \angle BKM = \angle MKC \). It turned out that \( ML \) is the bisector of angle \( KMB \). Find \( \angle CLM \).

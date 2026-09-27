@@ -1,0 +1,1 @@
+What regular polygons can be constructed using only a ruler in the shape of a right triangle, whose smaller leg is half the length of the hypotenuse?

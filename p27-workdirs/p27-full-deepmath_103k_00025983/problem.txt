@@ -1,0 +1,1 @@
+Determine whether for any fixed \(\delta > 0\), there exists \(M = M(\delta)\) such that \(\frac{C_{k,M}}{(4 -\delta)^k} \to \infty\) as \(k \to \infty\).

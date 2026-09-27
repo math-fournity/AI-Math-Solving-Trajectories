@@ -1,0 +1,1 @@
+In a remote industrial sector, there are $n$ distinct energy reservoirs, indexed as $R_1, R_2, \ldots, R_n$. At the start of the operation, each reservoir $R_i$ is charged with exactly $i$ units of energy.

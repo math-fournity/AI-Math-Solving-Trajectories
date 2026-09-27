@@ -1,0 +1,1 @@
+Determine whether the following inequality holds for any real numbers \(u, v, w\) such that \(u < 0 < v < w\):

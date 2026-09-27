@@ -1,0 +1,1 @@
+In a specialized satellite communication network, every satellite is connected to exactly four other satellites via direct laser links. The network architecture is designed for high redundancy: if any two satellites in the network do not have a direct laser link between them, they must share at least one common neighbor to which they are both directly linked.

@@ -1,0 +1,1 @@
+Let $ a > b > 1$ be relatively prime positive integers. Define the weight of an integer $ c$, denoted by $ w(c)$ to be the minimal possible value of $ |x| \plus{} |y|$ taken over all pairs of integers $ x$ and $ y$ such that \[ax \plus{} by \equal{} c.\] An integer $ c$ is called a [i]local champion [/i]if $ w(c) \geq w(c \pm a)$ and $ w(c) \geq w(c \pm b)$.

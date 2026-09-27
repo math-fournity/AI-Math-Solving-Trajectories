@@ -1,0 +1,1 @@
+Explain why the omitting types theorem (OTT) fails for \( L_n \) (first-order logic restricted to the first \( n \) variables) when \( n > 2 \). Include the connection to Vaught's theorem on atomic models.

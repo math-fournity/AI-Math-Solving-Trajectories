@@ -1,0 +1,1 @@
+Can a simple abelian variety have a Picard number of \(n^2-1\)?

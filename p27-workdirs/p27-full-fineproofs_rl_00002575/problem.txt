@@ -1,0 +1,1 @@
+Let  $ABC$  be a triangle inscribed in circle  $(O)$ , with its altitudes  $BH_b, CH_c$  intersect at orthocenter  $H$  ( $H_b \in AC$ ,  $H_c \in  AB$ ).  $H_bH_c$  meets  $BC$  at  $P$ . Let  $N$  be the midpoint of  $AH, L$  be the orthogonal projection of  $O$  on the symmedian with respect to angle  $A$  of triangle  $ABC$ . Prove that  $\angle NLP = 90^o$ .

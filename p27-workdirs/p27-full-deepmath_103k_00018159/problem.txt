@@ -1,0 +1,1 @@
+Find all strictly positive functions \( f: \mathbb{R^+} \rightarrow \mathbb{R^+} \) that satisfy the functional equation \[ f(x^2 + xf(y)) = f(f(x))(x + y) \] for all positive real numbers \( x \) and \( y \).

@@ -1,0 +1,1 @@
+If two categories $C$ and $D$ are equivalent, there is a bijection between the isomorphism classes of objects of $C$ and $D$. If, in addition, for each isomorphism class of objects of $C$, the corresponding isomorphism class of objects of $D$ has the same cardinality, does it follow that $C$ is isomorphic to $D$?

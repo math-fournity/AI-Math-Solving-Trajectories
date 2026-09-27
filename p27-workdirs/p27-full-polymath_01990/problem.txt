@@ -1,0 +1,1 @@
+Let $T$ be a tetrahedron $ABCD$. The lengths of its six edges are distinct natural numbers.

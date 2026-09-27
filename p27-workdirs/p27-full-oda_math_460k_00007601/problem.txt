@@ -1,0 +1,1 @@
+Find all maps \( f \) from the Euclidean plane into itself such that for any triangle, the area of the image triangle under \( f \) is at most \( k \) times the area of the original triangle, where \( k \) is a constant independent of the chosen triangle.

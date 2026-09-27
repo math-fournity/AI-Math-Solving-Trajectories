@@ -1,0 +1,1 @@
+A set  $P$  of  $2002$  persons is given. The family of subsets of  $P$  containing exactly  $1001$  persons has the property that the number of acquaintance pairs in each such subset is the same. (It is assumed that the acquaintance relation is symmetric). Find the best lower estimation of the acquaintance pairs in the set  $P$ .

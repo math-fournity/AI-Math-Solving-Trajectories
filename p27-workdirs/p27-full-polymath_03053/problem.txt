@@ -1,0 +1,1 @@
+Let \( A_1, A_2, \ldots, A_{2012} \) be 2012 points in the interior of a unit circle. For each \( A_k \), let \( d_k \) be the distance from \( A_k \) to the closest point \( A_i \), where \( i \neq k \). Find the maximum value of \( d_1 + d_2 + \cdots + d_{2012} \).

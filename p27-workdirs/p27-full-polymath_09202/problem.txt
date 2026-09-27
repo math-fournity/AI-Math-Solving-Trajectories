@@ -1,0 +1,1 @@
+In a cutting-edge microchip manufacturing facility, a technician is tasked with etching a grid of specialized conductive circuits. The layout consists of a square grid of wires connecting a total of $n \times n$ junction nodes, where $n \geq 10$. This creates a square checkered pattern with a side length of $n-1$ units.

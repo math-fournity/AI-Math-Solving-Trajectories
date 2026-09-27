@@ -1,0 +1,1 @@
+Solve the differential equation: \( f'(x) = f(f(x)) \)

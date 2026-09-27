@@ -1,0 +1,1 @@
+A high-security digital vault uses a prime modulus $p = 10^9 + 7$ for its encryption protocols. To generate access keys, the system first identifies all prime numbers $p_1, p_2, p_3, \dots, p_m$ that are strictly less than $\sqrt[4]{p/2}$, arranged in increasing order.

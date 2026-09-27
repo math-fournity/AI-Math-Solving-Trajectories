@@ -1,0 +1,1 @@
+One square $(r, c)$ is removed from a $23 \times 23$ grid, where $1 \le r, c \le 23$. The remaining part of the grid is then completely partitioned into $2 \times 2$ and $3 \times 3$ squares. Let $S$ be the set of all possible coordinates $(r, c)$ of the removed square. Find the number of elements in $S$.

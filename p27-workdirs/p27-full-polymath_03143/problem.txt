@@ -1,0 +1,1 @@
+A plane intersects a unit cube, dividing it into two polyhedra. It is known that for each polyhedron, the distance between any two points does not exceed $\frac{3}{2}$ meters. What can be the cross-sectional area of the cube cut by this plane?

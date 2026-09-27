@@ -1,0 +1,1 @@
+A metropolitan transit authority is designing a new high-speed rail corridor consisting of $n$ stations placed in a perfectly straight line, with the distance between any two adjacent stations being exactly 1 kilometer. To simplify the network, the authority assigns each station to one of $k$ different transit zones (colors).

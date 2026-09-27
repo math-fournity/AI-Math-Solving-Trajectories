@@ -1,0 +1,1 @@
+A high-security data center uses a system of $n$ unique digital locks ($n \geq 4$) to protect a vault. The security protocols for these locks are as follows:

@@ -1,0 +1,1 @@
+Let \(X\) be a 0-dimensional subset of \(\mathbb{R}^n\). If \(U = \mathbb{R}^n \setminus X\) is homeomorphic to \(\mathbb{R}^n\), does it imply that \(X\) is empty? Provide a justification for your answer.

@@ -1,0 +1,7 @@
+Problem 1
+
+Let $d$ and $m$ be two fixed strictly positive integers. Pinocchio and Geppetto know the values of $d$ and $m$, and play the following game. First, Pinocchio chooses a polynomial $P$ of degree at most $d$ with coefficients in $\mathbb{Z}$. Then, Geppetto asks him questions of the form “What is the value of $P(n)$?”, where $n \in \mathbb{Z}$. Pinocchio usually tells the truth, but he can lie up to $m$ times. What is, in terms of $d$ and $m$, the minimum number of questions that Geppetto must ask to be sure to determine $P$ regardless of Pinocchio's answers?
+
+Note: $\mathbb{Z}$ denotes the set of integers, regardless of their sign.
+
+##

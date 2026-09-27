@@ -1,0 +1,1 @@
+A city planning department has designed a rectangular transit network consisting of an $m \times n$ grid of blocks. Each segment of the grid (the edges of the $m \times n$ unit squares) is designated as a one-way street. The flow of traffic is governed by two strict urban ordinances:

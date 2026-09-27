@@ -1,0 +1,1 @@
+A textile designer is planning an $n \times n$ square grid of decorative tiles. A design is classified as "Standard" if every single horizontal row and every single vertical column in the grid uses no more than $k=6$ distinct colors.

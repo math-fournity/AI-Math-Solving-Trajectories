@@ -1,0 +1,1 @@
+In a specialized digital manufacturing facility, a team of engineers is programming a dual-nozzle 3D printer. The printer operates based on a specific energy equilibrium constraint defined by the following system:

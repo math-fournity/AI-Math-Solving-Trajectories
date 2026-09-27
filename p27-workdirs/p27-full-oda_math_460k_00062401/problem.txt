@@ -1,0 +1,1 @@
+Let $\triangle ABC$ be a triangle with circumcenter $O$ and incenter $I$. Let $P$, $Q$, and $R$ be the feet of the internal angle bisectors from vertices $A$, $B$, and $C$, respectively. If $p_{ABC}$ and $p_{PQR}$ denote the perimeters of $\triangle ABC$ and $\triangle PQR$, respectively, find the maximum possible value of $\frac{p_{ABC}}{2} - p_{PQR}$ in terms of $OI$.

@@ -1,0 +1,1 @@
+The cities in a country are connected by bidirectional airlines, which are paid for at least in one of the two directions. When traveling from city A to city B, there are exactly 22 completely free routes. Determine the smallest possible number of cities in the country.

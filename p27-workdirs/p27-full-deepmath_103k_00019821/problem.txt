@@ -1,0 +1,1 @@
+In a symmetric space of noncompact type $M=G/K$, where all Lie groups are real, consider a subgroup $H \subset G$ that acts on $M$ by left-multiplication. If $H$ acts transitively on $M$, must $H$ be a parabolic subgroup of $G$? Answer yes or no.

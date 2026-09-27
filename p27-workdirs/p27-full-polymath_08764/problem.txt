@@ -1,0 +1,1 @@
+In a specialized cyber-security competition, ten regional servers—designated Server 1 through Server 10—start with varying baseline security integrity scores. Based on their historical performance, they are assigned initial ranks and scores as follows:

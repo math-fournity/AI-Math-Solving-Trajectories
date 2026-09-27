@@ -1,0 +1,1 @@
+Let $E$ be any spectrum such that $E \wedge I_{\mathbf{Q/Z}}$ is not contractible. Is it true that $\langle E\rangle \geq \langle X\rangle$ for some nontrivial finite spectrum $X$?

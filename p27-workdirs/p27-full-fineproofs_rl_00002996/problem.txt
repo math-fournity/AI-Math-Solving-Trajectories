@@ -1,0 +1,1 @@
+Let  $\bigtriangleup ABC$  be an acute triangle with a point  $D$  on side  $BC$ . Let  $J$  be a point on side  $AC$  such that  $\angle BAD = 2\angle ADJ$ , and  $\omega$  be the circumcircle of triangle  $\bigtriangleup CDJ$ . The line  $AD$  intersects  $\omega$  again at a point  $P$ , and  $Q$  is the feet of the altitude from  $J$  to  $AB$ .

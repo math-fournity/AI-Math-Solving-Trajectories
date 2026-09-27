@@ -1,0 +1,1 @@
+For a positive integer $n > 1$, consider a polynomial with coefficients in the quaternion algebra $\mathbb{H}$, having degree $n$. Let $P(x)$ be such a polynomial. If $P(x)$ has more than $n$ distinct roots in $\mathbb{H}$, denote the number of these roots by $r(n)$. Find the minimum value of $r(n)$ for $n = 4$.

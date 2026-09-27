@@ -1,0 +1,1 @@
+Determine the smallest natural number whose digits sum to 1981.

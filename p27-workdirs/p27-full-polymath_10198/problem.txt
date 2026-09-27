@@ -1,0 +1,1 @@
+A software engineer is designing a secure data transmission protocol that organizes a sequence of $n$ unique encryption keys, labeled $1$ to $n$, into a specific linear arrangement.

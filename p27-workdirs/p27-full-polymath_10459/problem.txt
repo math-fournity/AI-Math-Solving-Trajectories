@@ -1,0 +1,1 @@
+In a specialized logistics network, there are $n$ distinct cargo hubs, indexed from $k = 1$ to $k = n$. Each hub $k$ is assigned a specific shipment weight calculated by the formula $W_k = 3n + k$.

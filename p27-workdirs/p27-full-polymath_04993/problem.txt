@@ -1,0 +1,1 @@
+Point \( M \) is the midpoint of the base \( BC \) of the trapezoid \( ABCD \). A point \( P \) is chosen on the base \( AD \). The ray \( PM \) intersects the ray \( DC \) at point \( Q \). A perpendicular to the base \( AD \), drawn through point \( P \), intersects the segment \( BQ \) at point \( K \).

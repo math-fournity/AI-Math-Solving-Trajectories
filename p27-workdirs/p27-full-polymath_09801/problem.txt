@@ -1,0 +1,1 @@
+In the high-tech city of Synthetica, there is a network of $10,000$ unique processing nodes. Certain pairs of nodes are linked by "bi-directional data cables." It is established that every node in the network is connected to at least one other node.

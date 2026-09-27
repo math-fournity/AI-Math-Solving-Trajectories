@@ -1,0 +1,1 @@
+(a) Let \( n \) be a positive integer that is not a perfect square. Find all pairs \((a, b)\) of positive integers for which there exists a positive real number \( r \), such that

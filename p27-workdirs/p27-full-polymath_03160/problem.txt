@@ -1,0 +1,1 @@
+Let \( f: \mathbb{N} \rightarrow \mathbb{N} \) be a function satisfying:

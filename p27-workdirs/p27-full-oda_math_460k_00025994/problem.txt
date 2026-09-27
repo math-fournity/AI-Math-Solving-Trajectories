@@ -1,0 +1,1 @@
+Let \( f(z) \) be analytic in the open unit disk and satisfy \( |f'(z)| \leq \frac{1}{1 - |z|} \) for every \( |z| < 1 \). Suppose the Taylor series of \( f(z) \) is given by \( f(z) = \sum_{n=0}^{\infty} a_n z^n \). Calculate the maximum possible value of \( \sum_{n=1}^{10} |a_n| \).

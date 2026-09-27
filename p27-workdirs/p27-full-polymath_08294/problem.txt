@@ -1,0 +1,1 @@
+In a specialized logistics center, a manager is tasked with organizing $n^2$ unique shipping containers, labeled with distinct weights from $1$ to $n^2$ units, into a square storage yard with $n$ rows and $n$ columns.

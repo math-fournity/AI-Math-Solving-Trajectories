@@ -1,0 +1,1 @@
+How many permutations of the string \(0123456\) are there such that no contiguous substrings of lengths \(1 < \ell < 7\) have a sum of digits divisible by \(7\)?

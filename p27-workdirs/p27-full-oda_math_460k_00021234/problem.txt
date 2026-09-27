@@ -1,0 +1,1 @@
+Obtain necessary and sufficient conditions on \( f \in C([0, \infty), [0, \infty)) \) such that every positive nontrivial solution of the equation\n\n\[ x_{n+1} = \frac{f(x_n)}{x_{n-1}}, \quad n = 0, 1, \ldots \]\n\nis periodic with prime period three.

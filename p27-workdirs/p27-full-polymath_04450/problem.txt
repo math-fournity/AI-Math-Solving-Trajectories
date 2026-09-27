@@ -1,0 +1,1 @@
+Find the set of all natural numbers $m$ and $n$ such that there exist natural numbers $x$ and $y$ for which

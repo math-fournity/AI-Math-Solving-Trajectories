@@ -1,0 +1,1 @@
+A competitive logistics hub manages 100 shipping containers, each assigned a unique identification weight ranging from 1 to 100 units. These containers are arranged in a single, fixed linear queue $(x_1, x_2, \dots, x_{100})$ based on the order of their arrival.

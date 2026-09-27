@@ -1,0 +1,1 @@
+Does there exist a closed, smooth planar curve and a specific direction such that, when a finite opening is cut in the curve and a photon is launched through this opening into the interior along the specified direction, the photon will perpetually bounce off the curve's boundary, remaining confined within the interior?

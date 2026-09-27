@@ -1,0 +1,1 @@
+Let \( A, B, C, \) and \( D \) be four points lying on a circle in this order. Assume there is a point \( K \) on the segment \( A B \) such that \( B D \) bisects the segment \( K C \) and \( A C \) bisects the segment \( K D \). Determine the smallest possible value that \( \left|\frac{A B}{C D}\right| \) can take.

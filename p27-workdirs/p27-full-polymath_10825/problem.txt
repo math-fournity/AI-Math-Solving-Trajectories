@@ -1,0 +1,1 @@
+A specialized team of $n$ environmental engineers (where $n$ is an odd integer and $n \ge 3$) is tasked with monitoring a circular sequence of $n$ filtration stations, indexed $1$ through $n$. Each engineer is assigned a unique integer power rating from the set $\{1, 2, \dots, n\}$. Let $a_i$ represent the power rating of the engineer stationed at position $i$.

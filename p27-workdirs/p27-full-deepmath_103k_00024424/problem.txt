@@ -1,0 +1,1 @@
+Evaluate the sum: $$\sum _{k=1}^{\infty } \sum _{n=1}^{\infty } \frac{\Gamma (k+1)^2 \Gamma (n+1) }{\Gamma (2 k+n+2)}((\psi ^{(0)}(n+1)-\psi ^{(0)}(2 k+n+2)) (\psi ^{(0)}(k+1)-\psi ^{(0)}(2 k+n+2))-\psi ^{(1)}(2 k+n+2)).$$

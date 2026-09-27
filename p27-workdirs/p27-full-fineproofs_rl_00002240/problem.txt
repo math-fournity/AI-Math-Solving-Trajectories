@@ -1,0 +1,1 @@
+In the scalene triangle  $ABC$ , $\angle ACB=60$  and  $\Omega$  is its cirumcirle.On the bisectors of the angles  $BAC$  and  $CBA$  points  $A^\prime$ , $B^\prime$  are chosen respectively such that  $AB^\prime \parallel  BC$  and  $BA^\prime \parallel  AC$ . $A^\prime B^\prime$  intersects with  $\Omega$  at  $D,E$ .Prove that triangle  $CDE$  is isosceles.(A. Kuznetsov)

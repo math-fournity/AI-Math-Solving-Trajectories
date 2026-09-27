@@ -1,0 +1,1 @@
+Assume that \( \kappa, \mu \) are regular cardinals, \( \kappa > \mu^+ \), \( \mu > \omega \). There exists a family \( \{ C_\alpha : \alpha < \kappa, \text{cf}(\alpha) = \mu \} \) such that \( C_\alpha \) is closed, unbounded in \( \alpha \) and for every closed unbounded subset \( E \subseteq \kappa \), there is some \( C_\alpha \subseteq E \).

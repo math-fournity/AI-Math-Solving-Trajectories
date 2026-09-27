@@ -1,0 +1,1 @@
+Given a commutative ring inclusion $i: R \subseteq S$ where $R$ is a subring of $S$ with the same unity, and $S$ has an $R$-module structure, suppose $S \cong R \oplus M$ as $R$-modules. Does the inclusion map $i: R \to S$ split as an $R$-module map?

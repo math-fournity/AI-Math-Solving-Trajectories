@@ -1,0 +1,1 @@
+Find the total surface area of a solid formed by rotating a $6$ by $8$ by $10$ rectangular parallelepiped (box) about its longest diagonal. The density of the solid is $4$ grams per cubic centimeter. If the mass of the solid is $\frac{a}{b}\pi$ grams, where $a$ and $b$ are positive integers, and $a$ and $b$ are relatively prime, find $a + b$.

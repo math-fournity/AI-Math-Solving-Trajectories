@@ -1,0 +1,1 @@
+Let $X$ and $Y$ be topological spaces, and let $f: X \rightarrow Y$ and $g: Y \rightarrow X$ be continuous functions. If $g \circ f$ is homotopic to the identity map on $X$ and $Y$ is a CW complex, is $X$ homotopy equivalent to a CW complex?

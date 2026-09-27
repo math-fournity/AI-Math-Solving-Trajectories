@@ -1,0 +1,1 @@
+Let $A = \overline{\bigcup A_n}$ and $B = \overline{\bigcup B_n}$ be AF algebras with the same Bratelli diagram. Consider an isomorphism $\phi : A \rightarrow B$. If $x \in \bigcup A_n$, is it always true that $\phi(x) \in \bigcup B_n$?

@@ -1,0 +1,1 @@
+In the competitive world of high-speed drone racing, an international league is organizing a grand exhibition featuring $n = 10$ elite teams. The tournament format is strictly regulated: every team must race against every other team exactly twice—once as the "Primary Navigator" (Host) and once as the "Tactical Pursuer" (Challenger).

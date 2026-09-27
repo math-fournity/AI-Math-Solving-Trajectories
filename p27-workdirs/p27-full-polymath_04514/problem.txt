@@ -1,0 +1,1 @@
+Example 3 Can 2010 be written as the sum of squares of $k$ distinct positive integers? If so, try to find the maximum value of $k$; if not, please briefly explain the reason. ${ }^{[2]}$

@@ -1,0 +1,1 @@
+Find all functions \( f: \mathbb{N} \to \mathbb{N} \) that satisfy the equation

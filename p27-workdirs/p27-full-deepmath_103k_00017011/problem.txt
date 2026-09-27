@@ -1,0 +1,1 @@
+Given an open, bounded, and connected set $\Omega \subset \mathbb{R}^n$ with a $C^2$ boundary, and a function $\rho \in C^2(\mathbb{R}^n)$ such that:

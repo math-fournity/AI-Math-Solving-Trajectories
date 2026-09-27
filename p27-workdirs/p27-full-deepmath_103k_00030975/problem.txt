@@ -1,0 +1,1 @@
+Determine the maximum number of congruent pieces into which a sphere can be divided such that each side of each piece is an arc of a great circle and each arc is less than a quarter of such a circle.

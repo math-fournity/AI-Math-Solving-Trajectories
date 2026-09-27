@@ -1,0 +1,10 @@
+Three nonnegative real numbers r₁, r₂, r₃ are written on a blackboard.
+These numbers have the property that there exist integers a₁, a₂, a₃,
+not all zero, satisfying a₁r₁ + a₂r₂ + a₃r₃ = 0. We are permitted to
+perform the following operation: find two numbers x, y on the
+blackboard with x ≤ y, then erase y and write y − x in its place.
+Prove that after a finite number of such operations, we can end up
+with at least one 0 on the blackboard.
+
+</rule>
+</rules>

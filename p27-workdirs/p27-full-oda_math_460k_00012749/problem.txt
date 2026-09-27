@@ -1,0 +1,1 @@
+For which polynomials $P(x)$ with integer coefficients are there only finitely many primes $p$ such that $p$ divides $P\left(a^{n^k}\right)$ for some positive integer $k$, where $a$ and $n$ are integers greater than $1$?

@@ -1,0 +1,1 @@
+In the cells of an \(8 \times 8\) board, the natural numbers from 1 to 64 (each used exactly once) are arranged so that numbers differing by 1 are in adjacent cells. What is the minimum possible value of the sum of the numbers on the diagonal from the lower left to the upper right corner?

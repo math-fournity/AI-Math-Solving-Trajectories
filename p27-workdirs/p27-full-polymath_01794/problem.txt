@@ -1,0 +1,1 @@
+The sequence \(\{a_{n}\}\) is constructed as follows: \(a_{1}=p\) - a prime number that has exactly 300 non-zero digits, \(a_{n+1}\) - the period of the decimal fraction \(1 / a_{n}\), multiplied by 2. Find the number \(a_{2003}\).

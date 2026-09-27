@@ -1,0 +1,1 @@
+In a party attended by 2015 guests, among any 5 guests, at most 6 handshakes have been exchanged. Determine the maximal possible number of handshakes.

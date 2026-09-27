@@ -1,0 +1,1 @@
+In the  $n \times n$  table in every cell there is one child. Every child looks in neigbour cell. So every child sees ear or back of the head of neighbour.  What is minimal number children, that see  ear ?

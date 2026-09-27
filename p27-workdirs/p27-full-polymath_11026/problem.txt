@@ -1,0 +1,1 @@
+In a futuristic circular space station, there are exactly 21 docking ports arranged at perfectly regular intervals around the perimeter. The station commander decides to assign special designations to some of these ports: $m$ ports are designated as "Red Sector" hubs, and $n$ ports are designated as "Blue Sector" hubs.

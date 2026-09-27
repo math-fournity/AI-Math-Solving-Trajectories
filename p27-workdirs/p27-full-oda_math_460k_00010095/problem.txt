@@ -1,0 +1,1 @@
+12. $(\mathbf{C H N} 3)^{\mathrm{IMO} 3}$ Let $S=\{1,2,3, \ldots, 280\}$. Find the minimal natural number $n$ such that in any $n$-element subset of $S$ there are five numbers that are pairwise relatively prime.

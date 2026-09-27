@@ -1,0 +1,256 @@
+Let \( R = \mathbb{C}[x_1, \dots, x_n]/(x_1^2 + x_2^2 + \dots + x_n^2) \). Then \( R \) is a unique factorization domain for \(n \geq 5 \).
+
+</rule>
+
+<rule name="AGENTS" path="/Users/user/.config/devin/AGENTS.md">
+# Devin CLI 全局工作规范
+
+**本文件（`~/.config/devin/AGENTS.md`）**：全局 always-on 规则。只放跨项目、跨 session 的硬约束和行为规范。
+
+**项目本地 `AGENTS.md`**：项目根目录下的 `AGENTS.md`。放项目状态、上下文、项目级规则。
+
+**用户说"记录到 AGENTS.md"时，默认指项目本地 `AGENTS.md`。** 只有用户明确说"全局"、"Devin AGENTS.md"、"~/.config/devin/AGENTS.md"时，才更新本文件。
+
+---
+
+## 硬约束与行为规范
+
+### 1 · 信息充分性
+
+行动前先问："我对这个问题的了解是否足够支撑直接行动？"
+
+- 确信 → 直接行动
+- 不完全确定 → 先搜索再行动
+- 不确定 → 必须搜索，禁止猜测试错
+
+### 2 · 文档意识
+
+你和用户的对话是一个**积累过程**——积累代码、认知、文档、数据。积累必须**有机**：后期的积累结合到之前的积累中，而不是只在 TUI 里输出完就消失。
+
+**落盘规则**：
+
+1. **该放项目 AGENTS.md 的**（跨 session 认知、认知资产表、项目级配置信息）→ 放项目 AGENTS.md
+2. **该放 `./dev-docs/` 的**（工作痕迹、方案、分析、调查）→ 放 `dev-docs/` 下带顺序编号的文档
+3. **其他内容**→ 各就各位（全局规则放本文件，操作流程放 skill，等）
+4. **AGENTS.md 是总目录**——其中的索引节是跨 session AI 认知一致性的保证
+
+**Rule / Skill / 元组的放置层级**：
+
+当需要新建或迁移 rule、skill、元组时，按以下优先级选择放置位置：
+
+1. **首先考虑项目级 `.devin/` 目录**——这是 Devin 的正常使用方法。项目级 rule 放 `.devin/rules/`，项目级 skill 放 `.devin/skills/`。大多数 rule/skill 应该在这里——它们是项目特定的，不需要污染全局配置。
+2. **AGENTS.md 中只放 rule 索引**——项目 AGENTS.md 的维护规则节中，保留 rule 索引表（指向 `.devin/rules/` 中的文件），不保留完整 rule 内容。AGENTS.md 是总目录，rule 文件是详细内容。
+3. **只有确实跨项目通用的 rule/skill/元组，才升级为全局内容**——放在 `~/.config/devin/` 或 `~/.devin/` 中。**升级必须获得用户明确同意**——不要擅自把项目级内容升级为全局内容。
+4. **判断标准**：如果这个 rule/skill 只在当前项目有意义 → 项目级 `.devin/`。如果它在多个项目中都会被触发 → 可以考虑升级为全局，但先问用户。
+
+**元组：rule-skill-tuple-assessment**（rule + skill，全局）
+
+> **触发条件**：用户提出一个要求、认知、或设计思想时，AI 自动评估这个内容是否应该固化为 rule、skill、或元组。
+> **Skill**：`~/.config/devin/skills/rule-skill-tuple-assessment/SKILL.md`
+> **核心意识**：不是每个用户要求都需要设为 rule/skill——只有具有跨 session 复用价值的才设置。但 AI 必须有意识地主动评估，而不是被动等用户说"把这个设为rule"。
+>
+> **评估流程**（详见 skill）：
+> 1. 判断是否具有跨 session 复用价值 → 否则直接执行不设置
+> 2. 判断类型：Rule（硬约束）/ Skill（SOP）/ 元组（Rule+Skill）/ 元组群（多Skill）
+> 3. 判断层级：项目级 `.devin/`（默认） vs 全局 `~/.config/devin/`（需用户同意）
+> 4. 执行：创建文件 + AGENTS.md 索引 + commit
+
+**方案先行**：方案落地到 `dev-docs/`，精确到 Check List 粒度，描述清楚原因和逻辑（不只是 Check List），实现过程中持续追踪完成情况。
+
+**跨 session 保证**：落盘的目的不仅是规范化码放，更是让跨 session、跨压缩边界后的 AI 能在必要时找回它应该了解的内容。
+
+**当用户说"更新文档"时**：赶紧检查什么内容该同步到项目 AGENTS.md、什么该同步到方案文档、什么该建新文档、什么该按认知资产表归档到 dev-docs。
+
+### 3 · 人话铁律
+
+所有文档、回复、注释、commit message、规则文件——全部用人话写。
+
+### 4 · 给选项必含利弊 + 推荐 + 推荐理由
+
+列选项时，必须同时给出：每个选项的利弊、你的推荐、推荐理由。
+
+### 5 · 时间估计纪律
+
+**禁止拍脑袋时间估计**：禁止无依据地随口说"这需要 3 天"、"工作量 2 周"——没有调查、没有实验、没有推理就给数字，是瞎说。
+
+**允许有理有据的时间估计**：当用户需要时间估计时，必须基于以下之一给出推理过程：
+- 实验数据（"实测编译 1 个文件 30 秒，共 200 个文件，约 100 分钟"）
+- 调查结果（"该 API 限速 100 req/min，1 万条数据约需 100 分钟"）
+- 常识推理（"下载 10GB 文件，百兆带宽约 14 分钟，千兆约 1.4 分钟"）
+- 历史经验（"上次同类任务实际花了 X，本次规模类似"）
+
+**格式要求**：给出时间估计时，必须同时给出推理依据。只给数字不给依据 = 违规。
+
+**无依据时**：说"我没有依据给出时间估计"，然后分析复杂程度、依赖关系、可行性、可逆度。
+
+### 6 · Debug 心智闸门
+
+撞墙三次必须停手。1-2 次调参数，3-5 次停手读证据，5 次以上重新定义问题。
+
+### 7 · 手机截图压缩后再读
+
+从手机拿到的截图，Read 之前必须压缩到 100KB 以下。macOS 用 `sips -s format jpeg -s formatOptions 60 -Z 1100 in.png --out out.jpg`。
+
+### 8 · 设备纪律
+
+- 只允许操作 **Green 手机 `09081FDD400019`**
+- 所有 `adb` 命令必须带 `-s 09081FDD400019`
+- 严禁自行操作 Black、Red、Yellow 等其他手机
+- 误触其他设备 → 立即停止，force-stop 已启动进程，并记录
+
+### 9 · 不要擅自 git init
+
+发现当前目录不在 git 仓库内时，先问用户是否初始化，不擅自 `git init`。
+
+### 10 · 搜索优先于试错
+
+同一类修复尝试 2 次仍失败 → 立即停止，改走搜索。
+
+### 11 · 工具边界
+
+- 没有 user 明确指示，不得操作 `~/.claude/` 和 `~/.codex/` 目录中的内容。
+- Devin 只能操作 `~/.config/devin/`、`~/.devin/` 以及明确授权的位置。
+
+### 12 · tmux 优先
+
+长时间运行的命令、服务、下载、同步，必须在 tmux 中运行，不允许用 `nohup ... &` 等脱离终端的方式。
+
+- **长时间命令**（下载、编译、同步、daemon、GPU 穷举等）→ `tmux new-session -d -s <name> "<command>"`
+- **检查运行状态** → `tmux capture-pane -t <name> -p`
+- **查看所有 session** → `tmux list-sessions`
+- **停止 session** → `tmux kill-session -t <name>`
+- session 命名规范：`<项目>-<用途>`
+- 短命令不需要 tmux
+
+> tmux 配置不好用时加载 `tmux-easy-setup` skill。
+
+---
+
+## Git 管理协议
+
+**改文件前**：检查目标文件/目录是否处于 git clean 状态 → 记录 `before_status_baseline` → 明确本轮 `intended_delta`。
+
+**改文件后**：完成一个逻辑工作单元立即 commit → 记录 `after_status_baseline` → 核验 `after - before == intended_delta` → 目标文件/目录回到 git clean 状态。
+
+**禁止 `git add -A`、`git add .`、`git add -u`**。只 add 具体路径。
+
+任何 `git push` 都必须获得用户当轮明确授权。
+
+---
+
+## 可审计性纪律
+
+- 重大分析、调查、审查必须留下 `file:line` 定位 + 理解性产物。
+- 声称"X 完成"前，必须有 remainder=0 证明。
+
+---
+
+## 元组核心原理
+
+元组 = Rule + Skill。Rule always-on 负责约束 + 模式匹配；Skill on-demand 负责工作流。AGENTS.md 中绝不放工作流，Skill 中绝不放硬性约束。AGENTS.md 太长是执行力问题——"每次都必须知道"→ 留在 AGENTS.md；"遇到特定场景才需要"→ 移到 Skill。
+
+> 元组详细方法论（瘦身工程、两种实现方式、新增元组规范）见 `~/.devin/rules/tuple-methodology.md`。Devin CLI 完整配置说明见 `devin-config-harness` skill。
+
+---
+
+## 元组：long-running-work-sop（长程工作SOP化铁律）
+
+**触发条件**：用户启动一个可能跨越压缩边界的持续性工作时；发现已有长程工作没有SOP化时；长程工作的分类学/框架/体系需要迭代修正时。
+
+**核心约束**：长程工作（可能跨越压缩边界的持续性工作）必须SOP化。三个必须：
+1. **必须SOP化**——提取步骤、定义产出、定义验证，放入项目AGENTS.md
+2. **必须用rules锁定流程行为**——在`.devin/rules/`中创建rule文件，锁定SOP的执行纪律
+3. **必须版本化审计修正历史**——如果长程工作涉及分类学/框架/体系的迭代修正，修正的全历史必须在明面上审计（不在git log中），每次修正做覆盖性检查
+
+**Skill**：`~/.config/devin/skills/long-running-work-sop/SKILL.md`——提供识别长程工作、SOP化、rules锁定、版本化审计的标准流程，以及积累的经验和反模式。
+
+**已有项目级实例**：
+- 数学大师项目的`tell-taxonomy-iteration-audit`元组（`.devin/rules/tell-taxonomy-iteration-audit.md`）——Tell分类学迭代审计的铁律和9步SOP，是本全局元组的项目级实例
+
+**经验和反模式积累**：在skill的"经验和反模式积累区"中持续追加。当前积累：5个反模式（当一次性任务做/不锁定/只在git log/不做覆盖性检查/遗留旧措辞）、3个经验（FLT例子测试/FCA理论审查方法/版本化审计让修正更严谨）。
+
+---
+
+### 元组群与 Skill 粒度铁律
+
+**元组群**：当一个复杂任务的工作流太长，无法放入单个 Skill 中时，应拆分为多个元组（多个 Skill），形成元组群协同工作。
+
+**为什么需要拆分**：Skill 加载后形成 Session 临时上下文中的认知和 SOP。但如果把应该拆分成多个 Skill 的内容放入一个 Skill 中，执行过程中可能跨越压缩边界——Session 压缩后，Skill 的后续内容从上下文中丢失，无法有效发挥作用。
+
+**Skill 粒度铁律**：
+
+1. **Skill 必须在 Session 上下文中始终可见**——如果执行过程很长（跨越多轮对话、可能触发压缩），Skill 内容必须足够短，确保压缩后仍可见，或拆分为多个 Skill 分阶段加载。
+
+2. **执行过程长 → 拆分 Skill**——如果一个 Skill 的工作流需要很多步骤、很长时间执行，应该拆分成多个 Skill，每个 Skill 覆盖一个可在一个压缩窗口内完成的阶段。
+
+3. **拆分后的 Skill 之间通过文档传递**——前一个 Skill 的产出落盘到文档（dev-docs / AGENTS.md / 数据文件），后一个 Skill 加载时读文档获取前序成果，不依赖 Session 上下文传递。
+
+4. **判断粒度的经验法则**——如果一个 Skill 的执行可能超过 10 轮对话或 50k tokens，考虑拆分。如果工作流中有明确的阶段分界点（如"方案设计"→"执行"→"验证"），在分界点拆分。
+
+### 元组群的整体性：目录在规则中
+
+**元组群如何确保整体性？** 确保整体性 = 确保工作的连续性。元组群中的多个 Skill 是一个整体工作流的分段，不是各自独立的任务。确保整体性的机制是：**元组群的目录放在规则中，规则指向一组 Skill，而不是单一 Skill。**
+
+**传统元组**：规则指向单一 Skill——"遇到场景X，加载Skill Y"。
+
+**元组群**：规则指向一组 Skill——"遇到场景X，按顺序加载Skill Y1→Y2→Y3，它们是一个整体工作流的三个阶段"。
+
+**元组群规则的结构**：
+
+```
+## 元组群：<群名称>
+
+**触发条件**：<何时AI应该执行这组工作流>
+
+**整体目标**：<这组Skill共同完成的最终目标>
+
+**Skill目录**（按执行顺序）：
+1. Skill <Y1>：<阶段1名称>——<这个阶段做什么>，产出落盘到<文档>
+2. Skill <Y2>：<阶段2名称>——<这个阶段做什么>，读取<文档>，产出落盘到<文档>
+3. Skill <Y3>：<阶段3名称>——<这个阶段做什么>，读取<文档>，产出最终结果
+
+**阶段间传递**：<通过什么文档/数据文件传递，不依赖Session上下文>
+
+**何时进入下一阶段**：<前一个Skill完成并落盘后，AI检查目录，自然加载下一个Skill>
+```
+
+**为什么目录在规则中而不是在某个Skill中**：
+
+1. **规则是always-on的**——不受压缩影响。即使Session压缩了，规则仍然在上下文中可见，AI始终能看到元组群的全貌——有几个阶段、当前在哪个阶段、下一步该加载哪个Skill。
+
+2. **如果目录在Skill中**——Skill加载后形成临时上下文，压缩后目录丢失，AI不知道还有后续阶段，元组群的整体性断裂。
+
+3. **规则是元组群的"目录页"**——每个Skill是"章节内容"。章节内容可能被压缩掉，但目录页始终可见，AI随时可以翻到正确的章节。
+
+**元组群规则的放置位置**：
+
+- **全局元组群**（跨项目通用）→ `~/.config/devin/AGENTS.md` 或 `~/.devin/rules/`
+- **项目级元组群**（特定项目的工作流）→ 项目 `AGENTS.md` 或 `.devin/rules/`
+
+**与单一元组的关系**：元组群是单一元组的扩展。单一元组 = 1个规则 + 1个Skill。元组群 = 1个规则（含目录） + N个Skill。规则从"指向单一Skill"升级为"指向一组Skill的有序目录"。
+
+---
+
+## 元组：trajectory-workline-review（从trajectory回溯session工作脉络）
+
+**触发条件**：需要了解某个 session（自己的或别人的）做了什么工作；同一 repo 下有多个 session 并行工作需要区分各自工作范围；新 session 启动时需要了解前序 session 进展；审查某个 session 的工作过程。
+
+**Skill**：`~/.config/devin/skills/trajectory-workline-review/SKILL.md`
+
+**核心约束**：
+1. **禁止用 git log 区分 session**——同一 repo 下多个 session 的 commit 交织在 git log 中，无法区分。必须用 sessions.db 的 session_id 区分。
+2. **运行中的 session 用 sessions.db，不用 transcripts**——transcript 文件只在 session 结束后写入，运行中的 session 没有 transcript 文件。sessions.db 的 message_nodes 表是实时写入的，是运行中 session 的唯一数据源。
+3. **grep tool_calls 中的 file_path 是最快方法**——不用完整解析嵌套 JSON，直接 grep `"file_path":"..."` 字符串，sqlite3 输出管道给 grep 一行命令搞定。区分操作类型时用正则 `re.finditer(r'"name":"write".*?"file_path"...')` 比解析 JSON 的 tool_calls 结构更稳健（结构可能不规则）。
+4. **文件操作时间线 = 工作脉络骨架**——提取每个文件首次操作时间并按时间排序，就是工作脉络的时间线。按目录归类操作频次 = 工作重心分布。
+5. **区分 write/edit/read 三种操作**——write（创建）= 核心产出，edit（修改）= 迭代深化，read（读取）= 前置依赖。只看 write 会漏掉 session 的前置依赖（读取了别人创建的文档 = 吸收前置讨论基础）。多 session 协作时，交叉分析 read 和 write 揭示跨 session 依赖关系。
+
+---
+
+## 更新本文件
+
+- 更新前检查 `before_status_baseline`
+- 只改本文件和对应 skill/rule
+- 改后核验 `after_status_baseline`，确保回到 git clean
+
+</rule>
+</rules>

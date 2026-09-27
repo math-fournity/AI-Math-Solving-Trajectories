@@ -1,0 +1,1 @@
+In a remote industrial complex, there are 10 chemical processing stations arranged in a straight line, labeled Station 1 through Station 10. Initially, a supply of $n$ units of a volatile fuel is stored at Station 1.

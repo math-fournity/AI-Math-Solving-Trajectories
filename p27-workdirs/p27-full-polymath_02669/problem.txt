@@ -1,0 +1,1 @@
+Let $[\alpha, \beta]$ be an interval that does not contain any integers. Let $n_0$ be the largest positive integer such that the interval $[n_0 \alpha, n_0 \beta]$ does not contain any integers. Determine the minimum possible value of the length of this interval, $n_0 \beta - n_0 \alpha$, across all such possible $\alpha$ and $\beta$.

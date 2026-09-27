@@ -1,0 +1,1 @@
+Determine whether it is possible to divide an equilateral triangle into one million polygons such that no line intersects more than forty of these polygons. A line is said to intersect a polygon if they share at least one common point.

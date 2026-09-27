@@ -1,0 +1,1 @@
+Determine the density of the set \( S_k = \{ a \mid \exists m \in \mathbb{N} ; \sigma_k(m) = a \} \) in \( \mathbb{N} \) for \( k \in \mathbb{N} \), where \( \sigma_k(n) = \sum_{d \mid n} d^k \) is the sum of divisors function of the \( k \)th power.

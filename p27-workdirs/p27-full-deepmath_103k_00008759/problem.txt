@@ -1,0 +1,1 @@
+Let $X$ be a complex smooth projective variety with trivial topological Euler characteristic $\chi_{\text{top}}(X)=0$. Assume that $D$ is a smooth irreducible divisor in the linear system $|K_X|$ of the canonical divisor $K_X$ of $X$. Determine if $\chi_{\text{top}}(D)=0$.

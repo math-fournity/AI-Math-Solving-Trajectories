@@ -1,0 +1,1 @@
+An $n \times n$ square is divided into unit squares. Let $n=100$ and $m=7$. Find the largest natural number $t$ such that for any coloring of $t$ unit squares, we can always find a square of side $m$, positioned along the lines of the large square, which contains exactly $1$ colored square.

@@ -1,0 +1,1 @@
+304. Draw the schemes of the Riemann surfaces of the following functions: a) \( \sqrt[3]{z^2 - 1} \); b) \( \sqrt[3]{(z - 1)^2 z} \); c) \( \sqrt[3]{(z^2 + 1)^2} \).

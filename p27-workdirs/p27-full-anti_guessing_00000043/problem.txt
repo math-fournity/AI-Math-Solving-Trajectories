@@ -1,0 +1,1 @@
+Determine all non-constant polynomials $X^{n}+a_{1} X^{n-1}+\cdots+a_{n-1} X+a_{n}$, with integer coefficients, whose roots are exactly the numbers $a_{1}, \ldots, a_{n-1}, a_{n}$ (with multiplicity).

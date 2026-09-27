@@ -1,0 +1,1 @@
+Solve the partial differential equation $u_{xx} + yu_x + xu_y + xyu = 0$.

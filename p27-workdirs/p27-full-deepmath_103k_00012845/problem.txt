@@ -1,0 +1,1 @@
+Determine the behavior of the sequence \( \lim_{n \to \infty}\left(\frac{\ln(p_n!)}{\psi(p_n)}\right)_n \), where \( p_n \) is the \( n \)-th prime, \( x! \) denotes the factorial, and \( \psi(x) \) is the second Chebyshev function. Does the sequence diverge to infinity or converge to a constant?

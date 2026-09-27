@@ -1,0 +1,1 @@
+In the technologically advanced city-state of Quintis, there exists a digital infrastructure built upon a specialized data network $F$ containing exactly $5^{14}$ unique data packets. In this network, two packets $x$ and $y$ can be combined using an addition operation ($x+y$) or a subtraction operation ($x-y$), and each packet $x$ has a corresponding squared state $x^2$.

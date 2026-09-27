@@ -1,0 +1,1 @@
+In a remote industrial outpost, there are $n$ distinct mining sectors. The $i$-th sector has extracted $C_{i}$ tons of rare-earth minerals $(0 \leqslant C_{i} \leqslant 39, i=1,2, \cdots, n)$. Across all sectors, the total weight of the minerals collected is exactly $C_{1}+C_{2}+\cdots+C_{n}=1990$ tons.

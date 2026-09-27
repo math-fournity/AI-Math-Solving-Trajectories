@@ -1,0 +1,1 @@
+Consider the set \( S = \bigcup_{n=2}^\infty S_n \), where \( S_n \) contains the \( n \)-th roots of all prime numbers for \( n \geq 2 \). Determine if there exists a natural number \( k \) and distinct non-zero rational numbers \( r_1, r_2, \dots, r_k \) such that there are \( k \) elements \( s_1, s_2, \dots, s_k \) from \( S \) with \( \sum_{i=1}^{k} r_i s_i = 0 \).

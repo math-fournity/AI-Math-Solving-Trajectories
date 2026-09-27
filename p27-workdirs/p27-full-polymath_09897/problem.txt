@@ -1,0 +1,1 @@
+In a futuristic city, an architect is designing a square data center grid consisting of $n$ rows and $n$ columns of server racks. To ensure the facility remains cool, the architect must install specialized cooling units on some of the rack spaces.

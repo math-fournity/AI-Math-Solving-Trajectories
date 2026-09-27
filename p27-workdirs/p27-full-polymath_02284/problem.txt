@@ -1,0 +1,1 @@
+In each square of a garden shaped like a \(2022 \times 2022\) board, there is initially a tree of height \(0\). A gardener and a lumberjack alternate turns playing the following game, with the gardener taking the first turn:

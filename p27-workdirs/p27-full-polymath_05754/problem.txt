@@ -1,0 +1,1 @@
+6. Six unit disks $C_{1}, C_{2}, C_{3}, C_{4}, C_{5}, C_{6}$ are in the plane such that they don't intersect each other and $C_{i}$ is tangent to $C_{i+1}$ for $1 \leq i \leq 6$ (where $C_{7}=C_{1}$ ). Let $C$ be the smallest circle that contains all six disks. Let $r$ be the smallest possible radius of $C$, and $R$ the largest possible radius. Find $R-r$.

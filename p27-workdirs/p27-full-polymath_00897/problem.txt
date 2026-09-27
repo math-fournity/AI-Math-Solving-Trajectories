@@ -1,0 +1,1 @@
+Example 6 Find the maximum number of elements in a set $S$ that satisfies the following conditions:

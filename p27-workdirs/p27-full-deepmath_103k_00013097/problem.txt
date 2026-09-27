@@ -1,0 +1,1 @@
+Calculate the expected value of $X_t$ if $X_t = \sin(B_t)$, where $B_t$ is a Brownian motion and $t \geqslant 0$. Provide your answer as a function of $t$.

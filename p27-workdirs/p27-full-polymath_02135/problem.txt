@@ -1,0 +1,1 @@
+Let $[a_i, a_i+1] \subset [0,100]$ for $i=1, 2, \dots, N$ be $N$ closed intervals such that these $N$ intervals can cover $[0,100]$, but any $N-1$ of them cannot cover $[0,100]$. Find the maximum value of $N$.

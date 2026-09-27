@@ -1,0 +1,1 @@
+There exist functions\n\n   \[\n   f_0 \prec f_1 \prec \cdots \prec f_\alpha \prec \cdots \prec g_\alpha \prec \cdots \prec g_1 \prec g_0, \quad \alpha < \omega_1,\n   \]\n\n   such that there is no function \(f\) with \(f_\alpha \prec f \prec g_\alpha\) for every \(\alpha < \omega_1\).

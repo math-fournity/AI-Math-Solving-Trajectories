@@ -1,0 +1,1 @@
+Determine the largest number \( c \) such that for any \( n \) red points and \( n \) blue points in general position in the plane, one can always find a noncrossing alternating path of length at least \( cn \).

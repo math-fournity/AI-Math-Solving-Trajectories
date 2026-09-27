@@ -1,0 +1,1 @@
+Can the extension $L$ be considered as a vector space over the local field $K_\frak{p}$?

@@ -1,0 +1,1 @@
+In a remote sector of the galaxy, ten autonomous research drones are stationed on a vast, two-dimensional sensor grid. The distances between every possible pair of drones are uniquely different, such that no two pairings share the same measurement.

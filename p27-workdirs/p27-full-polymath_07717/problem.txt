@@ -1,0 +1,1 @@
+In the competitive world of high-stakes coffee roasting, a group of $n$ artisanal roasters (where $n > 1$) is competing in a grand tournament consisting of 12 distinct roasting rounds. In each round, every roaster produces a unique blend, and a panel of judges ranks them from 1st place down to $n$-th place based on flavor profile.

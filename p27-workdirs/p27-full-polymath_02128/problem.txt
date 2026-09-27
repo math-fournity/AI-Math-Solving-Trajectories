@@ -1,0 +1,1 @@
+2. (BRA 3) A polyhedron has 12 faces and is such that: (i) all faces are isosceles triangles, (ii) all edges have length either $x$ or $y$, (iii) at each vertex either 3 or 6 edges meet, and (iv) all dihedral angles are equal.  Find the ratio $x / y$.

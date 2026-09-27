@@ -1,0 +1,1 @@
+Determine whether the sequence of natural numbers \( n \) such that the arithmetic derivative \( n' > m' \) for every \( m < n \) consists only of practical numbers. A practical number is defined as a number whose prime factorization has its exponents weighted towards smaller prime factors.

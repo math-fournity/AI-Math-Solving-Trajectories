@@ -1,0 +1,1 @@
+Find all integers \( x \) such that \( \frac{x^{2^n} - 1}{x^{2^m} - 1} \) is a perfect square, where \( n \) and \( m \) are positive integers of different parity and \( n > m \).

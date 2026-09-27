@@ -1,0 +1,1 @@
+Yang the Spinning Square Sheep is a square in the plane such that his four legs are his four vertices. Yang can do two different types of [i]tricks[/i]:

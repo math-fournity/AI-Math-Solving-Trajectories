@@ -1,0 +1,1 @@
+A natural number $n$ is called excellent if the numbers $1, 2, \ldots, n$ can be arranged in a sequence such that every two adjacent numbers in the sequence differ by 6, 7, or 8. Determine the number of excellent integers $n$ in the set $\{2, 3, \dots, 42\}$.

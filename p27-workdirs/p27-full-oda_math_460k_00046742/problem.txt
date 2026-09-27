@@ -1,0 +1,1 @@
+Consider a partition of the set of positive integers into three subsets \(A\), \(B\), and \(C\) such that \(A \cap B = B \cap C = C \cap A = \varnothing\). Suppose there exist integers \(a \in A\), \(b \in B\), and \(c \in C\) such that the following properties hold:

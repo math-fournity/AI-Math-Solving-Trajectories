@@ -1,0 +1,1 @@
+Find the maximum possible value of $K$ such that for any positive value $k \leq K$, the inequality

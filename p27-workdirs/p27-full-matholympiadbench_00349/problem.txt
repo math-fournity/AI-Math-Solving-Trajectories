@@ -1,0 +1,13 @@
+/-!
+# IMO 2022 C7
+
+Let $m$ be a positive integer and consider an arbitrary subset $S \subseteq \mathbb{Z}^m$.
+We say that $S$ is *add-sup closed* if for any $v, w \in S$, their pointwise sum $v+w$ and
+their pointwise maximum (or sup) $v \lor w$ are also in $S$.
+A set $G \subseteq \mathbb{Z}^m$ is called an *add-sup generator* if the only add-sup
+closed set containing $G$ is $\mathbb{Z}^m$ itself.
+
+Find the smallest possible size of an add-sup generator, in terms of $m$.
+-/
+
+##

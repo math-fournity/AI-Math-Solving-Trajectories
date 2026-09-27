@@ -1,0 +1,1 @@
+You have $n^2$ distinct balls, each of which can be colored in $n^2$ different ways. You randomly select $n^b$ balls without replacement. Determine the asymptotic probability that at least $n^a$ balls have the same color, where $0 < a < b \leq 2$. Provide your answer in terms of $n$.

@@ -1,0 +1,1 @@
+Determine the maximum number of points $y \in X(k)$ that can be removed from a smooth geometrically connected projective curve $X$ over a field $k$ of genus $g = 3$ such that $X \setminus y$ is an affine plane curve.

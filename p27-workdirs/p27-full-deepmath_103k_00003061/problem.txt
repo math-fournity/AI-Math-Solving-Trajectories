@@ -1,0 +1,1 @@
+Suppose $\nu$ is a compactly supported signed measure in $\mathbb{R}^{n\geq 3}$. Is the Coulomb energy given by \( \iint \frac{1}{\|x-y\|^{n-2}}d\nu(x)d\nu(y) \geq 0 \)?

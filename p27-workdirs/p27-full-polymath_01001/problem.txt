@@ -1,0 +1,1 @@
+Find the best constant \( k \) such that the inequality \( x^4 + y^4 + z^4 \ge 3xyz + k(x-y)(y-z)(z-x) \) holds for all \( x, y, z \ge 0 \) with \( x + y + z = 3 \).

@@ -1,0 +1,1 @@
+Suppose that \(H\) is a class of \(\{0, 1\}\)-valued functions with VC-dimension \(d \geq 1\). What is the lower bound on the sample complexity of PAC learning for \(H\) in the realizable case, for \(0 < \varepsilon < 1/8\) and \(0 < \delta < 1/100\)? Additionally, what is the lower bound if \(H\) contains at least three functions?

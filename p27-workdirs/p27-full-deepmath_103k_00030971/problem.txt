@@ -1,0 +1,1 @@
+Find the smallest integer \(d\) such that for any positive integers \(a > b > 1\), the sequence \(x_n = \frac{a^n-1}{b^n-1}\) does not contain \(d\) consecutive prime numbers.

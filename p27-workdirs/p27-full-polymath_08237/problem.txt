@@ -1,0 +1,1 @@
+In a futuristic city, three giant solar collectors, each shaped like an equilateral triangle with a side length of $x$ meters, are being installed inside a hexagonal power hub shaped like a large equilateral triangle with a side length of 6 meters.

@@ -1,0 +1,1 @@
+Seven people are sitting around a circular table. Several vases are placed on the table. We say that two people can see each other if there is no vase on the line segment connecting them. (Treat both people and vases as points.)

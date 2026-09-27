@@ -1,0 +1,1 @@
+What is the smallest area of a set in the plane that contains a congruent copy of every closed curve of length at most one?

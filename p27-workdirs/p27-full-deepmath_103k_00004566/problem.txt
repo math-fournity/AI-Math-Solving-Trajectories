@@ -1,0 +1,1 @@
+Given a nonempty open set $A$ in $\mathbb{R}^2$ and $n$ rational points $a_1, a_2, \ldots, a_n$, determine whether there exists a rational point $a$ in $A$ such that for all $i \in \{1, 2, \ldots, n\}$, the distance $|a - a_i|$ is an irrational number.

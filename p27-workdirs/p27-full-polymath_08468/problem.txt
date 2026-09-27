@@ -1,0 +1,1 @@
+In a specialized digital archive, a researcher is constructing a ten-level data structure consisting of a sequence of ten distinct positive integer identification codes, $a_0, a_1, \dots, a_9$.

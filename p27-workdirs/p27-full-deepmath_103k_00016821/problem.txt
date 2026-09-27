@@ -1,0 +1,1 @@
+Let \(n\equiv1\pmod{4}\) be a squarefree number and \(p\equiv1\pmod{4n}\) be a prime number. Determine whether there exist natural numbers \(x\) and \(y\) such that \(p = x^2 + ny^2\).

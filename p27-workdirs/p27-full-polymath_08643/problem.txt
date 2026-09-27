@@ -1,0 +1,1 @@
+In a remote industrial facility, a chemical monitoring system uses sensors that display one of 2017 distinct wavelength colors. The facility maintains a massive inventory of these sensors, with 1,000,000 units available for every possible color.

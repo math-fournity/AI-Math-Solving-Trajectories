@@ -1,0 +1,1 @@
+What is the smallest value of δ = δ(n) such that there exists a balanced Boolean function f: {0,1}^n → {0,1} (i.e., E[f] = 1/2) where the influence of every individual variable x_i on f is less than δ?

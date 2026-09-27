@@ -1,0 +1,1 @@
+In a global telecommunications network, a system consists of $n$ server hubs connected by bidirectional fiber-optic cables. The network architecture is regulated by a "Connectivity Constraint": if the hubs are partitioned into any two separate clusters, the number of cables directly linking a hub in the first cluster to a hub in the second cluster never exceeds $kn$.

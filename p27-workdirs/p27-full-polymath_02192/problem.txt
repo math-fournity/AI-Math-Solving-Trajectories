@@ -1,0 +1,1 @@
+How many ways can Pedro choose two irreducible fractions, each with a positive numerator and denominator, such that the sum of the fractions is equal to $2$ and the sum of the numerators of the two fractions is equal to $1000$?

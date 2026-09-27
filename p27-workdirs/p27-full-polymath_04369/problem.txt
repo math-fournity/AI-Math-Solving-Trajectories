@@ -1,0 +1,1 @@
+Let $p = 7$ and let $M$ be a set consisting of $p+1 = 8$ distinct positive integers. Consider the set of all ratios $R = \{ \frac{a}{(a, b)} : a, b \in M, a > b \}$. Determine the minimum possible value of the maximum element of $R$.

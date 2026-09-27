@@ -1,0 +1,1 @@
+Let positive integers \(a_1, a_2, \ldots, a_{2012}\) satisfy the inequality \(\frac{1}{a_1} + \frac{1}{a_2} + \cdots + \frac{1}{a_{2012}} < 1\). Find the minimum value of the product \(P = a_1 a_2 \cdots a_{2012}\).

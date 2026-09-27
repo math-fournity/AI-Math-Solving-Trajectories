@@ -1,0 +1,1 @@
+In a specialized logistics warehouse, there is a standard protocol for fulfilling orders of a specific weight $n$ using various combinations of standardized weights (each being a positive integer). The number of unique ways to pack an order of weight $n$ using any number of weights in non-decreasing order is denoted by $p(n)$.

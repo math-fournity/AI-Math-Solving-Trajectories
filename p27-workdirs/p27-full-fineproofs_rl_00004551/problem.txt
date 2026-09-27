@@ -1,0 +1,1 @@
+Show that, given any 2 -configuration of a set $A$, every element of $A$ belongs to exactly one cell.

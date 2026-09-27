@@ -1,0 +1,1 @@
+In a remote forest, a team of environmental engineers is monitoring the net carbon capture of a specialized filtration system over a series of operational days, indexed as $n = 1, 2, 3, \dots$.

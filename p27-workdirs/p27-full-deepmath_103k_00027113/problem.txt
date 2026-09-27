@@ -1,0 +1,1 @@
+Find all functions \( f: \mathbb{R} \to \mathbb{R} \) such that for all real numbers \( x \) and \( y \), the following equation holds: \[ f(x f(x+y))+f(f(y) f(x+y))=(x+y)^{2}. \]

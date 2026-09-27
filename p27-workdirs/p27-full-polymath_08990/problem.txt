@@ -1,0 +1,1 @@
+In a specialized logistics network, a coordinator must organize a fleet of $n$ heavy-duty drones. Each drone is assigned a unique positive integer identification code. For a fleet to be valid, the set of $n$ codes must satisfy a "Non-Interference Rule": no identification code in the set can be a divisor of any other code in that same set.

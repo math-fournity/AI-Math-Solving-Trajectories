@@ -1,0 +1,1 @@
+Determine whether the following statement is true or false: If $X$ is a totally disconnected space, then its Stone-Cech compactification $\beta(X)$ is also totally disconnected.

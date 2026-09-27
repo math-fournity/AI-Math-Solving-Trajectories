@@ -1,0 +1,1 @@
+Determine the maximum $L_1$ distance that can be achieved between a function $f: \mathbb{F}_2^n \to \mathbb{F}_2$ and the set of $k$-sparse parity functions $\text{SPF}_k$, given that for any subset $X$ of $\mathbb{F}_2^n$ with cardinality $m$, there exists a $k$-sparse parity function $h$ such that $f(x) = h(x)$ for all $x \in X$. What is this maximum distance?

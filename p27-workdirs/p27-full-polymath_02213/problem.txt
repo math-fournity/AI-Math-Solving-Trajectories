@@ -1,0 +1,1 @@
+A positive integer $n$ is called [i]pretty[/i] if there exists two divisors $d_1,d_2$ of $n$ $(1\leq d_1,d_2\leq n)$ such that $d_2-d_1=d$ for each divisor $d$ of $n$ (where $1<d<n$).

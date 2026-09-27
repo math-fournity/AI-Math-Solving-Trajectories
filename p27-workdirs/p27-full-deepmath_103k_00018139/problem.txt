@@ -1,0 +1,1 @@
+Find the Ramsey number for the graphs $(m+1)K_4$ and $K_4$, given that $R(mK_4,K_4) + 4 \leq R((m+1)K_4,K_4)$ for $m \geq 2$. Provide your answer as a single number.

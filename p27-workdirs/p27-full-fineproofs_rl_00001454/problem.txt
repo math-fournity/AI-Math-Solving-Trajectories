@@ -1,0 +1,1 @@
+Find all triples  $(p,n,k)$  of positive integers, where  $p$  is a Fermat's Prime, satisfying \[p^n + n = (n+1)^k\].

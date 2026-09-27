@@ -1,0 +1,1 @@
+Evaluate the limit: $$\lim_{n \to +\infty} 4^n\left[\sum_{k=0}^n (-1)^k{n\choose k}\int_1^\infty\frac{n}{x+1}\mathrm{B}(nx,n)\,\mathrm{d}x\right]$$

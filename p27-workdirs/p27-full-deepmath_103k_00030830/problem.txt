@@ -1,0 +1,1 @@
+Find the smallest constant \( C \) such that for all non-negative real numbers \( x_1, x_2, \ldots, x_n \), the inequality \[ \sum_{1 \leq i < j \leq n} x_i x_j (x_i^2 + x_j^2) \leq C \left( \sum_{i=1}^{n} x_i \right)^4 \] holds.

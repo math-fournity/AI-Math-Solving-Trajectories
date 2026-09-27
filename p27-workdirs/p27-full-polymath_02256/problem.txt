@@ -1,0 +1,1 @@
+Find the largest integer $n \ge 3$ for which there is a $n$-digit number $\overline{a_1a_2a_3...a_n}$ with non-zero digits

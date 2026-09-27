@@ -1,0 +1,1 @@
+Let \( m \) be a positive integer with a prime factor greater than \( \sqrt{2m} + 1 \). Find the smallest positive integer \( M \) such that there exists a set \( T \) of distinct positive integers where:

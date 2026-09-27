@@ -1,0 +1,1 @@
+Determine whether the following statement is true or false: For three independent uniform distributions $X, Y$, and $Z$ over $\{0,1\}^n$, and two boolean functions $f$ and $g$ mapping $\{0,1\}^n \times \{0,1\}^n$ to $\{0,1\}$, the Shannon entropy $H((f(X,Y), g(X,Y)))$ is less than or equal to the Shannon entropy $H((f(X,Y), g(X,Z)))$. Here, $H(\cdot)$ denotes the Shannon entropy.

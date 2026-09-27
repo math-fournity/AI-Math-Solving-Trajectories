@@ -1,0 +1,1 @@
+Given an n-dimensional orthonormal basis in Euclidean space with positive orientation, determine if it is possible to transform it into the standard basis using a sequence of rotations.

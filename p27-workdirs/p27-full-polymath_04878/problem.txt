@@ -1,0 +1,1 @@
+What is the smallest \( n \) such that a square \( n \times n \) can be cut into squares of \( 40 \times 40 \) and \( 49 \times 49 \) so that both types of squares are present?

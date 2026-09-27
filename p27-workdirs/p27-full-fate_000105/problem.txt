@@ -1,0 +1,4 @@
+If $|G|=p^{n}$, show that $G$ has a subgroup of order $p^{m}$ for all $1 \leq m \leq n$.
+
+</rule>
+</rules>

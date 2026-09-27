@@ -1,0 +1,1 @@
+Return your final response within \boxed{}. Let  $D:=\{(x, y)\mid x,y\in\mathbb R_+,x \ne y,x^y=y^x\}$ . (Obvious that  $x\ne1$  and  $y\ne1$ ). And let  $\alpha\le\beta$  be positive real numbers. Find  $$ \inf_{(x,y)\in D}x^\alpha y^\beta. $$  *Proposed by Arkady Alt*

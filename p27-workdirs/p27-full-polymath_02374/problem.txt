@@ -1,0 +1,1 @@
+There is a \(1000 \times 1000\) grid of cats of distinct sizes. Each cat feels safe if they are adjacent to exactly one cat that's bigger than it. What is the maximum number of cats that feel safe? (Cats are only adjacent if they are horizontally or vertically adjacent.)

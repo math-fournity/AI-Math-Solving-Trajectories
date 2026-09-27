@@ -1,0 +1,1 @@
+In a high-security server room, a grid of 144 server racks is arranged in a perfect 12-by-12 square formation. A cybersecurity firm is deploying specialized "Sentry" hardware units into these racks.

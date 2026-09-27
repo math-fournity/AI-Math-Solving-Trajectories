@@ -1,0 +1,1 @@
+Consider the unit disk $D^n$ and the unit sphere $S^{n-1}$ in $\mathbb{R}^n$. Define an equivalence relation $\sim'$ on $S^{n-1}$ by $(x_1,x_2,\dots,x_n) \sim' (x_2,x_3,\dots,x_n,x_1)$. Determine if the quotient space $D^n/\sim'$ is homeomorphic to any known topological space.

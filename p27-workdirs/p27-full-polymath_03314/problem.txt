@@ -1,0 +1,1 @@
+Let $n$ and $m$ be natural numbers such that $m + i = a_i b_i^2$ for $i = 1, 2, \ldots, n$, where $a_i$ and $b_i$ are natural numbers and $a_i$ is not divisible by a square of any prime number.

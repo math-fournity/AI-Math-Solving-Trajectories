@@ -1,0 +1,1 @@
+In a school with 100 students forming 450 clubs, any two clubs have at least 3 students in common, and any five clubs have no more than 1 student in common. Must there exist four clubs that have exactly 1 student in common?

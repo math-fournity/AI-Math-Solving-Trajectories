@@ -1,0 +1,1 @@
+(E. van Douwen) Does every compact space without isolated points admit an irreducible map onto a continuum? Does \(\omega^*\)? Yes to the second part, if CH.

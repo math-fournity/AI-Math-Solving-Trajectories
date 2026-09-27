@@ -1,0 +1,1 @@
+Let $P(x)$ be an $n$-th degree polynomial with integer coefficients, which is not constant. Let $S$ be the set of all integers $k$ such that $[P(k)]^2 = 1$. Let $M(n)$ be the maximum possible number of elements in $S$ for a given degree $n$. Find the value of $M(1) + M(2) + M(3) + M(4) + M(5)$.

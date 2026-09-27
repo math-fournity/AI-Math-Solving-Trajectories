@@ -1,0 +1,1 @@
+Given the positive numbers $a$ and $b$ and the natural number $n$, find the greatest among the $n + 1$ monomials in the binomial expansion of $\left(a+b\right)^n$.

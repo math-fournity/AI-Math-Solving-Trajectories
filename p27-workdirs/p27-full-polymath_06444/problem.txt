@@ -1,0 +1,1 @@
+In the city of Axioma, the Ministry of Resource Distribution manages a series of warehouses labeled with positive integers $n \in \{1, 2, 3, \dots\}$. Each warehouse $n$ is assigned a specific "Efficiency Rating," denoted by a non-decreasing function $f(n)$, which outputs a positive integer.

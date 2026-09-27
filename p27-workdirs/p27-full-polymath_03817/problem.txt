@@ -1,0 +1,1 @@
+Consider finitely many points in the plane with no three points on a line. All these points can be colored red or green such that any triangle with vertices of the same color contains at least one point of the other color in its interior.

@@ -1,0 +1,1 @@
+Consider a pyramid with an equilateral triangle base $BCD$ and isosceles right triangles as the other faces, with the right angles at the common vertex $A$. An ant travels from vertex $B$ to a point $P$ on edge $CD$, then to a point $Q$ on edge $AC$, and finally returns to $B$. If the path taken is minimal, what is the measure of angle $PQA$?

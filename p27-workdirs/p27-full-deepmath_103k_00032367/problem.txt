@@ -1,0 +1,1 @@
+Given two sequences of positive numbers \(\{a_{n}\}\) and \(\{b_{n}\}\) that satisfy the following conditions:

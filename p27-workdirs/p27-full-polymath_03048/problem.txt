@@ -1,0 +1,1 @@
+The sides and diagonals of a regular $n$-gon $R$ with $n = 2024$ are colored in $k$ colors such that:

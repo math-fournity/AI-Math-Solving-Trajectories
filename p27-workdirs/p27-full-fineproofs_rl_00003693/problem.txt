@@ -1,0 +1,1 @@
+Let $P$ be a polynomial with rational coefficients of degree greater than or equal to 2, and $\left(q_{n}\right)_{n \in \mathbb{N}}$ a sequence of rationals such that for all $n \geqslant 0, q_{n}=P\left(q_{n+1}\right)$. Show that the sequence $q_{n}$ is periodic from a certain rank.

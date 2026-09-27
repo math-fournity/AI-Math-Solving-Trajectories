@@ -1,0 +1,1 @@
+(Cassels) Let \( z, \beta \) be real or complex, \(|z| \leq 1\). Then\n\n\[\n\left|\frac{z - \beta}{z - \overline{\beta}}\right| \leq \frac{1 - |\beta|}{1 - |\beta| z} \quad \text{if } |\beta| < 1,\n\]\n\[\n\left|\frac{z - \beta}{z - \overline{\beta}}\right| \geq \frac{1 - |\beta|}{1 - |\beta| z} \quad \text{if } |\beta| > 1.\n\]\n\nEquality holds in both cases iff \(|z| = 1\). □

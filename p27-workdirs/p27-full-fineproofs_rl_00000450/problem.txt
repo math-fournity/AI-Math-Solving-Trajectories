@@ -1,0 +1,1 @@
+56. (USS 3) In a group of interpreters each one speaks one or several foreign languages; 24 of them speak Japanese, 24 Malay, 24 Farsi. Prove that it is possible to select a subgroup in which exactly 12 interpreters speak Japanese, exactly 12 speak Malay, and exactly 12 speak Farsi.

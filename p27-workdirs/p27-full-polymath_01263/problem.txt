@@ -1,0 +1,1 @@
+Let $S = \{z_1, z_2, \dots, z_{10}\}$ be a set consisting of 10 distinct complex numbers, among which exactly 7 are real numbers. Let $N$ be the maximum possible number of quadratic polynomials $f(z)$ with complex coefficients such that $f(S) = S$. Find $N$.

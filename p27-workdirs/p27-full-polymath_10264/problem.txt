@@ -1,0 +1,1 @@
+In a remote digital archipelago, a grid-based server farm consists of a $17 \times 17$ square arrangement of processors. To initiate a full system update, a network architect must manually inject a "Seed Code" into $n$ specific processors, turning their status to "Active."

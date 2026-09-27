@@ -1,0 +1,1 @@
+In a specialized network of data-processing nodes, each node is assigned a "Processing Profile" represented by a function $f$ that maps any integer input $x$ to an integer output $f(x)$. For a profile to be considered "Harmonized," it must satisfy two specific operational constraints:

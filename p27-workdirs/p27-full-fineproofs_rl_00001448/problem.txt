@@ -1,0 +1,1 @@
+Find all triples  $(a, b, c)$  of positive real numbers that satisfy the system of equations

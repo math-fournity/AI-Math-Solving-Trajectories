@@ -1,0 +1,1 @@
+A function  $f$  from the set of positive real numbers to itself satisfies  $$ f(x + f(y) + xy) = xf(y) + f(x + y) $$  for all positive real numbers  $x$  and  $y$ . Prove that  $f(x) = x$  for all positive real numbers  $x$ .

@@ -1,0 +1,1 @@
+Determine the minimal degree of a smooth curve in $\mathbb{CP}^3$ that is not contained in any cubic surface.

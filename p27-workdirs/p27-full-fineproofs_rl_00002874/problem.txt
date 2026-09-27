@@ -1,0 +1,1 @@
+Let  $N,K,L$  be points on  $AB,BC,CA$  such that  $CN$  bisector of angle  $\angle ACB$  and  $AL=BK$ .Let  $BL\cap AK=P$ .If  $I,J$  be incenters of triangles  $\triangle BPK$  and  $\triangle ALP$  and  $IJ\cap CN=Q$  prove that  $IQ=JP$

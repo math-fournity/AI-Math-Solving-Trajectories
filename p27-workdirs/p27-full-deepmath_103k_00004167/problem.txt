@@ -1,0 +1,1 @@
+Let $K$ be a nonarchimedean local field with residue characteristic $p \neq l$, and let $I_K$ be the inertia subgroup of its absolute Galois group. Consider an irreducible representation $V$ of $I_K$ over $\overline{\mathbb{F}}_l$ with finite image $I$. Suppose $V$ is primitive, meaning it is not induced from a proper subgroup of $I$. Can $I$ have an element of order $l$?

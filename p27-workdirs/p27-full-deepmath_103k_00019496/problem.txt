@@ -1,0 +1,1 @@
+Given a plane where every point is colored either red or blue, is it always possible to construct a regular n-gon with vertices of the same color? Provide a justification for your answer.

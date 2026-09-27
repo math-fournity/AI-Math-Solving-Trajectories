@@ -1,0 +1,1 @@
+Find the smallest natural number $n$ such that there exists a set $A$ with $n$ integers, and for each element removed from set $A$, the remaining elements can be divided into two subsets with equal sums.

@@ -1,0 +1,1 @@
+1. (BEL) ${ }^{\mathrm{IMO} 4}$ (a) For which values of $n>2$ is there a set of $n$ consecutive positive integers such that the largest number in the set is a divisor of the least common multiple of the remaining $n-1$ numbers? (b) For which values of $n>2$ is there a unique set having the stated property?

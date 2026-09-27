@@ -1,0 +1,1 @@
+Find the remainder when \(3^{2^{2016}} - 1\) is divided by \(2^{2019}\).

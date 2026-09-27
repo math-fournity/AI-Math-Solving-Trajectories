@@ -1,0 +1,1 @@
+In a remote digital archipelago, a network architect is designing a decentralized server grid consisting of exactly 1001 mainframe nodes. To ensure data redundancy, the architect establishes bidirectional fiber-optic links between $n$ specific pairs of nodes.

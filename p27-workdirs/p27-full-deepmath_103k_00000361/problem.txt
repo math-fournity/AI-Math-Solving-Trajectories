@@ -1,0 +1,1 @@
+In the free group of rank 2, denoted as $G = F_2$, determine if there exists a constant $c > 0$ such that for every commutator $[u,v] = uvu^{-1}v^{-1}$, where $u, v \in G$ and $|u|, |v| > 0$, the word length $|[u,v]|$ is at least $c(|u| + |v|)$, unless $[u,v] = [u_1,v_1]$ for some $u_1, v_1$ with $|u_1| + |v_1| < |u| + |v|$. Provide a justification for your answer.

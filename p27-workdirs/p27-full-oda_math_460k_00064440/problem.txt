@@ -1,0 +1,1 @@
+Solve $(x^2 + x) y''' - (x^2 + 3x + 1) y'' + (x + 4 + \frac{2}{x}) y' - \left(1 + \frac{4}{x} - \frac{2}{x^2} \right) y = 3x^2 (x + 1)^2.$

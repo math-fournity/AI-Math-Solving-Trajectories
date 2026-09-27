@@ -1,0 +1,1 @@
+What is the maximum number of colors that can be used to color all the cells of a \(10 \times 10\) board such that each row and each column contains cells of no more than five different colors?

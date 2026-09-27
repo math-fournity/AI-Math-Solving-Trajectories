@@ -1,0 +1,1 @@
+Determine the nature of the series $$\sum_{n\geq 1}\frac{\ln|\cos(n)|}{n^a}$$ for \(a > 1\).

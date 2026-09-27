@@ -1,0 +1,1 @@
+$7 \cdot 115$ Let $S=\{1,2,3,4\}, a_{1}, a_{2}, \cdots, a_{k}$ be a sequence composed of numbers from $S$, and it includes all permutations of $S$ that do not end with 1, i.e., for any permutation $\left(b_{1}, b_{2}, b_{3}, b_{4}\right)$ of the 4 numbers in $S$, where $b_{4} \neq 1$, there exist $i_{1}, i_{2}, i_{3}, i_{4}$, such that

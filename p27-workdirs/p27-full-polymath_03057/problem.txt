@@ -1,0 +1,1 @@
+Equilateral triangles and squares, all with side length 1, are used to form convex $n$-sided polygons. Both types of pieces must be used in each construction, and there is an unlimited supply of both. What is the sum of all possible values of $n$?

@@ -1,0 +1,1 @@
+Let $(m, n)$ be positive integers with $n \geq 3$. A regular $n$-gon is triangulated into $n-2$ triangles. Each triangle is colored with one of $m$ colors such that the sum of the areas of the triangles of each color is the same.

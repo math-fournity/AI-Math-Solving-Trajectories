@@ -1,0 +1,1 @@
+Evaluate the limit: $$\lim_{q\rightarrow 1} (1-q^{2}){\psi^2(q)}$$ using a q-continued fraction for the Ramanujan theta function.

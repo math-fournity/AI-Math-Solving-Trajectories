@@ -1,0 +1,1 @@
+Determine all real values of  $A$  for which there exist distinct complex numbers  $x_1$ ,  $x_2$  such that the following three equations hold:

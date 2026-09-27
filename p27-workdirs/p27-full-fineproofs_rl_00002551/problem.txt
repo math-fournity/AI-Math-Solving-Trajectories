@@ -1,0 +1,1 @@
+Let  $ABC$  be a scalene triangle. Given the center  $I$  of the inscribe circle and the points  $K_1$ ,  $K_2$  and  $K_3$  where the inscribed circle is tangent to the sides  $BC$ ,  $AC$  and  $AB$ . Using only a ruler, construct the center of the circumscribed circle of triangle  $ABC$ .

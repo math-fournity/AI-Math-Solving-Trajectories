@@ -1,0 +1,1 @@
+There are $n=5$ players playing a card game with $np$ cards in $p$ rounds. The cards are colored in $n$ colors, and each color is labeled with numbers $1, 2, \ldots, p$.

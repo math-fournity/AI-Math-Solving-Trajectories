@@ -1,0 +1,1 @@
+16. (25 points) Given $A \subseteq\{1,2, \cdots, 2014\}$, let real numbers $\lambda_{1} 、 \lambda_{2} 、 \lambda_{3} 、 x_{1} 、 x_{2} 、 x_{3}$ satisfy

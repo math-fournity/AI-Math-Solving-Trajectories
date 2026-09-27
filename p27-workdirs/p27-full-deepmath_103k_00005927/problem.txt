@@ -1,0 +1,1 @@
+Determine whether there exists a distributive lattice \( L \) such that for no set \( X \), there is a surjective lattice homomorphism \( s: \text{Part}(X) \to L \).

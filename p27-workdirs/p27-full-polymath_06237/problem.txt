@@ -1,0 +1,1 @@
+A maritime engineering firm is testing an automated stabilization system for a ship. The system’s vertical oscillation is determined by the interference of three distinct wave generators. Each generator produces a pure sine wave frequency corresponding to an integer setting on a control dial.

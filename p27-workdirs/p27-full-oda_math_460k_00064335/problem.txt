@@ -1,0 +1,1 @@
+Consider a trigonometric polynomial \( P \) of degree 10. Let \( a \in (0, \pi) \) be a fixed value. Define \( M(a) = \max_{x \in [-a, a]} |P^{(1977)}(x)| \) and \( N(a) = \max_{x \in [-a, a]} |P(x)| \). Find the smallest possible value of \( k \) such that the inequality \( M(a) \leq \frac{k}{a^{19}} N(a) \) holds for all \( a \in (0, \pi) \).

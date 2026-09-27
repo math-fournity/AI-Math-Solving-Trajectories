@@ -1,0 +1,1 @@
+In a specialized manufacturing facility, three high-precision chemical catalysts—Alpha ($a$), Beta ($b$), and Gamma ($c$)—are used to stabilize a reaction. The concentrations of these catalysts, measured in parts per million, are all strictly positive values.

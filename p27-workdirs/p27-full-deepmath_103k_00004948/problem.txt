@@ -1,0 +1,1 @@
+Determine whether the subring \( \mathbb{Z}_3 + \mathbb{Z}_3 \mathbf{i} + \mathbb{Z}_3 \mathbf{j} + \mathbb{Z}_3 \mathbf{k} \) of the quaternion division ring over \( \mathbb{Q}_3 \) is a noncommutative local ring. Specifically, does it have a unique maximal left ideal (or equivalently, a unique maximal right ideal)?

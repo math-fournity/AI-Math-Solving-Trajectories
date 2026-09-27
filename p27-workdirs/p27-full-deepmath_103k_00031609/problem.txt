@@ -1,0 +1,1 @@
+In the Cartesian coordinate system, consider placing \( n \) points such that no three points are collinear. Each point is colored either red, green, or yellow, satisfying the following conditions:

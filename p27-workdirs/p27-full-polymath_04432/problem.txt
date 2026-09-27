@@ -1,0 +1,1 @@
+There are $24$ robots on the plane. Each robot has a $70^{\circ}$ field of view. What is the maximum number of observing relations?

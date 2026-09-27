@@ -1,0 +1,1 @@
+Determine the maximum depth of subnormality for subgroups of a nilpotent group with nilpotency class $n$.

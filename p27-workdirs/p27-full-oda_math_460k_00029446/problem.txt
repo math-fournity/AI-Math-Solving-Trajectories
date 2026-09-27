@@ -1,0 +1,1 @@
+Let \( X_1, X_2, X_3 \in \mathcal{M}_2(\mathbb{C}) \) such that

@@ -1,0 +1,1 @@
+Determine whether there are infinitely many positive integers $n$ that are not $p$-leading for any odd prime $p$. Specifically, is the set \( S = \mathbb{N}\setminus \bigcup_{p\geq 3} \bigcup_{d\geq 1} [p^d - p^{d-1},p^d) \) infinite?

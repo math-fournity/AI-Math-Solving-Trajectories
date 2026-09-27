@@ -1,0 +1,1 @@
+A specialized logistics hub is designing a series of polygonal security perimeters. Each perimeter is a convex $n$-gon formed by $n$ straight laser fences. A unique property of these perimeters is that they must all be perfectly tangent to a single circular command center at the heart of the facility.

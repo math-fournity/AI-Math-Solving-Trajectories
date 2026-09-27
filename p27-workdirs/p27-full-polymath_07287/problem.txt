@@ -1,0 +1,1 @@
+A specialized digital archive stores records in numbered vaults $n = 1, 2, 3, \dots$. Each vault is assigned a security clearance level, denoted by $f(n)$. The assignment begins with Vault 1, which is assigned level $f(1) = 1$.

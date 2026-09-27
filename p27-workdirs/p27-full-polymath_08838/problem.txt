@@ -1,0 +1,1 @@
+A high-security communications network consists of 2010 satellite stations positioned as the vertices of a convex polygon in orbit. Due to interference constraints, no three potential communication beams (the internal diagonals of the polygon) intersect at the same point in space.

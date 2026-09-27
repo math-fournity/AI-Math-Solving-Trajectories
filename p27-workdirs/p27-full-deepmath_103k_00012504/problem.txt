@@ -1,0 +1,1 @@
+Determine whether the following statement is true or false: Let $f$ be holomorphic with an essential singularity at $0$. Then for every $z_0 \in \mathbb{C}$, the Laurent expansion around $z_0$ has a nonvanishing principal part.

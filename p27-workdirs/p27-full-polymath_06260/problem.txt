@@ -1,0 +1,1 @@
+A specialized global logistics firm manages a network of storage warehouses identified by positive integer indices $k = 1, 2, 3, \ldots$. Each warehouse $k$ contains a specific inventory balance $a_k$, represented by a non-zero integer (where positive values indicate a surplus and negative values indicate a deficit).

@@ -1,0 +1,1 @@
+Determine all pairs $(m, n)$ for which it is possible to tile the table $m \times n$ with "corners" as in the figure below, with the condition that in the tiling there is no rectangle (except for the $m \times n$ one) regularly covered with corners.

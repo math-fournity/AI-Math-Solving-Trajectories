@@ -1,0 +1,1 @@
+An urban planner is designing a massive "Grand Pavilion" plaza, which must be a perfect square with side length $n$ meters. To pave the entire surface without any gaps or overlaps, the planner must use two specific types of square stone tiles:

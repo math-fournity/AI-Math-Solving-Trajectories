@@ -1,0 +1,1 @@
+Find all pairs of integers \((n, k)\) such that \(n\) is non-negative, \(k > 1\), and the number \(A = 17^{2006n} + 4 \cdot 17^{2n} + 7 \cdot 19^{5n}\) can be expressed as the product of \(k\) consecutive positive integers.

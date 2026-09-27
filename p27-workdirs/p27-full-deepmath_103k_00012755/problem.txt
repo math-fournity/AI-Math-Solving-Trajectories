@@ -1,0 +1,1 @@
+Let \( f(x) = 1 + \sum_{k=0}^{100}\frac{(-1)^{k+1}}{(k+1)!}x(x-1)\cdots (x-k) \). If \( S \) is the sum of all real roots of \( f \) and \( T \) is the sum of all real roots of \( f' \), find \( S-T \).

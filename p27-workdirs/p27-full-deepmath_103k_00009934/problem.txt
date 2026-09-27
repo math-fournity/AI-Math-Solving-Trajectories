@@ -1,0 +1,1 @@
+Evaluate the limit: \[ \lim_{m \rightarrow \infty} \frac{Q(m)}{\log(m)} \] where \( Q(m) = \bigl| \{ n : m\leq n \leq m + \log(m) \text{ and } n = p \cdot q\text{, where }p,q\text{ are prime} \} \bigr| \).

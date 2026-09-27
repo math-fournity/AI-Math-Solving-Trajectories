@@ -1,0 +1,1 @@
+A jury of 3366 film critics are judging the Oscars. Each critic makes a single vote for his favourite actor, and a single vote for his favourite actress. It turns out that for every integer $n \in\{1,2, \ldots, 100\}$ there is an actor or actress who has been voted for exactly $n$ times. Show that there are two critics who voted for the same actor and for the same actress.

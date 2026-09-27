@@ -1,0 +1,1 @@
+Find the largest value of \( k \) such that the inequality \(\frac{1}{1-\left(\frac{a+b}{2}\right)^2} + \frac{1}{1-\left(\frac{b+c}{2}\right)^2} + \frac{1}{1-\left(\frac{c+a}{2}\right)^2} \le \frac{9}{2}\) holds for all positive \( a, b, c \) satisfying \( a^2 + b^2 + c^2 + k(ab + ac + bc) = 1 + k \).

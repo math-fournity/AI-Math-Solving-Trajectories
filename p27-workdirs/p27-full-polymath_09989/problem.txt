@@ -1,0 +1,1 @@
+A specialized logistics software is being designed to manage a fleet of $n$ automated delivery drones. Each drone $i$ is assigned a specific integer power level $a_i$.

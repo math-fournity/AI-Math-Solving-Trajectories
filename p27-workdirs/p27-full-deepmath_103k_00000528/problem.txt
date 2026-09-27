@@ -1,0 +1,1 @@
+Is the ring $A[x, a/x]$ always integrally closed if $A$ is a unique factorization domain and $a$ is an element of $A$?

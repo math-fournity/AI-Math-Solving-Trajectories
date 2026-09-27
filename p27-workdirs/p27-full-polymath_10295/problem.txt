@@ -1,0 +1,1 @@
+A network of 2010 logistics hubs, numbered 1 through 2010, is to be connected by a single delivery route. A driver must plan a route $a_1, a_2, \dots, a_{2010}$ that visits every hub exactly once, adhering to the following regulations:

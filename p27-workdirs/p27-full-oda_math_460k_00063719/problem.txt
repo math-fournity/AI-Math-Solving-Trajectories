@@ -1,0 +1,1 @@
+Let \( a_1 < a_2 < \cdots < a_n < \cdots \) be a sequence of natural numbers such that for any \( 1 < k < 2009 \), the sum of any \( k \) different elements of this sequence does not belong to the sequence. Determine the smallest possible value of \( C \) such that \( a_n > 2008n + C \) for all \( n \).

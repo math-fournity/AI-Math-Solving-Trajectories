@@ -1,0 +1,1 @@
+A high-tech manufacturing plant utilizes a set of $2n$ unique precision gears, labeled with distinct serial numbers from $1$ to $2n$. To calibrate a complex piece of machinery, an engineer must arrange all these gears into $n$ separate pairs.

@@ -1,0 +1,1 @@
+On an infinite board of black lattice points, paint contiguous regions of $n$ points white, ensuring that no painted regions overlap or touch. After repeating this process infinitely, all remaining black points must be directly adjacent to exactly 3 other black points and 1 white point. Compute all possible values of $n$ for which this outcome is possible.

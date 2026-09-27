@@ -1,0 +1,1 @@
+For each odd number \( n \geq 7 \), determine the smallest number of tiles needed to form a square with side length \( n \). (Note: Tiles can be rotated, but they cannot overlap.)

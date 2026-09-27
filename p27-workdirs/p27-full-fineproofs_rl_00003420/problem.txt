@@ -1,0 +1,1 @@
+Let  $p \geq 5$  be a prime number.  Prove that there exist at least 2 distinct primes  $q_1, q_2$  satisfying  $1 < q_i < p - 1$  and  $q_i^{p-1} \not\equiv 1 \mbox{ (mod }p^2)$ , for  $i = 1, 2$ .

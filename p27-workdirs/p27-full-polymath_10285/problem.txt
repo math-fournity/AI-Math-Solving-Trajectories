@@ -1,0 +1,1 @@
+A high-security digital vault uses a rotary locking mechanism with 100 discrete positions, indexed from 0 to 99. To unlock the system, a user must be able to reach every single one of these 100 positions using a set of "Master Keys."

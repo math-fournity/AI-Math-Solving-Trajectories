@@ -1,0 +1,1 @@
+If $F$ is a connected topological field, must $F$ also be path-connected?

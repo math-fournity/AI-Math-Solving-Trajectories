@@ -1,0 +1,1 @@
+In a specialized digital archive, a master technician is organizing data packets for a high-security server. The server can accommodate data packets represented by specific coordinate addresses $(x, y)$. For a given integer capacity $n$, the possible addresses are restricted such that $x$ and $y$ are integers where $1 \leq x \leq n$ and $0 \leq y \leq n$.

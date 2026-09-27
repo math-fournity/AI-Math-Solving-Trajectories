@@ -1,0 +1,1 @@
+Determine whether the strong maximum principle for the heat equation holds if the maximum of the solution is attained at a point \((x_0,t_0)\), where \(0<t_0<T\).

@@ -1,0 +1,1 @@
+Determine the condition on the parameter \(a\) such that the solution \(u(x, t)\) of the partial differential equation \(\frac{\partial u}{\partial t} = \frac{\partial^2 u}{\partial x^2} - au\), with boundary conditions \(u(0, t) = u(\pi, t) = 0\) for \(t \geq 0\) and initial condition \(u(x, 0) = (\sin x)^3\), converges to zero uniformly as \(t \to \infty\).

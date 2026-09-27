@@ -1,0 +1,1 @@
+In a remote industrial district, three energy processing plants—Alpha, Beta, and Gamma—operate using three specific fuel grades, measured in units of $a$, $b$, and $c$ respectively ($a, b, c > 0$).

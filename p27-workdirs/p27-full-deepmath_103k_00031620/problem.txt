@@ -1,0 +1,1 @@
+Given a positive integer \( k \), a sequence \( \{a_n\} \) satisfies the following conditions:

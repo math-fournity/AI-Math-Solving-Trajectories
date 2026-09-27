@@ -1,0 +1,1 @@
+A logistics company operates a massive distribution hub organized into a grid of 9 storage levels (rows) and 2004 loading bays (columns). The facility handles exactly 2004 unique types of inventory, labeled with ID numbers from 1 to 2004. Each specific ID number is assigned to exactly 9 different storage slots across the entire grid.

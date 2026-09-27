@@ -1,0 +1,1 @@
+Consider an open complete manifold $M$ with Ricci curvature $\ge 0$. Let $p$ be a fixed point in $M$ and $B(p, r)$ be the distance ball of radius $r$ in $M$. For any given $R>0$, determine whether there exists a constant $c=c(p,R)>0$ such that $\text{Area}(\partial B(p, r)) \ge c(p,R)$ for any $r>R$. Is this statement true?

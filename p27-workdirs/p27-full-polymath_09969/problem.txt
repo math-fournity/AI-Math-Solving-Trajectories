@@ -1,0 +1,1 @@
+A team of five atmospheric scientists is testing a new carbon-capture technology. To evaluate its long-term impact, they must assign a specific "Impact Rating" ($a_i$) to each of the $n$ distinct chemical catalysts used in the process. Each rating is a real number that represents the catalyst's performance across different environmental dimensions.

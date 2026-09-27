@@ -1,0 +1,1 @@
+Let \( F(n) \) denote the smallest positive integer greater than \( n \) whose sum of digits is equal to the sum of the digits of \( n \). For example, \( F(2019) = 2028 \). Compute \( F(1) + F(2) + \cdots + F(1000) \).

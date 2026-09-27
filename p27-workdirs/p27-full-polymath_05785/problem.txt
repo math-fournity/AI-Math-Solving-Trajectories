@@ -1,0 +1,1 @@
+How many distinct ways can the edges of a cube be colored such that each edge is yellow, red, or blue, and no two edges of the same color share a vertex? (Two cubes are indistinguishable if they can be rotated into positions such that the two cubes are colored exactly the same.)

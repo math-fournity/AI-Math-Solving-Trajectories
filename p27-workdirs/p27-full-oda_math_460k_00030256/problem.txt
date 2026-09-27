@@ -1,0 +1,1 @@
+Consider a triangle \(ABC\) with side lengths \(a\), \(b\), and \(c\), and centroid \(G\). Let \(P\) be an arbitrary point in the plane of the triangle. If the inequality \(a \cdot PA^3 + b \cdot PB^3 + c \cdot PC^3 \geq k \cdot abc \cdot PG\) holds for all such points \(P\), find the value of \(k\).

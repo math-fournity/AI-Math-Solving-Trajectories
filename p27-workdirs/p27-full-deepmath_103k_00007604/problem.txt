@@ -1,0 +1,1 @@
+Is there a prime number for every positive integer \( n \) that can be expressed as the sum of \( n \) distinct powers of 2?

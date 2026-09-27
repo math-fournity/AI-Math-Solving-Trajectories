@@ -1,0 +1,1 @@
+Determine whether the statement $|\mathbb{R}|=2^\omega=\omega_1$ is true or false.

@@ -1,0 +1,1 @@
+Given are positive integers  $ n>1$  and  $ a$  so that  $ a>n^2$ , and among the integers  $ a\plus{}1, a\plus{}2, \ldots, a\plus{}n$  one can find a multiple of each of the numbers  $ n^2\plus{}1, n^2\plus{}2, \ldots, n^2\plus{}n$ . Prove that  $ a>n^4\minus{}n^3$ .

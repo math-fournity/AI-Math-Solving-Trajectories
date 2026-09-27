@@ -1,0 +1,1 @@
+Consider a simply connected closed Riemannian manifold $M$ with no boundary and nonnegative sectional curvature. Suppose the cyclic group ${\bf Z}_n = (g)$, with $n \geq 3$, acts on $M$ isometrically. If $g$ fixes a point $x$, then $g$ acts on the cut locus of $x$. Can $g \cdot x$ belong to the cut locus of $x$ for some $x$?

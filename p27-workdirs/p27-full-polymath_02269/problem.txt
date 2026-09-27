@@ -1,0 +1,1 @@
+Triangle $ABC$ has perimeter $1$. Let its side lengths be $a, b,$ and $c$. The three altitudes of this triangle form the side lengths of a triangle. Let $m = \min(a, b, c)$. Determine the range of all possible values for $m$. If the range is the interval $(L, R)$, calculate the value of $100L + 10R$.

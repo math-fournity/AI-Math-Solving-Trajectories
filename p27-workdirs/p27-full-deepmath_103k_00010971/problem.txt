@@ -1,0 +1,1 @@
+Does there exist a constant $A$ such that the absolute value of the regulator is bounded above by $A$ for infinitely many totally real number fields?

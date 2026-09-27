@@ -1,0 +1,1 @@
+Find a simple example of a space \( X \) such that \( H_*(X, \mathbb{Z}) \cong H_*(\mathrm{pt.}, \mathbb{Z}) \) and \( H_*(\prod_{i=1}^{\infty} X, \mathbb{Z}) \neq H_*(\mathrm{pt.}, \mathbb{Z}) \).

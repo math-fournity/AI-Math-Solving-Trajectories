@@ -1,0 +1,1 @@
+Find all functions \( f : \mathbb{R}^+ \longrightarrow \mathbb{R}^+ \) that are continuous, strictly decreasing, and satisfy the functional equation for all \( x, y \in \mathbb{R}^+ \):

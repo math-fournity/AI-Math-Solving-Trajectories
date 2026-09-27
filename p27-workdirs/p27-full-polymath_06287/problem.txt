@@ -1,0 +1,1 @@
+In a remote digital archive, data packets consist of a sequence of exactly $n$ electrical signals, each being either a "High" voltage or a "Low" voltage. These sequences are processed by a specific "Signal Reversal" protocol.

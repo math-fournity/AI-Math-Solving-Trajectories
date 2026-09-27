@@ -1,0 +1,1 @@
+Let $\{\Omega_m\}_m$ be a sequence of simply connected domains with $1\in\Omega_m\subset\mathbb{D}$. If $\text{dist}(1,\partial\Omega_m)\to0$ as $m\to\infty$ and $g_m\in\mathcal{H}(\mathbb{D})$ is bijective over $\Omega_m$ with $g_m(1)=1$ and $g'_m(1)>0$, determine if $g_m \overset{\mathbb{D}}{\implies} g(z)=z$.

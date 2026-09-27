@@ -1,0 +1,1 @@
+Find the sum of the smallest three positive integers $x$ such that for every integer $m$ in the range $2 \le m \le 51$, the following condition holds:

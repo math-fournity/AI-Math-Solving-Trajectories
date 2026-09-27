@@ -1,0 +1,1 @@
+Consider an infinite sequence of reals \(x_{1}, x_{2}, x_{3}, \ldots\) such that \(x_{1}=1, x_{2}=\frac{2 \sqrt{3}}{3}\) and with the recursive relationship

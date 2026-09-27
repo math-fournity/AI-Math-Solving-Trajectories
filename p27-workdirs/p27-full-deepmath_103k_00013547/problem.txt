@@ -1,0 +1,1 @@
+Consider a non-compact set $A \subset \mathbb{R}$. Determine whether there exists a continuous function $f: A \to \mathbb{R}$ that is bounded but does not attain its extreme values.

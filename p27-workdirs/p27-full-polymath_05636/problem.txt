@@ -1,0 +1,1 @@
+At a summer camp, each of $n$ children knows the same non-zero number of the others (the acquaintances are mutual). Let $k(n)$ be the largest natural number such that regardless of the acquaintances, there always exist $2k(n)$ children who can be paired such that in each pair the children know each other. Calculate the sum $\sum_{n=1}^{20} k(n)$.

@@ -1,0 +1,1 @@
+Let $n$ be a positive integer. Show that in a set $A$ of $2^{n}$ strictly positive numbers, one can choose a subset $B$ of size $n+1$ such that the sum of any two different numbers in $B$ is never in $A$.

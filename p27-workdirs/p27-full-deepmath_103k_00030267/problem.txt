@@ -1,0 +1,1 @@
+Determine whether $F(F(\mathscr{P}U))$ and $F(\mathscr{P}U)$ are order isomorphic for any set $U$, where $F(X)$ denotes the set of filters on a poset $X$ ordered oppositely to set-theoretic inclusion.

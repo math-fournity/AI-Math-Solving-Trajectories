@@ -1,0 +1,1 @@
+A sequence of integers \(a_{1}, a_{2}, \ldots, a_{n}\) is said to be sub-Fibonacci if \(a_{1}=a_{2}=1\) and \(a_{i} \leq a_{i-1}+a_{i-2}\) for all \(3 \leq i \leq n\). How many sub-Fibonacci sequences are there with 10 terms such that the last two terms are both 20?

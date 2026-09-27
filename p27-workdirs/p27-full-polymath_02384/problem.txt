@@ -1,0 +1,1 @@
+Let $P_1P_2...P_k$ be a regular $k$-gon inscribed in the unit circle. What is $\displaystyle \sum_{i\neq j}^{k} (P_iP_j)^{-2}$?

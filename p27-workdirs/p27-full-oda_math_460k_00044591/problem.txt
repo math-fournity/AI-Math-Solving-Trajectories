@@ -1,0 +1,1 @@
+Determine all infinite strings of letters with the following properties:

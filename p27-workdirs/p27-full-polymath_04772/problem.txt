@@ -1,0 +1,1 @@
+Find all positive integers $n$ for which there exist positive integers $m$ and $a_{1}, a_{2}, \dots, a_{m-1}$ such that $1 \le a_{i} \le m-1$ for each $i=1, \dots, m-1$, and

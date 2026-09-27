@@ -1,0 +1,8 @@
+/-!
+# IMO 2015 A2
+
+Find all functions $f : ℤ → ℤ$ such that, for any $x, y ∈ ℤ$,
+$$ f(x - f(y)) = f(f(x)) - f(y) - 1. $$
+-/
+
+##

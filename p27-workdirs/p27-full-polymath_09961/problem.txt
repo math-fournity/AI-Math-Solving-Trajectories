@@ -1,0 +1,1 @@
+In a specialized logistics network, a data packet undergoes a series of sequential transformations denoted as $(a_n)_{n=1}^{\infty}$, where each $a_n$ is a positive integer representing the packet's current encryption key.

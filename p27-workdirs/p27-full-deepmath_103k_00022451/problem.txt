@@ -1,0 +1,1 @@
+Let $M$ be a countable transitive model of ZFC, and let $P \in M$ be a poset. Suppose $G \subseteq P$ is $M$-generic and $f \in M[G]$ with $\text{dom}(f) = \alpha$, where $\alpha$ is an ordinal. Must there exist an $F \in M$ with $\text{dom}(F) = \alpha$ such that for every $\beta < \alpha$, $F(\beta)$ is a $P$-name of $f(\beta)$?

@@ -1,0 +1,1 @@
+A specialized chemical engineering laboratory is testing the stability of three experimental catalysts: Alpha ($a$), Beta ($b$), and Gamma ($c$). These catalysts are measured by their mass in kilograms, and the total mass of the three substances used in every trial must always equal exactly $3$ kilograms ($a + b + c = 3$).

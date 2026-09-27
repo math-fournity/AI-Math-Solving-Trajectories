@@ -1,0 +1,1 @@
+Compute the number of possible words $w = w_{1} w_{2} \ldots w_{100}$ satisfying the following conditions:

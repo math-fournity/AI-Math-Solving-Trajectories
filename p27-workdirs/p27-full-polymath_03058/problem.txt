@@ -1,0 +1,1 @@
+Given a rectangular grid, split into $m \times n$ squares, a colouring of the squares in two colours (black and white) is called valid if it satisfies the following conditions:

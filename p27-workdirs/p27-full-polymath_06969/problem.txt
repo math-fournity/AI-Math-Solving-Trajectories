@@ -1,0 +1,1 @@
+In a remote sector of the galaxy, the Galactic Navigation Council is mapping a triangular energy field formed by three outposts: Alpha ($A$), Bravo ($B$), and Charlie ($C$). The field is perfectly symmetric, such that the distance between Alpha and Charlie is equal to the distance between Bravo and Charlie.

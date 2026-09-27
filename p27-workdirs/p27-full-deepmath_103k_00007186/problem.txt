@@ -1,0 +1,1 @@
+Let \( \mu \) be a positive Radon measure on a bounded domain \( \Omega \) such that \( \mu \in H^{-1}(\Omega) \). The measure \( \mu \) has support in a subdomain \( Z \subset \Omega \). Suppose \( z \in H^1_0(\Omega) \) is a function such that \( z = 0 \) almost everywhere in \( Z \). Is it true that \( \langle \mu, z \rangle_{H^{-1}, H^1_0} = 0 \)?

@@ -1,0 +1,1 @@
+Find the largest real number \( r \) with the following property: for any 1000 distinct points \( A_{1}, \ldots, A_{1000} \) from a circle of radius 1, there exists a point \( B \) from the circle such that \( B A_{1} + B A_{2} + \cdots + B A_{1000} \geq r \).

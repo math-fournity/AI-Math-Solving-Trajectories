@@ -1,0 +1,1 @@
+Determine the norm of the differential operator \( \frac{d}{dx} : P^n[0,1] \rightarrow P^{n-1}[0,1] \) in the space of polynomials of degree \( \leq n \) on \([0,1]\), equipped with the sup norm.

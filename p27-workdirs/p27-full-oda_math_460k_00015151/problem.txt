@@ -1,0 +1,1 @@
+Is there a convex polyhedron, one of whose cross-sections is a triangle (the cross-section does not pass through vertices), and at each vertex:

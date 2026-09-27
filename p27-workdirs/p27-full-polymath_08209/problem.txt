@@ -1,0 +1,1 @@
+In the futuristic city of Neo-Veridia, a logistics hub uses a fleet of 11 automated transport drones to move shipments of crystallized energy cells. Each drone has a maximum payload capacity of exactly 30 gigajoules (GJ).

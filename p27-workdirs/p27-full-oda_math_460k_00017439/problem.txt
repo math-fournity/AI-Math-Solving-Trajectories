@@ -1,0 +1,1 @@
+Describe the Jacobian of the curve \(X\) defined by \(y^{2} = x(x^{4} - 1)\) as a complex torus. Specifically, find an explicit lattice \(\Lambda \subset \mathbb{C}^{2}\) such that \(\operatorname{Jac}(X) \cong \mathbb{C}^{2} / \Lambda\).

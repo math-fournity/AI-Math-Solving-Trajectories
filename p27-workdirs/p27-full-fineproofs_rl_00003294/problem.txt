@@ -1,0 +1,1 @@
+Let  $n$  and  $k$  be positive integers and let   $$ T = \{ (x,y,z) \in \mathbb{N}^3 \mid 1 \leq x,y,z \leq n \} $$  be the length  $n$  lattice cube. Suppose that  $3n^2 - 3n + 1 + k$  points of  $T$  are colored red such that if  $P$  and  $Q$  are red points and  $PQ$  is parallel to one of the coordinate axes, then the whole line segment  $PQ$  consists of only red points.

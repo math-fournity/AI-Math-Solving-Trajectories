@@ -1,0 +1,1 @@
+Find the smallest positive interger number $n$ such that there exists $n$ real numbers $a_1,a_2,\ldots,a_n$ satisfied three conditions as follow:

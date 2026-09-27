@@ -1,0 +1,1 @@
+In a specialized digital signal processing laboratory, two periodic data streams, Stream $A$ and Stream $B$, are being analyzed. Each stream consists of a repeating sequence of digits. Both Stream $A$ and Stream $B$ have a minimal period length of exactly 30 digits.

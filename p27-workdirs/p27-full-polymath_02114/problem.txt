@@ -1,0 +1,1 @@
+$ABCD$ is a rhombus where $\angle BAD = 60^\circ$. Point $E$ lies on minor arc $\widehat{AD}$ of the circumcircle of $ABD$, and $F$ is the intersection of $AC$ and the circle circumcircle of $EDC$. If $AF = 4$ and the circumcircle of $EDC$ has radius $14$, find the squared area of $ABCD$.

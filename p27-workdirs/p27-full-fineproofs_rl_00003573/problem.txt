@@ -1,0 +1,1 @@
+Let $A B C$ be a scalene triangle and let $P$ and $Q$ be two distinct points in its interior. Suppose that the angle bisectors of $\angle P A Q, \angle P B Q$, and $\angle P C Q$ are the altitudes of triangle $A B C$. Prove that the midpoint of $\overline{P Q}$ lies on the Euler line of $A B C$.

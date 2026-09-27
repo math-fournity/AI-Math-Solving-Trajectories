@@ -1,0 +1,1 @@
+Determine whether a continuously differentiable function in a Banach space $X$ is locally Lipschitz in $X$. Provide a justification for your answer.

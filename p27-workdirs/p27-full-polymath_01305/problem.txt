@@ -1,0 +1,1 @@
+Let $N=1000$ be a positive integer, and let $\mathbf{a}=(a(1), \ldots, a(N))$ and $\mathbf{b}=(b(1), \ldots, b(N))$ be sequences of non-negative integers written on a circle (where $a(i \pm N)=a(i)$ and $b(i \pm N)=b(i)$). We say $\mathbf{a}$ is $\mathbf{b}$-harmonic if for each $i \in \{1, \dots, N\}$,

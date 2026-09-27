@@ -1,0 +1,1 @@
+Find the number of integers $n$ in the set $\{1, 2, \dots, 100\}$ for which there exist a polynomial $f$ of degree $n$ with integer coefficients and a positive leading coefficient and a polynomial $g$ with integer coefficients such that

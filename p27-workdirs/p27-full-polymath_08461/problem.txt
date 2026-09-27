@@ -1,0 +1,1 @@
+In a specialized data center, a security system utilizes a square grid of servers. There are two distinct centers: the Alpha Facility, which operates a $20 \times 20$ grid, and the Beta Facility, which operates a $21 \times 21$ grid.

@@ -1,0 +1,1 @@
+Three families of parallel lines are drawn, with 10 lines in each family. What is the maximum number of triangles they can cut out from the plane?

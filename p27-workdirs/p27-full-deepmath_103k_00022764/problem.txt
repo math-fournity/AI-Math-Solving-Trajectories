@@ -1,0 +1,1 @@
+For a strictly decreasing function $f: \mathbb{R} \to \mathbb{R}$ that satisfies the functional equation $$f(x+y) + f(f(x) + f(y)) = f(f(x+f(y)) + f(y+f(x))), \quad \forall x, y \in \mathbb{R},$$ determine the relationship between $f(f(x))$ and $x$.

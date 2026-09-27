@@ -1,0 +1,1 @@
+Points  $C_1, B_1$  on sides  $AB, AC$  respectively of triangle  $ABC$  are such that  $BB_1 \perp  CC_1$ . Point  $X$  lying inside the triangle is such that  $\angle XBC = \angle B_1BA, \angle XCB = \angle C_1CA$ . Prove that  $\angle B_1XC_1 =90^o- \angle A$ .

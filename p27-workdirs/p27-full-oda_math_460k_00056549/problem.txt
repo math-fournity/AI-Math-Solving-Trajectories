@@ -1,0 +1,1 @@
+Evaluate the series \(\sum\limits_{n=1}^{\infty }\frac{\phi ^{-4n}}{F_{2n}F_{2n+2}F_{2n+4}F_{2n+6}}\), where \(\phi\) is the golden ratio and \(F_n\) is the \(n\)-th Fibonacci number.

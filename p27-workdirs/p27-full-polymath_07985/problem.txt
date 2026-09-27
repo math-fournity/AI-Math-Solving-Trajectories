@@ -1,0 +1,1 @@
+In the city of Arithema, a building inspector uses a specific safety code to evaluate structural beams. A beam with an "integrity rating" of $b$ (where $b$ is a positive integer) is classified as **"Resilient"** if it satisfies a specific stress-test condition:

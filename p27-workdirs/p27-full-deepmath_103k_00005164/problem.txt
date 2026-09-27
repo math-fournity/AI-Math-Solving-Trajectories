@@ -1,0 +1,1 @@
+Let $R$ be a commutative regular local ring. Determine whether it is true that for every prime ideal $\mathfrak{p}$ in the spectrum of $R$, there exists an $R$-regular sequence $\mathbf{x}$ such that the ideal $(\mathbf{x})$ is $\mathfrak{p}$-primary.

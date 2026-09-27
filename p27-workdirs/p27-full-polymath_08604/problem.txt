@@ -1,0 +1,1 @@
+In a futuristic city, an architect is designing a modular garden within a $6 \times 6$ square plaza. The plaza is composed of $36$ individual unit squares. The architect has been provided with exactly $9$ rectangular solar benches, each of which occupies exactly two adjacent unit squares (a $1 \times 2$ or $2 \times 1$ footprint).

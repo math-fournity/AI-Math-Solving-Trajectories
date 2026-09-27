@@ -1,0 +1,1 @@
+In a remote digital archipelago, there are four data servers named X, Y, Z, and U. Each server is assigned a processing priority level, represented by an integer ranging from 1 to 10 inclusive.

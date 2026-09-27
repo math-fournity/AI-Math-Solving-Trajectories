@@ -1,0 +1,1 @@
+Let $d(k)$ denote the number of positive integer divisors of $k$. For example, $d(6)=4$ since 6 has 4 positive divisors, namely, $1,2,3$, and 6 . Prove that for all positive integers $n$,

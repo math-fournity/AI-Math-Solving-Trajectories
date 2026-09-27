@@ -1,0 +1,1 @@
+In a remote digital archives facility, a master server rack is organized into a strictly partitioned $7 \times 7$ grid of data storage slots. An administrator needs to install high-security encryption nodes into these slots.

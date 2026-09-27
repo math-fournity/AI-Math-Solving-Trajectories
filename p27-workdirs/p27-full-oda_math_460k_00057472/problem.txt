@@ -1,0 +1,1 @@
+Consider a convex polygon \(A_{1}A_{2}\ldots A_{n}\) and a point \(M\) inside it. The lines \(A_{i}M\) intersect the perimeter of the polygon a second time at points \(B_{i}\). The polygon is called balanced if each side of the polygon contains exactly one of the points \(B_{i}\) (strictly inside). Find all balanced polygons.

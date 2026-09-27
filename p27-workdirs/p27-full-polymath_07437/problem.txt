@@ -1,0 +1,1 @@
+In a specialized logistics hub, three cargo terminals—**A**, **B**, and **C**—form a triangular network. The straight-line distance from terminal **A** to terminal **B** is exactly **25** kilometers, the distance from terminal **B** to terminal **C** is **30** kilometers, and the distance from terminal **C** back to terminal **A** is **20** kilometers.

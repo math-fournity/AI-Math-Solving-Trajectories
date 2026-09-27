@@ -1,0 +1,1 @@
+If $E/k$ is an algebraic extension and for every polynomial $f$ in $k[X]$, at least one root of $f$ lies in $E$, is $E$ algebraically closed?

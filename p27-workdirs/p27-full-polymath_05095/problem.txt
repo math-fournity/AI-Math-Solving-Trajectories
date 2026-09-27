@@ -1,0 +1,1 @@
+Let \( S = \{(x, y) \mid x, y \in \mathbb{Q}, 0 \le x, y \le 1\} \). At first, the five distinct points \( A(0,0) \), \( B(1,0) \), \( C(1,1) \), \( D(0,1) \), and \( P(p, q) \in S \) are marked. Euclid can perform two moves: (i) draw a line connecting two marked points, or (ii) mark a point in \( S \) which lies on at least two drawn lines.

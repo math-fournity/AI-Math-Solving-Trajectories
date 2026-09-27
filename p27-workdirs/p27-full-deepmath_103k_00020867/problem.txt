@@ -1,0 +1,1 @@
+In a 3-connected pentagulation, determine the shortest cycle length that cannot be achieved.

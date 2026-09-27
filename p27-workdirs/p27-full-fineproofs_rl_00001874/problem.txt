@@ -1,0 +1,1 @@
+Given a triangle  $ABC$  inscribed in circle  $(O)$  and let  $P$  be a point on the interior angle bisector of  $BAC$ .  $PB$ ,  $PC$  cut  $CA$ ,  $AB$  at  $E,F$  respectively. Let  $EF$  meet  $(O)$  at  $M,N$ . The line that is perpendicular to  $PM$ ,  $PN$  at  $M,N$  respectively intersect  $(O)$  at  $S, T$  different from  $M,N$ . Prove that  $ST \parallel BC$ .

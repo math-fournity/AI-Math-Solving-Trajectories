@@ -1,0 +1,1 @@
+Let  $ABC$  be a triangle and let  $P$  be a point in the plane of  $ABC$  that is inside the region of the angle  $BAC$  but outside triangle  $ABC$ .**(a)** Prove that any two of the following statements imply the third.

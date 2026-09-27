@@ -1,0 +1,1 @@
+How many pairs of a bijective function $f$ from $\{1, 2, 3, ..., 2020\}$ to $\{1, 2, 3, ..., 2020\}$ and a coloring of $\{1, 2, 3, ..., 2020\}$ using red, yellow, green, and blue exist such that for all $1 \leq k \leq 2020$, the colors of $k$ and $f(k)$ are distinct? Answer in terms of $n$.

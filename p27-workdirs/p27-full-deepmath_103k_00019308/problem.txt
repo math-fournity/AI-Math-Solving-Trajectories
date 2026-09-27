@@ -1,0 +1,1 @@
+Given an abelian topological group $A$ and a natural number $n$, consider the homomorphism of topological groups $i: A \rightarrow A$, defined by $a \mapsto n.a$. If $i$ is injective, is $i$ an embedding of the underlying topological spaces?

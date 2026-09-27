@@ -1,0 +1,1 @@
+Determine whether there exists a topological space $X$ such that $C_0(X) \neq \overline{C_c(X)}$, where $C_0(X)$ is the set of continuous functions on $X$ that vanish at infinity, and $C_c(X)$ is the set of continuous functions on $X$ with compact support.

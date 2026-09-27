@@ -1,0 +1,1 @@
+A logistics company operates a massive storage facility organized into a grid of 2005 designated storage zones (rows) and 2006 loading docks (columns). Every intersection point in this grid—representing a single storage cell—contains a shipping container that holds either 0, 1, or 2 metric tons of cargo.

@@ -1,0 +1,1 @@
+In some cells of a $200 \times 200$ square, there is one chip—either red or blue; the other cells are empty. One chip sees another if they are in the same row or column. It is known that each chip sees exactly five chips of the other color (and possibly some chips of its own color). Find the maximum possible number of chips that can be placed on the board.

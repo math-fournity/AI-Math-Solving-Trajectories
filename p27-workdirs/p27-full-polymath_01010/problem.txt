@@ -1,0 +1,1 @@
+Fill in each of ten boxes, labeled $B_0, B_1, \dots, B_9$, with a unique 3-digit number such that the following conditions are satisfied:

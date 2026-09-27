@@ -1,0 +1,1 @@
+Find the smallest positive integer \( G \) such that there exist distinct positive integers \( a, b, c \) with the following properties:

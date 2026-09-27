@@ -1,0 +1,1 @@
+A sequence of $n$ empty research modules is arranged in a straight line on a space station. Two engineers, Archer and Breen, are tasked with installing specialized life-support systems. Archer always installs a "Liquid-Oxygen" system, while Breen always installs a "Carbon-Scrubber" system.

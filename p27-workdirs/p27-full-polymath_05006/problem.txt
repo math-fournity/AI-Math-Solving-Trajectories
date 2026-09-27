@@ -1,0 +1,1 @@
+6. Given a positive integer $n$. Find the largest real number $\mu$ such that: for any set $C$ of $4 n$ points in the "open" unit square $U$, there exists an "open" rectangle $V$ in $U$ satisfying the following properties:

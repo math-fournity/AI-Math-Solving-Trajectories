@@ -1,0 +1,1 @@
+Let $R$ be a ring of characteristic $0$, and let $G$ be a finite group with $H$ as a subgroup of $G$. If $M$ is a projective $R[G]$-module, is $M$ also projective as an $R[H]$-module?

@@ -1,0 +1,1 @@
+In a specialized telecommunications network, there are $n$ servers (where $n \geq 4$), and every single server is initially connected to every other server by a direct fiber-optic cable. This creates a fully interconnected web where every possible pair of servers has a unique dedicated link.

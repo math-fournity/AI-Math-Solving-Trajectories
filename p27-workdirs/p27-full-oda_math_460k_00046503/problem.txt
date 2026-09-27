@@ -1,0 +1,1 @@
+In a triangle with sides \(a\), \(b\), and \(c\), and medians \(m_a\), \(m_b\), and \(m_c\), where \(m_a = \frac{1}{2}\sqrt{2b^2 + 2c^2 - a^2}\), find the value of \(k\) such that the inequality

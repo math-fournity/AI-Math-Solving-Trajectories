@@ -1,0 +1,1 @@
+Elisa has $n = 2023$ treasure chests, all of which are unlocked and empty at first. Each day, Elisa adds a new gem to one of the unlocked chests of her choice, and afterwards, a fairy acts according to the following rules:

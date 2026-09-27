@@ -1,0 +1,1 @@
+A specialized cybersecurity firm is monitoring a digital vault that updates its security protocol in discrete stages, from Stage 0 to Stage 51. The "Threat Index" of the vault, denoted by $a_n$ for any stage $n$, is determined by the following protocol:

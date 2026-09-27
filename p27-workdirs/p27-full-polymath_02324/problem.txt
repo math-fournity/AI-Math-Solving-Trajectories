@@ -1,0 +1,1 @@
+Divide a regular hexagon into $24$ identical small equilateral triangles as shown. To each of the $19$ points that are vertices of at least one of the equilateral triangles, a different number is assigned. Find the maximum possible number of small equilateral triangles with their vertices having numbers in ascending order going clockwise.

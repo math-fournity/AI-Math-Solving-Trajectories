@@ -1,0 +1,1 @@
+In a normed linear space $F$ with a norm that is not strictly convex, can we always find distinct elements $f_1$ and $f_2$ such that $\lVert f_1 \rVert = \lVert f_2 \rVert = 1$ and $\lVert f_1 + f_2 \rVert = 2$? Assume $F$ is not the trivial space containing only the zero element.

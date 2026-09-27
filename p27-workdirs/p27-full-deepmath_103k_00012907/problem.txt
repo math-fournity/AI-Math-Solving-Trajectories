@@ -1,0 +1,1 @@
+Compute the limit \( \lim_{p\rightarrow0^{+}}\int_{C_p}\frac{e^{3iz}}{z^{2}-1}dz \), where \( C_p: z = 1 + pe^{i\theta} \).

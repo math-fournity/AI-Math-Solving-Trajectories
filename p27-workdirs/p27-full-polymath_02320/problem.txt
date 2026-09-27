@@ -1,0 +1,1 @@
+Let \(ABCD\) be a regular tetrahedron with edge length \(s\), in which five congruent spheres (with centers \(P, Q, R, S, T\)) are arranged such that:

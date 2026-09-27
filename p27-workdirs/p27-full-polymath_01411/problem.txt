@@ -1,0 +1,1 @@
+Let \( N = 2012^{2013} \). Find the maximum number of elements in the set \( A \) that satisfies the conditions:

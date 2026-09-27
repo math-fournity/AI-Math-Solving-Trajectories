@@ -1,0 +1,1 @@
+In the coordinate plane, a rectangle with vertices $(0,0), (m, 0), (0, n), (m, n)$ is given where $m=11$ and $n=13$. The rectangle is partitioned into triangles in such a way that:

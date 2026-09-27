@@ -1,0 +1,1 @@
+Let $A$ be a $C^*$-algebra and $a$ be a nonzero positive element of $A$. Suppose $A$ is the closed span of a subset $B$ of $A$, where $B$ is closed under the $*$ operation, linear combinations, and products. Determine if there exists $b \in B$ such that $b$ is positive, nonzero, and $a \geq b$.

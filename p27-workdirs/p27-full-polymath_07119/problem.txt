@@ -1,0 +1,1 @@
+In a futuristic data-processing center, a technician is managing a system that sorts all positive integers into $k$ distinct storage bins (where $k > 1$ is a fixed natural number).

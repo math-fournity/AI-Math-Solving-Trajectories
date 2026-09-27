@@ -1,0 +1,1 @@
+In a remote digital frontier, a signal station receives an endless, non-stop stream of binary pulses (either 0 or 1). To monitor the security of this infinite transmission, the station uses a "Master Registry" containing a specific collection of 5-bit reference codes.

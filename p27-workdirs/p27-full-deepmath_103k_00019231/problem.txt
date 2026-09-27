@@ -1,0 +1,1 @@
+Given a continuous function $f \in C(\mathbb{R})$ such that $f|_{\mathbb{R}\setminus \mathbb{Q}}$ is a bijection from $\mathbb{R}\setminus \mathbb{Q}$ onto $f\left( \mathbb{R}\setminus \mathbb{Q} \right)$, determine whether $f$ must be a bijection from $\mathbb{R}$ onto $f\left( \mathbb{R} \right)$. Provide a justification for your answer.

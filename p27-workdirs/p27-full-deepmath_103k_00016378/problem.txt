@@ -1,0 +1,1 @@
+Given a positive integer $n$ and non-negative numbers $a_1, a_2, \ldots, a_n$ such that $a_1 + a_2 + \cdots + a_n = n$, find the maximum value of the expression:

@@ -1,0 +1,261 @@
+# Problem
+
+Determine the dimension of the image of the map:
+\[ H^{1}(G_{S}, Ad(\bar{\rho})) = H^{1}(G_{S}, \mathbb{F}_{p}) \oplus H^{1}(G_{S}, Ad^{0}(\bar{\rho})) \rightarrow H^{1}(I_{p}, Ad^{0}(\bar{\rho})) \rightarrow H^{1}(I_{p}, \mathbb{F}_{p}(\omega^{k-1})) \]
+where \( Ad^{0}(\bar{\rho}) \cong \mathbb{F}_{p} \oplus \mathbb{F}_{p}(\omega^{k-1}) \oplus \mathbb{F}_{p}(\omega^{1-k}) \) as an \( I_p \) module.
+
+## 解题约束（必须严格遵守）
+
+1. **不要使用任何工具**——不要写文件、不要执行命令、不要搜索、不要浏览网页、不要读取文件。
+   你只需要在TUI中用think
+
+=== 你之前的探索历程（Round 1-1，交接文档）===
+
+你已经在之前的1轮中开始了这道题的探索。以下是前一轮AI编写的交接文档，
+总结了之前的思考过程、已确认的结论、已排除的方向和当前卡点。请仔细阅读，在此基础上**继续**完成解答。
+
+# 交接文档 · deepmath_103k_00000688 · Round 1 探索历程
+
+> **交接给**：下一个AI，请在此基础上继续完成解答
+> **来源**：deepmath_103k_00000688 Round 1（1个agent step，被截断）
+> **制作时间**：2026-08-21
+> **截断判定**：reasoning_content=66138c, message=0c, tool_calls=0, completion_tokens=25000（撞上限）
+
+---
+
+## 1. 题目
+
+Determine the dimension of the image of the map:
+$$ H^{1}(G_{S}, Ad(\bar{\rho})) = H^{1}(G_{S}, \mathbb{F}_{p}) \oplus H^{1}(G_{S}, Ad^{0}(\bar{\rho})) \rightarrow H^{1}(I_{p}, Ad^{0}(\bar{\rho})) \rightarrow H^{1}(I_{p}, \mathbb{F}_{p}(\omega^{k-1})) $$
+where $ Ad^{0}(\bar{\rho}) \cong \mathbb{F}_{p} \oplus \mathbb{F}_{p}(\omega^{k-1}) \oplus \mathbb{F}_{p}(\omega^{1-k}) $ as an $ I_p $ module.
+
+**题目来源**：Galois cohomology / deformation theory of Galois representations，与modularity lifting / R=T theorems中的Selmer group计算相关。
+
+---
+
+## 2. 答案猜想
+
+**猜想**：$\dim \operatorname{Im}(\Phi) = 1$（即映射满射到 $H^1(I_p, \mathbb{F}_p(\omega^{k-1}))$）。
+
+**置信度**：中等。AI在step中反复论证但未完成严格证明，最终基于"standard setup中映射满射"的modularity lifting背景给出猜想。AI自己也多次表示"not fully confident"（reasoning line 320, 468）。
+
+**演变过程**：
+- 初步分析后倾向答案=1（line 251-253, 311-316）
+- 一度考虑答案可能=0（line 336-340）
+- 最终回到答案=1（line 461-465, 485）
+- 截断前正在做严格证明（计算Frobenius作用以确定image），未完成
+
+---
+
+## 3. 已确认的结论
+
+### 结论3.1：$H^1(G_S, \mathbb{F}_p)$ 部分映射到 0
+**来源**：step 7 (agent step 0)，reasoning line 34-35, 62-64, 273-279
+
+**推导概要**：映射 $H^1(G_S, Ad(\bar{\rho})) \to H^1(I_p, Ad^0(\bar{\rho}))$ 是"限制到 $I_p$ 后投影 $Ad(\bar{\rho}) \to Ad^0(\bar{\rho})$"。$Ad(\bar{\rho}) = \mathbb{F}_p \oplus Ad^0(\bar{\rho})$ 中 $\mathbb{F}_p$ 是标量部分，投影 $Ad(\bar{\rho}) \to Ad^0(\bar{\rho})$ 杀掉标量部分。因此 $H^1(G_S, \mathbb{F}_p)$（标量cocycle）映射到 0。
+
+**关键澄清**（line 275-279）：$Ad(\bar{\rho})|_{I_p}$ 中的标量 $\mathbb{F}_p$ 与 $Ad^0(\bar{\rho})|_{I_p}$ 中的 $\mathbb{F}_p$（对角trace-zero矩阵）是**不同的** $\mathbb{F}_p$。投影杀掉的是前者（标量），后者保留。但 $H^1(G_S, \mathbb{F}_p)$ 中的 $\mathbb{F}_p$ 是标量系数，所以仍被杀掉。
+
+### 结论3.2：复合映射简化为
+$$\Phi: H^1(G_S, Ad^0(\bar{\rho})) \xrightarrow{\text{res}_{I_p}} H^1(I_p, Ad^0(\bar{\rho})) \xrightarrow{\text{proj}} H^1(I_p, \mathbb{F}_p(\omega^{k-1}))$$
+**来源**：line 74-76, 170-173, 281-282, 504-505
+
+### 结论3.3：$\dim_{\mathbb{F}_p} H^1(I_p, \mathbb{F}_p(\omega^{k-1})) = 1$
+**来源**：line 85-220, 641-656, 751-756
+
+**推导概要**（关键计算，AI反复验证）：
+1. 用inflation-restriction序列 $1 \to P_p \to I_p \to I_p/P_p \to 1$（$P_p$ = wild inertia，$I_p/P_p \cong \hat{\mathbb{Z}}^{(p')}$ = tame inertia）
+2. mod $p$ cyclotomic character $\omega$ 在 $P_p$ 上平凡（$\omega$ factor through $\operatorname{Gal}(\mathbb{Q}_p(\mu_p)/\mathbb{Q}_p)$，order $p-1$ tame quotient），所以 $\mathbb{F}_p(\omega^{k-1})^{P_p} = \mathbb{F}_p(\omega^{k-1})$
+3. **关键修正**（line 736-744）：$\operatorname{Hom}_{cont}(\hat{\mathbb{Z}}^{(p')}, \mathbb{F}_p) = 0$，因为 $\hat{\mathbb{Z}}^{(p')}$ 是 pro-prime-to-$p$ 而 $\mathbb{F}_p$ 是 $p$-torsion。所以 $H^1(I_p/P_p, \mathbb{F}_p(\omega^{k-1})) = 0$ 且 $H^2(I_p/P_p, \mathbb{F}_p(\omega^{k-1})) = 0$（当 $\omega^{k-1}$ 非平凡时）
+4. $H^1(P_p, \mathbb{F}_p(\omega^{k-1})) = \operatorname{Hom}(P_p, \mathbb{F}_p)$（$P_p$ 在系数上平凡作用）
+5. **关键事实**（line 195, 586-590）：$P_p^{ab} \otimes \mathbb{F}_p \cong \bigoplus_{i \in \mathbb{Z}/(p-1)\mathbb{Z}} \mathbb{F}_p(\omega^i)$ 作为 $I_p/P_p$-模（Serre *Local Fields*）
+6. 所以 $\operatorname{Hom}(P_p, \mathbb{F}_p) \cong \bigoplus_{i=0}^{p-2} \mathbb{F}_p(\omega^{-i})$，加上 $\omega^{k-1}$ twist 后取不变量对应 $i \equiv k-1 \pmod{p-1}$，1维
+7. 因此 $H^1(I_p, \mathbb{F}_p(\omega^{k-1})) \cong \mathbb{F}_p$（1维）
+
+**前提**：$\omega^{k-1}$ 非平凡，即 $k \not\equiv 1 \pmod{p-1}$（line 95-97, 525）
+
+### 结论3.4：$\operatorname{Im}(\Phi) \leq 1$，所以答案是 0 或 1
+**来源**：line 222-224, 507-509
+
+### 结论3.5：$Ad^0(\bar{\rho})|_{I_p}$ 的分解要求 $\bar{\rho}|_{I_p}$ 半单（split）
+**来源**：line 350-405
+
+**推导概要**：若 $\bar{\rho}|_{I_p} = \begin{pmatrix} \omega^{k-1} & c \\ 0 & 1 \end{pmatrix}$（peu ramifié，$c \neq 0$），则 $Ad^0$ 在 $I_p$ 上的作用是上三角（非半单），有off-diagonal项 $-2ac - c^2 d \alpha^{-1}$ 等。题目给的分解 $\mathbb{F}_p \oplus \mathbb{F}_p(\omega^{k-1}) \oplus \mathbb{F}_p(\omega^{1-k})$ 是半单分解，所以**隐含假设** $\bar{\rho}|_{I_p}$ 半单：$\bar{\rho}|_{I_p} \sim \begin{pmatrix} \omega^{k-1} & 0 \\ 0 & 1 \end{pmatrix}$。
+
+### 结论3.6：$H^1(I_p, Ad^0(\bar{\rho})) \cong \mathbb{F}_p^3$（3维）
+**来源**：line 749-760
+
+**推导概要**：用结论3.3的方法分别算三个分量：
+- $H^1(I_p, \mathbb{F}_p) = \mathbb{F}_p$（1维，$\omega^0$-isotypic component of $\operatorname{Hom}(P_p, \mathbb{F}_p)$；tame部分 $H^1(I_p/P_p, \mathbb{F}_p) = 0$）
+- $H^1(I_p, \mathbb{F}_p(\omega^{k-1})) = \mathbb{F}_p$（1维）
+- $H^1(I_p, \mathbb{F}_p(\omega^{1-k})) = \mathbb{F}_p$（1维，假设 $\omega^{1-k}$ 非平凡）
+
+### 结论3.7：$\dim H^1(G_{\mathbb{Q}_p}, Ad^0(\bar{\rho})) = 4$
+**来源**：line 685-714, 762
+
+**推导概要**：用local Euler characteristic formula：
+$$\dim H^1(G_{\mathbb{Q}_p}, M) = \dim H^0(G_{\mathbb{Q}_p}, M) + \dim H^0(G_{\mathbb{Q}_p}, M^*) + \dim M - \dim M^{I_p}$$
+对 $M = Ad^0(\bar{\rho})$（3维）：
+- $\dim H^0(G_{\mathbb{Q}_p}, Ad^0(\bar{\rho})) = 1$（对角trace-zero矩阵，在semisimple at $p$时被 $G_{\mathbb{Q}_p}$ 固定）
+- $M^* \cong Ad^0(\bar{\rho})$（self-dual，trace form给出perfect pairing，line 424-426），所以 $H^0(G_{\mathbb{Q}_p}, M^*) = 1$
+- $M^{I_p} = \mathbb{F}_p$（1维，对角）
+- 所以 $\dim H^1 = 1 + 1 + 3 - 1 = 4$
+
+### 结论3.8：inflation-restriction给出
+$$0 \to \mathbb{F}_p \to H^1(G_{\mathbb{Q}_p}, Ad^0(\bar{\rho})) \to H^1(I_p, Ad^0(\bar{\rho}))^{\hat{\mathbb{Z}}} \to \mathbb{F}_p \to H^2(G_{\mathbb{Q}_p}, Ad^0(\bar{\rho}))$$
+**来源**：line 522-534, 661-672, 764-772
+
+**关键参数**：
+- $(Ad^0(\bar{\rho}))^{I_p} = \mathbb{F}_p$（对角，假设 $\omega^{k-1}, \omega^{1-k}$ 非平凡）
+- $G_{\mathbb{F}_p} = \hat{\mathbb{Z}}$（procyclic，Frobenius生成）
+- semisimple at $p$ 时 Frobenius 在对角上作用平凡
+- $H^1(\hat{\mathbb{Z}}, \mathbb{F}_p) = \mathbb{F}_p$（1维，$\hat{\mathbb{Z}}$ 有 $\mathbb{Z}/p\mathbb{Z}$ 商）
+- $H^2(\hat{\mathbb{Z}}, \mathbb{F}_p) = \mathbb{F}_p$（1维，norm $N = p \cdot \text{id} = 0$ on $\mathbb{F}_p$，line 768）
+
+由 $\dim H^1(G_{\mathbb{Q}_p}, Ad^0(\bar{\rho})) = 4$ 和 $\dim H^1(I_p, Ad^0(\bar{\rho})) = 3$，推出 $\dim H^1(I_p, Ad^0(\bar{\rho}))^{\hat{\mathbb{Z}}} = 3$（即Frobenius在3维空间上不变子空间也是3维——意味着Frobenius在 $H^1(I_p, Ad^0(\bar{\rho}))$ 上作用平凡？这需要进一步验证，是截断处正在分析的内容）。
+
+---
+
+## 4. 已尝试的方向
+
+### 方向4.1：直接计算 $H^1(I_p, \mathbb{F}_p(\omega^{k-1}))$ 的维数 ⚠️未完成→后完成
+**描述**：用inflation-restriction + wild inertia的 $P_p^{ab} \otimes \mathbb{F}_p$ 分解
+**结果**：✅成功（结论3.3）。过程中犯了错误：最初以为 $H^1(I_p/P_p, \mathbb{F}_p) = \mathbb{F}_p$（line 549），后来修正为 0（line 736-744，因为 $\hat{\mathbb{Z}}^{(p')}$ 是 pro-prime-to-$p$）。这导致 $H^1(I_p, \mathbb{F}_p)$ 从最初猜的2维修正为1维（line 749）。
+
+### 方向4.2：用 adjoint 显式矩阵计算验证 $Ad^0|_{I_p}$ 分解 ⚠️部分完成
+**描述**：假设 $\bar{\rho}|_{I_p} = \begin{pmatrix} \omega^{k-1} & c \\ 0 & 1 \end{pmatrix}$，显式算 $Ad^0$ 作用
+**结果**：✅确认分解要求 $c=0$（结论3.5）。显式矩阵计算在 line 354-401，得到上三角作用矩阵 $\begin{pmatrix} 1 & * & * \\ 0 & \omega^{k-1} & * \\ 0 & 0 & \omega^{1-k} \end{pmatrix}$，非半单。
+
+### 方向4.3：用 Poitou-Tate 对偶性论证满射 ⚠️未完成
+**描述**：考虑 dual map $H^1(I_p, \mathbb{F}_p(\omega^{1-k})) \to H^1(G_S, Ad^0(\bar{\rho}))$，希望证明 dual Selmer = 0
+**结果**：❌未完成。AI承认"This is getting quite technical"（line 459），转向其他方法。关键观察：$Ad^0(\bar{\rho})^* \cong Ad^0(\bar{\rho})$（self-dual，line 424-426），$H^1(I_p, \mathbb{F}_p(\omega^{k-1}))^* \cong H^1(I_p, \mathbb{F}_p(\omega^{1-k}))$（line 422）。
+
+### 方向4.4：用 local Euler characteristic + inflation-restriction 计算 $\dim H^1(G_{\mathbb{Q}_p}, Ad^0(\bar{\rho}))$ ⚠️部分完成
+**描述**：算出 local cohomology 维数，再用 inflation-restriction 分析 Frobenius 作用
+**结果**：✅得到 $\dim H^1(G_{\mathbb{Q}_p}, Ad^0(\bar{\rho})) = 4$（结论3.7），✅得到 $\dim H^1(I_p, Ad^0(\bar{\rho})) = 3$（结论3.6），❌**Frobenius 在 $H^1(I_p, Ad^0(\bar{\rho}))$ 各分量上的作用未算完**——这是截断点。
+
+### 方向4.5：基于 modularity lifting 背景的"标准答案"论证 ⚠️未严格证明
+**描述**：在 Taylor-Wiles / Wiles / Diamond 的 standard setup 中，global-to-local 映射满射
+**结果**：⚠️给出猜想但无严格证明。AI的论证（line 311-328, 461-485）：① $H^1(I_p, \mathbb{F}_p(\omega^{k-1}))$ 1维；② global cohomology "large enough"；③ Taylor-Wiles 方法中此满射性是 patching argument 的关键。但 AI 自己说"not fully confident"（line 320）和"the problem doesn't mention Taylor-Wiles primes"（line 328）。
+
+---
+
+## 5. 关键文献/参考
+
+AI在thinking中引用但**未做web search**（本round 0个tool call），所有引用都是凭记忆：
+
+| 文献/定理 | 用途 | 来源line |
+|---|---|---|
+| Serre *Local Fields* | $P_p^{ab} \otimes \mathbb{F}_p \cong \bigoplus_{i \in \mathbb{Z}/(p-1)\mathbb{Z}} \mathbb{F}_p(\omega^i)$ 作为 $I_p/P_p$-模 | 195, 586 |
+| Local Euler characteristic formula | $\dim H^1(G_{\mathbb{Q}_p}, M) = \dim H^0 + \dim H^0(M^*) + \dim M - \dim M^{I_p}$ | 690-698 |
+| Local Tate duality | $H^2(G_{\mathbb{Q}_p}, M) \cong H^0(G_{\mathbb{Q}_p}, M^*)^*$ | 696 |
+| Poitou-Tate exact sequence | global-to-local map 的对偶描述 | 261-264, 445-457 |
+| Wiles / Taylor-Wiles / Diamond modularity lifting | "standard setup" 中映射满射的背景 | 128, 133, 161, 326 |
+| Boston-Lenstra-Ribet notes | Selmer group 计算 | 139 |
+| Inflation-restriction sequence | $1 \to P_p \to I_p \to I_p/P_p \to 1$ 的 cohomology | 107-108, 177-180 |
+
+**注意**：所有文献引用都是AI凭记忆给出，未验证。下一个AI如需严格证明，应查证这些定理的精确陈述。
+
+---
+
+## 6. 已有的中间产物
+
+**Round 1 没有写出任何脚本或文件**（0个tool call，0个tool_calls，message=0c）。所有分析都在 thinking 中。
+
+唯一外部产物是本交接文档制作过程中生成的：
+- `tmp-scripts/extract_reasoning.py`：从 round1_export.json 提取 reasoning_content 的临时脚本
+- `round1_reasoning.txt`：提取出的 66138 字符 thinking 内容（供本交接文档参考，下一轮AI不需要读）
+
+---
+
+## 7. 当前卡在哪里
+
+### 截断时的具体任务
+
+AI正在**计算 Frobenius 在 $H^1(I_p, Ad^0(\bar{\rho})) = \mathbb{F}_p^3$ 各分量上的作用**，目的是确定 $H^1(I_p, Ad^0(\bar{\rho}))^{\hat{\mathbb{Z}}}$（Frobenius不变子空间）的结构，进而通过 inflation-restriction 序列判断 $H^1(G_{\mathbb{Q}_p}, Ad^0(\bar{\rho})) \to H^1(I_p, \mathbb{F}_p(\omega^{k-1}))$ 是否满射。
+
+截断在 line 782，正在分析 $\omega^0$ 分量（$H^1(I_p, \mathbb{F}_p)$，来自 $H^1(P_p, \mathbb{F}_p)^{I_p/P_p, \text{trivial}}$）上 Frobenius 的作用。具体在写 $P_p^{ab} \otimes \mathbb{F}_p \cong \dots$ 时被截断（最后一行以反斜杠 `\` 结尾，是 LaTeX 公式未写完）。
+
+### 为什么这个任务困难
+
+1. **Frobenius 在 wild inertia 上的作用复杂**：Frobenius 通过共轭作用在 $P_p$ 上，再通过系数 twist，组合作用在 $\operatorname{Hom}(P_p, \mathbb{F}_p)$ 上。AI在 line 677-683 承认"this is getting very complicated"。
+2. **从 local 满射推 global 满射需要 Poitou-Tate**：即使确定了 $H^1(G_{\mathbb{Q}_p}, Ad^0(\bar{\rho})) \to H^1(I_p, \mathbb{F}_p(\omega^{k-1}))$ 满射，还需要论证 global-to-local 的 localization map $\text{res}_p: H^1(G_S, Ad^0(\bar{\rho})) \to H^1(G_{\mathbb{Q}_p}, Ad^0(\bar{\rho}))$ 命中足够多的类。这涉及 Poitou-Tate 全局序列和其他素数 $S \setminus \{p\}$ 的贡献，AI在 line 261-264, 443-457 提到但未展开。
+3. **题目隐含假设不清**：题目只给了 $Ad^0|_{I_p}$ 的分解，没明确说 $\bar{\rho}$ 的其他性质（绝对不可约？modular？weight $k$？level？$S$ 包含哪些素数？）。AI在 line 266, 468 反复指出"without more specific information the answer might not be uniquely determined"。
+
+### AI 自己的疑虑
+
+- line 226-228："the problem asks to 'determine,' suggesting there's a definite answer... the answer depends on the specific representation $\bar{\rho}$ and the set $S$"
+- line 320："But I'm not fully confident in this"
+- line 468："the problem doesn't specify all the hypotheses, so maybe the answer is just based on the structure given"
+
+---
+
+## 8. 建议的下一步
+
+### 8.1 优先：完成 Frobenius 作用的计算（接续截断点）
+
+接续 line 782 的计算。具体步骤：
+1. 算 Frobenius 在 $H^1(I_p, \mathbb{F}_p)$（$\omega^0$ 分量）上的作用。关键：Frobenius 共轭 $P_p$ 时，在 $P_p^{ab} \otimes \mathbb{F}_p \cong \bigoplus_i \mathbb{F}_p(\omega^i)$ 上如何作用。Frobenius 在 tame inertia 上作用 $\sigma \mapsto \sigma^p$，对应在 $\omega^i$ 分量上乘以 $p$（mod $p$ = 0？需谨慎，见 line 728-734 的困惑）。
+2. 算 Frobenius 在 $H^1(I_p, \mathbb{F}_p(\omega^{k-1}))$ 和 $H^1(I_p, \mathbb{F}_p(\omega^{1-k}))$ 上的作用。
+3. 确定 $H^1(I_p, Ad^0(\bar{\rho}))^{\hat{\mathbb{Z}}}$ 的维数和到 $\omega^{k-1}$ 分量的投影是否满射。
+
+**已知约束**（来自结论3.8）：$\dim H^1(I_p, Ad^0(\bar{\rho}))^{\hat{\mathbb{Z}}} = 3$（由 $\dim H^1(G_{\mathbb{Q}_p}) = 4$ 和 short exact sequence 推出，假设 $H^2$ 那项映射是单射）。如果此约束成立，且 $\omega^{k-1}$ 分量在不变子空间中投影非零，则 local map 满射。
+
+### 8.2 关键：论证 global-to-local 满射
+
+即使 local map（$H^1(G_{\mathbb{Q}_p}, Ad^0(\bar{\rho})) \to H^1(I_p, \mathbb{F}_p(\omega^{k-1}))$）满射，还需：
+- 论述 localization $\text{res}_p: H^1(G_S, Ad^0(\bar{\rho})) \to H^1(G_{\mathbb{Q}_p}, Ad^0(\bar{\rho}))$ 的像足够大
+- 用 Poitou-Tate：kernel of $\bigoplus_{v \in S} \text{loc}_v$ 是 $H^0(G_S, M^*)^*$（line 457），如果 $\bar{\rho}$ 绝对不可约则 $H^0(G_S, Ad^0(\bar{\rho})^*) = 0$，localization 单射但未必满射到每个 local factor
+- **可执行**：写出 Poitou-Tate 9-term exact sequence，定位 $\text{res}_p$ 的像在 $H^1(G_{\mathbb{Q}_p}, Ad^0(\bar{\rho}))$ 中的位置
+
+### 8.3 备选：明确题目隐含假设后用已知结果
+
+如果题目确实来自某篇具体论文（AI猜测是 modularity lifting 文献，line 128, 159, 326），则：
+- **可执行**：web search "Selmer group Ad^0 rho inertia omega^{k-1} dimension image" 或 "Taylor-Wiles peu ramifié local condition dimension"
+- 查 Diamond "On deformation rings and Hecke rings" 或 Wiles "Modular elliptic curves and Fermat's Last Theorem" 中 Selmer group 计算的对应章节
+- 确认 "standard setup" 下此映射满射是否是已知 lemma
+
+### 8.4 谨慎：考虑答案可能不是 1
+
+AI的猜想=1 基于未验证的"standard setup 满射"。下一个AI应：
+- 验证是否存在合理假设使答案=0（例如 $\bar{\rho}$ 满足某种 local condition 使 global cocycle 的 $\omega^{k-1}$ 分量恒为零）
+- 检查题目是否隐含 "peu ramifié" 而非 semisimple（若 peu ramifié，则 $Ad^0|_{I_p}$ 分解不成立，题目陈述需要重新理解——但题目明确给了分解，所以应排除 peu ramifié）
+
+### 8.5 写证明的具体步骤
+
+1. 先固定假设：$\bar{\rho}|_{I_p}$ semisimple（split），$\omega^{k-1}, \omega^{1-k}$ 非平凡（$k \not\equiv 1 \pmod{p-1}$），$\bar{\rho}$ 绝对不可约
+2. 证 $\dim H^1(I_p, \mathbb{F}_p(\omega^{k-1})) = 1$（结论3.3，已完整）
+3. 证 local map $H^1(G_{\mathbb{Q}_p}, Ad^0(\bar{\rho})) \to H^1(I_p, \mathbb{F}_p(\omega^{k-1}))$ 满射（接续 §8.1）
+4. 证 global-to-local $\text{res}_p$ 命中 local map 的核的补（接续 §8.2）
+5. 结论 $\dim \operatorname{Im}(\Phi) = 1$，输出 $\boxed{1}$
+
+---
+
+## 附录：探索历程时间线
+
+| step | source | 内容 |
+|---|---|---|
+| 0 | system | Devin system prompt（18653c） |
+| 1 | system | subagent profiles 说明（775c） |
+| 2 | system | "You are powered by GLM-5.2 High."（32c） |
+| 3 | system | 工作目录信息（306c） |
+| 4 | system | always-on rules（10519c） |
+| 5 | user | "请按AGENTS.md中的题目直接解答。直接在TUI中输出证明，不要写任何文件，结尾输出 ### PROOF COMPLETE"（63c） |
+| 6 | system | available_skills 列表（18107c） |
+| 7 | agent | **唯一agent step**：66138c reasoning，0c message，0 tool_calls，completion_tokens=25000（**截断**）。全部内容为 thinking，分析 Galois cohomology 维数计算，未产出任何文本或工具调用。 |
+
+**截断判定依据**：`rc=66138 > 0, msg=0, tc=0, comp=25000 >= 24000` → 满足 `is_truncated` 判定（续传规范文档 §4.1）。
+
+**token 统计**：total_prompt=22597, total_completion=25000, total_cached=12398。
+
+
+=== 请继续思考并完成解答 ===
+
+根据交接文档中的"下一步建议"，继续完成这道题的解答。
+
+要求：
+1. **在之前的探索基础上继续**，不要重复已经做过的分析
+2. 给出完整的解答过程
+3. 最终答案用 \boxed{答案} 格式给出
+4. 数学公式用LaTeX
+5. 把证明写到proof.md文件中，不要在对话里输出完整证明

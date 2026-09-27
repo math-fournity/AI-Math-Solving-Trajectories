@@ -1,0 +1,1 @@
+Consider a sequence of positive integers $X_1, X_2, \dots, X_n$, where each element does not exceed a given positive integer $M$. The sequence is formed according to the rule that for all $k > 2$, $X_k = |X_{k-1} - X_{k-2}|$. Let $L(M)$ be the maximum possible length $n$ of such a sequence. Compute the sum $\sum_{M=1}^{10} L(M)$.

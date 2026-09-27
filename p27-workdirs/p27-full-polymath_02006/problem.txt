@@ -1,0 +1,1 @@
+There are 36 participants at an event. Each participant shakes hands with some others, but no two participants shake hands more than once. Each participant records the number of handshakes they made, and it is found that no two participants with the same number of handshakes shook hands with each other. Determine the maximum possible number of handshakes at the event.

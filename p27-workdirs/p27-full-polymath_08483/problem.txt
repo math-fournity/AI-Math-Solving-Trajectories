@@ -1,0 +1,1 @@
+In a remote high-tech logistics facility, an automated storage grid is organized into a $10 \times 10$ array of specialized docking zones. A fleet of autonomous delivery drones is assigned to monitor this grid. Each drone is programmed with a fixed flight axis—either vertical (North-South) or horizontal (East-West)—and an initial heading along that axis.

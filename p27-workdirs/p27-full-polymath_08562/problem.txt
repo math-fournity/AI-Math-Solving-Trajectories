@@ -1,0 +1,1 @@
+A high-tech server farm is arranged in a 5x5 grid of 25 independent processing nodes. Two nodes are considered "linked" if they are adjacent horizontally or vertically.

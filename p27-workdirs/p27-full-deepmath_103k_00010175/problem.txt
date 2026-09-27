@@ -1,0 +1,1 @@
+Suppose that \( f:\mathbb{R}\rightarrow\mathbb{R} \) is a continuous function such that the image \( f[G] \) is a subgroup of \( \mathbb{R} \) for every subgroup \( G \) of \( \mathbb{R} \). Must \( f \) be an endomorphism of \( (\mathbb{R},+) \), i.e., is it true that \( f(x)=ax \) for some real number \( a \)?

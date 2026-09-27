@@ -1,0 +1,1 @@
+Find the bounded solutions to the differential equation: $$\alpha'''(x) =\alpha'(x) x^2 + \alpha(x) x.$$

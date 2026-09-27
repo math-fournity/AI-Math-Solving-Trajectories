@@ -1,0 +1,1 @@
+A specialized triangular communications network is established between three main hubs—Alpha (A), Bravo (B), and Charlie (C)—forming an equilateral triangle where each direct link (AB, BC, and CA) has a length of exactly 1 unit.

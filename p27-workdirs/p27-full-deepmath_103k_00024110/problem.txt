@@ -1,0 +1,1 @@
+In a probability space $(\Omega, \mathcal{F}, \mathbb{P})$, consider a family of independent and identically distributed standard Gaussian random variables $\{X_t : 0 \leq t \leq 1 \}$. Determine whether the function $t \mapsto X_t(\omega)$ is Borel-measurable on $[0,1]$ with probability $1$. Provide your answer as either "true" or "false."

@@ -1,0 +1,1 @@
+In Geometric Algebra, if $A\tilde A=0$, does it necessarily follow that $\tilde AA=0$? Consider the properties of reversion, where $(AB)^\sim=\tilde B\tilde A$ for any multivectors $A$ and $B$, and reversion is linear, leaving scalars and vectors unchanged. Analyze whether this implication holds in both Euclidean and spacetime algebras.

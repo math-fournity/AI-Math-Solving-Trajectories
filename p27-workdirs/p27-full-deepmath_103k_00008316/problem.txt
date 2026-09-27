@@ -1,0 +1,1 @@
+Is the sequence \((\{10^n\pi\})_{n=1}^\infty\) dense in the interval \([0,1]\)? Here, \(\{x\} = x \mod 1 = x - \lfloor x \rfloor\) represents the fractional part of \(x\).

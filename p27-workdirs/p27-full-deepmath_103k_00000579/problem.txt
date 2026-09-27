@@ -1,0 +1,1 @@
+Find all functions \( f:(0,\infty)\rightarrow(0,\infty) \) that satisfy the following conditions: \( f(f(f(x))) + 2x = f(3x) \) for all \( x > 0 \) and \( \lim_{x\to\infty}(f(x)-x)=0 \).

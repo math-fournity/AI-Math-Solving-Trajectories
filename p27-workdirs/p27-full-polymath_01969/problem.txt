@@ -1,0 +1,1 @@
+From a regular pentagon with a side length of \(1\) cm, all points that are less than \(1\) cm away from all the vertices of the pentagon are removed. Find the area of the remaining part.

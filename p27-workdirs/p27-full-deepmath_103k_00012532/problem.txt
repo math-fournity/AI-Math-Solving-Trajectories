@@ -1,0 +1,1 @@
+Find the limit \( \lim_{n\to\infty} \int_0^n\left(1-\frac{x}{n}\right)^n\log(2+\cos(x/n)) \, dx \).

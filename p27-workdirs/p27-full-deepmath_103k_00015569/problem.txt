@@ -1,0 +1,1 @@
+Evaluate the limit for $b > 1$: $$\lim\limits_{n\to\infty}\left[\frac{1}{n}+\sum\limits_{p=1}^{\infty}\left(e^{-b^{pn}}+e^{-b^{-pn}}-1\right)\right]$$

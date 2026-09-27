@@ -1,0 +1,1 @@
+Determine whether there can exist three transitive models of ZFC with the same ordinals, $M_0, M_1, N$, such that there are elementary embeddings $j_i : M_i \to N$ for $i<2$, but there is no elementary embedding from $M_0$ to $M_1$ or vice versa.

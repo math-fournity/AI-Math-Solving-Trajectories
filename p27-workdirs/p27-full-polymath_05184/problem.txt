@@ -1,0 +1,1 @@
+Points \( M, N, P \) are chosen on the sides of triangle \( ABC \). The sum of the areas of the two gray triangles is equal to the sum of the areas of the two shaded triangles.

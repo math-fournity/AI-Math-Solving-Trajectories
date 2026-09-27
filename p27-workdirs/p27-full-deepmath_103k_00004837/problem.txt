@@ -1,0 +1,1 @@
+Determine whether there exists a strictly increasing function \( f : \mathbb{R} \to \mathbb{R} \) such that its image is algebraically independent over \( \mathbb{Q} \).

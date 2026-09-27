@@ -1,0 +1,1 @@
+Find the largest positive integer $n>10$ such that the residue of $n$ when divided by each perfect square between $2$ and $\dfrac n2$ is an odd number.

@@ -1,0 +1,1 @@
+Compute the largest value of \( r \) such that three non-overlapping circles of radius \( r \) can be inscribed in a unit square.

@@ -1,0 +1,1 @@
+Given $n \geq 3$ pairwise coprime positive integers $a_1, a_2, \cdots, a_n$ such that it is possible to add “ + ” or “ - ” to them to make their algebraic sum equal to 0, determine if there exists a set of positive integers $b_1, b_2, \cdots, b_n$ such that for any positive integer $k$, the numbers $b_1 + k a_1, b_2 + k a_2, \cdots, b_n + k a_n$ are pairwise coprime.

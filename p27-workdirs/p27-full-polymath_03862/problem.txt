@@ -1,0 +1,1 @@
+In a television series, there are $n = 1001$ citizens. Every pair of distinct citizens conspires together against exactly one of the other $n-2$ citizens. Let $k$ be the largest integer such that there must exist a citizen against whom at least $k$ other citizens are involved in conspiracies. Find the value of $k$.

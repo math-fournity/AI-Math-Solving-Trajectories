@@ -1,0 +1,1 @@
+Evaluate the limit \( \lim_{s \to \infty} s^n P(|Y| > s) \), where \( Y \) is a random variable such that \( E[|Y|^n] < \infty \) for \( n > 0 \).

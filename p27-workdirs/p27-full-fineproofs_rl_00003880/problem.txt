@@ -1,0 +1,1 @@
+Let $a_{1}, \ldots, a_{r}$ be positive real numbers. For $n>r$, we inductively define  $$ a_{n}=\max _{1 \leq k \leq n-1}\left(a_{k}+a_{n-k}\right) $$  Prove that there exist positive integers $\ell \leq r$ and $N$ such that $a_{n}=a_{n-\ell}+a_{\ell}$ for all $n \geq N$. (Iran)

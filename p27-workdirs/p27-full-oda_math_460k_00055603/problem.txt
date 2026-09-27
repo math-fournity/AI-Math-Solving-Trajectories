@@ -1,0 +1,1 @@
+The numbers $1, 2, 3, 4, 5, 6, 7, 8, 9,$ and $10$ are randomly assigned to the faces of a regular dodecahedron so that each face contains a different number. Find the probability that no two adjacent faces contain consecutive numbers, where $10$ and $1$ are considered to be consecutive, in terms of a reduced fraction $p/q$. Compute $p + q$.

@@ -1,0 +1,1 @@
+In a remote sector of a digital landscape, three signal towers—Alpha, Beta, and Gamma—are positioned at complex coordinates corresponding to the roots of the power-grid polynomial $P(z) = z^3 - 3z^2 + 3z + 7$.

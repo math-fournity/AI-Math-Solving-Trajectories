@@ -1,0 +1,1 @@
+In a circular sector corresponding to a central angle of \(120^{\circ}\), a square is inscribed. Determine the length of the side of the square if the radius of the circle is \(2+\sqrt{19}\).

@@ -1,0 +1,1 @@
+In a remote research outpost, three identical observation towers—Tower Alpha, Tower Beta, and Tower Gamma—are positioned at the corners of a perfectly equilateral triangle. Each tower is exactly $n = 100$ levels high, and every level features a single large outward-facing data screen.

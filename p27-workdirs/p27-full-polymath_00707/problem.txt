@@ -1,0 +1,1 @@
+Let $n \geq 2$ be a natural number. For a subset $F$ with $n$ elements of $\{1, 2, \ldots, 2n\}$, we define $m(F)$ as the minimum of all $\operatorname{lcm}(x, y)$, where $x$ and $y$ are two distinct elements of $F$. Let $M(n)$ be the maximum value that $m(F)$ can achieve for a given $n$. Calculate the sum of $M(n)$ for all $n$ from 2 to 10.

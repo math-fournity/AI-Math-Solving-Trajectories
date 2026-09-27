@@ -1,0 +1,1 @@
+Let \( G = \{g_1, \ldots, g_n\} \) be a non-abelian finite simple group of order \( n \). For a subset \( S \subseteq G \) and integer \( k \in \mathbb{N} \), define \( S^{(k)} := \{a^k \, | \, a \in S\} \). Consider the set

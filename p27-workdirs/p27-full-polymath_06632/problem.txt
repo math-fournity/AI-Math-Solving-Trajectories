@@ -1,0 +1,1 @@
+In a remote desert territory, a telecommunications company is planning to install a new network. There are exactly 998 isolated villages, which we can represent as distinct locations on a flat map such that no three villages lie on the same straight line.

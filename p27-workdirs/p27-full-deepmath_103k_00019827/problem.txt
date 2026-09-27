@@ -1,0 +1,1 @@
+Let $f : (a, \infty) \to \mathbb{R}$ be differentiable, and $w : [0, \infty) \to (0, \infty)$ be continuous and monotone-decreasing. Suppose that $f$ and $f'$ belong to $L^2([0,\infty), w(x)dx)$, and for some $r > 1$, $\lim_{x \to \infty}x^rw(x) = 0$. Determine if the following limit holds:

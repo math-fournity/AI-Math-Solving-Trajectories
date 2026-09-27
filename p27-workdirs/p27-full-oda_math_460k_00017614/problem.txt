@@ -1,0 +1,1 @@
+Given a positive integer $n$, suppose that $P(x,y)$ is a real polynomial such that

@@ -1,0 +1,1 @@
+For any integer $k \geqslant 0$, we denote $a_{k}$ as the first digit of the number $2^{k}$, written in base 10. For example, $a_{5}=3$ is the first digit of $2^{5}=32$.

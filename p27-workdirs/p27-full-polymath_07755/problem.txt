@@ -1,0 +1,1 @@
+A specialized satellite mapping project is tracking a laser-relay system between three research stations: Alpha ($A$), Bravo ($B$), and Charlie ($C$). These stations are positioned such that the paths $AB$ and $AC$ are equal in length and meet at a perfect $90^\circ$ angle at station $A$.

@@ -1,0 +1,1 @@
+Let \( Q \in \mathbb{Z}[x] \) be a polynomial that defines an injective function from \( \mathbb{Z} \) to \( \mathbb{Z} \). Determine whether there exists a prime \( p \) such that \( Q \) defines an injective function from \( \mathbb{Z}/p\mathbb{Z} \) to \( \mathbb{Z}/p\mathbb{Z} \).

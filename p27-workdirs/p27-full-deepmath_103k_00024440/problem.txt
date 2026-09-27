@@ -1,0 +1,1 @@
+Consider the Cantor set $C$ and its shift modulo 1 by an irrational number $\alpha \in (0,1)$, denoted as $T$. Let $\mu$ be the measure on the interval $[0,1]$ induced by the Cantor staircase. Determine whether $\mu(T(C) \cap C) = 0$.

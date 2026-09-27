@@ -1,0 +1,1 @@
+Given a positive integer \( n \), determine the best possible value of \( k_n \) such that for any sequence of numbers satisfying \( 0 \leq a_1 \leq a_2 \leq \cdots \leq a_{3n} \), the inequality \( \left(\sum_{i=1}^{3n} a_i\right)^3 \geq k_n \left(\sum_{i=1}^{n} a_i a_{n+i} a_{2n+i}\right) \) always holds. Express \( k_n \) in terms of \( n \).

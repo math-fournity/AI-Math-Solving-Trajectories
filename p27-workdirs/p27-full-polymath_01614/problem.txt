@@ -1,0 +1,1 @@
+Pentagon \(A B C D E\) has \(A B = B C = C D = D E\), \(\angle A B C = \angle B C D = 108^{\circ}\), and \(\angle C D E = 168^{\circ}\). Find the measure of angle \(\angle B E A\) in degrees.

@@ -1,0 +1,1 @@
+Example 7 Let positive integers $a_{1}, a_{2}, \cdots, a_{9}$ (which can be the same) satisfy: for any $1 \leqslant i<j<k \leqslant 9$, there exists an $l(1 \leqslant l \leqslant 9)$ different from $i, j, k$, such that $a_{i}+a_{j}+a_{k}+a_{l}=100$. Find the number of ordered 9-tuples $\left(a_{1}, a_{2}, \cdots, a_{9}\right)$ that satisfy the above requirement. ${ }^{[6]}$

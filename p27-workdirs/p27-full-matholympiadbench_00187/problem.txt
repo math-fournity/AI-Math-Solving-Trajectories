@@ -1,0 +1,11 @@
+/-!
+# International Mathematical Olympiad 2003, Problem 2
+
+Determine all pairs of positive integers (a,b) such that
+
+                  a²/(2ab² - b³ + 1)
+
+is a positive integer.
+-/
+
+##

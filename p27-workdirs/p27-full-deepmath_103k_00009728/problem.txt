@@ -1,0 +1,1 @@
+Given a convex polygon $P \subset \mathbb{R}^2$ with area 1 that contains the origin, and let $r$ be the maximum distance from the origin to any point in $P$. Let $S$ be a sector of a circle with radius $r$, centered at the origin, also with area 1. Is there an area-preserving map $f: P \to S$ such that for any point $x \in P$, $\|x\| \leq \|f(x)\|$?

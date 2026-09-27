@@ -1,0 +1,1 @@
+Let \( P \) be a cutting plane refutation of the system of inequalities:

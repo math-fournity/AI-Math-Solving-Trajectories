@@ -1,0 +1,1 @@
+Assume that $(a_k)$ is a sequence of real numbers such that \( \lim_{n\to \infty}\sum_{i=0}^n a_i\cos(n\pi b_i) = 0 \) for some sequence $(b_k)$ with $1=b_0>b_1>b_2>\dots>0$. Does this imply that all $a_k$ are equal to 0?

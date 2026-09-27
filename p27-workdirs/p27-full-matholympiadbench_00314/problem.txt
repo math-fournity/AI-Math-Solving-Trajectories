@@ -1,0 +1,9 @@
+/-!
+# IMO 2017 A6
+
+Let $R$ be a ring, $G$ be an abelian (additive) group, and $\iota : G \to R$ be a group
+homomorphism. Find all functions $f : R \to G$ such that for any $x, y \in R$,
+$$ f(\iota(f(x)) \iota(f(y))) + f(x + y) = f(xy). $$
+-/
+
+##

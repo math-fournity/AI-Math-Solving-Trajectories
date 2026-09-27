@@ -1,0 +1,1 @@
+The $100$th degree polynomial $P(x)$ satisfies $P(2^k) = k$ for $k = 0, 1, \ldots, 100$. Let $a$ denote the leading coefficient. Find the integer $y$ such that $2^y < |a| < 2^{y+1}$.

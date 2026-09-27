@@ -1,0 +1,1 @@
+Let $\{a_n\}$ be a sequence satisfying $a_1 = 2$, and for $n \geq 2$, $a_n$ is the smallest prime number that does not divide

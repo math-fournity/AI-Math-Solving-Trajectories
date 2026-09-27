@@ -1,0 +1,1 @@
+Let \( n \) be an integer greater than 1. Let \( a_{1}, a_{2}, \ldots, a_{n}, b_{1}, b_{2}, \ldots, b_{n} \) be nonnegative real numbers with \( a_{1} a_{2} \cdots a_{n} = b_{1} b_{2} \cdots b_{n} \), \( b_{1} + b_{2} + \cdots + b_{n} = 1 \), and

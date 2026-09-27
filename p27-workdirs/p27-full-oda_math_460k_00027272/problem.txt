@@ -1,0 +1,1 @@
+Let \( a_1, \ldots, a_k \) be different positive integers. Suppose that for every prime number \( n \), \( a_1 \cdot \ldots \cdot a_k \) divides \( (n + a_1) \cdot \ldots \cdot (n + a_k) \). Determine the possible values of the \( a_i \).

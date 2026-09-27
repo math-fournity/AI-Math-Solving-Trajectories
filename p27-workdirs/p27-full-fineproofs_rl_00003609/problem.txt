@@ -1,0 +1,1 @@
+Let $A B C$ be an acute-angled triangle with circumcenter $O$. Let $\Gamma$ be a circle with centre on the altitude from $A$ in $A B C$, passing through vertex $A$ and points $P$ and $Q$ on sides $A B$ and $A C$. Assume that $B P \cdot C Q=A P \cdot A Q$. Prove that $\Gamma$ is tangent to the circumcircle of triangle BOC.

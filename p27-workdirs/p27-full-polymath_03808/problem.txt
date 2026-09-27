@@ -1,0 +1,1 @@
+Initially, there are $n$ distinct points on a circle. In each round, every point is transformed to the midpoint of the arc whose endpoints are the point itself and the next point clockwise from the previous round. After $m$ rounds, we find that there exists a point that has returned to its initial position. Find the least $m$ such that this situation may occur.

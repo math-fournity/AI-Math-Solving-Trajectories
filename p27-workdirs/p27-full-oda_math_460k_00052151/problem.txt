@@ -1,0 +1,1 @@
+Determine the smallest positive constant \( c \) such that for all sufficiently large \( N \), the inequality \( r(N) \geq cN^{1/2} \) holds, where \( r(N) \) is the least number of quadratic polynomials with non-negative coefficients needed to cover the interval \([1, N]\).

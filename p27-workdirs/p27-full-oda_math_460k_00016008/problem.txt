@@ -1,0 +1,1 @@
+Compute the integral \( J = \int_{0}^{\frac{\pi}{2}} \frac{x^2}{x^2 + \ln^2(2\cos x)} \, dx \).

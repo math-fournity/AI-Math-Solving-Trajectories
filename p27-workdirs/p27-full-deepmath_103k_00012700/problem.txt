@@ -1,0 +1,1 @@
+Compute the cardinality of the set \(\{(\aleph_{\omega_1})^\kappa : 1 \leq \kappa < \aleph_{\omega_1}\}\), given that for every \( \alpha, \beta < \omega_1 \), there exists a \( \gamma < \omega_1 \) such that \( \aleph_{\alpha}^{\aleph_\beta} = \aleph_\gamma \).

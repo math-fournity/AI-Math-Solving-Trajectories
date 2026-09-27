@@ -1,0 +1,1 @@
+Let  $A$  denote the set of real numbers  $x$  such that  $0\le x<1$ . A function  $f:A\to \mathbb{R}$  has the properties:

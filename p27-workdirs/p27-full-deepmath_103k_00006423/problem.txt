@@ -1,0 +1,1 @@
+For all $n \geq 3$, does there exist an $n$-vertex 3-edge-colored graph such that (a) there are exactly 6 automorphisms which preserve the set of edge color classes, and (b) each of these 6 automorphisms results in a different permutation of the edge colors?

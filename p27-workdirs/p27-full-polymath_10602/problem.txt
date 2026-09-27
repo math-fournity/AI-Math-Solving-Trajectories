@@ -1,0 +1,1 @@
+In a galaxy consisting of $n$ inhabited planets ($n \geq 3$), a communication network exists such that every planet is directly connected to every other planet by a single hyperspace lane. Currently, each of these lanes is operated by one of three competing galactic guilds: the Crimson Syndicate, the Cobalt Union, or the Emerald Order.

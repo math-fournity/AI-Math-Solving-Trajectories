@@ -1,0 +1,1 @@
+Determine whether there exist bounded operators from $\ell^{\infty}$ to a reflexive Banach space that are not compact.

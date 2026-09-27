@@ -1,0 +1,1 @@
+A specialized artificial intelligence, "Axiom-20," is programmed to generate unique data encryption keys using a specific protocol. The protocol requires the selection of a "Complexity Rating" $n$, where $n$ is a positive integer.

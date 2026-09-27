@@ -1,0 +1,1 @@
+In a remote industrial lab, an automated chemical reactor operates based on a specific "Stability Recipe." The process begins with an initial chemical mixture defined by two non-zero real-valued catalysts, $a_1$ and $b_1$. These catalysts are used to set the parameters of a reaction chamber governed by the equation $x^2 + a_1 x + b_1 = 0$.

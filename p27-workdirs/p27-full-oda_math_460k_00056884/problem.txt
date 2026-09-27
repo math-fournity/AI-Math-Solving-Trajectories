@@ -1,0 +1,1 @@
+Consider a set $H$ of $n$ points in the plane in general position. Determine the smallest constant $c$ such that $H$ can be colored with $c\log n$ colors in a way that any disk containing at least one point of $H$ intersects some color class of $H$ in exactly one point. Calculate the value of $c$ when $n = 1024$.

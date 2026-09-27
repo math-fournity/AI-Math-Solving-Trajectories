@@ -1,0 +1,1 @@
+Let $S$ be the set of all natural numbers $n \in \{1, 2, \dots, 100\}$ for which there exists a real number $x$ such that

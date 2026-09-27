@@ -1,0 +1,1 @@
+Let $V$ be a compactly-supported smooth vector field on $\mathbb{R}^2$, whose zeros inside some open neighbourhood of the closed unit disk $\mathbb{D}^2$ are isolated. Does there exist a sequence of vector fields $V_n \in C^\infty \cap L^{2}$ on $\mathbb{R}^2$, such that $V_n \to V$ in $L^2$ and $V_n$ do not vanish on $\mathbb{D}^2$?

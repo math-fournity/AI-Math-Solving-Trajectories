@@ -1,0 +1,1 @@
+Compute the operator norm of the linear functional $F$ defined on $C[-1,1]$ by:

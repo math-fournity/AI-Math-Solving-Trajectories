@@ -1,0 +1,13 @@
+/-!
+# International Mathematical Olympiad 2024, Problem 3
+
+Let a₁, a₂, a₃, ... be an infinite sequence of positive integers,
+and let N be a positive integer. Suppose that, for each n > N,
+aₙ is equal to the number of times aₙ₋₁ appears in the list
+a₁, a₂, ..., aₙ₋₁.
+
+Prove that at least one of the sequences a₁, a₃, a₅, ... and
+a₂, a₄, a₆, ... is eventually periodic.
+-/
+
+##

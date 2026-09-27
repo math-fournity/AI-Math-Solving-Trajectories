@@ -1,0 +1,1 @@
+For real $\theta_i$, $i = 1, 2, \dots, 2011$, where $\theta_1 = \theta_{2012}$, find the maximum value of the expression

@@ -1,0 +1,1 @@
+Suppose that $n \ge 3$ is a natural number. Let $k(n)$ be the maximum value such that there exist real numbers $a_1, a_2, \ldots, a_n \in [0, 1)$ with the property that for every natural number $j \le k(n)$, there is a subset of $\{a_1, a_2, \ldots, a_n\}$ whose sum is equal to $j$.

@@ -1,0 +1,1 @@
+Let $\Gamma$ be the circumcircle of the acute triangle $ABC$. The bisector of angle $ABC$ intersects $AC$ at point $B_{1}$ and the shorter arc $AC$ of $\Gamma$ at point $P$. The line through $B_{1}$ perpendicular to $BC$ intersects the shorter arc $BC$ of $\Gamma$ at $K$. The line through $B$ perpendicular to $AK$ intersects $AC$ at $L$. Prove that $K, L$, and $P$ lie on a line.

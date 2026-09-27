@@ -1,0 +1,1 @@
+Determine the smallest natural number $n$ such that $n$ is divisible by $2009$ and the sum of the digits of $n$ is equal to $2009$.

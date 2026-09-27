@@ -1,0 +1,1 @@
+Find the smallest positive integer $k$ such that the following statement is true:

@@ -1,0 +1,1 @@
+Given a ring  $\left( A,+,\cdot  \right)$  that meets both of the following conditions:

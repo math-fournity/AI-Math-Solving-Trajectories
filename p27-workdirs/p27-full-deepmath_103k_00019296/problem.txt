@@ -1,0 +1,1 @@
+Given that $f'''(x)$ is continuous everywhere and \(\lim_{x \to 0}(1+x+ \frac{f(x)}{x})^{1/x}=e^5\), find the value of $f^{(4)}(0)$. Express your answer as a single number.

@@ -1,0 +1,1 @@
+Let $m, n$ be integers such that $4 < m < n$. Let $A_{1} A_{2} \cdots A_{2 n+1}$ be a regular $(2 n+1)$-gon, and let $P=\{A_{1}, A_{2}, \cdots, A_{2 n+1}\}$ be the set of its vertices. Let $f(m, n)$ be the number of convex $m$-gons with vertices in $P$ that have exactly two acute interior angles.

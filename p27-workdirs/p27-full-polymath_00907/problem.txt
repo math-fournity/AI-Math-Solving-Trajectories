@@ -1,0 +1,1 @@
+Three balls of radius $r$ are placed in a cone with base radius $2$ and generatrix $4$. They touch each other externally, the lateral surface of the cone, and the first two balls touch the base of the cone. Find the maximum value of $r$.

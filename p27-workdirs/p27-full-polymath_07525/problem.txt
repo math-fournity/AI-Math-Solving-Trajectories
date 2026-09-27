@@ -1,0 +1,1 @@
+A logistics company manages a massive automated warehouse with a storage floor divided into an $n \times n$ square grid of $n^2$ slots (where $n \ge 2$). There are $n^2$ unique heavy storage crates, labeled with distinct identification numbers from $1$ to $n^2$.

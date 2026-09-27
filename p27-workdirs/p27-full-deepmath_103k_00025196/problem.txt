@@ -1,0 +1,1 @@
+For positive integers $n$ and $k$, consider the function $f: \Bbb{Z}^+ \to \Bbb{Z}^+$ such that:

@@ -1,0 +1,1 @@
+Construct a continuous function \( f: \mathbb{R} \rightarrow \mathbb{R} \) so that for some uncountable set \( E \), the right-hand derivative \( f_{+}^{\prime}(x) \) exists at each point of \( E \) and the left-hand derivative \( f_{-}^{\prime}(x) \) fails to exist at each point of \( E \).

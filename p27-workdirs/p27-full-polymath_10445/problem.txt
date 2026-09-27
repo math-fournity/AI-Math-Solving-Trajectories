@@ -1,0 +1,1 @@
+In the futuristic city of Numeropolis, two automated logistics networks, the **2016-Grid** and the **2015-Grid**, monitor delivery drones. The city is mapped on a coordinate plane where every location is defined by coordinates $(x, y)$. A location is considered a "Potential Hub" if both $x$ and $y$ are rational numbers ($\mathbb{Q}$) and neither coordinate is zero.

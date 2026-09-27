@@ -1,0 +1,1 @@
+Let $X_{1}, X_{2}, \ldots, X_{100}$ be a sequence of mutually distinct nonempty subsets of a set $S$. Any two sets $X_{i}$ and $X_{i+1}$ are disjoint and their union is not the whole set $S$, that is, $X_{i} \cap X_{i+1}=\emptyset$ and $X_{i} \cup X_{i+1} \neq S$, for all $i \in\{1, \ldots, 99\}$. Find the smallest possible number of elements in $S$.

@@ -1,0 +1,1 @@
+For any positive integers $\gamma$ and $\chi \geq 3$, let $G$ be a graph with girth $\gamma$ and chromatic number $\chi$. Define $f(\gamma, \chi)$ to be the minimum number of vertices in such a graph $G$. Find $f(5, 4)$.

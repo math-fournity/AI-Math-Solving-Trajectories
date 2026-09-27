@@ -1,0 +1,1 @@
+Does there exist a topological space $X$ and a subspace $A \subseteq X$ such that $X$ is connected, $A$ is connected, and for all $a \in A$, the subspace $A \setminus \{a\}$ is connected while the subspace $X \setminus \{a\}$ is not connected? Additionally, can $A$ have a non-empty interior?

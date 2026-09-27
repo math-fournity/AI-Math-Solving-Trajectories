@@ -1,0 +1,1 @@
+Determine the values of $g$ and $h$ for which there exists a covering map $\Sigma_g \to \Sigma_h$ with a deck transformation group isomorphic to $\mathbb{Z}_6$.

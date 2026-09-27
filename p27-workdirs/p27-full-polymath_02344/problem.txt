@@ -1,0 +1,1 @@
+There are $1001$ stacks of coins $S_1, S_2, \dots, S_{1001}$. Initially, stack $S_k$ has $k$ coins for each $k = 1,2,\dots,1001$. In an operation, one selects an ordered pair $(i,j)$ of indices $i$ and $j$ satisfying $1 \le i < j \le 1001$ subject to the conditions:

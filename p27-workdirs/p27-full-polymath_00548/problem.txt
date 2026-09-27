@@ -1,0 +1,1 @@
+Consider a pair of positive integers $(a, b)$. We are allowed to make two types of movements:

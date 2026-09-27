@@ -1,0 +1,1 @@
+Is there any convex polyhedron, other than a triangular pyramid with opposite edges pairwise equal, that can be cut along some of its edges and unfolded into a triangle without internal cuts?

@@ -1,0 +1,1 @@
+Let $\kappa$ be an infinite cardinal and let $X$ be a compact Hausdorff space of size $2^\kappa$. Let $U$ be a dense open subset of $X$. Determine a lower bound for the cardinality of $U$.

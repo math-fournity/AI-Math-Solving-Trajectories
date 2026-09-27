@@ -1,0 +1,1 @@
+Determine the principal divisor of the rational function \( \bar{f} \) in \( K(X) \) obtained from the principal divisor \( D \) in \( \operatorname{div}\mathbb{P}^n_k \) under the restriction to \( X \).

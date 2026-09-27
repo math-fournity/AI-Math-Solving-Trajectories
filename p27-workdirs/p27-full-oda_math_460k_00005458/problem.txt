@@ -1,0 +1,1 @@
+Let $k$ be a field and $L$ be the Lawvere theory of $k$-vector spaces, which is the category of finite-dimensional $k$-vector spaces. What is the category of models in finite-dimensional $k$-vector spaces? Is it $L$ itself?

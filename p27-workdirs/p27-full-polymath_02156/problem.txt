@@ -1,0 +1,1 @@
+Suppose $n > 3$ table tennis players have played some matches. It is known that no two players have played against exactly the same set of opponents. A player $P$ is called "removable" if, after removing $P$, no two of the remaining $n-1$ players have the same set of opponents.

@@ -1,0 +1,1 @@
+A prestigious logistics hub consists of 100 specialized storage containers arranged in a perfect $10 \times 10$ grid. Each container is assigned a unique security clearance level, represented by a distinct integer from 1 to 100. The distribution of these clearance levels across the grid is completely arbitrary, meaning any level can occupy any container.

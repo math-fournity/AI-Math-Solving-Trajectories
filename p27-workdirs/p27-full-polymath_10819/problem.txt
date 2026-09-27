@@ -1,0 +1,1 @@
+In a vast digital grid representing a logistics network, a single central hub at coordinate $(0,0)$ is initially "Active" (value 1), while all other coordinates are "Inactive" (value 0). This initial state is denoted as Generation 0.

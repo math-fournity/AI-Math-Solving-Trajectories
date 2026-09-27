@@ -1,0 +1,1 @@
+Let \(0 < p < 1\) be a real number and \(E = L^p([0,1], \mathbb{R})\) with the usual metric. Define \(f(p)\) as the smallest positive integer \(n\) such that there exists a convex set \(C \subset E\) with at least \(n\) elements, but \(C\) is not open. Calculate \(f(p)\).

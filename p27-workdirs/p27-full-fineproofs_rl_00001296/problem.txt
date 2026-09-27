@@ -1,0 +1,1 @@
+Find all monic nonconstant polynomials  $P$  with integer coefficients for which there exist positive integers  $a$  and  $m$  such that for all positive integers  $n\equiv a\pmod m$ ,  $P(n)$  is nonzero and   $$ 2022\cdot\frac{(n+1)^{n+1} - n^n}{P(n)} $$   is an integer.

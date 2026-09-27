@@ -1,0 +1,1 @@
+Determine whether there exists a non-decreasing sequence of continuous functions \( \{f_n\} \) in \( L_p(0,\infty) \) such that \( f_n \rightarrow f \) pointwise for every \( n \), where \( f \in L_p(0,\infty) \).

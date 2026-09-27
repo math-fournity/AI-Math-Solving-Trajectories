@@ -1,0 +1,1 @@
+For an odd number $n = 2k + 1 \geq 3$, let $m_n$ be the smallest real number such that any $n$ positive real numbers with a sum of 1 can be arranged on a circle such that the product of any two adjacent numbers does not exceed $m_n$. Find the value of $m_{13} + m_{21}$.

@@ -1,0 +1,1 @@
+In the space are given  $2006$  distinct points, such that no  $4$  of them are coplanar. One draws a segment between each pair of points.

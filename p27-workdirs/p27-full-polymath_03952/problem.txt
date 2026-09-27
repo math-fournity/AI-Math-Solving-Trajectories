@@ -1,0 +1,1 @@
+Three. (50 points) Given that $n$ is a positive integer greater than 10, and set $A$ contains $2n$ elements. If the family of sets

@@ -1,0 +1,1 @@
+Let \(ABC\) be a triangle with points \(D \in BC\), \(E \in CA\), and \(F \in AB\). Let \(M \in EF\), \(N \in FD\), and \(P \in DE\). Define \(M' = BP \cap CN\), \(N' = CM \cap AP\), and \(P' = AN \cap BM\). Suppose \(AM\), \(BN\), and \(CP\) are concurrent at point \(Q\). Calculate the ratio \(\frac{[MNP]}{[M'N'P']}\) where \([XYZ]\) denotes the area of triangle \(XYZ\).

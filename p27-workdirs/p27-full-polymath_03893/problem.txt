@@ -1,0 +1,1 @@
+Let $P(x)$ be a polynomial of degree at least 1 with real coefficients. Define the polynomial $Q(x)$ as

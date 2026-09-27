@@ -1,0 +1,1 @@
+A specialized materials lab is cataloging a set $S$ of resonance frequencies, represented as vectors in a 2D phase plane (complex numbers). The lab has discovered two fundamental stability laws for this set:

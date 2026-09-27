@@ -1,0 +1,1 @@
+For what is the smallest \( n \) such that any triangle can be cut into \( n \) parts and reassembled into an inscribed quadrilateral?

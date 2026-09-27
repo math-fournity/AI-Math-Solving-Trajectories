@@ -1,0 +1,1 @@
+In a specialized logistics hub, a sequence of standard shipping container capacities is defined by the set $S = \{2, 5, 8, 11, 14, 17, 20, \dots\}$, where each subsequent capacity increases by exactly 3 units.

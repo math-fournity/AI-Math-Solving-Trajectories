@@ -1,0 +1,1 @@
+Let $A$ be a set of size 2023. Find the maximum number of pairs of elements $x, y \in A$ so that $x-y$ is a power of $e$.

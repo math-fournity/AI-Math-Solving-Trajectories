@@ -1,0 +1,1 @@
+In a remote industrial district, a specialized energy grid is governed by three fundamental infrastructure constants, $a, b,$ and $c$, which are all integers. For the grid to remain stable, the lead engineer dictates that the primary stability coefficient $a$ must be strictly positive, and the system’s variance, calculated by the formula $ac - b^2$, must exactly equal $2310$.

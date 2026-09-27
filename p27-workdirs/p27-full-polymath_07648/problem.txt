@@ -1,0 +1,1 @@
+In a vast digital archive, there is a master database containing exactly 100 unique encrypted files. A security architect is tasked with creating a collection of distinct "Access Groups," where each group is a specific subset of these files.

@@ -1,0 +1,1 @@
+Given a triangle \(ABC\), construct the orthocenter of the triangle formed by the tangency points of the sides of \(ABC\) with its incircle, using a ruler with segments congruent to the sides of \(ABC\).

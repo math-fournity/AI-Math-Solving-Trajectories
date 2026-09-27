@@ -1,0 +1,1 @@
+Consider a non-negative submartingale \( X_n \) and let \( Y_N = \sup_{0 \leq n \leq N} X_n \). Define \( f(K) \) as the smallest value such that the inequality \[\mathbb{E} Y_N \leq K \mathbb{E} X_N \ln^+ X_N + f(K)\] holds for all submartingales \( X_n \). Determine the value of \( f\left(\frac{e}{e-1} - 0.1\right) \).

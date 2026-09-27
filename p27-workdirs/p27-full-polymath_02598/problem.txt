@@ -1,0 +1,1 @@
+On a line $l$, there are $n+1$ points numbered $1, 2, \dots, n+1$ arranged from left to right. In the plane above $l$, these points are connected with $n$ continuous curves satisfying:

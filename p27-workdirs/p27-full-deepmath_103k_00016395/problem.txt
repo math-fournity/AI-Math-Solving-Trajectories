@@ -1,0 +1,1 @@
+Determine whether there exist non-zero values of $y$ and a value of $a$ such that the equation \[ \sum_{n=1}^{\infty}\frac{(-1)^n\sin(y\ln n)}{n^{x}}=-\frac{y}{a} \] holds for some $x > 0$. Provide a justification for your answer.

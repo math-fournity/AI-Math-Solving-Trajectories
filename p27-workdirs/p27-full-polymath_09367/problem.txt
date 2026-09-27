@@ -1,0 +1,1 @@
+A specialized logistics company uses a modular storage container of dimensions $a \times b \times c$ units. To fill the container's volume completely, they use standardized cargo bricks, each measuring $1 \times 1 \times 2$ units.

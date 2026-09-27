@@ -1,0 +1,1 @@
+Let $E$ be a compact subset of a bounded open set $\mathcal{D},$ both of which are subsets of the real numbers. Let $f(x)$ be a differentiable function such that $f(x) = \mathcal{O}(1)$ for all $x \in \mathcal{D}$. Does there exist such a function where $f'(x) \neq \mathcal{O}(1)$ for some $x \in E$?

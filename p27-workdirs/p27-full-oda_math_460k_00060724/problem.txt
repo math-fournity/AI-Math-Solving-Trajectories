@@ -1,0 +1,1 @@
+Let \(ABC\) be a triangle inscribed in the circle \((O)\), and \(P\) be an arbitrary point other than \(O\). Let \(Q\) be the orthopole of the line \(OP\) with respect to triangle \(ABC\), and let \(R\) be the circumcenter of the pedal triangle of \(P\) with respect to \(ABC\). If the distance \(OQ\) is expressed as \(k \cdot OR\), find the value of \(k\).

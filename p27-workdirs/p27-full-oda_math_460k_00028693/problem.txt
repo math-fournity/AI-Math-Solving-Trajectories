@@ -1,0 +1,1 @@
+Construct a triangle given a side \( c \) and the angle bisectors \( l_a \) and \( l_b \).

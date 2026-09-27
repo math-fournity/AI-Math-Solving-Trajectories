@@ -1,0 +1,1 @@
+Construct a triangle given the points where the external bisectors of the angles meet the circumcircle.

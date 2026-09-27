@@ -1,0 +1,1 @@
+In a specialized data archive, there are several independent servers. For each integer $n$ from 2 to 100, there is a server containing a set of data files indexed by the integers $\{0, 1, 2, \dots, n\}$.

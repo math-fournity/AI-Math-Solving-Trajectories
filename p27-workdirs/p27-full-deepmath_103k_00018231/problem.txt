@@ -1,0 +1,1 @@
+Consider a rectangle with vertices $2+iT$, $2-iT$, $-1+iT$, and $-1-iT$ where $T>3$ is not an ordinate of zero of the Riemann zeta function $\zeta(s)$. If $N(T)$ is the number of zeros of the Riemann zeta function up to height $T$, show that $$\lim_{T\to \infty}\frac{N(T)}{ \frac{T}{2\pi}\log\left(\frac{T}{2\pi}\right)-\frac{T}{2\pi} }=1.$$

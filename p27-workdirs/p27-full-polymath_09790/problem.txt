@@ -1,0 +1,1 @@
+A specialized satellite is programmed to monitor a circular conservation zone with a radius of exactly 1 unit. Every hour, the satellite detects a new biological signal at a location $P_i$ within the zone. These signal locations are generated independently and follow a continuous uniform distribution across the entire area of the circle.

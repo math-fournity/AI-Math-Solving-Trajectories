@@ -1,0 +1,1 @@
+In a path-connected subset of \(\mathbb{R}^2\) that is not simply connected, does there exist a simple loop that does not contract to a point?

@@ -1,0 +1,1 @@
+Determine the number of different Fano planes that can be constructed with points labeled from 1 to 7, such that no two planes share any common blocks.

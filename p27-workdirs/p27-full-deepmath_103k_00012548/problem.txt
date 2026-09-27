@@ -1,0 +1,1 @@
+Consider the space of continuous functions on the interval \([0, 1]\), denoted as \(C[0,1]\). Do the supremum metric and the definite integral metric induce different topologies on this space?

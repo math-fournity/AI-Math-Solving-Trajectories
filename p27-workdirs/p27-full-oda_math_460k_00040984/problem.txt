@@ -1,0 +1,1 @@
+Let \( S \) be a set of integer points in the coordinate plane with all points' coordinates being between 1 and 2012 inclusive. Suppose that no four points in \( S \) form a cyclic trapezium (including rectangles) with bases parallel to one of the coordinate axes. What is the largest number of points that \( S \) can contain?

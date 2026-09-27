@@ -1,0 +1,1 @@
+In acute triangle $\triangle ABC$, point $R$ lies on the perpendicular bisector of $AC$ such that $\overline{CA}$ bisects $\angle BAR$. Let $Q$ be the intersection of lines $AC$ and $BR$. The circumcircle of $\triangle ARC$ intersects segment $\overline{AB}$ at $P\neq A$, with $AP=1$, $PB=5$, and $AQ=2$. Compute $AR$.

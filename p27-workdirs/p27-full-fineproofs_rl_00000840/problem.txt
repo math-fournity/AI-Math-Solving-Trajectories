@@ -1,0 +1,1 @@
+Assign each edge in a graph an arbitrary nonnegative weight. Is it always possible to assign each vertex of the graph a nonnegative weight, so that the sum of the weights of vertices equals the sum of the weights of edges, and each edge's weight is at most the difference between the weights of its endpoints?

@@ -1,0 +1,1 @@
+Determine if two groups of order $2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13$ are isomorphic if they have the same number of Sylow subgroups for each prime factor.

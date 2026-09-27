@@ -1,0 +1,1 @@
+In an isosceles triangle $ABC$ with $AB = AC$ and $\angle BAC = 50^\circ$, a laser is fired from vertex $A$ at a point on the line segment $\overline{BC}$ other than its midpoint. The beam reflects off the sides of the triangle some number of times before returning to $A$.

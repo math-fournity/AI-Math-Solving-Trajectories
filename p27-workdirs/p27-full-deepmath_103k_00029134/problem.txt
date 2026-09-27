@@ -1,0 +1,1 @@
+Is it true that for any first-order theory $\mathrm K$, every maximal independent subset of the set of all theorems $T_K$ is an independent axiomatization of $\mathrm K$?

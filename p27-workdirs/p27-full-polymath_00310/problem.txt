@@ -1,0 +1,1 @@
+In a $20 \times 23$ table, $n$ cells are colored black and the remaining cells are white. A "corner-quartet" is a set of four cells sharing a common vertex. The shadow of the table is defined as the maximum number of black cells in any corner-quartet.

@@ -1,0 +1,1 @@
+4. Let $V$ be a set of 2019 points in space, no four of which are coplanar. Some of these points are connected by line segments, and let $E$ be the set of these line segments. Find the smallest positive integer $n$ such that if $E$ has at least $n$ elements, then $E$ must contain 908 pairwise disjoint subsets, each consisting of two line segments that share a common endpoint.

@@ -1,0 +1,1 @@
+In a remote mountain range, four weather stations—Alpha, Beta, Gamma, and Delta—form the vertices of a tetrahedral region. To ensure proper signal propagation, meteorologists define a "Reach Factor" for each station.

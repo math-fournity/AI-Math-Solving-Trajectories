@@ -1,0 +1,1 @@
+In a specialized logistics warehouse, a technician is programming an automated cargo drone to inspect a grid of storage bays arranged in an $m \times n$ rectangular layout. The warehouse dimensions are constrained such that both $m$ and $n$ are integers between 1 and 10, inclusive.

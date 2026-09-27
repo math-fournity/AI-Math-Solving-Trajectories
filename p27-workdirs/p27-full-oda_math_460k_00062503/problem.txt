@@ -1,0 +1,1 @@
+What norms exist on the algebra $\mathrm M_n(K)$, where $K = \mathbb R$ or $\mathbb C$, that make it a normed algebra with $||I|| = 1$?

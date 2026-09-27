@@ -1,0 +1,1 @@
+Determine whether the following statement is true: For every homogeneous polynomial $P$ with real coefficients in at least three variables, and for every $\epsilon > 0$, there exists a $\delta > 0$ such that for every $x$ with $|P(x)| < \delta$, we have $d(x, Z) < \epsilon$, where $Z = P^{-1}(\{0\})$ is the set of roots of $P$, and $d$ is the standard distance.

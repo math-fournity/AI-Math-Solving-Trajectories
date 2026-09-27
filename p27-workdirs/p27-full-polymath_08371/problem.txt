@@ -1,0 +1,1 @@
+A network of $n$ server racks is arranged in a closed data ring. The number of active data packets in each rack $R_i$ is tracked. To optimize the system, a diagnostic protocol is applied to every set of four adjacent racks $(R_i, R_{i+1}, R_{i+2}, R_{i+3})$ for $i = 1, 2, \dots, n$ (where the indices wrap around from $n$ back to $1$).

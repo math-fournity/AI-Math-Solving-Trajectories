@@ -1,0 +1,1 @@
+In a specialized logistics park, a circular storage facility, Facility P, is built on a coordinate grid where the center is located exactly at coordinates (1, -3). The facility has a strict safety radius of 5 units.

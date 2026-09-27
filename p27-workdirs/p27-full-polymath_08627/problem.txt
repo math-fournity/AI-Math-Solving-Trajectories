@@ -1,0 +1,1 @@
+In the competitive world of professional drone racing, a tournament is organized involving $n$ distinct landing pads positioned in a large airfield such that no three pads are aligned in a straight line. The rules of the tournament require a specialized fiber-optic cable to be laid between every possible pair of pads.

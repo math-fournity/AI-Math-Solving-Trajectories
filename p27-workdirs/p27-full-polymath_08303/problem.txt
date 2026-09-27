@@ -1,0 +1,1 @@
+A high-tech agricultural research facility consists of a massive plot of land organized into a $5 \times 5$ grid of 25 experimental cultivation zones. The lead scientist is testing five different types of organic fertilizers, labeled with potency ratings of 1, 2, 3, 4, and 5.

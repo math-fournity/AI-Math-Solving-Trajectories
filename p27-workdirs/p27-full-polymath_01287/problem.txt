@@ -1,0 +1,1 @@
+Let \( p \equiv 3 \pmod{4} \) be a prime. Find the number of pairs \((x, y) \in \mathbb{Z}_+^2\) such that \(\frac{p^2 - xy}{x + y} \in \mathbb{Z}_+\).

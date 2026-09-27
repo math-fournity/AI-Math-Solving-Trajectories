@@ -1,0 +1,1 @@
+A three-variable polynomial $P(x, y, z)$ with integer coefficients is said to represent the set of non-squares if, for any positive integer $n$, $n$ is not a perfect square if and only if there exist positive integers $(x, y, z)$ such that $P(x, y, z) = n$.

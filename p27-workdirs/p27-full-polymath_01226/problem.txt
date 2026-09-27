@@ -1,0 +1,1 @@
+A roof needs to be repaired. There are 10 tiles in each row. How many tiles are missing?

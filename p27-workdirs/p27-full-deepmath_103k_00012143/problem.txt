@@ -1,0 +1,1 @@
+Let $K$ be a real-closed field. Determine whether $K(i)$, where $i$ is a root of $x^2 + 1$ in an algebraic closure of $K$, is an algebraic closure of $K$.

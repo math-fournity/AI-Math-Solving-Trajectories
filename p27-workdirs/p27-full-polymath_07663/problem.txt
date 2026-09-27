@@ -1,0 +1,1 @@
+A logistics architect is designing a "Load Management Protocol" for a warehouse with 7 designated docking bays, indexed $0$ through $6$. The architect must assign a "Routing Code"—a non-negative integer—to each bay $i$, denoted as $a_i$.

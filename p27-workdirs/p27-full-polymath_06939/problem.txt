@@ -1,0 +1,1 @@
+In a specialized logistics hub, there are three separate conveyor belts—Alpha, Beta, and Gamma—each carrying a unique set of six shipping containers. On each belt, the containers are labeled with the distinct integer weights $1, 2, 3, 4, 5,$ and $6$ units, respectively.

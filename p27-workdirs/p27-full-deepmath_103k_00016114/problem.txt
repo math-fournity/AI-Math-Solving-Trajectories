@@ -1,0 +1,1 @@
+Let $G=(\mathbb{Z/2Z})^n$ be an additive group with $n>1$. Consider nonzero elements $v_i$ of $G$ for $i \in \{1, 2, \ldots, 2^n \}$ such that $\sum_{i=1}^{2^n} v_i=0$. Determine if there exists a subset $J \subset \{1, 2, \ldots, 2^n \}$ with $|J|=2^{n-1}$ such that $$\sum_{j \in J} v_j=0.$$

@@ -1,0 +1,1 @@
+Let \( \triangle ABC \) be a triangle with \( AB = 4 \), \( BC = 5 \), and \( CA = 6 \). Suppose \( X \) and \( Y \) are points such that:

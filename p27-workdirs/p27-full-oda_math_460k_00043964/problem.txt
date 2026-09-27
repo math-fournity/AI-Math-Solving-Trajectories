@@ -1,0 +1,1 @@
+Find all Jordan structures (i.e., Jordan algebras) on algebras of dimension ≤ 3 over real numbers. Verify that they are all obtained from associative algebras. A Jordan algebra is a commutative algebra where the product satisfies the Jordan identity: \( x^2(yx) = (x^2y)x \).

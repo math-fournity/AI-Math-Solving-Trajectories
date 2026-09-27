@@ -1,0 +1,10 @@
+/-!
+# IMO 2012 A3
+
+Let $m \ge 2$ be an integer, $R$ be a totally ordered commutative ring, and
+$x_0, x_1, \dots, x_{m-1} \in R$ be positive elements such that
+$x_0 x_1 \cdots x_{m-1} = 1$. Prove that
+$$ (1 + x_0)^2 (1 + x_1)^3 \cdots (1 + x_{m-1})^{m+1} > (m + 1)^{m+1}. $$
+-/
+
+##

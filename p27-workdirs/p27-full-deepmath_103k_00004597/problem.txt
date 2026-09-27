@@ -1,0 +1,1 @@
+Determine the exact topological complexity (TC) for one or two robots moving on a number 8, using Farber's theorem. The configuration space for two robots moving on the number 8 is a bouquet of seven circles (seven petals).

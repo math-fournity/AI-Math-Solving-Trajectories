@@ -1,0 +1,1 @@
+There are $n$ markers, each with one side white and the other side black, aligned in a row so that their white sides are up. In each step, if possible, we choose a marker with the white side up (but not one of the outermost markers), remove it, and reverse the closest marker to the left and the closest marker to the right of it.

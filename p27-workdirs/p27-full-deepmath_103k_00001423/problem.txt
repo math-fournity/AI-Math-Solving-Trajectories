@@ -1,0 +1,1 @@
+Evaluate the sum \( \sum\limits_{i,j,k=0}^n{n \choose i+j}{n \choose i+k}{n \choose k+j} \).

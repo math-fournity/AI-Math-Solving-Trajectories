@@ -1,0 +1,1 @@
+Find the maximum volume of a regular tetrahedron in 3-dimensional space that contains no lattice points except on its surface.

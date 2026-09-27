@@ -1,0 +1,1 @@
+Suppose a sequence of random variables $Y_n$ converges in $L^2$ to $Y$, i.e., \( E|Y_n-Y|^2\to0 \) as \( n\to\infty \). Additionally, there exist constants \( c_0 \) and \( c_1 \) such that \( 0 < c_0 \leq Y_n, Y \leq c_1 \). Assume further that \( X_n Y_n \) converges in distribution to \( Z \). Is it true that \( X_n \) converges in distribution to \( Z/Y \)?

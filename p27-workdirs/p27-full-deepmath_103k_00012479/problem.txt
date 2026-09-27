@@ -1,0 +1,1 @@
+Determine the fundamental group of the quotient space formed by identifying points on the circle \( \mathbb{S}^1 \) such that each point \( x \) is identified with \( r(x), r^2(x), \ldots, r^{n-1}(x) \), where \( r: \mathbb{S}^1 \to \mathbb{S}^1 \) is a quotient map defined by \( r(\cos \theta, \sin \theta) = (\cos(\theta + 2\pi/n), \sin(\theta + 2\pi/n)) \).

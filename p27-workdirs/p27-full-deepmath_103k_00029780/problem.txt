@@ -1,0 +1,1 @@
+Determine whether a set with infinite Lebesgue measure in \(\mathbb{R}^n\) can consist solely of boundary points.

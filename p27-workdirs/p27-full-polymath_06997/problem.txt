@@ -1,0 +1,1 @@
+In a futuristic data-storage facility, an array of memory cells is arranged in a specific grid consisting of 2012 vertical columns. The architecture follows a staggered pattern: every odd-numbered column (1st, 3rd, ...) contains 2012 cells, while every even-numbered column (2nd, 4th, ...) contains 2013 cells.

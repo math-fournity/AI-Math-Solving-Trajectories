@@ -1,0 +1,1 @@
+In a massive logistics warehouse, a rectangular grid of storage bays is organized into $2k+1$ rows and $2n+1$ aisles, where the number of rows is less than or equal to the number of aisles ($k \le n$). Each bay is assigned a security clearance level of either 1, 2, or 3.

@@ -1,0 +1,1 @@
+Solve the Fuchsian differential equation (Riemann's P-equation) given by:

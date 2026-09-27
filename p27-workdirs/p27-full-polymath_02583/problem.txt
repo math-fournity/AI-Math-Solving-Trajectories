@@ -1,0 +1,1 @@
+Find the sum of all integers $k$ such that for infinitely many integers $n \ge 3$ the polynomial

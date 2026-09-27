@@ -1,0 +1,1 @@
+Suppose \(a_i, b_i, c_i, i=1,2,\cdots,n\), are \(3n\) real numbers in the interval \([0,1]\). Define the sets \(S = \{(i,j,k) \mid a_i + b_j + c_k < 1\}\) and \(T = \{(i,j,k) \mid a_i + b_j + c_k > 2\}\). Given that \(|S| \geq 2018\) and \(|T| \geq 2018\), find the minimal possible value of \(n\).

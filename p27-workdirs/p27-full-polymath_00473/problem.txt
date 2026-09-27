@@ -1,0 +1,1 @@
+The square \(DEFG\) is contained in equilateral triangle \(ABC\), with \(E\) on \(\overline{AC}\), \(G\) on \(\overline{AD}\), and \(F\) as the midpoint of \(\overline{BC}\). Find \(AD\) if \(DE=6\).

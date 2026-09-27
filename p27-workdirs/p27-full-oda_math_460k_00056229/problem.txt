@@ -1,0 +1,1 @@
+Consider a linear space with Plücker coordinates $\alpha_{i_{1}i_{2}... i_{k}}$ contained in a linear space with Plücker coordinates $\alpha_{i_{1}i_{2}... i_{m}}$ where $k < m$. If the condition for containment is satisfied, calculate the number of independent Plücker relations that must hold for the smaller space to be contained in the larger space when $k = 3$ and $m = 5$.

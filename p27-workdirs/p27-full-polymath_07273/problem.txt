@@ -1,0 +1,1 @@
+In a remote digital archipelago, a secure data packet is hidden at a specific server location represented by a grid coordinate $(x, y)$, where both $x$ and $y$ are whole numbers ranging from $1$ to $2017$ inclusive. Your mission is to pinpoint the exact location of this packet.

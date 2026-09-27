@@ -1,0 +1,1 @@
+Determine the values of $n$ for which all the nonzero roots of the polynomial $(z+1)^n - z^n - 1$ lie outside the unit circle.

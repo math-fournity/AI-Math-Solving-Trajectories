@@ -1,0 +1,1 @@
+Let \(ABC\) be a triangle with semiperimeter \(s\), inradius \(r\), and angle bisectors \(l_a\), \(l_b\), and \(l_c\). Find the minimum value of the expression:

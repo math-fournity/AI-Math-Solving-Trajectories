@@ -1,0 +1,1 @@
+A high-security data facility uses a specialized encryption protocol where each digital key consists of a sequence of 5 slots. Each slot is filled with one of three possible voltage states: Low (0), Medium (1), or High (2).

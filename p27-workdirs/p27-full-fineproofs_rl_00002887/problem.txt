@@ -1,0 +1,1 @@
+Let  $P$  and  $Q$  be arbitrary points on the side  $BC$  of triangle ABC such that  $BP = CQ$ . The common points of segments  $AP$  and  $AQ$  with the incircle form a quadrilateral  $XYZT$ . Find the locus of common points of diagonals of such quadrilaterals.

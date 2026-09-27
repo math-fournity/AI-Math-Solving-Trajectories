@@ -1,0 +1,1 @@
+There is a chessboard with $m$ columns and $n$ rows. In each cell, an integer is assigned. A rectangle $R$ on this chessboard is called a 'shelf' if there exists an integer $h$ satisfying the following two conditions:

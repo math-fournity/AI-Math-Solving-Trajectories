@@ -1,0 +1,1 @@
+Determine whether the following equality holds for convex compact subsets $X$ and $Y$ in $\mathbb{R}^n$ and the standard inner product $\langle ., . \rangle$:

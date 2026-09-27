@@ -1,0 +1,1 @@
+In a futuristic city, the "Great Prism" is a massive architectural plaza built in the shape of a perfectly regular heptagon, with seven vertices labeled $A, B, C, D, E, F,$ and $G$ in clockwise order.

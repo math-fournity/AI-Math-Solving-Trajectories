@@ -1,0 +1,1 @@
+In a compact and connected metric space $X$ containing a point $p$, is it possible for any two distinct points in $X \setminus \{p\}$ to be joined by an arc, while no arc in $X$ contains the point $p$?

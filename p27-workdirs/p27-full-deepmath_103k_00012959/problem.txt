@@ -1,0 +1,1 @@
+Find an element in $\mathbb{Z}[\sqrt{-17}]$ that can be expressed both as a product of two irreducible elements and as a product of three irreducible elements.

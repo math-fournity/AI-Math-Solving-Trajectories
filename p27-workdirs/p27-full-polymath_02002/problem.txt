@@ -1,0 +1,1 @@
+Find the sum of all integers $n$ in the range $3 \leq n \leq 10$ such that every convex $n$-gon whose sides all have length 1 contains an equilateral triangle of side length 1.

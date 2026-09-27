@@ -1,0 +1,1 @@
+A team of logistics engineers is designing a modular shipping container in the shape of a perfect cube. To help robots distinguish the orientation of the container during transport, each of the cube's six faces must be painted with a solid color.

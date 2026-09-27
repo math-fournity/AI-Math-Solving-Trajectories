@@ -1,0 +1,1 @@
+In the specialized logistics hub of Sector 11 (represented by the constant $a=11$), two automated transport beams operate on different calibration frequencies. The "Alpha Beam" processes cargo at a rate of $11 + \sqrt{11}$ units per second, while the "Beta Beam" processes cargo at a rate of $11 - \sqrt{11}$ units per second.

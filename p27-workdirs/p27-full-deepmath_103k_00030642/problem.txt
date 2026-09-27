@@ -1,0 +1,1 @@
+Determine the number of ordered nine-tuples \( (a_1, a_2, \ldots, a_9) \) of positive integers such that for any distinct indices \( 1 \leq i < j < k \leq 9 \), there exists an index \( l \) (different from \( i, j, k \) and \( 1 \leq l \leq 9 \)) such that \( a_i + a_j + a_k + a_l = 100 \).

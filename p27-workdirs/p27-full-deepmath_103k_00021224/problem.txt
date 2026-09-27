@@ -1,0 +1,1 @@
+Is the image of a simple closed curve \(\gamma: (0,1) \to \mathbb{R}^2\) with curvature at least \(k_0\) everywhere contained in a disk of radius \(\frac{1}{k_0}\)?

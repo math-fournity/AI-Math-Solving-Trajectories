@@ -1,0 +1,1 @@
+Determine the smallest ordinal \(\alpha\) such that \(L \cap P(L_{\alpha})\) is uncountable, given that \(0^\sharp\) exists and assuming ZFC. Note: If \(V = L\), then \(\alpha = \omega\), but if \(0^\sharp\) exists, then \(\alpha > \omega\).

@@ -1,0 +1,1 @@
+Let $A$ be a set contains $2000$ distinct integers and $B$ be a set contains $2016$ distinct integers. $K$ is the numbers of pairs $(m,n)$ satisfying \[ \begin{cases} m\in A, n\in B\\ |m-n|\leq 1000 \end{cases} \] Find the maximum value of $K$

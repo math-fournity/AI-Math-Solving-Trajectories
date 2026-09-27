@@ -1,0 +1,1 @@
+Evaluate the integral \( \oint_{|z|=2}\frac{\cos(z)}{z^5 -32} \, dz \).

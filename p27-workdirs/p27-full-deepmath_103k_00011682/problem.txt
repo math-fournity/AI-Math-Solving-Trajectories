@@ -1,0 +1,1 @@
+Find all polynomials \( P(x) \) with integer coefficients such that the equation \( P(x)=0 \) has no positive integer solutions and for all positive integers \( n \), \( \phi(n) \mid \phi(P(n)) \). Assume \( P(n) > 0 \) for all positive integers \( n \).

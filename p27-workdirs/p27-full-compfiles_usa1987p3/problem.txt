@@ -1,0 +1,8 @@
+X is the smallest set of polynomials p(x) such that:
+(1) p(x) = x belongs to X; and
+(2) if r(x) belongs to X, then x·r(x) and (x + (1 - x)·r(x)) both belong to X.
+Show that if r(x) and s(x) are distinct elements of X, then r(x) ≠ s(x)
+for any 0 < x < 1.
+
+</rule>
+</rules>

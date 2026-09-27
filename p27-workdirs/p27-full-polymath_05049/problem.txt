@@ -1,0 +1,1 @@
+Let \( n \) be a positive integer. \( S \) is a set of points such that the points in \( S \) are arranged in a regular 2016-simplex grid, with an edge of the simplex having \( n \) points in \( S \). Each point in \( S \) is labeled with a real number such that the following conditions hold:

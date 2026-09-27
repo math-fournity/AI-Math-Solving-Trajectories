@@ -1,0 +1,1 @@
+Let \( S = \{1, 2, \ldots, 9\} \) and \( T = \{A \subset S \mid |A| = 5\} \). Find the minimum value of \( n \) such that for any \( X \subset T \) with \( |X| = n \), there exist two sets \( A, B \in X \) so that \( |A \cap B| = 4 \).

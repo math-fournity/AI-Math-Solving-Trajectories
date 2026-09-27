@@ -1,0 +1,1 @@
+Determine whether it is true that for a finite solvable group $G$, the degree of any irreducible representation over a field of positive characteristic (which divides the order of $G$) divides the order of the group itself.

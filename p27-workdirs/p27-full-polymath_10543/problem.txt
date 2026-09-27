@@ -1,0 +1,1 @@
+In a remote archipelago, $N$ solar-powered lighthouses (where $N \geqslant 3$ is an odd integer) are being evaluated for their efficiency. Before the evaluation begins, a maritime commission assigns each lighthouse a unique "Priority Grade" from 1 to $N$, where Grade 1 is the most prestigious and Grade $N$ is the least.

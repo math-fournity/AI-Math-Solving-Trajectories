@@ -1,0 +1,1 @@
+In a white circle, four black points are randomly thrown. Find the probability that the circle can be divided into four identical sectors, each containing exactly one black point.

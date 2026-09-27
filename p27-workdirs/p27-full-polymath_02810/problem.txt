@@ -1,0 +1,1 @@
+On a chessboard, a rook can move only right or upward but cannot enter a 2x2 square. How many ways can the rook move from one corner to the opposite corner?

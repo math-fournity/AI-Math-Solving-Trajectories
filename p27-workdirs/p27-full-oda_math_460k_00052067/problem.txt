@@ -1,0 +1,1 @@
+Provide a counterexample to Chevalley's Theorem if the ring \( A \) is not complete. Specifically, find a non-complete local ring \( (A, m) \) and a descending sequence of ideals \( \{a_n\} \) such that \( \bigcap a_n = (0) \), but for some \( k \), there does not exist an \( n(k) \) such that \( n \ge n(k) \) implies \( a_n \subset m^k \).

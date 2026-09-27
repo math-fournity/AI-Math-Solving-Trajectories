@@ -1,0 +1,1 @@
+A specialized autonomous irrigation robot is designed to water a rectangular grid of crops arranged in $m$ rows and $n$ columns. The dimensions of the field, $m$ and $n$, are integers such that $1 \le m, n \le 10$.

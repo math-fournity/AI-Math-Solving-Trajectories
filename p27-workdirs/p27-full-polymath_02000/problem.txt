@@ -1,0 +1,1 @@
+What is the minimum $n$ such that an $n \times n$ grid can be covered with an equal number of $2 \times 2$ squares and L-triominoes (a $2 \times 2$ square with one square removed)?

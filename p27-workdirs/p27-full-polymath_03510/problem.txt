@@ -1,0 +1,1 @@
+In the cells of an $11 \times 11$ table, numbers from $1$ to $121$ are placed, each exactly once. In each row, all numbers are in increasing order from left to right, and in each column, all numbers are in increasing order from top to bottom. We call a number special if it differs from each of its neighbors by at least $2$. Numbers are neighbors if they are in adjacent cells.

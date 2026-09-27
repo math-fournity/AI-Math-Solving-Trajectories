@@ -1,0 +1,1 @@
+If $(M,\cdot)^{\times} = \{ 1 \}$, can the monoid ring $k[M]$ contain an invertible element $z \in GL(k[M])$ such that the coefficient of $z$ at $1$ is zero?

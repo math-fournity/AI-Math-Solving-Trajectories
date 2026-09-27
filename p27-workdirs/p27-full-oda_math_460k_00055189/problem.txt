@@ -1,0 +1,1 @@
+Let \( M(a, b, c) \) denote a matrix with order \( n = a + b + c - 2 \) composed of three intersecting block matrices \( J_a - I_a \), \( J_b - I_b \), \( J_c - I_c \), where \( J_n \) is the matrix with all ones and \( I_n \) is the identity matrix. The matrix \( M(a, b, c) \) is given by:

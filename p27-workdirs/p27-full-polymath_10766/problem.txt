@@ -1,0 +1,1 @@
+In a futuristic hexagonal botanical garden divided into 24 triangular climate zones, a gardener is installing 19 unique sensor nodes. These nodes are placed at every location where the corners of the triangular zones meet (the 6 outer corners of the garden, the 6 midpoints of the outer walls, 6 internal junctions, and 1 central hub).

@@ -1,0 +1,1 @@
+Do there exist primes $q, p_1, p_2$ and positive integers $m, n, \alpha_1, \alpha_2$ satisfying simultaneously:

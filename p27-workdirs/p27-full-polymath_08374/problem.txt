@@ -1,0 +1,1 @@
+In a specialized semiconductor facility, a microscopic rectangular wafer is designed as a grid of sensor nodes, arranged in 6 rows and 7 columns (forming a 6x7 grid of lattice points). Two specific control beacons, designated as Beacon A and Beacon B, are placed at any two fixed grid intersections within the array.

@@ -1,0 +1,1 @@
+A network of 1001 research laboratories, designated $L_1, L_2, \dots, L_{1001}$, is collaborating on a long-term data processing project. At the start of the project, each laboratory $L_k$ is assigned exactly $k$ terabytes of raw data for storage and analysis ($k = 1, 2, \dots, 1001$).

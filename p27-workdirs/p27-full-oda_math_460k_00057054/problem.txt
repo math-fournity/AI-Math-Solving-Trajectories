@@ -1,0 +1,1 @@
+Characterize the Boolean functions whose Walsh transform values are divisible by \( 2^k \) for \( 3 \leq k \leq n - 2 \).

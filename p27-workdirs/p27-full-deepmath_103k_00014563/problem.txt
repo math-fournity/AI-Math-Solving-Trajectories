@@ -1,0 +1,1 @@
+For any positive constant $c < 1$, determine whether there exists a positive integer $n$ that is coprime with 10, such that for all integers $k$, the number of zero digits in the decimal representation of $n^k$ is always greater than $c$ times the total number of digits in $n^k$. Provide a justification for your answer.

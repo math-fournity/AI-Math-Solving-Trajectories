@@ -1,0 +1,1 @@
+In a remote circular sanctuary with a radius of $2$ kilometers, three research stations, $A$, $B$, and $C$, are positioned on the perimeter. The angular separation between the stations is such that the difference between the interior angles at $B$ and $C$ is exactly $15^\circ$.

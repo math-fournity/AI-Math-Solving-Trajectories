@@ -1,0 +1,1 @@
+Evaluate \(\lim_{n \rightarrow \infty} a_{n}\) to five decimal places, where \(a_{n} = \log^{n} (\Pi^{n} (3))\), \(\Pi(x) = \Gamma(x+1)\), \(\log^{n}(x)\) denotes applying the logarithm function \(n\) times to \(x\), and \(\Pi^{n}(x)\) denotes applying the \(\Pi\) function \(n\) times to \(x\).

@@ -1,0 +1,1 @@
+On a $6 \times 6$ board, each cell is painted either red or blue. Each cell has an odd number of red neighboring cells (where neighboring cells share an edge). What is the maximum number of red cells that can be on the board?

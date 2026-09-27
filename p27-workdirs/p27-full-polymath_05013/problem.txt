@@ -1,0 +1,1 @@
+Find all integer numbers $n \ge 4$ which satisfy the following condition: from every $n$ different $3$-element subsets of an $n$-element set, it is possible to choose $2$ subsets which have exactly one element in common.

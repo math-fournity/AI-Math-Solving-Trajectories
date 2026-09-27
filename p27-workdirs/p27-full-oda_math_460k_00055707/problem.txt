@@ -1,0 +1,1 @@
+Let \(ABC\) be a triangle with Nagel cevians \(n_a, n_b, n_c\) from vertices \(A, B, C\) respectively, and let \(R\) and \(r\) denote the circumradius and inradius of the triangle. Find all real numbers \(k\) such that the inequality \[n_a + n_b + n_c \le kR + (9 - 2k)r\] holds for all acute triangles \(ABC\).

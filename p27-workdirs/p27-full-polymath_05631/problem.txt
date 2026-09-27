@@ -1,0 +1,1 @@
+Task 2. Every student in the Netherlands receives a finite number of cards. Each card has a real number in the interval $[0,1]$ written on it. (The numbers on different cards do not have to be different.) Find the smallest real number $c>0$ for which the following holds, regardless of the numbers on the cards that everyone has received.

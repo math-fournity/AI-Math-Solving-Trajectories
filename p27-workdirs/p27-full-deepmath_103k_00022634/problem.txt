@@ -1,0 +1,1 @@
+Evaluate the limit: \[ \lim_{x\rightarrow +\infty} (xD)^m\sum_{k=1}^\infty (-1)^k \frac{x^k}{k^{k}} \] where \(m\) is a positive integer, \(D=\frac{d}{dx}\), and \(\begin{Bmatrix} m\\r \end{Bmatrix}\) are Stirling numbers of the second kind.

@@ -1,0 +1,1 @@
+Find the sum of the first 100 decimal digits of the number \((\sqrt{2} + 1)^{2001}\).

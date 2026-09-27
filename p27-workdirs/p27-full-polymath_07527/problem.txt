@@ -1,0 +1,1 @@
+In a high-security data center, there is a grid of processing nodes arranged in a $19 \times 19$ square array. Currently, $n$ distinct data packets are stored, each occupying exactly one node.

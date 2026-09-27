@@ -1,0 +1,1 @@
+In the remote digital kingdom of Graphia, architect-engineers are tasked with designing "Structural Frameworks," which are three-dimensional truss systems composed of four joint-nodes connected by six rigid structural beams. These beams must satisfy a strict set of architectural protocols:

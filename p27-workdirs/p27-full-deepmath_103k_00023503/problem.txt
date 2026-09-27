@@ -1,0 +1,1 @@
+Does the universal approximation property hold for neural networks with arbitrary depth but a fixed number of neurons per layer?

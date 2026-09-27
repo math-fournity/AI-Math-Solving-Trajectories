@@ -1,0 +1,1 @@
+In a remote industrial refinery, two engineers, Anya and Ben, are tasked with decommissioning a massive shipment of $n$ chemical canisters, where $n \geq 3$. The canisters are initially stored in a single large containment unit.

@@ -1,0 +1,1 @@
+A trapezoid $ABCD$ is bicentral. The vertex $A$, the incenter $I$, the circumcircle $\omega$ and its center $O$ are given and the trapezoid is erased. Restore it using only a ruler.

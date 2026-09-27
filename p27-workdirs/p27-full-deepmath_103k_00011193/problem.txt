@@ -1,0 +1,1 @@
+Consider an unweighted undirected graph $G$ with the property that for some integer $r$, for all nodes $v$, the average degree of nodes within the $r$-ball around $v$ satisfies:

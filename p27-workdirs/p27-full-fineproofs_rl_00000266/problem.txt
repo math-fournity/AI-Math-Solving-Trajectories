@@ -1,0 +1,1 @@
+15. (LUX 2) Angles of a given triangle $A B C$ are all smaller than $120^{\circ}$. Equilateral triangles $A F B, B D C$ and $C E A$ are constructed in the exterior of $\triangle A B C$. (a) Prove that the lines $A D, B E$, and $C F$ pass through one point $S$. (b) Prove that $S D+S E+S F=2(S A+S B+S C)$.

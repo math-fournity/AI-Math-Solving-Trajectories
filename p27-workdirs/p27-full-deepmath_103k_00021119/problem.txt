@@ -1,0 +1,1 @@
+Determine whether there exists a positive integer \(k\) such that for any \(S_4\)-quartic number field \(K\), there is an algebraic integer \(\alpha \in \mathcal{O}_K\) satisfying \(v_p([\mathcal{O}_K : \mathbb{Z}[\alpha]]) \leq k\) for all tamely ramified primes \(p \ge 5\).

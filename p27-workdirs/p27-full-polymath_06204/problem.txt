@@ -1,0 +1,1 @@
+A network security protocol uses a encryption function $P(x)$, where $x$ is a security key and $P(x)$ is a polynomial with integer coefficients. The protocol defines a sequence of recursive encryption cycles such that the first cycle is $P^{1}(x) = P(x)$, and each subsequent cycle $k+1$ is defined by $P^{k+1}(x) = P(P^{k}(x))$ for all $k \geq 1$.

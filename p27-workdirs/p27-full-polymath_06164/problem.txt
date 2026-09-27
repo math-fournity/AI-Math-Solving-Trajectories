@@ -1,0 +1,1 @@
+A specialized task force is composed of exactly 10 distinct research committees. To ensure a focused scope, every committee is assigned exactly 3 specific expert consultants from a general pool of $n$ available specialists.

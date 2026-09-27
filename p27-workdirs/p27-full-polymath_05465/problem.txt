@@ -1,0 +1,1 @@
+You and your friends have been tasked with building a cardboard castle in the two-dimensional Cartesian plane. The castle is built by the following rules:

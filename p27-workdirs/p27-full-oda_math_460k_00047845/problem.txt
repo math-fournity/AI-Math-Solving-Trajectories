@@ -1,0 +1,1 @@
+C2. In the plane, 2013 red points and 2014 blue points are marked so that no three of the marked points are collinear. One needs to draw $k$ lines not passing through the marked points and dividing the plane into several regions. The goal is to do it in such a way that no region contains points of both colors.

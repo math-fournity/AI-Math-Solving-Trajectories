@@ -1,0 +1,1 @@
+In a specialized laboratory, a robotic assembly line processes a sequence of 15 components arranged in a single file. Each component is either a Type-M (Metallic) or Type-D (Dielectric) module. Two engineers, Alex and Blair, are testing the system's decommissioning sequence by taking turns removing components from the left end of the row.

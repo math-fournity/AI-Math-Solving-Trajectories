@@ -1,0 +1,1 @@
+Suppose the sphere $S^2 = A \cup B$, where $A$ and $B$ are closed subsets of $S^2$. Is it true that either $A$ or $B$ must contain a closed connected set $X$ such that $X = X^*$, the set of antipoles of points of $X$?

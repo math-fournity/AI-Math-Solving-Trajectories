@@ -1,0 +1,1 @@
+Determine the rank of the elliptic curve given by the equation \( Y^2 = X^3 + p^2X \) where \( p \equiv 5 \pmod{8} \).

@@ -1,0 +1,1 @@
+In a specialized logistics hub, a manager is organizing $n$ distinct inventory shipments, where $n$ is a positive integer. Each shipment is identified by a unique positive integer code $x_k$ (for $k = 1, 2, \dots, n$), and the first shipment is strictly assigned the code $x_1 = 1$.

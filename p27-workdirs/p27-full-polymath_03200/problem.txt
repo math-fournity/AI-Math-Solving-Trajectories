@@ -1,0 +1,1 @@
+Let $n\ge2$ be a positive integer. Given a sequence $\left(s_i\right)$ of $n$ distinct real numbers, define the "class" of the sequence to be the sequence $\left(a_1,a_2,\ldots,a_{n-1}\right)$, where $a_i$ is $1$ if $s_{i+1} > s_i$ and $-1$ otherwise.

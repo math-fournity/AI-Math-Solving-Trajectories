@@ -1,0 +1,1 @@
+For which initial quadruples $(a_0, b_0, c_0, d_0)$ will Danny write at some point a quadruple of numbers all of which are divisible by $5780^{5780}$, given the transformation rules:

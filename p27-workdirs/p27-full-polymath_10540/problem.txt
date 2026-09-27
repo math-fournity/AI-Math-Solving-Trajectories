@@ -1,0 +1,1 @@
+A high-security data vault contains 10 locked cabinets, indexed $k = 1, 2, \ldots, 10$. To secure the facility, a technician must assign exactly one unique security clearance level from the set $\{1, 2, \ldots, 10\}$ to each cabinet. Let $a_k$ denote the clearance level assigned to the $k$-th cabinet.

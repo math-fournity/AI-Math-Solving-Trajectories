@@ -1,0 +1,1 @@
+Is it possible to color all positive real numbers using 10 colors such that any two numbers with decimal representations differing in exactly one digit are assigned different colors? Assume that no decimal representation has all digits from a certain place onwards as 9's.

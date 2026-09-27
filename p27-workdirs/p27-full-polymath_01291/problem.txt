@@ -1,0 +1,1 @@
+Given 100 distinct natural numbers \(a_1, a_2, a_3, \ldots, a_{100}\), under each number \(a_i\), a number \(b_i\) is written such that \(b_i = a_i + \text{gcd}(a_1, a_2, \ldots, a_{i-1}, a_{i+1}, \ldots, a_{100})\). What is the least possible number of distinct natural numbers among \(b_1, b_2, b_3, \ldots, b_{100}\)?

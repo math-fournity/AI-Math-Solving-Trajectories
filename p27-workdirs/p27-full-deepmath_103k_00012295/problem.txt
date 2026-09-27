@@ -1,0 +1,1 @@
+Find the maximum value of the function \( f(t) = e^{-\frac{t^2}{2}}\frac{| e^{-ta}(1+at)+e^{ta}(1-at)|}{\sqrt{e^{-2ta}+e^{2ta}}} \) for some \( a > 0 \).

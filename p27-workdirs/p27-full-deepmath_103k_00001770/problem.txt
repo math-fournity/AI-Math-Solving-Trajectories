@@ -1,0 +1,1 @@
+Given a list of $2^n$ nonzero vectors in $GF(2^n)$, where $n > 1$, and the sum of all vectors is zero, determine if there exists a subset of $2^{n-1}$ vectors whose sum is also zero. Assume the vectors are elements of $(\mathbb{Z}/2\mathbb{Z})^n$ and are not necessarily distinct.

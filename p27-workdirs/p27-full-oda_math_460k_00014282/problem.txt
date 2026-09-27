@@ -1,0 +1,1 @@
+Angle bisectors from vertices $B$ and $C$ and the perpendicular bisector of side $BC$ are drawn in a non-isosceles triangle $ABC$. Next, three points of pairwise intersection of these three lines were marked (remembering which point is which), and the triangle itself was erased. Restore it according to the marked points using a compass and ruler.

@@ -1,0 +1,1 @@
+Given an integer \( n \geq 3 \), define \(\mathcal{A} = \{\{z_1, z_2, \ldots, z_n\} \mid z_i \in \mathbb{C}, |z_i| = 1, 1 \leq i \leq n\}\). Determine the minimum value of \(\max_{u \in \mathbb{C}, |u|=1}\left\{\prod_{z \in A}|u-z|\right\}\) over all \(A \in \mathcal{A}\), and identify all sets \(A\) that achieve this minimum value.

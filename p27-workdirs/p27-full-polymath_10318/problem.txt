@@ -1,0 +1,1 @@
+A city planning committee is designing a modular garden grid consisting of an $8 \times 8$ array of square plots. They intend to install rectangular stone benches, where each bench is exactly the size of two adjacent square plots (covering a $1 \times 2$ or $2 \times 1$ area).

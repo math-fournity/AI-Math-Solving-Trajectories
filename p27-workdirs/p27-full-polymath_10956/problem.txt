@@ -1,0 +1,1 @@
+In a remote sector of the galaxy, an ancient computer system processes security codes using two encryption protocols: Protocol $P$ and Protocol $N$.

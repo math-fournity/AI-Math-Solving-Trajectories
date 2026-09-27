@@ -1,0 +1,1 @@
+What is the largest positive integer $r$ such that there are infinitely many elliptic curves over the rationals with rank at least $r$?

@@ -1,0 +1,1 @@
+Let $P_n$ denote the number of permutations $\pi$ of the set $\{1, 2, \dots, n\}$ such that for all $1 \le i, j \le n$, the condition $|i-j|=1$ implies $|\pi(i)-\pi(j)| \leq 2$. Evaluate the expression $P_{n+5}-P_{n+4}-P_{n+3}+P_{n}$ for $n \geq 2$.

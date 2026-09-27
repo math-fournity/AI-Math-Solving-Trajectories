@@ -1,0 +1,1 @@
+Let \(P(x_1, x_2, \ldots, x_k) \in \mathbb{Z}[x_1, x_2, \ldots, x_k]\) be a polynomial such that \(P(0, 0, \ldots, 0) = 1\) and \(P(x_1, x_2, \ldots, x_k) = 0\) for all \(x_1, x_2, \ldots, x_k \in \{0, 1, 2, \ldots, n\}\) with \(x_1 + x_2 + \cdots + x_k > 0\). Calculate the minimum possible value of \(\deg P\).

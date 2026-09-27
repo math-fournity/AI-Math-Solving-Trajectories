@@ -1,0 +1,1 @@
+Is the algebraic Grothendieck group of a weighted projective space finitely generated?

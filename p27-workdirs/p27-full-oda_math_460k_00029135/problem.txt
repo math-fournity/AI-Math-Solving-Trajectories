@@ -1,0 +1,1 @@
+Determine whether a continuous function \( f:\mathbb{R}\rightarrow\mathbb{R} \), which maps every subgroup \( G \) of \( \mathbb{R} \) to a subgroup of \( \mathbb{R} \), must be an endomorphism of \((\mathbb{R},+)\) in the form \( f(x)=ax \) for some real number \( a \).

@@ -1,0 +1,1 @@
+Let \(X, Y, Z\) be points on the interior of \(\triangle ABC\) such that

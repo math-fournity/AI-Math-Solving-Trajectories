@@ -1,0 +1,1 @@
+Determine all real numbers \(a\) such that there exists a non-constant function \(f: (0,1] \rightarrow \mathbb{R}\) satisfying the inequality \[a+f(x+y-xy)+f(x)f(y)\leq f(x)+f(y)\] for all \(x, y \in (0,1]\).

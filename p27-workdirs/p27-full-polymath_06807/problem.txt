@@ -1,0 +1,1 @@
+In a specialized logistics hub, a circular perimeter contains $n$ docking stations, where $n \geq 4$. To facilitate movement, two different companies—Emerald Rail and Ruby Transit—are tasked with building internal transport tracks (diagonals) between these stations.

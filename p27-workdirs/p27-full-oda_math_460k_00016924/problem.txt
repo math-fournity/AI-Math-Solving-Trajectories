@@ -1,0 +1,1 @@
+Given that $x \in (-\frac{\pi}{2}, \frac{\pi}{2})$, $y = f(x) - 1$ is an odd function, and $f'''(x) + f(x)\tan x > 0$, find the solution set for the inequality $f(x) > \cos x$.

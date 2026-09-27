@@ -1,0 +1,1 @@
+Find all pairs of natural numbers \( a \) and \( k \) such that for every natural \( n \) that is relatively prime to \( a \), the number \( a^{k^n+1} - 1 \) is divisible by \( n \).

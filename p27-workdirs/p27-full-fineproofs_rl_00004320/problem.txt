@@ -1,0 +1,1 @@
+Prove that among any 20 consecutive positive integers there exists an integer $d$ such that for each positive integer $n$ we have the inequality

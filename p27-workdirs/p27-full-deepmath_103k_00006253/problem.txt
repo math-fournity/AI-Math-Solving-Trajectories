@@ -1,0 +1,1 @@
+Determine the maximal number of real intersections of the unbounded components of two plane cubic curves, $C_1$ and $D_1$, in the projective plane.

@@ -1,0 +1,1 @@
+Let  $ABC$  be a scalene triangle whose incircle is tangent to  $BC$ ,  $CA$ ,  $AB$  at  $D$ ,  $E$ ,  $F$  respectively. Lines  $BE$  and  $CF$  meet at  $G$ . Prove that there exists a point  $X$  on the circumcircle of triangle  $EFG$  such that the circumcircles of triangles  $BCX$  and  $EFG$  are tangent, and \[\angle BGC = \angle BXC + \angle EDF.\]

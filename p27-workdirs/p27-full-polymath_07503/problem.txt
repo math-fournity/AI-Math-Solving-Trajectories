@@ -1,0 +1,1 @@
+In a remote digital archipelago, a decentralized network consists of an infinite grid of servers. Initially, a single server is "Infected" (black), while all other servers remain "Secure" (white).

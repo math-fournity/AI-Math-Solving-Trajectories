@@ -1,0 +1,1 @@
+Determine whether a function defined on the unit sphere in \(\mathbb{R}^n\) can be unbounded if it is finite at every point.

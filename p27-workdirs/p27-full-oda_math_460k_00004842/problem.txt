@@ -1,0 +1,1 @@
+For each positive \( x \in \mathbb{R} \), define \( E(x) = \{ [nx] : n \in \mathbb{N} \} \). Find all irrational \( \alpha > 1 \) such that if a positive real \( \beta \) satisfies \( E(\beta) \) is a proper subset of \( E(\alpha) \), then \( \frac{\beta}{\alpha} \) is a natural number.

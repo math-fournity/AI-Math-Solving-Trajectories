@@ -1,0 +1,1 @@
+Is it possible to construct a metric space where every open ball is disconnected, but the space itself is connected? Provide a justification for your answer.

@@ -1,0 +1,1 @@
+A specialized cryptography department is designing a new security protocol for data packets. For a given network size $n$ (where $n$ is a positive integer), the department assigns a unique identification rank from the set $\{1, 2, \ldots, n\}$ to each of the $n$ nodes in the network.

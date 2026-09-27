@@ -1,0 +1,1 @@
+Determine whether the following statement is true or false: For any commutative unital ring \( R \), if the determinant of an \( n \times n \) matrix \( A \) with entries in \( R \) is a zero divisor, then the system of linear equations \( Ax = 0 \) has a non-zero solution.

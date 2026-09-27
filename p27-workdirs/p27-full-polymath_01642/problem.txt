@@ -1,0 +1,1 @@
+Let $n = 5$. We say that two polynomials $P$ and $Q$ with real coefficients are block-similar if for each $i \in \{1, 2, \ldots, n\}$, the sequences

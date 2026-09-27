@@ -1,0 +1,1 @@
+Let $a_{1}=\frac{1}{4}, a_{n}=\frac{1}{4}\left(1+a_{n-1}\right)^{2}, n \geqslant 2$. Find the smallest

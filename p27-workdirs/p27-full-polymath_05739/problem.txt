@@ -1,0 +1,1 @@
+Let $n$ be a positive integer. We say $n$ is "distinct-summing" if there exists an $n \times n$ matrix with entries in $\{-1, 0, 1\}$ such that the $n$ row sums and $n$ column sums form a set of $2n$ distinct integers. Determine the number of integers $n \in \{1, 2, \dots, 100\}$ that are distinct-summing.

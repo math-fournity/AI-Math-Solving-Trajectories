@@ -1,0 +1,1 @@
+A prestigious international culinary academy has established a unique scoring system for its annual masterclass series. The series consists of $n$ consecutive lessons. In each lesson $m$ (where $m=1, 2, \dots, n$), a student earns a "mastery credit" equal to exactly $1/m$ points.

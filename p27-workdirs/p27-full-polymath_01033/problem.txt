@@ -1,0 +1,1 @@
+Find the maximum possible area of quadrilateral \(ABCD\). If the answer is of the form of an irreducible fraction $\frac{a}{b}$, compute the value of $a + b$.

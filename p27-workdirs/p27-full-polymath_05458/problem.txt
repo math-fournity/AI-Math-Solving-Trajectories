@@ -1,0 +1,1 @@
+Given a natural number $n$ with exactly 105 divisors and divisible by exactly 3 distinct prime numbers, find the number of divisors of $n$ that are of the form $4k + 1$ where $k \in \mathbb{N}$.

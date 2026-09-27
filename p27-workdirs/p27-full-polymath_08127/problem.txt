@@ -1,0 +1,1 @@
+In the subterranean vaults of a digital archives center, an experimental thermal cooling system is powered by a series of distinct modular batteries. Each battery $i$ has a unique positive integer voltage $x_i$ (measured in volts), where no two batteries share the same voltage.

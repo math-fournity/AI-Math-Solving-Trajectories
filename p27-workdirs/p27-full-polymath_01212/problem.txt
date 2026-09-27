@@ -1,0 +1,1 @@
+Given vectors $v_1, \dots, v_n$ and the string $v_1v_2 \dots v_n$,

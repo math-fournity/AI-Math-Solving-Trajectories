@@ -1,0 +1,1 @@
+Ana and Banana are playing a game. First, Ana picks a word, which is defined to be a nonempty sequence of capital English letters. Then Banana picks a nonnegative integer $k$ and challenges Ana to supply a word with exactly $k$ subsequences which are equal to Ana's word. Ana wins if she is able to supply such a word for any $k \ge 0$, otherwise she loses.

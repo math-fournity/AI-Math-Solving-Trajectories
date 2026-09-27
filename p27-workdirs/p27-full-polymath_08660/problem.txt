@@ -1,0 +1,1 @@
+In a remote industrial complex, there are $n$ specialized fuel storage tanks, where $n \geq 3$ is a fixed integer. Each tank $i$ contains a specific volume of liquid hydrogen, denoted by $x_i$, where all $x_i > 0$.

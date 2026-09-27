@@ -1,0 +1,1 @@
+For any polynomial $P(x)=a_0+a_1x+\ldots+a_k x^k$ with integer coefficients, let $o(P)$ denote the number of coefficients $a_i$ that are odd. Let $Q_i(x) = (1+x)^i$ for $i=0, 1, 2, \dots$. Calculate the minimum possible value of $o(Q_{i_1} + Q_{i_2} + Q_{i_3} + Q_{i_4})$ given that $i_1 = 2^3 + 2^1 + 2^0 = 11$ and $11 < i_2 < i_3 < i_4$.

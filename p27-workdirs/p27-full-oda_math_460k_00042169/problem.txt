@@ -1,0 +1,1 @@
+For an odd prime number $ p,$ let $ S(p) $ be the number of positive integers $ n $ satisfying $ p \mid n! + 1.$ Determine the smallest constant $ c $ such that $ S(p) \leq cp^\frac{2}{3} $ for all odd primes $ p. $

@@ -1,0 +1,1 @@
+A logistics company manages a fleet of $n$ delivery drones, labeled $1, 2, \dots, n$. On a particular day, there are $n$ distinct cargo packages available, also labeled $1, 2, \dots, n$. A dispatcher must assign exactly one package to each drone, creating a permutation $(a_1, a_2, \dots, a_n)$ where $a_i$ represents the weight of the package assigned to drone $i$.

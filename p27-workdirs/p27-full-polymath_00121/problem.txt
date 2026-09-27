@@ -1,0 +1,1 @@
+18. (17 points) Let $a_{1}, a_{2}, \cdots, a_{n}$ be a permutation of the integers 1, 2, $\cdots, n$, and satisfy the following conditions:

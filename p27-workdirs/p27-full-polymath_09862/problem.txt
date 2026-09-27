@@ -1,0 +1,1 @@
+A specialized textile factory is designing an 8-by-8 mosaic quilt composed of 64 square fabric patches. The layout is defined by the 144 individual threads that form the boundaries of these squares. The lead designer has 6 distinct colors of silk thread available: red, orange, yellow, green, blue, and purple.

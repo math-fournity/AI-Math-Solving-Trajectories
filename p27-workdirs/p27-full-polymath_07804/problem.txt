@@ -1,0 +1,1 @@
+In a specialized cyber-security network, an engineer is designing a cluster of $n$ high-speed servers. To maintain system stability, the connections between these servers must adhere to two strict security protocols:

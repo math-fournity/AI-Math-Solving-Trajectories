@@ -1,0 +1,1 @@
+Find cubic polynomials over \(\mathbb{Q}\) with Galois group \(S_3\) such that the quadratic subfields of their splitting fields are \(\mathbb{Q}(\sqrt{3})\), \(\mathbb{Q}(\sqrt{5})\), and \(\mathbb{Q}(\sqrt{7})\), respectively.

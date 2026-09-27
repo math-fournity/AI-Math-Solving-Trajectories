@@ -1,0 +1,1 @@
+How many elements are in the set obtained by transforming \(\{(0,0),(2,0)\}\) 14 times?

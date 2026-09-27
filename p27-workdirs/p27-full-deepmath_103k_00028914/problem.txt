@@ -1,0 +1,1 @@
+Suppose $p, q, r$ are prime numbers such that $pqx, qry, rpz$ are within a factor of $2$ of each other. Determine the number of distinct integers that the expression $pqx + qry + rpz$ can represent, where $x, y, z$ are integers satisfying $0 < x < (pq)^\alpha$, $0 < y < (qr)^\alpha$, and $0 < z < (rp)^\alpha$ for some $\alpha \in (0, 1)$. Provide your answer as a single integer.

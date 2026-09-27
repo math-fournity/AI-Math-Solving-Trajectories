@@ -1,0 +1,1 @@
+In a remote territory, three supply depots—Alpha ($A$), Bravo ($B$), and Charlie ($C$)—are positioned such that the distance from Alpha to Bravo is 80 km, Bravo to Charlie is 100 km, and Alpha to Charlie is 60 km.

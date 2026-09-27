@@ -1,0 +1,1 @@
+For every ordered pair of integers  $(i,j)$ , not necessarily positive, we wish to select a point  $P_{i,j}$  in the Cartesian plane whose coordinates lie inside the unit square defined by

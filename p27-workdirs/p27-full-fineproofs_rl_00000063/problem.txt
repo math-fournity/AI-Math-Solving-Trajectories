@@ -1,0 +1,1 @@
+$ABCDEF$  is a cyclic hexagon with circumcenter  $O$ , and  $AD, BE, CF$  are concurrent at  $X$ .  $P$  is a point on the plane. The circumenter of  $PAB$  is  $O_{AB}$ . Define  $O_{BC}, O_{CD}$ ,  $O_{DE}, O_{EF}, O_{FA}$  similarly. Prove that  $O_{AB} O_{DE}, O_{BC}O_{EF}, O_{CD}O_{FA}$ ,  $OX$  are concurrent.

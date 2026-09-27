@@ -1,0 +1,1 @@
+Let \( A(a, b) \) be a property that holds for a pair of integers \((a, b)\). The following rules apply for any integers \( m, n, x, y, z \):

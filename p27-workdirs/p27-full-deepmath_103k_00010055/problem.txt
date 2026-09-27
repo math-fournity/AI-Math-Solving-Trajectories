@@ -1,0 +1,1 @@
+Let $X$ and $Y$ be manifolds of dimensions $k$ and $l$ respectively, with $k > l$. Consider a smooth map $F : X \to Y$ and a regular value $y \in Y$. Does there exist a map $G : X \to \mathbb{R}^l$ such that $F^{-1}(y) = G^{-1}(0)$?

@@ -1,0 +1,1 @@
+74. Let the set $A=\{1,2,3, \cdots, 1997\}$, for any 999-element subset $X$ of $A$, if there exist $x, y \in X$, such that $x<y$ and $x \mid y$, then $X$ is called a good set. Find the largest natural number $a(a \in A)$, such that any 999-element subset containing $a$ is a good set.

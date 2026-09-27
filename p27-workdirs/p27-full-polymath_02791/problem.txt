@@ -1,0 +1,1 @@
+Let \( n \) be a positive integer. How many integer solutions \((i, j, k, l)\), where \( 1 \leq i, j, k, l \leq n \), does the following system of inequalities have:

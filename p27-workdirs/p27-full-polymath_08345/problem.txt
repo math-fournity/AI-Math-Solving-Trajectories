@@ -1,0 +1,1 @@
+In a bustling telecommunications network, there are $n$ distinct data hubs. Every single hub is connected to every other hub by a dedicated fiber-optic cable. Each cable is assigned to a specific service provider.

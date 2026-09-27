@@ -1,0 +1,1 @@
+We color some points in the plane with red, in such way that if  $P,Q$  are red and  $X$  is a point such that triangle  $\triangle PQX$  has angles  $30º, 60º, 90º$  in some order, then  $X$  is also red. If we have vertices  $A, B, C$  all red, prove that the barycenter of triangle  $\triangle ABC$  is also red.

@@ -1,0 +1,1 @@
+Determine all pairs $\{a, b\}$ of positive integers with the property that, in whatever manner you color the positive integers with two colors $A$ and $B$, there always exist two positive integers of color $A$ having their difference equal to $a$ [b]or[/b] of color $B$ having their difference equal to $b$.

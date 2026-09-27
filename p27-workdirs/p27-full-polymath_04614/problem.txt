@@ -1,0 +1,1 @@
+In a checked $ 17\times 17$ table, $ n$ squares are colored in black. We call a line any of rows, columns, or any of two diagonals of the table. In one step, if at least $ 6$ of the squares in some line are black, then one can paint all the squares of this line in black.

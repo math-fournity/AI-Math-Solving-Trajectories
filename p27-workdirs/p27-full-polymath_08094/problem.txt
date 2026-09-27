@@ -1,0 +1,1 @@
+In a specialized network of $n$ high-capacity servers, where $n$ is a fixed integer greater than 3, each server $i$ is assigned a unique positive power-load value denoted by $x_i$ (where $i=1, 2, \dots, n$).

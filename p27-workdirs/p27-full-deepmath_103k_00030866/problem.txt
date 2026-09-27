@@ -1,0 +1,1 @@
+Does there exist a set \( M \) of exactly 1992 positive integers such that every number in \( M \), as well as any sum of any subset of these numbers, can be expressed in the form \( m^{k} \), where \( m \) and \( k \) are positive integers and \( k \geq 2 \)?

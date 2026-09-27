@@ -1,0 +1,1 @@
+Is $A_5$ the only non-abelian finite simple group such that the number of distinct sizes of orbits under the action of its automorphism group is 4?

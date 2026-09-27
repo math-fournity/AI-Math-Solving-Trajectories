@@ -1,0 +1,1 @@
+A massive digital ticker tape is programmed to display the infinite sequence of all positive integers written in increasing order ($12345678910111213...$). A data analyst is monitoring the frequency of the non-zero digits ($1, 2, 3, 4, 5, 6, 7, 8, 9$) as they appear one by one on the tape.

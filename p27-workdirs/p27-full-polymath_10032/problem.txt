@@ -1,0 +1,1 @@
+A specialized deep-sea research vessel, the *S.S. Archimedes*, is equipped with two ballast tanks: the Port Tank and the Starboard Tank. At the beginning of a mission, both tanks are completely empty. On the deck, there is a supply of exactly 100 standardized lead weights.

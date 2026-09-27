@@ -1,0 +1,1 @@
+Let $E$ be the set of all nonnegative continuous functions $f:[0,1]\to \mathbb{R}$ such that \(f(x)\,f(y)\ge |x-y|\) for all \(\{x,y\}\subset [0,1]\). Find the minimum value of \(\int_0^1f(x) \,dx\) for \(f \in E\).

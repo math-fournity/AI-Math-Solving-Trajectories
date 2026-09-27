@@ -1,0 +1,1 @@
+A specialized logistics firm manages the security clearances for a set of researchers working on a project code-named $N$. The researchers are identified by the positive divisors of $N$ (including 1 and $N$ itself). To organize the team, the firm assigns each researcher one of four possible security badge colors.

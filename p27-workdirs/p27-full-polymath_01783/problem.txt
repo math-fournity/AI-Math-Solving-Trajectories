@@ -1,0 +1,1 @@
+Compute the sum of the positive integers \( n \leq 100 \) for which the polynomial \( x^n + x + 1 \) can be written as the product of at least 2 polynomials of positive degree with integer coefficients.

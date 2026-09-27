@@ -1,0 +1,1 @@
+Suppose \( f \in L^1(\mathbb{R}) \) and its Fourier transform \( \hat{f} \) is continuous, bounded, and satisfies the Riemann-Lebesgue lemma. If \( f \) is also continuous and \( \lim_{x \to \pm\infty} f(x) = 0 \), does it follow that \( \hat{f} \in L^1(\mathbb{R}) \)?

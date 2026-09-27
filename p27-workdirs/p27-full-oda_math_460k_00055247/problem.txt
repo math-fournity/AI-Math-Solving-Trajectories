@@ -1,0 +1,1 @@
+Suppose that \(x^{2017} - 2x + 1 = 0\) and \(x \neq 1\). First, find the value of

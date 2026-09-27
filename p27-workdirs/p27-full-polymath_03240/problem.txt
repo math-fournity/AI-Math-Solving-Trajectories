@@ -1,0 +1,1 @@
+All edges of a regular right pyramid are equal to $1$, and all vertices lie on the side surface of a (infinite) right circular cylinder of radius $R$. Find all possible values of $R$.

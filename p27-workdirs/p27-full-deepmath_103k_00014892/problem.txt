@@ -1,0 +1,1 @@
+Evaluate the integral \( \int_{0}^{1}P_n(2\sqrt{k}-1)P_{n+2}(2\sqrt{k}-1)\,dk \) using the expansion of \( K(k) \) with respect to the base of \( L^2(0,1) \) given by the shifted Legendre polynomials.

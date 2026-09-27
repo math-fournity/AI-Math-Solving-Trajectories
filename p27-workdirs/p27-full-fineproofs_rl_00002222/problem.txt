@@ -1,0 +1,1 @@
+In the city of Flensburg there is a single, infinitely long, street with houses numbered 2, 3, .. The police in Flensburg is trying to catch a thief who every night moves from the house where she is currently hiding to one of its neighbouring houses.

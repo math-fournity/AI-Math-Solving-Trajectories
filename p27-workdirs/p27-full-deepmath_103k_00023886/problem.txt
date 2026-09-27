@@ -1,0 +1,1 @@
+Let $A$ be a discrete valuation ring with maximal ideal $\mathfrak{m}$ and fraction field $K$. Suppose $L$ is a finite separable extension of $K$ of degree $n$, unramified with respect to $A$. Let $B$ be the integral closure of $A$ in $L$. Determine whether $B$ can be expressed as $A[x]/(f)$ for some polynomial $f \in A[x]$. Provide a justification for your answer.

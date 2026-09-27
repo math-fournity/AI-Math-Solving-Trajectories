@@ -1,0 +1,1 @@
+All integer points in the plane are colored in three colors. Find the smallest positive real number \( S \) with the following property: for any such coloring, there exists a triangle with area \( S \), whose vertices are colored in the same color.

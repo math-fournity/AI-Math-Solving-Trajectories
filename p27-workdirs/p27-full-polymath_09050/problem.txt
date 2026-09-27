@@ -1,0 +1,1 @@
+A secret intelligence agency uses a series of digital encryption protocols, where each protocol is defined by a transformation rule $f$ that maps any integer input $k$ to an integer output $f(k)$.

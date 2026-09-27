@@ -1,0 +1,1 @@
+Calculate the surface integral \( \iint_Y G \cdot N\, dS \) where \( Y \) is the surface defined by \((x+y)^2+(y+z)^2=4+z^2\) for \( 0 \leq z \leq 2 \), \( N \) is the outward-pointing normal vector, and \( G = (x^2y, y^2z, z^2x) \).

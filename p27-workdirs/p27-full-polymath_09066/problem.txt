@@ -1,0 +1,1 @@
+A specialized logistics team is tasked with monitoring a sequence of sensor beacons positioned along a straight 1-kilometer fiber-optic cable. The beacons are located at precise positions representing the harmonic sequence: the first beacon is at the 1 km mark, the second at 1/2 km, the third at 1/3 km, and so on, continuing infinitely toward the 0 km starting point.

@@ -1,0 +1,1 @@
+Example 3 Given an integer $n \geqslant 3$. Find the largest real number $M$ such that for any sequence of positive real numbers $x_{1}, x_{2}, \cdots, x_{n}$, there exists a permutation $y_{1}, y_{2}, \cdots, y_{n}$, satisfying

@@ -1,0 +1,1 @@
+In the interconnected power grid of a high-tech research facility, there are 6 primary distribution hubs. The wiring architecture follows the structure of a regular octahedron, where each hub is connected to exactly 4 other hubs by direct transmission lines.

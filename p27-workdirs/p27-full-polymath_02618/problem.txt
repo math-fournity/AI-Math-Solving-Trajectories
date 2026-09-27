@@ -1,0 +1,1 @@
+A positive integer $n$ is said to be *representable* if there exist a positive integer $m$ and positive integers $a_{1}, a_{2}, \dots, a_{m-1}$ such that $1 \le a_i \le m-1$ for all $i$ and

@@ -1,0 +1,1 @@
+Given the partial differential equation $\nabla^2 \psi = \psi_{xx} + \psi_{yy} = 0$, find solutions of the form $\psi = x^{\gamma} f(\zeta)$ where $\zeta = x/y$. Additionally, the condition $\psi_x - \psi_y = 0$ must be satisfied along the line $x = y$. Determine the possible values for $\gamma$ and the corresponding functions $f(\zeta)$.

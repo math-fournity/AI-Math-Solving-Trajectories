@@ -1,0 +1,1 @@
+Find the greatest natural number  $N$  such that, for any arrangement of the numbers  $1, 2, \ldots, 400$  in a chessboard  $20 \times 20$ , there exist two numbers in the same row or column, which differ by at least  $N.$

@@ -1,0 +1,1 @@
+Let $m$ and $n$ be positive integers. Let $A = \{a_1, a_2, \ldots, a_m\}$ be a set of $m$ distinct integers from $\{1, 2, \ldots, n\}$ such that for any $a_i, a_j \in A$ (not necessarily distinct), if $a_i + a_j \leq n$, then $a_i + a_j \in A$.

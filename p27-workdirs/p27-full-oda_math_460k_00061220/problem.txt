@@ -1,0 +1,1 @@
+Construct an uncountable Hausdorff space such that the complement of the closure of any nonempty open set is countable.

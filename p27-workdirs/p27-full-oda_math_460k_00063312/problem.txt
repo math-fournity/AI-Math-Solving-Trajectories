@@ -1,0 +1,1 @@
+Consider the polynomial \( a_{0} + a_{1} x + \cdots + a_{n} x^{n} \) whose coefficients \( a_{0}, a_{1}, \cdots, a_{n} \) take only the values +1 or -1, and such that the equation \( a_{0} + a_{1} x + \cdots + a_{n} x^{n} = 0 \) has all real roots. Find all such polynomials with the described properties.

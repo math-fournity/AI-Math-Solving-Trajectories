@@ -1,0 +1,1 @@
+What is the maximum number of cells that can be marked in a 20 * 20 board such that every cell is adjacent to at most one marked cell?

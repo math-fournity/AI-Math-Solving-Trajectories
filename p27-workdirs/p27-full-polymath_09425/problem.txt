@@ -1,0 +1,1 @@
+A specialized logistics network consists of $n+1$ distinct distribution hubs, denoted as $x_0, x_1, \dots, x_n$. The cost of transferring a priority package between any two hubs $x_i$ and $x_j$ is given by a distance metric $d(x_i, x_j)$.

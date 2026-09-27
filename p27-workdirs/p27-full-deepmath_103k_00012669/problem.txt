@@ -1,0 +1,1 @@
+Does there exist an increasing function \( g \) such that \( g' = 0 \) almost everywhere, but \( g \) is not constant on any open interval?

@@ -1,0 +1,1 @@
+A specialized architectural firm is designing a series of parabolic support beams for a modern glass pavilion. Each beam, represented by a parabola $\mathcal{P}$ on a coordinate grid, must adhere to the following structural and placement constraints:

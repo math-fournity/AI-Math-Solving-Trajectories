@@ -1,0 +1,1 @@
+Architect Elara is designing a high-tech modular pavilion. The floor plan is a perfectly symmetrical plaza in the shape of a regular polygon with $n$ sides of equal length.

@@ -1,0 +1,1 @@
+In a wagon, every $m \geq 3$ people have exactly one common friend. (When $A$ is $B$'s friend, $B$ is also $A$'s friend. No one was considered as his own friend.) Find the number of friends of the person who has the most friends.

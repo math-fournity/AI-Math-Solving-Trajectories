@@ -1,0 +1,1 @@
+Determine whether the following statement is true or false: Suppose that $A_1,A_2,\ldots ,A_m$ are $m$ linearly independent real $n\times n$ matrices such that $A_iA_j=0$ for all $i\neq j$. Then $m\le n$. Provide a proof or a counterexample.

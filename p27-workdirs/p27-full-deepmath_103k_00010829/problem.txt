@@ -1,0 +1,1 @@
+Let $k$ be an algebraically closed field, $O = k[[\pi]]$, and $F = k((\pi))$. Consider a faithful representation $G \rightarrow GL_n$ of a semisimple group. Suppose $A, B \in G(O) \cap G(F)^{rs}$, where $rs$ denotes regular semisimple elements, and there exists $g \in GL_n(O)$ such that $gAg^{-1} = B$. Does there exist an element $g_1 \in G(O)$ such that $g_1Ag_1^{-1} = B$?

@@ -1,0 +1,1 @@
+Given $n \equiv 0 \,(\mathrm{mod}\,4)$, determine the minimum value of $m$ such that there exists an $m \times n$ partial Hadamard matrix that cannot be extended to an $(m+1) \times n$ partial Hadamard matrix.

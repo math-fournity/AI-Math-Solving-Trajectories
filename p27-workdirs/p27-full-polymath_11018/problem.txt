@@ -1,0 +1,1 @@
+In a specialized cyber-security network, there are $n=100$ unique servers. Each server is linked to a specific subset of other servers to exchange encrypted data. Within this architecture, it is a known protocol requirement that no two servers have the exact same set of connections (i.e., every server communicates with a unique group of peers).

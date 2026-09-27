@@ -1,0 +1,1 @@
+Let  $a,b,c$  be positive real numbers satisfying  $a^2+b^2+c^2 \geq 3.$  Prove that

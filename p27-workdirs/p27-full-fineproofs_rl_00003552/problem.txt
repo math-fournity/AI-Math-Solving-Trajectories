@@ -1,0 +1,1 @@
+Let $A B C D$ be a convex quadrilateral and let $P$ be the point of intersection of $A C$ and $B D$. Suppose that $A C+A D=B C+B D$. Prove that the internal angle bisectors of $\angle A C B, \angle A D B$, and $\angle A P B$ meet at a common point.

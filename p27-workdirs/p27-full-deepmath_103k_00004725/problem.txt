@@ -1,0 +1,1 @@
+Determine the order of the best constant \(\lambda = \lambda(n)\) such that for any \(n \times n\) complex matrix \(A\) with trace zero, there exist \(n \times n\) matrices \(B\) and \(C\) satisfying \(A = BC - CB\) and \(\|B\| \cdot \|C\| \le \lambda \|A\|\).

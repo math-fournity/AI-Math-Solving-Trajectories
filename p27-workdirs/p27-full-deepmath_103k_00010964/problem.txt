@@ -1,0 +1,1 @@
+Let $S \subset \mathbb{R}^{2}$ be an infinite collection of non-collinear points with the following properties:

@@ -1,0 +1,1 @@
+Given a knot diagram $K$ in $\mathbb{R}^3$, if $K$ admits only trivial colourings with any quandle, can it be concluded that $K$ is the unknot? Answer with 'Yes' or 'No' and justify your answer.

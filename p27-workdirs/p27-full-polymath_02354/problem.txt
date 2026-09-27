@@ -1,0 +1,1 @@
+4. Divide a regular 2017-gon into 2015 triangular regions using 2014 non-intersecting diagonals inside it. Find the maximum possible number of isosceles triangles among these 2015 triangles.

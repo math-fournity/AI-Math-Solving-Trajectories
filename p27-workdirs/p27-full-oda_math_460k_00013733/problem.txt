@@ -1,0 +1,1 @@
+Show by the Galerkin method that there exists a solution to \n\[u_{tt} - \Delta u = f \quad \text{in } \Omega \times (0, T),\]\n\[u = 0 \quad \text{on } \partial \Omega \times (0, T),\]\n\[u|_{t=0} = u_0, \quad u_t|_{t=0} = u_1 \quad \text{on } \Omega.\]\n\nFinding a space sufficient for existence of weak solutions is a part of the problem.

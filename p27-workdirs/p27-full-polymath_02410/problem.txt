@@ -1,0 +1,1 @@
+Suppose that $p(x),q(x)$ are monic polynomials with nonnegative integer coefficients such that

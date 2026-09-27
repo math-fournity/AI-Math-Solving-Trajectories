@@ -1,0 +1,1 @@
+A specialized cargo drone operates within a square grid of delivery hubs. The hubs are located at every integer coordinate $(x, y)$ such that $-10 \leq x, y \leq 10$. The central control tower is fixed at the origin $O(0, 0)$. The drone, nicknamed "Scotty," begins its mission at terminal $P(0, 1)$.

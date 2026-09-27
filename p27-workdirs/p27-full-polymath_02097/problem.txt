@@ -1,0 +1,1 @@
+Let $B$ be a $1 \times 2 \times 4$ box (rectangular parallelepiped).  Let $R$ be the set of points that are within distance 3 of some point in $B$.  (Note that $R$ contains $B$.)  What is the volume of $R$?

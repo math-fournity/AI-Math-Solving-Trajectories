@@ -1,0 +1,17 @@
+/-!
+# USA Mathematical Olympiad 2023, Problem 4
+
+Positive integers a and N are fixed, and N positive integers are written on
+a blackboard. Alice and Bob play the following game. On Alice's turn, she must
+replace some integer n on the board with n + a, and on Bob's turn he must
+replace some even integer n on the board with n/2. Alice goes first and they
+alternate turns. If Bob has no valid moves on his turn the game ends.
+
+After analyzing the N integers on the board, Bob realizes that, regardless of
+what moves Alices makes, he will be able to force the game to end eventually.
+Show that, in fact, no matter what either player does, for these values of a and N
+and these particular N integers, the game is guaranteed to end, regardless of
+either player's moves.
+-/
+
+##

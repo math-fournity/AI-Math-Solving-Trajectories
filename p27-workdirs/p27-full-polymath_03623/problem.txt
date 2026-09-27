@@ -1,0 +1,1 @@
+On a $5 \times 5$ board, $n$ white markers are positioned, each marker in a distinct $1 \times 1$ square. A child recolors markers one by one using the following rule: a white marker is removed from the board, colored black, and then placed back on an empty square such that none of its current neighboring squares (sharing a common side) contains a white marker.

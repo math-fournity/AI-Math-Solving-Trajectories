@@ -1,0 +1,1 @@
+In a remote archipelago, there are 27 research stations. Each station is assigned a unique identification code consisting of a string of $n$ light signals, where each signal is either a blue flash (0) or a red flash (1).

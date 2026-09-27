@@ -1,0 +1,1 @@
+26th IMO 1985 shortlist Problem 26 Find the smallest positive integer n such that n has exactly 144 positive divisors including 10 consecutive integers. Solution

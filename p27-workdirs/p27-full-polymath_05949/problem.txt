@@ -1,0 +1,1 @@
+In a futuristic circular city, planners are designing a high-speed transit network connecting $n$ equidistant stations located exactly on the city's perimeter ($n \geq 3$). The planners intend to build several straight-line underground tunnels, each connecting two non-adjacent stations.

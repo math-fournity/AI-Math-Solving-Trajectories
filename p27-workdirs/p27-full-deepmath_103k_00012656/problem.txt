@@ -1,0 +1,1 @@
+Consider a probability space $(\Omega, \mathcal{F}, \mathbb{P})$. Let $\{A_n\}_{n=1}^{\infty}$ be a sequence of independent events defined on $(\Omega, \mathcal{F}, \mathbb{P})$ such that $\mathbb{P}(A_n)<1$ for all $n$ and $\mathbb{P}(\bigcup_{n=1}^{\infty}A_n)=1.$ Find the value of $\mathbb{P}(\bigcap_{i=1}^{\infty}\bigcup_{n=i}^{\infty}A_n).$

@@ -1,0 +1,1 @@
+Let $f$ be an entire function stable on $\mathbb{R}$, and let $E_{\mathbb{R}}$ be its real escaping set defined as: \[E_{\mathbb{R}} = \{ x \in \mathbb{R} : f^{(k)}(x) \rightarrow_{k \to \infty} \infty \} \] Given that $E_{\mathbb{R}}$ is a measurable null set with respect to the Lebesgue measure on $\mathbb{R}$, is $E_{\mathbb{R}}$ also empty?

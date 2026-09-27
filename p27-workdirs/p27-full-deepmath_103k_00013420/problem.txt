@@ -1,0 +1,1 @@
+Determine whether the integrals \( I_1 \) and \( I_2 \) are equal, where:

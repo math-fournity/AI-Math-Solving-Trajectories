@@ -1,0 +1,1 @@
+10.7. A square wooden board is divided into $n^{2}$ unit squares by horizontal and vertical lines. Mark $n$ squares so that any rectangle with an area of at least $n$ and whose sides lie along the grid lines contains at least one marked square. Find the largest $n$ that satisfies this condition.

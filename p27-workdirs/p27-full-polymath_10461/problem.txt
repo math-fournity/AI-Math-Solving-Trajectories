@@ -1,0 +1,1 @@
+In a remote industrial refinery, 300 automated sensors are installed along a pipeline to monitor chemical purity. There are 25 possible purity grades (labeled 1 through 25) that can be assigned to a sensor. During a system-wide calibration, each sensor is assigned exactly one purity grade.

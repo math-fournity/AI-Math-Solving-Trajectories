@@ -1,0 +1,1 @@
+In a remote industrial district, three chemical processors—Alpha ($a$), Beta ($b$), and Gamma ($c$)—operate with positive output levels. The factory's energy regulator enforces a strict stability constraint based on their outputs: twice the sum of the individual outputs plus the sum of their pairwise products must equal exactly nine units ($2(a + b + c) + ab + bc + ca = 9$).

@@ -1,0 +1,1 @@
+In a specialized laboratory, an engineering team is testing the stability of three distinct pressure valves, identified by their pressure ratings $x, y,$ and $z$. These ratings must be natural numbers, and for the sake of the experimental design, they are calibrated such that $1 \le x \le y \le z$.

@@ -1,0 +1,1 @@
+For a finite nonempty set $A = \{a_1, a_2, \dots, a_n\}$ of positive integers, the calamitous complement $cc(A)$ is defined as the set of all positive integers $k$ which cannot be expressed in the form $k = \sum_{i=1}^n w_i a_i$ for some nonnegative integers $w_i$.

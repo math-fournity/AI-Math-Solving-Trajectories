@@ -1,0 +1,1 @@
+For any positive integer $n$, we have the set $P_n = \{ n^k \mid k=0,1,2, \ldots \}$. For positive integers $a,b,c$, we define the group of $(a,b,c)$ as lucky if there is a positive integer $m$ such that $a-1$, $ab-12$, $abc-2015$ (the three numbers need not be different from each other) belong to the set $P_m$. Find the number of lucky groups.

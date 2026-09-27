@@ -1,0 +1,1 @@
+For \(0 \leq x \leq 2 \pi\), \(f(x)=\frac{1}{2}|\sin (20 x)+\cos (24 x)|\) is always strictly between \(0\) and \(1\). Estimate the average value of \(f\) over this interval. Express your answer in the form \(0.abcdef\). If x is the answer you obtain, report $\lfloor 10^6x \rfloor$

@@ -1,0 +1,1 @@
+In a remote region of the salt flats, a tech company is constructing a square server farm grid measuring exactly $17$ kilometers by $17$ kilometers. To ensure network stability and physical security, the company must install $14$ specialized signal towers along the perimeter of this square boundary.

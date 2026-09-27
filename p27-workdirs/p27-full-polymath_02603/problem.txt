@@ -1,0 +1,1 @@
+Let $A_1A_2A_3A_4A_5$ be a regular pentagon inscribed in a circle with area $\tfrac{5+\sqrt{5}}{10}\pi$. For each $i=1,2,\dots,5$, points $B_i$ and $C_i$ lie on ray $\overrightarrow{A_iA_{i+1}}$ such that

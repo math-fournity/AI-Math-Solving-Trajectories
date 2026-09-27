@@ -1,0 +1,1 @@
+A specialized digital signal processor is designed to generate a series of high-frequency pulses across $n-1$ discrete time steps, where $n$ is a positive integer constant.

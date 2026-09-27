@@ -1,0 +1,1 @@
+A \(100 \times 100\) table is covered with \(5000\) dominoes. We will call a square \(2 \times 2\) exact if it is covered with two dominoes. What is the minimum number of exact squares that can be in the table?

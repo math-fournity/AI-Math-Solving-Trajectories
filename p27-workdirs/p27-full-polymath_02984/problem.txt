@@ -1,0 +1,5 @@
+Sarin C.
+
+Petya and Vasya are playing the following game. Petya thinks of a natural number $x$ with the sum of its digits being 2012. In one move, Vasya chooses any natural number $a$ and finds out from Petya the sum of the digits of $|x-a|$. What is the minimum number of moves Vasya needs to make to guarantee determining $x$?
+
+##

@@ -1,0 +1,1 @@
+Consider the set \( A \) of four-digit numbers that are at most equal to 2014. Determine the maximum number of elements of a subset of \( A \) that contains only perfect squares, any two of which are coprime.

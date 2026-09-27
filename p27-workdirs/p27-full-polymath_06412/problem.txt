@@ -1,0 +1,1 @@
+In a remote sector of the galaxy, three space stations—Alpha ($A$), Bravo ($B$), and Charlie ($C$)—form a triangular navigation sector. Long-range sensors determine that the interior angle at station Bravo is exactly $130^\circ$.

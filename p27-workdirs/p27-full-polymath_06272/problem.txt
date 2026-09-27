@@ -1,0 +1,1 @@
+In a specialized logistics center, a security protocol defines an integer $n$ as "efficient" if it satisfies a specific distribution requirement.

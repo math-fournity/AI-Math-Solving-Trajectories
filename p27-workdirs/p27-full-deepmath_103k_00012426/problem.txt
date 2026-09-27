@@ -1,0 +1,1 @@
+Find the digital root of the number formed by a tower of 2013 twos: \( d(\underset{\text{The number of }2 \text{'s is }2013}{\underbrace{2^{2^{2^{.^{.^{.^{2}}}}}}}}) \). The digital root of a number \( n \) is given by \( d(n) = n - 9\left \lfloor \frac{n-1}{9} \right \rfloor \).

@@ -1,0 +1,1 @@
+In the city of Arithema, the Grand Architect is designing a memorial plaza consisting of a $5 \times 5$ grid of stone pedestals. To complete the monument, 25 unique brass plaques, numbered sequentially from 1 to 25, must be installed so that every pedestal holds exactly one plaque.

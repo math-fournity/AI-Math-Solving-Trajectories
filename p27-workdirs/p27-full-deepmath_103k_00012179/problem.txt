@@ -1,0 +1,1 @@
+For \( n = 2^k \) where \( k \ge 1 \), find a formula for the number of silver matrices of size \( n \). A silver matrix of size \( n \) is an \( n \times n \) matrix where the \( i \)-th row and \( i \)-th column contain all the numbers in \( \{1, 2, \ldots, 2n-1\} \).

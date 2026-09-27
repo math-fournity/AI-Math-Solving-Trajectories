@@ -1,0 +1,1 @@
+Let $n = 101$. Alice and Bob play a game on a line of $n$ initially empty spaces, taking alternating turns with Alice playing first. At each turn, a player either:

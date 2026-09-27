@@ -1,0 +1,1 @@
+Let $f: \mathbb{R} \to \mathbb{R}$ be a $C^1$ function. A point $c \in \mathbb{R}$ is called a mean value point of $f$ if there exists an open interval $(a,b)$ containing $c$ such that $f'(c) = \frac{f(b) - f(a)}{b-a}$. Is it true that (Lebesgue) almost every point in $\mathbb{R}$ is a mean value point of $f$?

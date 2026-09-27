@@ -1,0 +1,1 @@
+In a remote territory, three supply depots—Alpha, Bravo, and Charlie—are positioned such that the straight-line distance between Bravo and Charlie is 13 units, Charlie and Alpha is 14 units, and Alpha and Bravo is 15 units.

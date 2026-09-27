@@ -1,0 +1,1 @@
+Given $n \times n$ matrices $L$ and $M$ defined as follows: $L_{ij} = 1$ if $i + j \geq n + 1$ and is zero otherwise; $M_{ij} = \min(i,j)$ for $1 \leq i, j \leq n$. It is known that $M = L^2$. Determine whether it is always true, for arbitrary $n$, that $L$ can be expressed as a polynomial in $M$ with integral coefficients.

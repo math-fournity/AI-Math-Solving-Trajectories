@@ -1,0 +1,1 @@
+On a $32 \times 31$ board, distinct real numbers are written in each unit square. A unit square is called \textbf{special} if the number in that unit square is smaller than or equal to the number in at most one of the unit squares that share a common vertex with it. What is the maximum possible number of special unit squares?

@@ -1,0 +1,6 @@
+Determine all functions g : ℤ>0 → ℤ>0 such that
+(g(m) + n)(g(n) + m)
+is always a perfect square.
+
+</rule>
+</rules>

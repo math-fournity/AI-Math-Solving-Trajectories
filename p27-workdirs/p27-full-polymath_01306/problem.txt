@@ -1,0 +1,1 @@
+An integer $s \geq 4$ is called "partition-divisible" if there exist positive integers $a, b, c, d$ such that $s = a + b + c + d$ and $s$ divides the sum of the products of the variables taken three at a time, $abc + abd + acd + bcd$. Let $S$ be the set of all partition-divisible integers $s$ such that $4 \leq s \leq 100$. Find the number of elements in $S$.

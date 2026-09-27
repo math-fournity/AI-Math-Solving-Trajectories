@@ -1,0 +1,1 @@
+In a school with $n$ students, each student has exactly 2023 friends. Additionally, any two students who are not friends have exactly 2022 mutual friends. Determine all possible values of $n$.

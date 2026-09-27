@@ -1,0 +1,1 @@
+In a remote industrial complex, three specialized pressure chambers are interconnected. The internal pressures of these chambers are represented by real numbers $a$, $b$, and $c$, measured in pascals. For the safety of the system, it is mandatory that no two chambers have identical pressures, ensuring that $(a-b)(b-c)(c-a) \neq 0$.

@@ -1,0 +1,1 @@
+Let squares be constructed on the sides $BC, CA, AB$ of a triangle $ABC$ with area $S$, all to the outside of the triangle, and let $A_1, B_1, C_1$ be their centers. Let $S_1$ be the area of triangle $A_1B_1C_1$. Starting from the triangle $A_1B_1C_1$, one analogously obtains a triangle $A_2B_2C_2$ with area $S_2$ by constructing squares on its sides and taking their centers.

@@ -1,0 +1,1 @@
+Find the maximum number of subsets of the set $\{1, 2, \ldots, n\}$ such that for any two of these subsets $A$ and $B$, if $A \subset B$, then $|B \setminus A| \geq 3$. Let $M(n)$ be this maximum value. Find the value of $\sum_{n=1}^{10} M(n)$.

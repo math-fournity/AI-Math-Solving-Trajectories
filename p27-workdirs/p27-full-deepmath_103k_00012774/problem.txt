@@ -1,0 +1,1 @@
+Determine whether there exists a $T_2$ (Hausdorff) space $X$ and a group $G$ such that the quotient space $X_G$, formed by the action of $G$ on $X$, is not a $T_2$ space.

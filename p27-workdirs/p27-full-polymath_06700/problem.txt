@@ -1,0 +1,1 @@
+In a specialized network of $p$ secure data servers, where $p$ is a prime number greater than 2, a network engineer is designing a security protocol using a "shuffling polynomial" $Q$ with integer coefficients.

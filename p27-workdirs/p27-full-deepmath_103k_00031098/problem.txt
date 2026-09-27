@@ -1,0 +1,1 @@
+Determine all integers \( n > 3 \) for which there exist \( n \) points \( A_1, A_2, \ldots, A_n \) on a plane and real numbers \( r_1, r_2, \ldots, r_n \) such that:

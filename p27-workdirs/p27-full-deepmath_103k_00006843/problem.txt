@@ -1,0 +1,1 @@
+Does there exist a valuation ring \((R, \mathfrak{m})\) with a principal maximal ideal and infinite global dimension?

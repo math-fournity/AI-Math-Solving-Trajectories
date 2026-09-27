@@ -1,0 +1,1 @@
+A specialized logistics firm is tasked with distributing exactly 1 ton of a highly volatile chemical across $2n$ individual storage canisters (where $n$ is an integer and $n \ge 2$). The manager, Betya, must first decide the specific mass of chemical to be placed in each canister, $x_1, x_2, \dots, x_{2n}$, such that the total sum of these non-negative masses is exactly 1.

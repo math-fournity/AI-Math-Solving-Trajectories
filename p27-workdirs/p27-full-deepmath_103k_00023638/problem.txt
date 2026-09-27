@@ -1,0 +1,1 @@
+Given two bit vectors A and B of length N, the Jaccard similarity between them is defined as \(\|A \land B\|/\|A \lor B\|\). Determine the largest possible value of M such that M bit vectors can be selected from the set of \(2^N-1\) possible values (excluding the all-zero vector) such that all \(M(M-1)/2\) pairwise Jaccard similarities are distinct.

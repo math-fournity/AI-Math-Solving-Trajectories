@@ -1,0 +1,1 @@
+A specialized encryption device processes security clearance levels, represented as positive integers $n \in \mathbb{N}$. The device utilizes a transformation protocol $f$ that maps one clearance level to another.

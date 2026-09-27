@@ -1,0 +1,1 @@
+Each cell of an $n \times n$ board is painted either black or white, where $n=100$. All cells adjacent to the boundary of the board are black. Let $S$ be the number of $2 \times 2$ squares on the board that are either monochromatic or painted in a checkerboard pattern. If there are no monochromatic $2 \times 2$ squares on the board, find the minimum possible value of $S$.

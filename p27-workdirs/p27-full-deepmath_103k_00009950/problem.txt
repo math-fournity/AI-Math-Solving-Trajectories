@@ -1,0 +1,1 @@
+Compute the intersection multiplicity of the elliptic curve given by \(x^3 + xz^2 + z^3 + y^2z + yz^2 = 0\) and the curve \(x = 0\) at the point \((0, 1, 1)\). Note: \(f(x, y, z) = x^3 + xz^2 + z^3 + y^2z + yz^2 \in \mathbb{F}_2[x, y, z]\).

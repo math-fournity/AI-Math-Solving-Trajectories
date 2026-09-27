@@ -1,0 +1,1 @@
+In the world of high-precision acoustic engineering, a specialized "Resonance Synthesis" machine combines two frequency signals, $x$ and $y$, to produce a resultant output frequency denoted by the operation $x \circ y$.

@@ -1,0 +1,1 @@
+Alicia and Florent are playing a game starting with an integer $n$ such that $1 < n \leqslant 1000$. They take turns according to the following rules:

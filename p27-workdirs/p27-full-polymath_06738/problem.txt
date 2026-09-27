@@ -1,0 +1,1 @@
+In a remote mountainous region, three research stations—Base Alpha ($A$), Base Bravo ($B$), and Base Charlie ($C$)—form a triangular communications grid. The distance along the fiber-optic cable connecting Base Alpha to Base Bravo is 20 kilometers, while the cable connecting Base Alpha to Base Charlie is 22 kilometers.

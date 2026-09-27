@@ -1,0 +1,1 @@
+Solve the \(d\)-dimensional Poisson's equation \(-\nabla^{2} \phi(\vec{r}) = e_{d} \delta^{(d)}(\vec{r})\) for \(d \geq 3\), where \(e_{d}\) is the electric charge in \(d\) dimensions and \(\delta^{(d)}(\vec{r})\) is the \(d\)-dimensional Dirac delta function.

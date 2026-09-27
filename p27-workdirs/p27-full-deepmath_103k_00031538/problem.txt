@@ -1,0 +1,1 @@
+Find all functions \( f: \mathbb{R} \to \mathbb{R} \) such that for all real numbers \( x, y, z \), the following holds: If \( x^3 + f(y) \cdot x + f(z) = 0 \), then \( f(x)^3 + y \cdot f(x) + z = 0 \).

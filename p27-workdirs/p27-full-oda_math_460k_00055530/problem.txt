@@ -1,0 +1,1 @@
+Consider the sum $$S(x) = \sum_{pq \leq x} \log p \log q \frac{\log x}{\log pq} - \sum_{pq \leq x} \log p \log q.$$ Calculate the value of $S(10^{10})$.

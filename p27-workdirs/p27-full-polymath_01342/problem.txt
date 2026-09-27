@@ -1,0 +1,1 @@
+Suppose $X$ is a set with $|X| = 56$. Find the minimum value of $n$, so that for any 15 subsets of $X$, if the cardinality of the union of any 7 of them is greater or equal to $n$, then there exists 3 of them whose intersection is nonempty.

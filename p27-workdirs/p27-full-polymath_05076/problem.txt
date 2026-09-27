@@ -1,0 +1,1 @@
+Given an integer $m \geqslant 2$, let $n(m)$ be the smallest integer $n \geqslant m$ such that for any partition of the set $\{m, m+1, \dots, n\}$ into two subsets, at least one of these subsets contains numbers $a, b, c$ (not necessarily distinct) such that $ab = c$. Find the value of $n(2) + n(3)$.

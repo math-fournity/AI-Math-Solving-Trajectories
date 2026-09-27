@@ -1,0 +1,1 @@
+A network security architect, Dima, is testing a server’s "Stability Score," which currently sits at $0$. He is playing a strategic simulation against an automated firewall system, Sasha.

@@ -1,0 +1,1 @@
+Let \(\mathcal{P}\) be the set of polynomials with degree \(2019\) with leading coefficient \(1\) and non-leading coefficients from the set \(\mathcal{C}=\{-1,0,1\}\). For example, the function \(f=x^{2019}-x^{42}+1\) is in \(\mathcal{P}\), but the functions \(f=x^{2020}\), \(f=-x^{2019}\), and \(f=x^{2019}+2x^{21}\) are not in \(\mathcal{P}\).

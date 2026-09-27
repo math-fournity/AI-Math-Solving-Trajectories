@@ -1,0 +1,1 @@
+Demonstrate the equivalence of the following three properties of a tetrahedron \( T \):

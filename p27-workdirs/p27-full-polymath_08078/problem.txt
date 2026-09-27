@@ -1,0 +1,1 @@
+In a specialized logistics facility, a series of automated cargo containers are dispatched one by one. Each container is assigned a positive integer weight, $X_k$, measured in tons. To maintain the system's balance, the weight of every container in the sequence must not exceed a specific capacity limit, $M$.

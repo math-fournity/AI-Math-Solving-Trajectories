@@ -1,0 +1,1 @@
+In a remote industrial complex, three chemical compounds—Alpha ($a$), Beta ($b$), and Gamma ($c$)—are stored in pressurized tanks. The volumes of these compounds are positive real quantities measured in liters.

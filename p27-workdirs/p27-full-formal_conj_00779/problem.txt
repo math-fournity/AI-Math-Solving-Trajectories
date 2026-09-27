@@ -1,0 +1,119 @@
+/-
+Copyright 2026 The Formal Conjectures Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-/
+
+import FormalConjecturesUtil.DeclName
+import FormalConjectures.Arxiv.«0912.2382».CurlingNumberConjecture
+import FormalConjectures.Arxiv.«1601.03081».UniqueCrystalComponents
+import FormalConjectures.Arxiv.«2501.03234».ArithmeticSumS
+import FormalConjectures.Books.UniformDistributionOfSequences.Equidistribution
+import FormalConjectures.ErdosProblems.«1002»
+import FormalConjectures.ErdosProblems.«1074»
+import FormalConjectures.ErdosProblems.«1092»
+import FormalConjectures.ErdosProblems.«1093»
+import FormalConjectures.ErdosProblems.«1097»
+import FormalConjectures.ErdosProblems.«1113»
+import FormalConjectures.ErdosProblems.«123»
+import FormalConjectures.ErdosProblems.«125»
+import FormalConjectures.ErdosProblems.«12»
+import FormalConjectures.ErdosProblems.«137»
+import FormalConjectures.ErdosProblems.«188»
+import FormalConjectures.ErdosProblems.«200»
+import FormalConjectures.ErdosProblems.«23»
+import FormalConjectures.ErdosProblems.«260»
+import FormalConjectures.ErdosProblems.«269»
+import FormalConjectures.ErdosProblems.«272»
+import FormalConjectures.ErdosProblems.«282»
+import FormalConjectures.ErdosProblems.«288»
+import FormalConjectures.ErdosProblems.«307»
+import FormalConjectures.ErdosProblems.«313»
+import FormalConjectures.ErdosProblems.«324»
+import FormalConjectures.ErdosProblems.«329»
+import FormalConjectures.ErdosProblems.«332»
+import FormalConjectures.ErdosProblems.«340»
+import FormalConjectures.ErdosProblems.«358»
+import FormalConjectures.ErdosProblems.«36»
+import FormalConjectures.ErdosProblems.«385»
+import FormalConjectures.ErdosProblems.«398»
+import FormalConjectures.ErdosProblems.«409»
+import FormalConjectures.ErdosProblems.«479»
+import FormalConjectures.ErdosProblems.«517»
+import FormalConjectures.ErdosProblems.«535»
+import FormalConjectures.ErdosProblems.«539»
+import FormalConjectures.ErdosProblems.«61»
+import FormalConjectures.ErdosProblems.«647»
+import FormalConjectures.ErdosProblems.«694»
+import FormalConjectures.ErdosProblems.«695»
+import FormalConjectures.ErdosProblems.«770»
+import FormalConjectures.ErdosProblems.«830»
+import FormalConjectures.ErdosProblems.«887»
+import FormalConjectures.ErdosProblems.«888»
+import FormalConjectures.ErdosProblems.«890»
+import FormalConjectures.ErdosProblems.«92»
+import FormalConjectures.ErdosProblems.«931»
+import FormalConjectures.ErdosProblems.«952»
+import FormalConjectures.ErdosProblems.«996»
+import FormalConjectures.GreensOpenProblems.«14»
+import FormalConjectures.GreensOpenProblems.«24»
+import FormalConjectures.GreensOpenProblems.«31»
+import FormalConjectures.GreensOpenProblems.«58»
+import FormalConjectures.GreensOpenProblems.«61»
+import FormalConjectures.GreensOpenProblems.«9»
+import FormalConjectures.Mathoverflow.«1973»
+import FormalConjectures.Millenium.Poincare
+import FormalConjectures.OEIS.«303656»
+import FormalConjectures.OEIS.«308734»
+import FormalConjectures.OEIS.«41»
+import FormalConjectures.OEIS.«63880»
+import FormalConjectures.OEIS.«67720»
+import FormalConjectures.OEIS.«80170»
+import FormalConjectures.OpenQuantumProblems.«23»
+import FormalConjectures.Paper.MonochromaticQuantumGraph
+import FormalConjectures.Wikipedia.Buchi
+import FormalConjectures.Wikipedia.ClassNumberProblem
+import FormalConjectures.Wikipedia.DiameterSimpleFiniteGroups
+import FormalConjectures.Wikipedia.EllipticCurveRank
+import FormalConjectures.Wikipedia.EulerBrick
+import FormalConjectures.Wikipedia.Gilbreath
+import FormalConjectures.Wikipedia.Grimm
+import FormalConjectures.Wikipedia.Irrational
+import FormalConjectures.Wikipedia.Koethe
+import FormalConjectures.Wikipedia.LittlewoodConjecture
+import FormalConjectures.Wikipedia.LychrelNumbers
+import FormalConjectures.Wikipedia.Mandelbrot
+import FormalConjectures.Wikipedia.Pell
+import FormalConjectures.Wikipedia.RamseyNumbers
+import FormalConjectures.Wikipedia.RiemannZetaValues
+import FormalConjectures.Wikipedia.Selfridge
+import FormalConjectures.Wikipedia.SumOfThreeCubes
+import FormalConjectures.Wikipedia.Superperfectnumbers
+import FormalConjectures.Wikipedia.Transcendental
+import FormalConjectures.Wikipedia.UnionClosed
+import FormalConjectures.WrittenOnTheWallII.GraphConjecture316
+import FormalConjectures.WrittenOnTheWallII.GraphConjecture327
+
+/-!
+# FC100OpenSet1
+
+A random subset of 100 open research problems, drawn uniformly at random
+from all problems with the `category research open` tag.
+-/
+
+namespace Subsets.FC100OpenSet1
+
+open Lean in
+def problems : List Na
+
+##

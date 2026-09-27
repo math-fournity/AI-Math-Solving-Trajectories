@@ -1,0 +1,1 @@
+Characterize left linearly compact rings. Specifically, state the equivalent conditions for a ring \( R \) to be left linearly compact.

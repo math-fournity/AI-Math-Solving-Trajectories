@@ -1,0 +1,1 @@
+How many positive integer solutions are there to $w+x+y+z=20$ where $w+x\ge 5$ and $y+z\ge 5$?

@@ -1,0 +1,1 @@
+In a specialized logistics park, a designer is mapping out a quadrilateral security perimeter $ABCD$. This perimeter is unique because it is built to perfectly enclose a circular central hub (a circumscribed quadrilateral).

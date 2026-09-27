@@ -1,0 +1,1 @@
+Let \( a \) and \( b \) be positive numbers. Find the largest number \( c \), in terms of \( a \) and \( b \), such that\n\n\[\na^{x b^{1-x}} \leq a \frac{\sinh ux}{\sinh u} + b \frac{\sinh u(1-x)}{\sinh u}\n\]\n\nfor all \( u \) with \( 0 < |u| \leq c \) and for all \( x \), \( 0 < x < 1 \). (Note: \(\sinh u = (e^u - e^{-u})/2\).)

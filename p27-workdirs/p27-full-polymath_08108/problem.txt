@@ -1,0 +1,1 @@
+In a specialized digital vault, there are $125$ security slots, but only a specific subset $U$ is active. A slot is active if its index is a positive integer strictly less than $125$ and is not a multiple of $5$. Let $N$ represent the total number of these active slots.

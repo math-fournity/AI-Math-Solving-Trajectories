@@ -1,0 +1,1 @@
+Let $K \subset \mathbb{R}$ be a compact set without isolated points. Construct a Borel nonatomic measure $\xi$ on $\mathbb{R}$ such that the support of $\xi$, denoted $\operatorname{supp}(\xi)$, equals $K$. Provide the construction of such a measure.

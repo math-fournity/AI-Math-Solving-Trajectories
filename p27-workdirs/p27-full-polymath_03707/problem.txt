@@ -1,0 +1,1 @@
+Let $z_1, z_2, \ldots, z_n$ be complex numbers such that for any $1 \leq i < j \leq n$, $\left|z_i - z_j\right| \leq 1$. Let $S_n$ denote the maximum possible value of the sum $S = \sum_{1 \leq i < j \leq n} \left|z_i - z_j\right|^2$.

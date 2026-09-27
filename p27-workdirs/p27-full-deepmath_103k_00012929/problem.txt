@@ -1,0 +1,1 @@
+Suppose $f_n: X \rightarrow \mathbb{R}$ are measurable functions such that every subsequence of $\{f_n\}$ has a subsequence that converges to a function $f$ almost everywhere. Does this imply that the sequence $f_n$ converges to $f$ almost everywhere?

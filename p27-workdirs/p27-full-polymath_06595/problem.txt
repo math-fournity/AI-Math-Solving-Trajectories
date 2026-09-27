@@ -1,0 +1,1 @@
+In a specialized logistics simulation, a network analyst is calculating the "Interference Coefficient" of four distinct delivery drones. Each drone's mission is defined by two spatial coordinates representing its velocity vector:

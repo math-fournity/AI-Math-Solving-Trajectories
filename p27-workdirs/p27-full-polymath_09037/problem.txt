@@ -1,0 +1,1 @@
+In a futuristic circular city divided into exactly $4n-1$ distinct districts (where $n$ is an integer greater than 1), a telecommunications firm plans to install private underground fiber-optic cables. A cable can be laid to connect any two districts directly, provided they are not adjacent neighbors along the city perimeter (cables are only laid along "diagonals").

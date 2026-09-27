@@ -1,0 +1,1 @@
+Determine the convex bodies in $E^3$ for which the Hausdorff measure $\mathcal{H}^s(\text{skel}_s K)$ of the $s$-skeleton is constant, where $\text{skel}_s K$ is the set of points in $K$ that are not centers of $(s+1)$-dimensional balls in $K$, and $0 < s < 2$.

@@ -1,0 +1,1 @@
+A specialized automated inspection drone is programmed to scan a high-security server farm organized in a perfect $n \times n$ grid of server racks. The drone begins its mission at one rack and moves to a vertically or horizontally adjacent rack every minute until it has visited every single rack in the grid exactly once.

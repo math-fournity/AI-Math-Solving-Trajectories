@@ -1,0 +1,1 @@
+A high-security data vault uses a biometric authentication sequence consisting of a set $S$ of 10 distinct identification codes. Within this specific set, exactly 7 codes are classified as "Standard Access" (represented by real numbers), while the remaining 3 are "Enhanced Access" (represented by non-real complex numbers).

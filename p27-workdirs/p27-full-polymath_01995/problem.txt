@@ -1,0 +1,1 @@
+Find the sum of all positive integers $p \leq 10$ and the number of negative integers $p \geq -10$ for which the equation

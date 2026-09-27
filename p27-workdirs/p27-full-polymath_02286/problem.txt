@@ -1,0 +1,1 @@
+The three-digit number 999 has a special property: It is divisible by 27, and its digit sum is also divisible by 27. The four-digit number 5778 also has this property, as it is divisible by 27 and its digit sum is also divisible by 27. How many four-digit numbers have this property?

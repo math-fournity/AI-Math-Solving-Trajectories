@@ -1,0 +1,1 @@
+In a futuristic circular city, there are $2n+1$ power stations arranged as the vertices of a regular polygon, labeled $S_1, S_2, \dots, S_{2n+1}$. A telecommunications company wants to build a "Sub-Network" by selecting exactly $m$ stations from these $2n+1$ locations to serve as nodes for a convex $m$-sided transmission loop.

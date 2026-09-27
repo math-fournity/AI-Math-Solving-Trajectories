@@ -1,0 +1,1 @@
+If $a$ and $b$ are integers such that for every prime $p$, there exists an integer $n_p$ satisfying $b \equiv a^{n_p} \pmod{p}$, can we conclude that there exists an integer $n$ such that $b = a^n$?

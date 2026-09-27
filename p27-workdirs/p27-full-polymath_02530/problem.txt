@@ -1,0 +1,1 @@
+Let $n$ be a fixed positive odd integer. Take $m+2$ [b]distinct[/b] points $P_0,P_1,\ldots ,P_{m+1}$ (where $m$ is a non-negative integer) on the coordinate plane in such a way that the following three conditions are satisfied:

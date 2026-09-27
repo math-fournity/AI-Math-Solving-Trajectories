@@ -1,0 +1,1 @@
+In a remote industrial refinery, two primary metrics are monitored daily: the Pressure Level ($a_n$) and the Flow Factor ($b_n$).

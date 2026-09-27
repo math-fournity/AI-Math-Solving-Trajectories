@@ -1,0 +1,1 @@
+Determine the sum of the values of $q$ for all pairs of prime numbers $(p, q)$ for which there exist positive integers $a, b, c$ satisfying the equalities

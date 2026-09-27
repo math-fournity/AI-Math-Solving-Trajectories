@@ -1,0 +1,1 @@
+Find a feasible schedule that minimizes both the finish and mean finish times for the no-wait-in-process constraint with reverse-order constraints, where the jobs must satisfy \( b_i \geq a_{i+1} + b_{i+1} + c_{i+1} \) for \( 1 \leq i < n \) and \( b_1 > b_2 > \cdots > b_n \).

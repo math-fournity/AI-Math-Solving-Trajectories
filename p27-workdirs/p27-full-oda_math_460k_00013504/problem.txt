@@ -1,0 +1,1 @@
+Given two intersecting planes and a sphere that touches both planes, consider all the spheres that touch the two planes and the given sphere. Find the locus of the points of tangency of these spheres.

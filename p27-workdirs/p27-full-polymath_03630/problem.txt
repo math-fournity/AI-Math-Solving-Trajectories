@@ -1,0 +1,1 @@
+A $4$ x $4$ square board is called $brasuca$ if it follows all the conditions:

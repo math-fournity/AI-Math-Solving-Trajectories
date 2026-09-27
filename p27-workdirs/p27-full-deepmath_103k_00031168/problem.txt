@@ -1,0 +1,1 @@
+Determine whether there exists a constant \( C \) such that for every natural number \( n \), the function \( f(n) \), which denotes the least number of ones in any integer \( k \) (composed only of zeroes and ones) divisible by \( n \), satisfies \( f(n) < C \).

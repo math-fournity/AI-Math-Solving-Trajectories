@@ -1,0 +1,1 @@
+A specialized deep-sea research station is monitoring a colony of rare bioluminescent bacteria. The population growth is governed by a specific environmental constant $p = 101$. Scientists have noted that both $p$ and $p+2$ are prime numbers.

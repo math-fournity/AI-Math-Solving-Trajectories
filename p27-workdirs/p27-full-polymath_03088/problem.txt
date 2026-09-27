@@ -1,0 +1,1 @@
+Determine the measure of angle $PDQ$ where $P$ is the intersection of segments $AC$ and $BH$, and $Q$ is the intersection of lines $BF$ and $EI$ in a configuration where regular pentagon $ABCDE$ and regular hexagon $ABFGHI$ share side $AB$, with the pentagon lying completely inside the hexagon.

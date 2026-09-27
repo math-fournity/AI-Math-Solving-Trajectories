@@ -1,0 +1,9 @@
+/-!
+# IMO 2017 N6
+
+A multiset $S$ of positive rational numbers is called *nice* if
+  both $\sum_{q ∈ S} q$ and $\sum_{q ∈ S} 1/q$ are integers.
+Find all $n ∈ ℕ$ such that there exists infinitely many nice multisets $S$ of size $n$.
+-/
+
+##

@@ -1,0 +1,1 @@
+A specialized logistics firm is tasked with categorizing a continuous sequence of industrial storage units, indexed by the natural numbers from $m$ to $k$, into one of two distinct climate-controlled zones, Zone A or Zone B. The firm’s manager, $m$, is a natural number representing the index of the first unit in the sequence.

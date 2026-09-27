@@ -1,0 +1,1 @@
+Find the smallest positive integer $n$ such that there exists a sequence of all rational numbers $a_1, a_2, \dots$ where no subsequence of length $n$ forms an arithmetic progression.

@@ -1,0 +1,1 @@
+Determine the value of \( \ell(n) \), the minimal number of edges in a complete linear hypergraph on \( n \) vertices, where \( n > 2 \). A complete linear hypergraph \( H = (V, E) \) satisfies the following conditions: \(|e| \geq 2\) for all \( e \in E \), \(|e_1 \cap e_2| = 1\) for all distinct \( e_1, e_2 \in E \), and for all \( v \in V \), \(|\{e \in E : v \in e\}| \geq 2\).

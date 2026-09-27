@@ -1,0 +1,1 @@
+In a remote industrial sector, a project manager is overseeing a specialized training simulation involving $n$ technician candidates. To evaluate their decision-making consistency, the manager assigns them a sequence of 6 diagnostic tasks. For each task, there are exactly three distinct protocols a technician can choose to follow.

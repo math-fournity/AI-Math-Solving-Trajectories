@@ -1,0 +1,1 @@
+In a remote territory, three supply depots—Alpha, Beta, and Gamma—are positioned such that the distance between Alpha and Beta is 2 units, Alpha and Gamma is 3 units, and Beta and Gamma is 4 units.

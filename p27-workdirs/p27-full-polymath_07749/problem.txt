@@ -1,0 +1,1 @@
+In a remote deep-sea research station, a computer system generates a daily pressure-stabilization code, creating a sequence of unique positive integers $a_1, a_2, a_3, \dots$.

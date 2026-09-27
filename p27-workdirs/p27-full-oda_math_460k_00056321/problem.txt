@@ -1,0 +1,1 @@
+314. Draw the schemes of the Riemann surfaces of the following functions:\na) \( \sqrt{z} + \sqrt{z-1} \);\nb) \( \sqrt[3]{z^2 - 1} + \sqrt{1/z} \);\nc) \( \sqrt{z} + \sqrt[3]{z} \);\nd) \( \sqrt[4]{z^2 - 1} + \sqrt[4]{z - 1} \).

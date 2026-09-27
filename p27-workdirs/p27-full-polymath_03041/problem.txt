@@ -1,0 +1,1 @@
+Let $n = 100$. Denote by $S_n$ the set of points $(x, y)$ with integer coordinates such that

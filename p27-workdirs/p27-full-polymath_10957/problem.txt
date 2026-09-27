@@ -1,0 +1,1 @@
+A specialized architectural firm is designing a complex of four support pillars for a futuristic pavilion. The locations of these pillars are represented by the four roots $r_1, r_2, r_3, r_4$ of the polynomial equation in the complex plane:

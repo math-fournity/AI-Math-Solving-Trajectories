@@ -1,0 +1,1 @@
+In a specialized cyber-security simulation, a Data Packet (Agent A) and a Virus (Agent B) inhabit a network of $n > 2$ nodes. Two specific nodes are designated as the Secure Server (Node B) and the Entry Point (Node A). These two nodes are distinct and are not directly linked by a connection.

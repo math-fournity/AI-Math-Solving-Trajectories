@@ -1,0 +1,1 @@
+In a specialized quantum computing architecture, a processor is designed as a network of data nodes arranged in a perfect **2016-dimensional simplex grid**. In this configuration, the "edge" of the global processor contains exactly **$n$** nodes. Each node in the network is assigned a specific real-valued voltage.

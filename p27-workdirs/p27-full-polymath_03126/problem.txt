@@ -1,0 +1,1 @@
+Determine the largest real number $a$ such that for all $n \geqslant 1$ and for all real numbers $x_{0}, x_{1}, \ldots, x_{n}$ satisfying $0=x_{0}<x_{1}<x_{2}<\cdots<x_{n}$, we have

@@ -1,0 +1,1 @@
+Let $k$ be a subfield of the complex numbers $\mathbb{C}$, and consider two $k$-algebras, $A$ and $B$, with injective $k$-algebra homomorphisms $f: A \rightarrow E$ and $g: B \rightarrow E$, such that $f(A) \cap g(B) = k$. Assume $A$ is a subring of $k((x))$ containing $k$, and $B = \mathbb{C}$. Is the induced homomorphism $f \otimes g: A \otimes_k B \rightarrow E$ injective?

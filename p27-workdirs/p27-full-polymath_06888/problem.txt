@@ -1,0 +1,1 @@
+In the remote archipelago of Arithmetica, a cargo plane is tasked with transporting a collection of enchanted crystals. Each crystal has an integer weight between 1 and 10 units inclusive. The total weight of all crystals in any given shipment is exactly $S$ units.

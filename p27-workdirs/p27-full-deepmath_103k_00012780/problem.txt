@@ -1,0 +1,1 @@
+Let \( \omega \) be a root of the polynomial \( x^{2016} + x^{2015} + \cdots + x + 1 = 0 \). Find the value of the sum:

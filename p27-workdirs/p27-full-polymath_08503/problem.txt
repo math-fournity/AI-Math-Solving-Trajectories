@@ -1,0 +1,1 @@
+In a specialized logistics warehouse, a technician is organizing a single row of security crates. There are two types of crates available: 10 distinct "Digital Crates" (numbered 0 through 9) and 33 distinct "Alphabetic Crates" (labeled with the 33 unique letters of the Ukrainian alphabet).

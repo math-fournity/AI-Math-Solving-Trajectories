@@ -1,0 +1,1 @@
+Let \(ABCD\) be a cyclic quadrilateral with circumcenter \(O\). Rays \(\overrightarrow{OB}\) and \(\overrightarrow{DC}\) intersect at \(E\), and rays \(\overrightarrow{OC}\) and \(\overrightarrow{AB}\) intersect at \(F\). Suppose that \(AE = EC = CF = 4\), and the circumcircle of \(\triangle ODE\) bisects \(\overline{BF}\). Find the area of triangle \(ADF\).

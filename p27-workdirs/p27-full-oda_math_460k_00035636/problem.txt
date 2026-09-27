@@ -1,0 +1,1 @@
+Find the greatest integer \( k \) such that there exists a \( k \)-element subset of the set \(\{1, 2, 3, \ldots, 3^8\}\) in which no three elements form an arithmetic progression.

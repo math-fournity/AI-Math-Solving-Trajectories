@@ -1,0 +1,1 @@
+In a vast digital grid representing a global logistics network, a central hub is established at coordinates $(0, 0)$, designated as "Origin Station 0."

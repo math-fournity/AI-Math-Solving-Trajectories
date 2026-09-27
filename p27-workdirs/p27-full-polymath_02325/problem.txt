@@ -1,0 +1,1 @@
+Find the number of triples $(a, b, c)$ of positive integers such that $a! + b! + c! = 2^n$ for some natural number $n$. Note that the order of integers in the triple $(a, b, c)$ matters.

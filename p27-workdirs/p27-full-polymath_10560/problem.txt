@@ -1,0 +1,1 @@
+In a remote desert, a logistics team has established a central command post at point $A$ on the circular boundary $\omega$ of a restricted zone. Two supply outposts, $B$ and $C$, are located on the same circular boundary. A straight pipeline connects outposts $B$ and $C$.

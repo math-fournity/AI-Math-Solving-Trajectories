@@ -1,0 +1,1 @@
+Let $A_1A_2...A_{101}$ be a regular $101$-gon, and color every vertex red or blue. Let $N$ be the number of obtuse triangles such that the three vertices of the triangle are vertices of the $101$-gon, both vertices with acute angles have the same color, and the vertex with the obtuse angle has a different color.

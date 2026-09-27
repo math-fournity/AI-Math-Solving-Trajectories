@@ -1,0 +1,1 @@
+Let $G$ be a complex reductive group acting linearly on a complex affine variety $X$. Define the kernel of the action as $K:=\{g\in G:g\cdot x=x\text{ for all }x\in X\}$. Is the set $X_K:=\{x\in X:\mathrm{Stab}_G(x)=K\}$ Zariski-open in $X$?

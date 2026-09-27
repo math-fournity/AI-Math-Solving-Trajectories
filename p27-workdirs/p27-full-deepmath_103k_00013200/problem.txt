@@ -1,0 +1,1 @@
+Let \( g \) be a polynomial such that \( g(1)<0 \) and \( g(g(x))=9x-2 \) for all \( x \in \mathbb{R} \). Find \( g(1) \).

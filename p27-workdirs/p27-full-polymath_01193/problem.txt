@@ -1,0 +1,1 @@
+Given a real number $a$ such that $0 < a < 2$, we define two properties:

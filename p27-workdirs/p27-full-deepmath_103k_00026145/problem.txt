@@ -1,0 +1,1 @@
+Determine whether any subfield $K$ of the quotient field $C_t(s)$ of the ring of trigonometric polynomials with complex coefficients, which contains a non-constant trigonometric polynomial, can be expressed as $K=\mathbb{C}(r)$ for some trigonometric polynomial $r$. This is known as Lüroth's theorem for complex trigonometric polynomials. Answer with "True" or "False".

@@ -1,0 +1,1 @@
+Determine all functions \( f: \mathbb{N} \to \mathbb{Z} \) such that for all positive integers \( m, n \), the condition \( n \mid f(m) \Longleftrightarrow m \mid \sum\limits_{d \mid n}{f(d)} \) holds.

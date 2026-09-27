@@ -1,0 +1,1 @@
+Let \( a_n \) be the number of rooted plane 1-2 trees on vertex set \([n]\) where:

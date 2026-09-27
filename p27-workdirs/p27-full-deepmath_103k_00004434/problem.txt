@@ -1,0 +1,1 @@
+Determine whether the limit \( \lim_{n \to +\infty} f(n) \approx 4.018 \) exists, where \( f(n) = \frac{\sum A}{\sum_{b \in B} b^3 - b} b_n \), with \( A \) being the set of primes of the form \( 3j^2 + 2 \) and \( B \) being the set where \( 3b_i^2 + 2 \) is prime. For example, when \( n=3 \), \( f(3) = 4.5 \), and for larger \( n \), \( f(n) \approx 4.018 \).

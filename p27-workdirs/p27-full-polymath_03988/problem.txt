@@ -1,0 +1,1 @@
+Let $n$ be a positive integer. Let $S_n$ be the set of all functions $f: \{1, 2, \ldots, n\} \to \{1, 2, \ldots\}$ satisfying:

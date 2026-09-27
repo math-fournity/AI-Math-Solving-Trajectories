@@ -1,0 +1,1 @@
+B. Divide $2,3, \cdots, n(n \geqslant 2)$ into two groups arbitrarily. If it is always possible to find numbers $a, b, c$ (which can be the same) in one of the groups such that $a^{b}=c$, find the minimum value of $n$.

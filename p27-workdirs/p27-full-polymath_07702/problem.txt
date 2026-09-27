@@ -1,0 +1,1 @@
+A specialized logistics firm is designing a supply chain consisting of 2023 unique distribution hubs. Each hub $n$ is assigned a specific positive capacity $x_n$, where no two hubs have the same capacity.

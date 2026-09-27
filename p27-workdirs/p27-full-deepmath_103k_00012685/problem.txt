@@ -1,0 +1,1 @@
+Do there exist two integer polynomials $P(x, y)$ and $Q(x, y)$ that touch at an irrational point $(a, b)$, where at least one of $a$ or $b$ is irrational?

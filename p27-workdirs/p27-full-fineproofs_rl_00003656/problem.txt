@@ -1,0 +1,1 @@
+Let $ABC$ be a triangle, and $\Gamma$ its circumcircle. Let $M$ be the midpoint of the arc $BC$ not containing $A$. A circle $\mathscr{C}$ is tangent to $[AB), [AC)$ at $D$ and $E$ respectively, and internally tangent to $\Gamma$ at $F$. Show that $(DE), (BC)$, and $(FM)$ are concurrent.

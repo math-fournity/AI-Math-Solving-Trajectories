@@ -1,0 +1,1 @@
+Is there an absolute constant $C_0$ such that the norm $C_{p,n}$ of the Hardy-Littlewood maximal operator $\mathcal{M}$ in $L^p(\mathbb{R}^n)$ satisfies $C_{p,n} < C_0$ for all $p \geq 2$ and all $n$? Consider $C_0 = 10$ as a potential candidate.

@@ -1,0 +1,1 @@
+Let $H$ be a regular hexagon with area 360.  Three distinct vertices $X$, $Y$, and $Z$ are picked randomly, with all possible triples of distinct vertices equally likely.  Let $A$, $B$, and $C$ be the unpicked vertices.  What is the expected value (average value) of the area of the intersection of $\triangle ABC$ and $\triangle XYZ$?

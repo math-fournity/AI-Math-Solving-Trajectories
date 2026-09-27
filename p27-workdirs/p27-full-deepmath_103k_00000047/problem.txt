@@ -1,0 +1,1 @@
+Does the Witten-Reshetikhin-Turaev invariant detect the hyperelliptic involution on a genus 2 surface? Specifically, if $-I \in \mathrm{Mod}(\Sigma_2)$ is the hyperelliptic involution on the genus 2 surface, is there any $U \in \mathrm{Mod}(\Sigma_2)$ for which $Z(M_U) \neq Z(M_{-U})$?

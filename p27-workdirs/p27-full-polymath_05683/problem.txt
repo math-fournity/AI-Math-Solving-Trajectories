@@ -1,0 +1,1 @@
+On a circle $2018$ points are marked. Each of these points is labeled with an integer.

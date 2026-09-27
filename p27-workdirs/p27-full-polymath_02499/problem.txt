@@ -1,0 +1,1 @@
+Let $ABC$ be an acute triangle with side lengths $a=BC, b=CA, c=AB$. Let $P$ be a point in the plane of the triangle. Let $O_{a}, O_{b}, O_{c}$ be the circumcenters of triangles $PBC, PAC,$ and $PAB$, respectively. It is known that there exists a unique point $P$ such that

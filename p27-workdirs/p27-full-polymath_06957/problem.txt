@@ -1,0 +1,1 @@
+On an 8x8 grid of server ports, a cybersecurity firm has initialized two sets of defensive protocols. Eight "Obsidian" firewalls occupy the eight ports in the first row (Row 1), while eight "Alabaster" firewalls occupy the eight ports in the last row (Row 8).

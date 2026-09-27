@@ -1,0 +1,1 @@
+Let $f$ be a surjective entire function of the complex plane. Determine whether there exists a real number $r_0 > 0$ such that the set $f^{-1}(D(0,r))$ is connected for any $r \geq r_0$. Provide a justification for your answer.

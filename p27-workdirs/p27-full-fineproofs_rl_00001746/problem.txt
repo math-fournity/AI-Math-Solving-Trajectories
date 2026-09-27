@@ -1,0 +1,1 @@
+For positive integers  $n, k, l$ , we define the number of  $l$ -tuples of positive integers  $(a_1,a_2,\cdots a_l)$  satisfying the following as  $Q(n,k,l)$ .

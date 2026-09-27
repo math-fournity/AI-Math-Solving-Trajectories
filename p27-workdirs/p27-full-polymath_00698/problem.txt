@@ -1,0 +1,1 @@
+Cells of a square table of size $10 \times 10$ are filled with numbers $\pm 1$ according to the following rules:

@@ -1,0 +1,1 @@
+Let  $ G$  be a simple graph with  $ 2 \cdot n$  vertices and  $ n^{2}+1$  edges. Show that this graph  $ G$  contains a  $ K_{4}-\text{one edge}$ , that is, two triangles with a common edge.

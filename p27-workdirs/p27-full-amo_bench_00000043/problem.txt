@@ -1,0 +1,1 @@
+Let $a=\log_3\bigg(\frac{1}{2}\sum\limits_{n=0}^{676}(-1)^n{2028 \choose 3n}\bigg)$. Calculate the sum of distinct prime factors of $a^2+(a-1)^4$.

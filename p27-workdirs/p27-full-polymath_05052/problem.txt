@@ -1,0 +1,1 @@
+9. There is a heads up coin on every integer of the number line. Lucky is initially standing on the zero point of the number line facing in the positive direction. Lucky performs the following procedure: he looks at the coin (or lack thereof) underneath him, and then,

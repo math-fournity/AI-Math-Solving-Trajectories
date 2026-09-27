@@ -1,0 +1,1 @@
+In a regular $36$-gon $A_{1} A_{2} \cdots A_{36}$, which is inscribed in circle $O$, the circle that is externally tangent to $O$ at $A_{18}$ is tangent to $A_{10} A_{28}$ at $P$. Also, the circle that is externally tangent to $O$ at $A_{30}$ is tangent to $A_{21} A_{23}$ at $Q$. Let $R=A_{8} P \cap A_{30} Q$. Calculate $\angle P R Q$, where $\angle P R Q \leq 180^{\circ}$.

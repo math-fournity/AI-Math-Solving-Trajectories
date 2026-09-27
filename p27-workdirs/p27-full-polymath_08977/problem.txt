@@ -1,0 +1,1 @@
+In the research department of a thermal energy facility, a specialist is calibrating a prototype heat exchanger. The stability of the system depends on the relationship between a controlled input temperature $x$ and a variable cooling coefficient $y$.

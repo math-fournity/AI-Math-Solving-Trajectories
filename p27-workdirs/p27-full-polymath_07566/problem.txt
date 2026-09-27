@@ -1,0 +1,1 @@
+A specialized aerospace engineering firm, "Super-Int Precision," produces carbon-fiber struts for triangular support frames. A frame is classified as "Grade-A" if the lengths of all three sides are positive integers and at least one of its three altitudes (the perpendicular distance from a vertex to the opposite side) is also a positive integer.

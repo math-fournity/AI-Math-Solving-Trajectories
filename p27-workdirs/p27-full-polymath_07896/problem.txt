@@ -1,0 +1,1 @@
+A specialized circular power grid consists of $n$ distribution hubs connected by $n$ transmission lines. Each hub is assigned a non-negative integer power level $e_1, e_2, \ldots, e_n$, and each transmission line connecting hub $i$ to hub $i+1$ (where the $n$-th hub connects back to the 1st) is assigned a non-negative integer load $k_i$.

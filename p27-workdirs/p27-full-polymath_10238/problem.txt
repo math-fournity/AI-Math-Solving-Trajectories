@@ -1,0 +1,1 @@
+A specialized digital encryption key is being generated for a secure vault. The key must satisfy two specific security protocols:

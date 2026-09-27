@@ -1,0 +1,1 @@
+Let \( P_n \) denote the class of polynomials \( p(z), p(0) = 1 \), of degree at most \( n \) and of positive real part in \(\mathbb{D}\). Find\n\n\[\n\max_{p \in P_n} \int_{0}^{2\pi} |p(e^{i\theta})|^2 \, d\theta.\n\]

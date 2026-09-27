@@ -1,0 +1,1 @@
+Let \( S \) denote the set of fractions \(\frac{m}{n}\) for relatively prime positive integers \( m \) and \( n \) with \( m+n \leq 10000 \). The least fraction in \( S \) that is strictly greater than

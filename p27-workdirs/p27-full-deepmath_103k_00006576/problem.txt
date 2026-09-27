@@ -1,0 +1,1 @@
+Given a simple, undirected graph $G=(V,E)$, determine if there exists a vertex-transitive graph $G_v$ such that the chromatic number of $G$ is equal to the chromatic number of $G_v$, and $G$ is isomorphic to an induced subgraph of $G_v$. Provide a justification for your answer.

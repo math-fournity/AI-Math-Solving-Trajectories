@@ -1,0 +1,1 @@
+In a circular botanical garden, there are $n$ decorative flowerbeds arranged at the vertices of a perfectly regular $n$-sided polygon. To maintain the garden, each flowerbed is equipped with a single automated watering sprinkler. At exactly 8:00 AM, every sprinkler activates simultaneously, pivoting to spray water at exactly one of its two immediate neighboring flowerbeds.

@@ -1,0 +1,1 @@
+A digital archivist is tasked with encoding a master ledger by typing every natural number ($1, 2, 3, \dots$) in ascending order into a continuous string of digits. As the archivist types, a monitoring software tracks the frequency of each non-zero digit ($1, 2, 3, 4, 5, 6, 7, 8,$ and $9$) that has appeared in the string so far.

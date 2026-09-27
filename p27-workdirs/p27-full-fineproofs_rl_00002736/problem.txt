@@ -1,0 +1,1 @@
+Let  $ABCD$  be a non-isosceles trapezoid with  $AB \parallel CD$ . A circle through  $A$  and  $B$  meets  $AD$ ,  $BC$  at  $E, F$ . The segments  $AF, BE$  meet at  $G$ . The circumcircles of  $\triangle ADG$  and  $\triangle BCG$  meet at  $H$ . Show that if  $GD=GC$ ,  $H$  is the orthocenter of  $\triangle ABG$ .

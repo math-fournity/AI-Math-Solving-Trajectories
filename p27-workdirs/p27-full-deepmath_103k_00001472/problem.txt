@@ -1,0 +1,1 @@
+Let $f: \mathbb{C} \rightarrow \mathbb{C}$ be a holomorphic function in an open set around some $c \in \mathbb{C}$, excluding $c$. Assume that the Laurent series for $f$ around $c$ converges. If for $|x| > |c|$, the limit \( \lim_{x \rightarrow c, |x| > |c|} f(x)(x-c) = a \) exists, does it follow that $f$ has at most a finite order pole at $c$?

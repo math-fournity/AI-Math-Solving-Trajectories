@@ -1,0 +1,1 @@
+Find the least non-negative integer \(n\) such that there exists a non-negative integer \(k\) for which the last 2012 decimal digits of \(n^k\) are all 1's.

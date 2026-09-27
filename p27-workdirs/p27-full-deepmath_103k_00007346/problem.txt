@@ -1,0 +1,1 @@
+Let $D$ be a non-empty connected open subset of $\mathbb{C}^n$. Let $f$ be a complex-valued continuous function on $D$. Let $Z$ be the set of zeros of $f$. Suppose $f$ is holomorphic on $D - Z$. Is $f$ holomorphic on $D$?

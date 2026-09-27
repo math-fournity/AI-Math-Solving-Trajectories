@@ -1,0 +1,1 @@
+Let \( a, b, c \) be non-negative numbers satisfying \( a + b + c = 3 \). Find the best constant \( k \) such that

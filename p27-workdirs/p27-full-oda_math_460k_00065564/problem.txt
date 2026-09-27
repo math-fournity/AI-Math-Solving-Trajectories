@@ -1,0 +1,1 @@
+Let $\sigma \in S_n$ be a derangement, i.e., it has no fixed points. Let $\Omega(n)$ be the maximal possible order of $\sigma$. Determine $\Omega(n)$ in terms of $n$ and describe how $\Omega(n)$ behaves asymptotically as $n$ gets large.

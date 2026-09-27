@@ -1,0 +1,1 @@
+A specialized cargo terminal manages shipments using automated logistical profiles. Each profile is defined by a sequence of 2022 integer values representing specific resource requirements across different sectors. At the start of the day, a technician initializes the system with a set of $s$ baseline profiles.

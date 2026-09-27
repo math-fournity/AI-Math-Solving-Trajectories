@@ -1,0 +1,1 @@
+A communication network consists of several terminals. If among any three terminals, at least two are directly connected, then this communication network is called "triple-connected." A communication network that satisfies the following conditions is referred to as a "windmill with $n$ blades":

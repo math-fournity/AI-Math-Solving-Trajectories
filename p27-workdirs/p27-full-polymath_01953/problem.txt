@@ -1,0 +1,1 @@
+Let $\triangle{ABC}$ be a triangle with $AB = 10$ and $AC = 11$. Let $I$ be the center of the inscribed circle of $\triangle{ABC}$. If $M$ is the midpoint of $AI$ such that $BM = BC$ and $CM = 7$, then $BC$ can be expressed in the form $\frac{\sqrt{a}-b}{c}$ where $a$, $b$, and $c$ are positive integers. Find $a+b+c$.

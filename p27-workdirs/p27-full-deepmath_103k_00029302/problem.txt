@@ -1,0 +1,1 @@
+Determine whether the integral closure of a Noetherian integral domain is always Noetherian when the dimension of the domain is 2.

@@ -1,0 +1,1 @@
+Consider the rings $M_{n}(\mathbb{R})$ and $M_{m}(\mathbb{R})$. Let $f(n, m)$ be the minimum positive integer such that there exists a ring homomorphism from $M_{n}(\mathbb{R})$ to $M_{f(n, m)}(\mathbb{R})$ that is not an isomorphism. Find $f(3, 5)$.

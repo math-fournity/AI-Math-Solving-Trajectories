@@ -1,0 +1,1 @@
+Let $S$ be a subset of $\{0,1\}^n$ such that any two elements of $S$ are at least Hamming distance 5 apart. Find an upper bound on the size of the automorphism group of $S$.

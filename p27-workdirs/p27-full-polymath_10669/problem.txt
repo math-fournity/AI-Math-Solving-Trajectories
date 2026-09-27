@@ -1,0 +1,1 @@
+In a global telecommunications network, there are exactly $n$ server nodes. Every node is linked to exactly $d$ other nodes via bidirectional fiber-optic cables, where $d$ is a fixed positive integer for a given network of size $n$.

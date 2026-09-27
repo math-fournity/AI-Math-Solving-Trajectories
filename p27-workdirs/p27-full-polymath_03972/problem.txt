@@ -1,0 +1,1 @@
+Find the least positive integer $N$ such that the sum of its digits is 2011 and the product of its digits is a power of 6. Let $n_d$ denote the number of times the digit $d \in \{1, 2, \dots, 9\}$ appears in $N$. Calculate the value of the expression $\sum_{d=1}^{9} d \cdot n_d^2$.

@@ -1,0 +1,1 @@
+Given digits \(a_1, a_2, \ldots, a_{1000000}\) where each \(a_i\) is between 1 and 9, find the maximum possible number of perfect squares among the numbers \(a_1 \ldots a_k\) for \(1 \leq k \leq 1000000\).

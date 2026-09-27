@@ -1,0 +1,1 @@
+What was the reading on a gas meter with four dials, given that the reading is the largest possible such that all four pointers on the meter were exactly parallel?

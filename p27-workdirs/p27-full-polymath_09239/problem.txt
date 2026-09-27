@@ -1,0 +1,1 @@
+In a remote industrial complex, three specialized chemical reactors—Alpha, Beta, and Gamma—operate using specific concentrations of catalysts $a$, $b$, and $c$, where all concentrations must be positive values.

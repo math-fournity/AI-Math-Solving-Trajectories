@@ -1,0 +1,1 @@
+A specialized high-altitude drone is programmed to maintain a target altitude $a$ meters above sea level. For any target altitude $a$ that is strictly greater than $1995$ meters, the drone’s flight path $P(x)$ (where $x$ represents the horizontal distance in meters from a base station) must satisfy two strict safety protocols:

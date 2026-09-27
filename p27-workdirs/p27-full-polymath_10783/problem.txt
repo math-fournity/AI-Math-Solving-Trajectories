@@ -1,0 +1,1 @@
+A high-security data center utilizes a network of 5040 fiber-optic cables to connect its servers. These cables are manufactured in $k$ distinct colors, with an equal number of cables produced for each color.

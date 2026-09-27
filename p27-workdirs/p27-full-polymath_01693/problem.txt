@@ -1,0 +1,1 @@
+Let \(\alpha, \beta, \gamma \in \mathbb{C}\) be the roots of the polynomial \(x^{3}-3x^{2}+3x+7\). For any complex number \(z\), let \(f(z)\) be defined as follows:

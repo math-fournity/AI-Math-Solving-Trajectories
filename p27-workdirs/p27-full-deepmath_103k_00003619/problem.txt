@@ -1,0 +1,1 @@
+Do there exist CW-complexes $X$ and $Y$ that are not homeomorphic, but such that $X \times I$ and $Y \times I$ are homeomorphic, where $I$ is the unit interval $[0, 1]$?

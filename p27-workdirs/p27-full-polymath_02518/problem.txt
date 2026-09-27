@@ -1,0 +1,1 @@
+Given a natural number \( n \geq 3 \), find the smallest \( k \) such that for any \( n \)-gon and any two points inside it, there exists a broken line with \( k \) segments connecting these points, lying entirely inside the \( n \)-gon.

@@ -1,0 +1,1 @@
+Let $1 < p < 2$ and $u \in W_0^{1,p}(\Omega)$, where $\Omega$ is a smooth bounded open set of $\mathbb{R}^N$, $N \geq 2$. Suppose that \( \int_{\Omega} \nabla u \nabla \phi \, dx = 0, \forall \, \phi \in C_0^{\infty}(\Omega). \) Determine whether it is true that $u = 0$. Provide a justification for your answer.

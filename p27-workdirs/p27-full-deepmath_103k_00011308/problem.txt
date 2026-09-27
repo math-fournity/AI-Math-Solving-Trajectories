@@ -1,0 +1,1 @@
+Let $L$ be a finite-dimensional restricted Lie algebra over a field of characteristic $p > 0$. An element $x$ of $L$ is called $p$-nilpotent if $x^{[p]^k} = 0$ for some positive integer $k$. If $L$ is nilpotent as an ordinary Lie algebra and has a basis consisting of $p$-nilpotent elements, is every element of $L$ $p$-nilpotent?

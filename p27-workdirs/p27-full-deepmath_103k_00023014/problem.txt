@@ -1,0 +1,1 @@
+Let $f_k(s) = \frac{\sin^2(ks)}{s^2}$ for $k \geq 1$ and $s \in (0, 1]$. Suppose there exists a constant $M$ such that \( \sum_{k=1}^\infty f_k(s) p_k \leq M \) for all $s \in (0, 1]$, where $p_k \geq 0$. Can we conclude that \( \sum_{k=1}^\infty k^2 p_k \) is finite?

@@ -1,0 +1,1 @@
+A galactic trade federation consists of exactly $2015$ space stations. To ensure total connectivity, there is exactly one hyper-lane connecting every possible pair of stations, allowing travel in both directions.

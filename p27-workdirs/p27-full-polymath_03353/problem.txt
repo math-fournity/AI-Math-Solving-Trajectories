@@ -1,0 +1,1 @@
+Let \(a, b, c, d, e \in \{0, 1, 2, \ldots, 9\}\). If \(db(c^2) = aeadbc\), find the value of \(e - a\).

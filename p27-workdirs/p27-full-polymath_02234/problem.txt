@@ -1,0 +1,1 @@
+A particle moves in the Cartesian Plane according to the following rules:

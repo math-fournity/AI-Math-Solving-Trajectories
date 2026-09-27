@@ -1,0 +1,1 @@
+A high-tech agricultural research facility consists of a massive square grid of experimental soil plots, arranged in 2013 rows and 2013 columns. To monitor soil health, specialized moisture sensors are installed in the center of some of these plots, with a limit of one sensor per plot.

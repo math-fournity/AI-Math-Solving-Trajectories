@@ -1,0 +1,1 @@
+Find all functions \( f: \mathbb{R} \to \mathbb{R} \) such that for any sequence \( (a_n) \), the series \( \sum a_n \) converges if and only if the series \( \sum f(a_n) \) converges.

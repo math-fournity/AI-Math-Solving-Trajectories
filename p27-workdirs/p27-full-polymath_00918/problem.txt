@@ -1,0 +1,1 @@
+How many ways are there to cut a staircase of height $6$ cells into $5$ rectangles and one square? When cutting, the rectangles can be placed horizontally.

@@ -1,0 +1,1 @@
+If \( g(z) \) is an entire function of genus 0 and \( \varepsilon \) is an arbitrary positive number, then we have \n\n\[\n|g(z)| < e^{\varepsilon |z|}\n\]\n\non all circles with sufficiently large radii, and \n\n\[\n|g(z)| > e^{-\varepsilon |z|}\n\]\n\non certain circles with arbitrarily large radii.

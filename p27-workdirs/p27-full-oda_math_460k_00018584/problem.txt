@@ -1,0 +1,1 @@
+Drop perpendiculars \(M A_{1}, M B_{1},\) and \(M C_{1}\) from point \(M\) to the lines \(BC,\) \(CA,\) and \(AB\). For a fixed triangle \(ABC,\) the set of points \(M\) for which the Brocard angle of triangle \(A_{1} B_{1} C_{1}\) has a given value consists of two circles, one of which is located inside the circumcircle of triangle \(ABC,\) and the other outside it.

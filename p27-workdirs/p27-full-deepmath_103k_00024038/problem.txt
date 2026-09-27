@@ -1,0 +1,1 @@
+Find all functions \( f: \mathbb{R} \rightarrow \mathbb{R}_0^+ \) such that for all \( a, b, c, d \in \mathbb{R} \) satisfying \( ab + bc + cd = 0 \), the following equation holds:

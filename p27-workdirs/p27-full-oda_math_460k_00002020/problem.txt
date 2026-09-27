@@ -1,0 +1,1 @@
+Let \( n \) be the smallest positive integer such that in any set of \( n \) integers from 1 to 1988, there is always an arithmetic progression of length 29. Find \( n \).

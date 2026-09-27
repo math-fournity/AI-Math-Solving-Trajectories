@@ -1,0 +1,1 @@
+A high-tech manufacturing plant operates a grid of testing bays arranged in a rectangular layout of $(n+1)$ rows and $(n-1)$ columns. Each bay is assigned to run one of exactly **three** different types of specialized simulations (Type A, Type B, or Type C).

@@ -1,0 +1,1 @@
+Let \( D \) be a point on the side \( AB \) of \( \triangle ABC \). Let \( F \) be a point on \( CD \) such that \( AB = CF \). The circumcircle of \( \triangle BDF \) intersects \( BC \) again at \( E \). Assume that \( A, F, E \) are collinear. If \( \angle ACB = \gamma \), find the measurement of \( \angle ADC \).

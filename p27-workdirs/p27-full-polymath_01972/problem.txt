@@ -1,0 +1,1 @@
+For any positive integers \(a\) and \(b\) with \(b>1\), let \(s_{b}(a)\) be the sum of the digits of \(a\) when it is written in base \(b\). Suppose \(n\) is a positive integer such that

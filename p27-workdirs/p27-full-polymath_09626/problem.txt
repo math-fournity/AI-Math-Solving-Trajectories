@@ -1,0 +1,1 @@
+A specialized logistics company manages a high-security warehouse where the total volume of $n$ distinct storage containers, measured in cubic meters as $x_1, x_2, \dots, x_n$, must have a combined product of exactly $1980$. Each container's volume $x_i$ must be a natural number.

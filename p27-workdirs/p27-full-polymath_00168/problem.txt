@@ -1,0 +1,1 @@
+The \( n \) vertices of a regular \( n \)-gon are drawn, and each of the \(\binom{n}{2}\) edges between them is colored such that no two edges of the same color intersect at a point which is not a vertex of the \( n \)-gon. Let $C(n)$ be the minimum number of different colors that can be used to color all the edges. Compute $\sum_{n=1}^{100} C(n)$.

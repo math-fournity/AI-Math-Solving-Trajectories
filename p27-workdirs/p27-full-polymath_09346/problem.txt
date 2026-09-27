@@ -1,0 +1,1 @@
+In a specialized vault, a master locksmith is constructing a unique "Divisibility Chain" of security codes. Each code in the sequence is a whole number formed using a string of digits, where every digit must be a non-zero integer (from 1 to 9).

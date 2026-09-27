@@ -1,0 +1,1 @@
+Suppose $G$ is a finite group and $t$ is an involution in $G$. Given that $\frac{C_G(t)}{\langle t\rangle}\cong \mathbb{S}_{n-2}$ and $C_G(t)$ contains a subgroup isomorphic to $\mathbb{S}_{n-3}$, determine if $\langle t\rangle$ has a complement in $C_G(t)$. A complement is a subgroup $L$ such that $L\cap \langle t\rangle=1$ and $C_G(t)=L\langle t\rangle$. Is this true?

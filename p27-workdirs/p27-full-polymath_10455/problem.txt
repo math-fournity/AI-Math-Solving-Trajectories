@@ -1,0 +1,1 @@
+In a remote futuristic city, a central plaza is constructed in the shape of a perfect regular $n$-sided polygon (where $n \geq 5$). The city council plans to pave this entire plaza with specialized solar tiles. Each tile must be shaped like an obtuse triangle.

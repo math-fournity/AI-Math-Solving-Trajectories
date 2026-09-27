@@ -1,0 +1,1 @@
+An ant on an edge of a cube with side length 8 must travel on the surface and return to the starting point, visiting the interior points of each of the six faces exactly once. Find the length of the shortest path the ant can take.

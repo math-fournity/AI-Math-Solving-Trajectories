@@ -1,0 +1,1 @@
+Let $n > 3$ be an integer. Let $d(n)$ be the largest integer such that for any set $S$ of $n$ integers, there exist four distinct non-empty subsets of $S$ (which may intersect) where the sum of the elements in each subset is divisible by $d(n)$. Find the sum $\sum_{n=4}^{100} d(n)$.

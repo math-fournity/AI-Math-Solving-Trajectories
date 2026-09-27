@@ -1,0 +1,1 @@
+Find all integers $k$ such that there exist 2017 integers $a_{1}, a_{2}, \cdots, a_{2017}$, satisfying that for any positive integer $n$ not divisible by the prime 2017, we have

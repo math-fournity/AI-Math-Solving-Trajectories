@@ -1,0 +1,1 @@
+For any non-increasing sequence \( (a_n)_{0}^{\infty} \) with \(\lim a_n = 0\), there exists a function \( f \) analytic on \( \mathbb{C} \setminus \{0\} \), which is real valued on \( \mathbb{R} \), has a limit \(\lim_{x \to +0} f(x) \) and satisfies \[ \rho_n(f)_{C[0,1]} \ge a_n, \quad n = 0, 1, \ldots \] (Dolzhenko).

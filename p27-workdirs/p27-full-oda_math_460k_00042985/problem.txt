@@ -1,0 +1,1 @@
+Consider the sequence $(x_n)_{n\geq 1}$, where $x_n$ is the exponent of $2$ in the decomposition of the numerator of $\frac{2}{1}+\frac{2^2}{2}+\cdots+\frac{2^n}{n}$. Find the smallest value of $n$ such that $x_n > 100$.

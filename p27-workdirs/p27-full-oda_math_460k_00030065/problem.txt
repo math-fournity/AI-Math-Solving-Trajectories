@@ -1,0 +1,1 @@
+$\square$ Example 5 Given two positive integers $n \geqslant 2$ and $T \geqslant 2$, find all positive integers $a$, such that for any positive numbers $a_{1}, a_{2}, \cdots, a_{n}$, we have $\sum_{k=1}^{n} \frac{a k+\frac{a^{2}}{4}}{S_{k}}<T^{2} \sum_{k=1}^{n} \frac{1}{a_{k}}$, where $S_{k}$ $=a_{1}+a_{2}+\cdots+a_{k}$. (1992 China National Training Team Selection Exam Problem)

@@ -1,0 +1,1 @@
+Find all quadruples $(a, b, c, d)$ of positive integers with $a, b, c, d > 1$ and $a, b, c$ distinct, such that $ab-1$, $ac-1$, $ad-1$, $bc-1$, $bd-1$, and $cd-1$ are all perfect squares.

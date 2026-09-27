@@ -1,0 +1,1 @@
+In the city of Arithema, a grand power grid is being designed using $n$ independent energy modules. Each module $i$ is assigned a specific "dilution factor" $k_i$, which must be a positive integer. To ensure the grid operates at peak efficiency, the sum of the reciprocal values of these dilution factors must be exactly equal to 1.

@@ -1,0 +1,1 @@
+In a remote territory, a telecommunications company has established a circular coverage zone defined by a radius $r$ centered at a primary relay station $O$. A straight fiber-optic cable, referred to as Line $L$, runs through the territory but does not pass through the center $O$.

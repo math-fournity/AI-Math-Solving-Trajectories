@@ -1,0 +1,1 @@
+Assume that $\lim_{(nt) |z|\to 1}|f(z)|(1-|z|)^p=0$, where $f$ is analytic in the unit disk and $p>0$, and $(nt)|z|\to 1$ nontangentially. Does this imply that $\lim_{|z|\to 1}|f(z)|(1-|z|)^p=0$ uniformly?

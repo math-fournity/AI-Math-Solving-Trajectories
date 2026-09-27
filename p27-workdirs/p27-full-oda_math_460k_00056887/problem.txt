@@ -1,0 +1,1 @@
+Find the positive integers $n$ and the matrices $A \in M_n(\mathbb{R})$ such that for every skew-symmetric matrix $S \in M_n(\mathbb{R})$, the adjugate matrix $adj(A+S)$ is symmetric. Here, $adj(X)$ denotes the transpose of the cofactor matrix of $X$.

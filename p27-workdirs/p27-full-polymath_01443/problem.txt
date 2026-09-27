@@ -1,0 +1,1 @@
+Let $n = 10$. Dominoes are placed on a $20 \times 20$ board in such a way that every cell of the board is orthogonally adjacent to exactly one cell covered by a domino. Determine the largest number of dominoes that can be placed in this way.

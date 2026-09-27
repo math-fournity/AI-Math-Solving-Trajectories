@@ -1,0 +1,1 @@
+In a specialized construction yard, a team of two engineers, Alice and Bob, are tasked with decommissioning a series of structural steel beams. Each beam has a positive integer length $L$.

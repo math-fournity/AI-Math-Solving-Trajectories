@@ -1,0 +1,1 @@
+Determine if the constant \( q = \lim_{n \to \infty}{\sum_{k=2}^n\frac{1}{k\ln{k}}-\ln\ln{n}} \) can be expressed in terms of the Euler constant \( \gamma \).

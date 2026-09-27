@@ -1,0 +1,1 @@
+In a specialized chemistry lab, a technician starts with three specific chemical compounds stored in a digital database, represented by the functions $f_1(x) = x^{n+1} + x$, $f_2(x) = x^n$, and $f_3(x) = x^{n-3}$, where $n$ is an integer such that $4 \leq n \leq 100$.

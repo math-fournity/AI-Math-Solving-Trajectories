@@ -1,0 +1,1 @@
+In the coastal city of Aethelgard, there are 8 specialized lighthouse towers positioned along the shoreline such that no three towers are positioned in a perfectly straight line. The Ministry of Communication plans to establish a series of $n$ direct, wireless laser data links between pairs of these towers. Each link is a straight line connecting exactly two towers.

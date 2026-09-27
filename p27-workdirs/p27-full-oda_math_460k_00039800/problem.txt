@@ -1,0 +1,1 @@
+Problem 3. Let $\mathcal{C}$ be the set of functions $f:[0,1] \rightarrow \mathbb{R}$, twice differentiable on $[0,1]$, which have at least two zeros, not necessarily distinct, in $[0,1]$, and $\left|f^{\prime \prime}(x)\right| \leq 1$ for all $x$ in $[0,1]$. Determine the maximum value that the integral

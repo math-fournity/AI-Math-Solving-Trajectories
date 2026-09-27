@@ -1,0 +1,1 @@
+Let \( p \) be a prime. Define \( f_n(k) \) to be the number of positive integers \( 1 \leq x \leq p-1 \) such that

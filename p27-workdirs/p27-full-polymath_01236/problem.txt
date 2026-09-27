@@ -1,0 +1,1 @@
+22nd ASU 1988 Problem 19 A polygonal line connects two opposite vertices of a cube with side 2. Each segment of the line has length 3 and each vertex lies on the faces (or edges) of the cube. What is the smallest number of segments the line can have?

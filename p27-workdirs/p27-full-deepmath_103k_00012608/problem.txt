@@ -1,0 +1,1 @@
+Find a closed form for the infinite series:

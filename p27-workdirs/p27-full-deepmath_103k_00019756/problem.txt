@@ -1,0 +1,1 @@
+Determine whether there exists an infinite topological space $X$ such that the only continuous functions from $X$ to itself are the identity function and constant functions.

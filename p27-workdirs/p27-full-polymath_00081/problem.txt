@@ -1,0 +1,1 @@
+Given a 3x3 grid with 16 vertices, what is the minimum number of vertices that must be deleted so that no four remaining vertices form a rectangle (where the sides of the rectangle are not necessarily parallel to the sides of the grid)?

@@ -1,0 +1,1 @@
+Given a string of at least one character in which each character is either A or B, Kathryn is allowed to make these moves:

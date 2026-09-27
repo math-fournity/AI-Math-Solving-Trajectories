@@ -1,0 +1,1 @@
+If \([A_{i} B_{i} C_{i} D_{i}]\) denotes the area of \(A_{i} B_{i} C_{i} D_{i}\), there are positive integers \(a, b\), and \(c\) such that

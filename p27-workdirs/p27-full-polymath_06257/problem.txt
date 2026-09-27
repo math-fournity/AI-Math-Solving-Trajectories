@@ -1,0 +1,1 @@
+In a remote industrial zone, three specialized supply depots—Station 1, Station 2, and Station 3—are positioned such that the distance between Station 1 and 2 is 4 kilometers, Station 2 and 3 is 5 kilometers, and Station 3 and 1 is 7 kilometers. A central logistics hub, $G$, is located at the geometric centroid of these three stations.

@@ -1,0 +1,1 @@
+In a futuristic energy grid, a central reactor's stability is measured by a power index $n$, which is a non-negative integer no greater than $100$. The reactor is fueled by three synchronized plasma cores, each operating at a discrete positive integer energy level: $x$, $y$, and $z$.

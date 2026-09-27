@@ -1,0 +1,1 @@
+Find the closed form of the integral \( \int_{0}^{\infty} \frac{x^{a} \ln^{2m-1} x}{1+x^{2(a+1)}} d x \) for any natural number \( m \) and \( a > -1 \).

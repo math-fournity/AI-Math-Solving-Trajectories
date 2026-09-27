@@ -1,0 +1,1 @@
+A climate research station monitors a specialized sensor that outputs a value $V$ as a function of time $t$ (where $t$ is any real number). The sensor’s rate of change at any given moment, $V'(t)$, is always strictly greater than the sensor's output value if the current output were itself plugged back into the sensor as a time input, represented by $V(V(t))$.

@@ -1,0 +1,1 @@
+18th Chinese 2003 Problem A2 S is a subset of {1, 2, 3, ... , 100} such that given any two elements a, b in S, there is an element c in S coprime to a and b, and there is an element d in S which has a common factor with a and a common factor with b. What is the largest possible number of elements in S?

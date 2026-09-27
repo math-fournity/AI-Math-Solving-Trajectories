@@ -1,0 +1,1 @@
+In a secure server facility, a technician named Leo must map out the internal data architecture of a 7x7 grid of 49 processing cores. Each core has been assigned a unique identification code, consisting of a distinct natural number from 1 to 49, but the specific layout of these codes is encrypted and unknown to him.

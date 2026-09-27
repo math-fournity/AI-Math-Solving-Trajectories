@@ -1,0 +1,1 @@
+A specialized waste management facility operates 55 separate decontamination canisters. To ensure chemical stability, the canisters are filled with specific volumes of hazardous liquid: the first canister contains exactly 1 liter, the second contains 2 liters, the third contains 3 liters, and so on, with the 55th canister containing 55 liters.

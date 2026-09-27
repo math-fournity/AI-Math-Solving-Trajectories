@@ -1,0 +1,1 @@
+Find all positive integers $l$ such that there exist positive reals $a_1, \cdots, a_l$ where $A_k = \left\{[na_k]\mid n\in\mathbb{N_+}\right\} (1\leq k\leq l)$ satisfies $\bigcup_{i=1}^{l}A_k = \mathbb{N_+}$.

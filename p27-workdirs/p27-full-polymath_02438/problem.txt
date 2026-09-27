@@ -1,0 +1,1 @@
+A subsequence of a word is formed by taking some characters of the word in order.

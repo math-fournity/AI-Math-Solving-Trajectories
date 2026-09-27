@@ -1,0 +1,1 @@
+In a massive digital server complex, there are $2^n$ unique data storage nodes, indexed $1$ through $2^n$. A cloud security firm maintains a collection $\mathcal{F}$ of various "access clusters" (subsets of these nodes).

@@ -1,0 +1,1 @@
+Determine all functions \( f: \mathbb{N} \to \mathbb{N} \) such that for all natural numbers \( m \) and \( n \), the condition \( f(m)^2 + f(n) \mid (m^2+n)^2 \) holds.

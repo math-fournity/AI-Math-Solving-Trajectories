@@ -1,0 +1,1 @@
+In a specialized digital signal processing facility, a technician generates a series of binary data packets. Each initial sequence consists of $n$ bits, where each bit $a_i$ is either a 0 or a 1.

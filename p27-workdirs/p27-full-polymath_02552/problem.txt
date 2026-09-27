@@ -1,0 +1,1 @@
+For a positive integer $M$, if there exist integers $a, b, c, d$ such that $M \leqslant a < b \leqslant c < d \leqslant M+49$ and $ad=bc$, then $M$ is called a good number; otherwise, $M$ is called a bad number. Let $G_{max}$ be the largest good number and $B_{min}$ be the smallest bad number. Calculate the value of $G_{max} + B_{min}$.

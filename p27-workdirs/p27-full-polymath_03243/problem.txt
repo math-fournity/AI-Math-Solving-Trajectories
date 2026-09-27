@@ -1,0 +1,1 @@
+Call a subset $S$ of $\{1,2,\dots,n\}$ mediocre if it has the following property: Whenever $a$ and $b$ are elements of $S$ whose average is an integer, that average is also an element of $S$. Let $A(n)$ be the number of mediocre subsets of $\{1,2,\dots,n\}$.

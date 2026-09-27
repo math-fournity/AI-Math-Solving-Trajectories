@@ -1,0 +1,1 @@
+Consider a real-valued function $f$ that is unbounded on a closed interval $[a, b]$. If for any dense set $S$ in $[a, b]$, there exists an $M \in \mathbb{R}$ such that for any $s \in S$, $|f(s)| > M$, does this imply the existence of a point $x \in [a, b]$ such that $\lim_{y \to x}f(y) = \pm \infty$? Provide a justification for your conclusion.

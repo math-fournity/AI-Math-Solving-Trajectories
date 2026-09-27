@@ -1,0 +1,1 @@
+Compute the number of subsets \( S \) with at least two elements of \(\{2^{2}, 3^{3}, \ldots, 216^{216}\}\) such that the product of the elements of \( S \) has exactly \( 216 \) positive divisors.

@@ -1,0 +1,1 @@
+The sum $\frac{2}{3\cdot 6} +\frac{2\cdot 5}{3\cdot 6\cdot 9} +\ldots +\frac{2\cdot5\cdot \ldots \cdot 2015}{3\cdot 6\cdot 9\cdot \ldots \cdot 2019}$ is written as a decimal number. Find the first digit after the decimal point.

@@ -1,0 +1,1 @@
+Let $B$ be a ball in $\mathbb{R}^n$ and $f$ a diffeomorphism mapping $B$ onto a bounded region in $\mathbb{R}^n$. Can a diffeomorphism $g$ of $\mathbb{R}^n$ be found such that $g$ coincides with $f$ on $B$?

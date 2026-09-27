@@ -1,0 +1,1 @@
+Two triangles intersect to form seven finite disjoint regions, six of which are triangles with area 1. The last region is a hexagon with area \(A\). Compute the minimum possible value of \(A\).

@@ -1,0 +1,1 @@
+In a football tournament with 4 teams, every team plays every other team exactly once. In each match, 3 points are awarded for a win, 1 point for a draw, and 0 points for a loss. Let the final scores of the teams be $a, b, c, d$ such that $a > b > c > d$. Find the number of possible quadruplets $(a, b, c, d)$.

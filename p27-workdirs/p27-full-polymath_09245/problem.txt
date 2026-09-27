@@ -1,0 +1,1 @@
+In a specialized logistics hub, there are 31 distinct types of essential components. Initially, the inventory contains 31 "Basic Kits." Each Basic Kit consists of exactly one unit of a specific component type and zero units of all others. Specifically, for each $i$ from 1 to 31, there is a kit represented by a vector where the $i$-th entry is 1 and all other entries are 0.

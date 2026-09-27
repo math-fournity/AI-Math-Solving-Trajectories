@@ -1,0 +1,1 @@
+Let $R$ be a ring with 1 as the multiplicative identity. Suppose $x, y \in R$ such that $xy = 1$ but $yx \neq 1$. Define $S = \{z \in R \mid z^{2020} = 0\}$. Calculate the minimum possible cardinality of $S$.

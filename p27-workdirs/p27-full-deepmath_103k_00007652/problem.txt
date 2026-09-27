@@ -1,0 +1,1 @@
+Determine if the square of the constant \( E \) is equal to the constant \( D \), where:

@@ -1,0 +1,1 @@
+C2. The edges of $K_{2017}$ are each labelled with 1,2 , or 3 such that any triangle has sum of labels at least 5 . Determine the minimum possible average of all $\binom{2017}{2}$ labels.

@@ -1,0 +1,1 @@
+Determine the smallest number of points in n-dimensional space \(\mathbb{R}^n\) such that every point in \(\mathbb{R}^n\) is an irrational distance from at least one of these points.

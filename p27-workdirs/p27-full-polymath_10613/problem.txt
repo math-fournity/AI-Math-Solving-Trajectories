@@ -1,0 +1,1 @@
+In a remote digital archipelago, there are $n$ independent servers ($5 \leq n \leq 100$), arranged such that no three servers are positioned in a straight line. Two network security engineers, John and Peter, are competing to build a decentralized network.

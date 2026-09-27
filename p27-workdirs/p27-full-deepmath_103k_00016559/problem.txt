@@ -1,0 +1,1 @@
+Evaluate the integral $$ \int_{0}^{\infty}{\cos\left(x\right)\cos\left(2x\right)\cos\left(3x\right)\ldots \cos\left(nx\right)\cos\left(n^{2}x\right) \over x^{n + 1}}\,\mathrm{d}x ?$$

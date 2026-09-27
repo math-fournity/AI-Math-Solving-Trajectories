@@ -1,0 +1,12 @@
+/-!
+# IMO 2014 N3
+
+Consider a collection $C$ of coins, where each coin has a value of $1/n$ for some positive
+integer $n$. A partition of $C$ into $N$ groups is called an *$N$-Cape Town* partition
+if the total value of coins in each group is at most $1$.
+
+Prove that if the total value of all coins in $C$ is at most $N + 1/2$,
+then $C$ has an $(N + 1)$-Cape Town partition.
+-/
+
+##

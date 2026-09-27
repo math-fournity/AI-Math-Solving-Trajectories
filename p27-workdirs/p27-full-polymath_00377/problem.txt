@@ -1,0 +1,1 @@
+A four-element set $\{a, b, c, d\}$ of positive integers is called [i]good[/i] if there are two of them such that their product is a mutiple of the greatest common divisor of the remaining two. For example, the set $\{2, 4, 6, 8\}$ is good since the greatest common divisor of $2$ and $6$ is $2$, and it divides $4\times 8=32$.

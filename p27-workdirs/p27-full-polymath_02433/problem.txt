@@ -1,0 +1,1 @@
+In a unit square \(ABCD\), find the minimum of \(\sqrt{2} \cdot AP + BP + CP\) when \(P\) is an arbitrary point in \(ABCD\).

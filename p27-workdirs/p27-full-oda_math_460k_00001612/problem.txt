@@ -1,0 +1,1 @@
+Determine all convex quadrilaterals that have the following property: On each of the four sides of the quadrilateral, there is a point (possibly one of the end points of this side), which together with the two end points of the opposite side form an equilateral triangle. Note: A quadrilateral $ABCD$ is called convex if the diagonals of quadrilateral $ABCD$ lie inside it.

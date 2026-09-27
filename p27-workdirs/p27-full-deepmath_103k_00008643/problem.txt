@@ -1,0 +1,1 @@
+Let \( f_n:[a,b] \to \mathbb{R} \), \( n \in \mathbb{N} \), be a sequence of \( L^p \) functions for some \( p \in (1,\infty) \). For every fixed \( m \in \mathbb{N}^* \), suppose that the sequence of functions \( \{f_{n}\psi_m(f_n)\}_{n \in \mathbb{N}} \) has a strongly convergent subsequence in \( L^p([a,b]) \). Here, \( \psi_m \) is a smooth function such that

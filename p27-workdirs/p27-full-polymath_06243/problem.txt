@@ -1,0 +1,1 @@
+In the competitive world of professional logistics, a massive warehouse contains a square grid of storage bays, arranged in 20 rows and 20 columns. A shipment of 400 distinct crates, labeled with unique serial numbers from 1 to 400, arrives at the facility.

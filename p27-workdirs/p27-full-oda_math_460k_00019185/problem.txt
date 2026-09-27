@@ -1,0 +1,1 @@
+Let \( S_n \) be the number of "super" subsets of \( \{0, 1, 2, \cdots, n-1\} \), where a set \( A \) is "super" if \( |A+A| = |A-A| \). Find the smallest real number \( c \) such that \( S_n \geq \lfloor c \cdot 2^n \rfloor \) for all positive integers \( n \). Calculate \( \lfloor 1000c \rfloor \).

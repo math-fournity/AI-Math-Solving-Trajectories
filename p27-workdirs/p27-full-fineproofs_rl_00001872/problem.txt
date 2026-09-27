@@ -1,0 +1,1 @@
+Given a triangle  $ \triangle ABC $ . Denote its incenter and orthocenter by  $ I, H $ , respectively. If there is a point  $ K $  with   $$  AH+AK = BH+BK = CH+CK  $$   Show that  $ H, I, K $  are collinear.

@@ -1,0 +1,1 @@
+Given  $n\geq2$ , let  $\mathcal{A}$  be a family of subsets of the set  $\{1,2,\dots,n\}$  such that, for any  $A_1,A_2,A_3,A_4 \in \mathcal{A}$ , it holds that  $|A_1 \cup A_2 \cup A_3 \cup A_4| \leq n -2$ .

@@ -1,0 +1,1 @@
+Find integers \(a, b, c\) not all zero and each of absolute value less than one million, such that

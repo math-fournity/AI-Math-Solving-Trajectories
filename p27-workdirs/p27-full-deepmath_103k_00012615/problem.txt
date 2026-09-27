@@ -1,0 +1,1 @@
+Determine whether the constant $c$ in the inequality \( \prod_{i=1}^{n}\frac{p_i}{p_i-1} < e^c \cdot (\log(p_n)) \cdot (1+\frac{1}{\log_2(p_n)}) \) is equal to the Euler-Mascheroni constant \( \gamma \).

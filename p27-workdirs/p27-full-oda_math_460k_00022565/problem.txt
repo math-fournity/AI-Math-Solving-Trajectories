@@ -1,0 +1,1 @@
+Let \( T = \{ z \in \mathbb{C} \mid |z| = 1 \} \) and \( n \geq 2 \) be a positive integer. Find:

@@ -1,0 +1,1 @@
+A digital security analyst is attempting to identify a specific encrypted identification code, $n$, which is a whole number between $1$ and $1,000,000$ inclusive. Three forensic software modules—D-Unit, E-Unit, and F-Unit—each generate a report containing exactly one valid observation and one erroneous observation.

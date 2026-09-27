@@ -1,0 +1,1 @@
+In a remote industrial park, a technician is tasked with laying a single continuous fiber-optic cable to connect 36 sensors. These sensors are arranged in a perfect $6 \times 6$ square grid, with the top-left sensor indexed as 1 and the bottom-right sensor indexed as 36.

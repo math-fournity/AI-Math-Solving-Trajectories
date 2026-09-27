@@ -1,0 +1,1 @@
+A number is written in each cell of the  $N \times N$  square. Let's call cell  $C$  *good* if in one of the cells adjacent to  $C$  on the side, there is a number  $1$  more than in  $C$ , and in some other of the cells adjacent to  $C$  on the side, there is a number  $3$  more than in  $C$ . What is the largest possible number of good cells?

@@ -1,0 +1,1 @@
+Suppose $G$ is a finite group acting via homeomorphisms on the closed $n$-dimensional ball $B^n$. Does $G$ have a fixed point, i.e., a point $p \in B^n$ such that $g \cdot p = p$ for all $g \in G$?

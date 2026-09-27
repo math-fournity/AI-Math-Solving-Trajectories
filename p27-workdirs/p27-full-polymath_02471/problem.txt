@@ -1,0 +1,1 @@
+5. The value of the parameter $a$ is chosen so that the number of roots of the first equation $4^{x}-4^{-x}=2 \cos a x, 4^{x}+4^{-x}=2 \cos a x+4$ is 2021. How many roots does the second equation have for the same $a$?

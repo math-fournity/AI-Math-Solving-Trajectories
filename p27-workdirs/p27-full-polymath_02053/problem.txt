@@ -1,0 +1,1 @@
+Given a prime number $p=3$ and a positive integer $k=1$. Find the sum of the four smallest positive integers $n \geq p-1$ such that for every $i \in \{1, 2, \cdots, n-p+1\}$, the sequence of binomial coefficients $\binom{n}{i}, \binom{n}{i+1}, \cdots, \binom{n}{i+p-1}$ contains exactly $k$ numbers divisible by $p$.

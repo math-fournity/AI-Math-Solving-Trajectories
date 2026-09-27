@@ -1,0 +1,1 @@
+Let $E$ be an elliptic curve and $d$ be a squarefree integer. If $E'$ and $E$ are isomorphic over $\mathbb{Q}(\sqrt{d})$, must $E'$ be a quadratic twist of $E$? Answer yes or no.

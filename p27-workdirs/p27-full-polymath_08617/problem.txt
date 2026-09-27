@@ -1,0 +1,1 @@
+In a specialized logistics hub, a grid of sensors is arranged in a square formation of $n$ rows and $n$ columns. To monitor the facility, security drones are stationed at the exact center points of these grid squares. Each drone is capable of monitoring all "sightlines" that pass through its specific center point.

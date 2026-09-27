@@ -1,0 +1,1 @@
+Given a convex quadrilateral  $ABCD$ . The points  $P$  and  $Q$  are the midpoints of the diagonals  $AC$  and  $BD$  respectively. The line  $PQ$  intersects the lines  $AB$  and  $CD$  at  $N$  and  $M$  respectively. Prove that the circumcircles of triangles  $NAP$ ,  $NBQ$ ,  $MQD$ , and  $MPC$  have a common point.

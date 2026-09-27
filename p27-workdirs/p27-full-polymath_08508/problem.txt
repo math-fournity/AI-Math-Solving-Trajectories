@@ -1,0 +1,1 @@
+In a remote desert, a high-precision solar farm is laid out in the shape of a large equilateral triangle, $ABC$, with a side length $AC$ of exactly 1 kilometer. At the center of this farm, three secondary monitoring stations—$A'$, $B'$, and $C'$—are positioned at the exact midpoints of the triangle's perimeter roads. These three stations form their own smaller triangular grid.

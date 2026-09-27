@@ -1,0 +1,1 @@
+Let $k$ and $n$ be two non-zero natural numbers, such that $k \leqslant 2^{n}$. Morgane has written the set of $2^{n}$ $n$-tuples formed of 0 and 1. We say that two $n$-tuples $\left(x_{1}, \ldots, x_{n}\right)$ and $\left(y_{1}, \ldots, y_{n}\right)$ are neighbors if they differ in exactly one coordinate.

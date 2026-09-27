@@ -1,0 +1,1 @@
+Anna and Bob play a game on the set of points $(m, n)$ where $m, n \in \mathbb{Z}$ and $|m|, |n| \le N$. The lines $x = \pm N$ and $y = \pm N$ are called the boundary lines, and points on them are boundary points.

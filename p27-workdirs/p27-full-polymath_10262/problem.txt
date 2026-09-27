@@ -1,0 +1,1 @@
+In a futuristic data-encoding facility, a specialized signal-processing algorithm generates an experimental transmission wave represented by a polynomial $P(x)$ of degree 2012. The wave's primary frequency coefficient (the leading coefficient) is normalized to exactly 1, while the subsequent 2012 coefficients ($a_{2011}, a_{2010}, \dots, a_{0}$) are all real numbers.

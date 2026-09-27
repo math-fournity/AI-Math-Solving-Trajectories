@@ -1,0 +1,1 @@
+Let triangle \(\triangle MNP\) have side lengths \(MN = 13\), \(NP = 89\), and \(PM = 100\). Define points \(S, R, B\) as midpoints of \(MN, NP, PM\) respectively. A line \(\ell\) cuts lines \(MN, NP, PM\) at points \(I, J, A\), respectively. Find the minimum value of \((SI + RJ + BA)^2\).

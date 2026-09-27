@@ -1,0 +1,1 @@
+In a family album, there are ten photos. On each of them, three people are pictured: in the middle stands a man, to the right of him stands his brother, and to the left of him stands his son. What is the least possible total number of people pictured, if all ten of the people standing in the middle of the ten pictures are different.

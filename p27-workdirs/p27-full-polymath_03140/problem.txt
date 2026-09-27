@@ -1,0 +1,1 @@
+Let $a, b, c$ be integers such that $a > 0$ and $ac - b^2 = 2310$. Let $M(m)$ denote the number of integer solutions $(x, y)$ to the equation $ax^2 + 2bxy + cy^2 = m$. Given that $M(7) = 4$, find the value of $M(7 \times 2310^3)$.

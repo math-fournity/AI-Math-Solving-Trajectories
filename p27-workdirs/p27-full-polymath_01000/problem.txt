@@ -1,0 +1,1 @@
+Find the maximum of \( x_{1}^{3} + \ldots + x_{10}^{3} \) for \( x_{1}, \ldots, x_{10} \in [-1, 2] \) such that \( x_{1} + \ldots + x_{10} = 10 \).

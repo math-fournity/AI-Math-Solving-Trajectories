@@ -1,0 +1,1 @@
+Find the maximum value of the function \( \phi(r) = a_1 J_0(\alpha r) + a_2 J_0(\beta r) \) on the interval \([0, l]\), where \( a_1 + a_2 = 1 \), \( \alpha \) and \( \beta \) are positive parameters, and \( \phi(l) = 0 \). The function \( \phi \) is non-negative on \([0, l]\). Here, \( J_0 \) denotes the Bessel function of the first kind.

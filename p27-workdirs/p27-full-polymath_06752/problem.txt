@@ -1,0 +1,1 @@
+In a specialized data-archiving facility, the storage cost of a data cluster is determined by a specific efficiency formula. For any set of three data partitions of sizes $p$, $q$, and $r$ (where $p, q, r$ are non-negative integers), the complexity index is calculated as:

@@ -1,0 +1,1 @@
+Find all injective functions \( f: \mathbb{N} \to \mathbb{N} \) such that for all \( a, b \in \mathbb{N} \), the equation \( f^{f(a)}(b)f^{f(b)}(a) = (f(a+b))^2 \) holds. Here, \( f^k(n) \) denotes the \( k \)-th iterate of \( f \) applied to \( n \).

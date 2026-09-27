@@ -1,0 +1,1 @@
+In a remote sector of the galaxy, a specialized solar sail called the "L-Unit" is being deployed between two fixed anchor beacons, Station Alpha ($A$) and Station Beta ($B$). These stations are positioned relative to a central command hub, Vertex Control ($V$).

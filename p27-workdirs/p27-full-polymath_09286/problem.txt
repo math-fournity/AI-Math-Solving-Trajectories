@@ -1,0 +1,1 @@
+In a specialized logistics hub, items are tracked using unique identification codes. Every item is assigned a $k$-digit serial number $d_1 d_2 \dots d_k$, where each digit $d_i$ is chosen from $\{0, 1, \dots, 9\}$. To organize these items, the hub uses sorting bins labeled with 2-digit destination codes $b_1 b_2$, where each digit $b_j$ is also from $\{0, 1, \dots, 9\}$.

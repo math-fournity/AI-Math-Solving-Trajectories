@@ -1,0 +1,1 @@
+Does there always exist an element \( \beta \in \overline{\mathbb{Q}} \) such that \( \beta^d = \alpha \) for any \( \alpha \in \overline{\mathbb{Q}} \) and any natural number \( d \)?

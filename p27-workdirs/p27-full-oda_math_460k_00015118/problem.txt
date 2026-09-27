@@ -1,0 +1,1 @@
+In a plane where every point is painted either red or blue, let $N$ be the minimum number of points of the same color (either red or blue) that must exist to guarantee the existence of a triangle whose vertices and incenter are all of the same color. Find $N$.

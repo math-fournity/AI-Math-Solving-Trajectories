@@ -1,0 +1,1 @@
+Calculate $\text{card}(\{a \in [0;3^{2000}] \cap \mathbb N : s_3(a)=2024 \}) \mod 10^6$, where $s_3(a)$ is the sum of all digits of $a$ in base $3$.

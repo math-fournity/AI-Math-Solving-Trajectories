@@ -1,0 +1,1 @@
+A \(2011 \times 2011\) matrix is called golden if it is filled with the numbers \(1, 2, 3, 4\) and if in each \(2 \times 2\) square each of the numbers \(1, 2, 3, 4\) appears exactly once. Determine the total number of golden matrices.

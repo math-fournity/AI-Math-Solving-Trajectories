@@ -1,0 +1,1 @@
+In a game involving a triangle with no equal angles, Petya marks points on a plane, and Vasya colors each point either red or blue. Petya wins if any three marked points form a monochromatic triangle similar to the original triangle. What is the minimum number of points Petya must mark to guarantee a win, regardless of the original triangle's shape?

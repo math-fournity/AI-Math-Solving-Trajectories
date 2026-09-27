@@ -1,0 +1,1 @@
+Determine the operator norm of the linear operator $B: \ell^2 \to \mathbb{R}$ defined by \[ Bx = \sum\limits_{k=0}^\infty ((1+\sin(\pi(1/2)^{k+1}))\eta_{k+1}). \]

@@ -1,0 +1,1 @@
+Find the maximum value of \( k \) such that for all functions \( f(t) \), \( g(t) \), \( h(t) \) from \([0,1]\) to \(\mathbb{R}\), there exist \( x, y, z \) from \([0,1]\) such that \( |xyz - f(x) - g(y) - h(z)| \geq k \).

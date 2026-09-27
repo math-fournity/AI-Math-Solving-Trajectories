@@ -1,0 +1,1 @@
+In a sprawling logistics hub, a robotic sorter is programmed to navigate a 10-row by 10-column grid of 100 storage bays. The robot must perform a "full inventory sweep," meaning it moves from one bay to an adjacent bay (sharing a wall) at each step, visiting every single one of the 100 bays exactly once.

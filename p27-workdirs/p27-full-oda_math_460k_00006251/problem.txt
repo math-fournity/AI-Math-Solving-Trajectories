@@ -1,0 +1,1 @@
+Evaluate the infinite series \( S = \sum_{n=1}^{\infty} \frac{H_n}{n^2} \) using complex analysis techniques, such as residues.

@@ -1,0 +1,1 @@
+Determine the smallest integer \( n \) such that the proportion \( p(n) = \frac{\text{number of asymmetric graphs with } n \text{ nodes}}{\text{number of graphs with } n \text{ nodes}} \) exceeds 0.99.

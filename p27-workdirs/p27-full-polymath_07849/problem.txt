@@ -1,0 +1,1 @@
+In a remote high-tech agricultural facility, nine automated sensors are installed on a perfectly flat grid. The sensors are positioned at every possible coordinate $(x, y)$ where $x$ and $y$ are integers from the set $\{-1, 0, 1\}$. Specifically, sensors are located at:

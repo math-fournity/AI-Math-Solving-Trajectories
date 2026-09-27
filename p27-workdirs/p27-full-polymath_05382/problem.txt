@@ -1,0 +1,1 @@
+For any integer $n \geq 2$, let $N(n)$ be the maximal number of triples $(a_i, b_i, c_i)$, $i=1, \ldots, N(n)$, consisting of nonnegative integers $a_i, b_i$ and $c_i$ such that the following two conditions are satisfied:

@@ -1,0 +1,1 @@
+In a sprawling subterranean data center, an engineer is tasked with monitoring a network of $2011 \times 2011$ interconnected servers. Each server is assigned a unique identification code from the set of integers $\{1, 2, 3, \dots, 2011^2\}$, such that every code is used exactly once.

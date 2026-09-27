@@ -1,0 +1,1 @@
+Let \(\kappa\) and \(\lambda\) be infinite cardinals. Consider a random function \(\phi: \kappa \times \lambda \rightarrow \{0,1\}\) constructed by flipping a fair coin for each element of the domain. Determine the probability \(P(\kappa, \lambda)\) that there exists an \(\alpha < \kappa\) such that \(\forall x, \phi(\alpha, x) = 0\).

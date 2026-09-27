@@ -1,0 +1,1 @@
+Let $a, b, c, d$ be integers such that $\gcd(a, b, c, d) = 1$. Assume that the Diophantine equation $ax^2 + bxy + cxz + dyz - x = 0$ has a non-zero solution. Can we assert that it admits infinitely many solutions?

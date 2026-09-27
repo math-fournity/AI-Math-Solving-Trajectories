@@ -1,0 +1,1 @@
+A specialized architectural firm is designing a series of sustainable skyscrapers. For a project of "size $n$," where $n$ is a positive integer, the firm must hire $n$ distinct consultants. Each consultant $k$ (where $k$ ranges from $1$ to $n$) is assigned a unique integer "efficiency rating," denoted as $a_k$.

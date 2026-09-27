@@ -1,0 +1,1 @@
+Find all prime numbers $p$ which satisfy the following condition: For any prime $q < p$, if $p = kq + r, 0 \leq r < q$, there does not exist an integer $q > 1$ such that $a^{2} \mid r$.

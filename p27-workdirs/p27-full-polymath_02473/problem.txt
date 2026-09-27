@@ -1,0 +1,1 @@
+Let $S$ be the set of all positive integers $n$ for which it is possible to color some cells of an infinite grid of unit squares red, such that each rectangle consisting of exactly $n$ cells (and whose edges lie along the lines of the grid) contains an odd number of red cells. Determine the number of elements in the set $S \cap \{1, 2, 3, \dots, 2024\}$.

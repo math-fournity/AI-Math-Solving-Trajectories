@@ -1,0 +1,1 @@
+Given \( n \in \mathbb{N} \) and \( 1 \leq n \leq 1998 \), find \( n \) such that \( A = n^3 + 30n^2 + 100n \) has exactly 60 divisors.

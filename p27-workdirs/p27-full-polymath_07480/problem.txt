@@ -1,0 +1,1 @@
+In a remote territory, three survey outposts—Alpha ($A$), Bravo ($B$), and Charlie ($C$)—form a large triangular perimeter. A straight transmission line connects Bravo ($B$) and Charlie ($C$), and another connects Alpha ($A$) and Bravo ($B$).

@@ -1,0 +1,1 @@
+In a circular high-security server room, there are $n$ computer terminals ($n \geqslant 4$) arranged in a perfect ring. A technician must assign each terminal one of two security protocols: "Protocol B" (Black) or "Protocol W" (White).

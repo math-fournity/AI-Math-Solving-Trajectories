@@ -1,0 +1,1 @@
+Determine the minimum number of crossings required for a non-alternating knot.

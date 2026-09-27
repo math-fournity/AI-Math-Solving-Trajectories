@@ -1,0 +1,1 @@
+In the futuristic city of Numeria, a high-security server farm consists of an $8 \times 8$ grid of data centers. To ensure decentralized processing, each of the 64 data centers is assigned a unique integer power level from the set $\{1, 2, 3, \ldots, 64\}$.

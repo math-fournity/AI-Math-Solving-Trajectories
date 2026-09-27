@@ -1,0 +1,1 @@
+Let $N_1$ and $N_2$ be independent and identically distributed standard normal random variables. Determine if there exists a random variable $X$, dependent only on $N_1$ and satisfying $|X| < 2$, such that \( \mathbb{P}(N_1 + XN_2 > 0) \neq \frac{1}{2} \).

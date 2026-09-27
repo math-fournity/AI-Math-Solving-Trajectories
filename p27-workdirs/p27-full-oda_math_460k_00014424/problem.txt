@@ -1,0 +1,1 @@
+Compute the holonomy around the parallel \( u = u_0 \) on the paraboloid parametrized by \( \mathbf{x}(u, v) = (u \cos v, u \sin v, u^2) \). Indicate the direction of rotation from the viewpoint of an observer looking down the \( x \)-axis.

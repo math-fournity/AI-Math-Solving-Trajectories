@@ -1,0 +1,1 @@
+In a futuristic telecommunications network, a team of engineers is deploying "Light-Beams," which are modeled as infinite rays in three-dimensional space. The network consists of $n$ such rays, with the strict constraint that no two rays intersect or share any points.

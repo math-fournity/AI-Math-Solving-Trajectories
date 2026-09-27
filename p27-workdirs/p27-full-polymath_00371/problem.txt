@@ -1,0 +1,1 @@
+A set of points in space is called interesting if for any plane outside it, there are at least 100 points of this set. What is the smallest \(d\) for which it can be asserted that any interesting set of points in space contains an interesting subset of no more than \(d\) points?

@@ -1,0 +1,15 @@
+/-!
+# IMO 2012 A7
+
+Let $R$ be a totally ordered commutative ring and $\sigma$ be a set of variables.
+Let $R[\sigma]$ denote the set of multivariate polynomials in these variables. A function
+$f : R^\sigma \to R$ is called a **metapolynomial** if it can be represented as
+$$ f(\mathbf{x}) = \max_{i \le m} \min_{j \le n_i} P_{i, j}(\mathbf{x}) $$
+for some polynomials $P_{i, j} \in R[\sigma]$. This set of functions is the "meta-closure"
+of the set of functions represented by polynomials.
+
+Prove that the set of metapolynomials forms a subring of the ring of all functions
+from $R^\sigma$ to $R$.
+-/
+
+##

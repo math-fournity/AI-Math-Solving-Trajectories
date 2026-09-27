@@ -1,0 +1,1 @@
+Consider the set \( E \) of bijective functions \( f: (0, +\infty) \to (0, +\infty) \) that are \( C^1 \) and satisfy \( f' = f^{-1} \). For a function \( f \in E \), let \( x_0 \) be the unique fixed point of \( f \). Find the value of \( f'(x_0) \).

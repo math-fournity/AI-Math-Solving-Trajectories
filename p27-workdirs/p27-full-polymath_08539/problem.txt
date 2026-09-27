@@ -1,0 +1,1 @@
+In a digital fabrication lab, a technician is programming a robotic cutter to carve a decorative "pixel-path" out of a rectangular grid of sensors.

@@ -1,0 +1,1 @@
+Exercise 5. An Olympic sequence is a sequence $s_{1}, s_{2}, \ldots, s_{2023}$ where each of the 2023 terms is equal to 1 or -1. A non-decreasing sequence is a sequence of integers $t_{1}, t_{2}, \ldots, t_{n}$ such that $1 \leqslant t_{1}<t_{2}<\cdots<t_{n} \leqslant 2023$, and each of the $n-1$ differences $t_{i+1}-t_{i}$ is 1 or 2.

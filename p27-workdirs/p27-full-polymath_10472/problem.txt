@@ -1,0 +1,1 @@
+A specialized architectural firm is designing modular structural units for a new grid-based city. Each unit is a polygon with exactly six equal-length sides, each measuring $\sqrt{13}$ units. To ensure stability within the city’s infrastructure, the following constraints must be met:

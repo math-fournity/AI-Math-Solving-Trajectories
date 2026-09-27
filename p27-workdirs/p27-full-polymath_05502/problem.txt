@@ -1,0 +1,1 @@
+What is the infimum (greatest lower bound) of the circumradius of a triangle that contains a point \( P \) in its interior, where the distances from \( P \) to the three vertices are 3, 4, and 5?

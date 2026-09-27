@@ -1,0 +1,1 @@
+Let $m = 2025$ and $u_m = \underbrace{11 \ldots 1}_{m}$ be the integer consisting of $m$ ones. Find the minimum possible digit sum of a positive integer multiple of $u_m$.

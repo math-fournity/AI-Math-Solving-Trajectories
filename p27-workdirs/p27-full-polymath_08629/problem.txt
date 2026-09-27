@@ -1,0 +1,1 @@
+A high-security biometric vault requires an access code consisting of exactly 9 digits. To ensure the code is "Double-Mirror Certified," it must be possible to divide the 9-digit sequence into two distinct, non-empty segments such that each segment is a palindrome (reads the same forwards and backwards).

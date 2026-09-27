@@ -1,0 +1,1 @@
+Let $R$ be a noetherian domain and let $\mathcal{O}$ be an $R$-algebra that is finitely generated and projective as an $R$-module. Is the group of invertible fractional ideals of $\mathcal{O}$ always abelian?

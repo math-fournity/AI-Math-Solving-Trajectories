@@ -1,0 +1,1 @@
+In a specialized semiconductor fabrication facility, engineers are designing microchip layouts on rectangular grids of size $m \times n$, where both $m$ and $n$ are dimensions ranging from 2 to 20 units inclusive. To optimize the circuitry, each grid must be perfectly partitioned into two specific types of modular components without any gaps or overlapping:

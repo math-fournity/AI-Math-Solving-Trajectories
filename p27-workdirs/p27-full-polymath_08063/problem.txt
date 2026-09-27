@@ -1,0 +1,1 @@
+In a specialized logistics hub, there are 100 shipping containers, each assigned a unique positive integer identification code, $a_{1}, a_{2}, \dots, a_{100}$.

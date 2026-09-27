@@ -1,0 +1,1 @@
+Evaluate the integral \( \int_{-\infty}^{\infty} \frac{\sin(2p\tan^{-1}(u)/\hbar)}{a} \, du \) to determine the normalization constant for a given wavefunction.

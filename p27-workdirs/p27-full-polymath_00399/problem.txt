@@ -1,0 +1,1 @@
+In a \(4 \times 4\) grid of sixteen unit squares, exactly 8 are shaded so that each shaded square shares an edge with exactly one other shaded square. How many ways can this be done?

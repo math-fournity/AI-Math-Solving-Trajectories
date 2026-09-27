@@ -1,0 +1,1 @@
+Given 10 points in space such that no four points lie on the same plane, how many lines can be drawn between these points so that no triangle or parallelogram is formed?

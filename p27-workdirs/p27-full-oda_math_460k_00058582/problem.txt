@@ -1,0 +1,1 @@
+Let $J \rightarrow \mathbb{P}^{1}$ be a jacobian elliptic fibration on a rational surface. Are any two different torsion sections disjoint?

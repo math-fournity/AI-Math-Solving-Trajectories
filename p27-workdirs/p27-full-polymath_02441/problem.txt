@@ -1,0 +1,1 @@
+Given the digits \(2, 2, 3, 3, \dots, 9, 9\), form two eight-digit numbers \(a\) and \(b\) using each digit exactly once. Find the minimum value of \(\left|a - 2b\right|\).

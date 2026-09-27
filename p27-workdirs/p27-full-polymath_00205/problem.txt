@@ -1,0 +1,1 @@
+Given a sequence of real numbers $(a_n)$ such that $1 = a_1 < a_2 < a_3 < \cdots < a_n < \cdots$, find the minimum value $m$ such that the inequality

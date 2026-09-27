@@ -1,0 +1,1 @@
+Given a point \( X \), triangle \( ABC \), and its cevian triangle \( A'B'C' \), what is the locus of points such that their cevian triangle with respect to \( ABC \) has the same perimeter as \( A'B'C' \)?

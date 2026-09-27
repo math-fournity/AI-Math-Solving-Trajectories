@@ -1,0 +1,1 @@
+Consider a polynomial \( f(z) = \sum_{k=0}^{n} a_k z^k \) with complex coefficients such that \( |f(z)| \leq 1 \) for all \( z \) with \( |z| \leq 1 \). Let \( S \) be the sum of all possible values of \( |a_j| + |a_k| \) for \( 0 \leq j < k \leq n \). Find the maximum value of \( S \) and express it as \( \frac{m}{\pi} \). What is \( m \)?

@@ -1,0 +1,1 @@
+Let \(a, b, c\) be non-negative real numbers such that \(a^2 + b^2 + c^2 = a + b + c\). Find the highest real number \(r\) such that \(a^r + b^r + c^r \leq 3\).

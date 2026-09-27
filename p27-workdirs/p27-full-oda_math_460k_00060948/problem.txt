@@ -1,0 +1,1 @@
+1989-20. (V. P. Kostov). Describe the singularities of the pseudo-Stokes hypersurface of a typical family of polynomials. The pseudo-Stokes hypersurface of the family of polynomials x^n + a_1 x^{n-2} + ... + a_{n-1} (x, a_i ∈ C) is the set of values of the coefficients a_i for which two of the roots have the same real part.

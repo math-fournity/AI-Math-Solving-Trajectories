@@ -1,0 +1,1 @@
+Given an arbitrary prime \( p > 2011 \), find the smallest positive integer \( k \) such that there exist positive integers \( a, b, c \) not all divisible by \( p \) for which the following holds: for all positive integers \( n \) satisfying \( p \mid n^4 - 2n^2 + 9 \), we have \( p \mid 24an^2 + 5bn + 2011c \), and \( a + b + c = k \).

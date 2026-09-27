@@ -1,0 +1,1 @@
+In a specialized logistics network, cargo shipments are tracked using two-component data packets $(X, Y)$, where $X$ represents the "Standard Load" and $Y$ represents the "Variable Load." When two shipments are merged using a "Synthesized Protocol," the resulting data packet is calculated by the following rule:

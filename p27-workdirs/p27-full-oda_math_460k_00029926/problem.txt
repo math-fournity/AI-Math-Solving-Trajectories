@@ -1,0 +1,1 @@
+Consider sets $C$ consisting of $1983$ consecutive natural numbers such that each number in the set is divisible by some number of the form $a^{1983}$, where $a \in \mathbb{N}$ and $a \neq 1$. Let $N$ be the smallest possible value of the largest number in such a set $C$. Find the remainder when $N$ is divided by $1000$.

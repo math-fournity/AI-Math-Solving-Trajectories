@@ -1,0 +1,1 @@
+Find the largest possible value of \( p_{2003} \) if there exist primes \( p_1, p_2, \ldots, p_{2003} \) such that:

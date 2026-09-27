@@ -1,0 +1,1 @@
+In the futuristic city of Chronos, an energy grid is powered by 25 distinct thermal reactors, numbered $n = 1$ to $25$. The city’s central AI allocates power according to a specific decay-growth formula to balance the load across the sectors.

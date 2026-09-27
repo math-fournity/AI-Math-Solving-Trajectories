@@ -1,0 +1,1 @@
+In a specialized digital archive, engineers are attempting to reach a target security frequency of exactly **2023** MHz. To achieve this, they must use a programmable signal generator that is currently locked to a single input value: the integer **9**.

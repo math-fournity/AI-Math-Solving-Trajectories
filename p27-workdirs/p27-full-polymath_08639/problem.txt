@@ -1,0 +1,1 @@
+In the city of Aethelgard, there is a legendary linear bridge known as the Silver Path. To secure the bridge against various mystical threats, the High Council has commissioned exactly $n = 100$ distinct protective "Wards."

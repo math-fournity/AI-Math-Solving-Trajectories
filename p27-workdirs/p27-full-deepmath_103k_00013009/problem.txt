@@ -1,0 +1,1 @@
+Evaluate the integral \( \int_0^{2\pi}\frac{\cos 3x}{5-4\cos x}dx \) using complex integration techniques.

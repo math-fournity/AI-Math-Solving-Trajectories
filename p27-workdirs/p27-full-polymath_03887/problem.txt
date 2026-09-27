@@ -1,0 +1,1 @@
+Initially, one of the two boxes on the table is empty and the other contains $29$ different colored marbles. By starting with the full box and performing moves in order, in each move, one or more marbles are selected from that box and transferred to the other box. At most, how many moves can be made without selecting the same set of marbles more than once?

@@ -1,0 +1,1 @@
+Let $f$ be a continuous function on $S^2$. Suppose there exists a constant $C > 0$ such that for every rotation $\mathcal{R} \in SO(3)$, the area of every connected component of the set $\{f(x) \geq f(\mathcal{R}x)\}$ is at least $C$. Does there exist a rotation $I \neq \mathcal{R}_0 \in SO(3)$ such that $f(x) = f(\mathcal{R}_0 x)$ on an open subset of $S^2$?

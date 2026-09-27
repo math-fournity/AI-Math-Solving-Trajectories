@@ -1,0 +1,1 @@
+In a specialized logistics hub, an automated sorting system tracks incoming shipments using a unique identification code. Each shipment category is assigned a specific priority value represented by a single-digit integer (0–9).

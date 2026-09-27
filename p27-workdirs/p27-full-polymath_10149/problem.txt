@@ -1,0 +1,1 @@
+In the high-tech city of Parity, a logistics supervisor and a data analyst are testing a new power grid involving $n$ unique energy cells, labeled $1, 2, \ldots, n$, where $n$ is an even positive integer.

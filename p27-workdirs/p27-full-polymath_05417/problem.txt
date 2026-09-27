@@ -1,0 +1,1 @@
+A game is played with two players and an initial stack of $n$ pennies. The players take turns choosing one of the stacks of pennies on the table and splitting it into two stacks. The winner is the player who makes a move that causes all stacks to be of height 1 or 2.

@@ -1,0 +1,1 @@
+For every polynomial \( f \) of degree \( n \) with integer coefficients, consider the integral

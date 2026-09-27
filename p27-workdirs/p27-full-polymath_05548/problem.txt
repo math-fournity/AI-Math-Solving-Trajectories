@@ -1,0 +1,1 @@
+For each positive integer $n$, let $f(n)$ be the number of permutations $(a_{1}, a_{2}, \dots, a_{n})$ of the set $\{1, 2, \dots, n\}$ such that for each $k \in \{1, 2, \dots, n\}$, the sum $2(a_{1} + a_{2} + \dots + a_{k})$ is divisible by $k$. Compute the value of $f(10)$.

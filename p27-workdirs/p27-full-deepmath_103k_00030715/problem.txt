@@ -1,0 +1,1 @@
+Determine whether there exists a continuous function \( g : [0, 1] \to [0, 1] \) such that no line intersects the graph of \( g \) infinitely many times, but for any positive integer \( n \), there is a line intersecting \( g \) more than \( n \) times.

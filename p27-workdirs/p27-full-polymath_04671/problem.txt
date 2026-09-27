@@ -1,0 +1,1 @@
+Given a family \(\mathcal{F}\) of 4-element subsets (quadruples) of a given set with \(5^{m}\) elements, where \(m\) is a fixed natural number. It is known that the intersection of no two quadruples from \(\mathcal{F}\) consists of exactly two elements. Find the maximum possible value for the number of quadruples \(|\mathcal{F}|\) in \(\mathcal{F}\).

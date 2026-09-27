@@ -1,0 +1,1 @@
+Is every continuous function \( f:[a,b]\to \mathcal{L}^p(H) \) Riemann integrable, where \( \mathcal{L}^p(H) \) is the Schatten \(*\)-ideal on a separable Hilbert space \( H \) for \( p \in (0,1) \)?

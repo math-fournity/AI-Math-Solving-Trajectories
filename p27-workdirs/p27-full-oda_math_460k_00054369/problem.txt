@@ -1,0 +1,1 @@
+Let \(a\), \(b\), and \(c\) be positive real numbers and \(p \geq 2\). Determine the smallest value of \(k\) such that the inequality

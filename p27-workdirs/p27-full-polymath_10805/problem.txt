@@ -1,0 +1,1 @@
+In a specialized logistics warehouse, there is a grid of 100 storage plots arranged in a $10 \times 10$ square. Starting from an empty state on January 1st, a shipment of exactly 10 units of hazardous waste is delivered to every single plot every night. This process repeats daily for 100 consecutive days.

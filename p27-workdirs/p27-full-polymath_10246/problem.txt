@@ -1,0 +1,1 @@
+In the high-tech logistics hub of Neo-Tokyo, a systems engineer is designing a complex routing network. There are $n$ distinct districts in the city, and the engineer must schedule a series of cargo transfers between them.

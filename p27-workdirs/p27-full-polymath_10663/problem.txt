@@ -1,0 +1,1 @@
+In a remote logistics hub, there are 50 dual-sided digital manifests laid out on a control panel. Each manifest represents a shipping container, and every individual manifest has two unique efficiency ratings programmed into it—one on the "Front" side and one on the "Back" side. Across these 50 manifests, every integer from 1 to 100 is used exactly once as an efficiency rating.

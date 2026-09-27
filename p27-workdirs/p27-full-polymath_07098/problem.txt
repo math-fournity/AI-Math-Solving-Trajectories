@@ -1,0 +1,1 @@
+A metropolitan power grid is represented by a square circuit board of size $2n \times 2n$. Every cell on the board must be covered by a "Power Link," which is a component that occupies exactly two adjacent cells. There are two types of Power Links: Horizontal Links and Vertical Links.

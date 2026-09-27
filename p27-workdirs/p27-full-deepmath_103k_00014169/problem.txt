@@ -1,0 +1,1 @@
+Is there a real differentiable function whose derivative's graph is not topologically connected?

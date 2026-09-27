@@ -1,0 +1,1 @@
+In a remote sector of the galaxy, $n$ distinct space stations (where $n > 2$) are positioned such that no four stations lie within the same flat orbital plane. To facilitate travel, a direct hyperspace corridor is established between every possible pair of stations.

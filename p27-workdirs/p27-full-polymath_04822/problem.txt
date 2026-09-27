@@ -1,0 +1,1 @@
+Let \(a\) and \(b\) be positive integers. We say numbers \(a\) and \(b\) are "GOOD" if the absolute value of \((a - b)\) is a perfect square. Positive integers \(1, 2, 3, \ldots, n\) are painted in three colors in any order, and every time there are two "GOOD" numbers (one pair) which have the same color. Find the minimum value of \(n\) for which the given statement is true.

@@ -1,0 +1,1 @@
+Let $ABCD$ be a convex quadrilateral and $P$ be a point in its interior. Suppose the following conditions hold:

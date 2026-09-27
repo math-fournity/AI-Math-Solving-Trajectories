@@ -1,0 +1,1 @@
+In a specialized microchip manufacturing facility, a robotic laser must scan every square nanometer of a square silicon wafer (the unit square) except for exactly $n$ specific microscopic dust particles (the set $S$) located in the interior of the wafer.

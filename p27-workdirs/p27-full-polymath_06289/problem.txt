@@ -1,0 +1,1 @@
+Deep in a subterranean mining facility, a specialized laser drill is positioned on a flat, 2D surveying floor. The facility is mapped with several concentric circular safety boundaries, all centered at a single central power core (the origin). These safety boundaries are established at every integer radius $n = 1, 2, 3, \dots$ meters.

@@ -1,0 +1,1 @@
+Let \( P_{1}(x), P_{2}(x), \ldots, P_{n}(x) \) be monic, non-constant polynomials with integer coefficients and let \( Q(x) \) be a polynomial with integer coefficients such that

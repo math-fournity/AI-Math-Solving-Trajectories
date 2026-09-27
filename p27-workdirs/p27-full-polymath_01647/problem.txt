@@ -1,0 +1,1 @@
+Let \( a \) be a positive real number. Collinear points \( Z_{1}, Z_{2}, Z_{3}, Z_{4} \) (in that order) are plotted on the \((x, y)\) Cartesian plane. Suppose that the graph of the equation

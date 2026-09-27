@@ -1,0 +1,1 @@
+Determine whether the nilpotency class of the group $G_d$, defined by the presentation \( \langle x,y \mid x^{2^{d+1}}=1, x^4=y^2, [x,y,x]=x^{2^{d}}, [x,y,y]=1\rangle \) for integer \( d > 2 \), is exactly 3.

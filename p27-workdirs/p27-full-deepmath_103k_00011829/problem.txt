@@ -1,0 +1,1 @@
+Suppose \( \tau \) is an almost Euclidean refining (AER) topology on \( \mathbb{R} \). Is there a nonempty open set \( U \) in the Euclidean topology \( \eta \) such that the subspace topology on \( U \) induced by \( \tau \) refines the subspace topology on \( U \) induced by \( \eta \)?

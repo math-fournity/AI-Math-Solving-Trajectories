@@ -1,0 +1,1 @@
+In a remote desert, an architect is designing a mystical plaza in the shape of a perfect regular pentagon, with five main pillars labeled $A, B, C, D$, and $E$ in clockwise order. To mark the exact entrance, a small statue $M$ is placed precisely at the midpoint of the walkway connecting pillar $A$ and pillar $B$.

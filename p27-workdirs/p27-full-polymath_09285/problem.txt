@@ -1,0 +1,1 @@
+A specialized deep-sea mining drill operates using a primary energy frequency $q = 2$. Due to the physics of the extraction site, the drill's resonance is determined by two harmonic components: $n q^{1/3}$ and $n q^{2/3}$, where $n$ is any positive integer representing the operational cycle.

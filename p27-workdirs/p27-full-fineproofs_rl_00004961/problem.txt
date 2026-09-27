@@ -1,0 +1,1 @@
+There are 999 scientists. Every 2 scientists are both interested in exactly 1 topic and for each topic there are exactly 3 scientists that are interested in that topic. Prove that it is possible to choose 250 topics such that every scientist is interested in at most 1 theme.

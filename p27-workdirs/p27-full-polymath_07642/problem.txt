@@ -1,0 +1,1 @@
+In the city of Gridville, an $11 \times 11$ irrigation grid of white marble tiles is being upgraded. Initially, all 121 tiles are dry. The city engineers have a specific "Double-Drop" automation protocol to moisten the tiles:

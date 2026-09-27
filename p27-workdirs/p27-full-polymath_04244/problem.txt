@@ -1,0 +1,1 @@
+A $5 \times 8$ table is initially all white. In each move, you choose a rectangle consisting of three adjacent fields (either $1 \times 3$ or $3 \times 1$) and flip the color of each field (white to black or black to white).

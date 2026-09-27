@@ -1,0 +1,1 @@
+Determine whether a finite-dimensional CW complex that is homotopy equivalent to the homotopy groups of $S^n$ is necessarily homotopy equivalent to $S^n$. Provide a justification for your answer.

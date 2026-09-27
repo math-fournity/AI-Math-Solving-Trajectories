@@ -1,0 +1,1 @@
+Find all points on the unit sphere centered at the origin whose tangents to the sphere intersect the cone defined by the equation $x^2+y^2=2z^2$ in exactly one point.

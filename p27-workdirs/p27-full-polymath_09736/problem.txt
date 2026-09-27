@@ -1,0 +1,1 @@
+In a vast city planned on a perfect infinite grid of square blocks, a circular telecommunications pulse is emitted from the central antenna at the intersection of Main Street and Center Avenue (the origin). The pulse travels outward to form a thin boundary circle with a radius of $r$ blocks, where $r$ is any real value such that $0 < r < 10$.

@@ -1,0 +1,1 @@
+In a plane, let $M = \{A_1, A_2, A_3, A_4, A_5, A_6\}$ be a set of 6 distinct points. Let $d_{\max}$ be the maximum distance between any two points in $M$, and let $d_{\min}$ be the minimum distance between any two points in $M$. Find the minimum possible value of $\lambda_6 = \frac{d_{\max}}{d_{\min}}$.

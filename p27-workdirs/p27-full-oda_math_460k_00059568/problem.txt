@@ -1,0 +1,1 @@
+Find all monic polynomials with integer coefficients \( f \) such that \( f(\mathbb{Z}) \) is closed under multiplication.\n\n_Iranian TST 2007, Mohsen Jamali_

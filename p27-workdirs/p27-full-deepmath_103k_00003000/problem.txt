@@ -1,0 +1,1 @@
+Is it true that every finitely generated topologically torsion-free nilpotent pro-$p$ group is isomorphic to a subgroup of $U_d(\mathbb{Z}_p)$, the group of $d \times d$ upper triangular matrices with 1's on the diagonal, for some $d$?

@@ -1,0 +1,1 @@
+Let \( f \) be a continuous function on the interval \([0,1]\) satisfying the following properties:

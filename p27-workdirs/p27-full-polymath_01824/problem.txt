@@ -1,0 +1,1 @@
+Let \( a_n \) denote the least common multiple of the positive integers \( n+1, n+2, \ldots, n+10 \). Find the greatest real number \( \lambda \) for which \( \lambda a_n \le a_{n+1} \) is always true.

@@ -1,0 +1,1 @@
+Nine distinct positive integers are arranged in a circle such that the product of any two non-adjacent numbers in the circle is a multiple of $n$ and the product of any two adjacent numbers in the circle is not a multiple of $n$, where $n$ is a fixed positive integer. Find the smallest possible value for $n$.

@@ -1,0 +1,1 @@
+In a specialized urban planning project, a developer is designing a park in the shape of a perfectly symmetrical diamond-shaped plaza, labeled $ABCD$. Every outer boundary wall of this plaza ($AB$, $BC$, $CD$, and $DA$) has a length of exactly 1 kilometer.

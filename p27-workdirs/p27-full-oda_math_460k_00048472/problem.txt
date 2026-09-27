@@ -1,0 +1,1 @@
+Let \( R \) be a finite ring with unity that is not a division ring, and let \( |R| = n \). Find the maximum possible value of \( |R^*| \) in terms of \( n \), where \( R^* \) denotes the set of units in \( R \). Express your answer as a function of \( n \).

@@ -1,0 +1,1 @@
+Find the infimum of the expression \[ \sqrt[5]{\frac{a}{b+c}}+\sqrt[5]{\frac{b}{c+d}}+\sqrt[5]{\frac{c}{d+e}}+\sqrt[5]{\frac{d}{e+a}}+\sqrt[5]{\frac{e}{a+b}} \] for positive real numbers $a, b, c, d, e$. Provide your answer as a single value.

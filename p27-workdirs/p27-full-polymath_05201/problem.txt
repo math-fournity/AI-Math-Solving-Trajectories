@@ -1,0 +1,1 @@
+On an \(8 \times 8\) chessboard, \(n\) rooks are placed such that \(n > 1\). A rook is called "calm" if it attacks at most two other placed rooks. (Recall that a rook attacks only the nearest rook in each of the four cardinal directions). What is the minimum possible number of calm rooks on the board?

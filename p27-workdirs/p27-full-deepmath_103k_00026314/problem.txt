@@ -1,0 +1,1 @@
+Determine whether the Weyl group of a semisimple algebraic group of adjoint type, defined over an algebraically closed field of characteristic 2, acts irreducibly on the dual of its Cartan subalgebra. Answer with true or false.

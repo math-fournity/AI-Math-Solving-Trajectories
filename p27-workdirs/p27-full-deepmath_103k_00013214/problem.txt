@@ -1,0 +1,1 @@
+Determine whether there exists a 4-chromatic graph $G$ and a 4-coloring $c$ of $G$ such that every vertex's closed neighborhood $N[v] = \{v\} \cup \{u\ |\ (v,u) \in G\}$ uses at most three distinct colors.

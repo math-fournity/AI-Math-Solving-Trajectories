@@ -1,0 +1,1 @@
+$a, b, c$ are positive real numbers such that $$(\sqrt {ab}-1)(\sqrt {bc}-1)(\sqrt {ca}-1)=1$$

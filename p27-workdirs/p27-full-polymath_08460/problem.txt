@@ -1,0 +1,1 @@
+In a remote industrial refinery, a processing unit is governed by a specific chemical reaction law. When two substances with purity levels $a$ and $b$ are combined, they react to form a single substance with a new purity level defined by the operation $[a, b] = ab - a - b$.

@@ -1,0 +1,1 @@
+Consider the generalized sieve method described, which uses the following cross-out forms for integers starting from 81:

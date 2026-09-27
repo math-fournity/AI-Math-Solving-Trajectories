@@ -1,0 +1,1 @@
+Consider all polynomials $P$ with real coefficients having the following property:

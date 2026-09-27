@@ -1,0 +1,1 @@
+In a remote logistics network, there are 101 regional depots (rows) and 2023 transport hubs (columns). Every single intersection point in this network (a cell in the $101 \times 2023$ grid) is assigned a unique, distinct priority frequency.

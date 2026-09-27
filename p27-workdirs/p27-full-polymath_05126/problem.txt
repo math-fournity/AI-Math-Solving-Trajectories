@@ -1,0 +1,1 @@
+Given a checkered square with side length $n - 1$ and $n \geq 10$ nodes, what is the smallest number of non-return paths that can cover all the edges? A non-return path is defined as a path along edges, the intersection of which with any horizontal or vertical line is a segment, point, or empty set, and which does not pass along any edge more than once.

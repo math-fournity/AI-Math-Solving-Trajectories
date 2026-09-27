@@ -1,0 +1,1 @@
+A specialized logistics grid is composed of a rectangular arrangement of docking stations. These stations are divided into two categories: "Primary Hubs" (Red) and "Secondary Hubs" (Green). The grid is networked with fiber-optic cables following specific security protocols:

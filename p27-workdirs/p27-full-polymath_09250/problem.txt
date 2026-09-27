@@ -1,0 +1,1 @@
+In a specialized urban planning district, a developer is designing a "Closed Loop Plaza," which takes the shape of a simple polygon with $n$ distinct corners (vertices) and non-intersecting boundary walls.

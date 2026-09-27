@@ -1,0 +1,1 @@
+In a specialized logistics hub, high-tech cargo crates are assigned integer identification codes. We define a "Full Frequency Batch" of size $m$ as any collection of crates that contains at least one representative for every possible remainder when their codes are divided by $m$.

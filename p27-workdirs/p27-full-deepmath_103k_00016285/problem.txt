@@ -1,0 +1,1 @@
+Consider the function $f:\mathbb{R}^3\rightarrow \mathbb{R}$, defined by $f(x) = |x|^{-1}$. Its distributional Fourier transform is given by $F(f)(k) = g(k) = 4\pi/|k|^2$. If $\chi$ is the characteristic function of an open, bounded set containing $0$, and $h = F(\chi f)$, determine if $h = O(|k|^{-2})$ as $|k|\rightarrow +\infty$.

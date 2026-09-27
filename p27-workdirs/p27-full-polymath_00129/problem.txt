@@ -1,0 +1,1 @@
+Let $(x_n)$ be a sequence defined by $x_1 = 2.1$ and $x_{n+1} = \frac{x_n - 2 + \sqrt{x_n^2 + 8x_n - 4}}{2}$. For every positive integer $n$, define $y_n = \sum_{i=1}^{n} \frac{1}{x_i^2 - 4}$. Find $\lim_{n \to \infty} y_n$.

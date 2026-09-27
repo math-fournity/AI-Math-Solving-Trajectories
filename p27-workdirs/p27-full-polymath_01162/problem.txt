@@ -1,0 +1,1 @@
+3. Let complex numbers $a, b, c$ satisfy: for any complex number $z$ with modulus not exceeding 1, we have $\left|a z^{2}+b z+c\right| \leqslant 1$. Find the maximum value of $|b c|$.

@@ -1,0 +1,1 @@
+In graph theory, a triangle is a set of three vertices, every two of which are connected by an edge. For an integer $n \geq 3$, let $f(n)$ be the maximum number of triangles a graph on $n$ vertices can contain such that no two triangles are vertex-disjoint (i.e., every two triangles must share at least one vertex). Compute the sum $\sum_{n=3}^{100} f(n).$

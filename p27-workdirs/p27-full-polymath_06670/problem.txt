@@ -1,0 +1,1 @@
+In the remote digital province of Aetheria, a network administrator is deploying data firewalls within a high-security $12 \times 12$ server cluster. The cluster is organized into a grid of 144 identical server nodes. Each firewall occupies exactly one node.

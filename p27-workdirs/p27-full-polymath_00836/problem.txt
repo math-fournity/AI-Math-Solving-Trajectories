@@ -1,0 +1,1 @@
+We define the binary operation \(\times\) on elements of \(\mathbb{Z}^{2}\) as

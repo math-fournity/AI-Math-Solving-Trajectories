@@ -1,0 +1,1 @@
+Determine the minimum number of people required to attend 20 meetings, each with 8 attendees, such that no pair of attendees appears more than once across all meetings.

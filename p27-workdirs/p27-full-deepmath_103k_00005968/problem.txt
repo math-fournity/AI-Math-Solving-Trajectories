@@ -1,0 +1,1 @@
+If $R$ is a commutative noetherian ring, $I$ is an ideal of $R$, and $M$ is an $R$-module, does the condition that $Tor_i^R(R/I, M)$ is finitely generated for $i \ge 0$ imply that $Ext^i_R(R/I, M)$ is finitely generated for $i \ge 0$?

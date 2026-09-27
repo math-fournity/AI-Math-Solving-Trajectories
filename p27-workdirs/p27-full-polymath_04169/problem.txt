@@ -1,0 +1,1 @@
+Find the sum of all $m \in \mathbb{N}$ such that $m$ divides $\sigma(mn-1)$ for all $n \in \mathbb{N}$, where $\sigma(x)$ denotes the sum of the positive divisors of the number $x$.

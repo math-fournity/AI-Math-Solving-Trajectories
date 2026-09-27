@@ -1,0 +1,1 @@
+In a class of 30 students where each student has the same number of friends among classmates, what is the highest possible number of students who perform better academically than the majority of their friends? Assume that for any two students, one can determine which one performs better.

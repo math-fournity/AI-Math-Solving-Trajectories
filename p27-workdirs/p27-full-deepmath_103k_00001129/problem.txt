@@ -1,0 +1,1 @@
+Determine whether there exists an infinite connected simple undirected graph \(G=(V, E)\) such that the identity map \(\text{id}_V: V\to V\) is the only graph self-homomorphism from \(G\) to itself. A graph self-homomorphism is a map \(f: V\to V\) such that for all \(e\in E\) with \(e = \{v, w\}\), we have \(\{f(v), f(w)\} \in E\).

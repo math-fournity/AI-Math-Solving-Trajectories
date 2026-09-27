@@ -1,0 +1,1 @@
+In a remote digital archipelago, there are 2009 server nodes arranged in a perfect circle, indexed sequentially from 1 to 2009. A single data packet begins at Node 1. Two network administrators, Alice and Bob, take turns rerouting this packet to different nodes.

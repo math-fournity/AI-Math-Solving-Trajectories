@@ -1,0 +1,1 @@
+A specialized chemical processing plant operates a closed-loop system of $n$ reactors, where $n \geq 3$. The plant manager receives $n$ distinct batches of raw catalysts with specific potency levels, represented by the positive real numbers $x_1, x_2, \dots, x_n$.

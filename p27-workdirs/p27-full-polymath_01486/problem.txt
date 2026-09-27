@@ -1,0 +1,1 @@
+There are \( n \geq 5 \) pairwise different points in the plane. For every point, there are exactly four other points whose distance from it is 1. Find the maximum value of \( n \).

@@ -1,0 +1,1 @@
+In the city of Aethelgard, a circular defensive wall, Perimeter $\omega_1$, is built with a radius of $6$ leagues. A second circular patrol route, Circuit $\omega_2$, has a radius of $5$ leagues and passes exactly through the central Citadel $O$ of the city. These two circular paths intersect at two specific watchtowers, Tower $A$ and Tower $B$.

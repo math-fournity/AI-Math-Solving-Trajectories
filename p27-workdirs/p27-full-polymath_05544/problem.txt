@@ -1,0 +1,1 @@
+Write either $1$ or $-1$ in each of the cells of a $(2n) \times (2n)$-table, in such a way that there are exactly $2n^2$ entries of each kind. Let the minimum of the absolute values of all row sums and all column sums be $M$. Determine the largest possible value of $M$.

@@ -1,0 +1,1 @@
+Find the maximal number of crosses, each consisting of 5 squares, that can be placed on an 8x8 grid without overlapping.

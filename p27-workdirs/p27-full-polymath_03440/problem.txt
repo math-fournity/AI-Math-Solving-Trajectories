@@ -1,0 +1,1 @@
+Let $P^{*}$ be the set of primes less than $10000$. Find the sum of all primes $p \in P^{*}$ such that for each subset $S=\{p_{1},p_{2},...,p_{k}\}$ of $P^{*}$ with $k\geq 2$ and each $p\not\in S$, there is a $q\in P^{*}-S$ such that $q+1$ divides $(p_{1}+1)(p_{2}+1)...(p_{k}+1)$.

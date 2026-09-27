@@ -1,0 +1,1 @@
+A specialized logistics drone is tasked with inspecting a solar array grid. The array consists of $3n$ solar panels arranged in a rectangular formation of $n$ columns and $3$ rows. Each panel's center can be represented by a coordinate $(c, r)$ where $c \in \{1, 2, \dots, n\}$ identifies the column and $r \in \{1, 2, 3\}$ identifies the row.

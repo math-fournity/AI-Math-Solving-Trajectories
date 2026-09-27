@@ -1,0 +1,1 @@
+Given an integer \( n \geq 3 \), determine the largest real number \( M \) such that for any sequence of positive real numbers \( x_{1}, x_{2}, \ldots, x_{n} \), there exists a permutation \( y_{1}, y_{2}, \ldots, y_{n} \) satisfying the inequality:

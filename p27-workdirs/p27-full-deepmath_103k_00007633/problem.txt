@@ -1,0 +1,1 @@
+Determine whether there exists a proper smooth rigid-analytic variety over an algebraic closure of the p-adic rationals, $K$, whose étale homotopy type is not isomorphic to the étale homotopy type of a proper smooth scheme over $K$. Provide a justification for your answer.

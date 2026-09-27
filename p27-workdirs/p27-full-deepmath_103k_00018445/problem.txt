@@ -1,0 +1,1 @@
+Determine whether the following statement is true or false: Given a decreasing positive sequence $\{a_n\}$ such that $\sum_{n=1}^{\infty} a_n$ diverges, and a function $f: \mathbb{N} \rightarrow \mathbb{N}$ with $\lim\limits_{n\to\infty} f(n) = \infty$, if $\sum_{n=1}^{\infty} a_{[f(n)]}$ converges, then $\sum_{n=1}^{\infty} \frac{a_n}{f(n)}$ also converges.

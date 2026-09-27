@@ -1,0 +1,1 @@
+For positive integers \(a\) and \(b\), let \(M(a, b)=\frac{\operatorname{lcm}(a, b)}{\operatorname{gcd}(a, b)}\), and for each positive integer \(n \geq 2\), define

@@ -1,0 +1,1 @@
+In a massive logistics warehouse, a storage grid is organized into 9 horizontal levels and 2008 vertical stacks. The facility is tasked with storing a total of 18,072 inventory crates. These crates are labeled with identification numbers ranging from 1 to 2008, such that there are exactly 9 crates for every ID number.

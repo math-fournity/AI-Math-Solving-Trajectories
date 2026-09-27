@@ -1,0 +1,1 @@
+In a city, every market has exactly 2 outgoing one-way streets, and there is at most one street joining any two markets. Let $n$ be the maximum number of colors needed such that any graph with maximum out-degree 2 can have its vertices colored so that no two vertices of the same color are connected by a path of length 1 or 2.

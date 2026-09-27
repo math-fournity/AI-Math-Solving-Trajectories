@@ -1,0 +1,1 @@
+Let $S$ be a set of positive integers, each of them having exactly $100$ digits in base $10$ representation. An element of $S$ is called an "atom" if it is not divisible by the sum of any two (not necessarily distinct) elements of $S$. If $S$ contains at most $10$ atoms, determine the maximum possible number of elements in $S$.

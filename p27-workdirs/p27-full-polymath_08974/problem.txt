@@ -1,0 +1,1 @@
+In a remote industrial complex, a specialized storage bunker is constructed in the shape of a pyramid named $A B C E H$, where $H$ is the apex. The foundation of the bunker is a convex quadrilateral floor $A B C E$. A reinforcement beam $B E$ runs across the floor, dividing it into two zones—triangle $A B E$ and triangle $B C E$—which have exactly the same floor area.

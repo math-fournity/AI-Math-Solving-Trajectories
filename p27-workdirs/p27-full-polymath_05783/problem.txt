@@ -1,0 +1,1 @@
+Let \( p \) be a prime and let \( P(x) \) be a monic polynomial of minimal degree such that

@@ -1,0 +1,1 @@
+2. In $\square A B C D$, $A B<A C<B C$. From point $D$ draw tangents to the circumcircle $\Gamma$ of $\triangle A B C$, the points of tangency are $E$ and $F$. If segment $A D$ intersects $C E$, and $\angle A B F=\angle D C E$, find $\angle A B C$.

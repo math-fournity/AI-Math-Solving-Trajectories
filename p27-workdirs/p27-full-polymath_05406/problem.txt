@@ -1,0 +1,1 @@
+Determine the maximum number of $1 \times 3$ rectangles that can be placed on a $13 \times 17$ board such that no rectangles touch each other, not even at a single point. The rectangles may be placed either horizontally or vertically and each rectangle covers exactly 3 cells of the board.

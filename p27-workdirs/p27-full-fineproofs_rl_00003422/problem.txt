@@ -1,0 +1,1 @@
+Let  $p$  and  $c$  be an prime and a composite, respectively. Prove that there exist two integers  $m,n,$  such that  $$ 0<m-n<\frac{\textup{lcm}(n+1,n+2,\cdots,m)}{\textup{lcm}(n,n+1,\cdots,m-1)}=p^c. $$

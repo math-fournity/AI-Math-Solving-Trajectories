@@ -1,0 +1,1 @@
+Let $ABC$ be a triangle with $AB \neq AC$, and let $\omega$ be the $A$-excircle of $ABC$. We denote by $D, E$ and $F$ the points of tangency of $\omega$ with $[BC]$, $[AC)$, and $[AB)$. The circumcircle of $AEF$ intersects $(BC)$ at $P$ and $Q$. We denote by $M$ the midpoint of $[AD]$. Show that the circumcircle of $MPQ$ is tangent to $\omega$.

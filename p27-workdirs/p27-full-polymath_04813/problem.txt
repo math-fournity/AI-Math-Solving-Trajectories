@@ -1,0 +1,1 @@
+For a given positive integer \( n \) and prime number \( p \), find the minimum value of positive integer \( m \) that satisfies the following property: for any polynomial

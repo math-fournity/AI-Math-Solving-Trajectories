@@ -1,0 +1,1 @@
+Is it true that for any integer $n$, there exists a threshold $p_0$ such that for any finite group $G$ of Lie type with rank at most $n$ and characteristic $p \geq p_0$, and for any irreducible $\mathbb{F}_p$ representation $V$ of $G$ with dimension at most $n$, the first cohomology group $H^1(G,V)$ vanishes?

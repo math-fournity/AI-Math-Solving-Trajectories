@@ -1,0 +1,1 @@
+Compute the $\textit{number}$ of ordered quadruples $(w,x,y,z)$ of complex numbers (not necessarily nonreal) such that the following system is satisfied:

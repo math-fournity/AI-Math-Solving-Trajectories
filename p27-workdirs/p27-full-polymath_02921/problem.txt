@@ -1,0 +1,1 @@
+In a rectangular grid of size $m \times n$, each cell can be either alive or dead. Every minute, all living cells die simultaneously, and those dead cells that had an odd number of living neighbors (by side) come to life.

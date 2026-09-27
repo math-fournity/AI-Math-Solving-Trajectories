@@ -1,0 +1,1 @@
+Let $T$ be a tree on $n$ vertices with exactly $k$ leaves. Suppose that there exists a subset of at least $\frac{n+k-1}{2}$ vertices of $T$, no two of which are adjacent. Show that the longest path in $T$ contains an even number of edges.

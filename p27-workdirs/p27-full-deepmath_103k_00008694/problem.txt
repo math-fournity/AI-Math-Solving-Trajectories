@@ -1,0 +1,1 @@
+Let $p_1, \dots, p_r$ be $r$ distinct odd primes. Define the group \( G = \prod_{i=1}^r \mathrm{SL}_3(\mathbb{F}_{p_i}) \). Determine the maximum possible rank of a subgroup of \( G \), denoted as \( \max \{d(H) : H \leq G\} \), where \( d(K) \) is the smallest cardinality of a generating set of a group \( K \).

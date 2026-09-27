@@ -1,0 +1,1 @@
+There are 19,998 people on a social media platform, where any pair of them may or may not be friends. For any group of 9,999 people, there are at least 9,999 pairs of them that are friends. What is the least number of friendships, that is, the least number of pairs of people that are friends, that must be among the 19,998 people?

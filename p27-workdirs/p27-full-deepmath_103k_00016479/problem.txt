@@ -1,0 +1,1 @@
+Find the norm of the linear operator $T$ on the Hilbert space $\ell^2$, given that for any $x \in \ell^2$, $$\|Tx\| = \sqrt{\sum_{i=1}^{\infty} \frac{x_i ^2}{i^2}}.$$

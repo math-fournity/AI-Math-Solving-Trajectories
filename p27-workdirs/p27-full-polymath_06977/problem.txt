@@ -1,0 +1,1 @@
+A network architecture consists of $2021$ individual server nodes positioned such that no three nodes are perfectly aligned in a straight line. Physical fiber-optic cables are installed between every possible pair of nodes, resulting in a total of $\binom{2021}{2}$ unique links.

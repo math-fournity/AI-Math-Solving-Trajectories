@@ -1,0 +1,1 @@
+A convex polyhedron is inscribed in a sphere of radius 1. The sum of the areas of all its faces is $4 \pi - \varepsilon$ for some small positive $\varepsilon$. What is the smallest possible volume of the polyhedron?

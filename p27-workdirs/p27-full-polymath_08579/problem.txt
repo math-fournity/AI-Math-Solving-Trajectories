@@ -1,0 +1,1 @@
+In a remote industrial zone, a circular security perimeter is defined by $n$ watchtowers ($n \geq 3$), labeled $T_1, T_2, \dots, T_n$ in clockwise order. These towers are positioned such that the fence lines connecting consecutive towers ($T_i$ to $T_{i+1}$, with $T_{n+1}$ being $T_1$) form a convex polygon representing the secure facility's boundary.

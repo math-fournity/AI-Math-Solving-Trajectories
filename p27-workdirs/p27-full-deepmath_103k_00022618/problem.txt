@@ -1,0 +1,1 @@
+Given a linear bounded operator $T$ on a Banach space $X$, suppose there exists an increasing sequence $(b_n)$ such that $b_n - a_n < \infty$ and $\sup_{n}\|T^{b_n}\|<\infty$. If $\sup_{n}(b_n - a_n)<\infty$, does it follow that the operator norms for the sequence $(a_n)$ are also bounded?

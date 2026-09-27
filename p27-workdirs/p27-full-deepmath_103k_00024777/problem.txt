@@ -1,0 +1,1 @@
+In a separable compact Hausdorff space $X$ with cardinality $|X| \leq 2^{\aleph_{0}}$, if $A\subseteq X$ is a closed set without interior, is it necessary that $A$ is separable? Provide a justification for your answer.

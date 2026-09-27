@@ -1,0 +1,1 @@
+Is it true that any \(\mathbb{P}^1\)-fibration over any variety is a smooth fibration?

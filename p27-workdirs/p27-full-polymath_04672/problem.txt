@@ -1,0 +1,1 @@
+Fill in the grid below with the numbers $1$ through $25$, with each number used exactly once, subject to the following constraints:

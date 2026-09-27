@@ -1,0 +1,1 @@
+In a specialized logistics hub, there is one primary loading dock (the Red Dock) and $k > 1$ auxiliary staging bays (the Blue Bays). A shipment of $2n$ unique crates, labeled with serial numbers from $1$ to $2n$, arrives at the Red Dock. These crates are stacked in a single vertical pile in a completely random order.

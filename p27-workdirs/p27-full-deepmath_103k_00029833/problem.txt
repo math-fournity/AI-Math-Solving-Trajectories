@@ -1,0 +1,1 @@
+Determine if there exists an irreducible polynomial of degree 5 in \( \mathbb{F}_p[x] \) such that \( 25b^4 + 16a^5 \) is not a square in \( \mathbb{F}^{\times}_p \), where the polynomial is given by \( x^5 + ax + b \).

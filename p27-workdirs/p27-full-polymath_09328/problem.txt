@@ -1,0 +1,1 @@
+In a remote digital landscape, a specialized archival server is designed to store a specific quantity of data packets, denoted by a large positive integer $n$. To ensure the integrity of the data, the server must be able to withstand a series of "Square-Wave Stress Tests."

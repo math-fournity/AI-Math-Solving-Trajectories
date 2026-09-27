@@ -1,0 +1,1 @@
+A specialized chemical refinery operates with a primary centrifuge that completes exactly $p = 101$ rotations per cycle. To test different production settings, an engineer selects a "stability factor" $s$, where $s$ is an integer such that $0 < s < p$.

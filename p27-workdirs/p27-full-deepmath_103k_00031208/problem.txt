@@ -1,0 +1,1 @@
+Determine whether there exists an irrational number \( c \) in the interval \((0,1)\) such that neither the decimal digits of \( c \) nor the decimal digits of \( \sqrt{c} \) contain a 0.

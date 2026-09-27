@@ -1,0 +1,1 @@
+Is it true that for a graph with $n$ vertices and $m$ edges, if $m > cn$ and $c > 1$, then the girth is $O(\log n)$? Specifically, is there a constant $C$ which depends on $c$ but not on $n$ such that $g(n,m) < Cn$?

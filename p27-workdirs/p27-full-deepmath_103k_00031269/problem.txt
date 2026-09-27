@@ -1,0 +1,1 @@
+Is it true that for any segment of length 0.001 within the interval \((0,1)\), there exists a value of \(a\) such that a piece of cheese can be divided into two piles of equal weight with a finite number of cuts, where each cut divides a piece in the ratio \(a : (1-a)\)?

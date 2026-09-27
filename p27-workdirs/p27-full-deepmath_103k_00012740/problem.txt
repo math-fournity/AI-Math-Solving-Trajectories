@@ -1,0 +1,1 @@
+Consider a circle $\mathbb{T}$ and an irrational rotation $f_{\theta} : \mathbb{T} \to \mathbb{T}$ defined by $x \mapsto x+\theta$. Define $f^0_\theta(x)=x$ and $f^{n+1}_\theta = f^n_\theta \circ f_\theta$. Let $F = \{ f^n_\theta : n \in \mathbb{N} \}$ and $F' = \{ f_\theta \circ x : x \in F \}$. Determine if $F = F'$.

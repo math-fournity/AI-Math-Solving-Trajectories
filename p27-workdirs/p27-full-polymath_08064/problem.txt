@@ -1,0 +1,1 @@
+A specialized cybersecurity firm is testing a two-factor authentication protocol involving a "Server" and two "Security Nodes," Node A and Node B. To initiate the test, the Server selects a secret Prime Security Level $P$, where $1 \le P < 100$.

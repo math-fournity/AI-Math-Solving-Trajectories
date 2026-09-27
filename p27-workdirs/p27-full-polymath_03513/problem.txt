@@ -1,0 +1,1 @@
+Let $P$ be a convex $n$-gon. Determine the maximum number of diagonals that can be selected from $P$ such that any two of the selected diagonals have at least one point in common.

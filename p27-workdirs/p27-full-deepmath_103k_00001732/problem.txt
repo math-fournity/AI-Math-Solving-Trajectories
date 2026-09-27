@@ -1,0 +1,1 @@
+Let \(\mathcal{A}\) be an almost disjoint (AD) family of infinite subsets of \(\omega\), and let \(\mathcal{M}\) be a maximal almost disjoint (MAD) family such that \(\mathcal{A} \subseteq \mathcal{M}\). If \(\mathcal{A}\) is of true cardinality \(\mathfrak{c}\), is \(\mathcal{M}\) necessarily of true cardinality \(\mathfrak{c}\)? Provide a justification for your answer.

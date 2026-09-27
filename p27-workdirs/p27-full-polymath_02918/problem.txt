@@ -1,0 +1,1 @@
+Let $K$ be the set of all sides and diagonals of a convex $2010-gon$ in the plane. For a subset $A$ of $K,$ if every pair of line segments belonging to $A$ intersect, then we call $A$ as an [i]intersecting set.[/i] Find the maximum possible number of elements of union of two [i]intersecting sets.[/i]

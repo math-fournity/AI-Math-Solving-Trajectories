@@ -1,0 +1,1 @@
+Let $O$ denote the circumcentre of an acute-angled triangle $A B C$. A circle $\Gamma$ passing through vertex $A$ intersects segments $A B$ and $A C$ at points $P$ and $Q$ such that $\angle B O P=\angle A B C$ and $\angle C O Q=\angle A C B$. Prove that the reflection of $B C$ in the line $P Q$ is tangent to $\Gamma$.

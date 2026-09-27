@@ -1,0 +1,1 @@
+In a distant kingdom, a Master Architect and a Lead Logistics Officer are designing a path through a massive square grid of 10,000 plots, arranged in a 100-row by 100-column formation.

@@ -1,0 +1,1 @@
+Given a real analytic function $f$ that is bounded on the real line $\mathbb{R}$, determine whether there always exists a holomorphic function $h$ that is bounded on a given finite open strip containing $\mathbb{R}$, such that $h = f$ on the real line.

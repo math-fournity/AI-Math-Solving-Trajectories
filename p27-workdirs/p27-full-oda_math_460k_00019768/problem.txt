@@ -1,0 +1,1 @@
+Find all positive integer solutions \((x, y)\) to the equation \(x^2 - 2003y^2 = 1\) such that all prime factors of \(x\) divide the fundamental solution \(x_0\) of the equation.

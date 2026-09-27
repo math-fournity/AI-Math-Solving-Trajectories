@@ -1,0 +1,1 @@
+Determine whether there exists a sequence \( z_n \to \infty \) such that for an entire and nonconstant holomorphic function \( f \), the ratio \( \frac{\Im(f(z_n))}{\Re(f(z_n))} \) is unbounded.

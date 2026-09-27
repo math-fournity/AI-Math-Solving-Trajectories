@@ -1,0 +1,1 @@
+Let $F$ be a field and $E$ be a finite extension of $F$. If $E$ is complete with respect to some absolute value, is $F$ also complete with respect to the restriction of that absolute value to $F$? Answer yes or no.

@@ -1,0 +1,1 @@
+In a remote industrial complex, five specialized storage tanks ($n=5$) are used to hold liquid chemicals. For each tank $i$, there is a strictly required minimum volume of chemical that must be stored, denoted by $a_1, a_2, a_3, a_4, a_5$ liters, where each $a_i$ is a positive real number.

@@ -1,0 +1,1 @@
+Let $R$ be a commutative ring with unity, and let $I$ and $J$ be ideals in $R$. For a prime ideal $P$, define $I_P = (R - P)^{-1}I$ as the localization of $I$ at $P$. If $I_P = J_P$ for all prime ideals $P$, does it follow that $I = J$? Provide a proof or counterexample.

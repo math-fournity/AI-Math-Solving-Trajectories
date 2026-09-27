@@ -1,0 +1,1 @@
+In a convex pentagon, call a triangle with vertices at three of the pentagon's vertices large if its area is greater than half the area of the pentagon. What is the maximum possible number of large triangles in a convex pentagon?

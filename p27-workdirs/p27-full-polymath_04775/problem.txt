@@ -1,0 +1,1 @@
+Triangle $ABC$ with $AB=4$, $BC=5$, $CA=6$ has circumcircle $\Omega$ and incircle $\omega$. Let $\Gamma$ be the circle tangent to $\Omega$ and the sides $AB$, $BC$, and let $X=\Gamma \cap \Omega$. Let $Y$, $Z$ be distinct points on $\Omega$ such that $XY$, $YZ$ are tangent to $\omega$. Find $YZ^2$.

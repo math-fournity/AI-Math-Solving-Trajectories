@@ -1,0 +1,1 @@
+In the city of Metros, a power grid is managed by a sequence of $2n$ substations, where $n$ is a positive integer. Each substation $i$ (from $1$ to $2n$) produces a specific amount of energy $x_i$, measured as a real number of gigawatts.

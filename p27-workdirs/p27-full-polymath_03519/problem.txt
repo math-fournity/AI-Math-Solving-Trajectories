@@ -1,0 +1,1 @@
+A token is placed in some square of an $m \times n$ board. The token must visit all squares exactly once according to these rules:

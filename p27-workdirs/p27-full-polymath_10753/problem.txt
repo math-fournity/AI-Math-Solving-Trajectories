@@ -1,0 +1,1 @@
+In a remote botanical research station, scientists are cataloging a rare species of orchid. Each orchid specimen possesses 5 distinct physical traits (such as petal shape or stamen color), and for each trait, there are exactly 4 possible variations.

@@ -1,0 +1,1 @@
+Let $n \ge 2$ be an integer. We say that $n$ is a *triple-prime-compliant* number if there exist three distinct primes $p, q, r$ such that the following property holds:

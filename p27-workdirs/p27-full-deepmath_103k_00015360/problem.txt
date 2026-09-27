@@ -1,0 +1,1 @@
+In a separable compact Hausdorff space $X$, determine whether there exist two open sets $V, U$ and a continuous function $f: X \to \mathbb{R}$ such that $x \in V$, $y \in U$, $f(t) = 1$ for all $t \in V$, $f(t) < 0$ for all $t \in U$, and $f^{-1}(\{0\})$ has empty interior.

@@ -1,0 +1,1 @@
+Let \( n \) be a positive integer. Call a sequence of positive integers \( a_{1}, a_{2}, \ldots, a_{n} \) tame if it satisfies

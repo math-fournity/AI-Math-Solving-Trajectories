@@ -1,0 +1,1 @@
+Let \( C \) be the Cantor set. Construct an embedding \( h: C \rightarrow [0,1] \times [0,1] \) (where an embedding is an injective continuous map that is a homeomorphism onto its image) such that for every continuous function \( f: [0,1] \rightarrow [0,1] \), the graph \( G_f \) of \( f \) intersects \( h(C) \), i.e., \( G_f \cap h(C) \neq \emptyset \).

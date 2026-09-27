@@ -1,0 +1,1 @@
+Given a positive real number \( k \), find the maximum value of \( \lambda \) such that for all \( a \ge b \ge c \ge d \ge 0 \) with \( a + b + c + d = 1 \), the following inequality holds:

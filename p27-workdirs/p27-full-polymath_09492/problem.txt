@@ -1,0 +1,1 @@
+In a specialized botanical archive, a master collection of rare seeds is stored in a vault labeled $S$. To organize the archive, a curator creates a sequence of 100 distinct, non-empty display boxes, denoted as $X_1, X_2, \ldots, X_{100}$. Each box contains a specific subset of the seeds found in vault $S$.

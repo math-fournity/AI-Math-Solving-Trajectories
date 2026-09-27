@@ -1,0 +1,1 @@
+A high-tech circular circuit board features $2n$ connection terminals labeled $T_1, T_2, \ldots, T_{2n}$ arranged in order around its outer edge. These terminals form the vertices of a convex $2n$-sided polygon.

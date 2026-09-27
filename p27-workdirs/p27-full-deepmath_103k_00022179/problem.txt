@@ -1,0 +1,1 @@
+Determine whether the graph of a base-13 function, which takes every value on every interval and is discontinuous everywhere, is connected.

@@ -1,0 +1,1 @@
+Is it true that any proper submodule of a non-zero projective module is contained in a maximal submodule?

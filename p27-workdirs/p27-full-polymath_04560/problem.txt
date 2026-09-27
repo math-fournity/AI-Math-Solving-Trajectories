@@ -1,0 +1,1 @@
+Find the smallest positive integer $k(m, n)$ such that among any $k(m, n)$ people, either there are $2m$ who can be divided into $m$ pairs of people who know each other, or there are $2n$ who can be divided into $n$ pairs of people who do not know each other.

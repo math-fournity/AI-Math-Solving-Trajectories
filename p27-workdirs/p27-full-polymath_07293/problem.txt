@@ -1,0 +1,1 @@
+In the city of Cyclick, a circular plaza features 11 meditation pedestals arranged at perfectly equal intervals around its perimeter. The Grand Architect intends to assign each pedestal a unique identification rank from the set $\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10\}$. Two ranking schemes are considered identical if one can be rotated to match the other.

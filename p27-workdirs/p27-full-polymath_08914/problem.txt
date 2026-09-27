@@ -1,0 +1,1 @@
+A high-tech manufacturing firm, Prime-Core Dynamics, is designing a pressurized cooling system. The efficiency coefficient of the system is determined by the configuration of three tuning parameters: $m$, $n$, and $p$. Due to hardware constraints, $m$ and $n$ must be positive integers, and $p$ must be a prime number.

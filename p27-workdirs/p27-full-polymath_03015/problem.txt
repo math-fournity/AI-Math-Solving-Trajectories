@@ -1,0 +1,1 @@
+Given a stone placed at $(x, y)$ on the coordinate plane and an integer $p > 2$, the stone can be moved according to the following rules:

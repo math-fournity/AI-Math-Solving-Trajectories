@@ -1,0 +1,1 @@
+Determine whether it is possible to construct a map from a bounded region in $\mathbb{R}^2$ to the unit sphere $S^2$ such that the Jacobian determinant of the map is bounded away from zero and infinity.

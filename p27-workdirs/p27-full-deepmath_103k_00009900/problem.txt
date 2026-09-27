@@ -1,0 +1,1 @@
+For a Hecke L-function, determine if it is an Artin L-function when all of the local eigenvalues are roots of unity.

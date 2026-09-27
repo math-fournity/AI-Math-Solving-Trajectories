@@ -1,0 +1,1 @@
+A triangle and a circle are in the same plane. Show that the area of the intersection of the triangle and the circle is at most one third of the area of the triangle plus one half of the area of the circle.

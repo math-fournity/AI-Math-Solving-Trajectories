@@ -1,0 +1,1 @@
+Let \( P(x) \) and \( Q(x) \) be distinct polynomials of degree 2020 with non-zero coefficients. Suppose they have \( r \) common real roots (counting multiplicity) and \( s \) common coefficients. Determine the maximum possible value of \( r + s \).

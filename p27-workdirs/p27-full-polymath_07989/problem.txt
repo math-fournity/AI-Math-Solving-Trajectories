@@ -1,0 +1,1 @@
+In the high-tech semiconductor facility of Neo-Kyoto, a precision laser calibration sequence is governed by a complex efficiency protocol involving 104 distinct power stages, indexed from $k = 0$ to $k = 103$.

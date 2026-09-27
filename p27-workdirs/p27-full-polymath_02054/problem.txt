@@ -1,0 +1,1 @@
+Four balls of radius 1 are mutually tangent, with three resting on the floor and the fourth resting on the others. A regular tetrahedron, each of whose edges has length $s$, is circumscribed around the balls such that each face of the tetrahedron is tangent to one of the balls. Find the value of $s$.

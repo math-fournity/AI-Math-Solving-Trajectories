@@ -1,0 +1,1 @@
+In a remote industrial research facility, two chemical reactors, Alpha and Beta, process high-energy isotopes. The energy output of a specific reaction is governed by the structural formula $x^{2} + y^{2} + 3xy$, where $x$ and $y$ represent the integer quantities of two catalysts used in the process.

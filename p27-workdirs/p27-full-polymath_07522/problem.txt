@@ -1,0 +1,1 @@
+In a remote sector of the galaxy, a drone pilot is testing a new propulsion system on a linear navigation rail. The rail contains two docking stations: Station $B$ (the Blue Base) and Station $R$ (the Red Beacon). Initially, a blue cargo ship is docked at Station $B$ and a red scout ship is docked at Station $R$.

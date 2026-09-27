@@ -1,0 +1,1 @@
+Find the smallest possible value of the middle number among three consecutive natural numbers, each having exactly $1000$ positive divisors.

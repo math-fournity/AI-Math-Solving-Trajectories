@@ -1,0 +1,1 @@
+Assume that $e$ and $f$ are two projections in the Cuntz algebra $\mathcal{O}_n$ that have the same $K_0$ class. Are they necessarily Murray von Neumann equivalent?

@@ -1,0 +1,1 @@
+In a high-security data facility, a mainframe is composed of a $100 \times 100$ grid of server nodes. Each node must be set to one of two states: "Active" (represented by a high signal) or "Inactive" (represented by a low signal).

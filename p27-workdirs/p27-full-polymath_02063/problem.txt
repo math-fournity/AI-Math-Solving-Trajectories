@@ -1,0 +1,1 @@
+Find the smallest \( n \) such that it is possible to have \( n \) people with the following properties: among every 4 people, there are 2 who are not friends. If \( k \) people are not friends (every 2), then one can find 3 mutual friends in the remaining \( n-k \) people.

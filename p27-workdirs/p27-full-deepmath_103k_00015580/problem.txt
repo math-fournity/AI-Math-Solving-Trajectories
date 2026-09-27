@@ -1,0 +1,1 @@
+Given positive real numbers $x_1,x_2,\ldots,x_n$ satisfying $\displaystyle\sum_{i=1}^{n}{x_i}=n$, determine whether the inequality \(\sum_{\text{sym}}{\prod_{i=1}^{n}{x_i^i}} \leqslant n!\) holds. Here, $\sum_{\text{sym}}$ denotes the sum over all permutations of $x_1,x_2,\ldots,x_n$.

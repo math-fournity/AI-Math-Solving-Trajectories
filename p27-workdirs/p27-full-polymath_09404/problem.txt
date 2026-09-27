@@ -1,0 +1,1 @@
+In a bustling logistical hub, a square warehouse floor is divided into an $n \times n$ grid of storage zones. The dimensions are governed by a specific integer efficiency constant $k$, such that $k \ge 2$ and the warehouse size $n$ falls within the range $k \le n \le 2k - 1$.

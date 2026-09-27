@@ -1,0 +1,1 @@
+Determine the values of $k$ for which the Diophantine equation $8kx + x^4 = y^2$ has infinitely many rational solutions.

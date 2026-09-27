@@ -1,0 +1,1 @@
+Suppose $X$ is a connected separable metric space, and $X\setminus \{x\}$ has exactly two connected components for every $x\in X$. If $X$ is locally compact, is $X$ homeomorphic to the real line $\mathbb{R}$? Provide a justification for your answer.

@@ -1,0 +1,1 @@
+Let \(\left(x_{n}\right)\) be a sequence of strictly negative numbers with \(x_{0} = \tan(\pi - 1)\) and \(x_{1} = \tan\left(\frac{2\pi - 1}{2}\right)\). The sequence satisfies the equation:

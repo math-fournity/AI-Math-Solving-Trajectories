@@ -1,0 +1,6 @@
+The positive divisors of the integer n > 1 are d₁ < d₂ < ... < dₖ, so that
+d₁ = 1 and dₖ = n. Let d = d₁d₂ + d₂d₃ + ... + dₖ₋₁dₖ.
+Show that d < n² and find all n for which d divides n².
+
+</rule>
+</rules>

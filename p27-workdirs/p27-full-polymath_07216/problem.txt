@@ -1,0 +1,1 @@
+A digital artist is designing a repeating wallpaper pattern for an infinite LED grid. To create the pattern, she uses a specific palette of colors represented by the set of integers $A = \{1, 2, \dots, mn\}$.

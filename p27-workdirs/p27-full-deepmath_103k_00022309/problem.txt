@@ -1,0 +1,1 @@
+Determine whether it is possible to construct a continuous, compactly-supported function whose Fourier transform has a winding number of 2 around a given point in the complex plane.

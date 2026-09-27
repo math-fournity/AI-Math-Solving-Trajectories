@@ -1,0 +1,1 @@
+In a futuristic city, an urban planning zone is defined by a perfect square lot $U$ with a side length of 1 kilometer. A telecommunications company is required to place exactly $4n$ signal towers (where $n$ is a specific positive integer) at distinct locations within the interior of this square lot.

@@ -1,0 +1,1 @@
+Let $ABC$ be a triangle with $BC = a$, $CA = b$, and $AB = c$. The $A$-excircle is tangent to $\overline{BC}$ at $A_1$; points $B_1$ and $C_1$ are similarly defined.

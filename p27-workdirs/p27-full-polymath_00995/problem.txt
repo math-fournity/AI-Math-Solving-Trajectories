@@ -1,0 +1,1 @@
+A table of size $n \times n$ is filled with the numbers $1, 2, \ldots, n^2$ in such a way that each number appears exactly once. We say that $n$ is a "mean-integer" number if there exists such a filling where the arithmetic mean of the numbers in every row and every column is an integer.

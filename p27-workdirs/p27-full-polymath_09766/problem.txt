@@ -1,0 +1,1 @@
+In a high-security data center, a square mainframe server rack is organized into an $n \times n$ grid of processing nodes. Currently, 101 of these nodes are designated as "Master Nodes" and are glowing blue.

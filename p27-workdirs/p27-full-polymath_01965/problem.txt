@@ -1,0 +1,1 @@
+Find all quadruples $(a,b,c,d)$ of positive integers such that $\frac{ac+bd}{a+c}$ and $\frac{bc-ad}{b-d}$ are both equal to the prime number $p = 90121$. Let $S$ be the set of all such quadruples. Compute the sum of all elements in all quadruples in $S$, i.e., $\sum_{(a,b,c,d) \in S} (a+b+c+d)$.

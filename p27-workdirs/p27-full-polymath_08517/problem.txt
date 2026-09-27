@@ -1,0 +1,1 @@
+A team of civil engineers is constructing a series of modular towers, denoted as $x_1, x_2, x_3, \ldots$ measured in meters. The height of the first tower, $x_1$, is exactly 1 meter.

@@ -1,0 +1,1 @@
+For positive integers $m,n \geq 2$, let $S_{m,n} = \{(i,j): i \in \{1,2,\ldots,m\}, j\in \{1,2,\ldots,n\}\}$ be a grid of $mn$ lattice points. We say a pair $(m, n)$ is "grid-covering" if there exists a simple polygon $P$ with vertices in $S_{m,n}$ such that:

@@ -1,0 +1,1 @@
+Find the maximum number of cells that can be coloured from a $4\times 3000$ board such that no tetromino is formed.

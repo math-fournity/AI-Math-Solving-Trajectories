@@ -1,0 +1,1 @@
+Can the function $f$ be extended to an entire function such that $|f'(z)-1|<\frac{1}{2}$ for all $z$?

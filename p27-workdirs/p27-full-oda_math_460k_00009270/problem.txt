@@ -1,0 +1,1 @@
+Let \( R \rightarrow S \) be a ring map of finite type, and let \( R \rightarrow R' \) be any ring map. Set \( S' = R' \otimes_R S \). Describe the set of points in \( \operatorname{Spec}(S') \) where the map \( R' \rightarrow S' \) is quasi-finite.

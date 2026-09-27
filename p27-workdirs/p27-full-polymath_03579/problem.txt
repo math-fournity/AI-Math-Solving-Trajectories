@@ -1,0 +1,1 @@
+Find the maximum number of telephone numbers that satisfy the following three conditions:

@@ -1,0 +1,1 @@
+In a remote territory, three communication outposts, $A$, $B$, and $C$, form a triangular network. A circular perimeter fence $\omega$, centered at a command hub $O$, passes through all three outposts. Surveyors have measured the direct distances between outposts as $AB = 15$ kilometers and $AC = 14$ kilometers.

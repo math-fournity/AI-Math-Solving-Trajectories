@@ -1,0 +1,1 @@
+Determine whether there exists a bijective function \( f: \mathbb{N}^+ \to \mathbb{Q} \setminus \{0\} \) such that \(|f(n)| > \frac{1}{n}\) for all positive integers \( n \).

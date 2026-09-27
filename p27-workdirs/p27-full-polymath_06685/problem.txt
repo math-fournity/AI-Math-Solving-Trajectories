@@ -1,0 +1,1 @@
+In a specialized laboratory, a series of $n$ experimental chambers are arranged in a straight line, numbered $1$ to $n$. Two technicians, Alpha and Beta, take turns decommissioning these chambers. Alpha always performs the first decommissioning.

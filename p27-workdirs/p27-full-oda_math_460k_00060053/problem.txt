@@ -1,0 +1,1 @@
+Let $\mathbb{N}$ be the set of positive integers. A function $f: \mathbb{N} \to \mathbb{N}$ is called harmonizing if for any finite subset $S \subset \mathbb{N}$ such that $\sum_{s \in S} \frac{1}{s}$ is an integer, it follows that $\sum_{s \in S} \frac{1}{f(s)}$ is also an integer. Find all harmonizing functions.

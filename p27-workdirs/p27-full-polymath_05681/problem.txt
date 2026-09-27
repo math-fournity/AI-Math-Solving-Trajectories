@@ -1,0 +1,1 @@
+Find a natural number \( n \) for which some five diagonals of a regular \( n \)-gon intersect at a point different from the center of the \( n \)-gon.

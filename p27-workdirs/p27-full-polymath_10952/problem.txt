@@ -1,0 +1,1 @@
+In a highly advanced data-storage facility, a master encryption key is represented by a specific positive integer, $x$. For the key to meet the facility's highest security protocol, the total number of unique security sub-segments (the divisors of $x$) must be exactly 2016.

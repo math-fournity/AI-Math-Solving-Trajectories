@@ -1,0 +1,1 @@
+For a given integer \( n > 0 \), let \( P = \{p_1, p_2, \cdots, p_n\} \) be a set of primes where \( \min(p_1, p_2, \cdots, p_n) > 2^{2^{2^n}} \). Calculate the smallest possible value of

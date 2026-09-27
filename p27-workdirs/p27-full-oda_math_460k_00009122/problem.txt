@@ -1,0 +1,1 @@
+Given a polynomial \( f(x) = a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0 \) with real coefficients \( a_i \in \mathbb{R} \) and the condition \( |f(x)| \le 1 \) for all \( |x| \le 1 \), find the maximum value of \( |a_n| + |a_{n-1}| + \cdots + |a_1| + |a_0| \).

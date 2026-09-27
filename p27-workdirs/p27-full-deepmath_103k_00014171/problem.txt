@@ -1,0 +1,1 @@
+Given a function $f(x,y)$ defined on the domain $D = [0,1] \times [0,1]$, where $f$ is continuous with respect to each variable separately, and $f$ vanishes on a dense subset of $D$, does $f$ vanish on the entire domain $D$? Answer with 'Yes' or 'No'.

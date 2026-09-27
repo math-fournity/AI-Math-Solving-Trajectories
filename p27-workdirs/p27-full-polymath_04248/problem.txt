@@ -1,0 +1,1 @@
+Arne and Berit play a game using the set of integers $\{1, 2, \dots, n\}$. They alternately choose distinct numbers from this set (Arne goes first). The game ends when the sum of all numbers chosen so far is at least $m$. Arne wins if the game ends on his turn.

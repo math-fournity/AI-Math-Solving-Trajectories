@@ -1,0 +1,1 @@
+5. Let the set $X=\{1,2, \cdots, 100\}$, and the function $f: X \rightarrow X$ satisfies the following conditions:

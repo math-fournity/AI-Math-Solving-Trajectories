@@ -1,0 +1,1 @@
+Let \( p\colon E\to B \) be a fibration with simply connected fibers that are homotopy equivalent to a compact CW-complex. Must the map \( p_*\colon H_3(E;\mathbb{Q})\to H_3(B;\mathbb{Q}) \) be surjective?

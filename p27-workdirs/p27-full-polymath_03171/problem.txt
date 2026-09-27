@@ -1,0 +1,1 @@
+Determine the maximum positive integer \( n \) such that if \( n \) dominoes are placed on a \( 6 \times 6 \) chessboard with each domino covering exactly two unit squares, one can always place one more domino on the board without moving any other dominoes.

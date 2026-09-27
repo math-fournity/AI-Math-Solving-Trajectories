@@ -1,0 +1,1 @@
+In a sprawling digital metropolis, a central server is tasked with arranging 6,051 specific data packets into a circular buffer for transmission. The packets consist of three distinct types: 2,017 identical "Crimson" packets, 2,017 identical "Jade" packets, and 2,017 identical "Azure" packets.

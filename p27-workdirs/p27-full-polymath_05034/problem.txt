@@ -1,0 +1,1 @@
+Thirty rays with a common origin are constructed on a plane. Consider all angles between any two of these rays. Let $N$ be the number of acute angles among these angles. Find the smallest value of $N$.

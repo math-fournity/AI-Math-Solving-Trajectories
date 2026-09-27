@@ -1,0 +1,1 @@
+Let \((S^2, g_1)\) denote the 2-sphere in \(\mathbb{R}^3\) with its standard metric of constant Gaussian curvature 1. Then, given a \(C^\infty\) function \(K(x)\) on \(S^2\), find a metric \(g\) on \(S^2\) (pointwise) conformally equivalent to \(g_1\) with prescribed Gaussian curvature \(K(x)\) (so that \(g = e^{2u}g_1\) for some \(C^\infty\) function \(u\)).

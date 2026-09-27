@@ -1,0 +1,1 @@
+Given a Jordan curve \(\gamma_1 \colon [a,b] \to \mathbb{C}\) and an \(\epsilon > 0\), determine if there exists a continuously differentiable Jordan curve \(\gamma_2 \colon [a,b] \to \mathbb{C}\) such that \( |\gamma_1(t) - \gamma_2(t) | < \epsilon\) for all \( t \in [a,b]\).

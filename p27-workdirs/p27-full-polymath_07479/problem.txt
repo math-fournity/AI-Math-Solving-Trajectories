@@ -1,0 +1,1 @@
+A high-security data center maintains two circular synchronization rings: the Alpha Ring, containing $n = 101$ primary servers, and the Beta Ring, containing the $n$ corresponding backup units for those specific servers. Two diagnostic probes, the Master Probe and the Slave Probe, perform integrity checks on these rings in two distinct operational modes:

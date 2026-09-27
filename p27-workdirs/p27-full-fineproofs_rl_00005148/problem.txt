@@ -1,0 +1,1 @@
+We place a certain number of open segments in the plane, none of which are parallel to the $x$ and $y$ axes. These segments are disjoint. Thanima starts moving from $(0,0)$ parallel to the $x$-axis. Each time she encounters a wall, she turns 90 degrees and continues moving without crossing the wall.

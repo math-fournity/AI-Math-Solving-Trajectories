@@ -1,0 +1,1 @@
+Let \( E \) be a locally convex Hausdorff space such that its strong dual \( E'_b \) is metrizable. Define \( f(E) \) as the smallest number of seminorms required to define the topology of \( E \). Find \( f(E) \).

@@ -1,0 +1,1 @@
+Find the smallest number \( n \in \mathbb{N} \) such that there exist distinct positive integers \( a_i \) for \( i = 1, 2, \dots, n \) for which the expression

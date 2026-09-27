@@ -1,0 +1,1 @@
+Let \(ABC\) be a triangle and let \(D_A\) be the \(A\)-Dumpty point. Let \(D, E, F\) be the reflections of \(D_A\) over \(BC, AC, AB\), respectively. Let the nine-point circles of \(ABC\) and \(DEF\) intersect at \(X, Y\). If \(R\) is the circumradius of triangle \(AXY\), find the value of \(\frac{R}{D_AD}\) in simplest form.

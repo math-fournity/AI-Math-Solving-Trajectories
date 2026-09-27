@@ -1,0 +1,1 @@
+Determine the maximum possible number of points you can place in a rectangle with lengths $14$ and $28$ such that any two of those points are more than $10$ apart from each other.

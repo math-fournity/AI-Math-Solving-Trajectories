@@ -1,0 +1,1 @@
+In a vast digital landscape represented as an infinite grid of processing nodes, a "Replicator" protocol is initialized. To begin the process, a specific number of nodes, $N$, are manually activated (marked).

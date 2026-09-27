@@ -1,0 +1,1 @@
+For any natural number \( n \), determine the coefficients \( a_{1}, a_{2}, \ldots, a_{n} \) such that the bivariate polynomial

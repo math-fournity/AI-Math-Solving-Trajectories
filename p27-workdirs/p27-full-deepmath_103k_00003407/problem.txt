@@ -1,0 +1,1 @@
+Consider a compact connected Riemannian 2-manifold $M$ with positive curvature and diameter 1. Determine the supremum of the average distance between two randomly chosen points on $M$, distributed according to the volume form on $M$. Assume $M$ is diffeomorphic to a 2-sphere. What is this supremum?

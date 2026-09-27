@@ -1,0 +1,1 @@
+Alice and Bazza are playing the inekoalaty game, a two-player game whose rules depend on a positive real number $\lambda$ which is known to both players. On the $n$th turn of the game (starting with $n=1$) the following happens:

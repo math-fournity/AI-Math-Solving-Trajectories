@@ -1,0 +1,1 @@
+Define \( K(n,0) = \varnothing \) and for all nonnegative integers \( m \) and \( n \), \( K(n,m+1) = \left\{ k \mid 1 \le k \le n \text{ and } K(k,m) \cap K(n-k,m) = \varnothing \right\} \). Find the number of elements of \( K(2004,2004) \).

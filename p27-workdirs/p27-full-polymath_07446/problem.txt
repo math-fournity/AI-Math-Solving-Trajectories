@@ -1,0 +1,1 @@
+In a specialized logistics warehouse, there are 100 designated storage bays, numbered $i = 1$ to $100$. A manager must distribute exactly 100 identical cargo crates among these bays, where $a_i$ represents the number of crates placed in bay $i$. Each $a_i$ must be a non-negative integer.

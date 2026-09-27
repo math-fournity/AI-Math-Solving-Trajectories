@@ -1,0 +1,1 @@
+Point \(M\) is the midpoint of side \(AB\) of a regular pentagon \(ABCDE\). If I connect with line segments every two of the points \(A, B, C, D, E, M\), how many triangles will there be in the drawing?

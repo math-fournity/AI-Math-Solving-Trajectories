@@ -1,0 +1,1 @@
+Determine the metric completion \( \hat{M} \) of the universal covering of the punctured plane \( \mathbb{C} \setminus \{0\} \).

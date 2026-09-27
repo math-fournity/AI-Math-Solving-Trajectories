@@ -1,0 +1,1 @@
+Determine whether a symmetric bilinear form $g$ on an infinite-dimensional vector space $V$ over a field $F$ of characteristic $0$ always admits an orthogonal basis. Answer with 'Yes' or 'No'.

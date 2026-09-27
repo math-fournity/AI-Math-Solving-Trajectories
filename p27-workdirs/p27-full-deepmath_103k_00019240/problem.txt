@@ -1,0 +1,1 @@
+Let $f$ be a one-to-one morphism between two irreducible varieties in the Zariski topology. Must $f$ be a homeomorphism onto its image if the varieties are defined over the complex field $\mathbb{C}$? Provide a justification for your answer.

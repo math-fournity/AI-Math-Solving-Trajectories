@@ -1,0 +1,1 @@
+Let $Y$ and $X$ be independent centered normal random variables with variances $\frac{\sigma^2}{1-\theta^2}$ and 1, respectively. Compute the expectation:

@@ -1,0 +1,1 @@
+The three medians of a triangle divide its angles into 6 angles. What is the greatest possible number $k$ of angles greater than $30^\circ$ out of these 6 angles?

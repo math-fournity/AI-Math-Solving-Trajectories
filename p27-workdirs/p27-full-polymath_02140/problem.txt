@@ -1,0 +1,1 @@
+We consider angles formed by one angular square, 2012 horizontal adjacent squares, and 2012 vertical adjacent squares.

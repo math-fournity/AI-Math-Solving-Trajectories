@@ -1,0 +1,1 @@
+In a high-security research facility, there is a server rack consisting of a $10 \times 10$ grid of 100 independent data storage nodes. To ensure the survival of a critical encryption key, a technician must distribute the key across 10 specific nodes on a single backup drive.

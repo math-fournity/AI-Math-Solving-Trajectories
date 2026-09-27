@@ -1,0 +1,1 @@
+A specialized high-tech storage vault is designed with a series of distinct modular containment units. Each unit has a capacity that must be equal to the square of a unique positive integer (for example, $1^2, 2^2, 3^2, \dots$).

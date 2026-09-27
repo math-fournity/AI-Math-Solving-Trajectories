@@ -1,0 +1,1 @@
+For any set $A=\left\{x_{1}, x_{2}, x_{3}, x_{4}, x_{5}\right\}$ of five distinct positive integers denote by $S_{A}$ the sum of its elements, and denote by $T_{A}$ the number of triples $(i, j, k)$ with $1 \leqslant i<j<k \leqslant 5$ for which $x_{i}+x_{j}+x_{k}$ divides $S_{A}$.

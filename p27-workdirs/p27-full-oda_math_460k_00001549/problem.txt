@@ -1,0 +1,1 @@
+Let \( n \) be a positive integer and \( A \) a set of integers such that the set \( \{x = a + b \mid a, b \in A\} \) contains \( \{1^2, 2^2, \dots, n^2\} \). Determine the smallest positive integer \( N \) such that for all \( n \ge N \), the inequality \( |A| > n^{0.666} \) holds.

@@ -1,0 +1,1 @@
+In the city of Arithmos, there is a specialized archive containing exactly 100 historical canisters, indexed from 1 to 100. A curator wants to select a collection of these canisters, which we will call "Set $S$," to be featured in a security-themed exhibition.

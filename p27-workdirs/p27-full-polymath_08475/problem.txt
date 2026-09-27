@@ -1,0 +1,1 @@
+In a specialized digital cryptography lab, security protocols are generated using a recursive "Tower Function" denoted as $T(a, b)$. For any two positive integers $a$ and $b$, the function is defined by the following rules:

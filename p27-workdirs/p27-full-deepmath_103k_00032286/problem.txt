@@ -1,0 +1,1 @@
+Determine whether for each natural number \( n \), there exists a circle that contains exactly \( n \) points with integer coordinates.

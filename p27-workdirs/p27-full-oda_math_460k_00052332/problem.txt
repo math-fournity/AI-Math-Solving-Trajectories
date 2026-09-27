@@ -1,0 +1,1 @@
+Consider the sum \( S = \sum_{k=1}^{5^{2019}} 3^{\gcd(5^{2019}, k)} \). Find the largest integer \( n \) such that \( 5^n \) divides \( S \).

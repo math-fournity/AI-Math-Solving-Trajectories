@@ -1,0 +1,1 @@
+Let  $K,L, M$  be the midpoints of  $BC,CA,AB$  repectively on a given triangle  $ABC$ . Let  $\Gamma$  be a circle passing through  $B$  and tangent to the circumcircle of  $KLM$ , say at  $X$ . Suppose that  $LX$  and  $BC$  meet at  $\Gamma$  . Show that  $CX$  is perpendicular to  $AB$ .

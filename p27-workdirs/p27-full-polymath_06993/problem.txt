@@ -1,0 +1,1 @@
+In a specialized logistics hub, a grid-based storage floor is organized into a 29x29 layout of docking bays. The rows are numbered 1 through 29 from south to north, and the columns are numbered 1 through 29 from west to east.

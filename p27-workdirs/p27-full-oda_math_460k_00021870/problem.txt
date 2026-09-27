@@ -1,0 +1,1 @@
+Determine the minimum number of links required to create a polygonal chain that covers all the vertices of a $k$-dimensional hypercube, where $k > 2$.

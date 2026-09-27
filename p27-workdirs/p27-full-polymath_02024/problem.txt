@@ -1,0 +1,1 @@
+23. Given a positive number $c$. In space, 99 points are marked in such a way that for each of the marked points, the distances to the two nearest marked points differ by at least a factor of $c$. What is the largest $c$ for which this is possible?

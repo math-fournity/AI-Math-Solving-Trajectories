@@ -1,0 +1,1 @@
+Given 10 points arranged in an equilateral triangular grid of side length 4, how many ways are there to choose two distinct line segments, with endpoints on the grid, that intersect in exactly one point (not necessarily on the grid)?

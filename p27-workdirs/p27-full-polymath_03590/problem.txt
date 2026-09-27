@@ -1,0 +1,1 @@
+Let $(x_1,x_2,\dots,x_{100})$ be a permutation of $(1,2,...,100)$. Define $$S = \{m \mid m\text{ is the median of }\{x_i, x_{i+1}, x_{i+2}\}\text{ for some }i\}.$$ Determine the minimum possible value of the sum of all elements of $S$.

@@ -1,0 +1,1 @@
+In a specialized laboratory, three chemical reagents—Xenon-gas, Yttrium-liquid, and Zinc-powder—are combined to form exactly one liter of a foundational mixture. The volumes of these components are represented by $x$, $y$, and $z$, all of which must be greater than zero such that $x + y + z = 1$.

@@ -1,0 +1,1 @@
+In the city of Gridopolis, an infinite grid of square districts stretches in every direction. The city planning commission is implementing a new zoning regulation based on a specific L-shaped service zone called a "Sector."

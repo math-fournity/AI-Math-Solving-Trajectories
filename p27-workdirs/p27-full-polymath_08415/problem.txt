@@ -1,0 +1,1 @@
+In a specialized logistics warehouse, an automated transport robot is programmed to deliver a package from the southwestern corner (Coordinate 0,0) to the northeastern corner (Coordinate 6,6). The warehouse floor is a grid with a network of conveyor tracks located at every integer line $x \in \{0, 1, \dots, 6\}$ and $y \in \{0, 1, \dots, 6\}$.

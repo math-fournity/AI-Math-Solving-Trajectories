@@ -1,0 +1,9 @@
+/-!
+# IMO 2007 A4
+
+Let $G$ be a totally ordered abelian group and $G_{>0} = \{x \in G : x > 0\}$.
+Find all functions $f : G_{>0} \to G_{>0}$ such that for any $x, y \in G_{>0}$,
+$$ f(x + f(y)) = f(x + y) + f(y). $$
+-/
+
+##

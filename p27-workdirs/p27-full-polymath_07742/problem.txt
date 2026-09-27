@@ -1,0 +1,1 @@
+A specialized botany laboratory is conducting an experiment involving 2,000 genetically modified saplings. Each sapling has been engineered with 5 specific phenotypic traits, and for each trait, there are exactly 4 distinct variants (labeled A, B, C, and D) that the plant can express. Every sapling expresses exactly one variant for each of the 5 traits.

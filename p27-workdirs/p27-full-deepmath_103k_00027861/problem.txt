@@ -1,0 +1,1 @@
+Determine the minimum number of quadratic equations required to define the 10-dimensional Spinor variety in a scheme-theoretic sense.

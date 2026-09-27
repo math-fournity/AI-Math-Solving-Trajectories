@@ -1,0 +1,1 @@
+In the Kingdom of Arithmetica, a Royal Architect named Petya has designed a secret palace consisting of $x$ rooms, where $x$ is a positive integer. The only known specification of this palace is that the sum of the digits of the total number of rooms $x$ is exactly 2012.

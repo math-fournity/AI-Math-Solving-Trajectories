@@ -1,0 +1,1 @@
+10.3. On the back of 2005 cards, there are 2005 different real numbers written. Each time you ask a question, you can point to any three cards and ask about the set of 3 numbers written on them. How many times do you need to ask at minimum to definitely find out what numbers are written on the back of each card?

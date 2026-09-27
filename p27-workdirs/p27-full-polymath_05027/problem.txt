@@ -1,0 +1,1 @@
+Let $a_1, a_2, \dots, a_m$ be a finite sequence of positive integers such that not all $a_i$ are the same. Let $S = \sum_{i=1}^m a_i$. It is known that there exist non-negative integers $b, c,$ and $N$ such that

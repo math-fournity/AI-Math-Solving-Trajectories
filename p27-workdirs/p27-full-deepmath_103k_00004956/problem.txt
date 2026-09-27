@@ -1,0 +1,1 @@
+Suppose $X \rightarrow \operatorname{Spec}(A)$ is a morphism between a scheme $X$ and an affine scheme $\operatorname{Spec}(A)$ that satisfies the following conditions:

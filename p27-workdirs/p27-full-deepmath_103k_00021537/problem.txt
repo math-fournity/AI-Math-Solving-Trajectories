@@ -1,0 +1,1 @@
+Determine the number of compact Hausdorff spaces of cardinality \( \kappa \), up to homeomorphism, where \( \kappa \) is an uncountable cardinal.

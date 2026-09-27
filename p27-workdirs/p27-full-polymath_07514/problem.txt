@@ -1,0 +1,1 @@
+A high-tech server farm consists of a square grid of 25 distinct processing modules, arranged in 5 rows and 5 columns. Each module is assigned a unique power consumption rating from the set of integers $\{1, 2, \ldots, 25\}$ watts, such that every value in the set is used exactly once across the grid.

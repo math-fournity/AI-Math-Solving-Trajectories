@@ -1,0 +1,1 @@
+A massive solar power farm is being constructed on a plot of land shaped like a convex quadrilateral. The total area of this plot, denoted as $S$, is exactly $2024$ square kilometers, and the total length of the perimeter fence, $p$, is exactly $184$ kilometers.

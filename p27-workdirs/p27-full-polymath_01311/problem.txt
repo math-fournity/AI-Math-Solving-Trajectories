@@ -1,0 +1,1 @@
+Let \( P(x) \) be a polynomial of degree 2024 with real coefficients. Suppose that for all real numbers \( a, b, c \) such that \( a+b+c=0 \), the following inequality holds:

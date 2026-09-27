@@ -1,0 +1,1 @@
+In a sprawling telecommunications network, engineers are connecting several server hubs with high-speed fiber-optic data links. Each hub is a discrete point, and each link connects exactly two distinct hubs.

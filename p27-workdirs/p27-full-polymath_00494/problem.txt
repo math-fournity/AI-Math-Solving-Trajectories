@@ -1,0 +1,1 @@
+Inside a convex 2011-gon \( M \), 2011 points are chosen such that no three among the given 4022 points (the vertices of \( M \) and the internal 2011 points) lie on the same line. A coloring of the points in two colors is called good if some of the points can be connected by segments such that the following conditions are satisfied:

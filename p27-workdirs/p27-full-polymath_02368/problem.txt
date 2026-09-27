@@ -1,0 +1,1 @@
+For a natural number $m \ge 3$, let $r(m)$ be the smallest natural number such that for any partition of the set $\{1, 2, \dots, r(m)\}$ into two subsets $A$ and $B$, the equation $x_1 + x_2 + \dots + x_{m-1} = x_m$ has a solution where all $x_i$ belong to the same subset (either all in $A$ or all in $B$). Find the value of $r(20)$.

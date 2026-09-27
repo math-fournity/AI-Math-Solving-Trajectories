@@ -1,0 +1,1 @@
+Is there a model of the first-order theory of the complete ordered real field, \( \operatorname{Th}(\mathbb{R}) \), that is not a complete ordered field in the sense that it lacks the property where every non-empty subset bounded from above has a supremum?

@@ -1,0 +1,1 @@
+In the futuristic city of Neura, a central processing hub uses a specific "Signal Modulation Function," $f(x) = |x - 4| - 2$. This function processes an incoming voltage $x$ and outputs a refined signal. To ensure the security of the city’s encryption, the hub runs this signal through the function three times in a sequence, represented by the nested operation $f(f(f(x)))$.

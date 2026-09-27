@@ -1,0 +1,1 @@
+A massive logistics center is divided into a rectangular grid of storage zones, measuring 2020 zones wide by 2021 zones long. The management wants to cover the entire floor area of $2020 \times 2021$ units with two specific types of prefabricated flooring panels without any gaps or overlaps.

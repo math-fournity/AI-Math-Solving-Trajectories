@@ -1,0 +1,1 @@
+Identify the 5 elements in the icosahedral group of order 60 that have a stabilizer of order 12.

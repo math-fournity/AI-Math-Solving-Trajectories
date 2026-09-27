@@ -1,0 +1,1 @@
+Let \( f:(0,1) \to \mathbb{R}^n \) be a continuous injective function such that \( \lim_{x \to 0} f(x) \) and \( \lim_{x \to 1} f(x) \) do not exist. Is it true that \( f((0,1)) \) is contractible?

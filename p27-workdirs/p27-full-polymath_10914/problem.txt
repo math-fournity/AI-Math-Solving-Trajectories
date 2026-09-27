@@ -1,0 +1,1 @@
+In a futuristic data-processing facility, circular data arrays of size $N$ are constructed using three types of quantum memory cores: Alpha (Type A), Beta (Type B), and Gamma (Type C). An automated processor is tasked with collapsing these arrays into a single core through a repetitive sequence of operations.

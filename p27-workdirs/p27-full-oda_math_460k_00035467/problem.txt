@@ -1,0 +1,1 @@
+Conjecture [Sw99]: Every \(k\)-distance set in any \(d\)-dimensional normed space has cardinality at most \((k + 1)^d\), with equality only if the unit ball is an affine cube.

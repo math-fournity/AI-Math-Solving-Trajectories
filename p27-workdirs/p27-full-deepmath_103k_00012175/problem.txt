@@ -1,0 +1,1 @@
+Let $f: \tilde{M} \to M$ be a $d$-fold covering map, and let $N \subset M$ be a connected submanifold of codimension 2. Determine the number of path-connected components of $f^{-1}(N)$. Assume $N$ is connected.

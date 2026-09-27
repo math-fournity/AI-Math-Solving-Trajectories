@@ -1,0 +1,1 @@
+In a remote digital archives facility, a master encryption key is known as a "Harmony Code." A Harmony Code is a positive integer $A$ that satisfies a specific aesthetic constraint: its decimal representation consists of exactly two distinct digits.

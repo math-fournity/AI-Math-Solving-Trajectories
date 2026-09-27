@@ -1,0 +1,1 @@
+Let us have $n$ ( $n>3$) balls with different rays. On each ball it is written an integer number. Determine the greatest natural number $d$ such that for any numbers written on the balls, we can always find at least 4 different ways to choose some balls with the sum of the numbers written on them divisible by $d$.

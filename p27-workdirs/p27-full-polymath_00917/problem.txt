@@ -1,0 +1,1 @@
+Let $n$ be an even positive integer. Two people play a game as follows: the first person splits the numbers $1, 2, \ldots, n$ into $n/2$ disjoint pairs. Then the second person picks one number from each pair and takes their sum. The second person wins if the sum is a multiple of $n$. The first person wins otherwise.

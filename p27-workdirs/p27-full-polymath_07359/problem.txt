@@ -1,0 +1,1 @@
+A specialized desalination plant operates three independent filtration modules with processing capacities $x$, $y$, and $z$ (measured in thousands of liters per hour, where each is a non-negative value).

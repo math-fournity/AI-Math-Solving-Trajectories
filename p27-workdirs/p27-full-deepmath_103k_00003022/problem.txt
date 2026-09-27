@@ -1,0 +1,1 @@
+Does the forgetful functor from presentable $\infty$-categories to $\infty$-categories preserve filtered colimits?

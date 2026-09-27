@@ -1,0 +1,1 @@
+Evaluate the limit: $$\lim \limits_{N\to \infty}\frac{1}{N}\left(\sum_{m=1}^\infty\frac{1}{m^2}\left|\frac{\sin(mN)}{\sin(m)}\right|\right)$$

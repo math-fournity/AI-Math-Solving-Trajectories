@@ -1,0 +1,1 @@
+Let $X$ and $Y$ be metric spaces, and let $f: X \to Y$ be a continuous and closed map. Is it true that the boundary of $f^{-1}(\{y\})$ is compact for every $y \in Y$?

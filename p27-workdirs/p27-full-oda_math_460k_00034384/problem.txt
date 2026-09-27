@@ -1,0 +1,1 @@
+In a surface with boundary, describe how to find an arc \( A \) joining two points on the boundary such that cutting the surface along \( A \) and opening it up yields two surfaces, neither of which is homeomorphic to a disk. Explain the reasoning behind this construction.

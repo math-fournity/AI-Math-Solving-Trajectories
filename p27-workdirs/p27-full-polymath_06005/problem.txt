@@ -1,0 +1,1 @@
+A specialized digital security firm is testing a new encryption protocol involving a sequence of data packets labeled with integers starting from $2$ and going up to $n$ (where $n \ge 2$).

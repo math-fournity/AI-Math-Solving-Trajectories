@@ -1,0 +1,1 @@
+Determine whether there exists an algorithm to decide if there is a nonzero polynomial $Q(x_1,\dots,x_n) \in \mathbb{R}[x_1,\dots,x_n]$ such that the product $P(x_1,\dots,x_n)Q(x_1,\dots,x_n)$ has nonnegative coefficients, where $P(x_1,\dots,x_n) \in \mathbb{R}[x_1,\dots,x_n]$. (Note: The case $n=1$ is well-known and not difficult.)

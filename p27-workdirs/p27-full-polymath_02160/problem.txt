@@ -1,0 +1,1 @@
+Find the least number $ c$ satisfyng the condition $\sum_{i=1}^n {x_i}^2\leq cn$

@@ -1,0 +1,1 @@
+Given closed sets $D \subseteq X$ and $E \subseteq Y$, both homeomorphic to each other, with $D$ homeomorphic to $E$ and $\text{Int}(D)$ homeomorphic to $\text{Int}(E)$. If $\text{Cl}_Y(\text{Int}(E)) = E$, does it follow that $\text{Cl}_X(\text{Int}(D)) = D$? Answer yes or no and justify your answer.

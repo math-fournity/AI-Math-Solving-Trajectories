@@ -1,0 +1,1 @@
+Is it possible to construct a group epimorphism \( \varphi : \mathsf{B}_2(C_2) \to G \) such that the order of \( s = \varphi(\sigma) \) is at least 3? If yes, what is the minimum order of \( G \) for which this occurs? If not, provide a justification.

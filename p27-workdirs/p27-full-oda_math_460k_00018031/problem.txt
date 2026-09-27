@@ -1,0 +1,1 @@
+29th Putnam 1968 Problem A6 Find all finite polynomials whose coefficients are all ±1 and whose roots are all real. Solution

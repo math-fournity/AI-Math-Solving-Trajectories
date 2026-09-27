@@ -1,0 +1,1 @@
+In a remote research laboratory, an automated system is initialized with a single data packet containing a signal intensity value of $r^n$, where $r$ is a positive rational number and $n$ is an integer greater than 1.

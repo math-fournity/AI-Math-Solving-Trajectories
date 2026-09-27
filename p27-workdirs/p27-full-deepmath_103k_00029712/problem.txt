@@ -1,0 +1,1 @@
+Determine whether there exist nonelementary functions $F$ and elementary functions $E$ such that the composition $E(F(x))$ is elementary.

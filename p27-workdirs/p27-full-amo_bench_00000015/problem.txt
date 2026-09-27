@@ -1,0 +1,1 @@
+Let $n$ be a positive integer such that $ 2 \leq n \leq 5 $. For each such $n$, let $A_nB_nC_nD_n$ be a rectangle with vertex $A_n$ at $(-n, 1 + 6 \sqrt{2} - \sqrt{2}n)$, and vertex $B_n$ the reflection of $A_n$ through the origin. The line segments $A_nC_n$ and $B_nD_n$ are parallel to the $x$-axis, and the line segments $A_nD_n$ and $B_nC_n$ are parallel to the $y$-axis.

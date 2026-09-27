@@ -1,0 +1,1 @@
+Find the value of the positive integer $k$ for which there exists an irrational number $\alpha > 1$ and a positive integer $N$ such that for every integer $n > N$, the value $\lfloor \alpha^n \rfloor$ is equal to $m^2 - k$ for some integer $m$ (where $m$ may depend on $n$).

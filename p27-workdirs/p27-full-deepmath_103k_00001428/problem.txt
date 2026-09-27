@@ -1,0 +1,1 @@
+Determine whether the following statement is true: \( \sum_{n=0}^{\infty}\frac{1}{n^2+2an+b}\in \mathbb{Q} \iff \exists k\in \mathbb{N}^+ \text{ such that } a^2-b=k^2 \). Here, \(a\) and \(b\) are positive integers.

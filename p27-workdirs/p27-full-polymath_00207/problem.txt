@@ -1,0 +1,1 @@
+Let $F$ be a family of subsets of $S = \left \{ 1,2,...,n \right \}$ ($n \geq 2$). A valid play is to choose two disjoint sets $A$ and $B$ from $F$ and add $A \cup B$ to $F$ (without removing $A$ and $B$).

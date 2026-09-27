@@ -1,0 +1,1 @@
+A circle is divided into $20$ points $A_1, A_2, A_3, \ldots, A_{20}$ on $20$ equal arcs. A chip is placed at point $A_1$. It is allowed to move the chip either to an adjacent point or to the diametrically opposite point. A path consists of a sequence of moves such that the chip visits each of the $20$ points exactly once before returning to $A_1$. How many such paths are there?

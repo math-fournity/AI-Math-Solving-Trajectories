@@ -1,0 +1,1 @@
+In a futuristic industrial facility, a specialized hemispherical sensor is suspended such that it is tangent to a flat, level laboratory floor (the $xy$-plane). The sensor’s center is located at a positive height above the floor.

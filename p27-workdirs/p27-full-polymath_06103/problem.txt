@@ -1,0 +1,1 @@
+In a remote sector of the galaxy, an ancient crystalline structure has been discovered. This structure is a convex polyhedron with a unique geometric signature: no two of its structural struts (edges) are parallel to each other, and no strut is parallel to any of its flat crystalline panels (faces) except for the two panels that the strut directly connects.

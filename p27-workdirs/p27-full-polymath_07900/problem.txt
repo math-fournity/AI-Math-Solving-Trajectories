@@ -1,0 +1,1 @@
+In a futuristic cargo management system, a logistics engineer is organizing a set of shipments for a cargo ship. The ship can accommodate items labeled with any integer weight from $1$ up to $n$ tons, where $n \geqslant 4$.

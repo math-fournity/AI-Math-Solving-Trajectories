@@ -1,0 +1,1 @@
+The main auditorium of a firm is a square hall with $n$ rows of $n$ seats. $n^2$ employees of the firm wrote a test in this auditorium, which had $k$ questions with two answer options for each. We represent the auditorium as an $n \times n$ grid of cells. Each cell contains a set of $k$ answers (as a sequence of $k$ binary digits).

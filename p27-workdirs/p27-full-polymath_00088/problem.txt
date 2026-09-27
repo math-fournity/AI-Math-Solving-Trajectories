@@ -1,0 +1,1 @@
+In a test with 15 true or false questions taken by 21 people, it is known that every pair of people has at least one correct answer in common. What is the minimum number of people that could have correctly answered the question which the most people answered correctly?

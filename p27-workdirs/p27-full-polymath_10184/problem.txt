@@ -1,0 +1,1 @@
+In a specialized laboratory, a high-precision robotic arm moves along a straight laser track. The track is calibrated with two starting beacons: one at the "Origin" (Position 0) and one at the "First Marker" (Position 1).

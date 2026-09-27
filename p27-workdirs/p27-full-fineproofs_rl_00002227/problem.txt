@@ -1,0 +1,1 @@
+In the county some pairs of towns connected by two-way non-stop flight. From any town we can flight to any other (may be not on one flight). Gives, that if we consider any cyclic (i.e. beginning and finish towns match) route, consisting odd number of flights, and close all flights of this route, then we can found two towns, such that we can't fly from one to other.

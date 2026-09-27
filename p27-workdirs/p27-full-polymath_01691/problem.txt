@@ -1,0 +1,1 @@
+A domino is a $1\times2$ or $2\times 1$ rectangle. Diego wants to completely cover a $6\times 6$ board using $18$ dominoes. Determine the smallest positive integer $k$ for which Diego can place $k$ dominoes on the board (without overlapping) such that what remains of the board can be covered uniquely using the remaining dominoes.

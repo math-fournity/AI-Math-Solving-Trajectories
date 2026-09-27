@@ -1,0 +1,1 @@
+In a specialized logistics center, two rival managers, Max and Min, are competing to determine the final inventory gap between two distinct storage zones. Each zone has a capacity represented by a four-digit identification code, where each digit position (thousands, hundreds, tens, and units) is currently a blank slot.

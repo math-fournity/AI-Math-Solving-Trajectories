@@ -1,0 +1,1 @@
+Let \( f: \{1,2, \ldots\} \to \{1,2, \ldots\} \) be a function such that:

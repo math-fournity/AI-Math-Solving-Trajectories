@@ -1,0 +1,1 @@
+In a specialized logistics hub, there are $n$ distinct docking bays labeled $\{1, 2, \ldots, n\}$. Two different sorting protocols, $\sigma$ and $\tau$, are being tested to determine the order in which cargo is processed. Each protocol is a unique permutation of the bay labels.

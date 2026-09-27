@@ -1,0 +1,1 @@
+Determine all positive integers \( n \) such that for any sequence \( a_1, a_2, \ldots, a_n \) with each \( a_i \in (0, 1] \), the inequality \( \sum_{i=1}^{n} \frac{\sqrt{1-a_{i}}}{a_{i}} \leq \frac{1}{\prod_{i=1}^{n} a_{i}} \) holds.

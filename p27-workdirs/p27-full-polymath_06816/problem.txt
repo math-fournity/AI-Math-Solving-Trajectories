@@ -1,0 +1,1 @@
+A specialized digital vault contains a set $S$ of exactly 2001 unique hardware security keys, each assigned a distinct positive integer ID. A cryptographer needs to select a collection of $n$ different subsets of these keys to generate unique authorization codes.

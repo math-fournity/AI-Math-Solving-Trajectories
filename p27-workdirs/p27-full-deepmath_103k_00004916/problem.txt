@@ -1,0 +1,1 @@
+Let $A$ be a Dedekind domain, and $B$ a finite torsion-free generically separable $A[[t]]$-algebra. If the preimage of $\text{Spec } B$ over $t = 0$ is disconnected, must $\text{Spec } B$ also be disconnected? Answer yes or no.

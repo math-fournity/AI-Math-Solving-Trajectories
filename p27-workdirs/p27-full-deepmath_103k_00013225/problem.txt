@@ -1,0 +1,1 @@
+Let $A$ be an invertible $n \times n$ matrix with no eigenvalue of magnitude 1, i.e., $|\lambda_i| \neq 1$ for all eigenvalues $\lambda_i$ of $A$. Prove or disprove that the rank of $A - A^{-1}$ is $n$. In other words, is it true that:

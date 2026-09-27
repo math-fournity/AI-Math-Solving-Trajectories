@@ -1,0 +1,1 @@
+Given $3^{2k}$ identical-looking coins, one of which is counterfeit and weighs slightly less than a real one, and three two-pan balances where two are accurate and one is faulty, devise a strategy to identify the counterfeit coin in $3k + 1$ weighings. You do not know which balance is faulty.

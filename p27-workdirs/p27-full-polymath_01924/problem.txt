@@ -1,0 +1,1 @@
+Let \( a \) be an \( n \)-digit natural number. We say that natural numbers \( b \) and \( c \) with \( m \) and \( k \) significant digits in the decimal numeral system are \( a \)-replaced if for every natural number \( i \):

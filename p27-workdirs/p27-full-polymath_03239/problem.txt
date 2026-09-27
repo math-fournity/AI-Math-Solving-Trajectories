@@ -1,0 +1,1 @@
+4. If a positive integer has only the digits 0 or 1 in its decimal representation, then it is called a "simple number". Find the smallest positive integer $k$, such that for any positive integer $n$, there exists $n=a_{1} \pm a_{2} \pm \cdots \pm a_{k}$, where $a_{i}(1 \leqslant i \leqslant k)$ are simple numbers.

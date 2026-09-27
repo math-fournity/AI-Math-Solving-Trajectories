@@ -1,0 +1,1 @@
+Let $X$ be a compact connected complex manifold. Consider a surjective holomorphic map $f: X \to X$. Is it true that $f$ is a finite map, meaning every point in $X$ has finitely many preimages under $f$?

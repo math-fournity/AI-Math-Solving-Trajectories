@@ -1,0 +1,1 @@
+In a specialized laboratory, a glass cube is used as a mounting frame for high-precision laser sensors. To calibrate the system, a team of engineers must install a set of sensors that form the vertices of a single regular polygon.

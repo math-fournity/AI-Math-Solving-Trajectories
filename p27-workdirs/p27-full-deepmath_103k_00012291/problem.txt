@@ -1,0 +1,1 @@
+Does there exist a $C^*$-algebra $A$ such that $A$ has a faithful tracial state, but there is a nontrivial ideal $I$ of $A$ such that the quotient $A/I$ has no tracial states?

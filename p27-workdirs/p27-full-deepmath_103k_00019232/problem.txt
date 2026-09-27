@@ -1,0 +1,1 @@
+Let \( f:[0,1]\rightarrow \mathbb{R} \) be a differentiable function such that \( f(0)=f(1)=0 \) and \( f''(x)-4f'(x)+4f(x)\ge e^{2x} \) for all \( x \in [0,1] \). Determine the minimum value of \( \frac{f'(x)}{f(x)} \) on the interval \( (0,\frac{1}{2}) \).

@@ -1,0 +1,1 @@
+Let $g$ be a $10$-variable Boolean function defined by

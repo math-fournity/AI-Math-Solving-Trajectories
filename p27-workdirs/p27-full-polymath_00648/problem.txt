@@ -1,0 +1,1 @@
+Find the least integer $n$ with the following property:

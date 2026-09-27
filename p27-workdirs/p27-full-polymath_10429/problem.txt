@@ -1,0 +1,1 @@
+A specialized cargo ship is carrying a massive shipment consisting of a single row of 100 identical containers, each marked with the weight "5". To optimize the cargo for offloading, two specific redistribution protocols are permitted:

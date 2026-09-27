@@ -1,0 +1,1 @@
+Find the maximum value of \(\int_0^1 f(x)^7 \, \mathrm{d}x\) over all functions \(f\colon[0,1]\to[-1,1]\) such that \(\int_0^1 f(x)^5 \, \mathrm{d}x = 0\) and \(\int_0^1 f(x) \, \mathrm{d}x = 0\).

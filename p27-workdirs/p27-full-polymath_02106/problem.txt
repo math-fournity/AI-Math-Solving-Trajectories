@@ -1,0 +1,1 @@
+In $\triangle ABC$, $AB = AC$. Its circumcircle, $\Gamma$, has a radius of 2. Circle $\Omega$ has a radius of 1 and is tangent to $\Gamma$, $\overline{AB}$, and $\overline{AC}$. The area of $\triangle ABC$ can be expressed as $\frac{a\sqrt{b}}{c}$ for positive integers $a, b, c$, where $b$ is squarefree and $\gcd (a, c) = 1$. Compute $a + b + c$.

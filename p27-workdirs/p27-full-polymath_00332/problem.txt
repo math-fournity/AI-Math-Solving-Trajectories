@@ -1,0 +1,1 @@
+9. 4. In a family photo album, there are 10 photos. Each photo has 3 people, with the man standing in the middle, his son standing on his left, and his brother on his right. If it is known that the 10 men standing in the middle are all different, then what is the minimum number of different people in these photos?

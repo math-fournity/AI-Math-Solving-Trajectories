@@ -1,0 +1,1 @@
+In the circular city of Modulo-100, there are 100 designated delivery hubs arranged in a perfect circle, indexed from 0 to 99. The city council decides to grant a "Primary Franchise" to a delivery company by allowing them to select a set $A$ of exactly 10 hubs to build their main warehouses.

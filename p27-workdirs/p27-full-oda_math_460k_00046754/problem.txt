@@ -1,0 +1,1 @@
+Find all isometries of the space of convex bodies in \(\mathbb{R}^d\) equipped with the Hausdorff metric. Specifically, determine whether every such isometry is of the form \(K \mapsto tK + L\), where \(t\) is an isometry of \(\mathbb{R}^d\) and \(L\) is a fixed convex body.

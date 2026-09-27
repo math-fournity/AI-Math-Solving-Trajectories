@@ -1,0 +1,1 @@
+In a tech hub, there are $n$ distinct specialized servers, forming a network $S = \{1, 2, \dots, n\}$. A "Project" is defined as a subset of these servers.

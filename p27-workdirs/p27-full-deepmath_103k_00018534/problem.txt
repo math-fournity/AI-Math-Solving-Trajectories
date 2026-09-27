@@ -1,0 +1,1 @@
+Determine the smallest possible dimension of matrices $M_i$ with entries in either $\mathbb{C}$ or $\mathbb{Z}/m \mathbb{Z}$ such that:

@@ -1,0 +1,1 @@
+In a remote territory, three circular solar power grids—Alpha, Beta, and Gamma—are positioned on a flat plain. Their control centers are located at coordinates $M$, $N$, and $O$, respectively. These grids are perfectly circular and touch each other at exactly three boundary junction points:

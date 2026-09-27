@@ -1,0 +1,1 @@
+Given a natural number $n$, Sasha claims that for any $n$ rays in space starting from distinct points (no two rays have common points), he can mark $k$ points on these rays that lie on the same sphere.

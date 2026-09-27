@@ -1,0 +1,1 @@
+A specialized chemical refinery processes a rare isotope through a multi-stage enrichment sequence. The isotope’s purity at each stage $i$ is denoted by a real value $a_i$. To maintain the reaction, the purity levels must be strictly increasing, starting with an initial purity of $1$ unit ($1 = a_1 < a_2 < a_3 < \cdots < a_n < \cdots$).

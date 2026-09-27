@@ -1,0 +1,1 @@
+In a specialized logistics network, a distribution center offers shipping crates of specific capacities. The set of available crate sizes is defined by the formula $S = \{10^n + 1000 : n = 0, 1, 2, \dots\}$. Specifically, the available sizes are crates that can hold $1001, 1010, 1100, 2000, 11000, 101000, \dots$ units.

@@ -1,0 +1,1 @@
+Is it true that the ultraproduct of non-commutative $L^p$-spaces, \( \prod_{\mathcal U}L^p(M_i,\tau_i) \), can be identified as \( L^p(M,\tau) \) for some von Neumann algebra \( M \) with \( \tau \) being a normal faithful semifinite trace on \( M \)?

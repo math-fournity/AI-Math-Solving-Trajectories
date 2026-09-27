@@ -1,0 +1,1 @@
+Find all functions \( f: \mathbf{R}_{+} \rightarrow \mathbf{R}_{+} \) such that for all positive real numbers \( x \) and \( y \), the following equation holds:

@@ -1,0 +1,1 @@
+Given an entire function $f$, suppose for every $r > 0$, there exists a holomorphic map $g_r: D(0,r) \to \mathbb{C}$ such that $f \circ g_r(z) = z$ for all $z \in D(0,r)$. Does this imply that $f$ is an analytic automorphism of $\mathbb{C}$?

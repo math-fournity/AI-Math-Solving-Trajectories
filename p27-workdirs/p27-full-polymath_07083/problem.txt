@@ -1,0 +1,1 @@
+In the competitive world of modern architectural design, a group of urban planners is designing a "Convex Civic Plaza." The layout of this plaza must be a strictly convex polygon.

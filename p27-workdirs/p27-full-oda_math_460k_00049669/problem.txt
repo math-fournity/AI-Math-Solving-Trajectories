@@ -1,0 +1,1 @@
+Return your final response within \boxed{}. Let  $n \geq 2$  be a fixed integer. Find the least constant  $C$  such the inequality

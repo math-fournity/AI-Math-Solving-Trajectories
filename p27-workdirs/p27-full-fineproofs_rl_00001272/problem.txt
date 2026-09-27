@@ -1,0 +1,1 @@
+Find all functions  $f:\mathbb{N}\to\mathbb{N}$  such that for all  $x,y\in\mathbb{N}$ :  $$ 0\le y+f(x)-f^{f(y)}(x)\le1 $$  that here  $$ f^n(x)=\underbrace{f(f(\ldots(f}_{n}(x))\ldots) $$

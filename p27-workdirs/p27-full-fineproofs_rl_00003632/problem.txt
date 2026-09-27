@@ -1,0 +1,1 @@
+Let $ABC$ be a triangle and $M$ a point on $[B, C]$. Let $\omega$ be a circle tangent to $(AB)$ at $T$ and to $(BC)$ at $K$, and tangent to the circumcircle of $AMC$ at $P$. Show that if $(KT) \parallel (AM)$, then the circumcircles of $KPC$ and $APT$ are tangent at $P$.

@@ -1,0 +1,1 @@
+A high-security data center houses 1,000 unique server clusters, each identified by a three-digit administrative code ranging from $000$ to $999$. To maintain these clusters, the facility employs a specialized fleet of maintenance drones, each identified by a two-digit serial number ranging from $00$ to $99$.

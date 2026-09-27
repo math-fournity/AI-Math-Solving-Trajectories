@@ -1,0 +1,1 @@
+Each one of 2009 distinct points in the plane is colored either blue or red, such that every unit circle centered at a blue point contains exactly two red points. Find the greatest possible number of blue points.

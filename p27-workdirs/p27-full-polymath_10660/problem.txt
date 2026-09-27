@@ -1,0 +1,1 @@
+In the high-tech R&D division of a logistics firm, engineers are designing a set of specialized calibration canisters for a precision scale. Each individual canister has a weight that is strictly non-integer (the weight in grams is not a whole number).

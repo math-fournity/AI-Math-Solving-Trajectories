@@ -1,0 +1,1 @@
+Find all functions $(f,g) \in C(\mathbb R)$ such that $f \circ g = \cos$ and $g \circ f = \sin$.

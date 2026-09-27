@@ -1,0 +1,1 @@
+Find the highest possible number of elements of set \( M \) containing only integers, such that from every 3-element subset of \( M \), we can choose 2 numbers whose sum is a power of two with an integer exponent.

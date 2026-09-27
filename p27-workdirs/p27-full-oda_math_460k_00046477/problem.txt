@@ -1,0 +1,1 @@
+For which natural numbers \( n \), does there exist a bijection \( f : \mathbb{N} \to \mathbb{Q}^n \) and a norm \( \|\cdot\| \) on \( \mathbb{R}^n \) such that \( \|f(k+1)-f(k)\|=1 \) for all \( k \in \mathbb{N} \)?

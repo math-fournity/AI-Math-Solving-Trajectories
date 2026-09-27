@@ -1,0 +1,1 @@
+Draw a planar graph $G$ with the maximum number of vertices such that the chromatic polynomial of $G$ is equal to the chromatic polynomial of its complement $\overline{G}$.

@@ -1,0 +1,1 @@
+Given a handle decomposition of a surface, how can you modify it so that all 1-handles are attached directly to the boundaries of the 0-handles?

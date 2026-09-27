@@ -1,0 +1,1 @@
+Determine whether the following statement is true or false: For every real matrix $X$ with $\det X = 1$, there exists a real symmetric traceless matrix $Y$ such that $X^TX = e^Y$. Provide a justification for your answer.

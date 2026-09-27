@@ -1,0 +1,1 @@
+A triangle is dissected into $N$ similar quadrilaterals. Let $S$ be the set of all positive integers $N$ such that such a triangle exists. Find the sum of the five smallest elements in $S$.

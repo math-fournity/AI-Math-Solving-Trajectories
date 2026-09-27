@@ -1,0 +1,1 @@
+4. The cells of a $20 \times 20$ table are painted in $n$ colors, and there are cells of each color. In each row and each column of the table, no more than six different colors are used. What is the largest $n$ for which this is possible?

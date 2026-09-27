@@ -1,0 +1,1 @@
+Determine whether it is possible to find 100 positive integers $x_1, x_2, \ldots, x_{100}$ such that $x_1!x_2! \cdots x_{100}!=n!$ for some positive integer $n$. Provide a justification for your answer.

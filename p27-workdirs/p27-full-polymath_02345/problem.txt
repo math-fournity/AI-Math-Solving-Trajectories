@@ -1,0 +1,1 @@
+Eight paper squares of size $2 \times 2$ were sequentially placed on a table to form a large $4 \times 4$ square. The last square placed was labeled $E$. The arrangement is such that square $E$ is fully visible, while the others are partially visible. Which square was placed third?

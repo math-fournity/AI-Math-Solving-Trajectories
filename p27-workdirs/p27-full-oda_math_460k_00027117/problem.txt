@@ -1,0 +1,1 @@
+Consider an infinite set \( S \) of positive integers such that for any \( x, y, z, w \in S \) with \( x < y \) and \( z < w \), if \( (x, y) \neq (z, w) \), then \( \gcd(xy + 2022, zw + 2022) = 1 \). Find the smallest possible value of \( x + y \) for distinct \( x, y \in S \).

@@ -1,0 +1,1 @@
+Let  $I$  and  $I_a$  be the incenter and excenter (opposite vertex  $A$ ) of a triangle  $ABC$ , respectively. Let  $A'$  be the point on its circumcircle opposite to  $A$ , and  $A_1$  be the foot of the altitude from  $A$ . Prove that  $\angle IA_1I_a=\angle IA'I_a$ .

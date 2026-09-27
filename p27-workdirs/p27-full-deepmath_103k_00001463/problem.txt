@@ -1,0 +1,1 @@
+Determine whether the Gaussian integer $a + 2bi$, where $a, b \in \mathbb{Z}$, can always be expressed as a sum of three squares.

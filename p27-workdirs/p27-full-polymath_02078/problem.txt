@@ -1,0 +1,1 @@
+Given are 20 chips arranged in a row. In one move, one can swap two adjacent chips. Find the minimum number of moves that must be made so that each of the 20 chips has been at the first position of the row and at the last position of the row at least once.

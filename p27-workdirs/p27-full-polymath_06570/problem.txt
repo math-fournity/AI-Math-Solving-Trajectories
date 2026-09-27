@@ -1,0 +1,1 @@
+In a specialized neural network architecture, data packets are transmitted between various processing nodes via bidirectional synaptic links. For every pair of connected nodes, at least one of the two directional paths must be "monetized," meaning a transmission fee is charged to send data across it.

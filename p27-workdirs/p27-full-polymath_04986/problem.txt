@@ -1,0 +1,1 @@
+Let \( n \) be a positive integer, and let \(\mathcal{C}\) be a collection of subsets of \(\{1,2, \ldots, 2^{n}\}\) satisfying the two conditions below simultaneously:

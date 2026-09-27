@@ -1,0 +1,1 @@
+Given nonnegative real numbers \(a, b, c, d, e\) and a real number \(\gamma > 0\) such that

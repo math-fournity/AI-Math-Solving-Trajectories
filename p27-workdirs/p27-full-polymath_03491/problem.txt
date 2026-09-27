@@ -1,0 +1,1 @@
+6.3.12 For each $n \in \mathbf{N}^{*}$, prove: there exists $k \in \mathbf{N}^{*}$, such that

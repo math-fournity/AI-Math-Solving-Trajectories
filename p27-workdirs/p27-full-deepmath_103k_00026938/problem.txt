@@ -1,0 +1,1 @@
+Find the closed form of the infinite product \( P = \prod\limits_{k=3}^{\infty}\frac{k}{2\pi}\sin{\left(\frac{2\pi}{k}\right)} \), which represents the product of the areas of all regular polygons inscribed in a circle with area 1.

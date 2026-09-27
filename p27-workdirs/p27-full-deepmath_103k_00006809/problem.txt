@@ -1,0 +1,1 @@
+Let $A$ be a domain with field of fractions $K$, and let $I$ be a non-zero fractional $A$-ideal. Define $I^{-1}$ as the fractional ideal $\{a \in K \mid aI \subseteq A\}$. Assume $II^{-1} \subseteq \mathfrak{p}$ for some non-zero prime ideal $\mathfrak{p}$ of $A$. If $a(I A_\mathfrak{p}) \subset A_\mathfrak{p}$ for some $a \in K$, does it follow that $a \in I^{-1}A_\mathfrak{p}$?

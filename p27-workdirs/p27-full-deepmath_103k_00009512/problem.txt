@@ -1,0 +1,1 @@
+Determine whether the topological semigroup \( T = [0, \frac{1}{2}] \cup \{1\} \) with the usual topology and multiplication operation satisfies the SFC-condition. The SFC-condition states that for every finite set \( H \subseteq T \) and every \( \epsilon > 0 \), there exists a finite set \( K \subseteq T \) such that \( |K \setminus tK| < \epsilon |K| \) for all \( t \in H \).

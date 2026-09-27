@@ -1,0 +1,1 @@
+In a $8 \times 12$ table, some $N$ cells are black, and the rest are white. In one operation, it is allowed to paint three cells forming a three-cell corner in white (some of them may have been white before repainting). It turned out that it is impossible to make the table completely white in less than $25$ such operations. Find the minimum possible value of $N$.

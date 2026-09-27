@@ -1,0 +1,1 @@
+Let $G$ be a graph with $2n$ vertices where $n=1000$. Suppose every vertex has an even degree. Let $S$ be the set of pairs of distinct vertices $\{u, v\}$ such that $u$ and $v$ have an even number of common neighbors. Find the minimum possible size of $S$.

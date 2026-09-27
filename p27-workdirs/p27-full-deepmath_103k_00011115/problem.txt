@@ -1,0 +1,1 @@
+Determine the number of duplication formulas that exist for the Mordell curve family $Y^2-X^3=c$. Given that Bachet and Réalis have provided two such formulas, how many additional duplication formulas are there?

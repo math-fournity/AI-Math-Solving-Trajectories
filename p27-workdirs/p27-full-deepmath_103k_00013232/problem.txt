@@ -1,0 +1,1 @@
+Let \( R \) be a ring with minimal prime ideals \( p_1, \ldots, p_n \) and define \( D = R/p_1 \times \cdots \times R/p_n \). Find an element \( x \in R \) such that \( \text{ann}_D(x + p_1, \ldots, x + p_n) = \text{ann}_D(1 + p_1, p_2, \ldots, p_n) \).

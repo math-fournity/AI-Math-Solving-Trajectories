@@ -1,0 +1,1 @@
+Let \( n \geq 4 \) and \( n \) points be given in the plane. After connecting all pairs of points with line segments, what is the maximum possible number of line segments that do not intersect any other segment except at their endpoints?

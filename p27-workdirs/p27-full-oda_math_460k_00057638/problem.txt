@@ -1,0 +1,1 @@
+Study the dynamics near the origin via the center manifold for each of the following systems:\n\n(a)\n\[\dot{x}_1 = -x_1 + x_2^2\]\n\[\dot{x}_2 = -\sin x\]\n\n(b)\n\[\dot{x}_1 = \frac{1}{2} x_1 + x_2 + x_1^2 x_2\]\n\[\dot{x}_2 = x_1 + 2x_2 + x_2^2\]\n\n(c)\n\[\dot{x}_1 = -x_1 - x_2 + x_3^2\]\n\[\dot{x}_2 = 2x_1 + x_2 - x_3^3\]\n\[\dot{x}_3 = x_1 + 2x_2 - x_3\]

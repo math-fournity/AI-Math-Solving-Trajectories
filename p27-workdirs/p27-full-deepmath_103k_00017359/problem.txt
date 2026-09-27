@@ -1,0 +1,1 @@
+In ZF theory, determine whether there exists a well-ordered set \( A \) such that the cardinals of all Dedekind-finite sets below the cardinal of \( A \) form a linear order.

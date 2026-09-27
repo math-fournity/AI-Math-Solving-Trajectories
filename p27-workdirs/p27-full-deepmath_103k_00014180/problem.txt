@@ -1,0 +1,1 @@
+Find the maximum number of linearly independent homogeneous quadratic forms in 4 variables over \( \mathbb{C} \) such that their intersection has a connected component that is positive dimensional and does not lie on a hyperplane.

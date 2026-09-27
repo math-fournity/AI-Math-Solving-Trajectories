@@ -1,0 +1,1 @@
+Find all prime numbers $p$ such that for each integer $a$ satisfying $1 < a < p/2$, there exists an integer $b$ satisfying $p/2 < b < p$ and $ab \equiv 1 \pmod{p}$. Report the sum of all such prime numbers $p$.

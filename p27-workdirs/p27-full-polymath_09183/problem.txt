@@ -1,0 +1,1 @@
+In a remote archipelago consisting of $n$ distinct islands ($n \geq 3$), a telecommunications company is designing a network of fiber-optic cables. Each cable connects exactly two islands, and the company ensures that the entire network is connected, meaning it is possible to send a signal between any two islands in the archipelago.

@@ -1,0 +1,1 @@
+Define a finite set \( A \) to be 'good' if it satisfies the following conditions:

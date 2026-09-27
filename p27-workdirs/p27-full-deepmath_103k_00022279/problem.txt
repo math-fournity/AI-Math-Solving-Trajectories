@@ -1,0 +1,1 @@
+Consider the set $\mathcal E = \{A \in M_n(\mathbb R): \rho(A) < 1\}$, where $\rho(\cdot)$ denotes the spectral radius, and let $\mathcal U$ be an affine space in $M_n(\mathbb R)$. Given that $\mathcal E \cap \mathcal U \neq \emptyset$, determine the number of connected components that the intersection $\mathcal E \cap \mathcal U$ could have.

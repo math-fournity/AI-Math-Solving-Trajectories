@@ -1,0 +1,1 @@
+In lawn-tennis, a player wins a game if they score at least four points and their opponent scores at least two points less. A player wins a set if they win at least six games and their opponent wins at least two games less. Calculate the minimum possible percentage of the total points scored in a set by the player who wins the set.

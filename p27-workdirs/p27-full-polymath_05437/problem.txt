@@ -1,0 +1,1 @@
+Calculate the value of $\sin 40^{\circ} \cdot \sin 60^{\circ} \cdot \sin 80^{\circ}$.

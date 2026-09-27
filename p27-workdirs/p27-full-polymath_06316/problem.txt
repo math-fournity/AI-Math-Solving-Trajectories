@@ -1,0 +1,1 @@
+In a futuristic circular city, there are $n$ modular housing units arranged in a perfect circle, forming the vertices of a regular $n$-gon. The city council has decided to designate exactly 5 of these units as "Solar Hubs" (red vertices), while the remaining $n-5$ units stay as standard residences.

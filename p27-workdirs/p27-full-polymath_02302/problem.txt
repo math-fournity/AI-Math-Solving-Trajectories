@@ -1,0 +1,1 @@
+Let \(\mathbb{N}\) denote the set of positive integers. For how many positive integers \(k \leq 2018\) does there exist a function \(f: \mathbb{N} \rightarrow \mathbb{N}\) such that \(f(f(n))=2n\) for all \(n \in \mathbb{N}\) and \(f(k)=2018\)?

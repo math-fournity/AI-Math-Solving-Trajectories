@@ -1,0 +1,1 @@
+Example 4 Positive integers $a_{1}, a_{2}, \cdots, a_{2006}$ (allowing repetition). What is the minimum number of distinct numbers in $a_{2}, \cdots, a_{2006}$? ${ }^{[1]}$

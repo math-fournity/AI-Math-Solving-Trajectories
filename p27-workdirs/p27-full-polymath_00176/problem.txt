@@ -1,0 +1,1 @@
+A $2m$ by $2n$ grid is colored like a standard checkerboard. We wish to place $mn$ counters on the white squares such that each square contains at most one counter and no two counters are in diagonally adjacent white squares. Let $W(m, n)$ be the number of ways to do this. Calculate the sum of $W(m, n)$ for all pairs of integers $(m, n)$ such that $1 \le m \le n \le 5$.

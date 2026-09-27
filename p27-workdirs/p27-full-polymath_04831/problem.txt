@@ -1,0 +1,1 @@
+We say that a group of $k$ boys is $n$-acceptable if, after removing any single boy from the group, one can always find, among the remaining $k-1$ boys, a subgroup of $n$ boys such that everyone knows each other.

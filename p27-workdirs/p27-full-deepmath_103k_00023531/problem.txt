@@ -1,0 +1,1 @@
+Find all functions \( f: \mathbb{N} \to \mathbb{N} \) such that for all natural numbers \( m \) and \( n \), the expression \((m+f(n))(n+f(m))\) is a perfect square.

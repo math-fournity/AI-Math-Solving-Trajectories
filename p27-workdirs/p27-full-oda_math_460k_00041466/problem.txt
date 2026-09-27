@@ -1,0 +1,1 @@
+Let $p > 3$ be a prime. Define $S_p = \sum\limits_{i=1}^{p-1}{1\over i^p}$. If $S_p = {n\over m}$ with $\gcd(n,m) = 1$, find the smallest positive integer $k$ such that $p^k$ divides $n$.

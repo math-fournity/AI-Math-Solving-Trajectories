@@ -1,0 +1,1 @@
+In a futuristic circular city, there are $n$ distinct districts arranged in a perfect ring, where $n \geq 2$. Within these districts, there are a total of $mn$ specialized sensor stations. Each sensor belongs to one of $n$ different network types, and there are exactly $m$ sensors of each network type distributed around the ring.

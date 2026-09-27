@@ -1,0 +1,1 @@
+Determine the number of different balanced colorings for a $2019 \times 2019$ grid, where a coloring is balanced if, within every square subgrid of size $k \times k$ for $1 \le k \le 2019$, the number of black cells differs from the number of white cells by at most one.

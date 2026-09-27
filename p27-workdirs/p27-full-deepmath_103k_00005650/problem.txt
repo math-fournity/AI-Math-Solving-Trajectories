@@ -1,0 +1,1 @@
+Let $1 \leq j < p-1$ with $p$ a prime number. Determine if the following statement is true: For any positive integer $n$ with $n \not\equiv j \pmod{p-1}$, the congruence \[ \sum_{r>1} \binom{n}{r(p-1)+j} \binom{r-1}{j} \equiv 0 \pmod{p} \] holds.

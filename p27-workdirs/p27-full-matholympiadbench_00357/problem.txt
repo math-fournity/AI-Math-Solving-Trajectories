@@ -1,0 +1,11 @@
+/-!
+# IMO 2023 N5
+
+Let $(a_n)_{n \ge 0}$ be a strictly increasing sequence of positive integers such that:
+* For all $k \ge 1$, $a_k$ divides $2(a_0 + a_1 + \dots + a_{k - 1})$.
+* For each prime $p$, there exists some $k$ such that $p$ divides $a_k$.
+
+Prove that for any positive integer $n$, there exists some $k$ such that $n$ divides $a_k$.
+-/
+
+##

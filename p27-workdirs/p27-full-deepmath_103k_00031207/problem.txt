@@ -1,0 +1,1 @@
+Consider the set of points \(S\) where each point \((x, y)\) has integer coordinates with \(1 \leq x, y \leq 26\). Determine the number of ways to select a convex subset of \(S\) that contains exactly 98 points.

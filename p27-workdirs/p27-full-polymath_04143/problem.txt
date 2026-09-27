@@ -1,0 +1,1 @@
+An infinite chessboard has a number from the set $A = \{1, 2, \dots, mn\}$ placed in each square. We say a pair of positive integers $(m, n)$ is *valid* if there exists such a placement where every $m \times n$ or $n \times m$ rectangle contains each number from $A$ exactly once.

@@ -1,0 +1,1 @@
+Determine the minimum number of yes/no questions required for Bob to ask Alice, who can choose a number from the set \( \{1, 2, \ldots, 1000000\} \) and is allowed to lie once, in order to correctly identify her chosen number.

@@ -1,0 +1,1 @@
+Let $G$ be a finite group and let $A$ and $B$ be two proper nilpotent subgroups such that $AB = G$. Is it true that $G$ is necessarily solvable?

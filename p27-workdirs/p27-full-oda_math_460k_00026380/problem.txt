@@ -1,0 +1,1 @@
+Compute the cohomology ring of the $\Delta$-complex $\mathbf{R} P^{2}$ with coefficients in $\mathbf{F}_{2}$. Specifically, determine the structure of the graded $\mathbf{F}_{2}$-algebra $H_{\Delta}^{*}\left(\mathbf{R} P^{2} ; \mathbf{F}_{2}\right)$, including its generators and relations.

@@ -1,0 +1,1 @@
+20. (CZS 1) Given $n(n \geq 3)$ points in space such that every three of them form a triangle with one angle greater than or equal to $120^{\circ}$, prove that these points can be denoted by $A_{1}, A_{2}, \ldots, A_{n}$ in such a way that for each $i, j, k, 1 \leq i<j<k \leq n$, angle $A_{i} A_{j} A_{k}$ is greater than or equal to $120^{\circ}$.

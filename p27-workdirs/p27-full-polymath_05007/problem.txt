@@ -1,0 +1,1 @@
+We have many $\text{three-element}$ subsets of a $1000\text{-element}$ set. We know that the union of every $5$  of them has at least $12$ elements. Find the most possible value for the number of these subsets.

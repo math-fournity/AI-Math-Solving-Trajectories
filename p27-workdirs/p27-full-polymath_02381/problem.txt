@@ -1,0 +1,1 @@
+Let $d(n)$ denote the number of positive divisors of a positive integer $n$. A positive integer $m$ is called a "good number" if there exists a positive integer $n$ such that $m = \frac{n}{d(n)}$. Let $S$ be the set of all good numbers. Find the smallest positive integer $m$ such that $m \notin S$.

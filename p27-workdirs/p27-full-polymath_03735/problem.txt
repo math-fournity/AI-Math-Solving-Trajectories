@@ -1,0 +1,1 @@
+A rectangular park is divided into $H$ rectangular gardens by a set of straight paths. Let $V$ denote the number of X-shaped intersections (where 4 paths meet), $T$ the number of T-shaped intersections (where 3 paths meet), and $S$ the number of maximal straight paths.

@@ -1,0 +1,1 @@
+15. (PRK 2) Does there exist a set $M$ with the following properties? (i) The set $M$ consists of 1992 natural numbers. (ii) Every element in $M$ and the sum of any number of elements have the form $m^{k}(m, k \in \mathbb{N}, k \geq 2)$.

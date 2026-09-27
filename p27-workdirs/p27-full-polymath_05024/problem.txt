@@ -1,0 +1,1 @@
+On a circle, $1000$ points are marked, each painted in one of $k$ colors. It is known that among any five pairwise intersecting segments, whose endpoints are $10$ different marked points, there will be at least three segments, each of which has endpoints of different colors. What is the smallest possible $k$ for this to be true?

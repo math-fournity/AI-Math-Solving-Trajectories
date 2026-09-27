@@ -1,0 +1,1 @@
+Let $M$ be a smooth manifold of dimension at most $3$, and let $S \subset M$ be a smoothly embedded compact connected codimension $1$ manifold that separates $M$ into two components, $M_1$ and $M_2$. If $\pi_1(M)$ is finitely generated, is $\pi_1(M_i)$ finitely generated for $i=1,2$?

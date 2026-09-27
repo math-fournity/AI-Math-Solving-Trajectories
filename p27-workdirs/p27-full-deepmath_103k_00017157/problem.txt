@@ -1,0 +1,1 @@
+Let $E$ be a measure zero set in $\mathbb{R}$. Does there exist a finite positive measure set $F$ such that for every $x\in E$, the symmetric density of $F$ at $x$ is equal to $0$ and $1$, i.e., \[\liminf_{r\to 0} \frac{m(F\cap B_{r}(x))}{2m(B_{r}(x))}=0 \quad \text{ and }\quad \limsup_{r\to 0} \frac{m(F\cap B_{r}(x))}{2m(B_{r}(x))}=1?\]

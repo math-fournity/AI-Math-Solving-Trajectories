@@ -1,0 +1,1 @@
+Points $P$ and $Q$ are outside $\triangle ABC$ such that $\triangle APB$ and $\triangle AQC$ are isosceles right triangles with $\angle P = \angle Q = 90^\circ$. Given that the areas of $\triangle APQ = 10$, $\triangle BCP = 16$, and $\triangle BCQ = 14$, find the area of pentagon $APBCQ$.

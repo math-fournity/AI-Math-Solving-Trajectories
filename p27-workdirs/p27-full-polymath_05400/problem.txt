@@ -1,0 +1,1 @@
+In \(\triangle ABC\), \(AC = 48\), \(BC = 30\). Let \(I, O\) be the incenter and the circumcenter of \(\triangle ABC\). If \(D = IO \cap AC\), calculate \(DI^2\).

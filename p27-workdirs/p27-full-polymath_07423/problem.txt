@@ -1,0 +1,1 @@
+A specialized acoustics lab is developing a sound-frequency model based on a fourth-degree polynomial signal, $p(x) = x^4 + ax^3 + bx^2 + ax + c$. In this model, the coefficients $a, b,$ and $c$ represent real-valued environmental tuning parameters.

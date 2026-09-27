@@ -1,0 +1,1 @@
+In the hyper-industrial city of Quadrant-4, a specialized automated drone is programmed to navigate a grid of coordinates $(w, x, y, z)$, where each coordinate is an integer. The drone begins its mission at the Central Hub located at $(0, 0, 0, 0)$.

@@ -1,0 +1,1 @@
+In a remote digital library, a master archivist is organizing "Signal Strings" of length 2023. Each position in a string must be filled with a data packet of intensity 0, 1, or 2.

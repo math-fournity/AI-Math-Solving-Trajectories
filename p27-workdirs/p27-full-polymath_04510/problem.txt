@@ -1,0 +1,1 @@
+Find all at least four-digit natural numbers \( m \) for which there exists \( b \in \{1, 2, \ldots, 9\} \) with the following property: if \( b \) is inserted between any two digits of the number \( m \), or added at the beginning or end of the number \( m \), the resulting number is always a perfect square.

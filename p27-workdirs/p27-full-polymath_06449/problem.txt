@@ -1,0 +1,1 @@
+In a massive logistics warehouse, a floor plan is divided into a perfect grid of $2016 \times 2016$ square storage bays. The management team wants to install laser-based security barriers to outline the perimeters of specific rectangular zones.

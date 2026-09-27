@@ -1,0 +1,1 @@
+A digital archivist is constructing a historical database from an infinite timeline of records indexed by non-negative integers $\{0, 1, 2, \dots, n\}$. To create a new encrypted archive, the archivist selects a subset $S$ consisting of exactly $6$ distinct records, chosen uniformly at random from the set of available records $\{0, 1, 2, \dots, n\}$.

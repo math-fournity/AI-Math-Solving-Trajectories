@@ -1,0 +1,1 @@
+Let $S$ be the set of positive integers less than $10^6$ that can be written as the sum of two perfect squares. Compute the number of elements in $S$. Your score will be given by $\max\{\lfloor75(\min\{(\tfrac{A}{C})^2,(\tfrac{C}{A})^2\}-\tfrac{2}{3})\rfloor,0\}$, where $A$ is your answer and $C$ is the actual answer.

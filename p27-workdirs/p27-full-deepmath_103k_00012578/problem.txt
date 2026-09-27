@@ -1,0 +1,1 @@
+Consider a 2D version of the Cantor set on the plane $[0,1] \times [0,1]$. Define $C_n$ as the set obtained by removing the middle third strip of height 1 and width $1/3$ from each interval of $C_{n-1}$. Specifically, let:

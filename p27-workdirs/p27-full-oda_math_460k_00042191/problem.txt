@@ -1,0 +1,1 @@
+For a given integer $k \geq 2021$, let $S(k)$ be the smallest positive integer $n$ such that $\{\varphi(n+1), \varphi(n+2), \ldots, \varphi(n+k)\} = \{\tau(n+1), \tau(n+2), \ldots, \tau(n+k)\}$. Calculate the last three digits of $S(2021)$.

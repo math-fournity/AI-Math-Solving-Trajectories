@@ -1,0 +1,1 @@
+A grand library houses an infinite collection of scrolls, each uniquely numbered with a positive integer starting from 1. The Head Librarian, Isabel, is tasked with organizing every single scroll into exactly $n$ distinct, non-overlapping archives labeled $A_1, A_2, \dots, A_n$.

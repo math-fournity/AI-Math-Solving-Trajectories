@@ -1,0 +1,1 @@
+A high-tech digital security firm uses a central database containing 1,024 unique data packets. Each packet represents a distinct binary signature corresponding to a subset of ten specific security sensors, labeled 0 through 9 (including one "null" packet with no sensors triggered).

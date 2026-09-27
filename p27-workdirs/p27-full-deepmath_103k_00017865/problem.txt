@@ -1,0 +1,1 @@
+Determine whether the following statement is true or false: If the series \(\sum_{n\in\mathbb{N}}a_n\overline{b_n}\) converges for all sequences \((a_n)_{n\in\mathbb{N}}\) in the Hilbert space \(l_2(\mathbb{N,\mathbb{C}})\), then \((b_n)_{n\in\mathbb{N}}\) must also be in \(l_2(\mathbb{N,\mathbb{C}})\).

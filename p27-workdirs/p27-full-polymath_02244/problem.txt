@@ -1,0 +1,1 @@
+Find the greatest natural number possessing the property that each of its digits except the first and last one is less than the arithmetic mean of the two neighboring digits.

@@ -1,0 +1,1 @@
+Denote $U$ as the set of $20$ diagonals of the regular polygon $P_1P_2P_3P_4P_5P_6P_7P_8$.

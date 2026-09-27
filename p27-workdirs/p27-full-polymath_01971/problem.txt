@@ -1,0 +1,1 @@
+A triangle \(ABC\) has positive integer sides, \(\angle A = 2 \angle B\) and \(\angle C > 90^\circ\). Find the minimum length of its perimeter.

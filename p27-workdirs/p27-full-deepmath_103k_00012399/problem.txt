@@ -1,0 +1,1 @@
+Consider a finite extension $K$ of $\mathbb{Q}_p$ with residue field $k$. There is a continuous surjective map $G_K \rightarrow G_k \cong \hat{\mathbb{Z}}$. Is this map an open map between the two topological groups?

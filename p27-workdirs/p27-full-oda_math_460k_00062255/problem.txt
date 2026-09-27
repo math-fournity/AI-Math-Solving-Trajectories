@@ -1,0 +1,1 @@
+Let \( I = \text{Ideal}(XY^2Z, X^2Y^2Z^2) \). Give an exact cone decomposition of \(\text{NF}(I)\), and determine its Macaulay constants, and Hilbert function.

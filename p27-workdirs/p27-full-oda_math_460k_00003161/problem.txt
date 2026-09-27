@@ -1,0 +1,1 @@
+In triangle \(ABC\) with \(D, E, F\) as the feet of the internal angle bisectors on sides \(BC\), \(CA\), and \(AB\) respectively, and \((I_a, r_a)\), \((I_b, r_b)\), and \((I_c, r_c)\) as the excircles opposite vertices \(A\), \(B\), and \(C\) respectively, let \(M\) be a point on the incircle of triangle \(ABC\). Calculate the value of

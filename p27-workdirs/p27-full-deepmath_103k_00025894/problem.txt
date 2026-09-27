@@ -1,0 +1,1 @@
+Evaluate the sum \( \sum_{n=1}^{\infty}\frac{H_{\frac{1}{n}}}{n} \), where \( H_n \) is the harmonic number.

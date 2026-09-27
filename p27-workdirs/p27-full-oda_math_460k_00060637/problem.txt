@@ -1,0 +1,1 @@
+Find a region bounded by a simple closed polygon such that for any two sides of this polygon, there exists an interior point from which these sides can be seen. However, no interior point should be able to see all the sides simultaneously.

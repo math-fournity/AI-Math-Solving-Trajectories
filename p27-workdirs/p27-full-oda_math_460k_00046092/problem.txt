@@ -1,0 +1,1 @@
+In triangle \( \Delta ABC \), \( A_1B_1C_1 \) is the Brocard triangle, and \( N \) is the center of the nine-point circle of triangle \( ABC \). Let \( R \) be the radius of the nine-point circle of triangle \( A_1B_1C_1 \). Calculate the ratio \( \frac{R}{ON} \), where \( O \) is the circumcenter of triangle \( A_1B_1C_1 \).

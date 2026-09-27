@@ -1,0 +1,1 @@
+Find all integers \( m \) such that the sequence \( b_n = g(m \alpha^n) \) is bounded, where \( \alpha = \frac{3 + \sqrt{5}}{2} \) and \( g(x) \) is the distance from \( x \) to the nearest perfect cube.

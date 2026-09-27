@@ -1,0 +1,1 @@
+Is the sequence $\sqrt{p}-\lfloor\sqrt{p}\rfloor$, where $p$ runs over the primes, dense in the interval $[0,1]$?

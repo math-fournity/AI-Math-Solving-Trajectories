@@ -1,0 +1,1 @@
+Determine the fundamental group of the space \(X = \left\{\left(\sqrt{x^2+y^2}-2\right)^2 + z^2 = 1\right\} \cup \left\{(x,y,0) : x^2 + y^2 \leq 9\right\} \subset \mathbb{R}^3\).

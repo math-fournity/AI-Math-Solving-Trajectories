@@ -1,0 +1,1 @@
+Determine whether the equation $X^{n} + Y^{n} = Z^{n}$ has integer solutions for $X, Y,$ and $Z$ when $n \geq 3$ is a natural number.

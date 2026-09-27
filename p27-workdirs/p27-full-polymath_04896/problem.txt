@@ -1,0 +1,1 @@
+3. Find the smallest real number $c$ such that:

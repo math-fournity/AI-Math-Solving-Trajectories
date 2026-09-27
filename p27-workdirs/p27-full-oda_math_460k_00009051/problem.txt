@@ -1,0 +1,1 @@
+Given two finite group presentations (a set of generators and relations defining a group), is it possible to determine whether the groups they define are isomorphic (structurally identical)?

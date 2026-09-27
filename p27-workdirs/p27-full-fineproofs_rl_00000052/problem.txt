@@ -1,0 +1,1 @@
+$ABC$  is a triangle and  $\omega$  its incircle. Let  $P,Q,R$  be the intersections with  $\omega$  and the sides  $BC,CA,AB$  respectively.  $AP$  cuts  $\omega$  in  $P$  and  $X$ .  $BX,CX$  cut  $\omega$  in  $M,N$  respectively. Show that  $MR,NQ,AP$  are parallel or concurrent.

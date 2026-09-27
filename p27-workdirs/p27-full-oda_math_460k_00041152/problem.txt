@@ -1,0 +1,1 @@
+Consider the series $\sum_{n\geq 1}{\frac{1}{n^3 \cdot |\sin(n \cdot \pi \cdot \sqrt{2})|}}$. Let $S$ be the sum of this series. Calculate the value of $\lfloor 100S \rfloor$.

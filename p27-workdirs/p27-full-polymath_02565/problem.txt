@@ -1,0 +1,1 @@
+On the plane, three lines intersecting at one point and several points are depicted such that on both sides of each line, there are exactly two points (points lying on the line itself do not belong to either side). A total of $n$ points lie on the lines. Find the sum of all possible values of $n$.

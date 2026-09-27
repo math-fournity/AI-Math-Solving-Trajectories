@@ -1,0 +1,1 @@
+A specialized chemical refinery manages four distinct catalysts, $a, b, c,$ and $d$, all measured in positive molar concentrations. These catalysts are subject to a strict equilibrium constraint: the total sum of their concentrations must exactly equal the total sum of their reciprocal concentrations (i.e., $a+b+c+d = \frac{1}{a} + \frac{1}{b} + \frac{1}{c} + \frac{1}{d}$).

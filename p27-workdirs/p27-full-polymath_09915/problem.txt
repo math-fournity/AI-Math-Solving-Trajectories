@@ -1,0 +1,1 @@
+In a vast desert territory, a cartographer is assigned to divide the land into distinct regions using $n$ long, straight irrigation canals that stretch across the entire horizon. These canals intersect one another, segmenting the territory into various land parcels.

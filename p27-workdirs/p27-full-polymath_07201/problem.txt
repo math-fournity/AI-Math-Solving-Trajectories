@@ -1,0 +1,1 @@
+In the distant star system of Centauri, a group of terraforming engineers is designing a sustainable energy grid. They are working with a modular reactor design that requires three cooling cores, each assigned a power rating represented by a positive integer: $x$, $y$, and $z$.

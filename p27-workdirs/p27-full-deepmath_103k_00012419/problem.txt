@@ -1,0 +1,1 @@
+In the alternating group \(A_5\), let \(x\) be an element of order 2 and \(y\) be an element of order 3 such that \(\langle x, y \rangle = A_5\). Is it necessary that the order of the product \(xy\) is 5?

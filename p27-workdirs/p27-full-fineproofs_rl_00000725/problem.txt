@@ -1,0 +1,1 @@
+A test consists of  $30$  true or false questions. After the test (answering all  $30$  questions), Victor gets his score: the number of correct answers. Victor is allowed to take the test (the same questions ) several times. Can Victor work out a strategy that insure him to get a perfect score after**(a)**  $30$ th attempt?**(b)**   $25$ th attempt?

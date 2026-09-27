@@ -1,0 +1,1 @@
+Find all pairs of odd positive integers $(a,b)$ such that $a,b < 2^{2017}$, and both $a^b+b$ and $b^a+a$ are divisible by $2^{2017}$. Let $N$ be the number of such pairs, and let $S$ be the sum of all $a$ and $b$ values across all these pairs (i.e., if the pairs are $(a_i, b_i)$, compute $\sum_{i=1}^N (a_i + b_i)$). Compute the value $S/2^{2017}$.

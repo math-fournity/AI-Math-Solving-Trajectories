@@ -1,0 +1,1 @@
+Find the smallest natural number  $n$  that the following statement holds :

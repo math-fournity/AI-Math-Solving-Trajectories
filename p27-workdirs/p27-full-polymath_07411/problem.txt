@@ -1,0 +1,1 @@
+A prestigious international architectural competition has established a specific safety threshold for the structural flexibility of a new skyscraper. The threshold, denoted by the constant $T$, is defined by the infinite product of decreasing structural tolerances:

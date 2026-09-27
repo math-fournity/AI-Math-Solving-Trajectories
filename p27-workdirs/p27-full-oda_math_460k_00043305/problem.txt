@@ -1,0 +1,1 @@
+Find the number of permutations \(a_1, a_2, \ldots, a_{6666}\) of the numbers \(1, 2, 3, \ldots, 6666\) such that \(k + a_k\) is a perfect square for all \(k = 1, 2, 3, \ldots, 6666\).

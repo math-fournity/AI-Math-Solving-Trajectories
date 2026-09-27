@@ -1,0 +1,1 @@
+Determine the minimal possible value $T$ for a square $(T \times T)$-seed resulting in a co-prime $(p, q)$-balanced array, when $p, q$ are both prime.

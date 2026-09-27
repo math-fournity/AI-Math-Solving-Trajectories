@@ -1,0 +1,1 @@
+In the high-stakes world of the "Starlight 31" lunar mission, a specialized team of $m$ astronauts is conducting research at a singular lunar observation post. The mission spans the 31 days of July, and the operational protocol for the month is governed by three strict efficiency constraints:

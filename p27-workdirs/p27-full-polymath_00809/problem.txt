@@ -1,0 +1,1 @@
+Given an $8 \times 8$ grid where each cell is colored either white or black, such that every $2 \times 3$ and $3 \times 2$ rectangle contains at least 2 black cells on the same edge, what is the minimum number of black cells in the grid?

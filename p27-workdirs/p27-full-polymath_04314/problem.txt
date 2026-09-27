@@ -1,0 +1,1 @@
+Find the number of pairs of positive integers \((m, n)\) such that \(n < m \leq 100\) and the polynomial \(x^m + x^n + 1\) has a root on the unit circle.

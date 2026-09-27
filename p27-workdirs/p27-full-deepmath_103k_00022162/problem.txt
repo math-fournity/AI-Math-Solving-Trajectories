@@ -1,0 +1,1 @@
+Given real coefficient polynomials $P(x)$ and $Q(x)$ with odd degrees, and a function $f: \mathbb{R} \to \mathbb{R}$, if for all $x, y \in \mathbb{R}$ the following equation holds:

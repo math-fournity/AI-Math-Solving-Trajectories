@@ -1,0 +1,1 @@
+There are three colleges in a town, each having $n = 50$ students. Every student in each college knows exactly $k$ students total from the other two colleges combined. What is the minimum value of $k$ that guarantees we can always find three students, one from each college, who all know each other?

@@ -1,0 +1,1 @@
+Find all functions $f: S \to S$ where $S = (-1, \infty)$ that satisfy the following conditions:

@@ -1,0 +1,1 @@
+In how many ways can the number $2000$ be written as a sum of three positive, not necessarily different integers? (Sums like $1 + 2 + 3$ and $3 + 1 + 2$ etc. are the same.)

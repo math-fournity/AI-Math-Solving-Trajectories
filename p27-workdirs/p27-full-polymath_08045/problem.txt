@@ -1,0 +1,1 @@
+A high-security data center contains a network of 100 distinct servers, labeled 1 through 100. Every server is programmed with a specific "Handover Protocol" defined by a function $f$. This protocol dictates that each server $x$ must automatically route its backup data to exactly one other server $f(x)$ within the same network.

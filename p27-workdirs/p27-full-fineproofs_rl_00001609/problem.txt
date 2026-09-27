@@ -1,0 +1,1 @@
+For a given integer  $n\ge3$ , let  $S_1, S_2,\ldots,S_m$  be distinct three-element subsets of the set  $\{1,2,\ldots,n\}$  such that for each  $1\le i,j\le m; i\neq j$  the sets  $S_i\cap S_j$  contain exactly one element. Determine the maximal possible value of  $m$  for each  $n$ .

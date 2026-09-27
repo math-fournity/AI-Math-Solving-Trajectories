@@ -1,0 +1,1 @@
+Let \( f(x) = x^n + a_{n-1}x^{n-1} + \cdots + a_0 \) be a polynomial such that \( |f(x)| \leq 1 \) for all \( x \in [-1,1] \). Calculate the maximum value of \( |f'(x)| \) for \( x \in [-1,1] \).

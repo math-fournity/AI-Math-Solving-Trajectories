@@ -1,0 +1,1 @@
+A domino is a $1 \times 2$ or $2 \times 1$ rectangle. Let $f(n)$ be the number of ways to place $n^2$ dominoes on a $2n \times 2n$ grid so that every $2 \times 2$ square of the grid has at least two unoccupied cells in the same row or column. Calculate $f(3)$.

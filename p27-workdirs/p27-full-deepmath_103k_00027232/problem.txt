@@ -1,0 +1,1 @@
+Determine whether there exists a projection operator \(\hat{\Pi}\) onto a convex closed set \(K\subset\mathbb{R}^D\) that satisfies both the projection property (\(\hat{\Pi} \circ \hat{\Pi} = \hat{\Pi}\)) and the non-expansiveness property in the \(\ell_p\) norm, i.e., \( \| \hat{\Pi}(x) - \hat{\Pi}(x')\|_p \leq \| x - x'\|_p, \forall x,x'\in \mathbb{R}^D \)?

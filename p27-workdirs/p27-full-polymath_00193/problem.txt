@@ -1,0 +1,1 @@
+Write 16 different positive integers in a 4x4 grid such that the products of numbers in each row, each column, and the two diagonals are equal. Find the minimum possible value of the biggest number in the grid.

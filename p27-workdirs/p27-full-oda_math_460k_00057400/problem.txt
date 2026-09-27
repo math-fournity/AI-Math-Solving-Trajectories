@@ -1,0 +1,1 @@
+Give an effective description of all possible provability logics with a constant for a single sentence over PA.

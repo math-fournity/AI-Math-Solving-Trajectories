@@ -1,0 +1,1 @@
+Determine the value of $\sum_{n=1}^{\infty}\dfrac{\sin(n^3)}{3n}$.

@@ -1,0 +1,1 @@
+Let \(a\), \(b\), \(c\), and \(d\) be nonnegative numbers. Determine the least positive \(\alpha\) and the best positive \(k\) for which the following inequality holds:

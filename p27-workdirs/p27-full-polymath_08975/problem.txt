@@ -1,0 +1,1 @@
+In a remote industrial complex, three thermal processing units—Alpha, Beta, and Gamma—operate using specific fuel ratios based on their input volumes $a$, $b$, and $c$ (where $a, b, c > 0$).

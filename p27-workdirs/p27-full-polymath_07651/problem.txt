@@ -1,0 +1,1 @@
+A massive high-tech server farm is arranged in a rigid $100 \times 100$ grid of processing units. Each unit is currently processing a specific workload represented by a positive integer.

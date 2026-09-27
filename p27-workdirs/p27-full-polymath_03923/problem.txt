@@ -1,0 +1,1 @@
+For each positive integer $n$, let $C_{n}$ be the largest real number such that for any $n$ real-valued functions $f_{1}(x), f_{2}(x), \ldots, f_{n}(x)$ defined on the closed interval $[0, 1]$, one can find numbers $x_{1}, x_{2}, \ldots, x_{n} \in [0, 1]$ satisfying

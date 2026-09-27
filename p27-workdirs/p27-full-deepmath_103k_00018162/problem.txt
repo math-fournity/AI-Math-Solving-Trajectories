@@ -1,0 +1,1 @@
+Evaluate the limit \( \lim_{r\rightarrow 0} \frac{1}{r} \int_{C_{r}} \frac{\sin(z)}{z}dz \), where \( C_r \) is the contour \( re^{i\theta} \) for \( 0 \leq \theta \leq \pi \).

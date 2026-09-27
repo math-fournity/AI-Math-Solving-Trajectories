@@ -1,0 +1,1 @@
+Let  $P$  be a cyclic polygon with circumcenter  $O$  that does not lie on any diagonal, and let  $S$  be the set of points on 2D plane containing  $P$  and  $O$ .

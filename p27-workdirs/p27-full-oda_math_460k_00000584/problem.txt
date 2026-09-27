@@ -1,0 +1,1 @@
+Consider the series \(\sum_{k=0}^\infty \frac{(5+42k)}{4096^k} \cdot \binom{2k}{k}^3\). Calculate the value of the series and express your answer in the form \(\frac{a}{b\pi}\), where \(a\) and \(b\) are integers. Find \(a + b\).

@@ -1,0 +1,1 @@
+Find the greatest integer \( n \) such that, regardless of the 100 distinct integers written by Peter, Basil can fill a \( 100 \times 100 \) table with integers so that each number from 1 to \( n \) appears at least once, while ensuring the sum in each \( 1 \times 3 \) rectangle (either vertical or horizontal) equals one of Peter's numbers.

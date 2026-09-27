@@ -1,0 +1,1 @@
+A specialized global telecommunications network consists of several server nodes. To ensure full connectivity, every node is required to establish a direct, unique data exchange link with every other node in the network exactly once.

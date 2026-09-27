@@ -1,0 +1,1 @@
+Given a matroid $M$ with a ground set $E$ of size $2n$, where there exists a subset $A \subseteq E$ of size $n$ such that both $A$ and $E \setminus A$ are independent, determine the minimum number of subsets $B \subseteq E$ such that both $B$ and $E \setminus B$ are independent.

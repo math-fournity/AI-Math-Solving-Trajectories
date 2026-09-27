@@ -1,0 +1,1 @@
+Let $P$ be a population of $10000$ bacteria, where some pairs are friends (friendship is mutual) and every bacterium has at least one friend. Let $k = 2021$. We are given that the minimum number of colors needed to color the bacteria such that no two friends have the same color is exactly $k$.

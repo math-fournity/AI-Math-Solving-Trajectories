@@ -1,0 +1,1 @@
+Let $p: \mathbb{R}^4 \to \mathbb{R}$ be a homogeneous polynomial of degree 4 that takes both positive and negative values. Assume that $p$ has a non-trivial zero in $\mathbb{R}^4$. Is there a point $x_0 \in \mathbb{R}^4$ such that $p(x_0) = 0$ and the gradient $\nabla_{x_0} p$ is not the zero vector?

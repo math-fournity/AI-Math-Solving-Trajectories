@@ -1,0 +1,1 @@
+Determine whether $spin(3)$, the group of unit quaternions, is a homogeneous space of $SL(3, \mathbb{R})$. Provide a yes or no answer.

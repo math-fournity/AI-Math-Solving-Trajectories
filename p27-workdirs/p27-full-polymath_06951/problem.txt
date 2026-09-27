@@ -1,0 +1,1 @@
+In a secure digital facility, a security protocol is governed by a prime number $p$. This prime is known to be greater than $13$ and follows a specific "Safe Prime" structure: $p = 2q + 1$, where $q$ is also a prime number.

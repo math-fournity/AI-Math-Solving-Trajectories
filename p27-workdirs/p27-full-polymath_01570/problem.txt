@@ -1,0 +1,1 @@
+Find the smallest positive integer $n$, such that there exist $n$ integers $x_1, x_2, \dots , x_n$ (not necessarily different), with $1\le x_k\le n$, $1\le k\le n$, and such that

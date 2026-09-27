@@ -1,0 +1,1 @@
+Let  $\omega$  be the circumcircle of acute triangle  $ABC$ . Two tangents of  $\omega$  from  $B$  and  $C$  intersect at  $P$ ,  $AP$  and  $BC$  intersect at  $D$ . Point  $E$ ,  $F$  are on  $AC$  and  $AB$  such that  $DE \parallel BA$  and  $DF \parallel CA$ .

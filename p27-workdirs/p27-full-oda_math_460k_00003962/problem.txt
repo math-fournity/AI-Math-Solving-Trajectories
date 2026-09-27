@@ -1,0 +1,1 @@
+Let \( V \) be a congruence-permutable variety such that \( Z(\mathbf{A}) = \nabla_A \) for every \( \mathbf{A} \in V \). Let \( p(x, y, z) \) be a Mal'cev term for \( V \). Define \( R \) by \( R = \{r(\bar{x}, \bar{y}) \in F_V(\bar{x}, \bar{y}): r(\bar{x}, \bar{x}) = \bar{x}\} \). Define the operations \( +, \cdot, -, 0, 1 \) on \( R \) by:

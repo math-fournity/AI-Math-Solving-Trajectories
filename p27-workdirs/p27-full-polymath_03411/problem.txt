@@ -1,0 +1,1 @@
+In a group of $n = 2019$ people, each is friends with at least $d$ of the others. Consider the possibility of distributing the people into several rooms such that the following three conditions hold:

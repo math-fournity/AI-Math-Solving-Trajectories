@@ -1,0 +1,1 @@
+A circle is tangential to sides $AB$ and $AD$ of a convex quadrilateral $ABCD$ at points $G$ and $H$ respectively, and cuts the diagonal $AC$ at points $E$ and $F$. Another circle exists which passes through $E$ and $F$ and is tangential to the lines $DA$ and $DC$ extended.

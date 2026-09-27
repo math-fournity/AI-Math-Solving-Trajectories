@@ -1,0 +1,1 @@
+A computer memory initially contains a single value $x$. New values can be added to the memory using the following rules:

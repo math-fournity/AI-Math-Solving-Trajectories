@@ -1,0 +1,1 @@
+Find the spectral radius of the compact operator $T:C[0,1]\to C[0,1]$ defined by $Tf(x)= \int_{0}^{1-x} f(y)\,dy$. Use the formula $r(T)=\lim_{n \to \infty} ||T^n||^{\frac{1}{n}}$ to determine the spectral radius.

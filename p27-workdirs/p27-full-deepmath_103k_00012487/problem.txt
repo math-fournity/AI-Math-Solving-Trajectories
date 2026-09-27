@@ -1,0 +1,1 @@
+In a quadratic programming problem, consider the following setup:

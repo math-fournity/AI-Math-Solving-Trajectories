@@ -1,0 +1,1 @@
+Find the continuous function \( f(t) \) such that \( f(0) = -\frac{1}{2} \) and \( f(x+y) \geq f(x) + f(y) + f(xy) + 1 \) for all real numbers \( x \) and \( y \).

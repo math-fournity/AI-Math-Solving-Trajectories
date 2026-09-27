@@ -1,0 +1,1 @@
+An integer $n \geq 3$ is called special if it does not divide $(n-1)!\left(1 + \frac{1}{2} + \dots + \frac{1}{n-1}\right)$. Find the sum of all special numbers $n$ such that $10 \leq n \leq 100$.

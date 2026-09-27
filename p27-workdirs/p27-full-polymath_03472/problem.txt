@@ -1,0 +1,1 @@
+Find all natural numbers $n$ such that $n = \text{LCM}[a,b] + \text{LCM}[b,c] + \text{LCM}[c,a]$ where $a, b, c$ are natural numbers. Let $S$ be the set of all such values of $n$.

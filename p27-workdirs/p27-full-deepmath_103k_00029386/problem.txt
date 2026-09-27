@@ -1,0 +1,1 @@
+In the category Top of topological spaces and the category Prost of preordered sets with monotone maps as morphisms, consider a continuous morphism $f: X \to Y$. If $f$ is an initial morphism in Top over Prost, does it imply that $X$ has the initial topology defined by $f$?

@@ -1,0 +1,1 @@
+On a logistics grid consisting of 5 rows and 6 shipping bays (30 bays total), a specialized automated drone is programmed to deliver packages. The drone must strictly alternate between two types of propulsion:

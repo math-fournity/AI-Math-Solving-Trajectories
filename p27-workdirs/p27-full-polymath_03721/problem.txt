@@ -1,0 +1,1 @@
+Let $x_{1}, \ldots, x_{2023}$ be distinct real numbers. Suppose that for every $1 \leqslant n \leqslant 2023$, the number

@@ -1,0 +1,1 @@
+Use each of the digits 1, 2, 3, 4, 5, 6, 7, 8, 9 exactly twice to form distinct prime numbers whose sum is as small as possible. What must this minimal sum be?

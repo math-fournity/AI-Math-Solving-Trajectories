@@ -1,0 +1,1 @@
+Let \( n \) be a positive integer such that \((n+k)!\) begins with \( k \) for \( k = 1, 2, \ldots, 9 \). Calculate the smallest possible value of \( n \) if such an \( n \) exists, otherwise enter 0.

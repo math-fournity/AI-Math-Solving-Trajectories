@@ -1,0 +1,1 @@
+How many integers \( y \) exist such that there is an \( x \in \left(\frac{1}{3}, 5\right) \) satisfying the equation \( 27^{3x^2 + xy} = (1 + xy)27^{15x} \)?

@@ -1,0 +1,1 @@
+Given a finite group \( \Gamma \), construct a 3-regular graph with automorphism group \( \Gamma \).

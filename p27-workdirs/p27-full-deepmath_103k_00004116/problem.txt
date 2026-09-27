@@ -1,0 +1,1 @@
+Suppose \((X, d)\) is a metric space such that every contraction map \(f: X \to X\) has a unique fixed point. Is \(X\) necessarily complete?

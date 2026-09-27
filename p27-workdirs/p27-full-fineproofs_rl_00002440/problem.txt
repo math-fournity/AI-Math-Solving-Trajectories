@@ -1,0 +1,1 @@
+Let  $ n$  be a positive integer, let  $ A$  be a subset of  $ \{1, 2, \cdots, n\}$ , satisfying for any two numbers  $ x, y\in A$ , the least common multiple of  $ x$ ,  $ y$  not more than  $ n$ . Show that  $ |A|\leq 1.9\sqrt {n} \plus{} 5$ .

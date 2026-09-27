@@ -1,0 +1,1 @@
+How many polynomials with coefficients of $-1$ or $1$ have only real roots and a degree greater than 3?

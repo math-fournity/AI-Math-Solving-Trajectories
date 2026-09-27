@@ -1,0 +1,1 @@
+Let $a_{i}$ and $b_{i}$, where $i \in \{1,2, \dots, 2005 \}$, be real numbers such that the inequality $(a_{i}x-b_{i})^{2} \ge \sum_{j=1, j \not= i}^{2005} (a_{j}x-b_{j})$ holds for all $x \in \mathbb{R}$ and all $i \in \{1,2, \dots, 2005 \}$. Find the maximum possible number of positive numbers amongst $a_{i}$ and $b_{i}$, $i \in \{1,2, \dots, 2005 \}$.

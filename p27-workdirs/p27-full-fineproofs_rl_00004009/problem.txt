@@ -1,0 +1,1 @@
+Let $n$ be a positive integer, and let $x$ and $y$ be positive real numbers such that $x^{n}+y^{n}=1$. Prove that  $$ \left(\sum_{k=1}^{n} \frac{1+x^{2 k}}{1+x^{4 k}}\right)\left(\sum_{k=1}^{n} \frac{1+y^{2 k}}{1+y^{4 k}}\right)<\frac{1}{(1-x)(1-y)} $$  (Estonia)

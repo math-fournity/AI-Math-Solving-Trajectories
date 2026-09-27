@@ -1,0 +1,1 @@
+In a remote industrial district, two systems engineers, Quentin and Timothé, are managing a high-pressure steam network controlled by a central safety valve with a fixed pressure threshold set to a prime number $p > 2$.

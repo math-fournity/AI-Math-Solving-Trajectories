@@ -1,0 +1,1 @@
+Let $k$ be a field and let $X$ and $Y$ be objects of a category $C$ enriched over $k$-vector spaces. Composition gives us a linear map \( \hom(X,Y) \otimes \hom(Y,X) \to \hom(X,X) \oplus \hom(Y,Y) \), that sends an elementary tensor \( f\otimes g \) to \( (g\circ f, f \circ g) \). Assume that \( (id_X,id_Y) \) is in the image of this map. Are $X$ and $Y$ isomorphic?

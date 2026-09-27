@@ -1,0 +1,1 @@
+Let \(x_{1}, \ldots, x_{n}\) be positive real numbers such that \(x_{1} + x_{2} + \ldots + x_{n} = 1\). Find the minimum value of the expression \(-\frac{x_{1}^{2}}{2} + \sum_{i=1}^{n} x_{i}^{2} - \sum_{i=1}^{n-1} x_{i} x_{i+1}\). If the answer is of the form of an irreducible fraction $\frac{a}{b}$, compute the value of $a + b$.

@@ -1,0 +1,1 @@
+Consider the ring of symmetric polynomials $\Lambda_N=\mathbb{C}[x_1, \ldots, x_N]^{S_N}$ in $N$ variables and its subspace of homogeneous symmetric polynomials of degree $M$, denoted by $\Lambda_N^M$. A polynomial $f\in \Lambda_N$ is said to have a $(k,r)$-clustering property if it satisfies the following condition for some $g\in \mathbb{C}[Z, x_{k+1}, \ldots, x_N]$:

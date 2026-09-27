@@ -1,0 +1,1 @@
+A $13$-foot tall extraterrestrial is standing on a very small spherical planet with radius $156$ feet. It sees an ant crawling along the horizon. If the ant circles the extraterrestrial once, always staying on the horizon, how far will it travel (in feet)?

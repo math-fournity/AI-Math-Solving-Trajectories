@@ -1,0 +1,1 @@
+Let \(f(x),g(x),h(x)\) be functions defined on the set of positive integers.

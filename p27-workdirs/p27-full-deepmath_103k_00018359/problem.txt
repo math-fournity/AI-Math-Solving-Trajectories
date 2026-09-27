@@ -1,0 +1,1 @@
+Determine the maximum value of \( k \in \mathbb{R}^{+} \) such that the inequality \[ \frac{a^3}{(b-c)^2} + \frac{b^3}{(c-a)^2} + \frac{c^3}{(a-b)^2} \geq k (a+b+c) \] holds for all distinct positive real numbers \( a, b, c \).

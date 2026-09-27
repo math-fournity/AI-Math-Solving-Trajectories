@@ -1,0 +1,1 @@
+We divide up the plane into disjoint regions using a circle, a rectangle and a triangle. What is the greatest number of regions that we can get?

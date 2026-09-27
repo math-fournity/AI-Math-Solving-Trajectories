@@ -1,0 +1,1 @@
+Given real numbers \(a_{1} \leq a_{2} \leq a_{3} \leq \ldots \leq a_{672}\), such that \(a_{1}+a_{2}+a_{3}+\ldots+a_{672}=2018\). For each natural \(n \leq 672\), there exist \(n\) of these numbers whose sum is an integer. What is the smallest possible value of \(a_{672}\)?

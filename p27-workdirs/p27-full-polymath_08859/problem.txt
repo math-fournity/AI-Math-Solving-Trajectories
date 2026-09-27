@@ -1,0 +1,1 @@
+A specialized biological research station operates five identical incubation chambers. To maintain a specific sequence of nutrient flow, each chamber must be programmed to deliver its excess bio-waste through a single pipe into exactly one other chamber.

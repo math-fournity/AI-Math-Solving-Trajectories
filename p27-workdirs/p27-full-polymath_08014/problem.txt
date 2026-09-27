@@ -1,0 +1,1 @@
+In a futuristic circular city divided into seven perfectly equal residential sectors, the central control hub is located at the origin $O$. The outer boundary of the city is a circular ring with a radius of 1 kilometer. Seven transmission towers, labeled $A, B, C, D, E, F,$ and $G$, are positioned at the vertices of a regular heptagon along this boundary.

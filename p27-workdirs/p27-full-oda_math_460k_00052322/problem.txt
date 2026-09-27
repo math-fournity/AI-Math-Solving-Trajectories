@@ -1,0 +1,1 @@
+Determine the Galois group of the polynomial \( f(x) = x^4 + 12x^3 + 44x^2 + 48x + 40 \in \mathbb{Q}[x] \). Given that the polynomial is irreducible and its resolvents \( R_2(x) = x^2 + 1960 \) and \( R_3(x) = x^3 + 10x^2 - 196x - 1960 \) are also irreducible, decide whether the Galois group is \( V_4 \) or \( S_4 \).

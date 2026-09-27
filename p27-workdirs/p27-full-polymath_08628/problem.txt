@@ -1,0 +1,1 @@
+In a specialized network of data hubs, a "cluster" is defined as a set of three hubs where every hub is directly connected to the other two. An "interference node" occurs if two distinct clusters share exactly one hub in common.

@@ -1,0 +1,1 @@
+In the city of Gridhaven, a district is laid out in a perfect $5 \times 5$ square of construction plots. Each of the 25 plots can be developed in one of two ways: it can either be occupied by a "Solid Obstacle" or left as an "Open Plaza."

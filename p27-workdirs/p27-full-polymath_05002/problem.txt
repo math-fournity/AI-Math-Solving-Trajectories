@@ -1,0 +1,1 @@
+For a fixed $\theta \in (0, \frac{\pi}{2})$, let $a(\theta)$ be the smallest positive number that satisfies the following two conditions:

@@ -1,0 +1,1 @@
+Consider a projective surface $X$ over $\mathbb{C}$ and a rank $2$ vector bundle $E$ on $X$. Assume that for a general global section $s \in H^0(X, E)$, the zero locus $Z(s)$ has codimension $2$, and $H^0(X,E)$ has dimension $\geq 2$. Is the vector bundle $E$ generically globally generated?

@@ -1,0 +1,1 @@
+Let $G$ be an infinite, finitely generated group with one end. Consider a word-metric $d$ on the Cayley graph of $G$ with respect to some finite symmetric generating set $S$. Does there exist a good bi-infinite path $\{g_i\}_{i\in\mathbb{Z}}$ in $G$, where $d(g_i, g_{i+1})=1$ for all $i$ and $\lim_{|i-j|\to\infty}d(g_{i}, g_j)=\infty$? Assume $G$ is an infinite torsion group.

@@ -1,0 +1,1 @@
+Let $\mathbb{T}^n$ be an $n$-dimensional torus and $M \subseteq \mathbb{T}^n$ be a submanifold homeomorphic to $\mathbb{T}^n$. Is it necessarily true that $M = \mathbb{T}^n$?

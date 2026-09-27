@@ -1,0 +1,1 @@
+Find all pairs of positive integers $(a,b)$ with the following property: there exists an integer $N$ such that for any integers $m\ge N$ and $n\ge N$, every $m\times n$ grid of unit squares may be partitioned into $a\times b$ rectangles and fewer than $ab$ unit squares.

@@ -1,0 +1,1 @@
+Each square of a $33\times 33$ square grid is colored in one of the three colors: red, yellow or blue, such that the numbers of squares in each color are the same. If two squares sharing a common edge are in different colors, call that common edge a separating edge. Find the minimal number of separating edges in the grid.

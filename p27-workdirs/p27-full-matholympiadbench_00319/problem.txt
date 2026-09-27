@@ -1,0 +1,12 @@
+/-!
+# IMO 2017 N3
+
+Let $n > 1$ be an integer.
+A *special $n$-tuple* is an $n$-tuple $\mathbf{a} = (a_0, a_1, …, a_{n - 1})$ of integers
+  such that there exists an indexing function $f : [n] → [n]$ such that for all $i$,
+$$ n ∣ a_i + a_{i + 1} + … + a_{i + f(i)}. $$
+Determine all $n > 1$ such that any special $n$-tuple $\mathbf{a}$ satisfies
+$$ n ∣ a_0 + a_1 + … + a_{n-1}. $$
+-/
+
+##

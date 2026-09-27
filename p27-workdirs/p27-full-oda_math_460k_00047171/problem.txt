@@ -1,0 +1,1 @@
+A collection \( F \) of distinct subsets of \( X = \{1, 2, \ldots, 300\} \) is called *lovely* if for any three (not necessarily distinct) sets \( A \), \( B \), and \( C \) in \( F \), at most three out of the following eight sets are non-empty:

@@ -1,0 +1,1 @@
+In a remote sector of deep space, a spherical energy shield is projected from a central space station located at the exact coordinates (0, 0, 0). The shield has a fixed radius of exactly $\sqrt{85}$ units.

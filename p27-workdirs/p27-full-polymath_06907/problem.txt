@@ -1,0 +1,1 @@
+In a futuristic circular city divided into $n$ distinct districts arranged as vertices of a regular polygon, two competing urban planning firms, "BlackGrid" and "RedLine," have been commissioned to build high-speed transit tunnels.

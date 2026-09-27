@@ -1,0 +1,1 @@
+Find positive integers $a$ and $b$ such that 7 divides neither $a$, $b$, nor $a+b$, but $(a+b)^7 - a^7 - b^7$ is divisible by $7^7$.

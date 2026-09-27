@@ -1,0 +1,1 @@
+How can the centroid of 10 points be constructed using a fixed-opening compass in only 38 steps?

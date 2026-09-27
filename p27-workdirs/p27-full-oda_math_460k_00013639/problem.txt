@@ -1,0 +1,1 @@
+What are the necessary conditions on the functions \( p \) and \( q \) and the boundary conditions for the Sturm-Liouville operator \( L = DpD + q \), defined over the interval \( I = [a, b] \), to be a positive operator?

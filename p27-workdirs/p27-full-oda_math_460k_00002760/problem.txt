@@ -1,0 +1,1 @@
+Determine whether $T^p - T$ is the greatest common divisor of the set \( \{(T+u)^n - (T+u) : u \in \mathbb{F}_p\} \) in the polynomial ring \( \mathbb{F}_p[T] \), given that \( n > 1 \), \( p \) is an odd prime, \( p-1 \mid n-1 \), and \( p^k - 1 \nmid n-1 \) for any \( k > 1 \).

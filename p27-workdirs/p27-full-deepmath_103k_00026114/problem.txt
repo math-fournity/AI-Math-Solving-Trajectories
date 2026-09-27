@@ -1,0 +1,1 @@
+Given a filtered probability space $(\Omega, \mathcal{F}, \mathcal{F}_{t\geq 0}, P)$, if $B_1, B_2, \dots, B_m$ are all real $\mathcal{F}_t$ Brownian motions that are jointly independent, is the vector $B = (B_1, B_2, \dots, B_m)$ an $\mathcal{F}_t$ $m$-dimensional Brownian motion?

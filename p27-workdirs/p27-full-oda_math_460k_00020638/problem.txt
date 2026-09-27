@@ -1,0 +1,1 @@
+Solve in positive integers \( x^{2007} - y^{2007} = x! - y! \).\n\n   Romanian TST 2007

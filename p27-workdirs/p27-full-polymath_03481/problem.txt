@@ -1,0 +1,1 @@
+$5 \cdot 579$ people go to the bookstore to buy books, and each person buys 4 kinds of books. Every two people have exactly two kinds of books in common. How many kinds of books did the 9 people buy in total? Explain your reasoning.

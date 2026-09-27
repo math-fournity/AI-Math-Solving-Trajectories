@@ -1,0 +1,1 @@
+In a specialized logistics network, a company manages a fleet of transport drones, where each drone is assigned a specific non-zero integer "cargo capacity" (positive or negative, representing loading or unloading potential). Let $F$ be the set of all unique capacity values present in the fleet. The network is governed by two strict operational protocols:

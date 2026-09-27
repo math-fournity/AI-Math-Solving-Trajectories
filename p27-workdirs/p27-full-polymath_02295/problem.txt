@@ -1,0 +1,1 @@
+Given the set \( S = \{a, b, c, d, e, f, g, h, i\} \) and subsets \( A_1 = \{a, b, c\} \), \( A_2 = \{d, e, f\} \), and \( A_3 = \{g, h, i\} \), a function \( F: S \times S \to S \) satisfies the following conditions:

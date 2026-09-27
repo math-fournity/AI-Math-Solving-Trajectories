@@ -1,0 +1,1 @@
+For all positive integers \( n \leq 2021^4 \), if there exists a positive integer \( x_1 \) such that \( \varphi(x_1) = n \), define \( f(n) \) as the smallest positive integer \( x_2 \neq x_1 \) such that \( \varphi(x_2) = n \). Calculate the sum of all distinct values of \( f(n) \) for which \( \varphi(x_1) = n \) has at least two solutions.

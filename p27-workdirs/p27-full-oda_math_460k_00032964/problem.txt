@@ -1,0 +1,1 @@
+Let \( d\mu(x) \) be a finite positive measure and define \( \phi(t) = \int_1^\infty \cos(xt) \, d\mu(x) \). Suppose \(\phi(t)\) has a zero in the interval \([0, \pi]\) but does not have a zero in \([0, a]\) for any \(a < \pi\). Calculate the smallest value of \(a\) such that there exists a measure \(d\mu(x)\) for which \(\phi(t)\) does not have a zero in \([0, a]\).

@@ -1,0 +1,1 @@
+Given a $6 \times 6$ grid, fill each cell with an integer between 1 and 6 (inclusive). Denote by $i \diamondsuit j$ the integer in the $i$-th row and $j$-th column. How many ways are there to fill the grid such that the following conditions are satisfied?

@@ -1,0 +1,1 @@
+A logistics company manages an infinite sequence of numbered storage containers: $1, 2, 3, \dots$. The company needs to assign a specific security clearance level to each container. There are $n$ possible clearance levels available.

@@ -1,0 +1,1 @@
+Let $n = 101$ be an integer. Determine the smallest positive integer $m$ such that: given any $n$ points in the plane, no three on a line, there are $m$ lines to be found, such that no line passes through any of the given points and such that for each pair of given points $X \neq Y$, there is a line such that $X$ and $Y$ lie on opposite sides.

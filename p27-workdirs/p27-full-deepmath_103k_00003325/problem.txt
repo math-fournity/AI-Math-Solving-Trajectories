@@ -1,0 +1,1 @@
+If $A$ is a local domain where each non-trivial ideal factors uniquely into prime ideals, must $A$ be a principal ideal domain?

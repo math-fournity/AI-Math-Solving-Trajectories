@@ -1,0 +1,1 @@
+A high-tech server farm contains $2^n$ unique data nodes, indexed $1, 2, \ldots, 2^n$, where $n$ is a positive integer. A security architect is designing a library $\mathcal{C}$ of "Authorized Access Groups," where each group is a specific subset of these nodes.

@@ -1,0 +1,1 @@
+Determine whether the following claim is true or false: If there is a homomorphism \( \phi \) from a finite group \( G \) to \( S_n \) such that \( G/\ker(\phi) \cong A_n \), then the maximal subgroup of \( G \) is unique.

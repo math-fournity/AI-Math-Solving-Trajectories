@@ -1,0 +1,1 @@
+In a futuristic data center, a network engineer manages a system of 2020 processors, indexed $i=1, 2, \ldots, 2020$. Each processor stores a single data packet $x_i$, which is an integer representing a signal state modulo 2020. The current state of the entire system is represented by the 2020-tuple $(x_1, x_2, \ldots, x_{2020})$.

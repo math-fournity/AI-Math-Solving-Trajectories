@@ -1,0 +1,1 @@
+Consider a standard normal random variable $N \sim \mathcal{N}(0,1)$. Determine if there exists a dependent random variable $D$ such that the random variable $M = N + D$ is still a standard normal distribution. If such a $D$ exists, construct it and find the variance of $D$. Provide your answer in the form of the variance of $D$.

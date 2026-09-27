@@ -1,0 +1,1 @@
+In the coastal territory of Arcania, three lighthouses—Alpha ($A$), Bravo ($B$), and Charlie ($C$)—form a triangular shipping lane. The distance from Alpha to Bravo is exactly 6 nautical miles, Bravo to Charlie is 5 nautical miles, and Alpha to Charlie is 7 nautical miles.

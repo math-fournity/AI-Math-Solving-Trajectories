@@ -1,0 +1,1 @@
+Given a field $k$ and a finite-dimensional $k$-algebra $A$ with Jacobson radical $J(A)$, if $A/J(A) \cong k^n$ for some $n \geq 1$, does $A$ possess an ideal with $k$-dimension $1$? Provide a proof or counterexample.

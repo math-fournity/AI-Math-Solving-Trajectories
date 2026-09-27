@@ -1,0 +1,1 @@
+Of all the rectangles that can be inscribed unstuck in a 6 by 8 rectangle, the smallest perimeter has the form $\sqrt{N}$, for a positive integer $N$. Find $N$.

@@ -1,0 +1,1 @@
+Find the set of all real numbers $a$ for which there exists a function $f: \mathbb{R} \rightarrow \mathbb{R}$ such that $f(x-f(y))=f(x)+a[y]$ for every real $x, y$, where $[y]$ denotes the integral part of $y$.

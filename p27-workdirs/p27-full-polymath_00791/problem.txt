@@ -1,0 +1,1 @@
+A group of pirates had an argument and now each of them holds exactly some other two pirates at gunpoint. The pirates are called one by one in some order. If the called pirate is still alive, he shoots both pirates he is aiming at (some of whom might already be dead). All shots are immediately lethal.

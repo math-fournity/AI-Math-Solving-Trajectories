@@ -1,0 +1,1 @@
+Suppose $K$ and $L$ are fields contained in a larger field, and let $KL$ be the smallest subfield containing both. If $KL$ is a finite extension of both $K$ and $L$, must $K$ be finite over $K \cap L$?

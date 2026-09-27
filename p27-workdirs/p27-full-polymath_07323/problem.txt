@@ -1,0 +1,1 @@
+A specialized laboratory is testing a shipment of $N$ high-precision sensors. It is a known quality control constraint that the sensitivity rating of the most sensitive sensor in the shipment is at most $1.25$ times the sensitivity rating of the least sensitive sensor.

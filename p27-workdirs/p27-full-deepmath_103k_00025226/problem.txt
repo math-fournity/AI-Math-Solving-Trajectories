@@ -1,0 +1,1 @@
+Given symmetric, positive definite real matrices $A$ and $B$ such that $A \geq B$, and another symmetric, positive definite real matrix $M$ of compatible dimensions, determine whether the inequality $AMA \geq BMB$ is true.

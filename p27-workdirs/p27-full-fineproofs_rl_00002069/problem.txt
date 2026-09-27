@@ -1,0 +1,1 @@
+In a  $2^n \times 2^n$  square with  $n$  positive integer is covered with at least two non-overlapping rectangle pieces with integer dimensions and a power of two as surface. Prove that two rectangles of the covering have the same dimensions  (Two rectangles have the same dimensions as they have the same width and the same height, wherein they, not allowed to be rotated.)

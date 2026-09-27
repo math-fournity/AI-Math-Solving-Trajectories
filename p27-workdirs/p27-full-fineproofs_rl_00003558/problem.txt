@@ -1,0 +1,1 @@
+Let $A B C D$ be a cyclic quadrilateral satisfying $A D^{2}+B C^{2}=A B^{2}$. The diagonals of $A B C D$ intersect at $E$. Let $P$ be a point on side $\overline{A B}$ satisfying $\angle A P D=\angle B P C$. Show that line $P E$ bisects $\overline{C D}$.

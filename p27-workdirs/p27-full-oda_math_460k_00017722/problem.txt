@@ -1,0 +1,1 @@
+Find the smallest positive integer $q$ such that for all functions $P: \mathbb{N+} \longrightarrow \mathbb{N+}$ that satisfy $|P(x)| \le Cx^{132}$ for some constant $C>0$, and for all positive integers $x$ and $y$, the condition $x^7 - y^7 |P(x)-P(y)$ implies that $qP(x)$ must be in $\mathbb{Z}[x]$.

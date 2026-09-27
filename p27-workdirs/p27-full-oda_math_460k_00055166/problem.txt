@@ -1,0 +1,1 @@
+Given positive integers  $n, k$  such that  $n\ge 4k$ , find the minimal value  $\lambda=\lambda(n,k)$  such that for any positive reals  $a_1,a_2,\ldots,a_n$ , we have

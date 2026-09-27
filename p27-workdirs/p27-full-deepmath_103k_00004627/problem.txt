@@ -1,0 +1,1 @@
+Let $M$ be a module over a commutative ring $R$. If $M^{\otimes n} = 0$ for some $n \geq 3$, is it possible that $M^{\otimes n-1}$ is nonzero? Justify your answer.

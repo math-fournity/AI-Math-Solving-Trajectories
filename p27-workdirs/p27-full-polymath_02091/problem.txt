@@ -1,0 +1,1 @@
+Let's find a natural number $n$, preferably small, such that the decimal representation of $1 / n$ has a segment of 3 consecutive identical digits, but the segment should not consist entirely of the same digit.

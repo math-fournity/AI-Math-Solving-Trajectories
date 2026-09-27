@@ -1,0 +1,1 @@
+In a futuristic data-storage facility, an encryption sequence is classified as "Corrupted" if it contains the digit 1 followed immediately by the digit 3 (the substring "13"). If this specific sequence does not appear, the data is classified as "Secure."

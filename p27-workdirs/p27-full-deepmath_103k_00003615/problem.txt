@@ -1,0 +1,1 @@
+Does every non-null two-sided ideal of the universal enveloping algebra $U(\mathrm{gl}(n,\mathbb{C}))$ have a nonzero intersection with its center?

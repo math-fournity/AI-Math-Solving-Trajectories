@@ -1,0 +1,1 @@
+Let $n = 100$. Consider a sequence of positive integers $a_1, a_2, \ldots, a_n$ such that $a_{n+i} = a_i$ for all $i \geq 1$. Suppose the sequence satisfies the conditions:

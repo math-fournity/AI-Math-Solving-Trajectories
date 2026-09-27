@@ -1,0 +1,1 @@
+If \(U\subset\mathbb{R}^n\) is an open and contractible subset with a continuous function \(f: U \to \mathbb{R}\) that has only one minimum and whose level curves are connected by paths, is \(U\) homeomorphic to \(\mathbb{R}^n\)?

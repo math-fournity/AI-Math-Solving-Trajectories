@@ -1,0 +1,1 @@
+In a remote digital archipelago, there are $n$ distinct data servers labeled $V_1, V_2, \dots, V_n$ (where $n > 3$), arranged such that no three servers sit on the same fiber-optic line. The network administrators are installing direct physical cable links between certain pairs of servers. Two servers $V_i$ and $V_j$ are defined as "linked" if a cable is constructed between them.

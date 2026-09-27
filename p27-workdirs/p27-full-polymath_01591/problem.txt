@@ -1,0 +1,1 @@
+We call polynomials $A(x) = a_n x^n +. . .+a_1 x+a_0$ and $B(x) = b_m x^m +. . .+b_1 x+b_0$

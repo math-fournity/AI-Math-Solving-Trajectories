@@ -1,0 +1,1 @@
+A hexagonal table consists of 2012 columns. Each odd-numbered column contains 2012 hexagons, and each even-numbered column contains 2013 hexagons. Initially, the value $i$ is written in every hexagon of the $i$-th column for $1 \le i \le 2012$.

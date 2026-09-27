@@ -1,0 +1,1 @@
+In the competitive world of professional logistics, three rival shipping companies—Alpha, Beta, and Gamma—each employ exactly $n$ specialized couriers. Every single courier across all three companies has a unique, distinct efficiency rating.

@@ -1,0 +1,1 @@
+Example 3 If 5 vertices of a regular nonagon are painted red, what is the minimum number of pairs of congruent triangles, all of whose vertices are red points?

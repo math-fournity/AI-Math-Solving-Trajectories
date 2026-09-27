@@ -1,0 +1,1 @@
+Determine whether the statement is true or false: Suppose $f(x)$ is an irreducible polynomial in $R[x]$ over an integral domain $R$, and $r$ is a root of $f(x)$ in an algebraic closure of the fraction field of $R$. Is $R[x]/(f(x))$ isomorphic to $R[r]$?

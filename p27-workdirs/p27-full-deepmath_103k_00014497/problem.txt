@@ -1,0 +1,1 @@
+Evaluate the expression \( I(a) = \lim_{\Omega \to \mathbb{R}^3} \, \int_\Omega \nabla \left( \frac{1}{|x-a|} - \frac{1}{|x|} \right) dV \), where \(x\) and \(a\) are vectors in \(\mathbb{R}^3\). Determine the value of \(I(a)\) or explain why the evaluation fails.

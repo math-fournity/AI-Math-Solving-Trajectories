@@ -1,0 +1,1 @@
+Determine the maximal size of the set \( S \) such that:

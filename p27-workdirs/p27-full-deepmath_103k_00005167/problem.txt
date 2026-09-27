@@ -1,0 +1,1 @@
+Let $P$ be an irreducible polynomial with rational coefficients and degree $d$. Suppose $\alpha$ and $\beta$ are two real roots of $P$. Define $a_k = P^{(k)}(\alpha)$ and $b_k = P^{(k)}(\beta)$ for $1 \leq k \leq d-1$. If $a_k b_k > 0$ for all $1 \leq k \leq d-1$, does it necessarily follow that $\alpha = \beta$?

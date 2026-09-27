@@ -1,0 +1,1 @@
+Find all triplets \((p, q, n)\) of odd prime numbers \(p\) and \(q\), and integer \(n > 1\), such that:

@@ -1,0 +1,1 @@
+On a circle, there are 2013 bowls, each of which can have blonde or black hair. In each move, the group is photographed, and then simultaneously, each bowl that has a neighbor with hair of a different color changes its hair color to that of its neighbor. What is the largest possible number of different photographs that can be obtained from a given initial configuration?

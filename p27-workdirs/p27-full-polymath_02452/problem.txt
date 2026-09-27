@@ -1,0 +1,1 @@
+Let \(a, b, c, d\) be positive real numbers such that \(a \geq b + c + d\). Find the maximal value of the positive natural number \(\lambda\) such that:

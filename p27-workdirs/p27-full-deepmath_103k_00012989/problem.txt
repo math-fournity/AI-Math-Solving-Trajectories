@@ -1,0 +1,1 @@
+Is a closed subset of isolated points in a compact set necessarily finite? Provide a proof or counterexample to support your answer.

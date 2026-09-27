@@ -1,0 +1,1 @@
+Let $S(n)$ be the sum of the remainders when $2^n$ is divided by each integer from $1$ to $n$. Determine the smallest constant $c > 0$ such that $S(n) > cn\log n$ for all integers $n > 1$. Calculate $c$ accurate to three decimal places.

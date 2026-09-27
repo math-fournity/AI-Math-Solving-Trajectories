@@ -1,0 +1,1 @@
+If \( \int_1^\infty f(x) x^n \, dx = 0 \) for all integers \( n > 1 \), is it true that \( f(x) = 0 \) for a continuous function \( f \)?

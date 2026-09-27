@@ -1,0 +1,1 @@
+A function $f$ from the positive integers to the positive integers is called Canadian if it satisfies

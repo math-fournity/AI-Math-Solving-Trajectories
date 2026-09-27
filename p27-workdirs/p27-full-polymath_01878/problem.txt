@@ -1,0 +1,1 @@
+Given a set $S$ of integers, an allowed operation consists of the following three steps:

@@ -1,0 +1,1 @@
+Let $X$ be a local complete intersection subvariety of codimension two in $\mathbb{P}^n$. By Bertini's theorem, there exists an irreducible hypersurface $Y$ containing $X$. Can $Y$ be chosen such that $X$ is a Cartier divisor on $Y$?

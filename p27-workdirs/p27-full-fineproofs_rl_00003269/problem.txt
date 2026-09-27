@@ -1,0 +1,1 @@
+Let  $m$  be an integer where  $|m|\ge 2$ . Let  $a_1,a_2,\cdots$  be a sequence of integers such that  $a_1,a_2$  are not both zero, and for any positive integer  $n$ ,  $a_{n+2}=a_{n+1}-ma_n$ .

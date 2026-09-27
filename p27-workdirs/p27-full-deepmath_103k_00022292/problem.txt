@@ -1,0 +1,1 @@
+Determine whether every submultiplicative matrix norm \( \lVert \cdot \rVert_r \) on \( M_n(\mathbb{R}) \) can be extended to a submultiplicative norm \( \lVert \cdot \rVert_c \) on \( M_n(\mathbb{C}) \) such that \( \lVert A \rVert_r = \lVert A \rVert_c \) for all \( A \in M_n(\mathbb{R}) \).

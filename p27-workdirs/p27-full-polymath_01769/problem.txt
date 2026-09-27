@@ -1,0 +1,1 @@
+Let $(a_n)$ be a sequence defined by $a_0 = 0$, $a_1 = 1$, $a_2 = 2$ and the recurrence relation $a_{n+3} = a_{n+1} + a_n$ for $n \ge 0$. Find the sum of all positive integers $n$ such that $a_n$ is a power of two.

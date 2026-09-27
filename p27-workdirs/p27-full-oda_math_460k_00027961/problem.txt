@@ -1,0 +1,1 @@
+Let \( f(x) = \sum_{n \geq 0} 3^{-n} \sin(9^n \pi x) \). Find the points at which \( f \) is not differentiable.

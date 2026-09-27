@@ -1,0 +1,1 @@
+Let \( R = \mathbb{Q}(\sqrt{a})[x] \) where \( a \in \mathbb{Z} \), and let \( O \) be the ring of integers of \( \mathbb{Q}(\sqrt{a}) \). Define \( S = \{ f \in R \mid f(O) \subset O \} \). Find a minimal generating set (as rings) of \( S \).

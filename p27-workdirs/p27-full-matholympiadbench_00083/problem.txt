@@ -1,0 +1,12 @@
+/-!
+# International Mathematical Olympiad 2008, Problem 4
+
+Determine all functions f from the positive reals to the positive reals
+such that
+
+   (f(w)² + f(x)²) / (f(y)² + f(z)²) = (w² + x²) / (y² + z²)
+
+for all positive real numbers w,x,y,z satisfying xw = yz.
+-/
+
+##

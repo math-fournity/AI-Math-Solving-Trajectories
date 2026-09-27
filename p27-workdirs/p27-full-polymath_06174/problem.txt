@@ -1,0 +1,1 @@
+In a vast desert, three research outposts—Alpha ($A$), Bravo ($B$), and Charlie ($C$)—form a triangular perimeter. Sensors have determined that the direct distance between Alpha and Charlie is exactly 48 kilometers, while the distance between Bravo and Charlie is 30 kilometers.

@@ -1,0 +1,1 @@
+A specialized logistics firm manages three distinct storage silos: Alpha, Beta, and Gamma. Collectively, these silos currently hold exactly 2021 kiloliters of a volatile chemical. Two technicians, Nina and Tadashi, are tasked with rebalancing the inventory through a series of shifts, with Nina acting first.

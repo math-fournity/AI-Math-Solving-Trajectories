@@ -1,0 +1,1 @@
+In the national math league, there are 7 teams. Their season is a round robin format, where each team plays every other team. Find the number of ways the games could go such that they have an equal number of wins.

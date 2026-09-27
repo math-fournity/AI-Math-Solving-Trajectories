@@ -1,0 +1,1 @@
+In a specialized logistics hub, there are exactly $N = 2018$ docking bays, numbered sequentially from $1$ to $2018$. There are also $2018$ cargo containers, each bearing a unique identification number from $1$ to $2018$.

@@ -1,0 +1,1 @@
+A set of five-digit numbers \(\{N_{1}, \ldots, N_{k}\}\) is such that any five-digit number whose digits are in increasing order matches at least in one digit with at least one of their numbers \(N_{1}, \ldots, N_{k}\). Find the smallest possible value of \(k\).

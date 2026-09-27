@@ -1,0 +1,1 @@
+How many triangles are determined by the sides of a (convex) regular heptagon in the following cases:

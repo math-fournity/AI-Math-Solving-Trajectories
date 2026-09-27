@@ -1,0 +1,1 @@
+Suppose $P$ is a poset and let $G$ be $P$-generic over $V$. If $M$ is a model of ZFC such that $V \subset M \subset V[G]$, does there exist a poset $Q \subset P$ such that $M = V[H]$ for some $H$ which is $Q$-generic over $V$?

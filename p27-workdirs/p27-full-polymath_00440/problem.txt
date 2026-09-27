@@ -1,0 +1,1 @@
+Determine all positive integers \( n \) with the following property: for any (not necessarily distinct) divisors \( d_{1}, d_{2}, \ldots, d_{k} \) of \( n \), such that \(\frac{1}{d_{1}}+\frac{1}{d_{2}}+\cdots+\frac{1}{d_{k}}>2022\), some of the fractions \(\frac{1}{d_{1}}, \frac{1}{d_{2}}, \ldots, \frac{1}{d_{k}}\) have sum exactly 2022.

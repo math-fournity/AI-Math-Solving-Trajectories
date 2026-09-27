@@ -1,0 +1,1 @@
+Each positive integer number is coloured red or blue. A function $f$ from the set of positive integer numbers into itself has the following two properties:

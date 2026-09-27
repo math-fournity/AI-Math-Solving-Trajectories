@@ -1,0 +1,1 @@
+EST   Let $a, b, c$ be positive real numbers such that $\frac{1}{a}+\frac{1}{b}+\frac{1}{c}=a+b+c$. Prove that  $$ \frac{1}{(2 a+b+c)^{2}}+\frac{1}{(2 b+c+a)^{2}}+\frac{1}{(2 c+a+b)^{2}} \leq \frac{3}{16} $$

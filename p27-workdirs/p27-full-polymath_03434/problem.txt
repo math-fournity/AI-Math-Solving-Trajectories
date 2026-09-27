@@ -1,0 +1,1 @@
+Steven draws a line segment between every two of the points

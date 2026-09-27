@@ -1,0 +1,1 @@
+Let $n$ be an integer with $n \geqslant 2$. Does there exist a sequence $\left(a_{1}, \ldots, a_{n}\right)$ of positive integers with not all terms being equal such that the arithmetic mean of every two terms is equal to the geometric mean of some (one or more) terms in this sequence? (Estonia)

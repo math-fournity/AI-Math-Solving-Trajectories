@@ -1,0 +1,1 @@
+A high-tech server rack contains $n = 101$ slots, numbered $1$ to $101$ from left to right, all of which are initially empty. Two engineers, Alice and Bob, are testing the system by toggling the power status of the slots in alternating turns, with Alice going first. On any given turn, a player must choose one of two procedures:

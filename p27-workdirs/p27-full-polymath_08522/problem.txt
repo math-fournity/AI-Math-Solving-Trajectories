@@ -1,0 +1,1 @@
+In a specialized laboratory, a chemist is working with a set of $n$ distinct chemical vials, where $n$ is an integer such that $2 \le n \le 100$. Each vial is labeled with a unique integer ID from 1 to $n$. Furthermore, each vial currently contains a solution that is either "Type-B" or "Type-W."

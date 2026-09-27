@@ -1,0 +1,1 @@
+In a remote industrial complex, three power generators—Alpha, Beta, and Gamma—produce varying levels of energy denoted by the non-negative real values $a, b,$ and $c$. To ensure the system remains operational, at least two of these generators must be active at any given time.

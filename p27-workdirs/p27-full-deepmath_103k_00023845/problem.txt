@@ -1,0 +1,1 @@
+Let \(M\) be a compact manifold. Determine whether \(\pi_n(M)\) is a finitely generated \(\mathbb{Z}[\pi_1(M)]\)-module for every \(n \geq 2\).

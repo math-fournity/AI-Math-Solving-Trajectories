@@ -1,0 +1,1 @@
+Determine if the group $GL_2(\mathbb{Z}/p\mathbb{Z})$ can be isomorphic to a subgroup of a symmetric group $S_n$ for any positive integer $n \geq p$, where $p$ is a prime number.

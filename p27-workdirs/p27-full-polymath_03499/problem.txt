@@ -1,0 +1,1 @@
+A permutation $(a_0, a_1, \ldots, a_n)$ of $(0, 1, \ldots, n)$ is given. A transposition of $a_i$ with $a_j$ is "legal" if $a_i = 0$ for $i > 0$ and $a_{i-1} + 1 = a_j$. The permutation is "regular" if it can be transformed into $(1, 2, \ldots, n, 0)$ via legal transpositions.

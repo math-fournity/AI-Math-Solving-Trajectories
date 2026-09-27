@@ -1,0 +1,1 @@
+A specialized architectural firm is designing a series of polygonal observation decks, each shaped like a convex polygon with $n$ sides ($n \geq 3$). To reinforce the flooring, engineers must install internal support beams that span strictly between the existing corners (vertices).

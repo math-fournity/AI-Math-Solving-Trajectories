@@ -1,0 +1,1 @@
+Consider an $n \times n$ table where each cell contains a lamp, initially all turned off. A move consists of choosing $m$ consecutive fields in a row or a column and toggling the state of those $m$ lamps. Let $P(n, m)$ be a boolean property that is true if it is possible to reach a state where all lamps are on, and false otherwise. Evaluate the sum

@@ -1,0 +1,1 @@
+For a flat morphism $\psi: X\rightarrow \mathbb{A}_{\mathbb{C}}^1$, if the fiber $\psi^{-1}(c_1)$ is a complete intersection for some $c_1 \neq 0$, does it follow that the fiber $\psi^{-1}(c_2)$ is also a complete intersection for any $c_2 \neq 0$?

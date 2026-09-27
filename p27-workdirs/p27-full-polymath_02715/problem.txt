@@ -1,0 +1,1 @@
+From the results table of a one-round football tournament of 10 teams, only the total number of goals scored and conceded for each team remains. The mathematician had enough of this to restore the score in each match. What is the minimum number of these 20 numbers that could be zeros?

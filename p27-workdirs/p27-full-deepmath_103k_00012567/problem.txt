@@ -1,0 +1,1 @@
+Consider the Fibonacci sequence $F_n = 1, 1, 2, 3, 5, \ldots$ (starting with $n=1$) and the Catalan sequence $C_n = \frac{1}{n+1}\binom{2n}{n}$. Define $B_z$ as the number of integers $n \leq z$ for which $\gcd(F_n, C_n) = 1$. Does the ratio $\frac{B_z}{z}$ converge as $z$ approaches infinity? If so, to what value does it converge?

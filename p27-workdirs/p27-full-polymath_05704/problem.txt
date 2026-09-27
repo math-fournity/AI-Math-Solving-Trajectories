@@ -1,0 +1,1 @@
+Let $n \geq 3$ be an integer. A labelling of the $n$ vertices, the $n$ sides, and the interior of a regular $n$-gon by $2n + 1$ distinct integers is called memorable if:

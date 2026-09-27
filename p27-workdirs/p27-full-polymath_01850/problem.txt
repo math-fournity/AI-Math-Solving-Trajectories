@@ -1,0 +1,1 @@
+Let \( f: \mathbb{Z} \rightarrow \mathbb{Z} \) be a function such that for any integers \( x, y \), we have

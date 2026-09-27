@@ -1,0 +1,1 @@
+Determine whether the first continuous cohomology group \(H^1_{cont}(\mathrm{Gal}(L/K), L^{\times})\) vanishes for algebraic extensions \(L/K\) of \(\mathbb{Q}_p\) with \(L^{\times}\) having the \(p\)-adic topology.

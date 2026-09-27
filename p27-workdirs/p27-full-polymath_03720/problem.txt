@@ -1,0 +1,1 @@
+Determine the greatest positive integer \( n \) for which there exists a sequence of distinct positive integers \( s_{1}, s_{2}, \ldots, s_{n} \) satisfying

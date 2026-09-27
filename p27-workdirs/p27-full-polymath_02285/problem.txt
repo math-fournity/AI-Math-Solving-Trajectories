@@ -1,0 +1,1 @@
+A spider and a fly are on the surface of a cube with side length 1. The spider is located at the midpoint of one of the edges. Let $d(P)$ denote the shortest distance between the spider and a point $P$ on the surface of the cube, where the path must stay on the surface. Find the maximum possible value of $d(P)^2$ for any point $P$ on the surface of the cube.

@@ -1,0 +1,1 @@
+In a specialized logistics network, two distribution centers handle a total of $x$ and $y$ metric tons of cargo respectively, where $x$ and $y$ are positive integers. The operational efficiency of the network is governed by their greatest common divisor, denoted as $d$.

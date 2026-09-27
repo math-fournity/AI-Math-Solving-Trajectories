@@ -1,0 +1,1 @@
+We say that a positive integer is irregular if it is not a multiple of any of its digits. For example, $394$ is an irregular number because it is not a multiple of $3$, not a multiple of $9$, and not a multiple of $4$. Consider a set formed by $n$ consecutive positive integers. If all the numbers in this set are irregular, determine the largest possible value for $n$.

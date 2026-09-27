@@ -1,0 +1,1 @@
+Find a monic integer polynomial of degree $n$ whose Galois group over $\mathbb{Q}$ is $S_n$. Provide the polynomial.

@@ -1,0 +1,1 @@
+Find all pairs of positive integers  $(m, n)$  such that  $m^2-mn+n^2+1$  divides both numbers  $3^{m+n}+(m+n)!$  and  $3^{m^3+n^3}+m+n$ .

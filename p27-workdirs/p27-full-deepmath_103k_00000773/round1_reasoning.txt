@@ -1,0 +1,601 @@
+=== AGENT STEP 0 ===
+step_id=8 timestamp=2026-08-13T08:09:53.909531+00:00
+message_len=0 reasoning_len=61623 tool_calls=0
+metrics={"prompt_tokens": 22496, "completion_tokens": 25000, "cached_tokens": 12397}
+--- REASONING_CONTENT ---
+Let me analyze this problem carefully.
+
+We need to determine whether the ring $\frac{\mathbb{Z}_p[[X]] \otimes_\mathbb{Z} \mathbb{Q}_p}{(X-p)^r}$ is principal for all integers $r \geq 1$.
+
+First, let me understand the ring. $\mathbb{Z}_p[[X]]$ is the ring of formal power series with coefficients in $\mathbb{Z}_p$ (the ring of $p$-adic integers). We tensor over $\mathbb{Z}$ with $\mathbb{Q}_p$.
+
+Wait, let me think about what $\mathbb{Z}_p[[X]] \otimes_\mathbb{Z} \mathbb{Q}_p$ is.
+
+$\mathbb{Z}_p$ is a $\mathbb{Z}$-algebra, and $\mathbb{Q}_p$ is a $\mathbb{Z}$-algebra. The tensor product $\mathbb{Z}_p[[X]] \otimes_\mathbb{Z} \mathbb{Q}_p$...
+
+Actually, let me think more carefully. $\mathbb{Z}_p[[X]]$ is a $\mathbb{Z}_p$-module, hence a $\mathbb{Z}$-module. Tensoring with $\mathbb{Q}_p$ over $\mathbb{Z}$.
+
+Note that $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p \cong \mathbb{Q}_p$ since $\mathbb{Z}_p$ is a torsion-free $\mathbb{Z}$-module and $\mathbb{Q}_p = \mathbb{Z}_p[1/p]$, so $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p \cong \mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Z}_p[1/p] \cong \mathbb{Q}_p$.
+
+Wait, let me be more careful. $\mathbb{Q}_p = \mathbb{Z}_p[1/p]$ as a $\mathbb{Z}_p$-module. And $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p$. 
+
+Actually, $\mathbb{Z}_p$ is a flat $\mathbb{Z}$-module (it's torsion-free and $\mathbb{Z}$ is a PID, so torsion-free = flat). So $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p \cong \mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Z}_p[1/p]$.
+
+Hmm, let me think about this differently. $\mathbb{Q}_p = S^{-1}\mathbb{Z}_p$ where $S = \{1, p, p^2, \ldots\}$. Also $\mathbb{Q}_p = S^{-1}\mathbb{Z}$ where $S = \{1, p, p^2, \ldots\}$... no, that's not right. $S^{-1}\mathbb{Z}$ where $S = \{1, p, p^2, \ldots\}$ gives $\mathbb{Z}[1/p]$, not $\mathbb{Q}_p$.
+
+$\mathbb{Q}_p$ is the fraction field of $\mathbb{Z}_p$, so $\mathbb{Q}_p = \text{Frac}(\mathbb{Z}_p)$.
+
+Now, $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p$. Since $\mathbb{Z}_p$ is flat over $\mathbb{Z}$, and $\mathbb{Q}_p$ is a localization of $\mathbb{Z}$... no, $\mathbb{Q}_p$ is not a localization of $\mathbb{Z}$.
+
+Let me think again. $\mathbb{Q}_p$ as a $\mathbb{Z}$-module. We have $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p$.
+
+Consider the map $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p \to \mathbb{Q}_p$ given by $a \otimes q \mapsto aq$. This is well-defined and surjective (since $1 \otimes q \mapsto q$). Is it injective?
+
+$\mathbb{Z}_p$ is a free $\mathbb{Z}$-module? No, $\mathbb{Z}_p$ is not free over $\mathbb{Z}$ (it's uncountable and torsion-free, but not free). However, $\mathbb{Z}_p$ is flat over $\mathbb{Z}$ (torsion-free over PID = flat).
+
+Since $\mathbb{Z}_p$ is flat over $\mathbb{Z}$, the map $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p \to \mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p$ is an isomorphism (trivially). Let me think about whether $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p \cong \mathbb{Q}_p$.
+
+We have the exact sequence $0 \to \mathbb{Z} \to \mathbb{Z}_p \to \mathbb{Z}_p/\mathbb{Z} \to 0$... hmm, this is getting complicated.
+
+Actually, let me use a different approach. $\mathbb{Q}_p$ as a $\mathbb{Z}$-module: every element of $\mathbb{Q}_p$ can be written as $p^{-n} \cdot a$ where $a \in \mathbb{Z}_p$ and $n \geq 0$. So $\mathbb{Q}_p = \bigcup_n p^{-n} \mathbb{Z}_p$ as a $\mathbb{Z}$-module.
+
+Now $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p = \mathbb{Z}_p \otimes_\mathbb{Z} \bigcup_n p^{-n}\mathbb{Z}_p$. Tensor products don't commute with direct limits in general... actually they do! Tensor products are left adjoints, so they commute with colimits (direct limits).
+
+So $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p = \mathbb{Z}_p \otimes_\mathbb{Z} \varinjlim_n p^{-n}\mathbb{Z}_p = \varinjlim_n (\mathbb{Z}_p \otimes_\mathbb{Z} p^{-n}\mathbb{Z}_p)$.
+
+Now $p^{-n}\mathbb{Z}_p \cong \mathbb{Z}_p$ as a $\mathbb{Z}$-module (via multiplication by $p^n$). So $\mathbb{Z}_p \otimes_\mathbb{Z} p^{-n}\mathbb{Z}_p \cong \mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Z}_p$.
+
+And $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Z}_p \cong \mathbb{Z}_p$ (since $\mathbb{Z}_p$ is a $\mathbb{Z}$-algebra, the multiplication map gives this... actually, is this true?).
+
+Hmm, $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Z}_p$. The multiplication map $\mu: \mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Z}_p \to \mathbb{Z}_p$ is surjective. Is it injective? 
+
+$\mathbb{Z}_p$ is a flat $\mathbb{Z}$-module, so $\mathbb{Z}_p \otimes_\mathbb{Z} -$ is exact. Consider the map $\mathbb{Z} \to \mathbb{Z}_p$. Tensoring with $\mathbb{Z}_p$: $\mathbb{Z}_p \to \mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Z}_p$. The composition $\mathbb{Z}_p \to \mathbb{Z}_p \otimes \mathbb{Z}_p \to \mathbb{Z}_p$ is the identity. So if the map $\mathbb{Z} \to \mathbb{Z}_p$ is injective (which it is, since $\mathbb{Z}$ embeds in $\mathbb{Z}_p$), then by flatness $\mathbb{Z}_p \to \mathbb{Z}_p \otimes \mathbb{Z}_p$ is injective. But this doesn't directly tell us the multiplication map is injective.
+
+Actually, let me think about this differently. $\mathbb{Z}_p$ is the $p$-adic completion of $\mathbb{Z}$. We have $\mathbb{Z}_p = \varprojlim \mathbb{Z}/p^n\mathbb{Z}$. 
+
+For the tensor product $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Z}_p$: since $\mathbb{Z}_p$ is flat over $\mathbb{Z}$, we can compute this. Actually, I recall that for a DVR $R$ with fraction field $K$, $R \otimes_\mathbb{Z} K$... this depends on the specific rings.
+
+Let me try a more direct approach. Consider the map $\phi: \mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p \to \mathbb{Q}_p$, $a \otimes q \mapsto aq$. This is a ring homomorphism (where the tensor product has the natural ring structure). It's surjective. 
+
+For injectivity: suppose $\sum a_i \otimes q_i \mapsto 0$, i.e., $\sum a_i q_i = 0$ in $\mathbb{Q}_p$. We can write $q_i = p^{-n} b_i$ with $b_i \in \mathbb{Z}_p$ and common $n$. Then $\sum a_i \otimes p^{-n} b_i = p^{-n} \sum a_i \otimes b_i$... wait, but $p^{-n}$ is in $\mathbb{Q}_p$, not in $\mathbb{Z}_p$. In the tensor product $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p$, we can't just pull out $p^{-n}$ from the second factor.
+
+Let me reconsider. $\sum a_i \otimes q_i = \sum a_i \otimes p^{-n} b_i$. In $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p$, $a_i \otimes p^{-n} b_i = a_i \otimes p^{-n} \cdot b_i$ where $p^{-n} \cdot b_i$ means the $\mathbb{Z}$-module action... but $p^{-n}$ is not in $\mathbb{Z}$, so this doesn't directly work as scalar multiplication in the $\mathbb{Z}$-module structure.
+
+Actually, in the tensor product over $\mathbb{Z}$, we have $a \otimes (n \cdot q) = (n \cdot a) \otimes q$ for $n \in \mathbb{Z}$. So $a \otimes p^{-n} b_i$... we can write $p^{-n} b_i$ as an element of $\mathbb{Q}_p$. We have $p^n \cdot (p^{-n} b_i) = b_i \in \mathbb{Z}_p$. So $a \otimes p^{-n} b_i = a \otimes q$ where $p^n q = b_i$. Then $p^n (a \otimes q) = a \otimes p^n q = a \otimes b_i$. So $a \otimes q = ?$... we can't divide by $p^n$ in the tensor product unless $p$ is invertible.
+
+Hmm, this is getting complicated. Let me try a different approach to the whole problem.
+
+Actually, I think the key insight is:
+
+$\mathbb{Z}_p[[X]] \otimes_\mathbb{Z} \mathbb{Q}_p$. 
+
+Note that $\mathbb{Z}_p[[X]]$ is a $\mathbb{Z}_p$-module. And $\mathbb{Q}_p = \mathbb{Z}_p[1/p]$. So:
+
+$\mathbb{Z}_p[[X]] \otimes_\mathbb{Z} \mathbb{Q}_p \cong \mathbb{Z}_p[[X]] \otimes_\mathbb{Z} \mathbb{Q}_p$.
+
+But we can also write $\mathbb{Z}_p[[X]] \otimes_{\mathbb{Z}_p} (\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p)$.
+
+If $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p \cong \mathbb{Q}_p$ (which I believe is true), then $\mathbb{Z}_p[[X]] \otimes_\mathbb{Z} \mathbb{Q}_p \cong \mathbb{Z}_p[[X]] \otimes_{\mathbb{Z}_p} \mathbb{Q}_p$.
+
+And $\mathbb{Z}_p[[X]] \otimes_{\mathbb{Z}_p} \mathbb{Q}_p \cong \mathbb{Z}_p[[X]][1/p] = \mathbb{Q}_p[[X]]$... wait, is that right?
+
+$\mathbb{Z}_p[[X]] \otimes_{\mathbb{Z}_p} \mathbb{Q}_p = \mathbb{Z}_p[[X]] \otimes_{\mathbb{Z}_p} \mathbb{Z}_p[1/p] = \mathbb{Z}_p[[X]][1/p]$.
+
+Now, $\mathbb{Z}_p[[X]][1/p]$: is this $\mathbb{Q}_p[[X]]$? 
+
+Not exactly. $\mathbb{Z}_p[[X]][1/p]$ consists of elements of the form $f(X)/p^n$ where $f(X) \in \mathbb{Z}_p[[X]]$. An element of $\mathbb{Q}_p[[X]]$ is $\sum a_n X^n$ with $a_n \in \mathbb{Q}_p$, where the $a_n$ can have unbounded $p$-adic valuation. But in $\mathbb{Z}_p[[X]][1/p]$, we have $f(X)/p^n$ where $f$ has coefficients in $\mathbb{Z}_p$, so the coefficients of $f/p^n$ have $p$-adic valuation $\geq -n$. So the valuations of coefficients are bounded below.
+
+So $\mathbb{Z}_p[[X]][1/p] \subsetneq \mathbb{Q}_p[[X]]$ in general. For example, $\sum p^{-n} X^n \in \mathbb{Q}_p[[X]]$ but not in $\mathbb{Z}_p[[X]][1/p]$ (since the valuations $-n$ are unbounded below).
+
+So $\mathbb{Z}_p[[X]] \otimes_\mathbb{Z} \mathbb{Q}_p \cong \mathbb{Z}_p[[X]][1/p]$, which is the ring of power series with coefficients in $\mathbb{Q}_p$ whose valuations are bounded below.
+
+Let me denote this ring as $R = \mathbb{Z}_p[[X]][1/p]$.
+
+Now we need to study $R/(X-p)^r$.
+
+In $R$, the element $X - p$ is a non-unit (it's in the maximal ideal $(p, X)$ of $\mathbb{Z}_p[[X]]$, and inverting $p$ doesn't change that $X - p$ is not a unit... wait, let me check).
+
+In $\mathbb{Z}_p[[X]]$, $X - p$ is in the maximal ideal $(p, X)$. After inverting $p$, the maximal ideal $(p, X)$ becomes $(X)$ (since $p$ becomes a unit). And $X - p = X - p$. Since $p$ is now a unit, $X - p = -p(1 - X/p)$. And $1 - X/p$ is a unit in $\mathbb{Z}_p[[X]][1/p]$ (its inverse is $\sum (X/p)^n$, which converges in the $X$-adic topology... wait, does it? $\sum (X/p)^n = \sum p^{-n} X^n$. The coefficients $p^{-n}$ have unbounded valuation, so this is NOT in $\mathbb{Z}_p[[X]][1/p]$!).
+
+So $1 - X/p$ is NOT a unit in $R = \mathbb{Z}_p[[X]][1/p]$, because its inverse $\sum p^{-n} X^n$ is not in $R$.
+
+So $X - p = -p(1 - X/p)$ where $p$ is a unit in $R$ but $1 - X/p$ is not a unit. So $(X-p) = (1 - X/p) = (X/p - 1)$ as ideals in $R$... wait, since $p$ is a unit, $(X-p) = (1 - X/p)$.
+
+Hmm, but actually, let me reconsider. In $R = \mathbb{Z}_p[[X]][1/p]$, what are the units? An element $f \in \mathbb{Z}_p[[X]]$ is a unit iff its constant term is a unit in $\mathbb{Z}_p$, i.e., $v_p(f(0)) = 0$. In $R$, $f/p^n$ is a unit iff $f$ is a unit in $\mathbb{Z}_p[[X]]$... no. $f/p^n$ is a unit in $R$ iff there exists $g/p^m$ such that $(f/p^n)(g/p^m) = 1$, i.e., $fg = p^{n+m}$. So $f/p^n$ is a unit iff $f$ divides $p^k$ for some $k$, i.e., $f = p^k \cdot u$ for some unit $u$ in $\mathbb{Z}_p[[X]]$.
+
+So the units of $R$ are elements of the form $p^k \cdot u$ where $u$ is a unit in $\mathbb{Z}_p[[X]]$ and $k \in \mathbb{Z}$.
+
+Now, $X - p$ in $\mathbb{Z}_p[[X]]$: is $X - p$ of the form $p^k \cdot u$? The constant term of $X - p$ is $-p$, which has $v_p = 1$. So $X - p = -p(1 - X/p)$... but $1 - X/p \notin \mathbb{Z}_p[[X]]$ since $X/p \notin \mathbb{Z}_p[[X]]$ (coefficient $1/p \notin \mathbb{Z}_p$).
+
+In $\mathbb{Z}_p[[X]]$, $X - p$ has constant term $-p$, so $v_p(\text{constant term}) = 1$. We can write $X - p = -p + X = -p(1 - X/p)$ but this factorization is in $\mathbb{Q}_p[[X]]$, not in $\mathbb{Z}_p[[X]]$.
+
+In $\mathbb{Z}_p[[X]]$, $X - p$ is irreducible? Let's see. If $X - p = fg$ with $f, g \in \mathbb{Z}_p[[X]]$, then looking at constant terms: $f(0) \cdot g(0) = -p$. So one of $f(0), g(0)$ has $v_p = 0$ (is a unit) and the other has $v_p = 1$. Say $f(0)$ is a unit. Then $f$ is a unit in $\mathbb{Z}_p[[X]]$. So $X - p$ is irreducible in $\mathbb{Z}_p[[X]]$.
+
+Now, in $R = \mathbb{Z}_p[[X]][1/p]$: $X - p$ is not a unit (as we showed, it would need to be $p^k \cdot u$ with $u$ a unit in $\mathbb{Z}_p[[X]]$, but $X - p$ is irreducible in $\mathbb{Z}_p[[X]]$ and not associate to $p$, so it's not of that form).
+
+Actually wait. Let me reconsider. Is $X - p$ associate to $p$ in $\mathbb{Z}_p[[X]]$? If $X - p = p \cdot u$ for a unit $u$, then $u = (X-p)/p = X/p - 1$, which is not in $\mathbb{Z}_p[[X]]$. So no, $X - p$ is not associate to $p$.
+
+So in $R$, $X - p$ is not a unit and not associate to $p$ (which is a unit in $R$). 
+
+Now, the question is about $R/(X-p)^r$ for $r \geq 1$.
+
+Let me think about what $R/(X-p)$ looks like. The map $\mathbb{Z}_p[[X]] \to \mathbb{Z}_p$ sending $X \mapsto p$ has kernel containing $(X-p)$. Actually, the kernel is exactly $(X-p)$ since $\mathbb{Z}_p[[X]]/(X-p) \cong \mathbb{Z}_p$ (substitute $X = p$).
+
+Wait, is that right? The evaluation map $\text{ev}_p: \mathbb{Z}_p[[X]] \to \mathbb{Z}_p$ sending $f(X) \mapsto f(p)$. Is this well-defined? For $f(X) = \sum a_n X^n$, $f(p) = \sum a_n p^n$. Since $a_n \in \mathbb{Z}_p$ and $p^n \to 0$ in $\mathbb{Z}_p$, this converges. So yes, the evaluation map is well-defined and surjective (constant series map to $\mathbb{Z}_p$). The kernel is $(X - p)$.
+
+So $\mathbb{Z}_p[[X]]/(X-p) \cong \mathbb{Z}_p$.
+
+Then $R/(X-p) = \mathbb{Z}_p[[X]][1/p] / (X-p) \cong (\mathbb{Z}_p[[X]]/(X-p))[1/p] \cong \mathbb{Z}_p[1/p] = \mathbb{Q}_p$.
+
+Wait, is localization exact? Yes! Localization is exact. So $(\mathbb{Z}_p[[X]]/(X-p))[1/p] \cong \mathbb{Z}_p[[X]][1/p] / (X-p)\mathbb{Z}_p[[X]][1/p] = R/(X-p)$.
+
+So $R/(X-p) \cong \mathbb{Q}_p$, which is a field, hence principal (trivially).
+
+Now for $r \geq 2$: $R/(X-p)^r$.
+
+Let me think about this more carefully. We have $R = \mathbb{Z}_p[[X]][1/p]$ and we're looking at $R/(X-p)^r$.
+
+Since localization is exact, $R/(X-p)^r \cong (\mathbb{Z}_p[[X]]/(X-p)^r)[1/p]$.
+
+So let's first understand $A = \mathbb{Z}_p[[X]]/(X-p)^r$, and then localize at $p$.
+
+In $\mathbb{Z}_p[[X]]$, let $\pi = X - p$. Then $A = \mathbb{Z}_p[[X]]/(\pi^r)$.
+
+Since $\pi = X - p$, we can write $X = p + \pi$, so $\mathbb{Z}_p[[X]] = \mathbb{Z}_p[[\pi]]$ (substituting $X = \pi + p$; this is an automorphism of $\mathbb{Z}_p[[X]]$ since it's a continuous change of variable with $p \in \mathbb{Z}_p$).
+
+Wait, is the substitution $X \mapsto X - p$ an automorphism of $\mathbb{Z}_p[[X]]$? The map $\phi: \mathbb{Z}_p[[X]] \to \mathbb{Z}_p[[X]]$ sending $X \mapsto X - p$ (i.e., $f(X) \mapsto f(X - p)$). The inverse would be $X \mapsto X + p$, i.e., $f(X) \mapsto f(X + p)$. For $f(X) = \sum a_n X^n$, $f(X+p) = \sum a_n (X+p)^n = \sum a_n \sum_k \binom{n}{k} p^{n-k} X^k$. This is a well-defined power series in $\mathbb{Z}_p[[X]]$ since $\binom{n}{k} p^{n-k} \in \mathbb{Z}_p$ (as $p \in \mathbb{Z}_p$). So yes, this is an automorphism.
+
+So $\mathbb{Z}_p[[X]]/(X-p)^r \cong \mathbb{Z}_p[[X]]/X^r$ via the substitution $X \mapsto X - p$ (i.e., $X - p \mapsto X$).
+
+Wait, let me be more careful. The automorphism $\phi: f(X) \mapsto f(X - p)$ sends $X \mapsto X - p$, so it sends $(X - p) \mapsto (X - p - p) = (X - 2p)$... no. Let me think again.
+
+$\phi: \mathbb{Z}_p[[X]] \to \mathbb{Z}_p[[X]]$, $f(X) \mapsto f(X + p)$. This sends $X \mapsto X + p$. So $\phi(X - p) = (X + p) - p = X$. And $\phi(X) = X + p$.
+
+So $\phi$ sends the ideal $(X - p)$ to $(X)$. Therefore $\phi$ induces an isomorphism $\mathbb{Z}_p[[X]]/(X-p)^r \cong \mathbb{Z}_p[[X]]/X^r$.
+
+Now, $\mathbb{Z}_p[[X]]/X^r \cong \mathbb{Z}_p[X]/(X^r)$ (truncating power series at degree $r-1$). This is the ring of truncated polynomials of degree $< r$ over $\mathbb{Z}_p$.
+
+So $A = \mathbb{Z}_p[[X]]/(X-p)^r \cong \mathbb{Z}_p[X]/(X^r) \cong \mathbb{Z}_p[\epsilon]/(\epsilon^r)$ where $\epsilon = X \mod X^r$.
+
+Now, $R/(X-p)^r \cong A[1/p] = (\mathbb{Z}_p[X]/(X^r))[1/p] \cong (\mathbb{Z}_p[1/p])[X]/(X^r) \cong \mathbb{Q}_p[X]/(X^r)$.
+
+Wait, is this correct? $(\mathbb{Z}_p[X]/(X^r))[1/p] \cong \mathbb{Z}_p[X][1/p]/(X^r) \cong \mathbb{Q}_p[X]/(X^r)$? 
+
+Localization is exact, so $(\mathbb{Z}_p[X]/(X^r))[1/p] \cong \mathbb{Z}_p[X][1/p] / (X^r) \mathbb{Z}_p[X][1/p]$. And $\mathbb{Z}_p[X][1/p] = \mathbb{Z}_p[1/p][X] = \mathbb{Q}_p[X]$. So yes, $(\mathbb{Z}_p[X]/(X^r))[1/p] \cong \mathbb{Q}_p[X]/(X^r)$.
+
+So $R/(X-p)^r \cong \mathbb{Q}_p[X]/(X^r) \cong \mathbb{Q}_p[\epsilon]/(\epsilon^r)$.
+
+Now, $\mathbb{Q}_p[X]/(X^r)$: is this a principal ideal ring?
+
+$\mathbb{Q}_p[X]$ is a PID (since $\mathbb{Q}_p$ is a field). The quotient of a PID by any ideal is a principal ideal ring (PIR). This is because any ideal of $R/I$ corresponds to an ideal $J$ of $R$ containing $I$, and since $R$ is a PID, $J = (f)$ for some $f$, so the ideal in $R/I$ is $(f \mod I)$, which is principal.
+
+So $\mathbb{Q}_p[X]/(X^r)$ is a principal ideal ring for all $r \geq 1$.
+
+Therefore, $R/(X-p)^r \cong \mathbb{Q}_p[X]/(X^r)$ is principal for all $r \geq 1$.
+
+The answer is: **Yes**, the ring is principal for all $r \geq 1$.
+
+Let me double-check the key steps:
+
+1. $\mathbb{Z}_p[[X]] \otimes_\mathbb{Z} \mathbb{Q}_p \cong \mathbb{Z}_p[[X]][1/p]$: This uses $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p \cong \mathbb{Q}_p$ and then $\mathbb{Z}_p[[X]] \otimes_{\mathbb{Z}_p} \mathbb{Q}_p \cong \mathbb{Z}_p[[X]][1/p]$.
+
+Actually, let me verify $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p \cong \mathbb{Q}_p$ more carefully.
+
+We have the multiplication map $\mu: \mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p \to \mathbb{Q}_p$. It's surjective. For injectivity: $\mathbb{Z}_p$ is flat over $\mathbb{Z}$ (torsion-free over a PID). Consider the directed system $\mathbb{Z} \hookrightarrow p^{-1}\mathbb{Z} \hookrightarrow p^{-2}\mathbb{Z} \hookrightarrow \cdots$ with colimit $\mathbb{Z}[1/p]$. But $\mathbb{Q}_p \neq \mathbb{Z}[1/p]$...
+
+Hmm, $\mathbb{Q}_p$ is much bigger than $\mathbb{Z}[1/p]$. $\mathbb{Z}[1/p]$ is countable, $\mathbb{Q}_p$ is uncountable.
+
+Let me reconsider. $\mathbb{Q}_p$ as a $\mathbb{Z}$-module is the union $\bigcup_{n \geq 0} p^{-n} \mathbb{Z}_p$. Each $p^{-n}\mathbb{Z}_p \cong \mathbb{Z}_p$ as a $\mathbb{Z}$-module (via $x \mapsto p^n x$). The transition maps $p^{-n}\mathbb{Z}_p \hookrightarrow p^{-(n+1)}\mathbb{Z}_p$ correspond, under these isomorphisms, to the inclusion $\mathbb{Z}_p \xrightarrow{p} p\mathbb{Z}_p \hookrightarrow \mathbb{Z}_p$ (multiplication by $p$).
+
+So $\mathbb{Q}_p = \varinjlim (\mathbb{Z}_p \xrightarrow{p} \mathbb{Z}_p \xrightarrow{p} \mathbb{Z}_p \xrightarrow{p} \cdots)$ as $\mathbb{Z}$-modules.
+
+Then $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p = \mathbb{Z}_p \otimes_\mathbb{Z} \varinjlim (\mathbb{Z}_p \xrightarrow{p} \cdots) = \varinjlim (\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Z}_p \xrightarrow{p} \mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Z}_p \xrightarrow{p} \cdots)$.
+
+Now I need $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Z}_p$. The multiplication map $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Z}_p \to \mathbb{Z}_p$ is surjective. Is it injective?
+
+Consider the short exact sequence $0 \to \mathbb{Z} \to \mathbb{Z}_p \to \mathbb{Z}_p/\mathbb{Z} \to 0$. Tensoring with $\mathbb{Z}_p$ (which is flat over $\mathbb{Z}$): $0 \to \mathbb{Z}_p \to \mathbb{Z}_p \otimes \mathbb{Z}_p \to \mathbb{Z}_p \otimes \mathbb{Z}_p/\mathbb{Z} \to 0$. The first map is $a \mapsto a \otimes 1$, and the composition $\mathbb{Z}_p \to \mathbb{Z}_p \otimes \mathbb{Z}_p \to \mathbb{Z}_p$ (via multiplication) is the identity. So $\mathbb{Z}_p \to \mathbb{Z}_p \otimes \mathbb{Z}_p$ is injective, and $\mathbb{Z}_p \otimes \mathbb{Z}_p \to \mathbb{Z}_p$ (multiplication) is a left inverse. This means $\mathbb{Z}_p \otimes \mathbb{Z}_p \cong \mathbb{Z}_p \oplus (\mathbb{Z}_p \otimes \mathbb{Z}_p/\mathbb{Z})$ as $\mathbb{Z}_p$-modules (via the splitting).
+
+Hmm, so the multiplication map has a section (the map $a \mapsto a \otimes 1$), which means $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Z}_p \cong \mathbb{Z}_p \oplus M$ where $M = \ker(\mu)$. So the multiplication map is not necessarily injective.
+
+But wait, is $\mathbb{Z}_p/\mathbb{Z} = 0$? No! $\mathbb{Z}_p$ is much bigger than $\mathbb{Z}$. $\mathbb{Z}$ is dense in $\mathbb{Z}_p$ but $\mathbb{Z} \neq \mathbb{Z}_p$.
+
+So $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Z}_p \not\cong \mathbb{Z}_p$ in general. This complicates things.
+
+Let me reconsider the whole approach. Maybe I should think about this differently.
+
+Actually, wait. Let me reconsider whether $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p \cong \mathbb{Q}_p$.
+
+We have $\mathbb{Q}_p = \mathbb{Z}_p[1/p]$. As a $\mathbb{Z}$-module, $\mathbb{Q}_p$ is the localization of $\mathbb{Z}_p$ at $p$.
+
+$\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p = \mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Z}_p[1/p]$.
+
+Now, $\mathbb{Z}_p[1/p] = S^{-1}\mathbb{Z}_p$ where $S = \{p^n : n \geq 0\}$. And localization can be expressed as a tensor product: $S^{-1}\mathbb{Z}_p = \mathbb{Z}_p \otimes_\mathbb{Z} S^{-1}\mathbb{Z}$... no, that's not right either. $S^{-1}\mathbb{Z}_p = \mathbb{Z}_p \otimes_{\mathbb{Z}_p} S^{-1}\mathbb{Z}_p$ trivially, but we want to relate it to $\mathbb{Z}$.
+
+Actually, $S^{-1}\mathbb{Z}_p \cong \mathbb{Z}_p \otimes_\mathbb{Z} S^{-1}\mathbb{Z}$? Let's check: $S^{-1}\mathbb{Z} = \mathbb{Z}[1/p]$. And $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Z}[1/p]$. Since $\mathbb{Z}_p$ is flat over $\mathbb{Z}$, and $\mathbb{Z}[1/p] = \varinjlim (\mathbb{Z} \xrightarrow{p} \mathbb{Z} \xrightarrow{p} \cdots)$, we get $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Z}[1/p] = \varinjlim (\mathbb{Z}_p \xrightarrow{p} \mathbb{Z}_p \xrightarrow{p} \cdots) = \mathbb{Z}_p[1/p] = \mathbb{Q}_p$.
+
+So $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Z}[1/p] \cong \mathbb{Q}_p$. But $\mathbb{Z}[1/p] \neq \mathbb{Q}_p$ as a $\mathbb{Z}$-module (the former is countable, the latter is uncountable).
+
+So $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p \neq \mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Z}[1/p]$ in general. The issue is that $\mathbb{Q}_p$ is not the same as $\mathbb{Z}[1/p]$.
+
+OK so I need to be more careful. Let me think about $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p$ directly.
+
+$\mathbb{Q}_p$ as a $\mathbb{Z}$-module: it's a $\mathbb{Q}$-vector space (since $\mathbb{Q} \subset \mathbb{Q}_p$), so it's a direct sum of copies of $\mathbb{Q}$. Actually, $\mathbb{Q}_p$ as a $\mathbb{Q}$-vector space has dimension $2^{\aleph_0}$ (uncountable). As a $\mathbb{Z}$-module, $\mathbb{Q}_p$ is divisible and torsion-free.
+
+Now, $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p$. Since $\mathbb{Q}_p$ is a $\mathbb{Q}$-vector space, $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p = \mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q} \otimes_\mathbb{Q} \mathbb{Q}_p$.
+
+$\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q} = \mathbb{Q}_p$ (since $\mathbb{Z}_p$ is torsion-free over $\mathbb{Z}$, $\mathbb{Z}_p \otimes \mathbb{Q} = (\mathbb{Z}_p)_\mathbb{Q}$ = the localization at all nonzero integers, which is $\mathbb{Q}_p$ since $\mathbb{Z}_p$ is a DVR with fraction field $\mathbb{Q}_p$).
+
+Wait, is that right? $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}$. Since $\mathbb{Q} = S^{-1}\mathbb{Z}$ where $S = \mathbb{Z} \setminus \{0\}$, and $\mathbb{Z}_p$ is flat over $\mathbb{Z}$, $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q} = S^{-1}\mathbb{Z}_p$. Now $S^{-1}\mathbb{Z}_p$ inverts all nonzero integers in $\mathbb{Z}_p$. The nonzero integers that are not units in $\mathbb{Z}_p$ are exactly the powers of $p$ (and their associates). So $S^{-1}\mathbb{Z}_p = \mathbb{Z}_p[1/\ell : \ell \neq p, \ell \text{ prime}][1/p]$. But $\ell \neq p$ is already a unit in $\mathbb{Z}_p$, so $S^{-1}\mathbb{Z}_p = \mathbb{Z}_p[1/p] = \mathbb{Q}_p$.
+
+So $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q} \cong \mathbb{Q}_p$.
+
+Then $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p = (\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}) \otimes_\mathbb{Q} \mathbb{Q}_p = \mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$.
+
+Now, $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ is NOT $\mathbb{Q}_p$ in general! $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ is a $\mathbb{Q}_p$-vector space of dimension $[\mathbb{Q}_p : \mathbb{Q}] = 2^{\aleph_0}$ (as a $\mathbb{Q}$-vector space, $\mathbb{Q}_p$ has dimension $2^{\aleph_0}$, so $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ has dimension $2^{\aleph_0}$ over $\mathbb{Q}_p$... wait, no. $\dim_{\mathbb{Q}_p}(\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p) = \dim_\mathbb{Q} \mathbb{Q}_p = 2^{\aleph_0}$).
+
+So $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p \cong \mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$, which is a huge ring, not $\mathbb{Q}_p$.
+
+This changes things significantly. Let me reconsider.
+
+Hmm wait, but I need to be careful about the ring structure. $\mathbb{Z}_p[[X]] \otimes_\mathbb{Z} \mathbb{Q}_p$ is a ring (tensor product of $\mathbb{Z}$-algebras). Let me reconsider.
+
+$\mathbb{Z}_p[[X]]$ is a $\mathbb{Z}$-algebra, $\mathbb{Q}_p$ is a $\mathbb{Z}$-algebra. Their tensor product over $\mathbb{Z}$ is a ring.
+
+$\mathbb{Z}_p[[X]] \otimes_\mathbb{Z} \mathbb{Q}_p = (\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p)[[X]]$? No, that's not right either. Tensor product doesn't commute with power series in general.
+
+Actually, $\mathbb{Z}_p[[X]]$ is the $X$-adic completion of $\mathbb{Z}_p[X]$. And $\mathbb{Z}_p[[X]] \otimes_\mathbb{Z} \mathbb{Q}_p$...
+
+Hmm, let me think about this differently. $\mathbb{Z}_p[[X]]$ is a free $\mathbb{Z}_p$-module with basis $\{1, X, X^2, \ldots\}$ (as a $\mathbb{Z}_p$-module, $\mathbb{Z}_p[[X]] = \prod_{n \geq 0} \mathbb{Z}_p \cdot X^n$). Wait, it's a product, not a direct sum. So it's not free in the usual sense.
+
+As a $\mathbb{Z}$-module, $\mathbb{Z}_p[[X]] = \prod_{n \geq 0} \mathbb{Z}_p$. And $\mathbb{Z}_p$ as a $\mathbb{Z}$-module is complicated (not free, not finitely generated).
+
+$\mathbb{Z}_p[[X]] \otimes_\mathbb{Z} \mathbb{Q}_p = (\prod_{n \geq 0} \mathbb{Z}_p) \otimes_\mathbb{Z} \mathbb{Q}_p$.
+
+Tensor product doesn't commute with products in general. So this is not simply $\prod_{n \geq 0} (\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p)$.
+
+This is getting quite complicated. Let me reconsider the problem.
+
+Actually, maybe I should think about what the tensor product $\mathbb{Z}_p[[X]] \otimes_\mathbb{Z} \mathbb{Q}_p$ really is.
+
+Since $\mathbb{Q}_p$ is a flat $\mathbb{Z}$-module (it's torsion-free over $\mathbb{Z}$, and $\mathbb{Z}$ is a PID), the tensor product $\mathbb{Z}_p[[X]] \otimes_\mathbb{Z} \mathbb{Q}_p$ is well-behaved.
+
+But the key issue is: what is the ring structure?
+
+Let me think about it as follows. $\mathbb{Z}_p[[X]]$ is a $\mathbb{Z}_p$-algebra. We have:
+$$\mathbb{Z}_p[[X]] \otimes_\mathbb{Z} \mathbb{Q}_p \cong \mathbb{Z}_p[[X]] \otimes_{\mathbb{Z}_p} (\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p)$$
+
+This is because $\mathbb{Z}_p[[X]]$ is a $(\mathbb{Z}_p, \mathbb{Z})$-bimodule, and we can factor the tensor product.
+
+Now, $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p \cong \mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ as I computed above. This is a $\mathbb{Q}_p$-algebra (via either factor).
+
+So $\mathbb{Z}_p[[X]] \otimes_\mathbb{Z} \mathbb{Q}_p \cong \mathbb{Z}_p[[X]] \otimes_{\mathbb{Z}_p} (\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p)$.
+
+And $\mathbb{Z}_p[[X]] \otimes_{\mathbb{Z}_p} (\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p) = (\mathbb{Z}_p[[X]] \otimes_{\mathbb{Z}_p} \mathbb{Q}_p) \otimes_\mathbb{Q} \mathbb{Q}_p = \mathbb{Z}_p[[X]][1/p] \otimes_\mathbb{Q} \mathbb{Q}_p$.
+
+Hmm, this is getting really complicated. Let me step back and think about whether there's a simpler approach.
+
+Actually, maybe the problem is using $\mathbb{Z}_p$ to mean $\mathbb{Z}/p\mathbb{Z}$ (the finite field) rather than the $p$-adic integers? In some notations, $\mathbb{Z}_p$ means $\mathbb{Z}/p\mathbb{Z}$. But then $\mathbb{Q}_p$ wouldn't make sense as the fraction field...
+
+No, $\mathbb{Q}_p$ is the field of $p$-adic numbers, and $\mathbb{Z}_p$ is the ring of $p$-adic integers. The notation is standard.
+
+Let me reconsider. Maybe I should think about the problem more carefully.
+
+Actually, I realize there might be a subtlety I'm missing. Let me reconsider whether $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p \cong \mathbb{Q}_p$.
+
+The multiplication map $\mu: \mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p \to \mathbb{Q}_p$ is a ring homomorphism. It's surjective. Is it injective?
+
+Consider elements of $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p$. A general element is $\sum_{i=1}^n a_i \otimes q_i$ with $a_i \in \mathbb{Z}_p$, $q_i \in \mathbb{Q}_p$. We can write $q_i = b_i / p^{n_i}$ with $b_i \in \mathbb{Z}_p$ (using $\mathbb{Q}_p = \text{Frac}(\mathbb{Z}_p)$). Actually, $q_i \in \mathbb{Q}_p$, so $q_i = c_i / p^{m}$ for some $c_i \in \mathbb{Z}_p$ and common $m$ (take $m = \max n_i$). Then $\sum a_i \otimes q_i = \sum a_i \otimes c_i/p^m = (1/p^m) \sum a_i \otimes c_i$... but wait, $1/p^m$ is not in $\mathbb{Z}$, so we can't pull it out of the tensor product over $\mathbb{Z}$.
+
+Hmm, but $q_i = c_i \cdot p^{-m}$ where $c_i \in \mathbb{Z}_p$. In $\mathbb{Q}_p$, $p^{-m} \cdot c_i$ is just a product. But in the tensor product $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p$, the element $a_i \otimes (p^{-m} c_i)$: we can use the $\mathbb{Z}$-module structure: $a_i \otimes (p^{-m} c_i)$. Since $p^{-m} c_i \in \mathbb{Q}_p$ and $p^m \cdot (p^{-m} c_i) = c_i \in \mathbb{Z}_p \subset \mathbb{Q}_p$, we have $p^m \cdot (a_i \otimes p^{-m} c_i) = a_i \otimes c_i$.
+
+So $p^m \cdot (\sum a_i \otimes q_i) = \sum a_i \otimes c_i \in \mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Z}_p$.
+
+Now, if $\mu(\sum a_i \otimes q_i) = 0$, i.e., $\sum a_i q_i = 0$ in $\mathbb{Q}_p$, then $\sum a_i c_i = p^m \cdot \sum a_i q_i = 0$ in $\mathbb{Q}_p$, and since $a_i, c_i \in \mathbb{Z}_p$, $\sum a_i c_i = 0$ in $\mathbb{Z}_p$.
+
+So $p^m \cdot (\sum a_i \otimes q_i) = \sum a_i \otimes c_i$ and $\mu(\sum a_i \otimes c_i) = \sum a_i c_i = 0$ in $\mathbb{Z}_p$.
+
+Now, $\sum a_i \otimes c_i \in \mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Z}_p$ and maps to $0$ under $\mu: \mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Z}_p \to \mathbb{Z}_p$. But as I discussed, $\mu$ may not be injective on $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Z}_p$.
+
+However, even if $\sum a_i \otimes c_i \neq 0$ in $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Z}_p$, we need $\sum a_i \otimes q_i = 0$ in $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p$, not just that $p^m$ times it is something.
+
+This is getting quite involved. Let me try a different approach to the problem.
+
+Actually, I think the key question is whether $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p \cong \mathbb{Q}_p$ as rings. Let me look at this from the perspective of $\mathbb{Q}$-algebras.
+
+$\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p$: Since $\mathbb{Q}_p$ is a $\mathbb{Q}$-algebra, and $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q} = \mathbb{Q}_p$ (as shown), we have:
+
+$\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p \cong (\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}) \otimes_\mathbb{Q} \mathbb{Q}_p \cong \mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$.
+
+Now, $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ is a $\mathbb{Q}_p$-algebra. As a $\mathbb{Q}_p$-vector space (via the first factor), $\dim_{\mathbb{Q}_p}(\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p) = \dim_\mathbb{Q} \mathbb{Q}_p = |\mathbb{R}|$ (uncountable).
+
+The multiplication map $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p \to \mathbb{Q}_p$ is a $\mathbb{Q}$-algebra homomorphism. Its kernel is a nonzero ideal (since the dimensions don't match). But $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ is not a field, so it can have nontrivial ideals.
+
+So $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p \cong \mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ is a large ring, not isomorphic to $\mathbb{Q}_p$.
+
+This means my earlier simplification was wrong. The ring $\mathbb{Z}_p[[X]] \otimes_\mathbb{Z} \mathbb{Q}_p$ is more complicated than I thought.
+
+Let me reconsider the problem from scratch.
+
+$R = \mathbb{Z}_p[[X]] \otimes_\mathbb{Z} \mathbb{Q}_p$.
+
+As a $\mathbb{Q}_p$-algebra (via the second factor), $R$ contains $\mathbb{Q}_p$ as a subring. Also, $R$ contains $\mathbb{Z}_p[[X]]$ as a subring (via $f \mapsto f \otimes 1$).
+
+The ring $R$ is a $\mathbb{Q}_p$-algebra, so $p$ is invertible in $R$.
+
+Now, in $R$, we have the element $X \otimes 1$ (let's just call it $X$) and $1 \otimes p = p \cdot (1 \otimes 1)$ (which is a unit since $p$ is invertible in $\mathbb{Q}_p$).
+
+The ideal $(X - p)^r$ in $R$: here $X - p = (X \otimes 1) - (1 \otimes p)$. Since $p$ is a unit in $R$, $X - p = -p(1 - X/p)$ where $X/p = (X \otimes 1)(1 \otimes p^{-1})$.
+
+Hmm, let me think about what $R$ looks like more carefully.
+
+$R = \mathbb{Z}_p[[X]] \otimes_\mathbb{Z} \mathbb{Q}_p$. 
+
+Let me think of this as: $R = \mathbb{Z}_p[[X]] \otimes_{\mathbb{Z}_p} (\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p)$.
+
+Let $B = \mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p \cong \mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$. This is a $\mathbb{Z}_p$-algebra (via the first factor) and a $\mathbb{Q}_p$-algebra (via the second factor).
+
+$R = \mathbb{Z}_p[[X]] \otimes_{\mathbb{Z}_p} B$.
+
+Now, $\mathbb{Z}_p[[X]] \otimes_{\mathbb{Z}_p} B$: if $B$ were a finite $\mathbb{Z}_p$-module, this would be $B[[X]]$. But $B$ is not finite over $\mathbb{Z}_p$.
+
+Actually, $\mathbb{Z}_p[[X]] \otimes_{\mathbb{Z}_p} B$ is more subtle. $\mathbb{Z}_p[[X]] = \varprojlim \mathbb{Z}_p[X]/(X^n)$. If $B$ is flat over $\mathbb{Z}_p$ (which it is, since $B = \mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ is a $\mathbb{Q}_p$-vector space, hence flat over $\mathbb{Q}_p$, hence flat over $\mathbb{Z}_p$), then:
+
+$\mathbb{Z}_p[[X]] \otimes_{\mathbb{Z}_p} B = (\varprojlim \mathbb{Z}_p[X]/(X^n)) \otimes_{\mathbb{Z}_p} B$.
+
+But tensor product doesn't commute with inverse limits in general. However, if $B$ is finitely presented over $\mathbb{Z}_p$... which it's not.
+
+Hmm. Let me try yet another approach.
+
+Actually, let me think about what happens when we quotient by $(X-p)^r$.
+
+Consider the map $\phi: \mathbb{Z}_p[[X]] \to \mathbb{Q}_p$ defined by $f(X) \mapsto f(p)$ (evaluation at $p$). This is a ring homomorphism (since $f(p)$ converges in $\mathbb{Q}_p$ for $f \in \mathbb{Z}_p[[X]]$). The kernel contains $(X - p)$.
+
+Actually, $\ker(\phi) = (X - p)$ in $\mathbb{Z}_p[[X]]$ (as I argued before, the substitution $X \mapsto X + p$ is an automorphism, so $(X-p) = (X)$ after substitution, and $\mathbb{Z}_p[[X]]/(X) = \mathbb{Z}_p$, with the quotient map being evaluation at $0$, which corresponds to evaluation at $p$ before substitution).
+
+Now, consider the map $\Phi: \mathbb{Z}_p[[X]] \otimes_\mathbb{Z} \mathbb{Q}_p \to \mathbb{Q}_p \otimes_\mathbb{Z} \mathbb{Q}_p$ defined by $f(X) \otimes q \mapsto f(p) \otimes q = f(p) \cdot q$ (where the last equality uses the multiplication in $\mathbb{Q}_p$... wait, no, $f(p) \otimes q$ is in $\mathbb{Q}_p \otimes_\mathbb{Z} \mathbb{Q}_p$, and we can't simplify it to $f(p) \cdot q$ unless we apply the multiplication map).
+
+Hmm, let me think about this differently. 
+
+The map $\text{ev}_p: \mathbb{Z}_p[[X]] \to \mathbb{Z}_p \hookrightarrow \mathbb{Q}_p$ (evaluation at $p$, landing in $\mathbb{Z}_p \subset \mathbb{Q}_p$). Tensoring with $\mathbb{Q}_p$:
+
+$\text{ev}_p \otimes \text{id}: \mathbb{Z}_p[[X]] \otimes_\mathbb{Z} \mathbb{Q}_p \to \mathbb{Q}_p \otimes_\mathbb{Z} \mathbb{Q}_p$.
+
+The kernel of $\text{ev}_p \otimes \text{id}$: since $\mathbb{Q}_p$ is flat over $\mathbb{Z}$, $\ker(\text{ev}_p \otimes \text{id}) = \ker(\text{ev}_p) \otimes_\mathbb{Z} \mathbb{Q}_p = (X-p) \otimes_\mathbb{Z} \mathbb{Q}_p = (X-p) \cdot (\mathbb{Z}_p[[X]] \otimes_\mathbb{Z} \mathbb{Q}_p)$.
+
+So $R/(X-p) \cong \mathbb{Q}_p \otimes_\mathbb{Z} \mathbb{Q}_p \cong \mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ (as computed before, using $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p = \mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$... wait, $\mathbb{Q}_p \otimes_\mathbb{Z} \mathbb{Q}_p = \mathbb{Q}_p \otimes_\mathbb{Q} (\mathbb{Q} \otimes_\mathbb{Z} \mathbb{Q}_p) = \mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ since $\mathbb{Q} \otimes_\mathbb{Z} \mathbb{Q}_p = \mathbb{Q}_p$ as $\mathbb{Q}$-vector spaces... hmm, $\mathbb{Q} \otimes_\mathbb{Z} \mathbb{Q}_p$: since $\mathbb{Q}_p$ is a $\mathbb{Q}$-vector space, $\mathbb{Q} \otimes_\mathbb{Z} \mathbb{Q}_p = \mathbb{Q} \otimes_\mathbb{Z} \mathbb{Q} \otimes_\mathbb{Q} \mathbb{Q}_p = \mathbb{Q} \otimes_\mathbb{Q} \mathbb{Q}_p = \mathbb{Q}_p$).
+
+So $R/(X-p) \cong \mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$.
+
+Now, $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ is NOT a field (it's not even an integral domain in general). So $R/(X-p)$ is not a field, and the question of whether it's principal is nontrivial.
+
+Hmm wait, is $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ an integral domain? If $\mathbb{Q}_p/\mathbb{Q}$ were a separable extension, then $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ would be a product of fields (if the extension is Galois) or at least reduced. But $\mathbb{Q}_p/\mathbb{Q}$ is not algebraic (it's a transcendental extension of uncountable degree), so this is more complicated.
+
+Actually, $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ for a $p$-adic field: this is a well-studied object. Since $\mathbb{Q}_p/\mathbb{Q}$ is a regular extension (it's the fraction field of a DVR that is a localization of $\mathbb{Z}$... hmm, actually $\mathbb{Z}_p$ is not a localization of $\mathbb{Z}$).
+
+Let me think about this more carefully. $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$: is this an integral domain?
+
+Consider $\mathbb{Q}_p$ as a field extension of $\mathbb{Q}$. It's a transcendental extension (since $[\mathbb{Q}_p:\mathbb{Q}]$ is uncountable, while any algebraic extension of $\mathbb{Q}$ is countable). 
+
+For a purely transcendental extension $K = \mathbb{Q}(S)$, $K \otimes_\mathbb{Q} K$ is not a domain (it has zero divisors). For example, $\mathbb{Q}(t) \otimes_\mathbb{Q} \mathbb{Q}(t) \cong \mathbb{Q}(t) \otimes_\mathbb{Q} \mathbb{Q}(s)$ which is a localization of $\mathbb{Q}[t, s]$, and this is a domain. Wait, actually $\mathbb{Q}(t) \otimes_\mathbb{Q} \mathbb{Q}(t)$: let me think. $\mathbb{Q}(t) = S^{-1}\mathbb{Q}[t]$ where $S = \mathbb{Q}[t] \setminus \{0\}$. Then $\mathbb{Q}(t) \otimes_\mathbb{Q} \mathbb{Q}(t) = S^{-1}\mathbb{Q}[t] \otimes_\mathbb{Q} S^{-1}\mathbb{Q}[t] = S^{-1}\mathbb{Q}[t] \otimes_{\mathbb{Q}[t]} (\mathbb{Q}[t] \otimes_\mathbb{Q} S^{-1}\mathbb{Q}[t])$... this is getting complicated.
+
+Actually, $\mathbb{Q}(t) \otimes_\mathbb{Q} \mathbb{Q}(t) \cong \mathbb{Q}(t) \otimes_\mathbb{Q} \mathbb{Q}(t)$. Let $t_1 = t \otimes 1$ and $t_2 = 1 \otimes t$. Then this is $\mathbb{Q}(t_1, t_2)$... no, it's a localization of $\mathbb{Q}[t_1, t_2]$. Specifically, $\mathbb{Q}(t) \otimes_\mathbb{Q} \mathbb{Q}(t) = S_1^{-1} S_2^{-1} \mathbb{Q}[t_1, t_2]$ where $S_1 = \mathbb{Q}[t_1] \setminus \{0\}$ and $S_2 = \mathbb{Q}[t_2] \setminus \{0\}$. This is a localization of $\mathbb{Q}[t_1, t_2]$, which is a domain, so $\mathbb{Q}(t) \otimes_\mathbb{Q} \mathbb{Q}(t)$ is a domain. In fact, it's a subring of $\mathbb{Q}(t_1, t_2)$.
+
+OK so for purely transcendental extensions, the tensor product is a domain. What about $\mathbb{Q}_p$?
+
+$\mathbb{Q}_p$ is not purely transcendental over $\mathbb{Q}$. It's a completion, not a purely transcendental extension. 
+
+Actually, $\mathbb{Q}_p$ contains $\overline{\mathbb{Q}} \cap \mathbb{Q}_p$ (the algebraic closure of $\mathbb{Q}$ in $\mathbb{Q}_p$), which is some algebraic extension of $\mathbb{Q}$. Then $\mathbb{Q}_p$ is a transcendental extension of this algebraic closure.
+
+This is getting really complicated. Let me try to think about the problem differently.
+
+Maybe I should consider whether the problem is asking about a specific well-known result. The ring $\mathbb{Z}_p[[X]] \otimes_\mathbb{Z} \mathbb{Q}_p$ modulo $(X-p)^r$...
+
+Actually, let me reconsider. Perhaps the tensor product is over $\mathbb{Z}_p$, not $\mathbb{Z}$? Let me re-read the problem.
+
+"Determine whether the ring $\frac{\mathbb{Z}_p[[X]] \otimes_\mathbb{Z} \mathbb{Q}_p}{(X-p)^r}$ is principal for all integers $r \geq 1$."
+
+It says $\otimes_\mathbb{Z}$. OK.
+
+Hmm, but maybe there's a simpler way to think about this. Let me consider the case $r = 1$ first.
+
+$R/(X-p) \cong \mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ (as I computed). Is this principal?
+
+$\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ is a $\mathbb{Q}_p$-algebra. As a ring, is it a PIR?
+
+Actually, I think $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ might not even be Noetherian, in which case it can't be a PIR.
+
+Hmm, let me think about this. $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ as a $\mathbb{Q}_p$-algebra (via the first factor): it's a $\mathbb{Q}_p$-vector space of dimension $\dim_\mathbb{Q} \mathbb{Q}_p = 2^{\aleph_0}$. Is it Noetherian as a ring?
+
+A $\mathbb{Q}_p$-algebra that is a finite-dimensional $\mathbb{Q}_p$-vector space is Noetherian (it's Artinian). But $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ is infinite-dimensional over $\mathbb{Q}_p$, so it might not be Noetherian.
+
+Actually, let me think about whether $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ is Noetherian. 
+
+Consider the map $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p \to \mathbb{Q}_p$ (multiplication). This is a surjective ring homomorphism with kernel $I$. Then $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p / I \cong \mathbb{Q}_p$ is Noetherian. But the kernel $I$ could be non-finitely generated.
+
+Actually, I recall that for a field extension $K/k$ that is not finitely generated, $K \otimes_k K$ is typically not Noetherian. Since $\mathbb{Q}_p/\mathbb{Q}$ is not finitely generated (it's not even algebraic), $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ is likely not Noetherian.
+
+If $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ is not Noetherian, then it's not a PIR (since PIRs are Noetherian). And then $R/(X-p) \cong \mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ would not be principal.
+
+But wait, I need to double-check my computation that $R/(X-p) \cong \mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$.
+
+Let me re-derive. $R = \mathbb{Z}_p[[X]] \otimes_\mathbb{Z} \mathbb{Q}_p$. The ideal $(X-p)$ in $R$ is generated by $X \otimes 1 - 1 \otimes p$ (where $X \otimes 1$ is the image of $X$ from $\mathbb{Z}_p[[X]]$ and $1 \otimes p$ is $p$ from $\mathbb{Q}_p$).
+
+The evaluation map $\text{ev}_p: \mathbb{Z}_p[[X]] \to \mathbb{Z}_p$, $f \mapsto f(p)$, has kernel $(X-p)$. Tensoring with $\mathbb{Q}_p$ (which is flat over $\mathbb{Z}$):
+
+$R/(X-p)R = (\mathbb{Z}_p[[X]] \otimes_\mathbb{Z} \mathbb{Q}_p) / ((X-p) \otimes 1)(\mathbb{Z}_p[[X]] \otimes_\mathbb{Z} \mathbb{Q}_p) \cong (\mathbb{Z}_p[[X]]/(X-p)) \otimes_\mathbb{Z} \mathbb{Q}_p \cong \mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p$.
+
+And $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p \cong \mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ (as I computed: $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p = \mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q} \otimes_\mathbb{Q} \mathbb{Q}_p = \mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$).
+
+So indeed $R/(X-p) \cong \mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$.
+
+Now, is $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ Noetherian?
+
+Let me think about this more carefully. $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ is a $\mathbb{Q}_p$-algebra. The multiplication map $\mu: \mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p \to \mathbb{Q}_p$ has kernel $I = \ker(\mu)$. 
+
+$I$ is generated (as an ideal) by elements of the form $a \otimes 1 - 1 \otimes a$ for $a \in \mathbb{Q}_p$. But $\mathbb{Q}_p$ is uncountable-dimensional over $\mathbb{Q}$, so $I$ is generated by uncountably many elements. Is $I$ finitely generated?
+
+If $I$ were finitely generated as an ideal, say by $f_1, \ldots, f_n$, then each $f_i$ is a finite sum $\sum a_{ij} \otimes b_{ij}$. The $a_{ij}$ and $b_{ij}$ span a finite-dimensional $\mathbb{Q}$-subspace $V$ of $\mathbb{Q}_p$. Then $I$ would be generated by elements in $V \otimes_\mathbb{Q} \mathbb{Q}_p + \mathbb{Q}_p \otimes_\mathbb{Q} V$... hmm, this isn't quite right.
+
+Let me think about it differently. Consider the $\mathbb{Q}$-subspace $W$ of $\mathbb{Q}_p$ spanned by all the $a_{ij}$ and $b_{ij}$ appearing in the generators $f_1, \ldots, f_n$. $W$ is finite-dimensional over $\mathbb{Q}$. 
+
+Now, $I$ is the kernel of $\mu: \mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p \to \mathbb{Q}_p$. For any $a \in \mathbb{Q}_p$, $a \otimes 1 - 1 \otimes a \in I$. If $I$ is generated by $f_1, \ldots, f_n$, then for any $a \in \mathbb{Q}_p$, $a \otimes 1 - 1 \otimes a = \sum g_i f_i$ for some $g_i \in \mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$.
+
+Consider $a \notin W$. Then $a \otimes 1 - 1 \otimes a$ involves $a$ in both factors. For this to be in the ideal generated by $f_1, \ldots, f_n$ (which only involve elements of $W$), we'd need... hmm, this is hard to make rigorous.
+
+Let me try a different approach. Consider $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ as a $\mathbb{Q}_p$-algebra via the first factor. Then it's a $\mathbb{Q}_p$-vector space, and the ring structure is that of a $\mathbb{Q}_p$-algebra. 
+
+As a $\mathbb{Q}_p$-algebra, $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ is generated by the image of $\mathbb{Q}_p$ from the second factor, i.e., by $\{1 \otimes a : a \in \mathbb{Q}_p\}$. This is a $\mathbb{Q}_p$-subalgebra isomorphic to $\mathbb{Q}_p$ (as a $\mathbb{Q}$-algebra, but not as a $\mathbb{Q}_p$-algebra).
+
+Actually, $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ as a $\mathbb{Q}_p$-algebra (first factor): it's the "base change" of $\mathbb{Q}_p$ from $\mathbb{Q}$ to $\mathbb{Q}_p$. This is like $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$, which is the ring of "functions on $\text{Spec}(\mathbb{Q}_p) \times_\text{Spec}(\mathbb{Q})} \text{Spec}(\mathbb{Q}_p)$".
+
+For the Noetherian property: $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ is a $\mathbb{Q}_p$-algebra. If it were Noetherian, then by the Hilbert basis theorem type results... well, it's not a polynomial ring.
+
+Let me try to show it's not Noetherian directly. Consider the ascending chain of ideals $I_1 \subset I_2 \subset \cdots$ where $I_n = (a_1 \otimes 1 - 1 \otimes a_1, \ldots, a_n \otimes 1 - 1 \otimes a_n)$ for $\mathbb{Q}$-linearly independent elements $a_1, a_2, \ldots \in \mathbb{Q}_p$ (over $\mathbb{Q}$).
+
+If this chain stabilizes, then $I_N = I_{N+1}$ for some $N$, meaning $a_{N+1} \otimes 1 - 1 \otimes a_{N+1} \in I_N$. But $I_N$ is generated by elements involving only $a_1, \ldots, a_N$, and $a_{N+1}$ is $\mathbb{Q}$-linearly independent from these. 
+
+In $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$, the element $a_{N+1} \otimes 1 - 1 \otimes a_{N+1}$: if we write $\mathbb{Q}_p = \mathbb{Q} \cdot a_1 \oplus \cdots \oplus \mathbb{Q} \cdot a_N \oplus \mathbb{Q} \cdot a_{N+1} \oplus \cdots$ (choosing a $\mathbb{Q}$-basis), then $a_{N+1} \otimes 1 = a_{N+1} \otimes 1$ and $1 \otimes a_{N+1} = 1 \otimes a_{N+1}$. The ideal $I_N$ is generated by $a_i \otimes 1 - 1 \otimes a_i$ for $i = 1, \ldots, N$.
+
+In the quotient $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p / I_N$, we have $a_i \otimes 1 = 1 \otimes a_i$ for $i = 1, \ldots, N$. The image of $a_{N+1} \otimes 1 - 1 \otimes a_{N+1}$ in this quotient is $a_{N+1} \otimes 1 - 1 \otimes a_{N+1}$, which is nonzero because $a_{N+1}$ is independent of $a_1, \ldots, a_N$ over $\mathbb{Q}$.
+
+Wait, I need to be more careful. Let me choose a $\mathbb{Q}$-basis $\{e_\alpha\}_{\alpha \in A}$ for $\mathbb{Q}_p$ with $e_0 = 1$, $e_i = a_i$ for $i = 1, 2, \ldots$. Then $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ has a $\mathbb{Q}$-basis $\{e_\alpha \otimes e_\beta\}_{\alpha, \beta \in A}$.
+
+The ideal $I_N$ is generated by $e_i \otimes e_0 - e_0 \otimes e_i$ for $i = 1, \ldots, N$ (where $e_0 = 1$). In the quotient by $I_N$, we identify $e_i \otimes 1 = 1 \otimes e_i$ for $i = 1, \ldots, N$.
+
+The element $e_{N+1} \otimes 1 - 1 \otimes e_{N+1}$ in the quotient: this is $e_{N+1} \otimes e_0 - e_0 \otimes e_{N+1}$. Since $e_{N+1}$ is not among $e_0, \ldots, e_N$, the relations in $I_N$ don't affect this element. So it's nonzero in the quotient.
+
+Therefore $I_{N+1} \supsetneq I_N$, and the chain doesn't stabilize. So $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ is not Noetherian.
+
+Since a principal ideal ring is Noetherian, $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ is not a PIR. Therefore $R/(X-p) \cong \mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ is not principal.
+
+So the answer is: **No**, the ring is not principal for all $r \geq 1$. In fact, it's not principal even for $r = 1$.
+
+Wait, but let me double-check this. The problem says "Determine whether the ring ... is principal for all integers $r \geq 1$." So the answer would be "No, it is not principal for all $r \geq 1$; it fails already at $r = 1$."
+
+But actually, let me reconsider. Maybe I'm wrong about $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p \cong \mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$. Let me re-examine.
+
+$\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p$. I want to use the fact that $\mathbb{Q}_p$ is a $\mathbb{Q}$-vector space.
+
+$\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p = \mathbb{Z}_p \otimes_\mathbb{Z} (\mathbb{Q} \otimes_\mathbb{Q} \mathbb{Q}_p) = (\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}) \otimes_\mathbb{Q} \mathbb{Q}_p$.
+
+Now, $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}$: since $\mathbb{Q} = S^{-1}\mathbb{Z}$ with $S = \mathbb{Z} \setminus \{0\}$, and $\mathbb{Z}_p$ is flat over $\mathbb{Z}$, $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q} = S^{-1}\mathbb{Z}_p$. Inverting all nonzero integers in $\mathbb{Z}_p$: the primes $\ell \neq p$ are already units in $\mathbb{Z}_p$, so we only need to invert $p$, giving $\mathbb{Z}_p[1/p] = \mathbb{Q}_p$.
+
+So $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q} \cong \mathbb{Q}_p$ as $\mathbb{Q}$-algebras.
+
+Then $\mathbb{Z}_p \otimes_\mathbb{Z} \mathbb{Q}_p = \mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$. ✓
+
+And this is not Noetherian (as I showed), hence not a PIR.
+
+So $R/(X-p) \cong \mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ is not principal.
+
+Therefore, the ring $\frac{\mathbb{Z}_p[[X]] \otimes_\mathbb{Z} \mathbb{Q}_p}{(X-p)^r}$ is **not** principal for $r = 1$ (and hence not principal for all $r \geq 1$).
+
+Hmm wait, but I should double-check: is the non-principality for $r=1$ really correct? Let me reconsider.
+
+Actually, I want to make sure that $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ is really not Noetherian. Let me think about this more carefully.
+
+Claim: $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ is not Noetherian.
+
+Proof: Choose a $\mathbb{Q}$-basis $\{e_i\}_{i \in I}$ for $\mathbb{Q}_p$ with $e_0 = 1$ and $I$ infinite (in fact uncountable). For each finite subset $J \subset I \setminus \{0\}$, let $I_J$ be the ideal generated by $\{e_j \otimes 1 - 1 \otimes e_j : j \in J\}$. 
+
+For $J_1 \subset J_2$, we have $I_{J_1} \subset I_{J_2}$. I claim this inclusion is strict when $J_1 \subsetneq J_2$.
+
+Consider the quotient $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p / I_J$. In this quotient, $e_j \otimes 1 = 1 \otimes e_j$ for all $j \in J$. For $k \notin J$, $e_k \otimes 1 - 1 \otimes e_k$ is not in $I_J$ because... 
+
+Hmm, I need to be more careful. The ideal $I_J$ is generated by $e_j \otimes 1 - 1 \otimes e_j$ for $j \in J$. An element of $I_J$ is $\sum_j (e_j \otimes 1 - 1 \otimes e_j) \cdot c_j$ where $c_j \in \mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$.
+
+In terms of the basis $\{e_\alpha \otimes e_\beta\}$, the generator $e_j \otimes 1 - 1 \otimes e_j = e_j \otimes e_0 - e_0 \otimes e_j$. Multiplying by $e_\alpha \otimes e_\beta$ gives $e_j e_\alpha \otimes e_\beta - e_\alpha \otimes e_j e_\beta$. Since $e_j e_\alpha$ and $e_j e_\beta$ are elements of $\mathbb{Q}_p$, they can be expressed in terms of the basis.
+
+This is getting complicated. Let me try a different approach.
+
+Consider the surjection $\pi: \mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p \to \mathbb{Q}_p$ (multiplication). The kernel is $I = \ker(\pi)$. We have a split exact sequence of $\mathbb{Q}_p$-vector spaces (via the first factor):
+
+$0 \to I \to \mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p \to \mathbb{Q}_p \to 0$
+
+with section $s: \mathbb{Q}_p \to \mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$, $a \mapsto a \otimes 1$. So $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p \cong \mathbb{Q}_p \oplus I$ as $\mathbb{Q}_p$-vector spaces (first factor).
+
+As a $\mathbb{Q}_p$-vector space (first factor), $\dim_{\mathbb{Q}_p} I = \dim_{\mathbb{Q}_p}(\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p) - 1 = \dim_\mathbb{Q}(\mathbb{Q}_p) - 1$, which is uncountable.
+
+Now, $I$ is an ideal of $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$. If $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ were Noetherian, $I$ would be finitely generated as an ideal. 
+
+$I$ is generated (as an ideal) by $\{a \otimes 1 - 1 \otimes a : a \in \mathbb{Q}_p\}$. If $I$ were finitely generated, say by $f_1, \ldots, f_n$, then each $f_i$ is a finite $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$-linear combination of the generators $a \otimes 1 - 1 \otimes a$. But actually, $f_i$ is just an element of $I$, and we need the ideal $(f_1, \ldots, f_n) = I$.
+
+Each $f_i$ is a finite sum $\sum_k c_{ik} (a_{ik} \otimes 1 - 1 \otimes a_{ik})$ where $c_{ik} \in \mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ and $a_{ik} \in \mathbb{Q}_p$. The $a_{ik}$ span a finite-dimensional $\mathbb{Q}$-subspace $V$ of $\mathbb{Q}_p$.
+
+Now, for any $a \in \mathbb{Q}_p \setminus V$, $a \otimes 1 - 1 \otimes a \in I = (f_1, \ldots, f_n)$. So $a \otimes 1 - 1 \otimes a = \sum_i g_i f_i$ for some $g_i \in \mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$.
+
+Let me think about this in terms of the $\mathbb{Q}$-basis. Choose a $\mathbb{Q}$-basis $\{e_\alpha\}$ for $\mathbb{Q}_p$ with $e_0 = 1$ and $V = \text{span}_\mathbb{Q}\{e_0, \ldots, e_N\}$ (after relabeling). Then the generators $f_i$ only involve $e_0, \ldots, e_N$ in the sense that $f_i \in \text{span}_\mathbb{Q}\{e_\alpha \otimes e_\beta : \alpha, \beta \leq N\}$... no, that's not right. The $c_{ik}$ are in $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$, which can involve any basis elements.
+
+Hmm, this approach is not clean. Let me try yet another way.
+
+Consider the $\mathbb{Q}_p$-algebra $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ (via the first factor). The second factor gives a $\mathbb{Q}$-algebra homomorphism $\mathbb{Q}_p \to \mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$, $a \mapsto 1 \otimes a$. This makes $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ a $\mathbb{Q}_p$-algebra (via the second factor too, but the first factor is the one we're using for the algebra structure).
+
+As a $\mathbb{Q}_p$-algebra (first factor), $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ is the "scalar extension" of $\mathbb{Q}_p$ from $\mathbb{Q}$ to $\mathbb{Q}_p$. 
+
+Now, $\mathbb{Q}_p$ as a $\mathbb{Q}$-algebra is generated by... well, it's not finitely generated as a $\mathbb{Q}$-algebra (it's uncountable-dimensional as a $\mathbb{Q}$-vector space, and a finitely generated $\mathbb{Q}$-algebra is countable-dimensional).
+
+If $A$ is a $\mathbb{Q}$-algebra and $K/\mathbb{Q}$ is a field extension, then $A \otimes_\mathbb{Q} K$ is a $K$-algebra. If $A$ is finitely generated as a $\mathbb{Q}$-algebra, then $A \otimes_\mathbb{Q} K$ is finitely generated as a $K$-algebra, hence Noetherian (by Hilbert's basis theorem). But if $A$ is not finitely generated as a $\mathbb{Q}$-algebra, $A \otimes_\mathbb{Q} K$ may not be Noetherian.
+
+$\mathbb{Q}_p$ is not finitely generated as a $\mathbb{Q}$-algebra. So $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ is not necessarily Noetherian.
+
+To show it's not Noetherian, I can use the following argument:
+
+Consider the subring $R_n = \mathbb{Q}_p \otimes_\mathbb{Q} V_n$ where $V_n = \text{span}_\mathbb{Q}\{e_0, \ldots, e_n\}$ is an increasing sequence of finite-dimensional $\mathbb{Q}$-subspaces of $\mathbb{Q}_p$ with $\bigcup V_n = \mathbb{Q}_p$ (choosing a countable $\mathbb{Q}$-subspace... but $\mathbb{Q}_p$ is uncountable-dimensional over $\mathbb{Q}$, so we can't have $\bigcup V_n = \mathbb{Q}_p$ with countable $n$).
+
+Hmm, let me try a more direct approach.
+
+Let $\{e_i\}_{i=1}^{\infty}$ be a countably infinite $\mathbb{Q}$-linearly independent subset of $\mathbb{Q}_p$ (with $e_0 = 1$). Consider the ideals $J_n = (e_1 \otimes 1 - 1 \otimes e_1, \ldots, e_n \otimes 1 - 1 \otimes e_n)$ in $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$.
+
+I claim $J_n \subsetneq J_{n+1}$ for all $n$.
+
+To show this, I need to show $e_{n+1} \otimes 1 - 1 \otimes e_{n+1} \notin J_n$.
+
+Consider the $\mathbb{Q}_p$-algebra homomorphism $\phi: \mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p \to \mathbb{Q}_p \otimes_\mathbb{Q} (\mathbb{Q}_p / \text{span}_\mathbb{Q}\{e_1, \ldots, e_n\})$... hmm, $\mathbb{Q}_p / \text{span}_\mathbb{Q}\{e_1, \ldots, e_n\}$ is not a ring, so this doesn't work.
+
+Let me try a different approach. Consider the $\mathbb{Q}$-linear map $\psi: \mathbb{Q}_p \to \mathbb{Q}_p$ that sends $e_i \mapsto 0$ for $i = 1, \ldots, n$ and $e_i \mapsto e_i$ for $i > n$ (and $e_0 \mapsto e_0 = 1$). This is a $\mathbb{Q}$-linear map, not a ring homomorphism. So I can't use it to define a ring homomorphism from $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$.
+
+OK let me think about this differently. 
+
+$\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ as a $\mathbb{Q}$-vector space has basis $\{e_\alpha \otimes e_\beta\}$. The ideal $J_n$ is generated by $g_i = e_i \otimes 1 - 1 \otimes e_i$ for $i = 1, \ldots, n$.
+
+An element of $J_n$ is $\sum_{i=1}^n g_i \cdot h_i$ where $h_i \in \mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$. Write $h_i = \sum_{\alpha, \beta} c_{\alpha\beta}^{(i)} e_\alpha \otimes e_\beta$ (finite sum). Then $g_i \cdot h_i = (e_i \otimes 1 - 1 \otimes e_i) \cdot h_i = \sum_{\alpha,\beta} c_{\alpha\beta}^{(i)} (e_i e_\alpha \otimes e_\beta - e_\alpha \otimes e_i e_\beta)$.
+
+Now, $e_i e_\alpha$ is some element of $\mathbb{Q}_p$, which can be written as $\sum_\gamma d_{\gamma}^{i\alpha} e_\gamma$. Similarly for $e_i e_\beta$. So:
+
+$g_i \cdot h_i = \sum_{\alpha,\beta,\gamma} c_{\alpha\beta}^{(i)} (d_{\gamma}^{i\alpha} e_\gamma \otimes e_\beta - d_{\gamma}^{i\beta} e_\alpha \otimes e_\gamma)$.
+
+This is a mess. Let me try to think about it more abstractly.
+
+Consider the quotient ring $A_n = \mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p / J_n$. In $A_n$, we have $e_i \otimes 1 = 1 \otimes e_i$ for $i = 1, \ldots, n$. The question is whether $e_{n+1} \otimes 1 = 1 \otimes e_{n+1}$ in $A_n$.
+
+$A_n$ is a $\mathbb{Q}$-algebra. The relations in $A_n$ are: $e_i \otimes 1 = 1 \otimes e_i$ for $i = 1, \ldots, n$, plus the multiplication relations in each factor.
+
+Hmm, let me think about this using the universal property. $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ is the "universal" $\mathbb{Q}$-algebra receiving two $\mathbb{Q}$-algebra homomorphisms from $\mathbb{Q}_p$ (the two factors). The ideal $J_n$ imposes the relation that these two homomorphisms agree on $e_1, \ldots, e_n$.
+
+In $A_n$, the two copies of $\mathbb{Q}_p$ agree on $\mathbb{Q}$ and on $e_1, \ldots, e_n$, but may differ on other elements. Since $e_{n+1}$ is $\mathbb{Q}$-linearly independent from $1, e_1, \ldots, e_n$, there's no reason for the two copies to agree on $e_{n+1}$.
+
+To make this rigorous, I can construct a $\mathbb{Q}$-algebra $B$ with two $\mathbb{Q}$-algebra homomorphisms $\phi, \psi: \mathbb{Q}_p \to B$ that agree on $\mathbb{Q}$ and $e_1, \ldots, e_n$ but disagree on $e_{n+1}$.
+
+Take $B = \mathbb{Q}_p \times \mathbb{Q}_p$ (product of rings). Define $\phi: \mathbb{Q}_p \to B$ by $\phi(a) = (a, a)$ (the diagonal). Define $\psi: \mathbb{Q}_p \to B$ by... hmm, I need $\psi$ to be a $\mathbb{Q}$-algebra homomorphism that agrees with $\phi$ on $e_1, \ldots, e_n$ but disagrees on $e_{n+1}$. But $\mathbb{Q}$-algebra homomorphisms from a field are injective, and $\mathbb{Q}_p \to \mathbb{Q}_p \times \mathbb{Q}_p$ must land in a subring that's a domain... actually, $\mathbb{Q}$-algebra homomorphisms from $\mathbb{Q}_p$ to $\mathbb{Q}_p \times \mathbb{Q}_p$ correspond to pairs of $\mathbb{Q}$-algebra homomorphisms $\mathbb{Q}_p \to \mathbb{Q}_p$. A $\mathbb{Q}$-algebra homomorphism $\mathbb{Q}_p \to \mathbb{Q}_p$ is a field homomorphism fixing $\mathbb{Q}$, which is a continuous or discontinuous automorphism (or endomorphism, but since $\mathbb{Q}_p$ is a field, it's injective, and since $\mathbb{Q}_p$ is not algebraic over $\mathbb{Q}$, there are many such embeddings).
+
+Hmm, this is getting complicated. Let me try a more elementary approach.
+
+Actually, I think there's a cleaner way to see that $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ is not Noetherian. 
+
+Consider the natural map $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p \to \mathbb{Q}_p \hat{\otimes}_\mathbb{Q} \mathbb{Q}_p$ (completed tensor product). The completed tensor product $\mathbb{Q}_p \hat{\otimes}_\mathbb{Q}_p \mathbb{Q}_p = \mathbb{Q}_p$ (since $\mathbb{Q}_p$ is complete). But the algebraic tensor product $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ is much bigger.
+
+Actually, I think the simplest argument is:
+
+$\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ is a $\mathbb{Q}_p$-algebra (via the first factor). As a $\mathbb{Q}_p$-vector space, it has dimension $\dim_\mathbb{Q} \mathbb{Q}_p = 2^{\aleph_0}$. If it were Noetherian, then by... hmm, there's no direct contradiction from dimension alone.
+
+Let me try the ascending chain argument more carefully.
+
+Let $V$ be a $\mathbb{Q}$-vector space complement of $\mathbb{Q}$ in $\mathbb{Q}_p$, so $\mathbb{Q}_p = \mathbb{Q} \oplus V$ as $\mathbb{Q}$-vector spaces. Choose a $\mathbb{Q}$-basis $\{v_i\}_{i \in I}$ for $V$ (with $I$ uncountable).
+
+For each finite subset $S \subset I$, let $J_S$ be the ideal of $\mathbb{Q}_p \otimes_\mathbb{Q} \mathbb{Q}_p$ generated by $\{v_i \otimes 1 - 1 \otimes v_i : i \in S\}$.
+
+I claim that for $S \subsetneq S'$ (both finite), $J_S \subsetneq J_{S'}$.
+
+To prove this, I'll show that $v_j \otimes 1 - 1 \otimes v_j \notin J_S$ for $j \in S' \setminus
+--- END REASONING_CONTENT ---
+

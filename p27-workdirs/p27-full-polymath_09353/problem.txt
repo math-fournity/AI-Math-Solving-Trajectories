@@ -1,0 +1,1 @@
+In a futuristic data center, a server rack is organized into a square grid of $n \times n$ storage slots. A technician needs to select a specific configuration of slots, called a "Dual-Stream Array," to optimize data flow.

@@ -1,0 +1,1 @@
+In a specialized digital data center, there is a linear array of $n$ memory cells, where $1 \le n \le 100$. Initially, a single "Active Signal" is stored in the $k$-th cell, where $1 \le k \le n$. The system undergoes a series of discrete processing cycles. In each cycle, the following operations occur simultaneously:

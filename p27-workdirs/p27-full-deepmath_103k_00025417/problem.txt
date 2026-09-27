@@ -1,0 +1,1 @@
+Let $K$ be a global field, and let $A$ be a finite-dimensional $K$-algebra. Suppose $B$ is a central simple algebra over $K$. If $A \otimes_K K_v$ embeds in $B \otimes_K K_v$ for all places $v$ of $K$, is it true that $A$ can be embedded in $B$?

@@ -1,0 +1,1 @@
+In a specialized port, there are $2N$ docking stations arranged in a perfect circle along the coastline. A logistics firm is tasked with creating a "Total Connection Map," which is a set of $N$ direct underwater pipelines such that every single docking station is connected to exactly one other station by a straight pipeline.

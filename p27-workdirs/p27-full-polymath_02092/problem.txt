@@ -1,0 +1,1 @@
+Let the elements of set $A$ be positive integers, and for any $x, y \in A, x>y$, it holds that $x-y \geq \frac{x y}{25}$. What is the maximum number of elements that set $A$ can have?

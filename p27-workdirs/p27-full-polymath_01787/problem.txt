@@ -1,0 +1,1 @@
+Around a round table, $n > 2$ students are sitting. At the beginning, each student has exactly one candy. In each step, each student chooses one of the following two operations:

@@ -1,0 +1,1 @@
+Given positive real numbers \(a\), \(b\), and \(c\), find the minimum value of the expression \[\frac{\sum_{\mathrm{sym}} (a^4b^2 + a^{2+\sqrt{2}}b^2c^{2-\sqrt{2}})}{\sum_{\mathrm{sym}}(a^4bc + a^3b^3)}.\]

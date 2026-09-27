@@ -1,0 +1,1 @@
+A high-tech energy grid consists of 20 distinct power generators, each producing a fixed output of megawatts corresponding to their ID number: 1, 2, 3, ..., up to 20.

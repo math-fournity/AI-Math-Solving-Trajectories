@@ -1,0 +1,1 @@
+A set of equations in real variables $a, b, c$ is called Flensburgian if there exists an index $i \in \{1, 2, 3\}$ such that for every solution $(x_1, x_2, x_3)$ where the values are pairwise different, we have $x_i > x_j$ for all $j \neq i$.

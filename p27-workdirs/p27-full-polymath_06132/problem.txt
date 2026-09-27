@@ -1,0 +1,1 @@
+In a remote territory, three supply depots—Station Alpha, Station Beta, and Station Gamma—are positioned at the corners of a triangular flight zone. The flight corridors connecting them have lengths of 7 miles between Beta and Gamma, 8 miles between Gamma and Alpha, and 9 miles between Alpha and Beta. A circular perimeter fence, $\Omega$, perfectly encloses these three stations.

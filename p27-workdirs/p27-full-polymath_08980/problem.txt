@@ -1,0 +1,1 @@
+In a futuristic circular space station, there are 401 docking bays arranged in a perfect ring. For the current mission, 201 of these bays are occupied by "Gamma-class" research vessels, while the remaining 200 bays are occupied by "Beta-class" cargo ships.

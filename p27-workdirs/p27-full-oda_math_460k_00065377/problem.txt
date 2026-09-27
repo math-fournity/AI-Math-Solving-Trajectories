@@ -1,0 +1,1 @@
+Find the first digit of the number $7^{7^{7^{\cdot^{\cdot^{\cdot^7}}}}}$ (where there are $1001$ digits $7$).

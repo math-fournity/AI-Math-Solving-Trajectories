@@ -1,0 +1,1 @@
+A 9-digit number is called balanced if it contains each of the digits from 1 to 9 exactly once. Let $S$ be the sequence formed by concatenating all balanced numbers in increasing order (e.g., $S$ starts with $123456789123456798\dots$). Find the least possible value of $k$ such that any two subsequences of $S$ consisting of $k$ consecutive digits are distinct.

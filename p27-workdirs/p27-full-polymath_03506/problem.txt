@@ -1,0 +1,1 @@
+A set \( M \) of points in 3-dimensional space is called *interesting* if for any plane, there exist at least 100 points in \( M \) outside this plane. For which minimal \( d \) does any interesting set contain an interesting subset with at most \( d \) points?

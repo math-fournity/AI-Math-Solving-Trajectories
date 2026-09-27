@@ -1,0 +1,1 @@
+A high-tech research facility operates a ring of 1,999 specialized energy storage cells, indexed sequentially from $1$ to $1,999$. Due to the circular configuration of the power grid, each cell $i$ is linked to its immediate neighbors, with the last cell ($1,999$) also linked back to the first cell ($1$).

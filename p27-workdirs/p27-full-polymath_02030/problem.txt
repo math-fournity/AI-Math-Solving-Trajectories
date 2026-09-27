@@ -1,0 +1,1 @@
+How many tuples of integers $(a_0,a_1,a_2,a_3,a_4)$ are there, with $1\leq a_i\leq 5$ for each $i$, so that $a_0<a_1>a_2<a_3>a_4$?

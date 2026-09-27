@@ -1,0 +1,1 @@
+Place a digit in each circle with no digit repeated, so that no two circles that are connected by a line segment contain consecutive digits. In how many ways can this be done?

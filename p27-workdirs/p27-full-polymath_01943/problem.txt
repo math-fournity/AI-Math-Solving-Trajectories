@@ -1,0 +1,1 @@
+Suppose \( \triangle ABC \) is a triangle with incircle \(\omega\), and \(\omega\) is tangent to \(\overline{BC}\) and \(\overline{CA}\) at \(D\) and \(E\) respectively. The bisectors of \(\angle A\) and \(\angle B\) intersect line \(DE\) at \(F\) and \(G\) respectively, such that \(BF=1\) and \(FG=GA=6\). Compute the radius of \(\omega\).

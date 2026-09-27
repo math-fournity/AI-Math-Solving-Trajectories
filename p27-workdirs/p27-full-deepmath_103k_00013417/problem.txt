@@ -1,0 +1,1 @@
+Does there exist a smooth structure $M'$ on a smooth manifold $M$ such that a given continuous function $f: M \to \mathbb{R}$ becomes smooth when regarded as $f: M' \to \mathbb{R}$?

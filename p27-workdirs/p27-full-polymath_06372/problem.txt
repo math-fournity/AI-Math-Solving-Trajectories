@@ -1,0 +1,1 @@
+A high-tech server farm contains a circular array of $n=100$ data storage units, indexed $1$ through $n$. Each unit $i$ is assigned a positive integer security clearance level $a_i$. Because the array is periodic, the clearance level for any index $j > n$ is defined by $a_j = a_{j \pmod n}$ (with $a_n$ used if the remainder is 0).

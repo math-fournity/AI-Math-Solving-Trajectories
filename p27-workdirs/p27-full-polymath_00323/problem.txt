@@ -1,0 +1,1 @@
+What is the sum of the digits of the cube root of the number formed by the digit 9 repeated 2021 times, followed by the digit 0 repeated 2021 times, and finally the digit 9 repeated 2022 times?

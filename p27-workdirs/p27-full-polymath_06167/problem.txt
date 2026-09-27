@@ -1,0 +1,1 @@
+A specialized logistics hub handles the automated sorting of 3,000 identical shipping containers. Each container is directed into one of three distinct loading bays, with the destination for each container chosen independently and uniformly at random.

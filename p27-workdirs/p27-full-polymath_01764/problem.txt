@@ -1,0 +1,1 @@
+$54$ coins are placed on a circle. In one move, you can flip any two adjacent coins that are both showing heads to tails, or both showing tails to heads. Using this operation, how many distinct configurations are there such that no two can be transformed into each other?

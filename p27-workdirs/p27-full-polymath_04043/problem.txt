@@ -1,0 +1,1 @@
+Find the maximum possible number of kings on a $12\times 12$ chess table so that each king attacks exactly one of the other kings (a king attacks only the squares that have a common point with the square he sits on).

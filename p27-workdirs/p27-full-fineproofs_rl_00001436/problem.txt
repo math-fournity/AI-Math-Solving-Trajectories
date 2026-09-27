@@ -1,0 +1,1 @@
+Find all the numbers of  $5$  non-zero digits such that deleting consecutively the digit of the left, in each step, we obtain a divisor of the previous number.

@@ -1,0 +1,1 @@
+Consider a finitely generated field extension $K/k$ where $k=K^G$ for some set $G$ of automorphisms of $K$. Given the extension of polynomial rings $k[X_1,\ldots,X_n]\subset K[X_1,\ldots,X_n]$ and a $G$-invariant ideal $I \lhd K[X_1,\ldots,X_n]$, is it true that $I$ can be defined by polynomials in $k$?

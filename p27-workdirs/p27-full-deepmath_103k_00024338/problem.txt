@@ -1,0 +1,1 @@
+Does there exist a finite group $G$ with an outer automorphism $\varphi$ such that for every element $g \in G$, $g$ and $\varphi(g)$ are conjugate in $G$?

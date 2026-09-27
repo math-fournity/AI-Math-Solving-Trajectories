@@ -1,0 +1,1 @@
+A specialized deep-sea research facility consists of several modular laboratories connected by pressurized corridors. To ensure safety and navigation, localized sonar beacons are installed at every corridor junction and at the entrance of every module.

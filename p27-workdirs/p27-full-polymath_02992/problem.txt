@@ -1,0 +1,1 @@
+Let \( S_i = \{i\} \) for \( 1 \leq i \leq n \) be \( n \) sets. An "operation" on two sets \( (S_i, S_j) \) replaces them by \( (S_i \cup S_j, S_i \cup S_j) \). Find the minimum number of operations required to get \( S_i = \{1, 2, \ldots, n-1, n\} \) for all \( 1 \leq i \leq n \).

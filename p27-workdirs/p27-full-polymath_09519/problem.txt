@@ -1,0 +1,1 @@
+In a specialized logistics network, a "Stable Link" exists between two production capacities $(a, b)$ if they satisfy a specific efficiency protocol denoted as $A(a, b)$. The protocol follows three fundamental scaling laws for any integers $m, n, x, y, z$:

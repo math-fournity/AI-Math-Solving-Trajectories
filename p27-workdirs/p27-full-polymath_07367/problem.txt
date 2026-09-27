@@ -1,0 +1,1 @@
+A specialized deep-sea research drone is deployed on the surface of a cubic underwater habitat with an edge length of 8 meters. The drone begins its mission at a specific point located on one of the 12 structural edges of the cube.

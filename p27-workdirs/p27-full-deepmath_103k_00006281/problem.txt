@@ -1,0 +1,1 @@
+Find the supremum of the function \( \frac{f(x)}{g(x)} \), where

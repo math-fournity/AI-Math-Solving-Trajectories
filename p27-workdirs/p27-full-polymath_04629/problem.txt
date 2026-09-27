@@ -1,0 +1,1 @@
+42nd Putnam 1981 Problem A6 A, B, C are lattice points in the plane. The triangle ABC contains exactly one lattice point, X, in its interior. The line AX meets BC at E. What is the largest possible value of AX/XE? Solution

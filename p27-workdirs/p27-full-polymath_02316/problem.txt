@@ -1,0 +1,1 @@
+Let $ABC$ be an equilateral triangle. Let $P$ and $S$ be points on $AB$ and $AC$, respectively, and let $Q$ and $R$ be points on $BC$ such that $PQRS$ is a rectangle. If $PQ = \sqrt3 PS$ and the area of $PQRS$ is $28\sqrt3$, what is the length of $PC$?

@@ -1,0 +1,1 @@
+Each vertex of a regular $n$-gon ($n \geq 3$) is colored yellow, blue, or red. In each move, two adjacent vertices of different colors are selected and recolored in the third color. Let $S$ be the set of all $n \in \{3, 4, \dots, 100\}$ such that a monochromatic coloring can be obtained from any initial coloring. Find the sum of the elements in $S$.

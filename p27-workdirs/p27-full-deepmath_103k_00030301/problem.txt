@@ -1,0 +1,1 @@
+Find the function $f(x)$ that satisfies the following conditions: \( f(x) = \frac{2-x^2}{2} \cdot f\left(\frac{2-x^2}{2}\right) \) for all \( x \in [-1, 1] \), \( f(0) = 0 \), and \( \lim\limits_{x \to 1^{-}} \frac{f(x)}{\sqrt{1-x}} \) exists and is finite.

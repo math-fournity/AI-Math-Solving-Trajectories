@@ -1,0 +1,1 @@
+Let $G$ be a $p$-adic reductive group and $\pi$ an irreducible non-supercuspidal representation. There exists a parabolic subgroup $P=MN$ and a supercuspidal representation $\sigma$ of $M$ such that $\pi$ appears as a subrepresentation of $\operatorname{Ind}_P^G\sigma$. Is it known that $\pi$ appears with multiplicity one in $\operatorname{Ind}_P^G\sigma$?

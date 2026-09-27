@@ -1,0 +1,1 @@
+Let $A$ be a finite-dimensional $k$-algebra that does not necessarily have a multiplicative identity. If the map \( \mu: A \otimes A \rightarrow A, \ x \otimes y \mapsto xy \) is surjective, does $A$ have a multiplicative identity?

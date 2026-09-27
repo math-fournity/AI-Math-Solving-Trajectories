@@ -1,0 +1,1 @@
+A network of $n+1$ specialized fiber-optic relays is being constructed, where $n$ is any integer such that $n \ge 2$. The relays are indexed $0, 1, 2, \ldots, n$. Each relay $i$ has an intrinsic signal resistance denoted by a positive real value $a_i$.

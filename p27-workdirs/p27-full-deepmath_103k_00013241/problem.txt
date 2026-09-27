@@ -1,0 +1,1 @@
+Find a closed form expression for the average value of the function \( \sin\{t - \sin t\} \) over the entire real line.

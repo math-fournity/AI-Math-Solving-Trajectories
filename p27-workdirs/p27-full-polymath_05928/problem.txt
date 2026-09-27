@@ -1,0 +1,1 @@
+A master glassworker is commissioned to divide a $1 \times 1$ meter square pane of rare sapphire glass into exactly 8 identical shards. To satisfy the structural requirements of the mosaic, every shard must be a congruent polygon where every internal angle is exactly $45^\circ$ or $90^\circ$.

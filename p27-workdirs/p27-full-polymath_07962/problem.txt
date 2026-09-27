@@ -1,0 +1,1 @@
+A specialized bio-engineering lab is monitoring the growth rates of four different bacterial cultures. The total biomass level of the system is governed by a balance of four distinct growth functions and a linear output offset.

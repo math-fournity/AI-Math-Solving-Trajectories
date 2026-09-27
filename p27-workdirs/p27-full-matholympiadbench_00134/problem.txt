@@ -1,0 +1,16 @@
+/-!
+# International Mathematical Olympiad 2023, Problem 3
+
+For each integer k ≥ 2, determine all infinite sequences of positive
+integers a₁, a₂, ... for which there exists a polynomial P of the form
+
+  P(x) = xᵏ + cₖ₋₁xᵏ⁻¹ + ... + c₁x + c₀,
+
+where c₀, c₁, ..., cₖ₋₁ are non-negative integers, such that
+
+  P(aₙ) = aₙ₊₁aₙ₊₂⋯aₙ₊ₖ
+
+for every integer n ≥ 1.
+-/
+
+##

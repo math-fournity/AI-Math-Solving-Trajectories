@@ -1,0 +1,1 @@
+Let \( x \) be a real number. Find the sum\n\n\[\n\sum_{n=1}^{\infty} (-1)^n n \ln \left( e^x - 1 - \frac{x}{1!} - \frac{x^2}{2!} - \cdots - \frac{x^n}{n!} \right).\n\]

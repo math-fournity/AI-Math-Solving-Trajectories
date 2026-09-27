@@ -1,0 +1,1 @@
+Given a nontrivial connected separable topological space $X$, suppose $f: X \rightarrow \mathbb{R}$, $h: X \rightarrow \mathbb{R}$, and $g: \mathbb{R} \rightarrow \mathbb{R}$ are continuous functions such that $f(x) = g(h(x))$ for all $x \in X$. If $h(X) = \mathbb{R}$, determine whether $g$ must be continuous when $X$ is path-connected.

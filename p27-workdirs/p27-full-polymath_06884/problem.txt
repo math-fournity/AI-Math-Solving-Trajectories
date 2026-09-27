@@ -1,0 +1,1 @@
+A high-tech agricultural firm manages a square grid of test plots containing 2024 genetically modified sunflowers (yellow markers) and 2024 lavender bushes (blue markers). To ensure precise soil sampling, the firm’s surveyors have confirmed that no three plants are arranged in a perfectly straight line anywhere on the property.

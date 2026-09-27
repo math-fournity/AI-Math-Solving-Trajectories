@@ -1,0 +1,1 @@
+$(MON 5)$ Find the radius of the circle circumscribed about the isosceles triangle whose sides are the solutions of the equation $x^2 - ax + b = 0$.

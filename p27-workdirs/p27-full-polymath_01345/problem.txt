@@ -1,0 +1,1 @@
+The positive integers $a_{1}, a_{2}, a_{3}, a_{4}$ cannot be arranged around a circle so that adjacent numbers are coprime. For $i, j, k \in\{1,2,3,4\}$ with $i \neq j, j \neq k, k \neq i$, what is the maximum number of ordered triples $(i, j, k)$ that satisfy $\left(\gcd\left(a_{i}, a_{j}\right)\right)^{2} \mid a_{k}$?

@@ -1,0 +1,1 @@
+In a futuristic industrial zone, the floor is a grid of exactly $2017 \times 2017$ square pressure-sensitive panels. A technician named Luffy has $k$ specialized sensors that can be installed on any of these panels to monitor activity.

@@ -1,0 +1,1 @@
+Find the maximal constant $ M$, such that for arbitrary integer $ n\geq 3,$ there exist two sequences of positive real number $ a_{1},a_{2},\cdots,a_{n},$ and $ b_{1},b_{2},\cdots,b_{n},$ satisfying

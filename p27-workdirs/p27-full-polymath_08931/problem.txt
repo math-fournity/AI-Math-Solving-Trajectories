@@ -1,0 +1,1 @@
+A specialized architectural firm is designing a solar-powered monument consisting of several rotating glass panels. To maximize energy absorption, the engineers must calculate the total "Resistance Factor" ($R$) of the structure based on the angles of three specific reflective surfaces.

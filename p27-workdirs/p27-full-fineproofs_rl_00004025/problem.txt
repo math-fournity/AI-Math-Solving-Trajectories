@@ -1,0 +1,1 @@
+Let $n$ be an even positive integer, and let $G$ be an $n$-vertex (simple) graph with exactly $\frac{n^{2}}{4}$ edges. An unordered pair of distinct vertices $\{x, y\}$ is said to be amicable if they have a common neighbor (there is a vertex $z$ such that $x z$ and $y z$ are both edges). Prove that $G$ has at least $2\binom{n / 2}{2}$ pairs of vertices which are amicable.

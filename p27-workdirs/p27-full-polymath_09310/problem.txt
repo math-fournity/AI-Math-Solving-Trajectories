@@ -1,0 +1,1 @@
+An industrial chemical processor is testing a new stabilizer compound for a filtration system. The efficiency of the system is represented by a non-constant performance rating $f(t)$, where $t \in (0,1]$ represents the concentration level of a specific catalyst in the solution.

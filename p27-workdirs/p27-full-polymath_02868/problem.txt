@@ -1,0 +1,1 @@
+Find all integer solutions $(x, y, z, n)$ to the equation $10^x + 10^y + 10^z = n(n+1)$, where $n > 0$ and $x \le y \le z$. Let $S$ be the set of all such solutions. Calculate the sum of $x + y + z + n$ for all $(x, y, z, n) \in S$.

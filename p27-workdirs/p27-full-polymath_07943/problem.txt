@@ -1,0 +1,1 @@
+An industrial logistics firm operates a rectangular storage complex designed as a right-angled parallelepiped structure $ABCD A_1 B_1 C_1 D_1$, where the vertical support pillar $A_1 A$ is perpendicular to the base floor $ABCD$. Inside this facility, a spherical pressurized fuel tank $\Omega$ with radius $R$ is suspended.

@@ -1,0 +1,1 @@
+A sequence contains 7 natural numbers. Above each two adjacent numbers in the sequence, we write their sum, obtaining a sequence with 6 natural numbers. We proceed in the same way with the new sequence and so on until we obtain one number. What is the minimum number of all 28 numbers that are even?

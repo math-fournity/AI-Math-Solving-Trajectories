@@ -1,0 +1,1 @@
+In the plane, for a set of $n$ points $P_1, P_2, \ldots, P_n$, all pairwise distances are positive integers. Suppose that for each point, the sequence of distances to the other points, arranged in non-decreasing order, is the same. Let $S$ be the set of all possible values of $n$ for which such a set of points exists. Determine the sum of all elements in $S$.

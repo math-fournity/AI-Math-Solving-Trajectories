@@ -1,0 +1,1 @@
+Find all functions \( f: \mathbb{R} \to \mathbb{R} \) such that for a given positive integer \( n \ge 2 \), the following equation holds for all real numbers \( x \) and \( y \):

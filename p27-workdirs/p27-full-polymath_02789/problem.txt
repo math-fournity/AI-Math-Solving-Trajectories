@@ -1,0 +1,1 @@
+Determine the largest possible number of coverings that such a package can have!

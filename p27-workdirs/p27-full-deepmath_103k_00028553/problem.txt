@@ -1,0 +1,1 @@
+Determine the values of $n$ for which an open connected subset of $\mathbb{R}^n$ can have a fundamental group with torsion.

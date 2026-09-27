@@ -1,0 +1,1 @@
+In a remote digital archipelago, there is a master fiber-optic cable transmitting a perpetual, repeating signal stream $W = \dots x_{-1} x_0 x_1 x_2 \dots$ composed exclusively of two types of data packets: Type $a$ and Type $b$. This transmission follows a rigid, cyclic pattern with a minimal repeating period of $N = 257$ packets.

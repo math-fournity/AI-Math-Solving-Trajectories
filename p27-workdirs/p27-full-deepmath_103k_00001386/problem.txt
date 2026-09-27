@@ -1,0 +1,1 @@
+Let $K/\mathbb{Q}$ be an algebraic extension, and let $E_1$ and $E_2$ be elliptic curves defined over $\mathbb{Q}$. Is it possible for the Mordell-Weil rank of $E_1(K)$ to be finite while the rank of $E_2(K)$ is infinite?

@@ -1,0 +1,1 @@
+Find all sets of positive integers  $\{x_1, x_2, \dots, x_{20}\}$  such that   $$ x_{i+2}^2=lcm(x_{i+1}, x_{i})+lcm(x_{i}, x_{i-1}) $$   for  $i=1, 2, \dots, 20$  where  $x_0=x_{20}, x_{21}=x_1, x_{22}=x_2$ .

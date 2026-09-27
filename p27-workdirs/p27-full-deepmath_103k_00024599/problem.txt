@@ -1,0 +1,1 @@
+Find all functions $g(x)$ such that \( g(m^2 - g(n)) = g(m)^2 - n \) for all natural numbers $m$ and $n$.

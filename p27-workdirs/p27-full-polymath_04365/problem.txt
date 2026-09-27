@@ -1,0 +1,1 @@
+In the game of Nim, players are given several piles of stones. On each turn, a player picks a nonempty pile and removes any positive integer number of stones from that pile. The player who removes the last stone wins, while the first player who cannot move loses.

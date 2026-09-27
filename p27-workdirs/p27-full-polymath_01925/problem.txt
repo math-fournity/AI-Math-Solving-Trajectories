@@ -1,0 +1,1 @@
+Exercise 3. Maena and Théodore are playing a game. They play on a square grid consisting of $99 \times 99$ cells. Two cells are considered adjacent if they share a vertex or a side.

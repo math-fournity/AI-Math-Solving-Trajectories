@@ -1,0 +1,1 @@
+An integer \( n \geq 3 \) is given. We call an \( n \)-tuple of real numbers \((x_1, x_2, \dots, x_n)\) [i]Shiny[/i] if for each permutation \( y_1, y_2, \dots, y_n \) of these numbers, we have

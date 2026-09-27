@@ -1,0 +1,1 @@
+A specialized logistics firm operates based on a specific efficiency protocol involving two categories of assets: **Upgraded Units ($u$)** and **Mainframe Modules ($m$)**. Both quantities must be represented by positive integers.

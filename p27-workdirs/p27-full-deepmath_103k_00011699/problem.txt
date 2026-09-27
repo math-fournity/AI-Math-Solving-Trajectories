@@ -1,0 +1,1 @@
+Suppose $V_{n}$ is a decreasing sequence of bounded open sets in $\mathbb{R}^{m}$ with $m \geq 1$, such that the intersection of all $V_{n}$ is empty. Let $F$ be the intersection of the closures of $V_{n}$. Is there an integer $N$ such that every point $x$ in $F$ belongs to the boundary of $V_{n}$ for all $n \geq N$?

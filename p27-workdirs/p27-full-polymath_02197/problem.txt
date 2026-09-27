@@ -1,0 +1,1 @@
+C3. Fix an odd integer $n>1$. For a permutation $p$ of the set $\{1,2, \ldots, n\}$, let $S$ be the number of pairs of indices $(i, j), 1 \leq i \leq j \leq n$, for which $p_{i}+p_{i+1}+\cdots+p_{j}$ is divisible by $n$. Determine the maximum possible value of $S$.

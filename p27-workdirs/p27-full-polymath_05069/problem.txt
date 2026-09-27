@@ -1,0 +1,1 @@
+9.7. Positive integers from 1 to 100 are arranged in a circle in such a way that each number is either greater than both of its neighboring numbers or less than both of its neighboring numbers. A pair of adjacent numbers is called "good" if, after removing them, the above property still holds. How many "good" pairs of neighbors can there be at a minimum?

@@ -1,0 +1,1 @@
+Consider a set of $n$ lines in the plane such that any two lines intersect, but no three lines pass through the same point. These lines divide the plane into several regions. An "angular region" is an unbounded region bounded by exactly two half-lines (i.e., it is an angle formed by the intersection of two lines that contains no other lines).

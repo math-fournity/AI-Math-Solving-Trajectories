@@ -1,0 +1,1 @@
+Let \( U \) be a real function from \( \mathbb{R}^+ \rightarrow \bar{\mathbb{R}} \) satisfying the following conditions:

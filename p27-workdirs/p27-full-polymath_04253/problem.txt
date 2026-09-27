@@ -1,0 +1,1 @@
+Let $p = 7$ and $q = 11$ be prime numbers. Consider a convex polygon $P_{1} P_{2} \ldots P_{77}$ where all interior angles are equal and the side lengths $a_i = |P_{i+1} - P_{i}|$ for $i=1, \dots, 77$ (with $P_{78} = P_1$) are distinct positive integers. Let $S_k = \sum_{i=1}^k a_i$. Find the minimum possible value of $S_7$.

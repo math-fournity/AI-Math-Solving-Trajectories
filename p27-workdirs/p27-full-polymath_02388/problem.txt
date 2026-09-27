@@ -1,0 +1,1 @@
+$ABCD$ is an isosceles trapezium such that $AD=BC$, $AB=5$ and $CD=10$. A point $E$ on the plane is such that $AE\perp{EC}$ and $BC=EC$. The length of $AE$ can be expressed as $a\sqrt{b}$, where $a$ and $b$ are integers and $b$ is not divisible by any square number other than $1$. Find the value of $(a+b)$.

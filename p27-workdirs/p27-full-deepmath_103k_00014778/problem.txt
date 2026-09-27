@@ -1,0 +1,1 @@
+Given an infinite ultimately periodic word $\eta = pq^{\omega}$, where $p, q \in X^*$, determine if it is possible to choose $p$ and $q$ such that their concatenation $pq$ is a primitive word.

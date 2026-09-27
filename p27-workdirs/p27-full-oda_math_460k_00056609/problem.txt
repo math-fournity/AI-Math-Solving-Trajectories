@@ -1,0 +1,1 @@
+Let $y = \sqrt{\frac{\sqrt{29}}{3} + \frac{2}{3}}.$  There exist unique positive integers $p,$ $q,$ $r$ such that

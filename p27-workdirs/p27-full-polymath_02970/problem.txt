@@ -1,0 +1,1 @@
+Consider pairs of positive integers $(a^2, b^2)$ where $a^2$ and $b^2$ are square numbers satisfying the following properties:

@@ -1,0 +1,1 @@
+A high-tech server farm is organized into a rigid square grid of $n$ rows and $n$ columns, creating exactly $n^2$ possible slots for processor nodes. Each slot is identified by its coordinates $(x, y)$, where $x$ and $y$ are integers ranging from $1$ to $n$.

@@ -1,0 +1,1 @@
+In an acute or right-angled triangle \(ABC\) with circumradius \(R\), inradius \(r\), and semiperimeter \(s\), calculate the minimum value of the expression:

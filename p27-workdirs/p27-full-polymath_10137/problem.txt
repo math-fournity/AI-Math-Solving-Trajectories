@@ -1,0 +1,1 @@
+In a remote mining colony, a geologist named Dr. Aris has extracted several raw crystalline shards. While the weight of each individual shard varies, no single shard weighs more than $1/2$ a kilogram. In total, the collection of shards weighs exactly $W = 10$ kilograms.

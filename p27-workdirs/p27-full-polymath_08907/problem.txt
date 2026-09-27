@@ -1,0 +1,1 @@
+A specialized biological research project is monitoring the growth of a rare synthetic enzyme culture. On the first day of the experiment, the researchers record the enzyme's initial activity level, $x_1$, as exactly $2.1$ units.

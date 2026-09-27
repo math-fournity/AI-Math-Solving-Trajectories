@@ -1,0 +1,1 @@
+In a specialized logistical zone, three warehouses—Alpha, Beta, and Gamma—each store high-value cargo crates totaling exactly 60 tons. The cargo consists of various solid units, where each unit weighs a positive integer number of tons.

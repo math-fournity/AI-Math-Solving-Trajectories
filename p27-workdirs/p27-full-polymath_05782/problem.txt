@@ -1,0 +1,1 @@
+Example 6 Given $c \in\left(\frac{1}{2}, 1\right)$. Find the smallest constant $M$ such that for any integer $n \geqslant 2$ and real numbers $0<a_{1} \leqslant a_{2} \leqslant \cdots \leqslant a_{n}$, if

@@ -1,0 +1,1 @@
+Let \[\begin{cases} a_{k+1} = a_k^4 + 6a_k^2 b_k^2 + b_k^2 \\ b_{k+1} = 4a_k b_k (a_k + b_k)(b_k - a_k) \end{cases}\] for all real $a_k$ and $b_k$. If $(a_{2019}, b_{2019}) = (-2019, 2019\sqrt{3})$, $\left|\frac{b_1}{a_1}\right| = \sqrt{3}$, and $a_1 = \frac{m^{n^{-p}}}{q}$ in simplest form, find the last 3 digits of $m + n + p + q$.

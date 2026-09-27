@@ -1,0 +1,1 @@
+Given a set  $X=\{x_1,\ldots,x_n\}$  of natural numbers in which for all  $1< i \leq n$  we have  $1\leq x_i-x_{i-1}\leq 2$ , call a real number  $a$  **good** if there exists  $1\leq j \leq n$  such that  $2|x_j-a|\leq 1$ . Also a subset of  $X$  is called **compact** if the average of its elements is a good number.

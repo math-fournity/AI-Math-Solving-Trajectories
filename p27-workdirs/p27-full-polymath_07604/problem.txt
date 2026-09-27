@@ -1,0 +1,1 @@
+In a high-tech logistics hub, a massive storage facility is organized into a rigid $200 \times 200$ grid of automated docking stations. Each station can either be empty or occupied by one of two types of robotic drones: "Red-Flash" models or "Blue-Swift" models.

@@ -1,0 +1,1 @@
+Let  $ f$  be a finite real function of one variable. Let  $ \overline{D}f$  and  $ \underline{D}f$  be its upper and lower derivatives, respectively, that is, \[ \overline{D}f\equal{}\limsup_{{h,k\rightarrow 0}_{{h,k \geq 0}_{h\plus{}k>0}}} \frac{f(x\plus{}h)\minus{}f(x\minus{}k)}{h\plus{}k}\] ,

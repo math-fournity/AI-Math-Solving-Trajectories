@@ -1,0 +1,1 @@
+In a remote industrial facility, two automated power systems, Unit P and Unit I, exchange energy credits during a series of operational cycles. At the start of each cycle, an internal sensor generates a random binary signal. If the signal is "High," Unit P receives credits from Unit I. If the signal is "Low," Unit I receives credits from Unit P.

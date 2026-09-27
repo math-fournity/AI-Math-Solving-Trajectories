@@ -1,0 +1,1 @@
+Find all positive integers $(m, s, n, t)$ such that $(1 + m^n)^s = 1 + m^t$.

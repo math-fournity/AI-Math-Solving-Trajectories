@@ -1,0 +1,9 @@
+/-!
+# IMO 2009 A3
+
+Find all functions $f : \mathbb{N} \to \mathbb{N}$ such that for any $x, y \in \mathbb{N}$, the numbers
+$x$, $f(y)$, and $f(y + f(x))$ form the sides of a possibly degenerate triangle.
+
+-/
+
+##

@@ -1,0 +1,1 @@
+In a specialized chemical processing plant, three catalysts—Alpha ($x$), Beta ($y$), and Gamma ($z$)—are combined in a reaction chamber. Their concentrations are always positive ($x, y, z > 0$) and are strictly regulated such that their product remains constant at unit density: $xyz = 1$.

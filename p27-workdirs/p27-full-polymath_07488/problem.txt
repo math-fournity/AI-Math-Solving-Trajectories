@@ -1,0 +1,1 @@
+In the city of Axioma, the Ministry of Information manages several digital archives. For any given number of archives $n$, the Ministry aims to minimize the total number of unique data files stored across them.

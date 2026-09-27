@@ -1,0 +1,1 @@
+Let  $\omega$  be the circumcircle of acute triangle  $ABC$  where  $\angle A<\angle B$  and  $M,N$  be the midpoints of minor arcs  $BC,AC$  of  $\omega$  respectively. The line  $PC$  is parallel to  $MN$ , intersecting  $\omega$  at  $P$  (different from  $C$ ). Let  $I$  be the incentre of  $ABC$  and let  $PI$  intersect  $\omega$  again at the point  $T$ .

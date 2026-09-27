@@ -1,0 +1,1 @@
+Find a constant $ c > 1$ with the property that, for arbitrary positive integers $ n$ and $ k$ such that $ n>c^k$, the number of distinct prime factors of $ \binom{n}{k}$ is at least $ k$.

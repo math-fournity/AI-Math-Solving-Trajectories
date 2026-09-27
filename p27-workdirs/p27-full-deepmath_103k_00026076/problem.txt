@@ -1,0 +1,1 @@
+Does there exist a finite structure \((F;+,-,*,0,1)\) that satisfies all the axioms for fields except the associative law for multiplication, and also does not satisfy the cancellation law \((a \neq 0 \land a*b = a*c) \rightarrow b=c\)? Assume \(F\) satisfies the commutative law for multiplication.

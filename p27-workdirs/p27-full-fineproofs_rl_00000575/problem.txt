@@ -1,0 +1,1 @@
+A finite sequence of natural numbers  $a_1, a_2, \dots, a_n$  is given. A sub-sequence  $a_{k+1}, a_{k+2}, \dots, a_l$  will be called a *repetition* if there exists a natural number  $p\leq \frac{l-k}2$  such that  $a_i=a_{i+p}$  for  $k+1\leq i\leq l-p$ , but  $a_i\neq a_{i+p}$  for  $i=k$  (if  $k>0$ ) and  $i=l-p+1$  (if  $l<n$ ).

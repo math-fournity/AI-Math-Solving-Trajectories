@@ -1,0 +1,1 @@
+A high-tech server farm is constructed in the shape of a perfect cube, consisting of 12 distinct structural support beams (the edges of the cube). To organize a maintenance audit, a technician must assign a unique ID number from the set $\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12\}$ to each of the 12 beams.

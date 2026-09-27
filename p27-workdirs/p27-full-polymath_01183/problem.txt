@@ -1,0 +1,1 @@
+Ben has a big blackboard, initially empty, and Francisco has a fair coin. Francisco flips the coin $2013$ times. On the $n^{\text{th}}$ flip (where $n=1,2,\dots,2013$), Ben does the following if the coin flips heads:

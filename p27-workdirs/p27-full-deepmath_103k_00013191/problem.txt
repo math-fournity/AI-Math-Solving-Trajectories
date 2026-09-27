@@ -1,0 +1,1 @@
+Let $T$ be a totally ordered family of countable sets under set inclusion. If the cofinality of $T$ is uncountable, determine the cardinality of $\bigcup_{E \in T} E$. \(\text{Provide your answer as a cardinality.}\)

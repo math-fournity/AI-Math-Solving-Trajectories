@@ -1,0 +1,1 @@
+In a remote mountain range, a logistics hub is designed as a triangular zone bounded by three roads: Alpha Road ($AB$), Beta Road ($AC$), and Gamma Road ($BC$). A circular supply depot (the incircle) is positioned within this triangle such that it perfectly touches Gamma Road at a refueling station $D$, Beta Road at station $E$, and Alpha Road at station $F$.

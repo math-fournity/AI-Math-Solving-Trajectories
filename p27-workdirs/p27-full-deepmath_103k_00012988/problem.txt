@@ -1,0 +1,1 @@
+Let $f(z) = z^3 e^{z^2}$ for $z \in \mathbb{C}$, and let $\Gamma$ be the circle $z = e^{i\theta}$, where $0 \leq \theta \leq 4\pi$. Using the argument principle, determine the value of \( \frac{1}{2\pi i} \oint_{\Gamma} \frac{f'(z)}{f(z)} \, dz \).

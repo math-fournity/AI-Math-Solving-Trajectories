@@ -1,0 +1,1 @@
+In a vast grid-based industrial solar farm, the facility is managed by two specific operational constraints involving two natural numbers, $a$ and $b$, where $a < b < 2a$. To ensure the grid's monitoring system remains active, sensors must be installed in specific square cells of the grid.

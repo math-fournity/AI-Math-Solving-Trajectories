@@ -1,0 +1,1 @@
+Let $R$ be a commutative ring with identity and $I$ be an ideal of $R$. If $R/I$ is a field of characteristic $p$, where $p$ is a prime number, does there exist an ideal $J$ of $R$ such that $I = (p) + J$ and $J$ does not contain any nonzero constants?

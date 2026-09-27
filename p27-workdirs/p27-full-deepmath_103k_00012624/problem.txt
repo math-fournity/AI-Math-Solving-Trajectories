@@ -1,0 +1,1 @@
+Find the limit, as \( n \to \infty \), of the expected distance between two points chosen uniformly at random within a unit edge-length hypercube in \( \mathbb{R}^n \).

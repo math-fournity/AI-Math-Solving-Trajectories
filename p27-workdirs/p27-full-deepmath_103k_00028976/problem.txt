@@ -1,0 +1,1 @@
+Find the sum of the series \(\sum_{n=1}^\infty \dfrac{nx}{\ln (n+x)}\) for \(x > 1\).

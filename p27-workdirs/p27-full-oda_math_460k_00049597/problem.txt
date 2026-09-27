@@ -1,0 +1,1 @@
+Consider triangle \(ABC\) with \(I\) as the incenter. Let \(N_1, N_2, N_3\) be the nine-point centers of triangles \(IBC\), \(ICA\), and \(IAB\) respectively. If the Spieker center of triangle \(ABC\) is denoted as \(S\), calculate the ratio \(\frac{SN_1 + SN_2 + SN_3}{N_1N_2 + N_2N_3 + N_3N_1}\).

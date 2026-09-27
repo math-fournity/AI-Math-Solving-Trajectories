@@ -1,0 +1,1 @@
+For every infinite cardinal \( \kappa \), does there exist a \( T_2 \)-space of cardinality \( \kappa \) where every non-empty open set is homeomorphic to the space itself?

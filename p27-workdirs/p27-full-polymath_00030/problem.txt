@@ -1,0 +1,1 @@
+In a mathematical contest, each contestant was rated with a grade of $6$, $5$, $2$, or $0$. It appeared that for any pair of contestants $(A, B)$, there exist two exercises such that in each of them $A$ obtained a different grade from $B$. Find the maximum number of contestants for whom this situation is possible.

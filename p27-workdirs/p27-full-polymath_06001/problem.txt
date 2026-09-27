@@ -1,0 +1,1 @@
+A metropolitan fiber-optic network is designed as a perfect grid of $2n$ by $2n$ city blocks. Each block edge is connected by a single fiber-optic cable of unit length $1$. At every intersection (vertex) of the grid, cables meet.

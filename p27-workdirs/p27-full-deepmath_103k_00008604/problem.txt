@@ -1,0 +1,1 @@
+Does there exist an increasing sequence \(a_1, a_2, \dots\) of positive integers such that each positive integer appears exactly once among the differences \(a_2-a_1, a_3-a_2, \dots\) and for some \(n\), each positive integer at least \(n\) appears exactly once among the differences \(a_3-a_1, a_4-a_2, a_5-a_3, \dots\)?

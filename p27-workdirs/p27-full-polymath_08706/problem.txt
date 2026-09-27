@@ -1,0 +1,1 @@
+In a vast industrial sector, there are $n=100$ independent data-mining laboratories. Each laboratory holds a unique portfolio of $r=10$ distinct encryption keys, where each key is represented by a unique positive integer. Across all laboratories, there are $nr=1000$ distinct keys in total.

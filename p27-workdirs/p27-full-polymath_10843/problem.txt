@@ -1,0 +1,1 @@
+A prestigious logistics firm is designing a complex hub-and-spoke delivery network involving $n$ regional distribution centers, where $n \geq 4$. These centers are situated at the vertices of a convex $n$-sided perimeter.

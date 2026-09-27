@@ -1,0 +1,1 @@
+Find the rank \( r \) of \( E(\mathbf{Q}) \), where \( E: y^2 = x(x^2 + 2px + 2p^2) \), for a prime number \( p \). Specifically, determine the rank based on the following conditions:

@@ -1,0 +1,1 @@
+Consider the positive integers less than or equal to one billion, i.e., $1, 2, 3, \dots, 10^{9}-1, 10^{9}$. What fraction of these integers can be expressed in the form $x^2 + y^3 + z^5$, where $x, y$, and $z$ are positive integers?

@@ -1,0 +1,1 @@
+Determine whether there exists a connected compact set $X$ in the complex plane $\mathbb{C}$ such that $X$ is not locally connected at any point.

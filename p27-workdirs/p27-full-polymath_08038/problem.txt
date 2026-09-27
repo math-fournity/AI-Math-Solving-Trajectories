@@ -1,0 +1,1 @@
+In a remote high-tech storage facility, a technician is tasked with installing specialized server cooling units onto a 5x5 grid of mounting slots. Each cooling unit is an "L-shaped" module that covers exactly three grid slots (formed by a 2x1 block and a 1x1 block attached to its side).

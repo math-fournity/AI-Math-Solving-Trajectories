@@ -1,0 +1,1 @@
+Given a positive definite matrix $A$ with elements $a_{ij}$, a new matrix $A'$ is formed as $A'_{ij} = \frac{a_{ij}}{\sqrt{a_{ii}a_{jj}}}$. Is the matrix $A'$ also positive definite?

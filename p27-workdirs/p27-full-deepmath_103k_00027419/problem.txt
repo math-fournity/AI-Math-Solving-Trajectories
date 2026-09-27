@@ -1,0 +1,1 @@
+Consider a circle with an area of $2n$, divided into $n$ regions by joining each of $n$ evenly spaced points on the circle with every other point. Determine the limit of the product of the areas of these regions as $n$ approaches infinity.

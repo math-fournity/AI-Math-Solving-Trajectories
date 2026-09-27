@@ -1,0 +1,1 @@
+Determine the largest positive integer $N$ such that for every way of placing all numbers from 1 to 400 into a $20 \times 20$ table (one number per cell), one can always find a row or a column containing two numbers with a difference of at least $N$.

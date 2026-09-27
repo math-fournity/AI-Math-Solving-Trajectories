@@ -1,0 +1,1 @@
+For every positive integer $ n$ determine the highest value $ C(n)$, such that for every $ n$-tuple $ (a_1,a_2,\ldots,a_n)$ of  pairwise distinct integers

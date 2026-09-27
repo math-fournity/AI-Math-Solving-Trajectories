@@ -1,0 +1,1 @@
+Given ten different odd primes \( p_1, p_2, \ldots, p_{10} \), find the sum of all possible values of \( p_1 \) such that for any two of these primes, the difference of their sixteenth powers is divisible by the product of all the remaining primes.

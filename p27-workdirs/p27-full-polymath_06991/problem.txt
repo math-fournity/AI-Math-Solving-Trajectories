@@ -1,0 +1,1 @@
+In a remote industrial mining colony, 100 transport ships arrive at a docking bay during a communications blackout. The bay contains $n$ individual docking berths, labeled $1, 2, \dots, n$. Unknown to the pilots, exactly $k$ of these berths have been deactivated for emergency maintenance, though no one knows which specific berths are offline.

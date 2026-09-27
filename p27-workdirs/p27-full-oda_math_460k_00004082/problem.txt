@@ -1,0 +1,1 @@
+Find the largest possible number of points (a) in the plane; (b) in space, such that no triangle with vertices at these points has an obtuse angle.

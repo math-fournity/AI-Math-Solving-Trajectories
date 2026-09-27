@@ -1,0 +1,1 @@
+In a specialized logistics network, three distinct automated cargo hubs—Hub $a$, Hub $b$, and Hub $c$—are assigned unique identification codes. These codes are positive integers, and to ensure energy efficiency, their combined sum ($a + b + c$) must not exceed 3,000,000.

@@ -1,0 +1,1 @@
+In a minimal uniquely ergodic system \((X,T)\) with measure \(\mu\), does there exist a point \(p \in X\) such that \(\mu(\partial B(p,t)) = 0\) for all \(t > 0\) with respect to some metric \(d\) that induces the same topology?

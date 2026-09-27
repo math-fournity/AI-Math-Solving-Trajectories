@@ -1,0 +1,1 @@
+For any positive integer $k$, let $A_k$ be the subset of $\{k+1, k+2, \ldots, 2k\}$ consisting of all elements whose binary representation contains exactly three 1s. Let $f(k)$ denote the number of elements in $A_k$. Let $S$ be the set of all positive integers $m$ such that the equation $f(k) = m$ has a unique solution for $k$. Find the 10th smallest element of $S$.

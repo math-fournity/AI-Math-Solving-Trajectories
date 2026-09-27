@@ -1,0 +1,1 @@
+Let \( A, B, C \in M_n(\mathbb{C}) \) be Hermitian and positive definite matrices. Calculate the minimum value of the expression:

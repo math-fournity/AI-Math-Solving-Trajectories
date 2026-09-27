@@ -1,0 +1,1 @@
+In a vast digital warehouse, every storage slot is located at a coordinate grid point $(x, y)$, where $x$ and $y$ are integers. Each slot is assigned to one of three different processing sectors (Red, Blue, or Green) to manage data flow.

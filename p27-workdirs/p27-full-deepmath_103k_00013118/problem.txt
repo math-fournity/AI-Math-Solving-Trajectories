@@ -1,0 +1,1 @@
+Determine the values of $p \in [1, +\infty[$ for which the function $f(x) = |x|$ belongs to the Sobolev space $W^{1,p}(]-1, 1[)$. Recall that $W^{m,p}(I)$ consists of functions $u$ such that $u$ and all its derivatives up to order $m$ are in $L^p(I)$, where $D^{\alpha} u$ denotes the derivative in the distribution sense.

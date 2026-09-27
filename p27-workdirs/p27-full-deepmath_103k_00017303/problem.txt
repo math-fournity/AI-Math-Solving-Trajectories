@@ -1,0 +1,1 @@
+Determine the number of non-isomorphic random graphs that can be formed with a set of cardinality \( \kappa \), where \( \kappa \) is a regular cardinal.

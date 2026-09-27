@@ -1,0 +1,1 @@
+In the competitive world of high-frequency trading, a server cluster is classified as "3-Linked" if, within any group of three servers, at least one pair possesses a direct fiber-optic connection.

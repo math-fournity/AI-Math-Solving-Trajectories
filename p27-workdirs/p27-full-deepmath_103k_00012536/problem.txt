@@ -1,0 +1,1 @@
+Evaluate the integral \( \int _{\Gamma} \frac{\cos(2z)}{(z-\pi/4)^2}dz \), where \( \Gamma \) is the contour consisting of the sides of a triangle with vertices \( i \), \( -1-i \), and \( \pi -i \).

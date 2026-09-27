@@ -1,0 +1,1 @@
+Find the triangle of least area which can cover any triangle with sides not exceeding $1$.

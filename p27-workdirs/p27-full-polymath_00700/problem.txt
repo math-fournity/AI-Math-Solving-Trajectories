@@ -1,0 +1,1 @@
+6.1 Let's say that number A hides number B if you can erase several digits from A to get B (for example, the number 123 hides the numbers 1, 2, 3, 12, 13, and 23). Find the smallest natural number that hides the numbers 2021, 2120, 1220, and 1202.

@@ -1,0 +1,1 @@
+In a remote archipelago, there are $n$ islands arranged in a perfect circle. Initially, each island's local treasury contains exactly one gold ingot. To manage the regional economy, the governors perform simultaneous wealth transfers in discrete cycles. In each cycle, every governor must choose exactly one of the following two protocols for their current supply of ingots:

@@ -1,0 +1,1 @@
+Let $a$,$b$,$c$ be the roots of the equation $x^{3} - 2018x +2018 = 0$. Let $q$ be the smallest positive integer for which there exists an integer $p, \, 0 < p \leq q$, such that $$\frac {a^{p+q} + b^{p+q} + c^{p+q}} {p+q} = \left(\frac {a^{p} + b^{p} + c^{p}} {p}\right)\left(\frac {a^{q} + b^{q} + c^{q}} {q}\right).$$ Find $p^{2} + q^{2}$.

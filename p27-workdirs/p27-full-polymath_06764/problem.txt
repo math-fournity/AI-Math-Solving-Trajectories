@@ -1,0 +1,1 @@
+In a remote logistics hub, two rival managers, Max and Mini, are tasked with configuring the final weight distribution for a two-stage rocket delivery. The control panel displays two rows of four empty slots, representing two 4-digit integers:

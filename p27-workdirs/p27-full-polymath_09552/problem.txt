@@ -1,0 +1,1 @@
+In the city of Aethelgard, there is a specialized Logistics Guild $G$. Within this guild, a prestigious "Inner Circle" $H$ consists of exactly $h=7$ unique master keys.

@@ -1,0 +1,1 @@
+For the given curve \(\gamma\), fix the regular in-domain \(C \setminus \gamma\) branch of \(f(z) = \ln z\) by setting \(f(1) = 0\). Determine the value of its analytic continuation at \(-3\).

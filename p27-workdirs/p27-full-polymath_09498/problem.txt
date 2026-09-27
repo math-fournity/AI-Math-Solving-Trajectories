@@ -1,0 +1,1 @@
+A specialized chemical refinery produces sets of $n > 2$ storage canisters, each containing a different volume of pressurized gas. To meet safety regulations, these canisters must be manufactured such that the difference in gas volume between any two canisters of adjacent sizes in a set is exactly the same (forming an arithmetic progression).

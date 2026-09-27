@@ -1,0 +1,1 @@
+In a specialized logistics network, a cargo vessel travels between $n$ consecutive maritime waypoints, indexed from $k=0$ to $k=n$. The position of the vessel at each waypoint $k$ is recorded as an integer coordinate $a_k$, forming a sequence $\{a_0, a_1, \dots, a_n\}$.

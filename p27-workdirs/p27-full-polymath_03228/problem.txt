@@ -1,0 +1,1 @@
+A road company is trying to build a system of highways in a country with 21 cities. Each highway runs between two cities. A trip is a sequence of distinct cities \(C_{1}, \ldots, C_{n}\), for which there is a highway between \(C_{i}\) and \(C_{i+1}\). The company wants to fulfill the following two constraints:

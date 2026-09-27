@@ -1,0 +1,1 @@
+In the futuristic city of Hexapolis, a central plaza is built in the shape of an equiangular hexagon. The six perimeter walls follow a specific rhythmic sequence of lengths: 1 decameter, 1 decameter, $a$ decameters, 1 decameter, 1 decameter, and $a$ decameters.

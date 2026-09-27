@@ -1,0 +1,1 @@
+II. (40 points) Given a $2016 \times 2016$ grid. Find the smallest positive integer $M$, such that it is possible to draw $M$ rectangles (with their sides on the grid lines) in the grid, and each small square in the grid has its sides included in the sides of one of the $M$ rectangles.

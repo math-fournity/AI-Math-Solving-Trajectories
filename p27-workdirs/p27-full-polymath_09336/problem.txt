@@ -1,0 +1,1 @@
+In a sprawling solar energy field, technicians are installing a sensor array organized into an $8 \times 8$ grid of plots. Each plot must be equipped with exactly one of three types of hardware: a **H**eliostat, a **M**onitor, or a **T**racker.

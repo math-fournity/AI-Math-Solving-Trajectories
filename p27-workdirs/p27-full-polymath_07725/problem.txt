@@ -1,0 +1,1 @@
+In the remote desert of Arithmos, two transmission towers, Alpha and Beta, are positioned exactly 12 kilometers apart. A surveyor is mapping the region to identify "Signal Zones" based on specific interference patterns involving two mobile receiver units, X and Y.

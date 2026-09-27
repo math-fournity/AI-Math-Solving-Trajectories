@@ -1,0 +1,1 @@
+In a vast grid-based digital memory storage unit consisting of a square array of $2,017 \times 2,017$ individual memory cells, a security engineer is deploying specialized "Sentry Programs."

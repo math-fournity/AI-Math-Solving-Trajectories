@@ -1,0 +1,1 @@
+30. In a convex quadrilateral $ABCD$, $AB=a, BC=b, CD=c, DA=d, AC=e, BD=f$, and $\max \{a, b, c, d, e, f\}=1$. Find the maximum value of $abcd$.

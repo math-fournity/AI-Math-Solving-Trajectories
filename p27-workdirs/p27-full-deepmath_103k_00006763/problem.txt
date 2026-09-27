@@ -1,0 +1,1 @@
+Determine whether there exists a natural number \( k \) such that for all primes \( p \), the expression \((p+1)k-1\) is composite.

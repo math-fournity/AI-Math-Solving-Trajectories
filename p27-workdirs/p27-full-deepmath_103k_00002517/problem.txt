@@ -1,0 +1,1 @@
+Consider a non-empty compact convex subset $K$ of a Banach space $E$, and a continuous function $f : K \to K$. Given $u_0 \in K$, define the sequence $(u_n)$ by $u_{n+1} = \frac{1}{n+1} \sum_{j=0}^n f(u_j)$. Is it always true that $(u_n)$ converges to a fixed point of $f$?

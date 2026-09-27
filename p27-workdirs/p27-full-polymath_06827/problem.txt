@@ -1,0 +1,1 @@
+A high-security data vault contains a total set of $A$ encrypted digital keys. To ensure redundancy and security, a security firm creates $n$ specific access bundles, $A_1, A_2, \dots, A_n$, each containing a subset of these keys. The system is designed with the following technical specifications:

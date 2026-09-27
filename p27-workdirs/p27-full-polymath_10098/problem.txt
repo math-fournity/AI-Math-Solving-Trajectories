@@ -1,0 +1,1 @@
+An ancient library organizes its scrolls into two types of storage vaults, designated as Category A and Category B. A historian is searching for specific configurations of vault capacities $(a, b)$, measured in units of scrolls, that satisfy a precise architectural symmetry.

@@ -1,0 +1,1 @@
+Consider the norm $\|f\|^2=\int_0^1 f(y)^2 dy$, and let $X$ be a random variable taking values in $L^2[0,1]$. Is bounding $P(X(y)\leq c) \geq 1-\delta$ for every $y\in[0,1]$ sufficient to establish the inequality $P(\|X\|\leq c) \geq 1-\delta$? Answer yes or no.

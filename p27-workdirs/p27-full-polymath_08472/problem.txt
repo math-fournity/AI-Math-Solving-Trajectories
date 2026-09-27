@@ -1,0 +1,1 @@
+In a remote digital archives facility, there are 5 specialized security switches, each of which can be set to one of 4 distinct positions. A cohort of 2,000 security technicians participated in a calibration exercise where each technician submitted a unique configuration by choosing exactly one position for each of the 5 switches.

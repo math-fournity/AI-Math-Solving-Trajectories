@@ -1,0 +1,1 @@
+On a $29 \times 29$ chessboard, whose rows are numbered from bottom to top and columns from left to right with $1,2, \ldots, 29$, some unit squares are marked.

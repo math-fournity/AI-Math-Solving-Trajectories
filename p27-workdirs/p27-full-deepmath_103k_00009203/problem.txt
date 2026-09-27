@@ -1,0 +1,1 @@
+Let $S$ be an infinite set and define the following:

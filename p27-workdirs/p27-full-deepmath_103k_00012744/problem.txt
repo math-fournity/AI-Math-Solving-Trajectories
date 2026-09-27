@@ -1,0 +1,1 @@
+Determine whether every second countable $T_2$ topological space is a developable space.

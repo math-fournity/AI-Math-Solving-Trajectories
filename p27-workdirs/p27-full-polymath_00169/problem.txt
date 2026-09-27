@@ -1,0 +1,1 @@
+For an invertible $n\times n$ matrix $M$ with integer entries we define a sequence $\mathcal{S}_M=\{M_i\}_{i=0}^{\infty}$ by the recurrence $M_0=M$ ,$M_{i+1}=(M_i^T)^{-1}M_i$ for $i\geq 0$.

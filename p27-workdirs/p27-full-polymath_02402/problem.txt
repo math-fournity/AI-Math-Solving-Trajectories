@@ -1,0 +1,1 @@
+Depending on the non-negative parameter \( k \), determine the limit:

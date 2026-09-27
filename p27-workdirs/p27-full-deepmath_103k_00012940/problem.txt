@@ -1,0 +1,1 @@
+Find the limiting distribution of \( \frac{Y_n - n}{\sqrt{2n}} \) as \( n \to \infty \), where \( Y_n \sim \chi^2(n) \), using moment generating functions.

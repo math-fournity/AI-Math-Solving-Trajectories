@@ -1,0 +1,1 @@
+Let $O$ be the circumcenter and $H$ the orthocenter of an acute triangle $ABC$. A point $D$ is on line $HO$ such that $\angle ACD = \angle BAC$. If $\angle BOC = \angle BDC$, find $\angle BAC$.

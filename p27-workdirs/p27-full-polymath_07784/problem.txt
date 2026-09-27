@@ -1,0 +1,1 @@
+A team of civil engineers is tasked with designing a modular platform supported by $n$ distinct structural pillars. To ensure the platform’s stability, they have established a "Stress Index" formula based on the height of each pillar, where the heights $a_1, a_2, \dots, a_n$ must be distinct positive integers.

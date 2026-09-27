@@ -1,0 +1,1 @@
+The points in the plane are painted in 100 colors. Prove that there are three points of the same color that are the vertices of a triangle of area 1.

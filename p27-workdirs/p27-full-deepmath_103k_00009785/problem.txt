@@ -1,0 +1,1 @@
+Determine whether the $n$-simplex with vertices $(0,0,\dots,r_i,r_{i+1},\dots,r_n)$, where $r_1,\dots,r_n$ are given natural numbers and $i=0,1,\dots,n+1$, admits a regular, unimodular triangulation.

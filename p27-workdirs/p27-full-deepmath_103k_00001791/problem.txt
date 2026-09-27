@@ -1,0 +1,1 @@
+Let $G$ be a finite 2-group and $x$ a non-central element of $G$ such that $C_G(x) \leq \text{cl}(x) \cup Z(G)$, where $\text{cl}(x)$ denotes the conjugacy class of $x$ in $G$. Determine if $|C_G(x) : Z(G)| = 2$.

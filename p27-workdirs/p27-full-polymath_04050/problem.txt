@@ -1,0 +1,1 @@
+Let \( I \) be the center of the inscribed circle in \(\triangle ABC\), and \( M \) be the midpoint of side \( AB \). If \( CI = MI \), find the smallest possible measure of \(\angle CIM\).

@@ -1,0 +1,1 @@
+In a remote sector of the galaxy, an engineer named Sasha is designing a solar energy network. There are $n$ distinct, perfectly straight laser beams projecting from various power stations out into deep space. Due to the precision of the network, no two laser beams intersect or share any common points.

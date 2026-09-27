@@ -1,0 +1,1 @@
+Can the original integers be uniquely determined from the set of all non-zero sums that can be formed from them, given that 0 does not appear among these sums?

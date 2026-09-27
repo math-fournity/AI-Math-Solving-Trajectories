@@ -1,0 +1,1 @@
+Let $X$ be a connected topological space, and $Y$ a space whose connected components are not all open. Can there exist an open continuous surjective map $Y \rightarrow X$ with finite fibers?

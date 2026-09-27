@@ -1,0 +1,1 @@
+In the Game of Life, determine if there exists a structure that remains stable unless a glider is introduced, at which point it launches a spaceship.

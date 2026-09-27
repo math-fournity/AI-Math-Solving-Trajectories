@@ -1,0 +1,1 @@
+Find the minimal polynomial of \( \alpha = 2^{\frac{1}{4}} \) over \( \mathbb{Q}(\beta) \), where \( \beta = e^{\frac{2\pi i}{5}} \), and factor it into irreducibles in \( \mathbb{Q}(\beta)[X] \).

@@ -1,0 +1,1 @@
+Consider a Riemannian hypersurface $M^n \subset \mathbb{R}^{n+1}$ with an isometrically immersed shape operator $s$. The characteristic polynomial of $s$ is given by $p(\lambda) = \lambda^n + a_{n-1}\lambda^{n-1} + \ldots + a_0$. For $n > 2$, determine which coefficients $a_i$ are local isometry invariants of $M$. Provide a justification for your answer.

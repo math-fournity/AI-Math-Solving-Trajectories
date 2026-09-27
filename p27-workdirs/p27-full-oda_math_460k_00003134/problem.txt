@@ -1,0 +1,1 @@
+Let \( a, b, c, d \) be positive integers such that \( ab + cd \), \( ac + bd \), and \( ad + bc \) are odd divisors of \( (a + b - c - d)(a - b + c - d)(a - b - c + d) \). Calculate the sum of all possible values of \( a + b + c + d \) under the condition that \( a, b, c, d \) are pairwise distinct primes.

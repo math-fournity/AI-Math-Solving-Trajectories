@@ -1,0 +1,1 @@
+Consider an $n \times n$ hyperbolic matrix $A$ with no eigenvalues of absolute value $1$. Does the action of $A$ on the set $(\mathbb{R} \backslash \mathbb{Z})^n$ always have periodic orbits with a minimal even period $k \geq 2$? Answer yes or no.

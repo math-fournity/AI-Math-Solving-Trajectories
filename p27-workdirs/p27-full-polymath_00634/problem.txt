@@ -1,0 +1,9 @@
+Let
+
+$$
+A_{j}=\left\{(x, y): 0 \leq x \sin \left(\frac{j \pi}{3}\right)+y \cos \left(\frac{j \pi}{3}\right) \leq 6-\left(x \cos \left(\frac{j \pi}{3}\right)-y \sin \left(\frac{j \pi}{3}\right)\right)^{2}\right\}
+$$
+
+The area of $\cup_{j=0}^{5} A_{j}$ can be expressed as $m \sqrt{n}$. What is the area?
+
+##

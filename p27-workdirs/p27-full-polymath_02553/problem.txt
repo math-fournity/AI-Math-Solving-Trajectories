@@ -1,0 +1,1 @@
+What is the minimum number of dominos (each a $1 \times 2$ or $2 \times 1$ rectangle) needed to be placed on an $8 \times 8$ chessboard such that no additional domino can be placed on the board?

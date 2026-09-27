@@ -1,0 +1,1 @@
+Alice and Bob play a game starting with a positive integer. On each move, a player may subtract 1 or divide by 2 (rounding up if necessary) to get an integer. The player who first reaches 0 wins. Given the starting values 512 and 513, which of these two values leads to a winning strategy for Alice?

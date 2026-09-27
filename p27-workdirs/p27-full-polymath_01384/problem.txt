@@ -1,0 +1,1 @@
+Initially given $31$ tuplets

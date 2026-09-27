@@ -1,0 +1,1 @@
+A finite sequence of integers $a_{1}, a_{2}, \ldots, a_{n}$ is called regular if there exists a real number $x$ satisfying

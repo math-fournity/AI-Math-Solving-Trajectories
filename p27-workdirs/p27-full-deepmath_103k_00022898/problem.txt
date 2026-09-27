@@ -1,0 +1,1 @@
+Determine whether there exists a constant \( c > 0 \) such that, for any division of a pile of books between two couples \((b_1, g_1)\) and \((b_2, g_2)\), each person can receive at least \( c \) value, regardless of the values and number of books.

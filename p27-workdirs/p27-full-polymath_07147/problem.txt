@@ -1,0 +1,1 @@
+In a sprawling logistics hub, a square warehouse is divided into a grid of $4n \times 4n$ storage zones, where $n$ is a positive integer. There are exactly $4n$ autonomous transport robots positioned in the warehouse such that every horizontal aisle (row) and every vertical lane (column) contains exactly one robot.

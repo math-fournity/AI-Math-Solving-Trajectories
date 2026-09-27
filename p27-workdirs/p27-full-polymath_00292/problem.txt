@@ -1,0 +1,1 @@
+Let \( S = \{1, 2, 2^2, 2^3, \ldots, 2^{2021}\} \). Compute the difference between the number of even digits and the number of odd digits across all numbers in \( S \) (written as integers in base \( 10 \) with no leading zeros).

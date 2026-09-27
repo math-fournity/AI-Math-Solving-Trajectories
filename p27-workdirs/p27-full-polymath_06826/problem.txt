@@ -1,0 +1,1 @@
+In a bustling logistics hub, there are 2008 distinct digital servers that must be connected through a series of local area networks (LANs). To ensure full connectivity across the hub, the system architecture is designed such that every possible pair of servers must share membership in at least one common LAN.

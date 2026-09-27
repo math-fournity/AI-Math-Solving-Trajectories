@@ -1,0 +1,1 @@
+Find all positive integer solutions \((x, y)\) to the equation \(2x^2 - 1 = y^{15}\).

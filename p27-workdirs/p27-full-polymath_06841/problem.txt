@@ -1,0 +1,1 @@
+In the futuristic city of Modulo-P, a digital encryption protocol uses "Standard Keys," which are specialized data sequences modeled as polynomials with coefficients chosen from the set $\{0, 1, \dots, p-1\}$ and having a complexity (degree) strictly less than the prime security level $p$. This collection of all possible Standard Keys is denoted as $K_p$.

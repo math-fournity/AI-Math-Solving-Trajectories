@@ -1,0 +1,1 @@
+Isosceles triangles \(ABC\) and \(A'B'C'\) lie in parallel planes such that point \(C'\) is equidistant from the vertices of triangle \(ABC\), and points \(A'\) and \(B'\) are at the same distance from the lines containing the sides of this triangle. Find the ratio of the areas of triangles \(A'B'C'\) and \(ABC\).

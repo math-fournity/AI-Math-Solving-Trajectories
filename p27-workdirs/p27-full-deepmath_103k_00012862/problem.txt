@@ -1,0 +1,1 @@
+Determine whether there exists a continuous function \( f: \mathbb{R}^2 \to \mathbb{R}^2 \) that is not one-to-one but still maps open sets to open sets.

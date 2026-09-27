@@ -1,0 +1,1 @@
+Place the minimum number of "x" (each occupying a 1x1 cell) in a 7x7 grid such that no "T" shape (as shown below) can be inserted into the grid without overlapping any "x". The "T" shape can be rotated.

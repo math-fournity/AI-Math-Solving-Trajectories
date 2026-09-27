@@ -1,0 +1,1 @@
+At the Berkeley Math Tournament, teams are composed of 6 students, each of whom picks two distinct subject tests out of 5 choices. How many different distributions across subjects are possible for a team?

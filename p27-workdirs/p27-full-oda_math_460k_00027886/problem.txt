@@ -1,0 +1,1 @@
+For every positive \( \alpha \), natural number \( n \), and at most \( \alpha n \) points \( x_i \), construct a trigonometric polynomial \( P(x) \) of degree at most \( n \) such that:

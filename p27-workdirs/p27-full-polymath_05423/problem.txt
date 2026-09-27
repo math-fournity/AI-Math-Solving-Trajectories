@@ -1,0 +1,1 @@
+Let $\triangle ABC$ be a triangle with side lengths $a, b, c$, semiperimeter $s$, and inradius $r$. Semicircles with diameters $BC, CA, AB$ are drawn outside of the triangle. A circle with radius $t$ is tangent to all three semicircles. If $a=13, b=14$, and $c=15$, calculate the value of $t - \frac{s}{2}$.

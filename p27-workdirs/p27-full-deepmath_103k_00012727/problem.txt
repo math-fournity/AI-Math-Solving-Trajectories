@@ -1,0 +1,1 @@
+Let $f$ be a uniformly continuous function defined on the open ball $B(0,1)$ in $\mathbb{R}^n$. Does there exist a function $g$ that is continuous on the closed ball $\bar{B}(0,1)$ such that $f = g$ for every $x \in B(0,1)$?

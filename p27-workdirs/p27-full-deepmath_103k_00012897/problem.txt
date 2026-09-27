@@ -1,0 +1,1 @@
+Consider a codimension one foliation \(\mathcal{F}\) in a closed 3-manifold \(M\). Determine whether there exists an upper bound for the genus of the compact orientable leaves. Specifically, is there a constant \(G > 0\) such that the genus of every compact orientable leaf is at most \(G\)?

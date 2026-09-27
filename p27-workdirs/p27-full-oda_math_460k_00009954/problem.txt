@@ -1,0 +1,1 @@
+Let \( n \) be the smallest positive integer such that any prime divisor of \( 2^n - 1 \) is smaller than \( 2^{\frac{n}{1993}} - 1 \). Calculate the value of \( n \).

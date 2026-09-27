@@ -1,0 +1,1 @@
+We define the sets of lattice points \(S_{0}, S_{1}, \ldots\) as \(S_{0}=\{(0,0)\}\) and \(S_{k}\) consisting of all lattice points that are exactly one unit away from exactly one point in \(S_{k-1}\). Determine the number of points in \(S_{2017}\).

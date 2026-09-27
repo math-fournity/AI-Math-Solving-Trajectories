@@ -1,0 +1,1 @@
+Find all polynomials $P$ with integer coefficients such that  $$s(x)=s(y) \implies s(|P(x)|)=s(|P(y)|).$$

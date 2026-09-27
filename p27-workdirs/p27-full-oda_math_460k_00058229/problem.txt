@@ -1,0 +1,1 @@
+Let \( n \) be a positive integer. A northern square is an \( n \times n \) board that contains all the numbers from 1 to \( n^2 \), such that each cell contains exactly one number. Two cells are adjacent if they share an edge. Every cell that is smaller than all its adjacent cells is called a valley. An ascending path is a sequence of one or more cells such that:

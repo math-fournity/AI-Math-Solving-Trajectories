@@ -1,0 +1,1 @@
+Using the method of images, solve ∇²G = δ(x - x₀) in the first quadrant (x ≥ 0 and y ≥ 0) with G = 0 on the boundaries.

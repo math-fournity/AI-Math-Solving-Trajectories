@@ -1,0 +1,1 @@
+The set  $ \{a_0, a_1, \ldots, a_n\}$  of real numbers satisfies the following conditions:

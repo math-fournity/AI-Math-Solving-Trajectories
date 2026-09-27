@@ -1,0 +1,1 @@
+Evaluate the contour integral \( \frac{1}{2\pi i}\oint_{|z|=1}\frac{e^{\frac{c(z-z^{-1})}{2}}}{z^{n+1}}\,dz \) using the unit circle \( z=e^{i\theta} \), and simplify the expression by exploiting the \( 2\pi \)-periodicity and even-odd symmetries of the integrand.

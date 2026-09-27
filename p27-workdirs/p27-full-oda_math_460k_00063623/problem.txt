@@ -1,0 +1,1 @@
+Let $p > 2$ be a prime number. For a given prime $p$, partition $\mathbb{Z}_{p}\setminus \{0\}$ into two sets $A$ and $B$ of equal size such that the number of solutions $(a, b) \in A \times B$ of the equation $x = a + b$ is independent of $x \in \mathbb{Z}_{p} \setminus \{0\}$. Calculate the number of such partitions for $p = 11$.

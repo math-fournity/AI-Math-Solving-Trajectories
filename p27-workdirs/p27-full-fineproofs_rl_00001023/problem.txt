@@ -1,0 +1,1 @@
+Decide whether it possible to cover all lattice points in $\mathbb{R}^{2}$ by an (infinite) family of disks whose interiors are disjoint such that the radius of each disk is at least 5 .

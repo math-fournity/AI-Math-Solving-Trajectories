@@ -1,0 +1,1 @@
+$AB$ is a chord of length $6$ of a circle centred at $O$ and of radius $5$. Let $PQRS$ denote the square inscribed in the sector $OAB$ such that $P$ is on the radius $OA$, $S$ is on the radius $OB$ and $Q$ and $R$ are points on the arc of the circle between $A$ and $B$. Find the area of $PQRS$.

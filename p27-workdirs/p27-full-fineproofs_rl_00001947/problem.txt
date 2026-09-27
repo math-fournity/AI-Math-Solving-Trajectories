@@ -1,0 +1,1 @@
+Given natural numbers  $a$  and  $b$ , such that  $a<b<2a$ . Some cells on a graph are colored such that in every rectangle with dimensions  $A \times B$  or  $B \times A$ , at least one cell is colored. For which greatest  $\alpha$  can you say that for every natural number  $N$  you can find a square  $N \times N$  in which at least  $\alpha \cdot N^2$  cells are colored?

@@ -1,0 +1,1 @@
+In the city of Metros, two competing urban planners, Architect G and Developer W, are tasked with distributing 50 specific zoning permits among two new construction districts, District Alpha and District Beta. The permits are uniquely valued with integer "density scores" ranging from 1 to 50.

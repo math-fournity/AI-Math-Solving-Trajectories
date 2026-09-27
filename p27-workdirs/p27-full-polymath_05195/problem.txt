@@ -1,0 +1,1 @@
+A positive integer $n$ is called good if for all positive integers $a$ which can be written as $a=n^2 \sum_{i=1}^n x_i^2$ where $x_1, x_2, \ldots, x_n$ are integers, it is possible to express $a$ as $a=\sum_{i=1}^n y_i^2$ where $y_1, y_2, \ldots, y_n$ are integers with none of them divisible by $n$.

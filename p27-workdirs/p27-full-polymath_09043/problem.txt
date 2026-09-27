@@ -1,0 +1,1 @@
+A specialized deep-sea research station is shaped like a perfect sphere with a radius of exactly 1 kilometer. To monitor seismic activity, a team of engineers needs to install $n=10$ fiber-optic communication cables along the surface of the station.

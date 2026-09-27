@@ -1,0 +1,1 @@
+What is the smallest number of elements in a non-planar poset or lattice, where a non-planar poset is defined as one that admits no Hasse diagram in which no two edges intersect?

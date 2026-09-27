@@ -1,0 +1,1 @@
+In a remote high-security server farm, a $4 \times 4$ array of 16 processing cores is arranged in a square grid. Each core is assigned a specific security clearance level ranging from 1 to 4. The distribution of these clearance levels across the grid is as follows:

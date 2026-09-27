@@ -1,0 +1,1 @@
+Find a natural number $m$ such that for any triangle that can be embedded in $\mathbb{Q}^{n}$, it can also be embedded in $\mathbb{Q}^{m}$.

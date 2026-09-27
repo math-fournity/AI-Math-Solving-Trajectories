@@ -1,0 +1,1 @@
+In a regular pyramid \(ABCDS\) (\(S\) is the vertex), the length \(AS\) is equal to \(1\), and the angle \(ASB\) is equal to \(30^\circ\). Find the length of the shortest path from \(A\) to \(A\), crossing all lateral edges except \(AS\). If the answer is of the form of an irreducible fraction $\frac{a}{b}$, compute the value of $a + b$.

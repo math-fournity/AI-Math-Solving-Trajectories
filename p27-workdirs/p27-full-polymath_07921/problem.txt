@@ -1,0 +1,1 @@
+In the competitive world of custom jewelry design, two distinct guilds follow strict traditional formulas to determine the "Purity Rating" ($n$) of their creations. Every rating must be a positive integer.

@@ -1,0 +1,1 @@
+In a $10 \times 10$ lottery grid, a player marks 10 cells on a card. Later, 10 cells are chosen as "losing cells". A card wins if none of its 10 marked cells are among the 10 losing cells. Let $N$ be the minimum number of cards the player must fill out to guarantee that at least one card wins, regardless of which 10 cells are chosen as losing cells. Find $N$.

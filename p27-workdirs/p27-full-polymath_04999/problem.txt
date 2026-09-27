@@ -1,0 +1,1 @@
+Let \( p, q, r \) be distinct odd primes. For a natural number \( n \), let \( f(n) \) denote the greatest common divisor of \( n \) and \( pqr \), i.e., \( f(n) = \gcd(n, pqr) \). For \( 1 \leq a, b, c \leq pqr \), find the number of triples \( (a, b, c) \) such that the values

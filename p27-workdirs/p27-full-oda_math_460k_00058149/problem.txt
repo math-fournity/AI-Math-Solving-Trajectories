@@ -1,0 +1,1 @@
+Let \( A \) be an invertible \( 2 \times 2 \) matrix over a field \( F \). Define the function \( \varphi: GL_2(F) \to S_4 \) by the action of left multiplication by \( A \) on the one-dimensional subspaces of \( F^2 \). Calculate the number of distinct homomorphisms \( \varphi \) that can be defined in this manner when \( F = \mathbb{Z}/5\mathbb{Z} \).

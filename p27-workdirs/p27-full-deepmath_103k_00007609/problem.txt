@@ -1,0 +1,1 @@
+In a category with zero morphisms, kernels, and cokernels, consider a kernel morphism $m$ and a cokernel morphism $e$ such that the composition $e \circ m$ is defined. If $e \circ m$ has an image, is this image always a normal monomorphism in the category?

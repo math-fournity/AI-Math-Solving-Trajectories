@@ -1,0 +1,1 @@
+What is the least value of $N$ such that in a $3 \times 7 \times N$ set of lattice points, where each lattice point is colored either black or white, there exists a rectangular prism with all vertices colored the same color?

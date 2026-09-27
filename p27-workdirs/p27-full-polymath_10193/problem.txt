@@ -1,0 +1,1 @@
+A cyber-security firm uses a three-step encryption protocol to transform a security key, represented by a positive integer $a$, into a digital signature $d(a)$:

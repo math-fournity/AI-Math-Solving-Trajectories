@@ -1,0 +1,1 @@
+Given the factorial $100!$ expressed as:

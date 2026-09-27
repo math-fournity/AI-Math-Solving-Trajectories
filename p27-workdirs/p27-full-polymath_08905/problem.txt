@@ -1,0 +1,1 @@
+In a futuristic data-processing facility, an engineer is designing a signal filter represented by a monic polynomial $P(x)$ of degree $n$ with real coefficients. To evaluate the efficiency of this filter, the engineer uses a weighting function $Q(x)$, which is defined as the product of squared factors $(x+1)^2(x+2)^2\dots (x+n+1)^2$.

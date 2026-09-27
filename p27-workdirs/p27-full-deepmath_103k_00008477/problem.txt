@@ -1,0 +1,1 @@
+Let \( \mu \) be a continuous measure on \([0,1]\). Denote by \( \hat\mu(n) = \int_0^1 e^{2\pi inx} d\mu(x) \) the Fourier transform of \( \mu \), and let \( \lfloor x \rfloor \) denote the floor of \( x \in \mathbb{R} \). Determine whether the following statement is true:

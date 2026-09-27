@@ -1,0 +1,1 @@
+Let $x_1<x_2< \ldots <x_{2024}$ be positive integers and let $p_i=\prod_{k=1}^{i}(x_k-\frac{1}{x_k})$ for $i=1,2, \ldots, 2024$. What is the maximal number of positive integers among the $p_i$?

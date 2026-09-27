@@ -1,0 +1,1 @@
+Determine whether the identity \( \ln(AB) = \ln(A) + \ln(B) \) holds only if \( AB = BA \) for square matrices \( A \) and \( B \) where \( \ln(A) \), \( \ln(B) \), and \( \ln(AB) \) are all defined.

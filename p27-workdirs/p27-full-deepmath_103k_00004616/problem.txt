@@ -1,0 +1,1 @@
+Let $G$ be a finite group, and let $P$ be a Sylow $p$-subgroup of $G$ such that $P = HK$, where $H$ and $K$ are subgroups of $P$. Suppose $Q$ is a Sylow $q$-subgroup of $G$ and that $H^a Q = Q H^a$ and $K^b Q = Q K^b$ for some $a, b \in G$. Determine if there exists an element $t \in G$ such that $P Q^t = Q^t P$. Provide a justification for your answer.

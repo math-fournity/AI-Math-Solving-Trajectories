@@ -1,0 +1,1 @@
+The permutation $\sigma$ consisting of four words $A,B,C,D$ has $f_{AB}(\sigma)$, the sum of the number of $B$ placed rightside of every $A$. We can define $f_{BC}(\sigma)$,$f_{CD}(\sigma)$,$f_{DA}(\sigma)$ as the same way too.

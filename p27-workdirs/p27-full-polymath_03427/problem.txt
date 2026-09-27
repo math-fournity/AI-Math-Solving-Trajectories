@@ -1,0 +1,1 @@
+Let $k \geqslant 2$ be an integer. Let $n(k)$ be the smallest integer $n \geqslant k+1$ for which there exists a set $E$ of $n$ distinct real numbers, each of which can be written as the sum of $k$ other distinct elements of $E$. Calculate the value of $\sum_{k=2}^{10} n(k)$.

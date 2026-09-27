@@ -1,0 +1,1 @@
+Let \( M \) be a manifold of dimension \( n \) and let \( A \subset M \) be a compact subset. Then:

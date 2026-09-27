@@ -1,0 +1,1 @@
+Let \( A \in \mathrm{GL}_d(\mathbb{Z}) \) be a matrix of finite order \( n \). Suppose \( k \in \mathbb{Z} \) is relatively prime to \( n \). Is \( A^k \) conjugate to \( A \) in \( \mathrm{GL}_d(\mathbb{Z}) \) for \( d \leq 4 \)?

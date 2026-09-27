@@ -1,0 +1,1 @@
+In a remote digital archipelago, there is an $m \times n$ grid of server nodes. Each node can be in one of three states: "Active" (represented by the value $+1$), "Corrupted" (represented by the value $-1$), or "Deactivated" (represented by the value $0$).

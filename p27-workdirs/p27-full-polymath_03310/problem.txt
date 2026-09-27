@@ -1,0 +1,1 @@
+Find the smallest positive integer $N$ such that there are no different sets $A, B$ that satisfy the following conditions. (Here, $N$ is not a power of $2$. That is, $N \neq 1, 2^1, 2^2, \dots$.)

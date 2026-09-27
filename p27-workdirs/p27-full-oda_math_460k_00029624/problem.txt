@@ -1,0 +1,1 @@
+Find all strictly increasing sequences of positive integers \(a_1, a_2, \dots\) such that for any two positive integers \(i\) and \(j\), the number \(i + j\) has the same number of divisors as \(a_i + a_j\). Additionally, deduce that if \(i = j\), then \(a_i\) and \(i\) have the same number of divisors.

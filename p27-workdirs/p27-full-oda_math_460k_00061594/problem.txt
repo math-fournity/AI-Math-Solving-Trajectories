@@ -1,0 +1,1 @@
+Let \(ABC\) be a triangle with mixtilinear incircles \(\omega_A\), \(\omega_B\), and \(\omega_C\). Let \(\omega\) be the circle that is internally tangent to \(\omega_A\), \(\omega_B\), and \(\omega_C\) at points \(X\), \(Y\), and \(Z\). If \(AX\), \(BY\), and \(CZ\) concur at a point \(P\), find the ratio of the area of triangle \(XYZ\) to the area of triangle \(ABC\).

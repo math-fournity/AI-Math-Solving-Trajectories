@@ -1,0 +1,1 @@
+Let \(\alpha \neq 0\) be such that for every \(\beta < \alpha\), there exists \(\beta < \gamma < \alpha\) and an elementary embedding from \(V_\gamma\) to \(V_\alpha\). Does it follow that \(V_\alpha\) models the replacement axiom?

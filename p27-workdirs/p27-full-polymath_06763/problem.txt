@@ -1,0 +1,1 @@
+In the city of Tesselara, urban planners use a specific type of paving stone called a "Zenith Tile." A Zenith Tile is composed of six identical unit squares: a central $2 \times 2$ square block with two single $1 \times 1$ squares attached to diagonally opposite corners, forming a centro-symmetric shape that fits perfectly inside a $3 \times 3$ square boundary.

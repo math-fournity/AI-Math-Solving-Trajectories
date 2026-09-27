@@ -1,0 +1,1 @@
+Given \( b_{1}, \hdots, b_{n+1} \in \mathbb{R}^n \) are \(\mathbb{Q}\)-linearly independent, find the smallest positive integer \( k \) such that for every \(\epsilon > 0\), there exist \( z_1, \hdots, z_{n+1} \in \mathbb{Z} \) with \( |z_i| \leq k \) for all \( i \), such that \( 0 < \|z_1 b_1 + \hdots + z_{n+1} b_{n+1}\| < \epsilon \).

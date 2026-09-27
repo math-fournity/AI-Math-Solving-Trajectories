@@ -1,0 +1,1 @@
+A party has $2 n$ people attending. If any two people at the party have the same number of friends, then these two people do not have any common friends (friendship is mutual). How many pairs of friends can there be at most in this party?

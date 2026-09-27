@@ -1,0 +1,1 @@
+Find a closed form expression for \( f(\sigma) \) for \( \sigma > 0 \) where \( f(\sigma) = \int_0^1 x^\sigma \left( \frac{1}{\log x} + \frac{1}{1-x} \right)^2 \, dx \).

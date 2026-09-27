@@ -1,0 +1,1 @@
+In a specialized laboratory, three experimental power cells—Alpha, Beta, and Gamma—are being tested for their energy efficiency. Each cell operates based on an internal intensity level, represented by positive integers $a$, $b$, and $c$ respectively.

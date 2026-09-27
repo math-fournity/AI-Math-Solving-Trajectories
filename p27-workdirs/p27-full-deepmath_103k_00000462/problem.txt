@@ -1,0 +1,1 @@
+Given the polynomial sequence defined by \( p_0(x) = a_mx^m + a_{m-1}x^{m-1} + \dotsb + a_1x + a_0 \) where \( a_m, \dotsc, a_1, a_0 \in \mathbb{R} \), and the recurrence relation \( p_n(x) = p_{n-1}(x) + p_{n-1}^{\prime}(x) \) for \( n = 1, 2, \dotsc \), prove that there exists a natural number \( N \) such that for all \( n \geq N \), all the roots of \( p_n(x) \) are real.

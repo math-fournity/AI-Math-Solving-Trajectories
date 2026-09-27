@@ -1,0 +1,1 @@
+Determine the number of distinct ways to tile a $12 \times 12$ rectangle using T-tetrominoes. (Two tilings are considered distinct if one cannot be obtained from the other by rotation or reflection.)

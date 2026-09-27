@@ -1,0 +1,1 @@
+Consider an infinite array of integers $A(i, j)$ for $i \geq 0$ and $j \in \mathbb{Z}$. Each integer is equal to the sum of the integers immediately above it and immediately to the left: $A(i, j) = A(i-1, j) + A(i, j-1)$.

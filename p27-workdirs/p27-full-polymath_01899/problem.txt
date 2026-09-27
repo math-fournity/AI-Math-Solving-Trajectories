@@ -1,0 +1,1 @@
+Joao made a necklace with 20 pearls consisting of blue, white, and red pearls. The necklace has an equal number of blue and white pearls. Regardless of how the necklace is cut into two parts with an even number of pearls, one part will always have more blue pearls than white ones. How many red pearls are in Joao's necklace?

@@ -1,0 +1,1 @@
+Determine an upper bound for the smallest Lipschitz constant $L$ of a retraction $r: \ell_\infty[0,1] \to C[0,1]$. Is it possible that $L \le 20$?

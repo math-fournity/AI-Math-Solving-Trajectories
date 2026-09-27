@@ -1,0 +1,1 @@
+We distribute weights of $1 \mathrm{~g}, 2 \mathrm{~g}, \ldots, 200 \mathrm{~g}$ on the two pans of a balance so that each pan contains 100 weights.

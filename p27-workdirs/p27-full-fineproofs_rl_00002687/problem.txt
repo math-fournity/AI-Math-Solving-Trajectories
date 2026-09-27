@@ -1,0 +1,1 @@
+Let  $ABC$  be an acute-angled triangle,  $O$  be its circumcenter,  $BM$  be a median, and  $BH$  be an altitude. Circles  $AOB$  and  $BHC$  meet for the second time at point  $E$ , and circles  $AHB$  and  $BOC$  meet at point  $F$ . Prove that  $ME = MF$ .

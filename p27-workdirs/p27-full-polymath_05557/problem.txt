@@ -1,0 +1,1 @@
+Let $a_{1}, a_{2}, \cdots, a_{20}$ be 20 distinct positive integers, and the set $\left\{a_{i}+a_{j} \mid 1 \leqslant\right.$ $i \leqslant j \leqslant 20\}$ contains 201 distinct elements. Find the minimum possible number of distinct elements in the set $\left\{\left|a_{i}-a_{j}\right| \mid 1 \leqslant i<j \leqslant 20\right\}$.

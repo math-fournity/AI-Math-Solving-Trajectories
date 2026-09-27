@@ -1,0 +1,1 @@
+Find all pairs of positive integers $(n,k)$ with $k \leq n$ for which it is possible to fill an $n \times n$ board with real numbers such that the sum of all numbers on the board is positive, but the sum of all numbers in any $k \times k$ (connected) square on the board is negative.

@@ -1,0 +1,1 @@
+Determine all polygons with at least four sides such that the reflection of each vertex in each diagonal line lies inside or on the boundary of the polygon.

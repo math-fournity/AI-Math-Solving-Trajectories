@@ -1,0 +1,1 @@
+In a remote desert, two specialized irrigation zones are defined by the layout of four straight boundary fences, $AB$, $BC$, $CD$, and $DA$, forming a convex quadrilateral region $ABCD$. The lengths of these fence segments are measured as $a$, $b$, $c$, and $d$ respectively.

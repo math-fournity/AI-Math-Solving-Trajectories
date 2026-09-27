@@ -1,0 +1,1 @@
+Find the sum of all four-digit natural numbers $\overline{abcd}$ ($a \neq 0$) such that

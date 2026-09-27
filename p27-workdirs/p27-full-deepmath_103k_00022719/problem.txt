@@ -1,0 +1,1 @@
+Find all non-decreasing functions $f: \mathbb{Z}^+ \to \mathbb{Z}^+$ satisfying the equation:

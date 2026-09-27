@@ -1,0 +1,1 @@
+Determine whether any two distinct domino tilings of a rectangle can be transformed into each other by repeatedly performing the move where two adjacent dominos sharing a long edge are rotated 90 degrees.

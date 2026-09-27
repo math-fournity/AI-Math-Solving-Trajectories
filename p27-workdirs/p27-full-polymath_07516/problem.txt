@@ -1,0 +1,1 @@
+In the city of Centuria, there are 100 distinct secure vaults, numbered 1 through 100. A master thief is planning to assemble a collection of keys, denoted as the set $S$, where each key corresponds to the ID number of one of these vaults.

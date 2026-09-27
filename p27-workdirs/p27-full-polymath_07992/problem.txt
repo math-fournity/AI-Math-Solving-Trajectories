@@ -1,0 +1,1 @@
+In a digital architecture, a data packet is classified as "Binary-Pure" if its decimal ID contains only the digits 0 or 1. A network engineer is designing a protocol where any positive integer target ID, denoted as $n$, must be reachable through a sequence of specific offsets.

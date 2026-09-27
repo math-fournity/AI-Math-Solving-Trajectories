@@ -1,0 +1,1 @@
+In a specialized logistics network, a central server assigns a "Priority Level" $f(n)$ to every incoming shipment indexed by a positive integer $n$. The assignment system is governed by three strict protocol rules:

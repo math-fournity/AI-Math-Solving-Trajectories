@@ -1,0 +1,1 @@
+A high-security circular data hub contains $40$ connection ports, indexed with the unique identification codes $\{1, 2, 3, \dots, 40\}$. These codes are assigned to the physical ports around the circle in an arbitrary, randomized order.

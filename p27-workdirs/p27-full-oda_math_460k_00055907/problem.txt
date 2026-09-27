@@ -1,0 +1,1 @@
+What is the shortest curve on the unit sphere whose tangent indicatrix is "balanced" with respect to every direction \(\mathbf{A}\), meaning it must cross every great circle?

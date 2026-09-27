@@ -1,0 +1,1 @@
+Let $G$ be the centroid of a right-angled triangle $A B C$ with $\angle B C A=90^{\circ}$. Let $P$ be the point on ray $A G$ such that $\angle C P A=\angle C A B$, and let $Q$ be the point on ray $B G$ such that $\angle C Q B=\angle A B C$. Prove that the circumcircles of triangles $A Q G$ and $B P G$ meet at a point on side $A B$.

@@ -1,0 +1,1 @@
+A specialized digital server farm is organized as an infinite grid of processing nodes, corresponding to every lattice point with non-negative coordinates $(x, y)$ in the Cartesian plane. At the start of an experiment, every single node contains exactly one active data packet.

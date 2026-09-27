@@ -1,0 +1,1 @@
+Determine the complexity of an algorithm that tests whether a given polynomial is a square in a finite field with small characteristic.

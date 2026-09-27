@@ -1,0 +1,1 @@
+An architect is designing a high-tech server farm consisting of a square $10 \times 10$ grid of server racks. Each of the $100$ racks is assigned a unique security clearance level, represented by an integer from $1$ to $100$. The placement of these levels must adhere to two strict physical and logical constraints:

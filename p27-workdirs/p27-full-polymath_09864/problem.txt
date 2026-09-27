@@ -1,0 +1,1 @@
+A digital artist is designing a 4x4 grid of light sensors, where each coordinate $(i, j)$ for $0 \leq i, j \leq 3$ corresponds to a specific cell. For each cell, the artist must decide whether to install a sensor (setting a binary variable $a_{i,j} = 1$) or leave it empty ($a_{i,j} = 0$).

@@ -1,0 +1,1 @@
+The square $ABCD$ is divided into 8 equal right triangles and a smaller square $KLMN$. If $KL = 5$ and $PS = 8$, find the area of the square $ABCD$.

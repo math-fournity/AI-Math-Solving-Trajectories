@@ -1,0 +1,1 @@
+Is it possible to cover the entire plane with circles such that exactly 1988 circles pass through every point?

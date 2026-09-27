@@ -1,0 +1,1 @@
+A specialized digital archive contains nine unique encryption keys, represented by the distinct identification chips labeled 1, 2, 3, 4, 5, 6, 7, 8, and 9. To authorize a security override, a technician must arrange all nine of these chips exactly once to form two separate serial numbers: a primary code $N$ and a secondary code $M$.

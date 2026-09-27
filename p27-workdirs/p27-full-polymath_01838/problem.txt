@@ -1,0 +1,1 @@
+Let $n \geq 3$ be an integer. Consider an edge-coloring of the complete graph $K_n$ with $c$ colors such that each color forms a connected spanning subgraph of $K_n$. Let $M$ be the maximum value of $c$ such that there exists such a coloring where no triangle in $K_n$ has three edges of three distinct colors. Find $M$.

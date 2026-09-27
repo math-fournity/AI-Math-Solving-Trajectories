@@ -1,0 +1,1 @@
+Consider the set $\mathcal M$ of $6 \times 6$ special orthogonal matrices with entries in $\mathbb Z[\frac{1}{\sqrt 2}]$. Let $S$ be a set of generators for $\mathcal M$ of minimum size. Calculate the product of all possible sizes of $S$.

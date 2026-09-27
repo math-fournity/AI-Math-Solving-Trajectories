@@ -1,0 +1,1 @@
+Let \( L \) be a field, and let \( \widetilde{L} \) be the splitting field of all irreducible polynomials over \( L \) having prime-power degree. Determine whether \( \widetilde{\mathbf{Q}} = \overline{\mathbf{Q}} \). If not, find the smallest degree of a polynomial \( f \in \mathbf{Q}[X] \) that does not split in \( \widetilde{\mathbf{Q}} \).

@@ -1,0 +1,1 @@
+Let \( K_n(\theta) = \sum_{k = -n}^n \frac{\sin((n + 1/2)\theta)}{\sin (\theta /2)} \) and let \( I_n = \frac{1}{2\pi} \int_{-\pi}^{\pi} |K_n(\theta)| \, d\theta \). Calculate the smallest value of \( C \) such that \( I_n \geq C \log n \) for all \( n \geq 2 \).

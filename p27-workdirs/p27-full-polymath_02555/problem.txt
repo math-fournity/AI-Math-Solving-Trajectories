@@ -1,0 +1,1 @@
+Given a graph $G$ with $N$ vertices and $N-1$ edges numbered $1, 2, \ldots, N-1$, let $S(A)$ be the number of vertices $B$ such that there exists a path from $A$ to $B$ with increasing edge labels. Find the smallest $N$ such that $S(A) \geq 2023$ for all vertices $A$.

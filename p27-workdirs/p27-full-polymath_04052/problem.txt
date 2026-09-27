@@ -1,0 +1,1 @@
+Problem 5. (7 points) Find the largest natural number $N$ for which the equation $99 x+100 y+101 z=N$ has a unique solution $(x, y, z)$ in natural numbers.

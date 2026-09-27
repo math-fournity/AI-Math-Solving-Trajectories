@@ -1,0 +1,1 @@
+In a specialized logistics warehouse, a storage floor is organized into an $8 \times 8$ grid of square zones, each measuring $1 \text{ cm} \times 1 \text{ cm}$. A automated safety system requires the placement of exactly seven hazard sensors, each occupying one full square zone (effectively "coloring" that zone red).

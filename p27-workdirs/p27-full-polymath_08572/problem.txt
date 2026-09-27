@@ -1,0 +1,1 @@
+A high-tech manufacturing plant operates three independent production lines: Line A, Line B, and Line C. Each line can produce $n$ different types of specialized components, indexed from $1$ to $n$.

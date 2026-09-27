@@ -1,0 +1,1 @@
+In the city of Aetheria, a massive rectangular solar farm $ABCD$ is laid out such that its length $AD$ is exactly twice its width $AB$. A central maintenance hub $M$ is located at the precise midpoint of the long northern boundary $AD$.

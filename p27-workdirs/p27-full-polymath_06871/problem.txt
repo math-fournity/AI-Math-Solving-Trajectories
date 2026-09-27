@@ -1,0 +1,1 @@
+In a remote industrial complex, three power generators—**A**, **B**, and **C**—operate at positive efficiency levels represented by $a$, $b$, and $c$. The interaction between these generators determines the system's total stability index.

@@ -1,0 +1,1 @@
+In a bustling logistical hub, two operations managers, Alice and Bob, are competing to oversee the decommissioning of a large square warehouse district. The district is represented by an $n \times n$ grid of pristine, empty storage zones.

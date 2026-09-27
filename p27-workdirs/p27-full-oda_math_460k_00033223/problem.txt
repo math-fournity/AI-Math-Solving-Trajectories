@@ -1,0 +1,1 @@
+Let \(ABC\) be a triangle and \(\mathcal{L}\) be a set of lines in the plane. For each line \(\ell \in \mathcal{L}\), define the locus \(L(\ell)\) as follows:

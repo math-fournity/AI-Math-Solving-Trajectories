@@ -1,0 +1,1 @@
+In a remote digital network, there are exactly 2016 secure servers. These servers are linked together by $k$ bidirectional data cables such that every server is reachable from every other server through some path of cables.

@@ -1,0 +1,1 @@
+The numbers $a_{1}, a_{2}, \ldots, a_{2 \text { 2016 }}$ are natural numbers such that for all $n, 1 \leqslant n \leqslant 2^{2016}$, the following holds:

@@ -1,0 +1,1 @@
+In a remote industrial park, three circular cooling ponds are being constructed. Two of the ponds are designed with a radius of 1 kilometer, while the third, larger pond has a radius of 2 kilometers. Due to spatial constraints, the three ponds are positioned such that each pond’s perimeter is externally tangent to the other two.

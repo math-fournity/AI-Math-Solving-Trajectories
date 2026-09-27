@@ -1,0 +1,1 @@
+Is the graph of the Conway base 13 function connected?

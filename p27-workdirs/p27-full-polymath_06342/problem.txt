@@ -1,0 +1,1 @@
+In a massive circular data center, 2012 server racks are arranged in a perfect circle, spaced at equal intervals. A network engineer must select a subset of $k$ racks to form a closed, convex polygon of fiber-optic connections, where each connection is a straight line between two of the selected racks.

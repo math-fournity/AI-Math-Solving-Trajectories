@@ -1,0 +1,1 @@
+Determine whether $ e^{e^q + q} $ is a transcendental number for every rational number $ q $. Provide a justification for your answer.

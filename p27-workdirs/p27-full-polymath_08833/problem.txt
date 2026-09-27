@@ -1,0 +1,1 @@
+In the coastal logistics hub of Veridia, a shipping manager handles daily consignments of cargo crates. Each individual crate has a weight that is a positive integer number of tons, with a strict safety regulation that no single crate can weigh more than 10 tons.

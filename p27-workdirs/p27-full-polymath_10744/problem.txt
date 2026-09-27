@@ -1,0 +1,1 @@
+A specialized architectural firm is designing a structural cable-stayed monument defined by three primary anchors: $A$, $B$, and $C$. The distance between anchor $A$ and $B$ is given by $6x^2 + 1$ meters, and the distance between $A$ and $C$ is $2x^2 + 2x$ meters, where $x$ is a positive design constant.

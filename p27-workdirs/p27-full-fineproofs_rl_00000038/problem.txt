@@ -1,0 +1,1 @@
+$2n-1$  distinct positive real numbers with sum  $S $  are given. Prove that there are at least  $\binom {2n-2}{n-1}$  different ways to choose  $n $  numbers among them such that their sum is at least  $\frac {S}{2}$ .

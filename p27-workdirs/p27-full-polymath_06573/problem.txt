@@ -1,0 +1,1 @@
+In a remote high-tech facility, an automated scanner must inspect a vertical array of solar sensors arranged in 7 rows and 2 columns. Each of the 14 sensors is independently programmed to emit either a Red or Blue light with equal probability (50/50).

@@ -1,0 +1,1 @@
+14. (IND 2) A bicentric quadrilateral is one that is both inscribable in and circumscribable about a circle. Show that for such a quadrilateral, the centers of the two associated circles are collinear with the point of intersection of the diagonals.

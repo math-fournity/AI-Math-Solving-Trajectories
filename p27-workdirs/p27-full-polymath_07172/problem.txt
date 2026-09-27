@@ -1,0 +1,1 @@
+In a specialized cyber-security lab, a group of engineers is testing the stability of "Modular Security Locks." Each lock is assigned an identification number $n$, where $n$ is an integer ranging from $2$ to $50$ inclusive.

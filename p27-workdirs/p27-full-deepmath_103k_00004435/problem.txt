@@ -1,0 +1,1 @@
+Suppose that $f$ and $g$ are everywhere continuous but nowhere differentiable functions. Can the composition $f \circ g$ be differentiable?

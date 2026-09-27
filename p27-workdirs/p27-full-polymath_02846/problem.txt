@@ -1,0 +1,1 @@
+Let $\triangle ABC$ be a triangle with $\angle BAC=60^\circ$. Let $M$ be a point in the interior of the triangle, and let $A', B', C'$ be the orthogonal projections of $M$ onto the sides $BC, CA$, and $AB$, respectively. Define $f(M) = A'B + B'C + C'A$.

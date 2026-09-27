@@ -1,0 +1,1 @@
+What is the best known upper bound on the index of an abelian subgroup in a discrete subgroup of the Euclidean group of isometries, \( \isom(\mathbb{R}^n) \)?

@@ -1,0 +1,1 @@
+May 11, 1947; Jan Mikusiński (in Polish)  The following theorem is true: If a function \( f \) satisfies the differential equation \( f^{(n)}(x) + f(x) = 0 \) on an interval \([a, b], f(a) = f(b) = 0\), then \( b-a \le N(n) \) for some quantity which depends on \( n \) only. Determine the least \( N(n) \). The solution is known for \( n = 2, \ldots, 6 \).

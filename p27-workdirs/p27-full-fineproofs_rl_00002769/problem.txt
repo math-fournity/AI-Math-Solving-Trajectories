@@ -1,0 +1,1 @@
+Let  $AD$  and  $BE$  be the altitudes of acute triangle  $ABC.$  The circles with diameters  $AD$  and  $BE$  intersect at points  $S$  and  $T$ . Prove that  $\angle ACS=\angle BCT.$

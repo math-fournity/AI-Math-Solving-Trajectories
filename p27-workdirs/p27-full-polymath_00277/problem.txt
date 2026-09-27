@@ -1,0 +1,1 @@
+1. Let positive integers $a_{1}, a_{2}, \cdots, a_{31}, b_{1}, b_{2}, \cdots, b_{31}$ satisfy

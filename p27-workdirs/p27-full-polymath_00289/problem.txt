@@ -1,0 +1,1 @@
+In a game with $n$ girls, each initially holding her own unique ball, every pair of girls exchanges their balls exactly once in some chosen order.

@@ -1,0 +1,1 @@
+In a remote digital network, a central server system is composed of several active nodes and data cables. Each cable serves as a direct point-to-point link connecting exactly two nodes. Currently, the network contains exactly 100 data cables.

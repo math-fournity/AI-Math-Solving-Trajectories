@@ -1,0 +1,1 @@
+In a massive server farm, there are 100 distinct data storage units, indexed by their maximum capacity. The units have capacities of 101, 102, 103, ..., and 200 terabytes (TB), respectively.

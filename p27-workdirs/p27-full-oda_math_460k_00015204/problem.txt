@@ -1,0 +1,1 @@
+Consider a nontrivial finite ring $R$. Let $N(n)$ be the number of nontrivial solutions $(x, y, z) \in R^3$ to the equation $x^n + y^n = z^n$ for a given natural number $n$. If $R$ is not a skew field, find the minimum value of $N(n)$ for $n = 5$.

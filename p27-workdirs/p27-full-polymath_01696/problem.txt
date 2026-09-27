@@ -1,0 +1,1 @@
+There are $2n-1$ light bulbs in a row. Initially, the middle ($n$-th) bulb is on, and all others are off. In one step, you can choose two non-adjacent bulbs that are currently off, such that all bulbs between them are currently on, and change the state of those two bulbs as well as all bulbs between them. For $n = 10$, find the maximum number of steps that can be performed.

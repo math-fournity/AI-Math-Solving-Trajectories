@@ -1,0 +1,1 @@
+A specialized climate research agency is designing a grid of sensors to measure thermal deviations across various rectangular regions of a polar ice shelf. Each region is defined as an $n \times m$ grid of measurement points, where $n$ and $m$ are integers representing the number of rows and columns, respectively. The dimensions must satisfy the constraint $m \geq n \geq 3$.

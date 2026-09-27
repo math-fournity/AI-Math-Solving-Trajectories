@@ -1,0 +1,1 @@
+If \( a \) is an odd perfect number, calculate the maximum possible value of \( \prod_{i=1}^n \frac{p_i}{p_i - 1} \) given that \( a \) has \( n \) distinct prime factors \( p_1, p_2, \ldots, p_n \). Express your answer as a simplified expression involving radicals.

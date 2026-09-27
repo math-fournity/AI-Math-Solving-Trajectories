@@ -1,0 +1,1 @@
+Consider a system of $p$ linear equations in $q$ variables $x_1, \ldots, x_q$:

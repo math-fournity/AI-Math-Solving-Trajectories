@@ -1,0 +1,7 @@
+Problem:
+Let $C$ be the infinite series of the reciprocals of the squares of the numbers that can be written as the sum of two perfect squares, and let $D$ be the infinite series of the reciprocals of the squares of the numbers that can be written as the sum of three perfect squares.
+Determine $\frac{C}{D}$.
+
+This problem requires a different approach from the original problem, as it involves the sums of perfect squares and requires a deeper understanding of number theory and the properties of infinite series.
+
+##

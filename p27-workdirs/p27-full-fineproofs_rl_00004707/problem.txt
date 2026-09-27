@@ -1,0 +1,1 @@
+The angle bisectors at  $A$  and  $C$  in a non-isosceles triangle  $ABC$  with incenter  $I$  intersect its circumcircle  $k$  at  $A_0$  and  $C_0$ , respectively. The line through  $I$ , parallel to  $AC$ , intersects  $A_0C_0$  at  $P$ . Prove that  $PB$  is tangent to  $k$ .

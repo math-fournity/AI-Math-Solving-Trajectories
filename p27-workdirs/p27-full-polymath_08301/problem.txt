@@ -1,0 +1,1 @@
+A logistics architect is designing a distribution strategy for exactly 2020 identical crates of medical supplies, which must be split into three distinct shipping containers labeled Alpha, Beta, and Gamma. Each container must receive at least one crate.

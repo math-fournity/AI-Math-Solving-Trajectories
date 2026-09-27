@@ -1,0 +1,1 @@
+Let $n$ be a positive integer and $\mathcal{P}_n$ be the set of integer polynomials of the form $a_0+a_1x+\ldots +a_nx^n$ where $|a_i|\le 2$ for $i=0,1,\ldots ,n$. Find, for each positive integer $k$, the number of elements of the set $A_n(k)=\{f(k)|f\in \mathcal{P}_n \}$.

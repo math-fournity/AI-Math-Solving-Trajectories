@@ -1,0 +1,1 @@
+Let  $O$  be the circumcenter of triangle  $ABC$ . A line through  $O$  intersects the sides  $CA$  and  $CB$  at points  $D$  and  $E$  respectively, and meets the circumcircle of  $ABO$  again at point  $P \neq O$  inside the triangle. A point  $Q$  on side  $AB$  is such that  $\frac{AQ}{QB}=\frac{DP}{PE}$ . Prove that  $\angle APQ = 2\angle CAP$ .

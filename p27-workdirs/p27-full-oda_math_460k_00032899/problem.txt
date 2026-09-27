@@ -1,0 +1,1 @@
+Classify and enumerate the different permutations that can be obtained by folding a catalog with \( n > 1 \) pages, where each page has a front side and a back side, but without distinguishing between the front and back sides of the pages, and folding is only allowed at the attachments between pages.

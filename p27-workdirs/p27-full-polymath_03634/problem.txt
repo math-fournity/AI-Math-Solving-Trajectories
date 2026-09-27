@@ -1,0 +1,1 @@
+Let $k$ and $n$ be positive integers and let $x_1, x_2, \cdots, x_k, y_1, y_2, \cdots, y_n$ be distinct integers. A polynomial $P$ with integer coefficients satisfies

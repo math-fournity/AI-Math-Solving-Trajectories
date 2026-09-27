@@ -1,0 +1,1 @@
+Is there a first-countable compact space $X$ with an uncountable Cantor-Bendixson index?

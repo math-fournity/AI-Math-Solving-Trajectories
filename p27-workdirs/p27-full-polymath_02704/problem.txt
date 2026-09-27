@@ -1,0 +1,1 @@
+The tile pattern in the illustration was made up of 14 white and 10 patterned triangular tiles. Within it, several squares and triangles can be found, each made up of more than one tile. How many such squares can be found in total?

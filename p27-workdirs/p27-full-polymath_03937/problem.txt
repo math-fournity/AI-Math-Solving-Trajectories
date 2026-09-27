@@ -1,0 +1,1 @@
+Let $A$ and $B$ be points with $AB=12$. A point $P$ in the plane of $A$ and $B$ is $\textit{special}$ if there exist points $X, Y$ such that

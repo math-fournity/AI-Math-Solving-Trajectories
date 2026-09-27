@@ -1,0 +1,1 @@
+Let $f$ be a real-valued continuous function on the interval $[0,1]$ satisfying the estimate \( \left|\int_0^1 f(t) e^{st}dt\right|\le Cs^{\frac{1}{2}},\quad s>1, \) where the constant $C$ is independent of $s$. Can we conclude that $f$ is identically zero on $[0,1]$?

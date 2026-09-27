@@ -1,0 +1,1 @@
+Consider infinite cardinals \(\kappa\) and \(\lambda\). A random function \(\phi: \kappa \times \lambda \rightarrow \{0,1\}\) is constructed by flipping a fair coin for each element of the domain. Determine the probability that the image of \(\phi\) includes a constant function.

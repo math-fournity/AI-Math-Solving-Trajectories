@@ -1,0 +1,1 @@
+Let $ A \equal{} \{(a_1,\dots,a_8)|a_i\in\mathbb{N}$ , $ 1\leq a_i\leq i \plus{} 1$ for each $ i \equal{} 1,2\dots,8\}$.A subset $ X\subset A$ is called sparse if for each two distinct elements $ (a_1,\dots,a_8)$,$ (b_1,\dots,b_8)\in X$,there exist at least three indices $ i$,such that $ a_i\neq b_i$.

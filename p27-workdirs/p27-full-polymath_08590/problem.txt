@@ -1,0 +1,1 @@
+A specialized urban planning zone is bounded by four straight roads, $AB, BC, CD,$ and $DA$, forming a quadrilateral $ABCD$ whose four intersections lie exactly on a circular outer-beltway. A second, smaller circular parkway passes perfectly through the midpoints of these four roads.

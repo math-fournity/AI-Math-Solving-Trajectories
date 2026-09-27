@@ -1,0 +1,1 @@
+Compute the integral \( \int_{|z|=1} \operatorname{Re}(z)e^{z^2} \, dz \). Hint: Find a holomorphic function \( f \) such that \( f(z) = \operatorname{Re}(z) \) when \( |z| = 1 \).

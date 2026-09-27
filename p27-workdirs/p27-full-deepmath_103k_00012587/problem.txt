@@ -1,0 +1,1 @@
+Let $X_{\bullet}$ be a simplicial set and let $\Sigma X_{\bullet}$ denote its simplicial suspension. If $X_{\bullet} \to Y_{\bullet}$ is a fibration, is $\Sigma X_{\bullet} \to \Sigma Y_{\bullet}$ also a fibration? Answer yes or no.

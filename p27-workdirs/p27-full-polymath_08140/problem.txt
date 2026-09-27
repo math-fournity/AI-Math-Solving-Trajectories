@@ -1,0 +1,1 @@
+In a futuristic data-archival facility, a mainframe computer processes security sequences represented by the expression $P(x) = x^{n+1} + kx^n - 870x^2 + 1945x + 1995$. In this sequence, $k$ is a fixed integer key, and $n$ represents the variable complexity level of the encryption.

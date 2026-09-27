@@ -1,0 +1,1 @@
+There is given a convex quadrilateral  $ ABCD$ . Prove that there exists a point  $ P$  inside the quadrilateral such that

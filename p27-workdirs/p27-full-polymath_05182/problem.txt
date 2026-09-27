@@ -1,0 +1,1 @@
+Let $n > 2$ be an integer. Consider $n$ points $A_1, A_2, \ldots, A_n$ in space such that no four points are coplanar. Every pair of points $(A_i, A_j)$ is connected by an edge. We color each edge either blue or red such that:

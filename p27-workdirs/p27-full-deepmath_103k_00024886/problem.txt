@@ -1,0 +1,1 @@
+Given the condition $(*)$, determine if the degree of the polynomial $Q(t)$ in terms of $t$ is at most $2k$. Provide a justification for your answer.

@@ -1,0 +1,1 @@
+Let $1 \leq n \leq 2021$ be a positive integer. Jack has $2021$ coins arranged in a line where each coin has an $H$ on one side and a $T$ on the other. At the beginning, all coins show $H$ except the $n$-th coin. Jack can repeatedly perform the following operation: he chooses a coin showing $T$, and turns over the coins next to it to the left and to the right (if any).

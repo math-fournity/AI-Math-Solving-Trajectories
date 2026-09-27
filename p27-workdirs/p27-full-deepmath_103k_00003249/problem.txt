@@ -1,0 +1,1 @@
+Consider a holomorphic function $W(t_1,\dotsc,t_n)$ defined on a connected open set $U$ of $\mathbb{C}^n$. Let $\mathbf{t}^{(0)}$ be a point in $U$. Suppose there exists a cycle $\gamma$ in $\mathbb{C}^m$ and a rational function $F(\mathbf{t}, x_1,\dotsc, x_m)$ such that for all $\mathbf{t}$ in a neighborhood of $\mathbf{t}^{(0)}$:

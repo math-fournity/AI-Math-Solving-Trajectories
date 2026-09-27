@@ -1,0 +1,1 @@
+Twelve power stations, designated $P_1, P_2, \dots, P_{12}$, are arranged in a perfect ring formation. A total of $n$ emergency battery packs are distributed among these stations.

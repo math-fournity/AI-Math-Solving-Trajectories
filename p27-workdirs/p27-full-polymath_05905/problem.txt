@@ -1,0 +1,1 @@
+A secret intelligence agency uses a security protocol to generate "Master Keys," which are specific positive integers $n$. For a number to qualify as a Master Key, it must possess three distinct positive divisors—let’s call their security clearances $a$, $b$, and $c$—that satisfy the following strict hierarchy and mathematical conditions:

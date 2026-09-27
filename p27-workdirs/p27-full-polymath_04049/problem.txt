@@ -1,0 +1,1 @@
+Matthew writes down a sequence $a_1, a_2, a_3, \dots$ of positive integers. Each $a_n$ is the smallest positive integer, different from all previous terms in the sequence, such that the mean of the terms $a_1, a_2, \dots, a_n$ is an integer. Let $b_n = a_n - n$. Find the value of $b_{2025}$.

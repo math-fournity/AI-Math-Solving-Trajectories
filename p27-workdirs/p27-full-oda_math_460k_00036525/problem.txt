@@ -1,0 +1,1 @@
+Show the following properties of $<_{\sigma}$ where $\sigma$ is a sign function on a commutative ring $R$ with unit 1. For all $a, b, c, d \in R$:

@@ -1,0 +1,1 @@
+Determine whether every compact submanifold with corners in a Riemannian manifold is locally star-shaped with respect to some point in its boundary.

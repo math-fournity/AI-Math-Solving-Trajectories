@@ -1,0 +1,1 @@
+Find the natural number \( n \) knowing that it has at least 4 divisors. Let \( a, b, c, d \) be the smallest divisors of \( n \), not necessarily in this order, and \( n = 5a^3 + 5b^3 + c^3 + d^3 \).

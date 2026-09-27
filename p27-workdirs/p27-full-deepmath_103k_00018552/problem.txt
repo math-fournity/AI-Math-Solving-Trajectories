@@ -1,0 +1,1 @@
+Determine the minimum value of \( c \) such that for any \( n \) points \( a_1, a_2, \ldots, a_n \) on the unit circle, the polynomial \( P(z) = (z - a_1)(z - a_2) \cdots (z - a_n) \) has at least one point \( b \) on the unit circle with \( |P(b)| \geq c \).

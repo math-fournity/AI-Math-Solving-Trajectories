@@ -1,0 +1,1 @@
+A specialized high-speed conveyor belt operates for exactly 1 minute, represented by the interval $[0, 1]$. A sensor tracks the displacement of a mechanical arm on this belt, modeled by a polynomial function $P(x)$ of degree 99. The arm is programmed such that its displacement is exactly zero at the start of the cycle ($x=0$) and exactly zero at the end of the cycle ($x=1$).

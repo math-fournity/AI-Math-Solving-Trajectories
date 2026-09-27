@@ -1,0 +1,1 @@
+A high-tech server farm contains 16 storage drives, uniquely labeled 1 through 16. Each drive contains a specific amount of data measured in terabytes, corresponding to the powers of 2 from $2^1, 2^2, 2^3, \dots, 2^{16}$. The distribution of these data capacities among the drives is completely random.

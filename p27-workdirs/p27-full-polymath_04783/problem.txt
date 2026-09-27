@@ -1,0 +1,1 @@
+An $m \times n$ table is given, in each cell of which a number $+1$ or $-1$ is written. Initially, exactly one cell contains a $-1$, and all other $mn-1$ cells contain $+1$. In one move, you may choose any cell containing $-1$, replace it with $0$, and simultaneously multiply the numbers in all adjacent cells (cells sharing a common side) by $-1$.

@@ -1,0 +1,1 @@
+Let $a, b, c$ be complex numbers such that $|az^2 + bz + c| \leq 1$ holds for all complex numbers $z$ with $|z| \leq 1$. Find the maximum possible value of $|bc|$.

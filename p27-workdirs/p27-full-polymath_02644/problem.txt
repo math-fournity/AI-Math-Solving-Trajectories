@@ -1,0 +1,1 @@
+On an $8 \times 8$ chessboard, a king makes 64 moves such that it visits every square exactly once and returns to its original position without crossing its own path. The king can move to any adjacent square, either diagonally or on a side. Let $M$ be the number of times the king moves diagonally. Find the maximum possible value of $M$.

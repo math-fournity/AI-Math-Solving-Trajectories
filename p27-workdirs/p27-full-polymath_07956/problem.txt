@@ -1,0 +1,1 @@
+In a specialized logistics hub, there are 44 cargo bays arranged in a straight line, numbered sequentially from 1 to 44. A fleet of autonomous delivery drones is tasked with testing every possible direct transport route between these bays.

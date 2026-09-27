@@ -1,0 +1,1 @@
+In a specialized digital archive, a "Valid Sequence" is defined as a 2006-digit identification code $a_{2006}a_{2005} \dots a_2 a_1$ where each digit $a_i$ must have the same parity as its position $i$ (meaning $a_i \equiv i \pmod{2}$ for all $i = 1, \dots, 2006$). Let $S$ represent the complete set of all such identification codes.

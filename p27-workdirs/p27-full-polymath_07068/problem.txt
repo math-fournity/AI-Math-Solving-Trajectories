@@ -1,0 +1,1 @@
+In a high-security data center, an engineer is designing an $8 \times 8$ array of servers. Each server location must be configured as either "Standard" (white) or "Encrypted" (black).

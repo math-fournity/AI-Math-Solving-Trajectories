@@ -1,0 +1,1 @@
+A massive digital transmission project, codenamed "Project 2025," requires the construction of a specific data packet called a "Base-Unit." The Base-Unit is represented as a sequence of exactly 2025 consecutive "1" bits (an integer $u_m$ consisting of $m=2025$ ones).

@@ -1,0 +1,1 @@
+Does there exist a natural number \( N \) which is a power of 2, such that one can permute its decimal digits to obtain a different power of 2?

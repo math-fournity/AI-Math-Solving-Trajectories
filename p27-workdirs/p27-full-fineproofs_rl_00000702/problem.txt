@@ -1,0 +1,1 @@
+A set  $C$  of positive integers is called good if for every integer  $k$  there exist distinct  $a, b \in C$  such that the numbers  $a+k$  and  $b+k$  are not relatively prime. Prove that if the sum of the elements of a good set  $C$  equals  $2003$ , then there exists  $c \in C$  such that the set  $C-\{c\}$  is good.

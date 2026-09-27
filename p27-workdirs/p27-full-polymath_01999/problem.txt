@@ -1,0 +1,1 @@
+Let us call a positive integer $k{}$ interesting if the product of the first $k{}$ primes is divisible by $k{}$. For example the product of the first two primes is $2\cdot3 = 6$, it is divisible by 2, hence 2 is an interesting integer. What is the maximal possible number of consecutive interesting integers?

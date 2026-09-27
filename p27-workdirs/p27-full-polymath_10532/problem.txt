@@ -1,0 +1,1 @@
+A specialized automated irrigation system is being programmed to manage a vertical farm with 59 distinct moisture levels, indexed 1 through 59. The system must identify a specific target moisture setting, $N$, which is a positive integer within this range.

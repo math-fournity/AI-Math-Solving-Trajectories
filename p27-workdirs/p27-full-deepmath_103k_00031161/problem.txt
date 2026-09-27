@@ -1,0 +1,1 @@
+Consider an infinite sequence \(a_1, a_2, \ldots\) of positive integers satisfying \(a_1 = 1\) and \(a_n \mid a_k + a_{k+1} + \cdots + a_{k+n-1}\) for all positive integers \(k\) and \(n\). For a given positive integer \(m\), determine the maximum possible value of \(a_{2m}\).

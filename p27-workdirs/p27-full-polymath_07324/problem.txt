@@ -1,0 +1,1 @@
+A high-security data center consists of an $8 \times 8$ grid of server racks. To monitor the facility, the security firm must deploy exactly 13 specialized laser sensors. These sensors project beams along all possible diagonal paths (sloping both 45 degrees upward and downward) that pass through their rack’s position.

@@ -1,0 +1,1 @@
+Evaluate the limit: $$\lim_{x \to \infty} \left( \sum_{n = 1}^{\infty} \left( \frac{x}{n^2} \right)^n \right) ^{\frac{1}{x}}$$

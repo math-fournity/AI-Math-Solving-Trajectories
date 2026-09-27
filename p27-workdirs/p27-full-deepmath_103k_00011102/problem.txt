@@ -1,0 +1,1 @@
+Determine the Banach-Mazur distance between the Banach spaces \(\ell_\infty = \ell_\infty(\mathbb{N})\) and \(L_\infty = L_\infty([0,1], \lambda)\), where \(\lambda\) is the Lebesgue measure on \([0,1]\). The Banach-Mazur distance is defined as \( d(X,Y) = \inf\{ \|\varphi\|\|\varphi^{-1}\| : \varphi\colon X\to Y \text{ isomorphism} \} \). What is \(d(\ell_\infty,L_\infty)\)?

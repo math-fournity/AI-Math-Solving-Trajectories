@@ -1,0 +1,1 @@
+Determine the smallest value of the constant $p$ such that the series \( \sum_{n=1}^{\infty}\frac{2^{np}(n!)^2}{(2n)!n^{n}} \) is convergent.

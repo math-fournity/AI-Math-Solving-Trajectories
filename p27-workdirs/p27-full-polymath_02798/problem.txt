@@ -1,0 +1,1 @@
+Find the maximum number of queens you could put on $2017 \times 2017$ chess table such that each queen attacks at most $1$ other queen.

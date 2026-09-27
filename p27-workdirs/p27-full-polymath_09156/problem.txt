@@ -1,0 +1,1 @@
+In a remote digital archipelago, there are $2m$ distinct server nodes arranged in a global network, where $m$ is a positive integer such that $m \geq 17$. The network administrators must perform a complete synchronization protocol consisting of $2m - 1$ distinct phases.

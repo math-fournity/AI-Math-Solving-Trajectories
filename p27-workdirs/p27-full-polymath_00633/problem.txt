@@ -1,0 +1,1 @@
+In a country with $n = 50$ cities, every two cities are connected by a one-way or two-way road. For every $k = 10$ cities, there exists a closed route (a Hamiltonian cycle) that passes through each of these $k$ cities exactly once. Find the maximum possible number of one-way roads in the country.

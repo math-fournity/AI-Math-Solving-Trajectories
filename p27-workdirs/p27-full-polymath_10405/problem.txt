@@ -1,0 +1,1 @@
+In a vast maritime logistics network, there are exactly $50,000$ active relay stations. The network is organized such that for every station, the total number of its direct upstream suppliers plus its direct downstream recipients is exactly $7$.

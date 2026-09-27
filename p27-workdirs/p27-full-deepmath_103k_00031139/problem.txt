@@ -1,0 +1,1 @@
+Given $3^{2k}$ indistinguishable coins, one of which is counterfeit and slightly lighter, and three two-pan balances where one is faulty, devise a strategy to identify the counterfeit coin using at most $3k + 1$ weighings. The faulty scale provides random readings, and the accurate scales are unknown. Describe your method.

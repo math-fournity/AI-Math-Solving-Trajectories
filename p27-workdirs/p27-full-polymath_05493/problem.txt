@@ -1,0 +1,1 @@
+Let $S$ be a square with sides of length $100$ and let $L$ be a path within $S$ that does not meet itself, composed of linear segments $A_{0} A_{1}, A_{1} A_{2}, \ldots, A_{n-1} A_{n}$ with $A_{0} \neq A_{n}$. Suppose that for every point $P$ on the boundary of $S$, there is a point of $L$ at a distance from $P$ not greater than $\frac{1}{2}$.

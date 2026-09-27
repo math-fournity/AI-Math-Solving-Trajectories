@@ -1,0 +1,1 @@
+Given a square $ABCD$ with side length $a$, an equilateral triangle $BAE$ is constructed on side $AB$ facing outwards. The triangle $BAE$ rolls around the square in the positive direction of rotation, rotating around each vertex until point $E$ returns to its starting position. Calculate the length of the path that point $E$ has traveled during this rolling.

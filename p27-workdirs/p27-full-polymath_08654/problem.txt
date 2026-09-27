@@ -1,0 +1,1 @@
+In a vast digital library, every positive integer $n \in \{1, 2, 3, \dots\}$ is assigned a unique security clearance level, sorting it into exactly one of three distinct archives: Archive $A$, Archive $B$, or Archive $C$.

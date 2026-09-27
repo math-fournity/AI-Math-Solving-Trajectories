@@ -1,0 +1,1 @@
+Given a $3 \times 3$ board, you want to write the numbers $1, 2, 3, 4, 5, 6, 7, 8$ and a positive integer $M$ (not necessarily different from the others) in the nine cells.

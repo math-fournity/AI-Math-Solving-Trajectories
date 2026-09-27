@@ -1,0 +1,1 @@
+For a positive integer $n$, consider a square cake divided into $n \times n$ pieces with at most one strawberry on each piece. A cake is called delicious if both diagonals are fully occupied, and each row and each column has an odd number of strawberries.

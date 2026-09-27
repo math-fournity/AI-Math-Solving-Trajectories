@@ -1,0 +1,1 @@
+Let $R$ be a discrete valuation ring (dvr), and $X$ a flat, projective, integral, normal $R$-scheme such that every closed fiber is integral and normal. Suppose $F$ is a torsion-free coherent sheaf on $X$, flat over $R$. Is the restriction of $F$ to the special fiber torsion-free?

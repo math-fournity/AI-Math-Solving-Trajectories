@@ -1,0 +1,1 @@
+A solar power facility is constructed as a rectangular grid of 500 individual solar panels, arranged in 5 rows and 100 columns. To optimize the grid's cooling system, a technician must designate $n$ of these panels as "High-Voltage" units, while the remaining panels function as "Standard" units.

@@ -1,0 +1,1 @@
+In the quadrilateral \(ABCD\) with angles \(\angle A = 60^\circ\), \(\angle B = 90^\circ\), \(\angle C = 120^\circ\), \(M\) is the point of intersection of the diagonals. Given that \(BM = 1\) and \(MD = 2\), find the area of \(ABCD\).

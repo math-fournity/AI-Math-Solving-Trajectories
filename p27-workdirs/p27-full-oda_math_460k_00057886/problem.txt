@@ -1,0 +1,1 @@
+Describe all \( G_\delta \) sets \( F \) on \( \mathbb{T} \) such that whenever \( f \in C(\mathbb{T}) \) coincides almost everywhere on \( F \) with the radial limits of a function \( g \) in \( H^\infty \), then the radial limits of \( g \) exist on \( F \) and coincide with \( f \) at each point of \( F \).\n\n*(A.A. Danielyan)*

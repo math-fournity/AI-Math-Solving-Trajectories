@@ -1,0 +1,1 @@
+Find the sum of all positive integers $n$ such that exactly $2\%$ of the numbers in the set $\{1, 2, \ldots, n\}$ are perfect squares.

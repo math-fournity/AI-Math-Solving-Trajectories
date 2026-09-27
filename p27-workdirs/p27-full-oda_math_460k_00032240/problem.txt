@@ -1,0 +1,1 @@
+Find the first two decimal digits of \(2^{987654321}\).

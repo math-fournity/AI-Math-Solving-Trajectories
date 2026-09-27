@@ -1,0 +1,1 @@
+Consider a cube divided into smaller cubes such that each of the 2003 points lies strictly in the interior of one of the smaller cubes and not on the faces. Find the minimum number of smaller cubes needed to achieve this division.

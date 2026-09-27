@@ -1,0 +1,1 @@
+Let  $ I$  be the incenter of triangle  $ ABC.$  Let  $ M,N$  be the midpoints of  $ AB,AC,$  respectively. Points  $ D,E$  lie on  $ AB,AC$  respectively such that  $ BD\equal{}CE\equal{}BC.$  The line perpendicular to  $ IM$  through  $ D$  intersects the line perpendicular to  $ IN$  through  $ E$  at  $ P.$  Prove that  $ AP\perp BC.$

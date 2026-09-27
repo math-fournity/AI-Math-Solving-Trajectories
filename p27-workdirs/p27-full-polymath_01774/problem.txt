@@ -1,0 +1,1 @@
+For  a given positive integer $n >2$, let $C_{1},C_{2},C_{3}$ be the boundaries of three convex $n-$ gons in the plane , such that

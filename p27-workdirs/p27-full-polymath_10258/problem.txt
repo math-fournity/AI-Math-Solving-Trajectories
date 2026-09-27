@@ -1,0 +1,1 @@
+In a specialized digital logistics network, every data packet is assigned a positive integer ID code ($n$). Each packet generates a specific amount of encrypted metadata, represented by the function $f(n)$, which must also be a positive integer.

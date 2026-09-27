@@ -1,0 +1,1 @@
+Which sets $S$ of positive integers are such that the product of any number of elements from $S$, allowing repetitions, has the form $a^b$ for integers $a$ and $b$ with $a \geq 1$ and $b \geq 2$?

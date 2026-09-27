@@ -1,0 +1,1 @@
+In a specialized logistics hub, there are 100 shipping containers, indexed with identification numbers $n$ from the set $\{1, 2, \dots, 100\}$. An engineer is testing the stability of these containers based on a specific "load frequency" protocol.

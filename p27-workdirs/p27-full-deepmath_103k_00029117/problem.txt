@@ -1,0 +1,1 @@
+Let $T$ be a linear bounded operator on a Banach space $X$. Suppose that $(a_n)$ and $(b_n)$ are two increasing sequences of positive integers such that $b_n > a_n$ for any $n$ and such that $\sup_{n}(b_n - a_n)<\infty$. Furthermore, assume that $\sup_{n}\|T^{b_n}\|<\infty$. Does it necessarily follow that $\sup_{n}\|T^{a_n}\|<\infty$?

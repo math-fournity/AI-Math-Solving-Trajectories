@@ -1,0 +1,1 @@
+Given a positive integer $d$ which is square-free, and a fundamental solution $(x_{0}, y_{0})$ to the equation $x^{2} - d y^{2} = 1$, find all positive integer solutions $(x, y)$ such that all prime factors of $x$ divide $x_{0}$.

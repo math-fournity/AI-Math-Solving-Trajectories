@@ -1,0 +1,1 @@
+In a remote industrial lab, an engineer is calibrating a chemical processing system controlled by a specific constant factor $q$. The process occurs in four distinct phases:

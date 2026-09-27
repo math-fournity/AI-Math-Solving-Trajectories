@@ -1,0 +1,1 @@
+A bagel is a loop of  $2a+2b+4$  unit squares which can be obtained by cutting a concentric  $a\times b$  hole out of an  $(a +2)\times (b+2)$  rectangle, for some positive integers a and b. (The side of length a of the hole is parallel to the side of length  $a+2$  of the rectangle.)

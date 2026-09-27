@@ -1,0 +1,1 @@
+6. Find the smallest positive integer $k$ such that for any $k$-element subset $A$ of the set $S=\{1,2, \cdots, 2012\}$, there exist three distinct elements $a$, $b$, and $c$ in $S$ such that $a+b$, $b+c$, and $c+a$ are all in the set $A$.

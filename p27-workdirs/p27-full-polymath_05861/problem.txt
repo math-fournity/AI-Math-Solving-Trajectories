@@ -1,0 +1,1 @@
+For each integer \( m \ge 2 \), find the value of \( f(2^m) \).

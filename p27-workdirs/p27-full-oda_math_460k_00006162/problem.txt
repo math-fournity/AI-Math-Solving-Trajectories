@@ -1,0 +1,1 @@
+Consider a set of 1,000,000 points in space. Let \( S \) be the set of all pairwise distances between these points. Find the minimum possible value of \( |S| \), the number of distinct elements in \( S \).

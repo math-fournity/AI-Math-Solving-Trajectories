@@ -1,0 +1,1 @@
+Let  $ABC$  be a triangle with incentre  $I$ . A line  $r$  that passes through  $I$  intersects the circumcircles of triangles  $AIB$  and  $AIC$  at points  $P$  and  $Q$ , respectively. Prove that the circumcentre of triangle  $APQ$  is on the circumcircle of  $ABC$ .

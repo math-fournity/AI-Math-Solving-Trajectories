@@ -1,0 +1,1 @@
+Derive the asymptotic error expansions for Richardson extrapolation, which are typically of the form:

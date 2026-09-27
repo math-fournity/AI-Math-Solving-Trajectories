@@ -1,0 +1,1 @@
+Determine the Galois group of the polynomial \(x^6 + 2x^3 - 8\) over the field of rational numbers \(\mathbb{Q}\).

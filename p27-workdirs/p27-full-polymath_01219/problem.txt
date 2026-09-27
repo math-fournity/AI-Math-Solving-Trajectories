@@ -1,0 +1,1 @@
+Seven spheres are situated in space such that no three centers are collinear, no four centers are coplanar, and every pair of spheres intersect each other at more than one point. For every pair of spheres, the plane on which the intersection of the two spheres lies is drawn. What is the least possible number of sets of four planes that intersect in at least one point?

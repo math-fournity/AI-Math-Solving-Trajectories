@@ -1,0 +1,1 @@
+Let $T$ be a subset of the set of all subsets of $\{1,2,3,\ldots,1990\}$ such that no two members of $T$ have exactly two elements in common. What is the largest number of elements $T$ can have?

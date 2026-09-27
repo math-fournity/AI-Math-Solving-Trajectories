@@ -1,0 +1,1 @@
+In a vast digital galaxy, there are $2^{2013}$ distinct planetary civilizations, each assigned a "Development Index" ranging from 1 to $2^{2013}$, where 1 is the most advanced and $2^{2013}$ is the least. These civilizations are entered into a Great Galactic Consolidation, a single-elimination bracket tournament.

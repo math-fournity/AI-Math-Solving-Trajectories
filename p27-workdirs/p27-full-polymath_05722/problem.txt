@@ -1,0 +1,1 @@
+11.9. In the company, there are 100 children, some of whom are friends (friendship is always mutual). It is known that by selecting any child, the remaining 99 children can be divided into 33 groups of three such that in each group, all three are pairwise friends. Find the minimum possible number of pairs of friends.

@@ -1,0 +1,1 @@
+In a specialized electronics fabrication facility, a precision power frequency $\alpha > 2$ GHz was selected to calibrate a new series of resonators. The facility utilizes a base signal of $1$ GHz, alongside a sequence of harmonic signals with frequencies of $\alpha^k$ GHz for every natural number $k = 1, 2, 3, \dots$.

@@ -1,0 +1,1 @@
+In the high-tech city of Cyberia, there are $n$ dormant security terminals. Each terminal requires a specific activation code in the form of a quadratic polynomial: $Ax^2 + Bx + C$. Currently, each terminal shows three empty slots represented by asterisks: $*x^2 + *x + *$.

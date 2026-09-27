@@ -1,0 +1,1 @@
+\( k \) is the positive root of the equation \( x^2 - 1998x - 1 = 0 \). Define the sequence \( x_0, x_1, x_2, \ldots \) by \( x_0 = 1 \) and \( x_{n+1} = \lfloor k x_n \rfloor \). Find the remainder when \( x_{1998} \) is divided by 1998.

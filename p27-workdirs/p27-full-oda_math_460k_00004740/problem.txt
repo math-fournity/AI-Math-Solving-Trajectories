@@ -1,0 +1,1 @@
+Let $\mathbb{N}$ be the set of positive integers. Find all functions $f: \mathbb{N} \rightarrow \mathbb{N}$ that satisfy the equation

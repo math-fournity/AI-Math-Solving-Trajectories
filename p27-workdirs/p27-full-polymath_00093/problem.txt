@@ -1,0 +1,1 @@
+All numbers $1, 2, \ldots, 100$ are arbitrarily placed on each cell of a $10 \times 10$ square grid. Each cell contains exactly one number, and all numbers are distinct. For every configuration of numbers, there is always a row or a column where the difference between the largest and smallest number is at least $k$. Find the maximum value of $k$.

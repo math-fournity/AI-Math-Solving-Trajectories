@@ -1,0 +1,1 @@
+Let $n$ and $k$ be positive integers. A permutation $\sigma$ of $\{1, 2, \ldots, n\}$ is called $k$-limited if $|\sigma(i) - i| \leq k$ for all $i \in \{1, 2, \ldots, n\}$. Let $F(n, k)$ denote the number of $k$-limited permutations of $\{1, 2, \ldots, n\}$. Find the number of integers $n \in \{1, 2, \ldots, 200\}$ such that $F(n, 2)$ is odd.

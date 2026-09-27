@@ -1,0 +1,1 @@
+In a vast grid-based industrial warehouse, automated floor sensors are located at every integer coordinate $(x, y)$. Each sensor radiates a circular signal zone with a radius of $r = 1/1000$ units.

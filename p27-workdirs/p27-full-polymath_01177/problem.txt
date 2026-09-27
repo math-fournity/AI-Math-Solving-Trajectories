@@ -1,0 +1,1 @@
+A flea and a scorpion play a game on a $10 \times 10$ chessboard with side length $1$. The flea moves on the $121$ vertices of the grid, while the scorpion moves along the boundary line of the board. The flea starts at the center $(5,5)$, and the scorpion starts at a point of its choice on the boundary. They move alternately, starting with the flea.

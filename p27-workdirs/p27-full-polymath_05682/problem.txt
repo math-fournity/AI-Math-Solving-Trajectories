@@ -1,0 +1,1 @@
+The numbers $1,...,100$ are written on the board. Tzvi wants to colour $N$ numbers in blue, such that any arithmetic progression of length 10 consisting of numbers written on the board will contain blue number. What is the least possible value of $N$?

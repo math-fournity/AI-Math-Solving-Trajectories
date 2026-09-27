@@ -1,0 +1,1 @@
+Let $ K$ be the curved surface obtained by rotating the parabola $ y \equal{} \frac {3}{4} \minus{} x^2$ about the $ y$-axis.Cut $ K$ by the plane $ H$ passing through the origin and forming angle $ 45^\circ$ for the axis. Find the volume of the solid surrounded by $ K$ and $ H.$

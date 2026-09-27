@@ -1,0 +1,1 @@
+Determine whether the number $5^{1985} - 1$ can be expressed as a product of three integers, each greater than $5^{100}$. Provide a justification for your answer.

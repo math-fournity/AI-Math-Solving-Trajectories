@@ -1,0 +1,1 @@
+Let \( \triangle ABC \) be a triangle with \( AB = 20 \) and \( AC = 22 \). Suppose its incircle touches \(\overline{BC}\), \(\overline{CA}\), and \(\overline{AB}\) at \(D\), \(E\), and \(F\) respectively, and \(P\) is the foot of the perpendicular from \(D\) to \(\overline{EF}\). If \(\angle BPC = 90^\circ\), then compute \(BC^2\).

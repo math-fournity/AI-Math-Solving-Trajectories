@@ -1,0 +1,1 @@
+Berk tries to guess the two-digit number that Ayca picks. After each guess, Ayca gives a hint indicating the number of digits which match the number picked. If Berk can guarantee to guess Ayca's number in $n$ guesses, what is the smallest possible value of $n$?

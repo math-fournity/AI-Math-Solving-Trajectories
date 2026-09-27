@@ -1,0 +1,1 @@
+A specialized deep-sea research elevator is designed to move between the floors of an underwater facility. The facility's depth levels are indexed by positive integers. To ensure structural integrity, the elevator's movement is governed by a specific sequence of stops, $a_1, a_2, \dots, a_n$, representing the floor levels visited in order.

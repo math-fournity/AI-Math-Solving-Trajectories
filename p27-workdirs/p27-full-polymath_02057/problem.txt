@@ -1,0 +1,1 @@
+The polynomial $P(x) = x^3 + \sqrt{6} x^2 - \sqrt{2} x - \sqrt{3}$ has three distinct real roots. Compute the sum of all $0 \le \theta < 360$ such that $P(\tan \theta^\circ) = 0$.

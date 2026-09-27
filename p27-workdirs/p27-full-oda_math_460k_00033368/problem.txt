@@ -1,0 +1,1 @@
+Let \((a_0, a_1, \ldots, a_k)\) be a tuple of \(k\) real numbers with \(a_k \neq 0\). Define the sequence \(\langle A \rangle_{n \geq 0}\) as follows:

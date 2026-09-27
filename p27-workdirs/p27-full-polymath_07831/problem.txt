@@ -1,0 +1,1 @@
+In a specialized maritime logistics network, a fleet of drones operates over a triangular grid of research buoys. For any positive integer $n$, the set of buoy locations $S_n$ is defined by coordinates $(x/2, y/2)$ such that $x$ and $y$ are odd integers and $|x| \leq y \leq 2n$.

@@ -1,0 +1,1 @@
+Is the natural map from the purely algebraic pushout $A \circledast_C B$ to the amalgamated free product $A *_C B$ injective for all choices of unital C*-algebras $A$, $B$, and $C$?

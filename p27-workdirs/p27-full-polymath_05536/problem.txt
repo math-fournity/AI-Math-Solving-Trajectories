@@ -1,0 +1,1 @@
+The number \(2027\) is prime. For \(i=1,2, \ldots, 2026\), let \(p_{i}\) be the smallest prime number such that \(p_{i} \equiv i \pmod{2027}\). Estimate \(\max \left(p_{1}, \ldots, p_{2026}\right)\). Submit a positive integer \(E\). If the correct answer is \(A\), you will receive \(\left\lfloor 25 \min \left((E / A)^{8},(A / E)^{8}\right)\right\rfloor\) points.

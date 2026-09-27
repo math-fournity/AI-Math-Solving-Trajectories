@@ -1,0 +1,1 @@
+In space, there are 2016 spheres, no two of which coincide. Some of the spheres are red, and the others are green. Each point of contact between a red and a green sphere is painted blue. Find the maximum possible number of blue points.

@@ -1,0 +1,1 @@
+Let \(X\) be a projective scheme over a Noetherian ring, \(\mathcal{F}\) an invertible sheaf on \(X\), and \(U\) an arbitrary open subset of \(X\). Is \(\Gamma(U,\mathcal{F})\) a \(\Gamma(U,\mathcal{O}_X)\)-module of finite type?

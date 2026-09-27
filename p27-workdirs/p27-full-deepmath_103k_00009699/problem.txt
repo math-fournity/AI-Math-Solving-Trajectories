@@ -1,0 +1,1 @@
+Consider a bounded linear operator $A$ from a subspace $X_1$ of a Banach space to a subspace $Y_1$ of another Banach space, where $\mathrm{codim}X_1+\mathrm{codim}Y_1<\infty$. If $A$ maps one open subset $X$ of $X_1$ onto one open subset $Y$ of $Y_1$, is it true that $A$ maps $X_1$ onto $Y_1$, i.e., is $A$ an open map?

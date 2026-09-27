@@ -1,0 +1,1 @@
+For positive integers $n$, the numbers $f(n)$ are defined inductively as follows: $f(1)=1$, and for every $n \geq 1$, $f(n+1)$ is the greatest integer $m$ such that there exists an arithmetic progression of positive integers $a_{1} < a_{2} < \cdots < a_{m} = n$ such that

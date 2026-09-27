@@ -1,0 +1,1 @@
+Consider the spaces $\mathbb{C}P^3$ and $S^2 \times S^4$. Calculate the sum of all distinct non-zero integers $n$ such that the $n$-th homotopy group of $\mathbb{C}P^3$ is not isomorphic to the $n$-th homotopy group of $S^2 \times S^4$.

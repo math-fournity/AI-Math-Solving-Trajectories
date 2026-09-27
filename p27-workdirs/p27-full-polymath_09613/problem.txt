@@ -1,0 +1,1 @@
+In a specialized logistics hub, there are $n$ independent docking stations (where $n > 4$). Every possible pair of stations must be linked by a direct delivery drone path. Due to interference protocols, the paths are established one by one.

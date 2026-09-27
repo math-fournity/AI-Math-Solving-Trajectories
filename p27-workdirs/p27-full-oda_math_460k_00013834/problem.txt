@@ -1,0 +1,1 @@
+Let \[F_1(a,b,c)=\sum_{cyc}{\sqrt[3]{a^3+mabc}}- \sqrt[3]{\sum_{cyc}{(a^3+kbc(b+c))}}\] in which \(a, b, c \in \mathbb{R_+}\) and \(F_1(1,1,1)=0\). Determine the value of \(k\) such that \(F_1(a,b,c) \leq 0\) holds for all \(a, b, c \in \mathbb{R_+}\). Express your answer as the sum of the lower and upper bounds of \(k\).

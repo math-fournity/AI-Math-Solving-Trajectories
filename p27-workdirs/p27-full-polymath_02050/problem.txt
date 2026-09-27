@@ -1,0 +1,1 @@
+Alfred removes ten numbers from the set \(\{1, 2, \ldots, 100\}\). Phil then searches for arithmetic progressions among the remaining 90 members. What is the maximum length of an arithmetic progression that Phil is guaranteed to find?

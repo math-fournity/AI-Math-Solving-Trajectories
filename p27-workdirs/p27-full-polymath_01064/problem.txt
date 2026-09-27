@@ -1,0 +1,1 @@
+For nonnegative integers $p$, $q$, $r$, let \[

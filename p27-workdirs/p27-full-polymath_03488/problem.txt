@@ -1,0 +1,1 @@
+Given \( n \) straight lines on a plane that divide it into areas, these areas are painted in a chessboard pattern such that adjacent areas have different colors. What is the maximal difference between the number of black and white areas?

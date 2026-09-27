@@ -1,0 +1,1 @@
+We have $2021$ colors and $2021$ chips of each color. We place the $2021^2$ chips in a row. We say that a chip $F$ is [i]bad[/i] if there is an odd number of chips that have a different color to $F$ both to the left and to the right of $F$.

@@ -1,0 +1,1 @@
+In a specialized logistics hub, a manager is overseeing a series of $n$ cargo shipments ($n \ge 2$). The weights of these shipments are strictly non-decreasing, denoted by $0 < a_1 \le a_2 \le \dots \le a_n$.

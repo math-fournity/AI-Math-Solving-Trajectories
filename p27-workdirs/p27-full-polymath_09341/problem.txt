@@ -1,0 +1,1 @@
+In a high-security logistics center, a master grid of $20 \times 20$ individual storage vaults has been constructed. To organize the facility, every single vault is assigned a specific security clearance designated by a color. There are exactly $n$ distinct clearance colors used across the grid, and for every color, there is at least one vault assigned to it.

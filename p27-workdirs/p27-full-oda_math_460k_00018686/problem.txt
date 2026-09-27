@@ -1,0 +1,1 @@
+23. (2005 Chinese National Team Training Selection Contest Problem) Let $\alpha$ be a given positive real number. Find all functions $f: \mathbf{N}^{+} \rightarrow \mathbf{R}$, such that for any positive integers $k$, $m$ satisfying $\alpha m \leqslant k<(\alpha+1) m$, we have $f(k+m)=f(k)+f(m)$.

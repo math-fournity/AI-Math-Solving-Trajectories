@@ -1,0 +1,1 @@
+Find the inverse Z-transform of the function \( X(z) = \log \left( \frac{z}{z-a} \right) \). Specifically, determine the value of \( x[n] \) when \( n = 0 \).

@@ -1,0 +1,1 @@
+A circle contains $100$ integers. Each of the numbers is greater than the sum of the two numbers that follow it in a clockwise direction. What is the maximum number of positive numbers that can be among those written?

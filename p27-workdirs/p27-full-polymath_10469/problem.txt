@@ -1,0 +1,1 @@
+In a bustling high-tech logistics center, 10 automated delivery drones are lined up in a single-file queue, indexed from 1 to 10. The facility operates under strict "maneuver" protocols to reorganize the queue order. A "maneuver" occurs when a single drone moves forward in the line by passing exactly one drone directly in front of it. These maneuvers occur one at a time.

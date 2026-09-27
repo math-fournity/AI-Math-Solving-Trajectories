@@ -1,0 +1,1 @@
+Let $n \ge 2$ be a positive integer. We consider functions $f:\{1,2,\ldots ,n\}\rightarrow\{1,2,3,4,5 \}$ such that $|f(k+1)-f(k)|\ge 3$ for all $k=1,2,\ldots n-1$. Let $x_n$ be the number of such functions. Calculate the sum $\sum_{n=2}^{10} x_n$.

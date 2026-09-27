@@ -1,0 +1,1 @@
+Let $G$ be a finite group with a normal Sylow $p$-subgroup $P$ such that $|P|=p^2$, where $p \neq 2$. Assume $P$ is not cyclic, meaning it does not contain an element of order $p^2$. If $g \in G$ has order $k$ with $\gcd(k,p)=1$, is there an element in $G$ of order $kp$? Provide a justification for your answer.

@@ -1,0 +1,1 @@
+9.7. A diagonal of eight squares on a chessboard is called a "fence". A rook starts from a square outside the fence on the chessboard and moves, satisfying the following conditions:

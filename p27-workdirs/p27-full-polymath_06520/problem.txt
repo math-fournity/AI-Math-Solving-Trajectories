@@ -1,0 +1,1 @@
+In a specialized network of 13 secure data servers, each server is assigned a security clearance level denoted by a prime number $p_n$. These levels are organized in non-decreasing order, such that $p_1 \leq p_2 \leq \ldots \leq p_{13}$.

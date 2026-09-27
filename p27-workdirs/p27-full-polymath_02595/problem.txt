@@ -1,0 +1,1 @@
+Find the number of functions \( f:\{1,2,3,4,5\} \rightarrow\{1,2,3,4,5\} \) such that for \( k=1,2,3,4, f(k+1) \leq f(k)+1 \).

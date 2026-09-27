@@ -1,0 +1,1 @@
+For positive integers $a$, $b$, and $c$, define \[ f(a,b,c)=\frac{abc}{\text{gcd}(a,b,c)\cdot\text{lcm}(a,b,c)}. \] We say that a positive integer $n$ is $f@$ if there exist pairwise distinct positive integers $x,y,z\leq60$ that satisfy $f(x,y,z)=n$. How many $f@$ integers are there?

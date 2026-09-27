@@ -1,0 +1,1 @@
+In a futuristic data-archiving facility, engineers are designing a massive circular storage system. The system's capacity and encryption protocols are defined by a specific energy density function, $P(x)$, which is composed of three distinct performance tiers based on frequency levels $k$:

@@ -1,0 +1,1 @@
+Determine all integers $n$ such that any group of order $n$ is the semi-direct product of two groups of smaller order.

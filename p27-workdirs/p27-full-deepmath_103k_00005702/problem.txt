@@ -1,0 +1,1 @@
+Let $C \in \mathfrak{gl}(\mathbb{Z},n)$ be a symmetric full rank integer-valued matrix. Consider a full rank sublattice $\Lambda$ such that $C\mathbb{Z}^n \subseteq \Lambda \subseteq \mathbb{Z}^n$. Is there a symmetric matrix $C'$ such that $\Lambda = C'\mathbb{Z}^n$?

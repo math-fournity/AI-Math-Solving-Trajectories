@@ -1,0 +1,1 @@
+Determine whether there exists a polynomial \( P \in \mathbb{R}[x] \) of degree \( 2014^{2015} \) such that \( f(P) = 2015 \), where \( f(P) = n \) is the smallest positive integer for which \( (\forall x \in \mathbb{R})(\underbrace{P(P(\ldots P}_{n}(x))\ldots )>0) \) holds, and \( f(P) = 0 \) if no such \( n \) exists.

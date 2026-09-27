@@ -1,0 +1,1 @@
+In a matrix, red and green points are connected by lines. Red points are connected by red lines, green points by green lines, and different colored points by black lines. Given that there are 219 red lines, 39 red lines not including corner points, and 237 black lines, find the number of green lines.

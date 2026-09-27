@@ -1,0 +1,1 @@
+In a $5 \times 6$ grid, each cell is filled with a digit from $0-9$ such that:

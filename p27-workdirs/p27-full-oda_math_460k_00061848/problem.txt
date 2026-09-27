@@ -1,0 +1,1 @@
+Consider a compact Hausdorff space $X$ with cardinality $2^\kappa$, where $\kappa$ is an infinite cardinal. Let $U$ be a dense open subset of $X$. Determine the smallest possible cardinality of $U$. Can it be $2^\kappa$ or $\kappa$?

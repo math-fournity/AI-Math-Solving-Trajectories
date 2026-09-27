@@ -1,0 +1,1 @@
+In a remote desert valley, a team of archaeologists has identified a sacred triangular region, designated Site $T$, which has an area of exactly $E$ square units. The boundaries of Site $T$ are defined by three straight ancient stone walls.

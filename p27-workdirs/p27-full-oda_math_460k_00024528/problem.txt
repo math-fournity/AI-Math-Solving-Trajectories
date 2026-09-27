@@ -1,0 +1,1 @@
+Let \( p > 53 \) be a prime. Find the number of possible remainders \( p^2 \) can have modulo \( 32589158477190044730 \).

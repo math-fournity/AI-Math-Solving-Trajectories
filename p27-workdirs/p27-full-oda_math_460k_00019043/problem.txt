@@ -1,0 +1,1 @@
+Let \( f(x) = \exp \left(-1 / x^{2}\right) \) for \( x \in \mathbb{R}^{*} \) with \( f(0) = 0 \). Define \( g(n) \) as the smallest value of \( \eta > 0 \) such that for sufficiently large \( n \):

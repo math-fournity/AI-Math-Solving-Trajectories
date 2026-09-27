@@ -1,0 +1,1 @@
+A team of civil engineers is designing a complex modular suspension bridge system. The stability of the bridge is governed by a structural integrity equation involving several variable load factors, $x$.

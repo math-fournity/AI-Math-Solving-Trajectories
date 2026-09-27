@@ -1,0 +1,1 @@
+In the coastal city of Aethelgard, a lighthouse uses a sequence of 8 colored flares to send messages to ships. Each position in the sequence can only hold one of two colors: Crimson (0) or Emerald (1). A complete signal is a sequence of 8 flares.

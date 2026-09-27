@@ -1,0 +1,1 @@
+Find all pairs of positive integers $(a,b)$ such that for every positive integer $n$, the number $\frac{a^n-1}{b^n-1}$ is an integer.

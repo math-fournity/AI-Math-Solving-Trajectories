@@ -1,0 +1,1 @@
+A data logistics company, "Prime-Secure," manages a massive digital vault containing a collection of $mnp$ unique data packets, where $m$ and $n$ are positive integers and $p$ is a prime number. Each data packet is assigned a specific numerical security code (a natural number).

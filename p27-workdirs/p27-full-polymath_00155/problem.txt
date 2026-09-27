@@ -1,0 +1,1 @@
+In the game of Minesweeper on an $a \times b$ grid ($a, b \in \mathbb{N}$), some cells contain mines, and each remaining cell contains a number indicating the count of its neighboring cells (sharing at least one vertex) that contain mines.

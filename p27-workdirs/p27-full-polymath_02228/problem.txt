@@ -1,0 +1,1 @@
+3. The number 2458710411 was written 98 times in a row, resulting in a 980-digit number. From this number, it is required to erase 4 digits. What is the number of ways this can be done so that the newly obtained 976-digit number is divisible by 6?

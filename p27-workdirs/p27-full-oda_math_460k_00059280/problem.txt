@@ -1,0 +1,1 @@
+Consider the sequence of the first $2021^{2021}$ positive integers. Determine the number of ways to arrange these integers in a sequence such that the arithmetic mean of any two numbers is not between the positions of these two numbers. Provide your answer modulo $10^9 + 7$.

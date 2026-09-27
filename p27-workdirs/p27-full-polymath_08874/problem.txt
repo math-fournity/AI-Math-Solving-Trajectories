@@ -1,0 +1,1 @@
+In a futuristic circular space station, there are 20 docking bays labeled $D_1, D_2, \dots, D_{20}$ arranged in a perfect circle at equal intervals. A specialized maintenance drone starts its shift at bay $D_1$.

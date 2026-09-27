@@ -1,0 +1,1 @@
+Find all quadruples \((a, b, c, d) \in \mathbb{N}\) such that \(a^3 + b^3 + c^3 + d^3 = 100^{100}\).

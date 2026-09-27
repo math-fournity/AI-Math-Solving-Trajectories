@@ -1,0 +1,1 @@
+We call a natural number venerable if the sum of all its divisors, including  $1$ , but not including the number itself, is  $1$  less than this number. Find all the venerable numbers, some exact degree of which is also venerable.

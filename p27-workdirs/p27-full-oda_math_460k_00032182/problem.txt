@@ -1,0 +1,1 @@
+Find the smallest positive integer \( n \) such that the sum of the digits of \( kn \) is divisible by 2003 for all \( k \) from 1 to 2003. Calculate the sum of the digits of \( n \).

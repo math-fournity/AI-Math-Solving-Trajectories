@@ -1,0 +1,1 @@
+A galactic data network is composed of $M=10$ regional server clusters containing a total of $N=100$ individual server nodes. High-speed fiber-optic cables provide bidirectional communication between certain nodes. The network architecture is governed by the following protocols:

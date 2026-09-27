@@ -1,0 +1,1 @@
+Let $n$ a positive integer. In a $2n\times 2n$ board,  $1\times n$ and $n\times 1$ pieces are arranged without overlap.

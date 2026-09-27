@@ -1,0 +1,1 @@
+Problem 5. Consider the integer number n>2. Let a_1,a_2,…,a_n and b_1,b_2,…,b_n be two permutations of 0,1,2,…,n-1. Prove that there exist some i≠j such that:

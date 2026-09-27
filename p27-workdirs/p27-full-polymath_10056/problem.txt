@@ -1,0 +1,1 @@
+A specialized digital archives server stores data in "Information Blocks." The density of an Information Block is measured by the number of unique metadata tags (divisors) it possesses.

@@ -1,0 +1,1 @@
+In a specialized logistics hub, there are $n$ distinct delivery bays, labeled $1$ through $n$. A "distribution plan" is a configuration where each bay $k$ is assigned a specific positive integer number of cargo crates, denoted by $f(k)$.

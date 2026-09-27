@@ -1,0 +1,1 @@
+If $A_{N \times N} (x)$ is a complex $N \times N$ positive definite matrix whose components $a_{ij}(x)$ are $C^\infty$ functions, is the inverse matrix $A^{-1}$ also composed of $C^\infty$ functions?

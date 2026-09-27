@@ -1,0 +1,1 @@
+Let \( \triangle ABC \) be a triangle with \( AB = 6 \), \( AC = 7 \), \( BC = 8 \). Let \( I \) be the incenter of \( \triangle ABC \). Points \( Z \) and \( Y \) lie on the interior of segments \( AB \) and \( AC \) respectively such that \( YZ \) is tangent to the incircle. Given point \( P \) such that

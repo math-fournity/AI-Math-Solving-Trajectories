@@ -1,0 +1,1 @@
+A specialized architectural firm is designing a massive ventilation system within a trapezoidal industrial zone, denoted by four corner markers $A, B, C$, and $D$, where the boundary $AB$ runs perfectly parallel to the boundary $CD$.

@@ -1,0 +1,1 @@
+Let  $\omega_1$  be the circumcircle of triangle  $ABC$  and  $O$  be its circumcenter. A circle  $\omega_2$  touches the sides  $AB, AC$ , and touches the arc  $BC$  of  $\omega_1$  at point  $K$ . Let  $I$  be the incenter of  $ABC$ .

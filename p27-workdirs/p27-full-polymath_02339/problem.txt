@@ -1,0 +1,1 @@
+Let $G$ be a directed graph with infinitely many vertices. It is known that for each vertex the outdegree is greater than the indegree. Let $O$ be a fixed vertex of $G$. For an arbitrary positive number $n$, let $V_{n}$ be the number of vertices which can be reached from $O$ passing through at most $n$ edges ($O$ counts).

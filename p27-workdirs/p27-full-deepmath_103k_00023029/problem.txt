@@ -1,0 +1,1 @@
+Determine if the expression \( m^2k^2(c^2+1)^2-4mc(c^2-c+1) \) is a perfect square if and only if \( m = k = 1 \), where \( m, k, \) and \( c \) are positive integers.

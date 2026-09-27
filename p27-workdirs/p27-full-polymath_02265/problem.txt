@@ -1,0 +1,1 @@
+How many distinct permutations of the letters in the word REDDER are there that do not contain a palindromic substring of length at least two? (A [i]substring[/i] is a continuous block of letters that is part of the string. A string is [i]palindromic[/i] if it is the same when read backwards.)

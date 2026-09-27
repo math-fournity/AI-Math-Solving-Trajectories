@@ -1,0 +1,1 @@
+A shipping logistics company operates a massive rectangular warehouse organized into a grid of $m$ rows and $n$ columns of storage bays. The manager decides to install specialized automated sensors in some of these bays.

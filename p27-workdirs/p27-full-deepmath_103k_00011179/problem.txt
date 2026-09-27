@@ -1,0 +1,1 @@
+Let $K_1, \ldots, K_n \subset \mathbb{R}^n$ be convex bodies such that for each subset $I \subset \{1,\ldots,n\}$, the set \(\left( \bigcap_{i \in I} K_i \right) \setminus \left( \bigcup_{i \not\in I} K_i \right)\) has nonempty interior. Does it follow that the intersection of the boundaries \(\bigcap_{i \in I} \partial K_i\) is nonempty?

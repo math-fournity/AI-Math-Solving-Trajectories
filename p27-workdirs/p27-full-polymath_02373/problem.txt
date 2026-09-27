@@ -1,0 +1,1 @@
+Come up with a way to cut the contour of a square with a side of 1 into four parts and assemble the contour of a triangle from these parts. Find the area of the triangle you obtained. (The contour has no thickness. Parts cannot be bent or straightened.)

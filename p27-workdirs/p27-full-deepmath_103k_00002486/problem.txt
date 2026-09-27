@@ -1,0 +1,1 @@
+Let \( f: \mathbb{R}^n \rightarrow \mathbb{R} \) be a convex function where \( n > 1 \). Suppose for every \( x \in \mathbb{R}^n \), there exists a \( t_0 \) such that \( t_0 = \arg\min_{t \in \mathbb{R}} f(tx) \). Does there exist a point \( x_0 \in \mathbb{R}^n \) that is a global minimum of \( f \)? Note: \( t_0 \) does not need to be unique.

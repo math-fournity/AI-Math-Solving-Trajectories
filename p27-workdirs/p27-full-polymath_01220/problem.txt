@@ -1,0 +1,1 @@
+A tournament is a complete graph where every pair of distinct vertices is connected by a single directed edge. A tournament is called "good" if it contains no directed cycles, and "bad" otherwise.

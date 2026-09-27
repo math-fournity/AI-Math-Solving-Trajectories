@@ -1,0 +1,1 @@
+Find all polynomials $P(X)$ with positive integer coefficients such that for any positive integer $n$ and every prime $p$ where $n$ is a quadratic residue modulo $p$, $P(n)$ is also a quadratic residue modulo $p$.

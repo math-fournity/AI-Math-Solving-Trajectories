@@ -1,0 +1,1 @@
+A specialized chemical refinery processes a single unit of raw material into four distinct grades of fuel—Grade A, Grade B, Grade C, and Grade D—such that the sum of their volumes is exactly 1 ($a + b + c + d = 1$). Due to the refining sequence, the yield must follow a non-increasing hierarchy: $a \ge b \ge c \ge d \ge 0$.

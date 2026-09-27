@@ -1,0 +1,1 @@
+For any positive integer $N$, let $S_{N}$ be the number of pairs of integers $1 \leq a, b \leq N$ such that the number $\left(a^{2}+a\right)\left(b^{2}+b\right)$ is a perfect square. Prove that the limit

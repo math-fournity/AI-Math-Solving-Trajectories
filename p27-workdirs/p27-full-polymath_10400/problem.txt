@@ -1,0 +1,1 @@
+A global logistics firm operates a massive server farm organized into a 100-by-100 grid of hardware slots. The company needs to install $N$ specialized processing units across these slots.

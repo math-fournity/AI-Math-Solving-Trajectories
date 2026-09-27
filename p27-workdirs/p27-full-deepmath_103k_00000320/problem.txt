@@ -1,0 +1,1 @@
+Does there exist a smooth function $u$ on $S^1$ such that the generalized Fourier series $$u = \sum_{n \in \mathbb{N}} \langle u, u_n \rangle u_n$$ does not converge uniformly, where $u_n$ is an orthonormal basis of smooth functions on $S^1$?

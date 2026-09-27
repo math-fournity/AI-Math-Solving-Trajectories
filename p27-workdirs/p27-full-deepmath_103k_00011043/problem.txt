@@ -1,0 +1,1 @@
+Find all values of $N \geq 9$ for which it is possible to write $N$ distinct real numbers on a blackboard, all nonnegative and less than 1, such that for every 8 distinct numbers, there exists a ninth number distinct from the eight, making the sum of these nine numbers an integer.

@@ -1,0 +1,1 @@
+Does there exist a sequence of pointwise recurrent and minimal functions defined on the Cantor set that converges to the identity map on the Cantor set?

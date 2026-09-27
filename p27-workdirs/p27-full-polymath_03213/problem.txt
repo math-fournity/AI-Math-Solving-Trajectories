@@ -1,0 +1,1 @@
+In the $200\times 200$ table in some cells lays red or blue chip. Every chip "see" other chip, if they lay in same row or column. Every chip "see" exactly $5$ chips of other color. Find maximum number of chips in the table.

@@ -1,0 +1,1 @@
+A high-tech logistics network consists of $n$ regional distribution hubs located on a flat geographic plain. The operational protocols of this network require that the straight-line distance between any two distinct hubs must be a positive integer value (measured in kilometers).

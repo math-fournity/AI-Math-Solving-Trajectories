@@ -1,0 +1,1 @@
+The medians of a triangle $ABC$ concur at point $G$. Among the six angles $GAB$, $GAC$, $GBA$, $GBC$, $GCA$, $GCB$, there are at least three angles each of which is at least $\alpha$. Determine the largest $\alpha$ for which this is possible.

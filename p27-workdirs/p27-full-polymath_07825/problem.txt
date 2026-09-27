@@ -1,0 +1,1 @@
+In a remote industrial complex, a specialized chemical reactor combines three rare reagents—Alpha ($a$), Beta ($b$), and Gamma ($c$)—measured in liters of positive real quantities. The efficiency of the reactor is determined by the sum of three specific process ratios.

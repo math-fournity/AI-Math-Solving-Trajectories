@@ -1,0 +1,1 @@
+Determine whether the number expressed as $2 \rightarrow 17 \rightarrow 417$ in Conway chained arrow notation is larger than Graham's Number.

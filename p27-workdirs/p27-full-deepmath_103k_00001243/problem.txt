@@ -1,0 +1,1 @@
+Does there exist a Banach space $B$ with no complemented closed subspaces, meaning there do not exist closed subspaces $U,V \subset B$ such that $B = U \oplus V$?

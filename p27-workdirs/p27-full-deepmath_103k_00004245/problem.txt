@@ -1,0 +1,1 @@
+Let $B$ and $W$ be independent Brownian motions, and let $\tau$ be a stopping time adapted to $\mathcal{F}^{W}$. Determine whether $E\left[\int_{0}^{\tau}B_{s}dW_{s}\right] = 0$ always holds.

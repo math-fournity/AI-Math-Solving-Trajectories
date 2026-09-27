@@ -1,0 +1,1 @@
+Consider a group \( G \) that acts sharply 2-transitive on a set \( X \) with \( |X| \geq 3 \). Let \( G_x = \{ g \in G \mid g(x) = x \} \) be the stabilizer of \( x \in X \). Define \( f(x) \) as the number of involutions in \( G_x \). Calculate the sum of \( f(x) \) for all \( x \in X \).

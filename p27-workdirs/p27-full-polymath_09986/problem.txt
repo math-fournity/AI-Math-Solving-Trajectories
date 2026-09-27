@@ -1,0 +1,1 @@
+In a remote territory, a high-tech surveillance grid is modeled on a coordinate plane. Two relay stations, Alpha ($A$) and Bravo ($B$), are positioned at opposite corners of a square plot with a side length of $1$. The entire grid is governed by a circular boundary $\Gamma$ that passes through both Alpha and Bravo, acting as the circumcircle of the square.

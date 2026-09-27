@@ -1,0 +1,1 @@
+An architectural firm is designing a rectangular stained-glass mural for a gallery floor. The mural occupies a region on a grid-lined workspace with corners at $(0,0), (11,0), (0,13)$, and $(11,13)$. This $11 \times 13$ rectangle is divided into several smaller triangular glass panes according to two strict structural rules:

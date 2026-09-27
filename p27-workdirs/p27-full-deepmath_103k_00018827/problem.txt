@@ -1,0 +1,1 @@
+Determine whether all odd Betti numbers of the quotient space $X = \mathbb{S}^{n+1}/\mathbb{S}^1$, where $\mathbb{S}^1$ acts isometrically with closed orbits and $n$ is even, vanish.

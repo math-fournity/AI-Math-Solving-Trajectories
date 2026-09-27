@@ -1,0 +1,1 @@
+11.9. A polynomial $P(x)$ with real coefficients has degree $10^{5}$, and its leading coefficient is 1. Find the smallest possible degree of the polynomial

@@ -1,0 +1,1 @@
+If $a, b \in \mathbb{Z}$ and for every prime $p \in \mathbb{Z}$, there exists an integer $n_p$ such that $b \equiv a^{n_p} \ (\text{mod } p)$, does it imply that there exists an integer $n$ such that $b = a^n$? Answer 'yes' or 'no'.

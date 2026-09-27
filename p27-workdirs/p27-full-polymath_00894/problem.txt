@@ -1,0 +1,1 @@
+Consider a $4 \times 4$ grid where each cell contains a number as shown below:

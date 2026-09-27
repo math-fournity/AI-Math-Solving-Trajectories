@@ -1,0 +1,1 @@
+Let $P_1, \dots, P_k$ be polynomials over $\mathbf{C}$, with no two of them being proportional. Determine whether there exists an integer $N$ such that $P_1^N, \dots, P_k^N$ are linearly independent.

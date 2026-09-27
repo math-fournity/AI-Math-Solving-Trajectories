@@ -1,0 +1,1 @@
+Let $\mathbb N$ denote the set of all positive integers. Let $S$ be the set of all real numbers $c$ for which there exists a function $f:\mathbb N\to \mathbb N$ satisfying:

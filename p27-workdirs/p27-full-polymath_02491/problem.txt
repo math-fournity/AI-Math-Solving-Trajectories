@@ -1,0 +1,1 @@
+Find all pairs of natural numbers $(\alpha, \beta)$ with $\alpha \le \beta$ for which, if $\delta$ is the greatest common divisor of $\alpha$ and $\beta$, and $\Delta$ is the least common multiple of $\alpha$ and $\beta$, then

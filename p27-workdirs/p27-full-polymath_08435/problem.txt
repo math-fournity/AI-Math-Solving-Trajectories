@@ -1,0 +1,1 @@
+A high-tech digital grid consists of $n \times n$ server nodes, where $n$ is a positive integer. Each node can either be active (containing a data packet) or inactive.

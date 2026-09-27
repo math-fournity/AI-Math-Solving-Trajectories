@@ -1,0 +1,1 @@
+A high-security data center consists of an $n \times n$ grid of server racks. Currently, every rack in the grid houses exactly two specialized diagnostic drones.

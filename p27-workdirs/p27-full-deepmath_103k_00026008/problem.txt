@@ -1,0 +1,1 @@
+Let $(X, \tau_X)$ and $(Y, \tau_Y)$ be topological spaces. If for all functions $f \in Y^X$, where $\text{Gr}(f)$ denotes the graph of $f$ and is assumed to be closed, it follows that $f \in C(X, Y)$, does this imply that $(Y, \tau_Y)$ is compact? Provide a justification for your answer.

@@ -1,0 +1,1 @@
+Does there exist an analytic function that takes rational values at integer points, has a derivative that also takes rational values at these points, but for which all higher derivatives (from the second onwards) yield irrational values when evaluated at integers?

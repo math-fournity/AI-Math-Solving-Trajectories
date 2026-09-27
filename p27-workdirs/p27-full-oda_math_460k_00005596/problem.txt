@@ -1,0 +1,1 @@
+Let \( A \) be a Noetherian ring and \( P \in \textrm{Ass}(A) \). Find the smallest integer \( c > 0 \) such that \( P \in \textrm{Ass}(A/I) \) for every ideal \( I \subset P^c \) when \( A = \mathbb{Z}[x] \) and \( P = (2, x) \).

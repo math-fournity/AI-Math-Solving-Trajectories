@@ -1,0 +1,1 @@
+In triangle $ABC$, $AD$ and $AE$ trisect $\angle BAC$. The lengths of $BD, DE $ and $EC$ are $1, 3 $ and $5$ respectively. Find the length of $AC$.

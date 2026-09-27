@@ -1,0 +1,1 @@
+Determine the value of \( \lim\sup_{n \to \infty} \frac{E_n}{n!} \), where \( E_n \) is the number of permutations in \( S_n \) that can be obtained by using each transposition exactly once.

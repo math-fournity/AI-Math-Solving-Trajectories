@@ -1,0 +1,1 @@
+Consider a surjective entire function \( f: \mathbb{C} \to \mathbb{C} \). Determine whether there exists a real number \( r_0 > 0 \) such that the preimage \( f^{-1}(D(0,r)) \) is a connected set for all \( r \geq r_0 \), where \( D(0,r) \) denotes the open disk centered at 0 with radius \( r \).

@@ -1,0 +1,1 @@
+Find all real numbers $a$ such that for every sequence $a_1, a_2, a_3, \ldots$ of pairwise different positive integers satisfying $a_n \leq an$ for every positive integer $n$, there exist infinitely many numbers in the sequence whose sum of digits in base $4038$ is not divisible by $2019$.

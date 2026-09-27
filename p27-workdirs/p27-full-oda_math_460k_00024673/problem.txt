@@ -1,0 +1,1 @@
+Suppose \( S_0 \) is a finite set of vectors in \( \mathbb{R}^N \). For all positive integers \( n \), define

@@ -1,0 +1,1 @@
+In triangle \(ABC\) with symmedian point \(L\), let \(N_a\), \(N_b\), and \(N_c\) be the nine-point centers of triangles \(LBC\), \(LCA\), and \(LAB\), respectively. Let \(G\) be the centroid of triangle \(ABC\) and \(G'\) be the centroid of triangle \(N_aN_bN_c\). If the Brocard axis of triangle \(ABC\) is denoted as \(d\), find the value of \(\frac{GG' \cdot d}{d^2}\).

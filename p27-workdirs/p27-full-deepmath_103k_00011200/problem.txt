@@ -1,0 +1,1 @@
+Suppose $G$ is the Galois group of an irreducible degree 5 polynomial $f \in \mathbb{Q}[x]$ with $|G|=10$. Determine whether $f$ must have precisely 1 or 5 real roots.

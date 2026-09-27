@@ -1,0 +1,1 @@
+In a specialized logistics center, there are 9 distinct delivery docks, numbered 1 through 9. There are also 9 unique cargo crates, also numbered 1 through 9.

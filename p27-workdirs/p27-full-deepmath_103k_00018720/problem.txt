@@ -1,0 +1,1 @@
+Given the conditions $n=2m+1$, $2^m\equiv\pm1\pmod n$, $2^m\equiv2\pmod m$, and $2^{(m-1)/2}\equiv\pm1\pmod m$, determine whether these imply that $n$ is a prime number.

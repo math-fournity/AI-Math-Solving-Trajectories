@@ -1,0 +1,1 @@
+Determine whether there exists a continuous map \( f: S^1 \to \mathbb{R} \) such that for every odd number \( o \in \mathbb{N} \), there are finitely many points in \( f(S^1) \) with the property that the preimage of each one has exactly \( o \) points in \( S^1 \).

@@ -1,0 +1,1 @@
+In the boolean lattice $B_n$ of rank $n$, each edge (interval of cardinality 2) is labeled with either $\alpha$ or $\beta$. The labeling satisfies the following conditions:

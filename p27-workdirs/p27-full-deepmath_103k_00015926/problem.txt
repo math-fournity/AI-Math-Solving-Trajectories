@@ -1,0 +1,1 @@
+Determine whether there exists a natural number $N$, depending on $n \in \mathbb{N}$, such that every subset $A$ of $\{1, 2, \ldots, N\}$ ensures that either $A$ or its complement contains an arithmetic progression of length $n$.

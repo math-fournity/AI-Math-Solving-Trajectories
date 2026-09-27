@@ -1,0 +1,1 @@
+Determine the maximum number of linearly independent real $n \times n$ matrices $A_1, A_2, \ldots, A_m$ such that $A_i A_j = 0$ for all $i \neq j$. The matrices are not necessarily diagonalizable.

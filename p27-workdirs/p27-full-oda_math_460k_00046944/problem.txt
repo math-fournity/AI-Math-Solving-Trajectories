@@ -1,0 +1,1 @@
+For positive real numbers \( a, b, c \) with \( a + b + c = 3 \), let \( f(k) = a^3 + b^3 + c^3 + k (a^2 b + b^2 c + c^2 a) \). Determine the value of \( k \) such that \( f(k) = 3(k+1) \) holds for all \( a, b, c \) but fails to hold for any \( k \) greater than this value. Provide your answer accurate to 15 decimal places.

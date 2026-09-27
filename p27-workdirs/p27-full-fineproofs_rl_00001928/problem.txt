@@ -1,0 +1,1 @@
+Given is a positive integer $n$ and a game board consisting of $n+1$ square fields arranged side by side, numbered from 0 to $n$ from left to right. At the beginning of the game, $n$ game pieces are located on field number 0, and the other fields are empty.

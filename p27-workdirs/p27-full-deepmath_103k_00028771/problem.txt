@@ -1,0 +1,1 @@
+Determine whether there exists a theorem stating that if a function \( f: S \to \mathbb{R}^n \) is continuous, with \( S \subset \mathbb{R}^n \) being convex, and \( f \) has a convex image and is locally one-to-one, then \( f \) must be globally one-to-one on \( S \).

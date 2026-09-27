@@ -1,0 +1,1 @@
+A digital security firm, CYBER-2009, uses a proprietary validation algorithm for its master encryption keys. To generate the "Genesis Key," a security engineer must identify the smallest positive whole number $n$ that satisfies two specific security protocols:

@@ -1,0 +1,1 @@
+In a remote digital archives facility, a data transmission is currently holding a specific integer value represented as a security clearance level. Two system administrators, Alice and Bob, are competing to recalibrate the system. They take turns modifying the clearance level, with Alice always initiating the sequence.

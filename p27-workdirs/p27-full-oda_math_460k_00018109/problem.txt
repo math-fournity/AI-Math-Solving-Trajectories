@@ -1,0 +1,1 @@
+Determine whether there exists a known transcendental number $c$ such that $c^c$ is algebraic. If such a number exists, provide an example.

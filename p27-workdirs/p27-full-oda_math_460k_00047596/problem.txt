@@ -1,0 +1,1 @@
+Given a positive integer $n$, determine the largest real number $\mu$ such that for every set $C$ of $4n$ points in the interior of the unit square $U$, there exists a rectangle $T$ contained in $U$ with the following properties:

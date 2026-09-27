@@ -1,0 +1,1 @@
+A rectangular building consists of two rows of square rooms, with $n$ rooms in each row, forming a $2 \times n$ grid of rooms. Each square room can have doors leading to adjacent rooms (shared walls). Doors facing the outside of the building are not counted. A design of the doors is valid if one can travel from any room to any other room using the doors.

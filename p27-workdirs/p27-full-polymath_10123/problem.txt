@@ -1,0 +1,1 @@
+In a futuristic data-storage facility, an "Archival Core" is designed as a perfect equilateral triangular grid. The grid consists of smaller triangular storage cells, each with a side length of 1 unit. The entire Core has a side length of 111 units.

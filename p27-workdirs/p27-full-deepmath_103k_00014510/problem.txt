@@ -1,0 +1,1 @@
+Evaluate the integral \( I = \frac{1}{2\pi i}\oint_{|z+1|=2}\frac{\zeta'(z)+1}{\zeta(z)+z}dz-1 \), where \( \zeta \) is the Riemann Zeta function, and determine if \( I = 1 \).

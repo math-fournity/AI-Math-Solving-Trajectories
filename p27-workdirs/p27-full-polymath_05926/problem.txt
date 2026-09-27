@@ -1,0 +1,1 @@
+A specialized urban logistics company manages a vast, infinite hexagonal district where each building plot is a small equilateral triangle. The district is divided into a grid of these triangular plots. For an upcoming festival, the city council decides to paint exactly $N$ of these plots solid black.

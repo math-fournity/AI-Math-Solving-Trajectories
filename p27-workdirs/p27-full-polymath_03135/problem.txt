@@ -1,0 +1,1 @@
+Given a sequence of $n$ integers, we construct a triangle of numbers. Above each pair of adjacent numbers in a row, we write their sum to form the row above it. This process continues until a single number is obtained at the top. For a sequence of length $n=100$, what is the minimum possible number of even integers in the resulting triangle of $\frac{n(n+1)}{2}$ numbers?

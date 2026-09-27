@@ -1,0 +1,1 @@
+Find the smallest real constant \(\alpha\) such that for all positive integers \(n\) and real numbers \(0 = y_0 < y_1 < \cdots < y_n\), the following inequality holds:

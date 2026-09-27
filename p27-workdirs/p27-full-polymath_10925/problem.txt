@@ -1,0 +1,1 @@
+In a specialized logistics warehouse, there is a single automated storage rack consisting of 100 consecutive slots, numbered 1 to 100 from left to right. Exactly 100 cargo drones arrive one by one to deliver a package to this rack.

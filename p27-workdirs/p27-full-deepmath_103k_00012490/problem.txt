@@ -1,0 +1,1 @@
+Determine the number of connected components of the subset \( \mathcal{E} \) of \( GL_n(\mathbb{R}) \), where \( \mathcal{E} = \{V \in GL_n(\mathbb{R}): v_1, \dots, v_r \text{ is a basis for } \mathcal{S}\} \) and \( \mathcal{S} \subset \mathbb{R}^n \) is a subspace with dimension \( 1 \le r < n \). Here, \( v_1, \dots, v_r \) are the first \( r \) columns of \( V \).

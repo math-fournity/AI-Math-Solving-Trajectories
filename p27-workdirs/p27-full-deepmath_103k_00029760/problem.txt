@@ -1,0 +1,1 @@
+Determine the minimum diameter that can be ensured when a planar set with a unit diameter is divided into $k$ pieces.

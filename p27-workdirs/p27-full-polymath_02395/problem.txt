@@ -1,0 +1,1 @@
+In the alphametic \(W E \times E Y E = S C E N E\), each different letter stands for a different digit, and no word begins with a \(0\). Find \(S\).

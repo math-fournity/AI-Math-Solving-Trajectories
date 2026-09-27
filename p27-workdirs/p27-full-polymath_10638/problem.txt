@@ -1,0 +1,1 @@
+A specialized architectural firm is designing a luxury compound surrounded by $n$ straight security walls ($n \geq 3$), forming a convex $n$-sided perimeter. The corners of the compound are designated as observation posts $A_1, A_2, \dots, A_n$ in clockwise order.

@@ -1,0 +1,1 @@
+In a summer school with \( n > 4 \) students, if two students are friends, they don't have any common friends, and if two students are not friends, they have exactly two common friends. Determine the smallest possible value of \( n \).

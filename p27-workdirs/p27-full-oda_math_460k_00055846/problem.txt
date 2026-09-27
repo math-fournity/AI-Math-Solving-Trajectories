@@ -1,0 +1,1 @@
+Derive a onefold Mellin-Barnes (MB) representation for the Feynman integral:

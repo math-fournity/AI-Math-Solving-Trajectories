@@ -1,0 +1,1 @@
+In a remote digital archipelago, there is a perfect square grid of server towers consisting of 2005 rows and 2005 columns. Currently, every single intersection (cell) in this $2005 \times 2005$ grid contains exactly one active data beacon.

@@ -1,0 +1,1 @@
+Find all strictly increasing sequences $\{a_n\}_{n=0}^\infty$ of positive integers such that for all positive integers $k,m,n$

@@ -1,0 +1,1 @@
+In a large logistics hub, a robotic sorting unit is programmed to move across a grid of floor tiles, where each tile is identified by integer coordinates $(x, y)$. The unit is assigned to visit a "Cluster," defined as a collection of exactly $2n+1$ specific tiles (where $n$ is a fixed positive integer).

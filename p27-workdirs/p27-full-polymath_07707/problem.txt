@@ -1,0 +1,1 @@
+In a remote industrial district, a logistics company operates a fleet of $3N$ heavy-duty cargo drones. Each drone is programmed with a specific efficiency rating, which must be an integer between 60 and 100, inclusive.

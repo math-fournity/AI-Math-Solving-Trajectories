@@ -1,0 +1,1 @@
+$ABCDE$ is a cyclic pentagon with $BC = CD = DE$. The diagonals $AC$ and $BE$ intersect at $M$. $N$ is the foot of the altitude from $M$ to $AB$. We have $MA = 25$, $MD = 113$, and $MN = 15$. The area of triangle $ABE$ can be expressed as $\frac{m}{n}$ where $m$ and $n$ are relatively prime positive integers. Determine the remainder obtained when $m+n$ is divided by $1000$.

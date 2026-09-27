@@ -1,0 +1,1 @@
+Suppose that $<$ is a total order on $\mathbb{Z}^{n}_{\geq 0}$ satisfying the following conditions:

@@ -1,0 +1,1 @@
+In a remote digital archipelago, a system administrator is managing $n$ active servers arranged in a fixed physical ring, indexed $1$ to $n$ in clockwise order. To conserve power, the administrator initiates a decommissioning protocol starting at Server 1.

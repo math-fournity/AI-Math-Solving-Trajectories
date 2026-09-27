@@ -1,0 +1,1 @@
+In the futuristic city of Numeria, the central power core operates at a frequency $d$, where $d$ is a positive integer known to be a divisor of the value $5 + 2022^{2022}$.

@@ -1,0 +1,1 @@
+In a remote digital network consisting of $n$ servers, the infrastructure is designed as a tree, meaning there are exactly $n-1$ fiber-optic links ensuring a unique path between any two servers. One day, a malicious "Recursive Virus" is uploaded to a specific server $s$.

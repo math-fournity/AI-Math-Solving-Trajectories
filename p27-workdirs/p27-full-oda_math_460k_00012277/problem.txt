@@ -1,0 +1,1 @@
+Let \( D \) be the unit disk and let \( \varphi: D \rightarrow \mathbb{C} \) be an analytic function with \( |\varphi(z)| < 1 \) for all \( z \in D \). If \( \varphi(z) = \sum_{n=0}^{\infty} a_n z^n \), find the largest value of \( r \) such that for \( |z| < r \), \( \left| \sum_{n=0}^{\infty} |a_n| z^n \right| < 1 \).

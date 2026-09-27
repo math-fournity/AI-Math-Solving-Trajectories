@@ -1,0 +1,1 @@
+Evaluate the product \( (\cos x)(\cos 2x)(\cos 3x) \cdots (\cos 999x) \) where \( x = \frac{2\pi}{1999} \).

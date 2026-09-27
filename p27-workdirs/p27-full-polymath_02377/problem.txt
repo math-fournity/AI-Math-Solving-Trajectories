@@ -1,0 +1,1 @@
+In an obtuse triangle \(ABC\) with \(C > 90^\circ\), points \(E\) and \(F\) are on side \(AB\) such that \(AE = EF = FB\). Point \(D\) is on side \(BC\) such that \(BC \perp ED\) and \(AD \perp CF\). Let \(\angle BDF = x\) and \(\angle CFA = 3x\). Find the value of the ratio \(\frac{DB}{DC}\).

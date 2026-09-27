@@ -1,0 +1,1 @@
+In the fictional country of Mahishmati, there are $50$ cities, including a capital city. Some pairs of cities are connected by two-way flights. Given a city $A$, an ordered list of cities $C_1,\ldots, C_{50}$ is called an [i]antitour[/i] from $A$ if

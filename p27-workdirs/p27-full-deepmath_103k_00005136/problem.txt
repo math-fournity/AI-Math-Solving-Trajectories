@@ -1,0 +1,1 @@
+Does there exist a closed geodesic on a closed genus 2 orientable surface with a hyperbolic metric that self-intersects at exactly one point three times?

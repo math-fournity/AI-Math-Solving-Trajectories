@@ -1,0 +1,1 @@
+Suppose \((S_t)_{t \geq 0}\) is a right continuous, uniformly integrable submartingale. Is the family \((S_T)_{T \equiv \text{stopping time}}\) uniformly integrable?

@@ -1,0 +1,1 @@
+In a remote territory, there are three secret command outposts, $P_1, P_2,$ and $P_3$, and three straight communication cables, $\ell_1, \ell_2,$ and $\ell_3$, laid across a flat desert. No outpost is located directly on any of the cables.

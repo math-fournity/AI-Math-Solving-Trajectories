@@ -1,0 +1,1 @@
+A natural number $n$ is called good if each of the numbers $n$, $n+1$, $n+2$, and $n+3$ is divisible by its own sum of digits. If a good number $n$ ends in the digit 8, determine its tens digit.

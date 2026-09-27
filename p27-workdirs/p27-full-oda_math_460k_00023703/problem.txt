@@ -1,0 +1,1 @@
+For which varieties \( V \) can one find a discriminator formula for the subclass of subdirectly irreducible members? A discriminator formula is an existential formula in prenex form whose matrix is a conjunction of atomic formulas, and it satisfies:

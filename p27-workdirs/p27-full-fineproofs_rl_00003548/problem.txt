@@ -1,0 +1,1 @@
+Let $A B C D E$ be a convex pentagon such that the five vertices lie on a circle and the five sides are tangent to another circle inside the pentagon. There are $\binom{5}{3}=10$ triangles which can be formed by choosing 3 of the 5 vertices. For each of these 10 triangles, mark its incenter. Prove that these 10 incenters lie on two concentric circles.

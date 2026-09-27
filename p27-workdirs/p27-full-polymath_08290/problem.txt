@@ -1,0 +1,1 @@
+In a specialized logistics center, every package assigned a positive integer ID code $n$ undergoes a systematic "Reduction Protocol." In this protocol, a clerk calculates the sum of the digits of the ID code and subtracts that sum from the code itself. The remaining value is then divided by 9 to produce a new, smaller integer code.

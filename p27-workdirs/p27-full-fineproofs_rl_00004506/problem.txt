@@ -1,0 +1,1 @@
+Show that for any positive real numbers  $a, b, c$  such that  $a + b + c = ab + bc + ca$ ,

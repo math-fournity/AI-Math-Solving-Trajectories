@@ -1,0 +1,1 @@
+In a sprawling telecommunications network, engineers are analyzing the density of connections required to guarantee specific structural redundancies. The network consists of a set of server hubs ($V$) and direct fiber-optic links ($E$) connecting pairs of distinct hubs.

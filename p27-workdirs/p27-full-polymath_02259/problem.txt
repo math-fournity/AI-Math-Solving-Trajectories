@@ -1,0 +1,1 @@
+Three, (25 points) Given three natural numbers $a, b, c$ where at least $a$ is a prime number, and they satisfy

@@ -1,0 +1,1 @@
+Let $A$ be the sequence of zeroes and ones (binary sequence). The sequence can be modified by the following operation: we may pick a block or a contiguous subsequence where there are an unequal number of zeroes and ones, and then flip their order within the block (so block $a_1, a_2, \ldots, a_r$ becomes $a_r, a_{r-1}, \ldots, a_1$).

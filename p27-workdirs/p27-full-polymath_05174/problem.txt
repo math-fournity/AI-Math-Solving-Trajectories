@@ -1,0 +1,1 @@
+A sequence $x_1, x_2, \dots$ consists of an initial block of $p$ positive distinct integers that then repeat periodically. That is, $x_1, \dots, x_p$ are distinct and $x_{n+p}=x_n$ for every $n \ge 1$. The terms of the sequence are not initially known. To find $p$, one can reveal the value of a term $x_i$ for any $i$.

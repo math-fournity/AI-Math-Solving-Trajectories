@@ -1,0 +1,1 @@
+Triangle $ABC$ has side lengths $AB=13$, $BC=14$, and $CA=15$. Points $D$ and $E$ are chosen on $AC$ and $AB$, respectively, such that quadrilateral $BCDE$ is cyclic and when the triangle is folded along segment $DE$, point $A$ lies on side $BC$. If the length of $DE$ can be expressed as $\tfrac{m}{n}$ for relatively prime positive integers $m$ and $n$, find $100m+n$.

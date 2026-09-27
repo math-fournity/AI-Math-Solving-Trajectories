@@ -1,0 +1,1 @@
+Is there a formal proof that for a Galton-Watson tree with an arbitrary offspring distribution having an expected value of 1 and finite nonzero variance, the ratio of expected diameter to expected height converges to \( \frac{4}{3} \)?

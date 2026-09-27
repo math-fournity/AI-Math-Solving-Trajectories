@@ -1,0 +1,1 @@
+Consider the set \(\mathcal{S}_X\) of trigonometric polynomials \(f(t) = \sum_{|k| \leq X} c_k e^{2\pi i kt}\) on the circle \(\mathbb{T} = \mathbb{R}/\mathbb{Z}\) with degree \(\leq X\), such that \(f(0) = 1\) and \(c_0 = 0\). Define

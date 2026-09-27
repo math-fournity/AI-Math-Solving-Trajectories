@@ -1,0 +1,1 @@
+In a futuristic city, two high-speed transit tracks, denoted as $l_1$ and $l_2$, are being constructed. These tracks are designed to be perfectly straight and must run tangent to a magnetic containment field defined by the boundary equation $x^2 - 4(x+y) + y^2 = 2xy + 8$.

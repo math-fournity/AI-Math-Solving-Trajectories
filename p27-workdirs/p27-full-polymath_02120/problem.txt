@@ -1,0 +1,1 @@
+In a football tournament, 30 teams participated. At the end of the tournament, it turned out that among any three teams, there are two that scored the same number of points in three matches within this trio (for a win, 3 points are awarded, for a draw - 1, for a loss - 0). What is the minimum number of draws that can be in such a tournament?

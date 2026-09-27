@@ -1,0 +1,1 @@
+In a meeting of $4042$ people, there are $2021$ couples, each consisting of two people. Suppose that $A$ and $B$, in the meeting, are friends when they know each other. For a positive integer $n$, each person chooses an integer from $-n$ to $n$ so that the following conditions hold:

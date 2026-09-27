@@ -1,0 +1,1 @@
+Let $G \subset \mathbb{C}^{n}$ be a domain and let $f$ be an injective holomorphic map from $G$ into a complex Hilbert space $H$. Is $f$ necessarily a homeomorphism?

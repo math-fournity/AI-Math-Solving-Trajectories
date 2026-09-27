@@ -1,0 +1,1 @@
+In the futuristic city of Neo-Aethel, a digital architectural algorithm generates a structural sequence of "Energy Beams" denoted by $a_n$. The design is governed by strict foundational protocols:

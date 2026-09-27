@@ -1,0 +1,1 @@
+A specialized aerospace logistics company is testing the stability of "Variable-Strut Triangular Frames." A frame is considered stable only if its three struts can form a non-degenerate triangle.

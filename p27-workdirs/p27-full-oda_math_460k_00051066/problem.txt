@@ -1,0 +1,1 @@
+Consider a topological space $X$ where every subspace of cardinality at most $\aleph_1$ is second-countable. Let $f(X)$ be the smallest possible cardinality of a basis for $X$. If $X$ has cardinality $\aleph_2$, find $f(X)$.

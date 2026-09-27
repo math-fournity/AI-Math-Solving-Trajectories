@@ -1,0 +1,1 @@
+In a specialized research laboratory, ten distinct experimental chemical compounds are being tested for their reactivity levels. These levels are represented by ten unique, non-zero real numbers: $x_1, x_2, \dots, x_{10}$.

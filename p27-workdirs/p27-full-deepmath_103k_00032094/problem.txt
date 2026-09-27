@@ -1,0 +1,1 @@
+Let the continuous function \( f(x) \) be defined everywhere except at 0 and satisfy

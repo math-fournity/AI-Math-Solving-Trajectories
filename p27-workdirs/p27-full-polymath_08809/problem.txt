@@ -1,0 +1,1 @@
+In a specialized logistics hub, two delivery coordinators, Alex and Bo, manage separate zones. For every parcel Alex handles ($x$), the hub charges a flat processing fee of 15 credits. For every parcel Bo handles ($y$), the hub charges a flat processing fee of 101 credits.

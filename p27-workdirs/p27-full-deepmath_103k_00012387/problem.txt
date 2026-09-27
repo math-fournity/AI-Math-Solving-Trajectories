@@ -1,0 +1,1 @@
+Find the supremum of $|f(2)|$ for all holomorphic functions $f: P \to B_1(0)$ such that $f(1) = 0$, where $P = \{ z \in \mathbb{C} : \text{Re} \, z > 0 \}$ is the right half-plane.

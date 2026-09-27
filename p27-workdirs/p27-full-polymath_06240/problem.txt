@@ -1,0 +1,1 @@
+A specialized laboratory is testing various "stability levels" for experimental chemical compounds. Each stability level is identified by a positive integer $n$. For a given $n$, the possible molecular energy states achievable by that compound form a set $S_n$, defined as all values that can be expressed in the form $x^2 + ny^2$, where $x$ and $y$ are any integers.

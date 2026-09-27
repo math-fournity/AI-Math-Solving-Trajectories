@@ -1,0 +1,1 @@
+Below is a square, divided by several lines (not to scale). Several regions have their areas written inside. Find the area of the remaining region.

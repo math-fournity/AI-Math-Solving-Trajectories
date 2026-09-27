@@ -1,0 +1,1 @@
+Find the best constant \( k \) such that for an acute triangle \( \Delta ABC \),

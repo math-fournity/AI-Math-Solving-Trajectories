@@ -1,0 +1,1 @@
+In the world of logistics, a "distribution cycle" of size $n$ involves a warehouse manager attempting to organize $n-1$ different shipping routes. For any cycle size $n \geq 3$, the manager calculates a "Total Logistics Factor" $L$ using the following protocol:

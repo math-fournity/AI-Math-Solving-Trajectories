@@ -1,0 +1,1 @@
+Let $S = \{x_1, x_2, \dots, x_{20}\}$ be a set of 20 real numbers in the interval $[0, 1]$. A $9$-element subset $A \subset S$ is called *nice* if

@@ -1,0 +1,1 @@
+In a sprawling logistics network, a company is planning to establish $n$ regional distribution hubs (where $n \ge 4$) on a flat geographical plane. To ensure maximum connectivity, the company maps out every possible direct transport route, represented by a straight-line segment connecting every unique pair of hubs.

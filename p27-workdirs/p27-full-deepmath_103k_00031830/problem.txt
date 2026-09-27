@@ -1,0 +1,1 @@
+For each positive integer $k$, define $a_k$ as the number obtained by appending $k$ zeroes and a $1$ to the right of $2024$, all written in base $10$. Determine whether there exists a $k$ such that $a_k$ has at least $2024^{2024}$ distinct prime divisors.

@@ -1,0 +1,1 @@
+Determine the best exponent $k$ such that one can find $\Omega(n^k)$ points in an $n \times n$ grid with no four points forming a square with sides parallel to the grid lines.

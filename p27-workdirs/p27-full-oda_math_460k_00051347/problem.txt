@@ -1,0 +1,1 @@
+Find all polynomials $P$ of degree $\le2004$ having the form

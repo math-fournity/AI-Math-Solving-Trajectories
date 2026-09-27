@@ -1,0 +1,1 @@
+Triangle \(ABC\) is an equilateral triangle with side length \(1\). Let \(X_0, X_1, \ldots\) be an infinite sequence of points such that the following conditions hold:

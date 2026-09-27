@@ -1,0 +1,1 @@
+In a remote digital network, a server cluster is organized into an $n \times n$ grid of logic gates (where $n \geq 2$). Each gate can be set to state 0 or state 1. At the start of the simulation, every gate located in the first column is locked in state 0, while all other gates in the grid can be in any initial state.

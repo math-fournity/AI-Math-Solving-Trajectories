@@ -1,0 +1,1 @@
+Find the numerator of the fraction when reduced to lowest terms.

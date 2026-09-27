@@ -1,0 +1,1 @@
+Let \(ABC\) be a triangle, and let \(A_2B_2C_2\) be the intouch triangle of the contact triangle. If \(AA_2\), \(BB_2\), and \(CC_2\) are concurrent at point \(P\), and the ratio of the area of triangle \(A_2B_2C_2\) to the area of triangle \(ABC\) is \(\frac{m}{n}\), where \(m\) and \(n\) are coprime positive integers, find \(m+n\).

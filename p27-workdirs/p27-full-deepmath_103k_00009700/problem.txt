@@ -1,0 +1,1 @@
+Determine the Galois group of the polynomial \( f(x) = x^5 - 5x^4 + 10x^3 - 10x^2 - 135x + 131 \) over \( \mathbb{Q} \).

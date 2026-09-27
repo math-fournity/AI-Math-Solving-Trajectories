@@ -1,0 +1,1 @@
+Find all positive integer pairs $(n, k)$ such that the equation $1^n + 2^n + \ldots + n^n = k!$ holds, where $k!$ denotes the factorial of $k$.

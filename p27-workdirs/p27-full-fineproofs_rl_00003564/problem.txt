@@ -1,0 +1,1 @@
+Let $A B C D$ be a parallelogram. Point $E$ lies on segment $C D$ such that  $$ 2 \angle A E B=\angle A D B+\angle A C B, $$  and point $F$ lies on segment $B C$ such that  $$ 2 \angle D F A=\angle D C A+\angle D B A . $$  Let $K$ be the circumcenter of triangle $A B D$. Prove that $K E=K F$.

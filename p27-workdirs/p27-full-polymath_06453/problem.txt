@@ -1,0 +1,1 @@
+A boutique clockmaker is designing a special circular decorative dial consisting of $N$ gems. Each gem position must be filled with either a Clear Diamond (representing the value 1) or a Deep Ruby (representing the value 2).

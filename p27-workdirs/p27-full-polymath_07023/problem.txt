@@ -1,0 +1,1 @@
+In a specialized data-processing facility, engineers are testing "Stability Protocols" for a network of $n$ parallel processors. A configuration is defined as an $n$-tuple of power-scaling factors $(a_1, a_2, \ldots, a_n)$, where each factor is a positive integer.

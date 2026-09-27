@@ -1,0 +1,1 @@
+Let $M$ be a convex $n$-sided polygon, where $n \geq 4$. We color $n-3$ diagonals of $M$ green and another $n-3$ diagonals red, such that no two diagonals of the same color intersect inside $M$. Let $I(n)$ be the maximum possible number of intersection points between the red and green diagonals inside $M$.

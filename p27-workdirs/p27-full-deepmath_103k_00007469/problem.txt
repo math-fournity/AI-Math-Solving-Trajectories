@@ -1,0 +1,1 @@
+Let \( \kappa \geq \aleph_0 \) be a cardinal, and suppose that \( \mathcal{U} \) is a non-principal ultrafilter on \( \kappa \). Consider \( \mathcal{U} \) as a poset \((\mathcal{U}, \subseteq)\). If there exist posets \( P \) and \( Q \) such that \( \mathcal{U} \cong P \times Q \), does this imply that one of \( P \) or \( Q \) consists of only one point?

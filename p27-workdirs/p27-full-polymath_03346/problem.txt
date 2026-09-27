@@ -1,0 +1,1 @@
+In an $11 \times 11$ table with all cells initially colored white, we can select any four white cells that form the vertices of a square with sides parallel to the table's sides and then color two cells on the diagonal in black. What is the maximum number of cells that can be colored black using this process?

@@ -1,0 +1,1 @@
+What is the minimum number of cells that need to be marked on a chessboard so that each cell of the board (marked or unmarked) borders at least one marked cell?

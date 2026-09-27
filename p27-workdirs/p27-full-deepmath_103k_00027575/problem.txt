@@ -1,0 +1,1 @@
+In the game of Go, determine which player, Black or White, has a winning strategy.

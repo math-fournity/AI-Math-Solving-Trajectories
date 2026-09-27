@@ -1,0 +1,1 @@
+A specialized logistics company, "Factor-Flow," manages warehouse units based on the "divisor count" of their inventory codes. For any positive integer ID $n$, the number of storage bins assigned to it is $d(n)$, which represents the total number of positive integers that divide $n$.

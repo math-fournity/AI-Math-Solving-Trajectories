@@ -1,0 +1,1 @@
+5. Let $n$ be a given positive integer. If a set $K$ of integer points in the plane satisfies the following condition, it is called "connected": for any pair of points $R, S \in K$, there exists a positive integer $l$ and a sequence of points in $K$

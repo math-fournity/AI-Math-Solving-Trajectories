@@ -1,0 +1,1 @@
+In a specialized circular data center, engineers are constructing a high-security firewall perimeter in the shape of a perfectly regular polygon with 2017 server nodes as vertices. To optimize data routing, the internal space of the polygon must be partitioned into exactly 2015 triangular sub-networks.

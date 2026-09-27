@@ -1,0 +1,1 @@
+In a futuristic data-archiving facility, information is organized into nested "Data Vaults." The process begins at Level 0 with a completely empty vault, $V_0$. For every subsequent level $n+1$, the vault $V_{n+1}$ is constructed by creating a collection of every possible unique sub-configuration (subset) that can be formed using the items found in the previous vault $V_n$.

@@ -1,0 +1,1 @@
+A logistics company operates a warehouse organized into a grid of 30 storage bays, arranged in 5 rows and 6 columns. To optimize inventory tracking, the manager assigns a unique security code—an integer from 1 to 30—to each bay, ensuring every number is used exactly once.

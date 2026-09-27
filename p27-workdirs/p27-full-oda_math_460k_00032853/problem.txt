@@ -1,0 +1,1 @@
+Let $\pi(x)$ denote the prime-counting function. Define $f(\epsilon)$ as the smallest positive real number such that $\pi(x) > x^{1-\epsilon}$ for all $x > f(\epsilon)$. Find $f(0.1)$.

@@ -1,0 +1,1 @@
+Calculate the number of distinct integral values less than 2017 that $\frac{(x+y+z)^2}{xyz}$ can take on, where $x, y, z$ are integers.

@@ -1,0 +1,1 @@
+In a specialized logistics network, there are 2,021 distinct shipping depots, uniquely indexed with the integers $1, 2, \dots, 2021$. A pair of depots $(m, n)$ is classified as "Sync-Compatible" if the efficiency coefficient, calculated by the formula $\frac{17m+43n}{m-n}$, results in a whole integer value, where $m$ and $n$ are the indices of the two depots.

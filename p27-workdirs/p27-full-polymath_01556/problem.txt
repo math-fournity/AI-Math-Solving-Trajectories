@@ -1,0 +1,1 @@
+Call a simple graph $G$ quasicolorable if we can color each edge blue, red, green, or white such that:

@@ -1,0 +1,13 @@
+/-!
+# USA Mathematical Olympiad 2001, Problem 3
+
+Let a,b,c ≥ 0 be real numbers satsifying
+
+        a² + b² + c² + abc = 4.
+
+Show that
+
+        0 ≤ ab + bc + ca - abc ≤ 2.
+-/
+
+##

@@ -1,0 +1,1 @@
+Determine whether the cardinal characteristic \( \mathfrak{sd} \), defined as the minimum \( \kappa \) such that player I has a winning strategy in the game \( d(\kappa) \), is equal to \( \omega_1 \).

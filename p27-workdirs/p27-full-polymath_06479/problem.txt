@@ -1,0 +1,1 @@
+A specialized urban planning committee is tasked with designing a "dual-sector expansion zone" for a city. The core of the zone is an existing community park, represented by a convex polygon $P$ with a total land area of exactly $1$ unit.

@@ -1,0 +1,1 @@
+In a remote logistics network, three major distribution hubs—Alpha ($A$), Bravo ($B$), and Charlie ($C$)—are connected by three straight supply routes: route $BC$ has a length of $a$ units, route $CA$ has a length of $b$ units, and route $AB$ has a length of $c$ units.

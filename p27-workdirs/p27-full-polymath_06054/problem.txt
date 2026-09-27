@@ -1,0 +1,1 @@
+In a remote industrial complex, two circular power grids are being designed. The first grid, Grid A, consists of 10 specialized generators, each with a unique power rating chosen from the set $\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\}$ kW. The second grid, Grid B, consists of 11 generators with unique power ratings from the set $\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11\}$ kW.

@@ -1,0 +1,1 @@
+In a remote $3n \times 3n$ grid of solar energy collectors (where $n \ge 2$), a maintenance drone is deployed to perform a diagnostic circuit. The drone begins its task at a specific collector and must navigate the grid according to strict propulsion protocols:

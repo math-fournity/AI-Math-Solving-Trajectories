@@ -1,0 +1,1 @@
+In the city of Metropolia, there are $n$ distinct districts. An urban planner is designing "Efficiency Routes," which are sequences of district visits. A route is defined as "Efficient" if and only if it follows a specific constraint: for any district that is visited more than once, no other district can appear multiple times between those two visits.

@@ -1,0 +1,1 @@
+Let $R$ be a ring with identity such that each (right) ideal of $R/J(R)$ is idempotent, where $J(R)$ is the Jacobson radical of $R$. Is $R/J(R)$ necessarily von-Neumann regular?

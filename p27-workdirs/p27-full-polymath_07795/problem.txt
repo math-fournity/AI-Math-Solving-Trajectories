@@ -1,0 +1,1 @@
+A specialized computer processor operates on an $n$-bit cycle. For a given integer $n$, the system must process any input integer workload $m$ through a series of $n$ parallel processing units.

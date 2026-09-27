@@ -1,0 +1,1 @@
+$100$  red points divide a blue circle into  $100$  arcs such that their lengths are all positive integers from  $1$  to  $100$  in an arbitrary order. Prove that there exist two perpendicular chords with red endpoints.

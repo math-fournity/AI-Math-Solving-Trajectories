@@ -1,0 +1,1 @@
+Let $a_{1}<a_{2}<a_{3}<a_{4}<\cdots$ be an infinite sequence of real numbers in the interval $(0,1)$. Show that there exists a number that occurs exactly once in the sequence  $$ \frac{a_{1}}{1}, \frac{a_{2}}{2}, \frac{a_{3}}{3}, \frac{a_{4}}{4}, \ldots $$

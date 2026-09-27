@@ -1,0 +1,1 @@
+The average of a set of distinct primes is 27. What is the largest prime that can be in this set?

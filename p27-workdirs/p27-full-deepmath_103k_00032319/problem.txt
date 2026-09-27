@@ -1,0 +1,1 @@
+Find the minimum constant \( c \) such that for any positive integer \( m \) and a \( kn \)-regular graph \( G \) with \( m \) vertices, the vertices of \( G \) can be colored with \( n \) different colors so that the number of monochrome edges is at most \( cm \).

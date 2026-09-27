@@ -1,0 +1,1 @@
+A specialized satellite array consists of two triangular solar panels, Panel ABC and Panel DEF. These panels are positioned such that the vertex at Station B forms a 90° angle between struts AB and BC, and the vertex at Station E forms a 90° angle between struts DE and EF.

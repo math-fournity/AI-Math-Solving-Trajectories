@@ -1,0 +1,1 @@
+Find all irrational numbers $\alpha > 1$ such that if a positive real number $\beta$ satisfies $A(\alpha) \supset A(\beta)$, then $\frac{\beta}{\alpha}$ is an integer. Here, $A(x) = \{[nx] \mid n \in \mathbb{N}\}$, where $[r]$ denotes the greatest integer not exceeding $r$.

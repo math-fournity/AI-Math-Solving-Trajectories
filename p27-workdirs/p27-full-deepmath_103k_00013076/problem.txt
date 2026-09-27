@@ -1,0 +1,1 @@
+Determine whether every uncountable subset of the real numbers has a super limit point. Provide a justification for your answer.

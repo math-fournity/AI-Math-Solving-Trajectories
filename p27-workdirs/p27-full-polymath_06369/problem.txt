@@ -1,0 +1,1 @@
+In a vast digital library, there are $3^{2004}$ unique data packets, each assigned a unique identification priority ranging from $1$ to $3^{2004}$. A compression algorithm processes these packets through a series of $2004$ elimination rounds.

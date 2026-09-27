@@ -1,0 +1,1 @@
+Determine the unitary ring morphisms from \( M_n(K) \) to \( M_m(K) \), where \( K \) is a commutative field. Identify any necessary restrictions on \( m \) and \( n \) for the problem to be solvable.

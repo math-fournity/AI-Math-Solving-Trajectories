@@ -1,0 +1,1 @@
+Find a compactification $K(\mathbb{N})$ for the space $X = \mathbb{N}$ such that the remainder $E(X) = K(\mathbb{N}) - \mathbb{N}$ consists of exactly three isolated points.

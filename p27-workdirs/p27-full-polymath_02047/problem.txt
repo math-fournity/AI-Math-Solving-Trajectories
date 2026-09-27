@@ -1,0 +1,1 @@
+Let \( \triangle ABC \) be a triangle. Let \( X \) be the point on side \( \overline{AB} \) such that \( \angle BXC = 60^\circ \). Let \( P \) be the point on segment \( \overline{CX} \) such that \( BP \perp AC \). Given that \( AB = 6 \), \( AC = 7 \), and \( BP = 4 \), compute \( CP \).

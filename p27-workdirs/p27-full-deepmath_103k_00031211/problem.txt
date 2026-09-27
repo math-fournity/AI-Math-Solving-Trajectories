@@ -1,0 +1,1 @@
+Determine the maximum real number \( k \) such that for any simple graph \( G \) with \( n \) vertices (where \( n \geq 3 \)), the inequality \( x^3 \geq k y^2 \) is satisfied, where \( x \) is the number of edges and \( y \) is the number of triangles in \( G \).

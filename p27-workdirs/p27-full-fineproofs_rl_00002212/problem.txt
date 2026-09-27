@@ -1,0 +1,1 @@
+In tetrahedron  $ABCS$  no two edges have equal length. Point  $A'$  in plane  $BCS$  is symmetric to  $S$  with respect to the perpendicular bisector of  $BC$ . Points  $B'$  and  $C'$  are defined analagously. Prove that planes  $ABC, AB'C', A'BC'$  abd  $A'B'C$  share a common point.

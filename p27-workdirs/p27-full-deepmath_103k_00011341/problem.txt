@@ -1,0 +1,1 @@
+Let $G$ be a finite group with normal subgroups $M$ and $N$ such that $M \cap N = \{e\}$, where $e$ is the identity element. Suppose $G$ has a subgroup of index 2. Must there exist a subgroup of index 2 in $G$ that contains either $M$ or $N$?

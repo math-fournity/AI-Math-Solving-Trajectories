@@ -1,0 +1,1 @@
+Let $k>1$ be a given positive integer. A set $S$ of positive integers is called [i]good[/i] if we can colour the set of positive integers in $k$ colours such that each integer of $S$ cannot be represented as sum of two positive integers of the same colour. Find the greatest $t$ such that the set $S=\{a+1,a+2,\ldots ,a+t\}$ is [i]good[/i] for all positive integers $a$.

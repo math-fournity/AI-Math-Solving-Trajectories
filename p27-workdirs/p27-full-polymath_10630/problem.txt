@@ -1,0 +1,1 @@
+A specialized high-security data center uses a series of hardware encryption modules, each containing a fixed, indivisible amount of storage capacity measured in whole terabytes. The facility manager must prepare a kit of these modules to be shipped to a client.

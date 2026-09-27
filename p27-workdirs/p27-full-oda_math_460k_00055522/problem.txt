@@ -1,0 +1,1 @@
+Suppose that \( p \in \mathbb{R} \), \( a_0 = 1 \), and \( a_n = a_{n-1} + (\sum_{0 \leq k < n} a_k^p)^{-1} \) (\( n \in \mathbb{N} \)). Find the asymptotics of the sequence \(\{a_n\}\).

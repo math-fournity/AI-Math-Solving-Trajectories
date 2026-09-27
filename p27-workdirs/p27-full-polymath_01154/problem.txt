@@ -1,0 +1,1 @@
+A sphere of radius $\sqrt{85}$ is centered at the origin in three dimensions. A tetrahedron with vertices at integer lattice points is inscribed inside the sphere. What is the maximum possible volume of this tetrahedron?

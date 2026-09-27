@@ -1,0 +1,1 @@
+In the coastal kingdom of Tri-Isle, three distinct lighthouse fuel reserves—Alpha ($a$), Beta ($b$), and Gamma ($c$)—contain non-negative quantities of refined oil measured in kiloliters.

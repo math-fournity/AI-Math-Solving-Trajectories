@@ -1,0 +1,1 @@
+A specialized sound engineering team is testing a new noise-cancellation device designed to neutralize acoustic interference. The interference pattern is modeled by a complex wave function $f(x)$ composed of three specific frequencies: a primary tone $\cos x$, a secondary harmonic $\alpha \cos 2x$, and a tertiary harmonic $\beta \cos 3x$.

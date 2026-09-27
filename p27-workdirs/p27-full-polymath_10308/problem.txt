@@ -1,0 +1,1 @@
+A high-security digital vault uses a prime-numbered encryption cycle consisting of 2,027 distinct nodes. To generate a master key, a computer scientist must identify a specific set of "Entry Points" labeled $p_1, p_2, \ldots, p_{2026}$.

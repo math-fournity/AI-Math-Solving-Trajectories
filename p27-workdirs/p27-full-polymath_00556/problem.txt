@@ -1,0 +1,1 @@
+On an $8\times 8$ chessboard, place a stick on each edge of each grid (on a common edge of two grid only one stick will be placed). What is the minimum number of sticks to be deleted so that the remaining sticks do not form any rectangle?

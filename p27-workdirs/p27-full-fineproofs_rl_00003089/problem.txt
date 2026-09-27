@@ -1,0 +1,1 @@
+Let  $a$ ,  $b$  and  $n$  be positive integers, satisfying that  $bn$  divides  $an-a+1$ . Let  $\alpha=a/b$ . Prove that, when the numbers  $\lfloor\alpha\rfloor,\lfloor2\alpha\rfloor,\dots,\lfloor(n-1)\alpha\rfloor$  are divided by  $n$ , the residues are  $1,2,\dots,n-1$ , in some order.

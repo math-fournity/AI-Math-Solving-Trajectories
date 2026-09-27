@@ -1,0 +1,1 @@
+Let \(a, b\) be positive integers such that for all prime numbers \( p, a \pmod{p} \leq b \pmod{p} \). Then \( a = b \). [Erdős, Palfy] Miklos Schweitzer Competition 1984

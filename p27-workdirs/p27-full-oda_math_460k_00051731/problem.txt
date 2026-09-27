@@ -1,0 +1,1 @@
+Return your final response within \boxed{}. The sequence \(\left\{y_{n}\right\}\) is defined as follows:

@@ -1,0 +1,1 @@
+A remote archipelago consists of 2009 tiny research buoys floating in the ocean. A specialized oceanic sensor has a circular detection range with a diameter of 1 kilometer. Through a regional survey, it has been verified that within any random cluster of 17 buoys, at least 11 of those buoys can be simultaneously monitored by a single 1-kilometer diameter sensor.

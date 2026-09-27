@@ -1,0 +1,1 @@
+Define two sequences \( x_n \) and \( y_n \) for \( n = 1, 2, \ldots \) by

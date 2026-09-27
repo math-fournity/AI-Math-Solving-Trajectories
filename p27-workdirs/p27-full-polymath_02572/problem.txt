@@ -1,0 +1,1 @@
+Consider a chess board, with the numbers $1$ through $64$ placed in the squares as in the diagram below.

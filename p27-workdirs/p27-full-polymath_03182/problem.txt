@@ -1,0 +1,1 @@
+The game $(n, k)$-stones is played on a row of $n$ squares. Initially, a stone is on the $k$-th square. Each turn:

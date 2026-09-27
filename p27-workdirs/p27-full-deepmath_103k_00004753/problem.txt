@@ -1,0 +1,1 @@
+Let $X$ be a connected finite CW-complex. Suppose $k \geq 3$ is an integer. Can it occur that $\pi_n(X) = 0$ for all $n \geq k$ while $\pi_{k-1}(X) \neq 0$?

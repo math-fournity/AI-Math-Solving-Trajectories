@@ -1,0 +1,1 @@
+Each cell of a \(2021 \times 2021\) table is colored in one of the colors red, green, blue, or yellow. The table is called magical if there exist positive integers \(a, b, c,\) and \(d\), such that \(a+b+c+d=12\), with the following property:

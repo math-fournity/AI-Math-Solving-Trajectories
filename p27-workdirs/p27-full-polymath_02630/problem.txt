@@ -1,0 +1,1 @@
+Determine all natural numbers $n$ for which the elements of the set $\{1,2, \ldots, n\}$ can be divided into three non-empty sets $A, B$, and $C$ such that:

@@ -1,0 +1,1 @@
+Are the functions of the form \((f+\mathscr Hf)_{|_{(0,1)}}\), where \(f\) is a smooth function on \(\mathbb{R}\) with compact support in \((0,\infty)\), dense in \(L^2((0,1))\)?

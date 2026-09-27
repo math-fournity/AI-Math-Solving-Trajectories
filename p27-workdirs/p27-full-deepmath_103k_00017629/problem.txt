@@ -1,0 +1,1 @@
+Determine whether an odd multi-perfect number can be a perfect square.

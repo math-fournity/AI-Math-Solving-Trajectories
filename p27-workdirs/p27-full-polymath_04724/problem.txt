@@ -1,0 +1,1 @@
+Let $L$ be a set of $n$ lines in general position in the plane (no two lines in $L$ are parallel, and no three lines in $L$ are concurrent). Let $\ell$ be another line in the plane that does not pass through any intersection point of the lines in $L$. We consider the arrangement of lines formed by $L$ and identify all faces (regions) that are intersected by the line $\ell$.

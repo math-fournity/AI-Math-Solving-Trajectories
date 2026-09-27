@@ -1,0 +1,1 @@
+In a remote industrial refinery, a large storage tank contains a chemical compound with a total mass of $2S$ units. This mass is distributed into exactly $100$ individual canisters, where each canister has a specific weight.

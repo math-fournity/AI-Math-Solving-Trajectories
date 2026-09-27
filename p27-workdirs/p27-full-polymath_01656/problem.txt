@@ -1,0 +1,1 @@
+Given a natural number $n > 4$. On the plane, $n$ points are marked, no three of which are collinear. Vasily draws all segments connecting pairs of marked points one by one. At each step, when drawing the next segment $S$, Vasily marks it with the smallest natural number that has not yet been marked by any segment that shares an endpoint with $S$.

@@ -1,0 +1,1 @@
+Determine the cardinality of the union of disjoint sets, each having the cardinality of the real numbers. Provide a proof without using the Schröder-Bernstein theorem.

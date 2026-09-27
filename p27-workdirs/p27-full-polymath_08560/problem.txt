@@ -1,0 +1,1 @@
+In the high-tech logistics hub of Neo-City, a central server manages a vast cycle of data packets. The total capacity of the server's primary loop is exactly equal to the Least Common Multiple of all integers from 1 to 100 inclusive. Every packet in this loop is assigned a unique identification integer $n$, ranging from $1$ up to this maximum capacity.

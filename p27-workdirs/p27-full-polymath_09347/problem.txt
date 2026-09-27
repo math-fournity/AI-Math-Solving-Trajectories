@@ -1,0 +1,1 @@
+A team of $p$ lead engineers is designing a high-precision experimental power grid. Each engineer $i$ (where $1 \le i \le p$) is responsible for selecting an integer voltage setting $x_i$ for their respective sector.

@@ -1,0 +1,1 @@
+Let $G$ be a discrete group acting combinatorially on a topological space $X$. If vertex stabilizers are finite, is the action proper?

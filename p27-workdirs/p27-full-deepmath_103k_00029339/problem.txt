@@ -1,0 +1,1 @@
+In a simple group $G$, if the number of conjugacy classes is greater than $\frac{|G|}{p^2}$, where $p$ is a prime dividing $|G|$, does it follow that the Sylow $p$-subgroups of $G$ have order at most $p^2$?

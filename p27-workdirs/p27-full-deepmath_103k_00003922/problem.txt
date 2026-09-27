@@ -1,0 +1,1 @@
+Find the minimum value of \[ P = \frac{1}{1+2x} + \frac{1}{1+2y} + \frac{3-2xy}{5-x^2-y^2} \] given that \( x, y \in (-\sqrt{2}, \sqrt{2}) \) and \( x^4 + y^4 + 4 = \frac{6}{xy} \).

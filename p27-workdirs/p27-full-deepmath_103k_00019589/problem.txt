@@ -1,0 +1,1 @@
+Consider the ordinary differential equation \(\phi'' - c\phi' + f(\phi) = 0\), where \(c \in \mathbb{R}\) and \(f\) is a smooth real-valued function with \(f(0) = 0 = f(1)\). Given the boundary conditions \(\phi(-\infty) = 0\) and \(\phi(\infty) = 1\), determine whether it is true that \(\phi' > 0\).

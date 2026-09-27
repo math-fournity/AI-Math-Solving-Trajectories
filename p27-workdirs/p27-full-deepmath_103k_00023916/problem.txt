@@ -1,0 +1,1 @@
+Determine the values of $k$ for which there is only one number that requires the maximum number of $k$-th powers in its representation according to Waring's Problem.

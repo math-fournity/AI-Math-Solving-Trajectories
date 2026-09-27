@@ -1,0 +1,1 @@
+In a sprawling subterranean data center, a security engineer is configuring a square grid of 64 server racks, organized into an $8 \times 8$ formation. To ensure traceable wiring, the engineer must assign a unique security ID number from 1 to 64 to each rack.

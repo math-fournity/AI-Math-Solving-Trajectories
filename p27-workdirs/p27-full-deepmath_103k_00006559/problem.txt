@@ -1,0 +1,1 @@
+Determine whether there exists a nontrivial positive integer solution with $x \ne y$ for the equation $x^4 + y^4 = 2z^2$. Provide a justification for your answer.

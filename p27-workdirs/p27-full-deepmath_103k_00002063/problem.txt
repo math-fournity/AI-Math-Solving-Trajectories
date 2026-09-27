@@ -1,0 +1,1 @@
+Does there exist a Banach space $E$ and a linear functional $\lambda \in E^*$ such that $\lambda$ is an extreme point of the unit ball and yet does not norm any (non-zero) vector of $E$?

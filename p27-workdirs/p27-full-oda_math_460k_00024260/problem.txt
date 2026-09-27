@@ -1,0 +1,1 @@
+Characterize those finite groups having the property that every two non-trivial subgroups have a non-trivial intersection.

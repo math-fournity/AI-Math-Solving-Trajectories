@@ -1,0 +1,1 @@
+An architect is designing a series of circular observation decks, each shaped like a convex polygon with $n$ sides, where $n > 4$. To support the roof of each deck, the architect must install non-intersecting support cables (diagonals) between the vertices until the entire area is divided into triangular sections. This process is called a "complete bracing."

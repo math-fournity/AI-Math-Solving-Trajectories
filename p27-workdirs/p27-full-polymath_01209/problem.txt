@@ -1,0 +1,1 @@
+8. The set $S=\{1,2, \ldots, 2022\}$ is to be partitioned into $n$ disjoint subsets $S_{1}, S_{2}, \ldots, S_{n}$ such that for each $i \in\{1,2, \ldots, n\}$, exactly one of the following statements is true:

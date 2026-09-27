@@ -1,0 +1,1 @@
+Let $u \in C^{\infty}(\mathbb{R}^3)$ be a harmonic function. Suppose $u$ has no critical points outside the unit ball but has at least one critical point inside the unit ball. Does it follow that $u$ is a polynomial?

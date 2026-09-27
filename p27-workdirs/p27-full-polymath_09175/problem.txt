@@ -1,0 +1,1 @@
+In a remote industrial network, a digital regulator processes integer-valued input signals. The regulator operates based on a specific "efficiency constant" $k$, where $k$ is a positive integer.

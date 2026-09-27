@@ -1,0 +1,1 @@
+In a circular industrial power grid, there are $n$ distinct energy storage modules, where $n$ is a fixed positive integer. These modules are arranged in a ring, such that module $n$ is adjacent to module 1. To ensure stability, the grid must satisfy the constraint $n \ge 4k$, where $k$ is a fixed positive integer representing the "load-sharing span."

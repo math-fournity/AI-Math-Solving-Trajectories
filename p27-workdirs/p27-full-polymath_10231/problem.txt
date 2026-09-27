@@ -1,0 +1,1 @@
+In a specialized logistics network, every connection between two hubs is assigned a "stability rating" equal to the greatest common divisor of the hubs' unique identification numbers (which must be distinct positive integers).

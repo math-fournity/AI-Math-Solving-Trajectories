@@ -1,0 +1,1 @@
+Given a positive integer \( n \), let \( S \) be a subset of \( \mathbb{Z}^n \) such that for every two distinct elements \( (a_1, a_2, \ldots, a_n) \) and \( (b_1, b_2, \ldots, b_n) \) in \( S \), we have \( \left| \sum_{i=1}^{n} a_i b_i \right| \le 1 \). Find the maximum size of \( S \).

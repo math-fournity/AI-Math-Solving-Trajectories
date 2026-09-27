@@ -1,0 +1,1 @@
+Find the number of partitions, formed by two subsets, of the set $\{1, 2, \ldots, 2012\}$, such that none of the subsets contains two distinct elements whose sum is a power of 2.

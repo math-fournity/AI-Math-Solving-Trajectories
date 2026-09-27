@@ -1,0 +1,1 @@
+Consider the natural map \(f: \overline{\mathcal{M}}_{1,1} \to \overline{M}_{1,1} \cong \mathbb{P}^1\) from the stack of elliptic curves to the coarse space. Both spaces have \(\text{Pic} = \mathbb{Z}\). Determine the homomorphism \(f^*: \mathbb{Z} \to \mathbb{Z}\).

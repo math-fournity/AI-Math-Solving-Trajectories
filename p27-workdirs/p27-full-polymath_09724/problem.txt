@@ -1,0 +1,1 @@
+A specialized scientific sensor is designed to detect signals within a specific frequency range, represented by the interval $[\alpha, \beta]$. This primary range is "interference-free," meaning it does not contain any whole-number frequencies (integers).

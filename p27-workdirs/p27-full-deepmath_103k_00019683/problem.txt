@@ -1,0 +1,1 @@
+Determine whether the following statement is true: \( \lim\limits_{n\to \infty} \frac{P(n)}{n} = 0 \), where \( P(n) \) is the maximal size of a sparse subset of \( \{1, 2, \dotsc, n\} \).

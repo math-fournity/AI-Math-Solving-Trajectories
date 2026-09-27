@@ -1,0 +1,1 @@
+1.48 Arrange the natural numbers $3,4,5, \cdots, 1994,1995$ into a sequence $\left\{a_{k}\right\}$, such that

@@ -1,0 +1,1 @@
+Determine whether the statement is true or false: For any odd dimension \( N > 1 \), the special orthogonal group \( SO(N) \) is a non-orientable manifold.

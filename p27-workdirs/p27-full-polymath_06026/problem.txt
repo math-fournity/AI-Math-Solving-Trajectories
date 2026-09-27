@@ -1,0 +1,1 @@
+In a futuristic circular city, there are 2014 distinct subway stations located along the perimeter. To improve transit efficiency, a network of 1007 high-speed underground tunnels is constructed. Each of the 2014 stations serves as the starting or ending point for exactly one tunnel.

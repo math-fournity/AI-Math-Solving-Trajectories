@@ -1,0 +1,1 @@
+Consider the sequence of numbers defined by $a_k = \sqrt[3]{n_k} - \sqrt[3]{m_k}$, where $n_k$ and $m_k$ are non-negative integers chosen so that $a_k$ approaches $\sqrt{2}$ as closely as possible for each $k$. If such a sequence exists, find the value of $n_{100} + m_{100}$.

@@ -1,0 +1,1 @@
+A high-tech security firm is designing a bi-hexagonal sensor array for a satellite. The array consists of 13 specific sensor nodes arranged in a rigid geometric pattern:

@@ -1,0 +1,1 @@
+What is the minimal number of vertices required for a triangulation of the Klein bottle?

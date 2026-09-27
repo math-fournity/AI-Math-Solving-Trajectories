@@ -1,0 +1,1 @@
+Evan has a simple graph with $v$ vertices and $e$ edges. Show that he can delete at least $\frac{e-v+1}{2}$ edges so that each vertex still has at least half of its original degree.

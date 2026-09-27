@@ -1,0 +1,1 @@
+As a gift, Dilhan was given the number \( n = 1^{1} \cdot 2^{2} \cdots 2021^{2021} \), and each day, he has been dividing \( n \) by \( 2021! \) exactly once. One day, when he did this, he discovered that, for the first time, \( n \) was no longer an integer, but instead a reduced fraction of the form \(\frac{a}{b}\). What is the sum of all distinct prime factors of \( b \)?

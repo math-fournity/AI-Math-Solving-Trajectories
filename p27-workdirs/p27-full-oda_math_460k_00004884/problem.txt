@@ -1,0 +1,1 @@
+Construct a bijective pair of functions \( (g, h) \) where \( g, h: \mathbb{R} \rightarrow \mathbb{R} \) such that the only function \( f: \mathbb{R} \rightarrow \mathbb{R} \) satisfying \( f(g(x)) = g(f(x)) \) and \( f(h(x)) = h(f(x)) \) for all \( x \in \mathbb{R} \) is the identity function \( f(x) \equiv x \).

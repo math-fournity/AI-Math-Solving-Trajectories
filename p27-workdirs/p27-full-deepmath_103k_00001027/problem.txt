@@ -1,0 +1,1 @@
+Is it true that for any odd cycle graph $G$ of length greater than 5, $\Theta(G)^m \neq \alpha(G^{\boxtimes m})$ for any finite positive integer $m$? In other words, does $\limsup_{m\rightarrow\infty}\alpha(G^{\boxtimes m})^{\frac{1}{m}}$ not attain its value at any finite positive integer $m$?

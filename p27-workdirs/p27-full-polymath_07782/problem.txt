@@ -1,0 +1,1 @@
+A high-tech logistics firm is designing a specialized shipping system using a set of $2k$ unique identification chips, each labeled with a distinct positive integer. To form a secure shipping code, these chips must be paired into $k$ groups, where each group $i$ contains two chips $\{a_i, b_i\}$.

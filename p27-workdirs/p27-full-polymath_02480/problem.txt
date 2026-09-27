@@ -1,0 +1,1 @@
+In a 10-story building, once the elevator started from the ground floor. During its journey, it only stopped at whole floors, and exactly once on each floor. How many meters did it travel at most, if the difference between two adjacent floors is 4 meters?

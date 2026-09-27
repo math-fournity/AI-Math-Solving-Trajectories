@@ -1,0 +1,1 @@
+A simple hyperplane in \(\mathbb{R}^{4}\) has the form

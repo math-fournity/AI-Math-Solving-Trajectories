@@ -1,0 +1,1 @@
+For natural numbers $n$ and $k$ with $2 \leq k \leq n$, a set $N$ of $n$ people is called $k$-familiar if in every subset $K$ of $k$ people from $N$, there is at least one person who is acquainted with all the other people in $K$. (Note: Acquaintance is mutual.)

@@ -1,0 +1,1 @@
+If $f(x)$ is a monic polynomial with rational coefficients and the expressions $t_k = \sum_{i=1}^{d} \alpha_i^k$ are integers for all $k \geq 0$, does it follow that $f(x)$ has integer coefficients? Justify your answer.

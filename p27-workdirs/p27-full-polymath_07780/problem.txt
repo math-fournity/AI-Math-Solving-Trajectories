@@ -1,0 +1,1 @@
+In a remote territory, three survey outposts—Base $B$, Base $C$, and a central hub $I$—form the vertices of an acute scalene triangle. The hub $I$ serves as the "Incenter" of a larger triangular region $ABC$, where the main boundary is a circular defensive perimeter $\omega$ with a radius of $R$ meters.

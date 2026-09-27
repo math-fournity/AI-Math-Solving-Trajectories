@@ -1,0 +1,1 @@
+Let $K(\mu_{2n})/K$ be a cyclic extension. Suppose $a \in K$ is such that the polynomial $x^{2n} - a$ has a root in $K(\mu_{2n})$. Calculate the smallest positive integer $m$ such that $a^m$ is guaranteed to be a $2n$-th power in $K$.

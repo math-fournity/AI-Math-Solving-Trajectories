@@ -1,0 +1,1 @@
+In a remote digital archives facility, data is stored in "Information Blocks." Each block is defined by its capacity $n$, where $n$ is an integer at least as large as 2. Inside a block of capacity $n$, there is an ordered sequence of $n+1$ data packets, indexed from $i=0$ to $i=n$. The size of the $i$-th packet is determined by the combinatorial formula $\binom{n}{i}$.

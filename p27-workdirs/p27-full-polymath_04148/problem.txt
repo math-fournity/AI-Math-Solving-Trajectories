@@ -1,0 +1,1 @@
+Find all positive integers $(a, b)$ such that $a^2$ is divisible by $b$, $b^2$ is divisible by $a$, and $b^2 + 1$ is divisible by $a + 1$.

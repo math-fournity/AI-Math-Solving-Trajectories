@@ -1,0 +1,1 @@
+Given 12 non-zero, not necessarily distinct real numbers, let $S$ be the set of all integers $k \in \{1, 2, \ldots, 12\}$ such that for any such set of 12 numbers, one can always choose $k$ numbers whose sum has the same sign as their product. Find the sum of all elements in $S$.

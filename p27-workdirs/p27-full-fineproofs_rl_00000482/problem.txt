@@ -1,0 +1,1 @@
+7. (USS) Prove that a tetrahedron $S A B C$ has five different spheres that touch all six lines determined by its edges if and only if it is regular.

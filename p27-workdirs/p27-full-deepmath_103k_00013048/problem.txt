@@ -1,0 +1,1 @@
+Evaluate the integral: $$\int_{1}^{2} \int_{1}^{2} \int_{1}^{2} \int_{1}^{2} \frac{x_{1}+x_{2}-x_{3}-x_{4}}{x_{1}+x_{2}+x_{3}+x_{4}} d x_{1} d x_{2} d x_{3} d x_{4}$$

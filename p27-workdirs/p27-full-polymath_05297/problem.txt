@@ -1,0 +1,1 @@
+Let \( P \) be the number of ways to partition \( 2013 \) into an ordered tuple of prime numbers. What is \( \log_{2}(P) \)? If x is the answer you obtain, report $\lfloor 10^3x \rfloor$

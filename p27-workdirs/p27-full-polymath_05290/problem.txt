@@ -1,0 +1,1 @@
+Let \( f(k) \) denote the number of triples \((a, b, c)\) of positive integers satisfying \( a+b+c=2020 \) with \((k-1)\) not dividing \( a \), \( k \) not dividing \( b \), and \((k+1)\) not dividing \( c \). Find the product of all integers \( k \) in the range \( 3 \leq k \leq 20 \) such that \((k+1)\) divides \( f(k) \).

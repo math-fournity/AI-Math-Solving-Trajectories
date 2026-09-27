@@ -1,0 +1,1 @@
+In the coastal kingdom of Geometria, three watchtowers—Base Alpha ($B$), Command Center ($A$), and Station Charlie ($C$)—form a triangular defensive perimeter. The High Counselor’s Office is located at the Incenter ($I$) of this triangle, equidistant from the three borders.

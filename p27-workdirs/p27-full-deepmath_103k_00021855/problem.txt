@@ -1,0 +1,1 @@
+Suppose we have an operator $T: X^* \to Y$ where both $X$ and $Y$ are Banach spaces. If $T$ is continuous with respect to the weak$^*$ topology on $X^*$ and the weak topology on $Y$, does this imply that $T$ is weakly compact?

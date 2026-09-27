@@ -1,0 +1,1 @@
+In a specialized digital manufacturing facility, a technician is testing the efficiency of a system that pairs two programmable logic controllers, designated as Type-$m$ and Type-$n$. The values of $m$ and $n$ must both be positive integers.

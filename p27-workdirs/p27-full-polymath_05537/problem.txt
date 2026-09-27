@@ -1,0 +1,1 @@
+On the board is written an integer $N \geq 2$. Two players $A$ and $B$ play in turn, starting with $A$. Each player in turn replaces the existing number by the result of performing one of two operations: subtract 1 and divide by 2, provided that a positive integer is obtained. The player who reaches the number 1 wins.

@@ -1,0 +1,1 @@
+Given a real constant \( A > 0 \), consider the class of all triangles \( T \) with area \( A \). Find the maximum value of the area of the equilateral triangle \( t \) formed by the intersection of the appropriate pairs of trisectors of the internal angles of \( T \). Discuss whether there is a minimum value for the area of \( t \).

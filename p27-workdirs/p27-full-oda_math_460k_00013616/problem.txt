@@ -1,0 +1,1 @@
+Determine all 6-element sets of points in the plane such that any three points of the set are either the vertices of an isosceles triangle or are collinear.

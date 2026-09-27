@@ -1,0 +1,1 @@
+Find all natural numbers \( n \) for which in the plane there exist \( n \) points, each of which lies on exactly \(\frac{1}{3}\) of the lines determined by these points.

@@ -1,0 +1,1 @@
+Let $f:E\rightarrow F$ be a function that is twice differentiable at $x\in E$. Prove or disprove that the following limit holds: $$\lim_{h,k\rightarrow 0}\frac{A_x(h,k)-f''(x)(h)(k)}{\|h\|\|k\|}=0$$ where $A_x(h,k):=f(x+h+k)-f(x+h)-f(x+k)+f(x)$.

@@ -1,0 +1,1 @@
+A high-security data vault contains 100 encrypted digital files, each representing a unique set of access codes. A cybersecurity analyst is tasked with identifying the exact contents of every single file.

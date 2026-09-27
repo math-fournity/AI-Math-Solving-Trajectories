@@ -1,0 +1,1 @@
+Given that \(a_i\) are perfect squares and \(\sum_{i=1}^{17} a_i = 1917\), find \(\sum_{i=1}^{17} \sqrt{a_i}\).

@@ -1,0 +1,1 @@
+Let κ be an infinite cardinal and let T be the set κ^{\{0, 1\}} of 0–1 sequences of type κ ordered with the lexicographic ordering. Then a) every nonempty subset of T has a least upper bound, b) every subset of T has cofinality at most κ, c) every well-ordered subset of T is of cardinality at most κ.

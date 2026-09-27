@@ -1,0 +1,1 @@
+A convex quadrilateral $ABCD$ will be called [i]rude[/i] if there exists a convex quadrilateral $PQRS$ whose points are all in the interior or on the sides of quadrilateral $ABCD$ such that the sum of diagonals of $PQRS$ is larger than the sum of diagonals of $ABCD$.

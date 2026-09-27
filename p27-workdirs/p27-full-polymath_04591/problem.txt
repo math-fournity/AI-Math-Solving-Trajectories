@@ -1,0 +1,1 @@
+Determine the smallest value of $M$ for which for any choice of positive integer $n$ and positive real numbers $x_1<x_2<\ldots<x_n \le 2023$ the inequality

@@ -1,0 +1,1 @@
+Find all real numbers \( x \) such that the sequence \( (x_n)_{n=1}^\infty \), defined by \( x_1 = e^x \) and \( x_{n+1} = e^{x^{x_n}} \), converges to 2.

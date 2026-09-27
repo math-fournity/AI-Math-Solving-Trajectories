@@ -1,0 +1,1 @@
+Divide the rational points in the plane into three disjoint sets such that every line contains points from at most two of these sets, and every circle with a rational center contains points from all three sets.

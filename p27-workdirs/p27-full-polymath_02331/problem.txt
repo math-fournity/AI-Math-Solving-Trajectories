@@ -1,0 +1,4 @@
+Trushin 5.
+100 thimbles are arranged in a circle. Under one of them, a coin is hidden. In one move, it is allowed to flip over four thimbles and check if the coin is under one of them. After this, they are returned to their original position, and the coin is moved to one of the adjacent thimbles. What is the minimum number of moves required to definitely find the coin?
+
+##

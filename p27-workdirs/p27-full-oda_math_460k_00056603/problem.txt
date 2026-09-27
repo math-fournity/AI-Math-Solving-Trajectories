@@ -1,0 +1,1 @@
+Let \( f(x) \) be a nonconstant integer polynomial. Define \( P(N) \) to be the number of integers \( n \) with \( 1 \leq n \leq N \) such that \( |f(n)| \) is prime. Find the smallest constant \( C \) such that \( P(N) < \frac{CN}{\log{N}} \) for all \( N > 1 \).

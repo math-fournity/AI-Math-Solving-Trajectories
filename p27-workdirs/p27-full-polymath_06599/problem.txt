@@ -1,0 +1,1 @@
+A team of city planners is designing a specialized solar power plaza that must be a perfect square, measuring $n \times n$ units. To optimize energy collection, the entire surface area of the plaza must be covered exactly, with no gaps and no overlapping, using two types of modular panels:

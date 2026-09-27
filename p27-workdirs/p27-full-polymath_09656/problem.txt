@@ -1,0 +1,1 @@
+In a specialized logistics hub, there are $n+1$ numbered loading docks arranged in a row, indexed from $0$ to $n$. Each dock contains exactly one cargo container. A configuration of these containers is valid if the set of labels on the containers is a permutation of $\{0, 1, 2, \dots, n\}$.

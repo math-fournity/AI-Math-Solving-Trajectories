@@ -1,0 +1,1 @@
+Let $f: X \to Y$ be a morphism of varieties over a field $k$, such that $X(\overline{k}) \to Y(\overline{k})$ is bijective. Is $f$ necessarily an affine morphism? Provide a justification for your answer.

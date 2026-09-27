@@ -1,0 +1,1 @@
+In the subterranean server farm of the "Centurion" data complex, there are 100 processing units, each assigned a unique power frequency—an integer ranging from 1 THz to 100 THz. To manage the facility, engineers have arranged these 100 units into a perfectly square grid of 10 rows and 10 columns.

@@ -1,0 +1,1 @@
+In a specialized logistics network, three main distribution hubs, labeled $A$, $B$, and $C$, are connected by straight transit corridors. The distances between these hubs are precisely $AB = 15$ kilometers, $BC = 16$ kilometers, and $CA = 17$ kilometers. A circular boundary road, $\Omega$, acts as the outer perimeter of this network, passing exactly through the three hubs.

@@ -1,0 +1,1 @@
+Let  $X =\{ X_1 , X_2 , ...\}$  be a countable set of points in space. Show that there is a positive sequence  $\{a_k\}$  such that for any point  $Z\not\in X$  the distance between the point Z and the set  $\{X_1,X_2 , ...,X_k\}$  is at least  $a_k$  for infinitely many k.

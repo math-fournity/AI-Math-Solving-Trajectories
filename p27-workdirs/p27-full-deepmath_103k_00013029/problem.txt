@@ -1,0 +1,1 @@
+Does there exist a function $z: \mathbb{N} \to [0,1)$ such that the infinite product \( \prod_{k=1}^\infty z(k) \) converges to a nonzero value? Assume that \( z(k) \to 1 \) as \( k \to \infty \).

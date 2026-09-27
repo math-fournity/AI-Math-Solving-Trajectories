@@ -1,0 +1,1 @@
+Let $\Gamma$ be a simple closed curve in the complex plane containing the origin in its interior, and assume $\Gamma$ is not rectifiable. For a given positive integer $N$, find the smallest positive integer $M$ such that there exist complex coefficients $c_{-N}, \ldots, c_{N-1}, c_{N}$ (with $c_0 = 0$) satisfying

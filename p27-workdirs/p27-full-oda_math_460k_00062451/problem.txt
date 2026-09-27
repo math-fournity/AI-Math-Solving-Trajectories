@@ -1,0 +1,1 @@
+Given an acute-angled triangle ABC, for an arbitrary line $l$, let $l_{a}, l_{b}, l_{c}$ denote lines symmetric to $l$ with respect to the sides of the triangle, and let $I_{l}$ denote the incenter of the triangle formed by these lines. Find the locus of points $I_{l}$.

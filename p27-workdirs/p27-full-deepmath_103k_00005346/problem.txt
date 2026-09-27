@@ -1,0 +1,1 @@
+Suppose a continuous map \( f: S^1 \to S^1 \) satisfies \(|f^{-1}(z)| = n\) for all \( z \in S^1 \). Is it true that \( f \) is a covering map of degree \( n \)? Justify your answer.

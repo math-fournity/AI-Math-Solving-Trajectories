@@ -1,0 +1,1 @@
+Let \( G \) be a group of order 24 with the center \( Z(G) \) of order 2 and \( G/Z(G) \) isomorphic to the alternating group \( A_4 \). Let \( P \) be the unique Sylow 2-subgroup of \( G \). Calculate the order of \( \text{Aut}(P) \), the automorphism group of \( P \).

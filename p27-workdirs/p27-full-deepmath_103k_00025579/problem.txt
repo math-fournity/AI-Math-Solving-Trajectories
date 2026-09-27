@@ -1,0 +1,1 @@
+Find the matrix $U \in \mathbb{R}^{n \times k}$ that maximizes $\mathrm{trace}(U^T A U)$ subject to the constraints $U^T U = I_k$ and $U^T B U = 0$, where $A$ is a symmetric semi-positive matrix and $B$ is a symmetric matrix.

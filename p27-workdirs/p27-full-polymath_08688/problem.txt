@@ -1,0 +1,1 @@
+In a specialized digital archive, data packets are stored as strings of digits. For any $k$-digit packet $n = \overline{d_1 d_2 \ldots d_k}$, a "Reconfiguration Protocol" can be applied as follows:

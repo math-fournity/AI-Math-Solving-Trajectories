@@ -1,0 +1,1 @@
+Determine the minimum number of bits Alice must transmit to Bob so that he can compute the approximate Hamming distances between a binary string $A$ of length $n$ and every substring of length $n$ of a binary string $B$ of length $2n$, within a factor of 2.

@@ -1,0 +1,1 @@
+Let $f:E\rightarrow E'$ be a linear embedding of locally convex topological vector spaces, and let $A\subseteq E$ be an open and convex set. Determine whether there always exists an open and convex set $A'\subseteq E'$ such that $f(A)=f(E)\cap A'$.

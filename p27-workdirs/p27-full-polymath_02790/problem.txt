@@ -1,0 +1,1 @@
+Determine the highest possible score for the sum of the numbers in the four squares immediately below the diagonal from top left to bottom right in a $5 \times 5$ square (where each row, column, and diagonal contains each of the numbers $1, 2, 3, 4, 5$ exactly once).

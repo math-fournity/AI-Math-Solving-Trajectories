@@ -1,0 +1,1 @@
+Suppose $g$ is the density of the standard normal distribution $N(0,1)$, and $f: \mathbb{R} \to \mathbb{R}$ is an arbitrary function. If the convolution $[f \ast g](x) = \int_{-\infty}^{\infty} f(x-t)g(t)dt = 0$ for all $x$ on a closed interval $[a,b]$ where $-\infty < a < b < +\infty$, is it true that $f = 0$ almost everywhere?

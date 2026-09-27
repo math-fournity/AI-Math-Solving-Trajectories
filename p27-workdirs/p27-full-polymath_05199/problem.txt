@@ -1,0 +1,1 @@
+Let $n$ be a positive even integer. Let $k_0(n)$ denote the smallest positive integer $k$ such that there exist polynomials $f(x)$ and $g(x)$ with integer coefficients satisfying the identity $k = f(x) (x+1)^n + g(x) (x^n + 1)$.

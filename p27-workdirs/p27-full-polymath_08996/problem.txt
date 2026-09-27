@@ -1,0 +1,1 @@
+In the digital kingdom of Bitlandia, the Great Master Key is a sequence of bits represented by the integer $n = 2^{2015} - 1$. This key must be partitioned into two sub-keys, $x$ and $y$, such that $x + y = n$, where $x$ is an integer satisfying $1 \le x < n$.

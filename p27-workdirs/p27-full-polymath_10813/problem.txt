@@ -1,0 +1,1 @@
+In the city of Graphia, there are 25 residential districts. To facilitate travel, every single pair of districts in the city is connected by exactly one direct road.

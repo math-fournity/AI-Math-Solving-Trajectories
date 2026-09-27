@@ -1,0 +1,1 @@
+In a triangle \(ABC\) with sides \(a\), \(b\), and \(c\), and internal angle bisectors \(l_a\), \(l_b\), and \(l_c\), define

@@ -1,0 +1,1 @@
+Find the value of $C^4$ such that the set of all real numbers $x$ satisfying the inequality

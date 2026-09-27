@@ -1,0 +1,1 @@
+Given is a triangle  $ABC$  and a point  $X$  inside its circumcircle. If  $I_B, I_C$  denote the  $B, C$  excenters, then prove that  $XB \cdot XC <XI_B \cdot XI_C$ .

@@ -1,0 +1,1 @@
+Given the formulas for the surface area \( S_n(1) \) and volume \( V_n(1) \) of an \( n \)-sphere with radius 1:

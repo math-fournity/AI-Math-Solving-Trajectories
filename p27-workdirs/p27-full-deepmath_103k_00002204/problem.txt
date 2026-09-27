@@ -1,0 +1,1 @@
+Determine the fundamental group of the complement of $n$ lines through the origin in $\mathbb{R}^3$. Prove that it is $F_n$, the free group on $n$ generators.

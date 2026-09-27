@@ -1,0 +1,1 @@
+Let \[ f(x_1,x_2,x_3) = -2 \cdot (x_1^3+x_2^3+x_3^3) + 3 \cdot (x_1^2(x_2+x_3) + x_2^2 \cdot (x_1+x_3) + x_3^2 \cdot ( x_1+x_2 ) - 12x_1x_2x_3.  \] For any reals $r,s,t$, we denote \[ g(r,s,t)=\max_{t\leq x_3\leq t+2} |f(r,r+2,x_3)+s|.  \] Find the minimum value of $g(r,s,t)$.

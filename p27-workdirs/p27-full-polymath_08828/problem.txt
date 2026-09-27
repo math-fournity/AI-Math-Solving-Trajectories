@@ -1,0 +1,1 @@
+An industrial laser technician is tasked with routing a fiber-optic cable through a massive hollow cooling chamber shaped like a perfect cube with an interior side length of 2 meters. The cable must connect a source located at one corner of the floor (the origin) to a receiver located at the furthest opposite corner of the ceiling.

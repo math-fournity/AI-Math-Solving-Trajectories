@@ -1,0 +1,1 @@
+Point \( P \) is a point inside triangle \( ABC \) such that:

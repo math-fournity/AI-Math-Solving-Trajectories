@@ -1,0 +1,1 @@
+Solve the functional equation \( f(3f(xy)^2 + (xy)^2) = (xf(y) + yf(x))^2 \).

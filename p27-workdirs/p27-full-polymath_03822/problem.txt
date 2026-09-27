@@ -1,0 +1,1 @@
+7. Given three points, the distances between which are 4, 6, and 7. How many pairwise distinct triangles exist for which each of these points is either a vertex or the midpoint of a side?

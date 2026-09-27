@@ -1,0 +1,1 @@
+Find the largest positive integer $k$ such that every binary string of length $2024$ is guaranteed to contain a palindromic substring of length at least $k$.

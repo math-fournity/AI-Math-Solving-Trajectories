@@ -1,0 +1,7 @@
+Let
+\[
+P_{n}(x)=\left(x^{2}+x+1\right)^{n}-\left(x^{2}+x\right)^{n}-\left(x^{2}+1\right)^{n}-(x+1)^{n}+x^{2 n}+x^{n}+1
+\]
+Let $S$ be the set of all positive integers $n$ such that all coefficients of the polynomial $P_n(x)$ are divisible by $7$. Find the sum of all $n \in S$ such that $n < 100$.
+
+##

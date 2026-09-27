@@ -1,0 +1,1 @@
+In a specialized logistics network, a series of $n$ industrial hubs are positioned along a linear pipeline at increasing distances from a central station. We denote the distance of the $k$-th hub from the station as $y_k$ (in kilometers), where $0 = y_0 < y_1 < \dots < y_n$.

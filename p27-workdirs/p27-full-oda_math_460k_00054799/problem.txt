@@ -1,0 +1,1 @@
+What is the asymptotic behavior of the minimal energy \( E_s(N) \) as a function of \( N \) (number of points) and \( s \) (exponent in the energy definition) for configurations of points on the sphere \( S^2 \)?

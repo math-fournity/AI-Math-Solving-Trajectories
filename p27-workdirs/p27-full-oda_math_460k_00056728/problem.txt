@@ -1,0 +1,1 @@
+Find the equation of the set of points in the Poincaré disk model $D_P$ that are at a constant hyperbolic distance $D$ from a given hyperbolic line.

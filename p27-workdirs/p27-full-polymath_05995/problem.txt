@@ -1,0 +1,1 @@
+A high-tech communications firm is designing a network consisting of $n$ distinct server hubs ($n > 2$). A network is considered "fully operational" if it is connected, meaning every hub can communicate with every other hub through some sequence of fiber-optic cables.

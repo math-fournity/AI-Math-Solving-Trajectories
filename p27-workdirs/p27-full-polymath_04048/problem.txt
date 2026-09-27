@@ -1,0 +1,1 @@
+Determine the greatest positive integer $A{}$ with the following property: however we place the numbers $1,2,\ldots, 100$ on a $10\times 10$ board, each number appearing exactly once, we can find two numbers on the same row or column which differ by at least $A{}$.

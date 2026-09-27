@@ -1,0 +1,1 @@
+Let $A$ be a complex unital Banach algebra and consider the matrix $R_t=\begin{pmatrix} \cos\frac{\pi t}{2} & -\sin\frac{\pi t}{2} \\ \sin\frac{\pi t}{2} & \cos\frac{\pi t}{2} \end{pmatrix}$. Determine the norm of $R_t$ as an element of $M_2(A)$, where $M_2(A)$ is equipped with the operator norm derived from $A^2$ with the norm $||(a,b)||=\sqrt{||a||^2+||b||^2}$.

@@ -1,0 +1,1 @@
+Is a $K$-analytic space $X$ countable if every compact subset of $X$ is countable?

@@ -1,0 +1,1 @@
+In the city of Arithmos, there is a grand boulevard with exactly 100 consecutive streetlamps, numbered 1 through 100. One night, a city maintenance worker named Alfred is instructed to deactivate exactly ten of these lamps for repair.

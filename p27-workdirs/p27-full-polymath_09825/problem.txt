@@ -1,0 +1,1 @@
+In the coastal city of Apollonia, a new semicircular harbor is defined by a straight breakwater $\overline{AB}$. Five surveillance stations, $A, X, Y, B$, and $Z$, are positioned along the curved boundary of the harbor in that order. Because the boundary is a semicircle with diameter $\overline{AB}$, the stations form an inscribed convex pentagon $AXYBZ$.

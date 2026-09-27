@@ -1,0 +1,1 @@
+Does there exist a positive constant $c_d$, depending only on the dimension $d$, such that for every convex body $K \subset \mathbb{R}^d$, there exists a parallelepiped $P \subset K$ satisfying the inequality:

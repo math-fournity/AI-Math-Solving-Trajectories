@@ -1,0 +1,1 @@
+Construct an open set $E \subset [0,1]$ that is dense in $[0,1]$ and has Lebesgue measure $m(E) = \alpha$, where $0 < \alpha < 1$. Provide a detailed construction of such a set.

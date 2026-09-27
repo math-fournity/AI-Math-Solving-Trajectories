@@ -1,0 +1,1 @@
+Find all functions \( f: \mathbf{R}^{+} \rightarrow \mathbf{R}^{+} \) such that \( f(x) + f(y) = f(x y f(x+y)) \) for all \( x, y \in \mathbf{R}^{+} \).

@@ -1,0 +1,1 @@
+A positive integer $n$ is called [i]guayaquilean[/i] if the sum of the digits of $n$ is equal to the sum of the digits of $n^2$. Find all the possible values that the sum of the digits of a guayaquilean number can take.

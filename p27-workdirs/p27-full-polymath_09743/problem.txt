@@ -1,0 +1,1 @@
+In a futuristic circular space station, there are $n$ docking ports arranged at the vertices of a perfectly regular $n$-gon. A security protocol requires that exactly five of these ports must be activated with red warning lights.

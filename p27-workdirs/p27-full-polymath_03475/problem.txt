@@ -1,0 +1,1 @@
+Let $ n$ be a given positive integer. In the coordinate set, consider the set of points $ \{P_{1},P_{2},...,P_{4n\plus{}1}\}\equal{}\{(x,y)|x,y\in \mathbb{Z}, xy\equal{}0, |x|\le n, |y|\le n\}.$

@@ -1,0 +1,1 @@
+Determine whether every primitive finite permutation group $G \subset S_n$ has a faithful complex irreducible representation. Provide a justification for your answer.

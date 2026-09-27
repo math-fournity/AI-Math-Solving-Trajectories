@@ -1,0 +1,1 @@
+A specialized deep-sea research station is centered at a point $O$. Five sonar buoys—labeled $D, G, F, H,$ and $A$—are positioned along a circular boundary centered at the station.

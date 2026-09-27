@@ -1,0 +1,1 @@
+What is the sum of all entries of the matrix A^5 where A is:

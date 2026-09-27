@@ -1,0 +1,1 @@
+In a secure digital archive, a unique identification code $N$ is defined as the smallest possible positive integer that satisfies two security protocols:

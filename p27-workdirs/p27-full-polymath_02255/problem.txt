@@ -1,0 +1,1 @@
+We have placed $n > 3$ cards around a circle, facing downwards. In one step, we may perform the following operation with three consecutive cards. Let the three cards be $A$, $B$, and $C$ in clockwise order. We move card $C$ to the place of $A$, card $A$ to the place of $B$, and card $B$ to the place of $C$. Additionally, we flip cards $A$ and $B$.

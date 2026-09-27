@@ -1,0 +1,1 @@
+A high-tech research facility operates exactly $n=30$ unique quantum sensors, collectively referred to as the set $\mathcal{S}$. Each sensor is tuned to a specific, distinct frequency corresponding to one of the $n$-th roots of unity on the complex plane.

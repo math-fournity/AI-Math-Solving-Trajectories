@@ -1,0 +1,1 @@
+A city council has established a circular network of 2012 specialized maintenance hubs to service a fleet of $N$ autonomous repair drones. To initiate the program, the Fleet Manager (A) must distribute the drones across the hubs such that every hub contains at least one drone.

@@ -1,0 +1,1 @@
+Let $P:[0,1]\to \mathbb{R}^2$ be a simple continuous curve on the plane, i.e., $P$ is continuous and injective. Can $P$ always be extended to be a sub-curve of a simple closed curve?

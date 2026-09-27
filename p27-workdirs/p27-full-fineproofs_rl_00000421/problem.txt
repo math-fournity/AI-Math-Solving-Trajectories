@@ -1,0 +1,1 @@
+4. (MON 1) ${ }^{\mathrm{IMO} 5}$ Let $d$ be the sum of the lengths of all diagonals of a convex polygon of $n(n>3)$ vertices and let $p$ be its perimeter. Prove that  $$ \frac{n-3}{2}<\frac{d}{p}<\frac{1}{2}\left(\left[\frac{n}{2}\right]\left[\frac{n+1}{2}\right]-2\right) . $$

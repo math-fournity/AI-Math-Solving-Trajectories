@@ -1,0 +1,1 @@
+Let $p$ be an odd prime, and consider two matrices $A, B \in GL_n(\mathbb{Z}_p)$, each of finite order $m$. If the reductions of $A$ and $B$ modulo $p$ are conjugate in $GL_n(\mathbb{F}_p)$, are $A$ and $B$ conjugate in $GL_n(\mathbb{Q}_p)$?

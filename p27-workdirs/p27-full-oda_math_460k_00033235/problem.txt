@@ -1,0 +1,1 @@
+Determine the conditions under which the series \( \sum_{n=1}^{\infty} \frac{x^n}{\sin(n\theta)} \) converges for \( \theta = t\pi \), where \( t \) is an irrational number, such as \( \theta = \sqrt{3}\pi \).

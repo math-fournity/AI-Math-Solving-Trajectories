@@ -1,0 +1,1 @@
+Each edge of an $m \times n$ rectangular grid is oriented with an arrow such that:

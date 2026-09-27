@@ -1,0 +1,1 @@
+In a long-distance logistics corridor, there are 100 distinct designated supply depots located at various kilometer markers along a straight highway. These depots are divided into two specific fleets: Fleet A consists of 50 depots located at positions $a_1, a_2, \dots, a_{50}$, and Fleet B consists of 50 depots located at positions $b_1, b_2, \dots, b_{50}$.

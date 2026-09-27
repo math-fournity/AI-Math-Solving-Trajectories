@@ -1,0 +1,1 @@
+On a planet, there are $M = 10$ states and $N = 100$ cities. Between some of the cities, bidirectional roads have been built. It is known that:

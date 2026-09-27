@@ -1,0 +1,1 @@
+In a remote high-tech agricultural facility, an automated irrigation system is governed by an efficiency profile $P(x)$, a polynomial with real coefficients. Field data confirms that there are exactly $15$ distinct critical moisture thresholds, all greater than $1$, where the efficiency $P(x)$ drops to zero.

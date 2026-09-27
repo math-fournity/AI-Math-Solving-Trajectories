@@ -1,0 +1,1 @@
+There are $n$ coins arranged in a circle ($n \geq 5$). Initially, all are heads. We are allowed the following operations:

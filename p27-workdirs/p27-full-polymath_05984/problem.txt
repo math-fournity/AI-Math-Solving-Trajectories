@@ -1,0 +1,1 @@
+In a specialized digital archive, data is stored in "Information Packets," each consisting of a sequence of $n$ light-pulses that can be either On (1) or Off (0). For any given packet, an automated "Maintenance Cycle" modifies the sequence based on its visual structure.

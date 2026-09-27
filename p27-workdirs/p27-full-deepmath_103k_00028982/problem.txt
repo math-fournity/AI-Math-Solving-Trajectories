@@ -1,0 +1,1 @@
+Suppose $x, y \in \mathbb{Z}$. If for every prime $p$, there exists an integer $m_p$ such that $y \equiv x^{m_p} \pmod{p}$, determine whether there exists an integer $m$ such that $y = x^m$. Provide a proof or counterexample.

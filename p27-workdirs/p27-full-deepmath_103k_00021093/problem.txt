@@ -1,0 +1,1 @@
+Find all functions \( g: \mathbb{R} \rightarrow \mathbb{R} \) that satisfy the equation \((x+3)g(y)-g\left(y-3g(x)\right)=g\left(x+yg(x)\right)\) for all \(x, y \in \mathbb{R}\).

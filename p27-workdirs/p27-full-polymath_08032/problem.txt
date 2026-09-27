@@ -1,0 +1,1 @@
+In a specialized pharmaceutical laboratory, a biochemist is studying the stability of a synthetic enzyme. The primary stability constant, denoted by $\alpha$, is known to be the unique real solution to the chemical equilibrium equation $\alpha^3 - 2\alpha^2 + \alpha - 1 = 0$.

@@ -1,0 +1,1 @@
+A chess knight has injured his leg and is limping. He alternates between a normal move and a short move where he moves to any diagonally neighbouring cell.

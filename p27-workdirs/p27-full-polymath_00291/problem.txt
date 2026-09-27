@@ -1,0 +1,1 @@
+Find all positive integers $n$ such that there exists a permutation $(a_1, a_2, \ldots, a_n)$ of the numbers $1, 2, \ldots, n$ for which the sequence of partial products $P_k = \prod_{i=1}^k a_i$ (for $k = 1, \dots, n$) forms a complete residue system modulo $n$.

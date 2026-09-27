@@ -1,0 +1,1 @@
+In a specialized logistics network, a shipment of weight $n$ is defined as "optimally packable" if there exists a cargo container of integer capacity $m > 1$ and a sequence of $m-1$ packages with integer weights $a_1, a_2, \dots, a_{m-1}$ such that:

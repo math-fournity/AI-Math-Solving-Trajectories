@@ -1,0 +1,1 @@
+In a specialized testing facility, a team of engineers has installed 16 precision sensors arranged in a perfect $4 \times 4$ square lattice (creating a grid of 9 small square cells).

@@ -1,0 +1,1 @@
+Suppose you have chosen several cards from the sequence $1, 19, 199, 1999, \ldots$ such that the sum of the numbers on the chosen cards equals a number, all of whose digits are twos, except for a single digit. What can this single different digit be?

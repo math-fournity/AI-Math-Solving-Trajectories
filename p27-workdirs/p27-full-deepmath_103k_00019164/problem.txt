@@ -1,0 +1,1 @@
+Determine whether every connected complete metric space with more than one point that is not compact, Hausdorff, or separable contains a non-singleton, non-empty, connected proper open subset.

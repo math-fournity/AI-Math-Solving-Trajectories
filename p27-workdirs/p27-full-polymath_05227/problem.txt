@@ -1,0 +1,1 @@
+12. Let $S$ be a non-empty subset of the set $\{1,2, \cdots, 108\}$, satisfying: (i) for any numbers $a, b$ in $S$, there exists a number $c$ in $S$ such that $(a, c)=(b, c)=1$; (ii) for any numbers $a, b$ in $S$, there exists a number $c^{\prime}$ in $S$ such that $\left(a, c^{\prime}\right)>1,\left(b, c^{\prime}\right)=1$. Find the maximum possible number of elements in $S$.

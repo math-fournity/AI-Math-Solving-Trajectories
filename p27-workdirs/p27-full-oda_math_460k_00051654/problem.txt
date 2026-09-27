@@ -1,0 +1,1 @@
+Find all natural numbers \( c \) such that there exist integers \( a \) and \( b \) satisfying \( a^n + 2^n \mid b^n + c \) for all positive integers \( n \).

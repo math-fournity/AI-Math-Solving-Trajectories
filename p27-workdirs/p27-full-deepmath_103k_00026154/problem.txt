@@ -1,0 +1,1 @@
+Determine whether there exists a topological space \((X, \tau)\) that is totally separated, meaning for any distinct points \(x\) and \(y\) in \(X\), there exists a clopen set containing \(x\) but not \(y\), yet the collection of clopen sets does not form a basis for the topology \(\tau\).

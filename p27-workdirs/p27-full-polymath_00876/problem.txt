@@ -1,0 +1,1 @@
+Given a parallelogram \(ABCD\) such that \(AB < AC < BC\). Points \(E\) and \(F\) are selected on the circumcircle \(\omega\) of triangle \(ABC\) such that \(DE\) and \(EF\) are tangent to \(\omega\). It is given that \(\angle ABF = \angle DCE\). Find the measure of angle \(ABC\).

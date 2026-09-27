@@ -1,0 +1,1 @@
+Determine the asymptotic order of the probability \(\mathbb{P}_\lambda(Z^2 \leq X)\) as \(\lambda \to 0^+\), where \(Z \sim N(\mu, 1)\) with \(\mu \sim N(0, 1)\), and \(X \sim \exp(\lambda)\) is independent of \(Z\). Here, \(Z^2\) is a non-central chi-squared distribution with 1 degree of freedom.

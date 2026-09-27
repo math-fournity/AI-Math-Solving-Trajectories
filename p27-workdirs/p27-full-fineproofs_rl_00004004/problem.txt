@@ -1,0 +1,1 @@
+Let $n$ be a positive integer that is coprime to 6. We color the vertices of a regular $n$-gon with three colors such that for each color, the number of vertices colored with it is odd.

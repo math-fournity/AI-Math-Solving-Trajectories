@@ -1,0 +1,1 @@
+Let \( p_{0}, \ldots, p_{d} \in \mathbb{R}^{d} \) and define the set

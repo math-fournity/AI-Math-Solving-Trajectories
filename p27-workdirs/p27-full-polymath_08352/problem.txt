@@ -1,0 +1,1 @@
+In a remote digital library, a database contains a linear sequence of $N+2$ server nodes. At the start of a synchronization event, the two outermost nodes (the 1st and the $(N+2)$-th) are already activated, while the $N$ internal nodes remain inactive.

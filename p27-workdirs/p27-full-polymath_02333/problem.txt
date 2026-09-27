@@ -1,0 +1,1 @@
+Determine the largest possible number divisible by \(72\) that can be obtained from the number \(123 \ldots 20092010\) by deleting some of its digits.

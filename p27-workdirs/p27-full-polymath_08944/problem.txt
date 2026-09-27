@@ -1,0 +1,1 @@
+In the city of Arithmea, an urban planner is evaluating the "Efficiency Score" of various infrastructure projects. Each project's progress over a single year (represented by the time interval $t \in [0, 1]$) is modeled by a function $P(t)$, which is a cubic polynomial (a polynomial of degree 3).

@@ -1,0 +1,1 @@
+In a remote desert, a pipeline is being constructed along a straight path starting from a base station located at milestone $0$. There are $n$ access valves installed along the line at milestones $x_1, x_2, \dots, x_n$, where the distance from the base station increases with each valve ($0 = x_0 < x_1 < x_2 < \dots < x_n$).

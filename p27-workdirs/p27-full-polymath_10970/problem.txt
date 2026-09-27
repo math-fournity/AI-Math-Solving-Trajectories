@@ -1,0 +1,1 @@
+In a specialized glass-blowing studio, two artisans, Elena and Marcus, are commissioned to create delicate ornaments. Due to the high precision required, there is a $30\%$ probability that Elena successfully completes a piece and a $70\%$ probability that Marcus completes it instead.

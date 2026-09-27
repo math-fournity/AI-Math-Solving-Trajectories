@@ -1,0 +1,1 @@
+Let  $a_1$ ,  $a_2$ ,  $a_3$ ,  $\ldots$  be a sequence of positive integers such that  $a_1=2021$  and   $$ \sqrt{a_{n+1}-a_n}=\lfloor \sqrt{a_n} \rfloor.  $$  Show that there are infinitely many odd numbers and infinitely many even numbers in this sequence.

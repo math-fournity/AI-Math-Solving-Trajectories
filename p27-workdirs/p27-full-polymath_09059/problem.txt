@@ -1,0 +1,1 @@
+An elite espionage agency employs $n$ undercover agents (where $n \ge 3$), each assigned a unique numerical clearance level from 1 to $n$. A high-ranking Director knows the full hierarchy of these agents but keeps it strictly confidential.

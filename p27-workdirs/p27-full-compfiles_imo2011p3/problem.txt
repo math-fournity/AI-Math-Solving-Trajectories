@@ -1,0 +1,6 @@
+Let f : ℝ → ℝ be a function that satisfies
+f(x + y) ≤ y * f(x) + f(f(x))
+for all x and y. Prove that f(x) = 0 for all x ≤ 0.
+
+</rule>
+</rules>

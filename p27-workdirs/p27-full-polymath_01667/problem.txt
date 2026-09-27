@@ -1,0 +1,1 @@
+A coordinate system is given. Ivan wants to move from the point \((0,0)\) to the point with coordinates \((5,1)\) such that his path passes through every point in the set \(S=\{(i, j) \mid i=0 \text{ or } 1, j=0,1,2,3,4 \text{ or } 5\}\). At each step, Ivan moves from one point in the set \(S\) to another point in \(S\) along the segment connecting them.

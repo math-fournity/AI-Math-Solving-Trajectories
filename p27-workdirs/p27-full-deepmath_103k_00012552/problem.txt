@@ -1,0 +1,1 @@
+Let E be a subset of \( \mathbb{R} \) that has no isolated points, and let C be a countable subset of \( \mathbb{R} \). Does there exist a monotonic function on E that is continuous only at points in \( E \setminus C \)?

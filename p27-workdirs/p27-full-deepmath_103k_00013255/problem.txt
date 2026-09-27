@@ -1,0 +1,1 @@
+Evaluate the limit \( \lim_{N \rightarrow \infty} \frac{g(N)}{N^3} \), where \( g(N) \) is the number of quadruples \((x, y, z, w)\) of positive integers satisfying \( x + y + z + w = N \) and \( x \le y \le z \le w \).

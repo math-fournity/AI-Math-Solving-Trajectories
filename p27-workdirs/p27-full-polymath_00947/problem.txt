@@ -1,0 +1,1 @@
+Find all prime numbers $p, q,$ and $r$ such that $p + q + r$ is not divisible by 3, and the numbers $p + q + r$ and $pq + qr + rp$ are perfect squares. Let $S$ be the set of all such triples $(p, q, r)$. Compute the sum of the products $p \cdot q \cdot r$ for all triples in $S$.

@@ -1,0 +1,1 @@
+Let \( S \) be a subset of \( \{1, 2, 3, \ldots, 50\} \) such that no two subsets of \( S \) have the same sum. What is the largest possible sum for \( S \)?

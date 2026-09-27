@@ -1,0 +1,1 @@
+Given that \(43! = 604152630633738356373551\overline{x_1x_2x_3x_4x_5x_6}139975007264512000000000\) where \(0 \le x_1, x_2, x_3, x_4, x_5, x_6 \le 9\), find the value of \(x_1x_2x_3x_4x_5x_6 - (x_1 + x_2 + x_3 + x_4 + x_5 + x_6)\).

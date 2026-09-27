@@ -1,0 +1,1 @@
+8. Given a positive integer $n$. Use 26 white unit cubes and 1 black unit cube to form a $3 \times 3 \times 3$ cube. Then use $n^{3}$ such cubes to form a cube with edge length $3 n$. Question: What is the minimum number of white unit cubes that need to be painted red so that each remaining white unit cube is adjacent to at least one red unit cube?

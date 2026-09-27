@@ -1,0 +1,1 @@
+Let $p$ and $q$ be irrationals. Find necessary and sufficient conditions on $p$ and $q$ for there to exist a continuous bijective function $f$ with domain $[0,p]$ and codomain $[0,q]$ such that $f(x)$ is rational exactly when $x$ is rational.

@@ -1,0 +1,1 @@
+Given a Hilbert space $H$ and a closed convex subset $K \subseteq H$, with a point $p \in \partial K$, determine if there exists a closed ball $B$ such that $B \cap K = \emptyset$ and the convex hull of $B$ and $p$ (i.e., $\text{conv}(B,p)$) intersects $K$ only at the point $p$. Provide a justification for your answer.

@@ -1,0 +1,1 @@
+Does there exist a measurable subset $T$ of $[0, \infty)$ with finite measure and some $\epsilon > 0$ such that for every $r$ with $0 < r < \epsilon$, $nr$ is in $T$ for infinitely many positive integers $n$? Note: The integers $n$ such that $nr$ lie in $T$ can depend on $r$. Answer with 'Yes' or 'No'.

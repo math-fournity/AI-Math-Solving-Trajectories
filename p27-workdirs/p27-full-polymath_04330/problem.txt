@@ -1,0 +1,1 @@
+For what value of $n$ can a regular $n$-gon be cut by disjoint diagonals into $n-2$ isosceles (including equilateral) triangles?

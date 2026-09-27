@@ -1,0 +1,1 @@
+Initially, the polynomials $P_1(x) = x^3 - 3x^2 + 5$ and $P_2(x) = x^2 - 4x$ are written on the board. We are allowed to perform the following operations:

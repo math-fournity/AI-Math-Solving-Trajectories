@@ -1,0 +1,1 @@
+A boutique textile manufacturer produces a signature collection of square tapestries arranged in a strictly regulated 7x7 grid of fabric panels. Each panel in the grid is dyed in a single solid color.

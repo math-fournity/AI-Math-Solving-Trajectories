@@ -1,0 +1,1 @@
+A regional power grid is structured as a closed ring of $n$ power substations ($3 \leq n \leq 100$). Two engineers, Alice and Bob, are conducting a stress test on the grid by activating substations one by one. Alice goes first, and they take turns choosing an inactive substation and setting its output to either 0 megawatts or 1 megawatt.

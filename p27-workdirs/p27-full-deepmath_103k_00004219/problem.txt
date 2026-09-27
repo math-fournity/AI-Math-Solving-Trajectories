@@ -1,0 +1,1 @@
+Determine the number of structurally different Latin squares of order 5, considering symmetries such as rotation, reflection, and permutation of symbols.

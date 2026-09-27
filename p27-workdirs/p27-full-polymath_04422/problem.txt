@@ -1,0 +1,1 @@
+$S$ is a set of complex numbers such that if $u, v \in S$, then $uv \in S$ and $u^{2}+v^{2} \in S$. Suppose that the number $N$ of elements of $S$ with absolute value at most $1$ is finite. What is the largest possible value of $N$?

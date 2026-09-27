@@ -1,0 +1,1 @@
+Let $R$ be a local (not Noetherian) domain satisfying the ascending chain condition (a.c.c.) on radical ideals and the descending chain condition (d.c.c.) on prime ideals. Is the Krull dimension of $R$ finite?

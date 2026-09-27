@@ -1,0 +1,1 @@
+A prestigious international logistics firm manages a fleet of $n$ unique delivery drones. The hangar contains a circular docking station with $n$ specific charging ports arranged in a ring.

@@ -1,0 +1,1 @@
+Let \( n \ge 3 \) be an integer and \( A \) be a subset of the real numbers of size \( n \). Denote by \( B \) the set of real numbers that are of the form \( x \cdot y \), where \( x, y \in A \) and \( x \ne y \). At most how many distinct positive primes could \( B \) contain (depending on \( n \))?

@@ -1,0 +1,1 @@
+In a group of students, 50 students speak German, 50 students speak French, and 50 students speak Spanish. Some students speak more than one language.

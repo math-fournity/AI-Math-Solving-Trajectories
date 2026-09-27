@@ -1,0 +1,1 @@
+On the board, $100$ pairwise distinct natural numbers $a_{1}, a_{2}, \ldots, a_{100}$ are written. Then, under each number $a_{i}$, the number $b_{i}$ is written, obtained by adding to $a_{i}$ the greatest common divisor of the other $99$ original numbers. What is the smallest number of pairwise distinct numbers that can be among $b_{1}, b_{2}, \ldots, b_{100}$?

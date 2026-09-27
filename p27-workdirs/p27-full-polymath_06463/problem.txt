@@ -1,0 +1,1 @@
+A logistics software company is developing a "Route Efficiency Score" $f(x, y, z)$ based on three initial performance metrics $x, y, z \in \mathbb{R}$. To generate these scores, the software combines metrics using three specific "Processing Nodes":

@@ -1,0 +1,1 @@
+Does there exist an Euclidean domain that does not have a multiplicative Euclidean function?

@@ -1,0 +1,1 @@
+Consider a field $K$ with characteristic zero and an elliptic curve $E$ over $K$. Let $x \in E(K)$ and $p$ be a prime number different from 2. Suppose $n \in E(\overline{K})$ satisfies $pn = x$ and $n \notin E(K)$. Let $L$ be the smallest algebraic extension of $K$ such that $n \in E(L)$. Is the order of the Galois group $\operatorname{Gal}(L/K)$ greater than 2?

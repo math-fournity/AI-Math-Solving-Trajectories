@@ -1,0 +1,1 @@
+Let \( x \in (0,1) \) and let \( a, b, c > 0 \) satisfying \( a + b + c = 3 \). Let \( K \) be a real constant. Consider the inequality

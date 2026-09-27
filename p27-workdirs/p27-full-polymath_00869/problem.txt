@@ -1,0 +1,1 @@
+Let $X=\{1,2,\ldots ,100\}$. Consider a function $f:X\rightarrow X$ such that for all $x \in X$, $f(x) \neq x$. Suppose that for any subset $A \subseteq X$ with $|A|=40$, it holds that $A \cap f(A) \neq \emptyset$. Find the minimum integer $k$ such that for every such function $f$, there exists a subset $B \subseteq X$ with $|B|=k$ such that $B \cup f(B) = X$.

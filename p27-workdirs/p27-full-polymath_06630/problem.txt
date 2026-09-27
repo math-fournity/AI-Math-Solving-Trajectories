@@ -1,0 +1,1 @@
+In a futuristic data-processing facility, engineers are designing "System Arrays." A System Array is defined as a large rectangular chip architecture of size $m \times n$, composed of $mn$ individual processing cells arranged in $m$ rows and $n$ columns. The area of each cell represents its processing capacity.

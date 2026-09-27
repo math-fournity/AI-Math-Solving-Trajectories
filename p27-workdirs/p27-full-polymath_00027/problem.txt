@@ -1,0 +1,1 @@
+In a $100 \times 100$ grid where $300$ cells are colored blue (with $3$ blue cells in each row and each column), compute the largest positive integer $k$ such that you can always recolor $k$ of these blue cells red so that no contiguous $2 \times 2$ square has four red cells.

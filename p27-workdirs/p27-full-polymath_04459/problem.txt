@@ -1,0 +1,1 @@
+Let $n$ be a given positive integer. Alice and Bob play a game. In the beginning, Alice determines an integer polynomial $P(x)$ with degree no more than $n$. Bob doesn’t know $P(x)$, and his goal is to determine whether there exists an integer $k$ such that no integer roots of $P(x) = k$ exist.

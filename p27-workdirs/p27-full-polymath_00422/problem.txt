@@ -1,0 +1,1 @@
+An odd integer $n \ge 3$ is said to be nice if and only if there is at least one permutation $a_{1}, \ldots, a_{n}$ of $1, \ldots, n$ such that the $n$ sums $S_i = \sum_{j=0}^{n-1} (-1)^j a_{i+j}$ (with indices taken modulo $n$) are all positive.

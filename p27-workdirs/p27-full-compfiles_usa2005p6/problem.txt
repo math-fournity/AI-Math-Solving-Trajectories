@@ -1,0 +1,8 @@
+For a positive integer m, let s(m) denote the sum of the decimal digits of m.
+A set S of positive integers is k-stable if s(∑_{x∈X} x) = k for any nonempty
+subset X ⊆ S. For each integer n ≥ 2 let f(n) be the minimal k for which there
+exists a k-stable set with n integers. Prove that there are constants
+0 < C₁ < C₂ with C₁ log₁₀ n ≤ f(n) ≤ C₂ log₁₀ n.
+
+</rule>
+</rules>

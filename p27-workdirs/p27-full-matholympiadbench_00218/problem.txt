@@ -1,0 +1,9 @@
+/-!
+# International Mathematical Olympiad 2019, Problem 4
+
+Determine all positive integers n,k that satisfy the equation
+
+  k! = (2ⁿ - 2⁰)(2ⁿ - 2¹) ... (2ⁿ - 2ⁿ⁻¹).
+-/
+
+##

@@ -1,0 +1,1 @@
+In a specialized textile factory, a high-precision laser cutter is programmed to cut a perfectly circular hole with a radius of exactly $100$ cm into a massive sheet of grid-patterned fabric. The fabric consists of a repeating pattern of square embroidery cells, each with a side length of $1$ cm.

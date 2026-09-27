@@ -1,0 +1,1 @@
+In a sprawling logistics center, a security grid is laid out as a $200 \times 200$ array of surveillance zones. Within these zones, various motion sensors have been installed. Each sensor is programmed to detect either "Infrared" signals or "Ultraviolet" signals.

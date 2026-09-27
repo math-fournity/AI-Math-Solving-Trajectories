@@ -1,0 +1,1 @@
+We say that a real $a\geq-1$ is philosophical if there exists a sequence $\epsilon_1,\epsilon_2,\dots$, with $\epsilon_i \in\{-1,1\}$ for all $i\geq1$, such that the sequence $a_1,a_2,a_3,\dots$, with $a_1=a$, satisfies

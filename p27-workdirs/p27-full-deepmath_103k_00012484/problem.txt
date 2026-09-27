@@ -1,0 +1,1 @@
+Find all entire functions $f$ such that for all $|z| \geq 1$, $|f(z)| \leq \frac{1}{|z|}$.

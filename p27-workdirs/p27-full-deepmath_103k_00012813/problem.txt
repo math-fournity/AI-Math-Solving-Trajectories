@@ -1,0 +1,1 @@
+Suppose \((X, \mathcal{D})\) is a uniform space where every complete subset is closed. Is \((X, \mathcal{D})\) a Hausdorff space?

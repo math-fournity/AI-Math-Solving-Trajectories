@@ -1,0 +1,1 @@
+Determine the value to which the infinite product \( C_\infty(n) = \prod_{0 < q < \infty \land q \neq n} \frac{1}{e^{\frac{i\pi q}{t}}-e^{\frac{i\pi n}{t}}} \) converges, where \( t, n \in \mathbb{N} \).

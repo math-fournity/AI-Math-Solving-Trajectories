@@ -1,0 +1,1 @@
+Let $(R, \mathfrak{m}) \xrightarrow{\phi} (S,\mathfrak{n})$ be a flat homomorphism of local rings such that $\mathfrak{n} = \mathfrak{m}S + xS$ for some $x \in \mathfrak{n} \setminus \mathfrak{n}^2$. Suppose $J$ is an ideal of $R$ with $\text{depth}_R(R/J) = 0$. Determine if $\text{depth}_S\left(\frac{S}{JS+xS}\right) = 0$. Assume $\phi$ is injective if necessary.

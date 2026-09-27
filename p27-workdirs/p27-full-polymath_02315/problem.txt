@@ -1,0 +1,1 @@
+Four copies of an acute scalene triangle $\mathcal T$, one of whose sides has length $3$, are joined to form a tetrahedron with volume $4$ and surface area $24$.  Compute the largest possible value for the circumradius of $\mathcal T$.

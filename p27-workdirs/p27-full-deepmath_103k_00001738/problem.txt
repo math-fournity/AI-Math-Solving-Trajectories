@@ -1,0 +1,1 @@
+Does $SL(2,\mathbb{Z})$ have a finite-dimensional faithful unitary representation?

@@ -1,0 +1,1 @@
+A logistics architect is designing a shipment of cargo to be distributed across $N$ distinct loading zones. For a given total capacity $S = 100$, the architect must decide on a distribution strategy.

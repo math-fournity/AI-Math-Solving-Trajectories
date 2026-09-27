@@ -1,0 +1,1 @@
+Determine whether the sequence \(x_n = (n+i\pi)^n n^{-n + 1/n}\) converges, and if it does, find its limit.

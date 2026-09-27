@@ -1,0 +1,1 @@
+Given an epimorphism $f: B_4 \longrightarrow S_4$ from the braid group on 4 strands to the symmetric group on 4 elements, determine if the kernel of this epimorphism is isomorphic to $P_4$, the pure braid group on 4 strands.

@@ -1,0 +1,1 @@
+A network security firm is testing a data-swapping protocol involving $n$ secure servers. Each server initially contains a unique encrypted file. The protocol requires that every possible pair of servers must establish a connection and swap their current files exactly once. The total number of swaps performed is the combination $\binom{n}{2}$.

@@ -1,0 +1,1 @@
+A specialized logistics company is tasked with transporting a specific collection of vintage crates, labeled $S$. This collection includes every crate whose identification number is a composite number less than or equal to 79.

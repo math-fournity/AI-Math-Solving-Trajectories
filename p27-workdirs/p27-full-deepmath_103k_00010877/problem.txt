@@ -1,0 +1,1 @@
+Let $M$ be a finite-dimensional subspace of $c_{0}$, and let $\\varepsilon > 0$. Does there exist a finite rank projection from $c_{0}$, with norm $\leq 1+\\varepsilon$, onto a subspace $N$ of $c_{0}$ such that $M \subseteq N$ and the Banach-Mazur distance $\textrm{d}(N,l_{\infty}^{n}) \leq 1+\\varepsilon$, where $n=\textrm{dim} N$?

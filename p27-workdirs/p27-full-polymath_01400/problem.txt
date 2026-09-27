@@ -1,0 +1,1 @@
+In a $10 \times 10$ chess board, what is the maximum number of knights that can be placed such that each square on the board can be attacked by at most one knight?

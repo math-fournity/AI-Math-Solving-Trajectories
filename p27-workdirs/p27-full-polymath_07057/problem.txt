@@ -1,0 +1,1 @@
+In a specialized network of 10 data processing hubs, every hub is required to perform exactly one bilateral data exchange with every other hub in the network. During each exchange, Hub A transmits a specific integer number of data packets to Hub B, and Hub B transmits a specific integer number of data packets to Hub A.

@@ -1,0 +1,1 @@
+Determine whether, for every positive integer $n$, there exists a number field of degree $n$ whose ring of integers is a unique factorization domain (UFD).

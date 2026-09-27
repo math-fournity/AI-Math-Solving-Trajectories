@@ -1,0 +1,1 @@
+Let $A = \frac{\mathbb{C}[X,Y]}{(X^2 + Y^2 - 1)}$ and let $x, y$ denote the images of $X, Y$ in $A$ respectively. If $u = x + iy$, calculate the number of elements in the quotient ring $A/(u - i)$.

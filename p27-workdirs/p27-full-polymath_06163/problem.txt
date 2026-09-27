@@ -1,0 +1,1 @@
+In a specialized logistics hub, a manager is designing experimental storage grids for a fleet of drones. Each grid is an $n \times n$ square array of docking stations, where $n$ is a positive integer between 1 and 100, inclusive.

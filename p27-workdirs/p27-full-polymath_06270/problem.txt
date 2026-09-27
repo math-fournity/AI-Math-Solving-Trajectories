@@ -1,0 +1,1 @@
+In a specialized digital archive, data is stored in nested encryption layers called "Complexity Stacks." A stack is formed by a sequence of positive integers $a_1, a_2, a_3, \ldots, a_{2017}$, where the total security value is calculated using a power tower function:

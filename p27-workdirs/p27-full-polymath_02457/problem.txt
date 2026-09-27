@@ -1,0 +1,1 @@
+For which integers $n > 1$ does there exist a rectangle that can be subdivided into $n$ pairwise noncongruent rectangles similar to the original rectangle? Let $S$ be the set of all such integers $n$. Find the sum of all $n$ in the set $\{2, 3, 4, \dots, 100\}$ that are not in $S$.

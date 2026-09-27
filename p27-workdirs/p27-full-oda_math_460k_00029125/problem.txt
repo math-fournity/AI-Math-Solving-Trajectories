@@ -1,0 +1,1 @@
+Denote by \(\mathbb{R}^{+}\) the set of all positive real numbers. Find all functions \( f: \mathbb{R}^{+} \rightarrow \mathbb{R}^{+} \) such that

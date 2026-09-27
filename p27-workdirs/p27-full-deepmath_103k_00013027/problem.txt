@@ -1,0 +1,1 @@
+Let $f$ be a positive continuous function on a compact interval $[a,b]$. Determine the limit \( \lim_{n \to \infty} \left[ \int_{a}^{b} f(x)^n \, dx \right]^{1/n} \).

@@ -1,0 +1,1 @@
+Given an integer $n > 2$ and an integer $a$, if there exists a positive integer $d$ such that $n \mid a^{d}-1$ and $n \nmid a^{d-1}+\ldots+a+1$, then we call $a$ an $n$-separator. For a given integer $n > 2$, let the defect of $n$ be the number of integers $a$ with $0 < a < n$ and $\gcd(a, n) = 1$ that are not $n$-separators.

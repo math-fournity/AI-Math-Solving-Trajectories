@@ -1,0 +1,1 @@
+Determine the fundamental group of the space obtained by taking a closed disk $D$ with boundary $C$, removing the interiors of two disjoint closed disks $D_a$ and $D_b$ inside $D$ (with boundaries $C_a$ and $C_b$, respectively), and identifying points on $C_a$ that are 90 degrees apart, points on $C_b$ that are 120 degrees apart, and points on $C$ that are 180 degrees apart.

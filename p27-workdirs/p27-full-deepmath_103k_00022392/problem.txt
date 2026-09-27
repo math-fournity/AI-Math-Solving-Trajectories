@@ -1,0 +1,1 @@
+Determine whether the cone $CK$ over the Klein bottle can be embedded in $\mathbb{R}^4$. Provide a justification for your answer.

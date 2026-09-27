@@ -1,0 +1,1 @@
+Let $n$ be a positive integer and $S$ be a subset of the set $\{1, 2, \dots, n\}$. Suppose $S$ satisfies the following two conditions:

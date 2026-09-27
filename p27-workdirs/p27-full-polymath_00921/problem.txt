@@ -1,0 +1,1 @@
+Let $k \ge 1$ be an integer. Determine the smallest positive integer $n$ such that some cells on an $n \times n$ board can be painted black so that in each row and in each column there are exactly $k$ black cells, and furthermore, the black cells do not share a side or a vertex with another black square. Let $n(k)$ be this smallest integer. Compute the sum $\sum_{k=1}^{50} n(k)$.

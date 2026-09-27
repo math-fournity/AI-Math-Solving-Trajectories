@@ -1,0 +1,1 @@
+Let $n$ be the smallest integer such that for any sequence of $n$ pairs of non-negative numbers $(a_i, b_i)$ for $i=1, 2, \dots, n$ satisfying the condition $a_i + b_i \leq 2$ for all $i$, there must exist two distinct indices $k, m \in \{1, 2, \dots, n\}$ such that the inequality $|a_k - a_m| + |b_k - b_m| \leq 1$ holds. Find $n$.

@@ -1,0 +1,1 @@
+In a specialized cyber-security simulation, a data packet starts with an initial integrity value $n_0$, which is an integer greater than 1. Two security protocols, Alpha and Beta, take turns modifying this value to reach their respective target states.

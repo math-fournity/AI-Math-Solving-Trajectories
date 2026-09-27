@@ -1,0 +1,1 @@
+For a fixed positive integer $m$, let $A$ be a subset of $\left\{0,1,2, \ldots, 5^{m}\right\}$, consisting of $4 m+$ elements.

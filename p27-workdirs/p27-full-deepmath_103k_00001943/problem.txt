@@ -1,0 +1,1 @@
+Is the unit ball in the dual space $D[0,1]^*$ separable in the weak* topology?

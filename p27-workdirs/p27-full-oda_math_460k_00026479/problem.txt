@@ -1,0 +1,1 @@
+Find all integers \( n \geq 2 \) for which there exists an integer \( m \) and a polynomial \( P(x) \) with integer coefficients satisfying the following three conditions:

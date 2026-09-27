@@ -1,0 +1,1 @@
+In a specialized testing facility, a 10x10 grid of server racks is arranged, where each rack contains a specific number of encrypted data packets (each represented by an integer). A data maintenance protocol defines a "Stable Zone" as any rectangular block of racks where the total sum of all data packets within that block is exactly divisible by 5.

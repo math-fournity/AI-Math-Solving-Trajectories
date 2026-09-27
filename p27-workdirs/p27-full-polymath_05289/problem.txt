@@ -1,0 +1,1 @@
+Let \( a, b, c, \) and \( d \) be elements of the set \(\{1, 2, 3, \ldots, 2014, 2015\}\) such that \( a < b < c < d \), \( a + b \) is a divisor of \( c + d \), and \( a + c \) is a divisor of \( b + d \). Find the greatest value that the number \( a \) can have.

@@ -1,0 +1,1 @@
+A high-security data vault consists of 56 individual storage cells. To manage the security of these cells, a company employs 15 different digital encryption keys. Each key provides access to a specific subset of the 56 cells.

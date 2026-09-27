@@ -1,0 +1,1 @@
+A digital artist is designing a repeating mosaic on a 20x20 grid of pixels. The color of each pixel at coordinate $(i, j)$ is determined by its "color-index," which is the remainder of $i+j$ when divided by 5. There are 5 possible colors: 0, 1, 2, 3, and 4.

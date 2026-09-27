@@ -1,0 +1,1 @@
+Let $f: D^2 \to S^2$ be a local diffeomorphism between the closed unit disk and the unit sphere. Is $f$ necessarily injective?

@@ -1,0 +1,1 @@
+Determine whether the following statement is true: If $f:\mathbb{R} \to \mathbb{R}$ is a strictly increasing function with $f(0) = 0$, and $a > 0$, $b > 0$, then $\int_0^a f(x) \, dx + \int_0^b f^{-1}(x) \, dx \geq ab$. Assume no continuity for $f$. Is this statement true?

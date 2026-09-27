@@ -1,0 +1,1 @@
+A school has $450$ students. Each student has at least $100$ friends among the others, and among any $200$ students, there are always two that are friends. Let $M$ be the maximum number of students that can be sent on a kayak trip such that they can be divided into pairs of friends (each pair in a two-seater kayak). Find the largest integer $k$ such that $M \ge k$ must hold.

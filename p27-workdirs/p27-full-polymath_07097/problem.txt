@@ -1,0 +1,1 @@
+In a bustling coastal town, a local artist has been commissioned to design a stained-glass window composed of a 3x3 square grid of glass panes (9 panes in total). The artist has access to four distinct types of glass: Ruby Red, Amber Yellow, Cobalt Blue, and Royal Purple.

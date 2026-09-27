@@ -1,0 +1,1 @@
+A high-security cyber-defense ring consists of 30 autonomous servers linked in a physical circle. Within this network, a specific number of servers have been upgraded with "Yale-OS," a perfectly reliable diagnostic firmware, while the remaining servers run a legacy OS that is prone to unpredictable, randomized data corruption.

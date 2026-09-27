@@ -1,0 +1,1 @@
+In a remote industrial facility, a long logistics bay contains a single row of 2017 designated cargo slots, numbered 1 to 2017. At the start of a production cycle, every slot is completely empty.

@@ -1,0 +1,1 @@
+Let $G$ be a complete graph with $n$ vertices. The edges of $G$ are colored with $k=3$ colors such that the subgraph formed by the edges of each color is connected. Let $N$ be the number of triples of vertices $\{A, B, C\}$ such that the edges $AB, BC,$ and $AC$ are of three distinct colors. Determine the minimum possible value of $N$ for any such coloring of $G$ with $n \ge 3$.

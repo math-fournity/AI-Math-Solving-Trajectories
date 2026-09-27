@@ -1,0 +1,1 @@
+A subset \( S \) of the nonnegative integers is called supported if it contains \( 0 \), and \( k+8, k+9 \in S \) for all \( k \in S \). How many supported sets are there?

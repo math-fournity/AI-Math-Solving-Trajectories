@@ -1,0 +1,1 @@
+A high-security digital vault uses a "Key-Grid" system to store data. A grid is classified as **Level-$k$ Secure** if it is a rectangular array where every cell contains a unique positive integer, and the collection of all integers in the grid is exactly the set of all positive divisors of $k$.

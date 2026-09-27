@@ -1,0 +1,1 @@
+In the coastal province of Geometria, three lighthouse stations—Alpha ($A$), Bravo ($B$), and Charlie ($C$)—form a triangular network. These stations sit on a circular bay. Two straight piers are built from Alpha and Bravo, tangent to the circular shoreline, extending until they meet at a Supply Depot ($T$).

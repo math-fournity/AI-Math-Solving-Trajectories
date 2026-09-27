@@ -1,0 +1,1 @@
+In a logistics hub, a sequence of $n$ designated loading docks is numbered $1, 2, \dots, n$ in order along a straight terminal. A fleet of $n$ delivery trucks, also numbered $1, 2, \dots, n$, must be assigned to these docks such that exactly one truck is parked at each dock.

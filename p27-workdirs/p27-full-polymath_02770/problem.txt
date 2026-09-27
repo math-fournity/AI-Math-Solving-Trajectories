@@ -1,0 +1,1 @@
+Given positive integer $n$ ($n \geq 2$), find the largest positive integer $\lambda(n)$ satisfying the following property:

@@ -1,0 +1,1 @@
+Find the residue of the function \( f(z) = \frac{1}{\exp\left(\frac{z^2-\pi/3}{\sqrt 2}\right)} + 1 \) at the point \( z_0 = \frac{\sqrt\pi}{2} \cdot (\sqrt 3-i) \).

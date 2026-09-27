@@ -1,0 +1,1 @@
+In a specialized logistics warehouse, an automated storage grid is defined by an $8 \times 8$ coordinate system of bays, represented by the set $C = \{(i,j) : 1 \leq i, j \leq 8\}$. The warehouse manager needs to install 21 heavy-duty rectangular storage racks, each occupying a $3 \times 1$ or $1 \times 3$ footprint of three contiguous bays.

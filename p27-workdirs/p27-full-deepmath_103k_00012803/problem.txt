@@ -1,0 +1,1 @@
+Let $B = B(0,1) \subset \mathbb{C}$ be the open unit disc and $B' = B \setminus \{ 0 \} \subset \mathbb{C}$ the punctured unit disc. Suppose $u : B' \rightarrow \mathbb{R}$ is a harmonic function that belongs to the Sobolev space $W^{1,2}(B)$, meaning:

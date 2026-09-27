@@ -1,0 +1,1 @@
+In a sprawling urban fiber-optic network, several straight underground cables are laid across a flat district. Engineers define a "node" as any location where at least two of these cables cross paths. Among these, a "standard node" is defined specifically as a crossing where exactly two cables intersect.

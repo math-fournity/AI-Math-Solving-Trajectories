@@ -1,0 +1,1 @@
+13. G7 (ARM) The point $M$ inside the convex quadrilateral $A B C D$ is such that $M A=M C, \angle A M B=\angle M A D+\angle M C D, \angle C M D=\angle M C B+\angle M A B$. Prove that $A B \cdot C M=B C \cdot M D$ and $B M \cdot A D=M A \cdot C D$.

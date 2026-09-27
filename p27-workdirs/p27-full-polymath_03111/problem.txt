@@ -1,0 +1,1 @@
+Problem 10.3. Let $A$ be the set of all 4-tuples of 0 and 1. Two such 4-tuples are called neighbors if they coincide exactly at three positions. Let $M$ be a subset of $A$ with the following property: any two elements of $M$ are not neighbors and there exists an element of $M$ which is neighbor of exactly one of them. Find the minimum possible cardinality of $M$.

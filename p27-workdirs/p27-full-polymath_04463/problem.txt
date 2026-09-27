@@ -1,0 +1,1 @@
+In a $50 \times 50$ square grid of rooms, each room may contain an apple tree, a pomegranate tree, a peach tree, or be empty (at most one tree per room). Two rooms are neighbors if they share a common side. The following conditions are met:

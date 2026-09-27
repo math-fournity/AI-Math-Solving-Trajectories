@@ -1,0 +1,1 @@
+Determine the maximum $n \geq 3$ such that there exists any $n$-gon where each angle is an integer and the ratio of any two angles (greater to smaller) is an integer greater than $1$.

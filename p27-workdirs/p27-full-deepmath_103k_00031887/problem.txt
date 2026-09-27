@@ -1,0 +1,1 @@
+175 schoolchildren arrived at a health camp. Some children know each other, and some do not. It is known that any six schoolchildren can be accommodated in two three-person rooms such that all the schoolchildren in one room will know each other. What is the minimum number of pairs of acquainted schoolchildren that could have come to the camp?

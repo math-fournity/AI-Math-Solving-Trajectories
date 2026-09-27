@@ -1,0 +1,1 @@
+Find all real $a$ for which there exists a function $f:\mathbb{R}\to\mathbb{R}$ such that

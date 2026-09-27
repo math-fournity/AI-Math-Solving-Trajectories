@@ -1,0 +1,1 @@
+Determine whether the expression \([x^{2^{n-2}},\underbrace{y^{2^{n-2}},\ldots,y^{2^{n-2}}}_{2n}]\) is equal to 1 in a group of exponent \(2^n\).

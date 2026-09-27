@@ -1,0 +1,1 @@
+Determine the maximum number of inflection points that a cubic planar curve, given by the equation $F(x,y)=0$ where $\deg F=3$, can have. Consider the real roots of the determinant $F_{xx}F_y^2-2F_{xy}F_xF_y+F_{yy}F^2_x$ in your analysis.

@@ -1,0 +1,1 @@
+There are 20 people and a conductor. Each person has either 2 dollars or 5 dollars, and the conductor has nothing. Each person buys a tram ticket costing 1 dollar and receives change if necessary. Find the minimum value of the total amount of dollars the people had initially.

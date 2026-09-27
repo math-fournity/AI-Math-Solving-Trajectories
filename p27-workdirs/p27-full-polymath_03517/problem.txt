@@ -1,0 +1,1 @@
+Find all values of $\alpha \in \left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$ such that the system of equations

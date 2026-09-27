@@ -1,0 +1,1 @@
+In the competitive world of high-frequency trading, two automated algorithms, "Alpha" ($a$) and "Beta" ($b$), generate integer-based buy and sell signals. The efficiency of their interaction is measured against a global volatility constant, $\nu = \sqrt{2}$.

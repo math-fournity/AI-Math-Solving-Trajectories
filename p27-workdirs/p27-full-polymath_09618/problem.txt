@@ -1,0 +1,1 @@
+In a specialized logistics warehouse, an automated crane operates along a vertical shelving system consisting of 11 distinct levels, labeled Level 0 through Level 10. The vertical distance between any two adjacent levels is exactly 4 meters.

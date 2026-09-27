@@ -1,0 +1,1 @@
+Find all permutations $(a_1, a_2,...,a_{2021})$ of $(1,2,...,2021)$, such that for every two positive integers $m$ and $n$ with difference bigger than $20^{21}$, the following inequality holds:

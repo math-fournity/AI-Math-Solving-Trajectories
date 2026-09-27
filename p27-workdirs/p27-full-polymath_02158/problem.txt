@@ -1,0 +1,1 @@
+Find the height of the cone of maximum surface area inscribed in a sphere of radius \( R \).

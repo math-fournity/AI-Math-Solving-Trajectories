@@ -1,0 +1,1 @@
+In a specialized circular city planning project, a developer is designing two separate residential plazas, $P_{10}$ and $P_{11}$. The first plaza, $P_{10}$, is a convex plot of land with 10 perimeter walls. The second, $P_{11}$, is a convex plot with 11 perimeter walls.

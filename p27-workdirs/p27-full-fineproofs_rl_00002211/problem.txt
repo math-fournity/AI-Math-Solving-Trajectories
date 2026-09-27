@@ -1,0 +1,1 @@
+In terms of  $n\ge2$ , find the largest constant  $c$  such that for all nonnegative  $a_1,a_2,\ldots,a_n$  satisfying  $a_1+a_2+\cdots+a_n=n$ , the following inequality holds:

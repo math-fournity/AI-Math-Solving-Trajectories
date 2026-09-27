@@ -1,0 +1,1 @@
+Find all polynomials $P(x)$ with real coefficients satisfying the following condition: for all $a > 1995$, the number of real roots of the equation $P(x) = a$ (counting multiplicities) is greater than 1995, and every such root is strictly greater than 1995.

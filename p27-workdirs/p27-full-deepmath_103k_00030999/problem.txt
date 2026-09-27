@@ -1,0 +1,1 @@
+In an office with 2004 telephones, each pair of telephones is connected by a wire of one of four colors. Given that all four colors are used, determine if it is always possible to select a subset of telephones such that the wires connecting them include exactly three different colors.

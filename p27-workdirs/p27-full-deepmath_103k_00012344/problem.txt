@@ -1,0 +1,1 @@
+Determine whether the following statement is true or false: If a closed, strictly convex curve has exactly four vertices (extrema of curvature), then any circle can intersect it at most four times.

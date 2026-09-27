@@ -1,0 +1,1 @@
+In a specialized logistics network, a series of automated distribution hubs are positioned at every kilometer marker along a one-way route, represented by the set of positive integers $\mathbb{N}$. A fleet manager is designing a routing function $f: \mathbb{N} \to \mathbb{N}$ that assigns each hub $x$ a specific inventory capacity $f(x)$ (expressed as a positive integer).

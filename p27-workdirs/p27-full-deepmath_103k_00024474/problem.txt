@@ -1,0 +1,1 @@
+Is every object of the topos $Sh(B)$ of sheaves on a complete Boolean algebra $B$ projective?

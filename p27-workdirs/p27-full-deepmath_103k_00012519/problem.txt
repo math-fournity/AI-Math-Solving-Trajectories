@@ -1,0 +1,1 @@
+Consider the space ${\cal P}(\omega)$, which is naturally bijective to $\{0,1\}^\omega$. This space is endowed with the product topology, where $\{0,1\}$ carries the discrete topology, making it a compact space with a Haar measure. Define the set $A_0 = \{a \in {\cal P}(\omega): 0 \in a\}$. Determine the Haar measure of the set $A_0$.

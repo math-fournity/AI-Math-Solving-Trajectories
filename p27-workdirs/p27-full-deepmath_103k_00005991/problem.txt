@@ -1,0 +1,1 @@
+Suppose $\Omega_3\subset \mathbb{C}^3$ and $\Omega_2\subset \mathbb{C}^2$ are two domains. Let $g:\Omega_3\to\Omega_2$ be a surjective analytic function and $h:\Omega_2\to\mathbb{C}^2$ be any function. If the composition $f:=h\circ g:\Omega_3\to\mathbb{C}^2$ is analytic, does this imply that $h$ is analytic?

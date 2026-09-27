@@ -1,0 +1,1 @@
+Determine whether the following statement is true or false: For a prime number $p > 2$ and $n \in \mathbb{N}$, the sum of combinatorial coefficients $$\sum_{i=0}^{\lfloor n/p\rfloor}(-1)^i {n\choose ip}=0$$ if and only if $n=(2k-1)p$ for some $k \in \mathbb{N}$.

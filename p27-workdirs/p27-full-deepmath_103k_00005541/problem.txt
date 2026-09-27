@@ -1,0 +1,1 @@
+Does there exist a meromorphic function on \(\mathbb{C}\) such that all of its Taylor coefficients are prime numbers? Specifically, is there an unbounded sequence \(a_0, a_1, \ldots \in \mathbb{N}\) of primes such that the function \(O(z) = \sum_{n \ge 0} a_n z^n\) is meromorphic?

@@ -1,0 +1,1 @@
+In a remote sector of the grid-based metropolis of Deca-City, a real estate developer owns a square plot of land measuring 100 square blocks, arranged in a perfect $10 \times 10$ grid.

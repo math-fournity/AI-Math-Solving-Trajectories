@@ -1,0 +1,1 @@
+(Davenport-Trager) Construct examples in which the coefficients of the GCD of \( A, B \in \mathbb{Z}[X] \) grow much larger than the coefficients of \( A, B \). HINT: \( A = (X + 1)^2(X - 1) \), \( B = (X + 1)^2(X^2 - X + 1) \). □

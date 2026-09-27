@@ -1,0 +1,1 @@
+In a specialized logistics hub, there are 10 automated Loading Cranes and 10 Transport Ships. Each Crane is programmed to be compatible with a unique, positive number of Ships (no two Cranes share the same compatibility count). Simultaneously, each Ship is designed to be compatible with its own unique, positive number of Cranes (no two Ships share the same compatibility count).

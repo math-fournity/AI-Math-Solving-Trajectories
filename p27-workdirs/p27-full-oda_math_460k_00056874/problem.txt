@@ -1,0 +1,1 @@
+Find all functions \( f \) such that for all \( p, q \in A \), \( N_p(J) \subset J \) and \( N_p(N_q(x)) = N_{pq}(x) \) for \( x \in J \), where \( N_p(x) = x + \frac{(p-1)h^{(p-2)}(x)}{h^{(p-1)}(x)} \) and \( h(x) = \frac{1}{f(x)} \).

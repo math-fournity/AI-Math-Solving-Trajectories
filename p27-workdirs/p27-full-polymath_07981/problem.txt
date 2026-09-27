@@ -1,0 +1,1 @@
+In the city of Arithema, a rectangular district named **ABCD** is being divided for urban development. The district is bounded by two parallel main roads, **AB** (North) and **CD** (South), and two perpendicular avenues, **BC** (East) and **AD** (West).

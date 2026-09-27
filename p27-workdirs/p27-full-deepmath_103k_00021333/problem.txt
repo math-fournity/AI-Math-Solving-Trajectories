@@ -1,0 +1,1 @@
+Provide an example of a smooth, closed 3-dimensional manifold with non-trivial torsion in its fundamental group that can be smoothly embedded in Euclidean 4-space \(\mathbb{R}^4\).

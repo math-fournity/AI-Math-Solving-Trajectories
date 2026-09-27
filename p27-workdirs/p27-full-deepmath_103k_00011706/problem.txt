@@ -1,0 +1,1 @@
+Is there a connected topological space that is maximal compact, but not $T_2$? A space $(X,\tau)$ is said to be maximal compact if for any topology $\tau'$ on $X$ with $\tau'\supseteq \tau$ and $\tau'\neq \tau$, the space $(X,\tau')$ is not compact.

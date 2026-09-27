@@ -1,0 +1,1 @@
+The cells of a $(n^2-n+1) \times (n^2-n+1)$ matrix are colored using $n$ colors. A color is called dominant on a row (or a column) if there are at least $n$ cells of this color on that row (or column). A cell is called extremal if its color is dominant both on its row and its column.

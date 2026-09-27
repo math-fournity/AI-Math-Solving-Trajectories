@@ -1,0 +1,1 @@
+In triangle  $\triangle ABC$  ,  $M$  is the midpoint of arc  $(BAC)$  and  $N$  is the antipode of  $A$  in  $(ABC)$ . The line through  $B$  perpendicular to  $AM$  , intersects  $AM , (ABC)$  at  $D,P$  respectively and a line through  $D$  perpendicular to  $AC$  , intersects  $BC,AC$  at  $F,E$  respectively. Prove that  $PE,MF,ND$  are concurrent.

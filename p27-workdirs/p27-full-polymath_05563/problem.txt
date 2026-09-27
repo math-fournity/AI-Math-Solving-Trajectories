@@ -1,0 +1,1 @@
+On a blackboard the numbers $1,2,3,\dots,170$ are written. You want to color each of these numbers with $k$ colors $C_1,C_2, \dots, C_k$, such that the following condition is satisfied: for each $i$ with $1 \leq i < k$, the sum of all numbers with color $C_i$ divide the sum of all numbers with color $C_{i+1}$.

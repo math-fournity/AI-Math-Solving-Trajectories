@@ -1,0 +1,1 @@
+At the beginning there are $2017$ marbles in each of $1000$ boxes. On each move Aybike chooses a box, grabs some of the marbles from that box and delivers them one for each to the boxes she wishes. At least how many moves does Aybike have to make to have different number of marbles in each box?

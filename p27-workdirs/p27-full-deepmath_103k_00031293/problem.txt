@@ -1,0 +1,1 @@
+Given a natural number \( n \), determine the largest number \( k \) such that for any \( n \) rays in space, no two of which have common points, it is possible to mark \( k \) points on these rays that lie on the same sphere.

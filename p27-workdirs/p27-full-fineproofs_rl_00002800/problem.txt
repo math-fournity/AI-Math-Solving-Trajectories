@@ -1,0 +1,1 @@
+Let  $D$ ,  $E$  and  $F$  be points in which incircle of triangle  $ABC$  touches sides  $BC$ ,  $CA$  and  $AB$ , respectively, and let  $I$  be a center of that circle.Furthermore, let  $P$  be a foot of perpendicular from point  $I$  to line  $AD$ , and let  $M$  be midpoint of  $DE$ . If  $\{N\}=PM\cap{AC}$ , prove that  $DN \parallel EF$

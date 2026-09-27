@@ -1,0 +1,1 @@
+Suppose $P$ is a polynomial with integer coefficients such that for every positive integer $n$, the sum of the decimal digits of $|P(n)|$ is not a Fibonacci number. Must $P$ be constant?

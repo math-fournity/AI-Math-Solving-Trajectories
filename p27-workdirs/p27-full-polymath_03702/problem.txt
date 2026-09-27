@@ -1,0 +1,1 @@
+An odd integer \( n \geq 3 \) is said to be "nice" if there is at least one permutation \( a_{1}, a_{2}, \ldots, a_{n} \) of \( 1, 2, \ldots, n \) such that the \( n \) sums

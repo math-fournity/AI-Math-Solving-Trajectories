@@ -1,0 +1,1 @@
+Let \( n \geq 3 \) be a positive integer. Determine the smallest positive real number \( k \) such that for any connected graph \( G \) with \( n \) vertices and \( m \) edges, it is possible to delete at most \( k(m-\lfloor \frac{n}{2} \rfloor) \) edges to obtain a graph that can be properly colored with two colors.

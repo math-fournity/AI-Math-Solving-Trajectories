@@ -1,0 +1,1 @@
+In a remote deep-sea research network, there exists an infinite web of underwater laboratory modules. Every pair of modules is connected by exactly one unique path of tunnels, and every single module has exactly three tunnels leading out to other modules.

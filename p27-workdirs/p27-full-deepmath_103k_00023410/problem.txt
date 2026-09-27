@@ -1,0 +1,1 @@
+Let $S$ be a simply connected subset of $\mathbb{R}^2$ and consider $x$ an interior point of $S$ such that $B_r(x) \subseteq S$ for some $r > 0$. Is it necessarily true that $\pi_1(S \setminus \{x\}) \cong \mathbb{Z}$?

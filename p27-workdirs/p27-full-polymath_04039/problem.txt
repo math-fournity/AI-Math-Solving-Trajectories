@@ -1,0 +1,1 @@
+Let $S$ be a set of $100$ points in the plane such that the distance between any two points in $S$ is at least 1. Let $T$ be a subset of $S$ of maximum possible size such that the distance between any two points in $T$ is at least $\sqrt{3}$. What is the minimum possible value of $|T|$?

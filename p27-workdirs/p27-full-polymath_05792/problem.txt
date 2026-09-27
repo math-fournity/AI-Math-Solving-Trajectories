@@ -1,0 +1,1 @@
+The natural numbers are written one after another in increasing order, thus forming an infinite sequence of digits. Find the smallest natural number \( k \) such that among the first \( k \) digits of the resulting sequence, every two non-zero digits appear a different number of times.

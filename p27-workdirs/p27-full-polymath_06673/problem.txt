@@ -1,0 +1,1 @@
+A high-security data vault is protected by a series of laser-grid scanners. Each scanner projects a single straight laser beam across the floor. To successfully bypass the security of a specific sector, every active sensor node on the floor must be touched by at least one laser beam.

@@ -1,0 +1,1 @@
+Let \( H = L^2([0, 1]) \) be the Hilbert space of square-integrable functions on the interval \([0, 1]\). Provide an example of a Hilbert-Schmidt operator \( K \) on \( H \) for which the spectral radius \( \rho(K) \) is significantly smaller than the uniform norm \( \|K\|_\infty \). Explain why this is the case.

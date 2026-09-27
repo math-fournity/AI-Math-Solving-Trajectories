@@ -1,0 +1,1 @@
+Determine whether every radical ideal in a Noetherian ring can be expressed as an intersection of prime ideals. Provide a proof or counterexample.

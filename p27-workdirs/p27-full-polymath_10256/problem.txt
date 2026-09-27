@@ -1,0 +1,1 @@
+A team of civil engineers is designing a reinforced structural joint where three different force stresses—represented by positive real intensities $x$, $y$, and $z$—interact. To ensure the joint does not fail, the total "Stability Rating" of the system must always remain non-negative.

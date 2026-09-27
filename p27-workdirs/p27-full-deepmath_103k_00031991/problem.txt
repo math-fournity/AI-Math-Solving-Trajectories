@@ -1,0 +1,1 @@
+Find all functions \( f: \mathbf{N} \rightarrow \mathbf{N} \) such that for every \( n \in \mathbf{N} \), \[ \frac{1}{f(1) f(2)}+\frac{1}{f(2) f(3)}+\cdots+\frac{1}{f(n) f(n+1)}=\frac{f(f(n))}{f(n+1)} \]

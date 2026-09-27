@@ -1,0 +1,1 @@
+Given 2005 distinct numbers $a_1,\,a_2,\dots,a_{2005}$. By one question, we may take three different indices $1\le i<j<k\le 2005$ and find out the set of numbers $\{a_i,\,a_j,\,a_k\}$ (unordered, of course).  Find the minimal number of questions, which are necessary to find out all numbers $a_i$.

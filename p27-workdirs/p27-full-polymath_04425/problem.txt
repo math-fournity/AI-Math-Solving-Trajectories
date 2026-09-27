@@ -1,0 +1,1 @@
+Given positive integers$ m,n$ such that $ m < n$. Integers $ 1,2,...,n^2$ are arranged in $ n \times n$ board. In each row, $ m$ largest number colored red. In each column $ m$ largest number colored blue. Find the minimum number of cells such that colored both red and blue.

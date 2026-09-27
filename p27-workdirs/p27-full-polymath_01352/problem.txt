@@ -1,0 +1,1 @@
+In a $9 \times 9$ board where each cell contains an integer, for any 5 numbers in the same row (column), their sum is also in the same row (column). Find the smallest possible number of zeroes in the board.

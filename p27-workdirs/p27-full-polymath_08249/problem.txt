@@ -1,0 +1,1 @@
+A high-security data vault requires a specific "multi-key" protocol for its digital safety deposit boxes to remain active. In this vault, there are $n$ distinct electronic security tokens, each programmed with a unique real-number frequency.

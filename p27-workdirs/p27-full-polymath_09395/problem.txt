@@ -1,0 +1,1 @@
+A logistics company operates a massive server warehouse represented by a $100 \times 100$ grid of tile slots. To stabilize the flooring, they have installed $5000$ cooling units, each of which is a rectangular block covering exactly $2 \times 1$ slots. The entire grid is perfectly covered by these units, with no overlaps or gaps.

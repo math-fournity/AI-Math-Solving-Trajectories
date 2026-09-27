@@ -1,0 +1,1 @@
+In a bustling coastal city, an urban planning committee is designing rectangular micro-districts organized into a grid of city blocks. Each district has a dimensions of $m$ blocks by $n$ blocks, where both $m$ and $n$ are integers between 2 and 10, inclusive.

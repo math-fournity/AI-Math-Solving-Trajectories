@@ -1,0 +1,1 @@
+For an odd perfect number $L$ given in Eulerian form as $L = q^k n^2$, where $q$ is the Euler prime, does the inequality $k < q$ always hold?

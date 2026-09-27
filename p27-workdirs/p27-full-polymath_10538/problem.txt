@@ -1,0 +1,1 @@
+A specialized deep-sea research vessel is designed with an automated ballast system that operates based on a specific depth-calibration protocol. The target operating depth, $x$, is determined by the stability of a quadratic pressure equation.

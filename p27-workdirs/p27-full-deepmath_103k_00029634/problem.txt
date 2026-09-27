@@ -1,0 +1,1 @@
+Determine the number of zeroes of the function \( f(z) = z^2 + e^z \) within the rectangle defined by \([-5,5] \times [-2 \pi i, 2 \pi i]\) in the complex plane.

@@ -1,0 +1,1 @@
+A high-tech logistics firm is designing a new automated warehouse facility. The layout consists of $2n$ sensor hubs (where $n$ is a positive integer) placed at distinct coordinates on a large, flat grid. To ensure maximum signal coverage, no two sensor hubs are aligned exactly on the same north-south line or east-west line.

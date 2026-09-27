@@ -1,0 +1,1 @@
+Let $k, r, n$ be positive integers such that $k+1$ and $r-1$ are relatively prime. Let $N = nk$ and $M = n(n-1)nk/2$. Is it true that the dimension of the vector space $V^{(k,r)}_{N,M}$ is 1 under these conditions?

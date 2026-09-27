@@ -1,0 +1,1 @@
+In a specialized logistics warehouse, a floor is divided into a rectangular grid of storage bays with 6 rows (labeled $R_1$ to $R_6$) and 8 columns (labeled $C_1$ to $C_8$). A system administrator is deploying 24 specialized tracking sensors across these bays according to the following strict protocols:

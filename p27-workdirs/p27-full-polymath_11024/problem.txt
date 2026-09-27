@@ -1,0 +1,1 @@
+In a remote desert, a solar-thermal facility is laid out in the shape of a perfectly triangular plot, designated as Field $ABC$. The plot is isosceles, where the boundaries $AB$ and $AC$ are of equal length, and the angle at the primary control hub, vertex $A$, is exactly $50^\circ$.

@@ -1,0 +1,1 @@
+Find all real-to-real functions \( f(x) \) that satisfy the functional equation:

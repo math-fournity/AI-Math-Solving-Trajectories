@@ -1,0 +1,1 @@
+5. (ROM) Let $A B C D$ be a regular tetrahedron and $M, N$ distinct points in the planes $A B C$ and $A D C$ respectively. Show that the segments $M N, B N, M D$ are the sides of a triangle.

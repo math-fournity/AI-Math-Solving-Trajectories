@@ -1,0 +1,1 @@
+Determine if the Galois group of the polynomial \(x^6+x^5+2x^4-2x^3-x^2+1=0\) is solvable and find its order.

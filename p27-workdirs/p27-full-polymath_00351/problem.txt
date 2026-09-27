@@ -1,0 +1,1 @@
+Let $f(n)$ be the minimum number of edges in a simple graph with $n$ vertices such that the graph is guaranteed to contain two triangles that share exactly one vertex. Find the value of $f(10)$.

@@ -1,0 +1,1 @@
+Let \( S = \{(x, y) \in \mathbb{Z}^{2} \mid 0 \leq x \leq 11, 0 \leq y \leq 9\} \). Compute the number of sequences \((s_{0}, s_{1}, \ldots, s_{n})\) of elements in \( S \) (for any positive integer \( n \geq 2 \)) that satisfy the following conditions:

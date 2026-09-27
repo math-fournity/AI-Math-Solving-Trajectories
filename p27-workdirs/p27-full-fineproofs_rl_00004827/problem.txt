@@ -1,0 +1,1 @@
+The points  $M$  and  $N$  are on the side  $BC$  of  $\Delta ABC$ , so that  $BM=CN$  and  $M$  is between  $B$  and  $N$ . Points  $P\in AN$  and  $Q\in AM$  are such that  $\angle PMC=\angle MAB$  and  $\angle QNB=\angle NAC$ . Prove that  $\angle QBC=\angle PCB$ .

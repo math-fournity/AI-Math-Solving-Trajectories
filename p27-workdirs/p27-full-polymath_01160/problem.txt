@@ -1,0 +1,1 @@
+Alice has an isosceles triangle \(M_{0} N_{0} P\), where \(M_{0} P = N_{0} P\) and \(\angle M_{0} P N_{0} = \alpha^{\circ}\). (The angle is measured in degrees.) Given a triangle \(M_{i} N_{j} P\) for nonnegative integers \(i\) and \(j\), Alice may perform one of two elongations:

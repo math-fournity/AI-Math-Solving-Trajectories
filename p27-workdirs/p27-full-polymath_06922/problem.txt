@@ -1,0 +1,1 @@
+In a remote digital archipelago, there are 36 data silos arranged in a perfect $6 \times 6$ grid. Each silo is identified by its coordinates $(x, y)$, where $x$ and $y$ are integers from $1$ to $6$.

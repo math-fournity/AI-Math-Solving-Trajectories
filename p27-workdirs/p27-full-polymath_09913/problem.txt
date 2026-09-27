@@ -1,0 +1,1 @@
+In a specialized circular data network consisting of $n$ server nodes arranged in a ring, a cybersecurity team and a maintenance team are competing to configure the connections (edges) between them. The network size $n$ can be any integer such that $3 \leq n \leq 20$.

@@ -1,0 +1,1 @@
+Let $D$ be a base-point-free divisor on a normal projective variety $X$, and let $Y$ be the image of the morphism $f_{D}:X\rightarrow Y$ induced by $D$. Assume that $f_D$ is birational. Let $X(D)=\text{Proj}\left(\bigoplus_{k\geq 0}H^{0}(X,kD)\right)$. Is $X(D)$ the normalization of $Y$?

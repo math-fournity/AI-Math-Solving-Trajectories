@@ -1,0 +1,1 @@
+Determine the Lebesgue measure of the set \( \left\{ \frac{x}{y} : x, y \in I_\alpha^* \right\} \), where \( I_\alpha \subset [0,1] \) is an \( \alpha \)-Cantor set of Lebesgue measure \( \alpha \) and \( I_\alpha^* = I_\alpha \setminus \{0\} \).

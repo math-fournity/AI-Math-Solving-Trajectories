@@ -1,0 +1,1 @@
+2. C2 (ITA) A brick staircase with three steps of width 2 is made of twelve unit cubes. Determine all integers $n$ for which it is possible to build a cube of side $n$ using such bricks. ![](https://cdn.mathpix.com/cropped/2024_11_18_8e985d6b9c83aa3e9d0eg-317.jpg?height=175&width=141&top_left_y=739&top_left_x=725)

@@ -1,0 +1,1 @@
+In a specialized semiconductor facility, a precision micro-welding laser is programmed to process a rectangular chip measuring 20 units by 18 units. The chip contains a grid of 360 solder nodes, where each node is exactly 1 unit away from its immediate neighbors horizontally or vertically.

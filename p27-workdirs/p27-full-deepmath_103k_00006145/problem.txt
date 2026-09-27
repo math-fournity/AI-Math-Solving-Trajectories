@@ -1,0 +1,1 @@
+Let $A$ and $B$ be $C^*$-algebras that admit faithful representations on separable Hilbert spaces. Does the $C^*$ tensor product $A \otimes_\beta B$ also admit a faithful separable representation?

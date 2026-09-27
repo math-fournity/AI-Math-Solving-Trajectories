@@ -1,0 +1,1 @@
+Let $A$ be a unital $C^*$-algebra and $a, b \in A_+$ be positive elements with $a \in \text{Her}(b) := \overline{bAb}$. Determine if there exists a positive, continuous function $f \in C(\sigma(b) \cup \{0\})$ such that $f(0) = 0$ and $a \le f(b)$. Provide a justification for your answer.

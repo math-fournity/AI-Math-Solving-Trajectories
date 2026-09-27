@@ -1,0 +1,1 @@
+Given integers \(a, b\) and odd prime numbers \(p, q\), find the total number of distinct integer solutions \((a, b)\) to the equation \(a^2 + 2b^2 = p^{11}q^{13}\).

@@ -1,0 +1,1 @@
+Suppose that \(M/\Gamma\) is a manifold of the same dimension as \(M\) and the action of \(\Gamma\) on \(M\) is free. Does this imply that \(\Gamma\) satisfies the definition of properly discontinuous under PD2?

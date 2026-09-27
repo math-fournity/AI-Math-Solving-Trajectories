@@ -1,0 +1,1 @@
+Consider a process where the successor of a natural number $x$ is defined as follows:

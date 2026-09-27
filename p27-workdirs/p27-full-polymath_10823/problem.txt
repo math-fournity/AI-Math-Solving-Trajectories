@@ -1,0 +1,1 @@
+In a futuristic city-planning simulation, a "district" is defined as a polygon $M$ with $n$ boundaries (vertices), where $n$ is an integer greater than 3. To improve connectivity, the city planners look to install "high-speed cables" (diagonals). A high-speed cable is a straight line connecting two non-adjacent boundaries.

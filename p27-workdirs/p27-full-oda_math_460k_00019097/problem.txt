@@ -1,0 +1,1 @@
+Construct the triangle given the reflections of the orthocenter with respect to the sides.

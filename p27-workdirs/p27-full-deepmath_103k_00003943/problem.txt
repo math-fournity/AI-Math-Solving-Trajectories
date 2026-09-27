@@ -1,0 +1,1 @@
+Determine whether the following statement is true or false: If $G$ is a simple finite group, then its fusion ring is different from the fusion rings of any other groups.

@@ -1,0 +1,1 @@
+In a remote industrial district, two logistics managers, Peter and Basil, are tasked with organizing two identical fleets of $N$ cargo containers. Within each fleet, the weight of the heaviest container is at most $1.25$ times the weight of the lightest container.

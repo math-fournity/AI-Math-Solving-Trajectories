@@ -1,0 +1,1 @@
+A specialized cybersecurity firm is testing the resilience of a cryptographic sequence generator. The system operates using a "Transformation Protocol" $Q$, which is a monic polynomial of degree $d$ with integer coefficients. The generator produces a sequence of digital keys by repeatedly applying the protocol to an initial seed $s$: $\{s, Q(s), Q(Q(s)), Q(Q(Q(s))), \dots\}$.

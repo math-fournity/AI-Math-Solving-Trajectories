@@ -1,0 +1,1 @@
+Determine the limiting function of the sequence of functions $g_n : [0,\infty) \to \mathbb{R}$ given by:

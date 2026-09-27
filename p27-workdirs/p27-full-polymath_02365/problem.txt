@@ -1,0 +1,1 @@
+Given the function \( f(x^3) = (f(x))^3 - 10 \), find \( f(0) + f(1) + f(-1) \).

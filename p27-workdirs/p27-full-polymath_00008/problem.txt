@@ -1,0 +1,1 @@
+Find the best (minimum) constant \( k \) such that \( F_3(k,3) \leq 0 \) holds for all \( x_1, x_2, x_3 \geq 0 \) satisfying \( x_1^2 + x_2^2 + x_3^2 \leq 3 \).

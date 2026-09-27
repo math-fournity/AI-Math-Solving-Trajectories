@@ -1,0 +1,1 @@
+Find all non-constant polynomials $P(x)$ with integer coefficients and positive leading coefficient, such that $P^{2mn}(m^2) + n^2$ is a perfect square for all positive integers $m, n$.

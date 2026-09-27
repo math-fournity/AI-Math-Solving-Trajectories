@@ -1,0 +1,1 @@
+Given \( N \) different numbers on a blackboard, one of which is \( 0 \), one may take any polynomial whose coefficients are among these numbers and write all its roots on the blackboard. After performing these operations, all integers between \(-2016\) and \(2016\) are written on the blackboard (along with possibly other numbers). Find the smallest possible value of \( N \).

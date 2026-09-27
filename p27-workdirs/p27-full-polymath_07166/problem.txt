@@ -1,0 +1,1 @@
+In a sprawling subterranean data center designed as a perfect cube with a side length of 2 kilometers, two critical servers, Server A and Server B, are located at the two most distant corners of the facility.

@@ -1,0 +1,1 @@
+In a specialized satellite network, there are $n=5$ pairs of "Twin-Link" nodes. To prevent interference, no node is allowed to establish a direct connection with its own Twin-Link partner. However, for every other possible pair of nodes in the system, a shared encrypted communication channel must exist.

@@ -1,0 +1,1 @@
+Does there exist a Factorisation Domain (FD) that does not satisfy the ascending chain condition on principal ideals (ACC on principal ideals)?

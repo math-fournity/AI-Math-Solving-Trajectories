@@ -1,0 +1,1 @@
+Let $u$ be a subharmonic, real-valued, and continuous function in the open disk $D \subset \mathbb{C}$, which is non-constant on any open set in $D$. Determine whether the set $\{z \in D : u(z) = 0\}$ has measure zero.

@@ -1,0 +1,1 @@
+In the cells of a \(10 \times 10\) table, the numbers \(1, 2, 3, \ldots, 100\) are arranged such that the sum of any two neighboring numbers does not exceed \(S\). Find the smallest possible value of \(S\). (Numbers are considered neighboring if they are in cells that share a side.)

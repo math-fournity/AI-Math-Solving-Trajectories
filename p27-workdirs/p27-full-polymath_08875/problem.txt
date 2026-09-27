@@ -1,0 +1,1 @@
+An elite landscaping team is tasked with designing three automated irrigation zones along a single linear pipeline, where $x$ represents the distance in kilometers from a central pumping station.

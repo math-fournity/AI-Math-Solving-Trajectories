@@ -1,0 +1,1 @@
+In the coastal kingdom of Arithmetica, two rival architects, Amandine and Brennon, are competing to build a ceremonial monument using stone pillars of specific integer heights. Amandine goes first, and they alternate turns.

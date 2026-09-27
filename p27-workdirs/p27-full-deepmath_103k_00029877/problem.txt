@@ -1,0 +1,1 @@
+In a game played on a complete graph $G$ with 2014 vertices, Alice and Bob take turns directing the undirected edges. Alice directs one edge per turn, while Bob can direct up to 1000 edges per turn. The game ends when all edges are directed. Alice wins if there is at least one directed cycle in the graph. Does Alice have a winning strategy?

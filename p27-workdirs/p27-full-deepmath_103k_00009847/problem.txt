@@ -1,0 +1,1 @@
+Let $D$ be a bounded, open, connected subset of $\mathbb{R}^n$. Suppose $u \in C^{1,\alpha}(D)$ for some $\alpha \in (0,1]$, meaning $u$ has a H\"older continuous derivative with exponent $\alpha$. Is it true that $u$ is Lipschitz on $D$? Justify your answer.

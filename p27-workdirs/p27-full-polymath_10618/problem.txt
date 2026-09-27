@@ -1,0 +1,1 @@
+A city planning board is designing a rectangular grid of $n+1$ horizontal streets and $n+1$ vertical avenues, where $n$ is an integer greater than $3$. This grid creates a large square boundary of size $n \times n$ divided into $n^2$ individual city blocks, each of size $1 \times 1$. The intersections of these streets and avenues serve as potential locations for support pillars.

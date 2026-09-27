@@ -1,0 +1,1 @@
+Determine whether the following statement is true or false: If $X(t)$ is an Itô process and $p(t)$ is a non-stochastic function, then the ordinary chain rule applies, i.e., \[d(X(t)p(t)) = dX(t)p(t) + X(t)p'(t)dt.\]

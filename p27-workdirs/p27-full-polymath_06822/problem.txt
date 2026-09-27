@@ -1,0 +1,1 @@
+A specialized chemical engineering firm is testing a series of $n$ additive compounds ($n \geq 3$), where each compound $i$ has a reactivity coefficient $x_i$. The firm defines a batch of these $n$ compounds as "Stable" if they satisfy a specific safety constraint regardless of the order in which they are mixed.

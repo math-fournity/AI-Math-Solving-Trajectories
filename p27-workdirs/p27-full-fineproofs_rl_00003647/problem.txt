@@ -1,0 +1,1 @@
+Let $ABC$ be a triangle with all angles acute, and $H$ its orthocenter. The bisectors of $\widehat{ABH}$ and $\widehat{ACH}$ intersect at a point $I$. Show that $I$ is collinear with the midpoints of $[BC]$ and $[AH]$.

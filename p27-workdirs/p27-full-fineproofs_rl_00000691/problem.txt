@@ -1,0 +1,1 @@
+A sequence $a_{1}, a_{2}, \ldots$ of positive integers is defined recursively by $a_{1}=2$ and  $$ a_{n+1}=a_{n}^{n+1}-1 \quad \text { for } n \geq 1 $$  Prove that for every odd prime $p$ and integer $k$, some term of the sequence is divisible by $p^{k}$.

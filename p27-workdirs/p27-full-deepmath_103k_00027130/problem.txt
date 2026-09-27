@@ -1,0 +1,1 @@
+Find the fundamental group of the space obtained by removing all points with integer coordinates from three-dimensional Euclidean space.

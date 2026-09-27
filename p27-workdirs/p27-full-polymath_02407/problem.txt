@@ -1,0 +1,1 @@
+In a sphere $S_0$ we radius $r$ a cube $K_0$ has been inscribed. Then in the cube $K_0$ another sphere $S_1$ has been inscribed and so on to infinity. Calculate the volume of all spheres created in this way.

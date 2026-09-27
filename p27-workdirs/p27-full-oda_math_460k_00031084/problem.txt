@@ -1,0 +1,1 @@
+Three circles touch each other externally and also touch a fixed straight line. Let \( A, B, C \) be the mutual points of contact of these circles. If \( \omega \) denotes the Brocard angle of the triangle \( ABC \), calculate the value of \( \cot^2{\omega} \).

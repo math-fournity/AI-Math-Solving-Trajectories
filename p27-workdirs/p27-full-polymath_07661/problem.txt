@@ -1,0 +1,1 @@
+A specialized industrial chemical plant uses two distinct filtration systems, represented by the efficiency functions $P(x)$ and $Q(x)$, which are nonconstant real polynomials with no common factors.

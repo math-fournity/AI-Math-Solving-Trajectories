@@ -1,0 +1,1 @@
+A regular hexagon has positive integer side length. A laser is emitted from one of the hexagon's corners and is reflected off the edges of the hexagon until it hits another corner. Let \(a\) be the distance that the laser travels. What is the smallest possible value of \(a^{2}\) such that \(a > 2019\)?

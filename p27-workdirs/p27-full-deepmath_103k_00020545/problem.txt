@@ -1,0 +1,1 @@
+Determine the minimum growth rate of a sequence $w_n$ such that $P(\overline{X}_n > w_n) \to 1$ as $n \to \infty$, where $X_i$ are independent and identically distributed random variables with $X_1 \geq 0$ and $E[X_1] = \infty$. Provide your answer in terms of $n$.

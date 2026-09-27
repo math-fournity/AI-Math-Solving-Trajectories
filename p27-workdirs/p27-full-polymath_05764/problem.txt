@@ -1,0 +1,11 @@
+## Task 4.
+
+Find (one) integer $a$ such that for the polynomial $P(x)=x^{5}+a x$ the statement
+
+$$
+\text { " if } n \mid P(k)-P(l) \text { then } n \mid k-l \text {, for all } k, l \in \mathbb{Z} "
+$$
+
+holds only for finitely many natural numbers $n$, among which is $n=95$.
+
+##

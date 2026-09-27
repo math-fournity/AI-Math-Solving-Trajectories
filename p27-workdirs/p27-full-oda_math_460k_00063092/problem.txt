@@ -1,0 +1,1 @@
+There are 128 ones written on the board. In one move, you can replace a pair of numbers $a$ and $b$ with the number $ab+1$. Let $A$ be the maximum number that can result on the board after 127 such operations. What is the last digit of this number?

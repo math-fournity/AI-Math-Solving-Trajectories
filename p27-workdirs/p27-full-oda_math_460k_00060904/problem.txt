@@ -1,0 +1,1 @@
+Determine all bounded closed subsets $F$ of the plane with the following property: $F$ consists of at least two points and always contains two points $A$ and $B$ as well as at least one of the two semicircular arcs over the segment $AB$.

@@ -1,0 +1,1 @@
+Determine whether compact sets generate the Borel \(\sigma\)-algebra on complete separable metrizable spaces.

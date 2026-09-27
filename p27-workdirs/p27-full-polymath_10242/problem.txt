@@ -1,0 +1,1 @@
+A specialized circular research bay has a radius of 10 kilometers. Two navigation beacons, $P$ and $Q$, are positioned on the circular perimeter. A communications hub, $M$, is located on the straight-line cable connecting $P$ and $Q$. The distance from beacon $P$ to the hub $M$ is 5 kilometers, and the distance from beacon $Q$ to the hub $M$ is 10 kilometers.

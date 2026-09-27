@@ -1,0 +1,1 @@
+Let  $I$  be the incenter,  $A_1$  and  $B_1$  midpoints of sides  $BC$  and  $AC$  of a triangle  $\Delta ABC$ . Denote by  $M$  and  $N$  the midpoints of the arcs  $AC$  and  $BC$  of circumcircle of  $\Delta ABC$  which do contain the other vertex of the triangle. If points  $M$ ,  $I$  and  $N$  are collinear prove that:

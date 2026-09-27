@@ -1,0 +1,1 @@
+Let $d$ be an integer. Suppose $A$ and $B$ are subsets of $\mathbb{R}^d$, each homeomorphic to an open $d$-ball, and their intersection $A \cap B$ is also homeomorphic to an open $d$-ball. Is the union $A \cup B$ homeomorphic to an open $d$-ball?

@@ -1,0 +1,1 @@
+Let $a$ and $b$ be natural numbers with property $\gcd(a, b) = 1$. Let $k(a, b)$ be the least natural number such that for every natural number $r \ge k(a, b)$, there exist natural numbers $m, n > 1$ such that the number $m^a n^b$ has exactly $r+1$ positive divisors.

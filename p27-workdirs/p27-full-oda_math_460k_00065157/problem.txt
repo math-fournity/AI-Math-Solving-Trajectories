@@ -1,0 +1,1 @@
+Find an example of a holomorphic function \( f(z) \) on \( \mathbb{C} \) such that \( f_i(z) = f(a_iz + b_i) \) for \( i = 1, 2, \ldots, n \) are algebraically independent over \( \mathbb{C} \) for any \( a_i, b_i \in \mathbb{C} \) with \( a_i \neq 0 \), and the pairs \( (a_i, b_i) \) are distinct.

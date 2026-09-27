@@ -1,0 +1,1 @@
+10.3. The function $f(x)=\prod_{i=1}^{2000} \cos \frac{x}{i}$ changes sign how many times in the interval $\left[0, \frac{2009 \pi}{2}\right]$?

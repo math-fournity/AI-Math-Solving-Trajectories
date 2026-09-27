@@ -1,0 +1,1 @@
+Let  $ a_{1},a_{2},\cdots,a_{n}$  be positive real numbers satisfying  $ a_{1} \plus{} a_{2} \plus{} \cdots \plus{} a_{n} \equal{} 1$ . Prove that

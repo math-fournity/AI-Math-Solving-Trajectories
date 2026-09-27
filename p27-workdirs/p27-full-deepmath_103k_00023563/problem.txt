@@ -1,0 +1,1 @@
+Suppose $X$ is a second countable, locally compact, and $T_1$ topological space. If $Y$ is a compact and dense subset of $X$, is $X$ necessarily compact?

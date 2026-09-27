@@ -1,0 +1,1 @@
+In the plane of triangle \(ABC\), observe \(n\) lines, each parallel to some side of the triangle. For what minimum \(n\) is it possible for these \(n\) lines to divide the plane into at least 207 regions (bounded and unbounded)?

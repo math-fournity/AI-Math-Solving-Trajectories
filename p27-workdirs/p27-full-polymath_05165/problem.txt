@@ -1,0 +1,1 @@
+Consider a rectangle with length 6 and height 4. A rectangle with length 3 and height 1 is placed inside the larger rectangle such that it is distance 1 from the bottom and leftmost sides of the larger rectangle.

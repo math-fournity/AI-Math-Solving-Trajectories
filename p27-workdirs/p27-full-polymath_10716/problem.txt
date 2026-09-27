@@ -1,0 +1,1 @@
+A specialized laboratory is tracking the power levels of two distinct quantum processors, represented by a pair of positive integers $(a, b)$, where each power level is currently between 1 and 100 inclusive. Technicians can modify these power levels using only two specific protocols:

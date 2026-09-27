@@ -1,0 +1,1 @@
+In a vast grid-based industrial complex, a specialized sector is organized into a $10 \times 10$ block of 100 square research laboratories. Each lab is bounded by four corridors of unit length. Engineers have painted every unit-length corridor segment within this $10 \times 10$ block using various distinct color codes for security purposes.

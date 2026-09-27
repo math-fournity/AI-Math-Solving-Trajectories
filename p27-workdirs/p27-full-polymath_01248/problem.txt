@@ -1,0 +1,1 @@
+For each real number $x,$ let \[f(x)=\sum_{n\in S_x}\frac1{2^n}\] where $S_x$ is the set of positive integers $n$ for which $\lfloor nx\rfloor$ is even.

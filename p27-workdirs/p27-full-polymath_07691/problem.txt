@@ -1,0 +1,1 @@
+In a specialized logistics hub, a square shipping grid consists of $2n$ rows and $2n$ storage bays (forming a $(2n) \times (2n)$ grid). To balance the weight distribution of the facility, a technician must install exactly $2n^2$ high-density stabilizers and exactly $2n^2$ low-density stabilizers across the $4n^2$ total cells, placing exactly one stabilizer in each cell.

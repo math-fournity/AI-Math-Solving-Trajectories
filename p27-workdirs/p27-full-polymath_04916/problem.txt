@@ -1,0 +1,1 @@
+The positive integer \( n > 3 \) is called 'nice' if and only if \( n + 1 \) and \( 8n + 1 \) are both perfect squares. How many positive integers \( k \leq 15 \) are there such that \( 4n + k \) are composites for all nice numbers \( n \)?

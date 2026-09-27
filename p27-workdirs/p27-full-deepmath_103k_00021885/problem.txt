@@ -1,0 +1,1 @@
+Determine whether the Spectral Theorem applies to self-adjoint operators on the vector space $L^2[0,1]$ with the inner product $\langle f,g\rangle = \int_0^1 f(x)g(x)\;dx$. Provide a justification for your answer.

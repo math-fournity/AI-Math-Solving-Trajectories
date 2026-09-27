@@ -1,0 +1,1 @@
+Let $S$ be the set of points inside and on the boarder of a regular haxagon with side length 1. Find the least constant $r$, such that there exists one way to colour all the points in $S$ with three colous so that the distance between any two points with same colour is less than $r$.

@@ -1,0 +1,1 @@
+Let $A$ be an integral Noetherian ring of Krull dimension one and $K$ its field of fractions. Let $B$ be the set of elements of $K$ that are integral over $A$, i.e., $B$ is the normalization of $A$ in $K$. Is the morphism $A \to B$ finite?

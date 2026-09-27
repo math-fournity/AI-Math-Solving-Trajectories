@@ -1,0 +1,1 @@
+A high-security data vault consists of a grid of 100 storage nodes arranged in a $10 \times 10$ array. Each node can be set to one of two states: "Active" (represented by the value $+1$) or "Standby" (represented by the value $-1$).

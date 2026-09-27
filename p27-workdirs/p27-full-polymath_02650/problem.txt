@@ -1,0 +1,1 @@
+Compute the sum \(\sum_{k=1}^{n-1}\sin\left(\frac{\left(2\left\lfloor\sqrt{kn}\right\rfloor+1\right)\pi}{2n}\right)\).

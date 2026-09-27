@@ -1,0 +1,1 @@
+Determine if the dimension of the symplectic group Sp(2n, \(\tilde{F}\)) over the algebraic closure of a finite field \(F\) is equal to \(2n^2 + n\).

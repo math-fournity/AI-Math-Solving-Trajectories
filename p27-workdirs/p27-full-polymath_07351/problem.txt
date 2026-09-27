@@ -1,0 +1,1 @@
+In a futuristic city, an architect is designing a massive public plaza in the shape of a perfect regular polygon with exactly $n$ sides, where $n > 3$.

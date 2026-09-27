@@ -1,0 +1,1 @@
+For a prime $p$ and a positive integer $n$, denote by $\nu_{p}(n)$ the exponent of $p$ in the prime factorization of $n$ !. Given a positive integer $d$ and a finite set $\left\{p_{1}, \ldots, p_{k}\right\}$ of primes. Show that there are infinitely many positive integers $n$ such that $d \mid \nu_{p_{i}}(n)$ for all $1 \leq i \leq k$.  (India)

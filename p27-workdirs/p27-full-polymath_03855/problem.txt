@@ -1,0 +1,1 @@
+Let \( S = \{ 1, 2, 3, \ldots, 2015 \} \). A subset \( M \) of \( S \) is called "good" if for all \( i, j \in M \), \( |i - j| \neq 4, 5, 6 \). Find the maximum number of elements in a "good" subset.

@@ -1,0 +1,1 @@
+Derive the system of differential equations (7.39) for the stress functions Φ and Ψ in the case of general anisotropy, starting from the compatibility conditions, equilibrium conditions, and the elastic law.

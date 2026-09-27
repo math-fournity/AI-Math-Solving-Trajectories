@@ -1,0 +1,1 @@
+Find the value of \( \Phi \), the infinite product of successive approximations to the golden ratio \( \phi \), defined as \[ \Phi = \frac{\sqrt{1}}{\phi} \times \frac{\sqrt{1+\sqrt{1}}}{\phi} \times \frac{\sqrt{1+\sqrt{1+\sqrt{1}}}}{\phi} \times \dots \]

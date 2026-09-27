@@ -1,0 +1,1 @@
+Consider any four pairwise distinct real numbers and write one of these numbers in each cell of a $5 \times 5$ array so that each number occurs exactly once in every $2 \times 2$ subarray. The sum over all entries of the array is called the total sum of that array. Determine the maximum number of distinct total sums that may be obtained in this way.

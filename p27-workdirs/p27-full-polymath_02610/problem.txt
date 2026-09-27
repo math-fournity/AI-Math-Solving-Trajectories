@@ -1,0 +1,1 @@
+A sequence of natural numbers $c_1, c_2, \dots$ is called *perfect* if for every natural number $n$, every natural number $m$ with $1 \le m \le c_1 + \dots + c_n$ can be represented as

@@ -1,0 +1,1 @@
+In a remote digital archipelago, a circular mainframe contains $n = 50$ data storage nodes arranged in a ring. A batch of $n+1 = 51$ data packets has been uploaded into these nodes.

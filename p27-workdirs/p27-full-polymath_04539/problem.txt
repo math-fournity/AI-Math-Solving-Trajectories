@@ -1,0 +1,1 @@
+In a game with two players and a pile of 100 counters, the first player can take up to 50 counters on the first turn. On subsequent turns, a player can take up to twice the number of counters taken by the opponent on the previous turn. The player who takes the last counter wins. Determine the optimal opening move, or set of such moves, if several are equivalent.

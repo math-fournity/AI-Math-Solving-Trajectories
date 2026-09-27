@@ -1,0 +1,1 @@
+In a circular city bypass, a fleet of $n$ maintenance crews is assigned to repair specific segments of the road. Each crew $i$ (where $1 \le i \le n$) is responsible for a single continuous section of the track, denoted as $A_i$, which includes its boundary points.

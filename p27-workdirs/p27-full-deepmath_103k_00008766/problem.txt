@@ -1,0 +1,1 @@
+Is an epimorphic endomorphism of a Noetherian commutative ring necessarily an isomorphism? Justify your answer.

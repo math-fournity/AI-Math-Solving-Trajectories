@@ -1,0 +1,1 @@
+A high-security museum gallery is designed in the shape of a simple, non-self-intersecting polygon with $n$ distinct corner pillars. The gallery consists of a single continuous room with no interior holes or internal walls.

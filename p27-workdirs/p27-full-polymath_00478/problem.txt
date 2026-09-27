@@ -1,0 +1,1 @@
+Find the number of integer triangles $ABC$ (with side lengths $a, b, c$) such that the length of the angle bisector from vertex $A$ is equal to the side length $b$ (where $b = AC$), and the perimeter $a+b+c$ is of the form $10p$ for some prime number $p$.

@@ -1,0 +1,1 @@
+Suppose that $P(x)$ is a monic cubic polynomial with integer roots, and suppose that $\frac{P(a)}{a}$ is an integer for exactly $6$ integer values of $a$. Suppose furthermore that exactly one of the distinct numbers $\frac{P(1) + P(-1)}{2}$ and $\frac{P(1) - P(-1)}{2}$ is a perfect square. Given that $P(0) > 0$, find the second-smallest possible value of $P(0).$

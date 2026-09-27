@@ -1,0 +1,1 @@
+Determine the number of ordered quadruples \((x, y, z, w)\) of real numbers such that

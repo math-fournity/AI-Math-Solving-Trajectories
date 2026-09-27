@@ -1,0 +1,1 @@
+Does there exist a semigroup $S$ such that for every element $y \in S$, there exists an element $x \in S$ with $y = xy$, but $S$ does not have a left identity element?

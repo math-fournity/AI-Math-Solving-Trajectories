@@ -1,0 +1,1 @@
+In the world of cryptic engineering, a master locksmith is designing a high-security vault code. This code is a sequence of $n$ digits, represented by the string $a_n a_{n-1} \dots a_2 a_1$.

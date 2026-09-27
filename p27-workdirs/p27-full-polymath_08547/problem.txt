@@ -1,0 +1,1 @@
+A massive solar power facility is arranged in a grid of $2021 \times 2021$ individual solar panels. An automated maintenance drone is programmed to inspect the panels. For safety reasons, the facility director wants to install specialized protective shielding over as many panels as possible.

@@ -1,0 +1,1 @@
+Let $m$ be a positive integer. Show that there exists a positive integer $n$ such that each of the $2 m+1$ integers

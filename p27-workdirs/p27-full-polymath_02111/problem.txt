@@ -1,0 +1,1 @@
+Let $n$ be an even positive integer. Let $k_0$ be the smallest positive integer such that there exist polynomials $f(x)$ and $g(x)$ with integer coefficients satisfying

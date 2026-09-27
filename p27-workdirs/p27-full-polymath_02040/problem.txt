@@ -1,0 +1,1 @@
+A $10 \times 10$ rectangle is divided into $2 \times 1$ and $1 \times 2$ dominoes. In each of the 50 dominoes, exactly one diagonal is drawn such that no two diagonals share a common endpoint. Let $k$ be the number of corners of the $10 \times 10$ rectangle that are endpoints of these diagonals. Determine the value of $k$.

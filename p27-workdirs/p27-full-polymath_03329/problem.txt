@@ -1,0 +1,1 @@
+The [i]equatorial algebra[/i] is defined as the real numbers equipped with the three binary operations $\natural$, $\sharp$, $\flat$ such that for all $x, y\in \mathbb{R}$, we have \[x\mathbin\natural y = x + y,\quad x\mathbin\sharp y = \max\{x, y\},\quad x\mathbin\flat y = \min\{x, y\}.\]

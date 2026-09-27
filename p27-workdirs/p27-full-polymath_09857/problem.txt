@@ -1,0 +1,1 @@
+In a specialized database system, a collection $M$ of digital data packets is classified as "Robust" if, for every possible linear security filter (represented as a plane in 3D coordinate space), there are at least 100 packets in $M$ that do not pass through that filter.

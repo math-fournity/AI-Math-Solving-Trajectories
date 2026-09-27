@@ -1,0 +1,1 @@
+An intergalactic data relay network consists of an infinite number of server nodes. In this network, communication is unidirectional. Every single node is engineered with a strict structural constraint: the number of outgoing transmission channels must be strictly greater than the number of incoming reception channels.

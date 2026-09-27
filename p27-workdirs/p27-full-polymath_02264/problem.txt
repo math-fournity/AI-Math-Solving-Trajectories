@@ -1,0 +1,1 @@
+A polynomial \( P \) with integer coefficients is called tricky if it has \( 4 \) as a root.

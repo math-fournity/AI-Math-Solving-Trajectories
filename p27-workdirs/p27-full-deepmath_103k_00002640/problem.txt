@@ -1,0 +1,1 @@
+Determine the element $a \in k$ such that for all $x \in k$, the additive character $\psi_k(x)$ satisfies $\psi_k(x) = \mathrm{Tr}_k(ax)$. Is it possible for $a$ to be equal to 1?

@@ -1,0 +1,1 @@
+Consider an infinite sequence of integers \(a_1 < a_2 < \dots\). Define \(A_n^{(k)}\) as the least common multiple of \(a_n, a_{n+1}, \dots, a_{n+k-1}\). Let \(f(x)\) be the number of indices \(n\) for which \(A_n^{(k)} < x\). Find the smallest constant \(c\) such that \(f(x) < cx^{1/k}\) for all \(x > 1\).

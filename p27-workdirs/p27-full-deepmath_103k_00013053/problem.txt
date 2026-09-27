@@ -1,0 +1,1 @@
+Determine whether the expression \( \frac{1}{\sqrt{2\pi \varepsilon}}\exp\left( -\frac{x^2}{2\varepsilon}\right) \) converges to the Dirac delta distribution as \( \varepsilon \to 0 \).

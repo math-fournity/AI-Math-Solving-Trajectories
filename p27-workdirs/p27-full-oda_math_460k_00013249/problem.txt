@@ -1,0 +1,1 @@
+Convex hexagon ABCDEF has a common intersection of AD, BE, and CF at O. Six triangles are drawn (AOB, BOC, COD, DOE, EOF, and FOA). The incenters of the triangles are G, H, I, J, K, and L. If the smallest possible ratio of areas of GHIJKL:ABCDEF is 1:x, compute x.

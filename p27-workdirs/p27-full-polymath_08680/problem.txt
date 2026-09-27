@@ -1,0 +1,1 @@
+In a specialized laboratory, a chemist works with four types of rare isotopes, each labeled with a specific stability rating based on their properties under cyclic heating. The set of available stability ratings is $S = \{0, 1, 4, 9\}$.

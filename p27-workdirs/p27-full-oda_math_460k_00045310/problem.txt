@@ -1,0 +1,1 @@
+4. Let $n$ be a natural number. Determine (in terms of $n$) the smallest natural number $m$ for which it is possible to color exactly $n$ cells of an infinite square grid such that the following condition holds:

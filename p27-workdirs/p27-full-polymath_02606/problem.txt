@@ -1,0 +1,1 @@
+A graph has $100$ vertices. It is given that for any four distinct vertices, at least one of them is joined to the other three. Determine the smallest possible number of vertices that are joined to all other $99$ vertices in such a graph.

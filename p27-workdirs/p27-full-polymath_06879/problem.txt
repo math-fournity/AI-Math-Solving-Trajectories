@@ -1,0 +1,1 @@
+In a specialized digital logistics network, every data packet is assigned an integer ID, $n$. A packet is classified as "Stable" if the absolute value of its ID, $|n|$, is not a perfect square.

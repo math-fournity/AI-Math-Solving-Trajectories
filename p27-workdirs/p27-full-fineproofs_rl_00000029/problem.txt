@@ -1,0 +1,1 @@
+$20$  points with no three collinear are given. How many obtuse triangles can be formed by these points? $ \textbf{(A)}\ 6 \qquad \textbf{(B)}\ 20 \qquad \textbf{(C)}\ 2{{10}\choose{3}} \qquad \textbf{(D)}\ 3{{10}\choose{3}} \qquad \textbf{(E)}\ {{20}\choose{3}}$

@@ -1,0 +1,1 @@
+A high-tech agricultural firm is designing a series of smart-farms. Each farm is laid out as a set of $N$ sensor nodes positioned on a flat 2D grid, where $N \ge 3$. To ensure signal integrity, the placement must satisfy two strict topographical rules:

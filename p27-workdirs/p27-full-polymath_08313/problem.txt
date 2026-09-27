@@ -1,0 +1,1 @@
+In the coastal city of Aethelgard, there are five ancient lighthouse beacons, denoted $x_1, x_2, x_3, x_4,$ and $x_5$. Each beacon has a specific energy calibration value, which can be any real number.

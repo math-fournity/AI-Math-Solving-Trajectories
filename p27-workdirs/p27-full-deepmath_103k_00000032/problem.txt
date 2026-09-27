@@ -1,0 +1,1 @@
+Is it true that for all Sylow subgroups $P$ of a nonabelian simple group $G$, the inequality $|P|^2 < |G|$ holds?

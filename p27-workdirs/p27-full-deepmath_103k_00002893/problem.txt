@@ -1,0 +1,1 @@
+Is it true that for any reductive group $G$ over the finite field $\mathbb{F}_q$, there exists a smooth regular embedding $\iota \colon G \rightarrow G'$ such that the center of $G'$ is an induced torus?

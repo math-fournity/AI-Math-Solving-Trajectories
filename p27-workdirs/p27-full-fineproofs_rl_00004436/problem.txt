@@ -1,0 +1,1 @@
+Prove that, if every three consecutive vertices of a convex  $n{}$ -gon,  $n\geqslant 4$ , span a triangle of area at least 1, then the area of the  $n{}$ -gon is (strictly) greater than  $(n\log_2 n)/4-1/2.$ *Radu Bumbăcea & Călin Popescu*

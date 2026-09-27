@@ -1,0 +1,1 @@
+In a high-security data center, an engineer is designing a mainframe grid consisting of a $2009 \times 2009$ array of processors. To optimize processing tasks, the engineer assigns each processor to one of $n$ possible network frequencies (it is not necessary to utilize all $n$ available frequencies).

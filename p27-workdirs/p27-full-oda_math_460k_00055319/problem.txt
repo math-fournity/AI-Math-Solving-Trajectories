@@ -1,0 +1,1 @@
+What class of spaces, weaker than irreducible spaces, imply paracompactness in the presence of \(\aleph\)-paracompactness?

@@ -1,0 +1,1 @@
+Let \( f(n) \) count the number of values \( 0 \leq k \leq n^{2} \) such that \( 43 \nmid \binom{n^{2}}{k} \). Find the least positive value of \( n \) such that

@@ -1,0 +1,1 @@
+A specialized logistics hub is designed as a geometric campus. The main administrative offices are located at points $A$, $B$, and $C$, forming an acute triangular layout. The distance from the North Office ($A$) to the Central Hub ($B$) is exactly 11 kilometers, while the distance from the East Office ($C$) to the Central Hub ($B$) is 10 kilometers.

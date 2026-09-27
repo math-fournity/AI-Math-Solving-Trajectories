@@ -1,0 +1,1 @@
+Given a positive integer \( k \), and initial values \( p_1 = n_1 \), \( p_2 = n_2 \), \( p_3 = n_3 \), and \( q_1 = q_2 = q_3 = 1 \), the sequences \( p_i \) and \( q_i \) are defined for \( i \geq 3 \) by:

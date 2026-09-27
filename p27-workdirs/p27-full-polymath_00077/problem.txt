@@ -1,0 +1,1 @@
+$n$ coins lies in the circle. If two neighbour coins lies both head up or both tail up, then we can flip both. How many variants of coins are available that can not be obtained from each other by applying such operations?

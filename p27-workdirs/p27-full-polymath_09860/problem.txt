@@ -1,0 +1,1 @@
+On an infinite digital grid representing a high-security server farm, seven specific data nodes are located exactly at integer coordinates (lattice points). These nodes are linked together to form a strictly convex perimeter, creating a closed security loop with seven distinct segments.

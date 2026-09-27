@@ -1,0 +1,1 @@
+Determine the smallest odd integer \( k \) such that for every cubic polynomial \( f \) with integer coefficients, if there exist \( k \) integers \( n \) such that \(|f(n)|\) is a prime number, then \( f \) is irreducible in \( \mathbb{Z}[n] \).

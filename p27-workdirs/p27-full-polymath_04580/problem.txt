@@ -1,0 +1,1 @@
+There are $n$ students sitting on a round table. You collect all of $ n $ name tags and give them back arbitrarily. Each student gets one of $n$ name tags. Now $n$ students repeat following operation:

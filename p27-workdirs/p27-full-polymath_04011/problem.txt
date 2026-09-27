@@ -1,0 +1,1 @@
+6. Find the largest possible number of elements in the set $\mathrm{M}$ of integers, which has the following property: for every triple of distinct numbers $z \mathrm{M}$, it is possible to select some two of them whose sum is a power of 2 with an integer exponent.

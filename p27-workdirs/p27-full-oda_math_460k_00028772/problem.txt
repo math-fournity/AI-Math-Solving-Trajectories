@@ -1,0 +1,1 @@
+Determine the number of distinct prime divisors of the integer \(5685858885855807765856785858569666876865656567858576786786785^{22}\) given that it has 6,436,343 divisors.

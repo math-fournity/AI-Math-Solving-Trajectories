@@ -1,0 +1,1 @@
+Define the distance between two vertices $P$ and $Q$ as $d(P, Q)$, the number $k$, where $k$ is the number of vertices on the shorter arc $\widehat{PQ}$ (including endpoints). What is the minimum number of colors needed to color the vertices of a regular 17-gon so that no two vertices at a distance equal to a power of $2$ (i.e., $2^k$ for some $k$) have the same color?

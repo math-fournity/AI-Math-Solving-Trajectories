@@ -1,0 +1,1 @@
+In the Sobolev space $H^1(\mathbb R^n)$, let $g_n \in H^1(\mathbb R^n)$ such that $0 \leq g_n \leq 1$ and $g_n = 1$ on $[n+\frac 14, n+\frac 34]$. If $g_n$ converges weakly to 0 in $H^1(\mathbb R^n)$, does $\int_{\mathbb R^n} g_n \, dx$ converge to 0?

@@ -1,0 +1,1 @@
+In a remote industrial sector, a central computer counts the total number of "Sector E" energy cells currently active across every facility in the regional HMMT (High-Efficiency Modular Manufacturing Territory) network. Let $C$ be the true, verified count of these cells.

@@ -1,0 +1,1 @@
+Determine whether the following statement is true or false: In a complete Riemannian manifold $(M,g)$, if a point $q$ is the first conjugate point of $p$ along a geodesic, then the distance along the geodesic between $p$ and $q$ is greater than the injectivity radius.

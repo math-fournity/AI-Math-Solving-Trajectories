@@ -1,0 +1,1 @@
+Let $p = 103$ be a prime. Define $T = \{ (i,j) \mid i, j \in \{ 0, 1, \dots , p-1 \} \} \setminus \{ (0,0) \}$. Let $S \subseteq T$ be a non-empty subset. We are interested in finding a subset $A \subseteq S$ such that for any $(x_1, y_1), (x_2, y_2), (x_3, y_3) \in A$, the conditions $p \nmid (x_1 + x_2 - y_3)$ or $p \nmid (y_1 + y_2 + x_3)$ are satisfied.

@@ -1,0 +1,1 @@
+Let $f(x) = o(\sqrt{x})$ as $x\rightarrow\infty$. Define $x^*(a)$ as the minimizer of the expression $f(x) + a^{3/2}/x$. As $a\rightarrow\infty$, determine if $x^*(a) = \omega(a)$, meaning that the minimizer grows super-linearly in $a$. Provide a justification for your answer.

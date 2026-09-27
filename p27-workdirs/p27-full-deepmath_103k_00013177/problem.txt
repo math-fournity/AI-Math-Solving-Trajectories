@@ -1,0 +1,1 @@
+Determine whether there exists a function from \( \mathbb{R}^2 \) to \( \mathbb{R} \) that is not continuous at the origin, but whose restriction to every polynomial curve through the origin is continuous.

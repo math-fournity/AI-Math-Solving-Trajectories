@@ -1,0 +1,1 @@
+Let $q_k$ be the product of the first $k$ primes. Is the density of square-free numbers in the sequence $p_n + q_k$ strictly increasing with $k$ and higher than that of any other sequence $p_n + d$ where $0 \le d < q_k$?

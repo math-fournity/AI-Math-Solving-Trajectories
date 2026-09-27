@@ -1,0 +1,1 @@
+Let $0 \neq k \in \mathbb{N}$. Any graph $G$ satisfying $d(G) \geqslant 4k$ contains a $(k+1)$-connected subgraph $H$ such that $\varepsilon(H) > \varepsilon(G) - k$.

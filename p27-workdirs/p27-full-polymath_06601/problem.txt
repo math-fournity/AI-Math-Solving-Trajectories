@@ -1,0 +1,1 @@
+In the city of Gridland, an urban planning department is developing a rectangular park that spans exactly $n = 2025$ units wide (from $x=0$ to $x=2025$) and $m = 2023$ units deep (from $y=0$ to $y=2023$). The department has decided to partition the entire area of this park into $T$ distinct triangular garden plots.

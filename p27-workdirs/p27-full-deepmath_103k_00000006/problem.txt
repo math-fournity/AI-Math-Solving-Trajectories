@@ -1,0 +1,1 @@
+Consider a locally path connected space $X$. If every open subset $U \subseteq X$ is semi-locally simply connected, does it follow that $X$ is locally simply connected?

@@ -1,0 +1,1 @@
+Colour the cells of a $2015 \times 2015$ board such that there are no three cells with the same colour where:

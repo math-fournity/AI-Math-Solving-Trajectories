@@ -1,0 +1,1 @@
+Let \( f: \mathbb{R} \to \mathbb{R} \) be a smooth function that is infinitely differentiable everywhere, with \( f'(0) = 1 \) and \( |f^{(n)}(x)| \leq 1 \) for all \( x \in \mathbb{R} \) and all non-negative integers \( n \). Determine whether it is true that \( f(x) = \sin(x) \) for all \( x \in \mathbb{R} \).

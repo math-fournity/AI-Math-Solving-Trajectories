@@ -1,0 +1,1 @@
+In a specialized logistics simulation, two software engineers, Anya and Ben, are tasked with depleting a central data cache of size $\mathcal{N}_0$. They first agree on a "base protocol" integer $n$, where $1 \leq n \leq 1000$.

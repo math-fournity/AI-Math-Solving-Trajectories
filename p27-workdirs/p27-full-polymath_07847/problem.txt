@@ -1,0 +1,1 @@
+In the futuristic city of Neoterra, a massive server farm is organized into a square grid of $4n \times 4n$ server racks. To manage the city's data load, exactly $4n$ autonomous cooling drones are deployed across the grid. The drones are positioned such that every single row of racks and every single column of racks contains exactly one drone.

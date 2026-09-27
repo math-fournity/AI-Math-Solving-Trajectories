@@ -1,0 +1,1 @@
+Positive rational numbers $a$ and $b$ are written as decimal fractions and each consists of a minimum period of 30 digits. In the decimal representation of $a-b$, the period is at least $15$. Find the minimum value of $k\in\mathbb{N}$ such that, in the decimal representation of $a+kb$, the length of period is at least $15$.
