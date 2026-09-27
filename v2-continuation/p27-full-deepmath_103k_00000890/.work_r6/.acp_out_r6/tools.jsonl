@@ -1,0 +1,92 @@
+{"t": 10.0, "kind": "tool_call", "title": "bash", "status": "pending"}
+{"t": 10.0, "kind": "tool_call_update", "title": "ls -la && ls rounds/", "status": "in_progress"}
+{"t": 10.0, "kind": "tool_call_update", "title": "ls -la && ls rounds/", "status": "in_progress"}
+{"t": 10.0, "kind": "tool_call_update", "title": "ls -la && ls rounds/", "status": "in_progress"}
+{"t": 10.0, "kind": "tool_call_update", "title": "ls -la && ls rounds/", "status": "in_progress"}
+{"t": 10.0, "kind": "tool_call_update", "title": "ls -la && ls rounds/", "status": "completed"}
+{"t": 10.5, "kind": "tool_call", "title": "read", "status": "pending"}
+{"t": 10.5, "kind": "tool_call_update", "title": "read", "status": "in_progress"}
+{"t": 10.5, "kind": "tool_call_update", "title": "Volumes/D/math-agent-glm5.2-tmux-agents-trajectory/v2-continuation/p27-full-deepmath_103k_00000890/.work_r6", "status": "completed"}
+{"t": 16.3, "kind": "tool_call", "title": "bash", "status": "pending"}
+{"t": 16.3, "kind": "tool_call_update", "title": "S=/Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/v2-continuation/p27-full-deepmath_103k_00000890/.work_r6/oc_traj.py\npython3 $S scan rounds/round5/thoughts.jsonl", "status": "in_progress"}
+{"t": 16.3, "kind": "tool_call_update", "title": "S=/Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/v2-continuation/p27-full-deepmath_103k_00000890/.work_r6/oc_traj.py\npython3 $S scan rounds/round5/thoughts.jsonl", "status": "in_progress"}
+{"t": 16.3, "kind": "tool_call_update", "title": "S=/Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/v2-continuation/p27-full-deepmath_103k_00000890/.work_r6/oc_traj.py\npython3 $S scan rounds/round5/thoughts.jsonl", "status": "in_progress"}
+{"t": 16.4, "kind": "tool_call_update", "title": "S=/Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/v2-continuation/p27-full-deepmath_103k_00000890/.work_r6/oc_traj.py\npython3 $S scan rounds/round5/thoughts.jsonl", "status": "in_progress"}
+{"t": 16.4, "kind": "tool_call_update", "title": "S=/Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/v2-continuation/p27-full-deepmath_103k_00000890/.work_r6/oc_traj.py\npython3 $S scan rounds/round5/thoughts.jsonl", "status": "completed"}
+{"t": 16.8, "kind": "tool_call", "title": "read", "status": "pending"}
+{"t": 16.8, "kind": "tool_call_update", "title": "read", "status": "in_progress"}
+{"t": 16.8, "kind": "tool_call_update", "title": "Volumes/D/math-agent-glm5.2-tmux-agents-trajectory/v2-continuation/p27-full-deepmath_103k_00000890/.work_r6/分析笔记.md", "status": "completed"}
+{"t": 23.6, "kind": "tool_call", "title": "bash", "status": "pending"}
+{"t": 23.6, "kind": "tool_call_update", "title": "ls -la rounds/round2 rounds/round3 rounds/round4 rounds/round5", "status": "in_progress"}
+{"t": 23.6, "kind": "tool_call_update", "title": "ls -la rounds/round2 rounds/round3 rounds/round4 rounds/round5", "status": "in_progress"}
+{"t": 23.6, "kind": "tool_call_update", "title": "ls -la rounds/round2 rounds/round3 rounds/round4 rounds/round5", "status": "in_progress"}
+{"t": 23.6, "kind": "tool_call_update", "title": "ls -la rounds/round2 rounds/round3 rounds/round4 rounds/round5", "status": "completed"}
+{"t": 45.1, "kind": "tool_call", "title": "bash", "status": "pending"}
+{"t": 45.1, "kind": "tool_call_update", "title": "md5 rounds/*/分析笔记.md 分析笔记.md; ls ..; ls ../.work_r5 2>/dev/null; ls ../.work_r1 2>/dev/null", "status": "in_progress"}
+{"t": 45.1, "kind": "tool_call_update", "title": "md5 rounds/*/分析笔记.md 分析笔记.md; ls ..; ls ../.work_r5 2>/dev/null; ls ../.work_r1 2>/dev/null", "status": "in_progress"}
+{"t": 45.1, "kind": "tool_call_update", "title": "md5 rounds/*/分析笔记.md 分析笔记.md; ls ..; ls ../.work_r5 2>/dev/null; ls ../.work_r1 2>/dev/null", "status": "in_progress"}
+{"t": 45.1, "kind": "tool_call_update", "title": "md5 rounds/*/分析笔记.md 分析笔记.md; ls ..; ls ../.work_r5 2>/dev/null; ls ../.work_r1 2>/dev/null", "status": "in_progress"}
+{"t": 45.1, "kind": "tool_call_update", "title": "md5 rounds/*/分析笔记.md 分析笔记.md; ls ..; ls ../.work_r5 2>/dev/null; ls ../.work_r1 2>/dev/null", "status": "in_progress"}
+{"t": 45.1, "kind": "tool_call_update", "title": "md5 rounds/*/分析笔记.md 分析笔记.md; ls ..; ls ../.work_r5 2>/dev/null; ls ../.work_r1 2>/dev/null", "status": "completed"}
+{"t": 51.5, "kind": "tool_call", "title": "bash", "status": "pending"}
+{"t": 51.5, "kind": "tool_call_update", "title": "ls -la .. && find .. -name \"*.jsonl\" -o -name \"thinking.md\" -o -name \"meta.json\" 2>/dev/null | head -50", "status": "in_progress"}
+{"t": 51.5, "kind": "tool_call_update", "title": "ls -la .. && find .. -name \"*.jsonl\" -o -name \"thinking.md\" -o -name \"meta.json\" 2>/dev/null | head -50", "status": "in_progress"}
+{"t": 51.5, "kind": "tool_call_update", "title": "ls -la .. && find .. -name \"*.jsonl\" -o -name \"thinking.md\" -o -name \"meta.json\" 2>/dev/null | head -50", "status": "in_progress"}
+{"t": 51.5, "kind": "tool_call_update", "title": "ls -la .. && find .. -name \"*.jsonl\" -o -name \"thinking.md\" -o -name \"meta.json\" 2>/dev/null | head -50", "status": "in_progress"}
+{"t": 51.5, "kind": "tool_call_update", "title": "ls -la .. && find .. -name \"*.jsonl\" -o -name \"thinking.md\" -o -name \"meta.json\" 2>/dev/null | head -50", "status": "completed"}
+{"t": 60.8, "kind": "tool_call", "title": "bash", "status": "pending"}
+{"t": 60.8, "kind": "tool_call_update", "title": "S=../oc_traj.py; ls -la ../.work_r5/rounds/round5/; for n in 1 2 3 4 5; do echo \"--- r$n meta:\"; cat ../.work_r$n/rounds/round$n/meta.json 2>/dev/null; echo; done", "status": "in_progress"}
+{"t": 60.8, "kind": "tool_call_update", "title": "S=../oc_traj.py; ls -la ../.work_r5/rounds/round5/; for n in 1 2 3 4 5; do echo \"--- r$n meta:\"; cat ../.work_r$n/rounds/round$n/meta.json 2>/dev/null; echo; done", "status": "in_progress"}
+{"t": 60.8, "kind": "tool_call_update", "title": "S=../oc_traj.py; ls -la ../.work_r5/rounds/round5/; for n in 1 2 3 4 5; do echo \"--- r$n meta:\"; cat ../.work_r$n/rounds/round$n/meta.json 2>/dev/null; echo; done", "status": "in_progress"}
+{"t": 60.8, "kind": "tool_call_update", "title": "S=../oc_traj.py; ls -la ../.work_r5/rounds/round5/; for n in 1 2 3 4 5; do echo \"--- r$n meta:\"; cat ../.work_r$n/rounds/round$n/meta.json 2>/dev/null; echo; done", "status": "in_progress"}
+{"t": 60.8, "kind": "tool_call_update", "title": "S=../oc_traj.py; ls -la ../.work_r5/rounds/round5/; for n in 1 2 3 4 5; do echo \"--- r$n meta:\"; cat ../.work_r$n/rounds/round$n/meta.json 2>/dev/null; echo; done", "status": "in_progress"}
+{"t": 60.8, "kind": "tool_call_update", "title": "S=../oc_traj.py; ls -la ../.work_r5/rounds/round5/; for n in 1 2 3 4 5; do echo \"--- r$n meta:\"; cat ../.work_r$n/rounds/round$n/meta.json 2>/dev/null; echo; done", "status": "in_progress"}
+{"t": 60.8, "kind": "tool_call_update", "title": "S=../oc_traj.py; ls -la ../.work_r5/rounds/round5/; for n in 1 2 3 4 5; do echo \"--- r$n meta:\"; cat ../.work_r$n/rounds/round$n/meta.json 2>/dev/null; echo; done", "status": "in_progress"}
+{"t": 60.8, "kind": "tool_call_update", "title": "S=../oc_traj.py; ls -la ../.work_r5/rounds/round5/; for n in 1 2 3 4 5; do echo \"--- r$n meta:\"; cat ../.work_r$n/rounds/round$n/meta.json 2>/dev/null; echo; done", "status": "in_progress"}
+{"t": 60.8, "kind": "tool_call_update", "title": "S=../oc_traj.py; ls -la ../.work_r5/rounds/round5/; for n in 1 2 3 4 5; do echo \"--- r$n meta:\"; cat ../.work_r$n/rounds/round$n/meta.json 2>/dev/null; echo; done", "status": "in_progress"}
+{"t": 60.8, "kind": "tool_call_update", "title": "S=../oc_traj.py; ls -la ../.work_r5/rounds/round5/; for n in 1 2 3 4 5; do echo \"--- r$n meta:\"; cat ../.work_r$n/rounds/round$n/meta.json 2>/dev/null; echo; done", "status": "in_progress"}
+{"t": 60.8, "kind": "tool_call_update", "title": "S=../oc_traj.py; ls -la ../.work_r5/rounds/round5/; for n in 1 2 3 4 5; do echo \"--- r$n meta:\"; cat ../.work_r$n/rounds/round$n/meta.json 2>/dev/null; echo; done", "status": "in_progress"}
+{"t": 60.8, "kind": "tool_call_update", "title": "S=../oc_traj.py; ls -la ../.work_r5/rounds/round5/; for n in 1 2 3 4 5; do echo \"--- r$n meta:\"; cat ../.work_r$n/rounds/round$n/meta.json 2>/dev/null; echo; done", "status": "completed"}
+{"t": 96.4, "kind": "tool_call", "title": "bash", "status": "pending"}
+{"t": 96.4, "kind": "tool_call_update", "title": "python3 ../oc_traj.py scan ../.work_r3/rounds/round3/thoughts.jsonl", "status": "in_progress"}
+{"t": 96.4, "kind": "tool_call_update", "title": "python3 ../oc_traj.py scan ../.work_r3/rounds/round3/thoughts.jsonl", "status": "in_progress"}
+{"t": 96.4, "kind": "tool_call_update", "title": "python3 ../oc_traj.py scan ../.work_r3/rounds/round3/thoughts.jsonl", "status": "in_progress"}
+{"t": 96.4, "kind": "tool_call_update", "title": "python3 ../oc_traj.py scan ../.work_r3/rounds/round3/thoughts.jsonl", "status": "completed"}
+{"t": 106.1, "kind": "tool_call", "title": "bash", "status": "pending"}
+{"t": 106.1, "kind": "tool_call_update", "title": "S=./oc_traj.py; python3 $S scan ../.work_r3/rounds/round3/thoughts.jsonl", "status": "in_progress"}
+{"t": 106.1, "kind": "tool_call_update", "title": "S=./oc_traj.py; python3 $S scan ../.work_r3/rounds/round3/thoughts.jsonl", "status": "in_progress"}
+{"t": 106.2, "kind": "tool_call_update", "title": "S=./oc_traj.py; python3 $S scan ../.work_r3/rounds/round3/thoughts.jsonl", "status": "in_progress"}
+{"t": 106.2, "kind": "tool_call_update", "title": "S=./oc_traj.py; python3 $S scan ../.work_r3/rounds/round3/thoughts.jsonl", "status": "completed"}
+{"t": 123.2, "kind": "tool_call", "title": "bash", "status": "pending"}
+{"t": 123.2, "kind": "tool_call_update", "title": "S=./oc_traj.py; python3 $S tail ../.work_r3/rounds/round3/thoughts.jsonl 6000", "status": "in_progress"}
+{"t": 123.2, "kind": "tool_call_update", "title": "S=./oc_traj.py; python3 $S tail ../.work_r3/rounds/round3/thoughts.jsonl 6000", "status": "in_progress"}
+{"t": 123.3, "kind": "tool_call_update", "title": "S=./oc_traj.py; python3 $S tail ../.work_r3/rounds/round3/thoughts.jsonl 6000", "status": "in_progress"}
+{"t": 123.3, "kind": "tool_call_update", "title": "S=./oc_traj.py; python3 $S tail ../.work_r3/rounds/round3/thoughts.jsonl 6000", "status": "completed"}
+{"t": 123.9, "kind": "tool_call", "title": "read", "status": "pending"}
+{"t": 123.9, "kind": "tool_call_update", "title": "read", "status": "in_progress"}
+{"t": 123.9, "kind": "tool_call_update", "title": "Volumes/D/math-agent-glm5.2-tmux-agents-trajectory/v2-continuation/p27-full-deepmath_103k_00000890/.work_r4/rounds/round4/thoughts.jsonl", "status": "completed"}
+{"t": 145.2, "kind": "tool_call", "title": "bash", "status": "pending"}
+{"t": 145.2, "kind": "tool_call_update", "title": "S=./oc_traj.py; python3 $S read ../.work_r3/rounds/round3/thoughts.jsonl 415 3200", "status": "in_progress"}
+{"t": 145.2, "kind": "tool_call_update", "title": "S=./oc_traj.py; python3 $S read ../.work_r3/rounds/round3/thoughts.jsonl 415 3200", "status": "in_progress"}
+{"t": 145.2, "kind": "tool_call_update", "title": "S=./oc_traj.py; python3 $S read ../.work_r3/rounds/round3/thoughts.jsonl 415 3200", "status": "in_progress"}
+{"t": 145.3, "kind": "tool_call_update", "title": "S=./oc_traj.py; python3 $S read ../.work_r3/rounds/round3/thoughts.jsonl 415 3200", "status": "completed"}
+{"t": 182.3, "kind": "tool_call", "title": "bash", "status": "pending"}
+{"t": 182.3, "kind": "tool_call_update", "title": "S=./oc_traj.py; python3 $S read ../.work_r3/rounds/round3/thoughts.jsonl 69081 3400", "status": "in_progress"}
+{"t": 182.3, "kind": "tool_call_update", "title": "S=./oc_traj.py; python3 $S read ../.work_r3/rounds/round3/thoughts.jsonl 69081 3400", "status": "in_progress"}
+{"t": 182.4, "kind": "tool_call_update", "title": "S=./oc_traj.py; python3 $S read ../.work_r3/rounds/round3/thoughts.jsonl 69081 3400", "status": "in_progress"}
+{"t": 182.5, "kind": "tool_call_update", "title": "S=./oc_traj.py; python3 $S read ../.work_r3/rounds/round3/thoughts.jsonl 69081 3400", "status": "completed"}
+{"t": 213.0, "kind": "tool_call", "title": "bash", "status": "pending"}
+{"t": 213.0, "kind": "tool_call_update", "title": "S=./oc_traj.py; python3 $S read ../.work_r3/rounds/round3/thoughts.jsonl 85712 3600", "status": "in_progress"}
+{"t": 213.0, "kind": "tool_call_update", "title": "S=./oc_traj.py; python3 $S read ../.work_r3/rounds/round3/thoughts.jsonl 85712 3600", "status": "in_progress"}
+{"t": 213.1, "kind": "tool_call_update", "title": "S=./oc_traj.py; python3 $S read ../.work_r3/rounds/round3/thoughts.jsonl 85712 3600", "status": "in_progress"}
+{"t": 213.1, "kind": "tool_call_update", "title": "S=./oc_traj.py; python3 $S read ../.work_r3/rounds/round3/thoughts.jsonl 85712 3600", "status": "completed"}
+{"t": 232.4, "kind": "tool_call", "title": "bash", "status": "pending"}
+{"t": 232.4, "kind": "tool_call_update", "title": "S=./oc_traj.py; python3 $S read ../.work_r3/rounds/round3/thoughts.jsonl 89300 3400", "status": "in_progress"}
+{"t": 232.4, "kind": "tool_call_update", "title": "S=./oc_traj.py; python3 $S read ../.work_r3/rounds/round3/thoughts.jsonl 89300 3400", "status": "in_progress"}
+{"t": 232.5, "kind": "tool_call_update", "title": "S=./oc_traj.py; python3 $S read ../.work_r3/rounds/round3/thoughts.jsonl 89300 3400", "status": "in_progress"}
+{"t": 232.5, "kind": "tool_call_update", "title": "S=./oc_traj.py; python3 $S read ../.work_r3/rounds/round3/thoughts.jsonl 89300 3400", "status": "completed"}
+{"t": 257.2, "kind": "tool_call", "title": "bash", "status": "pending"}
+{"t": 257.2, "kind": "tool_call_update", "title": "S=./oc_traj.py; python3 $S read ../.work_r3/rounds/round3/thoughts.jsonl 93841 3000", "status": "in_progress"}
+{"t": 257.2, "kind": "tool_call_update", "title": "S=./oc_traj.py; python3 $S read ../.work_r3/rounds/round3/thoughts.jsonl 93841 3000", "status": "in_progress"}
+{"t": 257.3, "kind": "tool_call_update", "title": "S=./oc_traj.py; python3 $S read ../.work_r3/rounds/round3/thoughts.jsonl 93841 3000", "status": "in_progress"}
+{"t": 257.3, "kind": "tool_call_update", "title": "S=./oc_traj.py; python3 $S read ../.work_r3/rounds/round3/thoughts.jsonl 93841 3000", "status": "completed"}

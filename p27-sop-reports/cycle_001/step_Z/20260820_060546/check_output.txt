@@ -1,0 +1,17 @@
+--- SOP 系统全貌 ---
+循环轮次: 第2轮（即将完成）
+步骤总数: 7
+
+当前循环结构：
+  01   系统存活+进度+Session
+  02   数据完整性
+  03   alert分类
+  04   C类AI判断
+  05   代码修复
+  06   报告+WORKLOG+Self-check
+  Z    元检查+整体检查
+
+SOP 文档目录：docs/sop/
+SOP 脚本目录：scripts/sop/
+状态文件：scripts/sop/_state.json
+

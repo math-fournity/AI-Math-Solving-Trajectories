@@ -1,0 +1,57 @@
+{
+  "batch_id": "p27-full",
+  "timestamp": "2026-08-20T06:06:17.709454+00:00",
+  "cycle": 2,
+  "step": "01",
+  "step_name": "系统存活+进度+Session",
+  "aggregate": {
+    "total_runs": 919,
+    "status_counts": {
+      "prepared": 788,
+      "completed": 121,
+      "dead_session": 9,
+      "running": 1
+    },
+    "final_status_counts": {
+      "None": 798,
+      "COMPLETED": 121
+    },
+    "completed": 121,
+    "completion_rate": 0.1317,
+    "results_collection_count": 0,
+    "events_total": 610,
+    "sessions_total": 20
+  },
+  "by_source": {
+    "amo": {
+      "total": 2,
+      "completed": 0,
+      "rate": 0.0
+    },
+    "deepmath": {
+      "total": 382,
+      "completed": 121,
+      "rate": 0.3168
+    },
+    "mathnet": {
+      "total": 1,
+      "completed": 0,
+      "rate": 0.0
+    },
+    "oda": {
+      "total": 304,
+      "completed": 0,
+      "rate": 0.0
+    },
+    "omni": {
+      "total": 23,
+      "completed": 0,
+      "rate": 0.0
+    },
+    "polymath": {
+      "total": 207,
+      "completed": 0,
+      "rate": 0.0
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{"t": 15.9, "kind": "tool_call", "title": "bash", "status": "pending"}
+{"t": 15.9, "kind": "tool_call_update", "title": "ls -la && ls -la rounds/round1/ 2>/dev/null", "status": "in_progress"}
+{"t": 15.9, "kind": "tool_call_update", "title": "ls -la && ls -la rounds/round1/ 2>/dev/null", "status": "in_progress"}
+{"t": 15.9, "kind": "tool_call_update", "title": "ls -la && ls -la rounds/round1/ 2>/dev/null", "status": "in_progress"}
+{"t": 15.9, "kind": "tool_call_update", "title": "ls -la && ls -la rounds/round1/ 2>/dev/null", "status": "completed"}
+{"t": 16.9, "kind": "tool_call", "title": "bash", "status": "pending"}
+{"t": 16.9, "kind": "tool_call_update", "title": "python3 /Users/user/.config/opencode/skills/oc-trajectory/scripts/oc_traj.py scan rounds/round1/thoughts.jsonl", "status": "in_progress"}
+{"t": 16.9, "kind": "tool_call_update", "title": "python3 /Users/user/.config/opencode/skills/oc-trajectory/scripts/oc_traj.py scan rounds/round1/thoughts.jsonl", "status": "in_progress"}
+{"t": 16.9, "kind": "tool_call_update", "title": "python3 /Users/user/.config/opencode/skills/oc-trajectory/scripts/oc_traj.py scan rounds/round1/thoughts.jsonl", "status": "in_progress"}
+{"t": 16.9, "kind": "tool_call_update", "title": "python3 /Users/user/.config/opencode/skills/oc-trajectory/scripts/oc_traj.py scan rounds/round1/thoughts.jsonl", "status": "in_progress"}
+{"t": 17.0, "kind": "tool_call_update", "title": "python3 /Users/user/.config/opencode/skills/oc-trajectory/scripts/oc_traj.py scan rounds/round1/thoughts.jsonl", "status": "completed"}
+{"t": 22.1, "kind": "tool_call", "title": "bash", "status": "pending"}
+{"t": 22.1, "kind": "tool_call_update", "title": "find . -type f | head -50 && echo \"---\" && ls -la .acp_out_r2/", "status": "in_progress"}
+{"t": 22.1, "kind": "tool_call_update", "title": "find . -type f | head -50 && echo \"---\" && ls -la .acp_out_r2/", "status": "in_progress"}
+{"t": 22.1, "kind": "tool_call_update", "title": "find . -type f | head -50 && echo \"---\" && ls -la .acp_out_r2/", "status": "in_progress"}
+{"t": 22.1, "kind": "tool_call_update", "title": "find . -type f | head -50 && echo \"---\" && ls -la .acp_out_r2/", "status": "in_progress"}
+{"t": 22.2, "kind": "tool_call_update", "title": "find . -type f | head -50 && echo \"---\" && ls -la .acp_out_r2/", "status": "in_progress"}
+{"t": 22.2, "kind": "tool_call_update", "title": "find . -type f | head -50 && echo \"---\" && ls -la .acp_out_r2/", "status": "completed"}
+{"t": 29.1, "kind": "tool_call", "title": "bash", "status": "pending"}
+{"t": 29.1, "kind": "tool_call_update", "title": "ls -la .. && ls -la ../.work_r1 2>/dev/null; find .. -maxdepth 3 -name \"*.jsonl\" -o -maxdepth 3 -name \"*.md\" 2>/dev/null | head -30", "status": "in_progress"}
+{"t": 29.1, "kind": "tool_call_update", "title": "ls -la .. && ls -la ../.work_r1 2>/dev/null; find .. -maxdepth 3 -name \"*.jsonl\" -o -maxdepth 3 -name \"*.md\" 2>/dev/null | head -30", "status": "in_progress"}
+{"t": 29.1, "kind": "tool_call_update", "title": "ls -la .. && ls -la ../.work_r1 2>/dev/null; find .. -maxdepth 3 -name \"*.jsonl\" -o -maxdepth 3 -name \"*.md\" 2>/dev/null | head -30", "status": "in_progress"}
+{"t": 29.1, "kind": "tool_call_update", "title": "ls -la .. && ls -la ../.work_r1 2>/dev/null; find .. -maxdepth 3 -name \"*.jsonl\" -o -maxdepth 3 -name \"*.md\" 2>/dev/null | head -30", "status": "in_progress"}
+{"t": 29.1, "kind": "tool_call_update", "title": "ls -la .. && ls -la ../.work_r1 2>/dev/null; find .. -maxdepth 3 -name \"*.jsonl\" -o -maxdepth 3 -name \"*.md\" 2>/dev/null | head -30", "status": "in_progress"}
+{"t": 29.2, "kind": "tool_call_update", "title": "ls -la .. && ls -la ../.work_r1 2>/dev/null; find .. -maxdepth 3 -name \"*.jsonl\" -o -maxdepth 3 -name \"*.md\" 2>/dev/null | head -30", "status": "completed"}
+{"t": 32.4, "kind": "tool_call", "title": "bash", "status": "pending"}
+{"t": 32.4, "kind": "tool_call_update", "title": "find ../.work_r1/rounds -type f && echo \"---\" && ls -la ../.work_r1/.acp_out_r1/", "status": "in_progress"}
+{"t": 32.4, "kind": "tool_call_update", "title": "find ../.work_r1/rounds -type f && echo \"---\" && ls -la ../.work_r1/.acp_out_r1/", "status": "in_progress"}
+{"t": 32.5, "kind": "tool_call_update", "title": "find ../.work_r1/rounds -type f && echo \"---\" && ls -la ../.work_r1/.acp_out_r1/", "status": "in_progress"}
+{"t": 32.5, "kind": "tool_call_update", "title": "find ../.work_r1/rounds -type f && echo \"---\" && ls -la ../.work_r1/.acp_out_r1/", "status": "in_progress"}
+{"t": 32.5, "kind": "tool_call_update", "title": "find ../.work_r1/rounds -type f && echo \"---\" && ls -la ../.work_r1/.acp_out_r1/", "status": "completed"}
+{"t": 53.3, "kind": "tool_call", "title": "bash", "status": "pending"}
+{"t": 53.3, "kind": "tool_call_update", "title": "python3 /Users/user/.config/opencode/skills/oc-trajectory/scripts/oc_traj.py scan ../.work_r1/rounds/round1/thoughts.jsonl", "status": "in_progress"}
+{"t": 53.3, "kind": "tool_call_update", "title": "python3 /Users/user/.config/opencode/skills/oc-trajectory/scripts/oc_traj.py scan ../.work_r1/rounds/round1/thoughts.jsonl", "status": "in_progress"}
+{"t": 53.4, "kind": "tool_call_update", "title": "python3 /Users/user/.config/opencode/skills/oc-trajectory/scripts/oc_traj.py scan ../.work_r1/rounds/round1/thoughts.jsonl", "status": "in_progress"}
+{"t": 53.4, "kind": "tool_call_update", "title": "python3 /Users/user/.config/opencode/skills/oc-trajectory/scripts/oc_traj.py scan ../.work_r1/rounds/round1/thoughts.jsonl", "status": "completed"}
+{"t": 54.1, "kind": "tool_call", "title": "bash", "status": "pending"}
+{"t": 54.1, "kind": "tool_call_update", "title": "cat ../.work_r1/rounds/round1/meta.json && wc -l ../.work_r1/rounds/round1/thinking.md ../.work_r1/rounds/round1/thoughts.jsonl", "status": "in_progress"}
+{"t": 54.1, "kind": "tool_call_update", "title": "cat ../.work_r1/rounds/round1/meta.json && wc -l ../.work_r1/rounds/round1/thinking.md ../.work_r1/rounds/round1/thoughts.jsonl", "status": "in_progress"}
+{"t": 54.1, "kind": "tool_call_update", "title": "cat ../.work_r1/rounds/round1/meta.json && wc -l ../.work_r1/rounds/round1/thinking.md ../.work_r1/rounds/round1/thoughts.jsonl", "status": "in_progress"}
+{"t": 54.2, "kind": "tool_call_update", "title": "cat ../.work_r1/rounds/round1/meta.json && wc -l ../.work_r1/rounds/round1/thinking.md ../.work_r1/rounds/round1/thoughts.jsonl", "status": "in_progress"}
+{"t": 54.3, "kind": "tool_call_update", "title": "cat ../.work_r1/rounds/round1/meta.json && wc -l ../.work_r1/rounds/round1/thinking.md ../.work_r1/rounds/round1/thoughts.jsonl", "status": "completed"}
+{"t": 68.0, "kind": "tool_call", "title": "bash", "status": "pending"}
+{"t": 68.0, "kind": "tool_call_update", "title": "python3 /Users/user/.config/opencode/skills/oc-trajectory/scripts/oc_traj.py tail ../.work_r1/rounds/round1/thoughts.jsonl 8000", "status": "in_progress"}
+{"t": 68.0, "kind": "tool_call_update", "title": "python3 /Users/user/.config/opencode/skills/oc-trajectory/scripts/oc_traj.py tail ../.work_r1/rounds/round1/thoughts.jsonl 8000", "status": "in_progress"}
+{"t": 68.1, "kind": "tool_call_update", "title": "python3 /Users/user/.config/opencode/skills/oc-trajectory/scripts/oc_traj.py tail ../.work_r1/rounds/round1/thoughts.jsonl 8000", "status": "in_progress"}
+{"t": 68.1, "kind": "tool_call_update", "title": "python3 /Users/user/.config/opencode/skills/oc-trajectory/scripts/oc_traj.py tail ../.work_r1/rounds/round1/thoughts.jsonl 8000", "status": "completed"}
+{"t": 81.4, "kind": "tool_call", "title": "bash", "status": "pending"}
+{"t": 81.5, "kind": "tool_call_update", "title": "python3 /Users/user/.config/opencode/skills/oc-trajectory/scripts/oc_traj.py read ../.work_r1/rounds/round1/thoughts.jsonl 1 3300", "status": "in_progress"}
+{"t": 81.5, "kind": "tool_call_update", "title": "python3 /Users/user/.config/opencode/skills/oc-trajectory/scripts/oc_traj.py read ../.work_r1/rounds/round1/thoughts.jsonl 1 3300", "status": "in_progress"}
+{"t": 81.5, "kind": "tool_call_update", "title": "python3 /Users/user/.config/opencode/skills/oc-trajectory/scripts/oc_traj.py read ../.work_r1/rounds/round1/thoughts.jsonl 1 3300", "status": "in_progress"}
+{"t": 81.5, "kind": "tool_call_update", "title": "python3 /Users/user/.config/opencode/skills/oc-trajectory/scripts/oc_traj.py read ../.work_r1/rounds/round1/thoughts.jsonl 1 3300", "status": "completed"}
+{"t": 107.0, "kind": "tool_call", "title": "bash", "status": "pending"}
+{"t": 107.0, "kind": "tool_call_update", "title": "python3 /Users/user/.config/opencode/skills/oc-trajectory/scripts/oc_traj.py read ../.work_r1/rounds/round1/thoughts.jsonl 190 3200", "status": "in_progress"}
+{"t": 107.0, "kind": "tool_call_update", "title": "python3 /Users/user/.config/opencode/skills/oc-trajectory/scripts/oc_traj.py read ../.work_r1/rounds/round1/thoughts.jsonl 190 3200", "status": "in_progress"}
+{"t": 107.1, "kind": "tool_call_update", "title": "python3 /Users/user/.config/opencode/skills/oc-trajectory/scripts/oc_traj.py read ../.work_r1/rounds/round1/thoughts.jsonl 190 3200", "status": "in_progress"}
+{"t": 107.1, "kind": "tool_call_update", "title": "python3 /Users/user/.config/opencode/skills/oc-trajectory/scripts/oc_traj.py read ../.work_r1/rounds/round1/thoughts.jsonl 190 3200", "status": "completed"}
+{"t": 133.0, "kind": "tool_call", "title": "bash", "status": "pending"}
+{"t": 133.0, "kind": "tool_call_update", "title": "python3 /Users/user/.config/opencode/skills/oc-trajectory/scripts/oc_traj.py read ../.work_r1/rounds/round1/thoughts.jsonl 61170 3000", "status": "in_progress"}
+{"t": 133.0, "kind": "tool_call_update", "title": "python3 /Users/user/.config/opencode/skills/oc-trajectory/scripts/oc_traj.py read ../.work_r1/rounds/round1/thoughts.jsonl 61170 3000", "status": "in_progress"}
+{"t": 133.1, "kind": "tool_call_update", "title": "python3 /Users/user/.config/opencode/skills/oc-trajectory/scripts/oc_traj.py read ../.work_r1/rounds/round1/thoughts.jsonl 61170 3000", "status": "in_progress"}
+{"t": 133.1, "kind": "tool_call_update", "title": "python3 /Users/user/.config/opencode/skills/oc-trajectory/scripts/oc_traj.py read ../.work_r1/rounds/round1/thoughts.jsonl 61170 3000", "status": "completed"}
+{"t": 169.9, "kind": "tool_call", "title": "bash", "status": "pending"}
+{"t": 169.9, "kind": "tool_call_update", "title": "python3 /Users/user/.config/opencode/skills/oc-trajectory/scripts/oc_traj.py read ../.work_r1/rounds/round1/thoughts.jsonl 30400 2600", "status": "in_progress"}
+{"t": 169.9, "kind": "tool_call_update", "title": "python3 /Users/user/.config/opencode/skills/oc-trajectory/scripts/oc_traj.py read ../.work_r1/rounds/round1/thoughts.jsonl 30400 2600", "status": "in_progress"}
+{"t": 170.0, "kind": "tool_call_update", "title": "python3 /Users/user/.config/opencode/skills/oc-trajectory/scripts/oc_traj.py read ../.work_r1/rounds/round1/thoughts.jsonl 30400 2600", "status": "in_progress"}
+{"t": 170.0, "kind": "tool_call_update", "title": "python3 /Users/user/.config/opencode/skills/oc-trajectory/scripts/oc_traj.py read ../.work_r1/rounds/round1/thoughts.jsonl 30400 2600", "status": "completed"}
+{"t": 179.9, "kind": "tool_call", "title": "bash", "status": "pending"}
+{"t": 179.9, "kind": "tool_call_update", "title": "python3 /Users/user/.config/opencode/skills/oc-trajectory/scripts/oc_traj.py read ../.work_r1/rounds/round1/thoughts.jsonl 79062 2800", "status": "in_progress"}
+{"t": 179.9, "kind": "tool_call_update", "title": "python3 /Users/user/.config/opencode/skills/oc-trajectory/scripts/oc_traj.py read ../.work_r1/rounds/round1/thoughts.jsonl 79062 2800", "status": "in_progress"}
+{"t": 180.0, "kind": "tool_call_update", "title": "python3 /Users/user/.config/opencode/skills/oc-trajectory/scripts/oc_traj.py read ../.work_r1/rounds/round1/thoughts.jsonl 79062 2800", "status": "in_progress"}
+{"t": 180.1, "kind": "tool_call_update", "title": "python3 /Users/user/.config/opencode/skills/oc-trajectory/scripts/oc_traj.py read ../.work_r1/rounds/round1/thoughts.jsonl 79062 2800", "status": "completed"}
+{"t": 362.5, "kind": "tool_call", "title": "write", "status": "pending"}
+{"t": 362.5, "kind": "tool_call_update", "title": "write", "status": "in_progress"}
+{"t": 362.5, "kind": "tool_call_update", "title": "Volumes/D/math-agent-glm5.2-tmux-agents-trajectory/v2-continuation/p27-full-deepmath_103k_00000890/.work_r2/分析笔记.md", "status": "completed"}
+{"t": 366.5, "kind": "tool_call", "title": "bash", "status": "pending"}
+{"t": 366.5, "kind": "tool_call_update", "title": "wc -c 分析笔记.md && ls -la 分析笔记.md", "status": "in_progress"}
+{"t": 366.5, "kind": "tool_call_update", "title": "wc -c 分析笔记.md && ls -la 分析笔记.md", "status": "in_progress"}
+{"t": 366.5, "kind": "tool_call_update", "title": "wc -c 分析笔记.md && ls -la 分析笔记.md", "status": "in_progress"}
+{"t": 366.5, "kind": "tool_call_update", "title": "wc -c 分析笔记.md && ls -la 分析笔记.md", "status": "in_progress"}
+{"t": 366.5, "kind": "tool_call_update", "title": "wc -c 分析笔记.md && ls -la 分析笔记.md", "status": "completed"}

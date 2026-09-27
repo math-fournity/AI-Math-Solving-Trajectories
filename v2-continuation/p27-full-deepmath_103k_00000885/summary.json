@@ -1,0 +1,209 @@
+{
+ "problem_chars": 253,
+ "total_rounds": 10,
+ "total_time_sec": 7288.0,
+ "final_status": "ENDED_NO_PROOF",
+ "completed": false,
+ "rounds": [
+  {
+   "round": 1,
+   "role": "solver_initial",
+   "sessionId": "ses_fd90f68b1ffe7R032Bj6uhnfcV",
+   "protocolVersion": 1,
+   "counts": {
+    "thought": 10469,
+    "message": 0,
+    "tool": 0
+   },
+   "thought_chars": 79278,
+   "message_chars": 0,
+   "outputTokens": 32000,
+   "stopReason": "end_turn",
+   "final_status": "BUDGET_STARVED",
+   "budget_starved": true,
+   "has_proof": false,
+   "has_boxed": false,
+   "duration_sec": 743.9
+  },
+  {
+   "round": 2,
+   "role": "observer",
+   "sessionId": "ses_fd903f3daffeo8cXxja3YkkV88",
+   "protocolVersion": 1,
+   "counts": {
+    "thought": 5685,
+    "message": 85,
+    "tool": 120
+   },
+   "thought_chars": 41408,
+   "message_chars": 381,
+   "outputTokens": 225,
+   "stopReason": "end_turn",
+   "final_status": "ENDED_NO_PROOF",
+   "budget_starved": false,
+   "has_proof": false,
+   "has_boxed": false,
+   "duration_sec": 572.1
+  },
+  {
+   "round": 3,
+   "role": "solver",
+   "sessionId": "ses_fd8fb2f21ffepY662ihGyJfNAc",
+   "protocolVersion": 1,
+   "counts": {
+    "thought": 10612,
+    "message": 0,
+    "tool": 3
+   },
+   "thought_chars": 81026,
+   "message_chars": 0,
+   "outputTokens": 32000,
+   "stopReason": "end_turn",
+   "final_status": "BUDGET_STARVED",
+   "budget_starved": true,
+   "has_proof": false,
+   "has_boxed": false,
+   "duration_sec": 741.1
+  },
+  {
+   "round": 4,
+   "role": "observer",
+   "sessionId": "ses_fd8efd37effe9OWHiSH0aqqXs2",
+   "protocolVersion": 1,
+   "counts": {
+    "thought": 3279,
+    "message": 228,
+    "tool": 78
+   },
+   "thought_chars": 25766,
+   "message_chars": 854,
+   "outputTokens": 297,
+   "stopReason": "end_turn",
+   "final_status": "ENDED_NO_PROOF",
+   "budget_starved": false,
+   "has_proof": false,
+   "has_boxed": false,
+   "duration_sec": 368.1
+  },
+  {
+   "round": 5,
+   "role": "solver",
+   "sessionId": "ses_fd8ea24b6ffeO0bs4AKdnM4lIO",
+   "protocolVersion": 1,
+   "counts": {
+    "thought": 10437,
+    "message": 0,
+    "tool": 3
+   },
+   "thought_chars": 83370,
+   "message_chars": 0,
+   "outputTokens": 32000,
+   "stopReason": "end_turn",
+   "final_status": "BUDGET_STARVED",
+   "budget_starved": true,
+   "has_proof": false,
+   "has_boxed": false,
+   "duration_sec": 700.7
+  },
+  {
+   "round": 6,
+   "role": "observer",
+   "sessionId": "ses_fd8df6791ffeM2FmnfXmulu6Wp",
+   "protocolVersion": 1,
+   "counts": {
+    "thought": 1453,
+    "message": 108,
+    "tool": 71
+   },
+   "thought_chars": 12315,
+   "message_chars": 488,
+   "outputTokens": 0,
+   "stopReason": "end_turn",
+   "final_status": "ENDED_NO_PROOF",
+   "budget_starved": false,
+   "has_proof": false,
+   "has_boxed": false,
+   "duration_sec": 342.2
+  },
+  {
+   "round": 7,
+   "role": "solver",
+   "sessionId": "ses_fd8da2227ffeUMBYC046X3gb6D",
+   "protocolVersion": 1,
+   "counts": {
+    "thought": 15069,
+    "message": 446,
+    "tool": 193
+   },
+   "thought_chars": 103442,
+   "message_chars": 1444,
+   "outputTokens": 0,
+   "stopReason": null,
+   "final_status": "ENDED_NO_PROOF",
+   "budget_starved": false,
+   "has_proof": false,
+   "has_boxed": false,
+   "duration_sec": 2834.3
+  },
+  {
+   "round": 8,
+   "role": "observer",
+   "sessionId": "ses_fd8aed945ffeg1D5qlYPvy0MpJ",
+   "protocolVersion": 1,
+   "counts": {
+    "thought": 4847,
+    "message": 268,
+    "tool": 141
+   },
+   "thought_chars": 26936,
+   "message_chars": 755,
+   "outputTokens": 201,
+   "stopReason": "end_turn",
+   "final_status": "ENDED_NO_PROOF",
+   "budget_starved": false,
+   "has_proof": false,
+   "has_boxed": false,
+   "duration_sec": 415.7
+  },
+  {
+   "round": 9,
+   "role": "solver",
+   "sessionId": "ses_fd8a87832ffe8tBPtjCr1s8XKx",
+   "protocolVersion": 1,
+   "counts": {
+    "thought": 160,
+    "message": 40,
+    "tool": 14
+   },
+   "thought_chars": 1879,
+   "message_chars": 148,
+   "outputTokens": 0,
+   "stopReason": "end_turn",
+   "final_status": "ENDED_NO_PROOF",
+   "budget_starved": false,
+   "has_proof": false,
+   "has_boxed": false,
+   "duration_sec": 211.3
+  },
+  {
+   "round": 10,
+   "role": "observer",
+   "sessionId": "ses_fd8a534c6ffeTID7kBcdfjYnwW",
+   "protocolVersion": 1,
+   "counts": {
+    "thought": 2702,
+    "message": 169,
+    "tool": 114
+   },
+   "thought_chars": 18406,
+   "message_chars": 489,
+   "outputTokens": 176,
+   "stopReason": "end_turn",
+   "final_status": "ENDED_NO_PROOF",
+   "budget_starved": false,
+   "has_proof": false,
+   "has_boxed": false,
+   "duration_sec": 318.1
+  }
+ ]
+}

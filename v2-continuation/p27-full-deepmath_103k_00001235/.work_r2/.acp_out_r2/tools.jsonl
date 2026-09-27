@@ -1,0 +1,48 @@
+{"t": 11.3, "kind": "tool_call", "title": "bash", "status": "pending"}
+{"t": 11.3, "kind": "tool_call_update", "title": "ls -la && ls -la rounds/round1/ 2>/dev/null", "status": "in_progress"}
+{"t": 11.3, "kind": "tool_call_update", "title": "ls -la && ls -la rounds/round1/ 2>/dev/null", "status": "in_progress"}
+{"t": 11.3, "kind": "tool_call_update", "title": "ls -la && ls -la rounds/round1/ 2>/dev/null", "status": "in_progress"}
+{"t": 11.4, "kind": "tool_call_update", "title": "ls -la && ls -la rounds/round1/ 2>/dev/null", "status": "completed"}
+{"t": 18.1, "kind": "tool_call", "title": "bash", "status": "pending"}
+{"t": 18.1, "kind": "tool_call_update", "title": "ls -laR .acp_out_r2/ | head -50", "status": "in_progress"}
+{"t": 18.1, "kind": "tool_call_update", "title": "ls -laR .acp_out_r2/ | head -50", "status": "in_progress"}
+{"t": 18.1, "kind": "tool_call_update", "title": "ls -laR .acp_out_r2/ | head -50", "status": "in_progress"}
+{"t": 18.1, "kind": "tool_call_update", "title": "ls -laR .acp_out_r2/ | head -50", "status": "completed"}
+{"t": 24.3, "kind": "tool_call", "title": "bash", "status": "pending"}
+{"t": 24.3, "kind": "tool_call_update", "title": "python3 oc_traj.py scan .acp_out_r2/thoughts.jsonl; echo \"---TOOLS---\"; cat .acp_out_r2/tools.jsonl", "status": "in_progress"}
+{"t": 24.3, "kind": "tool_call_update", "title": "python3 oc_traj.py scan .acp_out_r2/thoughts.jsonl; echo \"---TOOLS---\"; cat .acp_out_r2/tools.jsonl", "status": "in_progress"}
+{"t": 24.3, "kind": "tool_call_update", "title": "python3 oc_traj.py scan .acp_out_r2/thoughts.jsonl; echo \"---TOOLS---\"; cat .acp_out_r2/tools.jsonl", "status": "in_progress"}
+{"t": 24.3, "kind": "tool_call_update", "title": "python3 oc_traj.py scan .acp_out_r2/thoughts.jsonl; echo \"---TOOLS---\"; cat .acp_out_r2/tools.jsonl", "status": "in_progress"}
+{"t": 24.3, "kind": "tool_call_update", "title": "python3 oc_traj.py scan .acp_out_r2/thoughts.jsonl; echo \"---TOOLS---\"; cat .acp_out_r2/tools.jsonl", "status": "in_progress"}
+{"t": 24.4, "kind": "tool_call_update", "title": "python3 oc_traj.py scan .acp_out_r2/thoughts.jsonl; echo \"---TOOLS---\"; cat .acp_out_r2/tools.jsonl", "status": "completed"}
+{"t": 34.2, "kind": "tool_call", "title": "bash", "status": "pending"}
+{"t": 34.2, "kind": "tool_call_update", "title": "ls -la .. && ls -la ../.work_r2 2>/dev/null; ls -la ../../ 2>/dev/null | head -30", "status": "in_progress"}
+{"t": 34.2, "kind": "tool_call_update", "title": "ls -la .. && ls -la ../.work_r2 2>/dev/null; ls -la ../../ 2>/dev/null | head -30", "status": "in_progress"}
+{"t": 34.2, "kind": "tool_call_update", "title": "ls -la .. && ls -la ../.work_r2 2>/dev/null; ls -la ../../ 2>/dev/null | head -30", "status": "in_progress"}
+{"t": 34.2, "kind": "tool_call_update", "title": "ls -la .. && ls -la ../.work_r2 2>/dev/null; ls -la ../../ 2>/dev/null | head -30", "status": "in_progress"}
+{"t": 34.2, "kind": "tool_call_update", "title": "ls -la .. && ls -la ../.work_r2 2>/dev/null; ls -la ../../ 2>/dev/null | head -30", "status": "in_progress"}
+{"t": 34.2, "kind": "tool_call_update", "title": "ls -la .. && ls -la ../.work_r2 2>/dev/null; ls -la ../../ 2>/dev/null | head -30", "status": "completed"}
+{"t": 47.3, "kind": "tool_call", "title": "bash", "status": "pending"}
+{"t": 47.3, "kind": "tool_call_update", "title": "ls -la ../.work_r1/ && ls -laR ../.work_r1/ | head -40", "status": "in_progress"}
+{"t": 47.3, "kind": "tool_call_update", "title": "ls -la ../.work_r1/ && ls -laR ../.work_r1/ | head -40", "status": "in_progress"}
+{"t": 47.3, "kind": "tool_call_update", "title": "ls -la ../.work_r1/ && ls -laR ../.work_r1/ | head -40", "status": "in_progress"}
+{"t": 47.4, "kind": "tool_call_update", "title": "ls -la ../.work_r1/ && ls -laR ../.work_r1/ | head -40", "status": "in_progress"}
+{"t": 47.4, "kind": "tool_call_update", "title": "ls -la ../.work_r1/ && ls -laR ../.work_r1/ | head -40", "status": "completed"}
+{"t": 58.5, "kind": "tool_call", "title": "bash", "status": "pending"}
+{"t": 58.5, "kind": "tool_call_update", "title": "cat ../.work_r1/rounds/round1/meta.json; echo \"---SCAN---\"; python3 oc_traj.py scan ../.work_r1/rounds/round1/thoughts.jsonl", "status": "in_progress"}
+{"t": 58.5, "kind": "tool_call_update", "title": "cat ../.work_r1/rounds/round1/meta.json; echo \"---SCAN---\"; python3 oc_traj.py scan ../.work_r1/rounds/round1/thoughts.jsonl", "status": "in_progress"}
+{"t": 58.5, "kind": "tool_call_update", "title": "cat ../.work_r1/rounds/round1/meta.json; echo \"---SCAN---\"; python3 oc_traj.py scan ../.work_r1/rounds/round1/thoughts.jsonl", "status": "in_progress"}
+{"t": 59.0, "kind": "tool_call_update", "title": "cat ../.work_r1/rounds/round1/meta.json; echo \"---SCAN---\"; python3 oc_traj.py scan ../.work_r1/rounds/round1/thoughts.jsonl", "status": "in_progress"}
+{"t": 59.0, "kind": "tool_call_update", "title": "cat ../.work_r1/rounds/round1/meta.json; echo \"---SCAN---\"; python3 oc_traj.py scan ../.work_r1/rounds/round1/thoughts.jsonl", "status": "completed"}
+{"t": 67.0, "kind": "tool_call", "title": "read", "status": "pending"}
+{"t": 67.0, "kind": "tool_call_update", "title": "read", "status": "in_progress"}
+{"t": 67.2, "kind": "tool_call_update", "title": "Volumes/D/math-agent-glm5.2-tmux-agents-trajectory/v2-continuation/p27-full-deepmath_103k_00001235/.work_r1/rounds/round1/thinking.md", "status": "completed"}
+{"t": 222.4, "kind": "tool_call", "title": "write", "status": "pending"}
+{"t": 222.4, "kind": "tool_call_update", "title": "write", "status": "in_progress"}
+{"t": 222.5, "kind": "tool_call_update", "title": "Volumes/D/math-agent-glm5.2-tmux-agents-trajectory/v2-continuation/p27-full-deepmath_103k_00001235/.work_r2/分析笔记.md", "status": "completed"}
+{"t": 225.8, "kind": "tool_call", "title": "bash", "status": "pending"}
+{"t": 225.8, "kind": "tool_call_update", "title": "ls -la 分析笔记.md && wc -c 分析笔记.md", "status": "in_progress"}
+{"t": 225.8, "kind": "tool_call_update", "title": "ls -la 分析笔记.md && wc -c 分析笔记.md", "status": "in_progress"}
+{"t": 225.9, "kind": "tool_call_update", "title": "ls -la 分析笔记.md && wc -c 分析笔记.md", "status": "in_progress"}
+{"t": 225.9, "kind": "tool_call_update", "title": "ls -la 分析笔记.md && wc -c 分析笔记.md", "status": "in_progress"}
+{"t": 225.9, "kind": "tool_call_update", "title": "ls -la 分析笔记.md && wc -c 分析笔记.md", "status": "completed"}

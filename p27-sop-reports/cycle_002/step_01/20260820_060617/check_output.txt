@@ -1,0 +1,284 @@
+--- 自动化检查结果（monitor_check_continuation.sh）---
+============================================
+POC-2.7续传Monitor检查 @ 2026-08-20T06:06:15Z
+  batch_id: p27-full
+  monitor_session: monitor-p27
+  检查规范: specs/p27_monitor_spec.md
+============================================
+
+=== 1. Monitor Pipe pane输出（最近3轮）===
+  [status] {"completed": 121, "dead_session": 9, "prepared": 788, "running": 1}
+  [progress] 130/919 (14%)
+  [final_status] {"COMPLETED": 121}
+  [pass_rate] COMPLETED=121/121 = 100.0%
+--- 续传监控轮次 #9 @ 2026-08-20T06:05:03.351450+00:00 ---
+  [ALERT warning] zombie_sessions: 3个空pane僵尸session（阈值2）
+  [ALERT critical] export_missing: completed run无export: deepmath_103k_00001018
+  [ALERT critical] export_missing: completed run无export: deepmath_103k_00005476
+  [ALERT critical] export_missing: completed run无export: deepmath_103k_00013863
+  [ALERT critical] export_missing: completed run无export: deepmath_103k_00011504
+  [ALERT critical] export_missing_rate: export缺失率80%（4/5）
+  [ALERT critical] handover_missing: v2方案round2无HANDOVER.md: deepmath_103k_00
+  [ALERT critical] rounds_log_export_missing: rounds_log的export文件不存在: deep
+  [ALERT critical] rounds_log_export_missing: rounds_log的export文件不存在: deep
+  [ALERT info] ai_review_sample: 抽样2条COMPLETED结果需AI review（按specs/p27_mo
+  [AI_REVIEW] 抽样2条需AI review:
+  [status] {"completed": 121, "dead_session": 9, "prepared": 788, "running": 1}
+  [progress] 130/919 (14%)
+  [final_status] {"COMPLETED": 121}
+  [pass_rate] COMPLETED=121/121 = 100.0%
+
+  >> 需要检查：
+     - 每轮是否有新ALERT？alert类型是什么（critical/warning/info）？
+     - AI_REVIEW抽样的结果——需按specs/p27_monitor_spec.md §3.3的C1-C5标准检查
+     - progress是否在推进？如果停滞，检查launcher日志
+     - pass_rate是否在增长？目标COMPLETED≥50%（415号§7.1）
+
+  >> Session注册表状态（编号化管理）：
+     running: 5个
+
+=== 2. alerts集合（新alert，最多5条）===
+=== 新alerts: 10个 ===
+
+  [info] ai_review_sample (key=p27-alert-1787205903624-ai_review_sample)
+    抽样2条COMPLETED结果需AI review（按specs/p27_monitor_spec.md §3.3检查）
+    samples:
+      deepmath_103k_00014973: 1轮
+        proof: # Proof
+
+**Question.** Does there exist an infinite sequence of distinct primes $(q)$, with $p \neq ...
+        check_items: ['C1.proof_quality', 'C2.proof_hallucination', 'C3.answer_leak', 'C4.handover_quality', 'C5.continuation_direction']
+      deepmath_103k_00014920: 1轮
+        proof: # Proof: $MK = 0$ when $K$ is a nil ideal and $M$ is a minimal right ideal
+
+**Claim.** Let $R$ be a ...
+        check_items: ['C1.proof_quality', 'C2.proof_hallucination', 'C3.answer_leak', 'C4.handover_quality', 'C5.continuation_direction']
+
+  [critical] rounds_log_export_missing (key=p27-alert-1787205903621-rounds_log_export_missing)
+    rounds_log的export文件不存在: deepmath_103k_00003998 R2 path=/Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00003998/round2/exports/conversation.json
+    problem_id: deepmath_103k_00003998
+    round: 2
+    path: /Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00003998/round2/exports/conversation.json
+
+  [critical] rounds_log_export_missing (key=p27-alert-1787205903619-rounds_log_export_missing)
+    rounds_log的export文件不存在: deepmath_103k_00019446 R2 path=/Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00019446/round2/exports/conversation.json
+    problem_id: deepmath_103k_00019446
+    round: 2
+    path: /Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00019446/round2/exports/conversation.json
+
+  [critical] handover_missing (key=p27-alert-1787205903618-handover_missing)
+    v2方案round2无HANDOVER.md: deepmath_103k_00025241
+    problem_id: deepmath_103k_00025241
+    round: 2
+
+  [critical] export_missing_rate (key=p27-alert-1787205903617-export_missing_rate)
+    export缺失率80%（4/5）
+    missing: 4
+    sampled: 5
+
+  [critical] export_missing (key=p27-alert-1787205903616-export_missing)
+    completed run无export: deepmath_103k_00011504
+  ... 还有5条alert未显示（用 --check-alerts 查看全部）
+
+  >> 需要检查（按specs/p27_monitor_spec.md §2分类处理）：
+     [A类自动检查]
+     - session_health critical → launcher可能挂了，检查进程状态（第3项）
+     - queue_stalled → 检查collector是否在处理completed队列
+     - rate_limit critical → 立即降并发（修改batch.concurrency）
+     - zombie_sessions → 手动kill空panesession
+     - export_missing → 检查D盘是否挂载、trajectory目录是否可写
+     - failure_rate → 检查failure_breakdown，判断是AI能力问题还是基础设施问题
+     - launcher_dead → 重启launcher
+     - long_running → 检查是否真的stall，可能需要kill后重新入队
+     [B类续传质量检查]
+     - proof_missing → COMPLETED但无proof.md，需重跑
+     - proof_no_boxed → proof.md无boxed答案，需检查是否真正完成
+     - proof_too_small → proof.md太小，可能内容不完整
+     - handover_missing → v2方案但无HANDOVER.md，Pipe A失败
+     - all_rounds_truncated → 5轮全截断，可能是真正的思维错误
+     [C类AI review]
+     - ai_review_sample → 读proof.md和HANDOVER.md，按C1-C5标准逐项检查
+     处理完alert后用 --resolve-alert <key> 标记为fixed
+     需要重跑的题：从alert的problem_ids字段获取problem_id，
+       在DB中找到对应的run，将status改回prepared，重新入队
+
+=== 3. 进程状态 ===
+  launcher: PID=89183 CPU=0.0% ELAPSED=17:16 STAT=Ss+
+  monitor: PID=89204 CPU=0.0% ELAPSED=17:14 STAT=Ss+
+  tmux p27-sessions: 5
+
+  >> 需要检查：
+     - launcher和monitor进程是否都在运行？NOT RUNNING = 需要重启
+     - STAT=S+/Ss+ = 正常睡眠；STAT=R = 正在执行；STAT=Z = 僵尸进程（需kill）
+     - CPU 0% + ELAPSED很长 = 可能在sleep中（正常）或卡住（不正常）
+     - tmux p27-sessions应≈并发数；为0可能是session刚完成正在启动下一个
+     - 如果p27-sessions持续为0，检查launcher日志是否有rate_limit_pause
+
+=== 4. 进度 ===
+  prepared                   788
+  completed                  121
+  dead_session                 9
+  running                      1
+  ---
+  总完成: 130/919 (14%)
+  失败: 9 (失败率6%)
+
+  >> 需要检查：
+     - 进度是否在推进？对比上次检查的completed数
+     - rate_limited/dead_session/failed_stall是否有新增？有则需重新入队
+     - 失败率>15% = 需要降并发或检查rate limit
+
+=== 5. 续传质量汇总 ===
+  final_status分布: {'COMPLETED': 121}
+  proof.md: 存在=121, 有boxed=121, 太小=0
+  5轮全截断（可能思维错误）: 0
+  COMPLETED平均轮次: 1.0
+
+  >> 需要检查：
+     - proof.md存在数 vs COMPLETED数——不匹配说明有proof_missing
+     - 有boxed数 vs 存在数——不匹配说明有proof_no_boxed
+     - 5轮全截断数——这些是真正的思维错误候选
+     - COMPLETED平均轮次——如果>4说明大部分题需要很多轮才能完成
+
+=== 6. 通过率判定（415号§7.1）===
+  COMPLETED=121 / total=121 = 100.0%
+  判定: 大部分是截断错误 → POC-2.5需要重新选题，Pipe 1判定基础有严重问题
+  通过标准: COMPLETED≥50% → 通过
+
+  >> 需要检查：
+     - 通过率是否≥50%？这是POC-2.7的通过标准（415号§7.1）
+     - 如果通过率<50%，检查续传机制是否需要改进（v2交接文档自动化）
+     - 对TRUNCATED_AT_MAX的题，检查是否有proof.md但答案错误→真正的思维错误
+
+=== 7. 系统健康 ===
+  Redis: pending=496 running=1 completed=0
+  tmux: 解题session=1 handover session=3 服务session=2
+  devin cli进程: 4
+  配置并发数: 5
+  [WARNING] running(1) < concurrency(5)——handover可能阻塞或devin cli启动慢
+  完成率: 0/497 = 0%
+
+  >> 需要检查：
+     - 解题session数是否≈并发数？如果持续为0且handover session很多，handover生成可能太慢
+     - devin cli进程数是否>0？为0说明所有devin cli已退出，可能需要重启
+     - running < concurrency持续很长时间？检查launcher日志是否有handover阻塞
+     - 完成率是否在增长？对比上次检查的completed数
+
+=== 8. 运行时健康检查（10维度 A-J）===
+======================================================================
+错题分析系统运行时健康检查
+时间: 2026-08-20 02:06:16
+======================================================================
+
+【A. Redis操作原子性】
+  running中run_key为空: 0 ✅
+
+【B. DB-Redis一致性】
+  Redis running: 0
+  DB running:    29
+  Redis有DB无: 0 ✅ (launcher正在写DB)
+  DB有Redis无(孤儿): 29 ❌
+    孤儿示例: ['full-analysis-v2-r003755-polymath_00806', 'full-analysis-v2-r003770-oda_math_460k_00056606', 'full-analysis-v2-r003775-polymath_01127']
+
+【C. 重复run检测】
+  running中run数: 0
+  唯一problem_id数: 0
+  重复problem_id: 0 ✅
+
+【D. 并发上限实际验证】
+  设定并发:        5
+  Redis running:   0
+  an- tmux sessions: 0
+  running超并发:   ✅ (允许+5)
+
+【E. devin进程数 vs 并发数】
+  devin相关进程: 31
+  其中node进程:  0
+  并发=0，跳过僵尸进程检查（当前31个devin进程是其他session的）
+
+【F. 网络连接健康度】
+  devin进程TCP连接数: 45 (共31个进程)
+  预期连接数: ~0 (并发0×2)
+  launcher最近500行中网络错误: 0 ✅
+  launcher最近500行中rate limit: 0 ✅
+  failed队列中基础设施失败: 0/0 (0.0%)
+  ✅ 基础设施失败率低
+
+【G. devin异常退出率】
+  最近30分钟无终态产出（launcher可能还在运行中）
+
+【H. 落盘完整性】
+  检查34个completed记录:
+  缺trajectory目录: 0 ✅
+  缺tmux_pipe.log:  0 ✅
+  缺AGENTS.md:      0 ✅
+
+【I. 批次进度健康】
+  Redis队列: pending=0 running=0 completed=5 failed=0
+  failed率: 0.0%
+  ✅ failed率正常
+  批次 smoke-v4: concurrency=1 completed=1 failed=0
+
+【J. 日志健康】
+  launcher.log: 最近100行中 errors=0 warnings=33 ✅
+  result_collector.log: 最近100行中 errors=0 warnings=0 ✅
+  data_collector.log: 最近100行中 errors=0 warnings=0 ✅
+
+======================================================================
+判定: ⚠️ 有 1 个问题需要关注:
+  - [B] 29
+======================================================================
+
+  >> 需要检查：
+     - 10维度中哪些有⚠️问题？逐个关注
+     - [A] Redis原子性：running集合是否有残留
+     - [B] DB-Redis一致性：DB running数 vs Redis running数
+     - [C] 重复run：同一题是否有重复running
+     - [D] 并发上限：是否超过配置并发数
+     - [E] devin进程数：是否有僵尸进程
+     - [F] 网络健康：API是否可达
+     - [G] devin退出健康：异常退出率
+     - [H] 落盘完整性：completed的题是否都有落盘
+     - [I] 批次进度：进度是否在推进
+     - [J] 日志健康：是否有异常日志
+
+
+============================================
+检查完成 @ 2026-08-20T06:06:17Z
+
+>> AI后续检查清单（Master Agent 逐项处理）：
+   以下项目需要 Master Agent 全文加载 checklist/MasterAgentCheck.md 逐项处理：
+
+   1. [C类AI判断] MON-C1~C5：读proof.md/HANDOVER.md做判断
+      - 详见 checklist/MasterAgentCheck.md §C类AI判断
+
+   2. [self-check] SELF-S1~S17：每轮必须执行的自我检查
+      - 详见 checklist/MasterAgentCheck.md §self-check
+
+   3. [新alert分类处理] 读第2项alerts输出，逐个recheck
+      - 按docs/specs/p27_monitor_spec.md §2分类处理
+      - 处理完用 --resolve-alert <key> 标记为fixed
+      - 详见 checklist/MasterAgentCheck.md §新alert分类处理
+
+   4. [已知问题诊断] MON-A-issue-01~05中未诊断的优先诊断
+      - 详见 checklist/MasterAgentCheck.md §已知问题诊断
+
+   5. [落盘完整性检查] 每个round的完整落盘验证
+      - 详见 checklist/MasterAgentCheck.md §落盘完整性检查
+
+   6. [修复操作] 发现问题后修复，修复后同步更新文档+commit
+      - 详见 checklist/MasterAgentCheck.md §修复操作规范
+
+>> 执行方式：
+   - 全文加载 checklist/MasterAgentCheck.md
+   - 逐项处理上述清单中的每一项
+   - 每完成一项立即 commit（含 trace.csv 同步）
+   - 全部处理完后写执行结果记录
+
+>> 系统健康判断标准：
+   ✅ 健康 = launcher+monitor运行中 + devin cli活跃（pane有内容） + 进度在推进
+   ⚠️ 需关注 = 有新alert + 失败率>15% + handover生成慢
+   ❌修复 = launcher/monitor挂了 + devin cli全卡住 + 进度停滞
+============================================
+
+

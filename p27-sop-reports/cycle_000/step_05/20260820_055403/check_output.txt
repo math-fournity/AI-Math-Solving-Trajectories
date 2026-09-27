@@ -1,0 +1,8 @@
+--- 最近 5 个 commit ---
+8bb5430 修复continuation_control.py中ANALYSIS_ROOT未定义的bug
+852d018 新增AUDIT.md：数据审计方法——纲举目张查到每道题每轮每个round的所有数据
+7be7329 报表模板改为文件形态运行期资产
+802aacc SOP报表系统：每轮检查产出格式化报表+系统快照留存D盘
+25503e0 WP-14/HARD-12标记完成：检查体系缺口补全全部9项已落地
+
+

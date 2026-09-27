@@ -1,0 +1,423 @@
+{"t": 700.5, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": "环境"}
+{"t": 700.5, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": "就"}
+{"t": 700.5, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": "绪"}
+{"t": 700.5, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": "："}
+{"t": 700.7, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": "Python"}
+{"t": 700.7, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": " "}
+{"t": 700.7, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": "3"}
+{"t": 700.7, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": "."}
+{"t": 700.7, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": "14"}
+{"t": 700.7, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": " +"}
+{"t": 700.7, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": " symp"}
+{"t": 700.8, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": "y"}
+{"t": 700.8, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": " +"}
+{"t": 701.1, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": " numpy"}
+{"t": 701.2, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": " 可"}
+{"t": 701.2, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": "用"}
+{"t": 701.2, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": "，"}
+{"t": 701.2, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": "Lean"}
+{"t": 701.2, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": "/l"}
+{"t": 701.3, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": "ake"}
+{"t": 701.3, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": " 和"}
+{"t": 701.4, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": " Sage"}
+{"t": 701.4, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": "Math"}
+{"t": 701.5, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": " "}
+{"t": 701.6, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": "也在"}
+{"t": 701.6, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": "。"}
+{"t": 701.6, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": "先"}
+{"t": 701.6, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": "检查"}
+{"t": 701.6, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": " Lean"}
+{"t": 701.6, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": " 是否"}
+{"t": 701.9, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": "带"}
+{"t": 701.9, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": " Math"}
+{"t": 701.9, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": "lib"}
+{"t": 701.9, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": "（"}
+{"t": 701.9, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": "决定"}
+{"t": 701.9, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": "形式"}
+{"t": 702.1, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": "化"}
+{"t": 702.1, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": "路线"}
+{"t": 702.1, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": "），"}
+{"t": 702.1, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": "同时"}
+{"t": 702.1, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": "建立"}
+{"t": 702.2, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": "工作"}
+{"t": 702.2, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": "笔记"}
+{"t": 702.2, "mid": "msg_026ddc22700173A6oUujp3zp7w", "text": "。"}
+{"t": 839.1, "mid": "msg_026e056300015yGinb7d745FwU", "text": "Lean "}
+{"t": 839.1, "mid": "msg_026e056300015yGinb7d745FwU", "text": "触发了"}
+{"t": 839.2, "mid": "msg_026e056300015yGinb7d745FwU", "text": "工具链在线"}
+{"t": 839.3, "mid": "msg_026e056300015yGinb7d745FwU", "text": "下载并"}
+{"t": 839.4, "mid": "msg_026e056300015yGinb7d745FwU", "text": "超时。把它"}
+{"t": 839.4, "mid": "msg_026e056300015yGinb7d745FwU", "text": "放到后台继续"}
+{"t": 839.5, "mid": "msg_026e056300015yGinb7d745FwU", "text": "下载"}
+{"t": 839.6, "mid": "msg_026e056300015yGinb7d745FwU", "text": "，不"}
+{"t": 839.6, "mid": "msg_026e056300015yGinb7d745FwU", "text": "阻塞主线；"}
+{"t": 839.7, "mid": "msg_026e056300015yGinb7d745FwU", "text": "主"}
+{"t": 839.7, "mid": "msg_026e056300015yGinb7d745FwU", "text": "验证走"}
+{"t": 839.8, "mid": "msg_026e056300015yGinb7d745FwU", "text": " sympy + SageMath 双"}
+{"t": 839.9, "mid": "msg_026e056300015yGinb7d745FwU", "text": " CAS。"}
+{"t": 839.9, "mid": "msg_026e056300015yGinb7d745FwU", "text": "先"}
+{"t": 840.0, "mid": "msg_026e056300015yGinb7d745FwU", "text": "写工作笔记。"}
+{"t": 865.8, "mid": "msg_026e0ecff001HHhNSykEviU0kH", "text": "笔记已建立。现在"}
+{"t": 865.8, "mid": "msg_026e0ecff001HHhNSykEviU0kH", "text": "写主验证脚本（sy"}
+{"t": 865.9, "mid": "msg_026e0ecff001HHhNSykEviU0kH", "text": "mpy "}
+{"t": 866.0, "mid": "msg_026e0ecff001HHhNSykEviU0kH", "text": "符号计算，覆盖逻辑"}
+{"t": 866.0, "mid": "msg_026e0ecff001HHhNSykEviU0kH", "text": "链 S1–S9"}
+{"t": 866.1, "mid": "msg_026e0ecff001HHhNSykEviU0kH", "text": "）。"}
+{"t": 942.2, "mid": "msg_026e1d8b7001p5NSTMpM1r90Oa", "text": "小"}
+{"t": 942.5, "mid": "msg_026e1d8b7001p5NSTMpM1r90Oa", "text": "失误"}
+{"t": 942.5, "mid": "msg_026e1d8b7001p5NSTMpM1r90Oa", "text": "：我把"}
+{"t": 942.5, "mid": "msg_026e1d8b7001p5NSTMpM1r90Oa", "text": "系数"}
+{"t": 942.5, "mid": "msg_026e1d8b7001p5NSTMpM1r90Oa", "text": "写反"}
+{"t": 942.5, "mid": "msg_026e1d8b7001p5NSTMpM1r90Oa", "text": "了（`"}
+{"t": 942.7, "mid": "msg_026e1d8b7001p5NSTMpM1r90Oa", "text": "β"}
+{"t": 942.7, "mid": "msg_026e1d8b7001p5NSTMpM1r90Oa", "text": "·b + α·("}
+{"t": 942.7, "mid": "msg_026e1d8b7001p5NSTMpM1r90Oa", "text": "I−b)`"}
+{"t": 942.9, "mid": "msg_026e1d8b7001p5NSTMpM1r90Oa", "text": " 应"}
+{"t": 942.9, "mid": "msg_026e1d8b7001p5NSTMpM1r90Oa", "text": "为 `α"}
+{"t": 943.0, "mid": "msg_026e1d8b7001p5NSTMpM1r90Oa", "text": "·b + β"}
+{"t": 943.0, "mid": "msg_026e1d8b7001p5NSTMpM1r90Oa", "text": "·(I−b)`"}
+{"t": 943.1, "mid": "msg_026e1d8b7001p5NSTMpM1r90Oa", "text": "）。断"}
+{"t": 943.2, "mid": "msg_026e1d8b7001p5NSTMpM1r90Oa", "text": "言机制"}
+{"t": 943.3, "mid": "msg_026e1d8b7001p5NSTMpM1r90Oa", "text": "正确地拦"}
+{"t": 943.3, "mid": "msg_026e1d8b7001p5NSTMpM1r90Oa", "text": "下了"}
+{"t": 943.4, "mid": "msg_026e1d8b7001p5NSTMpM1r90Oa", "text": "这个"}
+{"t": 943.6, "mid": "msg_026e1d8b7001p5NSTMpM1r90Oa", "text": "错误，这正是"}
+{"t": 943.6, "mid": "msg_026e1d8b7001p5NSTMpM1r90Oa", "text": "它"}
+{"t": 943.6, "mid": "msg_026e1d8b7001p5NSTMpM1r90Oa", "text": "该干的"}
+{"t": 943.6, "mid": "msg_026e1d8b7001p5NSTMpM1r90Oa", "text": "活"}
+{"t": 943.8, "mid": "msg_026e1d8b7001p5NSTMpM1r90Oa", "text": "。修复"}
+{"t": 943.8, "mid": "msg_026e1d8b7001p5NSTMpM1r90Oa", "text": "后重跑。"}
+{"t": 1006.2, "mid": "msg_026e24e20001TPNEkIR1QA5vOb", "text": "全部"}
+{"t": 1006.2, "mid": "msg_026e24e20001TPNEkIR1QA5vOb", "text": " 30 项 symp"}
+{"t": 1006.2, "mid": "msg_026e24e20001TPNEkIR1QA5vOb", "text": "y "}
+{"t": 1006.2, "mid": "msg_026e24e20001TPNEkIR1QA5vOb", "text": "检查通过。现在"}
+{"t": 1006.2, "mid": "msg_026e24e20001TPNEkIR1QA5vOb", "text": "做第二 CAS"}
+{"t": 1006.2, "mid": "msg_026e24e20001TPNEkIR1QA5vOb", "text": "（"}
+{"t": 1006.2, "mid": "msg_026e24e20001TPNEkIR1QA5vOb", "text": "SageMath）独立交叉"}
+{"t": 1006.2, "mid": "msg_026e24e20001TPNEkIR1QA5vOb", "text": "验证，并查看"}
+{"t": 1006.2, "mid": "msg_026e24e20001TPNEkIR1QA5vOb", "text": " Lean 工具链后台"}
+{"t": 1006.2, "mid": "msg_026e24e20001TPNEkIR1QA5vOb", "text": "下载进度"}
+{"t": 1006.3, "mid": "msg_026e24e20001TPNEkIR1QA5vOb", "text": "。"}
+{"t": 1082.6, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "Lean"}
+{"t": 1082.6, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": " "}
+{"t": 1082.6, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "工"}
+{"t": 1082.6, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "具"}
+{"t": 1082.6, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "链"}
+{"t": 1082.6, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "已"}
+{"t": 1082.6, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "装"}
+{"t": 1082.6, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "好"}
+{"t": 1082.6, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "（"}
+{"t": 1082.6, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "v"}
+{"t": 1082.6, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "4"}
+{"t": 1082.6, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "."}
+{"t": 1082.6, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "33"}
+{"t": 1082.6, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "."}
+{"t": 1082.6, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "1"}
+{"t": 1082.6, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "）。"}
+{"t": 1082.6, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "S"}
+{"t": 1082.6, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "age"}
+{"t": 1082.6, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": " "}
+{"t": 1082.7, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "脚"}
+{"t": 1082.7, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "本"}
+{"t": 1082.7, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "有两"}
+{"t": 1082.7, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "处"}
+{"t": 1082.7, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "小"}
+{"t": 1082.7, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "问题"}
+{"t": 1082.7, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "："}
+{"t": 1082.7, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "`"}
+{"t": 1082.7, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "x"}
+{"t": 1082.7, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "`"}
+{"t": 1082.7, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": " 未"}
+{"t": 1082.7, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "显"}
+{"t": 1082.9, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "式"}
+{"t": 1082.9, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "定义"}
+{"t": 1082.9, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "、"}
+{"t": 1082.9, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "`"}
+{"t": 1082.9, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "random"}
+{"t": 1083.0, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "`"}
+{"t": 1083.0, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": " 未"}
+{"t": 1083.0, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "导入"}
+{"t": 1083.0, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "，"}
+{"t": 1083.1, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "且"}
+{"t": 1083.1, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": " `"}
+{"t": 1083.1, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "char"}
+{"t": 1083.1, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "poly"}
+{"t": 1083.1, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "`"}
+{"t": 1083.1, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": " 与"}
+{"t": 1083.6, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "符号"}
+{"t": 1083.6, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "表达"}
+{"t": 1083.6, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "式的"}
+{"t": 1083.6, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "比较"}
+{"t": 1083.6, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "方式"}
+{"t": 1083.6, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "不稳"}
+{"t": 1083.6, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "。"}
+{"t": 1083.6, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "重"}
+{"t": 1083.6, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "写"}
+{"t": 1083.6, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "修复"}
+{"t": 1083.6, "mid": "msg_026e3e5f40011W0HfSdnGJ7AMw", "text": "。"}
+{"t": 1184.0, "mid": "msg_026e54da5001mmuVXddSQ7biKz", "text": "`lambda`"}
+{"t": 1184.2, "mid": "msg_026e54da5001mmuVXddSQ7biKz", "text": " 是 Python "}
+{"t": 1184.2, "mid": "msg_026e54da5001mmuVXddSQ7biKz", "text": "保留字"}
+{"t": 1184.2, "mid": "msg_026e54da5001mmuVXddSQ7biKz", "text": "，不能当"}
+{"t": 1184.4, "mid": "msg_026e54da5001mmuVXddSQ7biKz", "text": "符号变量"}
+{"t": 1184.4, "mid": "msg_026e54da5001mmuVXddSQ7biKz", "text": "名。改"}
+{"t": 1184.4, "mid": "msg_026e54da5001mmuVXddSQ7biKz", "text": "名为"}
+{"t": 1184.5, "mid": "msg_026e54da5001mmuVXddSQ7biKz", "text": " `l"}
+{"t": 1184.6, "mid": "msg_026e54da5001mmuVXddSQ7biKz", "text": "mu` 后"}
+{"t": 1184.7, "mid": "msg_026e54da5001mmuVXddSQ7biKz", "text": "重跑。"}
+{"t": 1226.1, "mid": "msg_026e64954001YIXF55MclXZGIv", "text": "S"}
+{"t": 1226.1, "mid": "msg_026e64954001YIXF55MclXZGIv", "text": "age "}
+{"t": 1226.1, "mid": "msg_026e64954001YIXF55MclXZGIv", "text": "预解析"}
+{"t": 1226.1, "mid": "msg_026e64954001YIXF55MclXZGIv", "text": "把字"}
+{"t": 1226.1, "mid": "msg_026e64954001YIXF55MclXZGIv", "text": "面量变成了"}
+{"t": 1226.1, "mid": "msg_026e64954001YIXF55MclXZGIv", "text": " Sage Integer，Python"}
+{"t": 1226.2, "mid": "msg_026e64954001YIXF55MclXZGIv", "text": " 的 random"}
+{"t": 1226.3, "mid": "msg_026e64954001YIXF55MclXZGIv", "text": " 不认"}
+{"t": 1226.3, "mid": "msg_026e64954001YIXF55MclXZGIv", "text": "。用"}
+{"t": 1226.3, "mid": "msg_026e64954001YIXF55MclXZGIv", "text": " `int()`"}
+{"t": 1226.3, "mid": "msg_026e64954001YIXF55MclXZGIv", "text": " 包一下"}
+{"t": 1226.8, "mid": "msg_026e64954001YIXF55MclXZGIv", "text": "。"}
+{"t": 1337.9, "mid": "msg_026e77179001URrzlwNFA58QKs", "text": "S"}
+{"t": 1337.9, "mid": "msg_026e77179001URrzlwNFA58QKs", "text": "age 的 C"}
+{"t": 1337.9, "mid": "msg_026e77179001URrzlwNFA58QKs", "text": "DF 矩阵没有"}
+{"t": 1337.9, "mid": "msg_026e77179001URrzlwNFA58QKs", "text": " `operator_norm` 方法"}
+{"t": 1337.9, "mid": "msg_026e77179001URrzlwNFA58QKs", "text": "，改用 Sage"}
+{"t": 1337.9, "mid": "msg_026e77179001URrzlwNFA58QKs", "text": " 自带的 S"}
+{"t": 1338.1, "mid": "msg_026e77179001URrzlwNFA58QKs", "text": "VD（最大"}
+{"t": 1338.1, "mid": "msg_026e77179001URrzlwNFA58QKs", "text": "奇异值即"}
+{"t": 1338.2, "mid": "msg_026e77179001URrzlwNFA58QKs", "text": "谱范数）。"}
+{"t": 1401.6, "mid": "msg_026e8b36a0011C2hRlasqCPOLn", "text": "漏"}
+{"t": 1401.6, "mid": "msg_026e8b36a0011C2hRlasqCPOLn", "text": "改"}
+{"t": 1401.7, "mid": "msg_026e8b36a0011C2hRlasqCPOLn", "text": "了一处 `"}
+{"t": 1401.8, "mid": "msg_026e8b36a0011C2hRlasqCPOLn", "text": "mu`"}
+{"t": 1401.8, "mid": "msg_026e8b36a0011C2hRlasqCPOLn", "text": "（"}
+{"t": 1401.8, "mid": "msg_026e8b36a0011C2hRlasqCPOLn", "text": "第"}
+{"t": 1402.0, "mid": "msg_026e8b36a0011C2hRlasqCPOLn", "text": " 91 行），"}
+{"t": 1402.0, "mid": "msg_026e8b36a0011C2hRlasqCPOLn", "text": "修正"}
+{"t": 1402.1, "mid": "msg_026e8b36a0011C2hRlasqCPOLn", "text": "。"}
+{"t": 1529.2, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": "S"}
+{"t": 1529.2, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": "age"}
+{"t": 1529.2, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": " "}
+{"t": 1529.4, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": "交叉"}
+{"t": 1529.4, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": "验证"}
+{"t": 1529.4, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": "全部"}
+{"t": 1529.4, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": "通过"}
+{"t": 1529.4, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": "。"}
+{"t": 1529.4, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": "Lean"}
+{"t": 1529.6, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": " "}
+{"t": 1529.6, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": "工"}
+{"t": 1529.6, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": "具"}
+{"t": 1529.6, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": "链"}
+{"t": 1529.6, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": "也已"}
+{"t": 1529.7, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": "就"}
+{"t": 1529.7, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": "绪"}
+{"t": 1529.7, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": "，"}
+{"t": 1529.7, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": "现在"}
+{"t": 1529.7, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": "写"}
+{"t": 1529.7, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": "纯"}
+{"t": 1529.7, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": " core"}
+{"t": 1529.8, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": " 的"}
+{"t": 1529.8, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": " Lean"}
+{"t": 1529.8, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": " "}
+{"t": 1529.8, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": "核"}
+{"t": 1529.8, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": "验"}
+{"t": 1529.8, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": "（"}
+{"t": 1529.8, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": "不"}
+{"t": 1529.9, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": "依赖"}
+{"t": 1529.9, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": " Math"}
+{"t": 1529.9, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": "lib"}
+{"t": 1529.9, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": "，"}
+{"t": 1530.0, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": "把"}
+{"t": 1530.3, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": "反"}
+{"t": 1530.3, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": "例"}
+{"t": 1530.3, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": "承"}
+{"t": 1530.3, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": "重的"}
+{"t": 1530.3, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": "两条"}
+{"t": 1530.4, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": "代"}
+{"t": 1530.4, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": "数"}
+{"t": 1530.4, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": "事实"}
+{"t": 1530.4, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": "形式"}
+{"t": 1530.4, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": "化"}
+{"t": 1530.4, "mid": "msg_026e98aa9001e3s9tW2iVKy2OU", "text": "）。"}
+{"t": 1672.3, "mid": "msg_026ebdb73001SJeQpLt5ZJaQPf", "text": "Lean "}
+{"t": 1672.3, "mid": "msg_026ebdb73001SJeQpLt5ZJaQPf", "text": "报了"}
+{"t": 1672.3, "mid": "msg_026ebdb73001SJeQpLt5ZJaQPf", "text": "三类错"}
+{"t": 1672.3, "mid": "msg_026ebdb73001SJeQpLt5ZJaQPf", "text": "：投影"}
+{"t": 1672.3, "mid": "msg_026ebdb73001SJeQpLt5ZJaQPf", "text": "的"}
+{"t": 1672.3, "mid": "msg_026ebdb73001SJeQpLt5ZJaQPf", "text": " defe"}
+{"t": 1672.4, "mid": "msg_026ebdb73001SJeQpLt5ZJaQPf", "text": "q "}
+{"t": 1672.4, "mid": "msg_026ebdb73001SJeQpLt5ZJaQPf", "text": "没自动"}
+{"t": 1672.4, "mid": "msg_026ebdb73001SJeQpLt5ZJaQPf", "text": "展开（"}
+{"t": 1672.5, "mid": "msg_026ebdb73001SJeQpLt5ZJaQPf", "text": "改"}
+{"t": 1672.5, "mid": "msg_026ebdb73001SJeQpLt5ZJaQPf", "text": "用显"}
+{"t": 1672.5, "mid": "msg_026ebdb73001SJeQpLt5ZJaQPf", "text": "式 `unfold`"}
+{"t": 1672.6, "mid": "msg_026ebdb73001SJeQpLt5ZJaQPf", "text": "）、core"}
+{"t": 1672.7, "mid": "msg_026ebdb73001SJeQpLt5ZJaQPf", "text": " 里"}
+{"t": 1672.7, "mid": "msg_026ebdb73001SJeQpLt5ZJaQPf", "text": " `"}
+{"t": 1672.9, "mid": "msg_026ebdb73001SJeQpLt5ZJaQPf", "text": "ℤ` 的"}
+{"t": 1672.9, "mid": "msg_026ebdb73001SJeQpLt5ZJaQPf", "text": "算"}
+{"t": 1672.9, "mid": "msg_026ebdb73001SJeQpLt5ZJaQPf", "text": "术实例缺失（换"}
+{"t": 1673.2, "mid": "msg_026ebdb73001SJeQpLt5ZJaQPf", "text": " "}
+{"t": 1673.2, "mid": "msg_026ebdb73001SJeQpLt5ZJaQPf", "text": "`ℕ`，"}
+{"t": 1673.2, "mid": "msg_026ebdb73001SJeQpLt5ZJaQPf", "text": "这些"}
+{"t": 1673.2, "mid": "msg_026ebdb73001SJeQpLt5ZJaQPf", "text": "事实与"}
+{"t": 1673.3, "mid": "msg_026ebdb73001SJeQpLt5ZJaQPf", "text": "系数域"}
+{"t": 1673.3, "mid": "msg_026ebdb73001SJeQpLt5ZJaQPf", "text": "无关）、以及"}
+{"t": 1673.4, "mid": "msg_026ebdb73001SJeQpLt5ZJaQPf", "text": "一处类型"}
+{"t": 1673.4, "mid": "msg_026ebdb73001SJeQpLt5ZJaQPf", "text": "标注"}
+{"t": 1673.6, "mid": "msg_026ebdb73001SJeQpLt5ZJaQPf", "text": "语法错误"}
+{"t": 1673.6, "mid": "msg_026ebdb73001SJeQpLt5ZJaQPf", "text": "。重写修正"}
+{"t": 1673.7, "mid": "msg_026ebdb73001SJeQpLt5ZJaQPf", "text": "版"}
+{"t": 1673.7, "mid": "msg_026ebdb73001SJeQpLt5ZJaQPf", "text": "。"}
+{"t": 1735.8, "mid": "msg_026edbff3001iFlB02S56mfOZu", "text": "Lean 编"}
+{"t": 1735.8, "mid": "msg_026edbff3001iFlB02S56mfOZu", "text": "译通过，且"}
+{"t": 1735.8, "mid": "msg_026edbff3001iFlB02S56mfOZu", "text": " `"}
+{"t": 1736.0, "mid": "msg_026edbff3001iFlB02S56mfOZu", "text": "key_lemma`、"}
+{"t": 1736.0, "mid": "msg_026edbff3001iFlB02S56mfOZu", "text": "`psi_a_is_zero`"}
+{"t": 1736.1, "mid": "msg_026edbff3001iFlB02S56mfOZu", "text": " 不依赖任何公理（"}
+{"t": 1736.2, "mid": "msg_026edbff3001iFlB02S56mfOZu", "text": "无 sorry）。三条"}
+{"t": 1736.3, "mid": "msg_026edbff3001iFlB02S56mfOZu", "text": "独立"}
+{"t": 1736.3, "mid": "msg_026edbff3001iFlB02S56mfOZu", "text": "验证线"}
+{"t": 1736.3, "mid": "msg_026edbff3001iFlB02S56mfOZu", "text": "全部就绪。先"}
+{"t": 1736.3, "mid": "msg_026edbff3001iFlB02S56mfOZu", "text": "更新工作笔记，再写"}
+{"t": 1736.5, "mid": "msg_026edbff3001iFlB02S56mfOZu", "text": "最终"}
+{"t": 1736.6, "mid": "msg_026edbff3001iFlB02S56mfOZu", "text": " proof.md。"}
+{"t": 1828.0, "mid": "msg_026ef96730010tMjtGjLqX7Vxx", "text": "最后"}
+{"t": 1828.1, "mid": "msg_026ef96730010tMjtGjLqX7Vxx", "text": "做"}
+{"t": 1828.2, "mid": "msg_026ef96730010tMjtGjLqX7Vxx", "text": "一次全量复跑（"}
+{"t": 1828.3, "mid": "msg_026ef96730010tMjtGjLqX7Vxx", "text": "三个"}
+{"t": 1828.3, "mid": "msg_026ef96730010tMjtGjLqX7Vxx", "text": "验证"}
+{"t": 1828.3, "mid": "msg_026ef96730010tMjtGjLqX7Vxx", "text": "器从"}
+{"t": 1828.4, "mid": "msg_026ef96730010tMjtGjLqX7Vxx", "text": "零到"}
+{"t": 1828.4, "mid": "msg_026ef96730010tMjtGjLqX7Vxx", "text": "绿），并"}
+{"t": 1828.5, "mid": "msg_026ef96730010tMjtGjLqX7Vxx", "text": "核对交付物清单"}
+{"t": 1828.6, "mid": "msg_026ef96730010tMjtGjLqX7Vxx", "text": "。"}
+{"t": 1868.8, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "解题完成。最终"}
+{"t": 1868.8, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "答案"}
+{"t": 1869.0, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "：**No——"}
+{"t": 1869.0, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "这样的 f 和 a"}
+{"t": 1869.0, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": " 不必存在。"}
+{"t": 1869.1, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "**\n\n**核心"}
+{"t": 1869.2, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "反例**：取"}
+{"t": 1869.3, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": " $A=\\mathbb{"}
+{"t": 1869.3, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "C}$、$B"}
+{"t": 1869.4, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "=M_2(\\mathbb"}
+{"t": 1869.5, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "{C})$、$\\"}
+{"t": 1869.5, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "psi(\\lambda)=\\lambda"}
+{"t": 1869.6, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": " e"}
+{"t": 1869.6, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "_{12}$、$"}
+{"t": 1869.8, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "b=e_{11}$。\n"}
+{"t": 1869.8, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "- $\\psi$ 是线性"}
+{"t": 1869.9, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "连续"}
+{"t": 1869.9, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "映射但"}
+{"t": 1870.0, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "不是 \\"}
+{"t": 1870.1, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "*-同态（"}
+{"t": 1870.1, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "$e_{12}^"}
+{"t": 1870.2, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "2=0\\neq"}
+{"t": 1870.3, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": " e_{12}$ 不"}
+{"t": 1870.3, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "保乘法，$e"}
+{"t": 1870.4, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "_{12}^*="}
+{"t": 1870.4, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "e_{21}\\"}
+{"t": 1870.6, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "neq e_{12}$"}
+{"t": 1870.7, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": " 不保对合）；\n"}
+{"t": 1870.7, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "- $b$ "}
+{"t": 1870.7, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "非零正规"}
+{"t": 1870.8, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "，$\\sigma_B(b)="}
+{"t": 1870.8, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "\\{0,1\\"}
+{"t": 1870.9, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "}$，$C^*("}
+{"t": 1871.0, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "b,b^*)=\\"}
+{"t": 1871.0, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "{\\"}
+{"t": 1871.1, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "alpha e_{11}+\\"}
+{"t": 1871.2, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "beta e_{22}\\}$"}
+{"t": 1871.3, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "（对角代"}
+{"t": 1871.4, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "数）；\n- 方"}
+{"t": 1871.5, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "程 $\\lambda e_{12"}
+{"t": 1871.5, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "}=\\mathrm"}
+{"t": 1871.6, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "{diag"}
+{"t": 1871.6, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "}(\\alpha,\\"}
+{"t": 1871.8, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "beta)$ 比较"}
+{"t": 1871.8, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": " $(1,2)$ 元"}
+{"t": 1871.8, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "强制 $\\lambda="}
+{"t": 1871.9, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "0$，故 $\\psi"}
+{"t": 1871.9, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "(A)\\cap C^*("}
+{"t": 1872.0, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "b,b"}
+{"t": 1872.1, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "^*)=\\{0\\"}
+{"t": 1872.2, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "}$，无非"}
+{"t": 1872.3, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "零解。\n\n由于"}
+{"t": 1872.3, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": " $\\"}
+{"t": 1872.6, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "phi$ 到"}
+{"t": 1872.6, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "上，题目"}
+{"t": 1872.7, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "等"}
+{"t": 1872.7, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "价于问"}
+{"t": 1872.8, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "“"}
+{"t": 1872.9, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "$\\"}
+{"t": 1873.0, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "psi(A)\\cap C^"}
+{"t": 1873.0, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "*(b,b^*)$"}
+{"t": 1873.1, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": " 是否必含非零元"}
+{"t": 1873.1, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "”，"}
+{"t": 1873.2, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "一个反例即"}
+{"t": 1873.3, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "否定全称断"}
+{"t": 1873.3, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "言。proof"}
+{"t": 1873.4, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": ".md 第"}
+{"t": 1873.5, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": " 3 节还"}
+{"t": 1873.5, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "证明了"}
+{"t": 1873.6, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "结论"}
+{"t": 1873.7, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "的"}
+{"t": 1873.8, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "稳健性：即使把\""}
+{"t": 1873.8, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "non \\*-homomorphism"}
+{"t": 1873.9, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "\"读成非"}
+{"t": 1874.0, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "零 \\"}
+{"t": 1874.0, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "*-同态或"}
+{"t": 1874.2, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "保乘不"}
+{"t": 1874.2, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "保 \\* 的同态"}
+{"t": 1874.2, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "，答案"}
+{"t": 1874.2, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "仍是 No。\n\n"}
+{"t": 1874.3, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "**形式化验证**（"}
+{"t": 1874.4, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "三"}
+{"t": 1874.4, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "工具独立"}
+{"t": 1874.5, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "、"}
+{"t": 1874.6, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "全绿、"}
+{"t": 1874.6, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "复"}
+{"t": 1874.7, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "跑确认"}
+{"t": 1874.8, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "）：\n- sympy："}
+{"t": 1874.8, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "逻辑"}
+{"t": 1874.9, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "链 S1–S9"}
+{"t": 1875.0, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": " 共 30 项检查"}
+{"t": 1875.0, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "全"}
+{"t": 1875.1, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": " PASS（含"}
+{"t": 1875.3, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "对"}
+{"t": 1875.3, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "全体 f 的符号"}
+{"t": 1875.3, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "求解"}
+{"t": 1875.5, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "、阳性对照、"}
+{"t": 1875.6, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "通有性检查）；\n"}
+{"t": 1875.6, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "- SageMath "}
+{"t": 1875.7, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "10.9"}
+{"t": 1875.7, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "：第二 CAS 独"}
+{"t": 1875.8, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "立交叉"}
+{"t": 1875.8, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "验证 C1–C8"}
+{"t": 1875.8, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": " 共 22 项全"}
+{"t": 1876.0, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": " PASS；\n- Lean"}
+{"t": 1876.1, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": " 4."}
+{"t": 1876.1, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "33.1 "}
+{"t": 1876.2, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "纯 core"}
+{"t": 1876.2, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "：承重引"}
+{"t": 1876.4, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "理 `key_lemma`"}
+{"t": 1876.5, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "/"}
+{"t": 1876.5, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "`"}
+{"t": 1876.7, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "psi_a_is_zero` 编"}
+{"t": 1876.8, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "译通过且"}
+{"t": 1876.9, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "不"}
+{"t": 1876.9, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "依赖任何公理。\n\n"}
+{"t": 1877.0, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "交付物：`proof.md"}
+{"t": 1877.1, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "`（完整"}
+{"t": 1877.1, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "解答 +"}
+{"t": 1877.4, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": " "}
+{"t": 1877.4, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "验证映射表 +"}
+{"t": 1877.4, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": " `\\boxed{\\"}
+{"t": 1877.4, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "text{No}}`）、"}
+{"t": 1877.4, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "`工作笔记.md`、"}
+{"t": 1877.5, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "`verify_counterexample.py`"}
+{"t": 1877.6, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "、`sage_cross_check"}
+{"t": 1877.6, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": ".sage`"}
+{"t": 1877.7, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "、`lean_core_check."}
+{"t": 1877.7, "mid": "msg_026f03cf2001XUMeHn7yJk7rXd", "text": "lean`。"}

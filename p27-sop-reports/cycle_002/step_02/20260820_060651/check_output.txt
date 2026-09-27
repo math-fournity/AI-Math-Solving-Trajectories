@@ -1,0 +1,102 @@
+--- 数据完整性检查（200个run，最多200个）---
+  检查了 200 个 run 的 1027 个文件
+  发现 71 个问题：
+  [deepmath_103k_00025244 R2] 输出 export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00025244/round2/exports/conversation.json
+  [deepmath_103k_00025241 R2] 输出 export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00025241/round2/exports/conversation.json
+  [deepmath_103k_00025196 R2] 输出 export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00025196/round2/exports/conversation.json
+  [deepmath_103k_00025072 R2] 输出 export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00025072/round2/exports/conversation.json
+  [deepmath_103k_00024997 R2] 输出 export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00024997/round2/exports/conversation.json
+  [deepmath_103k_00024890 R2] 输出 export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00024890/round2/exports/conversation.json
+  [deepmath_103k_00024867 R2] 输出 export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00024867/round2/exports/conversation.json
+  [deepmath_103k_00024655 R2] 输出 export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00024655/round2/exports/conversation.json
+  [deepmath_103k_00024474 R2] 输出 export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00024474/round2/exports/conversation.json
+  [deepmath_103k_00024424 R2] 输出 export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00024424/round2/exports/conversation.json
+  [deepmath_103k_00024398 R2] 输出 export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00024398/round2/exports/conversation.json
+  [deepmath_103k_00024207 R2] 输出 export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00024207/round2/exports/conversation.json
+  [deepmath_103k_00024069 R2] 输出 export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00024069/round2/exports/conversation.json
+  [deepmath_103k_00024039 R2] 输出 export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00024039/round2/exports/conversation.json
+  [deepmath_103k_00023660 R2] 输出 export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00023660/round2/exports/conversation.json
+  [deepmath_103k_00023631 R2] 输出 export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00023631/round2/exports/conversation.json
+  [deepmath_103k_00023503 R2] 输出 export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00023503/round2/exports/conversation.json
+  [deepmath_103k_00023427 R2] 输出 export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00023427/round2/exports/conversation.json
+  [deepmath_103k_00022418 R2] 输出 export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00022418/round2/exports/conversation.json
+  [deepmath_103k_00022226 R2] 输出 export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00022226/round2/exports/conversation.json
+  [deepmath_103k_00022909 R2] 输出 export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00022909/round2/exports/conversation.json
+  [deepmath_103k_00022634 R2] 输出 export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00022634/round2/exports/conversation.json
+  [deepmath_103k_00022179 R2] 输出 export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00022179/round2/exports/conversation.json
+  [deepmath_103k_00019446 R2] 输出 export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00019446/round2/exports/conversation.json
+  [deepmath_103k_00017797 R2] 输出 export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00017797/round2/exports/conversation.json
+  [deepmath_103k_00017363 R2] 输出 export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00017363/round2/exports/conversation.json
+  [deepmath_103k_00017342 R2] 输出 export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00017342/round2/exports/conversation.json
+  [deepmath_103k_00017228 R2] 输出 export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00017228/round2/exports/conversation.json
+  [deepmath_103k_00015973 R2] 输出 export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00015973/round2/exports/conversation.json
+  [deepmath_103k_00016158 R2] 输出 export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00016158/round2/exports/conversation.json
+  ... 还有 41 个问题
+
+
+--- proof.md 质量统计（RUN-05）---
+  总 run 数: 919
+  COMPLETED: 121 (121/919 = 13.2%)
+  proof.md 存在: 132
+  proof.md 有 boxed: 132
+  存在率（proof_exists/COMPLETED）: 132/121 = 109.1%
+  boxed 率（has_boxed/proof_exists）: 132/132 = 100.0%
+
+--- results 集合检查 ---
+  results 集合文档数: 0
+  runs 中 COMPLETED 数: 121
+  ⚠️ results 集合为空或不满——121 个 COMPLETED 的结果未归档到 results（数据丢失风险）
+
+--- events 完整性检查 ---
+  有事件的 run 数: 320
+  有 launched 无 completed/failed: 30 个
+  ⚠️ 以下 run 事件不完整（可能还在运行或崩溃未写完成事件）：
+    p27-full-amo_bench_00000006
+    p27-full-amo_bench_00000008
+    p27-full-deepmath_103k_00000006
+    p27-full-deepmath_103k_00000036
+    p27-full-deepmath_103k_00000041
+    p27-full-deepmath_103k_00000650
+    p27-full-deepmath_103k_00000688
+    p27-full-deepmath_103k_00000716
+    p27-full-deepmath_103k_00000765
+    p27-full-deepmath_103k_00000773
+    ... 还有 20 个
+
+--- prepared 堆积检查 ---
+  prepared 状态的 run 数: 786
+  Redis pending 数: 495
+  prepared/pending 比例正常
+
+--- 按题源完成率统计 ---
+  amo: 0/2 = 0.0% ⚠️ 全0%
+  deepmath: 121/382 = 31.7%
+  mathnet: 0/1 = 0.0% ⚠️ 全0%
+  oda: 0/304 = 0.0% ⚠️ 全0%
+  omni: 0/23 = 0.0% ⚠️ 全0%
+  polymath: 0/207 = 0.0% ⚠️ 全0%
+  ⚠️ 5 个题源完成率为0%——系统性问题（prompt不适用？model不胜任？还是没跑到？）
+
+--- 标准文件检查（100个run）---
+  发现 100 个问题：
+  [mathnet_001631] round1 export 缺失（不在rounds_log中）
+  [omni_math_004100] round1 export 缺失（不在rounds_log中）
+  [omni_math_004104] round1 export 缺失（不在rounds_log中）
+  [omni_math_004105] round1 export 缺失（不在rounds_log中）
+  [omni_math_004116] round1 export 缺失（不在rounds_log中）
+  [omni_math_004123] round1 export 缺失（不在rounds_log中）
+  [omni_math_004127] round1 export 缺失（不在rounds_log中）
+  [omni_math_004128] round1 export 缺失（不在rounds_log中）
+  [omni_math_004133] round1 export 缺失（不在rounds_log中）
+  [omni_math_004146] round1 export 缺失（不在rounds_log中）
+  [omni_math_004147] round1 export 缺失（不在rounds_log中）
+  [omni_math_004208] round1 export 缺失（不在rounds_log中）
+  [omni_math_004164] round1 export 缺失（不在rounds_log中）
+  [omni_math_000042] round1 export 缺失（不在rounds_log中）
+  [omni_math_000058] round1 export 缺失（不在rounds_log中）
+  ... 还有 85 个问题
+
+--- round 编号连续性检查（50个run）---
+  从 round=2 开始的 run: 50/50
+  编号连续（但全部从 round=2 开始——需AI确认是否 by design）
+

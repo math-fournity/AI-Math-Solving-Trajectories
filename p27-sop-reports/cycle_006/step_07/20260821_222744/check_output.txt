@@ -1,0 +1,33 @@
+--- 1. 队列与状态快照（间接层——接管自 SOP_01 A16/A17 并升级）---
+  Redis paudit 四队列: {'pending': 122, 'running': 0, 'completed': 12, 'failed': 1}
+  p27_proof_audit_runs 分布: [{"status": "prepared", "count": 123}, {"status": "completed", "count": 17}, {"status": "failed", "count": 1}]
+  p27_proof_audits 总数: 14
+  audit_status 分布: [{"status": "PASS", "count": 8}, {"status": "PASS_WITH_CAVEAT", "count": 5}, {"status": "FAIL_WRONG_ANSWER", "count": 1}]
+  失败率: 7.1% ✅（阈值 20%，来源 SYSTEM_CLOSURE §6）
+--- 2. 失败审计分析（paudit:failed reason 分布）---
+  failed reason 分布: {'stall_timeout': 1}
+--- 3. 门闸 Y 通道（审计专属）---
+  无 AUDIT 门闸在等放行 ✅
+--- 4.【直接】审计产出实物验证（抽5个读 export）---
+  [paudit-p27-full-deepmath_103k_00000550] export存在=True XML=True DB audit_status=PASS
+  [paudit-p27-full-deepmath_103k_00000360] export存在=True XML=True DB audit_status=PASS
+  [paudit-p27-full-deepmath_103k_00000521] export存在=True XML=True DB audit_status=PASS
+  [paudit-p27-full-deepmath_103k_00000295] export存在=True XML=True DB audit_status=PASS
+  [paudit-p27-full-amo_bench_00000008] export存在=True XML=True DB audit_status=PASS_WITH_CAVEAT
+  ✅ 抽样 5 全部实物在案且含 XML
+--- 5.【直接】审计通过题交叉验证（028 教训）---
+  [00000174] proof=✅存在且含boxed（/Volumes/data/math-agent-glm5.2-tmux-agents-dir/p27-continuation/p27-full-deepmath_）
+  [00000360] proof=❌缺失或无boxed（未找到）
+  [00000619] proof=❌缺失或无boxed（未找到）
+  [00000622] proof=❌缺失或无boxed（未找到）
+  [00000632] proof=❌缺失或无boxed（未找到）
+--- 6.【直接】作弊题证据复核（原 C9 移入）---
+  无 FAIL_CHEATING 记录 ✅
+--- 7.【直接】孤儿审计 session 对账 ---
+  tmux paudit session: 0 个；Redis running: 0
+  ✅ 对账一致
+--- 8. PARSE_ERROR 堆积检查（WP-N 语义：待人工）---
+  PARSE_ERROR 数量: 1
+    待人工: paudit-p27-full-deepmath_103k_00000036 error=export 存在但未提取到 agent 输出文本
+  对应 alert 未 resolve——人工复查清单见上
+

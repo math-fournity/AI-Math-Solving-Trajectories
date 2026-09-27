@@ -1,0 +1,71 @@
+{
+  "batch_id": "p27-full",
+  "timestamp": "2026-08-21T05:48:40.759916+00:00",
+  "cycle": 6,
+  "step": "02",
+  "step_name": "数据完整性",
+  "aggregate": {
+    "total_runs": 6082,
+    "status_counts": {
+      "completed": 124,
+      "prepared": 5957,
+      "running": 1
+    },
+    "final_status_counts": {
+      "COMPLETED": 124,
+      "None": 5958
+    },
+    "completed": 124,
+    "completion_rate": 0.0204,
+    "results_collection_count": 0,
+    "events_total": 630,
+    "sessions_total": 1804
+  },
+  "by_source": {
+    "aime": {
+      "total": 13,
+      "completed": 0,
+      "rate": 0.0
+    },
+    "amo": {
+      "total": 2,
+      "completed": 0,
+      "rate": 0.0
+    },
+    "compfiles": {
+      "total": 118,
+      "completed": 0,
+      "rate": 0.0
+    },
+    "deepmath": {
+      "total": 1305,
+      "completed": 124,
+      "rate": 0.095
+    },
+    "fate": {
+      "total": 33,
+      "completed": 0,
+      "rate": 0.0
+    },
+    "mathnet": {
+      "total": 2,
+      "completed": 0,
+      "rate": 0.0
+    },
+    "oda": {
+      "total": 584,
+      "completed": 0,
+      "rate": 0.0
+    },
+    "omni": {
+      "total": 52,
+      "completed": 0,
+      "rate": 0.0
+    },
+    "polymath": {
+      "total": 3973,
+      "completed": 0,
+      "rate": 0.0
+    }
+  }
+}

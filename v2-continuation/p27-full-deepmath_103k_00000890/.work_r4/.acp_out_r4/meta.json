@@ -1,0 +1,20 @@
+{
+ "round": 4,
+ "role": "observer",
+ "sessionId": "ses_fd87129dbffepsxrKJ3Kfvgzvc",
+ "protocolVersion": 1,
+ "counts": {
+  "thought": 44,
+  "message": 0,
+  "tool": 9
+ },
+ "thought_chars": 502,
+ "message_chars": 0,
+ "outputTokens": 0,
+ "stopReason": "end_turn",
+ "final_status": "ENDED_NO_PROOF",
+ "budget_starved": false,
+ "has_proof": false,
+ "has_boxed": false,
+ "duration_sec": 9.6
+}

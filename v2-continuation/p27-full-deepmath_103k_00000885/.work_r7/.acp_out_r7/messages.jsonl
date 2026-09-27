@@ -1,0 +1,446 @@
+{"t": 523.3, "mid": "msg_0272d96b0001mycBFfgfPgYz5a", "text": "环境就绪。笔记"}
+{"t": 523.3, "mid": "msg_0272d96b0001mycBFfgfPgYz5a", "text": "已通"}
+{"t": 523.4, "mid": "msg_0272d96b0001mycBFfgfPgYz5a", "text": "读——"}
+{"t": 523.4, "mid": "msg_0272d96b0001mycBFfgfPgYz5a", "text": "研究已闭合"}
+{"t": 523.5, "mid": "msg_0272d96b0001mycBFfgfPgYz5a", "text": "，我的"}
+{"t": 523.5, "mid": "msg_0272d96b0001mycBFfgfPgYz5a", "text": "任务是："}
+{"t": 523.6, "mid": "msg_0272d96b0001mycBFfgfPgYz5a", "text": "把证明"}
+{"t": 523.7, "mid": "msg_0272d96b0001mycBFfgfPgYz5a", "text": "链严格"}
+{"t": 523.8, "mid": "msg_0272d96b0001mycBFfgfPgYz5a", "text": "成"}
+{"t": 523.8, "mid": "msg_0272d96b0001mycBFfgfPgYz5a", "text": "文 +"}
+{"t": 523.9, "mid": "msg_0272d96b0001mycBFfgfPgYz5a", "text": " "}
+{"t": 524.0, "mid": "msg_0272d96b0001mycBFfgfPgYz5a", "text": "形式化验证。先"}
+{"t": 524.0, "mid": "msg_0272d96b0001mycBFfgfPgYz5a", "text": "建立"}
+{"t": 524.1, "mid": "msg_0272d96b0001mycBFfgfPgYz5a", "text": "工作笔记记录"}
+{"t": 524.2, "mid": "msg_0272d96b0001mycBFfgfPgYz5a", "text": "推理块，再"}
+{"t": 524.2, "mid": "msg_0272d96b0001mycBFfgfPgYz5a", "text": "逐块"}
+{"t": 524.3, "mid": "msg_0272d96b0001mycBFfgfPgYz5a", "text": "验证。"}
+{"t": 606.8, "mid": "msg_0272e678e0010XACLX1dAkptt0", "text": "现在"}
+{"t": 606.8, "mid": "msg_0272e678e0010XACLX1dAkptt0", "text": "跑"}
+{"t": 606.8, "mid": "msg_0272e678e0010XACLX1dAkptt0", "text": "验证"}
+{"t": 606.8, "mid": "msg_0272e678e0010XACLX1dAkptt0", "text": "脚本 V1–"}
+{"t": 606.9, "mid": "msg_0272e678e0010XACLX1dAkptt0", "text": "V2（L"}
+{"t": 606.9, "mid": "msg_0272e678e0010XACLX1dAkptt0", "text": "aplace 常数"}
+{"t": 607.0, "mid": "msg_0272e678e0010XACLX1dAkptt0", "text": "符号验证"}
+{"t": 607.0, "mid": "msg_0272e678e0010XACLX1dAkptt0", "text": " + Fubini "}
+{"t": 607.1, "mid": "msg_0272e678e0010XACLX1dAkptt0", "text": "恒等式数值"}
+{"t": 607.2, "mid": "msg_0272e678e0010XACLX1dAkptt0", "text": "验证）："}
+{"t": 658.8, "mid": "msg_0272f9df0001WKVV14Sh9T8Pzj", "text": "修正"}
+{"t": 658.9, "mid": "msg_0272f9df0001WKVV14Sh9T8Pzj", "text": "两"}
+{"t": 658.9, "mid": "msg_0272f9df0001WKVV14Sh9T8Pzj", "text": "处：sy"}
+{"t": 659.0, "mid": "msg_0272f9df0001WKVV14Sh9T8Pzj", "text": "mpy 用具体"}
+{"t": 659.1, "mid": "msg_0272f9df0001WKVV14Sh9T8Pzj", "text": "有"}
+{"t": 659.1, "mid": "msg_0272f9df0001WKVV14Sh9T8Pzj", "text": "理 β "}
+{"t": 659.2, "mid": "msg_0272f9df0001WKVV14Sh9T8Pzj", "text": "验证常数"}
+{"t": 659.3, "mid": "msg_0272f9df0001WKVV14Sh9T8Pzj", "text": "；数值"}
+{"t": 659.3, "mid": "msg_0272f9df0001WKVV14Sh9T8Pzj", "text": "积分改用 mpmath"}
+{"t": 659.4, "mid": "msg_0272f9df0001WKVV14Sh9T8Pzj", "text": " "}
+{"t": 659.4, "mid": "msg_0272f9df0001WKVV14Sh9T8Pzj", "text": "处理慢"}
+{"t": 659.5, "mid": "msg_0272f9df0001WKVV14Sh9T8Pzj", "text": "衰减"}
+{"t": 659.6, "mid": "msg_0272f9df0001WKVV14Sh9T8Pzj", "text": "尾部"}
+{"t": 659.6, "mid": "msg_0272f9df0001WKVV14Sh9T8Pzj", "text": "；修"}
+{"t": 659.7, "mid": "msg_0272f9df0001WKVV14Sh9T8Pzj", "text": "掉"}
+{"t": 659.8, "mid": "msg_0272f9df0001WKVV14Sh9T8Pzj", "text": " V2 的索引"}
+{"t": 659.8, "mid": "msg_0272f9df0001WKVV14Sh9T8Pzj", "text": "笔"}
+{"t": 659.9, "mid": "msg_0272f9df0001WKVV14Sh9T8Pzj", "text": "误："}
+{"t": 740.9, "mid": "msg_027307977001ek6xwG61ya06sE", "text": "Step"}
+{"t": 740.9, "mid": "msg_027307977001ek6xwG61ya06sE", "text": "3"}
+{"t": 741.0, "mid": "msg_027307977001ek6xwG61ya06sE", "text": " 三角代数已"}
+{"t": 741.0, "mid": "msg_027307977001ek6xwG61ya06sE", "text": "到机器精度，但两"}
+{"t": 741.1, "mid": "msg_027307977001ek6xwG61ya06sE", "text": "处需"}
+{"t": 741.2, "mid": "msg_027307977001ek6xwG61ya06sE", "text": "修：sy"}
+{"t": 741.2, "mid": "msg_027307977001ek6xwG61ya06sE", "text": "mpy 对"}
+{"t": 741.3, "mid": "msg_027307977001ek6xwG61ya06sE", "text": "半线积分误"}
+{"t": 741.4, "mid": "msg_027307977001ek6xwG61ya06sE", "text": "判 `-"}
+{"t": 741.4, "mid": "msg_027307977001ek6xwG61ya06sE", "text": "oo`（换"}
+{"t": 741.5, "mid": "msg_027307977001ek6xwG61ya06sE", "text": "用"}
+{"t": 741.6, "mid": "msg_027307977001ek6xwG61ya06sE", "text": "高"}
+{"t": 741.6, "mid": "msg_027307977001ek6xwG61ya06sE", "text": "斯加权"}
+{"t": 741.7, "mid": "msg_027307977001ek6xwG61ya06sE", "text": "恒"}
+{"t": 741.8, "mid": "msg_027307977001ek6xwG61ya06sE", "text": "等式绕"}
+{"t": 741.8, "mid": "msg_027307977001ek6xwG61ya06sE", "text": "开振荡"}
+{"t": 741.8, "mid": "msg_027307977001ek6xwG61ya06sE", "text": "尾部"}
+{"t": 741.9, "mid": "msg_027307977001ek6xwG61ya06sE", "text": "），"}
+{"t": 742.0, "mid": "msg_027307977001ek6xwG61ya06sE", "text": "V"}
+{"t": 742.0, "mid": "msg_027307977001ek6xwG61ya06sE", "text": "2 的 E"}
+{"t": 742.1, "mid": "msg_027307977001ek6xwG61ya06sE", "text": " "}
+{"t": 742.2, "mid": "msg_027307977001ek6xwG61ya06sE", "text": "差值"}
+{"t": 742.2, "mid": "msg_027307977001ek6xwG61ya06sE", "text": "异常需"}
+{"t": 742.3, "mid": "msg_027307977001ek6xwG61ya06sE", "text": "排查"}
+{"t": 742.4, "mid": "msg_027307977001ek6xwG61ya06sE", "text": "（代"}
+{"t": 742.4, "mid": "msg_027307977001ek6xwG61ya06sE", "text": "数上"}
+{"t": 742.5, "mid": "msg_027307977001ek6xwG61ya06sE", "text": "两"}
+{"t": 742.5, "mid": "msg_027307977001ek6xwG61ya06sE", "text": "表达式应恒"}
+{"t": 742.6, "mid": "msg_027307977001ek6xwG61ya06sE", "text": "等）："}
+{"t": 782.0, "mid": "msg_027317aaa001pW93Rrpg0egGtu", "text": "找到"}
+{"t": 782.0, "mid": "msg_027317aaa001pW93Rrpg0egGtu", "text": " bug：`E"}
+{"t": 782.1, "mid": "msg_027317aaa001pW93Rrpg0egGtu", "text": "_direct` "}
+{"t": 782.1, "mid": "msg_027317aaa001pW93Rrpg0egGtu", "text": "漏乘"}
+{"t": 782.2, "mid": "msg_027317aaa001pW93Rrpg0egGtu", "text": "了一个 $"}
+{"t": 782.3, "mid": "msg_027317aaa001pW93Rrpg0egGtu", "text": "g$ 因子——"}
+{"t": 782.4, "mid": "msg_027317aaa001pW93Rrpg0egGtu", "text": "`E_pot`（"}
+{"t": 782.4, "mid": "msg_027317aaa001pW93Rrpg0egGtu", "text": "即"}
+{"t": 782.6, "mid": "msg_027317aaa001pW93Rrpg0egGtu", "text": " $\\int gV"}
+{"t": 782.6, "mid": "msg_027317aaa001pW93Rrpg0egGtu", "text": "$）才是对的"}
+{"t": 782.6, "mid": "msg_027317aaa001pW93Rrpg0egGtu", "text": "。"}
+{"t": 782.7, "mid": "msg_027317aaa001pW93Rrpg0egGtu", "text": "修正后重写 V1"}
+{"t": 782.7, "mid": "msg_027317aaa001pW93Rrpg0egGtu", "text": "+"}
+{"t": 782.8, "mid": "msg_027317aaa001pW93Rrpg0egGtu", "text": "V2："}
+{"t": 1414.1, "mid": "msg_0273b5677001k4kK8A74yaP1rp", "text": "超时——"}
+{"t": 1414.2, "mid": "msg_0273b5677001k4kK8A74yaP1rp", "text": "mpmath"}
+{"t": 1414.2, "mid": "msg_0273b5677001k4kK8A74yaP1rp", "text": " 高精度分段积分"}
+{"t": 1414.3, "mid": "msg_0273b5677001k4kK8A74yaP1rp", "text": "太慢且"}
+{"t": 1414.4, "mid": "msg_0273b5677001k4kK8A74yaP1rp", "text": " stdout 缓冲"}
+{"t": 1414.4, "mid": "msg_0273b5677001k4kK8A74yaP1rp", "text": "。改"}
+{"t": 1414.5, "mid": "msg_0273b5677001k4kK8A74yaP1rp", "text": "用 `python3 -u"}
+{"t": 1414.6, "mid": "msg_0273b5677001k4kK8A74yaP1rp", "text": "` +"}
+{"t": 1414.6, "mid": "msg_0273b5677001k4kK8A74yaP1rp", "text": " 更"}
+{"t": 1414.7, "mid": "msg_0273b5677001k4kK8A74yaP1rp", "text": "快"}
+{"t": 1414.8, "mid": "msg_0273b5677001k4kK8A74yaP1rp", "text": "策略"}
+{"t": 1414.8, "mid": "msg_0273b5677001k4kK8A74yaP1rp", "text": "（"}
+{"t": 1414.9, "mid": "msg_0273b5677001k4kK8A74yaP1rp", "text": "quadosc、"}
+{"t": 1415.0, "mid": "msg_0273b5677001k4kK8A74yaP1rp", "text": "降"}
+{"t": 1415.0, "mid": "msg_0273b5677001k4kK8A74yaP1rp", "text": "精度）："}
+{"t": 1464.9, "mid": "msg_0273bc0e0001A0z0aD1gzjAnXH", "text": "V1b"}
+{"t": 1465.0, "mid": "msg_0273bc0e0001A0z0aD1gzjAnXH", "text": " 高"}
+{"t": 1465.1, "mid": "msg_0273bc0e0001A0z0aD1gzjAnXH", "text": "斯加权"}
+{"t": 1465.1, "mid": "msg_0273bc0e0001A0z0aD1gzjAnXH", "text": "恒等式以"}
+{"t": 1465.2, "mid": "msg_0273bc0e0001A0z0aD1gzjAnXH", "text": " "}
+{"t": 1465.2, "mid": "msg_0273bc0e0001A0z0aD1gzjAnXH", "text": "1.6e-8"}
+{"t": 1465.3, "mid": "msg_0273bc0e0001A0z0aD1gzjAnXH", "text": " 精度"}
+{"t": 1465.4, "mid": "msg_0273bc0e0001A0z0aD1gzjAnXH", "text": "锁定 $c_\\beta$"}
+{"t": 1465.4, "mid": "msg_0273bc0e0001A0z0aD1gzjAnXH", "text": "（"}
+{"t": 1465.5, "mid": "msg_0273bc0e0001A0z0aD1gzjAnXH", "text": "这是"}
+{"t": 1465.5, "mid": "msg_0273bc0e0001A0z0aD1gzjAnXH", "text": "权威验证——"}
+{"t": 1465.6, "mid": "msg_0273bc0e0001A0z0aD1gzjAnXH", "text": "非"}
+{"t": 1465.7, "mid": "msg_0273bc0e0001A0z0aD1gzjAnXH", "text": "振荡积分"}
+{"t": 1465.8, "mid": "msg_0273bc0e0001A0z0aD1gzjAnXH", "text": "）；"}
+{"t": 1465.9, "mid": "msg_0273bc0e0001A0z0aD1gzjAnXH", "text": "V2"}
+{"t": 1466.0, "mid": "msg_0273bc0e0001A0z0aD1gzjAnXH", "text": " 两"}
+{"t": 1466.1, "mid": "msg_0273bc0e0001A0z0aD1gzjAnXH", "text": "项代"}
+{"t": 1466.1, "mid": "msg_0273bc0e0001A0z0aD1gzjAnXH", "text": "数恒"}
+{"t": 1466.1, "mid": "msg_0273bc0e0001A0z0aD1gzjAnXH", "text": "等式全部"}
+{"t": 1466.2, "mid": "msg_0273bc0e0001A0z0aD1gzjAnXH", "text": "机器"}
+{"t": 1467.6, "mid": "msg_0273bc0e0001A0z0aD1gzjAnXH", "text": "精度通过"}
+{"t": 1467.6, "mid": "msg_0273bc0e0001A0z0aD1gzjAnXH", "text": "。追加"}
+{"t": 1467.6, "mid": "msg_0273bc0e0001A0z0aD1gzjAnXH", "text": "工作笔记，"}
+{"t": 1467.6, "mid": "msg_0273bc0e0001A0z0aD1gzjAnXH", "text": "然后跑 V3–"}
+{"t": 1467.6, "mid": "msg_0273bc0e0001A0z0aD1gzjAnXH", "text": "V5"}
+{"t": 1467.6, "mid": "msg_0273bc0e0001A0z0aD1gzjAnXH", "text": "："}
+{"t": 1560.0, "mid": "msg_0273d50f0001er3ES1mN8Ghfjf", "text": "V3"}
+{"t": 1560.0, "mid": "msg_0273d50f0001er3ES1mN8Ghfjf", "text": "/V"}
+{"t": 1560.1, "mid": "msg_0273d50f0001er3ES1mN8Ghfjf", "text": "3"}
+{"t": 1560.1, "mid": "msg_0273d50f0001er3ES1mN8Ghfjf", "text": "b/V4"}
+{"t": 1560.2, "mid": "msg_0273d50f0001er3ES1mN8Ghfjf", "text": "/V5 全部符合"}
+{"t": 1560.3, "mid": "msg_0273d50f0001er3ES1mN8Ghfjf", "text": "预期。"}
+{"t": 1560.3, "mid": "msg_0273d50f0001er3ES1mN8Ghfjf", "text": "V4"}
+{"t": 1560.4, "mid": "msg_0273d50f0001er3ES1mN8Ghfjf", "text": "b "}
+{"t": 1560.5, "mid": "msg_0273d50f0001er3ES1mN8Ghfjf", "text": "循环疑似"}
+{"t": 1560.6, "mid": "msg_0273d50f0001er3ES1mN8Ghfjf", "text": "静默出错"}
+{"t": 1560.6, "mid": "msg_0273d50f0001er3ES1mN8Ghfjf", "text": "（"}
+{"t": 1560.7, "mid": "msg_0273d50f0001er3ES1mN8Ghfjf", "text": "stderr 被丢弃"}
+{"t": 1560.7, "mid": "msg_0273d50f0001er3ES1mN8Ghfjf", "text": "），单独重跑排查"}
+{"t": 1560.8, "mid": "msg_0273d50f0001er3ES1mN8Ghfjf", "text": "："}
+{"t": 1598.5, "mid": "msg_0273e2317001Bk7zTXSOZSc7mM", "text": "V4b 通过"}
+{"t": 1598.5, "mid": "msg_0273e2317001Bk7zTXSOZSc7mM", "text": "：真实"}
+{"t": 1598.6, "mid": "msg_0273e2317001Bk7zTXSOZSc7mM", "text": "势的"}
+{"t": 1598.7, "mid": "msg_0273e2317001Bk7zTXSOZSc7mM", "text": " $F(u)$ 在"}
+{"t": 1598.8, "mid": "msg_0273e2317001Bk7zTXSOZSc7mM", "text": " $u\\to0^"}
+{"t": 1598.8, "mid": "msg_0273e2317001Bk7zTXSOZSc7mM", "text": "+$ 有界（"}
+{"t": 1598.9, "mid": "msg_0273e2317001Bk7zTXSOZSc7mM", "text": "趋于"}
+{"t": 1599.0, "mid": "msg_0273e2317001Bk7zTXSOZSc7mM", "text": "有限"}
+{"t": 1599.0, "mid": "msg_0273e2317001Bk7zTXSOZSc7mM", "text": "极限"}
+{"t": 1599.1, "mid": "msg_0273e2317001Bk7zTXSOZSc7mM", "text": " $-J$），$"}
+{"t": 1599.2, "mid": "msg_0273e2317001Bk7zTXSOZSc7mM", "text": "F(u)/u^"}
+{"t": 1599.2, "mid": "msg_0273e2317001Bk7zTXSOZSc7mM", "text": "{\\beta-1}\\to"}
+{"t": 1599.3, "mid": "msg_0273e2317001Bk7zTXSOZSc7mM", "text": "0$——"}
+{"t": 1599.4, "mid": "msg_0273e2317001Bk7zTXSOZSc7mM", "text": "若"}
+{"t": 1599.4, "mid": "msg_0273e2317001Bk7zTXSOZSc7mM", "text": "假设式 $"}
+{"t": 1599.5, "mid": "msg_0273e2317001Bk7zTXSOZSc7mM", "text": "F=A"}
+{"t": 1599.6, "mid": "msg_0273e2317001Bk7zTXSOZSc7mM", "text": "u^"}
+{"t": 1599.6, "mid": "msg_0273e2317001Bk7zTXSOZSc7mM", "text": "{\\beta-1}$ 成立"}
+{"t": 1599.7, "mid": "msg_0273e2317001Bk7zTXSOZSc7mM", "text": "则必须"}
+{"t": 1599.8, "mid": "msg_0273e2317001Bk7zTXSOZSc7mM", "text": " $A=0$，"}
+{"t": 1599.9, "mid": "msg_0273e2317001Bk7zTXSOZSc7mM", "text": "Step"}
+{"t": 1599.9, "mid": "msg_0273e2317001Bk7zTXSOZSc7mM", "text": " "}
+{"t": 1600.0, "mid": "msg_0273e2317001Bk7zTXSOZSc7mM", "text": "1 "}
+{"t": 1600.0, "mid": "msg_0273e2317001Bk7zTXSOZSc7mM", "text": "爆破"}
+{"t": 1600.1, "mid": "msg_0273e2317001Bk7zTXSOZSc7mM", "text": "机制数值"}
+{"t": 1600.2, "mid": "msg_0273e2317001Bk7zTXSOZSc7mM", "text": "确认。修正"}
+{"t": 1600.4, "mid": "msg_0273e2317001Bk7zTXSOZSc7mM", "text": "脚本里的"}
+{"t": 1600.5, "mid": "msg_0273e2317001Bk7zTXSOZSc7mM", "text": " f"}
+{"t": 1600.5, "mid": "msg_0273e2317001Bk7zTXSOZSc7mM", "text": "-string "}
+{"t": 1600.5, "mid": "msg_0273e2317001Bk7zTXSOZSc7mM", "text": "笔误"}
+{"t": 1600.5, "mid": "msg_0273e2317001Bk7zTXSOZSc7mM", "text": "并跑"}
+{"t": 1600.6, "mid": "msg_0273e2317001Bk7zTXSOZSc7mM", "text": " V6："}
+{"t": 1655.0, "mid": "msg_0273ec654001EQzkfBAmb14j6l", "text": "V6 "}
+{"t": 1655.1, "mid": "msg_0273ec654001EQzkfBAmb14j6l", "text": "均值与理论 $"}
+{"t": 1655.2, "mid": "msg_0273ec654001EQzkfBAmb14j6l", "text": "\\mathbb{"}
+{"t": 1655.3, "mid": "msg_0273ec654001EQzkfBAmb14j6l", "text": "E}[Z]=3"}
+{"t": 1655.4, "mid": "msg_0273ec654001EQzkfBAmb14j6l", "text": "/(4H+1)$"}
+{"t": 1655.4, "mid": "msg_0273ec654001EQzkfBAmb14j6l", "text": " 一"}
+{"t": 1655.5, "mid": "msg_0273ec654001EQzkfBAmb14j6l", "text": "致（H=0."}
+{"t": 1655.5, "mid": "msg_0273ec654001EQzkfBAmb14j6l", "text": "5: 1.0"}
+{"t": 1655.6, "mid": "msg_0273ec654001EQzkfBAmb14j6l", "text": "15"}
+{"t": 1655.7, "mid": "msg_0273ec654001EQzkfBAmb14j6l", "text": " vs 1.000"}
+{"t": 1655.8, "mid": "msg_0273ec654001EQzkfBAmb14j6l", "text": "；H=0.7"}
+{"t": 1655.8, "mid": "msg_0273ec654001EQzkfBAmb14j6l", "text": ": 0.7"}
+{"t": 1655.9, "mid": "msg_0273ec654001EQzkfBAmb14j6l", "text": "75 vs 0.78"}
+{"t": 1656.0, "mid": "msg_0273ec654001EQzkfBAmb14j6l", "text": "9）。"}
+{"t": 1656.0, "mid": "msg_0273ec654001EQzkfBAmb14j6l", "text": "补一个更有"}
+{"t": 1656.1, "mid": "msg_0273ec654001EQzkfBAmb14j6l", "text": "意义的无"}
+{"t": 1656.1, "mid": "msg_0273ec654001EQzkfBAmb14j6l", "text": "原子检查——"}
+{"t": 1656.2, "mid": "msg_0273ec654001EQzkfBAmb14j6l", "text": "区间"}
+{"t": 1656.3, "mid": "msg_0273ec654001EQzkfBAmb14j6l", "text": "质量除"}
+{"t": 1656.3, "mid": "msg_0273ec654001EQzkfBAmb14j6l", "text": "以长度在"}
+{"t": 1656.4, "mid": "msg_0273ec654001EQzkfBAmb14j6l", "text": " $\\varepsilon$ "}
+{"t": 1656.5, "mid": "msg_0273ec654001EQzkfBAmb14j6l", "text": "细化"}
+{"t": 1656.6, "mid": "msg_0273ec654001EQzkfBAmb14j6l", "text": "时应"}
+{"t": 1656.6, "mid": "msg_0273ec654001EQzkfBAmb14j6l", "text": "稳定："}
+{"t": 1669.5, "mid": "msg_0273f3de90017agWFRNm9pgurv", "text": "无"}
+{"t": 1669.7, "mid": "msg_0273f3de90017agWFRNm9pgurv", "text": "原子"}
+{"t": 1669.7, "mid": "msg_0273f3de90017agWFRNm9pgurv", "text": "检查"}
+{"t": 1669.7, "mid": "msg_0273f3de90017agWFRNm9pgurv", "text": "完美"}
+{"t": 1669.7, "mid": "msg_0273f3de90017agWFRNm9pgurv", "text": "通过"}
+{"t": 1669.8, "mid": "msg_0273f3de90017agWFRNm9pgurv", "text": "（"}
+{"t": 1669.8, "mid": "msg_0273f3de90017agWFRNm9pgurv", "text": "四个"}
+{"t": 1670.0, "mid": "msg_0273f3de90017agWFRNm9pgurv", "text": "测试"}
+{"t": 1670.0, "mid": "msg_0273f3de90017agWFRNm9pgurv", "text": "点的"}
+{"t": 1670.0, "mid": "msg_0273f3de90017agWFRNm9pgurv", "text": "区间"}
+{"t": 1670.1, "mid": "msg_0273f3de90017agWFRNm9pgurv", "text": "密度"}
+{"t": 1670.2, "mid": "msg_0273f3de90017agWFRNm9pgurv", "text": "估计"}
+{"t": 1670.2, "mid": "msg_0273f3de90017agWFRNm9pgurv", "text": "随"}
+{"t": 1670.3, "mid": "msg_0273f3de90017agWFRNm9pgurv", "text": " ε"}
+{"t": 1670.3, "mid": "msg_0273f3de90017agWFRNm9pgurv", "text": " "}
+{"t": 1670.3, "mid": "msg_0273f3de90017agWFRNm9pgurv", "text": "细"}
+{"t": 1670.3, "mid": "msg_0273f3de90017agWFRNm9pgurv", "text": "化"}
+{"t": 1670.3, "mid": "msg_0273f3de90017agWFRNm9pgurv", "text": "全部"}
+{"t": 1670.3, "mid": "msg_0273f3de90017agWFRNm9pgurv", "text": "稳定"}
+{"t": 1670.3, "mid": "msg_0273f3de90017agWFRNm9pgurv", "text": "）。"}
+{"t": 1670.3, "mid": "msg_0273f3de90017agWFRNm9pgurv", "text": "现在"}
+{"t": 1670.3, "mid": "msg_0273f3de90017agWFRNm9pgurv", "text": "尝试"}
+{"t": 1670.4, "mid": "msg_0273f3de90017agWFRNm9pgurv", "text": "网络"}
+{"t": 1670.5, "mid": "msg_0273f3de90017agWFRNm9pgurv", "text": "核实"}
+{"t": 1670.5, "mid": "msg_0273f3de90017agWFRNm9pgurv", "text": " BH"}
+{"t": 1670.5, "mid": "msg_0273f3de90017agWFRNm9pgurv", "text": " "}
+{"t": 1670.5, "mid": "msg_0273f3de90017agWFRNm9pgurv", "text": "判"}
+{"t": 1670.5, "mid": "msg_0273f3de90017agWFRNm9pgurv", "text": "据"}
+{"t": 1670.5, "mid": "msg_0273f3de90017agWFRNm9pgurv", "text": "的"}
+{"t": 1670.6, "mid": "msg_0273f3de90017agWFRNm9pgurv", "text": "引用"}
+{"t": 1670.6, "mid": "msg_0273f3de90017agWFRNm9pgurv", "text": "编号"}
+{"t": 1670.6, "mid": "msg_0273f3de90017agWFRNm9pgurv", "text": "："}
+{"t": 1741.0, "mid": "msg_027401c130018bQ2F179GFzat8", "text": "拿到"}
+{"t": 1741.1, "mid": "msg_027401c130018bQ2F179GFzat8", "text": "权威"}
+{"t": 1741.2, "mid": "msg_027401c130018bQ2F179GFzat8", "text": "旁"}
+{"t": 1741.2, "mid": "msg_027401c130018bQ2F179GFzat8", "text": "证：Nualart 本人"}
+{"t": 1741.3, "mid": "msg_027401c130018bQ2F179GFzat8", "text": "讲"}
+{"t": 1741.4, "mid": "msg_027401c130018bQ2F179GFzat8", "text": "义中"}
+{"t": 1741.4, "mid": "msg_027401c130018bQ2F179GFzat8", "text": "该判据为 **Prop"}
+{"t": 1741.5, "mid": "msg_027401c130018bQ2F179GFzat8", "text": "osition 9.2**"}
+{"t": 1741.5, "mid": "msg_027401c130018bQ2F179GFzat8", "text": "（\"Let $"}
+{"t": 1741.6, "mid": "msg_027401c130018bQ2F179GFzat8", "text": "F\\in\\mathbb"}
+{"t": 1741.7, "mid": "msg_027401c130018bQ2F179GFzat8", "text": " D^{1,2}$"}
+{"t": 1741.8, "mid": "msg_027401c130018bQ2F179GFzat8", "text": " such that $\\"}
+{"t": 1741.9, "mid": "msg_027401c130018bQ2F179GFzat8", "text": "|DF\\|>"}
+{"t": 1741.9, "mid": "msg_027401c130018bQ2F179GFzat8", "text": "0$"}
+{"t": 1742.0, "mid": "msg_027401c130018bQ2F179GFzat8", "text": " a.s. Then the law"}
+{"t": 1742.1, "mid": "msg_027401c130018bQ2F179GFzat8", "text": " of $F$ is absolutely"}
+{"t": 1742.1, "mid": "msg_027401c130018bQ2F179GFzat8", "text": " continuous\"，"}
+{"t": 1742.2, "mid": "msg_027401c130018bQ2F179GFzat8", "text": "并注明多维"}
+{"t": 1742.3, "mid": "msg_027401c130018bQ2F179GFzat8", "text": "版本"}
+{"t": 1742.3, "mid": "msg_027401c130018bQ2F179GFzat8", "text": "由 Bouleau–H"}
+{"t": 1742.4, "mid": "msg_027401c130018bQ2F179GFzat8", "text": "irsch 证明）。再交叉"}
+{"t": 1742.5, "mid": "msg_027401c130018bQ2F179GFzat8", "text": "核实"}
+{"t": 1742.5, "mid": "msg_027401c130018bQ2F179GFzat8", "text": "书的版"}
+{"t": 1742.6, "mid": "msg_027401c130018bQ2F179GFzat8", "text": "编号"}
+{"t": 1742.7, "mid": "msg_027401c130018bQ2F179GFzat8", "text": "："}
+{"t": 1807.9, "mid": "msg_0274141f9001gow6NODksaIdBq", "text": "决定"}
+{"t": 1808.0, "mid": "msg_0274141f9001gow6NODksaIdBq", "text": "性旁"}
+{"t": 1808.0, "mid": "msg_0274141f9001gow6NODksaIdBq", "text": "证到手"}
+{"t": 1808.1, "mid": "msg_0274141f9001gow6NODksaIdBq", "text": "：Nourdin–Pe"}
+{"t": 1808.2, "mid": "msg_0274141f9001gow6NODksaIdBq", "text": "ccati 论"}
+{"t": 1808.2, "mid": "msg_0274141f9001gow6NODksaIdBq", "text": "文引用\"["}
+{"t": 1808.3, "mid": "msg_0274141f9001gow6NODksaIdBq", "text": "19, Theorem 2"}
+{"t": 1808.4, "mid": "msg_0274141f9001gow6NODksaIdBq", "text": ".1.3]\"（"}
+{"t": 1808.4, "mid": "msg_0274141f9001gow6NODksaIdBq", "text": "[19]="}
+{"t": 1808.5, "mid": "msg_0274141f9001gow6NODksaIdBq", "text": "Nualart 书"}
+{"t": 1808.6, "mid": "msg_0274141f9001gow6NODksaIdBq", "text": "）用于"}
+{"t": 1808.6, "mid": "msg_0274141f9001gow6NODksaIdBq", "text": "同一"}
+{"t": 1808.7, "mid": "msg_0274141f9001gow6NODksaIdBq", "text": "判据，"}
+{"t": 1808.8, "mid": "msg_0274141f9001gow6NODksaIdBq", "text": "且书的"}
+{"t": 1808.9, "mid": "msg_0274141f9001gow6NODksaIdBq", "text": "镜像"}
+{"t": 1808.9, "mid": "msg_0274141f9001gow6NODksaIdBq", "text": "页在"}
+{"t": 1809.1, "mid": "msg_0274141f9001gow6NODksaIdBq", "text": "第二章"}
+{"t": 1809.1, "mid": "msg_0274141f9001gow6NODksaIdBq", "text": "出现"}
+{"t": 1809.1, "mid": "msg_0274141f9001gow6NODksaIdBq", "text": "\""}
+{"t": 1809.2, "mid": "msg_0274141f9001gow6NODksaIdBq", "text": "By Theorem 2."}
+{"t": 1809.3, "mid": "msg_0274141f9001gow6NODksaIdBq", "text": "1.3\"。"}
+{"t": 1809.3, "mid": "msg_0274141f9001gow6NODksaIdBq", "text": "抓取书"}
+{"t": 1809.4, "mid": "msg_0274141f9001gow6NODksaIdBq", "text": "页原文做"}
+{"t": 1809.4, "mid": "msg_0274141f9001gow6NODksaIdBq", "text": "最终确认："}
+{"t": 1831.5, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "书"}
+{"t": 1831.6, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "原文"}
+{"t": 1831.8, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "逐"}
+{"t": 1831.8, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "字"}
+{"t": 1831.8, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "确认"}
+{"t": 1831.8, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "："}
+{"t": 1831.8, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "**"}
+{"t": 1831.8, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "The"}
+{"t": 1831.9, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "orem"}
+{"t": 1832.0, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": " "}
+{"t": 1832.0, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "2"}
+{"t": 1832.0, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "."}
+{"t": 1832.0, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "1"}
+{"t": 1832.0, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "."}
+{"t": 1832.1, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "3"}
+{"t": 1832.1, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "**"}
+{"t": 1832.1, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "（"}
+{"t": 1832.2, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "$\\"}
+{"t": 1832.3, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "math"}
+{"t": 1832.3, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "bb"}
+{"t": 1832.3, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": " D"}
+{"t": 1832.3, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "^{"}
+{"t": 1832.3, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "1"}
+{"t": 1832.3, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": ","}
+{"t": 1833.1, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "1"}
+{"t": 1833.1, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "}_{"}
+{"t": 1833.1, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "loc"}
+{"t": 1833.1, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "}$"}
+{"t": 1833.1, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "，"}
+{"t": 1833.2, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "$\\"}
+{"t": 1833.2, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "|"}
+{"t": 1833.2, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "DF"}
+{"t": 1833.2, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "\\"}
+{"t": 1833.2, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "|"}
+{"t": 1833.2, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": ">"}
+{"t": 1833.2, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "0"}
+{"t": 1833.2, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "$"}
+{"t": 1833.2, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": " a"}
+{"t": 1833.2, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": ".s"}
+{"t": 1833.2, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "."}
+{"t": 1833.2, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": " "}
+{"t": 1833.3, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "⟹"}
+{"t": 1833.3, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": " "}
+{"t": 1833.4, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "绝"}
+{"t": 1833.4, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "对"}
+{"t": 1833.4, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "连续"}
+{"t": 1833.7, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "），"}
+{"t": 1833.7, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "且"}
+{"t": 1833.7, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "历史"}
+{"t": 1833.7, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "注"}
+{"t": 1833.7, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "记"}
+{"t": 1833.7, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "明"}
+{"t": 1833.8, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "说"}
+{"t": 1834.0, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "这就是"}
+{"t": 1834.0, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": " Bou"}
+{"t": 1834.0, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "le"}
+{"t": 1834.0, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "au"}
+{"t": 1834.0, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "–"}
+{"t": 1834.0, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "H"}
+{"t": 1834.0, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "irsch"}
+{"t": 1834.1, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": " "}
+{"t": 1834.1, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "判"}
+{"t": 1834.1, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "据"}
+{"t": 1834.1, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "。"}
+{"t": 1834.1, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "顺手"}
+{"t": 1834.2, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "从"}
+{"t": 1834.2, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "同一"}
+{"t": 1834.2, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "文本"}
+{"t": 1834.2, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "核实"}
+{"t": 1834.4, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": " $\\"}
+{"t": 1834.4, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "math"}
+{"t": 1834.4, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "bb"}
+{"t": 1834.4, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": " D"}
+{"t": 1834.4, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "^{"}
+{"t": 1834.4, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "1"}
+{"t": 1834.4, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": ",p"}
+{"t": 1834.4, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "}$"}
+{"t": 1834.4, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": " "}
+{"t": 1834.5, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "完"}
+{"t": 1834.5, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "备"}
+{"t": 1834.5, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "性"}
+{"t": 1834.6, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "引"}
+{"t": 1834.6, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "理"}
+{"t": 1834.6, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "的"}
+{"t": 1834.6, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "编号"}
+{"t": 1834.6, "mid": "msg_0274199f3001l52xs9g2Tdba4x", "text": "："}
+{"t": 1945.6, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "$"}
+{"t": 1945.7, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "\\math"}
+{"t": 1945.7, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "bb"}
+{"t": 1945.7, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": " D"}
+{"t": 1945.7, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "^{"}
+{"t": 1945.7, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "1"}
+{"t": 1945.7, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": ",p"}
+{"t": 1945.8, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "}$"}
+{"t": 1945.8, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": " "}
+{"t": 1945.8, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "完"}
+{"t": 1945.8, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "备"}
+{"t": 1945.8, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "性"}
+{"t": 1945.8, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "框架"}
+{"t": 1945.9, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "也"}
+{"t": 1945.9, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "确认"}
+{"t": 1945.9, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "（"}
+{"t": 1946.0, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "书"}
+{"t": 1946.0, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": " §"}
+{"t": 1946.1, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "1"}
+{"t": 1946.1, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "."}
+{"t": 1946.1, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "2"}
+{"t": 1946.1, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "："}
+{"t": 1946.2, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "$\\"}
+{"t": 1946.2, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "math"}
+{"t": 1946.2, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "bb"}
+{"t": 1946.2, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": " D"}
+{"t": 1946.2, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "^{"}
+{"t": 1946.2, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "1"}
+{"t": 1946.2, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": ",p"}
+{"t": 1946.2, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "}$"}
+{"t": 1946.2, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": " 定义"}
+{"t": 1946.2, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "为"}
+{"t": 1946.3, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "光滑"}
+{"t": 1946.3, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "变量"}
+{"t": 1946.3, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "在"}
+{"t": 1946.3, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "范"}
+{"t": 1946.3, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "数"}
+{"t": 1946.3, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": " $\\"}
+{"t": 1946.3, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "|"}
+{"t": 1946.3, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "F"}
+{"t": 1946.3, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "\\"}
+{"t": 1946.4, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "|"}
+{"t": 1946.4, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "_{"}
+{"t": 1946.4, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "1"}
+{"t": 1946.4, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": ",p"}
+{"t": 1946.4, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "}$"}
+{"t": 1946.5, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": " "}
+{"t": 1946.5, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "下的"}
+{"t": 1946.5, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "闭"}
+{"t": 1946.6, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "包"}
+{"t": 1946.6, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "，"}
+{"t": 1946.6, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "Prop"}
+{"t": 1946.6, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": " "}
+{"t": 1946.6, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "1"}
+{"t": 1946.6, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "."}
+{"t": 1946.6, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "2"}
+{"t": 1946.6, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "."}
+{"t": 1946.6, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "1"}
+{"t": 1946.6, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": " 可"}
+{"t": 1946.7, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "闭"}
+{"t": 1946.7, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "性"}
+{"t": 1946.7, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "）。"}
+{"t": 1946.7, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "所有"}
+{"t": 1946.8, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "引用"}
+{"t": 1946.8, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "已"}
+{"t": 1946.8, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "核实"}
+{"t": 1946.8, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "。"}
+{"t": 1946.8, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "更新"}
+{"t": 1946.8, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "工作"}
+{"t": 1947.0, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "笔记"}
+{"t": 1947.0, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "后"}
+{"t": 1947.1, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "成"}
+{"t": 1947.1, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "文"}
+{"t": 1947.1, "mid": "msg_02741f7ce001SnFCoP46QlXpxS", "text": "："}
+{"t": 1980.2, "mid": "msg_02743ecc2001nVkuDQvKdxxiK7", "text": "现在写主"}
+{"t": 1980.2, "mid": "msg_02743ecc2001nVkuDQvKdxxiK7", "text": "交付物 `"}
+{"t": 1980.3, "mid": "msg_02743ecc2001nVkuDQvKdxxiK7", "text": "proof.md`："}
+{"t": 2263.9, "mid": "msg_02743ecc2001nVkuDQvKdxxiK7", "text": "现在写最终"}
+{"t": 2263.9, "mid": "msg_02743ecc2001nVkuDQvKdxxiK7", "text": "交付 proof"}
+{"t": 2264.0, "mid": "msg_02743ecc2001nVkuDQvKdxxiK7", "text": ".md："}

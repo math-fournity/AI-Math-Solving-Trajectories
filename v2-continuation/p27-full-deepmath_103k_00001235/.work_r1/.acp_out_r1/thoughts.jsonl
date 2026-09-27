@@ -1,0 +1,488 @@
+{"t": 3.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "Let"}
+{"t": 4.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " me start by understanding the problem"}
+{"t": 4.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ".\n\nWe have"}
+{"t": 4.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $\\alpha \\neq "}
+{"t": 4.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "0$ such"}
+{"t": 4.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " that for every $\\beta <"}
+{"t": 4.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " \\alpha$, there exists $\\"}
+{"t": 4.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "beta < \\gamma"}
+{"t": 4.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " < \\alpha$ and an"}
+{"t": 4.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " elementary embedding from $V_\\"}
+{"t": 4.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "gamma$ to $V_\\"}
+{"t": 4.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "alpha$. Does"}
+{"t": 4.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " it follow that $V_\\"}
+{"t": 4.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "alpha$ models the replacement axiom"}
+{"t": 4.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "?\n\nThis is a question"}
+{"t": 5.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " in"}
+{"t": 5.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " set theory about"}
+{"t": 5.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " elementary embeddings between"}
+{"t": 5.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " ranks"}
+{"t": 5.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " of the"}
+{"t": 5.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " cumulative hierarchy."}
+{"t": 5.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " Let"}
+{"t": 5.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " me think carefully"}
+{"t": 5.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ".\n\nFirst, let"}
+{"t": 5.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " me set"}
+{"t": 5.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " up notation"}
+{"t": 6.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ". $"}
+{"t": 6.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "V_\\alpha"}
+{"t": 6.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "$ denotes"}
+{"t": 6.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " the $\\"}
+{"t": 6.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "alpha$-th stage"}
+{"t": 6.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " of the cumulative hierarchy:"}
+{"t": 6.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $V_"}
+{"t": 6.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "0 = \\emptyset$,"}
+{"t": 6.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $V_{"}
+{"t": 6.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "\\alpha+1} ="}
+{"t": 6.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " \\mathcal{P}("}
+{"t": 6.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "V_\\alpha)$, $"}
+{"t": 6.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "V_\\lambda"}
+{"t": 7.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " = \\big"}
+{"t": 7.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "cup_{\\beta"}
+{"t": 7.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "<\\lambda} V_\\beta"}
+{"t": 7.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "$ for limit"}
+{"t": 7.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $\\lambda$.\n\nAn"}
+{"t": 7.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " elementary embedding $"}
+{"t": 7.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "j: V"}
+{"t": 7.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "_\\gamma \\to V_\\"}
+{"t": 7.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "alpha$ means"}
+{"t": 7.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " that"}
+{"t": 7.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " for every"}
+{"t": 7.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " formula $\\varphi(x"}
+{"t": 7.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "_1,"}
+{"t": 7.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " \\ldots, x"}
+{"t": 8.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "_n"}
+{"t": 8.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ")$ and"}
+{"t": 8.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " all"}
+{"t": 8.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $a_1, \\"}
+{"t": 8.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "ldots, a_n \\"}
+{"t": 8.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "in V_\\gamma$:"}
+{"t": 8.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $V_\\gamma \\models"}
+{"t": 8.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " \\varphi(a"}
+{"t": 8.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "_"}
+{"t": 8.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "1, \\ldots,"}
+{"t": 8.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " a_n) \\iff"}
+{"t": 8.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " V_\\alpha"}
+{"t": 8.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " \\models \\var"}
+{"t": 8.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "phi(j(a_"}
+{"t": 9.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "1), \\ldots,"}
+{"t": 9.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " j(a_n))$"}
+{"t": 9.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ".\n\nThe hypothesis: for"}
+{"t": 9.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " every $\\beta < \\alpha"}
+{"t": 9.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "$, there exists $\\gamma"}
+{"t": 9.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "$ with $\\beta < \\"}
+{"t": 9.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "gamma < \\alpha$ and"}
+{"t": 9.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " an elementary embedding $V_\\"}
+{"t": 9.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "gamma \\to V_\\alpha"}
+{"t": 9.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "$.\n\nQuestion"}
+{"t": 9.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ": does"}
+{"t": 9.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " it"}
+{"t": 9.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " follow that $V_\\alpha"}
+{"t": 9.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " \\"}
+{"t": 10.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "models \\"}
+{"t": 10.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "text{Replacement"}
+{"t": 10.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "}$?\n\nFirst"}
+{"t": 10.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ", let me recall"}
+{"t": 10.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " what Replacement"}
+{"t": 10.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " says"}
+{"t": 10.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ":"}
+{"t": 10.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " For"}
+{"t": 10.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " every formula"}
+{"t": 10.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $\\varphi(x,"}
+{"t": 10.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " y, A"}
+{"t": 10.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ")$"}
+{"t": 10.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " with"}
+{"t": 10.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " parameters"}
+{"t": 11.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $"}
+{"t": 11.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "A$,"}
+{"t": 11.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " if"}
+{"t": 11.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $\\"}
+{"t": 11.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "forall x \\in a"}
+{"t": 11.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " \\"}
+{"t": 11.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ","}
+{"t": 11.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " \\exists!"}
+{"t": 11.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " y \\,"}
+{"t": 11.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " \\varphi(x,y"}
+{"t": 11.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ",A)$ then"}
+{"t": 11.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " there"}
+{"t": 11.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "'s"}
+{"t": 12.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " a set $b$"}
+{"t": 12.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " such that $\\"}
+{"t": 12.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "forall y ("}
+{"t": 12.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "y \\in"}
+{"t": 12.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " b \\iff"}
+{"t": 12.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " \\exists"}
+{"t": 12.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " x"}
+{"t": 12.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " \\in a \\,"}
+{"t": 12.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " \\varphi(x,y,A"}
+{"t": 12.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "))$."}
+{"t": 12.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " In"}
+{"t": 12.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " terms"}
+{"t": 12.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " of $V_\\alpha$"}
+{"t": 12.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " being a model of"}
+{"t": 13.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " Replacement: for every function"}
+{"t": 13.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $f"}
+{"t": 13.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "$"}
+{"t": 13.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " defin"}
+{"t": 13.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "able over"}
+{"t": 13.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $V_\\alpha$ ("}
+{"t": 13.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "with parameters) whose"}
+{"t": 13.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " domain is a set"}
+{"t": 13.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $a \\"}
+{"t": 13.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "in V_\\alpha$,"}
+{"t": 13.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " the range is an"}
+{"t": 13.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " element of $V_\\alpha"}
+{"t": 13.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "$.\n\nKnown"}
+{"t": 14.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " facts:\n\n"}
+{"t": 14.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "1. If"}
+{"t": 14.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $j"}
+{"t": 14.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ": V_\\gamma"}
+{"t": 14.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " \\to V_\\alpha$"}
+{"t": 14.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " is elementary and"}
+{"t": 14.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " non"}
+{"t": 14.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "trivial..."}
+{"t": 14.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " wait"}
+{"t": 14.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ", actually here"}
+{"t": 15.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " embeddings"}
+{"t": 15.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " could be trivial"}
+{"t": 15.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " ("}
+{"t": 15.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "identity). Hmm"}
+{"t": 15.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ", but identity"}
+{"t": 15.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " embedding"}
+{"t": 15.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " from"}
+{"t": 15.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $V_\\gamma$ to"}
+{"t": 15.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $V_\\alpha$ requires"}
+{"t": 15.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $"}
+{"t": 15.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "V_\\gamma \\subseteq V"}
+{"t": 15.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "_\\alpha$ and element"}
+{"t": 15.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "arity would"}
+{"t": 16.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " require"}
+{"t": 16.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $V_\\gamma \\pre"}
+{"t": 16.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "ceq V"}
+{"t": 16.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "_\\alpha$,"}
+{"t": 16.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " which is impossible"}
+{"t": 16.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " unless"}
+{"t": 16.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $\\gamma ="}
+{"t": 16.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " \\alpha$ (since $\\"}
+{"t": 16.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "emptyset \\"}
+{"t": 16.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "ne"}
+{"t": 16.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "q \\"}
+{"t": 16.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "{\\emptyset\\"}
+{"t": 17.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "}$... wait"}
+{"t": 17.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ", actually $"}
+{"t": 17.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "V_\\gamma \\pre"}
+{"t": 17.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "ceq V_\\alpha$"}
+{"t": 17.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " with $\\gamma < \\alpha"}
+{"t": 17.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "$ is impossible because"}
+{"t": 17.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "..."}
+{"t": 17.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " hmm, let me think."}
+{"t": 17.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " Actually,"}
+{"t": 17.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " if"}
+{"t": 17.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $V_\\gamma \\subseteq"}
+{"t": 17.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " V_\\alpha$ is elementary"}
+{"t": 17.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " sub"}
+{"t": 18.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "structure, take"}
+{"t": 18.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $x"}
+{"t": 18.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " = \\emptyset \\"}
+{"t": 18.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "in V_\\gamma"}
+{"t": 18.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "$. The"}
+{"t": 18.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " property"}
+{"t": 18.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " \"$"}
+{"t": 18.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "y"}
+{"t": 18.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " = \\emptyset$\""}
+{"t": 18.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " is satisfied"}
+{"t": 18.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " by $\\"}
+{"t": 18.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "emptyset$;"}
+{"t": 18.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " fine"}
+{"t": 18.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ". Take"}
+{"t": 18.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " any"}
+{"t": 19.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $a"}
+{"t": 19.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " \\in V_\\gamma$."}
+{"t": 19.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " Then"}
+{"t": 19.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " \""}
+{"t": 19.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "there"}
+{"t": 19.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " exists $y"}
+{"t": 19.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "$ such that $y"}
+{"t": 19.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " = a"}
+{"t": 19.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " \\"}
+{"t": 19.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "cup \\{a"}
+{"t": 19.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "\\}$\""}
+{"t": 19.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " — the unique"}
+{"t": 19.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " witness"}
+{"t": 20.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " is"}
+{"t": 20.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $S"}
+{"t": 20.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "(a) = a \\cup"}
+{"t": 20.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " \\{a\\}$ which"}
+{"t": 20.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " must be in"}
+{"t": 20.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $V_\\gamma"}
+{"t": 20.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "$"}
+{"t": 20.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " by elementarity ("}
+{"t": 20.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "since $V_\\gamma$"}
+{"t": 20.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " must contain"}
+{"t": 20.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " the"}
+{"t": 20.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " witness). Wait"}
+{"t": 20.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " more"}
+{"t": 21.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " precisely:"}
+{"t": 21.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $"}
+{"t": 21.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "V_\\alpha"}
+{"t": 21.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " \\models \\exists"}
+{"t": 21.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " y ("}
+{"t": 21.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "y = S"}
+{"t": 21.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "(a))$,"}
+{"t": 21.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " so by"}
+{"t": 21.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " elementarity $"}
+{"t": 21.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "V_\\gamma \\models \\"}
+{"t": 21.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "exists y (y = S"}
+{"t": 21.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "(a))$, i"}
+{"t": 21.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ".e., $V_\\gamma"}
+{"t": 22.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "$ contains $"}
+{"t": 22.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "S(a)$. By"}
+{"t": 22.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " induction, $V_\\gamma"}
+{"t": 22.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "$ contains $"}
+{"t": 22.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "a +"}
+{"t": 22.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " n$ ("}
+{"t": 22.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "iter"}
+{"t": 22.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "ated"}
+{"t": 22.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " successor) for all natural"}
+{"t": 22.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $n$, hence"}
+{"t": 22.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " contains"}
+{"t": 22.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " arbitrarily"}
+{"t": 22.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " high"}
+{"t": 22.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " ranks, contradiction"}
+{"t": 23.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " with"}
+{"t": 23.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $"}
+{"t": 23.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "V_\\gamma$ being a"}
+{"t": 23.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " set. So"}
+{"t": 23.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " indeed no"}
+{"t": 23.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " proper"}
+{"t": 23.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " elementary substructure relation"}
+{"t": 23.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $"}
+{"t": 23.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "V_\\gamma \\prec"}
+{"t": 23.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " V_\\alpha$ for $\\"}
+{"t": 23.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "gamma < \\alpha$."}
+{"t": 23.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " Hence all"}
+{"t": 23.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " these"}
+{"t": 24.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " embeddings are non"}
+{"t": 24.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "-tr"}
+{"t": 24.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "ivial (move"}
+{"t": 24.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " some"}
+{"t": 24.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " ordinal"}
+{"t": 24.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ").\n\nWait"}
+{"t": 24.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ", but"}
+{"t": 24.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " actually I"}
+{"t": 24.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " need"}
+{"t": 24.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " to be"}
+{"t": 24.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " careful: elementary"}
+{"t": 24.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " embedding"}
+{"t": 25.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " doesn"}
+{"t": 25.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "'t have"}
+{"t": 25.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " to be inclusion"}
+{"t": 25.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ". An"}
+{"t": 25.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " elementary embedding $j: V"}
+{"t": 25.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "_\\gamma \\to V_\\"}
+{"t": 25.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "alpha$ is a map"}
+{"t": 25.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " such"}
+{"t": 25.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " that formulas"}
+{"t": 25.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " are"}
+{"t": 25.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " preserved. Standard"}
+{"t": 25.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " fact"}
+{"t": 25.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ": any"}
+{"t": 25.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " elementary embedding between"}
+{"t": 26.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " trans"}
+{"t": 26.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "itive sets ("}
+{"t": 26.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "or classes"}
+{"t": 26.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ") moves"}
+{"t": 26.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " ordinals upward"}
+{"t": 26.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ":"}
+{"t": 26.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $j(\\"}
+{"t": 26.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "xi"}
+{"t": 26.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ") \\ge"}
+{"t": 26.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "q \\xi$"}
+{"t": 26.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ".\n\n"}
+{"t": 27.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "So"}
+{"t": 27.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " the hypothesis is"}
+{"t": 27.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ": cof"}
+{"t": 27.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "inally many"}
+{"t": 27.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $\\gamma"}
+{"t": 27.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " < \\alpha$ admit"}
+{"t": 27.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " non"}
+{"t": 27.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "trivial elementary embeddings $j"}
+{"t": 27.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "_\\"}
+{"t": 27.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "gamma :"}
+{"t": 27.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " V_\\gamma \\to V"}
+{"t": 27.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "_\\alpha$.\n\nThis"}
+{"t": 27.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " looks"}
+{"t": 28.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " like a large"}
+{"t": 28.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " cardinal flavored"}
+{"t": 28.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " question. Let me think about"}
+{"t": 28.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " what's"}
+{"t": 28.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " known.\n\n"}
+{"t": 28.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "A"}
+{"t": 28.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " rank"}
+{"t": 28.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $V_\\alpha$ satisfying"}
+{"t": 28.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " Z"}
+{"t": 28.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "FC-like"}
+{"t": 28.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " properties:"}
+{"t": 28.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $V_\\alpha \\"}
+{"t": 29.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "models \\"}
+{"t": 29.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "text"}
+{"t": 29.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "{ZFC}$"}
+{"t": 29.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " iff $\\alpha$ is inaccessible"}
+{"t": 29.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " ("}
+{"t": 29.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "unc"}
+{"t": 29.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "ountable strongly"}
+{"t": 29.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " inaccessible,"}
+{"t": 29.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " well"}
+{"t": 29.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ", $\\alpha$ inaccessible"}
+{"t": 29.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ")."}
+{"t": 29.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " Actually $"}
+{"t": 29.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "V_\\k"}
+{"t": 29.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "appa \\models \\mathrm"}
+{"t": 29.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "{ZFC}_"}
+{"t": 30.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "2$?"}
+{"t": 30.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " Hmm"}
+{"t": 30.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ", $V_\\k"}
+{"t": 30.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "appa \\models \\mathrm"}
+{"t": 30.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "{ZFC}$ iff $\\"}
+{"t": 30.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "kappa$ is strongly"}
+{"t": 30.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " inaccessible ("}
+{"t": 30.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "and"}
+{"t": 30.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " un"}
+{"t": 30.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "countable;"}
+{"t": 30.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " also"}
+{"t": 30.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " need"}
+{"t": 30.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $\\kappa >"}
+{"t": 31.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " \\omega$,"}
+{"t": 31.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " and for Power"}
+{"t": 31.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " Set etc"}
+{"t": 31.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ".).\n\n"}
+{"t": 31.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "But"}
+{"t": 31.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " we"}
+{"t": 31.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "'re"}
+{"t": 31.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " only asked"}
+{"t": 31.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " about Replacement.\n\n"}
+{"t": 31.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "When"}
+{"t": 31.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " does"}
+{"t": 31.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $V_\\alpha$"}
+{"t": 32.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " satisfy Replacement? Known"}
+{"t": 32.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ": $V_\\alpha \\"}
+{"t": 32.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "models \\text{Z"}
+{"t": 32.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "FC}"}
+{"t": 32.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " \\set"}
+{"t": 32.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "minus \\{\\"}
+{"t": 32.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "text{Power Set}\\"}
+{"t": 32.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "}$..."}
+{"t": 32.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " hmm"}
+{"t": 32.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ","}
+{"t": 32.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " actually"}
+{"t": 32.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " let me think"}
+{"t": 32.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " again"}
+{"t": 33.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "."}
+{"t": 33.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " \n\n"}
+{"t": 33.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "The"}
+{"t": 33.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " standard result: For"}
+{"t": 33.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $\\alpha$ a"}
+{"t": 33.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " limit ordinal, $"}
+{"t": 33.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "V_\\alpha \\models \\"}
+{"t": 33.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "text"}
+{"t": 33.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "{Z"}
+{"t": 33.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "FC}$ iff $\\alpha"}
+{"t": 33.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "$ is strongly"}
+{"t": 33.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " inaccessible. For"}
+{"t": 33.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " Replacement alone"}
+{"t": 33.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ":\n\n"}
+{"t": 33.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "Claim"}
+{"t": 34.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ": $V_\\alpha \\"}
+{"t": 34.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "models \\text{Replacement}$"}
+{"t": 34.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " iff $\\alpha$ is..."}
+{"t": 34.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " hmm, not"}
+{"t": 34.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " exactly an"}
+{"t": 34.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " accessible"}
+{"t": 34.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " characterization"}
+{"t": 34.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ","}
+{"t": 34.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " but related"}
+{"t": 34.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " to \"$"}
+{"t": 34.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "\\alpha$ is"}
+{"t": 34.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " a b"}
+{"t": 34.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "eth fixed point\"?"}
+{"t": 35.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " No"}
+{"t": 35.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " wait.\n\nHmm"}
+{"t": 35.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ", let me think."}
+{"t": 35.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " Replacement in $V_\\alpha"}
+{"t": 35.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "$: every"}
+{"t": 35.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " definable-with"}
+{"t": 35.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "-parameters function"}
+{"t": 35.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " from"}
+{"t": 35.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " a"}
+{"t": 35.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " set in $V_\\alpha"}
+{"t": 35.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "$ has range"}
+{"t": 35.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " in $V_\\alpha$"}
+{"t": 35.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ".\n\nIf"}
+{"t": 35.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $\\operator"}
+{"t": 36.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "name{cf"}
+{"t": 36.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "}(\\alpha) <"}
+{"t": 36.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " \\alpha"}
+{"t": 36.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "$... hmm"}
+{"t": 36.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " wait"}
+{"t": 36.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ", that's"}
+{"t": 36.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " not directly relevant"}
+{"t": 36.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " since"}
+{"t": 36.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " definable"}
+{"t": 36.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " functions aren"}
+{"t": 36.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "'t arbitrary"}
+{"t": 36.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " functions"}
+{"t": 36.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ".\n\nActually, there's a"}
+{"t": 37.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " classical fact"}
+{"t": 37.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ": $V_\\alpha \\"}
+{"t": 37.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "models \\mathrm"}
+{"t": 37.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "{ZFC}$ iff $\\"}
+{"t": 37.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "alpha$ is inaccessible"}
+{"t": 37.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ". And"}
+{"t": 37.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $V_\\alpha \\models"}
+{"t": 37.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " \\mathrm{Z"}
+{"t": 37.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "FC}$ minus"}
+{"t": 37.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " Replacement"}
+{"t": 37.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " iff $\\alpha >"}
+{"t": 37.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " \\omega$ is"}
+{"t": 37.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " a strong"}
+{"t": 37.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " limit cardinal"}
+{"t": 38.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "? Not"}
+{"t": 38.1, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " exactly —"}
+{"t": 38.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " Separ"}
+{"t": 38.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "ation holds"}
+{"t": 38.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " in every"}
+{"t": 38.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $V_\\alpha$ ($"}
+{"t": 38.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "\\alpha$"}
+{"t": 38.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " limit"}
+{"t": 38.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "),"}
+{"t": 38.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " Pair"}
+{"t": 39.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "ing,"}
+{"t": 39.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " Union hold"}
+{"t": 39.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " when"}
+{"t": 39.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "..."}
+{"t": 39.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " hmm"}
+{"t": 39.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ".\n\n"}
+{"t": 39.2, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "Let me recall: \n"}
+{"t": 39.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "- Extension"}
+{"t": 39.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "ality"}
+{"t": 39.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ", Foundation"}
+{"t": 39.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " hold"}
+{"t": 39.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " in every"}
+{"t": 39.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $V_\\alpha$.\n"}
+{"t": 39.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "- Empty"}
+{"t": 39.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " Set"}
+{"t": 39.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ":"}
+{"t": 40.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $\\"}
+{"t": 40.0, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "alpha > 0$.\n"}
+{"t": 40.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "- Pairing:"}
+{"t": 40.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " $\\alpha$"}
+{"t": 40.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " limit.\n- Union: $\\"}
+{"t": 40.3, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "alpha$ limit.\n- Infinity"}
+{"t": 40.4, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ": $\\alpha > \\"}
+{"t": 40.5, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "omega$.\n- Separation"}
+{"t": 40.6, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ": $\\alpha$"}
+{"t": 40.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " limit ("}
+{"t": 40.7, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "any"}
+{"t": 40.8, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": " limit"}
+{"t": 40.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": ").\n- Power Set: $\\"}
+{"t": 40.9, "mid": "msg_02856986b001lIerHK8W2Ru54f", "text": "alpha$ limit"}

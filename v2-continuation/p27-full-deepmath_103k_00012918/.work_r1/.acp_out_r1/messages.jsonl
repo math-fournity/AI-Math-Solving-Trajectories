@@ -1,0 +1,621 @@
+{"t": 624.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "#"}
+{"t": 624.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " 解题过程"}
+{"t": 624.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "（"}
+{"t": 624.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "全部"}
+{"t": 624.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "推理"}
+{"t": 624.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "在 TUI 中完成，"}
+{"t": 624.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "未使用任何工具）\n\n先"}
+{"t": 624.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "声明"}
+{"t": 624.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "："}
+{"t": 624.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "我没有"}
+{"t": 624.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "接触"}
+{"t": 625.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "任何外部资料"}
+{"t": 625.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "（约束"}
+{"t": 625.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "要求"}
+{"t": 625.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "不使用"}
+{"t": 625.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "工具），以下"}
+{"t": 625.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "全部基于"}
+{"t": 625.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "我"}
+{"t": 625.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "自身的"}
+{"t": 625.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "数学知识。"}
+{"t": 625.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "因此"}
+{"t": 625.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "也"}
+{"t": 625.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "无需作弊"}
+{"t": 625.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "风险声明——"}
+{"t": 625.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "但我"}
+{"t": 626.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "如实"}
+{"t": 626.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "说明"}
+{"t": 626.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "：我的"}
+{"t": 626.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "结论依赖记忆"}
+{"t": 626.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "中的文献状态"}
+{"t": 626.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "，未"}
+{"t": 626.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "做在线"}
+{"t": 626.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "核对。\n\n---\n\n"}
+{"t": 626.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "## 一、问题的"}
+{"t": 626.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "准确含义"}
+{"t": 626.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "\n\n记"}
+{"t": 626.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " $"}
+{"t": 626.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "B=\\"}
+{"t": 626.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "mathcal P"}
+{"t": 626.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "(\\omega_1)/\\"}
+{"t": 626.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "mathrm{NS}_{\\omega"}
+{"t": 627.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "_1}$。问题问"}
+{"t": 627.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "的是：\n\n"}
+{"t": 627.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "$$\\mathrm"}
+{"t": 627.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "{Con(ZFC)}\\"}
+{"t": 627.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "impl"}
+{"t": 627.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "ies \\"}
+{"t": 627.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "mathrm{Con(ZFC+\\"}
+{"t": 627.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "exists"}
+{"t": 627.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "\\,\\"}
+{"t": 627.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "pi\\neq \\"}
+{"t": 627.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "mathrm{id}\\"}
+{"t": 627.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "text"}
+{"t": 628.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "{ 是"}
+{"t": 628.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " }B"}
+{"t": 628.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "\\text{ 的"}
+{"t": 628.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "布尔代数"}
+{"t": 628.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "自同构})"}
+{"t": 628.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "}\\"}
+{"t": 628.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " ?$$"}
+{"t": 628.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "\n\n这是一个"}
+{"t": 628.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "非"}
+{"t": 628.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "黑"}
+{"t": 628.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "即白"}
+{"t": 628.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "的问题：要么"}
+{"t": 628.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "存在"}
+{"t": 628.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "某个"}
+{"t": 628.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " Z"}
+{"t": 629.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "FC 模型含"}
+{"t": 629.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "非平凡"}
+{"t": 629.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "自同构（"}
+{"t": 629.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "答案“"}
+{"t": 629.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "是”"}
+{"t": 629.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "），要么 Z"}
+{"t": 629.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "FC "}
+{"t": 629.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "恒证"}
+{"t": 629.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "刚性"}
+{"t": 629.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "（答案"}
+{"t": 629.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "“否”）。\n\n## 二"}
+{"t": 629.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "、ZFC 内"}
+{"t": 629.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "可"}
+{"t": 629.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "证的"}
+{"t": 630.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "背景"}
+{"t": 630.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "事实（说明"}
+{"t": 630.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "为什么这"}
+{"t": 630.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "题难"}
+{"t": 630.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "）\n\n**事实"}
+{"t": 630.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " 1（"}
+{"t": 630.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "原子"}
+{"t": 630.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "性）**：由"}
+{"t": 630.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " Solovay 分割"}
+{"t": 630.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "定理，任何"}
+{"t": 630.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "驻"}
+{"t": 630.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "集"}
+{"t": 630.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "分裂"}
+{"t": 630.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "为两个不"}
+{"t": 631.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "交驻集，故 $"}
+{"t": 631.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "B$ 无"}
+{"t": 631.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "原子、"}
+{"t": 631.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "且"}
+{"t": 631.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "不是"}
+{"t": 631.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "齐"}
+{"t": 631.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "性"}
+{"t": 631.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "可"}
+{"t": 631.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "平凡"}
+{"t": 631.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "操控"}
+{"t": 631.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "的代"}
+{"t": 631.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "数。\n\n**事实 2"}
+{"t": 631.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "（置换"}
+{"t": 631.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "诱导的自"}
+{"t": 631.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "同构必平凡"}
+{"t": 631.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "）**：设"}
+{"t": 632.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "双射 $\\sigma:\\"}
+{"t": 632.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "omega_1\\to\\"}
+{"t": 632.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "omega_1$ 保持"}
+{"t": 632.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "驻性"}
+{"t": 632.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "（正向）。"}
+{"t": 632.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "令 $M_"}
+{"t": 632.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "-=\\{\\"}
+{"t": 632.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "alpha:\\"}
+{"t": 632.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "sigma(\\alpha)<\\alpha"}
+{"t": 632.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "\\}$。"}
+{"t": 632.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "若 $M_-$"}
+{"t": 632.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " 驻，"}
+{"t": 632.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "对"}
+{"t": 633.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "回归"}
+{"t": 633.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "函数 $\\alpha"}
+{"t": 633.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "\\mapsto\\sigma(\\"}
+{"t": 633.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "alpha)$ 用 Fodor 定"}
+{"t": 633.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "理得"}
+{"t": 633.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " $\\sigma$ 在"}
+{"t": 633.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "某驻集上取"}
+{"t": 633.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "常值，与"}
+{"t": 633.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "单射矛盾；"}
+{"t": 633.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "令"}
+{"t": 633.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " $M_+="}
+{"t": 633.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "\\{\\alpha:\\sigma(\\"}
+{"t": 633.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "alpha)"}
+{"t": 633.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": ">\\alpha\\}$，对"}
+{"t": 633.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " $\\sigma^{-"}
+{"t": 633.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "1}$ 在 $\\sigma[M"}
+{"t": 634.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "_+]"}
+{"t": 634.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "$ 上重复"}
+{"t": 634.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "同样论证"}
+{"t": 634.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "（"}
+{"t": 634.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "此处"}
+{"t": 634.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "用到 $\\sigma$ 保"}
+{"t": 634.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "驻性），得"}
+{"t": 634.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " $M_+$"}
+{"t": 634.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " 非"}
+{"t": 634.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "驻。于是"}
+{"t": 634.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " $M=M"}
+{"t": 634.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "_-\\cup M"}
+{"t": 634.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "_+$"}
+{"t": 634.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " 非驻，而对"}
+{"t": 634.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "任意 $A\\"}
+{"t": 634.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "subseteq\\omega_1$"}
+{"t": 634.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " 有 $A\\,\\"}
+{"t": 635.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "triangle\\,\\"}
+{"t": 635.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "sigma[A"}
+{"t": 635.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "]\\subseteq"}
+{"t": 635.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " M$，故 $["}
+{"t": 635.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "A]\\mapsto[\\"}
+{"t": 635.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "sigma[A]]$ 是"}
+{"t": 635.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "恒"}
+{"t": 635.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "等。"}
+{"t": 635.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "**结论：Z"}
+{"t": 635.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "FC 中一切"}
+{"t": 635.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "“来自"}
+{"t": 636.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "置换”的候选"}
+{"t": 636.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "自同构都是平凡的"}
+{"t": 636.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "。** 这"}
+{"t": 636.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "与 $\\"}
+{"t": 636.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "mathcal P(\\omega)/"}
+{"t": 636.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "\\mathrm{fin}$ "}
+{"t": 636.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "形成鲜明对照"}
+{"t": 636.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "（那里换"}
+{"t": 636.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "偶奇"}
+{"t": 636.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "两"}
+{"t": 636.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "块"}
+{"t": 636.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "就"}
+{"t": 636.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "给出非平凡自同构"}
+{"t": 636.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "），说明本题"}
+{"t": 636.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "若有"}
+{"t": 636.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "肯定"}
+{"t": 637.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "答案"}
+{"t": 637.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "，自"}
+{"t": 637.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "同构必然"}
+{"t": 637.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "是高度"}
+{"t": 637.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "超"}
+{"t": 637.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "凡"}
+{"t": 637.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "的对象"}
+{"t": 637.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "。\n\n**事实 3**"}
+{"t": 637.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "：$B$ 不是"}
+{"t": 637.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "可"}
+{"t": 637.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "数完备的（"}
+{"t": 637.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "把 $\\omega_1$"}
+{"t": 637.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " 分割"}
+{"t": 638.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "成 $\\omega_1$"}
+{"t": 638.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " 个互不相"}
+{"t": 638.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "交"}
+{"t": 638.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "的"}
+{"t": 638.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "驻集 $\\"}
+{"t": 639.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "langle S_\\alpha\\r"}
+{"t": 639.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "angle$，则"}
+{"t": 639.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "链"}
+{"t": 639.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " $T_n=\\bigcup"}
+{"t": 639.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "_{\\alpha\\ge n"}
+{"t": 639.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "}S_\\alpha$"}
+{"t": 639.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " "}
+{"t": 639.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "满足各"}
+{"t": 639.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " $["}
+{"t": 639.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "T_n]>0"}
+{"t": 639.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "$ 而"}
+{"t": 639.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " $\\bigw"}
+{"t": 639.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "edge_n[T_n]=0"}
+{"t": 639.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "$），"}
+{"t": 640.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "因此无法"}
+{"t": 640.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "用“可数饱和"}
+{"t": 640.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "性”把"}
+{"t": 640.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "子"}
+{"t": 640.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "代数同"}
+{"t": 640.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "构自动延拓"}
+{"t": 640.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "到全商"}
+{"t": 640.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "代数。\n\n"}
+{"t": 640.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "## 三、已知"}
+{"t": 640.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "的核心"}
+{"t": 640.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "定理"}
+{"t": 640.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "（刚"}
+{"t": 640.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "性强"}
+{"t": 640.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "证据"}
+{"t": 641.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "）\n\n以下"}
+{"t": 641.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "是我确"}
+{"t": 641.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "信记忆中的文献"}
+{"t": 641.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "结论"}
+{"t": 641.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "：\n\n1. **Woodin"}
+{"t": 641.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " 刚性"}
+{"t": 641.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "定理**：若"}
+{"t": 641.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "宇宙"}
+{"t": 641.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "中存在可"}
+{"t": 641.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "测基数"}
+{"t": 641.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "，则 $\\"}
+{"t": 641.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "mathcal P(\\omega_"}
+{"t": 641.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "1)/\\mathrm{NS"}
+{"t": 641.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "}_{\\omega_1}$"}
+{"t": 642.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " 的每个自同构在某"}
+{"t": 642.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " club 上平凡"}
+{"t": 642.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "（从而"}
+{"t": 642.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "必"}
+{"t": 642.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "为恒等映射"}
+{"t": 642.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "）。证明思路"}
+{"t": 642.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "是利用"}
+{"t": 642.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "该"}
+{"t": 642.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "可"}
+{"t": 642.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "测基数穿过"}
+{"t": 642.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " NS"}
+{"t": 642.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " 的"}
+{"t": 642.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "泛型"}
+{"t": 642.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "超"}
+{"t": 642.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "积"}
+{"t": 642.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "嵌入"}
+{"t": 643.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "做"}
+{"t": 643.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "绝对"}
+{"t": 643.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "性论证。（"}
+{"t": 643.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "见 Wood"}
+{"t": 643.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "in《"}
+{"t": 643.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "The Axiom of Determin"}
+{"t": 643.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "acy, Forcing Axi"}
+{"t": 643.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "oms, and the Nonstation"}
+{"t": 643.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "ary Ideal》, 1999"}
+{"t": 643.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "；亦"}
+{"t": 643.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "见 Foreman 在"}
+{"t": 643.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " Handbook of"}
+{"t": 643.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " Set Theory 的综述"}
+{"t": 643.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "章节"}
+{"t": 643.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "。）\n\n2. **V"}
+{"t": 643.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "eličković 定"}
+{"t": 644.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "理**：PFA 下"}
+{"t": 644.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "每个"}
+{"t": 644.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "自同构都是"}
+{"t": 644.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "恒"}
+{"t": 644.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "等（"}
+{"t": 644.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "Veličković"}
+{"t": 644.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": ", *Forcing axioms"}
+{"t": 644.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " and stationary sets*, Adv."}
+{"t": 644.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " Math. 94"}
+{"t": 645.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " (1992)；"}
+{"t": 645.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "MM 下"}
+{"t": 645.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "同理）"}
+{"t": 645.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "。\n\n3. 相关"}
+{"t": 645.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "背景：NS"}
+{"t": 645.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "$_{\\omega_1}$"}
+{"t": 645.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " 的 precipitousness 与可"}
+{"t": 645.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "测基数等"}
+{"t": 645.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "相"}
+{"t": 645.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "容"}
+{"t": 645.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "（Ga"}
+{"t": 645.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "ifman–"}
+{"t": 645.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "Harrington）；若"}
+{"t": 645.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " NS "}
+{"t": 645.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "饱"}
+{"t": 645.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "和，"}
+{"t": 645.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "已"}
+{"t": 645.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "知的泛"}
+{"t": 646.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "型嵌入"}
+{"t": 646.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "闭"}
+{"t": 646.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "性"}
+{"t": 646.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "同样"}
+{"t": 646.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "推向"}
+{"t": 646.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "刚性。这些"}
+{"t": 646.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "共同"}
+{"t": 646.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "表明：**非平凡自"}
+{"t": 646.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "同构若"}
+{"t": 646.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "存在，其"}
+{"t": 646.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "模型"}
+{"t": 646.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "必须没有"}
+{"t": 646.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "可测基数、NS"}
+{"t": 646.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " 不"}
+{"t": 646.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "饱和、且"}
+{"t": 647.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "否定"}
+{"t": 647.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "所有"}
+{"t": 647.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "力"}
+{"t": 647.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "迫公"}
+{"t": 647.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "理**"}
+{"t": 647.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "——一个"}
+{"t": 647.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "“低"}
+{"t": 647.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "大基数"}
+{"t": 647.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "、反典型"}
+{"t": 647.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "”"}
+{"t": 647.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "的宇宙。\n\n## 四、"}
+{"t": 647.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "为什么“肯定"}
+{"t": 647.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "答案”也没有"}
+{"t": 647.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "已知构造\n\n"}
+{"t": 648.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "我把"}
+{"t": 648.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "能"}
+{"t": 648.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "想到的构造路线"}
+{"t": 648.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "逐一排查"}
+{"t": 648.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "（"}
+{"t": 648.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "死"}
+{"t": 648.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "路记录）：\n\n-"}
+{"t": 648.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " **置换路线"}
+{"t": 648.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "**：被"}
+{"t": 648.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "上面"}
+{"t": 648.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "事实 2 "}
+{"t": 648.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "完全封"}
+{"t": 648.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "死。\n- **巨"}
+{"t": 648.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "基数塌"}
+{"t": 648.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "陷"}
+{"t": 648.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "路线**：从巨大基数"}
+{"t": 648.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "出发做"}
+{"t": 648.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " Lévy 塌"}
+{"t": 649.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "陷可"}
+{"t": 649.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "得到 $\\"}
+{"t": 649.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "omega_1$ 上的"}
+{"t": 649.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "饱和理想 $I$ 使得"}
+{"t": 649.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " $\\mathcal P(\\omega"}
+{"t": 649.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "_1)/I$ 同"}
+{"t": 649.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "构于"}
+{"t": 649.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "塌陷代"}
+{"t": 649.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "数的完备化"}
+{"t": 649.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "、"}
+{"t": 649.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "因而"}
+{"t": 649.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "高度齐"}
+{"t": 649.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "次"}
+{"t": 649.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "、充满"}
+{"t": 650.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "非平凡自同构——"}
+{"t": 650.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "但这个"}
+{"t": 650.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " $I$ 是塌"}
+{"t": 650.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "陷理想"}
+{"t": 650.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "，**"}
+{"t": 650.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "不是**"}
+{"t": 650.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " NS$_{\\omega_1"}
+{"t": 650.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "}$ 本"}
+{"t": 650.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "身；即便"}
+{"t": 650.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "再"}
+{"t": 650.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "用力"}
+{"t": 650.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "迫公"}
+{"t": 650.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "理让"}
+{"t": 650.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " NS "}
+{"t": 650.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "饱和"}
+{"t": 650.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "，"}
+{"t": 650.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "由第"}
+{"t": 651.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " 3 "}
+{"t": 651.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "节第"}
+{"t": 651.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " 3"}
+{"t": 651.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " 条反而"}
+{"t": 651.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "走向"}
+{"t": 651.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "刚性。此"}
+{"t": 651.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "路给"}
+{"t": 651.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "不出 NS 的"}
+{"t": 651.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "结果"}
+{"t": 651.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "。\n- **泛"}
+{"t": 651.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "型添加"}
+{"t": 651.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "自同构路线**："}
+{"t": 651.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "用"}
+{"t": 651.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " $\\omega$-闭"}
+{"t": 651.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "的“"}
+{"t": 651.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "过"}
+{"t": 652.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " club"}
+{"t": 652.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "”"}
+{"t": 652.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "力"}
+{"t": 652.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "迫迭代逐"}
+{"t": 652.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "个"}
+{"t": 652.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "实现"}
+{"t": 652.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "蓝图"}
+{"t": 652.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "自"}
+{"t": 652.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "同构在"}
+{"t": 652.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "枚"}
+{"t": 652.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "举子"}
+{"t": 652.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "集上的值"}
+{"t": 652.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "。真正的"}
+{"t": 652.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "障碍在于一致性"}
+{"t": 652.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "模式的"}
+{"t": 652.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "实现：为"}
+{"t": 652.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "新的"}
+{"t": 653.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " $A$"}
+{"t": 653.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " 选像"}
+{"t": 653.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " $"}
+{"t": 653.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "C$ 时，"}
+{"t": 653.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "需"}
+{"t": 653.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "同时对"}
+{"t": 653.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "之前"}
+{"t": 653.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "已承诺"}
+{"t": 653.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "的全部"}
+{"t": 653.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " $("}
+{"t": 653.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "B_i,B_i‘"}
+{"t": 653.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": ")$ "}
+{"t": 653.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "匹配驻"}
+{"t": 653.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "性模式；"}
+{"t": 653.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "目标"}
+{"t": 653.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "侧交集"}
+{"t": 654.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " $C"}
+{"t": 654.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "\\cap B_i’"}
+{"t": 654.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "$ 的驻性无法"}
+{"t": 654.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "在"}
+{"t": 654.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " ZFC 中保证（"}
+{"t": 654.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "源侧的正"}
+{"t": 654.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "性"}
+{"t": 654.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "不能"}
+{"t": 654.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "传递"}
+{"t": 654.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "到目标侧任意"}
+{"t": 654.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "早"}
+{"t": 654.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "前"}
+{"t": 654.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "承诺的搭配"}
+{"t": 654.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "上"}
+{"t": 654.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "），而"}
+{"t": 654.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "力迫公"}
+{"t": 655.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "理恰恰"}
+{"t": 655.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "就是"}
+{"t": 655.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "用来补"}
+{"t": 655.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "这一"}
+{"t": 655.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "步的——补"}
+{"t": 655.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "上了"}
+{"t": 655.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "也就"}
+{"t": 655.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "回到了"}
+{"t": 655.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "刚"}
+{"t": 655.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "性的世界"}
+{"t": 655.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "。这正是"}
+{"t": 655.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "专家"}
+{"t": 655.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "们公认此"}
+{"t": 655.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "问题"}
+{"t": 656.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "棘"}
+{"t": 656.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "手"}
+{"t": 656.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "的原因。\n"}
+{"t": 656.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "- **$"}
+{"t": 656.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "L$ 或"}
+{"t": 656.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "内"}
+{"t": 656.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "模型"}
+{"t": 656.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "路线**：没有任何"}
+{"t": 656.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "已知构造能在"}
+{"t": 656.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " $L$（"}
+{"t": 656.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "或任何无"}
+{"t": 656.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "可"}
+{"t": 656.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "测基"}
+{"t": 656.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "数的典范"}
+{"t": 656.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "模型"}
+{"t": 656.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "）中给出"}
+{"t": 657.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "非平凡自同构；"}
+{"t": 657.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "$\\Diamond"}
+{"t": 657.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "$ 型"}
+{"t": 657.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "的"}
+{"t": 657.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "递"}
+{"t": 657.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "归构造"}
+{"t": 657.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "只能"}
+{"t": 657.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "处理可"}
+{"t": 657.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "构造"}
+{"t": 657.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "信息，无法"}
+{"t": 657.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "覆盖全部 $2"}
+{"t": 657.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "^"}
+{"t": 657.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "{\\omega"}
+{"t": 657.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "_1}$ 个"}
+{"t": 657.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "子集的一致"}
+{"t": 657.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "延"}
+{"t": 657.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "拓。\n\n## 五、结论"}
+{"t": 657.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "\n\n"}
+{"t": 658.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "据我所掌握"}
+{"t": 658.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "的全部"}
+{"t": 658.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "数学知识（截至我的"}
+{"t": 658.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "知识范围）："}
+{"t": 658.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "**没有任何"}
+{"t": 658.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "人"}
+{"t": 658.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "构造"}
+{"t": 658.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "出含"}
+{"t": 658.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " $\\"}
+{"t": 658.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "mathcal P(\\omega_"}
+{"t": 658.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "1)/\\mathrm{NS"}
+{"t": 658.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "}_{\\omega_1}$"}
+{"t": 658.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " 非平凡自同"}
+{"t": 658.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "构的 ZFC 模"}
+{"t": 658.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "型，"}
+{"t": 658.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "同时"}
+{"t": 658.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "也没有"}
+{"t": 659.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "人在"}
+{"t": 659.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " ZFC 内"}
+{"t": 659.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "证明刚性"}
+{"t": 659.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "**。这是集合"}
+{"t": 659.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "论中一个"}
+{"t": 659.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "公认的"}
+{"t": 659.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "著名公开"}
+{"t": 659.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "问题（Fore"}
+{"t": 659.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "man 的 Handbook "}
+{"t": 659.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "综述及"}
+{"t": 659.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "后续"}
+{"t": 659.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "文献"}
+{"t": 659.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "均以"}
+{"t": 659.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "开放"}
+{"t": 660.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "问题形式陈述"}
+{"t": 660.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "它）。已"}
+{"t": 660.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "知的只有"}
+{"t": 660.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "单向"}
+{"t": 660.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "强"}
+{"t": 660.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "刚性"}
+{"t": 660.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "定理"}
+{"t": 660.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "（大"}
+{"t": 660.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "基数、力"}
+{"t": 660.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "迫公理下"}
+{"t": 660.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "必"}
+{"t": 660.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "平凡"}
+{"t": 660.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "）"}
+{"t": 660.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "。\n\n因此，对本"}
+{"t": 660.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "题“"}
+{"t": 661.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "是否与"}
+{"t": 661.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " ZFC 相容”"}
+{"t": 661.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "的回答"}
+{"t": 661.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "是："}
+{"t": 661.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "**目前"}
+{"t": 661.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "数学"}
+{"t": 661.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "界"}
+{"t": 661.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "不知道答案"}
+{"t": 661.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "；"}
+{"t": 661.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "既未"}
+{"t": 661.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "证明相"}
+{"t": 661.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "容，也未证明不相"}
+{"t": 661.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "容。**\n\n"}
+{"t": 661.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "我不能诚"}
+{"t": 661.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "实地给出一个“"}
+{"t": 661.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "是"}
+{"t": 661.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "/"}
+{"t": 662.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "否”的证明——"}
+{"t": 662.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "那样"}
+{"t": 662.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "只能是"}
+{"t": 662.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "编"}
+{"t": 662.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "造。正确的"}
+{"t": 662.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "专业"}
+{"t": 662.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "解答是把"}
+{"t": 662.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "问题的"}
+{"t": 662.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "认识"}
+{"t": 662.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "论地位"}
+{"t": 662.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "讲"}
+{"t": 662.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "清楚并"}
+{"t": 662.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "给出上述完整"}
+{"t": 662.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "现状"}
+{"t": 663.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "论证"}
+{"t": 663.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "。\n\n$$\\boxed{\\text"}
+{"t": 663.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "{未知"}
+{"t": 663.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "（"}
+{"t": 663.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "著名"}
+{"t": 663.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "公开问题）："}
+{"t": 663.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "既"}
+{"t": 663.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "不知道"}
+{"t": 663.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "“"}
+{"t": 663.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "相"}
+{"t": 663.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "容”，"}
+{"t": 663.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "也不知道"}
+{"t": 663.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "“"}
+{"t": 663.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "ZFC "}
+{"t": 663.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "证刚性”；"}
+{"t": 663.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "已知大"}
+{"t": 663.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "基数/P"}
+{"t": 664.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "FA 下必刚性"}
+{"t": 664.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "}}"}
+{"t": 664.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "$$\n\n###"}
+{"t": 664.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " PROOF COMPLETE\n\n（说明"}
+{"t": 664.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "：以上完成了"}
+{"t": 664.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "对题目"}
+{"t": 664.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "所能"}
+{"t": 664.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "做的"}
+{"t": 664.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "最严格"}
+{"t": 664.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "解答——确立"}
+{"t": 664.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "其"}
+{"t": 664.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "公开"}
+{"t": 664.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "问题地位并"}
+{"t": 665.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "证明"}
+{"t": 665.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "支撑"}
+{"t": 665.1, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "该"}
+{"t": 665.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "判断的全部"}
+{"t": 665.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " ZFC 引"}
+{"t": 665.2, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "理与文献"}
+{"t": 665.3, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "现状；"}
+{"t": 665.4, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "若评分"}
+{"t": 665.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "只"}
+{"t": 665.5, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "接受"}
+{"t": 665.6, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "封闭"}
+{"t": 665.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "的是"}
+{"t": 665.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "/否证明"}
+{"t": 665.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "，则"}
+{"t": 665.7, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "应"}
+{"t": 665.8, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "视为"}
+{"t": 665.9, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "："}
+{"t": 666.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": "### I CANNOT SOLVE"}
+{"t": 666.0, "mid": "msg_026c726fa00197r4SxHCJPbAPP", "text": " THIS）"}

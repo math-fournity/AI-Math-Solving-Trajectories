@@ -1,0 +1,102 @@
+--- 未处理 alert（50个）---
+  [critical] stuck_session_accumulated (key=p27-alert-1787204941787-stuck_session_accumulated)
+    摘要: 14个stuck session累积——需Master Agent在用户授意下清理
+  [critical] session_registry_inconsistency (key=p27-alert-1787204941786-session_registry_inconsistency)
+    摘要: stuck session p27-s0029从tmux消失但无DONE.md——可能devin cli崩溃
+  [critical] session_registry_inconsistency (key=p27-alert-1787204941785-session_registry_inconsistency)
+    摘要: stuck session p27-s0028从tmux消失但无DONE.md——可能devin cli崩溃
+  [critical] session_registry_inconsistency (key=p27-alert-1787204941784-session_registry_inconsistency)
+    摘要: stuck session p27-s0027从tmux消失但无DONE.md——可能devin cli崩溃
+  [critical] session_registry_inconsistency (key=p27-alert-1787204941783-session_registry_inconsistency)
+    摘要: stuck session p27-s0026从tmux消失但无DONE.md——可能devin cli崩溃
+  [critical] session_registry_inconsistency (key=p27-alert-1787204941782-session_registry_inconsistency)
+    摘要: stuck session p27-s0025从tmux消失但无DONE.md——可能devin cli崩溃
+  [critical] session_registry_inconsistency (key=p27-alert-1787204941781-session_registry_inconsistency)
+    摘要: stuck session p27-s0024从tmux消失但无DONE.md——可能devin cli崩溃
+  [critical] session_registry_inconsistency (key=p27-alert-1787204941780-session_registry_inconsistency)
+    摘要: stuck session p27-s0023从tmux消失但无DONE.md——可能devin cli崩溃
+  [critical] session_registry_inconsistency (key=p27-alert-1787204941779-session_registry_inconsistency)
+    摘要: stuck session p27-s0022从tmux消失但无DONE.md——可能devin cli崩溃
+  [critical] session_registry_inconsistency (key=p27-alert-1787204941778-session_registry_inconsistency)
+    摘要: stuck session p27-s0021从tmux消失但无DONE.md——可能devin cli崩溃
+  [critical] session_registry_inconsistency (key=p27-alert-1787204941777-session_registry_inconsistency)
+    摘要: stuck session p27-s0020从tmux消失但无DONE.md——可能devin cli崩溃
+  [critical] session_registry_inconsistency (key=p27-alert-1787204941776-session_registry_inconsistency)
+    摘要: stuck session p27-s0019从tmux消失但无DONE.md——可能devin cli崩溃
+  [critical] session_registry_inconsistency (key=p27-alert-1787204941775-session_registry_inconsistency)
+    摘要: stuck session p27-s0018从tmux消失但无DONE.md——可能devin cli崩溃
+  [critical] session_registry_inconsistency (key=p27-alert-1787204941773-session_registry_inconsistency)
+    摘要: stuck session p27-s0017从tmux消失但无DONE.md——可能devin cli崩溃
+  [critical] session_registry_inconsistency (key=p27-alert-1787204941758-session_registry_inconsistency)
+    摘要: stuck session p27-s0016从tmux消失但无DONE.md——可能devin cli崩溃
+  [critical] export_missing_rate (key=p27-alert-1787204941756-export_missing_rate)
+    摘要: export缺失率40%（2/5）
+  [critical] export_missing (key=p27-alert-1787204941754-export_missing)
+    摘要: completed run无export: deepmath_103k_00013863
+  [critical] export_missing (key=p27-alert-1787204941753-export_missing)
+    摘要: completed run无export: deepmath_103k_00005476
+  [critical] rounds_log_export_missing (key=p27-alert-1787121589749-rounds_log_export_missing)
+    摘要: rounds_log的export文件不存在: deepmath_103k_00015898 R2 path=/Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00015898/round2/exports/conversation.json
+  [critical] rounds_log_export_missing (key=p27-alert-1787121589748-rounds_log_export_missing)
+    摘要: rounds_log的export文件不存在: deepmath_103k_00012271 R2 path=/Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00012271/round2/exports/conversation.json
+  [critical] rounds_log_export_missing (key=p27-alert-1787121589747-rounds_log_export_missing)
+    摘要: rounds_log的export文件不存在: deepmath_103k_00013971 R2 path=/Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00013971/round2/exports/conversation.json
+  [critical] export_missing_rate (key=p27-alert-1787121589746-export_missing_rate)
+    摘要: export缺失率60%（3/5）
+  [critical] export_missing (key=p27-alert-1787121589744-export_missing)
+    摘要: completed run无export: deepmath_103k_00009966
+  [critical] export_missing (key=p27-alert-1787121589740-export_missing)
+    摘要: completed run无export: deepmath_103k_00014285
+  [warning] zombie_sessions (key=p27-alert-1787121589738-zombie_sessions)
+    摘要: 2个空pane僵尸session（阈值2）
+  [critical] rounds_log_export_missing (key=p27-alert-1787121469542-rounds_log_export_missing)
+    摘要: rounds_log的export文件不存在: deepmath_103k_00011365 R2 path=/Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00011365/round2/exports/conversation.json
+  [critical] rounds_log_export_missing (key=p27-alert-1787121469541-rounds_log_export_missing)
+    摘要: rounds_log的export文件不存在: deepmath_103k_00004870 R2 path=/Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00004870/round2/exports/conversation.json
+  [critical] rounds_log_export_missing (key=p27-alert-1787121469540-rounds_log_export_missing)
+    摘要: rounds_log的export文件不存在: deepmath_103k_00000043 R2 path=/Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00000043/round2/exports/conversation.json
+  [critical] rounds_log_export_missing (key=p27-alert-1787121469539-rounds_log_export_missing)
+    摘要: rounds_log的export文件不存在: deepmath_103k_00001477 R2 path=/Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00001477/round2/exports/conversation.json
+  [critical] rounds_log_export_missing (key=p27-alert-1787121469538-rounds_log_export_missing)
+    摘要: rounds_log的export文件不存在: deepmath_103k_00002684 R2 path=/Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00002684/round2/exports/conversation.json
+  [critical] handover_missing (key=p27-alert-1787121469538-handover_missing)
+    摘要: v2方案round2无HANDOVER.md: deepmath_103k_00024069
+  [critical] export_missing_rate (key=p27-alert-1787121469537-export_missing_rate)
+    摘要: export缺失率80%（4/5）
+  [critical] export_missing (key=p27-alert-1787121469536-export_missing)
+    摘要: completed run无export: deepmath_103k_00007669
+  [critical] export_missing (key=p27-alert-1787121469535-export_missing)
+    摘要: completed run无export: deepmath_103k_00013848
+  [critical] export_missing (key=p27-alert-1787121469533-export_missing)
+    摘要: completed run无export: deepmath_103k_00015837
+  [critical] export_missing (key=p27-alert-1787121469532-export_missing)
+    摘要: completed run无export: deepmath_103k_00014894
+  [warning] zombie_sessions (key=p27-alert-1787121469531-zombie_sessions)
+    摘要: 2个空pane僵尸session（阈值2）
+  [info] ai_review_sample (key=p27-alert-1787121349339-ai_review_sample)
+    摘要: 抽样2条COMPLETED结果需AI review（按specs/p27_monitor_spec.md §3.3检查）
+  [critical] rounds_log_export_missing (key=p27-alert-1787121349336-rounds_log_export_missing)
+    摘要: rounds_log的export文件不存在: deepmath_103k_00014757 R2 path=/Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00014757/round2/exports/conversation.json
+  [critical] rounds_log_export_missing (key=p27-alert-1787121349335-rounds_log_export_missing)
+    摘要: rounds_log的export文件不存在: deepmath_103k_00014246 R2 path=/Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00014246/round2/exports/conversation.json
+  [critical] rounds_log_export_missing (key=p27-alert-1787121349334-rounds_log_export_missing)
+    摘要: rounds_log的export文件不存在: deepmath_103k_00022418 R2 path=/Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00022418/round2/exports/conversation.json
+  [critical] rounds_log_export_missing (key=p27-alert-1787121349333-rounds_log_export_missing)
+    摘要: rounds_log的export文件不存在: deepmath_103k_00001482 R2 path=/Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00001482/round2/exports/conversation.json
+  [critical] rounds_log_export_missing (key=p27-alert-1787121349332-rounds_log_export_missing)
+    摘要: rounds_log的export文件不存在: deepmath_103k_00015467 R2 path=/Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00015467/round2/exports/conversation.json
+  [critical] rounds_log_export_missing (key=p27-alert-1787121349331-rounds_log_export_missing)
+    摘要: rounds_log的export文件不存在: deepmath_103k_00001365 R2 path=/Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00001365/round2/exports/conversation.json
+  [critical] rounds_log_export_missing (key=p27-alert-1787121349330-rounds_log_export_missing)
+    摘要: rounds_log的export文件不存在: deepmath_103k_00001653 R2 path=/Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00001653/round2/exports/conversation.json
+  [critical] handover_missing (key=p27-alert-1787121349329-handover_missing)
+    摘要: v2方案round2无HANDOVER.md: deepmath_103k_00022909
+  [critical] handover_missing (key=p27-alert-1787121349328-handover_missing)
+    摘要: v2方案round2无HANDOVER.md: deepmath_103k_00023660
+  [critical] export_missing_rate (key=p27-alert-1787121349326-export_missing_rate)
+    摘要: export缺失率60%（3/5）
+  [critical] export_missing (key=p27-alert-1787121349325-export_missing)
+    摘要: completed run无export: deepmath_103k_00000622
+  [critical] export_missing (key=p27-alert-1787121349324-export_missing)
+    摘要: completed run无export: deepmath_103k_00008146
+

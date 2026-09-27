@@ -1,0 +1,29 @@
+{
+ "problem_chars": 362,
+ "total_rounds": 1,
+ "total_time_sec": 1888.0,
+ "final_status": "COMPLETED",
+ "completed": true,
+ "rounds": [
+  {
+   "round": 1,
+   "role": "solver_initial",
+   "sessionId": "ses_fd92c3a4fffevhUyll2Jn2bXuJ",
+   "protocolVersion": 1,
+   "counts": {
+    "thought": 31573,
+    "message": 423,
+    "tool": 154
+   },
+   "thought_chars": 106422,
+   "message_chars": 1830,
+   "outputTokens": 505,
+   "stopReason": "end_turn",
+   "final_status": "COMPLETED",
+   "budget_starved": false,
+   "has_proof": true,
+   "has_boxed": true,
+   "duration_sec": 1878.3
+  }
+ ]
+}

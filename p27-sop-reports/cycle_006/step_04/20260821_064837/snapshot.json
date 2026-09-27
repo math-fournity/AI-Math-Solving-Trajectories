@@ -1,0 +1,71 @@
+{
+  "batch_id": "p27-full",
+  "timestamp": "2026-08-21T06:48:37.270066+00:00",
+  "cycle": 6,
+  "step": "04",
+  "step_name": "C类AI判断",
+  "aggregate": {
+    "total_runs": 6082,
+    "status_counts": {
+      "completed": 127,
+      "prepared": 5954,
+      "running": 1
+    },
+    "final_status_counts": {
+      "COMPLETED": 127,
+      "None": 5955
+    },
+    "completed": 127,
+    "completion_rate": 0.0209,
+    "results_collection_count": 3,
+    "events_total": 646,
+    "sessions_total": 1813
+  },
+  "by_source": {
+    "aime": {
+      "total": 13,
+      "completed": 0,
+      "rate": 0.0
+    },
+    "amo": {
+      "total": 2,
+      "completed": 2,
+      "rate": 1.0
+    },
+    "compfiles": {
+      "total": 118,
+      "completed": 0,
+      "rate": 0.0
+    },
+    "deepmath": {
+      "total": 1305,
+      "completed": 125,
+      "rate": 0.0958
+    },
+    "fate": {
+      "total": 33,
+      "completed": 0,
+      "rate": 0.0
+    },
+    "mathnet": {
+      "total": 2,
+      "completed": 0,
+      "rate": 0.0
+    },
+    "oda": {
+      "total": 584,
+      "completed": 0,
+      "rate": 0.0
+    },
+    "omni": {
+      "total": 52,
+      "completed": 0,
+      "rate": 0.0
+    },
+    "polymath": {
+      "total": 3973,
+      "completed": 0,
+      "rate": 0.0
+    }
+  }
+}

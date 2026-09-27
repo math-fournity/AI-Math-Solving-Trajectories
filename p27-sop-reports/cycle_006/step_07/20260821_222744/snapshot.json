@@ -1,0 +1,84 @@
+{
+  "batch_id": "p27-full",
+  "timestamp": "2026-08-21T22:27:44.375097+00:00",
+  "cycle": 6,
+  "step": "07",
+  "step_name": "审计系统健康检查",
+  "aggregate": {
+    "total_runs": 10072,
+    "status_counts": {
+      "completed": 162,
+      "prepared": 9887,
+      "failed_stall": 15,
+      "dead_session": 6,
+      "audit_failed": 1,
+      "rate_limited": 1
+    },
+    "final_status_counts": {
+      "COMPLETED": 163,
+      "None": 9909
+    },
+    "completed": 163,
+    "completion_rate": 0.0162,
+    "results_collection_count": 162,
+    "events_total": 891,
+    "sessions_total": 1955
+  },
+  "by_source": {
+    "amo": {
+      "total": 32,
+      "completed": 2,
+      "rate": 0.0625
+    },
+    "anti": {
+      "total": 33,
+      "completed": 0,
+      "rate": 0.0
+    },
+    "deepmath": {
+      "total": 2132,
+      "completed": 161,
+      "rate": 0.0755
+    },
+    "fineproofs": {
+      "total": 734,
+      "completed": 0,
+      "rate": 0.0
+    },
+    "formal": {
+      "total": 755,
+      "completed": 0,
+      "rate": 0.0
+    },
+    "math": {
+      "total": 12,
+      "completed": 0,
+      "rate": 0.0
+    },
+    "matharena": {
+      "total": 25,
+      "completed": 0,
+      "rate": 0.0
+    },
+    "matholympiadbench": {
+      "total": 119,
+      "completed": 0,
+      "rate": 0.0
+    },
+    "oda": {
+      "total": 1293,
+      "completed": 0,
+      "rate": 0.0
+    },
+    "olymmath": {
+      "total": 2,
+      "completed": 0,
+      "rate": 0.0
+    },
+    "polymath": {
+      "total": 4935,
+      "completed": 0,
+      "rate": 0.0
+    }
+  }
+}

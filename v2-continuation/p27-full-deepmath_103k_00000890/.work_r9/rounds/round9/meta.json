@@ -1,0 +1,20 @@
+{
+ "round": 9,
+ "role": "solver",
+ "sessionId": "ses_fd83c379dffeX1K620fOiWCbeJ",
+ "protocolVersion": 1,
+ "counts": {
+  "thought": 12332,
+  "message": 0,
+  "tool": 3
+ },
+ "thought_chars": 84314,
+ "message_chars": 0,
+ "outputTokens": 32000,
+ "stopReason": "end_turn",
+ "final_status": "BUDGET_STARVED",
+ "budget_starved": true,
+ "has_proof": false,
+ "has_boxed": false,
+ "duration_sec": 920.6
+}

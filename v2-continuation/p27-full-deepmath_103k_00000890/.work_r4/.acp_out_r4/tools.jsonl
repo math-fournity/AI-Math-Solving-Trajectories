@@ -1,0 +1,9 @@
+{"t": 8.3, "kind": "tool_call", "title": "bash", "status": "pending"}
+{"t": 8.3, "kind": "tool_call_update", "title": "ls -la && ls -la rounds/round1 rounds/round2 rounds/round3 2>/dev/null", "status": "in_progress"}
+{"t": 8.3, "kind": "tool_call_update", "title": "ls -la && ls -la rounds/round1 rounds/round2 rounds/round3 2>/dev/null", "status": "in_progress"}
+{"t": 8.3, "kind": "tool_call_update", "title": "ls -la && ls -la rounds/round1 rounds/round2 rounds/round3 2>/dev/null", "status": "in_progress"}
+{"t": 8.3, "kind": "tool_call_update", "title": "ls -la && ls -la rounds/round1 rounds/round2 rounds/round3 2>/dev/null", "status": "in_progress"}
+{"t": 8.3, "kind": "tool_call_update", "title": "ls -la && ls -la rounds/round1 rounds/round2 rounds/round3 2>/dev/null", "status": "completed"}
+{"t": 8.7, "kind": "tool_call", "title": "skill", "status": "pending"}
+{"t": 8.7, "kind": "tool_call_update", "title": "skill", "status": "in_progress"}
+{"t": 8.7, "kind": "tool_call_update", "title": "Loaded skill: oc-trajectory", "status": "completed"}

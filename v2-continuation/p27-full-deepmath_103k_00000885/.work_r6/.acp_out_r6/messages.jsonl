@@ -1,0 +1,108 @@
+{"t": 21.8, "mid": "msg_02720d4c7001lUnXPPywdGkTUH", "text": "round"}
+{"t": 21.9, "mid": "msg_02720d4c7001lUnXPPywdGkTUH", "text": "5 目录里没有"}
+{"t": 21.9, "mid": "msg_02720d4c7001lUnXPPywdGkTUH", "text": " thinking"}
+{"t": 22.0, "mid": "msg_02720d4c7001lUnXPPywdGkTUH", "text": " 流"}
+{"t": 22.0, "mid": "msg_02720d4c7001lUnXPPywdGkTUH", "text": "，只有继承"}
+{"t": 22.1, "mid": "msg_02720d4c7001lUnXPPywdGkTUH", "text": "笔记"}
+{"t": 22.2, "mid": "msg_02720d4c7001lUnXPPywdGkTUH", "text": "。先找"}
+{"t": 22.2, "mid": "msg_02720d4c7001lUnXPPywdGkTUH", "text": " round"}
+{"t": 22.3, "mid": "msg_02720d4c7001lUnXPPywdGkTUH", "text": "5 的 trajectory"}
+{"t": 22.4, "mid": "msg_02720d4c7001lUnXPPywdGkTUH", "text": " "}
+{"t": 22.4, "mid": "msg_02720d4c7001lUnXPPywdGkTUH", "text": "实际位置。"}
+{"t": 36.2, "mid": "msg_02720f64900167Eh9j8XeHBIb5", "text": "round5 的思考"}
+{"t": 36.3, "mid": "msg_02720f64900167Eh9j8XeHBIb5", "text": "流在 `.work_r5"}
+{"t": 36.3, "mid": "msg_02720f64900167Eh9j8XeHBIb5", "text": "/.acp_out_r5"}
+{"t": 36.4, "mid": "msg_02720f64900167Eh9j8XeHBIb5", "text": "/th"}
+{"t": 36.5, "mid": "msg_02720f64900167Eh9j8XeHBIb5", "text": "oughts.jsonl`。"}
+{"t": 36.5, "mid": "msg_02720f64900167Eh9j8XeHBIb5", "text": "先看 round"}
+{"t": 36.6, "mid": "msg_02720f64900167Eh9j8XeHBIb5", "text": "5 "}
+{"t": 36.7, "mid": "msg_02720f64900167Eh9j8XeHBIb5", "text": "工作目录产"}
+{"t": 36.7, "mid": "msg_02720f64900167Eh9j8XeHBIb5", "text": "出了什么，"}
+{"t": 36.8, "mid": "msg_02720f64900167Eh9j8XeHBIb5", "text": "再 scan。"}
+{"t": 59.5, "mid": "msg_027215ba3001CXaG6z1Q6t6xd0", "text": "round5 "}
+{"t": 59.5, "mid": "msg_027215ba3001CXaG6z1Q6t6xd0", "text": "确认 `"}
+{"t": 59.6, "mid": "msg_027215ba3001CXaG6z1Q6t6xd0", "text": "BUDGET_STARVED`"}
+{"t": 59.7, "mid": "msg_027215ba3001CXaG6z1Q6t6xd0", "text": "（32000 output、"}
+{"t": 59.7, "mid": "msg_027215ba3001CXaG6z1Q6t6xd0", "text": "无"}
+{"t": 59.9, "mid": "msg_027215ba3001CXaG6z1Q6t6xd0", "text": " message"}
+{"t": 59.9, "mid": "msg_027215ba3001CXaG6z1Q6t6xd0", "text": "、只"}
+{"t": 60.0, "mid": "msg_027215ba3001CXaG6z1Q6t6xd0", "text": "读过"}
+{"t": 60.1, "mid": "msg_027215ba3001CXaG6z1Q6t6xd0", "text": "一次笔记"}
+{"t": 60.2, "mid": "msg_027215ba3001CXaG6z1Q6t6xd0", "text": "），没"}
+{"t": 60.2, "mid": "msg_027215ba3001CXaG6z1Q6t6xd0", "text": "写任何"}
+{"t": 60.3, "mid": "msg_027215ba3001CXaG6z1Q6t6xd0", "text": "文件。全部"}
+{"t": 60.3, "mid": "msg_027215ba3001CXaG6z1Q6t6xd0", "text": "进展"}
+{"t": 60.4, "mid": "msg_027215ba3001CXaG6z1Q6t6xd0", "text": "在思考"}
+{"t": 60.5, "mid": "msg_027215ba3001CXaG6z1Q6t6xd0", "text": "流尾部。看最后的"}
+{"t": 60.5, "mid": "msg_027215ba3001CXaG6z1Q6t6xd0", "text": "思考："}
+{"t": 92.2, "mid": "msg_027218920001d4KPDZt7xiDgWW", "text": "尾部"}
+{"t": 92.2, "mid": "msg_027218920001d4KPDZt7xiDgWW", "text": "显示"}
+{"t": 92.3, "mid": "msg_027218920001d4KPDZt7xiDgWW", "text": "轮"}
+{"t": 92.3, "mid": "msg_027218920001d4KPDZt7xiDgWW", "text": "次"}
+{"t": 92.4, "mid": "msg_027218920001d4KPDZt7xiDgWW", "text": "5 "}
+{"t": 92.4, "mid": "msg_027218920001d4KPDZt7xiDgWW", "text": "做完了"}
+{"t": 92.5, "mid": "msg_027218920001d4KPDZt7xiDgWW", "text": "全链"}
+{"t": 92.6, "mid": "msg_027218920001d4KPDZt7xiDgWW", "text": "核查"}
+{"t": 92.7, "mid": "msg_027218920001d4KPDZt7xiDgWW", "text": "清单（("}
+{"t": 92.7, "mid": "msg_027218920001d4KPDZt7xiDgWW", "text": "i"}
+{"t": 92.8, "mid": "msg_027218920001d4KPDZt7xiDgWW", "text": ")–(xii)，"}
+{"t": 92.8, "mid": "msg_027218920001d4KPDZt7xiDgWW", "text": "结论"}
+{"t": 92.9, "mid": "msg_027218920001d4KPDZt7xiDgWW", "text": " \""}
+{"t": 92.9, "mid": "msg_027218920001d4KPDZt7xiDgWW", "text": "All airtight\""}
+{"t": 93.0, "mid": "msg_027218920001d4KPDZt7xiDgWW", "text": "），并在"}
+{"t": 93.1, "mid": "msg_027218920001d4KPDZt7xiDgWW", "text": "写 proof"}
+{"t": 93.1, "mid": "msg_027218920001d4KPDZt7xiDgWW", "text": ".md 大"}
+{"t": 93.2, "mid": "msg_027218920001d4KPDZt7xiDgWW", "text": "纲时"}
+{"t": 93.3, "mid": "msg_027218920001d4KPDZt7xiDgWW", "text": "被"}
+{"t": 93.4, "mid": "msg_027218920001d4KPDZt7xiDgWW", "text": "截断。现在"}
+{"t": 93.4, "mid": "msg_027218920001d4KPDZt7xiDgWW", "text": "定位"}
+{"t": 93.9, "mid": "msg_027218920001d4KPDZt7xiDgWW", "text": "它"}
+{"t": 93.9, "mid": "msg_027218920001d4KPDZt7xiDgWW", "text": "是否"}
+{"t": 93.9, "mid": "msg_027218920001d4KPDZt7xiDgWW", "text": "发现过"}
+{"t": 93.9, "mid": "msg_027218920001d4KPDZt7xiDgWW", "text": "真正的"}
+{"t": 93.9, "mid": "msg_027218920001d4KPDZt7xiDgWW", "text": "错误："}
+{"t": 111.9, "mid": "msg_027221308001LTpeNmjy1152TE", "text": "只"}
+{"t": 111.9, "mid": "msg_027221308001LTpeNmjy1152TE", "text": "发现一处记"}
+{"t": 111.9, "mid": "msg_027221308001LTpeNmjy1152TE", "text": "号笔"}
+{"t": 112.0, "mid": "msg_027221308001LTpeNmjy1152TE", "text": "误（笔记"}
+{"t": 112.1, "mid": "msg_027221308001LTpeNmjy1152TE", "text": "第26"}
+{"t": 112.2, "mid": "msg_027221308001LTpeNmjy1152TE", "text": "行的"}
+{"t": 112.2, "mid": "msg_027221308001LTpeNmjy1152TE", "text": " `D_sZ`"}
+{"t": 112.2, "mid": "msg_027221308001LTpeNmjy1152TE", "text": " 写"}
+{"t": 112.3, "mid": "msg_027221308001LTpeNmjy1152TE", "text": "法），无"}
+{"t": 112.4, "mid": "msg_027221308001LTpeNmjy1152TE", "text": "实质数学错误。下"}
+{"t": 112.4, "mid": "msg_027221308001LTpeNmjy1152TE", "text": "钻两个关键核查"}
+{"t": 112.5, "mid": "msg_027221308001LTpeNmjy1152TE", "text": "段：#"}
+{"t": 112.6, "mid": "msg_027221308001LTpeNmjy1152TE", "text": "016（"}
+{"t": 112.6, "mid": "msg_027221308001LTpeNmjy1152TE", "text": "H-"}
+{"t": 112.8, "mid": "msg_027221308001LTpeNmjy1152TE", "text": "范数恒"}
+{"t": 112.8, "mid": "msg_027221308001LTpeNmjy1152TE", "text": "等式）与"}
+{"t": 112.9, "mid": "msg_027221308001LTpeNmjy1152TE", "text": " #008–"}
+{"t": 113.0, "mid": "msg_027221308001LTpeNmjy1152TE", "text": "#009（Lemma A"}
+{"t": 113.0, "mid": "msg_027221308001LTpeNmjy1152TE", "text": " "}
+{"t": 113.0, "mid": "msg_027221308001LTpeNmjy1152TE", "text": "次序细节）："}
+{"t": 135.9, "mid": "msg_0272272d60012GuMppeMH4ICZe", "text": "重大"}
+{"t": 135.9, "mid": "msg_0272272d60012GuMppeMH4ICZe", "text": "发现"}
+{"t": 136.0, "mid": "msg_0272272d60012GuMppeMH4ICZe", "text": "：轮次5 把“"}
+{"t": 136.0, "mid": "msg_0272272d60012GuMppeMH4ICZe", "text": "阶梯求导”坍"}
+{"t": 136.1, "mid": "msg_0272272d60012GuMppeMH4ICZe", "text": "缩成"}
+{"t": 136.2, "mid": "msg_0272272d60012GuMppeMH4ICZe", "text": "至"}
+{"t": 136.3, "mid": "msg_0272272d60012GuMppeMH4ICZe", "text": "多两次"}
+{"t": 136.4, "mid": "msg_0272272d60012GuMppeMH4ICZe", "text": "微分。"}
+{"t": 136.5, "mid": "msg_0272272d60012GuMppeMH4ICZe", "text": "再看"}
+{"t": 136.6, "mid": "msg_0272272d60012GuMppeMH4ICZe", "text": " #011 的"}
+{"t": 136.6, "mid": "msg_0272272d60012GuMppeMH4ICZe", "text": "验证"}
+{"t": 136.6, "mid": "msg_0272272d60012GuMppeMH4ICZe", "text": "计划（解释"}
+{"t": 136.8, "mid": "msg_0272272d60012GuMppeMH4ICZe", "text": "了"}
+{"t": 136.9, "mid": "msg_0272272d60012GuMppeMH4ICZe", "text": "为何没写成"}
+{"t": 136.9, "mid": "msg_0272272d60012GuMppeMH4ICZe", "text": " proof.md）："}
+{"t": 158.7, "mid": "msg_02722b3e3001qmX56gfZIu5kIA", "text": "再看"}
+{"t": 158.7, "mid": "msg_02722b3e3001qmX56gfZIu5kIA", "text": " #00"}
+{"t": 158.8, "mid": "msg_02722b3e3001qmX56gfZIu5kIA", "text": "6（对"}
+{"t": 158.8, "mid": "msg_02722b3e3001qmX56gfZIu5kIA", "text": "笔记里"}
+{"t": 158.9, "mid": "msg_02722b3e3001qmX56gfZIu5kIA", "text": " Step"}
+{"t": 159.2, "mid": "msg_02722b3e3001qmX56gfZIu5kIA", "text": " 3 Fourier"}
+{"t": 159.3, "mid": "msg_02722b3e3001qmX56gfZIu5kIA", "text": " "}
+{"t": 159.3, "mid": "msg_02722b3e3001qmX56gfZIu5kIA", "text": "恒等"}
+{"t": 159.4, "mid": "msg_02722b3e3001qmX56gfZIu5kIA", "text": "式的质疑与"}
+{"t": 159.4, "mid": "msg_02722b3e3001qmX56gfZIu5kIA", "text": "修正）："}

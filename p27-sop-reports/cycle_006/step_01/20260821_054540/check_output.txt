@@ -1,0 +1,320 @@
+--- 自动化检查结果（monitor_check_continuation.sh）---
+============================================
+POC-2.7续传Monitor检查 @ 2026-08-21T05:45:37Z
+  batch_id: p27-full
+  monitor_session: monitor-p27
+  检查规范: specs/p27_monitor_spec.md
+============================================
+
+=== 1. Monitor Pipe pane输出（最近3轮）===
+  [ALERT critical] session_registry_inconsistency: stuck session p27-s0049从tmux
+  [ALERT critical] session_registry_inconsistency: stuck session p27-s0043从tmux
+  [ALERT critical] session_registry_inconsistency: stuck session p27-s0044从tmux
+  [ALERT critical] session_registry_inconsistency: stuck session p27-s0045从tmux
+  [ALERT critical] session_registry_inconsistency: stuck session p27-s0040从tmux
+  [ALERT critical] session_registry_inconsistency: stuck session p27-s0042从tmux
+  [ALERT critical] session_registry_inconsistency: stuck session p27-s0036从tmux
+  [ALERT critical] session_registry_inconsistency: stuck session p27-s0038从tmux
+  [ALERT critical] session_registry_inconsistency: stuck session p27-s0041从tmux
+  [ALERT critical] session_registry_inconsistency: stuck session p27-s0037从tmux
+  [ALERT critical] session_registry_inconsistency: stuck session p27-s0039从tmux
+  [ALERT critical] session_registry_inconsistency: stuck session p27-s0035从tmux
+  [ALERT critical] session_registry_inconsistency: stuck session p27-s0032从tmux
+  [ALERT critical] session_registry_inconsistency: stuck session p27-s0033从tmux
+  [ALERT critical] session_registry_inconsistency: stuck session p27-s0034从tmux
+  [ALERT critical] stuck_session_accumulated: 100个stuck session累积——需Master A
+  [status] {"completed": 124, "prepared": 5958}
+  [progress] 124/6082 (2%)
+  [final_status] {"COMPLETED": 124}
+  [pass_rate] COMPLETED=124/124 = 100.0%
+
+  >> 需要检查：
+     - 每轮是否有新ALERT？alert类型是什么（critical/warning/info）？
+     - AI_REVIEW抽样的结果——需按specs/p27_monitor_spec.md §3.3的C1-C6标准检查
+     - progress是否在推进？如果停滞，检查launcher日志
+     - pass_rate是否在增长？目标COMPLETED≥50%（415号§7.1）
+
+  >> Session注册表状态（编号化管理）：
+     running: 1个
+     stuck: 100个
+       p27-s1817 (p27-s1817-handover-amo_bench_00000006-r1) — tmux session消失但无DONE.md
+       p27-s1816 (p27-s1816-handover-amo_bench_00000006-r1) — tmux session消失但无DONE.md
+       p27-s1815 (p27-s1815-handover-amo_bench_00000006-r1) — tmux session消失但无DONE.md
+       ... 还有97个
+
+=== 2. alerts集合（新alert，最多5条）===
+=== 新alerts: 40815个 ===
+
+  [critical] stuck_session_accumulated (key=p27-alert-1787291040011-stuck_session_accumulated-018cd4)
+    100个stuck session累积——需Master Agent在用户授意下清理
+    count: 100
+    sessions: [{'key': 'p27-s1817', 'name': 'p27-s1817-handover-amo_bench_00000006-r1', 'notes': 'tmux session消失但无DONE.md'}, {'key': 'p27-s1816', 'name': 'p27-s1816-handover-amo_bench_00000006-r1', 'notes': 'tmux session消失但无DONE.md'}, {'key': 'p27-s1815', 'name': 'p27-s1815-handover-amo_bench_00000006-r1', 'notes': 'tmux session消失但无DONE.md'}, {'key': 'p27-s1814', 'name': 'p27-s1814-handover-amo_bench_00000006-r1', 'notes': 'tmux session消失但无DONE.md'}, {'key': 'p27-s1813', 'name': 'p27-s1813-handover-amo_bench_00000006-r1', 'notes': 'tmux session消失但无DONE.md'}, {'key': 'p27-s1812', 'name': 'p27-s1812-handover-amo_bench_00000006-r1', 'notes': 'tmux session消失但无DONE.md'}, {'key': 'p27-s1811', 'name': 'p27-s1811-handover-amo_bench_00000006-r1', 'notes': 'tmux session消失但无DONE.md'}, {'key': 'p27-s1810', 'name': 'p27-s1810-handover-amo_bench_00000006-r1', 'notes': 'tmux session消失但无DONE.md'}, {'key': 'p27-s1809', 'name': 'p27-s1809-handover-amo_bench_00000006-r1', 'notes': 'tmux session消失但无DONE.md'}, {'key': 'p27-s1808', 'name': 'p27-s1808-handover-amo_bench_00000006-r1', 'notes': 'tmux session消失但无DONE.md'}]
+
+  [critical] session_registry_inconsistency (key=p27-alert-1787291040009-session_registry_inconsistency-30556c)
+    stuck session p27-s0034从tmux消失但无DONE.md——可能devin cli崩溃
+    session_key: p27-s0034
+    session_name: p27-s0034-handover-deepmath_103k_00000041-r1
+    status: stuck
+    done_md: False
+
+  [critical] session_registry_inconsistency (key=p27-alert-1787291040008-session_registry_inconsistency-79abee)
+    stuck session p27-s0033从tmux消失但无DONE.md——可能devin cli崩溃
+    session_key: p27-s0033
+    session_name: p27-s0033-handover-deepmath_103k_00000036-r1
+    status: stuck
+    done_md: False
+
+  [critical] session_registry_inconsistency (key=p27-alert-1787291040007-session_registry_inconsistency-a041a6)
+    stuck session p27-s0032从tmux消失但无DONE.md——可能devin cli崩溃
+    session_key: p27-s0032
+    session_name: p27-s0032-handover-deepmath_103k_00000006-r1
+    status: stuck
+    done_md: False
+
+  [critical] session_registry_inconsistency (key=p27-alert-1787291040006-session_registry_inconsistency-48c7a5)
+    stuck session p27-s0035从tmux消失但无DONE.md——可能devin cli崩溃
+    session_key: p27-s0035
+    session_name: p27-s0035-handover-deepmath_103k_00001757-r1
+    status: stuck
+    done_md: False
+
+  [critical] session_registry_inconsistency (key=p27-alert-1787291040005-session_registry_inconsistency-ac4eef)
+    stuck session p27-s0039从tmux消失但无DONE.md——可能devin cli崩溃
+    session_key: p27-s0039
+    session_name: p27-s0039-handover-deepmath_103k_00001783-r1
+    status: stuck
+
+  >> 需要检查（按specs/p27_monitor_spec.md §2分类处理）：
+     [A类自动检查]
+     - session_health critical → launcher可能挂了，检查进程状态（第3项）
+     - queue_stalled → 检查collector是否在处理completed队列
+     - rate_limit critical → 立即降并发（修改batch.concurrency）
+     - zombie_sessions → 手动kill空panesession
+     - export_missing → 检查D盘是否挂载、trajectory目录是否可写
+     - failure_rate → 检查failure_breakdown，判断是AI能力问题还是基础设施问题
+     - launcher_dead → 重启launcher
+     - long_running → 检查是否真的stall，可能需要kill后重新入队
+     [B类续传质量检查]
+     - proof_missing → COMPLETED但无proof.md，需重跑
+     - proof_no_boxed → proof.md无boxed答案，需检查是否真正完成
+     - proof_too_small → proof.md太小，可能内容不完整
+     - handover_missing → v2方案但无HANDOVER.md，Pipe A失败
+     - all_rounds_truncated → 5轮全截断，可能是真正的思维错误
+     [C类AI review]
+     - ai_review_sample → 读proof.md和HANDOVER.md，按C1-C5标准逐项检查
+     处理完alert后用 --resolve-alert <key> 标记为fixed
+     需要重跑的题：从alert的problem_ids字段获取problem_id，
+       在DB中找到对应的run，将status改回prepared，重新入队
+
+=== 3. 进程状态 ===
+  launcher: PID=95212 CPU=0.0% ELAPSED=01:47 STAT=Ss+
+  monitor: PID=95233 CPU=0.0% ELAPSED=01:45 STAT=Ss+
+  tmux p27-sessions: 2
+
+  >> 需要检查：
+     - launcher和monitor进程是否都在运行？NOT RUNNING = 需要重启
+     - STAT=S+/Ss+ = 正常睡眠；STAT=R = 正在执行；STAT=Z = 僵尸进程（需kill）
+     - CPU 0% + ELAPSED很长 = 可能在sleep中（正常）或卡住（不正常）
+     - tmux p27-sessions应≈并发数；为0可能是session刚完成正在启动下一个
+     - 如果p27-sessions持续为0，检查launcher日志是否有rate_limit_pause
+
+=== 4. 进度 ===
+  prepared                  5958
+  completed                  124
+  ---
+  总完成: 124/6082 (2%)
+  失败: 0
+
+  >> 需要检查：
+     - 进度是否在推进？对比上次检查的completed数
+     - rate_limited/dead_session/failed_stall是否有新增？有则需重新入队
+     - 失败率>15% = 需要降并发或检查rate limit
+
+=== 5. 续传质量汇总 ===
+  final_status分布: {'COMPLETED': 124}
+  proof.md: 存在=0, 有boxed=0, 太小=0
+  5轮全截断（可能思维错误）: 0
+  COMPLETED平均轮次: 1.0
+
+  >> 需要检查：
+     - proof.md存在数 vs COMPLETED数——不匹配说明有proof_missing
+     - 有boxed数 vs 存在数——不匹配说明有proof_no_boxed
+     - 5轮全截断数——这些是真正的思维错误候选
+     - COMPLETED平均轮次——如果>4说明大部分题需要很多轮才能完成
+
+=== 6. 通过率判定（415号§7.1）===
+  COMPLETED=124 / total=124 = 100.0%
+  判定: 大部分是截断错误 → POC-2.5需要重新选题，Pipe 1判定基础有严重问题
+  通过标准: COMPLETED≥50% → 通过
+
+  >> 需要检查：
+     - 通过率是否≥50%？这是POC-2.7的通过标准（415号§7.1）
+     - 如果通过率<50%，检查续传机制是否需要改进（v2交接文档自动化）
+     - 对TRUNCATED_AT_MAX的题，检查是否有proof.md但答案错误→真正的思维错误
+
+=== 7. 系统健康 ===
+  Redis: pending=499 running=0 completed=0
+  tmux: 解题session=0 handover session=1 服务session=2
+  devin cli进程: 1
+  配置并发数: 1
+  [WARNING] running(0) < concurrency(1)——handover可能阻塞或devin cli启动慢
+  [INFO] 1个handover生成中，解题session待启动——这是正常的
+  完成率: 0/499 = 0%
+
+  >> 需要检查：
+     - 解题session数是否≈并发数？如果持续为0且handover session很多，handover生成可能太慢
+     - devin cli进程数是否>0？为0说明所有devin cli已退出，可能需要重启
+     - running < concurrency持续很长时间？检查launcher日志是否有handover阻塞
+     - 完成率是否在增长？对比上次检查的completed数
+
+=== 8. 运行时健康检查（10维度 A-J）===
+/Users/user/AI-Math-Competition-Problem-Solving-System/.venv/bin/python3: No module named monitoring.runtime_health_check
+  [runtime_health_check执行失败——可能Redis未运行或DB未配置]
+
+  >> 需要检查：
+     - 10维度中哪些有⚠️问题？逐个关注
+     - [A] Redis原子性：running集合是否有残留
+     - [B] DB-Redis一致性：DB running数 vs Redis running数
+     - [C] 重复run：同一题是否有重复running
+     - [D] 并发上限：是否超过配置并发数
+     - [E] devin进程数：是否有僵尸进程
+     - [F] 网络健康：API是否可达
+     - [G] devin退出健康：异常退出率
+     - [H] 落盘完整性：completed的题是否都有落盘
+     - [I] 批次进度：进度是否在推进
+     - [J] 日志健康：是否有异常日志
+
+=== 9. 系统流动历史（行为流水 log/flow/，016事故后新增）===
+=== 行为流水统计（窗口=1h，共3017条）===
+  事件速率: 1671.84/分钟，启动速率: 0.55/分钟
+  事件分布: {"gate_pass": 1002, "gate_done": 1002, "enqueue": 1000, "batch_start": 10, "dequeue": 1, "judge": 1, "launch_handover": 1}
+  每题启动次数Top10: {"p27-full-amo_bench_00000006": 1}
+  判定结果分布: {"round1_precheck": 1}
+
+  >> 需要检查：
+     - ⚠️ 失控循环嫌疑非空（同题1小时内启动≥5次）→ 立即处置（016报告§5）
+     - 启动速率异常高（并发≤5时>10/分钟）→ 查 --tail 50 找循环模式
+     - requeue_reasons 大量同类原因 → 判定逻辑可疑，查对应judge事件
+     - judge_outcomes 出现大量stale_proof/stale_export → 旧产物残留
+     - 深挖单题: python -m src.observability --run-key <run_key>
+
+
+============================================
+检查完成 @ 2026-08-21T05:45:39Z
+
+>> AI后续检查清单（Master Agent 逐项处理）：
+   以下项目需要 Master Agent 全文加载 checklist/MasterAgentCheck.md 逐项处理：
+
+   1. [C类AI判断] MON-C1~C5：读proof.md/HANDOVER.md做判断
+      - 详见 checklist/MasterAgentCheck.md §C类AI判断
+
+   2. [self-check] SELF-S1~S17：每轮必须执行的自我检查
+      - 详见 checklist/MasterAgentCheck.md §self-check
+
+   3. [新alert分类处理] 读第2项alerts输出，逐个recheck
+      - 按docs/specs/p27_monitor_spec.md §2分类处理
+      - 处理完用 --resolve-alert <key> 标记为fixed
+      - 详见 checklist/MasterAgentCheck.md §新alert分类处理
+
+   4. [已知问题诊断] MON-A-issue-01~05中未诊断的优先诊断
+      - 详见 checklist/MasterAgentCheck.md §已知问题诊断
+
+   5. [落盘完整性检查] 每个round的完整落盘验证
+      - 详见 checklist/MasterAgentCheck.md §落盘完整性检查
+
+   6. [修复操作] 发现问题后修复，修复后同步更新文档+commit
+      - 详见 checklist/MasterAgentCheck.md §修复操作规范
+
+>> 执行方式：
+   - 全文加载 checklist/MasterAgentCheck.md
+   - 逐项处理上述清单中的每一项
+   - 每完成一项立即 commit（含 trace.csv 同步）
+   - 全部处理完后写执行结果记录
+
+>> 系统健康判断标准：
+   ✅ 健康 = launcher+monitor运行中 + devin cli活跃（pane有内容） + 进度在推进
+   ⚠️ 需关注 = 有新alert + 失败率>15% + handover生成慢
+   ❌修复 = launcher/monitor挂了 + devin cli全卡住 + 进度停滞
+============================================
+
+
+--- 步进门闸Y通道（waiting中的闸=系统冻结点）---
+  ✅ 无Y——没有闸在等待，系统未被hold冻结
+
+--- 行为流水快照（016预警：失控循环3秒可见，`observability --stats --since 1h`）---
+=== 行为流水统计（窗口=1h，共3017条）===
+  事件速率: 1669.47/分钟，启动速率: 0.55/分钟
+  事件分布: {"gate_pass": 1002, "gate_done": 1002, "enqueue": 1000, "batch_start": 10, "dequeue": 1, "judge": 1, "launch_handover": 1}
+  每题启动次数Top10: {"p27-full-amo_bench_00000006": 1}
+  判定结果分布: {"round1_precheck": 1}
+
+
+--- 系统运行过程全景视图（023方案：过程叙事，AI分析推理的基础）---
+=== 系统运行过程全景视图 ===
+窗口：过去 1h | 生成时间：2026-08-21 05:45:40 UTC | batch: p27-full | 事件数: 3017
+
+--- L1 现状：系统现在在做什么 ---
+  活跃管线（500条，最后事件非终态）：
+    p27-full-amo_bench_00000006:
+      pid=? round=? 最后事件=gate_done@05:44 (距今46秒)
+      轨迹: dequeue → judge(round1_precheck) → R1handover
+    p27-full-oda_math_460k_00001972:
+      pid=? round=? 最后事件=gate_done@05:44 (距今1分钟)
+    p27-full-oda_math_460k_00000340:
+      pid=? round=? 最后事件=gate_done@05:44 (距今1分钟)
+    p27-full-deepmath_103k_00031969:
+      pid=? round=? 最后事件=gate_done@05:44 (距今1分钟)
+    p27-full-deepmath_103k_00031837:
+      pid=? round=? 最后事件=gate_done@05:44 (距今1分钟)
+    p27-full-deepmath_103k_00031618:
+      pid=? round=? 最后事件=gate_done@05:44 (距今1分钟)
+    p27-full-deepmath_103k_00031548:
+      pid=? round=? 最后事件=gate_done@05:44 (距今1分钟)
+    p27-full-deepmath_103k_00031543:
+      pid=? round=? 最后事件=gate_done@05:44 (距今1分钟)
+    p27-full-deepmath_103k_00031659:
+      pid=? round=? 最后事件=gate_done@05:44 (距今1分钟)
+    p27-full-deepmath_103k_00031946:
+      pid=? round=? 最后事件=gate_done@05:44 (距今1分钟)
+    ...（还有490条活跃管线未显示）
+  队列状态：prepared=5958（DB） | pending=499（Redis）
+  并发槽占用：running=0/1（0个槽被占用）
+
+--- L2 流畅性：运行过程是否顺畅 ---
+  事件速率时间线（每10分钟一段）：
+    04:45-04:55: 无事件（停滞？）
+    04:55-05:05: 无事件（停滞？）
+    05:05-05:15: 无事件（停滞？）
+    05:15-05:25: 无事件（停滞？）
+    05:25-05:35: 无事件（停滞？）
+    05:35-05:45: dequeue=1 launch=1 judge=1 done=0 requeue=0
+  卡顿检测：无（系统运行时段每段都有judge事件）
+  循环检测：无失控嫌疑（1小时内最多启动1次/题，阈值5）
+
+--- L3 流程合规：管线流程是否符合设计 ---
+  门闸通过统计（窗口内1002次auto通过）：
+    GATE-FEED-ENQUEUE: 1000次
+    GATE-OVERWRITE-ROUND1-SEED: 1次
+    GATE-START-HANDOVER: 1次
+  门闸冻结：无（所有门闸auto模式，无waiting）
+  事件序列完整性校验（1条管线，只看核心业务事件）：
+    ✅ 完整序列：1条
+    ⏳ 进行中（judge后无后续，可能还在跑）：0条
+    ❌ 异常序列：0条
+
+--- L4 趋势：运行趋势是什么 ---
+  完成/失败时间序列（每30分钟一段）：
+    04:45: completed=0 failed=0
+    05:15: completed=0 failed=0
+  判定结果分布变化：
+    04:45: 无判定
+    05:15: round1_precheck=1
+  趋势总结：
+    窗口内完成0题，失败0题
+    → 完成速率稳定（前半0→后半0）
+
+=== 全景视图结束 ===
+AI分析指引：在认知闭包背景下阅读以上4层，分析和推理系统运行是否正常。
+L1现状——系统在做什么？L2流畅性——节奏正常吗？L3流程合规——流程按设计走吗？L4趋势——在变好还是变差？
+
+

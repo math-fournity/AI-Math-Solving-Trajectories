@@ -1,0 +1,89 @@
+--- 数据完整性检查（200个run，最多200个）---
+  检查了 200 个 run 的 968 个文件
+  发现 967 个问题：
+  [deepmath_103k_00005671 R2] 输出 export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00005671/round2/exports/conversation.json
+  [deepmath_103k_00005671 R2] 输入 prompt_path 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-dir/p27-continuation/p27-full-deepmath_103k_00005671/round2_prompt.txt
+  [deepmath_103k_00005671 R2] 输入 handover_path 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-dir/p27-continuation/p27-full-deepmath_103k_00005671/round1_HANDOVER.md
+  [deepmath_103k_00005671 R2] 输入 map_path 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-dir/p27-continuation/p27-full-deepmath_103k_00005671/round1_conversation_map.md
+  [deepmath_103k_00005671 R2] 输入 prev_export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-dir/p27-continuation/p27-full-deepmath_103k_00005671/round1_export.json
+  [deepmath_103k_00005564 R2] 输出 export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00005564/round2/exports/conversation.json
+  [deepmath_103k_00005564 R2] 输入 prompt_path 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-dir/p27-continuation/p27-full-deepmath_103k_00005564/round2_prompt.txt
+  [deepmath_103k_00005564 R2] 输入 handover_path 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-dir/p27-continuation/p27-full-deepmath_103k_00005564/round1_HANDOVER.md
+  [deepmath_103k_00005564 R2] 输入 map_path 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-dir/p27-continuation/p27-full-deepmath_103k_00005564/round1_conversation_map.md
+  [deepmath_103k_00005564 R2] 输入 prev_export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-dir/p27-continuation/p27-full-deepmath_103k_00005564/round1_export.json
+  [deepmath_103k_00004824 R2] 输出 export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00004824/round2/exports/conversation.json
+  [deepmath_103k_00004824 R2] 输入 prompt_path 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-dir/p27-continuation/p27-full-deepmath_103k_00004824/round2_prompt.txt
+  [deepmath_103k_00004824 R2] 输入 handover_path 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-dir/p27-continuation/p27-full-deepmath_103k_00004824/round1_HANDOVER.md
+  [deepmath_103k_00004824 R2] 输入 map_path 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-dir/p27-continuation/p27-full-deepmath_103k_00004824/round1_conversation_map.md
+  [deepmath_103k_00004824 R2] 输入 prev_export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-dir/p27-continuation/p27-full-deepmath_103k_00004824/round1_export.json
+  [deepmath_103k_00004794 R2] 输出 export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00004794/round2/exports/conversation.json
+  [deepmath_103k_00004794 R2] 输入 prompt_path 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-dir/p27-continuation/p27-full-deepmath_103k_00004794/round2_prompt.txt
+  [deepmath_103k_00004794 R2] 输入 handover_path 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-dir/p27-continuation/p27-full-deepmath_103k_00004794/round1_HANDOVER.md
+  [deepmath_103k_00004794 R2] 输入 map_path 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-dir/p27-continuation/p27-full-deepmath_103k_00004794/round1_conversation_map.md
+  [deepmath_103k_00004794 R2] 输入 prev_export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-dir/p27-continuation/p27-full-deepmath_103k_00004794/round1_export.json
+  [deepmath_103k_00001623 R2] 输出 export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00001623/round2/exports/conversation.json
+  [deepmath_103k_00001623 R2] 输入 prompt_path 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-dir/p27-continuation/p27-full-deepmath_103k_00001623/round2_prompt.txt
+  [deepmath_103k_00001623 R2] 输入 handover_path 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-dir/p27-continuation/p27-full-deepmath_103k_00001623/round1_HANDOVER.md
+  [deepmath_103k_00001623 R2] 输入 map_path 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-dir/p27-continuation/p27-full-deepmath_103k_00001623/round1_conversation_map.md
+  [deepmath_103k_00001623 R2] 输入 prev_export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-dir/p27-continuation/p27-full-deepmath_103k_00001623/round1_export.json
+  [deepmath_103k_00030483 R2] 输出 export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-trajectory/p27-continuation/p27-full-deepmath_103k_00030483/round2/exports/conversation.json
+  [deepmath_103k_00030483 R2] 输入 prompt_path 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-dir/p27-continuation/p27-full-deepmath_103k_00030483/round2_prompt.txt
+  [deepmath_103k_00030483 R2] 输入 handover_path 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-dir/p27-continuation/p27-full-deepmath_103k_00030483/round1_HANDOVER.md
+  [deepmath_103k_00030483 R2] 输入 map_path 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-dir/p27-continuation/p27-full-deepmath_103k_00030483/round1_conversation_map.md
+  [deepmath_103k_00030483 R2] 输入 prev_export 文件不存在: /Volumes/data/math-agent-glm5.2-tmux-agents-dir/p27-continuation/p27-full-deepmath_103k_00030483/round1_export.json
+  ... 还有 937 个问题
+
+
+--- proof.md 质量统计（RUN-05）---
+  总 run 数: 6082
+  COMPLETED: 124 (124/6082 = 2.0%)
+  proof.md 存在: 0
+  proof.md 有 boxed: 0
+  存在率（proof_exists/COMPLETED）: 0/124 = 0.0%
+  ⚠️ 124 个 COMPLETED 的 run 缺少 proof.md（数据丢失风险）
+
+--- results 集合检查 ---
+  results 集合文档数: 0
+  runs 中 COMPLETED 数: 124
+  ⚠️ results 集合为空或不满——124 个 COMPLETED 的结果未归档到 results（数据丢失风险）
+
+--- events 完整性检查 ---
+  有事件的 run 数: 327
+  有 launched 无 completed/failed: 28 个
+  ⚠️ 以下 run 事件不完整（可能还在运行或崩溃未写完成事件）：
+    p27-full-amo_bench_00000006
+    p27-full-amo_bench_00000008
+    p27-full-deepmath_103k_00000650
+    p27-full-deepmath_103k_00000688
+    p27-full-deepmath_103k_00000716
+    p27-full-deepmath_103k_00000765
+    p27-full-deepmath_103k_00000773
+    p27-full-deepmath_103k_00000776
+    p27-full-deepmath_103k_00000939
+    p27-full-deepmath_103k_00000968
+    ... 还有 18 个
+
+--- prepared 堆积检查 ---
+  prepared 状态的 run 数: 5957
+  Redis pending 数: 499
+  ⚠️ prepared(5957) 远大于 pending(499)——入队速度可能跟不上
+
+--- 按题源完成率统计 ---
+  aime: 0/13 = 0.0% ⚠️ 全0%
+  amo: 0/2 = 0.0% ⚠️ 全0%
+  compfiles: 0/118 = 0.0% ⚠️ 全0%
+  deepmath: 124/1305 = 9.5%
+  fate: 0/33 = 0.0% ⚠️ 全0%
+  mathnet: 0/2 = 0.0% ⚠️ 全0%
+  oda: 0/584 = 0.0% ⚠️ 全0%
+  omni: 0/52 = 0.0% ⚠️ 全0%
+  polymath: 0/3973 = 0.0% ⚠️ 全0%
+  ⚠️ 8 个题源完成率为0%——系统性问题（prompt不适用？model不胜任？还是没跑到？）
+
+--- 标准文件检查（100个run）---
+  标准文件完整性正常
+
+--- round 编号连续性检查（50个run）---
+  从 round=2 开始的 run: 50/50
+  编号连续（正常轮序 [1,2,3..]，round-1 补录已修复）
+
