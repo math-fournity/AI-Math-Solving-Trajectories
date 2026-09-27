@@ -1,0 +1,17 @@
+Proof written to `proof.md`. The proof is complete:
+
+**Answer:** Yes, $f$ has a unique fixed point.
+
+**Outline of the argument:**
+
+1. **Key equivalence:** The condition $\alpha(t_n) \to 1 \Rightarrow t_n \to 0$ is equivalent to $\rho_\varepsilon := \sup_{t \geq \varepsilon} \alpha(t) < 1$ for every $\varepsilon > 0$.
+
+2. **Picard iteration:** $d_n = d(x_n, x_{n+1})$ is strictly decreasing; if its limit $L > 0$, the uniform bound $\rho_L < 1$ forces geometric decay $d_n \leq \rho_L^n d_0 \to 0$, contradiction. So $d_n \to 0$.
+
+3. **Cauchy (the core step):** Assume not Cauchy. Pick $\varepsilon > 0$ and a minimal-index subsequence $m_k > n_k$ with $d(x_{n_k}, x_{m_k}) \geq \varepsilon$ but $d(x_{n_k}, x_{m_k-1}) < \varepsilon$. Then $d(x_{n_k}, x_{m_k}) \to \varepsilon$. The contractive bound gives $\limsup d(x_{n_k+1}, x_{m_k+1}) \leq \rho_\varepsilon \varepsilon < \varepsilon$, while the triangle inequality gives $\liminf \geq \varepsilon$ — contradiction.
+
+4. **Existence & uniqueness:** Completeness gives $x_n \to x^*$; $f$ is 1-Lipschitz hence continuous, so $f(x^*) = x^*$. Uniqueness follows from $d(x^*,y^*) \leq \alpha(d(x^*,y^*))\,d(x^*,y^*) < d(x^*,y^*)$ if $d(x^*,y^*) > 0$.
+
+$$\boxed{\text{Yes, } f \text{ has a (unique) fixed point.}}$$
+
+### PROOF COMPLETE

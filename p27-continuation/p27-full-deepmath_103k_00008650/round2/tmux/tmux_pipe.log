@@ -1,0 +1,19 @@
+证明已写入 `proof.md`。
+
+**答案**：$\boxed{\text{Yes}}$ — 过程 $(S_1, S_2, \ldots)$ 必然是 recurrent 的。
+
+**核心论证**（Atkinson 定理的从头证明）：
+
+1. **反证**：设 $\liminf |S_n| > 0$ 在正测度集上成立，提取一致集 $B$（$\mathbb{P}(B)>0$）和 $N_0$，使得 $|S_n| \geq \epsilon$ on $B$ for $n \geq N_0$。
+
+2. **返回时间**：由 Birkhoff 定理，a.e. $\omega$ 无穷多次访问 $B$，记访问时间为 $m_1 < m_2 < \cdots$。
+
+3. **上闭链恒等式**：$S_n(T^{m_k}\omega) = S_{m_k+n}(\omega) - S_{m_k}(\omega)$，结合 $T^{m_k}\omega \in B$ 得 $|S_{m_k+n} - S_{m_k}| \geq \epsilon$ for $n \geq N_0$。
+
+4. **分离性质**：因 $m_{k+N_0} \geq m_k + N_0$（$N_0$ 个不同整数），故 $|c_j - c_k| \geq \epsilon$ 当 $|j-k| \geq N_0$，其中 $c_k = S_{m_k}$。
+
+5. **增长界**：由 Birkhoff，$|c_k| \leq \delta' k$（$\delta' = 2\delta/\mathbb{P}(B)$，$\delta$ 任意小）。
+
+6. **计数矛盾**：$K-J$ 个值放入长 $2\delta' K$ 的区间，每个 $\epsilon$-区间至多含 $N_0$ 个 → $K - J \leq \frac{4\delta N_0}{\epsilon\,\mathbb{P}(B)} K + 2N_0$。选 $\delta$ 足够小使系数 $< 1/2$，得 $K \leq 2J + 4N_0$，与 $K$ 任意大矛盾。
+
+因此 $\liminf |S_n| = 0$ a.s.，取 $M=1$ 即得 recurrence。

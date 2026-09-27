@@ -1,0 +1,12 @@
+The proof has been written to `proof.md`.
+
+**Summary**: The answer is **yes**, \(X\) must be empty. The proof uses:
+
+1. **Invariance of Domain** to show \(X\) is closed in \(\mathbb{R}^n\).
+2. **One-point compactification** \(X^* = X \cup \{\infty\} \subset S^n\), which is compact and 0-dimensional.
+3. **Alexander duality** (with Čech cohomology) to relate \(\widetilde{H}_{n-1}(\mathbb{R}^n \setminus X)\) to \(\widetilde{H}^0(X^*)\).
+4. Contractibility of \(\mathbb{R}^n \setminus X \cong \mathbb{R}^n\) forces \(\widetilde{H}^0(X^*) = 0\), i.e., \(X^*\) is connected. But 0-dimensional + compact + Hausdorff ⟹ totally disconnected, so \(X^*\) is a single point, giving \(X = \emptyset\).
+
+\(\boxed{X = \emptyset}\)
+
+### PROOF COMPLETE

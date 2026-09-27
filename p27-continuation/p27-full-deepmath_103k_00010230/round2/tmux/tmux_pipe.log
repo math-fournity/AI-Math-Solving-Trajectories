@@ -1,0 +1,15 @@
+Looking at this problem, I need to determine for which $\alpha \in \{3, 4, 5, \ldots, \omega\}$ there exists a linear hypergraph $H = (\omega, E)$ with $E \subseteq [\omega]^\alpha$ and $\chi(H) = \aleph_0$.
+
+Let me work through both cases (finite $\alpha \geq 3$ and $\alpha = \omega$) and write the proof.The proof is written to `proof.md`. Here's the summary:
+
+## Answer
+
+$$\boxed{\text{Yes for finite } \alpha \geq 3;\ \text{No for } \alpha = \omega.}$$
+
+## Key Ideas
+
+**Finite $\alpha \geq 3$ — Yes:** By the Erdős–Hajnal probabilistic method, for every $k$ there exists a finite $\alpha$-uniform linear hypergraph (girth $> 2$ implies linear) with $\chi > k$. Placing these on disjoint subsets of $\omega$ and taking the union yields an $\alpha$-uniform linear hypergraph on $\omega$ with $\chi = \aleph_0$.
+
+**$\alpha = \omega$ — No:** Two-step argument:
+1. **Countability:** Any linear family $E \subseteq [\omega]^\omega$ is countable. Each edge $e$ contributes $\aleph_0$ pairs to $\binom{\omega}{2}$, linearity forces these pair-sets to be disjoint across edges, and $|\binom{\omega}{2}| = \aleph_0$, so $|E| \leq \aleph_0$.
+2. **2-splitting:** A countable family of infinite sets can always be 2-split by diagonalization (at step $n$, pick two uncolored vertices from $e_n$, color them differently). This gives $\chi \leq 2 < \aleph_0$.

@@ -1,0 +1,22 @@
+Looking at this problem, I need to analyze the structure of $f(x)$ carefully.
+
+**Key observation:** The factor $\int_{-\infty}^{x} e^{-(t-\mu)^2/(2\sigma^2)}\,dt$ appears identically in both the numerator and denominator of $f(x)$, so it cancels.
+
+Let me write the proof to proof.md.## 解答概要
+
+**关键观察**：$f(x)$ 的分子和分母中都出现了同一个因子 $G(x)=\int_{-\infty}^{x} e^{-(t-\mu)^2/(2\sigma^2)}\,dt$（积分上限同为 $x$，被积函数相同），因此可以直接约去。参数 $\mu,\sigma$ 完全消去。
+
+约分后：
+$$f(x) = \frac{\beta\, e^{-\beta x}}{\int_{-\infty}^{\infty}\beta\, e^{-\beta x}\,dx}$$
+
+指数分布 $\beta e^{-\beta x}$ 在 $[0,\infty)$ 上归一化（分母 $=1$），故 $f(x)=\beta e^{-\beta x}$。
+
+于是
+$$\frac{f(x)}{g(x)} = \frac{\beta e^{-\beta x}}{e^{-x}} = \beta\, e^{(1-\beta)x}, \quad x\ge 0.$$
+
+- 当 $\beta \ge 1$ 时，$(1-\beta)\le 0$，函数在 $x=0$ 处取最大值 $\beta$；
+- 当 $\beta < 1$ 时，函数趋于 $+\infty$。
+
+$$\boxed{\beta}$$
+
+（完整证明已写入 `proof.md`。）

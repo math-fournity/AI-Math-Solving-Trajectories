@@ -1,0 +1,5 @@
+我将把证明写入 `proof.md` 文件中。The proof has been written to `proof.md`.
+
+**Answer:** $\boxed{B \cong D}$
+
+**Key idea:** The category of abelian varieties over $\mathbb{C}$ satisfies the Krull–Schmidt theorem — every abelian variety decomposes uniquely (up to isomorphism and reordering) into indecomposable factors. This holds because: (1) the category is additive, (2) idempotents split via kernels of idempotent endomorphisms, and (3) endomorphism rings are finitely generated free $\mathbb{Z}$-modules (hence semiperfect). Given Krull–Schmidt, the cancellation follows immediately: since $A \cong C$, their indecomposable factors coincide as multisets; removing these from both sides of the factorization of $A \times B \cong C \times D$ leaves $B \cong D$.

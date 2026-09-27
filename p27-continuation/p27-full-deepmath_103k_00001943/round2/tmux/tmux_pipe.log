@@ -1,0 +1,19 @@
+I'll work through this problem using the key properties of the Skorokhod space and weak* topology, then write the proof to proof.md.
+
+The key insight: $D[0,1]$ with the Skorokhod $J_1$ topology is separable, and the Skorokhod topology coincides with the uniform topology in a neighborhood of 0 (since 0 is continuous). This makes the unit ball of the dual equicontinuous and weak* compact, hence weak* metrizable by separability, hence separable.The proof has been written to `proof.md`.
+
+**Summary:** The unit ball of $D[0,1]^*$ **is** weak* separable. The argument proceeds in six steps:
+
+1. **Separability of $D[0,1]$**: The Skorokhod space with the $J_1$ topology is separable (piecewise constant càdlàg functions with rational data are dense).
+
+2. **Neighborhoods of 0 coincide**: Since $0$ is a continuous function, the Skorokhod distance to $0$ equals the sup-norm: $d_S(x, 0) = \|x\|_\infty$. So the sup-norm unit ball is a Skorokhod-neighborhood of $0$.
+
+3. **Equicontinuity**: The unit ball $B^*$ of the dual is equicontinuous w.r.t. the Skorokhod topology (by Step 2).
+
+4. **Weak* compactness**: $B^*$ is the polar of a neighborhood of $0$, hence weak* compact by Banach–Alaoglu (locally convex version).
+
+5. **Weak* metrizability**: Since $D[0,1]$ is separable and $B^*$ is equicontinuous, the weak* topology on $B^*$ is metrizable (via a countable dense subset of $D[0,1]$).
+
+6. **Compact + metrizable ⇒ separable**.
+
+$$\boxed{\text{Yes, the unit ball of } D[0,1]^* \text{ is separable in the weak* topology.}}$$

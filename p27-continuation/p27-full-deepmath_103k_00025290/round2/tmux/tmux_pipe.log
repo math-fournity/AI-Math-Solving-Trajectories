@@ -1,0 +1,15 @@
+证明已写入 `proof.md`。
+
+**答案：YES** — 任何 cofinal 的 $T \subseteq [\kappa]^{<\omega}$（$\kappa$ 不可数）都包含大小为 $\kappa$ 的 antichain。
+
+**证明骨架**（基于 Round 1 已完成的推导）：
+
+1. **$|T| = \kappa$**：cofinality 给出下界 $|T| \ge \kappa$（每个 $\alpha < \kappa$ 必出现在某个 $t \in T$ 中），$|[\kappa]^{<\omega}| = \kappa^{<\omega} = \kappa$ 给出上界。
+
+2. **$\Delta$-system lemma 对任意不可数 $\kappa$ 成立**：对固定大小 $n$ 的有限集族归纳。关键难点是 Case B（每个元素属于 $< \kappa$ 个集合）的超限递归构造——需要验证"两个 $< \kappa$ 的无穷基数之积仍 $< \kappa$"对 singular $\kappa$ 也成立（因为 $\mu \cdot \nu = \max(\mu,\nu) < \kappa$）。
+
+3. **应用引理**：$T$ 有大小为 $\kappa$ 的 $\Delta$-子族 $\mathcal{D}$，root 为 $R$。
+
+4. **$\Delta$-系统中可比对仅涉及 root**：$D_1 \subseteq D_2 \Rightarrow D_1 = D_1 \cap D_2 = R$。故 $\mathcal{D}$（若 $R \notin \mathcal{D}$）或 $\mathcal{D} \setminus \{R\}$（若 $R \in \mathcal{D}$）是大小为 $\kappa$ 的 antichain。
+
+$$\boxed{\text{Yes}}$$

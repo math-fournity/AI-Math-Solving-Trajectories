@@ -1,0 +1,15 @@
+Looking at this problem, I need to determine whether every object in the topos Sh(B) of sheaves on a complete Boolean algebra B is projective.
+
+Let me work through the key mathematical arguments in my thinking, then write the proof to proof.md.
+
+The core of the proof relies on:
+1. Sh(B) is a Boolean topos (since B is a Boolean algebra)
+2. The Boolean-valued universe V^B satisfies ZFC (hence AC) when B is complete — this uses the **Maximum Principle**
+3. The equivalence between Sh(B) and the category of B-valued sets means AC in V^B translates to "every epi splits" in Sh(B)
+4. "Every epi splits" ⟺ "every object is projective"The proof has been written to `proof.md`.
+
+**Answer:** Yes, every object of $\mathrm{Sh}(B)$ is projective when $B$ is a complete Boolean algebra.
+
+**Key argument:** The topos $\mathrm{Sh}(B)$ is equivalent to the category of $B$-valued sets, which is the topos-theoretic counterpart of the Boolean-valued universe $V^B$. A fundamental theorem (Scott–Solovay) states that $V^B \models \mathrm{ZFC}$ whenever $V \models \mathrm{ZFC}$, so in particular $V^B \models \mathrm{AC}$. The proof of $V^B \models \mathrm{AC}$ uses the **Maximum Principle**, which requires $B$ to be complete (it involves taking suprema of arbitrary families of Boolean truth values to construct witnessing names). Since every surjection in $V^B$ has a section, translating back through the equivalence $\mathrm{Sh}(B) \simeq \mathbf{B}\text{-}\mathbf{Set}$ shows that every epimorphism in $\mathrm{Sh}(B)$ splits, hence every object is projective.
+
+$$\boxed{\text{Yes, every object of } \mathrm{Sh}(B) \text{ is projective.}}$$

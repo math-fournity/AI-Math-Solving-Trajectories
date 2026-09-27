@@ -1,0 +1,19 @@
+I'll continue from where Round 1 left off and write the complete proof to `proof.md`.The complete proof has been written to `proof.md`.
+
+**Summary of the answer:**
+
+$$\boxed{\text{Yes, } \iint \frac{d\nu(x)\,d\nu(y)}{\|x-y\|^{n-2}} \geq 0 \text{ whenever the integral is well-defined.}}$$
+
+**Proof outline** (full version in `proof.md`):
+
+1. **Kernel's Fourier transform is non-negative.** $\widehat{|x|^{2-n}}(\xi) = \frac{4\pi^{n/2}}{\Gamma((n-2)/2)}|\xi|^{-2} \geq 0$, with the constant positive for $n\geq 3$ and $|\xi|^{-2}$ locally integrable near $0$.
+
+2. **Regularization.** Set $K_\varepsilon(x) = |x|^{2-n}e^{-\pi\varepsilon|x|^2}$. Then $\widehat{K_\varepsilon} = \widehat{K} * g_\varepsilon \geq 0$ (convolution of two non-negative functions).
+
+3. **Regularized energy $\geq 0$.** By Fubini: $\iint K_\varepsilon\,d\nu\,d\nu = \int \widehat{K_\varepsilon}|\widehat{\nu}|^2\,d\xi \geq 0$.
+
+4. **Passage to the limit.** As $\varepsilon\searrow 0$, $K_\varepsilon \nearrow K$. Decomposing $\nu = \nu^+ - \nu^-$ and applying monotone convergence: $A_\varepsilon\nearrow A$, $B_\varepsilon\nearrow B$, $C_\varepsilon\nearrow C$, with $A_\varepsilon + C_\varepsilon \geq 2B_\varepsilon$.
+   - **$B<\infty$**: limit gives $A+C\geq 2B$, so $I(\nu) = A-2B+C\geq 0$. ✓
+   - **$B=\infty$**: $A+C=\infty$, energy is $\infty-\infty$ (not well-defined); the case $B=\infty, A,C<\infty$ is impossible by $(\star\star)$.
+
+**Key point:** The Coulomb energy is non-negative whenever it is well-defined. The only obstruction to well-definedness is the $\infty-\infty$ indeterminacy, which the inequality $A_\varepsilon + C_\varepsilon \geq 2B_\varepsilon$ shows can only occur when $B=\infty$ forces $A+C=\infty$ simultaneously.

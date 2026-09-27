@@ -1,0 +1,13 @@
+Looking at this problem, I need to continue from where the previous round left off. The handoff document established that the answer is YES (with proofs verified for $B(H)$, abelian, and tracial cases), but the general proof via the spatial derivative sub-lemma was incomplete due to confusion about whether $d\varphi/d\omega$ is affiliated with $R$ or $R'$.
+
+Let me resolve this and write the complete proof.The proof is complete and written to `proof.md`.
+
+**Key resolution of the previous round's blocker**: The spatial derivative $h = d\varphi/d\omega$ is indeed affiliated with $R'$ (the commutant), **not** $R$. This was the source of the previous round's confusion. However, this is not a problem — it's actually exactly what we need:
+
+1. **Spectral projections $E_N \in R'$**: Since $E_N$ commutes with all $x \in R$, the cross terms in the decomposition $\xi_\varphi = E_N\xi_\varphi + (1-E_N)\xi_\varphi$ vanish: $\langle E_N\xi_\varphi, x(1-E_N)\xi_\varphi\rangle = \langle \xi_\varphi, x\,E_N(1-E_N)\xi_\varphi\rangle = 0$.
+
+2. **The bound $\varphi_1 \leq N^2\omega$ works**: $h^2 E_N \in R'_+$ and $x \in R_+$ commute, so $x \cdot h^2 E_N \leq N^2 x$ as positive operators, giving $\varphi_1(x) \leq N^2 \omega(x)$.
+
+3. **The tail bound works**: $\|\varphi_2\| = \int_N^\infty \lambda^2\, d\mu(\lambda) \to 0$ since $\|\varphi\| = \int_0^\infty \lambda^2\, d\mu < \infty$.
+
+**Answer**: $\boxed{\text{Yes, } P_n \to 0 \text{ in SOT.}}$ The proof shows that a faithful normal state controls all positive normal functionals via spectral truncation of the spatial derivative, and for projections SOT convergence equals WOT convergence (since $\|P_n\xi\|^2 = \langle\xi, P_n\xi\rangle$).

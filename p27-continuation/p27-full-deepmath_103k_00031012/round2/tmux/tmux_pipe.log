@@ -1,0 +1,23 @@
+Looking at the handoff document, I need to complete the upper bound proof $M \leq 2n$. The key missing piece is the Delsarte LP bound. Let me work through this.
+
+The critical insight: use the polynomial $f(x) = 1 + K_1(x) + \frac{2}{n}K_2(x)$ where $K_1, K_2$ are Krawtchouk polynomials. Let me verify this works and write up the complete proof.The proof is complete and written to `proof.md`.
+
+## Summary
+
+The answer is $\boxed{2^{2006}}$.
+
+**Key steps:**
+
+1. **Reduction**: Map 7→0, 8→1. The condition "at most half digits same" ⟺ Hamming distance ≥ n/2. So we need $A(n, n/2)$ with $n = 2^{2005}$.
+
+2. **Lower bound** ($\geq 2n$): The Sylvester Hadamard matrix $H_n$ exists for $n = 2^{2005}$. Its $n$ rows and their $n$ negatives give $2n$ codewords with all pairwise Hamming distances $\geq n/2$.
+
+3. **Upper bound** ($\leq 2n$): The key breakthrough from the handoff's stuck point — using the **Delsarte LP bound** with the polynomial:
+$$f(x) = 1 + K_1(x) + \frac{2}{n}K_2(x) = \frac{2(n-2x)(n-x)}{n}$$
+   - Coefficients: $f_0=1, f_1=1, f_2=2/n \geq 0$, rest zero ✓
+   - $f(i) \leq 0$ for $i \geq n/2$ (since $n-2i \leq 0$, $n-i \geq 0$) ✓
+   - $f(0) = 2n$ ✓
+   
+   The Delsarte bound gives $M \leq f(0)/f_0 = 2n$.
+
+The previous round was stuck because Plotkin bound degenerates at $d = n/2$ and multiple Rankin bound proof attempts failed. The Delsarte LP approach with the clean polynomial $f(x) = \frac{2(n-2x)(n-x)}{n}$ resolves this elegantly.

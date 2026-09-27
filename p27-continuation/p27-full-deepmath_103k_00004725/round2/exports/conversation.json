@@ -1,0 +1,1060 @@
+{
+  "schema_version": "ATIF-v1.7",
+  "session_id": "sweet-daffodil",
+  "agent": {
+    "name": "devin",
+    "version": "3000.4.25",
+    "model_name": "GLM-5.2 High",
+    "tool_definitions": [
+      {
+        "type": "function",
+        "function": {
+          "name": "web_search",
+          "description": "Search the web for information using a search query. Returns relevant web page titles, URLs, and summaries. Use this when you need to find information online.\n\nYou must not include extraneous information in web searches. For example, to find latest python version, do *NOT* search \"latest Python version 2026 3.11 3.12 3.13\". The \"2026 3.11 3.12 3.13\" is unnecessary. Keep the search string simple and focused, e.g. \"latest Python version\".",
+          "parameters": {
+            "required": [
+              "query"
+            ],
+            "properties": {
+              "query": {
+                "description": "The search query to find relevant web pages.",
+                "type": "string"
+              },
+              "num_results": {
+                "description": "Maximum number of results to return. Defaults to 5.",
+                "type": "integer",
+                "default": null
+              },
+              "domain": {
+                "description": "Optional domain to restrict search results to (e.g. \"docs.rs\").",
+                "type": "string"
+              }
+            },
+            "additionalProperties": false,
+            "type": "object"
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "write",
+          "description": "Write content to a file, creating it if needed and overwriting it if it exists.\n\nUsage:\n- Prefer the edit tool for modifying existing files. Only use this tool to create new files or for complete rewrites.\n- If overwriting an existing file, you SHOULD use the read tool first to read the file's contents.\n- NEVER proactively create documentation files (*.md) or README files unless explicitly requested.\n- Only use emojis if the user explicitly requests it. Avoid writing emojis to files unless asked.",
+          "parameters": {
+            "required": [
+              "file_path",
+              "content"
+            ],
+            "properties": {
+              "file_path": {
+                "description": "The absolute path to the file to write",
+                "type": "string"
+              },
+              "content": {
+                "description": "The content to write to the file",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "skill",
+          "description": "Invoke or discover skills. Modes: 'invoke' (default) activates a skill by name, 'list' discovers skills registered in a project at the given path (scans skill directories like .devin/skills/ at the project root, does not recurse into subdirectories), and 'search' recursively scans for model-invocable skills under a given path and filters them by optional keywords. Skills provide context-specific guidance and may grant tool permissions.",
+          "parameters": {
+            "additionalProperties": false,
+            "properties": {
+              "command": {
+                "description": "The skill operation to perform. Defaults to \"invoke\" if omitted.",
+                "default": "invoke",
+                "type": "string",
+                "enum": [
+                  "invoke",
+                  "list",
+                  "search"
+                ]
+              },
+              "skill": {
+                "description": "The name of the skill to invoke (required for 'invoke' command).\nUse one of the available skills listed in the system prompt.",
+                "type": "string",
+                "default": null
+              },
+              "path": {
+                "description": "Project path to discover skills in (required for 'list' and 'search' commands).\nScans skill directories (e.g. .devin/skills/) at the project root;\n`list` does not recurse into subdirectories, while `search` does.\nRelative paths are resolved against the session's working directory.",
+                "type": "string",
+                "default": null
+              },
+              "keywords": {
+                "description": "List of keywords to search for. Empty or omitted means include all skills.",
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "default": null
+              },
+              "keywords_mode": {
+                "type": "string",
+                "enum": [
+                  "or",
+                  "and"
+                ],
+                "description": "Controls whether all keywords or any keyword need to be present.",
+                "default": "or"
+              }
+            },
+            "type": "object"
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "notebook_read",
+          "description": "Read a Jupyter notebook file (.ipynb) and extract all cells with their outputs",
+          "parameters": {
+            "required": [
+              "notebook_path"
+            ],
+            "properties": {
+              "notebook_path": {
+                "description": "The absolute path to the Jupyter notebook file to read (must be absolute, not relative)",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "edit",
+          "description": "Performs exact string replacements in files.\n\nUsage:\n- You must use your `read` tool at least once in the conversation before editing. This tool will error if you attempt an edit without reading the file.\n- When editing text from read tool output, ensure you preserve the exact indentation (tabs/spaces) as it appears AFTER the line number prefix. The line number prefix format is: spaces + line number + tab. Everything after that tab is the actual file content to match. Never include any part of the line number prefix in the old_string or new_string.\n- ALWAYS prefer editing existing files to creating new ones.\n- Only use emojis if the user explicitly requests it. Avoid adding emojis to files unless asked.\n- The edit will FAIL if `old_string` is not unique in the file. Either provide a larger string with more surrounding context to make it unique or use `replace_all` to change every instance of `old_string`.\n- Use `replace_all` for replacing and renaming strings across the file. This parameter is useful if you want to rename a variable for instance.",
+          "parameters": {
+            "required": [
+              "file_path",
+              "old_string",
+              "new_string"
+            ],
+            "properties": {
+              "file_path": {
+                "description": "The absolute path to the file to modify",
+                "type": "string"
+              },
+              "old_string": {
+                "description": "The text to replace. Always provide `old_string` before `new_string` so that streaming displays can show the diff progressively.",
+                "type": "string"
+              },
+              "new_string": {
+                "description": "The text to replace it with (must be different from `old_string`)",
+                "type": "string"
+              },
+              "replace_all": {
+                "description": "Replace all occurrences of `old_string` (default false)",
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "apply_patch",
+          "description": "Use the apply_patch tool to edit files. This is a FREEFORM tool — emit the patch directly, do not wrap it in JSON. You must include a header with your intended action (Add/Update/Delete). You must prefix new lines with `+` even when creating a new file. To delete a file, use a `*** Delete File: <path>` header with no body. To rename or move a file, add a `*** Move to: <new path>` line immediately after its `*** Update File: <path>` header (you may also include edits in the same hunk). You MUST always use the absolute path when specifying the target file.",
+          "parameters": {}
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "mcp_list_servers",
+          "description": "Lists all MCP servers you have access to. Use this first if the user is asking about any third party integrations (e.g. Slack, Linear, etc).",
+          "parameters": {
+            "type": "object",
+            "properties": {},
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "browser_preview",
+          "description": "Spin up a browser preview for a running web server.\n\nThis lets the USER interact with the web server as normal, and lets them send\nyou what they see: selecting a DOM element (with its React component and source\nlocation, when resolvable) or the browser console output. Those captures go into\nthe USER's message box for them to send — you will not receive them unless they\ndo, so ask them to share what they see rather than waiting.\n\nUsage notes:\n  - The server must already be running; start it with a background command\n    first (`timeout: 0`) if it isn't.\n  - Returns immediately with a preview ID and URL. The preview stays up for the\n    rest of the session, so the USER can keep using it after you stop.\n  - An attempt is made to open the URL in the USER's browser; the URL is always\n    printed in case that fails (e.g. over SSH or in a container).\n  - Calling this again for the same URL returns the existing preview.\n  - Use `close_browser_preview` when the preview is no longer needed, e.g.\n    before shutting down the server it points at.\n",
+          "parameters": {
+            "required": [
+              "url",
+              "name"
+            ],
+            "properties": {
+              "url": {
+                "description": "The URL of the target web server to provide a browser preview for. This\nshould contain the scheme (e.g. http:// or https://), domain (e.g.\nlocalhost or 127.0.0.1), and port (e.g. :8080) but no path.",
+                "type": "string"
+              },
+              "name": {
+                "description": "A short 3-5 word name for the target web server. Should be title-cased\ne.g. 'Personal Website'. Format as a simple string, not as markdown; and\nplease output the title directly, do not prefix it with 'Title:' or\nanything similar.",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "kill_shell",
+          "description": "Kills a running background shell by its ID.\n\n- Takes a shell_id parameter identifying the shell to kill\n- Returns a success or failure status\n- Use this tool when you need to terminate a long-running shell\n",
+          "parameters": {
+            "required": [
+              "shell_id"
+            ],
+            "properties": {
+              "shell_id": {
+                "description": "The ID of the shell to kill.",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "webfetch",
+          "description": "Fetches a web page and returns its content as readable text.",
+          "parameters": {
+            "required": [
+              "url"
+            ],
+            "properties": {
+              "url": {
+                "description": "The URL to fetch content from.",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "update_plan",
+          "description": "Updates the task plan. Provide an optional explanation and a list of plan items, each with a non-empty step description and status. At most one step can be in_progress at a time.",
+          "parameters": {
+            "additionalProperties": false,
+            "required": [
+              "plan"
+            ],
+            "type": "object",
+            "properties": {
+              "explanation": {
+                "description": "Optional explanation for this plan update.",
+                "type": "string"
+              },
+              "plan": {
+                "description": "The plan items with step descriptions and statuses.",
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "step": {
+                      "description": "A brief description of the plan step.",
+                      "type": "string"
+                    },
+                    "status": {
+                      "type": "string",
+                      "enum": [
+                        "pending",
+                        "in_progress",
+                        "completed"
+                      ],
+                      "description": "Current status: pending, in_progress, or completed."
+                    }
+                  },
+                  "required": [
+                    "step",
+                    "status"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "run_subagent",
+          "description": "Launch an independent subagent to handle a task autonomously.\n\nSubagents (also referred to as just \"agents\") are good at handling self-contained, multi-step tasks, especially if they can be parallelized:\n- Parallel execution: Splitting subtasks across subagents allows you to complete your work more quickly than doing these tasks on your own. In order to benefit from this, it's important that you actually launch the background subagents in parallel rather than running them one after the other. Note that subagents' work should be self-contained when runnign in parallel so they don't interfere with each other (e.g. we don't want parallel subagents writing to the same files).\n- Self-contained, multi-step work: For tasks that likely require several steps to complete, where the steps to find the final answer aren't very relevant. For example, broad or uncertain searches/explorations are a good use-case.\n         - Keeping your context clean: For tasks that seem mostly irrelevant to the things you've been working on, subagents can let you answer questions while staying focused. For example, if a user asks a question about Devin CLI documentation or configuraiton while you're refactoring on a codebase, you can use a subagent to investigate this tangential question. Use discretion—sometimes the user does want you to switch tasks, especially if you've already worked on several unrelated things already, or if it seems like your previous tasks are complete.\n\n\n         Skip subagents when simpler tools suffice:\n- If you already know the file path, read it directly\n- Use your grep and glob tools rather than subagents when you think they will meet your needs quickly without many attempts\n- Use your edit or read tools directly if only a few files are involved\n\n- Don't use a subagent to do singular tasks like running a command\n\nWriting effective prompts:\n- Subagents are stateless; they cannot ask clarifying questions, and they can't see any of your context. Front-load all context they might neeed: relevant file paths, function/class names, what you already know, and exactly what you need back.\n- State whether the subagent should make changes or only investigate. It has no visibility into the user's original request. When asking open-ended questions, explicitly state how thorough of an answer you want.\nUsage notes:\n- The user never sees subagent output directly, so you'll need to distill subagents' answers into your own response if you want to .\n- You can generally trust subagent results. Avoid re-doing their work unless something looks wrong.\n\n- Set is_background=true to run a background subagent without blocking. You will be notified automatically when it finishes with a <subagent_completion_notification> message. You can check on the status of a background subagent using your read_subagent tool. To wait for a subagent to complete to see its response, call read_subagent with block=true. Background agents are nice for parallelism and work that might take unexpectedly long, in which case you'd want to do other work while waiting.\n        - Set is_background=false to run a foreground subagent when you need the answer before continuing. You can't do any other work while a foreground subagent is running, and at most one foreground agent can run at once. Despite these restrictions, foreground users have a slightly nicer UX and are less frequently blocked by permission issues. So use is_background=false when you don't need paralellism and would have otherwise spawned a background agent then immediately called read_subagent with block=true.\n        - If you want to run both background subagents and a foreground subagent, run the background subagents first and then run the foreground subagent. Don't try to launch multiple foreground subagents in parallel; instead use background subagents or run the foreground subagents sequentially so you can see each subagent's output before launching the next one.",
+          "parameters": {
+            "required": [
+              "title",
+              "task",
+              "profile"
+            ],
+            "properties": {
+              "title": {
+                "description": "A short, human-readable title for this subagent.",
+                "type": "string"
+              },
+              "task": {
+                "description": "The task or prompt to give the subagent. Be specific and detailed.",
+                "type": "string"
+              },
+              "profile": {
+                "description": "The profile to use for this subagent (e.g. \"subagent_explore\", \"subagent_general\").",
+                "type": "string"
+              },
+              "is_background": {
+                "description": "If true, the subagent runs in the background and returns its ID\nimmediately. You will be automatically woken up with the result\nwhen it completes. You can check progress with read_subagent if\nneeded, but do not poll in a loop — just continue with other work\nor end your turn.",
+                "type": "boolean",
+                "default": false
+              },
+              "resume": {
+                "description": "If set to an agent id (which you can get from the response of a previous\nrun_subagent invocation), your prompt will be sent to that agent, so it can\nrespond using its existing execution transcript as context.",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "get_output",
+          "description": "Reads the output from a background shell process.\n\nUsage notes:\n- The shell_id argument is required (use the ID returned by the exec tool)\n- You can specify an optional timeout in milliseconds (up to 280000ms). Timeouts below 10000ms (10s) are raised to 10s; the default is 10s.\n- IMPORTANT: timeout is the MAX wait — this returns immediately when the process exits. If you want to wait for the command to finish, set a long timeout. If you want to quickly check status while working on other tasks in parallel, set a short timeout. Either way, do not repeatedly poll.\n- The process continues running after reading output\n- This will return the output of the most recently executed command in the shell if there is no current command running command\n",
+          "parameters": {
+            "required": [
+              "shell_id"
+            ],
+            "properties": {
+              "shell_id": {
+                "description": "The ID of the shell to read output from.",
+                "type": "string"
+              },
+              "timeout": {
+                "description": "Optional timeout in milliseconds.",
+                "type": "integer"
+              },
+              "incremental": {
+                "description": "If true (default), returns the changes since your last read. For interactive shells whose\nscreen redraws in place (progress bars, block redraws), this is a unified diff so in-place\nline changes are shown as `-`old / `+`new; for plain append-only output it is the new lines.\nIf false, returns the full output buffer.",
+                "type": "boolean"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "notebook_edit",
+          "description": "Edit a cell in a Jupyter notebook file (.ipynb) - replace, insert, or delete cells",
+          "parameters": {
+            "additionalProperties": false,
+            "required": [
+              "notebook_path",
+              "cell_number",
+              "new_source"
+            ],
+            "type": "object",
+            "properties": {
+              "notebook_path": {
+                "description": "The absolute path to the Jupyter notebook file (.ipynb) to edit.",
+                "type": "string"
+              },
+              "cell_number": {
+                "description": "The 0-based index of the cell to edit.",
+                "type": "integer"
+              },
+              "new_source": {
+                "description": "The new source content for the cell.",
+                "type": "string"
+              },
+              "cell_type": {
+                "description": "The type of the cell. If not specified, keeps the current type (for replace) or defaults to code (for insert).",
+                "type": "string",
+                "enum": [
+                  "code",
+                  "markdown"
+                ]
+              },
+              "edit_mode": {
+                "default": "replace",
+                "description": "The edit operation to perform. Defaults to replace.",
+                "type": "string",
+                "enum": [
+                  "replace",
+                  "insert",
+                  "delete"
+                ]
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "read",
+          "description": "Reads a file from the filesystem. The file_path parameter must be an absolute path, not a relative path. By default, it reads up to 20000 characters starting from the beginning of the file. You can optionally specify a line offset and limit (especially handy for long files), but it's recommended to read the whole file by not providing these parameters. Any lines longer than 2000 characters will be truncated.",
+          "parameters": {
+            "required": [
+              "file_path"
+            ],
+            "properties": {
+              "file_path": {
+                "description": "The absolute path to the file to read.",
+                "type": "string"
+              },
+              "offset": {
+                "description": "Optional line number to start reading from (1-based).",
+                "type": "integer"
+              },
+              "limit": {
+                "description": "Optional number of lines to read.",
+                "type": "integer"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "mcp_call_tool",
+          "description": "Execute a tool on an MCP server. Use this to interact with external services like Linear, GitHub, Slack, databases, and more. The tool result will be returned as structured data.",
+          "parameters": {
+            "required": [
+              "server_name",
+              "tool_name"
+            ],
+            "properties": {
+              "server_name": {
+                "description": "Name of the MCP server to use (e.g., \"linear\", \"github\").",
+                "type": "string"
+              },
+              "tool_name": {
+                "description": "Name of the tool to execute.",
+                "type": "string"
+              },
+              "arguments": {
+                "description": "Input arguments for the tool as a JSON object.",
+                "type": "object",
+                "additionalProperties": true,
+                "default": {},
+                "properties": {}
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "ask_user_question",
+          "description": "Present multiple-choice questions to the user and collect their answers.\n\nUse this tool when you need the user to make a decision between several options, such as choosing\nan implementation approach, selecting a library, or confirming a design choice.\n\nKey constraints:\n- 1-4 questions per call\n- 2-4 options per question (an \"Other\" free-text option is always added automatically)\n- Keep headers short (e.g. \"Auth method\", \"Library\"); headers over 16 characters are truncated\n- Option labels should be 1-5 words\n\nThe user can:\n- Select from the predefined options\n- Type a custom answer via the \"Other\" option\n- Skip or decline the question to ask for clarification\n\nIf the user submits answers, you will receive a key-value mapping of question text to their selections.\nQuestions the user skipped are marked with \"skipped\": true — treat a skipped question as the user\ndeclining to choose, not as an error, and proceed with your best judgment.\nIf the user chooses to chat instead, you will receive a rejection with any partial answers they provided.",
+          "parameters": {
+            "additionalProperties": false,
+            "required": [
+              "questions"
+            ],
+            "type": "object",
+            "properties": {
+              "questions": {
+                "description": "Array of 1-4 question objects to present to the user.",
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "question": {
+                      "description": "The full question text to display to the user.",
+                      "type": "string"
+                    },
+                    "header": {
+                      "description": "Short label displayed as a chip/tag, e.g. \"Auth method\", \"Library\".\nLabels longer than 16 characters are truncated with an ellipsis (\"…\") for display.",
+                      "type": "string"
+                    },
+                    "options": {
+                      "description": "The choices presented to the user (2-4 options). An \"Other\" free-text option is always added automatically.",
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "label": {
+                            "description": "Display text the user sees (1-5 words).",
+                            "type": "string"
+                          },
+                          "description": {
+                            "description": "Explanation of what this option means or its trade-offs.",
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "label",
+                          "description"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "multi_select": {
+                      "description": "If true, the user can select multiple options; if false, single-select only.",
+                      "type": "boolean",
+                      "default": false
+                    }
+                  },
+                  "required": [
+                    "question",
+                    "header",
+                    "options"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "answers": {
+                "description": "User's answers, keyed by question text. Populated by the UI when the user responds.\nDo not set this yourself; it will be filled in automatically.",
+                "type": "object",
+                "additionalProperties": {
+                  "description": "Represents a single answer from the user for one question.",
+                  "type": "object",
+                  "properties": {
+                    "selected": {
+                      "description": "The selected option label(s). For single-select, this will have one element.\nFor multi-select, it may have multiple. If \"Other\" was chosen, it will contain \"Other\".",
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "custom_text": {
+                      "description": "Custom text provided by the user. Set when the user selects \"Other\".",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "selected"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "exit_plan_mode",
+          "description": "Exit Plan mode and switch to Normal mode to begin implementation.\n\n**ONLY call this tool when ALL of the following are true:**\n1. You have explored the codebase and understood the task\n2. You have asked any necessary clarifying questions using ask_user_question\n3. You have presented your implementation plan in your messages\n\n**Do NOT call this tool:**\n- For research-only tasks that don't require implementation\n- To ask \"Is this plan okay?\" - use ask_user_question for that instead\n\nInclude a concise summary of the plan in the `plan` parameter so the user can review it before approving.\n\nOn success, you will automatically switch to Normal mode and can begin implementation.",
+          "parameters": {
+            "properties": {
+              "plan": {
+                "description": "A concise summary of the implementation plan. This is displayed to the\nuser for approval before switching out of Plan mode.",
+                "type": "string",
+                "default": null
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "shell_command",
+          "description": "Runs a shell command and returns its output.\n- Use absolute paths in your commands instead of `cd`. Do not use `cd` unless absolutely necessary.",
+          "parameters": {
+            "required": [
+              "command"
+            ],
+            "properties": {
+              "command": {
+                "description": "The shell script to execute.",
+                "type": "string"
+              },
+              "timeout_ms": {
+                "description": "The timeout for the command in milliseconds.",
+                "type": "integer"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "read_subagent",
+          "description": "Reads the response from a background subagent, using the agent_id you got from the run_subagent tool or a <subagent_completion_notification> message. You use block=true to wait for completion. If you have other work to do, you can do that (you'll be notified whenever a subagent completes). This tool will never interrupt a running subagent.",
+          "parameters": {
+            "required": [
+              "agent_id"
+            ],
+            "properties": {
+              "agent_id": {
+                "description": "The ID of the background subagent to read output from.",
+                "type": "string"
+              },
+              "block": {
+                "description": "If true, block until the subagent finishes or the timeout expires.",
+                "type": "boolean",
+                "default": false
+              },
+              "timeout": {
+                "description": "Maximum number of seconds to wait when blocking. Defaults to 30, capped at 600, unless the tool description documents different limits for a specific subagent type.",
+                "type": "integer"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "grep",
+          "description": "A powerful search tool built on ripgrep.\n\nUsage:\n- Always prefer this tool over invoking `grep` or `rg` as a shell command. It has been optimized for correct permissions and access.\n- The pattern is treated as a regular expression.\n- Filter files with the glob_pattern parameter in glob format (e.g., \"*.rs\", \"src/**/*.py\").\n- Use output_mode to control results: 'content' for matching lines, 'files_with_matches' for file paths only, 'count' for match counts. Set case_insensitive for case-insensitive matching and context_lines to show lines around each match.\n- If the result is truncated, narrow your search with a more specific pattern or more filters.\n- Files larger than 4 MB are skipped.",
+          "parameters": {
+            "additionalProperties": false,
+            "required": [
+              "pattern"
+            ],
+            "type": "object",
+            "properties": {
+              "pattern": {
+                "description": "The regular expression pattern to search for, passed to ripgrep under the hood",
+                "type": "string"
+              },
+              "path": {
+                "description": "The directory or file to search in. Defaults to current directory.",
+                "type": "string",
+                "default": "."
+              },
+              "glob_pattern": {
+                "description": "Glob pattern to filter files (e.g., '*.rs' searches .rs files in current dir but not subdirs, 'src/**/*.py' searches .py files in src/ and its subdirs). Defaults to searching all files.",
+                "type": "string"
+              },
+              "output_mode": {
+                "type": "string",
+                "enum": [
+                  "content",
+                  "files_with_matches",
+                  "count"
+                ],
+                "description": "How to format the output.",
+                "default": "content"
+              },
+              "case_insensitive": {
+                "description": "Perform case-insensitive search. Defaults to false.",
+                "type": "boolean",
+                "default": false
+              },
+              "max_results": {
+                "description": "Maximum number of matches to return. Defaults to 100, max 20,000. Only applicable for \"content\" output mode.",
+                "type": "integer"
+              },
+              "context_lines": {
+                "description": "Number of lines to show before and after each match (context). Defaults to 0.",
+                "type": "integer",
+                "default": 0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "exec",
+          "description": "Executes a given shell command in a persistent shell session and waits for output with optional timeout, ensuring proper handling and security measures.\n\nCommands run under bash.\n\nIMPORTANT: This tool is for terminal operations like git, npm, docker, etc. DO NOT use it for file operations (reading, writing, editing, searching, finding files) - use the specialized tools for this instead.\n\nBefore executing the command, please follow these steps:\n\n1. Directory Verification:\n   - If the command will create new directories or files, first use `ls` to verify the parent directory exists and is the correct location\n   - For example, before running \"mkdir foo/bar\", first use `ls foo` to check that \"foo\" exists and is the intended parent directory\n\n2. Command Execution:\n   - Always quote file paths that contain spaces with double quotes (e.g., cd \"path with spaces/file.txt\")\n   - Examples of proper quoting:\n     - cd \"/Users/name/My Documents\" (correct)\n     - cd /Users/name/My Documents (incorrect - will fail)\n     - python \"/path/with spaces/script.py\" (correct)\n     - python /path/with spaces/script.py (incorrect - will fail)\n   - After ensuring proper quoting, execute the command.\n   - Capture the output of the command.\n\nUsage notes:\n  - If the output is too long, it will be truncated before being returned to you.\n  - Commands run in a persistent shell session for each shell_id, preserving state between calls. The working directory persists between commands.\n  - One-shot commands (no `shell_id`) do NOT share state with each other: the working directory does NOT persist between calls. Use the optional `workdir` parameter (an absolute path to an existing directory) to set the working directory for a command, instead of a leading `cd` that the next call would forget. With a `shell_id`, `workdir` changes that session's directory before running the command.\n  - When issuing multiple commands:\n    - If the commands are independent and can run in parallel, make multiple shell tool calls in a single message.\n    - If the commands depend on each other and must run sequentially, chain them in a single call (bash: `cmd1 && cmd2`; PowerShell: `cmd1; if ($?) { cmd2 }`).\n    - In bash, use ';' to run commands sequentially regardless of exit status.\n    - DO NOT use newlines to separate commands (newlines are ok in quoted strings)\n  - Use absolute paths in your commands instead of `cd` if possible. You may use `cd` if the User explicitly requests it.\n  - Passwords cannot be entered into this tool, so `sudo` fails when it needs one. Do NOT retry with a TTY or ask the user to type a password — run without sudo or ask the user to run the command themselves.\n",
+          "parameters": {
+            "required": [
+              "command"
+            ],
+            "properties": {
+              "command": {
+                "description": "The command to execute in the current shell session.\n\nExamples:\n- Bash: \"echo 'Hello World'\", \"ls -la\", \"git status\"\n- PowerShell: \"Write-Output 'Hello World'\", \"Get-ChildItem\"\n\nNote: Do NOT include the shell executable (like \"bash -c\" or \"powershell -Command\") in the command.\nThe command should be the raw shell command as you would type it in the active shell.",
+                "type": "string"
+              },
+              "shell_id": {
+                "description": "Optional shell ID to reuse an existing interactive session. Use shell IDs to maintain multiple shell sessions. When shell ID is provided, writes to that session's stdin. When no shell ID is provided, a new session is created.",
+                "type": "string"
+              },
+              "workdir": {
+                "description": "Optional absolute path to use as the working directory for this command (does not persist between one-shot calls; with a `shell_id` it cds the session).",
+                "type": "string"
+              },
+              "timeout": {
+                "description": "Optional timeout in milliseconds (default: background after 10s idle or 30s total).\nWhen it elapses, a still-running command is backgrounded and its shell_id returned for `get_output`/`kill_shell`. Set to `0` to background immediately.",
+                "type": "integer"
+              },
+              "tty": {
+                "description": "Allocate a PTY-backed interactive session. Default `false`.\n`false` (default): one-shot non-interactive command run through pipes; good for most use cases.\n`true`: persistent interactive session — for TUI programs (vim, tmux, top, REPLs) or state that must persist across calls.",
+                "type": "boolean",
+                "default": false
+              },
+              "env": {
+                "description": "Environment variables for this command's process tree, e.g.\n`{\"API_KEY\": \"abc123\", \"NODE_ENV\": \"development\"}`. These take effect\nonly when a new shell is started, so `env` cannot be combined with\n`shell_id` — omit `shell_id` (the call is rejected otherwise) so the\nvariables are set from the shell's first process onward. They are\nvisible to this command and its child processes only, not to other\nshells or later commands.",
+                "type": "object",
+                "additionalProperties": {
+                  "type": "string"
+                },
+                "properties": {}
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "find_file_by_name",
+          "description": "Fast file name/path pattern matching tool that works with any codebase size using glob patterns. Supports brace expansion (e.g., `**/*.{ts,tsx,js,jsx}`). Matches against file paths, not file contents. Do NOT use this tool for searching for things like function names, variable names, etc. which should be searched against file contents (e.g. using grep).",
+          "parameters": {
+            "required": [
+              "pattern"
+            ],
+            "properties": {
+              "pattern": {
+                "description": "The glob pattern to match files against.\nExamples:\n- `*.py` - matches all Python files in the current directory only (not subdirectories)\n- `**/*.js` - matches all JavaScript files in the current directory and all subdirectories recursively\n- `src/**/*.ts` - matches all TypeScript files within the `src` folder and its subdirectories\n- `test_*.py` - matches Python files starting with `test_` in the current directory (e.g., `test_utils.py`)\n- `**/*.{ts,tsx}` - matches all TypeScript files (both .ts and .tsx) recursively using brace expansion",
+                "type": "string"
+              },
+              "path": {
+                "description": "The directory to search in (defaults to current working directory)",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "todo_write",
+          "description": "Use this tool to create and manage a structured task list for your current session. It tracks your progress and gives the user visibility into what you are working on.\n\n## When to use\nUse this tool for multi-step tasks (3 or more distinct steps), non-trivial tasks that require planning, or when the user provides multiple tasks or explicitly asks for a todo list. Skip it for trivial, single-step, or purely conversational/informational requests — just do the task directly.\n\n## Task states and management\n- Each task is pending, in_progress, or completed\n- Keep exactly ONE task in_progress at a time; mark it in_progress when starting work on it\n- Mark a task completed IMMEDIATELY after finishing it\n- Only mark a task completed when it is fully done — if you hit errors or blockers, keep it in_progress and add a new task describing what must be resolved\n- Add follow-up tasks discovered during work; remove tasks that are no longer relevant\n- Create specific, actionable items and break complex work into smaller steps\n\n## Example\nFor \"Add a dark mode toggle to settings, then run tests and build\":\n1. Add dark mode toggle component to settings page (in_progress)\n2. Wire up dark mode state management\n3. Update existing components to support theme switching\n4. Run tests and build, fixing any failures",
+          "parameters": {
+            "additionalProperties": false,
+            "required": [
+              "todos"
+            ],
+            "type": "object",
+            "properties": {
+              "todos": {
+                "description": "The updated list of todo items.",
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "content": {
+                      "description": "The task description.",
+                      "type": "string"
+                    },
+                    "status": {
+                      "type": "string",
+                      "enum": [
+                        "pending",
+                        "in_progress",
+                        "completed"
+                      ],
+                      "description": "Current status of the todo item."
+                    }
+                  },
+                  "required": [
+                    "content",
+                    "status"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "close_browser_preview",
+          "description": "Closes a running browser preview by its ID.\n\n- Takes a preview_id parameter, as returned by `browser_preview`\n- The preview URL stops working; the web server it points at is untouched\n- Previews are closed automatically when the session ends, so this is only\n  needed to close one early\n",
+          "parameters": {
+            "required": [
+              "preview_id"
+            ],
+            "properties": {
+              "preview_id": {
+                "description": "The ID of the browser preview to close.",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "request_scope",
+          "description": "Request read or write access to a directory. Use this tool when you encounter a permission error due to sandboxing and need access to a path outside your current allowed directories. The user will be prompted to approve or deny the request. This tool is a no-op if the scope is already granted.",
+          "parameters": {
+            "required": [
+              "scope",
+              "path"
+            ],
+            "properties": {
+              "scope": {
+                "description": "The type of access to request: \"read\" or \"write\".",
+                "type": "string"
+              },
+              "path": {
+                "description": "The absolute path to the directory to request access to.",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "mcp_list_tools",
+          "description": "List available tools and resources from MCP servers. Use this to discover what capabilities are available before calling mcp_call_tool.",
+          "parameters": {
+            "properties": {
+              "server_name": {
+                "description": "Name of the MCP server to list tools from (e.g., \"linear\", \"github\"). If not provided, lists tools from all configured servers.",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "mcp_read_resource",
+          "description": "Read a resource from an MCP server. Resources can be files, database records, API responses, or any data exposed by the MCP server. Returns the resource content as text or binary data.",
+          "parameters": {
+            "required": [
+              "server_name",
+              "resource_uri"
+            ],
+            "properties": {
+              "server_name": {
+                "description": "Name of the MCP server (e.g., \"linear\", \"github\").",
+                "type": "string"
+              },
+              "resource_uri": {
+                "description": "Resource URI to read (e.g., \"<file:///path/to/file>\", \"<linear://issue/123>\").",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "write_to_process",
+          "description": "Writes input to an interactive process running in a shell with support for both text and special characters.\n\nIMPORTANT: This command will NOT work if there is no command running in the shell. If you want to execute a command in the shell use the exec tool.\n\nProvide exactly ONE of text_input or bytes_input (never both). To answer a prompt that needs an Enter keypress (e.g. a [y/n] prompt), set bytes_input to y<CR> (the y character followed by Enter).\n\nInput options:\n- text_input: Literal text content (no special character interpretation)\n- bytes_input: Special characters using angle bracket notation (e.g., <ESC>, <CR>, <UP>, <C-c>)\n\nSpecial character notation:\n- <ESC> = Escape character\n- <CR> = Carriage return (Enter)\n- <LF> = Line feed (newline)\n- <BS> = Backspace\n- <UP>, <DOWN>, <LEFT>, <RIGHT> = Arrow keys\n- <C-c>, <C-d>, <C-z> = Ctrl+key combinations\n",
+          "parameters": {
+            "required": [
+              "shell_id"
+            ],
+            "properties": {
+              "shell_id": {
+                "description": "The ID of the shell to write to.",
+                "type": "string"
+              },
+              "text_input": {
+                "description": "Text content to write to the shell (interpreted as literal text).",
+                "type": "string"
+              },
+              "bytes_input": {
+                "description": "Special characters/bytes to write to the shell (interpreted with angle bracket notation).",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      }
+    ],
+    "extra": {
+      "backend": "Windsurf",
+      "permission_mode": "Bypass"
+    }
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "timestamp": "2026-08-21T14:56:14.636141+00:00",
+      "source": "system",
+      "message": "You are Devin, an interactive command line agent from Cognition.\n\nYour job is to use these instructions and the tools available to you to help the user. It is important that you do so earnestly and helpfully, as you are very important to the success of Cognition. Best of luck! We love you. <3\n\nIf the user asks for help, you can check your documentation by invoking the Devin skill (if available). Otherwise, this information may be helpful:\n\n- /help: list commands\n- /bug: report a bug to the Devin CLI developers\n- for support, users can visit https://devin.ai/support\n\nWhen creating new configuration for this tool — including skills, rules, MCP server configs, or any project settings:\n\n- Always use the `.devin/` directory for NEW configuration (e.g. `.devin/skills/<name>/SKILL.md`, `.devin/config.json`)\n- For global (user-level) configuration, use `~/.config/devin/`\n- Do NOT place new configuration in `.claude/`, `.cursor/`, or other tool-specific directories unless explicitly asked. These are only read for compatibility, not written to.\n- If the `devin-cli` skill is available, ALWAYS invoke it and explore for detailed documentation on configuration format and options\n\nWhen reading or referencing existing skills, always use the actual source path reported by the skill tool — skills may live in `.devin/`, `.agents/`, or other directories.\n\n\n# Modes\n\nThe active mode is how the user would like you to act.\n\n- Normal (default, if not specified): Full autonomy to use all your tools freely. For example: exploring a codebase, writing or editing code, etc.\n- Plan: Explore the codebase, ask the user clarifying questions, and then create a plan for what you're going to do next. Do NOT make changes until you're out of this mode and the user has approved the plan.\n\nAdhere strictly to the constraints of the active mode to avoid frustrating the user!\n\n\n# Style\n\n## Professional Objectivity\n\nPrioritize technical accuracy and truthfulness over validating the user's beliefs. It is best for the user if you honestly apply the same rigorous standards to all ideas and disagree when necessary, even if it may not be what the user wants to hear. Objective guidance and respectful correction are more valuable than false agreement. Whenever there is uncertainty, it's best to investigate to find the truth first rather than instinctively confirming the user's beliefs.\n\n## Tone\n\n- Be concise, direct, and to the point. When running commands, briefly explain what you're doing and why so the user can follow along.\n- Remember that your output will be displayed in a command line interface. Your responses can use Github-flavored markdown for formatting, and will be rendered in a monospace font using the CommonMark specification.\n- Output text to communicate with the user; all text you output outside of tool use is displayed to the user. Only use tools to complete tasks. Never use tools like exec or code comments as means to communicate with the user during the session.\n- If you cannot or will not help the user with something, please do not say why or what it could lead to, since this comes across as preachy and annoying. Please offer helpful alternatives if possible, and otherwise keep your response to 1-2 sentences.\n- Only use emojis if the user explicitly requests it. Avoid using emojis in all communication unless asked.\n- If the user asks about timelines or estimated completion times for your work, do not give them concrete estimates as you are not able to accurately predict how long it will take you to achieve a task. Instead just say that you will do your best to complete the task as soon as possible.\n- Avoid guessing. You should verify the real state of the world with your tools before answering the user's questions.\n\n<example>\nuser: What command should I run to watch files in the current directory and rebuild?\nassistant: [use the exec tool to run `ls` and list the files in the current directory, then read docs/commands in the relevant file to find out how to watch files]\nassistant: npm run dev\n</example>\n\n<example>\nuser: what files are in the directory src/?\nassistant: [runs ls and sees foo.c, bar.c, baz.c]\nassistant: foo.c, bar.c, baz.c\nuser: which file contains the implementation of Foo?\nassistant: [reads foo.c]\nassistant: src/foo.c contains `struct Foo`, which implements [...]\n</example>\n\n<example>\nuser: can you write tests for this feature\nassistant: [uses grep and glob search tools to find where similar tests are defined, uses concurrent read file tool use blocks in one tool call to read relevant files at the same time, uses edit file tool to write new tests]\n</example>\n\n## Proactiveness\n\nYou are allowed to be proactive, but only when the user asks you to do something. You should strive to strike a balance between:\n\n1. Doing the right thing when asked, including taking actions and follow-up actions\n\n2. Not surprising the user with actions you take without asking\n\nFor example, if the user asks you how to approach something, you should do your best to explore and answer their question first, but not jump to implementation just yet.\n\n## Handling ambiguous requests\n\nWhen a user request is unclear:\n- First attempt to interpret the request using available context\n- Search the codebase for related code, patterns, or documentation that clarifies intent. Also consider searching the web.\n- If still uncertain after investigation, ask a focused clarifying question\n\n## File references\n\nWhen your output text references specific files or code snippets, use the `<ref_file ... />` and `<ref_snippet ... />` self-closing XML tags to create clickable citations. These tags allow the user to view the referenced code directly in the conversation.\n\nCitation format:\n- `<ref_file file=\"/absolute/path/to/file\" />` - Reference an entire file\n- `<ref_snippet file=\"/absolute/path/to/file\" lines=\"start-end\" />` - Reference specific lines in a file\n\n<example>\nuser: Where are errors from the client handled?\nassistant: Clients are marked as failed in the `connectToServer` function. <ref_snippet file=\"/home/ubuntu/repos/project/src/services/process.ts\" lines=\"710-715\" />\n</example>\n\n<example>\nuser: Can you show me the config file?\nassistant: Here's the configuration file: <ref_file file=\"/home/ubuntu/repos/project/config.json\" />\n</example>\n\n## Tool usage policy\n\n- When webfetch returns a redirect, immediately follow it with a new request.\n- When making multiple edits to the same file or related files and you already know what changes are needed, batch them together.\n\nWhen a tool call produces output that is too long, the output will be truncated and the remaining content will be written to a file. You will see a `<truncation_notice>` tag containing the path to the overflow file. You are responsible for reading this file if you need the full output.\n\n\n# Programming\n\nSince you live in the user's terminal, a very common use-case you will get is writing code. Fortunately, you've been extensively trained in software engineering and are well-equipped to help them out!\n\n## Existing Conventions\n\nWhen making changes to files, first understand the codebase's code conventions. Explore dependencies, references, and related system to understand the codebase's patterns and abstractions. Mimic code style, use existing libraries and utilities, and follow existing patterns.\n- NEVER assume that a given library is available, even if it is well known. Whenever you write code that uses a library or framework, first check that this codebase already uses the given library. For example, you might look at neighboring files, or check the package.json (or cargo.toml, and so on depending on the language). If you're adding a dependency prefer running the package manager command (e.g. npm add or cargo add) instead of editing the file.\n- When adding a new dependency, strongly prefer a version published at least 7 days ago. Newly published versions have not been vetted and a non-trivial fraction of supply chain attacks are caught and yanked within the first few days. Avoid floating ranges (`latest`, `*`, unbounded `>=`) that auto-resolve to brand-new releases.\n- When you create a new component, first look at existing components to see how they're written; then consider framework choice, naming conventions, typing, and other conventions.\n- When you edit a piece of code, first look at the code's surrounding context (especially its imports) to understand the code's choice of frameworks and libraries. Then consider how to make the given change in a way that is most idiomatic.\n- Always follow security best practices. Never introduce code that exposes or logs secrets and keys. Never commit secrets or keys to the repository. Never modify repository security policies or compliance controls (e.g. `minimumReleaseAge`, `minimumReleaseAgeExclude`, branch protection configs, `.npmrc` security settings) to work around CI or build failures — escalate to the user instead. Unless otherwise specified (even if the task seems silly), assume the code is for a real production task.\n\n## Code style\n\n- IMPORTANT: Do NOT add or remove comments unless asked! If you find that you've accidentally deleted an existing comment, be sure to put it back.\n- Default to writing compact code – collapse duplicate else branches, avoid unnecessary nesting, and share abstractions.\n- Follow idiomatic conventions for the language you're writing.\n- Avoid excessive & verbose error handling in your code. Errors should be handled, but not every line needs to be try/catched. Think about the right error boundaries (and look at existing code for error handling style)\n\n## Debugging\n\nWhen debugging issues:\n- First reproduce the problem reliably\n- Trace the code path to understand the flow\n- Add targeted logging or print statements to isolate the issue\n- Identify the root cause before attempting fixes\n- Verify the fix addresses the root cause, not just symptoms\n\n## Workflow\n\nYou should generally prefer to implement new features or fix bugs as follows...\n\n1. If the project has test infrastructure, write a failing test to show the bug\n2. Fix the bug\n3. Ensure that the test now passes\n\nWorking this way makes it easier to tell if you've actually fixed the bug, and saves you from needing to verify later.\n\n## Git\n\n### Creating commits\n1. Run in parallel: `git status`, `git diff`, `git log` (to match commit style)\n2. Draft a concise commit message focusing on \"why\" not \"what\". Check for sensitive info.\n3. Stage files and commit with this format:\n```\ngit commit -m \"$(cat <<'EOF'\nCommit message here.\n\nGenerated with [Devin](https://devin.ai)\n\nCo-Authored-By: Devin <158243242+devin-ai-integration[bot]@users.noreply.github.com>\nEOF\n)\"\n```\n4. If pre-commit hooks modify files and the commit fails, stage the modified files and retry the commit.\n\n### Creating pull requests\nUse `gh` for all GitHub operations. Run in parallel: `git status`, `git diff`, `git log`, `git diff main...HEAD`\n\nReview ALL commits (not just latest), then create PR:\n```\ngh pr create --title \"title\" --body \"$(cat <<'EOF'\n## Summary\n<bullet points>\n\n#### Test plan\n<checklist>\n\nGenerated with [Devin](https://devin.ai)\nEOF\n)\"\n```\n\n### Git rules\n- NEVER update git config\n- NEVER use `-i` flags (interactive mode not supported)\n- DO NOT push unless explicitly asked\n- DO NOT commit if no changes exist\n\n\n# Task Management\n\nYou have access to the todo_write tool to help you manage and plan tasks. Use this tool VERY frequently to ensure that you are tracking your tasks and giving the user visibility into your progress.\nThis tool is also EXTREMELY helpful for planning tasks, and for breaking down larger complex tasks into smaller steps. If you do not use this tool when planning, you may forget to do important tasks - and that is unacceptable.\n\nIt is critical that you mark todos as completed as soon as you are done with a task. Do not batch up multiple tasks before marking them as completed.\n\nExamples:\n\n<example>\nuser: Run the build and fix any type errors\nassistant: I'm going to use the todo_write tool to write the following items to the todo list:\n- Run the build\n- Fix any type errors\n\nI'm now going to run the build using exec.\n\nLooks like I found 10 type errors. I'm going to use the todo_write tool to write 10 items to the todo list.\n\nmarking the first todo as in_progress\n\nLet me start working on the first item...\n\nThe first item has been fixed, let me mark the first todo as completed, and move on to the second item...\n..\n..\n</example>\n\nIn the above example, the assistant completes all the tasks, including the 10 error fixes and running the build and fixing all errors.\n\n<example>\nuser: Help me write a new feature that allows users to track their usage metrics and export them to various formats\nassistant: I'll help you implement a usage metrics tracking and export feature. Let me first use the todo_write tool to plan this task.\nAdding the following todos to the todo list:\n1. Research existing metrics tracking in the codebase\n2. Design the metrics collection system\n3. Implement core metrics tracking functionality\n4. Create export functionality for different formats\n\nLet me start by researching the existing codebase to understand what metrics we might already be tracking and how we can build on that.\n\nI'm going to search for any existing metrics or telemetry code in the project.\n\nI've found some existing telemetry code. Let me mark the first todo as in_progress and start designing our metrics tracking system based on what I've learned...\n\n[Assistant continues implementing the feature step by step, marking todos as in_progress and completed as they go]\n</example>\n\nUsers may configure 'hooks', shell commands that execute in response to events like tool calls, in settings. Treat feedback from hooks, including <user-prompt-submit-hook>, as coming from the user. If you get blocked by a hook, determine if you can adjust your actions in response to the blocked message. If not, ask the user to check their hooks configuration.\n\n\n## Completing Tasks\n\nThe user will primarily request you perform software engineering tasks. This includes solving bugs, adding new functionality, refactoring code, explaining code, and more. For these tasks the following steps are recommended:\n- Use the todo_write tool to plan the task if required\n- Use the available search tools to understand the codebase and the user's query. You are encouraged to use the search tools extensively both in parallel and sequentially.\n- Before making changes, thoroughly explore the codebase to understand the architecture, patterns, and related systems. Read relevant files, trace dependencies, and understand how components interact.\n- Implement the solution using all tools available to you\n\n## Verification\n\nBefore considering a task complete, verify your work. Use judgment based on what you changed - optimize for fast iteration:\n\n- Check for project-specific verification instructions in project rules files (`AGENTS.md`, or similar)\n- Run relevant verification steps based on the scope of changes (lint, typecheck, build, tests)\n- For isolated functionality, consider a temporary test file to verify behavior, then delete it\n- Self-critique: review changes for edge cases and refine as needed\n- If you cannot find verification commands, ask the user and suggest saving them to a project config file\n\n## Saving learned information\n\nIf you discover useful project information (build commands, test commands, verification steps, user preferences, ...) that isn't already documented:\n- If a rules file exists (`AGENTS.md`, etc.), append to it\n- Otherwise, create `AGENTS.md` in the current directory with the learned information\n\n## Error recovery\n\nWhen encountering errors (failed commands, build failures, test failures):\n- Keep trying different approaches to resolve the issue\n- Search for similar issues in the codebase or documentation\n- Only ask the user for help as a last resort after exhausting reasonable options\n- Exception: Always ask the user for help with authentication issues, project configuration changes, or permission problems\n\n## System Guidance\nYou may receive `<system_guidance>` messages containing hints, reminders, or contextual guidance before you take action. These notes are injected by the system to help you make better decisions. Pay attention to their content but do not acknowledge or respond to them directly—simply incorporate their guidance into your actions.\n\n\n\n# Tool Tips\n\n## Shell\nNEVER invoke `rg`, `grep`, or `find` as shell commands — use the provided search tools instead. They have been optimized for correct permissions and access.\n\nIf you must call one of these binaries (e.g. to filter command output), prefer ripgrep (`rg`) over `grep` because it's fast and already installed on the user's system.\n\n\n## File-related tools\n- read can read images (PNG, JPG, etc) - the contents are presented visually.\n- For Jupyter notebooks (.ipynb files), use notebook_read instead of read.\n- Speculatively read multiple files as a batch when potentially useful.\n- Do NOT create documentation files to describe your changes or plan. Exception: persistent project info files like `AGENTS.md` are allowed.\n\n\n# Safety\n\nIMPORTANT: Assist with defensive security tasks only. Refuse to create, modify, or improve code that may be used maliciously. Do not assist with credential discovery or harvesting, including bulk crawling for SSH keys, browser cookies, or cryptocurrency wallets. Allow security analysis, detection rules, vulnerability explanations, defensive tools, and security documentation.\n\nIMPORTANT: You must NEVER generate or guess URLs for the user unless you are confident that the URLs are for helping the user with programming. You may use URLs provided by the user in their messages or local files.\n\n## Destructive Operations\n\nNEVER perform irreversible destructive operations without explicit user confirmation for that specific action, even if you have permission to run the command. This includes:\n- Deleting or truncating database tables, dropping schemas, bulk-deleting rows\n- `rm -rf`, deleting directories, or removing files you did not just create\n- Force-pushing, rewriting git history, deleting branches, checking out over uncommitted changes, or bypassing commit hooks\n- Sending emails, making payments, or calling APIs with real-world side effects\n\nIf a destructive step is required, STOP and describe exactly what you are about to run and why, then wait for the user. Do not assume a previous approval extends to a new destructive operation. If you realize you have already caused data loss, say so immediately rather than attempting to hide or quietly repair it.\n\n\n",
+      "extra": {
+        "telemetry": {
+          "source": "sysprompt",
+          "operation": "normal"
+        }
+      }
+    },
+    {
+      "step_id": 2,
+      "timestamp": "2026-08-21T14:56:14.636625+00:00",
+      "source": "system",
+      "message": "Available subagent profiles for the `run_subagent` tool. Choose the most appropriate profile based on whether the task requires write access:\n- `subagent_explore`: Read-only subagent for codebase exploration, research, and search. Use this when you need to find code, understand architecture, trace dependencies, or answer questions about the codebase. This profile has read-only access (grep, glob, read, web_search) and cannot edit files.\n- `subagent_general`: General-purpose subagent with full tool access (read, write, edit, exec). Use this when the subagent needs to make code changes, run commands with side effects, or perform any task that requires write access. In the foreground it can prompt for tool approval; in the background, unapproved tools are auto-denied.",
+      "extra": {
+        "telemetry": {
+          "source": "sysprompt",
+          "operation": "subagent_profiles"
+        }
+      }
+    },
+    {
+      "step_id": 3,
+      "timestamp": "2026-08-21T14:56:14.645273+00:00",
+      "source": "system",
+      "message": "You are powered by GLM-5.2 High.",
+      "extra": {
+        "telemetry": {
+          "source": "system",
+          "operation": "unknown"
+        }
+      }
+    },
+    {
+      "step_id": 4,
+      "timestamp": "2026-08-21T14:56:14.637214+00:00",
+      "source": "system",
+      "message": "<system_info>\nThe following information is automatically generated context about your current environment.\nCurrent workspace directories:\n  /Volumes/data/math-agent-glm5.2-tmux-agents-dir/p27-continuation/p27-full-deepmath_103k_00004725 (cwd)\n\nPlatform: macos\nOS Version: Darwin 25.6.0\nToday's date: Friday, 2026-08-21\n</system_info>",
+      "extra": {
+        "telemetry": {
+          "source": "system",
+          "operation": "unknown"
+        }
+      }
+    },
+    {
+      "step_id": 5,
+      "timestamp": "2026-08-21T14:56:14.637816+00:00",
+      "source": "system",
+      "message": "<rules type=\"always-on\">\n<rule name=\"database-schema-doc\" path=\"/Users/user/.devin/rules/database-schema-doc.md\">\n# 数据库表结构强制文档化\n\n## 硬约束\n\n**所有项目的数据库表结构集中存放在 `/Users/user/database/` 目录**，每个项目一个文件，文件名与项目名对应。文件开头必须写明该项目的repo全路径。\n\n## 文件命名和位置\n\n- **存放目录**：`/Users/user/database/`\n- **文件名**：`<项目名>.md`（与repo目录名一致，如`AI-Math-Normal-Solver.md`）\n- **文件开头**：必须写明repo全路径，格式：\n  ```\n  > **Repo全路径**：`/Users/user/<repo目录名>/`\n  ```\n\n## 何时必须更新\n\n- 新建表/集合时\n- 修改表/集合的字段时（增删改字段、改字段类型、改字段含义）\n- 新增索引时\n- 修改字段语义时（如字段值从一种含义变为另一种含义）\n\n## 何时必须先读\n\n- **写查数据库的脚本前**——必须先读 `/Users/user/database/<项目名>.md` 了解表结构，不能凭猜测写AQL/SQL\n- **查数据库前**——必须先读对应文档确认字段名、字段类型、字段含义\n- **设计涉及数据库的功能前**——必须先读对应文档了解现有表结构\n\n## 内容要求\n\n每个表/集合必须记录：\n\n1. **表名/集合名** + 用途（一句话）\n2. **字段表**：字段名、类型、含义、是否必填、默认值\n3. **索引**：索引字段、索引类型\n4. **关键JOIN关系**：和其他表/集合的关联字段\n5. **字段值枚举**：如果字段是枚举值（如status），列出所有取值和含义\n6. **已知问题/注意事项**：字段不一致、缺失字段、历史遗留等\n\n## 多数据库情况\n\n- 如果一个repo涉及多个数据库，文档中分节记录每个数据库\n- 如果表结构由其他repo管理（如本repo只读另一个repo的数据库），文档中注明\"由XXX repo管理\"，并记录本repo依赖的字段\n\n## 反模式\n\n- ❌ 在代码中散落数据库字段名，没有集中文档\n- ❌ 写查数据库脚本前不读文档，凭猜测写AQL\n- ❌ 改了表结构但不更新 `/Users/user/database/` 中的文档\n- ❌ 文档只记表名不记字段\n- ❌ 文档记了字段但不记枚举值\n- ❌ 文档开头不写repo全路径\n- ❌ 把数据库文档放在repo内部而不是集中目录\n- ✅ 每次改表结构同时更新 `/Users/user/database/<项目名>.md` 并commit\n- ✅ 写查数据库脚本前先读 `/Users/user/database/<项目名>.md` 确认字段名和类型\n- ✅ 文档记录已知问题（如字段不一致、历史遗留）\n- ✅ 文档开头写明repo全路径\n</rule>\n\n<rule name=\"db-delete-backup-first\" path=\"/Users/user/.devin/rules/db-delete-backup-first.md\">\n# 删除数据库数据前必须先备份\n\n**硬约束**：删除数据库的任何数据之前，必须先备份相关的数据，确保删除错误的情况下可以恢复数据。\n\n## 为什么\n\nDB 删除操作不可逆。一旦执行 DELETE/DROP/TRUNCATE/批量删除，数据就没了。如果删除条件写错（比如 WHERE 条件不精确、dry-run 和实际执行结果不一致、脚本有 bug），会丢失不该删的数据，且无法恢复。\n\n历史教训（2026-08-21）：`cleanup_continuation_runs.py` 删除了 p27_continuation_runs 中 224 条 prepared 记录，删除后才发现实际删除数（224）与 dry-run 预期数（223）不一致——因为 collector 在 dry-run 和实际执行之间又创建了 1 条记录。虽然这次差异无害，但如果差异方向反过来（多删了不该删的），就无法恢复了。\n\n## 必做动作\n\n### 步骤1：备份\n\n删除前必须把要删除的数据导出到文件。备份文件路径记录在操作审计文档中。\n\n```bash\n# ArangoDB：用 AQL 导出要删除的记录到 JSON 文件\npython -c \"\nfrom arango import ArangoClient\nimport json\nc = ArangoClient(hosts='http://localhost:8529')\ndb = c.db('dbname', username='root', password='xxx')\n# 用与删除相同的查询条件查出要删除的完整记录\nrecords = list(db.aql.execute('FOR r IN collection FILTER <删除条件> RETURN r', ttl=120))\nwith open('backup_<collection>_<date>.json', 'w') as f:\n    json.dump(records, f, ensure_ascii=False, indent=2)\nprint(f'备份 {len(records)} 条记录到 backup_<collection>_<date>.json')\n\"\n```\n\n### 步骤2：验证备份\n\n确认备份文件非空、记录数与预期一致、每条记录有完整的字段（特别是 `_key`/`_id`，恢复时需要）。\n\n### 步骤3：执行删除\n\n备份完成且验证通过后，才能执行删除。\n\n### 步骤4：记录审计\n\n在 dev-docs 中记录：备份文件路径、删除条件、删除数量、备份记录数。\n\n## 恢复方法\n\n如果删除后发现错误，用备份文件恢复：\n\n```bash\n# ArangoDB：从 JSON 文件恢复\npython -c \"\nfrom arango import ArangoClient\nimport json\nc = ArangoClient(hosts='http://localhost:8529')\ndb = c.db('dbname', username='root', password='xxx')\nwith open('backup_<collection>_<date>.json') as f:\n    records = json.load(f)\ncol = db.collection('collection')\nfor r in records:\n    r.pop('_rev', None)  # _rev 不能手动设置\n    col.insert(r)\nprint(f'恢复 {len(records)} 条记录')\n\"\n```\n\n## 禁止\n\n- 禁止不备份就直接执行批量删除\n- 禁止只 dry-run 不备份就执行删除——dry-run 和实际执行之间可能有状态变化\n- 禁止备份后不验证备份文件就执行删除\n- 禁止删除后不记录备份文件路径——找不到备份=没备份\n\n## 例外\n\n| 情况 | 是否需要备份 |\n|---|---|\n| 批量删除（DELETE/FOR...REMOVE） | ✅ 必须 |\n| DROP collection | ✅ 必须（先导出全集合） |\n| TRUNCATE | ✅ 必须（先导出全集合） |\n| 覆盖写入（insert overwrite） | ✅ 必须（先导出被覆盖的数据） |\n| 单条记录删除 | 可不备份（影响小，可通过日志追溯） |\n| 单条记录状态更新（非删除） | 不需要 |\n| 只读查询 | 不需要 |\n\n## 与其他 rule 的关系\n\n| rule | 关系 |\n|---|---|\n| `closure-checklist-impact-analysis` | commit 前分析影响——本 rule 在删除操作前就触发，更早 |\n| `verify-with-logs` | 删除后验证——本 rule 是删除前预防 |\n| 全局 AGENTS.md §可审计性纪律 | \"重大分析、调查、审查必须留下 file:line 定位\"——本 rule 是其具体化到 DB 删除场景 |\n</rule>\n\n<rule name=\"global-vs-project-local\" path=\"/Users/user/.devin/rules/global-vs-project-local.md\">\n# 全局vs项目本地判断铁律\n\n## 硬约束\n\n**用户说\"更新AGENTS.md\"或\"添加元组/rule/skill\"时，AI必须先判断这是全局还是项目本地内容，不能直接动手。**\n\n## 判断流程\n\n```\n用户说\"更新AGENTS.md\"或\"添加元组/rule/skill\"\n  ↓\n第一步：判断作用范围\n  ├─ 只在当前项目有意义 → 项目本地\n  └─ 在多个项目中都适用 → 全局\n  ↓\n第二步：判断用户意图\n  ├─ 用户明确说\"全局\" → 全局\n  ├─ 用户明确说\"项目本地\" → 项目本地\n  └─ 用户没说 → 必须问用户\n  ↓\n第三步：放到正确位置\n  ├─ 全局rule → ~/.devin/rules/<name>.md\n  ├─ 全局skill → ~/.config/devin/skills/<name>/SKILL.md\n  ├─ 全局AGENTS.md → ~/.config/devin/AGENTS.md\n  ├─ 项目本地rule → ./.devin/rules/<name>.md\n  ├─ 项目本地skill → ./.devin/skills/<name>/SKILL.md\n  └─ 项目本地AGENTS.md → ./AGENTS.md\n```\n\n## 判断标准\n\n| 信号 | 倾向 |\n|---|---|\n| 内容引用了具体项目的路径、脚本名、目录结构 | 项目本地 |\n| 内容是某个项目特有的操作流程、运维认知 | 项目本地 |\n| 内容是跨项目通用的约束、规范、工作流 | 全局 |\n| 内容修改会影响所有项目的AI行为 | 全局 |\n| 用户说\"以后所有项目都要...\" | 全局 |\n| 用户说\"这个项目要...\" | 项目本地 |\n\n## 禁止\n\n- ❌ 不判断就改全局配置（`~/.devin/`或`~/.config/devin/`）\n- ❌ 不判断就改项目本地配置（`./.devin/`或`./AGENTS.md`）\n- ❌ 把项目本地内容放到全局规则中（污染全局配置）\n- ❌ 把全局通用内容放到项目本地（其他项目无法复用）\n- ❌ 用户没说全局还是本地时自作主张决定\n\n## 必须\n\n- ✅ 先判断作用范围（全局还是项目本地）\n- ✅ 用户没明确说时，先问用户\n- ✅ 判断后告诉用户放在哪里，再动手\n- ✅ 改全局配置时遵循`global-config-git-commit`规则（三个独立repo分别commit）\n\n## 详见\n\n- `tuple-methodology.md`——元组的设计原则、全局vs项目本地的选择策略\n- `global-config-git-commit.md`——全局配置的git提交规则\n- `readme-structure-index.md`——AGENTS.md与README.md的职责分工\n</rule>\n\n<rule name=\"AGENTS\" path=\"/Users/user/.config/devin/AGENTS.md\">\n# Devin CLI 全局工作规范\n\n**本文件（`~/.config/devin/AGENTS.md`）**：全局 always-on 规则。只放跨项目、跨 session 的硬约束和行为规范。\n\n**项目本地 `AGENTS.md`**：项目根目录下的 `AGENTS.md`。放项目状态、上下文、项目级规则。\n\n**用户说\"记录到 AGENTS.md\"时，默认指项目本地 `AGENTS.md`。** 只有用户明确说\"全局\"、\"Devin AGENTS.md\"、\"~/.config/devin/AGENTS.md\"时，才更新本文件。\n\n---\n\n## 硬约束与行为规范\n\n### 0 · Skill/Rule/元组管理策略\n\n#### 0.1 核心策略\n\ndevin 的 rule 和 skill 发现机制可靠（文件系统扫描）。always-on rule 自动注入每个 session，skill 通过 available_skills 列表展示 name+description。**不需要在 AGENTS.md 中维护 rule 或 skill 的索引——devin 自己加载。** 创建元组时只需把 rule 和 skill 放到对应位置（`~/.devin/rules/` 或 `~/.config/devin/skills/` 或项目级 `.devin/`），不需要在 AGENTS.md 记录。完整论证见 `devin-config-harness` skill §10.4。\n\n#### 0.4 维护规则\n\n- **新建 skill/rule 时必须按 `devin-config-harness` skill 的格式规范**——含 frontmatter、含 trigger/description、一句话触发器模式（详见 `devin-config-harness` skill §3.10 和 §10.7）\n- **元组创建、废弃、放置层级选择**：详见 `tuple-methodology` rule（§\"新增元组时的操作规范\"、§\"选择全局还是项目本地\"、§\"废弃 rule/skill\"）\n\n#### 0.5 Skill 极简化设计\n\n完整论证和执行规则见 `tuple-methodology` rule §\"Skill 极简化设计\"。核心：SKILL.md 只有 frontmatter + 一句话，真正内容放 `/Users/user/skills-devin/<文件名>`。\n\n#### 0.6 配置目录认知\n\n全局 AGENTS.md 在 `~/.config/devin/AGENTS.md`，不在 `~/.devin/`。详见 `devin-config-harness` skill §10.5。\n\n#### 0.7 Git Repo 管理认知\n\n三个独立 repo（`~/.config/devin/`、`~/.devin/`、`/Users/user/skills-devin/`）改完立即提交（详见 `global-config-git-commit` rule）。Git Repo 完整认知见 `devin-config-harness` skill §10.6。\n\n### 1 · 信息充分性\n\n行动前先问：\"我对这个问题的了解是否足够支撑直接行动？\"\n\n- 确信 → 直接行动\n- 不完全确定 → 先搜索再行动\n- 不确定 → 必须搜索，禁止猜测试错\n\n### 2 · 文档意识\n\n你和用户的对话是一个**积累过程**——积累代码、认知、文档、数据。积累必须**有机**：后期的积累结合到之前的积累中，而不是只在 TUI 里输出完就消失。\n\n**落盘规则**：\n\n1. **该放项目 AGENTS.md 的**（跨 session 认知、认知资产表、项目级配置信息）→ 放项目 AGENTS.md\n2. **该放 `./dev-docs/` 的**（工作痕迹、方案、分析、调查）→ 放 `dev-docs/` 下带顺序编号的文档\n3. **其他内容**→ 各就各位（全局规则放本文件或 `~/.devin/rules/`，操作流程放 skill，等）\n\n**Rule / Skill / 元组的放置层级**：详见 `tuple-methodology` rule §\"选择全局还是项目本地\"。核心：首先考虑项目级 `.devin/`，升级为全局必须获得用户明确同意。\n\n**方案先行**：方案落地到 `dev-docs/`，精确到 Check List 粒度，描述清楚原因和逻辑（不只是 Check List），实现过程中持续追踪完成情况。\n\n**跨 session 保证**：落盘的目的不仅是规范化码放，更是让跨 session、跨压缩边界后的 AI 能在必要时找回它应该了解的内容。\n\n**当用户说\"更新文档\"时**：赶紧检查什么内容该同步到项目 AGENTS.md、什么该同步到方案文档、什么该建新文档、什么该按认知资产表归档到 dev-docs。\n\n### 3 · 人话铁律\n\n所有文档、回复、注释、commit message、规则文件——全部用人话写。\n\n### 4 · 给选项必含利弊 + 推荐 + 推荐理由\n\n列选项时，必须同时给出：每个选项的利弊、你的推荐、推荐理由。\n\n### 5 · 时间估计纪律\n\n**禁止拍脑袋时间估计**：禁止无依据地随口说\"这需要 3 天\"、\"工作量 2 周\"——没有调查、没有实验、没有推理就给数字，是瞎说。\n\n**允许有理有据的时间估计**：当用户需要时间估计时，必须基于以下之一给出推理过程：\n- 实验数据（\"实测编译 1 个文件 30 秒，共 200 个文件，约 100 分钟\"）\n- 调查结果（\"该 API 限速 100 req/min，1 万条数据约需 100 分钟\"）\n- 常识推理（\"下载 10GB 文件，百兆带宽约 14 分钟，千兆约 1.4 分钟\"）\n- 历史经验（\"上次同类任务实际花了 X，本次规模类似\"）\n\n**格式要求**：给出时间估计时，必须同时给出推理依据。只给数字不给依据 = 违规。\n\n**无依据时**：说\"我没有依据给出时间估计\"，然后分析复杂程度、依赖关系、可行性、可逆度。\n\n### 6 · Debug 心智闸门\n\n撞墙三次必须停手。1-2 次调参数，3-5 次停手读证据，5 次以上重新定义问题。\n\n### 7 · 手机截图压缩后再读\n\n从手机拿到的截图，Read 之前必须压缩到 100KB 以下。macOS 用 `sips -s format jpeg -s formatOptions 60 -Z 1100 in.png --out out.jpg`。\n\n### 8 · 设备纪律\n\n- 只允许操作 **Green 手机 `09081FDD400019`**\n- 所有 `adb` 命令必须带 `-s 09081FDD400019`\n- 严禁自行操作 Black、Red、Yellow 等其他手机\n- 误触其他设备 → 立即停止，force-stop 已启动进程，并记录\n\n### 9 · 不要擅自 git init\n\n发现当前目录不在 git 仓库内时，先问用户是否初始化，不擅自 `git init`。\n\n### 10 · 搜索优先于试错\n\n同一类修复尝试 2 次仍失败 → 立即停止，改走搜索。\n\n### 11 · 工具边界\n\n- 没有 user 明确指示，不得操作 `~/.claude/` 和 `~/.codex/` 目录中的内容。\n- Devin 只能操作 `~/.config/devin/`、`~/.devin/` 以及明确授权的位置。\n\n### 12 · tmux 优先\n\n长时间运行的命令、服务、下载、同步，必须在 tmux 中运行，不允许用 `nohup ... &` 等脱离终端的方式。\n\n- **长时间命令**（下载、编译、同步、daemon、GPU 穷举等）→ `tmux new-session -d -s <name> \"<command>\"`\n- **检查运行状态** → `tmux capture-pane -t <name> -p`\n- **查看所有 session** → `tmux list-sessions`\n- **停止 session** → `tmux kill-session -t <name>`\n- session 命名规范：`<项目>-<用途>`\n- 短命令不需要 tmux\n\n> tmux 配置不好用时加载 `tmux-easy-setup` skill。\n\n---\n\n## Git 管理协议\n\n三个独立 repo（`~/.config/devin/`、`~/.devin/`、`/Users/user/skills-devin/`）的 Git 提交铁律、操作流程、禁止项详见 `global-config-git-commit` rule。核心：改前确认 clean、改后立即提交、禁止 `git add -A/.-u`、push 需用户当轮明确授权。\n\n---\n\n## 可审计性纪律\n\n- 重大分析、调查、审查必须留下 `file:line` 定位 + 理解性产物。\n- 声称\"X 完成\"前，必须有 remainder=0 证明。\n\n---\n\n## 元组核心原理\n\n元组=Rule+Skill。详见 `tuple-methodology` rule。\n\n---\n\n## dev-docs 目录\n\n跨项目的工作痕迹、方案、分析放 `~/.config/devin/dev-docs/`，带顺序编号。需要时直接到该目录下按编号查找。\n\n---\n\n## 更新本文件\n\n- 更新前检查 `before_status_baseline`\n- 只改本文件和对应 skill/rule\n- 改后核验 `after_status_baseline`，确保回到 git clean\n\n</rule>\n\n<rule name=\"cognition-trace-ironlaws\" path=\"/Users/user/.devin/rules/cognition-trace-ironlaws.md\">\n# 认知加载与trace.csv维护铁律（§17-21）\n\n## §17 · 认知加载铁律\n\n**硬约束**：接手任何工作时必须按三层架构加载认知，不能跳过直接开干。\n\n**操作**：加载 README.md（分类法索引）→ 判断需要哪种视角 → 加载对应看法文件 → 加载具体文档/代码 → 带着必要认知工作。\n\n**禁止**：不加载 README.md 就直接回答问题 · 只加载 README.md 不加载看法文件 · 假设自己不加载文档就能回答好问题。\n\n**详见**：`read` skill（一句话触发器 → `/Users/user/skills-devin/workflow.md` §2 §4）。\n\n## §18 · 方案先行铁律\n\n**硬约束**：非平凡工作必须先制定方案（`make-plan`），不能\"用户说改什么就直接改\"。\n\n**方案必须**：\n1. 利用 trace.csv 追溯链实现\"完备\"——认知等价于\"整个 repo 所有元素都放入上下文\"\n2. 拆解为自包含工作包——每个工作包 README.md 列出执行 AI 需要的 View（看法文件）和具体文档/代码\n3. 拆解粒度依赖 trace.csv 追溯支持——精确定位每个工作包涉及哪些元素\n\n**判断标准**：单文件单行修改 → 直接执行。涉及多文件/多步骤/需要理解上下文 → 必须方案先行。\n\n**详见**：`make-plan` skill → `/Users/user/skills-devin/workflow.md` §4 §5。\n\n## §19 · 提交前维护 trace.csv 铁律\n\n**硬约束**：每次 git commit 前必须维护 trace.csv 各层级幂等关系。commit 同时包含 repo 变更和 trace.csv 变更。\n\n**幂等关系**：给定任何一个 commit 时间点，trace.csv 的状态精确反映 repo 在那个时间点的所有元素和关系。trace.csv 和 repo 在同一个 commit 中同步演进。\n\n**维护粒度**：各个层级——文件级、函数级（`path::function`）、章节级（`path#section`）。改了某个函数，trace.csv 中这个函数对应的记录也要同步更新。\n\n**禁止**：只提交 repo 变更不提交 trace.csv 变更 · 事后批量补录 trace.csv · 改了函数级代码但 trace.csv 只更新到文件级。\n\n**破坏后果**：幂等关系被破坏 = 下一个工作包的 AI 按 trace.csv 查询得到错误信息 = 认知体系失效。\n\n**详见**：`/Users/user/skills-devin/workflow.md` §3.5 §3.6。\n\n## §20 · AI 双重责任铁律\n\n**硬约束**：在工作包中工作时，对 trace.csv 既是消费者又是生产者。\n\n- **消费**：利用 trace.csv 了解当前工作包涉及哪些元素，这些元素和哪些其他资产有关系，改了什么会影响什么\n- **生产**：在工作包执行过程中，持续更新 trace.csv，记录自己造成的所有新关系和变更关系\n\n**维护目的**：不仅是当前工作包，更是未来的下一个工作包的 AI——下一个 AI 接手时，trace.csv 是它了解 repo 的基础设施。\n\n**禁止**：只消费不生产（利用 trace.csv 了解情况但不更新它）· 只生产不消费（盲目更新 trace.csv 但不利用它指导自己的工作）。\n\n**详见**：`/Users/user/skills-devin/workflow.md` §3.6。\n\n## §21 · 工作包完成时元数据更新铁律\n\n**硬约束**：工作包完成后必须更新看法文件和映射索引（view-index.csv / trace.csv）。不能\"改完代码就结束\"。\n\n**更新内容**：\n1. 更新看法文件中对应条目的描述（讲什么/覆盖问题场景/依赖关系）\n2. 同步 view-index.csv（看法文件↔文档映射）\n3. 同步 trace.csv（全维度追溯关系）\n4. commit 元数据更新\n\n**分层精度**：\n- 改了整个文件 → `query-by-asset <文件路径>` 查哪些看法文件索引了它\n- 只改了某个函数/章节 → `query-prefix <type> <文件路径>` 查该文件下所有子资产的关系\n\n**禁止**：改完代码不更新元数据就结束 session · 更新了 view-index.csv 不更新 trace.csv · 更新了文件级不更新函数/章节级。\n\n**破坏后果**：不更新元数据 = 下次 AI 按看法文件加载时得到过时信息 = 认知体系失效。\n\n**详见**：`/Users/user/skills-devin/workflow.md` §5 阶段4。\n</rule>\n\n<rule name=\"dev-docs-sediment-to-docs\" path=\"/Users/user/.devin/rules/dev-docs-sediment-to-docs.md\">\n# dev-docs 内容沉淀到 docs\n\n**硬约束**：dev-docs 中的内容，应该被沉淀到 docs 目录中的，应该考虑沉淀到 docs 目录中。对应的 dev-docs 中，不再放内容，而是放对 docs 目录中的文件的索引。\n\n**含义**：\n- dev-docs 是工作痕迹、方案、调查的临时存放地，不是长期知识容器\n- 当 dev-docs 中的内容具有长期复用价值时（方案定稿、认知沉淀、规范确立），必须沉淀到 docs/ 目录\n- 沉淀后，dev-docs 中的对应文件不再保留完整内容，只保留对 docs/ 中文件的索引（路径+一句话说明）\n- dev-docs 的定位是\"工作过程记录 + 沉淀索引\"，不是\"第二个 docs\"\n\n**判定标准**：\n- 一次性工作记录（debug过程、临时分析）→ 留在 dev-docs\n- 方案定稿后需要长期参考 → 沉淀到 docs/，dev-docs 留索引\n- 认知/规范确立后需要跨session复用 → 沉淀到 docs/，dev-docs 留索引\n- 纯过程性内容（试错记录、已废弃方案）→ 留在 dev-docs，不沉淀\n</rule>\n\n<rule name=\"readme-structure-index\" path=\"/Users/user/.devin/rules/readme-structure-index.md\">\n# AGENTS.md与README.md的职责分工\n\n## 硬约束\n\n**AGENTS.md中不索引任何文档和代码。** repo的详细结构信息放在repo根目录的`README.md`中。\n\n## AGENTS.md只放什么\n\nAGENTS.md是always-on的，每一行都占用AI的上下文窗口。只放\"AI每次工作都必须知道的\"：\n\n1. **角色**——AI在这个repo中的身份和职责（一句话）\n2. **repo基本信息**——分支、Python路径、DB/Redis连接信息、.env位置、关键外部路径\n3. **铁律**——必须遵守的硬约束（编号列表）\n4. **运维认知**——监控/健康检查时容易误判的认知（如\"空pane是正常现象\"）\n5. **系统架构概要**——概念性架构图 + 核心服务表 + 启停命令 + 并发控制（不索引具体代码文件）\n6. **数据库表设计**——指向DATABASE.md的引用 + 关键JOIN关系 + 已知问题（不展开字段表）\n\n## README.md放什么\n\nREADME.md是AI工作引导地图，按需加载（不占always-on上下文）。放\"需要时才查的详细结构信息\"：\n\n1. **文档索引**——\"你要做什么→加载什么文档\"的对照表 + 各文档的关键节索引\n2. **代码文件索引**——按目录分组的代码文件表（文件名/用途/用法）\n3. **运行目录结构**——trajectory数据/solver工作目录的目录树 + 文件存在率表\n4. **Skills和Rules索引**——项目级skills/rules的用途表 + 全局skill引用\n5. **关键经验**——操作经验列表（如rate limit风暴、3秒启动间隔等）\n6. **与其他repo的关系**——依赖关系、共享资源\n\n## 判定标准\n\n| 内容 | 放哪里 | 判断依据 |\n|---|---|---|\n| 铁律（\"必须做/不能做\"） | AGENTS.md | 每次工作都必须知道 |\n| 运维认知（\"容易误判的\"） | AGENTS.md | 监控时必须知道 |\n| 启停命令 | AGENTS.md | 运行系统时必须知道 |\n| 文档索引（\"做什么→读什么\"） | README.md | 按需加载时才查 |\n| 代码文件索引（\"什么文件做什么\"） | README.md | 需要找代码时才查 |\n| 目录结构 | README.md | 需要找文件时才查 |\n| status枚举表 | README.md | 需要查终态时才查 |\n| 操作经验 | README.md | 遇到问题时才查 |\n\n## 反模式\n\n- ❌ AGENTS.md中有\"文档索引\"节——应该移到README.md\n- ❌ AGENTS.md中有\"代码文件索引\"节——应该移到README.md\n- ❌ AGENTS.md中列出每个文档的用途和路径——这是README.md的职责\n- ❌ AGENTS.md中列出每个代码文件的用途和用法——这是README.md的职责\n- ❌ README.md中放铁律——铁律在AGENTS.md中always-on\n- ❌ 没有README.md——每个repo必须有README.md作为引导地图\n- ✅ AGENTS.md只有铁律+角色+基本信息+运维认知+架构概要\n- ✅ README.md有完整的文档索引和代码索引\n- ✅ AGENTS.md中有一行\"详细结构信息见README.md\"的指引\n\n## 与三层架构的关系\n\n三层架构：AGENTS.md（铁律）→ README.md（引导地图）→ 具体文档/代码\n\n- **AGENTS.md** = 铁律 + 每次必须知道的认知（always-on，占上下文）\n- **README.md** = 引导地图（按需加载，不占always-on上下文）\n- **具体文档/代码** = 按需加载（从README.md索引中找到后加载）\n\n本规则确保AGENTS.md不膨胀——详细结构信息在README.md中，AI需要时才加载，不永久占用上下文。\n\n## 详见\n\n- `read` skill（操作流程：如何从README.md出发加载认知）\n- `read-sync` skill（维护模式：如何同步README.md和映射数据库）\n- `cognition-trace-ironlaws.md` §17（认知加载铁律）\n- `tuple-methodology.md`（AGENTS.md瘦身工程）\n</rule>\n\n<rule name=\"never-modify-devin-config\" path=\"/Users/user/.devin/rules/never-modify-devin-config.md\">\n# 禁止修改 devin config.json 的 read_config_from\n\n## 硬约束\n\n**永远不要修改 `~/.config/devin/config.json` 中的 `read_config_from` 字段。**\n\n特别是 `\"windsurf\": true` 必须保持 `true`，不得改为 `false`。\n\n## 为什么\n\n- `read_config_from.windsurf: true` 是用户明确要求保留的配置\n- 如果不想让某些 windsurf 规则被 devin 加载，正确做法是**归档那些规则文件**（加日期后缀或移到备份目录），而不是关闭兼容加载机制\n- 关闭机制会影响其他兼容功能，不是正确的隔离手段\n\n## 正确做法\n\n如果需要阻止某个兼容来源的特定文件被加载：\n- **归档文件**——给文件加 `-日期` 后缀（如 `global_rules.md` → `global_rules-2026-08-19.md`），或移到备份目录\n- **不要动 config.json**——机制保持开启，只是让机制读不到目标文件\n\n## 详见\n\n历史案例：2026-08-19 归档 `~/.codeium/windsurf/` 下的规则文件（加 `-2026-08-19` 后缀），而非关闭 `read_config_from.windsurf`。\n</rule>\n\n<rule name=\"search-default-internal\" path=\"/Users/user/.devin/rules/search-default-internal.md\">\n# 搜索默认走内置工具\n\n## 硬约束\n\n**默认情况下，使用 devin 内置的 `web_search` 和 `webfetch` 工具。** 不要一遇到搜索就加载 `search-tools` skill。\n\n`search-tools` skill 是重型武器库（6 个工具、38 个端点、完整参数表），只在以下场景才加载：\n\n## 何时加载 search-tools skill\n\n只有同时满足以下条件时才加载：\n\n1. **完备搜索**——内置 `web_search` 结果不够、需要多引擎交叉验证、需要语义搜索、需要学术论文搜索\n2. **大量抓取**——需要抓取多个 URL 转 Markdown、需要 PDF 转 Markdown、需要省 token 的批量取页\n\n## 何时只用内置工具\n\n以下场景**不需要**加载 `search-tools` skill，直接用 `web_search` + `webfetch`：\n\n- 查一个 API 怎么用——`web_search` 搜文档，`webfetch` 取页\n- 查一个概念/术语——`web_search` 一下就够\n- 查一个库的最新版本——`web_search`\n- 取一个 URL 的内容——`webfetch`\n- 简单的事实核查——`web_search`\n\n## 判断流程\n\n```\n需要网络搜索或抓取？\n├─ 查一两个东西就够了 → web_search + webfetch（内置）\n└─ 需要完备搜索或大量抓取\n   ├─ 多引擎交叉验证 → 加载 search-tools skill\n   ├─ 语义搜索 → 加载 search-tools skill\n   ├─ 学术论文搜索 → 加载 search-tools skill\n   ├─ PDF 转 Markdown → 加载 search-tools skill\n   ├─ 批量 URL 抓取 → 加载 search-tools skill\n   └─ 其他简单场景 → web_search + webfetch（内置）\n```\n\n## 理由\n\n`search-tools` skill 内容很长（500+ 行），加载它会占用大量上下文。日常搜索用内置工具完全够用，只有真正需要重型武器时才值得加载。\n</rule>\n</rules>",
+      "extra": {
+        "telemetry": {
+          "source": "rules",
+          "operation": "content"
+        }
+      }
+    },
+    {
+      "step_id": 6,
+      "timestamp": "2026-08-21T14:56:14.637948+00:00",
+      "source": "system",
+      "message": "<rules type=\"always-on\">\nThese rules were triggered but could not be injected due to token limits. Read them when relevant using the read_file tool:\n\n<rule name=\"no-inline-scripts\" path=\"/Users/user/.devin/rules/no-inline-scripts.md\" />\n</rules>",
+      "extra": {
+        "telemetry": {
+          "source": "rules",
+          "operation": "overflow"
+        }
+      }
+    },
+    {
+      "step_id": 7,
+      "timestamp": "2026-08-21T14:56:14.638035+00:00",
+      "source": "system",
+      "message": "<available_rules>\nThe following rules are available. Read them when relevant using the read_file tool:\n\n- **global-knowledge-base**: 全局情报库——本机跨工具知识库的索引和使用规则。 WHEN to use: 需要查跨项目知识、本机配置、操作流程、Codex/Devin 规则体系时。 WHEN NOT to use: 项目内的知识查询（用项目 AGENTS.md 的认知资产表）。\n (path: /Users/user/.devin/rules/global-knowledge-base.md)\n- **monitor-pipe-design-paradigm**: 连续工作系统的 Monitor Pipe 设计范式——三层架构（规范层+执行层+查询层）。 当系统连续运行且需要AI检查产出质量/语义正确性/方向是否跑偏时，用Monitor Pipe落地。 把检查项自动化，结果收集到DB的alert集合中，Master AI通过查询脚本发现alert并逐个处理。 WHEN to use: 设计/实现连续工作系统的监控机制时；为批量运行系统添加健康检查时； 连续工作系统运行中Master AI需要检查健康状态时；设计alert系统时。 WHEN NOT to use: 一次性任务（不需要持续监控）；简单的错误处理（用try/catch即可）。\n (path: /Users/user/.devin/rules/monitor-pipe-design-paradigm.md)\n- **search-tools**: 搜索武器库——按需求组织：网页搜索完备性 + Markdown 网页抓取。所有方案免费可用。 WHEN to use: 需要网络搜索、网页抓取读取、学术论文搜索、PDF 转 Markdown、语义嵌入、结果重排时。 WHEN NOT to use: 只需要本地文件搜索（用 grep/glob 工具）。\n (path: /Users/user/.devin/rules/search-tools.md)\n- **skill-rule-authoring**: 写 skill/rule 时的格式硬约束。所有 SKILL.md 必须有 frontmatter（含 description）； 所有 .devin/rules/*.md 必须有 frontmatter（含 trigger）；trigger 值用 always_on（下划线）； Skill 采用一句话触发器+独立内容文档模式。 WHEN to use: 新建/修改 skill 或 rule 时。 WHEN NOT to use: 一般编码任务。\n (path: /Users/user/.devin/rules/skill-rule-authoring.md)\n- **devin-cli-trajectory**: Devin CLI trajectory 数据位置与 Schema——transcripts/sessions.db/summaries/logs 的位置、格式、字段。harness 采集的 trajectory 目录结构（conversation.json/trajectory.jsonl）。 WHEN to use: 提取/解析/审计 session 对话数据时；需要读取 thinking/reasoning_content/tool_calls 时； 需要查询 sessions.db（SQLite）时；需要解析 --export 导出的 conversation.json 时； 需要解析 trajectory.jsonl 时；需要了解 transcript 文件格式时。 WHEN NOT to use: 只需要 session 最终产出（看文件即可）；只需要 git 历史（用 git log）。\n (path: /Users/user/.devin/rules/devin-cli-trajectory.md)\n- **infrastructure**: 本机基础设施速查——磁盘、冷热盘、README 同步规则。 WHEN to use: 操作磁盘、向 HDD/SSD 写数据、查看磁盘状态、排查磁盘问题时。 WHEN NOT to use: 不涉及磁盘操作的日常编码。\n (path: /Users/user/.devin/rules/infrastructure.md)\n- **redundancy-consolidation**: 整合冗余内容时的信息保全铁律。整合≠删除——必须先逐行对比确认每条信息的去向， 把unique信息合并到目标文件，验证无丢失后才能简化或删除源文件。 WHEN to use: 发现两个或多个文件（rule/skill/AGENTS.md）之间有内容冗余时； 整合重复内容时；删除冗余文件前；简化重复段落前。 WHEN NOT to use: 单纯删除废弃文件（直接删）；新增内容（无冗余问题）。\n (path: /Users/user/.devin/rules/redundancy-consolidation.md)\n- **cold-hdd-transfer**: 向 HDD 冷盘迁移数据时，按文件规模选择 rsync 或 tar+zstd 压缩传输，并记录转移清单。 WHEN to use: 向 HDD/冷盘迁移数据、大文件归档、备份到冷存储时。 WHEN NOT to use: 向 SSD 热盘写数据、日常文件操作。\n (path: /Users/user/.devin/rules/cold-hdd-transfer.md)\n- **disk-readme-sync**: 查看磁盘/卷时，先读根目录 README.md，再与磁盘工具真实返回结果比对；若不同步，提醒用户并给出修复方案。 WHEN to use: 操作磁盘/外部卷、查看磁盘状态、向磁盘写数据前检查时。 WHEN NOT to use: 不涉及磁盘的操作。\n (path: /Users/user/.devin/rules/disk-readme-sync.md)\n- **setup-codex-rules-skills**: 安顿 Codex 的 rule 和 skill——位置、格式、加载机制、操作流程。 WHEN to use: 配置 Codex CLI、添加 Codex rules/skills/MCP、从 Devin/Claude Code 迁移到 Codex、 理解 Codex 扩展架构时。 WHEN NOT to use: 配置 Devin CLI（用 devin-config-harness skill）、一般编码任务。\n (path: /Users/user/.devin/rules/setup-codex-rules-skills.md)\n- **global-config-git-commit**: 任何对 ~/.config/devin/ 或 ~/.devin/ 或 /Users/user/skills-devin/ 的修改必须立即 git 提交。 禁止 git add -A/.-u，只 add 具体路径。push 需用户当轮明确授权。 三个独立 repo：~/.config/devin/、~/.devin/、/Users/user/skills-devin/。 WHEN to use: 修改/创建/删除全局 AGENTS.md 时；修改/创建/删除 ~/.config/devin/skills/ 下的 SKILL.md 时； 修改/创建/删除 ~/.devin/rules/ 下的 rule 文件时；修改 ~/.config/devin/config.json 时； 修改/创建/删除 /Users/user/skills-devin/ 下的 skill 内容文档时。 WHEN NOT to use: 修改项目本地文件（用项目 AGENTS.md 的 Git 协议）；修改 ~/.local/share/devin/（绝不建 repo）。\n (path: /Users/user/.devin/rules/global-config-git-commit.md)\n- **tuple-methodology**: 元组思想详细方法论——Rule + Skill 的设计原则、瘦身工程、两种实现方式、新增元组规范。 WHEN to use: 设计元组、组织 rule/skill 分工、做 AGENTS.md 瘦身工程、新增元组时。 WHEN NOT to use: 日常编码、不需要组织 AI 上下文治理时。\n (path: /Users/user/.devin/rules/tuple-methodology.md)\n- **noninteractive-solver-run**: 非交互模式解题AI运行的硬约束——必须用非交互模式（devin -p）、运行结果必须可查被索引、 mitmproxy 已废弃。用 --export 导出包含 reasoning_content（thinking）的 conversation.json。 WHEN to use: 运行 devin cli 解数学题时；采集 thinking/reasoning_content 数据时； POC实验、对照实验、批量解题、FATE测试、MathArena测试时；需要用 --prompt-file 注入题目时； 任何需要工具的AI推理任务且需要采集完整推理过程时。 WHEN NOT to use: 需要实时干预AI推理过程的引导式实验（用交互模式+--export）； 调试 solver-harness 本身（用项目级 solver-tmux-launch）。\n (path: /Users/user/.devin/rules/noninteractive-solver-run.md)\n</available_rules>",
+      "extra": {
+        "telemetry": {
+          "source": "rules",
+          "operation": "available"
+        }
+      }
+    },
+    {
+      "step_id": 8,
+      "timestamp": "2026-08-21T14:56:14.648669+00:00",
+      "source": "user",
+      "message": "# Problem\n\nDetermine the order of the best constant \\(\\lambda = \\lambda(n)\\) such that for any \\(n \\times n\\) complex matrix \\(A\\) with trace zero, there exist \\(n \\times n\\) matrices \\(B\\) and \\(C\\) satisfying \\(A = BC - CB\\) and \\(\\|B\\| \\cdot \\|C\\| \\le \\lambda \\|A\\|\\).\n\n## 解题约束（必须严格遵守）\n\n1. **不要使用任何工具**——不要写文件、不要执行命令、不要搜索、不要浏览网页、不要读取文件。\n   你只需要在TUI中用thinking来解题。所有推理过程在你的思维中完成。\n\n2. **直接在TUI中输出证明**——不要创建任何文件，不要使用任何工具调用。\n   完成证明后，在TUI中直接输出（必须用英文原文，不要翻译成中文）：\n\n=== 你之前的探索历程（Round 1-1，交接文档）===\n\n你已经在之前的1轮中开始了这道题的探索。以下是前一轮AI编写的交接文档，\n总结了之前的思考过程、已确认的结论、已排除的方向和当前卡点。请仔细阅读，在此基础上**继续**完成解答。\n\n# 交接文档 · deepmath_103k_00004725 · Round 1 探索历程\n\n> **交接给**：下一个AI，请在此基础上继续完成解答\n> **来源**：deepmath_103k_00004725 Round 1（1个agent step，被截断）\n> **制作时间**：2026-08-21\n> **截断判定**：reasoning_content=68999c, message=0c, tool_calls=0, completion_tokens=25000（达到上限）\n\n---\n\n## 1. 题目\n\nDetermine the order of the best constant \\(\\lambda = \\lambda(n)\\) such that for any \\(n \\times n\\) complex matrix \\(A\\) with trace zero, there exist \\(n \\times n\\) matrices \\(B\\) and \\(C\\) satisfying \\(A = BC - CB\\) and \\(\\|B\\| \\cdot \\|C\\| \\le \\lambda \\|A\\|\\).\n\n**注意**：题目未指定范数类型。AI在thinking中同时分析了Frobenius范数和spectral/operator范数两种情况。\n\n---\n\n## 2. 答案猜想\n\nAI在thinking中提出了多个猜想，最终倾向于：\n\n- **Frobenius范数**：猜想 \\(\\lambda(n) = \\Theta(n)\\)（基于2D grid构造的上界O(n)和packing论证的下界Ω(n)），但AI也提到\"我怀疑答案可能是 \\(\\Theta(\\sqrt{n}))\\)\"，置信度不高。\n- **Spectral/operator范数**：正在分析中，尚未形成明确猜想。初步分析显示对特定例子（如 \\(J-I\\)）可达到O(1)，但一般情况的上界为O(n)（2D grid），下界仅为Ω(1/2)。\n\n**猜想的演变过程**（来源：step 7 reasoning_content）：\n1. 最初回忆 \\(\\lambda(n) = \\Theta(1)\\) for Frobenius（line 95-96, 158），但无法证明\n2. 发现1D diagonal B给出O(n^{3/2})，推翻了Θ(1)猜想（line 169, 201-203）\n3. 发现2D grid给出O(n)，优于1D的O(n^{3/2})（line 503-532）\n4. 用packing论证证明2D下界Ω(n)，得出normal B下Θ(n)（line 536-554, 734-738）\n5. 考虑non-normal B是否能突破Θ(n)，未得出结论（line 685-686, 821-828）\n6. 最终仍不确定，提到\"我怀疑答案是 \\(\\Theta(\\sqrt{n})\\)\"但无法证明（line 899-903, 913）\n\n---\n\n## 3. 已确认的结论\n\n### 3.1 基本事实：每个traceless矩阵都是commutator\n**来源**：step 7, line 7, 93\n- **定理**（Shoda / Albert-Goldman-Marcus）：每个trace-zero矩阵都可以写成commutator \\(A = [B, C] = BC - CB\\)。\n- 本题问的不是存在性，而是**最小范数**的commutator分解。\n\n### 3.2 通用下界：\\(\\lambda(n) \\geq 1/2\\)\n**来源**：step 7, line 103, 236, 574\n- 对任何submultiplicative norm：\\(\\|[B,C]\\| \\leq \\|BC\\| + \\|CB\\| \\leq 2\\|B\\|\\|C\\|\\)。\n- 因此若 \\(A = [B,C]\\)，则 \\(\\|A\\| \\leq 2\\|B\\|\\|C\\|\\)，即 \\(\\|B\\|\\|C\\| \\geq \\|A\\|/2\\)。\n- 这给出 \\(\\lambda(n) \\geq 1/2\\)，但AI多次尝试改进此下界均未成功（见§4）。\n\n### 3.3 Zero-diagonal归约\n**来源**：step 7, line 58-60, 469-472\n- **关键技巧**：任何traceless矩阵 \\(A\\) 可以通过酉变换 \\(U\\) 使得 \\(U^*AU\\) 的对角线为零（Schur-Horn定理或直接论证）。\n- 酉变换保持unitarily invariant norms（Frobenius和spectral都是）。\n- 因此WLOG假设 \\(A\\) 的对角线为零，然后使用diagonal \\(B\\) 的构造。\n\n### 3.4 Diagonal B构造（1D）\n**来源**：step 7, line 39-41, 62-69, 109-117\n- 设 \\(B = \\text{diag}(b_1, \\ldots, b_n)\\)（\\(b_i\\) 互异），\\(C_{ij} = A_{ij}/(b_i - b_j)\\) for \\(i \\neq j\\)，\\(C_{ii} = 0\\)。\n- 则 \\([B, C]_{ij} = (b_i - b_j) C_{ij} = A_{ij}\\) for \\(i \\neq j\\)，且对角线自动为零。\n- **Frobenius范数**：\\(\\|B\\|_F^2 = \\sum b_i^2\\)，\\(\\|C\\|_F^2 = \\sum_{i \\neq j} |A_{ij}|^2 / (b_i - b_j)^2\\)。\n- **关键不变性**：乘积 \\(\\|B\\|_F \\|C\\|_F\\) 在B的scaling下不变（scale B by \\(\\alpha\\), C by \\(1/\\alpha\\)，commutator不变，product不变）。来源：line 453-455。\n\n### 3.5 1D排列的最优ratio为 \\(\\Theta(n^{3/2})\\)\n**来源**：step 7, line 195-199, 455\n- **问题**：在实数轴上放 \\(n\\) 个互异点 \\(b_i\\)，最小化 \\(\\sqrt{\\sum b_i^2} / \\min_{i \\neq j} |b_i - b_j|\\)。\n- **最优解**：等间距居中排列 \\(b_i = (i - (n+1)/2) \\cdot d\\)，给出 \\(\\sqrt{n(n^2-1)/12} \\sim n^{3/2}/\\sqrt{12}\\)。\n- **结论**：1D diagonal B对Frobenius范数给出 \\(O(n^{3/2})\\) 上界，且这是1D排列的最优。\n\n### 3.6 2D grid构造给出 \\(O(n)\\)（Frobenius范数）\n**来源**：step 7, line 503-532\n- **关键洞察**：特征值是复数（2D），可以利用2D排列而非1D。\n- **构造**：取 \\(B\\) 为normal矩阵，特征值放在 \\(\\sqrt{n} \\times \\sqrt{n}\\) 的2D grid上（假设 \\(n\\) 是完全平方数），间距为 \\(d\\)，居中。\n  - \\(\\min |\\lambda_i - \\lambda_j| = d\\)（相邻grid点）\n  - \\(\\|B\\|_F = \\sqrt{\\sum |\\lambda_i|^2} \\sim dn/\\sqrt{3}\\)\n  - \\(\\|C\\|_F \\leq \\|A\\|_F / d\\)（worst case: A集中在最小gap的entry上）\n  - **乘积**：\\((dn/\\sqrt{3}) \\cdot (\\|A\\|_F/d) = n\\|A\\|_F/\\sqrt{3} = O(n)\\)\n- **具体验证**（shift matrix \\(A = \\sum_{i=1}^{n-1} E_{i,i+1}\\)）：2D grid给出ratio \\(n/\\sqrt{3} = O(n)\\)，而1D给出 \\(O(n^{3/2})\\)。来源：line 673-681。\n\n### 3.7 2D排列的下界 \\(\\Omega(n)\\)（Frobenius范数，normal B）\n**来源**：step 7, line 536-554, 703-711, 734-738\n- **Packing论证**：\\(n\\) 个复平面上的点，最小两两距离 \\(\\geq d\\)，则需要半径 \\(\\sim d\\sqrt{n}\\) 的圆盘来容纳。\n- 因此 \\(\\sum |\\lambda_i|^2 \\sim n \\cdot (d\\sqrt{n})^2/2 = n^2 d^2/2\\)，即 \\(\\|B\\|_F \\sim nd/\\sqrt{2}\\)。\n- Ratio \\(\\geq (nd/\\sqrt{2})/d = n/\\sqrt{2} = \\Omega(n)\\)。\n- **结论**：对normal B，Frobenius范数下 \\(\\lambda(n) = \\Theta(n)\\)。\n\n### 3.8 Non-normal B的约束\n**来源**：step 7, line 716-738\n- 对任何 \\(B\\)，\\(\\text{ad}_B\\) 的特征值为 \\(\\{\\lambda_i - \\lambda_j\\}\\)（\\(\\lambda_i\\) 为 \\(B\\) 的特征值）。\n- **关键事实**：\\(\\sigma_{\\min}(\\text{ad}_B) \\leq \\min_{i \\neq j} |\\lambda_i - \\lambda_j|\\)（因为若 \\(Mv = \\lambda v\\)，则 \\(\\sigma_{\\min}(M) \\leq \\|Mv\\|/\\|v\\| = |\\lambda|\\)）。来源：line 722-724。\n- 且 \\(\\|B\\|_F \\geq \\sqrt{\\sum |\\lambda_i|^2}\\)（Schur不等式）。来源：line 732。\n- **因此**：即使non-normal B，\\(\\|B\\|_F / \\sigma_{\\min}(\\text{ad}_B) \\geq \\sqrt{\\sum |\\lambda_i|^2} / \\min|\\lambda_i - \\lambda_j| \\geq \\Omega(n)\\)。\n- **结论**：non-normal B无法突破 \\(\\Omega(n)\\) 下界（Frobenius范数）。来源：line 734-738。\n\n### 3.9 Commutator的正交约束\n**来源**：step 7, line 881-895\n- 若 \\(A = [B, C]\\)，则 \\(A\\) Frobenius-正交于 \\(B\\) 的所有多项式：\\(\\text{tr}(A \\cdot p(B)) = 0\\) for any polynomial \\(p\\)。\n- 特别地：\\(\\text{tr}(A) = 0\\)（已知），\\(\\text{tr}(AB) = 0\\)，\\(\\text{tr}(AB^2) = 0\\)，...，\\(\\text{tr}(AB^{n-1}) = 0\\)。\n- **但对zero-diagonal A + diagonal B**：这些约束自动满足（因为 \\(A_{ii} = 0\\) 且 \\(B\\) 对角），所以不提供额外限制。来源：line 893-895。\n\n### 3.10 Spectral范数：特定例子可达O(1)\n**来源**：step 7, line 323-337\n- **例子**：\\(A = J - I\\)（\\(J\\) 为全1矩阵），\\(\\|A\\|_{\\text{op}} = n-1\\)。\n- 用 \\(B = \\text{diag}(1, \\ldots, n)\\)，\\(C_{ij} = 1/(i-j)\\) for \\(i \\neq j\\)。\n- \\(C\\) 是Toeplitz矩阵，symbol为sawtooth函数 \\(f(\\theta) = \\sum_{k \\neq 0} e^{ik\\theta}/k = -i(\\pi - \\theta)\\)，\\(\\|C\\|_{\\text{op}} \\leq \\pi\\)（对所有 \\(n\\)）。\n- **Ratio**：\\(n \\cdot \\pi / (n-1) = O(1)\\)。来源：line 333-337。\n\n### 3.11 Schur multiplier norm\n**来源**：step 7, line 347-357\n- 矩阵 \\(D_{ij} = 1/(i-j)\\)（\\(i \\neq j\\)，对角线为0）的Schur multiplier norm \\(\\|D\\|_m\\) 与discrete Hilbert transform相关，**被常数bound**（如 \\(\\pi\\)）。\n- 若 \\(\\|D\\|_m = O(1)\\)，则diagonal B + spectral norm给出 \\(O(n)\\) 上界（\\(\\|B\\|_{\\text{op}} = n\\)，\\(\\|C\\|_{\\text{op}} \\leq c\\|A\\|_{\\text{op}}\\)）。\n- scaling不变性同样适用：无论B的scaling如何，spectral norm下diagonal B给出 \\(O(n)\\)。来源：line 359-363。\n\n---\n\n## 4. 已尝试的方向\n\n### 4.1 ❌ 单entry下界（Frobenius和spectral）\n**来源**：step 7, line 207-232, 287-303, 619-623, 839-857\n- **尝试**：用 \\(A = E_{11} - E_{nn}\\)、\\(A = \\text{diag}(1,-1,0,...,0)\\)、\\(A = I - nE_{11}\\) 等具体矩阵，通过单个对角entry的约束推导下界。\n- **结果**：所有尝试只给出 **常数下界**（\\(\\lambda(n) \\geq 1/2\\) 或类似），因为 \\(|([B,C])_{ii}| \\leq 2\\|B\\|_F\\|C\\|_F\\) 只涉及一行一列，无法捕捉n的增长。\n- **失败原因**：单entry约束太弱。需要利用矩阵的整体结构，但AI未能找到合适的整体性论证。\n\n### 4.2 ❌ Dimensional/volume argument\n**来源**：step 7, line 871-876\n- **尝试**：用维度论证和volume论证推导下界。\n- **结果**：维度论证不给出下界（\\(2n^2 - 1 > n^2 - 1\\) for \\(n \\geq 2\\)，image可以覆盖整个traceless空间）。Volume论证过于复杂，AI未能完成。\n- **失败原因**：commutator map有足够的自由度覆盖traceless空间，dimensional argument不有效。\n\n### 4.3 ❌ 改进1D diagonal B的b_i选择\n**来源**：step 7, line 649-671\n- **尝试**：对shift matrix \\(A = \\sum E_{i,i+1}\\)，尝试 \\(b_i = i^\\alpha\\) 的不同 \\(\\alpha\\) 值优化product。\n- **结果**：最优 \\(\\alpha \\approx 1.09\\)，但product仍为 \\(O(n^{3/2})\\)。对数增长 \\(b_i = \\log i\\) 更差。\n- **失败原因**：1D排列的 \\(\\|B\\|_F / \\min|b_i - b_j|\\) 比率固有为 \\(\\Theta(n^{3/2})\\)，无法通过选择 \\(b_i\\) 突破。\n\n### 4.4 ⚠️ Non-normal B（未完成）\n**来源**：step 7, line 821-828, 905-910\n- **尝试**：考虑 \\(B = S + D\\)（\\(S\\) 为shift matrix，\\(D\\) 为diagonal），利用non-normality使 \\(\\sigma_{\\min}(\\text{ad}_B)\\) 大于 \\(\\min|\\lambda_i - \\lambda_j|\\)。\n- **结果**：分析过于复杂，AI未能完成。且根据§3.8的论证，\\(\\sigma_{\\min}(\\text{ad}_B) \\leq \\min|\\lambda_i - \\lambda_j|\\) 始终成立，所以non-normal B的 \\(\\sigma_{\\min}\\) 不会更大。\n- **状态**：未完成，但理论分析表明non-normal B无法突破Ω(n)下界（Frobenius范数）。\n\n### 4.5 ⚠️ 验证 \\(\\Theta(\\sqrt{n})\\) 猜想（未完成）\n**来源**：step 7, line 693-697, 777-803, 899-903\n- **尝试**：AI怀疑答案可能是 \\(\\Theta(\\sqrt{n})\\)，试图构造 \\(O(\\sqrt{n})\\) 上界。\n- **结果**：无法构造。2D grid给出O(n)，而要达到O(√n)需要 \\(\\|B\\|_F \\sim d\\sqrt{n}\\)，但这要求n个点在半径~d的圆盘内且最小距离d，2D中只能放O(1)个点。\n- **失败原因**：2D packing的几何约束使得 \\(\\Theta(\\sqrt{n})\\) 在normal B下不可能。\n\n### 4.6 ⚠️ Spectral范数的2D grid分析（被截断）\n**来源**：step 7, line 915-919（最后几行）\n- **尝试**：对spectral norm用2D grid，\\(\\|B\\|_{\\text{op}} = \\max|\\lambda_i| \\sim d\\sqrt{n}\\)，尝试bound \\(\\|C\\|_{\\text{op}}\\)。\n- **结果**：**被截断**。最后一句是 \"\\(\\|C\\|_{\\text{op}} \\leq \\|C\\|_F \\leq \\|A\\)\"——公式未写完。\n\n---\n\n## 5. 关键文献/参考\n\nAI在thinking中引用了以下定理和结果（**注意**：AI没有使用web_search工具，所有引用来自模型内部知识，未经验证）：\n\n| 文献/定理 | 内容 | 对本题的作用 | 来源line |\n|---|---|---|---|\n| Shoda / Albert-Goldman-Marcus定理 | 每个traceless矩阵是commutator | 存在性保证 | 7, 93 |\n| Schur-Horn定理 | traceless矩阵可酉变换为zero-diagonal | 归约技巧 | 58 |\n| Böttcher and Wenzel (2005) | commutator norm相关结果 | AI试图回忆但未成功引用具体结果 | 25, 99, 154, 429, 691 |\n| Toeplitz矩阵理论 | \\(C_{ij} = 1/(i-j)\\)的symbol为sawtooth函数，\\(\\|C\\|_{\\text{op}} \\leq \\pi\\) | spectral norm特定例子的O(1)分析 | 333 |\n| Schur multiplier norm | \\(D_{ij} = 1/(i-j)\\)的Schur multiplier norm被常数bound | spectral norm一般上界O(n) | 349-357 |\n| Schur不等式 | \\(\\sum |\\lambda_i|^2 \\leq \\sum \\sigma_i^2 = \\|B\\|_F^2\\) | non-normal B下界论证 | 732 |\n| Killing form on \\(\\mathfrak{sl}_n\\) | \\((X,Y) \\to 2n\\,\\text{tr}(XY)\\) | AI尝试Lie algebra角度但未深入 | 785-787 |\n| Cartan分解 | \\(\\mathfrak{sl}_n = \\mathfrak{k} \\oplus \\mathfrak{p}\\) | AI尝试但认为太抽象，放弃 | 789-793 |\n\n**注意**：AI提到\"Kissin and Shulman\"的结果认为operator norm下best constant为order n，但标注\"我不确定\"。来源：line 283。\n\n---\n\n## 6. 已有的中间产物\n\n**Round 1没有写出任何脚本或文件。** 所有分析都在thinking中完成。没有tool_calls（0个），没有observations，没有创建任何文件。\n\nAI遵守了\"不要使用任何工具，只在TUI中用thinking解题\"的约束。\n\n---\n\n## 7. 当前卡在哪里\n\n### 截断时的具体状态\n\nAI在step 7的reasoning_content最后部分（line 915-919）正在分析**spectral/operator norm下的2D grid上界**：\n\n```\nFor the spectral norm:\n- Lower bound: ||[B,C]||_op ≤ 2||B||_op ||C||_op, so λ(n) ≥ 1/2.\n- Upper bound: Using the 2D grid with B normal, ||B||_op = max|λ_i| ~ d√n\n  (for grid with spacing d, the max distance from center is ~d√n).\n  ||C||_op ≤ ||C||_F ≤ ||A\n```\n\n**被截断在**：正在推导 \\(\\|C\\|_{\\text{op}}\\) 的上界，公式写到 \\(\\|C\\|_{\\text{op}} \\leq \\|C\\|_F \\leq \\|A\\|\\) 时被completion_tokens上限截断。\n\n### 为什么这个任务困难\n\n1. **范数未指定**：题目只写 \\(\\|\\cdot\\|\\)，AI不确定是Frobenius还是spectral norm，需要分别分析两种情况，工作量翻倍。\n\n2. **下界难以改进**：AI反复尝试改进 \\(\\lambda(n) \\geq 1/2\\) 的通用下界，但所有方法（单entry约束、dimensional argument、volume argument、正交约束）都只给出常数下界。核心困难是commutator map有足够的自由度，单点约束无法捕捉n的增长。\n\n3. **Non-normal B的分析复杂**：虽然理论论证表明non-normal B无法突破Ω(n)（Frobenius），但AI对spectral norm的情况尚未完成分析。Non-normal B的 \\(\\sigma_{\\min}(\\text{ad}_B)\\) 与特征值gap的关系需要更深入的分析。\n\n4. **不确定答案**：AI在 \\(\\Theta(n)\\)（有证明支撑）和 \\(\\Theta(\\sqrt{n})\\)（直觉但无法证明）之间犹豫，缺乏对已知文献的准确回忆。\n\n---\n\n## 8. 建议的下一步\n\n### 8.1 确定范数类型（最优先）\n题目未指定范数。需要判断：\n- 如果是**Frobenius norm**：AI已有较完整的分析，\\(\\lambda(n) = \\Theta(n)\\)（上界O(n) via 2D grid，下界Ω(n) via packing + Schur不等式 + \\(\\sigma_{\\min}\\)论证）。\n- 如果是**spectral/operator norm**：需要完成被截断的分析。关键问题是2D grid给出 \\(\\|B\\|_{\\text{op}} \\sim d\\sqrt{n}\\)，需要bound \\(\\|C\\|_{\\text{op}}\\)。如果Schur multiplier norm of \\(1/(\\lambda_i - \\lambda_j)\\) 是O(1)，则 \\(\\|C\\|_{\\text{op}} \\leq c\\|A\\|_{\\text{op}}\\)，product为 \\(O(\\sqrt{n})\\)。\n\n### 8.2 完成spectral norm的2D grid上界\n具体步骤：\n1. 对2D grid特征值 \\(\\lambda_i\\)，矩阵 \\(D_{ij} = 1/(\\lambda_i - \\lambda_j)\\) 的Schur multiplier norm是否为O(1)？\n2. 如果是，\\(\\|C\\|_{\\text{op}} = \\|D \\circ A\\|_{\\text{op}} \\leq \\|D\\|_m \\cdot \\|A\\|_{\\text{op}} = O(1) \\cdot \\|A\\|_{\\text{op}}\\)。\n3. Product：\\(\\|B\\|_{\\text{op}} \\cdot \\|C\\|_{\\text{op}} \\sim d\\sqrt{n} \\cdot c\\|A\\|_{\\text{op}}/d = O(\\sqrt{n})\\|A\\|_{\\text{op}}\\)。\n4. 这给出spectral norm下 \\(O(\\sqrt{n})\\) 上界。\n\n### 8.3 寻找spectral norm的下界\n- 通用下界仅为 \\(\\lambda(n) \\geq 1/2\\)。\n- 需要找到具体的 \\(A\\) 使得任何commutator分解都要求 \\(\\|B\\|_{\\text{op}}\\|C\\|_{\\text{op}} \\geq c\\sqrt{n}\\|A\\|_{\\text{op}}\\)。\n- 可能方向：考虑rank-1矩阵或具有特定spectral结构的矩阵，利用 \\(\\|[B,C]\\|_{\\text{op}}\\) 与 \\(\\|B\\|_{\\text{op}}\\|C\\|_{\\text{op}}\\) 之间的更精细关系。\n\n### 8.4 查阅文献确认答案\nAI提到Böttcher-Wenzel和Kissin-Shulman的相关工作但未能准确回忆。建议：\n- 搜索\"commutator norm traceless matrix best constant\"\n- 搜索\"Albert Goldman Marcus commutator norm\"\n- 确认Frobenius norm下是否确实为 \\(\\Theta(n)\\)，spectral norm下是否为 \\(\\Theta(\\sqrt{n})\\)\n\n### 8.5 如果答案是 \\(\\Theta(\\sqrt{n})\\)（spectral norm）\n需要验证：\n- 上界 \\(O(\\sqrt{n})\\)：完成§8.2的Schur multiplier norm论证\n- 下界 \\(\\Omega(\\sqrt{n})\\)：找到hard instance\n\n### 8.6 关于Frobenius norm的 \\(\\Theta(n)\\) 结论的验证\nAI的论证链：\n1. 上界O(n)：2D grid构造（§3.6）\n2. 下界Ω(n)：packing + \\(\\sigma_{\\min}(\\text{ad}_B) \\leq \\min|\\lambda_i - \\lambda_j|\\) + Schur不等式（§3.7, §3.8）\n\n**需要验证的关键步骤**：\\(\\sigma_{\\min}(\\text{ad}_B) \\leq \\min_{i \\neq j} |\\lambda_i - \\lambda_j|\\) 是否对所有B成立（AI给出了论证：若 \\(Mv = \\lambda v\\)，则 \\(\\sigma_{\\min}(M) \\leq |\\lambda|\\)）。\n\n---\n\n## 附录：探索历程时间线\n\n| Step | Source | 内容 |\n|---|---|---|\n| 0-6 | system/user | 系统prompt、规则注入、用户指令\"请按AGENTS.md中的题目直接解答\" |\n| 7 | agent | **唯一的agent step**。68999字符的reasoning_content，0字符message，0个tool_calls。completion_tokens=25000（达到上限，被截断）。 |\n\n### Step 7 reasoning_content 的思维脉络\n\n1. **Line 1-30**：问题理解，回忆基本定理（Albert-Goldman-Marcus），考虑范数类型\n2. **Line 31-78**：Frobenius norm初步分析，diagonal B构造，1D等间距给出O(n^{3/2})\n3. **Line 79-121**：考虑lower bound，尝试具体例子（E_{12}, diag矩阵），只得到常数下界\n4. **Line 122-155**：回忆Böttcher-Wenzel等文献，尝试确定答案的order\n5. **Line 156-203**：深入分析1D diagonal B的优化，确认O(n^{3/2})是1D最优\n6. **Line 204-302**：Spectral norm初步分析，单entry下界尝试，Toeplitz矩阵的O(1)例子\n7. **Line 303-420**：Roots of unity构造，Schur multiplier norm，确认1D和scaling不变性\n8. **Line 421-556**：**关键突破**——2D grid构造，将上界从O(n^{3/2})改进到O(n)，packing论证给出Ω(n)下界\n9. **Line 557-738**：Non-normal B分析，\\(\\sigma_{\\min}\\)论证，确认non-normal B无法突破Ω(n)\n10. **Line 739-897**：尝试改进下界（单entry、dimensional、正交约束），均失败；尝试O(√n)构造，几何上不可能\n11. **Line 898-919**：转向spectral norm的2D grid分析，**被截断**在推导\\(\\|C\\|_{\\text{op}}\\)上界时\n\n\n=== 请继续思考并完成解答 ===\n\n根据交接文档中的\"下一步建议\"，继续完成这道题的解答。\n\n要求：\n1. **在之前的探索基础上继续**，不要重复已经做过的分析\n2. 给出完整的解答过程\n3. 最终答案用 \\boxed{答案} 格式给出\n4. 数学公式用LaTeX\n5. 把证明写到proof.md文件中，不要在对话里输出完整证明",
+      "extra": {
+        "telemetry": {
+          "source": "user",
+          "operation": "unknown"
+        }
+      }
+    },
+    {
+      "step_id": 9,
+      "timestamp": "2026-08-21T14:56:14.649571+00:00",
+      "source": "system",
+      "message": "<available_skills>\nThe following skills can be invoked using the `skill` tool. When ANY skill — built-in OR repository — clearly matches the user's request or the current task, invoke it with the `skill` tool immediately at the start of the session. If more than one skill matches, invoke ALL of them (issue the `skill` calls in parallel) — do not stop at the single most obvious one.\n\n- **akash**: 问题驱动流程保障——确保走完整5阶段流程（需求→方案→工作包→执行→结果） (source: /Users/user/.config/devin/skills/akash/SKILL.md)\n- **redundancy-consolidation**: 整合冗余内容的完整工作流程——逐行对比、列出缺失清单、先合并后删除、验证无丢失。 WHEN to use: 发现文件间有冗余需要整合时。 WHEN NOT to use: 单纯删除废弃文件、新增内容。 (source: /Users/user/.config/devin/skills/redundancy-consolidation/SKILL.md)\n- **workflow**: 开发工作流总纲（三层认知架构+read/read-sync/make-plan+映射数据库+git管理） (source: /Users/user/.config/devin/skills/workflow/SKILL.md)\n- **qmd-mcp-search**: QMD语义搜索和知识图谱查询（含CLI直接调用方式） (source: /Users/user/.config/devin/skills/qmd-mcp-search/SKILL.md)\n- **akash-new**: akash流程跨session续传——判断上一个AI做到哪个阶段，生成让下一个AI从正确阶段继续的提示词 (source: /Users/user/.config/devin/skills/akash-new/SKILL.md)\n- **db-file-traceability**: 数据库-文件双向可追溯性验证 (source: /Users/user/.config/devin/skills/db-file-traceability/SKILL.md)\n- **opencode-acp-protocol**: OpenCode ACP(Agent Client Protocol)模式完整指南——opencode acp子命令、JSON-RPC over stdio通信、 session/update通知变体(thought/message/tool_call)、thinking实时流式推送、权限自动批准、 session管理(close/fork/list/resume)、v1协议细节、与Devin CLI ACP的关键区别。 WHEN to use: 用opencode acp启动为ACP server时；写ACP客户端对接opencode时； 需要实时检测AI工作状态(thinking/tool执行/卡住)时；从session/update通知组装trajectory时； 对比opencode ACP和devin ACP选方案时；将现有管线改造为ACP模式时。 WHEN NOT to use: 只需要opencode的最终结果(用opencode run)；非ACP的opencode使用； 只需要devin ACP(用devin-acp-protocol skill)。 (source: /Users/user/.config/devin/skills/opencode-acp-protocol/SKILL.md)\n- **search-tools**: 搜索武器库技术说明书——按需求组织：网页搜索完备性 + Markdown 网页抓取。 所有方案均为免费可用，基于 2026-08-21 实测数据编写。 (source: /Users/user/.config/devin/skills/search-tools/SKILL.md)\n- **noninteractive-solver-run**: 非交互模式运行解题AI（生产标准） (source: /Users/user/.config/devin/skills/noninteractive-solver-run/SKILL.md)\n- **trajectory-workline-review**: trajectory数据回溯工作脉络 (source: /Users/user/.config/devin/skills/trajectory-workline-review/SKILL.md)\n- **cold-hdd-transfer**: 向HDD冷盘迁移数据 (source: /Users/user/.config/devin/skills/cold-hdd-transfer/SKILL.md)\n- **devin-config-harness**: Devin CLI配置完整说明书+元组评估决策流程+skill/rule编写规范+经验反模式 (source: /Users/user/.config/devin/skills/devin-config-harness/SKILL.md)\n- **read**: 按三层架构加载必要认知（README.md→看法文件→具体文档） (source: /Users/user/.config/devin/skills/read/SKILL.md)\n- **devin-cli-trajectory**: Devin CLI trajectory数据提取/解析/审计 (source: /Users/user/.config/devin/skills/devin-cli-trajectory/SKILL.md)\n- **devin-acp-protocol**: Devin CLI ACP(Agent Client Protocol)模式使用指南——devin acp子命令、JSON-RPC over stdio通信、 session/update通知变体(thought/message/tool_call/permission)、thinking实时流式推送、 权限处理、session管理、v1协议细节、实测验证的信号清单和检测逻辑。 WHEN to use: 需要用ACP模式启动devin cli(替代-p模式)时；需要实时检测AI工作状态(thinking spin/卡住)时； 需要从session/update通知组装conversation.json时；需要处理ACP权限请求时； 设计/实现/调试ACP客户端时；将现有-p模式管线改造为ACP模式时。 WHEN NOT to use: 只需要-p模式的简单非交互运行(用noninteractive-solver-run skill)； 只需要session最终产出(看文件即可)；只需要git历史(用git log)。 (source: /Users/user/.config/devin/skills/devin-acp-protocol/SKILL.md)\n- **tmux-easy-setup**: tmux最易用状态配置 (source: /Users/user/.config/devin/skills/tmux-easy-setup/SKILL.md)\n- **disk-readme-sync**: 磁盘/卷README同步检查 (source: /Users/user/.config/devin/skills/disk-readme-sync/SKILL.md)\n- **make-plan**: 制作行动计划=完整的repo更新行为（执行步骤+需求追踪+认知准备+元数据更新） (source: /Users/user/.config/devin/skills/make-plan/SKILL.md)\n- **setup-codex-rules-skills**: Codex CLI的rule和skill配置 (source: /Users/user/.config/devin/skills/setup-codex-rules-skills/SKILL.md)\n- **zcode-trajectory**: ZCode (z.ai 桌面客户端) model-io session trajectory 数据的 JSONL schema 与读取方法。 (source: /Users/user/.config/devin/skills/zcode-trajectory/SKILL.md)\n- **read-sync**: 创建/维护repo的README.md认知地图+看法文件+映射数据库 (source: /Users/user/.config/devin/skills/read-sync/SKILL.md)\n- **long-running-work-sop**: 长程工作识别与SOP化 (source: /Users/user/.config/devin/skills/long-running-work-sop/SKILL.md)\n- **devin-cli**: Look up Devin CLI documentation (skills, extensibility, configuration, commands, models, troubleshooting) (source: /Volumes/data/devin-cli-data/_versions/3000.4.25/share/devin/docs)\n- **declarative-repo-setup**: Generate and verify a working environment.yaml (Devin snapshot-setup blueprint) for a repo (source: builtin:drs)\n</available_skills>",
+      "extra": {
+        "telemetry": {
+          "source": "system",
+          "operation": "unknown"
+        }
+      }
+    },
+    {
+      "step_id": 10,
+      "timestamp": "2026-08-21T14:56:18.291642+00:00",
+      "source": "agent",
+      "message": "",
+      "model_name": "GLM-5.2 High",
+      "reasoning_content": "Let me think carefully about this problem. The question asks for the order of the best constant λ(n) such that for any n×n complex matrix A with trace zero, there exist B, C with A = BC - CB and ||B||·||C|| ≤ λ||A||.\n\nThe norm is unspecified. This is a classic problem. Let me think about what's known.\n\nActually, this is a well-known problem. The answer depends on the norm. But the problem says \"the order of the best constant\" - singular answer. Let me think about what norm is standard here.\n\nActually, looking at this more carefully - this problem is from a competition or research context. The key reference is the work on commutator norms. Let me think about the Frobenius norm case since the handoff document has the most complete analysis there.\n\nFor Frobenius norm:\n- Upper bound O(n): 2D grid construction\n- Lower bound Ω(n): packing argument + Schur inequality + σ_min argument\n\nThe handoff document's analysis for Frobenius norm seems quite complete: λ(n) = Θ(n).\n\nBut wait - let me reconsider. The problem doesn't specify the norm. In many standard references, when the norm is unspecified for matrices, it could be the operator norm. But actually, in the context of this problem (which appears to be from a math competition or research problem set), let me think about what's the \"standard\" answer.\n\nActually, I recall that this is related to a result by various authors. Let me think about the operator norm case more carefully.\n\nFor the operator norm:\n- The 2D grid gives ||B||_op ~ d√n (max eigenvalue magnitude)\n- The key question is whether ||C||_op can be bounded.\n\nWith the Schur multiplier approach: C = D ∘ A where D_{ij} = 1/(λ_i - λ_j). The Schur multiplier norm ||D||_m bounds ||C||_op ≤ ||D||_m · ||A||_op.\n\nFor the 2D grid, the question is whether ||D||_m = O(1/d) (independent of n up to the 1/d factor).\n\nActually, let me think about this differently. The matrix D_{ij} = 1/(λ_i - λ_j) for a 2D grid configuration. The Schur multiplier norm of such a matrix...\n\nHmm, this is getting complicated. Let me think about what the \"standard\" answer to this problem is.\n\nActually, I think this problem is asking about the operator norm (spectral norm), and the answer is Θ(√n).\n\nWait, let me reconsider. Let me think about the problem from scratch.\n\nThe problem is: for any traceless n×n complex matrix A, find B, C with A = [B,C] and ||B||·||C|| ≤ λ(n)||A||. What is the order of the best λ(n)?\n\nLet me consider the operator norm case.\n\nUpper bound for operator norm:\n- Use the zero-diagonal reduction: WLOG A has zero diagonal (via unitary conjugation, which preserves operator norm).\n- Take B = diag(1, 2, ..., n). Then ||B||_op = n.\n- C_{ij} = A_{ij}/(i-j) for i≠j, C_{ii} = 0.\n- The question is: what is ||C||_op in terms of ||A||_op?\n\nThe matrix M with M_{ij} = 1/(i-j) for i≠j is a Toeplitz matrix. Its operator norm is bounded by π (the norm of the discrete Hilbert transform). So ||C||_op ≤ π·||A||_op (since C = M ∘ A, and the Schur multiplier norm of M is ≤ π).\n\nWait, actually the Schur multiplier norm of a Toeplitz matrix with symbol f is ||f||_∞ (the L^∞ norm of the symbol). The symbol of M is f(θ) = Σ_{k≠0} e^{ikθ}/k = -i(π - θ) for θ ∈ (0, 2π), so ||f||_∞ = π.\n\nActually, the Schur multiplier norm equals the sup norm of the symbol only for certain cases. Let me be more careful.\n\nFor a Toeplitz matrix T with entries T_{ij} = a_{i-j}, the Schur multiplier norm ||T||_m equals the norm of the corresponding Hankel operator, or more precisely, it's related to the L^∞ norm of the symbol... Actually, I need to be more careful.\n\nThe Schur multiplier norm of a matrix M is defined as:\n||M||_m = sup{||M ∘ X||_op / ||X||_op : X ≠ 0}\n\nFor a Toeplitz matrix with symbol f(θ) = Σ_k a_k e^{ikθ}, the Schur multiplier norm is ||f||_∞ if the matrix is \"nice enough\". Actually, this is a classical result: the Schur multiplier norm of a Toeplitz matrix equals the L^∞ norm of its symbol.\n\nWait no, that's not quite right either. The Schur multiplier norm of a Toeplitz matrix T(f) is the norm of f in the space of \"multipliers of S_1\", which for Toeplitz matrices is the Besov class... This is getting complicated.\n\nLet me think about it differently. Actually, for the specific matrix M_{ij} = 1/(i-j), this is a well-studied object. The discrete Hilbert transform matrix. Its Schur multiplier norm is known to be O(1) (bounded by a constant independent of n).\n\nSo with B = diag(1,...,n), ||B||_op = n, and ||C||_op ≤ c·||A||_op, giving ||B||_op·||C||_op ≤ cn·||A||_op. This gives O(n) for the operator norm.\n\nBut can we do better? The 2D grid approach:\n- Place eigenvalues on a √n × √n grid with spacing d.\n- ||B||_op = max|λ_i| ~ d√n\n- C_{ij} = A_{ij}/(λ_i - λ_j), so C = D ∘ A where D_{ij} = 1/(λ_i - λ_j)\n- If ||D||_m = O(1/d) (i.e., the Schur multiplier norm scales as 1/d, independent of n), then ||C||_op ≤ (c/d)·||A||_op\n- Product: d√n · (c/d)·||A||_op = c√n·||A||_op = O(√n)\n\nSo the key question is: for the 2D grid, is the Schur multiplier norm of D_{ij} = 1/(λ_i - λ_j) equal to O(1/d)?\n\nThis is the crux. Let me think about whether this is true.\n\nThe Schur multiplier norm of D is:\n||D||_m = sup{||D ∘ X||_op / ||X||_op}\n\nFor the 2D grid with spacing d, D_{ij} = 1/(d·(p_i - p_j)) where p_i are grid points in Z[i] (Gaussian integers). So D = (1/d) · D' where D'_{ij} = 1/(p_i - p_j).\n\nThe question reduces to: is ||D'||_m = O(1) for the √n × √n grid of Gaussian integers?\n\nThis is related to the Schur multiplier norm of the \"2D Hilbert transform\" or the Cauchy transform on a 2D lattice.\n\nHmm, I think this is indeed O(1) but I'm not 100% sure. Let me think about it.\n\nActually, there's a classical result that the Schur multiplier norm of the matrix (1/(z_i - z_j)) for points z_i in the complex plane is bounded by C·log(n) or something like that... or maybe it's O(1) for well-separated points.\n\nActually, I recall that for points on a line (1D), the Schur multiplier norm of 1/(x_i - x_j) is O(log n) in general, but for equally spaced points it's O(1) (the discrete Hilbert transform).\n\nFor 2D points, the situation might be different. The Cauchy kernel 1/(z-w) in 2D is the fundamental solution of the Cauchy-Riemann equations, and its Schur multiplier properties...\n\nActually, let me think about this more carefully. There's a result by various authors (possibly Bourgain, or maybe it's in the work of Davidson, or Paulsen) about Schur multiplier norms.\n\nActually, I think the key insight is simpler. Let me reconsider.\n\nFor the operator norm, the answer might just be Θ(n), same as Frobenius. Let me think about lower bounds.\n\nLower bound for operator norm:\n- The general lower bound is λ(n) ≥ 1/2 (from ||[B,C]|| ≤ 2||B||·||C||).\n- Can we get a better lower bound?\n\nConsider A = diag(1, -1, 0, ..., 0). This has trace 0 and ||A||_op = 1. For any B, C with [B,C] = A:\n- tr(A) = 0 ✓\n- The (1,1) entry: [B,C]_{11} = Σ_k (B_{1k}C_{k1} - C_{1k}B_{k1}) = 1\n- The (2,2) entry: [B,C]_{22} = -1\n- This gives |[B,C]_{11}| ≤ 2||B||_op·||C||_op (since each term is bounded by ||B||_op·||C||_op)\n- So ||B||_op·||C||_op ≥ 1/2.\n\nThis only gives 1/2. To get a growing lower bound, we need a more clever argument.\n\nLet me think about a different approach. Consider the matrix A that is \"hard\" for the operator norm.\n\nActually, let me think about what matrices are hard. For the operator norm, a rank-1 matrix A = uv* with tr(A) = v*u = 0. Then ||A||_op = ||u||·||v||.\n\nIf A = [B,C], then uv* = BC - CB. This means BC - CB has rank 1.\n\nHmm, this is getting complicated. Let me think about the problem from a higher level.\n\nActually, I think the answer to this problem is Θ(n) for the operator norm, and the problem is asking about the operator norm (since it's the most natural \"default\" norm for matrices in many contexts, and the problem just writes ||·||).\n\nWait, but actually in many analysis contexts, ||·|| for matrices means the operator norm. And the answer Θ(n) would be consistent.\n\nBut let me reconsider the 2D grid argument for the operator norm more carefully.\n\nFor the 2D grid:\n- ||B||_op = max|λ_i| ~ d√n (the corner of the grid is at distance ~d√n from center)\n- We need ||C||_op ≤ (c/d)·||A||_op\n\nThe issue is bounding ||C||_op where C = D ∘ A and D_{ij} = 1/(λ_i - λ_j).\n\nNow, ||C||_op ≤ ||C||_F = (Σ_{i≠j} |A_{ij}|²/|λ_i - λ_j|²)^{1/2}.\n\nIn the worst case, |A_{ij}|² could be concentrated on entries where |λ_i - λ_j| = d (adjacent grid points). There are O(n) such entries (each grid point has O(1) neighbors). If A has ||A||_op = 1 and concentrates on these entries...\n\nActually, ||A||_F² = Σ|A_{ij}|² ≤ n·||A||_op² (since ||A||_F² ≤ n·||A||_op²). If all the Frobenius mass is on the O(n) adjacent entries, each with |A_{ij}|² ~ 1/n (to keep ||A||_op bounded), then:\n\n||C||_F² = Σ |A_{ij}|²/d² ~ n · (1/n) / d² = 1/d²\n\nSo ||C||_F ~ 1/d, and ||C||_op ≤ ||C||_F ~ 1/d.\n\nProduct: d√n · (1/d) = √n. So we get O(√n) for the operator norm!\n\nWait, but this used ||C||_op ≤ ||C||_F, which is loose. Let me check if this is actually tight.\n\nThe issue is: can we really have ||A||_op = O(1) while having O(n) entries each of size ~1/√n on the adjacent positions?\n\nConsider A = (1/√n) · S where S is the adjacency matrix of the grid graph (sum of shift matrices in both directions). Then ||A||_F² = (1/n) · (number of edges) = (1/n) · O(n) = O(1). And ||A||_op = (1/√n)·||S||_op. The operator norm of the grid adjacency matrix is O(√n) (it's the sum of two commuting shift matrices, each with norm 2, wait no...).\n\nHmm, actually the adjacency matrix of a √n × √n grid has operator norm 4 (it's the sum of two commuting shift matrices, each with norm 2). So ||A||_op = 4/√n, which goes to 0. That's not what we want.\n\nLet me reconsider. We want ||A||_op = 1 and A concentrated on adjacent entries.\n\nActually, the issue is more subtle. If A is concentrated on O(n) entries each of size ~1/√n, then ||A||_F ~ 1, but ||A||_op could be much smaller (like 1/√n) if the entries don't align coherently.\n\nTo have ||A||_op = 1 with O(n) entries of size ~1/√n, we'd need the entries to be arranged so that the matrix has a large singular value. For instance, if A is a rank-1 matrix uv* with ||u|| = ||v|| = 1, then ||A||_op = 1, and A has n² entries each of size ~1/n. But then the entries on adjacent positions are ~1/n, not 1/√n.\n\nHmm, so the question is: what's the maximum of Σ_{(i,j) adjacent} |A_{ij}|² subject to ||A||_op ≤ 1?\n\nThis is at most ||A||_F² ≤ n·||A||_op² = n. But can we achieve ~n with A concentrated on adjacent entries?\n\nIf A is the adjacency matrix of the grid (with appropriate normalization), ||A||_op = O(1) (the spectral gap of the grid), and ||A||_F² = O(n) (number of edges). So yes, we can have ||A||_op = O(1) and Σ_{adjacent} |A_{ij}|² = O(n).\n\nMore precisely, let A be the adjacency matrix of the √n × √n grid graph. Then:\n- ||A||_op = 4 (max degree times 2, actually the spectral norm of the grid adjacency is 2(d_1 + d_2) where d_i are the dimensions... let me think. For a path graph on m vertices, the adjacency matrix has eigenvalues 2cos(kπ/(m+1)), so max eigenvalue ~2. For a grid (product of two paths), the eigenvalues are sums, so max eigenvalue ~4.)\n- ||A||_F² = 2·(number of edges) = 2·(2n - 2√n) ~ 4n (each edge contributes 2 to the Frobenius norm since both (i,j) and (j,i) entries are 1)\n- All nonzero entries are on adjacent grid positions, where |λ_i - λ_j| = d.\n\nSo for this A:\n- ||C||_F² = Σ |A_{ij}|²/d² = ||A||_F²/d² ~ 4n/d²\n- ||C||_F ~ 2√n/d\n- ||B||_op ~ d√n\n- Product: d√n · 2√n/d = 2n\n\nHmm, that gives O(n), not O(√n). The issue is that ||C||_op ≤ ||C||_F is too loose when C has many entries.\n\nSo the question is: can we bound ||C||_op better than ||C||_F?\n\nFor the grid adjacency matrix A, C = D ∘ A where D_{ij} = 1/(λ_i - λ_j). On adjacent entries, |D_{ij}| = 1/d. So C = (1/d) · (phase matrix) ∘ A, where the phase depends on the direction of adjacency.\n\nActually, C = (1/d) · (A with phases). The operator norm of C is (1/d) times the operator norm of the phased adjacency matrix. The phased adjacency matrix has entries of modulus 1 on the edges, with phases e^{iθ} depending on direction. Its operator norm is still O(1) (same order as the adjacency matrix, since it's a bounded-degree graph's signed adjacency).\n\nSo ||C||_op = O(1/d), and the product is d√n · O(1/d) = O(√n).\n\nWait, but this requires the Schur multiplier norm argument, not just the Frobenius norm argument. Let me be more precise.\n\nFor the grid adjacency matrix A (operator norm O(1)), C = D ∘ A. The entries of C on adjacent positions are A_{ij}/(λ_i - λ_j) = ±1/(d·e^{iθ}) where θ is the angle of the grid direction. So |C_{ij}| = 1/d on edges, and C_{ij} = 0 elsewhere.\n\n||C||_op: C is (1/d) times a matrix that has entries of modulus 1 on the grid edges (with phases). This is (1/d) times a \"signed\" adjacency matrix of the grid. The operator norm of any signed adjacency matrix of a bounded-degree graph is O(max degree) = O(1). So ||C||_op = O(1/d).\n\nProduct: ||B||_op · ||C||_op = d√n · O(1/d) = O(√n).\n\nBut wait, this is for a specific A (the grid adjacency). The question is whether for ALL traceless A, we can achieve O(√n).\n\nThe issue is: for a general A, C = D ∘ A, and we need ||D ∘ A||_op ≤ (c/d) · ||A||_op. This is exactly the Schur multiplier norm condition: ||D||_m ≤ c/d.\n\nSo the question reduces to: for the 2D grid, is the Schur multiplier norm of D_{ij} = 1/(λ_i - λ_j) equal to O(1/d)?\n\nHmm, I think this might not be O(1/d) in general. The Schur multiplier norm could be larger.\n\nLet me think about this differently. Actually, let me consider the problem for general A.\n\nFor a general A with ||A||_op = 1, we need to bound ||D ∘ A||_op where D_{ij} = 1/(λ_i - λ_j).\n\nThe Schur multiplier norm ||D||_m is the supremum of ||D ∘ A||_op / ||A||_op over all A. If ||D||_m = O(1/d), then we get O(√n). If ||D||_m is larger, we get a worse bound.\n\nFor the 1D case (equally spaced points on a line), the Schur multiplier norm of 1/(i-j) is O(1) (the discrete Hilbert transform). This is a classical result.\n\nFor the 2D grid, the Schur multiplier norm of 1/(z_i - z_j) where z_i are grid points... I'm less sure about this.\n\nActually, let me think about it. The 2D grid points are z_{k,l} = k + il for k, l = 1, ..., √n. The matrix D has entries D_{(k,l),(k',l')} = 1/((k-k') + i(l-l')).\n\nThis is a 2D Toeplitz matrix (block Toeplitz with Toeplitz blocks). Its Schur multiplier norm...\n\nFor a 2D Toeplitz matrix with symbol f(θ, φ) = Σ_{m,n} a_{m,n} e^{i(mθ+nφ)}, the Schur multiplier norm is related to ||f||_∞ (the L^∞ norm of the symbol on the torus).\n\nThe symbol here is f(θ, φ) = Σ_{(m,n)≠(0,0)} e^{i(mθ+nφ)}/(m+in).\n\nThis is a 2D analogue of the Hilbert transform kernel. The L^∞ norm of this function on the torus...\n\nActually, 1/(m+in) = (m-in)/(m²+n²). So f(θ,φ) = Σ_{(m,n)≠(0,0)} (m-in)/(m²+n²) · e^{i(mθ+nφ)}.\n\nThis is related to the conjugate function (Hilbert transform) in 2D. The L^∞ norm of this function... I believe it's O(1) (bounded), because the 2D Hilbert kernel 1/(x+iy) has a bounded conjugate function on the torus.\n\nActually, I think this is indeed O(1). The function 1/z in 2D is the Cauchy kernel, and its Fourier series on the torus converges to a bounded function (it's essentially the argument function arg(z), which is bounded).\n\nMore precisely, on the unit circle, 1/z = e^{-iθ} and its Fourier series is just e^{-iθ}, which is bounded. On the torus T², the function 1/(m+in) as Fourier coefficients... Let me think.\n\nThe function g(θ, φ) = Σ_{(m,n)≠(0,0)} e^{i(mθ+nφ)}/(m+in) can be written as:\ng(θ, φ) = Σ_n e^{inφ} [Σ_{m≠0 or n≠0} e^{imθ}/(m+in)]\n\nFor fixed n, the inner sum is Σ_m e^{imθ}/(m+in) = Σ_m e^{imθ} · (m-in)/(m²+n²).\n\nFor n=0: Σ_{m≠0} e^{imθ}/m = -i(π-θ) for θ ∈ (0,2π), which has ||·||_∞ = π.\nFor n≠0: Σ_m e^{imθ}/(m+in) = Σ_m e^{imθ} · (m-in)/(m²+n²).\n\nThis is getting complicated. Let me just assume that the Schur multiplier norm is O(1) for the 2D grid (which I believe is true based on the analogy with the 1D case and the boundedness of the 2D Hilbert transform).\n\nIf ||D||_m = O(1/d) (since D = (1/d)·D' where D' has O(1) Schur multiplier norm), then:\n- ||C||_op ≤ ||D||_m · ||A||_op = O(1/d) · ||A||_op\n- ||B||_op · ||C||_op = d√n · O(1/d) · ||A||_op = O(√n) · ||A||_op\n\nThis would give λ(n) = O(√n) for the operator norm.\n\nNow for the lower bound. Can we show λ(n) = Ω(√n) for the operator norm?\n\nHmm, this is harder. Let me think about what matrix A would be hard.\n\nConsider A = E_{12} - E_{21} (the 2×2 rotation generator embedded in n×n). This has ||A||_op = 1 and trace 0. For this A, we need [B,C] = A. The constraint is on the 2×2 block, and we can set the rest of B, C to zero. So this reduces to the 2×2 case, giving λ(2) ≥ 1/2, but no growth with n.\n\nWe need a matrix that uses the full n-dimensional structure. Let me think...\n\nConsider A = Σ_{k=1}^{n-1} E_{k,k+1} (the shift matrix). ||A||_op = 1 (it's a partial isometry). Trace = 0.\n\nFor any B, C with [B,C] = A:\n- The (k, k+1) entry: [B,C]_{k,k+1} = Σ_j (B_{kj}C_{j,k+1} - C_{kj}B_{j,k+1}) = 1 for k = 1, ..., n-1.\n\nThis gives n-1 constraints. Can we derive a lower bound from these?\n\nEach constraint: |[B,C]_{k,k+1}| ≤ ||B||_op · ||C row k+1|| + ||C||_op · ||B row k||... hmm, this doesn't directly give a good bound.\n\nActually, let me think about it using the trace approach. If [B,C] = A, then tr(A·B^k) = 0 for all k. For the shift matrix A = Σ E_{k,k+1}:\n- tr(A) = 0 ✓\n- tr(AB) = Σ_k B_{k+1,k} = 0\n- tr(AB²) = Σ_k (B²)_{k+1,k} = 0\n- etc.\n\nThese are constraints on B, but they don't directly give a lower bound on ||B||·||C||.\n\nLet me try a different approach. Consider using the fact that for the operator norm, there might be a lower bound coming from the structure of the problem.\n\nActually, let me think about the problem more carefully. Maybe the answer is just Θ(n) for both norms, and the 2D grid + Schur multiplier argument for O(√n) in the operator norm doesn't work because the Schur multiplier norm is actually O(log n) or O(√n) rather than O(1).\n\nHmm, let me reconsider. The Schur multiplier norm of the 2D Hilbert transform matrix...\n\nActually, I recall that for the Cauchy matrix C_{ij} = 1/(z_i - z_j) (with z_i distinct complex numbers), the Schur multiplier norm can be as large as O(log n) in general. But for well-structured points (like equally spaced on a circle or grid), it might be O(1).\n\nFor points on a circle (roots of unity), the matrix 1/(ω^i - ω^j) has a nice structure. Let me compute:\nω^i - ω^j = ω^{(i+j)/2} · (ω^{(i-j)/2} - ω^{-(i-j)/2}) = 2i · ω^{(i+j)/2} · sin(π(i-j)/n)\n\nSo 1/(ω^i - ω^j) = (1/(2i)) · ω^{-(i+j)/2} · 1/sin(π(i-j)/n)\n\nThe Schur multiplier norm of this matrix... The factor ω^{-(i+j)/2} is a rank-1 modification (outer product), which doesn't affect the Schur multiplier norm (it's like multiplying rows and columns by phases). So the Schur multiplier norm equals that of 1/sin(π(i-j)/n).\n\nThe matrix 1/sin(πk/n) for k = 1, ..., n-1 is another Toeplitz matrix. Its symbol is Σ_{k≠0} e^{ikθ}/sin(πk/n). As n → ∞, this approaches Σ_{k≠0} e^{ikθ}/(πk/n) = (n/π) Σ_{k≠0} e^{ikθ}/k, which has L^∞ norm n. So the Schur multiplier norm is O(n), not O(1).\n\nWait, that can't be right. Let me reconsider.\n\nActually, for the roots of unity, the minimum distance between points is |ω^i - ω^j| ~ 2π/n (for adjacent points). So if we use the roots of unity as eigenvalues of B, then:\n- ||B||_op = 1 (all eigenvalues on unit circle)\n- min|λ_i - λ_j| ~ 2π/n\n- D_{ij} = 1/(λ_i - λ_j), |D_{ij}| ~ n/(2π) for adjacent points\n- Schur multiplier norm of D ~ n (from the above calculation)\n- ||C||_op ≤ ||D||_m · ||A||_op ~ n · ||A||_op\n- Product: 1 · n · ||A||_op = n · ||A||_op\n\nSo roots of unity give O(n) for the operator norm. That's not better than the 1D case.\n\nFor the 2D grid with spacing d:\n- ||B||_op ~ d√n\n- min|λ_i - λ_j| = d\n- D_{ij} = 1/(λ_i - λ_j), |D_{ij}| = 1/d for adjacent points\n- Schur multiplier norm of D: if O(1/d), then product is O(√n). If O(√n/d) or O(n/d), then product is O(n) or O(n^{3/2}).\n\nThe key question remains: what is the Schur multiplier norm of the 2D grid Cauchy matrix?\n\nLet me try to estimate it. The 2D grid Cauchy matrix D'_{ij} = 1/(z_i - z_j) where z_i are the √n × √n grid points (Gaussian integers). We want ||D'||_m.\n\nThe Schur multiplier norm can be characterized as:\n||D'||_m = inf{||f||_∞ · ||g||_∞ : D'_{ij} = <f_i, g_j> for some Hilbert space vectors f_i, g_j}\n\nActually, that's the factorization norm. The Schur multiplier norm equals the infimum of ||F||·||G|| where D' = F*G (factorization through a Hilbert space), which by a result of... actually, the Schur multiplier norm equals the completely bounded norm of the corresponding Schur multiplier, which equals the infimum of max_i ||f_i|| · max_j ||g_j|| where D'_{ij} = <f_i, g_j>.\n\nFor the Cauchy matrix 1/(z_i - z_j), we can use the integral representation:\n1/(z_i - z_j) = ∫_0^∞ e^{-t(z_i - z_j)} dt (when Re(z_i) > Re(z_j))\n\nBut this doesn't work directly for complex z_i, z_j.\n\nAlternatively, 1/(z-w) = ∫_C k(z,ζ)·l(w,ζ) dζ for some kernel decomposition.\n\nActually, there's a classical result: for points z_1, ..., z_n in the complex plane, the Schur multiplier norm of (1/(z_i - z_j))_{i≠j} is O(log n). This is because the Cauchy kernel can be decomposed using a dyadic decomposition.\n\nIf ||D'||_m = O(log n), then:\n- ||D||_m = O(log n / d)\n- ||C||_op ≤ O(log n / d) · ||A||_op\n- Product: d√n · O(log n / d) · ||A||_op = O(√n log n) · ||A||_op\n\nThat would give O(√n log n), which is close to √n but not exactly.\n\nHmm, but I'm not sure about the O(log n) bound. Let me think more carefully.\n\nActually, I think for the specific case of a 2D grid (regular lattice), the Schur multiplier norm might be O(1) because of the special structure. The 2D grid has a lot of symmetry.\n\nLet me try a different approach. Instead of using the Schur multiplier norm, let me try to directly bound ||C||_op for the 2D grid.\n\nC = D ∘ A where D_{ij} = 1/(λ_i - λ_j). We can write C = L · A · R where... no, that's not right. The Schur product is not a matrix product.\n\nActually, let me think about the problem differently. Instead of using the Schur multiplier approach, let me use a different decomposition.\n\nFor the 2D grid, we can decompose B = B_1 + iB_2 where B_1 and B_2 are commuting normal matrices (since B is normal with eigenvalues on a grid, B_1 = Re(B) and B_2 = Im(B) are simultaneously diagonalizable).\n\nThen [B, C] = [B_1, C] + i[B_2, C]. If we write A = A_1 + iA_2 (real and imaginary parts), we need:\n[B_1, C] + i[B_2, C] = A_1 + iA_2\n\nThis doesn't directly decompose nicely. But we can use a different approach.\n\nActually, let me try yet another approach. Instead of diagonal B, use B that is a direct sum of 2×2 blocks or something.\n\nHmm, let me step back and think about what's known in the literature.\n\nThis problem is related to the \"commutator norm\" problem. The key references are:\n1. Albert, Goldman, Marcus (1962): every traceless matrix is a commutator\n2. Böttcher and Wenzel (2005): on the norm of commutators\n3. Various results on the \"best constant\" for commutator decompositions\n\nI believe the answer for the operator norm is Θ(√n), based on:\n- Upper bound O(√n): 2D grid + Schur multiplier norm O(1) for the grid\n- Lower bound Ω(√n): some hard instance\n\nBut I'm not fully certain. Let me think about the lower bound.\n\nFor the lower bound, consider the following. Take A to be a matrix with ||A||_op = 1 but with many independent \"directions\" that need to be captured by the commutator.\n\nActually, let me think about a specific hard instance. Consider A = diag(1, -1, 0, ..., 0) + (small off-diagonal terms). No, this is too simple.\n\nLet me think about the problem from the perspective of the \"non-commutative\" structure.\n\nActually, here's an idea for the lower bound. Consider A = uv* - vu* where u, v are orthogonal unit vectors (so tr(A) = 0 and ||A||_op = 1). This is a 2×2 block embedded in n×n.\n\nFor this A, any commutator decomposition [B,C] = A can be done in the 2×2 block, so λ(n) ≥ 1/2 but no growth. This doesn't help.\n\nLet me try A = Σ_{k=1}^{n/2} (e_{2k-1}e_{2k}* - e_{2k}e_{2k-1}*) = block diagonal with n/2 copies of the 2×2 rotation. Then ||A||_op = 1 (each block has norm 1) and tr(A) = 0.\n\nFor this A, we need [B,C] = A. The constraint is that the commutator has a specific block-diagonal structure. Can B and C be block-diagonal too? If so, each 2×2 block can be handled independently with constant norm, giving ||B||_op · ||C||_op = O(1). So this doesn't give a growing lower bound either.\n\nThe issue is that for block-diagonal A, we can use block-diagonal B, C and the problem decomposes.\n\nWe need A that \"mixes\" all directions. Let me think about A = the shift matrix Σ E_{k,k+1} again.\n\nFor the shift matrix A (||A||_op = 1, tr(A) = 0), we need [B,C] = A. \n\nConsider the constraint tr(A·B^k) = 0 for all k. For the shift matrix:\n- tr(A·B) = Σ_k B_{k+1,k} = 0 (subdiagonal sum is 0)\n- tr(A·B²) = Σ_k (B²)_{k+1,k} = 0\n- etc.\n\nThese are n-1 constraints on B. But they don't directly bound ||B||_op.\n\nLet me try a completely different approach to the lower bound. \n\nConsider the map φ_B: C → [B,C]. This is a linear map from M_n to M_n. We need A to be in the image of φ_B, and ||C|| ≤ ||A|| / σ_min(φ_B) (roughly). So ||B|| · ||C|| ≥ ||B|| / σ_min(φ_B) · ||A|| (roughly).\n\nMore precisely, if A = [B,C], then ||A||_op ≤ ||[B,C]||_op ≤ 2||B||_op||C||_op. But we can also write ||C||_op ≥ ||A||_op / ||ad_B||_op where ||ad_B||_op is the operator norm of the map C → [B,C] (as a map on (M_n, ||·||_op)).\n\nSo ||B||_op · ||C||_op ≥ ||B||_op · ||A||_op / ||ad_B||_op.\n\nNow, ||ad_B||_op ≤ 2||B||_op (since ||[B,C]||_op ≤ 2||B||_op||C||_op). So this gives ||B||_op · ||C||_op ≥ ||A||_op / 2, which is the trivial bound.\n\nBut we can also use the fact that σ_min(ad_B) (the smallest singular value of the map ad_B) determines the minimum ||C|| needed: ||C||_op ≥ ||A||_op / ||ad_B||_op... no wait, that's the wrong direction. We need ||C|| ≥ ||A|| / ||ad_B^{-1}||... hmm.\n\nActually, if A = ad_B(C), then ||A|| ≤ ||ad_B|| · ||C||, so ||C|| ≥ ||A|| / ||ad_B||. And ||ad_B|| ≤ 2||B||. So ||B||·||C|| ≥ ||B||·||A||/(2||B||) = ||A||/2. Same trivial bound.\n\nFor a better bound, we need to use the fact that A is in the image of ad_B, and the image has a specific structure. The image of ad_B is the set of matrices orthogonal (in Frobenius inner product) to the commutant of B. If B has distinct eigenvalues, the commutant is the set of polynomials in B, which is n-dimensional. So the image is (n²-n)-dimensional.\n\nBut this doesn't directly help with the operator norm lower bound.\n\nLet me try yet another approach. Let me think about what happens when B is a \"generic\" matrix.\n\nIf B has eigenvalues λ_1, ..., λ_n (counted with multiplicity), then ad_B has eigenvalues λ_i - λ_j. The singular values of ad_B (as a map on M_n with operator norm) are related to |λ_i - λ_j| but not exactly equal (because the operator norm is not the Frobenius norm).\n\nActually, for the Frobenius norm, the singular values of ad_B are exactly |λ_i - λ_j| (when B is normal). For the operator norm, it's more complicated.\n\nHmm, let me think about this problem from a completely different angle.\n\nLet me consider the problem for the Frobenius norm, where the handoff document says the answer is Θ(n). Let me verify this.\n\nUpper bound O(n) for Frobenius:\n- 2D grid: ||B||_F ~ dn/√3 (eigenvalues on √n × √n grid with spacing d, centered)\n- ||C||_F ≤ ||A||_F / d (worst case: all mass on minimum-gap entries)\n- Product: (dn/√3) · (||A||_F/d) = n||A||_F/√3 = O(n)\n\nWait, but this worst-case bound on ||C||_F is too pessimistic. Let me re-examine.\n\n||C||_F² = Σ_{i≠j} |A_{ij}|²/|λ_i - λ_j|² ≤ (1/d²) Σ_{i≠j} |A_{ij}|² = ||A||_F²/d² (since A has zero diagonal).\n\nSo ||C||_F ≤ ||A||_F/d. Product: ||B||_F · ||C||_F ≤ (dn/√3) · (||A||_F/d) = n||A||_F/√3.\n\nLower bound Ω(n) for Frobenius:\n- For any B (normal or not), σ_min(ad_B) ≤ min_{i≠j} |λ_i - λ_j| (eigenvalue gap)\n- ||B||_F ≥ (Σ|λ_i|²)^{1/2} (Schur inequality)\n- For n points in the plane with min distance d, the sum of squared distances from origin is ≥ c·n²d² (packing)\n- So ||B||_F ≥ c·nd and σ_min(ad_B) ≤ d\n- ||C||_F ≥ ||A||_F / ||ad_B||_F... wait, no. We need ||C||_F ≥ ||A||_F / σ_max(ad_B), not σ_min.\n\nHmm wait. A = ad_B(C), so ||A||_F ≤ ||ad_B||_F · ||C||_F where ||ad_B||_F is the operator norm of ad_B as a map on (M_n, ||·||_F). \n\nFor normal B, ||ad_B||_F = max_{i≠j} |λ_i - λ_j| (the largest eigenvalue gap). So ||C||_F ≥ ||A||_F / max|λ_i - λ_j|.\n\nAnd ||B||_F · ||C||_F ≥ (Σ|λ_i|²)^{1/2} · ||A||_F / max|λ_i - λ_j|.\n\nNow, for n points in the plane, (Σ|λ_i|²)^{1/2} / max|λ_i - λ_j| ≥ ? \n\nIf the points are in a disk of radius R, then max|λ_i - λ_j| ≤ 2R and (Σ|λ_i|²)^{1/2} ≥ √n · (average |λ_i|²)^{1/2}. If the points are spread out, the average |λ_i|² could be ~R²/n (if most points are near the center) or ~R² (if uniformly spread).\n\nHmm, this ratio (Σ|λ_i|²)^{1/2} / max|λ_i - λ_j| is not necessarily Ω(n). Let me reconsider.\n\nActually, the lower bound argument in the handoff document uses σ_min, not σ_max. Let me re-read.\n\nFrom the handoff:\n- σ_min(ad_B) ≤ min_{i≠j} |λ_i - λ_j| (because if Mv = λv then σ_min(M) ≤ |λ|)\n- ||B||_F ≥ (Σ|λ_i|²)^{1/2}\n- Packing: n points with min distance d need radius ~d√n, so Σ|λ_i|² ~ n · (d√n)² = n²d²\n- So ||B||_F ≥ nd and σ_min(ad_B) ≤ d\n- ||B||_F / σ_min(ad_B) ≥ nd/d = n\n\nBut how does σ_min(ad_B) relate to the lower bound on ||B||·||C||?\n\nIf A = ad_B(C), then ||A||_F = ||ad_B(C)||_F. We have ||A||_F ≤ ||ad_B||_F · ||C||_F (where ||ad_B||_F is the operator norm). But we also have: for the specific C that solves ad_B(C) = A, ||C||_F ≥ ||A||_F / ||ad_B||_F.\n\nHmm, but ||ad_B||_F (operator norm of ad_B on Frobenius space) = max_{i≠j} |λ_i - λ_j| for normal B. This is the max gap, not the min gap.\n\nSo ||C||_F ≥ ||A||_F / max|λ_i - λ_j|.\n\nAnd ||B||_F · ||C||_F ≥ (Σ|λ_i|²)^{1/2} · ||A||_F / max|λ_i - λ_j|.\n\nFor the 2D grid: (Σ|λ_i|²)^{1/2} ~ dn, max|λ_i - λ_j| ~ d√n. So the ratio is dn / (d√n) = √n. This gives ||B||_F · ||C||_F ≥ √n · ||A||_F.\n\nWait, that's only √n, not n! So the lower bound using max gap is only Ω(√n)?\n\nBut the handoff document claims Ω(n) using σ_min. Let me understand the discrepancy.\n\nThe issue is: the lower bound on ||C|| depends on which singular value of ad_B we use. If A happens to be in the direction of the largest singular value of ad_B, then ||C||_F ≈ ||A||_F / σ_max(ad_B). But if A is in the direction of the smallest singular value, then ||C||_F ≈ ||A||_F / σ_min(ad_B).\n\nThe worst case (for the person trying to minimize ||B||·||C||) is when A is in the direction of the largest singular value, giving ||C||_F ≈ ||A||_F / σ_max. The best case (for the lower bound) is when A is in the direction of the smallest singular value.\n\nBut we need the lower bound to hold for ALL A, not just specific ones. So we need to find an A that is hard, i.e., an A that requires large ||B||·||C||.\n\nSo the question is: does there exist an A with ||A||_F = 1 such that for ALL B, C with [B,C] = A, we have ||B||_F · ||C||_F ≥ c·n?\n\nFor a given B, the hardest A (requiring the largest ||C||) is the one in the direction of σ_min(ad_B). For this A, ||C||_F = ||A||_F / σ_min(ad_B).\n\nSo for a given B, the worst-case A gives ||B||_F · ||C||_F ≥ ||B||_F / σ_min(ad_B) · ||A||_F.\n\nAnd we showed ||B||_F / σ_min(ad_B) ≥ n (using packing + Schur). But this is for a specific A that depends on B.\n\nThe problem is: we need a SINGLE A that is hard for ALL B simultaneously. This is a minimax problem:\nλ(n) = max_A min_{B,C: [B,C]=A} ||B||·||C|| / ||A||\n\nWe need to find the A that maximizes the minimum over B,C.\n\nFor a given A, the best B,C are chosen to minimize ||B||·||C||. So we need to find A such that no matter how you choose B, the required ||C|| is large.\n\nThe issue is that different B's have different σ_min directions. An A that is hard for one B might be easy for another.\n\nHmm, so the lower bound argument in the handoff document might be flawed. Let me re-examine.\n\nThe handoff says: \"for any B, ||B||_F / σ_min(ad_B) ≥ n\". This means: for any B, there EXISTS an A (namely, the one in the σ_min direction) such that ||B||_F · ||C||_F ≥ n · ||A||_F. But this A depends on B.\n\nFor the minimax, we need: there exists an A such that for all B, ||B||_F · ||C||_F ≥ c·n · ||A||_F.\n\nThis is different. The handoff's argument shows that the \"average\" or \"existential\" lower bound is Ω(n), but not necessarily the minimax lower bound.\n\nWait, actually, let me reconsider. The minimax is:\nλ(n) = sup_A inf_{B,C: [B,C]=A} ||B||·||C|| / ||A||\n\nFor a given A, inf_{B,C} ||B||·||C|| / ||A|| is the best we can do for that A. We want to find the A that makes this as large as possible.\n\nNow, for a given A, the best B is one that minimizes ||B|| · ||A|| / σ(ad_B, A) where σ(ad_B, A) is the \"effective singular value\" of ad_B in the direction of A. More precisely, if A = ad_B(C), then ||C||_F ≥ ||A||_F / ||ad_B||_F (where ||ad_B||_F is the operator norm of ad_B on Frobenius space). But we can also write ||C||_F = ||ad_B^{-1}(A)||_F, and the minimum ||C||_F over all C with ad_B(C) = A is exactly ||ad_B^+(A)||_F where ad_B^+ is the pseudoinverse.\n\nSo for a given A and B, the minimum ||C||_F is ||ad_B^+(A)||_F. And we want to minimize ||B||_F · ||ad_B^+(A)||_F over all B.\n\nFor normal B with eigenvalues λ_i, ad_B has singular values |λ_i - λ_j| (on Frobenius space). The pseudoinverse has singular values 1/|λ_i - λ_j| (for i≠j) and 0 (for i=j, corresponding to the commutant).\n\nSo ||ad_B^+(A)||_F² = Σ_{i≠j} |A_{ij}|²/|λ_i - λ_j|² (when B is normal and A has zero diagonal in the eigenbasis of B).\n\nAnd ||B||_F² = Σ|λ_i|².\n\nSo the product is:\n||B||_F · ||ad_B^+(A)||_F = (Σ|λ_i|²)^{1/2} · (Σ_{i≠j} |A_{ij}|²/|λ_i - λ_j|²)^{1/2}\n\nWe want to minimize this over all normal B (i.e., over all choices of λ_i) and all unitary changes of basis (which affect which entries of A are \"diagonal\" vs \"off-diagonal\").\n\nActually, we can also unitary-conjugate A to make its diagonal zero (Schur-Horn), and then choose B to be diagonal in that basis. So WLOG, A has zero diagonal and B = diag(λ_1, ..., λ_n).\n\nThe product becomes:\nP = (Σ|λ_i|²)^{1/2} · (Σ_{i≠j} |A_{ij}|²/|λ_i - λ_j|²)^{1/2}\n\nWe want to minimize P over all choices of λ_i (and the unitary basis for A, but let's fix A first).\n\nFor a given A with zero diagonal, the minimization over λ_i is a complex optimization problem. But we can get a lower bound by considering specific A's.\n\nLet me consider A = the matrix with A_{ij} = 1/√(n(n-1)) for all i≠j (the \"uniform\" off-diagonal matrix). Then ||A||_F² = n(n-1) · 1/(n(n-1)) = 1, so ||A||_F = 1. And ||A||_op = (n-1)/√(n(n-1)) = √((n-1)/n) ≈ 1.\n\nFor this A, P² = (Σ|λ_i|²) · (1/(n(n-1))) · Σ_{i≠j} 1/|λ_i - λ_j|².\n\nWe want to minimize (Σ|λ_i|²) · Σ_{i≠j} 1/|λ_i - λ_j|² over all choices of distinct complex λ_i.\n\nThis is a classical optimization problem. Let me think about what configuration minimizes this.\n\nFor 1D (real λ_i equally spaced): Σ|λ_i|² ~ n³/12 (for spacing 1, centered), Σ_{i≠j} 1/(i-j)² ~ n · π²/3 (each row contributes ~π²/3). So P² ~ (n³/12) · (1/(n(n-1))) · n·π²/3 ~ n²·π²/36. P ~ nπ/6 = O(n).\n\nFor 2D grid (spacing 1): Σ|λ_i|² ~ n²/2 (from packing), Σ_{i≠j} 1/|λ_i - λ_j|² ~ ? Each point has O(1) neighbors at distance 1, O(1) at distance √2, etc. The sum Σ_{j≠i} 1/|λ_i - λ_j|² for a single i is Σ_{(m,n)≠(0,0)} 1/(m²+n²) which diverges! (It's like the Epstein zeta function at s=1, which diverges.)\n\nOh no, the sum Σ 1/(m²+n²) diverges. So for the 2D grid, Σ_{i≠j} 1/|λ_i - λ_j|² is infinite (or very large for finite grids). This means the 2D grid is BAD for this particular A (the uniform off-diagonal matrix).\n\nSo for the uniform A, the 2D grid gives a worse bound than 1D! The 1D equally-spaced gives O(n), while 2D grid gives... well, the sum diverges, so it's worse.\n\nHmm, but the handoff document says the 2D grid gives O(n) upper bound. Let me re-examine.\n\nThe upper bound argument was: ||C||_F ≤ ||A||_F / d where d = min|λ_i - λ_j|. This uses the worst case where all mass is on the minimum-gap entries. But for the uniform A, the mass is spread over ALL entries, including those with large gaps. So the actual ||C||_F for the uniform A with 2D grid is:\n\n||C||_F² = (1/(n(n-1))) Σ_{i≠j} 1/|λ_i - λ_j|²\n\nFor the 2D grid, this sum diverges (or is very large), so ||C||_F is large. The bound ||C||_F ≤ ||A||_F/d is a worst-case bound that's tight when A concentrates on minimum-gap entries, but loose for uniform A.\n\nSo the 2D grid is good for A that concentrates on adjacent entries, but bad for A that spreads over all entries.\n\nThe upper bound O(n) from the 2D grid is:\n||B||_F · ||C||_F ≤ (Σ|λ_i|²)^{1/2} · (Σ_{i≠j} |A_{ij}|²/|λ_i - λ_j|²)^{1/2} ≤ (Σ|λ_i|²)^{1/2} · (1/d² · ||A||_F²)^{1/2} = (Σ|λ_i|²)^{1/2} · ||A||_F / d\n\nFor 2D grid: (Σ|λ_i|²)^{1/2} ~ dn, so product ~ dn · ||A||_F/d = n·||A||_F. ✓\n\nThis is a valid upper bound for ALL A (with zero diagonal), because ||C||_F ≤ ||A||_F/d always holds. The bound is tight when A concentrates on minimum-gap entries, and loose otherwise. But it's still a valid upper bound.\n\nNow for the lower bound. We need to find an A such that for ALL B, the product is ≥ cn.\n\nThe uniform A doesn't work because for 1D equally-spaced B, the product is O(n) (not worse). Let me check: for uniform A and 1D B with spacing 1:\nP² = (n³/12) · (1/(n(n-1))) · Σ_{i≠j} 1/(i-j)²\n\nΣ_{i≠j} 1/(i-j)² = Σ_{k=1}^{n-1} 2(n-k)/k² ≈ 2n · Σ_{k=1}^{n-1} 1/k² ≈ 2n · π²/6 = nπ²/3\n\nP² ≈ (n³/12) · (1/n²) · nπ²/3 = n²π²/36\n\nP ≈ nπ/6 = O(n). ✓\n\nSo for the uniform A, the best B gives O(n), which means this A gives a lower bound of Ω(n) only if we can show that NO B does better than O(n).\n\nCan we show that for the uniform A, all B give product ≥ cn? That would prove the Ω(n) lower bound.\n\nFor the uniform A (A_{ij} = 1/√(n(n-1)) for i≠j, 0 on diagonal), the product for any normal B with eigenvalues λ_i is:\nP² = (Σ|λ_i|²) · (1/(n(n-1))) · Σ_{i≠j} 1/|λ_i - λ_j|²\n\nWe need to show that (Σ|λ_i|²) · Σ_{i≠j} 1/|λ_i - λ_j|² ≥ c·n²(n-1) for all distinct λ_i.\n\nHmm wait, but we also need to account for the unitary freedom. We can unitary-conjugate A to have zero diagonal in any basis, not just the standard basis. The uniform A has zero diagonal in the standard basis, but after unitary conjugation, it might not. However, we can always find a unitary to make the diagonal zero (Schur-Horn), so WLOG A has zero diagonal in the eigenbasis of B.\n\nBut the uniform A in one basis is not uniform in another basis. So the question is: for a given B (with eigenvalues λ_i), what is the worst A (maximizing the product)?\n\nActually, for the lower bound, we want to find a SINGLE A that is hard for ALL B. The uniform A might not be the right choice because after unitary conjugation to align with B's eigenbasis, it's no longer uniform.\n\nThis is getting quite involved. Let me try a different approach to the lower bound.\n\nActually, I think the key insight for the lower bound is simpler. Let me think about it using the concept of \"condition number\" of the commutator map.\n\nFor any B, the map ad_B: M_n → M_n has the property that:\n- ||ad_B||_F = max_{i≠j} |λ_i - λ_j| (operator norm on Frobenius space, for normal B)\n- σ_min(ad_B) = min_{i≠j} |λ_i - λ_j| (for normal B with distinct eigenvalues)\n\nThe condition number is κ(ad_B) = max|λ_i - λ_j| / min|λ_i - λ_j|.\n\nFor the product ||B||_F · ||C||_F, we have:\n- ||C||_F ≥ ||A||_F / ||ad_B||_F = ||A||_F / max|λ_i - λ_j|\n- ||B||_F ≥ (Σ|λ_i|²)^{1/2}\n\nSo ||B||_F · ||C||_F ≥ (Σ|λ_i|²)^{1/2} · ||A||_F / max|λ_i - λ_j|.\n\nNow, we need to show that for any configuration of n points in the plane:\n(Σ|λ_i|²)^{1/2} / max|λ_i - λ_j| ≥ c√n\n\nThis is because: the n points have diameter D = max|λ_i - λ_j|. All points are within a disk of radius D. So Σ|λ_i|² ≤ nD² (if centered at origin; more precisely, if we center at the centroid, Σ|λ_i - μ|² ≤ nD²/4 by the variance bound). Wait, we need a LOWER bound on Σ|λ_i|², not an upper bound.\n\nHmm, Σ|λ_i|² can be made small by placing all points near the origin. But then min|λ_i - λ_j| is also small. The ratio (Σ|λ_i|²)^{1/2} / max|λ_i - λ_j| can be made as small as... well, if all points are at the same location (degenerate), the ratio is 0/0. For distinct points, we can make the ratio small by clustering.\n\nWait, but we're free to scale. The product ||B||_F · ||C||_F is scale-invariant (scaling B by α and C by 1/α doesn't change the product). So we can normalize, say, max|λ_i - λ_j| = 1. Then we need to minimize (Σ|λ_i|²)^{1/2} subject to max|λ_i - λ_j| = 1 and all λ_i distinct.\n\nWith max|λ_i - λ_j| = 1, all points are in a disk of diameter 1, so Σ|λ_i|² ≤ n/4 (centered at the centroid, the max distance from centroid is 1/2). But we want a LOWER bound on Σ|λ_i|².\n\nIf we place all n points in a tiny cluster near the origin, with two points at distance 1 apart, then Σ|λ_i|² can be as small as ~1 (just the two distant points contribute). So (Σ|λ_i|²)^{1/2} / max|λ_i - λ_j| ~ 1, which is O(1), not Ω(√n).\n\nBut wait, if we cluster the points, then min|λ_i - λ_j| is tiny, and σ_min(ad_B) is tiny. The lower bound using σ_min would give:\n||B||_F / σ_min(ad_B) ≥ (Σ|λ_i|²)^{1/2} / min|λ_i - λ_j|\n\nIf we cluster n-2 points near the origin and 2 points at distance 1, then min|λ_i - λ_j| ~ ε (tiny), and (Σ|λ_i|²)^{1/2} ~ 1. So the ratio is ~1/ε, which is large. But this is the σ_min bound, which applies to a specific A (the one in the σ_min direction).\n\nSo the issue is: we need a SINGLE A that is simultaneously hard for all B. \n\nLet me think about this differently. Maybe I should use a probabilistic argument or a counting argument.\n\nActually, let me reconsider the problem. Maybe the answer is Θ(n) for the Frobenius norm and Θ(√n) for the operator norm, and the problem is asking about one specific norm.\n\nGiven that the problem just says ||·|| without specifying, and it's asking for \"the order of the best constant\", I think the most likely intended answer is for the operator norm (the most standard matrix norm), and the answer is Θ(√n).\n\nBut I need to verify both the upper and lower bounds for the operator norm.\n\nUpper bound O(√n) for operator norm:\n- 2D grid: ||B||_op = max|λ_i| ~ d√n\n- Need: ||C||_op ≤ (c/d) · ||A||_op\n- This requires the Schur multiplier norm of D_{ij} = 1/(λ_i - λ_j) to be O(1/d)\n\nThe Schur multiplier norm question is the key. Let me think about it more carefully.\n\nFor the 2D grid with spacing d, D = (1/d) D' where D'_{ij} = 1/(p_i - p_j) and p_i are Gaussian integers on a √n × √n grid.\n\nI need ||D'||_m = O(1). \n\nThe Schur multiplier norm can be bounded using the following: if the matrix D' can be written as D'_{ij} = <f_i, g_j> for vectors in a Hilbert space with max ||f_i|| · max ||g_j|| = M, then ||D'||_m ≤ M.\n\nFor the Cauchy matrix 1/(z_i - z_j), we can use the integral representation:\n1/(z_i - z_j) = ∫_0^{2π} e^{iθ} / (z_i - e^{iθ}·something)... \n\nHmm, this doesn't work directly. Let me think of another approach.\n\nActually, there's a classical result that for points z_1, ..., z_n in the complex plane with |z_i| ≤ 1 and |z_i - z_j| ≥ δ > 0, the Schur multiplier norm of (1/(z_i - z_j)) is O(log(1/δ)). But for the 2D grid, δ = 1 (the minimum distance between Gaussian integers), so this would give O(1).\n\nWait, but the grid points go up to √n, so |z_i| can be up to √n, not bounded by 1. Let me rescale: let w_i = z_i / √n, so |w_i| ≤ 1 and |w_i - w_j| ≥ 1/√n. Then 1/(z_i - z_j) = (1/√n) · 1/(w_i - w_j), and the Schur multiplier norm of 1/(w_i - w_j) is O(log(√n)) = O(log n) by the classical result.\n\nSo ||D'||_m = (1/√n) · O(log n) = O(log n / √n)... wait, that doesn't seem right either.\n\nLet me be more careful. D'_{ij} = 1/(z_i - z_j) where z_i are on a √n × √n grid with spacing 1. So |z_i| ≤ √n and |z_i - z_j| ≥ 1.\n\nThe Schur multiplier norm of D' is what we want. Let me use the result: for points with |z_i| ≤ R and |z_i - z_j| ≥ δ, ||(1/(z_i - z_j))||_m ≤ C log(R/δ).\n\nWith R = √n and δ = 1: ||D'||_m ≤ C log(√n) = O(log n).\n\nSo ||D||_m = (1/d) · ||D'||_m = O(log n / d).\n\nThen ||C||_op ≤ ||D||_m · ||A||_op = O(log n / d) · ||A||_op.\n\nProduct: ||B||_op · ||C||_op = d√n · O(log n / d) · ||A||_op = O(√n log n) · ||A||_op.\n\nSo we get O(√n log n) for the operator norm, not O(√n).\n\nHmm, the log factor comes from the Schur multiplier norm bound. Can we do better?\n\nFor the specific case of a regular grid (not arbitrary points), the Schur multiplier norm might be O(1) rather than O(log n). The O(log n) bound is for arbitrary well-separated points, but a regular grid has much more structure.\n\nFor a regular grid, the matrix D' is a 2D Toeplitz matrix (block Toeplitz with Toeplitz blocks). The Schur multiplier norm of a Toeplitz matrix with symbol f is ||f||_∞ (the L^∞ norm of the symbol on the torus). Wait, is this true?\n\nActually, for 1D Toeplitz matrices, the Schur multiplier norm equals the L^∞ norm of the symbol. This is a classical result (see e.g., Davidson's book or Toeplitz matrix theory). The symbol of the 1D Hilbert matrix (1/(i-j)) is f(θ) = Σ_{k≠0} e^{ikθ}/k = -i(π - θ) for θ ∈ (0, 2π), which has ||f||_∞ = π. So the Schur multiplier norm is π, confirming O(1).\n\nFor 2D Toeplitz matrices (block Toeplitz with Toeplitz blocks), the Schur multiplier norm equals the L^∞ norm of the 2D symbol on the 2-torus. The 2D symbol of D' is:\nf(θ, φ) = Σ_{(m,n)≠(0,0)} e^{i(mθ+nφ)} / (m + in)\n\nWe need to show ||f||_∞ = O(1).\n\nNow, 1/(m+in) = (m-in)/(m²+n²). So:\nf(θ, φ) = Σ_{(m,n)≠(0,0)} (m-in)/(m²+n²) · e^{i(mθ+nφ)}\n= Σ_{(m,n)≠(0,0)} (m/(m²+n²)) · e^{i(mθ+nφ)} - i Σ_{(m,n)≠(0,0)} (n/(m²+n²)) · e^{i(mθ+nφ)}\n\nLet me compute the real part: g(θ,φ) = Σ_{(m,n)≠(0,0)} (m/(m²+n²)) · e^{i(mθ+nφ)}.\n\nNote that m/(m²+n²) = ∂/∂θ [something]. Actually, -∂/∂θ (1/(m²+n²) · e^{i(mθ+nφ)}) = -im/(m²+n²) · e^{i(mθ+nφ)}. Hmm, that's not quite what we want.\n\nLet me think of it differently. The function 1/(m+in) is the Fourier coefficient of the function 1/z on the torus, where z = e^{iθ} + ie^{iφ}... no, that's not right.\n\nActually, the 2D Fourier series Σ_{(m,n)} a_{m,n} e^{i(mθ+nφ)} corresponds to a function on the 2-torus T². The coefficients a_{m,n} = 1/(m+in) for (m,n) ≠ (0,0).\n\nThe function f(θ,φ) = Σ_{(m,n)≠(0,0)} e^{i(mθ+nφ)}/(m+in) is a well-defined distribution. The question is whether it's a bounded function.\n\nNote that 1/(m+in) = ∫_0^∞ e^{-(m+in)t} dt for Re(m+in) > 0, which doesn't converge for all (m,n). So this integral representation doesn't work directly.\n\nAlternatively, 1/(m+in) = -i ∫_0^{2π} e^{i(mθ+nφ)} · h(θ,φ) dθdφ / (2π)² for some function h. If h is bounded, then f = h (up to constants) and ||f||_∞ = ||h||_∞.\n\nActually, let me think about this more carefully. The function f is the \"conjugate function\" in 2D. In 1D, the Hilbert transform kernel 1/k has symbol -i(π-θ), which is bounded. In 2D, the kernel 1/(m+in) is related to the 2D Hilbert transform (or Riesz transform).\n\nThe 2D Riesz transforms are:\nR_1 f: Fourier multiplier -im₁/|m| (i.e., -im/(m²+n²)^{1/2})\nR_2 f: Fourier multiplier -im₂/|m| (i.e., -in/(m²+n²)^{1/2})\n\nOur kernel is 1/(m+in) = (m-in)/(m²+n²) = (m/(m²+n²)) - i(n/(m²+n²)).\n\nNote that m/(m²+n²) = (m/√(m²+n²)) · (1/√(m²+n²)). This is the product of the Riesz multiplier and the \"potential\" multiplier 1/√(m²+n²).\n\nThe potential 1/√(m²+n²) corresponds to the Bessel potential, which is a smoothing operator. Its symbol is 1/√(m²+n²), which is unbounded (it blows up at (0,0)). But we're excluding (0,0), so the symbol is bounded on the lattice.\n\nHmm, this is getting complicated. Let me try a different approach.\n\nActually, I think the key observation is that for the 2D grid, we can decompose the problem into 1D problems.\n\nThe 2D grid has points z_{k,l} = k + il for k, l = 1, ..., m (where m = √n). The matrix D' has entries:\nD'_{(k,l),(k',l')} = 1/((k-k') + i(l-l'))\n\nWe can write this as a sum over \"shells\":\nD'_{(k,l),(k',l')} = 1/((k-k') + i(l-l')) = Σ_{s} [decomposition]\n\nActually, let me try a different decomposition. We can write:\n1/(z-w) = 1/((z-w)) and use the partial fraction decomposition in terms of real and imaginary parts.\n\nHmm, let me try yet another approach. Let me use the fact that for the 2D grid, the matrix D' can be decomposed as a sum of Kronecker products or something similar.\n\nActually, I think the cleanest approach is to use the following:\n\nFor the 2D grid, we can write B = B_1 + iB_2 where B_1 = diag(k_1, ..., k_m) ⊗ I_m and B_2 = I_m ⊗ diag(l_1, ..., l_m) (Kronecker products). Both B_1 and B_2 are diagonal (hence normal and commuting).\n\nThen [B, C] = [B_1, C] + i[B_2, C]. If we can decompose A = A_1 + iA_2 and find C such that [B_1, C] = A_1 and i[B_2, C] = A_2... but this doesn't work because C is the same in both.\n\nLet me try a different approach. Write A = [B, C] where B = B_1 + iB_2. Then:\n[B_1, C] + i[B_2, C] = A\n\nThis is one equation in one unknown C. We can't decompose it into two separate equations.\n\nBut we can use the following trick: write C = C_1 + iC_2 (real and imaginary parts). Then:\n[B_1, C_1] + i[B_1, C_2] + i[B_2, C_1] - [B_2, C_2] = A_1 + iA_2\n\nThis gives:\n[B_1, C_1] - [B_2, C_2] = A_1\n[B_1, C_2] + [B_2, C_1] = A_2\n\nThis is a system of two equations in two unknowns (C_1, C_2). We can solve it:\nLet ad_{B_1}(X) = [B_1, X] and ad_{B_2}(X) = [B_2, X]. The system is:\nad_{B_1}(C_1) - ad_{B_2}(C_2) = A_1\nad_{B_1}(C_2) + ad_{B_2}(C_1) = A_2\n\nThis can be written as:\n[ad_{B_1}  -ad_{B_2}] [C_1]   [A_1]\n[ad_{B_2}   ad_{B_1}] [C_2] = [A_2]\n\nThe operator matrix is [[ad_{B_1}, -ad_{B_2}], [ad_{B_2}, ad_{B_1}]], which is like a complex structure. Since B_1 and B_2 commute (both diagonal), ad_{B_1} and ad_{B_2} commute. The eigenvalues of this 2×2 operator matrix are ad_{B_1} ± i ad_{B_2}, which have eigenvalues (k_i - k_j) ± i(l_i - l_j) = (k_i + il_i) - (k_j + il_j) = z_i - z_j.\n\nSo the singular values of the combined operator are |z_i - z_j|, same as before. This doesn't help directly.\n\nOK let me try to think about this problem from a higher level. Let me consider what's actually known in the literature.\n\nI believe this problem is related to the work of:\n1. Böttcher and Wenzel on the norm of commutators\n2. The \"commutator bound\" problem studied by various authors\n\nThe Frobenius norm case: I believe the answer is Θ(n), based on the 2D grid upper bound and a matching lower bound.\n\nThe operator norm case: I'm less sure, but I believe the answer might be Θ(√n) or Θ(n).\n\nActually, let me think about the operator norm lower bound more carefully.\n\nFor the operator norm, consider the following hard instance. Let A be the n×n matrix with A_{ij} = 1/n for all i,j (the all-1/n matrix minus the identity to make it traceless... no, the all-1 matrix J has trace n, so J/n has trace 1, and J/n - I/n has trace 0).\n\nLet A = (J - I)/n = (1/n)(J - I). Then ||A||_op = (n-1)/n ≈ 1 and tr(A) = 0.\n\nFor this A, [B,C] = A means every off-diagonal entry of [B,C] is 1/n and every diagonal entry is 0 (wait, no: A_{ij} = 1/n for i≠j and A_{ii} = (1-1)/n = 0... wait, J has all entries 1, so (J-I) has 0 on diagonal and 1 off-diagonal. So A = (J-I)/n has 0 on diagonal and 1/n off-diagonal.)\n\nHmm, but this is the \"uniform\" A I considered before. For the operator norm, the analysis is different from Frobenius.\n\nFor the operator norm, ||C||_op where C = D ∘ A and D_{ij} = 1/(λ_i - λ_j):\n||C||_op = ||D ∘ A||_op ≤ ||D||_m · ||A||_op\n\nIf ||D||_m = O(log n / d) (from the general bound), then ||C||_op = O(log n / d) · ||A||_op, and the product is d√n · O(log n / d) · ||A||_op = O(√n log n) · ||A||_op.\n\nBut for the lower bound, we need to find an A that is hard. The uniform A might not be the hardest for the operator norm.\n\nLet me think about what makes an A hard for the operator norm. The operator norm is dominated by the largest singular value, so A is hard if it has a large singular value that requires a large C.\n\nActually, I think for the operator norm, the answer might indeed be Θ(√n), with:\n- Upper bound O(√n) from the 2D grid (if the Schur multiplier norm is O(1) for the grid)\n- Lower bound Ω(√n) from some hard instance\n\nLet me think about the lower bound. Consider A = uv* where u, v are unit vectors with v*u = 0 (so tr(A) = 0 and ||A||_op = 1). This is a rank-1 matrix.\n\nFor [B,C] = uv*, we need BC - CB = uv*. Taking the trace with any polynomial p(B): tr(uv* p(B)) = v* p(B) u = 0. So v* p(B) u = 0 for all polynomials p. This means v* B^k u = 0 for all k = 0, 1, ..., n-1.\n\nIf u and v are \"generic\" (e.g., u = e_1, v = e_2), then v* B^k u = (B^k)_{21} = 0 for all k. This means the (2,1) entry of B^k is 0 for all k, which is a strong constraint on B.\n\nBut does this constraint force ||B|| to be large? Not necessarily. For example, if B is diagonal, then (B^k)_{21} = 0 for all k, and the constraint is satisfied. Then C can be chosen with ||C||_op = ||A||_op / min|λ_i - λ_j|, and ||B||_op = max|λ_i|. The product is max|λ_i| / min|λ_i - λ_j|, which can be made O(n) with 1D spacing or O(√n) with 2D grid.\n\nBut we need a LOWER bound, showing that for some A, ALL B give a large product. The rank-1 A = e_1 e_2* doesn't seem to work because diagonal B handles it efficiently.\n\nLet me try a different A. Consider A = Σ_{k=1}^{n-1} e_k e_{k+1}* (the shift matrix). ||A||_op = 1, tr(A) = 0.\n\nFor [B,C] = A, the constraints are:\n- (B^k)_{i+1,i} summed over i = tr(A B^k) = 0 for all k.\n\nHmm, this is getting complicated. Let me try to think about the problem from the perspective of known results.\n\nActually, I just realized something. The problem says \"determine the order of the best constant λ(n)\". This suggests there's a known answer, and the problem is asking us to determine it (prove the upper and lower bounds).\n\nGiven the analysis so far:\n- Frobenius norm: Θ(n) (well-supported by the handoff document)\n- Operator norm: O(√n log n) or O(√n) (upper bound, depending on Schur multiplier norm), lower bound unclear\n\nI think the problem is most likely about the Frobenius norm (or a unitarily invariant norm), and the answer is Θ(n). But let me reconsider.\n\nActually, wait. Let me re-read the problem statement: \"for any n × n complex matrix A with trace zero, there exist n × n matrices B and C satisfying A = BC - CB and ||B|| · ||C|| ≤ λ ||A||.\"\n\nThe norm ||·|| is not specified. In many textbooks and competition problems, ||·|| for matrices refers to the operator norm (spectral norm). But in some contexts, it could be the Frobenius norm.\n\nGiven that the problem asks for \"the order of the best constant\", and the answer should be a clean expression in n, I think the answer is either:\n- Θ(1) (if some clever construction achieves constant norm)\n- Θ(√n)\n- Θ(n)\n- Θ(n^{3/2})\n\nBased on the analysis, Θ(1) seems too optimistic (the 1/2 lower bound is the best we have, but the upper bound is at least Ω(√n) or Ω(n)). Θ(n^{3/2}) is the 1D bound, which can be improved. So the answer is likely Θ(√n) or Θ(n).\n\nLet me think about which one it is.\n\nFor the Frobenius norm, the answer is Θ(n) (well-established in the handoff document).\n\nFor the operator norm, the upper bound is O(√n log n) (or O(√n) if the Schur multiplier norm is O(1) for the grid), and the lower bound is at least Ω(1/2) (trivial).\n\nI think the problem is asking about the operator norm, and the answer is Θ(√n). Here's why:\n\n1. The 2D grid construction naturally gives O(√n) for the operator norm (if the Schur multiplier norm is O(1)).\n2. The lower bound Ω(√n) should come from a dimension/counting argument or a specific hard instance.\n3. The answer Θ(√n) is a clean expression that's different from the Frobenius norm answer Θ(n), making it an interesting problem.\n\nBut I need to verify the Schur multiplier norm claim and find the lower bound.\n\nFor the Schur multiplier norm of the 2D grid Cauchy matrix: I believe it's O(1) based on the 2D Toeplitz structure and the boundedness of the 2D Hilbert transform symbol. Let me try to verify this.\n\nThe 2D symbol is f(θ, φ) = Σ_{(m,n)≠(0,0)} e^{i(mθ+nφ)}/(m+in).\n\nWe can write this as:\nf(θ, φ) = Σ_{n≠0} e^{inφ} Σ_m e^{imθ}/(m+in) + Σ_{m≠0} e^{imθ}/m · 1 (the n=0 term)\n\nFor n=0: Σ_{m≠0} e^{imθ}/m = -i(π-θ) for θ ∈ (0,2π). ||·||_∞ = π.\n\nFor n≠0: Σ_m e^{imθ}/(m+in) = Σ_m e^{imθ} · (m-in)/(m²+n²)\n= Σ_m m·e^{imθ}/(m²+n²) - in Σ_m e^{imθ}/(m²+n²)\n\nThe second sum: Σ_m e^{imθ}/(m²+n²) = (π/n) · cosh(n(π-|θ|)) / sinh(nπ) (for |θ| < 2π, using the Poisson kernel formula). This is O(1/n) for |θ| not too close to 0, and O(1/n) even at θ=0 (since cosh(nπ)/sin h(nπ) → 1).\n\nThe first sum: Σ_m m·e^{imθ}/(m²+n²) = -i d/dθ [Σ_m e^{imθ}/(m²+n²)] = -i d/dθ [(π/n) · cosh(n(π-|θ|)) / sinh(nπ)]\n\nAt θ near 0: d/dθ [cosh(n(π-θ))] = -n sinh(n(π-θ)), so the derivative is O(n) · (π/n) / sinh(nπ) = O(1/sinh(nπ)) = O(e^{-nπ}), which is tiny.\n\nAt θ = π: cosh(0) = 1, sinh(nπ) is large, so the value is O(1/n). The derivative at θ = π is 0 (by symmetry).\n\nSo for each n≠0, the inner sum is O(1/n) uniformly in θ. Then:\nΣ_{n≠0} e^{inφ} · O(1/n) = O(Σ_{n≠0} 1/n) = O(log n)... \n\nHmm, that gives O(log n), not O(1). The sum over n of 1/n diverges (logarithmically).\n\nWait, but the sum is Σ_{n≠0} e^{inφ} · g_n(θ) where g_n(θ) = O(1/n). The L^∞ norm of this sum (over θ, φ) is at most Σ_{n≠0} ||g_n||_∞ = O(Σ 1/n) = O(log n). But this is a crude bound; the actual L^∞ norm might be smaller due to cancellation.\n\nActually, the sum Σ_{n≠0} e^{inφ}/n = -i(π-φ) for φ ∈ (0,2π), which has ||·||_∞ = π. So if g_n(θ) = c_n(θ)/n where c_n is bounded, the sum might still be O(1) due to the structure of the Fourier series.\n\nLet me be more precise. We have:\nf(θ, φ) = [n=0 term] + Σ_{n≠0} e^{inφ} · h_n(θ)\n\nwhere h_n(θ) = Σ_m e^{imθ}/(m+in).\n\nI showed that h_n(θ) = O(1/n) uniformly. But more precisely, what is h_n(θ)?\n\nh_n(θ) = Σ_m e^{imθ}/(m+in) = Σ_m e^{imθ} · (m-in)/(m²+n²)\n\n= Σ_m m·e^{imθ}/(m²+n²) - in Σ_m e^{imθ}/(m²+n²)\n\nLet P_n(θ) = Σ_m e^{imθ}/(m²+n²) = (π/(n sinh(nπ))) · cosh(n(π - |θ|)) for θ ∈ [-π, π] (using the standard formula for the Fourier series of cosh/sinh).\n\nWait, I need to be more careful with the period. The Fourier series is on [0, 2π) or [-π, π). Let me use [-π, π).\n\nP_n(θ) = Σ_m e^{imθ}/(m²+n²) = (π/(n sinh(nπ))) · cosh(n(π - |θ|)) for |θ| ≤ π.\n\nThen Σ_m m·e^{imθ}/(m²+n²) = (1/i) P_n'(θ) = (1/i) · (π/(n sinh(nπ))) · (-n sign(θ) sinh(n(π-|θ|)))\n= (π i/(n sinh(nπ))) · sign(θ) sinh(n(π-|θ|))\n\nWait, (1/i) = -i. So:\nΣ_m m·e^{imθ}/(m²+n²) = -i · (π/(n sinh(nπ))) · (-n sign(θ) sinh(n(π-|θ|)))\n= iπ · sign(θ) · sinh(n(π-|θ|)) / sinh(nπ)\n\nSo h_n(θ) = iπ · sign(θ) · sinh(n(π-|θ|)) / sinh(nπ) - in · (π/(n sinh(nπ))) · cosh(n(π-|θ|))\n= (π/sinh(nπ)) · [i sign(θ) sinh(n(π-|θ|)) - i cosh(n(π-|θ|))]\n= (iπ/sinh(nπ)) · [sign(θ) sinh(n(π-|θ|)) - cosh(n(π-|θ|))]\n\nFor θ > 0:\nh_n(θ) = (iπ/sinh(nπ)) · [sinh(n(π-θ)) - cosh(n(π-θ))]\n= (iπ/sinh(nπ)) · (-e^{-n(π-θ)})\n= -iπ e^{-n(π-θ)} / sinh(nπ)\n= -iπ e^{-nπ} e^{nθ} / sinh(nπ)\n= -iπ e^{nθ} / (e^{nπ} sinh(nπ))\n= -iπ e^{nθ} / ((e^{2nπ} - 1)/2)\n= -2iπ e^{nθ} / (e^{2nπ} - 1)\n\nFor θ ∈ (0, π], this is O(e^{nθ} / e^{2nπ}) = O(e^{-n(2π-θ)}) = O(e^{-nπ}) for θ not too close to π.\n\nAt θ = π: h_n(π) = -2iπ e^{nπ} / (e^{2nπ} - 1) = -2iπ / (e^{nπ} - e^{-nπ}) = -iπ / sinh(nπ) = O(e^{-nπ}).\n\nFor θ < 0 (by symmetry, h_n(-θ) = -h_n(θ) since the real part is odd and imaginary part is even... actually let me just compute):\n\nFor θ < 0, sign(θ) = -1:\nh_n(θ) = (iπ/sinh(nπ)) · [-sinh(n(π-|θ|)) - cosh(n(π-|θ|))]\n= (iπ/sinh(nπ)) · (-e^{n(π-|θ|)})\n= -iπ e^{n(π-|θ|)} / sinh(nπ)\n= -iπ e^{n(π+θ)} / sinh(nπ) (since |θ| = -θ for θ < 0)\n= -2iπ e^{n(π+θ)} / (e^{2nπ} - 1)\n\nFor θ ∈ [-π, 0), this is O(e^{n(π+θ)} / e^{2nπ}) = O(e^{-n(π-θ)}) = O(e^{-nπ}) for θ not too close to 0.\n\nAt θ = 0: there's a jump. h_n(0+) = -2iπ / (e^{2nπ} - 1) = O(e^{-2nπ}). h_n(0-) = -2iπ e^{nπ} / (e^{2nπ} - 1) = O(e^{-nπ}).\n\nSo |h_n(θ)| ≤ C e^{-nπ} for all θ (with a possible jump at θ=0 of size O(e^{-nπ})).\n\nWait, that doesn't seem right. Let me recheck.\n\nAt θ = 0+: h_n(0+) = -2iπ e^{0} / (e^{2nπ} - 1) = -2iπ / (e^{2nπ} - 1) ≈ -2iπ e^{-2nπ}. Very small.\n\nAt θ = 0-: h_n(0-) = -2iπ e^{nπ} / (e^{2nπ} - 1) ≈ -2iπ e^{-nπ}. Also small but larger.\n\nAt θ = π: h_n(π) = -2iπ e^{nπ} / (e^{2nπ} - 1) ≈ -2iπ e^{-nπ}. Small.\n\nAt θ = -π: h_n(-π) = -2iπ e^{0} / (e^{2nπ} - 1) ≈ -2iπ e^{-2nπ}. Very small.\n\nSo |h_n(θ)| ≤ C e^{-nπ} for all θ and all n ≥ 1. This is exponentially decaying in n!\n\nTherefore:\n|f(θ, φ)| ≤ |[n=0 term]| + Σ_{n≠0} |h_n(θ)|\n≤ π + 2C Σ_{n=1}^{∞} e^{-nπ}\n= π + 2C · e^{-π} / (1 - e^{-π})\n= O(1)\n\nSo ||f||_∞ = O(1), and the Schur multiplier norm of the 2D grid Cauchy matrix is O(1)!\n\nWait, this is a great result. Let me double-check the computation.\n\nActually, I think I made an error. Let me redo the computation more carefully.\n\nWe have h_n(θ) = Σ_m e^{imθ}/(m+in) for n ≠ 0.\n\nUsing the Poisson summation / Fourier series result:\nP_n(θ) = Σ_m e^{imθ}/(m²+n²) = (π/(n sinh(nπ))) cosh(n(π-|θ|)) for θ ∈ [-π, π].\n\nThis is a standard result. Let me verify: for n=1, θ=0:\nP_1(0) = Σ_m 1/(m²+1) = π coth(π) (known result). \nFormula: (π/sinh(π)) cosh(π) = π coth(π). ✓\n\nNow, h_n(θ) = Σ_m e^{imθ}/(m+in) = Σ_m (m-in)/(m²+n²) e^{imθ}\n= Σ_m m/(m²+n²) e^{imθ} - in Σ_m 1/(m²+n²) e^{imθ}\n= (1/i) P_n'(θ) - in P_n(θ)\n= -i P_n'(θ) - in P_n(θ)\n\nP_n(θ) = (π/(n sinh(nπ))) cosh(n(π-|θ|))\n\nFor θ ∈ (0, π):\nP_n'(θ) = (π/(n sinh(nπ))) · (-n sinh(n(π-θ))) = -π sinh(n(π-θ)) / sinh(nπ)\n\nSo:\nh_n(θ) = -i · (-π sinh(n(π-θ)) / sinh(nπ)) - in · (π/(n sinh(nπ))) cosh(n(π-θ))\n= iπ sinh(n(π-θ)) / sinh(nπ) - iπ cosh(n(π-θ)) / sinh(nπ)\n= (iπ / sinh(nπ)) [sinh(n(π-θ)) - cosh(n(π-θ))]\n= (iπ / sinh(nπ)) (-e^{-n(π-θ)})\n= -iπ e^{-n(π-θ)} / sinh(nπ)\n\nNow, sinh(nπ) = (e^{nπ} - e^{-nπ})/2, so:\nh_n(θ) = -iπ e^{-n(π-θ)} / ((e^{nπ} - e^{-nπ})/2) = -2iπ e^{-n(π-θ)} / (e^{nπ} - e^{-nπ})\n= -2iπ e^{-nπ} e^{nθ} / (e^{nπ} - e^{-nπ})\n= -2iπ e^{nθ} / (e^{2nπ} - 1)\n\nFor θ ∈ (0, π):\n|h_n(θ)| = 2π e^{nθ} / (e^{2nπ} - 1) ≤ 2π e^{nπ} / (e^{2nπ} - 1) = 2π / (e^{nπ} - e^{-nπ}) = π / sinh(nπ)\n\nFor n ≥ 1: π / sinh(nπ) ≤ π / sinh(π) ≈ π / 11.5 ≈ 0.27. And it decays exponentially for larger n.\n\nFor θ ∈ (-π, 0): by similar computation (or by noting h_n(-θ) = overline{h_n(θ)} since the original sum is conjugate-symmetric... actually, let me just compute):\n\nFor θ ∈ (-π, 0), |θ| = -θ:\nP_n'(θ) = (π/(n sinh(nπ))) · (n sinh(n(π+θ))) = π sinh(n(π+θ)) / sinh(nπ) [since d/dθ cosh(n(π+θ)) = n sinh(n(π+θ))]\n\nWait, for θ < 0, |θ| = -θ, so cosh(n(π-|θ|)) = cosh(n(π+θ)). Then:\nP_n'(θ) = (π/(n sinh(nπ))) · n sinh(n(π+θ)) = π sinh(n(π+θ)) / sinh(nπ)\n\nh_n(θ) = -i · π sinh(n(π+θ)) / sinh(nπ) - in · (π/(n sinh(nπ))) cosh(n(π+θ))\n= (iπ / sinh(nπ)) [-sinh(n(π+θ)) - cosh(n(π+θ))]\n= (iπ / sinh(nπ)) (-e^{n(π+θ)})\n= -iπ e^{n(π+θ)} / sinh(nπ)\n= -2iπ e^{n(π+θ)} / (e^{2nπ} - 1)\n\nFor θ ∈ (-π, 0):\n|h_n(θ)| = 2π e^{n(π+θ)} / (e^{2nπ} - 1) ≤ 2π e^{0} / (e^{2nπ} - 1) = 2π / (e^{2nπ} - 1)\n\nThis is even smaller (exponentially decaying in n²).\n\nAt θ = 0: there's a jump discontinuity. h_n(0+) = -2iπ / (e^{2nπ} - 1) and h_n(0-) = -2iπ e^{nπ} / (e^{2nπ} - 1). The jump is 2iπ(e^{nπ} - 1)/(e^{2nπ} - 1) = 2iπ/(e^{nπ} + 1) ≈ 2iπ e^{-nπ}.\n\nSo for all θ and n ≥ 1: |h_n(θ)| ≤ C e^{-nπ} (with C = π / sinh(π) ≈ 0.27 for the worst case n=1, θ=π).\n\nWait, for n=1, θ=π: |h_1(π)| = 2π e^π / (e^{2π} - 1) = 2π / (e^π - e^{-π}) = π / sinh(π) ≈ 0.27.\n\nFor n=1, θ=0-: |h_1(0-)| = 2π / (e^{2π} - 1) ≈ 2π / 534 ≈ 0.012.\n\nSo the maximum of |h_n(θ)| over all θ is π / sinh(nπ), achieved at θ = π for n > 0 (or θ = -π for n < 0).\n\nNow, the full symbol:\nf(θ, φ) = h_0(θ) + Σ_{n≠0} e^{inφ} h_n(θ)\n\nwhere h_0(θ) = Σ_{m≠0} e^{imθ}/m = -i(π - θ) for θ ∈ (0, 2π) (with ||h_0||_∞ = π).\n\n|f(θ, φ)| ≤ |h_0(θ)| + Σ_{n≠0} |h_n(θ)|\n≤ π + 2 Σ_{n=1}^{∞} π/sinh(nπ)\n= π + 2π Σ_{n=1}^{∞} 1/sinh(nπ)\n\nNow, 1/sinh(nπ) ≤ 2e^{-nπ} for n ≥ 1 (since sinh(x) ≥ e^x/2 for x ≥ 1). So:\nΣ_{n=1}^{∞} 1/sinh(nπ) ≤ 2 Σ_{n=1}^{∞} e^{-nπ} = 2 e^{-π} / (1 - e^{-π}) = 2 / (e^π - 1) ≈ 2 / 22.14 ≈ 0.09\n\nSo |f(θ, φ)| ≤ π + 2π · 0.09 ≈ π + 0.57 ≈ 3.71.\n\nTherefore ||f||_∞ = O(1), and the Schur multiplier norm of the 2D grid Cauchy matrix is O(1).\n\nThis confirms the upper bound O(√n) for the operator norm!\n\nNow I need the lower bound Ω(√n) for the operator norm.\n\nFor the lower bound, I need to find a traceless matrix A with ||A||_op = 1 such that for any B, C with [B,C] = A, ||B||_op · ||C||_op ≥ c√n.\n\nLet me think about this. Consider the shift matrix A = Σ_{k=1}^{n-1} E_{k,k+1}. ||A||_op = 1, tr(A) = 0.\n\nFor any B, C with [B,C] = A, we need the (k, k+1) entry of [B,C] to be 1 for all k.\n\nLet me think about what constraints this places on B and C.\n\nActually, let me try a different approach. Consider the \"maximal\" A for the operator norm.\n\nHmm, let me think about the lower bound using a different technique. \n\nConsider the following: for any B, the map ad_B has the property that ||ad_B||_op ≤ 2||B||_op (where ||ad_B||_op is the operator norm of ad_B as a map on (M_n, ||·||_op)). So ||C||_op ≥ ||A||_op / (2||B||_op), giving ||B||_op · ||C||_op ≥ ||A||_op / 2. This is the trivial bound.\n\nTo improve this, we need to use the structure of A. \n\nLet me try the following approach. Consider A = Σ_{k=1}^{n-1} E_{k,k+1} (shift matrix). Suppose [B,C] = A. Then:\n\ntr(A* A) = ||A||_F² = n-1 (but we care about ||A||_op = 1).\n\nConsider tr(A* [B,C]) = tr(A* BC - A* CB) = tr(CA* B - A* CB) = tr((CA* - A* C) B).\n\nSo tr((CA* - A* C) B) = tr(A* A) = n-1.\n\nBy Cauchy-Schwarz (Frobenius): |tr((CA* - A* C) B)| ≤ ||CA* - A* C||_F · ||B||_F.\n\nAnd ||CA* - A* C||_F ≤ 2||C||_F · ||A||_F (since ||CA*||_F ≤ ||C||_F ||A||_F and ||A* C||_F ≤ ||A||_F ||C||_F... wait, that's not right. ||CA*||_F ≤ ||C||_op ||A||_F and ||A* C||_F ≤ ||A||_F ||C||_op, so ||CA* - A* C||_F ≤ 2||C||_op ||A||_F).\n\nHmm, this gives: n-1 ≤ 2||C||_op ||A||_F · ||B||_F. But ||A||_F = √(n-1), so:\nn-1 ≤ 2||C||_op √(n-1) ||B||_F\n||C||_op ||B||_F ≥ (n-1) / (2√(n-1)) = √(n-1)/2\n\nAnd ||B||_op ≤ ||B||_F, so ||B||_op ||C||_op ≤ ||B||_F ||C||_op. Wait, we have ||B||_F ≥ ||B||_op, so:\n||C||_op ||B||_op ≤ ||C||_op ||B||_F\n\nBut we have a lower bound on ||C||_op ||B||_F, not on ||C||_op ||B||_op. Since ||B||_F ≥ ||B||_op, the lower bound on ||C||_op ||B||_F doesn't directly give a lower bound on ||C||_op ||B||_op.\n\nHmm, but we can use ||B||_F ≤ √n ||B||_op, so:\n||C||_op · √n ||B||_op ≥ ||C||_op ||B||_F ≥ √(n-1)/2\n\nThis gives ||B||_op ||C||_op ≥ √(n-1) / (2√n) ≈ 1/2. Still constant.\n\nLet me try a different approach. Instead of using tr(A* A), let me use a different trace identity.\n\nConsider tr(f(A)* [B,C]) for some function f. We have:\ntr(f(A)* [B,C]) = tr(f(A)* BC) - tr(f(A)* CB) = tr(C f(A)* B) - tr(f(A)* C B) = tr((C f(A)* - f(A)* C) B) = tr([C, f(A)*] B)\n\nSo |tr([C, f(A)*] B)| = |tr(f(A)* A)|.\n\nIf we choose f(A) = A (i.e., f(A)* = A*), then:\n|tr([C, A*] B)| = |tr(A* A)| = ||A||_F² = n-1.\n\n|[C, A*]|_F ≤ 2||C||_op ||A*||_F = 2||C||_op ||A||_F = 2||C||_op √(n-1).\n\n|tr([C, A*] B)| ≤ ||[C, A*]||_F ||B||_F ≤ 2||C||_op √(n-1) ||B||_F.\n\nSo n-1 ≤ 2||C||_op √(n-1) ||B||_F, giving ||C||_op ||B||_F ≥ √(n-1)/2.\n\nThis is the same as before. The issue is that we're using ||B||_F, not ||B||_op.\n\nCan we use ||B||_op directly? We have:\n|tr([C, A*] B)| ≤ ||[C, A*]||_F ||B||_F\n\nBut also:\n|tr([C, A*] B)| ≤ ||[C, A*]||_op · ||B||_* (nuclear norm)\n\nHmm, that introduces the nuclear norm, which is ≤ √n ||B||_F, not helpful.\n\nAlternatively:\n|tr([C, A*] B)| ≤ n ||[C, A*]||_op ||B||_op\n\nThis gives n-1 ≤ n · 2||C||_op ||A||_op · ||B||_op = 2n ||C||_op ||B||_op (since ||A||_op = 1).\n\nSo ||B||_op ||C||_op ≥ (n-1)/(2n) ≈ 1/2. Still constant!\n\nThe problem is that tr(XY) ≤ n ||X||_op ||Y||_op, which introduces a factor of n that cancels the n-1 from ||A||_F².\n\nLet me try a different trace identity. Instead of tr(A* A), use tr(A* A) / n or something normalized.\n\nActually, the issue is that for the shift matrix, ||A||_F² = n-1 but ||A||_op = 1, so ||A||_F² / ||A||_op² = n-1. The trace identity gives us a factor of ||A||_F², but the operator norm bound on the trace introduces a factor of n, canceling the gain.\n\nLet me try a matrix A with ||A||_F² / ||A||_op² = O(1), i.e., a low-rank matrix. For a rank-1 matrix A = uv* with ||u|| = ||v|| = 1 and v*u = 0:\n||A||_F = 1, ||A||_op = 1, tr(A) = 0.\n\n",
+      "tool_calls": [],
+      "metrics": {
+        "prompt_tokens": 30262,
+        "completion_tokens": 25000,
+        "cached_tokens": 1355
+      },
+      "extra": {
+        "generation_model": "glm-5-2",
+        "telemetry": {
+          "source": "assistant",
+          "operation": "inference"
+        }
+      }
+    }
+  ],
+  "final_metrics": {
+    "total_prompt_tokens": 30262,
+    "total_completion_tokens": 25000,
+    "total_cached_tokens": 1355,
+    "total_steps": 10
+  }
+}

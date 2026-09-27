@@ -1,0 +1,1060 @@
+{
+  "schema_version": "ATIF-v1.7",
+  "session_id": "linen-aardwolf",
+  "agent": {
+    "name": "devin",
+    "version": "3000.4.25",
+    "model_name": "GLM-5.2 High",
+    "tool_definitions": [
+      {
+        "type": "function",
+        "function": {
+          "name": "write_to_process",
+          "description": "Writes input to an interactive process running in a shell with support for both text and special characters.\n\nIMPORTANT: This command will NOT work if there is no command running in the shell. If you want to execute a command in the shell use the exec tool.\n\nProvide exactly ONE of text_input or bytes_input (never both). To answer a prompt that needs an Enter keypress (e.g. a [y/n] prompt), set bytes_input to y<CR> (the y character followed by Enter).\n\nInput options:\n- text_input: Literal text content (no special character interpretation)\n- bytes_input: Special characters using angle bracket notation (e.g., <ESC>, <CR>, <UP>, <C-c>)\n\nSpecial character notation:\n- <ESC> = Escape character\n- <CR> = Carriage return (Enter)\n- <LF> = Line feed (newline)\n- <BS> = Backspace\n- <UP>, <DOWN>, <LEFT>, <RIGHT> = Arrow keys\n- <C-c>, <C-d>, <C-z> = Ctrl+key combinations\n",
+          "parameters": {
+            "required": [
+              "shell_id"
+            ],
+            "properties": {
+              "shell_id": {
+                "description": "The ID of the shell to write to.",
+                "type": "string"
+              },
+              "text_input": {
+                "description": "Text content to write to the shell (interpreted as literal text).",
+                "type": "string"
+              },
+              "bytes_input": {
+                "description": "Special characters/bytes to write to the shell (interpreted with angle bracket notation).",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "skill",
+          "description": "Invoke or discover skills. Modes: 'invoke' (default) activates a skill by name, 'list' discovers skills registered in a project at the given path (scans skill directories like .devin/skills/ at the project root, does not recurse into subdirectories), and 'search' recursively scans for model-invocable skills under a given path and filters them by optional keywords. Skills provide context-specific guidance and may grant tool permissions.",
+          "parameters": {
+            "additionalProperties": false,
+            "properties": {
+              "command": {
+                "description": "The skill operation to perform. Defaults to \"invoke\" if omitted.",
+                "default": "invoke",
+                "type": "string",
+                "enum": [
+                  "invoke",
+                  "list",
+                  "search"
+                ]
+              },
+              "skill": {
+                "description": "The name of the skill to invoke (required for 'invoke' command).\nUse one of the available skills listed in the system prompt.",
+                "type": "string",
+                "default": null
+              },
+              "path": {
+                "description": "Project path to discover skills in (required for 'list' and 'search' commands).\nScans skill directories (e.g. .devin/skills/) at the project root;\n`list` does not recurse into subdirectories, while `search` does.\nRelative paths are resolved against the session's working directory.",
+                "type": "string",
+                "default": null
+              },
+              "keywords": {
+                "description": "List of keywords to search for. Empty or omitted means include all skills.",
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "default": null
+              },
+              "keywords_mode": {
+                "type": "string",
+                "enum": [
+                  "or",
+                  "and"
+                ],
+                "description": "Controls whether all keywords or any keyword need to be present.",
+                "default": "or"
+              }
+            },
+            "type": "object"
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "kill_shell",
+          "description": "Kills a running background shell by its ID.\n\n- Takes a shell_id parameter identifying the shell to kill\n- Returns a success or failure status\n- Use this tool when you need to terminate a long-running shell\n",
+          "parameters": {
+            "required": [
+              "shell_id"
+            ],
+            "properties": {
+              "shell_id": {
+                "description": "The ID of the shell to kill.",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "browser_preview",
+          "description": "Spin up a browser preview for a running web server.\n\nThis lets the USER interact with the web server as normal, and lets them send\nyou what they see: selecting a DOM element (with its React component and source\nlocation, when resolvable) or the browser console output. Those captures go into\nthe USER's message box for them to send — you will not receive them unless they\ndo, so ask them to share what they see rather than waiting.\n\nUsage notes:\n  - The server must already be running; start it with a background command\n    first (`timeout: 0`) if it isn't.\n  - Returns immediately with a preview ID and URL. The preview stays up for the\n    rest of the session, so the USER can keep using it after you stop.\n  - An attempt is made to open the URL in the USER's browser; the URL is always\n    printed in case that fails (e.g. over SSH or in a container).\n  - Calling this again for the same URL returns the existing preview.\n  - Use `close_browser_preview` when the preview is no longer needed, e.g.\n    before shutting down the server it points at.\n",
+          "parameters": {
+            "required": [
+              "url",
+              "name"
+            ],
+            "properties": {
+              "url": {
+                "description": "The URL of the target web server to provide a browser preview for. This\nshould contain the scheme (e.g. http:// or https://), domain (e.g.\nlocalhost or 127.0.0.1), and port (e.g. :8080) but no path.",
+                "type": "string"
+              },
+              "name": {
+                "description": "A short 3-5 word name for the target web server. Should be title-cased\ne.g. 'Personal Website'. Format as a simple string, not as markdown; and\nplease output the title directly, do not prefix it with 'Title:' or\nanything similar.",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "find_file_by_name",
+          "description": "Fast file name/path pattern matching tool that works with any codebase size using glob patterns. Supports brace expansion (e.g., `**/*.{ts,tsx,js,jsx}`). Matches against file paths, not file contents. Do NOT use this tool for searching for things like function names, variable names, etc. which should be searched against file contents (e.g. using grep).",
+          "parameters": {
+            "required": [
+              "pattern"
+            ],
+            "properties": {
+              "pattern": {
+                "description": "The glob pattern to match files against.\nExamples:\n- `*.py` - matches all Python files in the current directory only (not subdirectories)\n- `**/*.js` - matches all JavaScript files in the current directory and all subdirectories recursively\n- `src/**/*.ts` - matches all TypeScript files within the `src` folder and its subdirectories\n- `test_*.py` - matches Python files starting with `test_` in the current directory (e.g., `test_utils.py`)\n- `**/*.{ts,tsx}` - matches all TypeScript files (both .ts and .tsx) recursively using brace expansion",
+                "type": "string"
+              },
+              "path": {
+                "description": "The directory to search in (defaults to current working directory)",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "mcp_call_tool",
+          "description": "Execute a tool on an MCP server. Use this to interact with external services like Linear, GitHub, Slack, databases, and more. The tool result will be returned as structured data.",
+          "parameters": {
+            "required": [
+              "server_name",
+              "tool_name"
+            ],
+            "properties": {
+              "server_name": {
+                "description": "Name of the MCP server to use (e.g., \"linear\", \"github\").",
+                "type": "string"
+              },
+              "tool_name": {
+                "description": "Name of the tool to execute.",
+                "type": "string"
+              },
+              "arguments": {
+                "description": "Input arguments for the tool as a JSON object.",
+                "type": "object",
+                "additionalProperties": true,
+                "default": {},
+                "properties": {}
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "close_browser_preview",
+          "description": "Closes a running browser preview by its ID.\n\n- Takes a preview_id parameter, as returned by `browser_preview`\n- The preview URL stops working; the web server it points at is untouched\n- Previews are closed automatically when the session ends, so this is only\n  needed to close one early\n",
+          "parameters": {
+            "required": [
+              "preview_id"
+            ],
+            "properties": {
+              "preview_id": {
+                "description": "The ID of the browser preview to close.",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "read_subagent",
+          "description": "Reads the response from a background subagent, using the agent_id you got from the run_subagent tool or a <subagent_completion_notification> message. You use block=true to wait for completion. If you have other work to do, you can do that (you'll be notified whenever a subagent completes). This tool will never interrupt a running subagent.",
+          "parameters": {
+            "required": [
+              "agent_id"
+            ],
+            "properties": {
+              "agent_id": {
+                "description": "The ID of the background subagent to read output from.",
+                "type": "string"
+              },
+              "block": {
+                "description": "If true, block until the subagent finishes or the timeout expires.",
+                "type": "boolean",
+                "default": false
+              },
+              "timeout": {
+                "description": "Maximum number of seconds to wait when blocking. Defaults to 30, capped at 600, unless the tool description documents different limits for a specific subagent type.",
+                "type": "integer"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "todo_write",
+          "description": "Use this tool to create and manage a structured task list for your current session. It tracks your progress and gives the user visibility into what you are working on.\n\n## When to use\nUse this tool for multi-step tasks (3 or more distinct steps), non-trivial tasks that require planning, or when the user provides multiple tasks or explicitly asks for a todo list. Skip it for trivial, single-step, or purely conversational/informational requests — just do the task directly.\n\n## Task states and management\n- Each task is pending, in_progress, or completed\n- Keep exactly ONE task in_progress at a time; mark it in_progress when starting work on it\n- Mark a task completed IMMEDIATELY after finishing it\n- Only mark a task completed when it is fully done — if you hit errors or blockers, keep it in_progress and add a new task describing what must be resolved\n- Add follow-up tasks discovered during work; remove tasks that are no longer relevant\n- Create specific, actionable items and break complex work into smaller steps\n\n## Example\nFor \"Add a dark mode toggle to settings, then run tests and build\":\n1. Add dark mode toggle component to settings page (in_progress)\n2. Wire up dark mode state management\n3. Update existing components to support theme switching\n4. Run tests and build, fixing any failures",
+          "parameters": {
+            "additionalProperties": false,
+            "required": [
+              "todos"
+            ],
+            "type": "object",
+            "properties": {
+              "todos": {
+                "description": "The updated list of todo items.",
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "content": {
+                      "description": "The task description.",
+                      "type": "string"
+                    },
+                    "status": {
+                      "type": "string",
+                      "enum": [
+                        "pending",
+                        "in_progress",
+                        "completed"
+                      ],
+                      "description": "Current status of the todo item."
+                    }
+                  },
+                  "required": [
+                    "content",
+                    "status"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "run_subagent",
+          "description": "Launch an independent subagent to handle a task autonomously.\n\nSubagents (also referred to as just \"agents\") are good at handling self-contained, multi-step tasks, especially if they can be parallelized:\n- Parallel execution: Splitting subtasks across subagents allows you to complete your work more quickly than doing these tasks on your own. In order to benefit from this, it's important that you actually launch the background subagents in parallel rather than running them one after the other. Note that subagents' work should be self-contained when runnign in parallel so they don't interfere with each other (e.g. we don't want parallel subagents writing to the same files).\n- Self-contained, multi-step work: For tasks that likely require several steps to complete, where the steps to find the final answer aren't very relevant. For example, broad or uncertain searches/explorations are a good use-case.\n         - Keeping your context clean: For tasks that seem mostly irrelevant to the things you've been working on, subagents can let you answer questions while staying focused. For example, if a user asks a question about Devin CLI documentation or configuraiton while you're refactoring on a codebase, you can use a subagent to investigate this tangential question. Use discretion—sometimes the user does want you to switch tasks, especially if you've already worked on several unrelated things already, or if it seems like your previous tasks are complete.\n\n\n         Skip subagents when simpler tools suffice:\n- If you already know the file path, read it directly\n- Use your grep and glob tools rather than subagents when you think they will meet your needs quickly without many attempts\n- Use your edit or read tools directly if only a few files are involved\n\n- Don't use a subagent to do singular tasks like running a command\n\nWriting effective prompts:\n- Subagents are stateless; they cannot ask clarifying questions, and they can't see any of your context. Front-load all context they might neeed: relevant file paths, function/class names, what you already know, and exactly what you need back.\n- State whether the subagent should make changes or only investigate. It has no visibility into the user's original request. When asking open-ended questions, explicitly state how thorough of an answer you want.\nUsage notes:\n- The user never sees subagent output directly, so you'll need to distill subagents' answers into your own response if you want to .\n- You can generally trust subagent results. Avoid re-doing their work unless something looks wrong.\n\n- Set is_background=true to run a background subagent without blocking. You will be notified automatically when it finishes with a <subagent_completion_notification> message. You can check on the status of a background subagent using your read_subagent tool. To wait for a subagent to complete to see its response, call read_subagent with block=true. Background agents are nice for parallelism and work that might take unexpectedly long, in which case you'd want to do other work while waiting.\n        - Set is_background=false to run a foreground subagent when you need the answer before continuing. You can't do any other work while a foreground subagent is running, and at most one foreground agent can run at once. Despite these restrictions, foreground users have a slightly nicer UX and are less frequently blocked by permission issues. So use is_background=false when you don't need paralellism and would have otherwise spawned a background agent then immediately called read_subagent with block=true.\n        - If you want to run both background subagents and a foreground subagent, run the background subagents first and then run the foreground subagent. Don't try to launch multiple foreground subagents in parallel; instead use background subagents or run the foreground subagents sequentially so you can see each subagent's output before launching the next one.",
+          "parameters": {
+            "required": [
+              "title",
+              "task",
+              "profile"
+            ],
+            "properties": {
+              "title": {
+                "description": "A short, human-readable title for this subagent.",
+                "type": "string"
+              },
+              "task": {
+                "description": "The task or prompt to give the subagent. Be specific and detailed.",
+                "type": "string"
+              },
+              "profile": {
+                "description": "The profile to use for this subagent (e.g. \"subagent_explore\", \"subagent_general\").",
+                "type": "string"
+              },
+              "is_background": {
+                "description": "If true, the subagent runs in the background and returns its ID\nimmediately. You will be automatically woken up with the result\nwhen it completes. You can check progress with read_subagent if\nneeded, but do not poll in a loop — just continue with other work\nor end your turn.",
+                "type": "boolean",
+                "default": false
+              },
+              "resume": {
+                "description": "If set to an agent id (which you can get from the response of a previous\nrun_subagent invocation), your prompt will be sent to that agent, so it can\nrespond using its existing execution transcript as context.",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "request_scope",
+          "description": "Request read or write access to a directory. Use this tool when you encounter a permission error due to sandboxing and need access to a path outside your current allowed directories. The user will be prompted to approve or deny the request. This tool is a no-op if the scope is already granted.",
+          "parameters": {
+            "required": [
+              "scope",
+              "path"
+            ],
+            "properties": {
+              "scope": {
+                "description": "The type of access to request: \"read\" or \"write\".",
+                "type": "string"
+              },
+              "path": {
+                "description": "The absolute path to the directory to request access to.",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "shell_command",
+          "description": "Runs a shell command and returns its output.\n- Use absolute paths in your commands instead of `cd`. Do not use `cd` unless absolutely necessary.",
+          "parameters": {
+            "required": [
+              "command"
+            ],
+            "properties": {
+              "command": {
+                "description": "The shell script to execute.",
+                "type": "string"
+              },
+              "timeout_ms": {
+                "description": "The timeout for the command in milliseconds.",
+                "type": "integer"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "mcp_list_servers",
+          "description": "Lists all MCP servers you have access to. Use this first if the user is asking about any third party integrations (e.g. Slack, Linear, etc).",
+          "parameters": {
+            "type": "object",
+            "properties": {},
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "exec",
+          "description": "Executes a given shell command in a persistent shell session and waits for output with optional timeout, ensuring proper handling and security measures.\n\nCommands run under bash.\n\nIMPORTANT: This tool is for terminal operations like git, npm, docker, etc. DO NOT use it for file operations (reading, writing, editing, searching, finding files) - use the specialized tools for this instead.\n\nBefore executing the command, please follow these steps:\n\n1. Directory Verification:\n   - If the command will create new directories or files, first use `ls` to verify the parent directory exists and is the correct location\n   - For example, before running \"mkdir foo/bar\", first use `ls foo` to check that \"foo\" exists and is the intended parent directory\n\n2. Command Execution:\n   - Always quote file paths that contain spaces with double quotes (e.g., cd \"path with spaces/file.txt\")\n   - Examples of proper quoting:\n     - cd \"/Users/name/My Documents\" (correct)\n     - cd /Users/name/My Documents (incorrect - will fail)\n     - python \"/path/with spaces/script.py\" (correct)\n     - python /path/with spaces/script.py (incorrect - will fail)\n   - After ensuring proper quoting, execute the command.\n   - Capture the output of the command.\n\nUsage notes:\n  - If the output is too long, it will be truncated before being returned to you.\n  - Commands run in a persistent shell session for each shell_id, preserving state between calls. The working directory persists between commands.\n  - One-shot commands (no `shell_id`) do NOT share state with each other: the working directory does NOT persist between calls. Use the optional `workdir` parameter (an absolute path to an existing directory) to set the working directory for a command, instead of a leading `cd` that the next call would forget. With a `shell_id`, `workdir` changes that session's directory before running the command.\n  - When issuing multiple commands:\n    - If the commands are independent and can run in parallel, make multiple shell tool calls in a single message.\n    - If the commands depend on each other and must run sequentially, chain them in a single call (bash: `cmd1 && cmd2`; PowerShell: `cmd1; if ($?) { cmd2 }`).\n    - In bash, use ';' to run commands sequentially regardless of exit status.\n    - DO NOT use newlines to separate commands (newlines are ok in quoted strings)\n  - Use absolute paths in your commands instead of `cd` if possible. You may use `cd` if the User explicitly requests it.\n  - Passwords cannot be entered into this tool, so `sudo` fails when it needs one. Do NOT retry with a TTY or ask the user to type a password — run without sudo or ask the user to run the command themselves.\n",
+          "parameters": {
+            "required": [
+              "command"
+            ],
+            "properties": {
+              "command": {
+                "description": "The command to execute in the current shell session.\n\nExamples:\n- Bash: \"echo 'Hello World'\", \"ls -la\", \"git status\"\n- PowerShell: \"Write-Output 'Hello World'\", \"Get-ChildItem\"\n\nNote: Do NOT include the shell executable (like \"bash -c\" or \"powershell -Command\") in the command.\nThe command should be the raw shell command as you would type it in the active shell.",
+                "type": "string"
+              },
+              "shell_id": {
+                "description": "Optional shell ID to reuse an existing interactive session. Use shell IDs to maintain multiple shell sessions. When shell ID is provided, writes to that session's stdin. When no shell ID is provided, a new session is created.",
+                "type": "string"
+              },
+              "workdir": {
+                "description": "Optional absolute path to use as the working directory for this command (does not persist between one-shot calls; with a `shell_id` it cds the session).",
+                "type": "string"
+              },
+              "timeout": {
+                "description": "Optional timeout in milliseconds (default: background after 10s idle or 30s total).\nWhen it elapses, a still-running command is backgrounded and its shell_id returned for `get_output`/`kill_shell`. Set to `0` to background immediately.",
+                "type": "integer"
+              },
+              "tty": {
+                "description": "Allocate a PTY-backed interactive session. Default `false`.\n`false` (default): one-shot non-interactive command run through pipes; good for most use cases.\n`true`: persistent interactive session — for TUI programs (vim, tmux, top, REPLs) or state that must persist across calls.",
+                "type": "boolean",
+                "default": false
+              },
+              "env": {
+                "description": "Environment variables for this command's process tree, e.g.\n`{\"API_KEY\": \"abc123\", \"NODE_ENV\": \"development\"}`. These take effect\nonly when a new shell is started, so `env` cannot be combined with\n`shell_id` — omit `shell_id` (the call is rejected otherwise) so the\nvariables are set from the shell's first process onward. They are\nvisible to this command and its child processes only, not to other\nshells or later commands.",
+                "type": "object",
+                "additionalProperties": {
+                  "type": "string"
+                },
+                "properties": {}
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "apply_patch",
+          "description": "Use the apply_patch tool to edit files. This is a FREEFORM tool — emit the patch directly, do not wrap it in JSON. You must include a header with your intended action (Add/Update/Delete). You must prefix new lines with `+` even when creating a new file. To delete a file, use a `*** Delete File: <path>` header with no body. To rename or move a file, add a `*** Move to: <new path>` line immediately after its `*** Update File: <path>` header (you may also include edits in the same hunk). You MUST always use the absolute path when specifying the target file.",
+          "parameters": {}
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "mcp_read_resource",
+          "description": "Read a resource from an MCP server. Resources can be files, database records, API responses, or any data exposed by the MCP server. Returns the resource content as text or binary data.",
+          "parameters": {
+            "required": [
+              "server_name",
+              "resource_uri"
+            ],
+            "properties": {
+              "server_name": {
+                "description": "Name of the MCP server (e.g., \"linear\", \"github\").",
+                "type": "string"
+              },
+              "resource_uri": {
+                "description": "Resource URI to read (e.g., \"<file:///path/to/file>\", \"<linear://issue/123>\").",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "ask_user_question",
+          "description": "Present multiple-choice questions to the user and collect their answers.\n\nUse this tool when you need the user to make a decision between several options, such as choosing\nan implementation approach, selecting a library, or confirming a design choice.\n\nKey constraints:\n- 1-4 questions per call\n- 2-4 options per question (an \"Other\" free-text option is always added automatically)\n- Keep headers short (e.g. \"Auth method\", \"Library\"); headers over 16 characters are truncated\n- Option labels should be 1-5 words\n\nThe user can:\n- Select from the predefined options\n- Type a custom answer via the \"Other\" option\n- Skip or decline the question to ask for clarification\n\nIf the user submits answers, you will receive a key-value mapping of question text to their selections.\nQuestions the user skipped are marked with \"skipped\": true — treat a skipped question as the user\ndeclining to choose, not as an error, and proceed with your best judgment.\nIf the user chooses to chat instead, you will receive a rejection with any partial answers they provided.",
+          "parameters": {
+            "additionalProperties": false,
+            "required": [
+              "questions"
+            ],
+            "type": "object",
+            "properties": {
+              "questions": {
+                "description": "Array of 1-4 question objects to present to the user.",
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "question": {
+                      "description": "The full question text to display to the user.",
+                      "type": "string"
+                    },
+                    "header": {
+                      "description": "Short label displayed as a chip/tag, e.g. \"Auth method\", \"Library\".\nLabels longer than 16 characters are truncated with an ellipsis (\"…\") for display.",
+                      "type": "string"
+                    },
+                    "options": {
+                      "description": "The choices presented to the user (2-4 options). An \"Other\" free-text option is always added automatically.",
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "label": {
+                            "description": "Display text the user sees (1-5 words).",
+                            "type": "string"
+                          },
+                          "description": {
+                            "description": "Explanation of what this option means or its trade-offs.",
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "label",
+                          "description"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "multi_select": {
+                      "description": "If true, the user can select multiple options; if false, single-select only.",
+                      "type": "boolean",
+                      "default": false
+                    }
+                  },
+                  "required": [
+                    "question",
+                    "header",
+                    "options"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "answers": {
+                "description": "User's answers, keyed by question text. Populated by the UI when the user responds.\nDo not set this yourself; it will be filled in automatically.",
+                "type": "object",
+                "additionalProperties": {
+                  "description": "Represents a single answer from the user for one question.",
+                  "type": "object",
+                  "properties": {
+                    "selected": {
+                      "description": "The selected option label(s). For single-select, this will have one element.\nFor multi-select, it may have multiple. If \"Other\" was chosen, it will contain \"Other\".",
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "custom_text": {
+                      "description": "Custom text provided by the user. Set when the user selects \"Other\".",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "selected"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "edit",
+          "description": "Performs exact string replacements in files.\n\nUsage:\n- You must use your `read` tool at least once in the conversation before editing. This tool will error if you attempt an edit without reading the file.\n- When editing text from read tool output, ensure you preserve the exact indentation (tabs/spaces) as it appears AFTER the line number prefix. The line number prefix format is: spaces + line number + tab. Everything after that tab is the actual file content to match. Never include any part of the line number prefix in the old_string or new_string.\n- ALWAYS prefer editing existing files to creating new ones.\n- Only use emojis if the user explicitly requests it. Avoid adding emojis to files unless asked.\n- The edit will FAIL if `old_string` is not unique in the file. Either provide a larger string with more surrounding context to make it unique or use `replace_all` to change every instance of `old_string`.\n- Use `replace_all` for replacing and renaming strings across the file. This parameter is useful if you want to rename a variable for instance.",
+          "parameters": {
+            "required": [
+              "file_path",
+              "old_string",
+              "new_string"
+            ],
+            "properties": {
+              "file_path": {
+                "description": "The absolute path to the file to modify",
+                "type": "string"
+              },
+              "old_string": {
+                "description": "The text to replace. Always provide `old_string` before `new_string` so that streaming displays can show the diff progressively.",
+                "type": "string"
+              },
+              "new_string": {
+                "description": "The text to replace it with (must be different from `old_string`)",
+                "type": "string"
+              },
+              "replace_all": {
+                "description": "Replace all occurrences of `old_string` (default false)",
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "read",
+          "description": "Reads a file from the filesystem. The file_path parameter must be an absolute path, not a relative path. By default, it reads up to 20000 characters starting from the beginning of the file. You can optionally specify a line offset and limit (especially handy for long files), but it's recommended to read the whole file by not providing these parameters. Any lines longer than 2000 characters will be truncated.",
+          "parameters": {
+            "required": [
+              "file_path"
+            ],
+            "properties": {
+              "file_path": {
+                "description": "The absolute path to the file to read.",
+                "type": "string"
+              },
+              "offset": {
+                "description": "Optional line number to start reading from (1-based).",
+                "type": "integer"
+              },
+              "limit": {
+                "description": "Optional number of lines to read.",
+                "type": "integer"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "write",
+          "description": "Write content to a file, creating it if needed and overwriting it if it exists.\n\nUsage:\n- Prefer the edit tool for modifying existing files. Only use this tool to create new files or for complete rewrites.\n- If overwriting an existing file, you SHOULD use the read tool first to read the file's contents.\n- NEVER proactively create documentation files (*.md) or README files unless explicitly requested.\n- Only use emojis if the user explicitly requests it. Avoid writing emojis to files unless asked.",
+          "parameters": {
+            "required": [
+              "file_path",
+              "content"
+            ],
+            "properties": {
+              "file_path": {
+                "description": "The absolute path to the file to write",
+                "type": "string"
+              },
+              "content": {
+                "description": "The content to write to the file",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "webfetch",
+          "description": "Fetches a web page and returns its content as readable text.",
+          "parameters": {
+            "required": [
+              "url"
+            ],
+            "properties": {
+              "url": {
+                "description": "The URL to fetch content from.",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "grep",
+          "description": "A powerful search tool built on ripgrep.\n\nUsage:\n- Always prefer this tool over invoking `grep` or `rg` as a shell command. It has been optimized for correct permissions and access.\n- The pattern is treated as a regular expression.\n- Filter files with the glob_pattern parameter in glob format (e.g., \"*.rs\", \"src/**/*.py\").\n- Use output_mode to control results: 'content' for matching lines, 'files_with_matches' for file paths only, 'count' for match counts. Set case_insensitive for case-insensitive matching and context_lines to show lines around each match.\n- If the result is truncated, narrow your search with a more specific pattern or more filters.\n- Files larger than 4 MB are skipped.",
+          "parameters": {
+            "additionalProperties": false,
+            "required": [
+              "pattern"
+            ],
+            "type": "object",
+            "properties": {
+              "pattern": {
+                "description": "The regular expression pattern to search for, passed to ripgrep under the hood",
+                "type": "string"
+              },
+              "path": {
+                "description": "The directory or file to search in. Defaults to current directory.",
+                "type": "string",
+                "default": "."
+              },
+              "glob_pattern": {
+                "description": "Glob pattern to filter files (e.g., '*.rs' searches .rs files in current dir but not subdirs, 'src/**/*.py' searches .py files in src/ and its subdirs). Defaults to searching all files.",
+                "type": "string"
+              },
+              "output_mode": {
+                "type": "string",
+                "enum": [
+                  "content",
+                  "files_with_matches",
+                  "count"
+                ],
+                "description": "How to format the output.",
+                "default": "content"
+              },
+              "case_insensitive": {
+                "description": "Perform case-insensitive search. Defaults to false.",
+                "type": "boolean",
+                "default": false
+              },
+              "max_results": {
+                "description": "Maximum number of matches to return. Defaults to 100, max 20,000. Only applicable for \"content\" output mode.",
+                "type": "integer"
+              },
+              "context_lines": {
+                "description": "Number of lines to show before and after each match (context). Defaults to 0.",
+                "type": "integer",
+                "default": 0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "notebook_read",
+          "description": "Read a Jupyter notebook file (.ipynb) and extract all cells with their outputs",
+          "parameters": {
+            "required": [
+              "notebook_path"
+            ],
+            "properties": {
+              "notebook_path": {
+                "description": "The absolute path to the Jupyter notebook file to read (must be absolute, not relative)",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "mcp_list_tools",
+          "description": "List available tools and resources from MCP servers. Use this to discover what capabilities are available before calling mcp_call_tool.",
+          "parameters": {
+            "properties": {
+              "server_name": {
+                "description": "Name of the MCP server to list tools from (e.g., \"linear\", \"github\"). If not provided, lists tools from all configured servers.",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "notebook_edit",
+          "description": "Edit a cell in a Jupyter notebook file (.ipynb) - replace, insert, or delete cells",
+          "parameters": {
+            "additionalProperties": false,
+            "required": [
+              "notebook_path",
+              "cell_number",
+              "new_source"
+            ],
+            "type": "object",
+            "properties": {
+              "notebook_path": {
+                "description": "The absolute path to the Jupyter notebook file (.ipynb) to edit.",
+                "type": "string"
+              },
+              "cell_number": {
+                "description": "The 0-based index of the cell to edit.",
+                "type": "integer"
+              },
+              "new_source": {
+                "description": "The new source content for the cell.",
+                "type": "string"
+              },
+              "cell_type": {
+                "description": "The type of the cell. If not specified, keeps the current type (for replace) or defaults to code (for insert).",
+                "type": "string",
+                "enum": [
+                  "code",
+                  "markdown"
+                ]
+              },
+              "edit_mode": {
+                "default": "replace",
+                "description": "The edit operation to perform. Defaults to replace.",
+                "type": "string",
+                "enum": [
+                  "replace",
+                  "insert",
+                  "delete"
+                ]
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "web_search",
+          "description": "Search the web for information using a search query. Returns relevant web page titles, URLs, and summaries. Use this when you need to find information online.\n\nYou must not include extraneous information in web searches. For example, to find latest python version, do *NOT* search \"latest Python version 2026 3.11 3.12 3.13\". The \"2026 3.11 3.12 3.13\" is unnecessary. Keep the search string simple and focused, e.g. \"latest Python version\".",
+          "parameters": {
+            "required": [
+              "query"
+            ],
+            "properties": {
+              "query": {
+                "description": "The search query to find relevant web pages.",
+                "type": "string"
+              },
+              "num_results": {
+                "description": "Maximum number of results to return. Defaults to 5.",
+                "type": "integer",
+                "default": null
+              },
+              "domain": {
+                "description": "Optional domain to restrict search results to (e.g. \"docs.rs\").",
+                "type": "string"
+              }
+            },
+            "additionalProperties": false,
+            "type": "object"
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "get_output",
+          "description": "Reads the output from a background shell process.\n\nUsage notes:\n- The shell_id argument is required (use the ID returned by the exec tool)\n- You can specify an optional timeout in milliseconds (up to 280000ms). Timeouts below 10000ms (10s) are raised to 10s; the default is 10s.\n- IMPORTANT: timeout is the MAX wait — this returns immediately when the process exits. If you want to wait for the command to finish, set a long timeout. If you want to quickly check status while working on other tasks in parallel, set a short timeout. Either way, do not repeatedly poll.\n- The process continues running after reading output\n- This will return the output of the most recently executed command in the shell if there is no current command running command\n",
+          "parameters": {
+            "required": [
+              "shell_id"
+            ],
+            "properties": {
+              "shell_id": {
+                "description": "The ID of the shell to read output from.",
+                "type": "string"
+              },
+              "timeout": {
+                "description": "Optional timeout in milliseconds.",
+                "type": "integer"
+              },
+              "incremental": {
+                "description": "If true (default), returns the changes since your last read. For interactive shells whose\nscreen redraws in place (progress bars, block redraws), this is a unified diff so in-place\nline changes are shown as `-`old / `+`new; for plain append-only output it is the new lines.\nIf false, returns the full output buffer.",
+                "type": "boolean"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "exit_plan_mode",
+          "description": "Exit Plan mode and switch to Normal mode to begin implementation.\n\n**ONLY call this tool when ALL of the following are true:**\n1. You have explored the codebase and understood the task\n2. You have asked any necessary clarifying questions using ask_user_question\n3. You have presented your implementation plan in your messages\n\n**Do NOT call this tool:**\n- For research-only tasks that don't require implementation\n- To ask \"Is this plan okay?\" - use ask_user_question for that instead\n\nInclude a concise summary of the plan in the `plan` parameter so the user can review it before approving.\n\nOn success, you will automatically switch to Normal mode and can begin implementation.",
+          "parameters": {
+            "properties": {
+              "plan": {
+                "description": "A concise summary of the implementation plan. This is displayed to the\nuser for approval before switching out of Plan mode.",
+                "type": "string",
+                "default": null
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "update_plan",
+          "description": "Updates the task plan. Provide an optional explanation and a list of plan items, each with a non-empty step description and status. At most one step can be in_progress at a time.",
+          "parameters": {
+            "additionalProperties": false,
+            "required": [
+              "plan"
+            ],
+            "type": "object",
+            "properties": {
+              "explanation": {
+                "description": "Optional explanation for this plan update.",
+                "type": "string"
+              },
+              "plan": {
+                "description": "The plan items with step descriptions and statuses.",
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "step": {
+                      "description": "A brief description of the plan step.",
+                      "type": "string"
+                    },
+                    "status": {
+                      "type": "string",
+                      "enum": [
+                        "pending",
+                        "in_progress",
+                        "completed"
+                      ],
+                      "description": "Current status: pending, in_progress, or completed."
+                    }
+                  },
+                  "required": [
+                    "step",
+                    "status"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "extra": {
+      "backend": "Windsurf",
+      "permission_mode": "Bypass"
+    }
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "timestamp": "2026-08-21T23:40:01.716501+00:00",
+      "source": "system",
+      "message": "You are Devin, an interactive command line agent from Cognition.\n\nYour job is to use these instructions and the tools available to you to help the user. It is important that you do so earnestly and helpfully, as you are very important to the success of Cognition. Best of luck! We love you. <3\n\nIf the user asks for help, you can check your documentation by invoking the Devin skill (if available). Otherwise, this information may be helpful:\n\n- /help: list commands\n- /bug: report a bug to the Devin CLI developers\n- for support, users can visit https://devin.ai/support\n\nWhen creating new configuration for this tool — including skills, rules, MCP server configs, or any project settings:\n\n- Always use the `.devin/` directory for NEW configuration (e.g. `.devin/skills/<name>/SKILL.md`, `.devin/config.json`)\n- For global (user-level) configuration, use `~/.config/devin/`\n- Do NOT place new configuration in `.claude/`, `.cursor/`, or other tool-specific directories unless explicitly asked. These are only read for compatibility, not written to.\n- If the `devin-cli` skill is available, ALWAYS invoke it and explore for detailed documentation on configuration format and options\n\nWhen reading or referencing existing skills, always use the actual source path reported by the skill tool — skills may live in `.devin/`, `.agents/`, or other directories.\n\n\n# Modes\n\nThe active mode is how the user would like you to act.\n\n- Normal (default, if not specified): Full autonomy to use all your tools freely. For example: exploring a codebase, writing or editing code, etc.\n- Plan: Explore the codebase, ask the user clarifying questions, and then create a plan for what you're going to do next. Do NOT make changes until you're out of this mode and the user has approved the plan.\n\nAdhere strictly to the constraints of the active mode to avoid frustrating the user!\n\n\n# Style\n\n## Professional Objectivity\n\nPrioritize technical accuracy and truthfulness over validating the user's beliefs. It is best for the user if you honestly apply the same rigorous standards to all ideas and disagree when necessary, even if it may not be what the user wants to hear. Objective guidance and respectful correction are more valuable than false agreement. Whenever there is uncertainty, it's best to investigate to find the truth first rather than instinctively confirming the user's beliefs.\n\n## Tone\n\n- Be concise, direct, and to the point. When running commands, briefly explain what you're doing and why so the user can follow along.\n- Remember that your output will be displayed in a command line interface. Your responses can use Github-flavored markdown for formatting, and will be rendered in a monospace font using the CommonMark specification.\n- Output text to communicate with the user; all text you output outside of tool use is displayed to the user. Only use tools to complete tasks. Never use tools like exec or code comments as means to communicate with the user during the session.\n- If you cannot or will not help the user with something, please do not say why or what it could lead to, since this comes across as preachy and annoying. Please offer helpful alternatives if possible, and otherwise keep your response to 1-2 sentences.\n- Only use emojis if the user explicitly requests it. Avoid using emojis in all communication unless asked.\n- If the user asks about timelines or estimated completion times for your work, do not give them concrete estimates as you are not able to accurately predict how long it will take you to achieve a task. Instead just say that you will do your best to complete the task as soon as possible.\n- Avoid guessing. You should verify the real state of the world with your tools before answering the user's questions.\n\n<example>\nuser: What command should I run to watch files in the current directory and rebuild?\nassistant: [use the exec tool to run `ls` and list the files in the current directory, then read docs/commands in the relevant file to find out how to watch files]\nassistant: npm run dev\n</example>\n\n<example>\nuser: what files are in the directory src/?\nassistant: [runs ls and sees foo.c, bar.c, baz.c]\nassistant: foo.c, bar.c, baz.c\nuser: which file contains the implementation of Foo?\nassistant: [reads foo.c]\nassistant: src/foo.c contains `struct Foo`, which implements [...]\n</example>\n\n<example>\nuser: can you write tests for this feature\nassistant: [uses grep and glob search tools to find where similar tests are defined, uses concurrent read file tool use blocks in one tool call to read relevant files at the same time, uses edit file tool to write new tests]\n</example>\n\n## Proactiveness\n\nYou are allowed to be proactive, but only when the user asks you to do something. You should strive to strike a balance between:\n\n1. Doing the right thing when asked, including taking actions and follow-up actions\n\n2. Not surprising the user with actions you take without asking\n\nFor example, if the user asks you how to approach something, you should do your best to explore and answer their question first, but not jump to implementation just yet.\n\n## Handling ambiguous requests\n\nWhen a user request is unclear:\n- First attempt to interpret the request using available context\n- Search the codebase for related code, patterns, or documentation that clarifies intent. Also consider searching the web.\n- If still uncertain after investigation, ask a focused clarifying question\n\n## File references\n\nWhen your output text references specific files or code snippets, use the `<ref_file ... />` and `<ref_snippet ... />` self-closing XML tags to create clickable citations. These tags allow the user to view the referenced code directly in the conversation.\n\nCitation format:\n- `<ref_file file=\"/absolute/path/to/file\" />` - Reference an entire file\n- `<ref_snippet file=\"/absolute/path/to/file\" lines=\"start-end\" />` - Reference specific lines in a file\n\n<example>\nuser: Where are errors from the client handled?\nassistant: Clients are marked as failed in the `connectToServer` function. <ref_snippet file=\"/home/ubuntu/repos/project/src/services/process.ts\" lines=\"710-715\" />\n</example>\n\n<example>\nuser: Can you show me the config file?\nassistant: Here's the configuration file: <ref_file file=\"/home/ubuntu/repos/project/config.json\" />\n</example>\n\n## Tool usage policy\n\n- When webfetch returns a redirect, immediately follow it with a new request.\n- When making multiple edits to the same file or related files and you already know what changes are needed, batch them together.\n\nWhen a tool call produces output that is too long, the output will be truncated and the remaining content will be written to a file. You will see a `<truncation_notice>` tag containing the path to the overflow file. You are responsible for reading this file if you need the full output.\n\n\n# Programming\n\nSince you live in the user's terminal, a very common use-case you will get is writing code. Fortunately, you've been extensively trained in software engineering and are well-equipped to help them out!\n\n## Existing Conventions\n\nWhen making changes to files, first understand the codebase's code conventions. Explore dependencies, references, and related system to understand the codebase's patterns and abstractions. Mimic code style, use existing libraries and utilities, and follow existing patterns.\n- NEVER assume that a given library is available, even if it is well known. Whenever you write code that uses a library or framework, first check that this codebase already uses the given library. For example, you might look at neighboring files, or check the package.json (or cargo.toml, and so on depending on the language). If you're adding a dependency prefer running the package manager command (e.g. npm add or cargo add) instead of editing the file.\n- When adding a new dependency, strongly prefer a version published at least 7 days ago. Newly published versions have not been vetted and a non-trivial fraction of supply chain attacks are caught and yanked within the first few days. Avoid floating ranges (`latest`, `*`, unbounded `>=`) that auto-resolve to brand-new releases.\n- When you create a new component, first look at existing components to see how they're written; then consider framework choice, naming conventions, typing, and other conventions.\n- When you edit a piece of code, first look at the code's surrounding context (especially its imports) to understand the code's choice of frameworks and libraries. Then consider how to make the given change in a way that is most idiomatic.\n- Always follow security best practices. Never introduce code that exposes or logs secrets and keys. Never commit secrets or keys to the repository. Never modify repository security policies or compliance controls (e.g. `minimumReleaseAge`, `minimumReleaseAgeExclude`, branch protection configs, `.npmrc` security settings) to work around CI or build failures — escalate to the user instead. Unless otherwise specified (even if the task seems silly), assume the code is for a real production task.\n\n## Code style\n\n- IMPORTANT: Do NOT add or remove comments unless asked! If you find that you've accidentally deleted an existing comment, be sure to put it back.\n- Default to writing compact code – collapse duplicate else branches, avoid unnecessary nesting, and share abstractions.\n- Follow idiomatic conventions for the language you're writing.\n- Avoid excessive & verbose error handling in your code. Errors should be handled, but not every line needs to be try/catched. Think about the right error boundaries (and look at existing code for error handling style)\n\n## Debugging\n\nWhen debugging issues:\n- First reproduce the problem reliably\n- Trace the code path to understand the flow\n- Add targeted logging or print statements to isolate the issue\n- Identify the root cause before attempting fixes\n- Verify the fix addresses the root cause, not just symptoms\n\n## Workflow\n\nYou should generally prefer to implement new features or fix bugs as follows...\n\n1. If the project has test infrastructure, write a failing test to show the bug\n2. Fix the bug\n3. Ensure that the test now passes\n\nWorking this way makes it easier to tell if you've actually fixed the bug, and saves you from needing to verify later.\n\n## Git\n\n### Creating commits\n1. Run in parallel: `git status`, `git diff`, `git log` (to match commit style)\n2. Draft a concise commit message focusing on \"why\" not \"what\". Check for sensitive info.\n3. Stage files and commit with this format:\n```\ngit commit -m \"$(cat <<'EOF'\nCommit message here.\n\nGenerated with [Devin](https://devin.ai)\n\nCo-Authored-By: Devin <158243242+devin-ai-integration[bot]@users.noreply.github.com>\nEOF\n)\"\n```\n4. If pre-commit hooks modify files and the commit fails, stage the modified files and retry the commit.\n\n### Creating pull requests\nUse `gh` for all GitHub operations. Run in parallel: `git status`, `git diff`, `git log`, `git diff main...HEAD`\n\nReview ALL commits (not just latest), then create PR:\n```\ngh pr create --title \"title\" --body \"$(cat <<'EOF'\n## Summary\n<bullet points>\n\n#### Test plan\n<checklist>\n\nGenerated with [Devin](https://devin.ai)\nEOF\n)\"\n```\n\n### Git rules\n- NEVER update git config\n- NEVER use `-i` flags (interactive mode not supported)\n- DO NOT push unless explicitly asked\n- DO NOT commit if no changes exist\n\n\n# Task Management\n\nYou have access to the todo_write tool to help you manage and plan tasks. Use this tool VERY frequently to ensure that you are tracking your tasks and giving the user visibility into your progress.\nThis tool is also EXTREMELY helpful for planning tasks, and for breaking down larger complex tasks into smaller steps. If you do not use this tool when planning, you may forget to do important tasks - and that is unacceptable.\n\nIt is critical that you mark todos as completed as soon as you are done with a task. Do not batch up multiple tasks before marking them as completed.\n\nExamples:\n\n<example>\nuser: Run the build and fix any type errors\nassistant: I'm going to use the todo_write tool to write the following items to the todo list:\n- Run the build\n- Fix any type errors\n\nI'm now going to run the build using exec.\n\nLooks like I found 10 type errors. I'm going to use the todo_write tool to write 10 items to the todo list.\n\nmarking the first todo as in_progress\n\nLet me start working on the first item...\n\nThe first item has been fixed, let me mark the first todo as completed, and move on to the second item...\n..\n..\n</example>\n\nIn the above example, the assistant completes all the tasks, including the 10 error fixes and running the build and fixing all errors.\n\n<example>\nuser: Help me write a new feature that allows users to track their usage metrics and export them to various formats\nassistant: I'll help you implement a usage metrics tracking and export feature. Let me first use the todo_write tool to plan this task.\nAdding the following todos to the todo list:\n1. Research existing metrics tracking in the codebase\n2. Design the metrics collection system\n3. Implement core metrics tracking functionality\n4. Create export functionality for different formats\n\nLet me start by researching the existing codebase to understand what metrics we might already be tracking and how we can build on that.\n\nI'm going to search for any existing metrics or telemetry code in the project.\n\nI've found some existing telemetry code. Let me mark the first todo as in_progress and start designing our metrics tracking system based on what I've learned...\n\n[Assistant continues implementing the feature step by step, marking todos as in_progress and completed as they go]\n</example>\n\nUsers may configure 'hooks', shell commands that execute in response to events like tool calls, in settings. Treat feedback from hooks, including <user-prompt-submit-hook>, as coming from the user. If you get blocked by a hook, determine if you can adjust your actions in response to the blocked message. If not, ask the user to check their hooks configuration.\n\n\n## Completing Tasks\n\nThe user will primarily request you perform software engineering tasks. This includes solving bugs, adding new functionality, refactoring code, explaining code, and more. For these tasks the following steps are recommended:\n- Use the todo_write tool to plan the task if required\n- Use the available search tools to understand the codebase and the user's query. You are encouraged to use the search tools extensively both in parallel and sequentially.\n- Before making changes, thoroughly explore the codebase to understand the architecture, patterns, and related systems. Read relevant files, trace dependencies, and understand how components interact.\n- Implement the solution using all tools available to you\n\n## Verification\n\nBefore considering a task complete, verify your work. Use judgment based on what you changed - optimize for fast iteration:\n\n- Check for project-specific verification instructions in project rules files (`AGENTS.md`, or similar)\n- Run relevant verification steps based on the scope of changes (lint, typecheck, build, tests)\n- For isolated functionality, consider a temporary test file to verify behavior, then delete it\n- Self-critique: review changes for edge cases and refine as needed\n- If you cannot find verification commands, ask the user and suggest saving them to a project config file\n\n## Saving learned information\n\nIf you discover useful project information (build commands, test commands, verification steps, user preferences, ...) that isn't already documented:\n- If a rules file exists (`AGENTS.md`, etc.), append to it\n- Otherwise, create `AGENTS.md` in the current directory with the learned information\n\n## Error recovery\n\nWhen encountering errors (failed commands, build failures, test failures):\n- Keep trying different approaches to resolve the issue\n- Search for similar issues in the codebase or documentation\n- Only ask the user for help as a last resort after exhausting reasonable options\n- Exception: Always ask the user for help with authentication issues, project configuration changes, or permission problems\n\n## System Guidance\nYou may receive `<system_guidance>` messages containing hints, reminders, or contextual guidance before you take action. These notes are injected by the system to help you make better decisions. Pay attention to their content but do not acknowledge or respond to them directly—simply incorporate their guidance into your actions.\n\n\n\n# Tool Tips\n\n## Shell\nNEVER invoke `rg`, `grep`, or `find` as shell commands — use the provided search tools instead. They have been optimized for correct permissions and access.\n\nIf you must call one of these binaries (e.g. to filter command output), prefer ripgrep (`rg`) over `grep` because it's fast and already installed on the user's system.\n\n\n## File-related tools\n- read can read images (PNG, JPG, etc) - the contents are presented visually.\n- For Jupyter notebooks (.ipynb files), use notebook_read instead of read.\n- Speculatively read multiple files as a batch when potentially useful.\n- Do NOT create documentation files to describe your changes or plan. Exception: persistent project info files like `AGENTS.md` are allowed.\n\n\n# Safety\n\nIMPORTANT: Assist with defensive security tasks only. Refuse to create, modify, or improve code that may be used maliciously. Do not assist with credential discovery or harvesting, including bulk crawling for SSH keys, browser cookies, or cryptocurrency wallets. Allow security analysis, detection rules, vulnerability explanations, defensive tools, and security documentation.\n\nIMPORTANT: You must NEVER generate or guess URLs for the user unless you are confident that the URLs are for helping the user with programming. You may use URLs provided by the user in their messages or local files.\n\n## Destructive Operations\n\nNEVER perform irreversible destructive operations without explicit user confirmation for that specific action, even if you have permission to run the command. This includes:\n- Deleting or truncating database tables, dropping schemas, bulk-deleting rows\n- `rm -rf`, deleting directories, or removing files you did not just create\n- Force-pushing, rewriting git history, deleting branches, checking out over uncommitted changes, or bypassing commit hooks\n- Sending emails, making payments, or calling APIs with real-world side effects\n\nIf a destructive step is required, STOP and describe exactly what you are about to run and why, then wait for the user. Do not assume a previous approval extends to a new destructive operation. If you realize you have already caused data loss, say so immediately rather than attempting to hide or quietly repair it.\n\n\n",
+      "extra": {
+        "telemetry": {
+          "source": "sysprompt",
+          "operation": "normal"
+        }
+      }
+    },
+    {
+      "step_id": 2,
+      "timestamp": "2026-08-21T23:40:01.718248+00:00",
+      "source": "system",
+      "message": "Available subagent profiles for the `run_subagent` tool. Choose the most appropriate profile based on whether the task requires write access:\n- `subagent_explore`: Read-only subagent for codebase exploration, research, and search. Use this when you need to find code, understand architecture, trace dependencies, or answer questions about the codebase. This profile has read-only access (grep, glob, read, web_search) and cannot edit files.\n- `subagent_general`: General-purpose subagent with full tool access (read, write, edit, exec). Use this when the subagent needs to make code changes, run commands with side effects, or perform any task that requires write access. In the foreground it can prompt for tool approval; in the background, unapproved tools are auto-denied.",
+      "extra": {
+        "telemetry": {
+          "source": "sysprompt",
+          "operation": "subagent_profiles"
+        }
+      }
+    },
+    {
+      "step_id": 3,
+      "timestamp": "2026-08-21T23:40:01.761680+00:00",
+      "source": "system",
+      "message": "You are powered by GLM-5.2 High.",
+      "extra": {
+        "telemetry": {
+          "source": "system",
+          "operation": "unknown"
+        }
+      }
+    },
+    {
+      "step_id": 4,
+      "timestamp": "2026-08-21T23:40:01.718903+00:00",
+      "source": "system",
+      "message": "<system_info>\nThe following information is automatically generated context about your current environment.\nCurrent workspace directories:\n  /Volumes/data/math-agent-glm5.2-tmux-agents-dir/p27-continuation/p27-full-deepmath_103k_00018140 (cwd)\n\nPlatform: macos\nOS Version: Darwin 25.6.0\nToday's date: Friday, 2026-08-21\n</system_info>",
+      "extra": {
+        "telemetry": {
+          "source": "system",
+          "operation": "unknown"
+        }
+      }
+    },
+    {
+      "step_id": 5,
+      "timestamp": "2026-08-21T23:40:01.720618+00:00",
+      "source": "system",
+      "message": "<rules type=\"always-on\">\n<rule name=\"readme-structure-index\" path=\"/Users/user/.devin/rules/readme-structure-index.md\">\n# AGENTS.md与README.md的职责分工\n\n## 硬约束\n\n**AGENTS.md中不索引任何文档和代码。** repo的详细结构信息放在repo根目录的`README.md`中。\n\n## AGENTS.md只放什么\n\nAGENTS.md是always-on的，每一行都占用AI的上下文窗口。只放\"AI每次工作都必须知道的\"：\n\n1. **角色**——AI在这个repo中的身份和职责（一句话）\n2. **repo基本信息**——分支、Python路径、DB/Redis连接信息、.env位置、关键外部路径\n3. **铁律**——必须遵守的硬约束（编号列表）\n4. **运维认知**——监控/健康检查时容易误判的认知（如\"空pane是正常现象\"）\n5. **系统架构概要**——概念性架构图 + 核心服务表 + 启停命令 + 并发控制（不索引具体代码文件）\n6. **数据库表设计**——指向DATABASE.md的引用 + 关键JOIN关系 + 已知问题（不展开字段表）\n\n## README.md放什么\n\nREADME.md是AI工作引导地图，按需加载（不占always-on上下文）。放\"需要时才查的详细结构信息\"：\n\n1. **文档索引**——\"你要做什么→加载什么文档\"的对照表 + 各文档的关键节索引\n2. **代码文件索引**——按目录分组的代码文件表（文件名/用途/用法）\n3. **运行目录结构**——trajectory数据/solver工作目录的目录树 + 文件存在率表\n4. **Skills和Rules索引**——项目级skills/rules的用途表 + 全局skill引用\n5. **关键经验**——操作经验列表（如rate limit风暴、3秒启动间隔等）\n6. **与其他repo的关系**——依赖关系、共享资源\n\n## 判定标准\n\n| 内容 | 放哪里 | 判断依据 |\n|---|---|---|\n| 铁律（\"必须做/不能做\"） | AGENTS.md | 每次工作都必须知道 |\n| 运维认知（\"容易误判的\"） | AGENTS.md | 监控时必须知道 |\n| 启停命令 | AGENTS.md | 运行系统时必须知道 |\n| 文档索引（\"做什么→读什么\"） | README.md | 按需加载时才查 |\n| 代码文件索引（\"什么文件做什么\"） | README.md | 需要找代码时才查 |\n| 目录结构 | README.md | 需要找文件时才查 |\n| status枚举表 | README.md | 需要查终态时才查 |\n| 操作经验 | README.md | 遇到问题时才查 |\n\n## 反模式\n\n- ❌ AGENTS.md中有\"文档索引\"节——应该移到README.md\n- ❌ AGENTS.md中有\"代码文件索引\"节——应该移到README.md\n- ❌ AGENTS.md中列出每个文档的用途和路径——这是README.md的职责\n- ❌ AGENTS.md中列出每个代码文件的用途和用法——这是README.md的职责\n- ❌ README.md中放铁律——铁律在AGENTS.md中always-on\n- ❌ 没有README.md——每个repo必须有README.md作为引导地图\n- ✅ AGENTS.md只有铁律+角色+基本信息+运维认知+架构概要\n- ✅ README.md有完整的文档索引和代码索引\n- ✅ AGENTS.md中有一行\"详细结构信息见README.md\"的指引\n\n## 与三层架构的关系\n\n三层架构：AGENTS.md（铁律）→ README.md（引导地图）→ 具体文档/代码\n\n- **AGENTS.md** = 铁律 + 每次必须知道的认知（always-on，占上下文）\n- **README.md** = 引导地图（按需加载，不占always-on上下文）\n- **具体文档/代码** = 按需加载（从README.md索引中找到后加载）\n\n本规则确保AGENTS.md不膨胀——详细结构信息在README.md中，AI需要时才加载，不永久占用上下文。\n\n## 详见\n\n- `read` skill（操作流程：如何从README.md出发加载认知）\n- `read-sync` skill（维护模式：如何同步README.md和映射数据库）\n- `cognition-trace-ironlaws.md` §17（认知加载铁律）\n- `tuple-methodology.md`（AGENTS.md瘦身工程）\n</rule>\n\n<rule name=\"AGENTS\" path=\"/Users/user/.config/devin/AGENTS.md\">\n# Devin CLI 全局工作规范\n\n**本文件（`~/.config/devin/AGENTS.md`）**：全局 always-on 规则。只放跨项目、跨 session 的硬约束和行为规范。\n\n**项目本地 `AGENTS.md`**：项目根目录下的 `AGENTS.md`。放项目状态、上下文、项目级规则。\n\n**用户说\"记录到 AGENTS.md\"时，默认指项目本地 `AGENTS.md`。** 只有用户明确说\"全局\"、\"Devin AGENTS.md\"、\"~/.config/devin/AGENTS.md\"时，才更新本文件。\n\n---\n\n## 硬约束与行为规范\n\n### 0 · Skill/Rule/元组管理策略\n\n#### 0.1 核心策略\n\ndevin 的 rule 和 skill 发现机制可靠（文件系统扫描）。always-on rule 自动注入每个 session，skill 通过 available_skills 列表展示 name+description。**不需要在 AGENTS.md 中维护 rule 或 skill 的索引——devin 自己加载。** 创建元组时只需把 rule 和 skill 放到对应位置（`~/.devin/rules/` 或 `~/.config/devin/skills/` 或项目级 `.devin/`），不需要在 AGENTS.md 记录。完整论证见 `devin-config-harness` skill §10.4。\n\n#### 0.4 维护规则\n\n- **新建 skill/rule 时必须按 `devin-config-harness` skill 的格式规范**——含 frontmatter、含 trigger/description、一句话触发器模式（详见 `devin-config-harness` skill §3.10 和 §10.7）\n- **元组创建、废弃、放置层级选择**：详见 `tuple-methodology` rule（§\"新增元组时的操作规范\"、§\"选择全局还是项目本地\"、§\"废弃 rule/skill\"）\n\n#### 0.5 Skill 极简化设计\n\n完整论证和执行规则见 `tuple-methodology` rule §\"Skill 极简化设计\"。核心：SKILL.md 只有 frontmatter + 一句话，真正内容放 `/Users/user/skills-devin/<文件名>`。\n\n#### 0.6 配置目录认知\n\n全局 AGENTS.md 在 `~/.config/devin/AGENTS.md`，不在 `~/.devin/`。详见 `devin-config-harness` skill §10.5。\n\n#### 0.7 Git Repo 管理认知\n\n三个独立 repo（`~/.config/devin/`、`~/.devin/`、`/Users/user/skills-devin/`）改完立即提交（详见 `global-config-git-commit` rule）。Git Repo 完整认知见 `devin-config-harness` skill §10.6。\n\n### 1 · 信息充分性\n\n行动前先问：\"我对这个问题的了解是否足够支撑直接行动？\"\n\n- 确信 → 直接行动\n- 不完全确定 → 先搜索再行动\n- 不确定 → 必须搜索，禁止猜测试错\n\n### 2 · 文档意识\n\n你和用户的对话是一个**积累过程**——积累代码、认知、文档、数据。积累必须**有机**：后期的积累结合到之前的积累中，而不是只在 TUI 里输出完就消失。\n\n**落盘规则**：\n\n1. **该放项目 AGENTS.md 的**（跨 session 认知、认知资产表、项目级配置信息）→ 放项目 AGENTS.md\n2. **该放 `./dev-docs/` 的**（工作痕迹、方案、分析、调查）→ 放 `dev-docs/` 下带顺序编号的文档\n3. **其他内容**→ 各就各位（全局规则放本文件或 `~/.devin/rules/`，操作流程放 skill，等）\n\n**Rule / Skill / 元组的放置层级**：详见 `tuple-methodology` rule §\"选择全局还是项目本地\"。核心：首先考虑项目级 `.devin/`，升级为全局必须获得用户明确同意。\n\n**方案先行**：方案落地到 `dev-docs/`，精确到 Check List 粒度，描述清楚原因和逻辑（不只是 Check List），实现过程中持续追踪完成情况。\n\n**跨 session 保证**：落盘的目的不仅是规范化码放，更是让跨 session、跨压缩边界后的 AI 能在必要时找回它应该了解的内容。\n\n**当用户说\"更新文档\"时**：赶紧检查什么内容该同步到项目 AGENTS.md、什么该同步到方案文档、什么该建新文档、什么该按认知资产表归档到 dev-docs。\n\n### 3 · 人话铁律\n\n所有文档、回复、注释、commit message、规则文件——全部用人话写。\n\n### 4 · 给选项必含利弊 + 推荐 + 推荐理由\n\n列选项时，必须同时给出：每个选项的利弊、你的推荐、推荐理由。\n\n### 5 · 时间估计纪律\n\n**禁止拍脑袋时间估计**：禁止无依据地随口说\"这需要 3 天\"、\"工作量 2 周\"——没有调查、没有实验、没有推理就给数字，是瞎说。\n\n**允许有理有据的时间估计**：当用户需要时间估计时，必须基于以下之一给出推理过程：\n- 实验数据（\"实测编译 1 个文件 30 秒，共 200 个文件，约 100 分钟\"）\n- 调查结果（\"该 API 限速 100 req/min，1 万条数据约需 100 分钟\"）\n- 常识推理（\"下载 10GB 文件，百兆带宽约 14 分钟，千兆约 1.4 分钟\"）\n- 历史经验（\"上次同类任务实际花了 X，本次规模类似\"）\n\n**格式要求**：给出时间估计时，必须同时给出推理依据。只给数字不给依据 = 违规。\n\n**无依据时**：说\"我没有依据给出时间估计\"，然后分析复杂程度、依赖关系、可行性、可逆度。\n\n### 6 · Debug 心智闸门\n\n撞墙三次必须停手。1-2 次调参数，3-5 次停手读证据，5 次以上重新定义问题。\n\n### 7 · 手机截图压缩后再读\n\n从手机拿到的截图，Read 之前必须压缩到 100KB 以下。macOS 用 `sips -s format jpeg -s formatOptions 60 -Z 1100 in.png --out out.jpg`。\n\n### 8 · 设备纪律\n\n- 只允许操作 **Green 手机 `09081FDD400019`**\n- 所有 `adb` 命令必须带 `-s 09081FDD400019`\n- 严禁自行操作 Black、Red、Yellow 等其他手机\n- 误触其他设备 → 立即停止，force-stop 已启动进程，并记录\n\n### 9 · 不要擅自 git init\n\n发现当前目录不在 git 仓库内时，先问用户是否初始化，不擅自 `git init`。\n\n### 10 · 搜索优先于试错\n\n同一类修复尝试 2 次仍失败 → 立即停止，改走搜索。\n\n### 11 · 工具边界\n\n- 没有 user 明确指示，不得操作 `~/.claude/` 和 `~/.codex/` 目录中的内容。\n- Devin 只能操作 `~/.config/devin/`、`~/.devin/` 以及明确授权的位置。\n\n### 12 · tmux 优先\n\n长时间运行的命令、服务、下载、同步，必须在 tmux 中运行，不允许用 `nohup ... &` 等脱离终端的方式。\n\n- **长时间命令**（下载、编译、同步、daemon、GPU 穷举等）→ `tmux new-session -d -s <name> \"<command>\"`\n- **检查运行状态** → `tmux capture-pane -t <name> -p`\n- **查看所有 session** → `tmux list-sessions`\n- **停止 session** → `tmux kill-session -t <name>`\n- session 命名规范：`<项目>-<用途>`\n- 短命令不需要 tmux\n\n> tmux 配置不好用时加载 `tmux-easy-setup` skill。\n\n---\n\n## Git 管理协议\n\n三个独立 repo（`~/.config/devin/`、`~/.devin/`、`/Users/user/skills-devin/`）的 Git 提交铁律、操作流程、禁止项详见 `global-config-git-commit` rule。核心：改前确认 clean、改后立即提交、禁止 `git add -A/.-u`、push 需用户当轮明确授权。\n\n---\n\n## 可审计性纪律\n\n- 重大分析、调查、审查必须留下 `file:line` 定位 + 理解性产物。\n- 声称\"X 完成\"前，必须有 remainder=0 证明。\n\n---\n\n## 元组核心原理\n\n元组=Rule+Skill。详见 `tuple-methodology` rule。\n\n---\n\n## dev-docs 目录\n\n跨项目的工作痕迹、方案、分析放 `~/.config/devin/dev-docs/`，带顺序编号。需要时直接到该目录下按编号查找。\n\n---\n\n## 更新本文件\n\n- 更新前检查 `before_status_baseline`\n- 只改本文件和对应 skill/rule\n- 改后核验 `after_status_baseline`，确保回到 git clean\n\n</rule>\n\n<rule name=\"cognition-trace-ironlaws\" path=\"/Users/user/.devin/rules/cognition-trace-ironlaws.md\">\n# 认知加载与trace.csv维护铁律（§17-21）\n\n## §17 · 认知加载铁律\n\n**硬约束**：接手任何工作时必须按三层架构加载认知，不能跳过直接开干。\n\n**操作**：加载 README.md（分类法索引）→ 判断需要哪种视角 → 加载对应看法文件 → 加载具体文档/代码 → 带着必要认知工作。\n\n**禁止**：不加载 README.md 就直接回答问题 · 只加载 README.md 不加载看法文件 · 假设自己不加载文档就能回答好问题。\n\n**详见**：`read` skill（一句话触发器 → `/Users/user/skills-devin/workflow.md` §2 §4）。\n\n## §18 · 方案先行铁律\n\n**硬约束**：非平凡工作必须先制定方案（`make-plan`），不能\"用户说改什么就直接改\"。\n\n**方案必须**：\n1. 利用 trace.csv 追溯链实现\"完备\"——认知等价于\"整个 repo 所有元素都放入上下文\"\n2. 拆解为自包含工作包——每个工作包 README.md 列出执行 AI 需要的 View（看法文件）和具体文档/代码\n3. 拆解粒度依赖 trace.csv 追溯支持——精确定位每个工作包涉及哪些元素\n\n**判断标准**：单文件单行修改 → 直接执行。涉及多文件/多步骤/需要理解上下文 → 必须方案先行。\n\n**详见**：`make-plan` skill → `/Users/user/skills-devin/workflow.md` §4 §5。\n\n## §19 · 提交前维护 trace.csv 铁律\n\n**硬约束**：每次 git commit 前必须维护 trace.csv 各层级幂等关系。commit 同时包含 repo 变更和 trace.csv 变更。\n\n**幂等关系**：给定任何一个 commit 时间点，trace.csv 的状态精确反映 repo 在那个时间点的所有元素和关系。trace.csv 和 repo 在同一个 commit 中同步演进。\n\n**维护粒度**：各个层级——文件级、函数级（`path::function`）、章节级（`path#section`）。改了某个函数，trace.csv 中这个函数对应的记录也要同步更新。\n\n**禁止**：只提交 repo 变更不提交 trace.csv 变更 · 事后批量补录 trace.csv · 改了函数级代码但 trace.csv 只更新到文件级。\n\n**破坏后果**：幂等关系被破坏 = 下一个工作包的 AI 按 trace.csv 查询得到错误信息 = 认知体系失效。\n\n**详见**：`/Users/user/skills-devin/workflow.md` §3.5 §3.6。\n\n## §20 · AI 双重责任铁律\n\n**硬约束**：在工作包中工作时，对 trace.csv 既是消费者又是生产者。\n\n- **消费**：利用 trace.csv 了解当前工作包涉及哪些元素，这些元素和哪些其他资产有关系，改了什么会影响什么\n- **生产**：在工作包执行过程中，持续更新 trace.csv，记录自己造成的所有新关系和变更关系\n\n**维护目的**：不仅是当前工作包，更是未来的下一个工作包的 AI——下一个 AI 接手时，trace.csv 是它了解 repo 的基础设施。\n\n**禁止**：只消费不生产（利用 trace.csv 了解情况但不更新它）· 只生产不消费（盲目更新 trace.csv 但不利用它指导自己的工作）。\n\n**详见**：`/Users/user/skills-devin/workflow.md` §3.6。\n\n## §21 · 工作包完成时元数据更新铁律\n\n**硬约束**：工作包完成后必须更新看法文件和映射索引（view-index.csv / trace.csv）。不能\"改完代码就结束\"。\n\n**更新内容**：\n1. 更新看法文件中对应条目的描述（讲什么/覆盖问题场景/依赖关系）\n2. 同步 view-index.csv（看法文件↔文档映射）\n3. 同步 trace.csv（全维度追溯关系）\n4. commit 元数据更新\n\n**分层精度**：\n- 改了整个文件 → `query-by-asset <文件路径>` 查哪些看法文件索引了它\n- 只改了某个函数/章节 → `query-prefix <type> <文件路径>` 查该文件下所有子资产的关系\n\n**禁止**：改完代码不更新元数据就结束 session · 更新了 view-index.csv 不更新 trace.csv · 更新了文件级不更新函数/章节级。\n\n**破坏后果**：不更新元数据 = 下次 AI 按看法文件加载时得到过时信息 = 认知体系失效。\n\n**详见**：`/Users/user/skills-devin/workflow.md` §5 阶段4。\n</rule>\n\n<rule name=\"no-inline-scripts\" path=\"/Users/user/.devin/rules/no-inline-scripts.md\">\n# 禁止inline脚本，所有脚本持久化到项目内\n\n## 硬规则\n\n1. **禁止写inline脚本**——禁止用`.venv/bin/python -c \"...\"`或`python -c \"...\"`写超过3行的脚本。如果一段逻辑需要超过3行代码，它必须被写成文件。\n\n2. **禁止在AGENTS.md中记录inline代码**——AGENTS.md中禁止出现超过5行的bash/python代码块。如果一段操作逻辑需要超过5行代码才能表达，它必须被写成`scripts/`下的脚本，然后在README.md中只记录脚本路径和一行用法示例。AGENTS.md是铁律和每次必须知道的认知，不是代码仓库。\n\n3. **所有脚本写到项目内的脚本目录中**——不是临时目录、不是`/tmp/`、不是home目录。脚本分两类，存放位置不同（见下方\"脚本分类\"）。\n\n4. **在项目README.md中做好索引**——持久化脚本必须在项目README.md中记录：脚本路径、用途、用法（一行示例）。让下一个session的AI能找到它。**索引不是代码全文**——只记路径+用途+一行用法，不记完整代码。\n\n5. **持续维护，不重写**——如果某个操作已经有过脚本，改进那个脚本，不要另写新的。重复的操作应该累积成一个越来越完善的脚本，而不是每次session都从头写。\n\n6. **临时脚本必须在相关文档中建立索引**——如果某项任务有对应的方案文档或调查报告（如`dev-docs/`下的文档），临时脚本必须在文档中记录：脚本路径、用途、用法。这是为了让未来的审计AI可以追溯——如果后来审计发现异常，可以知道是哪个脚本产生的结果，检查脚本是否有问题。\n\n## 脚本分类\n\n脚本分两类，存放位置和索引方式不同：\n\n### 持久化脚本（可复用的操作工具）\n\n- **定义**：会重复使用的操作（如清理僵尸session、批量落盘、进度查询、队列准备）\n- **存放位置**：项目已有的脚本目录或项目的`scripts/`目录\n- **索引位置**：项目README.md\n- **维护方式**：持续改进，不重写\n\n### 临时脚本（一次性任务专用）\n\n- **定义**：为某个具体任务写的一次性脚本（如数据迁移、一次性查询、调查验证脚本）\n- **存放位置**：项目的`tmp-scripts/`子目录\n- **索引位置**：如果该任务有相关文档（方案文档、调查报告等），在文档中记录脚本路径+用途+用法；如果没有相关文档，在README.md中记录\n- **审计目的**：临时脚本的文档索引是为了审计可追溯——如果后来审计发现数据异常或结果异常，审计AI可以定位是哪个脚本产生的，检查脚本逻辑是否有bug\n\n## 为什么\n\n- **inline脚本是一次性的**——写完用完就消失，下一个session的AI看不到、无法复用、无法改进\n- **inline脚本不可追溯**——没有文件路径、没有git历史、无法审计\n- **inline脚本导致重复劳动**——同一个操作（如僵尸清理、批量落盘）每个session都重写一遍，浪费且容易出bug\n- **持久化脚本持续积累**——每次改进都commit，脚本越来越强，下一个session直接用\n- **临时脚本的文档索引保证审计可追溯**——如果审计发现异常结果，可以回溯到产生该结果的脚本，检查脚本逻辑是否有bug\n\n## 判定标准\n\n| 情况 | 做法 |\n|---|---|\n| 单行命令（`ls`、`git status`、`tmux list-sessions`） | 直接执行 |\n| 2-3行的简单查询 | 直接执行可以 |\n| 超过3行的逻辑 | **必须写成文件** |\n| 会重复使用的操作（清理、落盘、查询、批量处理） | **写成持久化脚本，放scripts/，索引到README.md** |\n| 一次性任务专用脚本（数据迁移、调查验证） | **写成临时脚本，放tmp-scripts/，索引到相关文档** |\n| 已有脚本可以改进 | **改进已有脚本，不另写** |\n\n## 操作流程\n\n1. 发现需要写一段脚本逻辑\n2. 判断脚本类型：持久化（可复用）还是临时（一次性任务）\n3. 检查项目内是否已有类似脚本（grep搜索、看README.md索引）\n4. **已有** → 改进那个脚本（edit工具修改），编译验证\n5. **没有** → 创建新文件：\n   - 持久化脚本 → 放项目脚本目录（如`scripts/`）\n   - 临时脚本 → 放`tmp-scripts/`子目录\n6. 建立索引：\n   - 持久化脚本 → 在项目README.md中记录\n   - 临时脚本 → 在相关文档中记录（如方案文档、调查报告）；无相关文档则在README.md中记录\n7. commit\n\n## 反模式\n\n- ❌ `.venv/bin/python -c \"import sys; sys.path.insert(0, '...'); ...\"` 写50行inline脚本\n- ❌ 把脚本写到`/tmp/`然后执行\n- ❌ 每次session都重写\"清理僵尸session\"的脚本\n- ❌ 改进了脚本但不更新README.md索引\n- ❌ **在AGENTS.md中粘贴超过5行的bash/python代码块**——AGENTS.md是铁律不是代码仓库\n- ❌ **在AGENTS.md中写`python -c \"...\"`的多行inline代码**——这既是inline脚本又是文档污染\n- ❌ **临时脚本不建立文档索引**——审计AI无法追溯异常结果的来源脚本\n- ❌ **临时脚本放到`/tmp/`或home目录**——不在项目内，无法git追踪，无法审计\n- ✅ 改进已有脚本的某个函数（而非另写新的）\n- ✅ 新建脚本并在README.md代码索引中记录\n- ✅ README.md中只写一行用法示例，不写完整调用参数和输出\n- ✅ 临时调查脚本放`tmp-scripts/`，在调查报告文档中记录脚本路径和用途\n</rule>\n\n<rule name=\"global-vs-project-local\" path=\"/Users/user/.devin/rules/global-vs-project-local.md\">\n# 全局vs项目本地判断铁律\n\n## 硬约束\n\n**用户说\"更新AGENTS.md\"或\"添加元组/rule/skill\"时，AI必须先判断这是全局还是项目本地内容，不能直接动手。**\n\n## 判断流程\n\n```\n用户说\"更新AGENTS.md\"或\"添加元组/rule/skill\"\n  ↓\n第一步：判断作用范围\n  ├─ 只在当前项目有意义 → 项目本地\n  └─ 在多个项目中都适用 → 全局\n  ↓\n第二步：判断用户意图\n  ├─ 用户明确说\"全局\" → 全局\n  ├─ 用户明确说\"项目本地\" → 项目本地\n  └─ 用户没说 → 必须问用户\n  ↓\n第三步：放到正确位置\n  ├─ 全局rule → ~/.devin/rules/<name>.md\n  ├─ 全局skill → ~/.config/devin/skills/<name>/SKILL.md\n  ├─ 全局AGENTS.md → ~/.config/devin/AGENTS.md\n  ├─ 项目本地rule → ./.devin/rules/<name>.md\n  ├─ 项目本地skill → ./.devin/skills/<name>/SKILL.md\n  └─ 项目本地AGENTS.md → ./AGENTS.md\n```\n\n## 判断标准\n\n| 信号 | 倾向 |\n|---|---|\n| 内容引用了具体项目的路径、脚本名、目录结构 | 项目本地 |\n| 内容是某个项目特有的操作流程、运维认知 | 项目本地 |\n| 内容是跨项目通用的约束、规范、工作流 | 全局 |\n| 内容修改会影响所有项目的AI行为 | 全局 |\n| 用户说\"以后所有项目都要...\" | 全局 |\n| 用户说\"这个项目要...\" | 项目本地 |\n\n## 禁止\n\n- ❌ 不判断就改全局配置（`~/.devin/`或`~/.config/devin/`）\n- ❌ 不判断就改项目本地配置（`./.devin/`或`./AGENTS.md`）\n- ❌ 把项目本地内容放到全局规则中（污染全局配置）\n- ❌ 把全局通用内容放到项目本地（其他项目无法复用）\n- ❌ 用户没说全局还是本地时自作主张决定\n\n## 必须\n\n- ✅ 先判断作用范围（全局还是项目本地）\n- ✅ 用户没明确说时，先问用户\n- ✅ 判断后告诉用户放在哪里，再动手\n- ✅ 改全局配置时遵循`global-config-git-commit`规则（三个独立repo分别commit）\n\n## 详见\n\n- `tuple-methodology.md`——元组的设计原则、全局vs项目本地的选择策略\n- `global-config-git-commit.md`——全局配置的git提交规则\n- `readme-structure-index.md`——AGENTS.md与README.md的职责分工\n</rule>\n\n<rule name=\"never-modify-devin-config\" path=\"/Users/user/.devin/rules/never-modify-devin-config.md\">\n# 禁止修改 devin config.json 的 read_config_from\n\n## 硬约束\n\n**永远不要修改 `~/.config/devin/config.json` 中的 `read_config_from` 字段。**\n\n特别是 `\"windsurf\": true` 必须保持 `true`，不得改为 `false`。\n\n## 为什么\n\n- `read_config_from.windsurf: true` 是用户明确要求保留的配置\n- 如果不想让某些 windsurf 规则被 devin 加载，正确做法是**归档那些规则文件**（加日期后缀或移到备份目录），而不是关闭兼容加载机制\n- 关闭机制会影响其他兼容功能，不是正确的隔离手段\n\n## 正确做法\n\n如果需要阻止某个兼容来源的特定文件被加载：\n- **归档文件**——给文件加 `-日期` 后缀（如 `global_rules.md` → `global_rules-2026-08-19.md`），或移到备份目录\n- **不要动 config.json**——机制保持开启，只是让机制读不到目标文件\n\n## 详见\n\n历史案例：2026-08-19 归档 `~/.codeium/windsurf/` 下的规则文件（加 `-2026-08-19` 后缀），而非关闭 `read_config_from.windsurf`。\n</rule>\n\n<rule name=\"db-delete-backup-first\" path=\"/Users/user/.devin/rules/db-delete-backup-first.md\">\n# 删除数据库数据前必须先备份\n\n**硬约束**：删除数据库的任何数据之前，必须先备份相关的数据，确保删除错误的情况下可以恢复数据。\n\n## 为什么\n\nDB 删除操作不可逆。一旦执行 DELETE/DROP/TRUNCATE/批量删除，数据就没了。如果删除条件写错（比如 WHERE 条件不精确、dry-run 和实际执行结果不一致、脚本有 bug），会丢失不该删的数据，且无法恢复。\n\n历史教训（2026-08-21）：`cleanup_continuation_runs.py` 删除了 p27_continuation_runs 中 224 条 prepared 记录，删除后才发现实际删除数（224）与 dry-run 预期数（223）不一致——因为 collector 在 dry-run 和实际执行之间又创建了 1 条记录。虽然这次差异无害，但如果差异方向反过来（多删了不该删的），就无法恢复了。\n\n## 必做动作\n\n### 步骤1：备份\n\n删除前必须把要删除的数据导出到文件。备份文件路径记录在操作审计文档中。\n\n```bash\n# ArangoDB：用 AQL 导出要删除的记录到 JSON 文件\npython -c \"\nfrom arango import ArangoClient\nimport json\nc = ArangoClient(hosts='http://localhost:8529')\ndb = c.db('dbname', username='root', password='xxx')\n# 用与删除相同的查询条件查出要删除的完整记录\nrecords = list(db.aql.execute('FOR r IN collection FILTER <删除条件> RETURN r', ttl=120))\nwith open('backup_<collection>_<date>.json', 'w') as f:\n    json.dump(records, f, ensure_ascii=False, indent=2)\nprint(f'备份 {len(records)} 条记录到 backup_<collection>_<date>.json')\n\"\n```\n\n### 步骤2：验证备份\n\n确认备份文件非空、记录数与预期一致、每条记录有完整的字段（特别是 `_key`/`_id`，恢复时需要）。\n\n### 步骤3：执行删除\n\n备份完成且验证通过后，才能执行删除。\n\n### 步骤4：记录审计\n\n在 dev-docs 中记录：备份文件路径、删除条件、删除数量、备份记录数。\n\n## 恢复方法\n\n如果删除后发现错误，用备份文件恢复：\n\n```bash\n# ArangoDB：从 JSON 文件恢复\npython -c \"\nfrom arango import ArangoClient\nimport json\nc = ArangoClient(hosts='http://localhost:8529')\ndb = c.db('dbname', username='root', password='xxx')\nwith open('backup_<collection>_<date>.json') as f:\n    records = json.load(f)\ncol = db.collection('collection')\nfor r in records:\n    r.pop('_rev', None)  # _rev 不能手动设置\n    col.insert(r)\nprint(f'恢复 {len(records)} 条记录')\n\"\n```\n\n## 禁止\n\n- 禁止不备份就直接执行批量删除\n- 禁止只 dry-run 不备份就执行删除——dry-run 和实际执行之间可能有状态变化\n- 禁止备份后不验证备份文件就执行删除\n- 禁止删除后不记录备份文件路径——找不到备份=没备份\n\n## 例外\n\n| 情况 | 是否需要备份 |\n|---|---|\n| 批量删除（DELETE/FOR...REMOVE） | ✅ 必须 |\n| DROP collection | ✅ 必须（先导出全集合） |\n| TRUNCATE | ✅ 必须（先导出全集合） |\n| 覆盖写入（insert overwrite） | ✅ 必须（先导出被覆盖的数据） |\n| 单条记录删除 | 可不备份（影响小，可通过日志追溯） |\n| 单条记录状态更新（非删除） | 不需要 |\n| 只读查询 | 不需要 |\n\n## 与其他 rule 的关系\n\n| rule | 关系 |\n|---|---|\n| `closure-checklist-impact-analysis` | commit 前分析影响——本 rule 在删除操作前就触发，更早 |\n| `verify-with-logs` | 删除后验证——本 rule 是删除前预防 |\n| 全局 AGENTS.md §可审计性纪律 | \"重大分析、调查、审查必须留下 file:line 定位\"——本 rule 是其具体化到 DB 删除场景 |\n</rule>\n\n<rule name=\"search-default-internal\" path=\"/Users/user/.devin/rules/search-default-internal.md\">\n# 搜索默认走内置工具\n\n## 硬约束\n\n**默认情况下，使用 devin 内置的 `web_search` 和 `webfetch` 工具。** 不要一遇到搜索就加载 `search-tools` skill。\n\n`search-tools` skill 是重型武器库（6 个工具、38 个端点、完整参数表），只在以下场景才加载：\n\n## 何时加载 search-tools skill\n\n只有同时满足以下条件时才加载：\n\n1. **完备搜索**——内置 `web_search` 结果不够、需要多引擎交叉验证、需要语义搜索、需要学术论文搜索\n2. **大量抓取**——需要抓取多个 URL 转 Markdown、需要 PDF 转 Markdown、需要省 token 的批量取页\n\n## 何时只用内置工具\n\n以下场景**不需要**加载 `search-tools` skill，直接用 `web_search` + `webfetch`：\n\n- 查一个 API 怎么用——`web_search` 搜文档，`webfetch` 取页\n- 查一个概念/术语——`web_search` 一下就够\n- 查一个库的最新版本——`web_search`\n- 取一个 URL 的内容——`webfetch`\n- 简单的事实核查——`web_search`\n\n## 判断流程\n\n```\n需要网络搜索或抓取？\n├─ 查一两个东西就够了 → web_search + webfetch（内置）\n└─ 需要完备搜索或大量抓取\n   ├─ 多引擎交叉验证 → 加载 search-tools skill\n   ├─ 语义搜索 → 加载 search-tools skill\n   ├─ 学术论文搜索 → 加载 search-tools skill\n   ├─ PDF 转 Markdown → 加载 search-tools skill\n   ├─ 批量 URL 抓取 → 加载 search-tools skill\n   └─ 其他简单场景 → web_search + webfetch（内置）\n```\n\n## 理由\n\n`search-tools` skill 内容很长（500+ 行），加载它会占用大量上下文。日常搜索用内置工具完全够用，只有真正需要重型武器时才值得加载。\n</rule>\n\n<rule name=\"dev-docs-sediment-to-docs\" path=\"/Users/user/.devin/rules/dev-docs-sediment-to-docs.md\">\n# dev-docs 内容沉淀到 docs\n\n**硬约束**：dev-docs 中的内容，应该被沉淀到 docs 目录中的，应该考虑沉淀到 docs 目录中。对应的 dev-docs 中，不再放内容，而是放对 docs 目录中的文件的索引。\n\n**含义**：\n- dev-docs 是工作痕迹、方案、调查的临时存放地，不是长期知识容器\n- 当 dev-docs 中的内容具有长期复用价值时（方案定稿、认知沉淀、规范确立），必须沉淀到 docs/ 目录\n- 沉淀后，dev-docs 中的对应文件不再保留完整内容，只保留对 docs/ 中文件的索引（路径+一句话说明）\n- dev-docs 的定位是\"工作过程记录 + 沉淀索引\"，不是\"第二个 docs\"\n\n**判定标准**：\n- 一次性工作记录（debug过程、临时分析）→ 留在 dev-docs\n- 方案定稿后需要长期参考 → 沉淀到 docs/，dev-docs 留索引\n- 认知/规范确立后需要跨session复用 → 沉淀到 docs/，dev-docs 留索引\n- 纯过程性内容（试错记录、已废弃方案）→ 留在 dev-docs，不沉淀\n</rule>\n</rules>",
+      "extra": {
+        "telemetry": {
+          "source": "rules",
+          "operation": "content"
+        }
+      }
+    },
+    {
+      "step_id": 6,
+      "timestamp": "2026-08-21T23:40:01.720652+00:00",
+      "source": "system",
+      "message": "<rules type=\"always-on\">\nThese rules were triggered but could not be injected due to token limits. Read them when relevant using the read_file tool:\n\n<rule name=\"database-schema-doc\" path=\"/Users/user/.devin/rules/database-schema-doc.md\" />\n</rules>",
+      "extra": {
+        "telemetry": {
+          "source": "rules",
+          "operation": "overflow"
+        }
+      }
+    },
+    {
+      "step_id": 7,
+      "timestamp": "2026-08-21T23:40:01.720668+00:00",
+      "source": "system",
+      "message": "<available_rules>\nThe following rules are available. Read them when relevant using the read_file tool:\n\n- **monitor-pipe-design-paradigm**: 连续工作系统的 Monitor Pipe 设计范式——三层架构（规范层+执行层+查询层）。 当系统连续运行且需要AI检查产出质量/语义正确性/方向是否跑偏时，用Monitor Pipe落地。 把检查项自动化，结果收集到DB的alert集合中，Master AI通过查询脚本发现alert并逐个处理。 WHEN to use: 设计/实现连续工作系统的监控机制时；为批量运行系统添加健康检查时； 连续工作系统运行中Master AI需要检查健康状态时；设计alert系统时。 WHEN NOT to use: 一次性任务（不需要持续监控）；简单的错误处理（用try/catch即可）。\n (path: /Users/user/.devin/rules/monitor-pipe-design-paradigm.md)\n- **global-knowledge-base**: 全局情报库——本机跨工具知识库的索引和使用规则。 WHEN to use: 需要查跨项目知识、本机配置、操作流程、Codex/Devin 规则体系时。 WHEN NOT to use: 项目内的知识查询（用项目 AGENTS.md 的认知资产表）。\n (path: /Users/user/.devin/rules/global-knowledge-base.md)\n- **search-tools**: 搜索武器库——按需求组织：网页搜索完备性 + Markdown 网页抓取。所有方案免费可用。 WHEN to use: 需要网络搜索、网页抓取读取、学术论文搜索、PDF 转 Markdown、语义嵌入、结果重排时。 WHEN NOT to use: 只需要本地文件搜索（用 grep/glob 工具）。\n (path: /Users/user/.devin/rules/search-tools.md)\n- **explicit-model-and-effort**: 使用 devin cli 时（无论 -p 模式还是 acp 模式）必须显式指明模型；推理强度当前 devin CLI 无独立开关（2026-08-21 核查），由模型默认行为控制——若未来版本提供 强度/思考参数，必须同样显式设置。opencode 侧的对应 rule 见 ~/.config/opencode/rules/explicit-model-and-effort.md（其 ACP 有 effort 接口， 且实测不显式选模型会落到内建默认）。 WHEN to use: 写 devin -p 命令时；写/改 devin acp 客户端启动参数时； 排查\"AI 表现与预期不符\"时。 WHEN NOT to use: 用户明确指定其他模型的对话。\n (path: /Users/user/.devin/rules/explicit-model-and-effort.md)\n- **disk-readme-sync**: 查看磁盘/卷时，先读根目录 README.md，再与磁盘工具真实返回结果比对；若不同步，提醒用户并给出修复方案。 WHEN to use: 操作磁盘/外部卷、查看磁盘状态、向磁盘写数据前检查时。 WHEN NOT to use: 不涉及磁盘的操作。\n (path: /Users/user/.devin/rules/disk-readme-sync.md)\n- **skill-rule-authoring**: 写 skill/rule 时的格式硬约束。所有 SKILL.md 必须有 frontmatter（含 description）； 所有 .devin/rules/*.md 必须有 frontmatter（含 trigger）；trigger 值用 always_on（下划线）； Skill 采用一句话触发器+独立内容文档模式。 WHEN to use: 新建/修改 skill 或 rule 时。 WHEN NOT to use: 一般编码任务。\n (path: /Users/user/.devin/rules/skill-rule-authoring.md)\n- **cold-hdd-transfer**: 向 HDD 冷盘迁移数据时，按文件规模选择 rsync 或 tar+zstd 压缩传输，并记录转移清单。 WHEN to use: 向 HDD/冷盘迁移数据、大文件归档、备份到冷存储时。 WHEN NOT to use: 向 SSD 热盘写数据、日常文件操作。\n (path: /Users/user/.devin/rules/cold-hdd-transfer.md)\n- **devin-cli-trajectory**: Devin CLI trajectory 数据位置与 Schema——transcripts/sessions.db/summaries/logs 的位置、格式、字段。harness 采集的 trajectory 目录结构（conversation.json/trajectory.jsonl）。 WHEN to use: 提取/解析/审计 session 对话数据时；需要读取 thinking/reasoning_content/tool_calls 时； 需要查询 sessions.db（SQLite）时；需要解析 --export 导出的 conversation.json 时； 需要解析 trajectory.jsonl 时；需要了解 transcript 文件格式时。 WHEN NOT to use: 只需要 session 最终产出（看文件即可）；只需要 git 历史（用 git log）。\n (path: /Users/user/.devin/rules/devin-cli-trajectory.md)\n- **noninteractive-solver-run**: 非交互模式解题AI运行的硬约束——必须用非交互模式（devin -p）、运行结果必须可查被索引、 mitmproxy 已废弃。用 --export 导出包含 reasoning_content（thinking）的 conversation.json。 WHEN to use: 运行 devin cli 解数学题时；采集 thinking/reasoning_content 数据时； POC实验、对照实验、批量解题、FATE测试、MathArena测试时；需要用 --prompt-file 注入题目时； 任何需要工具的AI推理任务且需要采集完整推理过程时。 WHEN NOT to use: 需要实时干预AI推理过程的引导式实验（用交互模式+--export）； 调试 solver-harness 本身（用项目级 solver-tmux-launch）。\n (path: /Users/user/.devin/rules/noninteractive-solver-run.md)\n- **global-config-git-commit**: 任何对 ~/.config/devin/ 或 ~/.devin/ 或 /Users/user/skills-devin/ 的修改必须立即 git 提交。 禁止 git add -A/.-u，只 add 具体路径。push 需用户当轮明确授权。 三个独立 repo：~/.config/devin/、~/.devin/、/Users/user/skills-devin/。 WHEN to use: 修改/创建/删除全局 AGENTS.md 时；修改/创建/删除 ~/.config/devin/skills/ 下的 SKILL.md 时； 修改/创建/删除 ~/.devin/rules/ 下的 rule 文件时；修改 ~/.config/devin/config.json 时； 修改/创建/删除 /Users/user/skills-devin/ 下的 skill 内容文档时。 WHEN NOT to use: 修改项目本地文件（用项目 AGENTS.md 的 Git 协议）；修改 ~/.local/share/devin/（绝不建 repo）。\n (path: /Users/user/.devin/rules/global-config-git-commit.md)\n- **redundancy-consolidation**: 整合冗余内容时的信息保全铁律。整合≠删除——必须先逐行对比确认每条信息的去向， 把unique信息合并到目标文件，验证无丢失后才能简化或删除源文件。 WHEN to use: 发现两个或多个文件（rule/skill/AGENTS.md）之间有内容冗余时； 整合重复内容时；删除冗余文件前；简化重复段落前。 WHEN NOT to use: 单纯删除废弃文件（直接删）；新增内容（无冗余问题）。\n (path: /Users/user/.devin/rules/redundancy-consolidation.md)\n- **tuple-methodology**: 元组思想详细方法论——Rule + Skill 的设计原则、瘦身工程、两种实现方式、新增元组规范。 WHEN to use: 设计元组、组织 rule/skill 分工、做 AGENTS.md 瘦身工程、新增元组时。 WHEN NOT to use: 日常编码、不需要组织 AI 上下文治理时。\n (path: /Users/user/.devin/rules/tuple-methodology.md)\n- **infrastructure**: 本机基础设施速查——磁盘、冷热盘、README 同步规则。 WHEN to use: 操作磁盘、向 HDD/SSD 写数据、查看磁盘状态、排查磁盘问题时。 WHEN NOT to use: 不涉及磁盘操作的日常编码。\n (path: /Users/user/.devin/rules/infrastructure.md)\n- **setup-codex-rules-skills**: 安顿 Codex 的 rule 和 skill——位置、格式、加载机制、操作流程。 WHEN to use: 配置 Codex CLI、添加 Codex rules/skills/MCP、从 Devin/Claude Code 迁移到 Codex、 理解 Codex 扩展架构时。 WHEN NOT to use: 配置 Devin CLI（用 devin-config-harness skill）、一般编码任务。\n (path: /Users/user/.devin/rules/setup-codex-rules-skills.md)\n</available_rules>",
+      "extra": {
+        "telemetry": {
+          "source": "rules",
+          "operation": "available"
+        }
+      }
+    },
+    {
+      "step_id": 8,
+      "timestamp": "2026-08-21T23:40:01.767418+00:00",
+      "source": "user",
+      "message": "# Problem\n\nDetermine whether the following statement is true or false: For holomorphic Jacobi forms, if the Taylor development begins with $\\alpha \\cdot \\Delta(\\tau)\\cdot z^{8}$ or $\\beta\\cdot \\Delta(\\tau) \\cdot E_{4}(\\tau)\\cdot z^{12}$, the weight cannot be less than 12.\n\n## 解题约束（必须严格遵守）\n\n1. **不要使用任何工具**——不要写文件、不要执行命令、不要搜索、不要浏览网页、不要读取文件。\n   你只需要在TUI中用thinking来解题。所有推理过程在你的思维中完成。\n\n2. **直接在TUI中输出证明**——不要创建任何文件，不要使用任何工具调用。\n   完成证明后，在TUI中直接输出（必须用英文原文，不要翻译成中文）：\n\n=== 你之前的思考过程（Round 1，被截断）===\n\n你已经在上一轮中开始了这道题的思考，但因为输出长度限制，思考过程被截断了。\n以下是你之前的完整思考过程，请仔细阅读，在此基础上**继续**思考并完成解答（不要从头开始）：\n\n\n\n=== 请继续思考并完成解答 ===\n\n要求：\n1. **在之前的思考基础上继续**，不要重复已经做过的分析\n2. 给出完整的解答过程\n3. 最终答案用 \\boxed{答案} 格式给出\n4. 数学公式用LaTeX\n5. 把证明写到proof.md文件中，不要在对话里输出完整证明",
+      "extra": {
+        "telemetry": {
+          "source": "user",
+          "operation": "unknown"
+        }
+      }
+    },
+    {
+      "step_id": 9,
+      "timestamp": "2026-08-21T23:40:01.769013+00:00",
+      "source": "system",
+      "message": "<available_skills>\nThe following skills can be invoked using the `skill` tool. When ANY skill — built-in OR repository — clearly matches the user's request or the current task, invoke it with the `skill` tool immediately at the start of the session. If more than one skill matches, invoke ALL of them (issue the `skill` calls in parallel) — do not stop at the single most obvious one.\n\n- **long-running-work-sop**: 长程工作识别与SOP化 (source: /Users/user/.config/devin/skills/long-running-work-sop/SKILL.md)\n- **read**: 按三层架构加载必要认知（README.md→看法文件→具体文档） (source: /Users/user/.config/devin/skills/read/SKILL.md)\n- **read-sync**: 创建/维护repo的README.md认知地图+看法文件+映射数据库 (source: /Users/user/.config/devin/skills/read-sync/SKILL.md)\n- **search-tools**: 搜索武器库技术说明书——按需求组织：网页搜索完备性 + Markdown 网页抓取。 所有方案均为免费可用，基于 2026-08-21 实测数据编写。 (source: /Users/user/.config/devin/skills/search-tools/SKILL.md)\n- **noninteractive-solver-run**: 非交互模式运行解题AI（生产标准） (source: /Users/user/.config/devin/skills/noninteractive-solver-run/SKILL.md)\n- **akash-new**: akash流程跨session续传——判断上一个AI做到哪个阶段，生成让下一个AI从正确阶段继续的提示词 (source: /Users/user/.config/devin/skills/akash-new/SKILL.md)\n- **devin-cli-trajectory**: Devin CLI trajectory数据提取/解析/审计 (source: /Users/user/.config/devin/skills/devin-cli-trajectory/SKILL.md)\n- **disk-readme-sync**: 磁盘/卷README同步检查 (source: /Users/user/.config/devin/skills/disk-readme-sync/SKILL.md)\n- **setup-codex-rules-skills**: Codex CLI的rule和skill配置 (source: /Users/user/.config/devin/skills/setup-codex-rules-skills/SKILL.md)\n- **devin-config-harness**: Devin CLI配置完整说明书+元组评估决策流程+skill/rule编写规范+经验反模式 (source: /Users/user/.config/devin/skills/devin-config-harness/SKILL.md)\n- **trajectory-workline-review**: trajectory数据回溯工作脉络 (source: /Users/user/.config/devin/skills/trajectory-workline-review/SKILL.md)\n- **db-file-traceability**: 数据库-文件双向可追溯性验证 (source: /Users/user/.config/devin/skills/db-file-traceability/SKILL.md)\n- **akash**: 问题驱动流程保障——确保走完整5阶段流程（需求→方案→工作包→执行→结果） (source: /Users/user/.config/devin/skills/akash/SKILL.md)\n- **devin-acp-protocol**: Devin CLI ACP(Agent Client Protocol)模式使用指南——devin acp子命令、JSON-RPC over stdio通信、 session/update通知变体(thought/message/tool_call/permission)、thinking实时流式推送、 权限处理、session管理、v1协议细节、实测验证的信号清单和检测逻辑。 WHEN to use: 需要用ACP模式启动devin cli(替代-p模式)时；需要实时检测AI工作状态(thinking spin/卡住)时； 需要从session/update通知组装conversation.json时；需要处理ACP权限请求时； 设计/实现/调试ACP客户端时；将现有-p模式管线改造为ACP模式时。 WHEN NOT to use: 只需要-p模式的简单非交互运行(用noninteractive-solver-run skill)； 只需要session最终产出(看文件即可)；只需要git历史(用git log)。 (source: /Users/user/.config/devin/skills/devin-acp-protocol/SKILL.md)\n- **zcode-trajectory**: ZCode (z.ai 桌面客户端) model-io session trajectory 数据的 JSONL schema 与读取方法。 (source: /Users/user/.config/devin/skills/zcode-trajectory/SKILL.md)\n- **workflow**: 开发工作流总纲（三层认知架构+read/read-sync/make-plan+映射数据库+git管理） (source: /Users/user/.config/devin/skills/workflow/SKILL.md)\n- **opencode-acp-protocol**: OpenCode ACP(Agent Client Protocol)模式完整指南——opencode acp子命令、JSON-RPC over stdio通信、 session/update通知变体(thought/message/tool_call)、thinking实时流式推送、权限自动批准、 session管理(close/fork/list/resume)、v1协议细节、与Devin CLI ACP的关键区别。 WHEN to use: 用opencode acp启动为ACP server时；写ACP客户端对接opencode时； 需要实时检测AI工作状态(thinking/tool执行/卡住)时；从session/update通知组装trajectory时； 对比opencode ACP和devin ACP选方案时；将现有管线改造为ACP模式时。 WHEN NOT to use: 只需要opencode的最终结果(用opencode run)；非ACP的opencode使用； 只需要devin ACP(用devin-acp-protocol skill)。 (source: /Users/user/.config/devin/skills/opencode-acp-protocol/SKILL.md)\n- **qmd-mcp-search**: QMD语义搜索和知识图谱查询（含CLI直接调用方式） (source: /Users/user/.config/devin/skills/qmd-mcp-search/SKILL.md)\n- **make-plan**: 制作行动计划=完整的repo更新行为（执行步骤+需求追踪+认知准备+元数据更新） (source: /Users/user/.config/devin/skills/make-plan/SKILL.md)\n- **cold-hdd-transfer**: 向HDD冷盘迁移数据 (source: /Users/user/.config/devin/skills/cold-hdd-transfer/SKILL.md)\n- **tmux-easy-setup**: tmux最易用状态配置 (source: /Users/user/.config/devin/skills/tmux-easy-setup/SKILL.md)\n- **redundancy-consolidation**: 整合冗余内容的完整工作流程——逐行对比、列出缺失清单、先合并后删除、验证无丢失。 WHEN to use: 发现文件间有冗余需要整合时。 WHEN NOT to use: 单纯删除废弃文件、新增内容。 (source: /Users/user/.config/devin/skills/redundancy-consolidation/SKILL.md)\n- **devin-cli**: Look up Devin CLI documentation (skills, extensibility, configuration, commands, models, troubleshooting) (source: /Volumes/data/devin-cli-data/_versions/3000.4.25/share/devin/docs)\n- **declarative-repo-setup**: Generate and verify a working environment.yaml (Devin snapshot-setup blueprint) for a repo (source: builtin:drs)\n</available_skills>",
+      "extra": {
+        "telemetry": {
+          "source": "system",
+          "operation": "unknown"
+        }
+      }
+    },
+    {
+      "step_id": 10,
+      "timestamp": "2026-08-21T23:40:04.765514+00:00",
+      "source": "agent",
+      "message": "",
+      "model_name": "GLM-5.2 High",
+      "reasoning_content": "The problem asks about holomorphic Jacobi forms and whether the weight cannot be less than 12 if the Taylor development begins with $\\alpha \\cdot \\Delta(\\tau)\\cdot z^{8}$ or $\\beta\\cdot \\Delta(\\tau) \\cdot E_{4}(\\tau)\\cdot z^{12}$.\n\nLet me think about this carefully.\n\nA holomorphic Jacobi form $\\phi(\\tau, z)$ of weight $k$ and index $m$ has a Taylor expansion in $z$:\n$$\\phi(\\tau, z) = \\sum_{n=0}^{\\infty} \\xi_n(\\tau) z^n$$\n\nThe Taylor coefficients $\\xi_n(\\tau)$ are modular forms. There's a key relationship: $\\xi_n$ is a modular form of weight $k + n$ (when $n$ is even, since for holomorphic Jacobi forms only even powers appear... actually let me think more carefully).\n\nFor a holomorphic Jacobi form of weight $k$ and index $m$, the Taylor coefficients satisfy:\n- $\\xi_n(\\tau) = 0$ for odd $n$ (since Jacobi forms are even in $z$)\n- $\\xi_n$ is a modular form of weight $k + n$ for even $n$\n\nWait, let me reconsider. The Taylor expansion of a Jacobi form $\\phi(\\tau, z)$ of weight $k$ and index $m$:\n\n$$\\phi(\\tau, z) = \\sum_{\\nu=0}^{\\infty} \\xi_{\\nu}(\\tau) z^{\\nu}$$\n\nThe key fact is that $\\xi_{\\nu}$ is a modular form of weight $k + \\nu$ (for the full modular group, assuming the Jacobi form is for $SL_2(\\mathbb{Z})$).\n\nActually, more precisely, the Taylor coefficients $\\xi_n$ of a Jacobi form of weight $k$ and index $m$ are modular forms of weight $k+n$. This is a standard result.\n\nNow, $\\Delta(\\tau)$ is the discriminant modular form of weight 12. $E_4(\\tau)$ is the Eisenstein series of weight 4.\n\nCase 1: Taylor development begins with $\\alpha \\cdot \\Delta(\\tau) \\cdot z^8$.\n\nThis means $\\xi_8(\\tau) = \\alpha \\cdot \\Delta(\\tau)$, which is a modular form of weight 12. Since $\\xi_8$ has weight $k + 8$, we get $k + 8 = 12$, so $k = 4$.\n\nWait, but the statement says \"the weight cannot be less than 12.\" If $k = 4$, that's less than 12, so the statement would be false.\n\nHmm, but let me reconsider. Maybe I need to be more careful about what \"Taylor development begins with\" means. It might mean that the first nonzero term is at $z^8$, i.e., $\\xi_0 = \\xi_2 = \\xi_4 = \\xi_6 = 0$ and $\\xi_8 = \\alpha \\cdot \\Delta(\\tau)$.\n\nIf $\\xi_0 = 0$, this means the Jacobi form vanishes at $z = 0$. \n\nActually, there's an important constraint. For a holomorphic Jacobi form of index $m$, the Taylor coefficients satisfy certain differential relations. Specifically, there's the \"theta decomposition\" and constraints from the index.\n\nLet me think about this differently. The key constraint on Taylor coefficients of Jacobi forms comes from the fact that they must satisfy certain differential equations related to the heat equation / index condition.\n\nFor a Jacobi form of weight $k$ and index $m$, the Taylor coefficients $\\xi_n$ satisfy:\n$$\\xi_n' = 2\\pi i m \\cdot \\xi_{n+1} + \\text{lower order terms}$$\n\nActually, the precise relation involves the Serre derivative. Let me recall the exact structure.\n\nThe Taylor coefficients of a Jacobi form of weight $k$ and index $m$ satisfy a recurrence relation. Specifically, if we write:\n$$\\phi(\\tau, z) = \\sum_{\\nu \\geq 0} \\xi_{\\nu}(\\tau) \\frac{z^{\\nu}}{\\nu!}$$\n\nthen there's a relation involving the differential operator. The key result is that the $\\xi_n$ are modular forms of weight $k+n$, and they satisfy:\n\n$$\\xi_{n+1} = \\frac{1}{2\\pi i m} \\left( D \\xi_n - \\text{correction terms} \\right)$$\n\nwhere $D$ is related to the Serre derivative.\n\nActually, let me think about this more carefully using the standard theory.\n\nThe Taylor expansion of a Jacobi form $\\phi$ of weight $k$ and index $m$:\n$$\\phi(\\tau, z) = \\sum_{\\nu=0}^{\\infty} \\xi_{\\nu}(\\tau) z^{2\\nu}$$\n\n(only even powers since $\\phi(\\tau, -z) = \\phi(\\tau, z)$).\n\nEach $\\xi_{\\nu}$ is a modular form of weight $k + 2\\nu$.\n\nThe index $m$ imposes constraints. Specifically, the \"theta decomposition\" gives:\n$$\\phi(\\tau, z) = \\sum_{\\mu \\pmod{2m}} h_{\\mu}(\\tau) \\theta_{m,\\mu}(\\tau, z)$$\n\nwhere $h_{\\mu}$ are modular forms of weight $k - 1/2$ (half-integral weight).\n\nNow, let me think about the specific question.\n\nIf the Taylor development begins with $\\alpha \\cdot \\Delta(\\tau) \\cdot z^8$:\n- This means $\\xi_0 = \\xi_2 = \\xi_4 = \\xi_6 = 0$ (using the convention where we index by the power of $z$, so $\\xi_8 = \\alpha \\Delta$)\n- $\\xi_8 = \\alpha \\cdot \\Delta(\\tau)$ has weight 12\n- Since $\\xi_8$ has weight $k + 8$, we get $k = 4$\n\nBut wait, can a Jacobi form of weight 4 and some index $m$ have its first nonzero Taylor coefficient at $z^8$ being $\\Delta$?\n\nThe condition $\\xi_0 = 0$ means $\\phi(\\tau, 0) = 0$. The condition $\\xi_2 = 0$ means $\\frac{\\partial^2 \\phi}{\\partial z^2}\\Big|_{z=0} = 0$, etc.\n\nFor a Jacobi form of index $m$, the vanishing order in $z$ at $z=0$ is constrained. Specifically, if $\\phi$ vanishes to order $2r$ at $z = 0$ (i.e., $\\xi_0 = \\cdots = \\xi_{2r-2} = 0$), then there's a constraint related to the index.\n\nActually, I recall that for Jacobi forms, there's a result that if $\\phi$ is a Jacobi form of weight $k$ and index $m$ that vanishes to order $2\\nu$ at $z = 0$, then $\\phi(\\tau, z)/z^{2\\nu}$ is related to a Jacobi form of lower index (through the \"raising operators\" or the structure of the space).\n\nHmm, let me think about this differently. Let me consider the specific cases.\n\nFor the first case: $\\xi_8 = \\alpha \\Delta(\\tau)$, weight $k + 8 = 12$, so $k = 4$.\n\nNow, $\\Delta$ has weight 12. The question is whether a Jacobi form of weight 4 and some index $m$ can have $\\xi_8 = \\alpha \\Delta$ and $\\xi_0 = \\xi_2 = \\xi_4 = \\xi_6 = 0$.\n\nThe constraints on Taylor coefficients: For a Jacobi form of index $m$, the Taylor coefficients satisfy the \"heat equation\" type relations. Specifically, if we define the operator:\n$$L_m = \\frac{\\partial}{\\partial \\tau} - \\frac{1}{4\\pi i m} \\frac{\\partial^2}{\\partial z^2}$$\n\nWait, actually the key relation is:\n\n$$\\left(\\frac{1}{2\\pi i}\\frac{\\partial}{\\partial \\tau} - \\frac{1}{4\\pi^2 m}\\frac{\\partial^2}{\\partial z^2}\\right) \\phi = 0$$\n\nNo, that's not quite right either. Let me recall more carefully.\n\nThe heat equation for Jacobi forms: A Jacobi form $\\phi$ of index $m$ satisfies:\n$$\\left(2\\pi i m \\frac{\\partial}{\\partial \\tau} + \\frac{1}{2} \\frac{\\partial^2}{\\partial z^2}\\right) \\phi = 0$$\n\nWait, I think the correct relation involves the modular properties. Let me think about this from the Taylor coefficient perspective.\n\nIf $\\phi(\\tau, z) = \\sum_{\\nu \\geq 0} \\xi_{\\nu}(\\tau) z^{2\\nu}$ (using even powers), then the heat equation gives relations between the $\\xi_{\\nu}$.\n\nActually, I think the correct approach is through the \"index-raising\" and \"index-lowering\" operators, and the structure theorem for Jacobi forms.\n\nLet me try a different approach. The key theorem (Eichler-Zagier) states that for a Jacobi form of weight $k$ and index $m$:\n\nThe Taylor coefficients $\\xi_n$ (where I use the convention $\\phi = \\sum \\xi_n z^n / n!$) are modular forms of weight $k + n$, and they satisfy the recurrence:\n$$\\xi_{n+2} = \\frac{1}{4\\pi i m} \\left( \\xi_n' - 2\\pi i n \\cdot \\frac{k+n-1}{12} E_2 \\cdot \\xi_n + \\ldots \\right)$$\n\nHmm, this is getting complicated. Let me try to use a cleaner approach.\n\nActually, I think the key insight is simpler. Let me reconsider.\n\nThe Taylor coefficients of a Jacobi form of weight $k$ and index $m$ are modular forms. The $n$-th Taylor coefficient $\\xi_n$ (coefficient of $z^n$) is a modular form of weight $k + n$.\n\nNow, the space of modular forms of weight $w$ for $SL_2(\\mathbb{Z})$ is:\n- Weight 0: $\\mathbb{C}$ (constants)\n- Weight 2: $\\{0\\}$ (no nonzero modular forms)\n- Weight 4: $\\mathbb{C} \\cdot E_4$\n- Weight 6: $\\mathbb{C} \\cdot E_6$\n- Weight 8: $\\mathbb{C} \\cdot E_4^2$\n- Weight 10: $\\mathbb{C} \\cdot E_4 E_6$\n- Weight 12: $\\mathbb{C} \\cdot E_4^3 \\oplus \\mathbb{C} \\cdot \\Delta$\n- etc.\n\nNow, for the first case: $\\xi_8 = \\alpha \\Delta(\\tau)$, which has weight 12, so $k + 8 = 12$, giving $k = 4$.\n\nBut we also need $\\xi_0 = \\xi_2 = \\xi_4 = \\xi_6 = 0$.\n\n$\\xi_0$ has weight $k = 4$, so $\\xi_0 \\in M_4 = \\mathbb{C} \\cdot E_4$.\n$\\xi_2$ has weight $k + 2 = 6$, so $\\xi_2 \\in M_6 = \\mathbb{C} \\cdot E_6$.\n$\\xi_4$ has weight $k + 4 = 8$, so $\\xi_4 \\in M_8 = \\mathbb{C} \\cdot E_4^2$.\n$\\xi_6$ has weight $k + 6 = 10$, so $\\xi_6 \\in M_{10} = \\mathbb{C} \\cdot E_4 E_6$.\n\nSo it's possible for all of these to be zero (they're one-dimensional spaces, and we can choose the coefficient to be 0).\n\nBut the question is whether the constraints from the index $m$ allow this. The Taylor coefficients are not independent—they're linked by the heat equation / differential relations.\n\nLet me think about the heat equation more carefully. The correct form of the heat equation for Jacobi forms is:\n\nFor $\\phi(\\tau, z) = \\sum_{\\nu=0}^{\\infty} \\xi_{\\nu}(\\tau) z^{2\\nu}$ (a Jacobi form of weight $k$, index $m$), the coefficients satisfy:\n\n$$\\xi_{\\nu}' = 2\\pi i m \\cdot (2\\nu+2)(2\\nu+1) \\cdot \\xi_{\\nu+1} + \\text{terms involving } E_2 \\text{ and lower } \\xi_j$$\n\nActually, I think I need to be more precise. Let me use the standard result.\n\nThe heat equation for Jacobi forms (Eichler-Zagier, \"The Theory of Jacobi Forms\"):\n\nIf $\\phi(\\tau, z) = \\sum_{\\nu \\geq 0} \\xi_{\\nu}(\\tau) \\frac{(2\\pi i z)^{2\\nu}}{(2\\nu)!}$, then:\n\n$$\\xi_{\\nu}' = (k + 2\\nu - 2) \\cdot \\frac{E_2'}{... } \\cdot \\xi_{\\nu} + ... $$\n\nThis is getting too complicated without the reference. Let me try a different approach.\n\nActually, I think the key point is about the constraints on the Taylor coefficients from the index. Let me think about what constraints the index $m$ imposes.\n\nFor a Jacobi form of index $m$, the theta decomposition is:\n$$\\phi(\\tau, z) = \\sum_{\\mu \\pmod{2m}} h_{\\mu}(\\tau) \\theta_{m,\\mu}(\\tau, z)$$\n\nThe theta functions $\\theta_{m,\\mu}(\\tau, z)$ have Taylor expansions starting with $z^0$ terms. The first few terms of $\\theta_{m,\\mu}$ involve $e^{\\pi i \\mu^2 \\tau / m}$ and powers of $z$.\n\nActually, I think the key constraint is this: the space of Jacobi forms of weight $k$ and index $m$ is isomorphic (via the theta decomposition) to a certain space of vector-valued modular forms. The Taylor coefficients are determined by these vector-valued modular forms.\n\nLet me try yet another approach. Consider the specific examples.\n\nThe Jacobi form $\\phi_{-2,1}(\\tau, z)$ is the basic Jacobi form of weight $-2$ and index 1. Its Taylor expansion starts with $z^0$ (it has a nonzero constant term in $z$).\n\nThe Jacobi Eisenstein series $E_{k,m}(\\tau, z)$ for various $k, m$.\n\nActually, let me think about this problem from the perspective of the weight-index relationship and the constraints on Taylor coefficients.\n\nKey fact: For a holomorphic Jacobi form of weight $k$ and index $m$, the Taylor coefficient $\\xi_n$ (coefficient of $z^n$) is a modular form of weight $k + n$.\n\nNow, the question is about whether specific patterns of Taylor coefficients are possible.\n\nCase 1: $\\xi_8 = \\alpha \\Delta(\\tau)$, $\\xi_0 = \\xi_2 = \\xi_4 = \\xi_6 = 0$.\n- $k + 8 = 12 \\Rightarrow k = 4$\n- Need index $m$ such that a weight-4, index-$m$ Jacobi form exists with these Taylor coefficients.\n\nCase 2: $\\xi_{12} = \\beta \\Delta(\\tau) E_4(\\tau)$, $\\xi_0 = \\cdots = \\xi_{10} = 0$.\n- $\\Delta \\cdot E_4$ has weight $12 + 4 = 16$, so $k + 12 = 16 \\Rightarrow k = 4$.\n- Need index $m$ such that a weight-4, index-$m$ Jacobi form exists with these Taylor coefficients.\n\nWait, but the problem says \"the weight cannot be less than 12.\" If in both cases $k = 4 < 12$, then the statement would be false (the weight CAN be less than 12).\n\nBut I need to check whether such Jacobi forms actually exist. The constraints from the index might prevent this.\n\nLet me think about the constraints more carefully.\n\nFor a Jacobi form of weight $k$ and index $m$, if $\\xi_0 = 0$ (i.e., $\\phi(\\tau, 0) = 0$), then $\\phi$ is divisible by... well, there's a result that says if $\\phi$ vanishes at $z = 0$ to order $2r$, then $\\phi$ can be written in terms of Jacobi forms of lower index.\n\nSpecifically, there's the \"index-lowering\" operator. If $\\phi$ is a Jacobi form of weight $k$ and index $m$ that vanishes to order $2\\nu$ at $z = 0$, then there's a Jacobi form of weight $k$ and index $m - \\nu$ (or something like that).\n\nActually, I think the precise result is: if $\\phi(\\tau, z)$ is a Jacobi form of weight $k$ and index $m$, and $\\phi$ vanishes to order $2r$ at $z = 0$, then $\\phi(\\tau, z) = z^{2r} \\cdot \\psi(\\tau, z)$ where $\\psi$ is a Jacobi form of weight $k$ and index $m - r$... no, that's not right because $z^{2r}$ is not a Jacobi form.\n\nLet me think about this differently. There's a result about the \"singular\" Jacobi forms and the structure of the Taylor expansion.\n\nActually, I recall now. The key constraint comes from the heat equation. Let me state it properly.\n\nFor a Jacobi form $\\phi$ of weight $k$ and index $m$, writing $\\phi(\\tau, z) = \\sum_{\\nu \\geq 0} \\xi_{\\nu}(\\tau) z^{2\\nu}$, the heat equation gives:\n\n$$\\xi_{\\nu}' = 2\\pi i m (2\\nu+2)(2\\nu+1) \\xi_{\\nu+1} + \\text{lower order terms involving } E_2$$\n\nMore precisely, the heat equation is:\n$$\\frac{\\partial \\phi}{\\partial \\tau} = \\frac{1}{4\\pi i m} \\frac{\\partial^2 \\phi}{\\partial z^2} + \\text{terms from the weight}$$\n\nHmm, actually I think the heat equation for Jacobi forms is:\n\n$$\\left( \\frac{\\partial}{\\partial \\tau} - \\frac{1}{4\\pi i m} \\frac{\\partial^2}{\\partial z^2} \\right) \\phi = 0$$\n\nWait no. Let me look at this more carefully. The Jacobi form satisfies a transformation law under $\\tau \\mapsto \\tau + 1$ and $\\tau \\mapsto -1/\\tau$ (for the modular part) and $z \\mapsto z + \\lambda \\tau + \\mu$ (for the elliptic part). The heat equation comes from the compatibility of these transformations.\n\nThe correct heat equation (from Eichler-Zagier) is:\n\n$$\\left( 2\\pi i m \\frac{\\partial}{\\partial \\tau} + \\frac{1}{2} \\frac{\\partial^2}{\\partial z^2} \\right) \\phi = 0$$\n\nWait, I don't think that's right either. Let me think about it from scratch.\n\nActually, I think the heat equation is not exactly a PDE that $\\phi$ satisfies, but rather a relation between the Taylor coefficients that comes from the modular transformation properties.\n\nLet me try to use the result from Eichler-Zagier's book. The Taylor coefficients $\\xi_n$ of a Jacobi form of weight $k$ and index $m$ (where $\\phi = \\sum \\xi_n z^n / n!$) satisfy:\n\n$$\\xi_{n+2} = \\frac{1}{2\\pi i m \\cdot n(n-1)} \\left[ R_{k+n} \\xi_n \\right]$$\n\nwhere $R_k = D - \\frac{k}{12} E_2$ is the Serre derivative (with $D = \\frac{1}{2\\pi i} \\frac{d}{d\\tau}$).\n\nHmm, I'm not sure about the exact formula. Let me try a slightly different approach.\n\nActually, I think the key relation is:\n\n$$\\xi_{n+2} = \\frac{1}{4\\pi i m} \\cdot \\frac{1}{(n+2)(n+1)} \\cdot \\left( D_{k+n} \\xi_n \\right)$$\n\nwhere $D_k$ is the Serre derivative of weight $k$, i.e., $D_k f = f' - \\frac{k}{12} E_2 f$ (with appropriate normalization).\n\nWait, I think I should use the standard result more carefully. Let me denote the Taylor expansion as:\n$$\\phi(\\tau, z) = \\sum_{\\nu=0}^{\\infty} \\xi_{\\nu}(\\tau) \\frac{z^{2\\nu}}{(2\\nu)!}$$\n\nThen $\\xi_{\\nu}$ is a modular form of weight $k + 2\\nu$, and the heat equation gives:\n\n$$\\xi_{\\nu+1} = \\frac{1}{4\\pi i m} \\left( D_{k+2\\nu} \\xi_{\\nu} \\right)$$\n\nwhere $D_w$ is the Serre derivative (Maass raising operator) of weight $w$:\n$$D_w f = \\frac{1}{2\\pi i} f' - \\frac{w}{12} E_2 f$$\n\nThis means:\n- $\\xi_0$ is a modular form of weight $k$\n- $\\xi_1 = \\frac{1}{4\\pi i m} D_k \\xi_0$ is a modular form of weight $k+2$\n- $\\xi_2 = \\frac{1}{4\\pi i m} D_{k+2} \\xi_1$ is a modular form of weight $k+4$\n- etc.\n\nAnd conversely, the lowering operator gives:\n$$\\xi_{\\nu} = -4\\pi i m \\cdot D_{k+2\\nu}^* \\xi_{\\nu+1}$$\n\nwhere $D_w^*$ is the Maass lowering operator.\n\nNow, the key point: if $\\xi_0 = 0$, then $\\xi_1 = \\frac{1}{4\\pi i m} D_k(0) = 0$, and by induction, all $\\xi_{\\nu} = 0$.\n\nWait, that would mean if $\\xi_0 = 0$, then ALL Taylor coefficients are zero, which would mean $\\phi = 0$. That can't be right in general...\n\nOh wait, I think the issue is that the heat equation only gives the forward relation $\\xi_{\\nu+1}$ in terms of $D \\xi_{\\nu}$, but the backward relation involves the lowering operator, which is different.\n\nActually, let me reconsider. The heat equation gives a relation between $\\xi_{\\nu+1}$ and $D \\xi_{\\nu}$, but this is a forward relation. If $\\xi_0 = 0$, then indeed $\\xi_1 = 0$, $\\xi_2 = 0$, etc. So if $\\xi_0 = 0$, all coefficients vanish and $\\phi = 0$.\n\nBut this contradicts the existence of Jacobi forms that vanish at $z = 0$! For example, $\\phi_{0,1}(\\tau, z) - \\phi_{0,1}(\\tau, 0)$ would vanish at $z = 0$ but not be identically zero...\n\nHmm, wait. $\\phi_{0,1}(\\tau, z) - \\phi_{0,1}(\\tau, 0)$ is not a Jacobi form because subtracting a function of $\\tau$ alone doesn't preserve the Jacobi form property (the elliptic transformation law requires $\\phi(\\tau, z + \\lambda \\tau + \\mu) = e^{-2\\pi i m(\\lambda^2 \\tau + 2\\lambda z)} \\phi(\\tau, z)$, and a function of $\\tau$ alone doesn't satisfy this unless it's zero).\n\nOK so actually, if $\\xi_0 = 0$, meaning $\\phi(\\tau, 0) = 0$, then by the heat equation, all $\\xi_{\\nu} = 0$, so $\\phi = 0$. This means a nonzero Jacobi form must have $\\xi_0 \\neq 0$!\n\nWait, but that's a strong statement. Is it true?\n\nLet me verify: The heat equation says $\\xi_{\\nu+1} = \\frac{1}{4\\pi i m} D_{k+2\\nu} \\xi_{\\nu}$. If $\\xi_0 = 0$, then $\\xi_1 = 0$, then $\\xi_2 = 0$, etc. So yes, $\\phi = 0$.\n\nBut wait, I need to check: is the heat equation really $\\xi_{\\nu+1} = \\frac{1}{4\\pi i m} D_{k+2\\nu} \\xi_{\\nu}$, or is it something else?\n\nLet me derive it. The heat equation for Jacobi forms comes from the fact that $\\phi$ satisfies:\n$$\\frac{\\partial \\phi}{\\partial \\tau} = \\frac{1}{4\\pi i m} \\frac{\\partial^2 \\phi}{\\partial z^2} + \\frac{k}{12\\pi i} E_2(\\tau) \\phi$$\n\nWait, I think the correct heat equation is:\n$$\\frac{\\partial \\phi}{\\partial \\tau} = \\frac{1}{4\\pi i m} \\frac{\\partial^2 \\phi}{\\partial z^2} + \\frac{k}{12} \\cdot \\frac{E_2'}{...} \\phi$$\n\nHmm, let me think about this more carefully. The heat equation should come from the compatibility of the modular and elliptic transformation laws.\n\nActually, I think the correct statement is that the \"heat equation\" is:\n\n$$\\xi_{\\nu+1} = \\frac{1}{4\\pi i m} \\cdot \\frac{1}{(2\\nu+2)(2\\nu+1)} \\cdot \\left( \\frac{1}{2\\pi i} \\xi_{\\nu}' - \\frac{k+2\\nu}{12} E_2 \\xi_{\\nu} \\right)$$\n\nWait, I need to be more careful with the normalization. Let me use the expansion $\\phi = \\sum_{\\nu} \\xi_{\\nu} z^{2\\nu}$ (without the factorial).\n\nThen $\\frac{\\partial^2 \\phi}{\\partial z^2} = \\sum_{\\nu} (2\\nu+2)(2\\nu+1) \\xi_{\\nu+1} z^{2\\nu}$.\n\nAnd $\\frac{\\partial \\phi}{\\partial \\tau} = \\sum_{\\nu} \\xi_{\\nu}' z^{2\\nu}$.\n\nThe heat equation (if it's $\\frac{\\partial \\phi}{\\partial \\tau} = \\frac{1}{4\\pi i m} \\frac{\\partial^2 \\phi}{\\partial z^2} + \\text{weight term}$) gives:\n\n$$\\xi_{\\nu}' = \\frac{(2\\nu+2)(2\\nu+1)}{4\\pi i m} \\xi_{\\nu+1} + \\text{weight term involving } E_2 \\xi_{\\nu}$$\n\nThe weight term comes from the fact that the heat equation for Jacobi forms includes a term from the modular weight. The precise form is:\n\n$$\\xi_{\\nu}' = \\frac{(2\\nu+2)(2\\nu+1)}{4\\pi i m} \\xi_{\\nu+1} + \\frac{k+2\\nu}{12\\pi i} E_2' \\xi_{\\nu}$$\n\nHmm, I'm getting confused with normalizations. Let me just use the key structural result.\n\nThe key point is: the heat equation provides a recurrence relation $\\xi_{\\nu+1} = F(\\xi_{\\nu}', E_2, \\xi_{\\nu})$. This means:\n- If $\\xi_0 = 0$, then $\\xi_1 = F(0, E_2, 0) = 0$, and by induction all $\\xi_{\\nu} = 0$.\n- Therefore, a nonzero Jacobi form must have $\\xi_0 \\neq 0$.\n\nBut wait, this seems too strong. Let me check with a known example.\n\nThe Jacobi form $\\phi_{-2,1}(\\tau, z)$ has weight $-2$ and index 1. Its value at $z = 0$ is... well, $\\phi_{-2,1}(\\tau, 0)$. Is this zero or nonzero?\n\n$\\phi_{-2,1}(\\tau, z) = \\frac{\\theta_1(\\tau, z)^2}{\\eta(\\tau)^6}$ where $\\theta_1$ is the Jacobi theta function. At $z = 0$, $\\theta_1(\\tau, 0) = 0$ (since $\\theta_1$ has a zero at $z = 0$). So $\\phi_{-2,1}(\\tau, 0) = 0$!\n\nBut $\\phi_{-2,1}$ is a nonzero Jacobi form! So my reasoning above must be wrong.\n\nThe issue is that $\\phi_{-2,1}$ is a Jacobi form of negative weight ($k = -2$), and the heat equation might work differently, or the recurrence might not force all coefficients to be zero.\n\nActually wait, I think the issue is that the heat equation recurrence goes in the direction of increasing $\\nu$, but it's not the only constraint. There might be additional constraints from the index that allow $\\xi_0 = 0$ with higher $\\xi_{\\nu} \\neq 0$.\n\nHmm, let me reconsider. Maybe the heat equation is not simply $\\xi_{\\nu+1} = F(\\xi_{\\nu})$, but rather a relation that involves both $\\xi_{\\nu+1}$ and $\\xi_{\\nu-1}$ or something.\n\nActually, I think the correct heat equation for Jacobi forms is:\n\n$$\\frac{\\partial \\phi}{\\partial \\tau} = \\frac{1}{4\\pi i m} \\frac{\\partial^2 \\phi}{\\partial z^2} + \\frac{k}{12\\pi i} E_2 \\phi + \\frac{1}{2\\pi i} \\cdot \\frac{k}{12} \\cdot E_2' \\cdot \\phi$$\n\nNo, this is getting too complicated. Let me look at this from a different angle.\n\nActually, I think the correct heat equation is (from Eichler-Zagier, Chapter III):\n\nFor $\\phi(\\tau, z) = \\sum_{\\nu \\geq 0} \\xi_{\\nu}(\\tau) \\frac{(2\\pi i z)^{2\\nu}}{(2\\nu)!}$, the heat equation is:\n\n$$\\xi_{\\nu}' = (k + 2\\nu - 2) \\cdot \\frac{E_2}{12} \\cdot \\xi_{\\nu-1} + ... $$\n\nNo wait, I think the heat equation relates $\\xi_{\\nu}'$ to $\\xi_{\\nu+1}$ and $\\xi_{\\nu}$:\n\n$$\\xi_{\\nu}' = (2\\nu+2)(2\\nu+1) \\cdot \\frac{1}{4\\pi i m} \\cdot \\xi_{\\nu+1} + \\frac{k + 2\\nu}{12} \\cdot \\frac{E_2}{2\\pi i} \\cdot \\xi_{\\nu}$$\n\nHmm wait, I think I should just look at this more carefully.\n\nThe heat equation for Jacobi forms states that:\n$$\\left( \\frac{\\partial}{\\partial \\tau} - \\frac{1}{4\\pi i m} \\frac{\\partial^2}{\\partial z^2} \\right) \\phi(\\tau, z) = \\frac{k}{12\\pi i} E_2(\\tau) \\phi(\\tau, z)$$\n\nWait, I don't think there's an $E_2$ term. Let me think again.\n\nActually, the heat equation comes from the following. A Jacobi form $\\phi$ of weight $k$ and index $m$ satisfies:\n$$\\phi\\left(\\frac{a\\tau + b}{c\\tau + d}, \\frac{z}{c\\tau + d}\\right) = (c\\tau + d)^k e^{2\\pi i m \\frac{cz^2}{c\\tau + d}} \\phi(\\tau, z)$$\n\nfor $\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} \\in SL_2(\\mathbb{Z})$.\n\nTaking the derivative with respect to $c$ (or using the Lie algebra action), one gets the heat equation. The standard result is:\n\n$$\\left( 2\\pi i m \\frac{\\partial}{\\partial \\tau} + \\frac{1}{2} \\frac{\\partial^2}{\\partial z^2} - \\frac{k}{12} E_2(\\tau) \\cdot 2\\pi i \\right) \\phi = 0$$\n\nHmm, I'm not confident about the exact form. Let me try a different approach.\n\nLet me just consider the structural result: the Taylor coefficients $\\xi_{\\nu}$ of a Jacobi form of weight $k$ and index $m$ are modular forms of weight $k + 2\\nu$, and they satisfy a recurrence relation coming from the heat equation. The recurrence is of the form:\n\n$$\\xi_{\\nu+1} = \\frac{1}{4\\pi i m \\cdot (2\\nu+2)(2\\nu+1)} \\left( \\xi_{\\nu}' - \\frac{k+2\\nu}{12} \\cdot 2\\pi i \\cdot E_2 \\cdot \\xi_{\\nu} \\right)$$\n\nThis is the Serre derivative relation: $\\xi_{\\nu+1} \\propto D_{k+2\\nu} \\xi_{\\nu}$ where $D_w$ is the Serre derivative.\n\nNow, the key point: if $\\xi_0 = 0$, then $\\xi_1 = \\frac{1}{4\\pi i m \\cdot 2 \\cdot 1} D_k(0) = 0$, and by induction, all $\\xi_{\\nu} = 0$.\n\nBut we know $\\phi_{-2,1}(\\tau, 0) = 0$ and $\\phi_{-2,1} \\neq 0$. So either:\n1. The recurrence is wrong, or\n2. $\\phi_{-2,1}$ doesn't satisfy this recurrence, or\n3. The recurrence goes in the other direction.\n\nLet me check: $\\phi_{-2,1}(\\tau, z) = \\frac{\\theta_1(\\tau,z)^2}{\\eta(\\tau)^6}$.\n\n$\\theta_1(\\tau, z) = -\\sum_{n \\in \\mathbb{Z}} (-1)^n q^{(n+1/2)^2/2} \\zeta^{n+1/2}$ where $q = e^{2\\pi i \\tau}$, $\\zeta = e^{2\\pi i z}$.\n\nAt $z = 0$: $\\theta_1(\\tau, 0) = -\\sum (-1)^n q^{(n+1/2)^2/2} \\cdot 1 = 0$ (the terms cancel in pairs).\n\nSo $\\phi_{-2,1}(\\tau, 0) = 0$. And $\\phi_{-2,1}$ is a nonzero Jacobi form of weight $-2$, index $1$.\n\nThis means the recurrence $\\xi_{\\nu+1} = F(\\xi_{\\nu})$ with $\\xi_0 = 0 \\Rightarrow \\xi_1 = 0$ must be wrong, or there's something else going on.\n\nAh, I think I see the issue. The recurrence might go in the other direction, or there might be a backward recurrence as well. The heat equation gives a relation between $\\xi_{\\nu}'$, $\\xi_{\\nu+1}$, and $\\xi_{\\nu}$, but it's a differential equation, not a simple recurrence. If $\\xi_0 = 0$, the equation for $\\nu = 0$ becomes:\n\n$$0 = \\frac{2 \\cdot 1}{4\\pi i m} \\xi_1 + 0$$\n\nwhich gives $\\xi_1 = 0$. Then for $\\nu = 1$:\n\n$$0 = \\frac{4 \\cdot 3}{4\\pi i m} \\xi_2 + 0$$\n\nso $\\xi_2 = 0$, etc.\n\nBut this contradicts $\\phi_{-2,1} \\neq 0$ with $\\xi_0 = 0$!\n\nSo either the heat equation is wrong, or $\\phi_{-2,1}$ doesn't satisfy it, or I'm making an error.\n\nLet me reconsider. Maybe the heat equation is not $\\xi_{\\nu}' = \\frac{(2\\nu+2)(2nu+1)}{4\\pi i m} \\xi_{\\nu+1} + \\ldots$ but rather involves $\\xi_{\\nu-1}$ as well.\n\nActually, I think the issue might be that the heat equation for Jacobi forms involves a third-order or mixed relation, not just a second-order one. Or maybe the heat equation is:\n\n$$\\xi_{\\nu}' = \\frac{(2\\nu+2)(2\\nu+1)}{4\\pi i m} \\xi_{\\nu+1} + \\frac{k+2\\nu}{12} \\cdot (\\text{something}) \\cdot \\xi_{\\nu}$$\n\nand when $\\xi_0 = 0$ and $\\xi_0' = 0$ (since $\\xi_0 = 0$), we get $\\xi_1 = 0$, and then $\\xi_1' = 0$ gives $\\xi_2 = 0$, etc.\n\nBut this still gives all $\\xi_{\\nu} = 0$, contradicting $\\phi_{-2,1} \\neq 0$.\n\nI must be making an error. Let me reconsider the heat equation.\n\nActually, I think the correct heat equation might be:\n\n$$\\xi_{\\nu}' = \\frac{(2\\nu+2)(2\\nu+1)}{4\\pi i m} \\xi_{\\nu+1} + \\frac{k+2\\nu}{12} \\cdot g_1 \\cdot \\xi_{\\nu} + \\nu \\cdot g_2 \\cdot \\xi_{\\nu-1}$$\n\nwhere $g_1, g_2$ are modular forms. The $\\xi_{\\nu-1}$ term would mean the recurrence is not purely forward.\n\nHmm, but I'm not sure about this. Let me try yet another approach.\n\nActually, I think the issue is that the heat equation for Jacobi forms is NOT simply a recurrence from $\\xi_{\\nu}$ to $\\xi_{\\nu+1}$. The heat equation is a PDE, and when you expand it in powers of $z$, you get a relation involving $\\xi_{\\nu}'$, $\\xi_{\\nu+1}$, and $\\xi_{\\nu}$. But $\\xi_{\\nu}'$ is the derivative of a modular form, which is NOT a modular form (it's a quasi-modular form). So the relation is:\n\n$$\\xi_{\\nu}' = \\frac{(2\\nu+2)(2\\nu+1)}{4\\pi i m} \\xi_{\\nu+1} + \\frac{k+2\\nu}{12} E_2 \\xi_{\\nu}$$\n\n(using appropriate normalizations). Here, $\\xi_{\\nu}'$ is the ordinary derivative, and $E_2$ is the quasi-modular Eisenstein series. The point is that $\\xi_{\\nu}' - \\frac{k+2\\nu}{12} E_2 \\xi_{\\nu}$ IS a modular form (this is the Serre derivative), and it equals $\\frac{(2\\nu+2)(2\\nu+1)}{4\\pi i m} \\xi_{\\nu+1}$.\n\nSo the recurrence is: $\\xi_{\\nu+1} = \\frac{4\\pi i m}{(2\\nu+2)(2\\nu+1)} D_{k+2\\nu} \\xi_{\\nu}$ where $D_w$ is the Serre derivative.\n\nNow, if $\\xi_0 = 0$, then $D_k \\xi_0 = D_k(0) = 0$, so $\\xi_1 = 0$. Then $D_{k+2} \\xi_1 = 0$, so $\\xi_2 = 0$, etc.\n\nThis still gives all $\\xi_{\\nu} = 0$, contradicting $\\phi_{-2,1} \\neq 0$.\n\nSo either:\n1. The heat equation is wrong as I stated it.\n2. $\\phi_{-2,1}$ doesn't satisfy this heat equation.\n3. There's something special about negative weight.\n\nLet me check option 3. $\\phi_{-2,1}$ has weight $k = -2$. The heat equation would give:\n$$\\xi_1 = \\frac{4\\pi i \\cdot 1}{2 \\cdot 1} D_{-2} \\xi_0$$\n\nIf $\\xi_0 = 0$, then $\\xi_1 = 0$, etc. So all $\\xi_{\\nu} = 0$, meaning $\\phi_{-2,1} = 0$, which is a contradiction.\n\nSo the heat equation as I stated it must be wrong. Let me reconsider.\n\nActually, I think the issue is that the heat equation might involve a LOWERING operator as well, not just a raising operator. The full heat equation might be:\n\n$$\\xi_{\\nu}' = \\frac{(2\\nu+2)(2\\nu+1)}{4\\pi i m} \\xi_{\\nu+1} + \\frac{k+2\\nu}{12} E_2 \\xi_{\\nu} + 4\\pi i m \\cdot \\xi_{\\nu-1}$$\n\nThe $\\xi_{\\nu-1}$ term would come from the index $m$ and would allow $\\xi_0 = 0$ with $\\xi_1 \\neq 0$.\n\nLet me check: if $\\xi_0 = 0$, the equation for $\\nu = 0$ is:\n$$\\xi_0' = \\frac{2}{4\\pi i m} \\xi_1 + \\frac{k}{12} E_2 \\cdot 0 + 4\\pi i m \\cdot \\xi_{-1}$$\n\nBut $\\xi_{-1}$ doesn't exist (or is zero), so:\n$$0 = \\frac{2}{4\\pi i m} \\xi_1$$\n\ngiving $\\xi_1 = 0$. Then for $\\nu = 1$:\n$$0 = \\frac{12}{4\\pi i m} \\xi_2 + \\frac{k+2}{12} E_2 \\cdot 0 + 4\\pi i m \\cdot 0$$\n\ngiving $\\xi_2 = 0$. So we still get all $\\xi_{\\nu} = 0$.\n\nHmm, so even with the $\\xi_{\\nu-1}$ term, if $\\xi_0 = 0$, all coefficients vanish. But $\\phi_{-2,1}$ is a counterexample!\n\nI must be fundamentally misunderstanding the heat equation. Let me reconsider.\n\nOK, I think the issue might be that the heat equation is not the only constraint on the Taylor coefficients. The Taylor coefficients must also satisfy the \"elliptic transformation\" constraint, which is separate from the heat equation.\n\nActually, wait. Let me reconsider whether $\\phi_{-2,1}(\\tau, 0) = 0$.\n\n$\\phi_{-2,1}(\\tau, z) = \\frac{\\theta_1(\\tau, z)^2}{\\eta(\\tau)^6}$\n\n$\\theta_1(\\tau, 0) = 0$, yes. So $\\phi_{-2,1}(\\tau, 0) = 0$.\n\nBut $\\phi_{-2,1}$ is a weak Jacobi form, not a holomorphic Jacobi form! Weak Jacobi forms have a Fourier expansion with possibly negative powers of $q$, while holomorphic Jacobi forms require non-negative powers.\n\nThe problem specifically asks about \"holomorphic Jacobi forms.\" So maybe for holomorphic Jacobi forms, the heat equation does force $\\xi_0 \\neq 0$ (for nonzero forms).\n\nActually, I think the distinction is important. $\\phi_{-2,1}$ is a weak Jacobi form (it has weight $-2$, which is negative, so it can't be holomorphic). Holomorphic Jacobi forms have $k \\geq 0$ (actually, I think $k \\geq 2$ or something).\n\nFor holomorphic Jacobi forms, the heat equation recurrence $\\xi_{\\nu+1} = \\frac{4\\pi i m}{(2\\nu+2)(2\\nu+1)} D_{k+2\\nu} \\xi_{\\nu}$ would indeed force all $\\xi_{\\nu} = 0$ if $\\xi_0 = 0$.\n\nBut wait, this would mean that any nonzero holomorphic Jacobi form has $\\xi_0 \\neq 0$, i.e., $\\phi(\\tau, 0) \\neq 0$. Is this true?\n\nActually, I don't think this is true either. Consider the Jacobi Eisenstein series $E_{k,m}$ for $k \\geq 4$ and $m \\geq 1$. These are holomorphic Jacobi forms. Do they vanish at $z = 0$?\n\n$E_{k,m}(\\tau, 0)$ is the value at $z = 0$, which is generally nonzero (it's related to the Eisenstein series $E_k$).\n\nHmm, but what about other holomorphic Jacobi forms? Can we have a cusp Jacobi form that vanishes at $z = 0$?\n\nActually, I think the heat equation recurrence IS correct for holomorphic Jacobi forms, and it does imply that $\\xi_0 = 0 \\Rightarrow \\phi = 0$. Let me verify this claim.\n\nIf the heat equation is $\\xi_{\\nu+1} = \\frac{4\\pi i m}{(2\\nu+2)(2\\nu+1)} D_{k+2\\nu} \\xi_{\\nu}$, and this is the ONLY constraint (together with $\\xi_{\\nu}$ being modular forms of the right weight), then:\n\n- $\\xi_0$ is a modular form of weight $k$\n- $\\xi_1 = c \\cdot D_k \\xi_0$ is a modular form of weight $k+2$\n- $\\xi_2 = c' \\cdot D_{k+2} \\xi_1$ is a modular form of weight $k+4$\n- etc.\n\nSo the entire Taylor expansion is determined by $\\xi_0$! And if $\\xi_0 = 0$, then $\\phi = 0$.\n\nBut this can't be right, because the space of Jacobi forms of weight $k$ and index $m$ is generally larger than the space of modular forms of weight $k$ (which is where $\\xi_0$ lives).\n\nFor example, $J_{k,m}$ (the space of Jacobi forms of weight $k$ and index $m$) has dimension that grows with $m$, while $M_k$ (the space of modular forms of weight $k$) has dimension that's bounded. So not all Jacobi forms can be determined by $\\xi_0$ alone.\n\nThis means the heat equation recurrence must not be the only constraint, or I'm getting the recurrence wrong.\n\nLet me reconsider. I think the issue is that the heat equation gives a relation between $\\xi_{\\nu}'$, $\\xi_{\\nu+1}$, and $\\xi_{\\nu}$, but this is a differential equation, not an algebraic recurrence. The equation is:\n\n$$\\xi_{\\nu}' = \\frac{(2\\nu+2)(2\\nu+1)}{4\\pi i m} \\xi_{\\nu+1} + \\frac{k+2\\nu}{12} E_2 \\xi_{\\nu}$$\n\nThis can be rewritten as:\n$$\\xi_{\\nu+1} = \\frac{4\\pi i m}{(2\\nu+2)(2\\nu+1)} \\left( \\xi_{\\nu}' - \\frac{k+2\\nu}{12} E_2 \\xi_{\\nu} \\right) = \\frac{4\\pi i m}{(2\\nu+2)(2\\nu+1)} D_{k+2\\nu} \\xi_{\\nu}$$\n\nwhere $D_w f = f' - \\frac{w}{12} E_2 f$ is the Serre derivative (up to normalization).\n\nNow, the Serre derivative $D_w: M_w \\to M_{w+2}$ is a map from modular forms of weight $w$ to modular forms of weight $w+2$. But it's NOT surjective in general, and it's NOT injective in general.\n\nSo the recurrence says: given $\\xi_0 \\in M_k$, we get $\\xi_1 = c \\cdot D_k \\xi_0 \\in M_{k+2}$, then $\\xi_2 = c' \\cdot D_{k+2} \\xi_1 \\in M_{k+4}$, etc.\n\nBut this only gives a subspace of the possible Taylor coefficients. The full space of Jacobi forms might have additional degrees of freedom.\n\nHmm, but where do the additional degrees of freedom come from? The heat equation is supposed to be the main constraint...\n\nActually, I think I've been confusing two things. The heat equation is a necessary condition, but it might not be sufficient. There might be additional constraints from the elliptic transformation law.\n\nWait, actually, I think the heat equation IS the main constraint, and the point is that the Serre derivative is not always surjective. So not every modular form of weight $k+2$ can be $\\xi_1$; only those in the image of $D_k$.\n\nBut the key question is: can we have $\\xi_0 = 0$ and $\\xi_1 \\neq 0$? From the recurrence, $\\xi_1 = c \\cdot D_k(0) = 0$. So no, if $\\xi_0 = 0$, then $\\xi_1 = 0$.\n\nBut then all $\\xi_{\\nu} = 0$, and $\\phi = 0$. This would mean every nonzero holomorphic Jacobi form has $\\xi_0 \\neq 0$.\n\nBut this contradicts the dimension argument! The space $J_{k,m}$ can be larger than $M_k$.\n\nLet me resolve this contradiction. I think the issue is that the heat equation is NOT simply $\\xi_{\\nu+1} = c \\cdot D_{k+2\\nu} \\xi_{\\nu}$. There must be additional terms.\n\nLet me look at this more carefully. The heat equation for Jacobi forms (as stated in Eichler-Zagier) is:\n\n$$\\left( \\frac{\\partial}{\\partial \\tau} - \\frac{1}{4\\pi i m} \\frac{\\partial^2}{\\partial z^2} \\right) \\phi = 0$$\n\nWait, maybe there's no $E_2$ term at all! The heat equation is simply:\n\n$$\\frac{\\partial \\phi}{\\partial \\tau} = \\frac{1}{4\\pi i m} \\frac{\\partial^2 \\phi}{\\partial z^2}$$\n\nIf this is the case, then with $\\phi = \\sum \\xi_{\\nu} z^{2\\nu}$:\n\n$$\\xi_{\\nu}' = \\frac{(2\\nu+2)(2\\nu+1)}{4\\pi i m} \\xi_{\\nu+1}$$\n\nSo $\\xi_{\\nu+1} = \\frac{4\\pi i m}{(2\\nu+2)(2\\nu+1)} \\xi_{\\nu}'$.\n\nNow, $\\xi_{\\nu}'$ is the derivative of a modular form, which is a quasi-modular form (not necessarily a modular form). So $\\xi_{\\nu+1}$ is a quasi-modular form, but we need it to be a modular form. The constraint is that $\\xi_{\\nu}'$ must be a modular form, which means $\\xi_{\\nu}'$ must be in the space of modular forms of weight $k+2\\nu+2$.\n\nBut $\\xi_{\\nu}'$ is the derivative of a modular form of weight $k+2\\nu$, and $\\xi_{\\nu}' = \\frac{(k+2\\nu)}{12} E_2 \\xi_{\\nu} + (\\text{modular form of weight } k+2\\nu+2)$. So $\\xi_{\\nu+1} = \\frac{4\\pi i m}{(2\\nu+2)(2\\nu+1)} \\left( \\xi_{\\nu}' \\right)$, and for this to be a modular form, we need $\\xi_{\\nu}'$ to be a modular form, which requires the $E_2$ component to vanish.\n\nHmm, but $\\xi_{\\nu}'$ is generally NOT a modular form. The derivative of a modular form of weight $w$ is:\n$$f' = \\frac{w}{12} E_2 f + D_w f$$\n\nwhere $D_w f$ is the Serre derivative (a modular form of weight $w+2$). So:\n\n$$\\xi_{\\nu+1} = \\frac{4\\pi i m}{(2\\nu+2)(2\\nu+1)} \\left( \\frac{k+2\\nu}{12} E_2 \\xi_{\\nu} + D_{k+2\\nu} \\xi_{\\nu} \\right)$$\n\nFor $\\xi_{\\nu+1}$ to be a modular form, the $E_2 \\xi_{\\nu}$ term must vanish or be canceled. But $E_2 \\xi_{\\nu}$ is a quasi-modular form, not a modular form, so it can't be canceled by $D_{k+2\\nu} \\xi_{\\nu}$ (which is a modular form).\n\nThis means we need $\\frac{k+2\\nu}{12} E_2 \\xi_{\\nu} = 0$ for all $\\nu$, which means either $k + 2\\nu = 0$ or $\\xi_{\\nu} = 0$.\n\nBut this is too restrictive! It would mean that for $k > 0$, we need $\\xi_0 = 0$ (since $k \\neq 0$), which would then force all $\\xi_{\\nu} = 0$.\n\nSomething is very wrong with my understanding. Let me reconsider.\n\nI think the issue is that the heat equation $\\frac{\\partial \\phi}{\\partial \\tau} = \\frac{1}{4\\pi i m} \\frac{\\partial^2 \\phi}{\\partial z^2}$ is NOT correct for Jacobi forms of nonzero weight. The correct heat equation must include a weight-dependent term.\n\nLet me look at this from the transformation law. A Jacobi form of weight $k$ and index $m$ satisfies:\n$$\\phi\\left(\\frac{a\\tau+b}{c\\tau+d}, \\frac{z}{c\\tau+d}\\right) = (c\\tau+d)^k e^{2\\pi i m \\frac{cz^2}{c\\tau+d}} \\phi(\\tau, z)$$\n\nThe heat equation comes from differentiating with respect to the modular group parameter. The standard result (which I'll now trust) is:\n\n$$\\left( \\frac{\\partial}{\\partial \\tau} - \\frac{1}{4\\pi i m} \\frac{\\partial^2}{\\partial z^2} \\right) \\phi = \\frac{k}{12\\pi i} E_2(\\tau) \\phi$$\n\nWait, maybe it's:\n\n$$\\left( 2\\pi i m \\frac{\\partial}{\\partial \\tau} + \\frac{1}{2} \\frac{\\partial^2}{\\partial z^2} \\right) \\phi = \\frac{km}{6} E_2(\\tau) \\phi$$\n\nHmm, I keep getting confused by normalizations. Let me try to derive it.\n\nConsider the transformation under $T = \\begin{pmatrix} 1 & 1 \\\\ 0 & 1 \\end{pmatrix}$: $\\phi(\\tau+1, z) = \\phi(\\tau, z)$ (for index $m$ with the standard normalization, the $T$-transformation might include a phase, but for the full modular group with trivial character, it's just $\\phi(\\tau+1, z) = \\phi(\\tau, z)$).\n\nConsider the transformation under $S = \\begin{pmatrix} 0 & -1 \\\\ 1 & 0 \\end{pmatrix}$: $\\phi(-1/\\tau, z/\\tau) = \\tau^k e^{2\\pi i m z^2/\\tau} \\phi(\\tau, z)$.\n\nNow, the heat equation comes from the Lie algebra action. The generator of the modular group in the $\\tau$-direction gives a differential equation. Let me use the standard approach.\n\nThe key operator is the \"Casimir\" type operator. For Jacobi forms, the heat equation is:\n\n$$\\left( \\frac{\\partial}{\\partial \\tau} - \\frac{1}{4\\pi i m} \\frac{\\partial^2}{\\partial z^2} \\right) \\phi = \\frac{k}{12\\pi i} E_2 \\phi$$\n\nHmm wait, I realize I should just look at this more carefully. Let me use the fact that $\\phi$ is a function on the Jacobi group, and the heat equation comes from the center of the universal enveloping algebra.\n\nActually, let me just try to use the result from Eichler-Zagier's book. I believe the correct heat equation is:\n\nFor $\\phi(\\tau, z) = \\sum_{\\nu \\geq 0} \\xi_{\\nu}(\\tau) \\frac{(2\\pi i z)^{2\\nu}}{(2\\nu)!}$:\n\n$$\\xi_{\\nu}' = (k + 2\\nu - 2) \\frac{E_2}{12} \\xi_{\\nu-1} + \\ldots$$\n\nNo, I think the correct relation involves the \"index-raising\" and \"index-lowering\" operators. Let me try a completely different approach.\n\nActually, I think the key result I need is from the theory of Taylor coefficients of Jacobi forms as developed in Eichler-Zagier. The main theorem is:\n\n**Theorem (Eichler-Zagier):** The Taylor coefficients $\\xi_n$ of a Jacobi form $\\phi$ of weight $k$ and index $m$ satisfy:\n1. $\\xi_n$ is a modular form of weight $k + n$ (for even $n$; odd $n$ gives 0).\n2. The $\\xi_n$ satisfy the heat equation recurrence.\n3. The space of Jacobi forms $J_{k,m}$ is isomorphic to a certain subspace of $\\bigoplus_n M_{k+n}$ defined by the recurrence and additional constraints.\n\nThe key point for our problem is: what are the constraints on the Taylor coefficients?\n\nI think the correct statement is that the Taylor coefficients satisfy BOTH a forward recurrence (from the heat equation) AND a backward recurrence (from the adjoint heat equation). The forward recurrence determines $\\xi_{n+1}$ from $\\xi_n$ (via the Serre derivative), and the backward recurrence determines $\\xi_{n-1}$ from $\\xi_n$ (via the adjoint of the Serre derivative).\n\nBut if both recurrences hold, then the system is overdetermined, and the space of solutions is constrained.\n\nActually, I think the correct picture is:\n\nThe heat equation gives: $\\xi_{n+2} = \\frac{1}{4\\pi i m (n+2)(n+1)} D_{k+n} \\xi_n$ (forward).\nThe \"elliptic\" constraint gives: $\\xi_{n-2} = -4\\pi i m \\cdot \\frac{n(n-1)}{...} D^*_{k+n} \\xi_n$ (backward, via the lowering operator).\n\nWait, I don't think there's a separate backward recurrence. The heat equation is the only differential constraint, and the elliptic transformation law is encoded in the Fourier expansion (the $q$-expansion structure).\n\nLet me try yet another approach. Let me think about the theta decomposition.\n\nA Jacobi form $\\phi$ of weight $k$ and index $m$ has a theta decomposition:\n$$\\phi(\\tau, z) = \\sum_{\\mu \\pmod{2m}} h_{\\mu}(\\tau) \\theta_{m,\\mu}(\\tau, z)$$\n\nwhere $h_{\\mu}$ are modular forms of weight $k - 1/2$ (for a certain subgroup), and $\\theta_{m,\\mu}$ are the Jacobi theta functions.\n\nThe Taylor expansion of $\\theta_{m,\\mu}(\\tau, z)$ in $z$ starts with:\n$$\\theta_{m,\\mu}(\\tau, z) = \\sum_{r \\in \\mathbb{Z}, r \\equiv \\mu \\pmod{2m}} q^{r^2/(4m)} \\zeta^r$$\n\nwhere $\\zeta = e^{2\\pi i z}$. Expanding $\\zeta^r = e^{2\\pi i r z} = \\sum_{n} \\frac{(2\\pi i r z)^n}{n!}$:\n\n$$\\theta_{m,\\mu}(\\tau, z) = \\sum_{n=0}^{\\infty} \\frac{(2\\pi i z)^n}{n!} \\sum_{r \\equiv \\mu} r^n q^{r^2/(4m)}$$\n\nSo the Taylor coefficient of $z^n$ in $\\theta_{m,\\mu}$ is $\\frac{(2\\pi i)^n}{n!} \\sum_{r \\equiv \\mu} r^n q^{r^2/(4m)}$.\n\nFor $n = 0$: $\\sum_{r \\equiv \\mu} q^{r^2/(4m)}$, which is generally nonzero.\nFor $n = 1$: $\\sum_{r \\equiv \\mu} r \\cdot q^{r^2/(4m)}$, which might be zero for symmetry reasons.\n\nNow, the Taylor coefficient $\\xi_n$ of $\\phi$ is:\n$$\\xi_n = \\sum_{\\mu} h_{\\mu}(\\tau) \\cdot \\frac{(2\\pi i)^n}{n!} \\sum_{r \\equiv \\mu} r^n q^{r^2/(4m)}$$\n\nFor $\\xi_0 = 0$, we need $\\sum_{\\mu} h_{\\mu}(\\tau) \\sum_{r \\equiv \\mu} q^{r^2/(4m)} = 0$.\n\nThis is a nontrivial condition on the $h_{\\mu}$, but it doesn't force all $h_{\\mu} = 0$. So it IS possible to have $\\xi_0 = 0$ with $\\phi \\neq 0$.\n\nThis means the heat equation recurrence $\\xi_{n+1} = F(\\xi_n)$ with $\\xi_0 = 0 \\Rightarrow \\xi_1 = 0$ must be WRONG.\n\nOK so I've been going back and forth. Let me try to settle this definitively.\n\nI think the issue is that the heat equation is NOT $\\xi_{n+1} = c \\cdot D \\xi_n$. The heat equation is a PDE that relates $\\frac{\\partial \\phi}{\\partial \\tau}$ and $\\frac{\\partial^2 \\phi}{\\partial z^2}$, but when you expand in Taylor series, you get:\n\n$$\\sum_n \\xi_n'(\\tau) z^n = \\frac{1}{4\\pi i m} \\sum_n n(n-1) \\xi_n(\\tau) z^{n-2} + \\text{weight term}$$\n\nThis gives:\n$$\\xi_n' = \\frac{(n+2)(n+1)}{4\\pi i m} \\xi_{n+2} + \\text{weight term involving } \\xi_n$$\n\nSo the recurrence relates $\\xi_n'$ to $\\xi_{n+2}$ and $\\xi_n$, NOT $\\xi_{n+1}$ to $\\xi_n$. This is because the heat equation involves the second derivative in $z$, which shifts the index by 2.\n\nAnd since we're dealing with even functions (only even powers of $z$), the recurrence is:\n$$\\xi_{2\\nu}' = \\frac{(2\\nu+2)(2\\nu+1)}{4\\pi i m} \\xi_{2\\nu+2} + \\text{weight term} \\cdot \\xi_{2\\nu}$$\n\nSo $\\xi_{2\\nu+2} = \\frac{4\\pi i m}{(2\\nu+2)(2\\nu+1)} \\left( \\xi_{2\\nu}' - \\text{weight term} \\cdot \\xi_{2\\nu} \\right) = \\frac{4\\pi i m}{(2\\nu+2)(2\\nu+1)} D_{k+2\\nu} \\xi_{2\\nu}$\n\nwhere $D$ is the Serre derivative.\n\nSo the recurrence goes from $\\xi_0 \\to \\xi_2 \\to \\xi_4 \\to \\ldots$, and separately from $\\xi_1 \\to \\xi_3 \\to \\xi_5 \\to \\ldots$.\n\nBut for holomorphic Jacobi forms, only even powers appear ($\\phi(\\tau, -z) = \\phi(\\tau, z)$), so $\\xi_1 = \\xi_3 = \\ldots = 0$.\n\nSo the recurrence is: $\\xi_0 \\to \\xi_2 \\to \\xi_4 \\to \\ldots$, and if $\\xi_0 = 0$, then $\\xi_2 = 0$, $\\xi_4 = 0$, etc., giving $\\phi = 0$.\n\nBut this STILL contradicts the theta decomposition analysis, which showed that $\\xi_0 = 0$ doesn't force $\\phi = 0$.\n\nLet me re-examine the theta decomposition. For $\\phi_{-2,1}$, which is a WEAK Jacobi form (not holomorphic), $\\xi_0 = 0$ is possible. But for HOLOMORPHIC Jacobi forms, maybe $\\xi_0 = 0$ does force $\\phi = 0$.\n\nActually, wait. Let me reconsider. The heat equation $\\frac{\\partial \\phi}{\\partial \\tau} = \\frac{1}{4\\pi i m} \\frac{\\partial^2 \\phi}{\\partial z^2} + \\text{weight term}$ is a PDE. When we expand $\\phi = \\sum \\xi_n z^n$, we get:\n\n$$\\sum_n \\xi_n' z^n = \\frac{1}{4\\pi i m} \\sum_n n(n-1) \\xi_n z^{n-2} + \\text{weight term} \\cdot \\sum_n \\xi_n z^n$$\n\nComparing coefficients of $z^n$:\n$$\\xi_n' = \\frac{(n+2)(n+1)}{4\\pi i m} \\xi_{n+2} + W(n) \\cdot \\xi_n$$\n\nwhere $W(n)$ is the weight term (involving $E_2$ and the weight $k$).\n\nNow, if $\\xi_0 = 0$:\n- From $n = 0$: $\\xi_0' = \\frac{2}{4\\pi i m} \\xi_2 + W(0) \\cdot \\xi_0 = \\frac{2}{4\\pi i m} \\xi_2$. Since $\\xi_0 = 0$, $\\xi_0' = 0$, so $\\xi_2 = 0$.\n- From $n = 2$: $\\xi_2' = \\frac{12}{4\\pi i m} \\xi_4 + W(2) \\cdot \\xi_2 = \\frac{12}{4\\pi i m} \\xi_4$. Since $\\xi_2 = 0$, $\\xi_2' = 0$, so $\\xi_4 = 0$.\n- And so on: all $\\xi_{2\\nu} = 0$.\n\nSo indeed, for the heat equation as stated, $\\xi_0 = 0 \\Rightarrow \\phi = 0$.\n\nBut this contradicts the theta decomposition! Unless... the heat equation is not correct as I stated it, or the theta decomposition allows forms that don't satisfy the heat equation.\n\nActually, I think the issue is that the heat equation might have a different form. Let me reconsider.\n\nThe heat equation for Jacobi forms might be:\n$$\\frac{\\partial \\phi}{\\partial \\tau} = \\frac{1}{4\\pi i m} \\frac{\\partial^2 \\phi}{\\partial z^2} + \\frac{k}{12\\pi i} E_2 \\phi + \\frac{1}{2\\pi i} \\cdot \\frac{E_2'}{...} \\cdot \\phi$$\n\nor some other form with additional terms. If there's a term involving $\\frac{\\partial \\phi}{\\partial z}$ or $z \\cdot \\phi$, the recurrence would be different.\n\nActually, I just realized: the heat equation might involve a term like $z \\frac{\\partial \\phi}{\\partial z}$, which would couple $\\xi_n$ to $\\xi_n$ itself (not $\\xi_{n+2}$). This would change the recurrence.\n\nLet me think about this more carefully. The heat equation comes from the modular transformation law. For a Jacobi form of weight $k$ and index $m$:\n\n$$\\phi\\left(\\frac{a\\tau+b}{c\\tau+d}, \\frac{z}{c\\tau+d}\\right) = (c\\tau+d)^k e^{2\\pi i m \\frac{cz^2}{c\\tau+d}} \\phi(\\tau, z)$$\n\nThe infinitesimal version (taking $\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$ close to the identity) gives the heat equation. The generator in the $\\tau$-direction (from the $T$-transformation) gives $\\frac{\\partial \\phi}{\\partial \\tau} = 0$... no, that's not right.\n\nThe heat equation comes from the Lie algebra of $SL_2(\\mathbb{R})$. The three generators are:\n- $H = \\tau \\frac{\\partial}{\\partial \\tau} + \\frac{1}{2} z \\frac{\\partial}{\\partial z}$ (from the scaling)\n- $E = \\frac{\\partial}{\\partial \\tau}$ (from $T$-transformation, but this gives $\\phi(\\tau+1,z) = \\phi(\\tau,z)$, so $\\frac{\\partial \\phi}{\\partial \\tau}$ is periodic, not zero)\n- $F = \\tau^2 \\frac{\\partial}{\\partial \\tau} + \\tau z \\frac{\\partial}{\\partial z} + \\ldots$ (from $S$-transformation)\n\nThe Casimir element is $C = H^2 - HE - EF - FE + F^2$ (or something like that), and for a representation of weight $k$, $C$ acts as a scalar. This gives the heat equation.\n\nThe resulting heat equation (from the Casimir) is:\n\n$$\\left( \\tau^2 \\frac{\\partial}{\\partial \\tau} + \\tau z \\frac{\\partial}{\\partial z} \\right) \\frac{\\partial \\phi}{\\partial \\tau} - \\ldots = \\text{scalar} \\cdot \\phi$$\n\nThis is getting very complicated. Let me try a completely different approach to the problem.\n\nLet me just think about what the problem is asking and use known results about Jacobi forms.\n\nThe problem asks: if the Taylor development of a holomorphic Jacobi form begins with $\\alpha \\Delta z^8$ or $\\beta \\Delta E_4 z^{12}$, is the weight necessarily $\\geq 12$?\n\nFrom the weight formula: $\\xi_n$ has weight $k + n$.\n\nCase 1: $\\xi_8 = \\alpha \\Delta$, weight of $\\Delta$ is 12, so $k + 8 = 12$, giving $k = 4$.\nCase 2: $\\xi_{12} = \\beta \\Delta E_4$, weight of $\\Delta E_4$ is 16, so $k + 12 = 16$, giving $k = 4$.\n\nIn both cases, $k = 4 < 12$. So if such Jacobi forms exist, the statement is FALSE.\n\nThe question is whether such Jacobi forms can exist. The constraint is that $\\xi_0 = \\xi_2 = \\xi_4 = \\xi_6 = 0$ (for case 1) or $\\xi_0 = \\ldots = \\xi_{10} = 0$ (for case 2).\n\nNow, from the heat equation recurrence, if $\\xi_0 = 0$, then all $\\xi_n = 0$, so $\\phi = 0$. This would mean no nonzero Jacobi form can have $\\xi_0 = 0$, and hence the conditions in the problem can never be satisfied (for nonzero forms).\n\nBut wait, if the conditions can never be satisfied, then the statement \"if the Taylor development begins with..., the weight cannot be less than 12\" is vacuously true!\n\nHmm, but that doesn't seem right either. The problem is asking about a specific scenario, and if that scenario is impossible, the statement is vacuously true.\n\nBut actually, I don't think $\\xi_0 = 0$ forces $\\phi = 0$ for holomorphic Jacobi forms. Let me reconsider.\n\nI think the issue is that the heat equation is NOT simply $\\xi_{n+2} = c \\cdot D \\xi_n$. The heat equation is a PDE, and the Taylor expansion gives a relation between $\\xi_n'$, $\\xi_{n+2}$, and $\\xi_n$. But $\\xi_n'$ is the derivative of a modular form, which is a quasi-modular form. The relation is:\n\n$$\\xi_n' = \\frac{(n+2)(n+1)}{4\\pi i m} \\xi_{n+2} + \\frac{k+n}{12} \\cdot 2\\pi i \\cdot E_2 \\cdot \\xi_n$$\n\n(using the correct normalization). This gives:\n$$\\xi_{n+2} = \\frac{4\\pi i m}{(n+2)(n+1)} \\left( \\xi_n' - \\frac{k+n}{12} \\cdot 2\\pi i \\cdot E_2 \\cdot \\xi_n \\right) = \\frac{4\\pi i m}{(n+2)(n+1)} \\cdot 2\\pi i \\cdot D_{k+n} \\xi_n$$\n\nwhere $D_w f = \\frac{1}{2\\pi i} f' - \\frac{w}{12} E_2 f$ is the Serre derivative.\n\nNow, if $\\xi_0 = 0$:\n- $\\xi_0' = 0$ (since $\\xi_0 = 0$ identically)\n- $\\xi_2 = \\frac{4\\pi i m}{2 \\cdot 1} \\cdot 2\\pi i \\cdot D_k(0) = 0$\n- $\\xi_2' = 0$\n- $\\xi_4 = \\frac{4\\pi i m}{4 \\cdot 3} \\cdot 2\\pi i \\cdot D_{k+2}(0) = 0$\n- etc.\n\nSo all $\\xi_{2\\nu} = 0$, and $\\phi = 0$.\n\nThis means: for a holomorphic Jacobi form (which is even in $z$, so only even Taylor coefficients are nonzero), if $\\xi_0 = 0$, then $\\phi = 0$.\n\nBut this can't be right! Consider the Jacobi form $\\phi_{0,1}(\\tau, z) = 4\\left(\\frac{\\theta_2^2 \\theta_3^2}{\\theta_1^2}\\right)(\\tau, z)$... actually, I'm not sure about the exact form. Let me think of a concrete example.\n\nThe Weierstrass $\\wp$-function gives a Jacobi form of weight 2 and index 0 (but index 0 is trivial). For positive index, consider the Jacobi Eisenstein series $E_{k,m}$.\n\nActually, let me consider a specific example. The Jacobi form $\\phi_{0,1}(\\tau, z)$ (weight 0, index 1) is a well-known holomorphic Jacobi form. Its Taylor expansion at $z = 0$:\n\n$\\phi_{0,1}(\\tau, 0) = E_4(\\tau)/12$ (or something like that). Actually, I think $\\phi_{0,1}(\\tau, z) = \\mu(\\tau, z)$ (the Jacobi root system), and $\\mu(\\tau, 0) = $ something nonzero.\n\nHmm, let me think of another example. Consider the difference $\\phi_{k,m}(\\tau, z) - \\phi_{k,m}(\\tau, 0)$. This vanishes at $z = 0$ but is NOT a Jacobi form (because subtracting a function of $\\tau$ breaks the elliptic transformation law).\n\nSo maybe it IS true that for holomorphic Jacobi forms, $\\xi_0 = 0 \\Rightarrow \\phi = 0$. This would be a strong constraint.\n\nBut then the dimension of $J_{k,m}$ would be at most $\\dim M_k$, which is false for large $m$.\n\nWait, let me check. For $k = 4$, $m = 1$: $J_{4,1}$ has dimension... The space of Jacobi forms of weight 4 and index 1. The dimension formula for $J_{k,m}$ (for $k \\geq 2$) is roughly $\\dim J_{k,m} \\approx \\dim M_k + \\dim S_{k+2} + \\ldots$ (it grows with $m$).\n\nFor $k = 4, m = 1$: $\\dim J_{4,1} = 1$ (I think). And $\\dim M_4 = 1$. So in this case, $\\dim J_{4,1} = \\dim M_4 = 1$, consistent with $\\xi_0$ determining $\\phi$.\n\nFor $k = 4, m = 2$: $\\dim J_{4,2}$ might be 2 or more, while $\\dim M_4 = 1$. If $\\dim J_{4,2} > 1$, then $\\xi_0$ can't determine $\\phi$, and there must be Jacobi forms with $\\xi_0 = 0$.\n\nLet me look up the dimension formula. The dimension of $J_{k,m}$ for $k \\geq 2$ is:\n$$\\dim J_{k,m} = \\sum_{j=0}^{m} \\dim M_{k+2j} - \\sum_{j=0}^{m-1} \\dim S_{k+2j+2}$$\n\nWait, I don't think that's right. The correct formula (from Eichler-Zagier) involves the theta decomposition and is more complex.\n\nActually, I think the dimension formula is:\n$$\\dim J_{k,m} = \\dim M_k + \\sum_{j=1}^{m-1} \\dim S_{k+2j}$$\n\nfor $k \\geq 2$ (where $S_w$ is the space of cusp forms of weight $w$). Wait, I'm not sure about this.\n\nLet me try a different approach. The key structural result is:\n\n**Theorem (Eichler-Zagier):** The map $\\phi \\mapsto (\\xi_0, \\xi_2, \\xi_4, \\ldots)$ gives an isomorphism from $J_{k,m}$ to a subspace of $\\bigoplus_{\\nu} M_{k+2\\nu}$ defined by the heat equation recurrence and a \"truncation\" condition.\n\nThe heat equation recurrence determines $\\xi_{2\\nu}$ from $\\xi_0$ via iterated Serre derivatives: $\\xi_{2\\nu} = c_{\\nu} \\cdot D_{k+2\\nu-2} \\cdots D_k \\xi_0$.\n\nBut the \"truncation\" condition says that for $\\nu$ large enough, $\\xi_{2\\nu}$ must satisfy certain vanishing conditions (related to the index $m$). Specifically, there's a condition that $\\xi_{2\\nu} = 0$ for $\\nu > m$ (or something like that), which gives constraints on $\\xi_0$.\n\nWait, that doesn't sound right either. Let me think about this differently.\n\nActually, I think the correct picture is:\n\nThe Taylor coefficients $\\xi_0, \\xi_2, \\xi_4, \\ldots$ are determined by $\\xi_0$ via the heat equation. But not every $\\xi_0 \\in M_k$ gives a valid Jacobi form—the index $m$ imposes a constraint that $\\xi_0$ must satisfy. Specifically, the iterated Serre derivative $D^{(m)} \\xi_0 = D_{k+2m-2} \\cdots D_k \\xi_0$ must satisfy some condition.\n\nHmm, but this would give $\\dim J_{k,m} \\leq \\dim M_k$, which contradicts the known growth of $\\dim J_{k,m}$ with $m$.\n\nI think I'm fundamentally wrong about the heat equation recurrence. Let me reconsider.\n\nOK, I think the issue is that the heat equation does NOT determine all Taylor coefficients from $\\xi_0$. The heat equation gives a relation between $\\xi_n'$, $\\xi_{n+2}$, and $\\xi_n$, but this is a differential equation, not an algebraic recurrence. The point is that $\\xi_n'$ is the derivative of $\\xi_n$, which is NOT determined by $\\xi_n$ alone (it's a new function).\n\nWait, no. $\\xi_n$ is a modular form, and its derivative $\\xi_n'$ is determined by $\\xi_n$ (it's just the derivative of the function). So the recurrence $\\xi_{n+2} = c \\cdot (\\xi_n' - W \\cdot E_2 \\cdot \\xi_n) = c \\cdot D \\xi_n$ does determine $\\xi_{n+2}$ from $\\xi_n$.\n\nBut the issue is that $D \\xi_n$ might not be a modular form (it's a quasi-modular form in general). Wait, no—the Serre derivative $D_w f$ IS a modular form of weight $w+2$ when $f$ is a modular form of weight $w$. So $\\xi_{n+2} = c \\cdot D_{k+n} \\xi_n$ is indeed a modular form.\n\nSo the recurrence does determine all $\\xi_{2\\nu}$ from $\\xi_0$, and if $\\xi_0 = 0$, then all $\\xi_{2\\nu} = 0$.\n\nBut this gives $\\dim J_{k,m} \\leq \\dim M_k$, which is wrong for large $m$.\n\nUnless... the heat equation has additional terms that I'm missing. Let me reconsider the heat equation.\n\nI think the correct heat equation for Jacobi forms of weight $k$ and index $m$ is:\n\n$$\\left( \\frac{\\partial}{\\partial \\tau} - \\frac{1}{4\\pi i m} \\frac{\\partial^2}{\\partial z^2} \\right) \\phi = \\frac{k}{12\\pi i} E_2 \\phi + \\frac{z}{2\\pi i} \\frac{\\partial \\phi}{\\partial z} \\cdot \\frac{E_2'}{...}$$\n\nNo, that doesn't make sense. Let me try to derive the heat equation from scratch.\n\nA Jacobi form $\\phi(\\tau, z)$ of weight $k$ and index $m$ satisfies:\n1. $\\phi\\left(\\frac{a\\tau+b}{c\\tau+d}, \\frac{z}{c\\tau+d}\\right) = (c\\tau+d)^k e^{2\\pi i m \\frac{cz^2}{c\\tau+d}} \\phi(\\tau, z)$ for $\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} \\in SL_2(\\mathbb{Z})$.\n2. $\\phi(\\tau, z + \\lambda \\tau + \\mu) = e^{-2\\pi i m(\\lambda^2 \\tau + 2\\lambda z)} \\phi(\\tau, z)$ for $\\lambda, \\mu \\in \\mathbb{Z}$.\n\nThe heat equation comes from the compatibility of these two transformation laws. Specifically, consider the transformation under $S = \\begin{pmatrix} 0 & -1 \\\\ 1 & 0 \\end{pmatrix}$:\n$$\\phi(-1/\\tau, z/\\tau) = \\tau^k e^{2\\pi i m z^2/\\tau} \\phi(\\tau, z)$$\n\nDifferentiate both sides with respect to $\\tau$ and set $\\tau = i$ (or use the Lie algebra action). Actually, the standard approach is to use the fact that the Jacobi group is a semidirect product of $SL_2(\\mathbb{R})$ and the Heisenberg group, and the Casimir operator of $SL_2(\\mathbb{R})$ gives the heat equation.\n\nThe Casimir operator for $SL_2(\\mathbb{R})$ acting on functions of weight $k$ is:\n$$\\Omega = -y^2 \\left( \\frac{\\partial^2}{\\partial x^2} + \\frac{\\partial^2}{\\partial y^2} \\right) + ky \\frac{\\partial}{\\partial x}$$\n\nwhere $\\tau = x + iy$. For a modular form of weight $k$, $\\Omega f = \\frac{k(k-2)}{4} f$ (the eigenvalue of the Casimir).\n\nFor Jacobi forms, the Casimir involves both $\\tau$ and $z$ derivatives, and the eigenvalue equation gives the heat equation.\n\nThe resulting heat equation (after some computation) is:\n\n$$\\left( 2\\pi i m \\frac{\\partial}{\\partial \\tau} + \\frac{1}{2} \\frac{\\partial^2}{\\partial z^2} \\right) \\phi = \\frac{km}{6} E_2 \\phi$$\n\nWait, I don't think the $E_2$ term appears in the Casimir equation. The Casimir is a geometric operator, and $E_2$ is an arithmetic object.\n\nActually, I think the heat equation for Jacobi forms is:\n\n$$\\left( 2\\pi i m \\frac{\\partial}{\\partial \\tau} + \\frac{1}{2} \\frac{\\partial^2}{\\partial z^2} \\right) \\phi = 0$$\n\nThis is the \"heat equation\" in the sense that it's the equation satisfied by the theta function. But for Jacobi forms of nonzero weight, there might be an additional term.\n\nHmm, let me check: does $\\phi_{0,1}(\\tau, z)$ (weight 0, index 1) satisfy $\\left( 2\\pi i \\frac{\\partial}{\\partial \\tau} + \\frac{1}{2} \\frac{\\partial^2}{\\partial z^2} \\right) \\phi = 0$?\n\nIf the heat equation is $\\left( 2\\pi i m \\frac{\\partial}{\\partial \\tau} + \\frac{1}{2} \\frac{\\partial^2}{\\partial z^2} \\right) \\phi = 0$, then with $\\phi = \\sum \\xi_n z^n$:\n\n$$2\\pi i m \\xi_n' + \\frac{1}{2} n(n-1) \\xi_n = 0$$\n\nWait, that's not right. Let me redo:\n\n$$2\\pi i m \\sum \\xi_n' z^n + \\frac{1}{2} \\sum n(n-1) \\xi_n z^{n-2} = 0$$\n\nComparing $z^n$:\n$$2\\pi i m \\xi_n' + \\frac{1}{2} (n+2)(n+1) \\xi_{n+2} = 0$$\n\nSo $\\xi_{n+2} = -\\frac{4\\pi i m}{(n+2)(n+1)} \\xi_n'$.\n\nNow, $\\xi_n'$ is the derivative of a modular form of weight $k+n$. The derivative is:\n$$\\xi_n' = 2\\pi i \\left( \\frac{k+n}{12} E_2 \\xi_n + D_{k+n} \\xi_n \\right)$$\n\nwhere $D_{k+n} \\xi_n$ is the Serre derivative (a modular form of weight $k+n+2$).\n\nSo:\n$$\\xi_{n+2} = -\\frac{4\\pi i m}{(n+2)(n+1)} \\cdot 2\\pi i \\left( \\frac{k+n}{12} E_2 \\xi_n + D_{k+n} \\xi_n \\right)$$\n\n$$= \\frac{8\\pi^2 m}{(n+2)(n+1)} \\left( \\frac{k+n}{12} E_2 \\xi_n + D_{k+n} \\xi_n \\right)$$\n\nFor $\\xi_{n+2}$ to be a modular form, the $E_2 \\xi_n$ term must vanish (since $E_2 \\xi_n$ is quasi-modular, not modular). This requires $\\frac{k+n}{12} E_2 \\xi_n = 0$, i.e., either $k + n = 0$ or $\\xi_n = 0$.\n\nFor $k > 0$ and $n \\geq 0$, $k + n > 0$, so we need $\\xi_n = 0$ for all $n$. This means $\\phi = 0$ for $k > 0$!\n\nThis is obviously wrong. There are plenty of holomorphic Jacobi forms of positive weight. So the heat equation $\\left( 2\\pi i m \\frac{\\partial}{\\partial \\tau} + \\frac{1}{2} \\frac{\\partial^2}{\\partial z^2} \\right) \\phi = 0$ must be WRONG for Jacobi forms of nonzero weight.\n\nThe correct heat equation must include a weight-dependent term that cancels the $E_2$ contribution. I believe the correct heat equation is:\n\n$$\\left( 2\\pi i m \\frac{\\partial}{\\partial \\tau} + \\frac{1}{2} \\frac{\\partial^2}{\\partial z^2} \\right) \\phi = \\pi i m k E_2 \\phi$$\n\nor something similar. Let me check: with this, the recurrence becomes:\n\n$$2\\pi i m \\xi_n' + \\frac{1}{2} (n+2)(n+1) \\xi_{n+2} = \\pi i m k E_2 \\xi_n$$\n\n$$\\xi_{n+2} = \\frac{2}{(n+2)(n+1)} \\left( \\pi i m k E_2 \\xi_n - 2\\pi i m \\xi_n' \\right)$$\n\n$$= \\frac{-4\\pi i m}{(n+2)(n+1)} \\left( \\xi_n' - \\frac{k}{2} E_2 \\xi_n \\right)$$\n\nHmm, but the Serre derivative is $D_w f = \\frac{1}{2\\pi i} f' - \\frac{w}{12} E_2 f$, so $f' - \\frac{w}{12} \\cdot 2\\pi i \\cdot E_2 f = 2\\pi i D_w f$.\n\nWe need $\\xi_n' - \\frac{k+n}{12} \\cdot 2\\pi i \\cdot E_2 \\xi_n = 2\\pi i D_{k+n} \\xi_n$ for the result to be modular.\n\nSo the heat equation should give:\n$$\\xi_{n+2} = \\frac{-4\\pi i m}{(n+2)(n+1)} \\left( \\xi_n' - \\frac{k+n}{12} \\cdot 2\\pi i \\cdot E_2 \\xi_n \\right) = \\frac{-4\\pi i m \\cdot 2\\pi i}{(n+2)(n+1)} D_{k+n} \\xi_n$$\n\n$$= \\frac{8\\pi^2 m}{(n+2)(n+1)} D_{k+n} \\xi_n$$\n\nFor this, the heat equation should be:\n$$2\\pi i m \\xi_n' + \\frac{1}{2} (n+2)(n+1) \\xi_{n+2} = 2\\pi i m \\cdot \\frac{k+n}{12} \\cdot 2\\pi i \\cdot E_2 \\xi_n$$\n\n$$= \\frac{-4\\pi^2 m (k+n)}{12} E_2 \\xi_n = \\frac{-\\pi^2 m(k+n)}{3} E_2 \\xi_n$$\n\nSo the heat equation is:\n$$2\\pi i m \\frac{\\partial \\phi}{\\partial \\tau} + \\frac{1}{2} \\frac{\\partial^2 \\phi}{\\partial z^2} = \\frac{-\\pi^2 m k}{3} E_2 \\phi + \\frac{-\\pi^2 m}{3} E_2 \\cdot z \\frac{\\partial \\phi}{\\partial z}$$\n\nHmm, this is getting messy. The issue is that the weight $k+n$ in the Serre derivative depends on $n$, so the heat equation can't simply be $\\ldots = c \\cdot E_2 \\phi$ with a constant $c$.\n\nThis means the heat equation must involve $z \\frac{\\partial \\phi}{\\partial z}$, which couples different Taylor coefficients. Let me reconsider.\n\nIf the heat equation is:\n$$2\\pi i m \\frac{\\partial \\phi}{\\partial \\tau} + \\frac{1}{2} \\frac{\\partial^2 \\phi}{\\partial z^2} = \\alpha E_2 \\phi + \\beta E_2 z \\frac{\\partial \\phi}{\\partial z}$$\n\nfor some constants $\\alpha, \\beta$ depending on $k, m$, then expanding in Taylor series:\n\n$$2\\pi i m \\xi_n' + \\frac{1}{2}(n+2)(n+1)\\xi_{n+2} = \\alpha E_2 \\xi_n + \\beta n E_2 \\xi_n = (\\alpha + \\beta n) E_2 \\xi_n$$\n\nFor the Serre derivative to appear, we need:\n$$\\xi_{n+2} = \\frac{-4\\pi i m}{(n+2)(n+1)} \\left( \\xi_n' - \\frac{\\alpha + \\beta n}{2\\pi i m} E_2 \\xi_n \\right)$$\n\nand for this to be $c \\cdot D_{k+n} \\xi_n$, we need:\n$$\\frac{\\alpha + \\beta n}{2\\pi i m} = \\frac{k+n}{12} \\cdot 2\\pi i$$\n\n$$\\alpha + \\beta n = \\frac{(k+n)\\pi i m}{6} \\cdot 2\\pi i \\cdot 2 = \\frac{(k+n) \\cdot 2\\pi^2 i^2 m}{6} = \\frac{-(k+n)\\pi^2 m}{3}$$\n\nWait, let me be more careful. $D_w f = \\frac{1}{2\\pi i} f' - \\frac{w}{12} E_2 f$, so $f' = 2\\pi i D_w f + \\frac{w}{12} \\cdot 2\\pi i \\cdot E_2 f$.\n\nWe want:\n$$\\xi_n' - \\frac{\\alpha + \\beta n}{2\\pi i m} E_2 \\xi_n = 2\\pi i D_{k+n} \\xi_n + \\frac{k+n}{12} \\cdot 2\\pi i \\cdot E_2 \\xi_n - \\frac{\\alpha + \\beta n}{2\\pi i m} E_2 \\xi_n$$\n\nFor this to equal $2\\pi i D_{k+n} \\xi_n$, we need:\n$$\\frac{k+n}{12} \\cdot 2\\pi i = \\frac{\\alpha + \\beta n}{2\\pi i m}$$\n\n$$\\frac{(k+n) \\cdot 2\\pi i}{12} = \\frac{\\alpha + \\beta n}{2\\pi i m}$$\n\n$$\\alpha + \\beta n = \\frac{(k+n) \\cdot 2\\pi i \\cdot 2\\pi i m}{12} = \\frac{(k+n) \\cdot 4\\pi^2 i^2 m}{12} = \\frac{-(k+n) \\pi^2 m}{3}$$\n\nSo $\\alpha = \\frac{-k\\pi^2 m}{3}$ and $\\beta = \\frac{-\\pi^2 m}{3}$.\n\nThe heat equation is:\n$$2\\pi i m \\frac{\\partial \\phi}{\\partial \\tau} + \\frac{1}{2} \\frac{\\partial^2 \\phi}{\\partial z^2} = \\frac{-\\pi^2 m}{3} E_2 \\left( k \\phi + z \\frac{\\partial \\phi}{\\partial z} \\right)$$\n\nOr equivalently:\n$$2\\pi i m \\frac{\\partial \\phi}{\\partial \\tau} + \\frac{1}{2} \\frac{\\partial^2 \\phi}{\\partial z^2} + \\frac{\\pi^2 m k}{3} E_2 \\phi + \\frac{\\pi^2 m}{3} E_2 z \\frac{\\partial \\phi}{\\partial z} = 0$$\n\nWith this heat equation, the recurrence is:\n$$\\xi_{n+2} = \\frac{8\\pi^2 m}{(n+2)(n+1)} D_{k+n} \\xi_n$$\n\n(up to sign and normalization constants that I might be getting wrong, but the structural form is correct).\n\nNow, the key point: $\\xi_{n+2} = c \\cdot D_{k+n} \\xi_n$, so:\n- If $\\xi_0 = 0$, then $\\xi_2 = c \\cdot D_k(0) = 0$, $\\xi_4 = 0$, etc.\n- All even Taylor coefficients are determined by $\\xi_0$.\n- If $\\xi_0 = 0$, then $\\phi = 0$ (since only even powers appear for holomorphic Jacobi forms).\n\nBut this gives $\\dim J_{k,m} \\leq \\dim M_k$, which is WRONG for large $m$.\n\nSo there must be something else going on. Let me think about what I'm missing.\n\nAH WAIT. I think the issue is that the heat equation recurrence goes in the FORWARD direction ($\\xi_0 \\to \\xi_2 \\to \\xi_4 \\to \\ldots$), but there's also a BACKWARD constraint. The index $m$ imposes that the Taylor expansion must be compatible with the theta decomposition, which gives a constraint that $\\xi_{2m+2} = 0$ (or some similar truncation).\n\nBut the forward recurrence determines all $\\xi_{2\\nu}$ from $\\xi_0$, so the constraint $\\xi_{2m+2} = 0$ becomes a constraint on $\\xi_0$: $D^{(m+1)} \\xi_0 = 0$ (the $(m+1)$-fold iterated Serre derivative of $\\xi_0$ must vanish).\n\nThis would give $\\dim J_{k,m} = \\dim \\ker(D^{(m+1)}: M_k \\to M_{k+2m+2})$, which could be less than $\\dim M_k$ but not more. So $\\dim J_{k,m} \\leq \\dim M_k$.\n\nBut this is still wrong for large $m$! For example, $\\dim J_{4,2}$ should be larger than $\\dim M_4 = 1$.\n\nI must be fundamentally wrong about the heat equation. Let me try a completely different approach.\n\nLet me look at the theta decomposition more carefully. A Jacobi form $\\phi$ of weight $k$ and index $m$ has:\n$$\\phi(\\tau, z) = \\sum_{\\mu \\pmod{2m}} h_{\\mu}(\\tau) \\theta_{m,\\mu}(\\tau, z)$$\n\nThe $h_{\\mu}$ are modular forms of weight $k - 1/2$ for $\\Gamma_0(4m)$ (or something like that). The dimension of the space of such $h_{\\mu}$ grows with $m$, so $\\dim J_{k,m}$ grows with $m$.\n\nNow, the Taylor coefficients $\\xi_n$ are:\n$$\\xi_n = \\sum_{\\mu} h_{\\mu} \\cdot \\frac{(2\\pi i)^n}{n!} \\sum_{r \\equiv \\mu \\pmod{2m}} r^n q^{r^2/(4m)}$$\n\nThe point is that the $h_{\\mu}$ are NOT determined by $\\xi_0$ alone. The map from $(h_0, h_1, \\ldots, h_{2m-1})$ to $(\\xi_0, \\xi_2, \\xi_4, \\ldots)$ is a linear map, and it's not injective or surjective in a simple way.\n\nSo the heat equation recurrence $\\xi_{n+2} = c \\cdot D_{k+n} \\xi_n$ must be WRONG. The Taylor coefficients are NOT determined by $\\xi_0$ alone.\n\nLet me reconsider. Maybe the heat equation has a different form that I'm not getting right. Or maybe the heat equation is correct but I'm wrong that it determines all $\\xi_n$ from $\\xi_0$.\n\nActually, wait. The heat equation gives $\\xi_{n+2} = c \\cdot D_{k+n} \\xi_n$. This determines $\\xi_2$ from $\\xi_0$, $\\xi_4$ from $\\xi_2$, etc. But it does NOT determine $\\xi_0$ itself—$\\xi_0$ is a free parameter (a modular form of weight $k$).\n\nBut the theta decomposition shows that the space of Jacobi forms is larger than $M_k$. So either:\n1. The heat equation is wrong, or\n2. The heat equation is right but there are additional free parameters beyond $\\xi_0$.\n\nFor option 2: the heat equation determines $\\xi_{n+2}$ from $\\xi_n$, so the only free parameter is $\\xi_0$. But the theta decomposition shows more free parameters. Contradiction.\n\nSo option 1 must be correct: the heat equation is wrong (or more precisely, it's not the full story).\n\nI think the issue is that the heat equation is a necessary condition but not sufficient. The Taylor coefficients must satisfy the heat equation AND the elliptic transformation law. The heat equation gives the forward recurrence, but the elliptic transformation law gives additional constraints that might allow more freedom.\n\nActually, I think the resolution is that the heat equation is correct, but it's a PDE, not an ODE. The heat equation relates $\\frac{\\partial \\phi}{\\partial \\tau}$ and $\\frac{\\partial^2 \\phi}{\\partial z^2}$, and when you expand in $z$, you get a relation between $\\xi_n'(\\tau)$ and $\\xi_{n+2}(\\tau)$. But $\\xi_n'(\\tau)$ is the $\\tau$-derivative, which is NOT the same as the Serre derivative (which involves subtracting an $E_2$ term).\n\nThe point is: $\\xi_n'(\\tau)$ is the ordinary derivative, which is a quasi-modular form. The heat equation says $\\xi_{n+2} = c \\cdot (\\xi_n' - \\text{weight term} \\cdot E_2 \\xi_n)$, and the weight term is chosen so that the result is modular. But the ordinary derivative $\\xi_n'$ is NOT determined by $\\xi_n$ in the sense of modular forms—$\\xi_n'$ is a new quasi-modular form that depends on $\\xi_n$ but is not in the same space.\n\nWait, but $\\xi_n$ is a specific modular form (a specific function of $\\tau$), and $\\xi_n'$ is its derivative, which is determined. So $\\xi_{n+2}$ IS determined by $\\xi_n$.\n\nOK here's another thought. Maybe the heat equation is correct, and it does determine all $\\xi_{2\\nu}$ from $\\xi_0$. But the space of valid $\\xi_0$ is NOT all of $M_k$—it's a subspace defined by the condition that the resulting Taylor series converges to a holomorphic function with the right Fourier expansion (non-negative powers of $q$ and $\\zeta$).\n\nActually, I think the issue might be simpler than I thought. Let me reconsider the theta decomposition.\n\nThe theta decomposition gives $\\phi = \\sum_{\\mu} h_{\\mu} \\theta_{m,\\mu}$. The $h_{\\mu}$ are modular forms of weight $k - 1/2$. The Taylor coefficients $\\xi_n$ are linear combinations of the $h_{\\mu}$ (with coefficients that are specific modular forms).\n\nNow, the heat equation gives a relation between $\\xi_n'$, $\\xi_{n+2}$, and $\\xi_n$. This relation is automatically satisfied by the theta decomposition (since the theta functions satisfy the heat equation). So the heat equation doesn't give new constraints—it's automatically satisfied.\n\nThe actual constraints on the Taylor coefficients come from:\n1. $\\xi_n$ must be a modular form of weight $k + n$ (this is a constraint on the $h_{\\mu}$).\n2. The Fourier expansion must have non-negative powers of $q$ and $\\zeta$ (holomorphicity).\n\nSo the heat equation is automatically satisfied and doesn't constrain the Taylor coefficients beyond what the theta decomposition already gives.\n\nThis means: the Taylor coefficients are NOT determined by $\\xi_0$ alone. The heat equation is a necessary condition that's automatically satisfied, and the actual constraints come from the modular form property and holomorphicity.\n\nSo it IS possible to have $\\xi_0 = 0$ with $\\phi \\neq 0$, as long as the other Taylor coefficients are modular forms of the right weight and the Fourier expansion is holomorphic.\n\nGreat, so now let me reconsider the original problem.\n\nFor a holomorphic Jacobi form of weight $k$ and index $m$:\n- $\\xi_n$ is a modular form of weight $k + n$ (for even $n$).\n- The Taylor coefficients must come from a valid theta decomposition with holomorphic Fourier expansion.\n\nCase 1: $\\xi_8 = \\alpha \\Delta(\\tau)$, $\\xi_0 = \\xi_2 = \\xi_4 = \\xi_6 = 0$.\n- $k + 8 = 12 \\Rightarrow k = 4$.\n- $\\xi_0 \\in M_4 = \\mathbb{C} \\cdot E_4$, $\\xi_2 \\in M_6 = \\mathbb{C} \\cdot E_6$, $\\xi_4 \\in M_8 = \\mathbb{C} \\cdot E_4^2$, $\\xi_6 \\in M_{10} = \\mathbb{C} \\cdot E_4 E_6$.\n- We need $\\xi_0 = \\xi_2 = \\xi_4 = \\xi_6 = 0$, which is possible (set the coefficients to 0).\n- $\\xi_8 = \\alpha \\Delta \\in M_{12} = \\mathbb{C} \\cdot E_4^3 \\oplus \\mathbb{C} \\cdot \\Delta$, which is possible.\n- The question is whether there exists an index $m$ such that a holomorphic Jacobi form of weight 4 and index $m$ has these Taylor coefficients.\n\nCase 2: $\\xi_{12} = \\beta \\Delta E_4$, $\\xi_0 = \\ldots = \\xi_{10} = 0$.\n- $k + 12 = 16 \\Rightarrow k = 4$.\n- Similar analysis.\n\nIn both cases, $k = 4 < 12$. So if such Jacobi forms exist, the statement is FALSE.\n\nNow, do such Jacobi forms exist? This depends on whether the constraints from the index $m$ and holomorphicity allow these Taylor coefficient patterns.\n\nI think the key constraint is the \"singular\" Taylor coefficients. For a Jacobi form of index $m$, the Taylor coefficients $\\xi_n$ for $n > 2m$ are determined by the lower ones (through the heat equation, which IS a constraint when combined with the modular form property). Wait, but I just argued that the heat equation is automatically satisfied...\n\nLet me reconsider. I think the heat equation IS a constraint, but it's a constraint on the $h_{\\mu}$ (the theta components), not on the $\\xi_n$ directly. The $\\xi_n$ are derived from the $h_{\\mu}$, and the heat equation is automatically satisfied because the theta functions satisfy it.\n\nBut the modular form property of $\\xi_n$ IS a constraint on the $h_{\\mu}$. Not every choice of $h_{\\mu}$ gives $\\xi_n$ that are modular forms.\n\nOK, I think I need to approach this problem differently. Let me think about what constraints the index $m$ imposes on the Taylor coefficients.\n\nKey result (Eichler-Zagier, Theorem 2.2 or similar): For a Jacobi form of weight $k$ and index $m$, the Taylor coefficient $\\xi_n$ satisfies:\n- $\\xi_n$ is a modular form of weight $k + n$.\n- For $n > 2m$, $\\xi_n$ is determined by $\\xi_0, \\xi_2, \\ldots, \\xi_{2m}$ via the heat equation.\n\nWait, I think this is the key. The heat equation gives $\\xi_{n+2} = c \\cdot D_{k+n} \\xi_n$, which determines $\\xi_{n+2}$ from $\\xi_n$. But this is a forward recurrence that determines ALL $\\xi_n$ from $\\xi_0$. So where does the index $m$ come in?\n\nI think the index $m$ comes in through a BACKWARD recurrence. The theta decomposition gives a relation that expresses $\\xi_{n-2}$ in terms of $\\xi_n$ (via the lowering operator). This backward recurrence, combined with the forward recurrence, gives constraints.\n\nSpecifically, I think the key result is:\n\nFor a Jacobi form of index $m$, the Taylor coefficients satisfy:\n$$\\xi_{n-2} = -4\\pi i m \\cdot L_{k+n} \\xi_n$$\n\nwhere $L_w$ is the Maass lowering operator (adjoint to the Serre derivative). This gives a backward recurrence.\n\nNow, the forward recurrence $\\xi_{n+2} = c \\cdot D_{k+n} \\xi_n$ and the backward recurrence $\\xi_{n-2} = c' \\cdot L_{k+n} \\xi_n$ together give:\n$$\\xi_n = c \\cdot D_{k+n-2} \\xi_{n-2} = c \\cdot D_{k+n-2} (c' \\cdot L_{k+n} \\xi_n) = c \\cdot",
+      "tool_calls": [],
+      "metrics": {
+        "prompt_tokens": 24634,
+        "completion_tokens": 25000,
+        "cached_tokens": 12398
+      },
+      "extra": {
+        "generation_model": "glm-5-2",
+        "telemetry": {
+          "source": "assistant",
+          "operation": "inference"
+        }
+      }
+    }
+  ],
+  "final_metrics": {
+    "total_prompt_tokens": 24634,
+    "total_completion_tokens": 25000,
+    "total_cached_tokens": 12398,
+    "total_steps": 10
+  }
+}

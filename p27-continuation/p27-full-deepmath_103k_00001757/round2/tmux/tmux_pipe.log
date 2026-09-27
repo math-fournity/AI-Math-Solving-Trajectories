@@ -1,0 +1,21 @@
+Looking at this problem, I need to determine whether a finite-dimensional complex Lie algebra satisfying the metabelian identity $[[X,Y],[U,V]]=0$ has a finite basis for its polynomial identities.
+
+Let me work through the key ideas:
+
+1. **The identity** $[[X,Y],[U,V]]=0$ means $[\mathfrak{g}',\mathfrak{g}']=0$, so $\mathfrak{g}$ is metabelian (2-step solvable).
+
+2. **The core theorem**: Ilyakov (1991) proved that every finite-dimensional Lie algebra over a field of characteristic 0 has a finitely based set of identities. The proof uses Kemer's solution of the Specht problem for associative algebras (1987) and the correspondence between Lie identities and identities of the universal enveloping algebra.
+
+3. **The metabelian case** also admits a more direct argument via the module structure of $\mathfrak{g}'$ over the symmetric algebra of $\mathfrak{g}/\mathfrak{g}'$, with Cayley-Hamilton providing bounded-degree identities.
+
+Let me write the complete proof to proof.md.The proof has been written to `proof.md`.
+
+**Summary**: The answer is **Yes**. The identity $[[X,Y],[U,V]]=0$ makes $\mathfrak{g}$ metabelian (2-step solvable), and since $\mathfrak{g}$ is finite-dimensional over $\mathbb{C}$ (characteristic 0), **Ilyakov's theorem (1991)** directly implies that its T-ideal of polynomial identities is finitely generated. The proof of Ilyakov's theorem proceeds via:
+
+1. **Ado's theorem** → $\mathfrak{g} \hookrightarrow \mathfrak{gl}_N$, so $\mathfrak{g}$ is a PI-Lie algebra (via Amitsur–Levitzki)
+2. **Kemer's theorem (1987)** → the associative T-ideal of $U(\mathfrak{g})$ is finitely generated (Specht problem solved for associative algebras over char 0)
+3. **Razmyslov–Kemer correspondence** → Lie identities of $\mathfrak{g}$ correspond to $\mathbb{Z}_2$-graded identities of $U(\mathfrak{g})$, and Kemer's graded theory gives finite generation
+
+The proof also includes a **direct elementary argument** for the metabelian case using the module structure of $\mathfrak{g}'$ over $\mathfrak{g}/\mathfrak{g}'$ and the Cayley–Hamilton theorem.
+
+$$\boxed{\text{Yes}}$$

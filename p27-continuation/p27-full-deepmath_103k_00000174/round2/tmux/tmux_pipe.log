@@ -1,0 +1,13 @@
+Looking at this problem, I need to analyze the field $\mathbb{Q}_p^{ext} = \mathbb{Z}((X))_{conti}/(X-p)$ and determine $[\overline{\mathbb{Q}_p^{ext}} : \mathbb{Q}_p^{ext}]$.
+
+Let me work through the mathematics carefully before writing the proof.The proof has been written to `proof.md`.
+
+**Summary of the argument:**
+
+1. **$\mathbb{Q}_p^{ext} \cong \mathbb{Q}_p$**: The ring $\mathbb{Z}((X))_{conti}$ is the $p$-adic completion $\mathbb{Z}_p((X))$. The evaluation map $\phi: \mathbb{Z}_p((X)) \to \mathbb{Q}_p$ sending $X \mapsto p$ is surjective (its image contains $\mathbb{Z}_p$ and $p^{-1}$, hence all of $\mathbb{Q}_p$). The kernel is exactly $(X-p)$, proved via Taylor expansion around $X=p$: any $f$ with $f(p)=0$ factors as $f=(X-p)\cdot g$ with $g \in \mathbb{Z}_p[[X]]$, where the $p$-adic completeness of $\mathbb{Z}_p$ ensures the Taylor coefficients converge.
+
+2. **$[\overline{\mathbb{Q}_p} : \mathbb{Q}_p] = \aleph_0$**: 
+   - *Lower bound*: The cyclotomic tower $\mathbb{Q}_p(\zeta_{p^n})$ has degrees $(p-1)p^{n-1} \to \infty$.
+   - *Upper bound*: By Krasner's theorem, finitely many extensions exist of each degree $d$, giving countably many finite extensions total, hence a countable $\mathbb{Q}_p$-basis for $\overline{\mathbb{Q}_p}$.
+
+$$\boxed{\aleph_0}$$

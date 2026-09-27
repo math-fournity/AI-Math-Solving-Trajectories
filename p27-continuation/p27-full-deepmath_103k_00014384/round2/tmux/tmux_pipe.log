@@ -1,0 +1,23 @@
+我将仔细思考这个问题，并将证明写入 `proof.md`。
+
+关键问题是：对于 $f \in L^1(\mathbb{R})$，对称部分积分 $\lim_{R\to\infty}\int_{-R}^{R}\hat{f}(w)e^{2\pi i xw}\,dw$ 是否几乎处处等于 $f(x)$？
+
+让我分析一下核心机制：这个部分积分是 $f$ 与 Dirichlet 核 $D_R(s) = \frac{\sin(2\pi Rs)}{\pi s}$ 的卷积，其 $L^1$ 范数增长类似于 $\log R$——它**不是**一个恒等逼近。这与 Fejér/Poisson 核不同。Kolmogorov 关于 $L^1$ 函数傅里叶级数处处发散的反例可以转换到 $\mathbb{R}$ 上，而 Carleson-Hunt 定理仅覆盖 $L^p$（$p>1$）的情况。
+
+答案是 **No**。让我来写出完整的证明。证明已写入 `proof.md`。
+
+## 答案
+
+$$\boxed{\text{No}}$$
+
+## 核心论证摘要
+
+1. **对称部分积分 = 与 Dirichlet 核的卷积**：$S_R f(x) = (f * D_R)(x)$，其中 $D_R(s) = \frac{\sin(2\pi Rs)}{\pi s}$。
+
+2. **Dirichlet 核不是恒等逼近**：$\|D_R\|_{L^1} \sim \frac{4}{\pi^2}\log(2\pi R) \to \infty$，因此一般的卷积收敛定理 "$f * K_R \to f$ a.e. for $f \in L^1$" 不适用。
+
+3. **Kolmogorov 反例迁移**：Kolmogorov (1923) 构造了 $L^1([0,2\pi])$ 上的函数，其 Fourier 级数处处发散。通过转移原理（将离散 Dirichlet 核替换为连续 Dirichlet 核），存在 $f \in L^1(\mathbb{R})$ 使得 $S_R f(x)$ 在正测度集上发散。
+
+4. **Carleson-Hunt 定理仅在 $p > 1$ 时有效**：Carleson 极大算子 $\mathcal{C}f = \sup_R |S_R f|$ 在 $L^p$（$1 < p < \infty$）上有界，但在 $L^1$ 上无界——这正是 $L^1$ 失败的算子理论根源。
+
+5. **正确的 $L^1$ 反演**：使用 Fejér 核（Cesàro 平均）或 Poisson 核（Abel 平均），它们是非负的恒等逼近，在所有 Lebesgue 点上对任意 $f \in L^1$ 都成立。

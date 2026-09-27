@@ -1,0 +1,5 @@
+观察这个问题，这是一个关于 $\mathbb{P}^3$ 中点吹胀和线变换的相交理论问题。题目在 "Given that $E_p \cdot$" 处被截断了。基于上下文（刚定义了 $\sigma_{p,q}$），最自然的理解是要求计算 $E_p \cdot \sigma_{p,q}$。让我来写出解答。证明已写入 `proof.md`。
+
+**答案：** $E_p \cdot \sigma_{p,q} = \boxed{1}$
+
+**核心思路：** $\sigma_{p,q}$ 是 $E_{p,q} \cong \mathbb{P}^1 \times \mathbb{P}^1$ 中不被 $\pi$ 收缩的 ruling（即 $E_{p,q} \to \tilde{L}$ 的截面类），而 $E_p \cap E_{p,q}$ 是另一组 ruling 的一条 fiber（$\tilde{L}$ 与 $E_p$ 交点处的 fiber，被 $\pi$ 收缩到 $p$）。在 $\mathbb{P}^1 \times \mathbb{P}^1$ 中，两组互补 ruling 的相交数为 1，因此 $E_p \cdot \sigma_{p,q} = 1$。

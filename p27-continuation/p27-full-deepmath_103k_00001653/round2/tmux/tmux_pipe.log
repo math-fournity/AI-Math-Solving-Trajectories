@@ -1,0 +1,25 @@
+Looking at this problem, I need to prove the equivalent formulation: given $s \in A$ with $D(s) \subseteq U$ and $f \in B = \mathcal{O}(U)$ with $f|_{D(s)} = 0$, there exists $N$ such that $s^N f = 0$ in $B$.
+
+Let me write the proof to `proof.md`.The proof has been written to `proof.md`.
+
+## Answer
+
+**Yes, the map $A_p \to B_p$ is surjective** (in fact, it is an isomorphism).
+
+The key steps of the proof:
+
+1. **Cover** $U$ by finitely many distinguished opens $D(s_1), \ldots, D(s_n)$ (quasi-compactness of open subsets of $\text{Spec}(A)$).
+
+2. **Restrict** $f$ to each $D(s_i)$, getting $f_i \in A_{s_i}$.
+
+3. **Use the hypothesis** $f|_{D(s)} = 0$: since $D(s) = \bigcup_i D(ss_i)$, the image of each $f_i$ in $A_{ss_i}$ is $0$, which gives $(ss_i)^{k_i} a_i = 0$ in $A$ for some $k_i$.
+
+4. **Conclude** $s^{k_i} f_i = 0$ in $A_{s_i}$ for each $i$ (since $s_i^{k_i} \cdot s^{k_i} a_i = 0$ witnesses the vanishing).
+
+5. **Take** $N = \max(k_i)$, so $s^N f_i = 0$ in every $A_{s_i}$.
+
+6. **Apply the sheaf locality axiom**: $s^N f$ restricts to $0$ on each element of the cover $\{D(s_i)\}$, so $s^N f = 0$ in $B$.
+
+This shows $B \otimes_A A_s \cong A_s$ for all $s$ with $D(s) \subseteq U$, and taking the colimit over $s \notin p$ yields $B_p \cong A_p$.
+
+$$\boxed{\text{Yes, the map } A_p \to B_p \text{ is surjective (indeed, an isomorphism).}}$$

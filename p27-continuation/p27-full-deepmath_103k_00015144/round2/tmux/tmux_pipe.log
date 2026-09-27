@@ -1,0 +1,24 @@
+Looking at this problem, I need to determine whether a map from a bounded region in $\mathbb{R}^2$ to $S^2$ can have its Jacobian determinant bounded away from zero and infinity.
+
+**Key idea:** Stereographic projection provides an explicit example.
+
+The stereographic projection from the north pole $N=(0,0,1)$ is:
+$$\sigma(x,y) = \left(\frac{2x}{1+x^2+y^2},\, \frac{2y}{1+x^2+y^2},\, \frac{x^2+y^2-1}{1+x^2+y^2}\right)$$
+
+This is a conformal map $\mathbb{R}^2 \to S^2\setminus\{N\}$ with area distortion factor:
+$$J_\sigma = \frac{4}{(1+x^2+y^2)^2}$$
+
+Restricting to the closed unit disk $\Omega = \{x^2+y^2 \leq 1\}$ (a bounded region), we get $1 \leq 1+x^2+y^2 \leq 2$, so:
+$$1 \leq J_\sigma \leq 4$$
+
+The Jacobian is bounded away from both zero and infinity. The image is the closed southern hemisphere of $S^2$.
+
+Let me write the complete proof to proof.md.The proof has been written to `proof.md`.
+
+**Summary:** The answer is **Yes**. Stereographic projection from the north pole, restricted to the closed unit disk $\Omega = \{x^2+y^2 \leq 1\}$, gives a smooth map $f: \Omega \to S^2$ whose Jacobian (area distortion factor) is:
+
+$$J_f = \frac{4}{(1+x^2+y^2)^2}$$
+
+On the unit disk, $1 \leq 1+x^2+y^2 \leq 2$, so $1 \leq J_f \leq 4$ — bounded away from both zero and infinity. The image is the closed southern hemisphere of $S^2$.
+
+$$\boxed{\text{Yes}}$$

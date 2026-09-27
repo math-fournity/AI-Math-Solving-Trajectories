@@ -1,0 +1,10 @@
+证明已写入 `proof.md`。
+
+**答案：** $\boxed{\text{No}}$
+
+**证明摘要：** 假设 $K$ 是 $\mathbb{P}$ 的一个 Hausdorff 紧致化，且其剩余空间 $R = K\setminus\mathbb{P}$ 是离散的。对于任意 $r \in R$，利用离散性和正则性，找到一个开集 $W_r$，使得 $\operatorname{cl}_K(W_r) \cap R \subseteq \{r\}$。那么 $W_r \cap \mathbb{P}$ 是 $\mathbb{P}$ 的一个非空开子集，并且：
+
+1. **局部紧致** —— 作为 $K \setminus \{r\}$ 的开子集（紧致 Hausdorff 空间去掉一点），根据引理 3。
+2. **非局部紧致** —— 作为无处局部紧致空间 $\mathbb{P}$ 的非空开子集，根据引理 1 和 2。
+
+产生矛盾。因此，不存在这样的紧致化。该论证适用于任何无处局部紧致的 Tychonoff 空间。

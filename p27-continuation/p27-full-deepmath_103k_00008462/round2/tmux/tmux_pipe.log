@@ -1,0 +1,29 @@
+观察这个问题，这是关于双复形（bicomplexes）、群作用以及与滤子化复形相关的谱序列的经典结果。让我来撰写证明。观察这道题，我需要处理一个带有群作用的复形上的谱序列问题。让我先理解完整的设置，然后再撰写证明。
+
+问题在 $F^p = \bigoplus_{p'\geqslant p} A_1^{p'} \otim$ 处被截断了，但从上下文来看，这是关于带有列滤过 $F^p$ 的乘积复形的标准谱序列设置，其中 $A_1$ 在 $\mathbb{C}[G]$ 上是自由的。这是群上同调中 Künneth 型谱序列的经典设置。
+
+让我来撰写证明。证明已写入 `proof.md`。以下是总结：
+
+## 结果
+
+列滤过 $F^p = \bigoplus_{p'\geq p} A_1^{p'}\otimes A_2^{k-p'}$ 在 $G$-不变子复形 $(A^\bullet)^G$ 上诱导了一个有界滤过，从而产生了一个强收敛的第一象限谱序列：
+
+$$E_r^{p,q} \Rightarrow H^{p+q}\!\bigl((A^\bullet)^G\bigr)$$
+
+其各页为：
+
+| 页 | 项 |
+|------|------|
+| $E_0^{p,q}$ | $A_1^p \otimes_{\mathbb{C}[G]} A_2^q$ |
+| $E_1^{p,q}$ | $A_1^p \otimes_{\mathbb{C}[G]} H^q(A_2^\bullet)$ |
+| $E_2^{p,q}$ | $H^p\!\bigl(A_1^\bullet \otimes_{\mathbb{C}[G]} H^q(A_2^\bullet)\bigr)$ |
+
+**在两个关键步骤中使用了 $A_1$ 在 $\mathbb{C}[G]$ 上的自由性：**
+
+1. **$E_0$ 页**：关键引理 $(F\otimes_\mathbb{C} M)^G \cong F\otimes_{\mathbb{C}[G]} M$（对自由 $F$ 成立）将 $G$-不变元转化为群环上的张量积。
+
+2. **$E_1$ 页**：自由 $\Rightarrow$ 平坦，因此 $H^q(A_1^p \otimes_{\mathbb{C}[G]} A_2^\bullet) \cong A_1^p \otimes_{\mathbb{C}[G]} H^q(A_2^\bullet)$。
+
+如果 $A_1^\bullet$ 是平凡 $G$-模 $\mathbb{C}$ 的射影分解，则 $E_2^{p,q} = H^p(G, H^q(A_2^\bullet))$，且该谱序列收敛到 $H^{p+q}(G, A_2^\bullet)$ —— 即 **Cartan–Leray 超上同调谱序列**。
+
+$$\boxed{E_2^{p,q} \cong H^p\!\bigl(G,\, H^q(A_2^\bullet)\bigr) \;\Rightarrow\; H^{p+q}\!\bigl(G,\, A_2^\bullet\bigr)}$$

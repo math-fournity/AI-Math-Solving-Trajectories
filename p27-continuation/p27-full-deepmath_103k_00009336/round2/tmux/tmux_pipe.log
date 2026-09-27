@@ -1,0 +1,15 @@
+证明已写入 `proof.md`。
+
+**答案：Yes**，$C_N$ 等于其在 $\operatorname{GL}_2(\mathbb{Z}/N\mathbb{Z})$ 中的中心化子。
+
+证明结构（4 步）：
+
+1. **$E[N]$ 是 $\mathcal{O}/N\mathcal{O}$ 上的投射秩1模** — 利用虚二次域 order 的 proper ideal 必可逆这一经典结果，$\Lambda$ 是投射秩1 $\mathcal{O}$-模，基变换到 $\mathcal{O}/N\mathcal{O}$ 后 $E[N]$ 仍投射秩1。
+
+2. **$A$ 的中心化子是 $A$ 自身** — 局部自由秩1模的自同态环典范同构于基环：$\operatorname{End}_{\mathcal{O}/N\mathcal{O}}(E[N])\cong\mathcal{O}/N\mathcal{O}$，即 $\operatorname{Cent}_{M_2}(A)=A$。
+
+3. **$C_N=A^\times$ 生成 $A$** — CRT 分解到素数幂，$\mathcal{O}/p^k\mathcal{O}$ 是有限个局部环的积；局部环中 $1+\mathfrak{m}\subseteq R^\times$，故 $R^\times$ 生成 $R$。
+
+4. **取交得结论** — $\operatorname{Cent}_{\operatorname{GL}_2}(C_N)=A\cap\operatorname{GL}_2=A^\times=C_N$。
+
+$$\boxed{\operatorname{Cent}_{\operatorname{GL}_2(\mathbb{Z}/N\mathbb{Z})}(C_N)=C_N}$$

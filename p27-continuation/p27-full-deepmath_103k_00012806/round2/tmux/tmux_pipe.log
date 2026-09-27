@@ -1,0 +1,25 @@
+Looking at this problem, I need to determine whether a $G$-invariant ideal $I \triangleleft K[X_1,\ldots,X_n]$ can be defined by polynomials in $k$, given that $K/k$ is finitely generated with $k = K^G$.
+
+Let me work through the key steps of the proof, then write it to `proof.md`.
+
+**Key reasoning:**
+
+1. **$K/k$ is finite Galois**: Replace $G$ by the group $H = \langle G \rangle$; then $K^H = K^G = k$. By Artin's theorem, $K/K^H$ is Galois (hence algebraic). Since $K/k$ is finitely generated and algebraic, it's finite. So $K/k$ is finite Galois with group $H$, $|H| = [K:k] = d$, and $I$ is $H$-invariant.
+
+2. **Matrix setup**: Pick a $k$-basis $\beta_1,\ldots,\beta_d$ of $K$. Form matrix $M_{ij} = \sigma_i(\beta_j)$. This is invertible over $K$ since $\det(M)^2 = \det(\text{Tr}_{K/k}(\beta_i\beta_j)) \neq 0$ (discriminant is nonzero for separable extensions).
+
+3. **Decomposition + inversion**: Any $f \in B = K[X_1,\ldots,X_n]$ writes uniquely as $f = \sum_j \beta_j f_j$ with $f_j \in A = k[X_1,\ldots,X_n]$. Applying $\sigma_i$: $\sigma_i(f) = \sum_j M_{ij} f_j$, so $f_j = \sum_i (M^{-1})_{ji}\,\sigma_i(f)$.
+
+4. **Conclusion**: If $f \in I$, then $\sigma_i(f) \in I$ (by $G$-invariance), and $(M^{-1})_{ji} \in K \subset B$, so $f_j \in I$. But $f_j \in A$, so $f_j \in I \cap A$. Therefore $f = \sum_j \beta_j f_j \in (I \cap A)\cdot B$.The proof has been written to `proof.md`.
+
+**Summary of the argument:**
+
+1. **$K/k$ is finite Galois**: Artin's theorem gives that $K/K^G$ is Galois (algebraic); finite generation forces it to be finite.
+
+2. **Key matrix**: For a $k$-basis $\beta_1,\ldots,\beta_d$ of $K$, the matrix $M_{ij} = \sigma_i(\beta_j)$ is invertible over $K$ — its determinant squared equals the discriminant $\det(\operatorname{Tr}_{K/k}(\beta_i\beta_j))$, which is nonzero since $K/k$ is separable.
+
+3. **Decomposition + inversion**: Every $f \in K[X_1,\ldots,X_n]$ decomposes uniquely as $f = \sum_j \beta_j f_j$ with $f_j \in k[X_1,\ldots,X_n]$, and the Galois action gives $f_j = \sum_i (M^{-1})_{ji}\,\sigma_i(f)$.
+
+4. **Conclusion**: If $f \in I$, then $\sigma_i(f) \in I$ by $G$-invariance, and since $(M^{-1})_{ji} \in K \subset K[X_1,\ldots,X_n]$, each $f_j \in I$. But $f_j \in k[X_1,\ldots,X_n]$, so $f_j \in I \cap k[X_1,\ldots,X_n]$, giving $f \in (I \cap k[X_1,\ldots,X_n])\cdot K[X_1,\ldots,X_n]$.
+
+$$\boxed{\text{Yes. } I = \bigl(I \cap k[X_1,\ldots,X_n]\bigr)\cdot K[X_1,\ldots,X_n].}$$

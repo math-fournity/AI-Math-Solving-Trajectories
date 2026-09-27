@@ -1,0 +1,21 @@
+Looking at this problem, I need to determine whether the integral condition $\int_0^\infty g(ax)f(x)\,dx = a$ for all $a>0$ forces $g(x)=x$ a.e.
+
+Let me work through this carefully using a logarithmic substitution and Mellin transform approach, then construct an explicit counterexample.
+
+My analysis shows the answer is **No** — the condition does not imply $g(x)=x$ a.e. Let me write the complete proof to `proof.md`.The proof has been written to `proof.md`.
+
+## Summary
+
+**Answer: No** — the condition does not imply $g(x) = x$ a.e.
+
+### Key Ideas
+
+1. **Logarithmic transformation** converts the integral condition into a convolution equation $(\bar{g} * \tilde{f}^-)(s) = e^s$, where $\bar{g}(v) = g(e^v)$ and $\tilde{f}(v) = f(e^v)e^v$.
+
+2. **$g(x) = x$ is a particular solution.** Writing $\bar{g} = e^{(\cdot)} + h$, the problem reduces to finding nonzero $h$ with $h * \tilde{f}^- = 0$.
+
+3. **Nonuniqueness condition.** Such $h$ exists when the Mellin transform $\hat{f}(2 + i\omega_0) = 0$ for some $\omega_0 \neq 0$. In that case, $g(x) = x(1 + \epsilon\cos(\omega_0 \ln x))$ is another valid solution.
+
+4. **Explicit counterexample.** Taking $\tilde{f}(v) = C(\alpha_1 e^{-(v-b_1)^2} + \alpha_2 e^{-(v-b_2)^2})$ (a sum of two Gaussians, strictly positive) with parameters chosen so that $\alpha_1 e^{b_1} = \alpha_2 e^{b_2}$ and $e^{-b_1} + e^{-b_2} = 2e^{1/4}$ (mean condition), the Mellin transform $\hat{f}(2+i\omega)$ has zeros at $\omega_0 = (2k+1)\pi/(b_1 - b_2) \neq 0$.
+
+5. **Remark:** For the exponential distribution $f(x) = e^{-x}$, uniqueness holds because $\hat{f}(2+i\omega) = \Gamma(2+i\omega)$ has no zeros (the Gamma function is zero-free). So the answer depends on $f$ — uniqueness is **not** guaranteed in general.

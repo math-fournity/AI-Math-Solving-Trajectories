@@ -1,0 +1,1048 @@
+{
+  "schema_version": "ATIF-v1.7",
+  "session_id": "kindly-existence",
+  "agent": {
+    "name": "devin",
+    "version": "3000.4.25",
+    "model_name": "GLM-5.2 High",
+    "tool_definitions": [
+      {
+        "type": "function",
+        "function": {
+          "name": "shell_command",
+          "description": "Runs a shell command and returns its output.\n- Use absolute paths in your commands instead of `cd`. Do not use `cd` unless absolutely necessary.",
+          "parameters": {
+            "required": [
+              "command"
+            ],
+            "properties": {
+              "command": {
+                "description": "The shell script to execute.",
+                "type": "string"
+              },
+              "timeout_ms": {
+                "description": "The timeout for the command in milliseconds.",
+                "type": "integer"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "todo_write",
+          "description": "Use this tool to create and manage a structured task list for your current session. It tracks your progress and gives the user visibility into what you are working on.\n\n## When to use\nUse this tool for multi-step tasks (3 or more distinct steps), non-trivial tasks that require planning, or when the user provides multiple tasks or explicitly asks for a todo list. Skip it for trivial, single-step, or purely conversational/informational requests — just do the task directly.\n\n## Task states and management\n- Each task is pending, in_progress, or completed\n- Keep exactly ONE task in_progress at a time; mark it in_progress when starting work on it\n- Mark a task completed IMMEDIATELY after finishing it\n- Only mark a task completed when it is fully done — if you hit errors or blockers, keep it in_progress and add a new task describing what must be resolved\n- Add follow-up tasks discovered during work; remove tasks that are no longer relevant\n- Create specific, actionable items and break complex work into smaller steps\n\n## Example\nFor \"Add a dark mode toggle to settings, then run tests and build\":\n1. Add dark mode toggle component to settings page (in_progress)\n2. Wire up dark mode state management\n3. Update existing components to support theme switching\n4. Run tests and build, fixing any failures",
+          "parameters": {
+            "additionalProperties": false,
+            "required": [
+              "todos"
+            ],
+            "type": "object",
+            "properties": {
+              "todos": {
+                "description": "The updated list of todo items.",
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "content": {
+                      "description": "The task description.",
+                      "type": "string"
+                    },
+                    "status": {
+                      "type": "string",
+                      "enum": [
+                        "pending",
+                        "in_progress",
+                        "completed"
+                      ],
+                      "description": "Current status of the todo item."
+                    }
+                  },
+                  "required": [
+                    "content",
+                    "status"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "get_output",
+          "description": "Reads the output from a background shell process.\n\nUsage notes:\n- The shell_id argument is required (use the ID returned by the exec tool)\n- You can specify an optional timeout in milliseconds (up to 280000ms). Timeouts below 10000ms (10s) are raised to 10s; the default is 10s.\n- IMPORTANT: timeout is the MAX wait — this returns immediately when the process exits. If you want to wait for the command to finish, set a long timeout. If you want to quickly check status while working on other tasks in parallel, set a short timeout. Either way, do not repeatedly poll.\n- The process continues running after reading output\n- This will return the output of the most recently executed command in the shell if there is no current command running command\n",
+          "parameters": {
+            "required": [
+              "shell_id"
+            ],
+            "properties": {
+              "shell_id": {
+                "description": "The ID of the shell to read output from.",
+                "type": "string"
+              },
+              "timeout": {
+                "description": "Optional timeout in milliseconds.",
+                "type": "integer"
+              },
+              "incremental": {
+                "description": "If true (default), returns the changes since your last read. For interactive shells whose\nscreen redraws in place (progress bars, block redraws), this is a unified diff so in-place\nline changes are shown as `-`old / `+`new; for plain append-only output it is the new lines.\nIf false, returns the full output buffer.",
+                "type": "boolean"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "close_browser_preview",
+          "description": "Closes a running browser preview by its ID.\n\n- Takes a preview_id parameter, as returned by `browser_preview`\n- The preview URL stops working; the web server it points at is untouched\n- Previews are closed automatically when the session ends, so this is only\n  needed to close one early\n",
+          "parameters": {
+            "required": [
+              "preview_id"
+            ],
+            "properties": {
+              "preview_id": {
+                "description": "The ID of the browser preview to close.",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "exit_plan_mode",
+          "description": "Exit Plan mode and switch to Normal mode to begin implementation.\n\n**ONLY call this tool when ALL of the following are true:**\n1. You have explored the codebase and understood the task\n2. You have asked any necessary clarifying questions using ask_user_question\n3. You have presented your implementation plan in your messages\n\n**Do NOT call this tool:**\n- For research-only tasks that don't require implementation\n- To ask \"Is this plan okay?\" - use ask_user_question for that instead\n\nInclude a concise summary of the plan in the `plan` parameter so the user can review it before approving.\n\nOn success, you will automatically switch to Normal mode and can begin implementation.",
+          "parameters": {
+            "properties": {
+              "plan": {
+                "description": "A concise summary of the implementation plan. This is displayed to the\nuser for approval before switching out of Plan mode.",
+                "type": "string",
+                "default": null
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "apply_patch",
+          "description": "Use the apply_patch tool to edit files. This is a FREEFORM tool — emit the patch directly, do not wrap it in JSON. You must include a header with your intended action (Add/Update/Delete). You must prefix new lines with `+` even when creating a new file. To delete a file, use a `*** Delete File: <path>` header with no body. To rename or move a file, add a `*** Move to: <new path>` line immediately after its `*** Update File: <path>` header (you may also include edits in the same hunk). You MUST always use the absolute path when specifying the target file.",
+          "parameters": {}
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "write_to_process",
+          "description": "Writes input to an interactive process running in a shell with support for both text and special characters.\n\nIMPORTANT: This command will NOT work if there is no command running in the shell. If you want to execute a command in the shell use the exec tool.\n\nProvide exactly ONE of text_input or bytes_input (never both). To answer a prompt that needs an Enter keypress (e.g. a [y/n] prompt), set bytes_input to y<CR> (the y character followed by Enter).\n\nInput options:\n- text_input: Literal text content (no special character interpretation)\n- bytes_input: Special characters using angle bracket notation (e.g., <ESC>, <CR>, <UP>, <C-c>)\n\nSpecial character notation:\n- <ESC> = Escape character\n- <CR> = Carriage return (Enter)\n- <LF> = Line feed (newline)\n- <BS> = Backspace\n- <UP>, <DOWN>, <LEFT>, <RIGHT> = Arrow keys\n- <C-c>, <C-d>, <C-z> = Ctrl+key combinations\n",
+          "parameters": {
+            "required": [
+              "shell_id"
+            ],
+            "properties": {
+              "shell_id": {
+                "description": "The ID of the shell to write to.",
+                "type": "string"
+              },
+              "text_input": {
+                "description": "Text content to write to the shell (interpreted as literal text).",
+                "type": "string"
+              },
+              "bytes_input": {
+                "description": "Special characters/bytes to write to the shell (interpreted with angle bracket notation).",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "mcp_call_tool",
+          "description": "Execute a tool on an MCP server. Use this to interact with external services like Linear, GitHub, Slack, databases, and more. The tool result will be returned as structured data.",
+          "parameters": {
+            "required": [
+              "server_name",
+              "tool_name"
+            ],
+            "properties": {
+              "server_name": {
+                "description": "Name of the MCP server to use (e.g., \"linear\", \"github\").",
+                "type": "string"
+              },
+              "tool_name": {
+                "description": "Name of the tool to execute.",
+                "type": "string"
+              },
+              "arguments": {
+                "description": "Input arguments for the tool as a JSON object.",
+                "type": "object",
+                "additionalProperties": true,
+                "default": {},
+                "properties": {}
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "web_search",
+          "description": "Search the web for information using a search query. Returns relevant web page titles, URLs, and summaries. Use this when you need to find information online.\n\nYou must not include extraneous information in web searches. For example, to find latest python version, do *NOT* search \"latest Python version 2026 3.11 3.12 3.13\". The \"2026 3.11 3.12 3.13\" is unnecessary. Keep the search string simple and focused, e.g. \"latest Python version\".",
+          "parameters": {
+            "required": [
+              "query"
+            ],
+            "properties": {
+              "query": {
+                "description": "The search query to find relevant web pages.",
+                "type": "string"
+              },
+              "num_results": {
+                "description": "Maximum number of results to return. Defaults to 5.",
+                "type": "integer",
+                "default": null
+              },
+              "domain": {
+                "description": "Optional domain to restrict search results to (e.g. \"docs.rs\").",
+                "type": "string"
+              }
+            },
+            "additionalProperties": false,
+            "type": "object"
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "edit",
+          "description": "Performs exact string replacements in files.\n\nUsage:\n- You must use your `read` tool at least once in the conversation before editing. This tool will error if you attempt an edit without reading the file.\n- When editing text from read tool output, ensure you preserve the exact indentation (tabs/spaces) as it appears AFTER the line number prefix. The line number prefix format is: spaces + line number + tab. Everything after that tab is the actual file content to match. Never include any part of the line number prefix in the old_string or new_string.\n- ALWAYS prefer editing existing files to creating new ones.\n- Only use emojis if the user explicitly requests it. Avoid adding emojis to files unless asked.\n- The edit will FAIL if `old_string` is not unique in the file. Either provide a larger string with more surrounding context to make it unique or use `replace_all` to change every instance of `old_string`.\n- Use `replace_all` for replacing and renaming strings across the file. This parameter is useful if you want to rename a variable for instance.",
+          "parameters": {
+            "required": [
+              "file_path",
+              "old_string",
+              "new_string"
+            ],
+            "properties": {
+              "file_path": {
+                "description": "The absolute path to the file to modify",
+                "type": "string"
+              },
+              "old_string": {
+                "description": "The text to replace. Always provide `old_string` before `new_string` so that streaming displays can show the diff progressively.",
+                "type": "string"
+              },
+              "new_string": {
+                "description": "The text to replace it with (must be different from `old_string`)",
+                "type": "string"
+              },
+              "replace_all": {
+                "description": "Replace all occurrences of `old_string` (default false)",
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "notebook_read",
+          "description": "Read a Jupyter notebook file (.ipynb) and extract all cells with their outputs",
+          "parameters": {
+            "required": [
+              "notebook_path"
+            ],
+            "properties": {
+              "notebook_path": {
+                "description": "The absolute path to the Jupyter notebook file to read (must be absolute, not relative)",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "update_plan",
+          "description": "Updates the task plan. Provide an optional explanation and a list of plan items, each with a non-empty step description and status. At most one step can be in_progress at a time.",
+          "parameters": {
+            "additionalProperties": false,
+            "required": [
+              "plan"
+            ],
+            "type": "object",
+            "properties": {
+              "explanation": {
+                "description": "Optional explanation for this plan update.",
+                "type": "string"
+              },
+              "plan": {
+                "description": "The plan items with step descriptions and statuses.",
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "step": {
+                      "description": "A brief description of the plan step.",
+                      "type": "string"
+                    },
+                    "status": {
+                      "type": "string",
+                      "enum": [
+                        "pending",
+                        "in_progress",
+                        "completed"
+                      ],
+                      "description": "Current status: pending, in_progress, or completed."
+                    }
+                  },
+                  "required": [
+                    "step",
+                    "status"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "kill_shell",
+          "description": "Kills a running background shell by its ID.\n\n- Takes a shell_id parameter identifying the shell to kill\n- Returns a success or failure status\n- Use this tool when you need to terminate a long-running shell\n",
+          "parameters": {
+            "required": [
+              "shell_id"
+            ],
+            "properties": {
+              "shell_id": {
+                "description": "The ID of the shell to kill.",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "read",
+          "description": "Reads a file from the filesystem. The file_path parameter must be an absolute path, not a relative path. By default, it reads up to 20000 characters starting from the beginning of the file. You can optionally specify a line offset and limit (especially handy for long files), but it's recommended to read the whole file by not providing these parameters. Any lines longer than 2000 characters will be truncated.",
+          "parameters": {
+            "required": [
+              "file_path"
+            ],
+            "properties": {
+              "file_path": {
+                "description": "The absolute path to the file to read.",
+                "type": "string"
+              },
+              "offset": {
+                "description": "Optional line number to start reading from (1-based).",
+                "type": "integer"
+              },
+              "limit": {
+                "description": "Optional number of lines to read.",
+                "type": "integer"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "run_subagent",
+          "description": "Launch an independent subagent to handle a task autonomously.\n\nSubagents (also referred to as just \"agents\") are good at handling self-contained, multi-step tasks, especially if they can be parallelized:\n- Parallel execution: Splitting subtasks across subagents allows you to complete your work more quickly than doing these tasks on your own. In order to benefit from this, it's important that you actually launch the background subagents in parallel rather than running them one after the other. Note that subagents' work should be self-contained when runnign in parallel so they don't interfere with each other (e.g. we don't want parallel subagents writing to the same files).\n- Self-contained, multi-step work: For tasks that likely require several steps to complete, where the steps to find the final answer aren't very relevant. For example, broad or uncertain searches/explorations are a good use-case.\n         - Keeping your context clean: For tasks that seem mostly irrelevant to the things you've been working on, subagents can let you answer questions while staying focused. For example, if a user asks a question about Devin CLI documentation or configuraiton while you're refactoring on a codebase, you can use a subagent to investigate this tangential question. Use discretion—sometimes the user does want you to switch tasks, especially if you've already worked on several unrelated things already, or if it seems like your previous tasks are complete.\n\n\n         Skip subagents when simpler tools suffice:\n- If you already know the file path, read it directly\n- Use your grep and glob tools rather than subagents when you think they will meet your needs quickly without many attempts\n- Use your edit or read tools directly if only a few files are involved\n\n- Don't use a subagent to do singular tasks like running a command\n\nWriting effective prompts:\n- Subagents are stateless; they cannot ask clarifying questions, and they can't see any of your context. Front-load all context they might neeed: relevant file paths, function/class names, what you already know, and exactly what you need back.\n- State whether the subagent should make changes or only investigate. It has no visibility into the user's original request. When asking open-ended questions, explicitly state how thorough of an answer you want.\nUsage notes:\n- The user never sees subagent output directly, so you'll need to distill subagents' answers into your own response if you want to .\n- You can generally trust subagent results. Avoid re-doing their work unless something looks wrong.\n\n- Set is_background=true to run a background subagent without blocking. You will be notified automatically when it finishes with a <subagent_completion_notification> message. You can check on the status of a background subagent using your read_subagent tool. To wait for a subagent to complete to see its response, call read_subagent with block=true. Background agents are nice for parallelism and work that might take unexpectedly long, in which case you'd want to do other work while waiting.\n        - Set is_background=false to run a foreground subagent when you need the answer before continuing. You can't do any other work while a foreground subagent is running, and at most one foreground agent can run at once. Despite these restrictions, foreground users have a slightly nicer UX and are less frequently blocked by permission issues. So use is_background=false when you don't need paralellism and would have otherwise spawned a background agent then immediately called read_subagent with block=true.\n        - If you want to run both background subagents and a foreground subagent, run the background subagents first and then run the foreground subagent. Don't try to launch multiple foreground subagents in parallel; instead use background subagents or run the foreground subagents sequentially so you can see each subagent's output before launching the next one.",
+          "parameters": {
+            "required": [
+              "title",
+              "task",
+              "profile"
+            ],
+            "properties": {
+              "title": {
+                "description": "A short, human-readable title for this subagent.",
+                "type": "string"
+              },
+              "task": {
+                "description": "The task or prompt to give the subagent. Be specific and detailed.",
+                "type": "string"
+              },
+              "profile": {
+                "description": "The profile to use for this subagent (e.g. \"subagent_explore\", \"subagent_general\").",
+                "type": "string"
+              },
+              "is_background": {
+                "description": "If true, the subagent runs in the background and returns its ID\nimmediately. You will be automatically woken up with the result\nwhen it completes. You can check progress with read_subagent if\nneeded, but do not poll in a loop — just continue with other work\nor end your turn.",
+                "type": "boolean",
+                "default": false
+              },
+              "resume": {
+                "description": "If set to an agent id (which you can get from the response of a previous\nrun_subagent invocation), your prompt will be sent to that agent, so it can\nrespond using its existing execution transcript as context.",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "write",
+          "description": "Write content to a file, creating it if needed and overwriting it if it exists.\n\nUsage:\n- Prefer the edit tool for modifying existing files. Only use this tool to create new files or for complete rewrites.\n- If overwriting an existing file, you SHOULD use the read tool first to read the file's contents.\n- NEVER proactively create documentation files (*.md) or README files unless explicitly requested.\n- Only use emojis if the user explicitly requests it. Avoid writing emojis to files unless asked.",
+          "parameters": {
+            "required": [
+              "file_path",
+              "content"
+            ],
+            "properties": {
+              "file_path": {
+                "description": "The absolute path to the file to write",
+                "type": "string"
+              },
+              "content": {
+                "description": "The content to write to the file",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "grep",
+          "description": "A powerful search tool built on ripgrep.\n\nUsage:\n- Always prefer this tool over invoking `grep` or `rg` as a shell command. It has been optimized for correct permissions and access.\n- The pattern is treated as a regular expression.\n- Filter files with the glob_pattern parameter in glob format (e.g., \"*.rs\", \"src/**/*.py\").\n- Use output_mode to control results: 'content' for matching lines, 'files_with_matches' for file paths only, 'count' for match counts. Set case_insensitive for case-insensitive matching and context_lines to show lines around each match.\n- If the result is truncated, narrow your search with a more specific pattern or more filters.\n- Files larger than 4 MB are skipped.",
+          "parameters": {
+            "additionalProperties": false,
+            "required": [
+              "pattern"
+            ],
+            "type": "object",
+            "properties": {
+              "pattern": {
+                "description": "The regular expression pattern to search for, passed to ripgrep under the hood",
+                "type": "string"
+              },
+              "path": {
+                "description": "The directory or file to search in. Defaults to current directory.",
+                "type": "string",
+                "default": "."
+              },
+              "glob_pattern": {
+                "description": "Glob pattern to filter files (e.g., '*.rs' searches .rs files in current dir but not subdirs, 'src/**/*.py' searches .py files in src/ and its subdirs). Defaults to searching all files.",
+                "type": "string"
+              },
+              "output_mode": {
+                "type": "string",
+                "enum": [
+                  "content",
+                  "files_with_matches",
+                  "count"
+                ],
+                "description": "How to format the output.",
+                "default": "content"
+              },
+              "case_insensitive": {
+                "description": "Perform case-insensitive search. Defaults to false.",
+                "type": "boolean",
+                "default": false
+              },
+              "max_results": {
+                "description": "Maximum number of matches to return. Defaults to 100, max 20,000. Only applicable for \"content\" output mode.",
+                "type": "integer"
+              },
+              "context_lines": {
+                "description": "Number of lines to show before and after each match (context). Defaults to 0.",
+                "type": "integer",
+                "default": 0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "find_file_by_name",
+          "description": "Fast file name/path pattern matching tool that works with any codebase size using glob patterns. Supports brace expansion (e.g., `**/*.{ts,tsx,js,jsx}`). Matches against file paths, not file contents. Do NOT use this tool for searching for things like function names, variable names, etc. which should be searched against file contents (e.g. using grep).",
+          "parameters": {
+            "required": [
+              "pattern"
+            ],
+            "properties": {
+              "pattern": {
+                "description": "The glob pattern to match files against.\nExamples:\n- `*.py` - matches all Python files in the current directory only (not subdirectories)\n- `**/*.js` - matches all JavaScript files in the current directory and all subdirectories recursively\n- `src/**/*.ts` - matches all TypeScript files within the `src` folder and its subdirectories\n- `test_*.py` - matches Python files starting with `test_` in the current directory (e.g., `test_utils.py`)\n- `**/*.{ts,tsx}` - matches all TypeScript files (both .ts and .tsx) recursively using brace expansion",
+                "type": "string"
+              },
+              "path": {
+                "description": "The directory to search in (defaults to current working directory)",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "webfetch",
+          "description": "Fetches a web page and returns its content as readable text.",
+          "parameters": {
+            "required": [
+              "url"
+            ],
+            "properties": {
+              "url": {
+                "description": "The URL to fetch content from.",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "request_scope",
+          "description": "Request read or write access to a directory. Use this tool when you encounter a permission error due to sandboxing and need access to a path outside your current allowed directories. The user will be prompted to approve or deny the request. This tool is a no-op if the scope is already granted.",
+          "parameters": {
+            "required": [
+              "scope",
+              "path"
+            ],
+            "properties": {
+              "scope": {
+                "description": "The type of access to request: \"read\" or \"write\".",
+                "type": "string"
+              },
+              "path": {
+                "description": "The absolute path to the directory to request access to.",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "exec",
+          "description": "Executes a given shell command in a persistent shell session and waits for output with optional timeout, ensuring proper handling and security measures.\n\nCommands run under bash.\n\nIMPORTANT: This tool is for terminal operations like git, npm, docker, etc. DO NOT use it for file operations (reading, writing, editing, searching, finding files) - use the specialized tools for this instead.\n\nBefore executing the command, please follow these steps:\n\n1. Directory Verification:\n   - If the command will create new directories or files, first use `ls` to verify the parent directory exists and is the correct location\n   - For example, before running \"mkdir foo/bar\", first use `ls foo` to check that \"foo\" exists and is the intended parent directory\n\n2. Command Execution:\n   - Always quote file paths that contain spaces with double quotes (e.g., cd \"path with spaces/file.txt\")\n   - Examples of proper quoting:\n     - cd \"/Users/name/My Documents\" (correct)\n     - cd /Users/name/My Documents (incorrect - will fail)\n     - python \"/path/with spaces/script.py\" (correct)\n     - python /path/with spaces/script.py (incorrect - will fail)\n   - After ensuring proper quoting, execute the command.\n   - Capture the output of the command.\n\nUsage notes:\n  - If the output is too long, it will be truncated before being returned to you.\n  - Commands run in a persistent shell session for each shell_id, preserving state between calls. The working directory persists between commands.\n  - One-shot commands (no `shell_id`) do NOT share state with each other: the working directory does NOT persist between calls. Use the optional `workdir` parameter (an absolute path to an existing directory) to set the working directory for a command, instead of a leading `cd` that the next call would forget. With a `shell_id`, `workdir` changes that session's directory before running the command.\n  - When issuing multiple commands:\n    - If the commands are independent and can run in parallel, make multiple shell tool calls in a single message.\n    - If the commands depend on each other and must run sequentially, chain them in a single call (bash: `cmd1 && cmd2`; PowerShell: `cmd1; if ($?) { cmd2 }`).\n    - In bash, use ';' to run commands sequentially regardless of exit status.\n    - DO NOT use newlines to separate commands (newlines are ok in quoted strings)\n  - Use absolute paths in your commands instead of `cd` if possible. You may use `cd` if the User explicitly requests it.\n  - Passwords cannot be entered into this tool, so `sudo` fails when it needs one. Do NOT retry with a TTY or ask the user to type a password — run without sudo or ask the user to run the command themselves.\n",
+          "parameters": {
+            "required": [
+              "command"
+            ],
+            "properties": {
+              "command": {
+                "description": "The command to execute in the current shell session.\n\nExamples:\n- Bash: \"echo 'Hello World'\", \"ls -la\", \"git status\"\n- PowerShell: \"Write-Output 'Hello World'\", \"Get-ChildItem\"\n\nNote: Do NOT include the shell executable (like \"bash -c\" or \"powershell -Command\") in the command.\nThe command should be the raw shell command as you would type it in the active shell.",
+                "type": "string"
+              },
+              "shell_id": {
+                "description": "Optional shell ID to reuse an existing interactive session. Use shell IDs to maintain multiple shell sessions. When shell ID is provided, writes to that session's stdin. When no shell ID is provided, a new session is created.",
+                "type": "string"
+              },
+              "workdir": {
+                "description": "Optional absolute path to use as the working directory for this command (does not persist between one-shot calls; with a `shell_id` it cds the session).",
+                "type": "string"
+              },
+              "timeout": {
+                "description": "Optional timeout in milliseconds (default: background after 10s idle or 30s total).\nWhen it elapses, a still-running command is backgrounded and its shell_id returned for `get_output`/`kill_shell`. Set to `0` to background immediately.",
+                "type": "integer"
+              },
+              "tty": {
+                "description": "Allocate a PTY-backed interactive session. Default `false`.\n`false` (default): one-shot non-interactive command run through pipes; good for most use cases.\n`true`: persistent interactive session — for TUI programs (vim, tmux, top, REPLs) or state that must persist across calls.",
+                "type": "boolean",
+                "default": false
+              },
+              "env": {
+                "description": "Environment variables for this command's process tree, e.g.\n`{\"API_KEY\": \"abc123\", \"NODE_ENV\": \"development\"}`. These take effect\nonly when a new shell is started, so `env` cannot be combined with\n`shell_id` — omit `shell_id` (the call is rejected otherwise) so the\nvariables are set from the shell's first process onward. They are\nvisible to this command and its child processes only, not to other\nshells or later commands.",
+                "type": "object",
+                "additionalProperties": {
+                  "type": "string"
+                },
+                "properties": {}
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "mcp_list_servers",
+          "description": "Lists all MCP servers you have access to. Use this first if the user is asking about any third party integrations (e.g. Slack, Linear, etc).",
+          "parameters": {
+            "type": "object",
+            "properties": {},
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "notebook_edit",
+          "description": "Edit a cell in a Jupyter notebook file (.ipynb) - replace, insert, or delete cells",
+          "parameters": {
+            "additionalProperties": false,
+            "required": [
+              "notebook_path",
+              "cell_number",
+              "new_source"
+            ],
+            "type": "object",
+            "properties": {
+              "notebook_path": {
+                "description": "The absolute path to the Jupyter notebook file (.ipynb) to edit.",
+                "type": "string"
+              },
+              "cell_number": {
+                "description": "The 0-based index of the cell to edit.",
+                "type": "integer"
+              },
+              "new_source": {
+                "description": "The new source content for the cell.",
+                "type": "string"
+              },
+              "cell_type": {
+                "description": "The type of the cell. If not specified, keeps the current type (for replace) or defaults to code (for insert).",
+                "type": "string",
+                "enum": [
+                  "code",
+                  "markdown"
+                ]
+              },
+              "edit_mode": {
+                "default": "replace",
+                "description": "The edit operation to perform. Defaults to replace.",
+                "type": "string",
+                "enum": [
+                  "replace",
+                  "insert",
+                  "delete"
+                ]
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "mcp_read_resource",
+          "description": "Read a resource from an MCP server. Resources can be files, database records, API responses, or any data exposed by the MCP server. Returns the resource content as text or binary data.",
+          "parameters": {
+            "required": [
+              "server_name",
+              "resource_uri"
+            ],
+            "properties": {
+              "server_name": {
+                "description": "Name of the MCP server (e.g., \"linear\", \"github\").",
+                "type": "string"
+              },
+              "resource_uri": {
+                "description": "Resource URI to read (e.g., \"<file:///path/to/file>\", \"<linear://issue/123>\").",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "read_subagent",
+          "description": "Reads the response from a background subagent, using the agent_id you got from the run_subagent tool or a <subagent_completion_notification> message. You use block=true to wait for completion. If you have other work to do, you can do that (you'll be notified whenever a subagent completes). This tool will never interrupt a running subagent.",
+          "parameters": {
+            "required": [
+              "agent_id"
+            ],
+            "properties": {
+              "agent_id": {
+                "description": "The ID of the background subagent to read output from.",
+                "type": "string"
+              },
+              "block": {
+                "description": "If true, block until the subagent finishes or the timeout expires.",
+                "type": "boolean",
+                "default": false
+              },
+              "timeout": {
+                "description": "Maximum number of seconds to wait when blocking. Defaults to 30, capped at 600, unless the tool description documents different limits for a specific subagent type.",
+                "type": "integer"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "skill",
+          "description": "Invoke or discover skills. Modes: 'invoke' (default) activates a skill by name, 'list' discovers skills registered in a project at the given path (scans skill directories like .devin/skills/ at the project root, does not recurse into subdirectories), and 'search' recursively scans for model-invocable skills under a given path and filters them by optional keywords. Skills provide context-specific guidance and may grant tool permissions.",
+          "parameters": {
+            "additionalProperties": false,
+            "properties": {
+              "command": {
+                "description": "The skill operation to perform. Defaults to \"invoke\" if omitted.",
+                "default": "invoke",
+                "type": "string",
+                "enum": [
+                  "invoke",
+                  "list",
+                  "search"
+                ]
+              },
+              "skill": {
+                "description": "The name of the skill to invoke (required for 'invoke' command).\nUse one of the available skills listed in the system prompt.",
+                "type": "string",
+                "default": null
+              },
+              "path": {
+                "description": "Project path to discover skills in (required for 'list' and 'search' commands).\nScans skill directories (e.g. .devin/skills/) at the project root;\n`list` does not recurse into subdirectories, while `search` does.\nRelative paths are resolved against the session's working directory.",
+                "type": "string",
+                "default": null
+              },
+              "keywords": {
+                "description": "List of keywords to search for. Empty or omitted means include all skills.",
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "default": null
+              },
+              "keywords_mode": {
+                "type": "string",
+                "enum": [
+                  "or",
+                  "and"
+                ],
+                "description": "Controls whether all keywords or any keyword need to be present.",
+                "default": "or"
+              }
+            },
+            "type": "object"
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "ask_user_question",
+          "description": "Present multiple-choice questions to the user and collect their answers.\n\nUse this tool when you need the user to make a decision between several options, such as choosing\nan implementation approach, selecting a library, or confirming a design choice.\n\nKey constraints:\n- 1-4 questions per call\n- 2-4 options per question (an \"Other\" free-text option is always added automatically)\n- Keep headers short (e.g. \"Auth method\", \"Library\"); headers over 16 characters are truncated\n- Option labels should be 1-5 words\n\nThe user can:\n- Select from the predefined options\n- Type a custom answer via the \"Other\" option\n- Skip or decline the question to ask for clarification\n\nIf the user submits answers, you will receive a key-value mapping of question text to their selections.\nQuestions the user skipped are marked with \"skipped\": true — treat a skipped question as the user\ndeclining to choose, not as an error, and proceed with your best judgment.\nIf the user chooses to chat instead, you will receive a rejection with any partial answers they provided.",
+          "parameters": {
+            "additionalProperties": false,
+            "required": [
+              "questions"
+            ],
+            "type": "object",
+            "properties": {
+              "questions": {
+                "description": "Array of 1-4 question objects to present to the user.",
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "question": {
+                      "description": "The full question text to display to the user.",
+                      "type": "string"
+                    },
+                    "header": {
+                      "description": "Short label displayed as a chip/tag, e.g. \"Auth method\", \"Library\".\nLabels longer than 16 characters are truncated with an ellipsis (\"…\") for display.",
+                      "type": "string"
+                    },
+                    "options": {
+                      "description": "The choices presented to the user (2-4 options). An \"Other\" free-text option is always added automatically.",
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "label": {
+                            "description": "Display text the user sees (1-5 words).",
+                            "type": "string"
+                          },
+                          "description": {
+                            "description": "Explanation of what this option means or its trade-offs.",
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "label",
+                          "description"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "multi_select": {
+                      "description": "If true, the user can select multiple options; if false, single-select only.",
+                      "type": "boolean",
+                      "default": false
+                    }
+                  },
+                  "required": [
+                    "question",
+                    "header",
+                    "options"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "answers": {
+                "description": "User's answers, keyed by question text. Populated by the UI when the user responds.\nDo not set this yourself; it will be filled in automatically.",
+                "type": "object",
+                "additionalProperties": {
+                  "description": "Represents a single answer from the user for one question.",
+                  "type": "object",
+                  "properties": {
+                    "selected": {
+                      "description": "The selected option label(s). For single-select, this will have one element.\nFor multi-select, it may have multiple. If \"Other\" was chosen, it will contain \"Other\".",
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "custom_text": {
+                      "description": "Custom text provided by the user. Set when the user selects \"Other\".",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "selected"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "browser_preview",
+          "description": "Spin up a browser preview for a running web server.\n\nThis lets the USER interact with the web server as normal, and lets them send\nyou what they see: selecting a DOM element (with its React component and source\nlocation, when resolvable) or the browser console output. Those captures go into\nthe USER's message box for them to send — you will not receive them unless they\ndo, so ask them to share what they see rather than waiting.\n\nUsage notes:\n  - The server must already be running; start it with a background command\n    first (`timeout: 0`) if it isn't.\n  - Returns immediately with a preview ID and URL. The preview stays up for the\n    rest of the session, so the USER can keep using it after you stop.\n  - An attempt is made to open the URL in the USER's browser; the URL is always\n    printed in case that fails (e.g. over SSH or in a container).\n  - Calling this again for the same URL returns the existing preview.\n  - Use `close_browser_preview` when the preview is no longer needed, e.g.\n    before shutting down the server it points at.\n",
+          "parameters": {
+            "required": [
+              "url",
+              "name"
+            ],
+            "properties": {
+              "url": {
+                "description": "The URL of the target web server to provide a browser preview for. This\nshould contain the scheme (e.g. http:// or https://), domain (e.g.\nlocalhost or 127.0.0.1), and port (e.g. :8080) but no path.",
+                "type": "string"
+              },
+              "name": {
+                "description": "A short 3-5 word name for the target web server. Should be title-cased\ne.g. 'Personal Website'. Format as a simple string, not as markdown; and\nplease output the title directly, do not prefix it with 'Title:' or\nanything similar.",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "mcp_list_tools",
+          "description": "List available tools and resources from MCP servers. Use this to discover what capabilities are available before calling mcp_call_tool.",
+          "parameters": {
+            "properties": {
+              "server_name": {
+                "description": "Name of the MCP server to list tools from (e.g., \"linear\", \"github\"). If not provided, lists tools from all configured servers.",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      }
+    ],
+    "extra": {
+      "backend": "Windsurf",
+      "permission_mode": "Bypass"
+    }
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "timestamp": "2026-08-21T06:33:19.094906+00:00",
+      "source": "system",
+      "message": "You are Devin, an interactive command line agent from Cognition.\n\nYour job is to use these instructions and the tools available to you to help the user. It is important that you do so earnestly and helpfully, as you are very important to the success of Cognition. Best of luck! We love you. <3\n\nIf the user asks for help, you can check your documentation by invoking the Devin skill (if available). Otherwise, this information may be helpful:\n\n- /help: list commands\n- /bug: report a bug to the Devin CLI developers\n- for support, users can visit https://devin.ai/support\n\nWhen creating new configuration for this tool — including skills, rules, MCP server configs, or any project settings:\n\n- Always use the `.devin/` directory for NEW configuration (e.g. `.devin/skills/<name>/SKILL.md`, `.devin/config.json`)\n- For global (user-level) configuration, use `~/.config/devin/`\n- Do NOT place new configuration in `.claude/`, `.cursor/`, or other tool-specific directories unless explicitly asked. These are only read for compatibility, not written to.\n- If the `devin-cli` skill is available, ALWAYS invoke it and explore for detailed documentation on configuration format and options\n\nWhen reading or referencing existing skills, always use the actual source path reported by the skill tool — skills may live in `.devin/`, `.agents/`, or other directories.\n\n\n# Modes\n\nThe active mode is how the user would like you to act.\n\n- Normal (default, if not specified): Full autonomy to use all your tools freely. For example: exploring a codebase, writing or editing code, etc.\n- Plan: Explore the codebase, ask the user clarifying questions, and then create a plan for what you're going to do next. Do NOT make changes until you're out of this mode and the user has approved the plan.\n\nAdhere strictly to the constraints of the active mode to avoid frustrating the user!\n\n\n# Style\n\n## Professional Objectivity\n\nPrioritize technical accuracy and truthfulness over validating the user's beliefs. It is best for the user if you honestly apply the same rigorous standards to all ideas and disagree when necessary, even if it may not be what the user wants to hear. Objective guidance and respectful correction are more valuable than false agreement. Whenever there is uncertainty, it's best to investigate to find the truth first rather than instinctively confirming the user's beliefs.\n\n## Tone\n\n- Be concise, direct, and to the point. When running commands, briefly explain what you're doing and why so the user can follow along.\n- Remember that your output will be displayed in a command line interface. Your responses can use Github-flavored markdown for formatting, and will be rendered in a monospace font using the CommonMark specification.\n- Output text to communicate with the user; all text you output outside of tool use is displayed to the user. Only use tools to complete tasks. Never use tools like exec or code comments as means to communicate with the user during the session.\n- If you cannot or will not help the user with something, please do not say why or what it could lead to, since this comes across as preachy and annoying. Please offer helpful alternatives if possible, and otherwise keep your response to 1-2 sentences.\n- Only use emojis if the user explicitly requests it. Avoid using emojis in all communication unless asked.\n- If the user asks about timelines or estimated completion times for your work, do not give them concrete estimates as you are not able to accurately predict how long it will take you to achieve a task. Instead just say that you will do your best to complete the task as soon as possible.\n- Avoid guessing. You should verify the real state of the world with your tools before answering the user's questions.\n\n<example>\nuser: What command should I run to watch files in the current directory and rebuild?\nassistant: [use the exec tool to run `ls` and list the files in the current directory, then read docs/commands in the relevant file to find out how to watch files]\nassistant: npm run dev\n</example>\n\n<example>\nuser: what files are in the directory src/?\nassistant: [runs ls and sees foo.c, bar.c, baz.c]\nassistant: foo.c, bar.c, baz.c\nuser: which file contains the implementation of Foo?\nassistant: [reads foo.c]\nassistant: src/foo.c contains `struct Foo`, which implements [...]\n</example>\n\n<example>\nuser: can you write tests for this feature\nassistant: [uses grep and glob search tools to find where similar tests are defined, uses concurrent read file tool use blocks in one tool call to read relevant files at the same time, uses edit file tool to write new tests]\n</example>\n\n## Proactiveness\n\nYou are allowed to be proactive, but only when the user asks you to do something. You should strive to strike a balance between:\n\n1. Doing the right thing when asked, including taking actions and follow-up actions\n\n2. Not surprising the user with actions you take without asking\n\nFor example, if the user asks you how to approach something, you should do your best to explore and answer their question first, but not jump to implementation just yet.\n\n## Handling ambiguous requests\n\nWhen a user request is unclear:\n- First attempt to interpret the request using available context\n- Search the codebase for related code, patterns, or documentation that clarifies intent. Also consider searching the web.\n- If still uncertain after investigation, ask a focused clarifying question\n\n## File references\n\nWhen your output text references specific files or code snippets, use the `<ref_file ... />` and `<ref_snippet ... />` self-closing XML tags to create clickable citations. These tags allow the user to view the referenced code directly in the conversation.\n\nCitation format:\n- `<ref_file file=\"/absolute/path/to/file\" />` - Reference an entire file\n- `<ref_snippet file=\"/absolute/path/to/file\" lines=\"start-end\" />` - Reference specific lines in a file\n\n<example>\nuser: Where are errors from the client handled?\nassistant: Clients are marked as failed in the `connectToServer` function. <ref_snippet file=\"/home/ubuntu/repos/project/src/services/process.ts\" lines=\"710-715\" />\n</example>\n\n<example>\nuser: Can you show me the config file?\nassistant: Here's the configuration file: <ref_file file=\"/home/ubuntu/repos/project/config.json\" />\n</example>\n\n## Tool usage policy\n\n- When webfetch returns a redirect, immediately follow it with a new request.\n- When making multiple edits to the same file or related files and you already know what changes are needed, batch them together.\n\nWhen a tool call produces output that is too long, the output will be truncated and the remaining content will be written to a file. You will see a `<truncation_notice>` tag containing the path to the overflow file. You are responsible for reading this file if you need the full output.\n\n\n# Programming\n\nSince you live in the user's terminal, a very common use-case you will get is writing code. Fortunately, you've been extensively trained in software engineering and are well-equipped to help them out!\n\n## Existing Conventions\n\nWhen making changes to files, first understand the codebase's code conventions. Explore dependencies, references, and related system to understand the codebase's patterns and abstractions. Mimic code style, use existing libraries and utilities, and follow existing patterns.\n- NEVER assume that a given library is available, even if it is well known. Whenever you write code that uses a library or framework, first check that this codebase already uses the given library. For example, you might look at neighboring files, or check the package.json (or cargo.toml, and so on depending on the language). If you're adding a dependency prefer running the package manager command (e.g. npm add or cargo add) instead of editing the file.\n- When adding a new dependency, strongly prefer a version published at least 7 days ago. Newly published versions have not been vetted and a non-trivial fraction of supply chain attacks are caught and yanked within the first few days. Avoid floating ranges (`latest`, `*`, unbounded `>=`) that auto-resolve to brand-new releases.\n- When you create a new component, first look at existing components to see how they're written; then consider framework choice, naming conventions, typing, and other conventions.\n- When you edit a piece of code, first look at the code's surrounding context (especially its imports) to understand the code's choice of frameworks and libraries. Then consider how to make the given change in a way that is most idiomatic.\n- Always follow security best practices. Never introduce code that exposes or logs secrets and keys. Never commit secrets or keys to the repository. Never modify repository security policies or compliance controls (e.g. `minimumReleaseAge`, `minimumReleaseAgeExclude`, branch protection configs, `.npmrc` security settings) to work around CI or build failures — escalate to the user instead. Unless otherwise specified (even if the task seems silly), assume the code is for a real production task.\n\n## Code style\n\n- IMPORTANT: Do NOT add or remove comments unless asked! If you find that you've accidentally deleted an existing comment, be sure to put it back.\n- Default to writing compact code – collapse duplicate else branches, avoid unnecessary nesting, and share abstractions.\n- Follow idiomatic conventions for the language you're writing.\n- Avoid excessive & verbose error handling in your code. Errors should be handled, but not every line needs to be try/catched. Think about the right error boundaries (and look at existing code for error handling style)\n\n## Debugging\n\nWhen debugging issues:\n- First reproduce the problem reliably\n- Trace the code path to understand the flow\n- Add targeted logging or print statements to isolate the issue\n- Identify the root cause before attempting fixes\n- Verify the fix addresses the root cause, not just symptoms\n\n## Workflow\n\nYou should generally prefer to implement new features or fix bugs as follows...\n\n1. If the project has test infrastructure, write a failing test to show the bug\n2. Fix the bug\n3. Ensure that the test now passes\n\nWorking this way makes it easier to tell if you've actually fixed the bug, and saves you from needing to verify later.\n\n## Git\n\n### Creating commits\n1. Run in parallel: `git status`, `git diff`, `git log` (to match commit style)\n2. Draft a concise commit message focusing on \"why\" not \"what\". Check for sensitive info.\n3. Stage files and commit with this format:\n```\ngit commit -m \"$(cat <<'EOF'\nCommit message here.\n\nGenerated with [Devin](https://devin.ai)\n\nCo-Authored-By: Devin <158243242+devin-ai-integration[bot]@users.noreply.github.com>\nEOF\n)\"\n```\n4. If pre-commit hooks modify files and the commit fails, stage the modified files and retry the commit.\n\n### Creating pull requests\nUse `gh` for all GitHub operations. Run in parallel: `git status`, `git diff`, `git log`, `git diff main...HEAD`\n\nReview ALL commits (not just latest), then create PR:\n```\ngh pr create --title \"title\" --body \"$(cat <<'EOF'\n## Summary\n<bullet points>\n\n#### Test plan\n<checklist>\n\nGenerated with [Devin](https://devin.ai)\nEOF\n)\"\n```\n\n### Git rules\n- NEVER update git config\n- NEVER use `-i` flags (interactive mode not supported)\n- DO NOT push unless explicitly asked\n- DO NOT commit if no changes exist\n\n\n# Task Management\n\nYou have access to the todo_write tool to help you manage and plan tasks. Use this tool VERY frequently to ensure that you are tracking your tasks and giving the user visibility into your progress.\nThis tool is also EXTREMELY helpful for planning tasks, and for breaking down larger complex tasks into smaller steps. If you do not use this tool when planning, you may forget to do important tasks - and that is unacceptable.\n\nIt is critical that you mark todos as completed as soon as you are done with a task. Do not batch up multiple tasks before marking them as completed.\n\nExamples:\n\n<example>\nuser: Run the build and fix any type errors\nassistant: I'm going to use the todo_write tool to write the following items to the todo list:\n- Run the build\n- Fix any type errors\n\nI'm now going to run the build using exec.\n\nLooks like I found 10 type errors. I'm going to use the todo_write tool to write 10 items to the todo list.\n\nmarking the first todo as in_progress\n\nLet me start working on the first item...\n\nThe first item has been fixed, let me mark the first todo as completed, and move on to the second item...\n..\n..\n</example>\n\nIn the above example, the assistant completes all the tasks, including the 10 error fixes and running the build and fixing all errors.\n\n<example>\nuser: Help me write a new feature that allows users to track their usage metrics and export them to various formats\nassistant: I'll help you implement a usage metrics tracking and export feature. Let me first use the todo_write tool to plan this task.\nAdding the following todos to the todo list:\n1. Research existing metrics tracking in the codebase\n2. Design the metrics collection system\n3. Implement core metrics tracking functionality\n4. Create export functionality for different formats\n\nLet me start by researching the existing codebase to understand what metrics we might already be tracking and how we can build on that.\n\nI'm going to search for any existing metrics or telemetry code in the project.\n\nI've found some existing telemetry code. Let me mark the first todo as in_progress and start designing our metrics tracking system based on what I've learned...\n\n[Assistant continues implementing the feature step by step, marking todos as in_progress and completed as they go]\n</example>\n\nUsers may configure 'hooks', shell commands that execute in response to events like tool calls, in settings. Treat feedback from hooks, including <user-prompt-submit-hook>, as coming from the user. If you get blocked by a hook, determine if you can adjust your actions in response to the blocked message. If not, ask the user to check their hooks configuration.\n\n\n## Completing Tasks\n\nThe user will primarily request you perform software engineering tasks. This includes solving bugs, adding new functionality, refactoring code, explaining code, and more. For these tasks the following steps are recommended:\n- Use the todo_write tool to plan the task if required\n- Use the available search tools to understand the codebase and the user's query. You are encouraged to use the search tools extensively both in parallel and sequentially.\n- Before making changes, thoroughly explore the codebase to understand the architecture, patterns, and related systems. Read relevant files, trace dependencies, and understand how components interact.\n- Implement the solution using all tools available to you\n\n## Verification\n\nBefore considering a task complete, verify your work. Use judgment based on what you changed - optimize for fast iteration:\n\n- Check for project-specific verification instructions in project rules files (`AGENTS.md`, or similar)\n- Run relevant verification steps based on the scope of changes (lint, typecheck, build, tests)\n- For isolated functionality, consider a temporary test file to verify behavior, then delete it\n- Self-critique: review changes for edge cases and refine as needed\n- If you cannot find verification commands, ask the user and suggest saving them to a project config file\n\n## Saving learned information\n\nIf you discover useful project information (build commands, test commands, verification steps, user preferences, ...) that isn't already documented:\n- If a rules file exists (`AGENTS.md`, etc.), append to it\n- Otherwise, create `AGENTS.md` in the current directory with the learned information\n\n## Error recovery\n\nWhen encountering errors (failed commands, build failures, test failures):\n- Keep trying different approaches to resolve the issue\n- Search for similar issues in the codebase or documentation\n- Only ask the user for help as a last resort after exhausting reasonable options\n- Exception: Always ask the user for help with authentication issues, project configuration changes, or permission problems\n\n## System Guidance\nYou may receive `<system_guidance>` messages containing hints, reminders, or contextual guidance before you take action. These notes are injected by the system to help you make better decisions. Pay attention to their content but do not acknowledge or respond to them directly—simply incorporate their guidance into your actions.\n\n\n\n# Tool Tips\n\n## Shell\nNEVER invoke `rg`, `grep`, or `find` as shell commands — use the provided search tools instead. They have been optimized for correct permissions and access.\n\nIf you must call one of these binaries (e.g. to filter command output), prefer ripgrep (`rg`) over `grep` because it's fast and already installed on the user's system.\n\n\n## File-related tools\n- read can read images (PNG, JPG, etc) - the contents are presented visually.\n- For Jupyter notebooks (.ipynb files), use notebook_read instead of read.\n- Speculatively read multiple files as a batch when potentially useful.\n- Do NOT create documentation files to describe your changes or plan. Exception: persistent project info files like `AGENTS.md` are allowed.\n\n\n# Safety\n\nIMPORTANT: Assist with defensive security tasks only. Refuse to create, modify, or improve code that may be used maliciously. Do not assist with credential discovery or harvesting, including bulk crawling for SSH keys, browser cookies, or cryptocurrency wallets. Allow security analysis, detection rules, vulnerability explanations, defensive tools, and security documentation.\n\nIMPORTANT: You must NEVER generate or guess URLs for the user unless you are confident that the URLs are for helping the user with programming. You may use URLs provided by the user in their messages or local files.\n\n## Destructive Operations\n\nNEVER perform irreversible destructive operations without explicit user confirmation for that specific action, even if you have permission to run the command. This includes:\n- Deleting or truncating database tables, dropping schemas, bulk-deleting rows\n- `rm -rf`, deleting directories, or removing files you did not just create\n- Force-pushing, rewriting git history, deleting branches, checking out over uncommitted changes, or bypassing commit hooks\n- Sending emails, making payments, or calling APIs with real-world side effects\n\nIf a destructive step is required, STOP and describe exactly what you are about to run and why, then wait for the user. Do not assume a previous approval extends to a new destructive operation. If you realize you have already caused data loss, say so immediately rather than attempting to hide or quietly repair it.\n\n\n",
+      "extra": {
+        "telemetry": {
+          "source": "sysprompt",
+          "operation": "normal"
+        }
+      }
+    },
+    {
+      "step_id": 2,
+      "timestamp": "2026-08-21T06:33:19.095471+00:00",
+      "source": "system",
+      "message": "Available subagent profiles for the `run_subagent` tool. Choose the most appropriate profile based on whether the task requires write access:\n- `subagent_explore`: Read-only subagent for codebase exploration, research, and search. Use this when you need to find code, understand architecture, trace dependencies, or answer questions about the codebase. This profile has read-only access (grep, glob, read, web_search) and cannot edit files.\n- `subagent_general`: General-purpose subagent with full tool access (read, write, edit, exec). Use this when the subagent needs to make code changes, run commands with side effects, or perform any task that requires write access. In the foreground it can prompt for tool approval; in the background, unapproved tools are auto-denied.",
+      "extra": {
+        "telemetry": {
+          "source": "sysprompt",
+          "operation": "subagent_profiles"
+        }
+      }
+    },
+    {
+      "step_id": 3,
+      "timestamp": "2026-08-21T06:33:19.103209+00:00",
+      "source": "system",
+      "message": "You are powered by GLM-5.2 High.",
+      "extra": {
+        "telemetry": {
+          "source": "system",
+          "operation": "unknown"
+        }
+      }
+    },
+    {
+      "step_id": 4,
+      "timestamp": "2026-08-21T06:33:19.095806+00:00",
+      "source": "system",
+      "message": "<system_info>\nThe following information is automatically generated context about your current environment.\nCurrent workspace directories:\n  /Volumes/data/math-agent-glm5.2-tmux-agents-dir/p27-continuation/p27-full-deepmath_103k_00000118 (cwd)\n\nPlatform: macos\nOS Version: Darwin 25.6.0\nToday's date: Friday, 2026-08-21\n</system_info>",
+      "extra": {
+        "telemetry": {
+          "source": "system",
+          "operation": "unknown"
+        }
+      }
+    },
+    {
+      "step_id": 5,
+      "timestamp": "2026-08-21T06:33:19.096344+00:00",
+      "source": "system",
+      "message": "<rules type=\"always-on\">\n<rule name=\"cognition-trace-ironlaws\" path=\"/Users/user/.devin/rules/cognition-trace-ironlaws.md\">\n# 认知加载与trace.csv维护铁律（§17-21）\n\n## §17 · 认知加载铁律\n\n**硬约束**：接手任何工作时必须按三层架构加载认知，不能跳过直接开干。\n\n**操作**：加载 README.md（分类法索引）→ 判断需要哪种视角 → 加载对应看法文件 → 加载具体文档/代码 → 带着必要认知工作。\n\n**禁止**：不加载 README.md 就直接回答问题 · 只加载 README.md 不加载看法文件 · 假设自己不加载文档就能回答好问题。\n\n**详见**：`read` skill（一句话触发器 → `/Users/user/skills-devin/workflow.md` §2 §4）。\n\n## §18 · 方案先行铁律\n\n**硬约束**：非平凡工作必须先制定方案（`make-plan`），不能\"用户说改什么就直接改\"。\n\n**方案必须**：\n1. 利用 trace.csv 追溯链实现\"完备\"——认知等价于\"整个 repo 所有元素都放入上下文\"\n2. 拆解为自包含工作包——每个工作包 README.md 列出执行 AI 需要的 View（看法文件）和具体文档/代码\n3. 拆解粒度依赖 trace.csv 追溯支持——精确定位每个工作包涉及哪些元素\n\n**判断标准**：单文件单行修改 → 直接执行。涉及多文件/多步骤/需要理解上下文 → 必须方案先行。\n\n**详见**：`make-plan` skill → `/Users/user/skills-devin/workflow.md` §4 §5。\n\n## §19 · 提交前维护 trace.csv 铁律\n\n**硬约束**：每次 git commit 前必须维护 trace.csv 各层级幂等关系。commit 同时包含 repo 变更和 trace.csv 变更。\n\n**幂等关系**：给定任何一个 commit 时间点，trace.csv 的状态精确反映 repo 在那个时间点的所有元素和关系。trace.csv 和 repo 在同一个 commit 中同步演进。\n\n**维护粒度**：各个层级——文件级、函数级（`path::function`）、章节级（`path#section`）。改了某个函数，trace.csv 中这个函数对应的记录也要同步更新。\n\n**禁止**：只提交 repo 变更不提交 trace.csv 变更 · 事后批量补录 trace.csv · 改了函数级代码但 trace.csv 只更新到文件级。\n\n**破坏后果**：幂等关系被破坏 = 下一个工作包的 AI 按 trace.csv 查询得到错误信息 = 认知体系失效。\n\n**详见**：`/Users/user/skills-devin/workflow.md` §3.5 §3.6。\n\n## §20 · AI 双重责任铁律\n\n**硬约束**：在工作包中工作时，对 trace.csv 既是消费者又是生产者。\n\n- **消费**：利用 trace.csv 了解当前工作包涉及哪些元素，这些元素和哪些其他资产有关系，改了什么会影响什么\n- **生产**：在工作包执行过程中，持续更新 trace.csv，记录自己造成的所有新关系和变更关系\n\n**维护目的**：不仅是当前工作包，更是未来的下一个工作包的 AI——下一个 AI 接手时，trace.csv 是它了解 repo 的基础设施。\n\n**禁止**：只消费不生产（利用 trace.csv 了解情况但不更新它）· 只生产不消费（盲目更新 trace.csv 但不利用它指导自己的工作）。\n\n**详见**：`/Users/user/skills-devin/workflow.md` §3.6。\n\n## §21 · 工作包完成时元数据更新铁律\n\n**硬约束**：工作包完成后必须更新看法文件和映射索引（view-index.csv / trace.csv）。不能\"改完代码就结束\"。\n\n**更新内容**：\n1. 更新看法文件中对应条目的描述（讲什么/覆盖问题场景/依赖关系）\n2. 同步 view-index.csv（看法文件↔文档映射）\n3. 同步 trace.csv（全维度追溯关系）\n4. commit 元数据更新\n\n**分层精度**：\n- 改了整个文件 → `query-by-asset <文件路径>` 查哪些看法文件索引了它\n- 只改了某个函数/章节 → `query-prefix <type> <文件路径>` 查该文件下所有子资产的关系\n\n**禁止**：改完代码不更新元数据就结束 session · 更新了 view-index.csv 不更新 trace.csv · 更新了文件级不更新函数/章节级。\n\n**破坏后果**：不更新元数据 = 下次 AI 按看法文件加载时得到过时信息 = 认知体系失效。\n\n**详见**：`/Users/user/skills-devin/workflow.md` §5 阶段4。\n</rule>\n\n<rule name=\"no-inline-scripts\" path=\"/Users/user/.devin/rules/no-inline-scripts.md\">\n# 禁止inline脚本，所有脚本持久化到项目内\n\n## 硬规则\n\n1. **禁止写inline脚本**——禁止用`.venv/bin/python -c \"...\"`或`python -c \"...\"`写超过3行的脚本。如果一段逻辑需要超过3行代码，它必须被写成文件。\n\n2. **禁止在AGENTS.md中记录inline代码**——AGENTS.md中禁止出现超过5行的bash/python代码块。如果一段操作逻辑需要超过5行代码才能表达，它必须被写成`scripts/`下的脚本，然后在AGENTS.md中只记录脚本路径和一行用法示例。AGENTS.md是认知索引和规则，不是代码仓库。\n\n3. **所有脚本写到项目内的脚本目录中**——不是临时目录、不是`/tmp/`、不是home目录。放到项目已有的脚本目录（如`xishujuzhen/solver_harness/`）或项目的`scripts/`目录中。\n\n4. **在项目AGENTS.md中做好索引**——新脚本必须在项目AGENTS.md中记录：脚本路径、用途、用法（一行示例）。让下一个session的AI能找到它。**索引不是代码全文**——只记路径+用途+一行用法，不记完整代码。\n\n5. **持续维护，不重写**——如果某个操作已经有过脚本，改进那个脚本，不要另写新的。重复的操作应该累积成一个越来越完善的脚本，而不是每次session都从头写。\n\n## 为什么\n\n- **inline脚本是一次性的**——写完用完就消失，下一个session的AI看不到、无法复用、无法改进\n- **inline脚本不可追溯**——没有文件路径、没有git历史、无法审计\n- **inline脚本导致重复劳动**——同一个操作（如僵尸清理、批量落盘）每个session都重写一遍，浪费且容易出bug\n- **持久化脚本持续积累**——每次改进都commit，脚本越来越强，下一个session直接用\n\n## 判定标准\n\n| 情况 | 做法 |\n|---|---|\n| 单行命令（`ls`、`git status`、`tmux list-sessions`） | 直接执行 |\n| 2-3行的简单查询 | 直接执行可以 |\n| 超过3行的逻辑 | **必须写成文件** |\n| 会重复使用的操作（清理、落盘、查询、批量处理） | **必须写成文件** |\n| 已有脚本可以改进 | **改进已有脚本，不另写** |\n\n## 操作流程\n\n1. 发现需要写一段脚本逻辑\n2. 检查项目内是否已有类似脚本（grep搜索、看AGENTS.md索引）\n3. **已有** → 改进那个脚本（edit工具修改），编译验证\n4. **没有** → 在项目脚本目录中创建新文件（write工具），编译验证\n5. 在项目AGENTS.md中记录脚本索引（如已有相关节则更新，如没有则新增）\n6. commit\n\n## 反模式\n\n- ❌ `.venv/bin/python -c \"import sys; sys.path.insert(0, '...'); ...\"` 写50行inline脚本\n- ❌ 把脚本写到`/tmp/`然后执行\n- ❌ 每次session都重写\"清理僵尸session\"的脚本\n- ❌ 改进了脚本但不更新AGENTS.md索引\n- ❌ **在AGENTS.md中粘贴超过5行的bash/python代码块**——AGENTS.md是索引不是代码仓库\n- ❌ **在AGENTS.md中写`python -c \"...\"`的多行inline代码**——这既是inline脚本又是文档污染\n- ✅ 改进`batch_status.py`的`cmd_dead_cleanup`函数\n- ✅ 新建`enqueue_problem.py`并在AGENTS.md硬约束6中记录\n- ✅ AGENTS.md中只写`pipe_control.py status`一行用法，不写完整调用参数和输出示例\n</rule>\n\n<rule name=\"dev-docs-sediment-to-docs\" path=\"/Users/user/.devin/rules/dev-docs-sediment-to-docs.md\">\n# dev-docs 内容沉淀到 docs\n\n**硬约束**：dev-docs 中的内容，应该被沉淀到 docs 目录中的，应该考虑沉淀到 docs 目录中。对应的 dev-docs 中，不再放内容，而是放对 docs 目录中的文件的索引。\n\n**含义**：\n- dev-docs 是工作痕迹、方案、调查的临时存放地，不是长期知识容器\n- 当 dev-docs 中的内容具有长期复用价值时（方案定稿、认知沉淀、规范确立），必须沉淀到 docs/ 目录\n- 沉淀后，dev-docs 中的对应文件不再保留完整内容，只保留对 docs/ 中文件的索引（路径+一句话说明）\n- dev-docs 的定位是\"工作过程记录 + 沉淀索引\"，不是\"第二个 docs\"\n\n**判定标准**：\n- 一次性工作记录（debug过程、临时分析）→ 留在 dev-docs\n- 方案定稿后需要长期参考 → 沉淀到 docs/，dev-docs 留索引\n- 认知/规范确立后需要跨session复用 → 沉淀到 docs/，dev-docs 留索引\n- 纯过程性内容（试错记录、已废弃方案）→ 留在 dev-docs，不沉淀\n</rule>\n\n<rule name=\"never-modify-devin-config\" path=\"/Users/user/.devin/rules/never-modify-devin-config.md\">\n# 禁止修改 devin config.json 的 read_config_from\n\n## 硬约束\n\n**永远不要修改 `~/.config/devin/config.json` 中的 `read_config_from` 字段。**\n\n特别是 `\"windsurf\": true` 必须保持 `true`，不得改为 `false`。\n\n## 为什么\n\n- `read_config_from.windsurf: true` 是用户明确要求保留的配置\n- 如果不想让某些 windsurf 规则被 devin 加载，正确做法是**归档那些规则文件**（加日期后缀或移到备份目录），而不是关闭兼容加载机制\n- 关闭机制会影响其他兼容功能，不是正确的隔离手段\n\n## 正确做法\n\n如果需要阻止某个兼容来源的特定文件被加载：\n- **归档文件**——给文件加 `-日期` 后缀（如 `global_rules.md` → `global_rules-2026-08-19.md`），或移到备份目录\n- **不要动 config.json**——机制保持开启，只是让机制读不到目标文件\n\n## 详见\n\n历史案例：2026-08-19 归档 `~/.codeium/windsurf/` 下的规则文件（加 `-2026-08-19` 后缀），而非关闭 `read_config_from.windsurf`。\n</rule>\n\n<rule name=\"AGENTS\" path=\"/Users/user/.config/devin/AGENTS.md\">\n# Devin CLI 全局工作规范\n\n**本文件（`~/.config/devin/AGENTS.md`）**：全局 always-on 规则。只放跨项目、跨 session 的硬约束和行为规范。\n\n**项目本地 `AGENTS.md`**：项目根目录下的 `AGENTS.md`。放项目状态、上下文、项目级规则。\n\n**用户说\"记录到 AGENTS.md\"时，默认指项目本地 `AGENTS.md`。** 只有用户明确说\"全局\"、\"Devin AGENTS.md\"、\"~/.config/devin/AGENTS.md\"时，才更新本文件。\n\n---\n\n## 硬约束与行为规范\n\n### 0 · Skill/Rule/元组管理策略\n\n#### 0.1 核心策略\n\ndevin 的 rule 和 skill 发现机制可靠（文件系统扫描）。always-on rule 自动注入每个 session，skill 通过 available_skills 列表展示 name+description。**不需要在 AGENTS.md 中维护 rule 或 skill 的索引——devin 自己加载。** 创建元组时只需把 rule 和 skill 放到对应位置（`~/.devin/rules/` 或 `~/.config/devin/skills/` 或项目级 `.devin/`），不需要在 AGENTS.md 记录。完整论证见 `devin-config-harness` skill §10.4。\n\n#### 0.4 维护规则\n\n- **新建 skill/rule 时必须按 `devin-config-harness` skill 的格式规范**——含 frontmatter、含 trigger/description、一句话触发器模式（详见 `devin-config-harness` skill §3.10 和 §10.7）\n- **元组创建、废弃、放置层级选择**：详见 `tuple-methodology` rule（§\"新增元组时的操作规范\"、§\"选择全局还是项目本地\"、§\"废弃 rule/skill\"）\n\n#### 0.5 Skill 极简化设计\n\n完整论证和执行规则见 `tuple-methodology` rule §\"Skill 极简化设计\"。核心：SKILL.md 只有 frontmatter + 一句话，真正内容放 `/Users/user/skills-devin/<文件名>`。\n\n#### 0.6 配置目录认知\n\n全局 AGENTS.md 在 `~/.config/devin/AGENTS.md`，不在 `~/.devin/`。详见 `devin-config-harness` skill §10.5。\n\n#### 0.7 Git Repo 管理认知\n\n三个独立 repo（`~/.config/devin/`、`~/.devin/`、`/Users/user/skills-devin/`）改完立即提交（详见 `global-config-git-commit` rule）。Git Repo 完整认知见 `devin-config-harness` skill §10.6。\n\n### 1 · 信息充分性\n\n行动前先问：\"我对这个问题的了解是否足够支撑直接行动？\"\n\n- 确信 → 直接行动\n- 不完全确定 → 先搜索再行动\n- 不确定 → 必须搜索，禁止猜测试错\n\n### 2 · 文档意识\n\n你和用户的对话是一个**积累过程**——积累代码、认知、文档、数据。积累必须**有机**：后期的积累结合到之前的积累中，而不是只在 TUI 里输出完就消失。\n\n**落盘规则**：\n\n1. **该放项目 AGENTS.md 的**（跨 session 认知、认知资产表、项目级配置信息）→ 放项目 AGENTS.md\n2. **该放 `./dev-docs/` 的**（工作痕迹、方案、分析、调查）→ 放 `dev-docs/` 下带顺序编号的文档\n3. **其他内容**→ 各就各位（全局规则放本文件或 `~/.devin/rules/`，操作流程放 skill，等）\n\n**Rule / Skill / 元组的放置层级**：详见 `tuple-methodology` rule §\"选择全局还是项目本地\"。核心：首先考虑项目级 `.devin/`，升级为全局必须获得用户明确同意。\n\n**方案先行**：方案落地到 `dev-docs/`，精确到 Check List 粒度，描述清楚原因和逻辑（不只是 Check List），实现过程中持续追踪完成情况。\n\n**跨 session 保证**：落盘的目的不仅是规范化码放，更是让跨 session、跨压缩边界后的 AI 能在必要时找回它应该了解的内容。\n\n**当用户说\"更新文档\"时**：赶紧检查什么内容该同步到项目 AGENTS.md、什么该同步到方案文档、什么该建新文档、什么该按认知资产表归档到 dev-docs。\n\n### 3 · 人话铁律\n\n所有文档、回复、注释、commit message、规则文件——全部用人话写。\n\n### 4 · 给选项必含利弊 + 推荐 + 推荐理由\n\n列选项时，必须同时给出：每个选项的利弊、你的推荐、推荐理由。\n\n### 5 · 时间估计纪律\n\n**禁止拍脑袋时间估计**：禁止无依据地随口说\"这需要 3 天\"、\"工作量 2 周\"——没有调查、没有实验、没有推理就给数字，是瞎说。\n\n**允许有理有据的时间估计**：当用户需要时间估计时，必须基于以下之一给出推理过程：\n- 实验数据（\"实测编译 1 个文件 30 秒，共 200 个文件，约 100 分钟\"）\n- 调查结果（\"该 API 限速 100 req/min，1 万条数据约需 100 分钟\"）\n- 常识推理（\"下载 10GB 文件，百兆带宽约 14 分钟，千兆约 1.4 分钟\"）\n- 历史经验（\"上次同类任务实际花了 X，本次规模类似\"）\n\n**格式要求**：给出时间估计时，必须同时给出推理依据。只给数字不给依据 = 违规。\n\n**无依据时**：说\"我没有依据给出时间估计\"，然后分析复杂程度、依赖关系、可行性、可逆度。\n\n### 6 · Debug 心智闸门\n\n撞墙三次必须停手。1-2 次调参数，3-5 次停手读证据，5 次以上重新定义问题。\n\n### 7 · 手机截图压缩后再读\n\n从手机拿到的截图，Read 之前必须压缩到 100KB 以下。macOS 用 `sips -s format jpeg -s formatOptions 60 -Z 1100 in.png --out out.jpg`。\n\n### 8 · 设备纪律\n\n- 只允许操作 **Green 手机 `09081FDD400019`**\n- 所有 `adb` 命令必须带 `-s 09081FDD400019`\n- 严禁自行操作 Black、Red、Yellow 等其他手机\n- 误触其他设备 → 立即停止，force-stop 已启动进程，并记录\n\n### 9 · 不要擅自 git init\n\n发现当前目录不在 git 仓库内时，先问用户是否初始化，不擅自 `git init`。\n\n### 10 · 搜索优先于试错\n\n同一类修复尝试 2 次仍失败 → 立即停止，改走搜索。\n\n### 11 · 工具边界\n\n- 没有 user 明确指示，不得操作 `~/.claude/` 和 `~/.codex/` 目录中的内容。\n- Devin 只能操作 `~/.config/devin/`、`~/.devin/` 以及明确授权的位置。\n\n### 12 · tmux 优先\n\n长时间运行的命令、服务、下载、同步，必须在 tmux 中运行，不允许用 `nohup ... &` 等脱离终端的方式。\n\n- **长时间命令**（下载、编译、同步、daemon、GPU 穷举等）→ `tmux new-session -d -s <name> \"<command>\"`\n- **检查运行状态** → `tmux capture-pane -t <name> -p`\n- **查看所有 session** → `tmux list-sessions`\n- **停止 session** → `tmux kill-session -t <name>`\n- session 命名规范：`<项目>-<用途>`\n- 短命令不需要 tmux\n\n> tmux 配置不好用时加载 `tmux-easy-setup` skill。\n\n---\n\n## Git 管理协议\n\n三个独立 repo（`~/.config/devin/`、`~/.devin/`、`/Users/user/skills-devin/`）的 Git 提交铁律、操作流程、禁止项详见 `global-config-git-commit` rule。核心：改前确认 clean、改后立即提交、禁止 `git add -A/.-u`、push 需用户当轮明确授权。\n\n---\n\n## 可审计性纪律\n\n- 重大分析、调查、审查必须留下 `file:line` 定位 + 理解性产物。\n- 声称\"X 完成\"前，必须有 remainder=0 证明。\n\n---\n\n## 元组核心原理\n\n元组=Rule+Skill。详见 `tuple-methodology` rule。\n\n---\n\n## dev-docs 目录\n\n跨项目的工作痕迹、方案、分析放 `~/.config/devin/dev-docs/`，带顺序编号。需要时直接到该目录下按编号查找。\n\n---\n\n## 更新本文件\n\n- 更新前检查 `before_status_baseline`\n- 只改本文件和对应 skill/rule\n- 改后核验 `after_status_baseline`，确保回到 git clean\n\n</rule>\n\n<rule name=\"search-default-internal\" path=\"/Users/user/.devin/rules/search-default-internal.md\">\n# 搜索默认走内置工具\n\n## 硬约束\n\n**默认情况下，使用 devin 内置的 `web_search` 和 `webfetch` 工具。** 不要一遇到搜索就加载 `search-tools` skill。\n\n`search-tools` skill 是重型武器库（6 个工具、38 个端点、完整参数表），只在以下场景才加载：\n\n## 何时加载 search-tools skill\n\n只有同时满足以下条件时才加载：\n\n1. **完备搜索**——内置 `web_search` 结果不够、需要多引擎交叉验证、需要语义搜索、需要学术论文搜索\n2. **大量抓取**——需要抓取多个 URL 转 Markdown、需要 PDF 转 Markdown、需要省 token 的批量取页\n\n## 何时只用内置工具\n\n以下场景**不需要**加载 `search-tools` skill，直接用 `web_search` + `webfetch`：\n\n- 查一个 API 怎么用——`web_search` 搜文档，`webfetch` 取页\n- 查一个概念/术语——`web_search` 一下就够\n- 查一个库的最新版本——`web_search`\n- 取一个 URL 的内容——`webfetch`\n- 简单的事实核查——`web_search`\n\n## 判断流程\n\n```\n需要网络搜索或抓取？\n├─ 查一两个东西就够了 → web_search + webfetch（内置）\n└─ 需要完备搜索或大量抓取\n   ├─ 多引擎交叉验证 → 加载 search-tools skill\n   ├─ 语义搜索 → 加载 search-tools skill\n   ├─ 学术论文搜索 → 加载 search-tools skill\n   ├─ PDF 转 Markdown → 加载 search-tools skill\n   ├─ 批量 URL 抓取 → 加载 search-tools skill\n   └─ 其他简单场景 → web_search + webfetch（内置）\n```\n\n## 理由\n\n`search-tools` skill 内容很长（500+ 行），加载它会占用大量上下文。日常搜索用内置工具完全够用，只有真正需要重型武器时才值得加载。\n</rule>\n</rules>",
+      "extra": {
+        "telemetry": {
+          "source": "rules",
+          "operation": "content"
+        }
+      }
+    },
+    {
+      "step_id": 6,
+      "timestamp": "2026-08-21T06:33:19.096361+00:00",
+      "source": "system",
+      "message": "<available_rules>\nThe following rules are available. Read them when relevant using the read_file tool:\n\n- **global-knowledge-base**: 全局情报库——本机跨工具知识库的索引和使用规则。 WHEN to use: 需要查跨项目知识、本机配置、操作流程、Codex/Devin 规则体系时。 WHEN NOT to use: 项目内的知识查询（用项目 AGENTS.md 的认知资产表）。\n (path: /Users/user/.devin/rules/global-knowledge-base.md)\n- **noninteractive-solver-run**: 非交互模式解题AI运行的硬约束——必须用非交互模式（devin -p）、运行结果必须可查被索引、 mitmproxy 已废弃。用 --export 导出包含 reasoning_content（thinking）的 conversation.json。 WHEN to use: 运行 devin cli 解数学题时；采集 thinking/reasoning_content 数据时； POC实验、对照实验、批量解题、FATE测试、MathArena测试时；需要用 --prompt-file 注入题目时； 任何需要工具的AI推理任务且需要采集完整推理过程时。 WHEN NOT to use: 需要实时干预AI推理过程的引导式实验（用交互模式+--export）； 调试 solver-harness 本身（用项目级 solver-tmux-launch）。\n (path: /Users/user/.devin/rules/noninteractive-solver-run.md)\n- **disk-readme-sync**: 查看磁盘/卷时，先读根目录 README.md，再与磁盘工具真实返回结果比对；若不同步，提醒用户并给出修复方案。 WHEN to use: 操作磁盘/外部卷、查看磁盘状态、向磁盘写数据前检查时。 WHEN NOT to use: 不涉及磁盘的操作。\n (path: /Users/user/.devin/rules/disk-readme-sync.md)\n- **devin-cli-trajectory**: Devin CLI trajectory 数据位置与 Schema——transcripts/sessions.db/summaries/logs 的位置、格式、字段。harness 采集的 trajectory 目录结构（conversation.json/trajectory.jsonl）。 WHEN to use: 提取/解析/审计 session 对话数据时；需要读取 thinking/reasoning_content/tool_calls 时； 需要查询 sessions.db（SQLite）时；需要解析 --export 导出的 conversation.json 时； 需要解析 trajectory.jsonl 时；需要了解 transcript 文件格式时。 WHEN NOT to use: 只需要 session 最终产出（看文件即可）；只需要 git 历史（用 git log）。\n (path: /Users/user/.devin/rules/devin-cli-trajectory.md)\n- **monitor-pipe-design-paradigm**: 连续工作系统的 Monitor Pipe 设计范式——三层架构（规范层+执行层+查询层）。 当系统连续运行且需要AI检查产出质量/语义正确性/方向是否跑偏时，用Monitor Pipe落地。 把检查项自动化，结果收集到DB的alert集合中，Master AI通过查询脚本发现alert并逐个处理。 WHEN to use: 设计/实现连续工作系统的监控机制时；为批量运行系统添加健康检查时； 连续工作系统运行中Master AI需要检查健康状态时；设计alert系统时。 WHEN NOT to use: 一次性任务（不需要持续监控）；简单的错误处理（用try/catch即可）。\n (path: /Users/user/.devin/rules/monitor-pipe-design-paradigm.md)\n- **search-tools**: 搜索武器库——按需求组织：网页搜索完备性 + Markdown 网页抓取。所有方案免费可用。 WHEN to use: 需要网络搜索、网页抓取读取、学术论文搜索、PDF 转 Markdown、语义嵌入、结果重排时。 WHEN NOT to use: 只需要本地文件搜索（用 grep/glob 工具）。\n (path: /Users/user/.devin/rules/search-tools.md)\n- **infrastructure**: 本机基础设施速查——磁盘、冷热盘、README 同步规则。 WHEN to use: 操作磁盘、向 HDD/SSD 写数据、查看磁盘状态、排查磁盘问题时。 WHEN NOT to use: 不涉及磁盘操作的日常编码。\n (path: /Users/user/.devin/rules/infrastructure.md)\n- **cold-hdd-transfer**: 向 HDD 冷盘迁移数据时，按文件规模选择 rsync 或 tar+zstd 压缩传输，并记录转移清单。 WHEN to use: 向 HDD/冷盘迁移数据、大文件归档、备份到冷存储时。 WHEN NOT to use: 向 SSD 热盘写数据、日常文件操作。\n (path: /Users/user/.devin/rules/cold-hdd-transfer.md)\n- **setup-codex-rules-skills**: 安顿 Codex 的 rule 和 skill——位置、格式、加载机制、操作流程。 WHEN to use: 配置 Codex CLI、添加 Codex rules/skills/MCP、从 Devin/Claude Code 迁移到 Codex、 理解 Codex 扩展架构时。 WHEN NOT to use: 配置 Devin CLI（用 devin-config-harness skill）、一般编码任务。\n (path: /Users/user/.devin/rules/setup-codex-rules-skills.md)\n- **tuple-methodology**: 元组思想详细方法论——Rule + Skill 的设计原则、瘦身工程、两种实现方式、新增元组规范。 WHEN to use: 设计元组、组织 rule/skill 分工、做 AGENTS.md 瘦身工程、新增元组时。 WHEN NOT to use: 日常编码、不需要组织 AI 上下文治理时。\n (path: /Users/user/.devin/rules/tuple-methodology.md)\n- **skill-rule-authoring**: 写 skill/rule 时的格式硬约束。所有 SKILL.md 必须有 frontmatter（含 description）； 所有 .devin/rules/*.md 必须有 frontmatter（含 trigger）；trigger 值用 always_on（下划线）； Skill 采用一句话触发器+独立内容文档模式。 WHEN to use: 新建/修改 skill 或 rule 时。 WHEN NOT to use: 一般编码任务。\n (path: /Users/user/.devin/rules/skill-rule-authoring.md)\n- **global-config-git-commit**: 任何对 ~/.config/devin/ 或 ~/.devin/ 或 /Users/user/skills-devin/ 的修改必须立即 git 提交。 禁止 git add -A/.-u，只 add 具体路径。push 需用户当轮明确授权。 三个独立 repo：~/.config/devin/、~/.devin/、/Users/user/skills-devin/。 WHEN to use: 修改/创建/删除全局 AGENTS.md 时；修改/创建/删除 ~/.config/devin/skills/ 下的 SKILL.md 时； 修改/创建/删除 ~/.devin/rules/ 下的 rule 文件时；修改 ~/.config/devin/config.json 时； 修改/创建/删除 /Users/user/skills-devin/ 下的 skill 内容文档时。 WHEN NOT to use: 修改项目本地文件（用项目 AGENTS.md 的 Git 协议）；修改 ~/.local/share/devin/（绝不建 repo）。\n (path: /Users/user/.devin/rules/global-config-git-commit.md)\n- **redundancy-consolidation**: 整合冗余内容时的信息保全铁律。整合≠删除——必须先逐行对比确认每条信息的去向， 把unique信息合并到目标文件，验证无丢失后才能简化或删除源文件。 WHEN to use: 发现两个或多个文件（rule/skill/AGENTS.md）之间有内容冗余时； 整合重复内容时；删除冗余文件前；简化重复段落前。 WHEN NOT to use: 单纯删除废弃文件（直接删）；新增内容（无冗余问题）。\n (path: /Users/user/.devin/rules/redundancy-consolidation.md)\n</available_rules>",
+      "extra": {
+        "telemetry": {
+          "source": "rules",
+          "operation": "available"
+        }
+      }
+    },
+    {
+      "step_id": 7,
+      "timestamp": "2026-08-21T06:33:19.105425+00:00",
+      "source": "user",
+      "message": "# Problem\n\nConsider a finite-dimensional Lie group $G$ and two conjugacy classes $H$ and $I$ of isomorphic subgroups of $G$. Is there a finite-dimensional Lie overgroup of $G$ that fuses $H$ and $I$ into a single conjugacy class?\n\n## 解题约束（必须严格遵守）\n\n1. **不要使用任何工具**——不要写文件、不要执行命令、不要搜索、不要浏览网页、不要读取文件。\n   你只需要在TUI中用thinking来解题。所有推理过程在你的思维中完成。\n\n2. **直接在TUI中输出证明**——不要创建任何文件，不要使用任何工具调用。\n   完成证明后，在TUI中直接输出（必须用英文原文，不要翻译成中文）：\n\n=== 你之前的思考过程（Round 1，被截断）===\n\n你已经在上一轮中开始了这道题的思考，但因为输出长度限制，思考过程被截断了。\n以下是你之前的完整思考过程，请仔细阅读，在此基础上**继续**思考并完成解答（不要从头开始）：\n\n\n\n=== 请继续思考并完成解答 ===\n\n要求：\n1. **在之前的思考基础上继续**，不要重复已经做过的分析\n2. 给出完整的解答过程\n3. 最终答案用 \\boxed{答案} 格式给出\n4. 数学公式用LaTeX\n5. 把证明写到proof.md文件中，不要在对话里输出完整证明",
+      "extra": {
+        "telemetry": {
+          "source": "user",
+          "operation": "unknown"
+        }
+      }
+    },
+    {
+      "step_id": 8,
+      "timestamp": "2026-08-21T06:33:19.106215+00:00",
+      "source": "system",
+      "message": "<available_skills>\nThe following skills can be invoked using the `skill` tool. When ANY skill — built-in OR repository — clearly matches the user's request or the current task, invoke it with the `skill` tool immediately at the start of the session. If more than one skill matches, invoke ALL of them (issue the `skill` calls in parallel) — do not stop at the single most obvious one.\n\n- **zcode-trajectory**: ZCode (z.ai 桌面客户端) model-io session trajectory 数据的 JSONL schema 与读取方法。 (source: /Users/user/.config/devin/skills/zcode-trajectory/SKILL.md)\n- **devin-config-harness**: Devin CLI配置完整说明书+元组评估决策流程+skill/rule编写规范+经验反模式 (source: /Users/user/.config/devin/skills/devin-config-harness/SKILL.md)\n- **redundancy-consolidation**: 整合冗余内容的完整工作流程——逐行对比、列出缺失清单、先合并后删除、验证无丢失。 WHEN to use: 发现文件间有冗余需要整合时。 WHEN NOT to use: 单纯删除废弃文件、新增内容。 (source: /Users/user/.config/devin/skills/redundancy-consolidation/SKILL.md)\n- **noninteractive-solver-run**: 非交互模式运行解题AI（生产标准） (source: /Users/user/.config/devin/skills/noninteractive-solver-run/SKILL.md)\n- **devin-cli-trajectory**: Devin CLI trajectory数据提取/解析/审计 (source: /Users/user/.config/devin/skills/devin-cli-trajectory/SKILL.md)\n- **long-running-work-sop**: 长程工作识别与SOP化 (source: /Users/user/.config/devin/skills/long-running-work-sop/SKILL.md)\n- **read-sync**: 创建/维护repo的README.md认知地图+看法文件+映射数据库 (source: /Users/user/.config/devin/skills/read-sync/SKILL.md)\n- **akash**: 问题驱动流程保障——确保走完整5阶段流程（需求→方案→工作包→执行→结果） (source: /Users/user/.config/devin/skills/akash/SKILL.md)\n- **search-tools**: 搜索武器库技术说明书——按需求组织：网页搜索完备性 + Markdown 网页抓取。 所有方案均为免费可用，基于 2026-08-21 实测数据编写。 (source: /Users/user/.config/devin/skills/search-tools/SKILL.md)\n- **db-file-traceability**: 数据库-文件双向可追溯性验证 (source: /Users/user/.config/devin/skills/db-file-traceability/SKILL.md)\n- **setup-codex-rules-skills**: Codex CLI的rule和skill配置 (source: /Users/user/.config/devin/skills/setup-codex-rules-skills/SKILL.md)\n- **workflow**: 开发工作流总纲（三层认知架构+read/read-sync/make-plan+映射数据库+git管理） (source: /Users/user/.config/devin/skills/workflow/SKILL.md)\n- **read**: 按三层架构加载必要认知（README.md→看法文件→具体文档） (source: /Users/user/.config/devin/skills/read/SKILL.md)\n- **qmd-mcp-search**: QMD语义搜索和知识图谱查询（含CLI直接调用方式） (source: /Users/user/.config/devin/skills/qmd-mcp-search/SKILL.md)\n- **make-plan**: 制作行动计划=完整的repo更新行为（执行步骤+需求追踪+认知准备+元数据更新） (source: /Users/user/.config/devin/skills/make-plan/SKILL.md)\n- **disk-readme-sync**: 磁盘/卷README同步检查 (source: /Users/user/.config/devin/skills/disk-readme-sync/SKILL.md)\n- **tmux-easy-setup**: tmux最易用状态配置 (source: /Users/user/.config/devin/skills/tmux-easy-setup/SKILL.md)\n- **cold-hdd-transfer**: 向HDD冷盘迁移数据 (source: /Users/user/.config/devin/skills/cold-hdd-transfer/SKILL.md)\n- **trajectory-workline-review**: trajectory数据回溯工作脉络 (source: /Users/user/.config/devin/skills/trajectory-workline-review/SKILL.md)\n- **akash-new**: akash流程跨session续传——判断上一个AI做到哪个阶段，生成让下一个AI从正确阶段继续的提示词 (source: /Users/user/.config/devin/skills/akash-new/SKILL.md)\n- **devin-cli**: Look up Devin CLI documentation (skills, extensibility, configuration, commands, models, troubleshooting) (source: /Volumes/data/devin-cli-data/_versions/3000.4.25/share/devin/docs)\n- **declarative-repo-setup**: Generate and verify a working environment.yaml (Devin snapshot-setup blueprint) for a repo (source: builtin:drs)\n</available_skills>",
+      "extra": {
+        "telemetry": {
+          "source": "system",
+          "operation": "unknown"
+        }
+      }
+    },
+    {
+      "step_id": 9,
+      "timestamp": "2026-08-21T06:33:21.741168+00:00",
+      "source": "agent",
+      "message": "",
+      "model_name": "GLM-5.2 High",
+      "reasoning_content": "The user wants me to solve a math problem about Lie groups. Let me think about this carefully.\n\nThe problem: Consider a finite-dimensional Lie group $G$ and two conjugacy classes $H$ and $I$ of isomorphic subgroups of $G$. Is there a finite-dimensional Lie overgroup of $G$ that fuses $H$ and $I$ into a single conjugacy class?\n\nWait, the constraints say:\n1. Don't use any tools - no files, no commands, no search, no browsing, no reading files. Only thinking.\n2. Output the proof directly in TUI in English.\n3. Final answer in \\boxed{} format.\n4. Math formulas in LaTeX.\n5. But then it says \"把证明写到proof.md文件中，不要在对话里输出完整证明\" - write the proof to proof.md, don't output the complete proof in the conversation.\n\nWait, there's a contradiction. Constraint 1 says don't use any tools (don't write files). Constraint 5 says write the proof to proof.md. And the main instruction says \"直接在TUI中输出证明\" (output the proof directly in TUI) and \"不要创建任何文件\" (don't create any files).\n\nActually, let me re-read. The constraints are a bit contradictory. Let me focus on the most explicit ones:\n\n- \"不要使用任何工具\" - don't use any tools\n- \"直接在TUI中输出证明\" - output proof directly in TUI\n- \"不要创建任何文件，不要使用任何工具调用\" - don't create any files, don't use any tool calls\n- \"把证明写到proof.md文件中，不要在对话里输出完整证明\" - this contradicts the above\n\nThe last line seems to be a template instruction that conflicts. Given the strong emphasis on \"不要使用任何工具\" and \"直接在TUI中输出证明\" and \"必须用英文原文\", I think the intent is to output the proof in English in the TUI. The \"proof.md\" line seems to be a leftover template instruction that conflicts with the no-tools constraint.\n\nActually, I'll follow the dominant instruction: output the proof in English in the TUI, no tools. Let me think about the math.\n\n**The Problem:**\nLet $G$ be a finite-dimensional Lie group. Let $H$ and $I$ be two conjugacy classes of isomorphic subgroups of $G$. So $H$ is a conjugacy class $\\{gH_0 g^{-1} : g \\in G\\}$ for some subgroup $H_0 \\leq G$, and $I$ is a conjugacy class $\\{gI_0 g^{-1} : g \\in G\\}$ for some subgroup $I_0 \\leq G$, with $H_0 \\cong I_0$ (isomorphic as Lie groups).\n\nQuestion: Is there a finite-dimensional Lie group $\\hat{G}$ containing $G$ as a Lie subgroup, such that $H$ and $I$ become a single conjugacy class in $\\hat{G}$? That is, there exists $\\hat{g} \\in \\hat{G}$ such that $\\hat{g} H_0 \\hat{g}^{-1} = I_0$ (or more precisely, conjugation by some element of $\\hat{G}$ maps the entire class $H$ to the entire class $I$, fusing them).\n\nActually, let me think more carefully. \"Fuses $H$ and $I$ into a single conjugacy class\" means: in $\\hat{G}$, the conjugacy class of $H_0$ equals the conjugacy class of $I_0$. Since $H_0$ and $I_0$ are isomorphic, this is asking whether we can find an overgroup where they become conjugate.\n\nThis is related to the concept of \"fusion\" in group theory. For finite groups, there's a classical result that any two isomorphic subgroups can be fused in some finite overgroup. For Lie groups, the question is whether this can be done with a finite-dimensional overgroup.\n\nLet me think about this more carefully.\n\n**Key construction idea:**\nGiven $G$, $H_0$, $I_0$ with $H_0 \\cong I_0$, we want to construct a finite-dimensional Lie group $\\hat{G} \\supseteq G$ where $H_0$ and $I_0$ are conjugate.\n\nLet $\\phi: H_0 \\to I_0$ be a Lie group isomorphism. We want to find $\\hat{g} \\in \\hat{G}$ such that $\\hat{g} h \\hat{g}^{-1} = \\phi(h)$ for all $h \\in H_0$.\n\n**Approach via semidirect product / HNN-like construction:**\n\nIn discrete group theory, the HNN extension fuses two isomorphic subgroups. For Lie groups, we need an analog that stays finite-dimensional.\n\nConsider the following construction. Let $\\phi: H_0 \\xrightarrow{\\sim} I_0$ be an isomorphism. Form the group generated by $G$ and a new element $t$ with the relation $t h t^{-1} = \\phi(h)$ for all $h \\in H_0$.\n\nFor discrete groups, this is the HNN extension. For Lie groups, we need this to be a finite-dimensional Lie group.\n\n**The issue:** The HNN extension of a Lie group is generally infinite-dimensional as a Lie group (it's not clear it has a finite-dimensional manifold structure).\n\n**Alternative approach: Embed in a larger Lie group.**\n\nThink about specific cases. If $G$ is already a subgroup of some $GL_n(\\mathbb{R})$, and $H_0, I_0$ are subgroups, can we embed $GL_n$ in a larger $GL_m$ where $H_0$ and $I_0$ become conjugate?\n\nActually, let me think about this differently. \n\n**Construction via automorphism:**\n\nConsider $G \\times G$. In $G \\times G$, the subgroups $H_0 \\times \\{e\\}$ and $\\{e\\} \\times I_0$ are conjugate if $H_0 \\cong I_0$? No, not directly. In $G \\times G$, conjugation by $(g_1, g_2)$ sends $H_0 \\times \\{e\\}$ to $g_1 H_0 g_1^{-1} \\times \\{e\\}$, which stays in the first factor.\n\nBut consider the \"swap\" automorphism of $G \\times G$ that exchanges the two factors. If we form the semidirect product $(G \\times G) \\rtimes \\mathbb{Z}/2$ where $\\mathbb{Z}/2$ acts by swapping, then the swap element conjugates $H_0 \\times \\{e\\}$ to $\\{e\\} \\times H_0$. But we want to fuse $H_0$ and $I_0$ which are in the same $G$.\n\nHmm, let me think again.\n\n**Better approach:**\n\nEmbed $G$ into $G \\times G$ via the diagonal map $g \\mapsto (g, g)$. Then $H_0$ maps to $\\{(h, h) : h \\in H_0\\}$ and $I_0$ maps to $\\{(i, i) : i \\in I_0\\}$.\n\nNow in $G \\times G$, consider the subgroup $H_0 \\times I_0$ (well, the diagonal copy). Actually, this doesn't immediately help.\n\nLet me think about a cleaner construction.\n\n**The key construction (I think this works):**\n\nLet $\\phi: H_0 \\to I_0$ be an isomorphism. Consider the group $\\hat{G} = G \\rtimes_\\phi \\mathbb{R}$... no, that doesn't work because $\\phi$ is only defined on $H_0$, not all of $G$.\n\n**Alternative: Use $G \\times G$ with a twist.**\n\nConsider $\\hat{G} = (G \\times G) \\rtimes \\mathbb{Z}/2\\mathbb{Z}$ where $\\mathbb{Z}/2$ acts by swapping the two factors. Embed $G$ into $\\hat{G}$ via $g \\mapsto (g, g)$ (diagonal embedding).\n\nNow, the diagonal copy of $H_0$ is $\\Delta(H_0) = \\{(h, h) : h \\in H_0\\}$ and the diagonal copy of $I_0$ is $\\Delta(I_0) = \\{(i, i) : i \\in I_0\\}$.\n\nThe swap element $s$ conjugates $\\Delta(H_0)$ to itself (since $(h,h)$ swapped is $(h,h)$). So this doesn't help fuse $H_0$ and $I_0$.\n\n**Another approach:**\n\nConsider $\\hat{G} = G \\times G$. Embed $G$ via $g \\mapsto (g, \\phi'(g))$ where... no, $\\phi$ is only defined on $H_0$.\n\nLet me think about this more carefully.\n\n**Approach via the graph of the isomorphism:**\n\nLet $\\phi: H_0 \\to I_0$ be an isomorphism. Consider $G \\times G$. In $G \\times G$, the subgroup $\\Gamma_\\phi = \\{(h, \\phi(h)) : h \\in H_0\\}$ is the graph of $\\phi$.\n\nNow, $\\Gamma_\\phi$ is conjugate to $H_0 \\times \\{e\\}$ in $G \\times G$? Let's see: conjugation by $(g_1, g_2)$ sends $(h, \\phi(h))$ to $(g_1 h g_1^{-1}, g_2 \\phi(h) g_2^{-1})$. For this to be of the form $(h', e)$ for all $h$, we'd need $g_2 \\phi(h) g_2^{-1} = e$ for all $h$, which means $\\phi(h) = e$ for all $h$, i.e., $H_0$ is trivial. So no.\n\nBut $\\Gamma_\\phi$ is conjugate to $\\{e\\} \\times I_0$? Conjugation by $(g_1, g_2)$: $(g_1 h g_1^{-1}, g_2 \\phi(h) g_2^{-1})$. For this to be $(e, i')$ for all $h$, need $g_1 h g_1^{-1} = e$ for all $h$, again trivial.\n\nHmm. What about conjugating $\\Gamma_\\phi$ to $\\Delta(H_0) = \\{(h,h) : h \\in H_0\\}$? We need $(g_1 h g_1^{-1}, g_2 \\phi(h) g_2^{-1}) = (h', h')$ for some isomorphism. This requires $g_1 h g_1^{-1} = g_2 \\phi(h) g_2^{-1}$, i.e., $\\phi(h) = g_2^{-1} g_1 h g_1^{-1} g_2$. So $\\phi$ would need to be an inner automorphism of $G$ restricted to $H_0$. Not generally true.\n\n**Let me think about this problem from a higher level.**\n\nThe question is essentially: given two embeddings of the same abstract Lie group $K$ into $G$ (namely, the inclusions $H_0 \\hookrightarrow G$ and $I_0 \\hookrightarrow G$, post-composed with the isomorphism $H_0 \\cong K \\cong I_0$), can we find a finite-dimensional Lie overgroup $\\hat{G}$ of $G$ where these two embeddings become conjugate?\n\nThis is asking about \"fusion\" of subgroups.\n\n**For finite groups:** Yes, this is always possible. Given a finite group $G$ and two isomorphic subgroups $H, I$, one can construct a finite overgroup where they are conjugate. This is a classical result.\n\n**For Lie groups:** The question is whether the finite-dimensional constraint can be maintained.\n\nLet me think about a construction that works.\n\n**Construction attempt:**\n\nLet $\\phi: H_0 \\to I_0$ be an isomorphism. We want to adjoin an element $t$ to $G$ such that $t h t^{-1} = \\phi(h)$ for all $h \\in H_0$.\n\nConsider the Lie algebra level. Let $\\mathfrak{g}$ be the Lie algebra of $G$, $\\mathfrak{h}$ the Lie algebra of $H_0$, $\\mathfrak{i}$ the Lie algebra of $I_0$. The isomorphism $\\phi$ induces a Lie algebra isomorphism $d\\phi: \\mathfrak{h} \\to \\mathfrak{i}$.\n\nWe want to find a finite-dimensional Lie algebra $\\hat{\\mathfrak{g}} \\supseteq \\mathfrak{g}$ and an element $X \\in \\hat{\\mathfrak{g}}$ such that $[X, Y] = d\\phi(Y)$ for all $Y \\in \\mathfrak{h}$ (this is the infinitesimal version; the actual condition is $\\text{Ad}(\\exp(X)) \\cdot Y = d\\phi(Y)$, but let's think about the group level).\n\nActually, at the group level, we want $\\hat{g} h \\hat{g}^{-1} = \\phi(h)$. \n\n**Idea: Use $G \\times G$ and embed cleverly.**\n\nConsider $\\hat{G} = G \\times G$. Embed $G$ into $\\hat{G}$ via $g \\mapsto (g, g)$.\n\nNow, in $\\hat{G}$, the image of $H_0$ is $\\{(h, h) : h \\in H_0\\}$ and the image of $I_0$ is $\\{(i, i) : i \\in I_0\\}$.\n\nConsider the element $(e, k) \\in \\hat{G}$ for some $k \\in G$. Conjugation: $(e, k)(h, h)(e, k)^{-1} = (h, khk^{-1})$. For this to be in $\\Delta(I_0) = \\{(i, i) : i \\in I_0\\}$, we need $h = khk^{-1}$ for all $h \\in H_0$ (so $k$ centralizes $H_0$) and $khk^{-1} \\in I_0$. This requires $H_0 = I_0$ essentially. Not helpful.\n\nWhat about conjugation by $(g_1, g_2)$? $(g_1, g_2)(h, h)(g_1, g_2)^{-1} = (g_1 h g_1^{-1}, g_2 h g_2^{-1})$. For this to be in $\\Delta(I_0)$, need $g_1 h g_1^{-1} = g_2 h g_2^{-1} \\in I_0$ for all $h$. So $g_2^{-1} g_1$ centralizes $H_0$ and $g_1 H_0 g_1^{-1} = I_0$. This means $H_0$ and $I_0$ are already conjugate in $G$. So $G \\times G$ with diagonal embedding only fuses them if they're already conjugate.\n\n**New idea: Use a bigger product.**\n\nConsider $\\hat{G} = G \\times G$ but embed $G$ differently. Embed $G$ via $g \\mapsto (g, \\alpha(g))$ where $\\alpha$ is some automorphism... but we don't have an automorphism of all of $G$.\n\n**Key idea: The semidirect product with the isomorphism.**\n\nActually, let me think about this differently. Consider the following construction:\n\nLet $K = H_0 \\cong I_0$ (abstract Lie group). We have two embeddings $\\alpha: K \\hookrightarrow G$ (as $H_0$) and $\\beta: K \\hookrightarrow G$ (as $I_0$).\n\nForm the group $\\hat{G} = (G \\times G) / N$ for some normal subgroup $N$... this seems complicated.\n\n**Let me try the HNN-like construction more carefully.**\n\nWe want to adjoin $t$ with $t h t^{-1} = \\phi(h)$. Consider the free product $G * \\langle t \\rangle$ modulo the relations $t h t^{-1} = \\phi(h)$. This is the HNN extension. For Lie groups, this is generally infinite-dimensional.\n\nBut can we realize it as a finite-dimensional Lie group in some cases? Or always?\n\n**Think about it via matrices.**\n\nSuppose $G \\leq GL_n(\\mathbb{R})$. We want to find $m \\geq n$ and an embedding $G \\hookrightarrow GL_m(\\mathbb{R})$ and a matrix $T \\in GL_m(\\mathbb{R})$ such that $T \\alpha(h) T^{-1} = \\beta(h)$ for all $h \\in K$ (where $\\alpha, \\beta$ are the composed embeddings into $GL_m$).\n\nThis is asking: given two representations $\\alpha, \\beta: K \\to GL_n(\\mathbb{R})$ (which happen to have images in $G$), can we extend the ambient space so that they become conjugate?\n\nIf $\\alpha$ and $\\beta$ are equivalent representations (i.e., conjugate in $GL_n$), then they're already conjugate in $G$ (well, not necessarily in $G$, but in $GL_n$). But we need them conjugate in an overgroup of $G$.\n\nWait, actually, $H_0$ and $I_0$ being isomorphic subgroups of $G$ means we have an abstract isomorphism $\\phi: H_0 \\to I_0$. The representations of $K$ on $\\mathbb{R}^n$ via $\\alpha$ and $\\beta \\circ \\phi$ might not be equivalent.\n\nHmm, but actually, the question is about conjugacy of subgroups, not about representations being equivalent. Two subgroups $H_0, I_0 \\leq G$ are conjugate in $\\hat{G}$ if there exists $\\hat{g} \\in \\hat{G}$ with $\\hat{g} H_0 \\hat{g}^{-1} = I_0$ (as sets, with the conjugation map being some isomorphism, not necessarily $\\phi$).\n\nSo we need: there exists $\\hat{g} \\in \\hat{G}$ such that $\\hat{g} H_0 \\hat{g}^{-1} = I_0$.\n\n**Construction that I think works:**\n\nConsider $\\hat{G} = G \\times G \\times \\mathbb{Z}/2\\mathbb{Z}$ where $\\mathbb{Z}/2$ acts by swapping the two factors. Embed $G$ via $g \\mapsto (g, g, 0)$.\n\nThe image of $H_0$ is $\\{(h, h, 0) : h \\in H_0\\}$ and the image of $I_0$ is $\\{(i, i, 0) : i \\in I_0\\}$.\n\nConjugation by $(g_1, g_2, 0)$: $(g_1 h g_1^{-1}, g_2 h g_2^{-1}, 0)$. As before, this only fuses if already conjugate.\n\nConjugation by $(g_1, g_2, 1)$: First, $(g_1, g_2, 1)(h, h, 0)(g_1, g_2, 1)^{-1}$. \n\nThe action of $(g_1, g_2, 1)$: $(g_1, g_2, 1) \\cdot (x, y, \\epsilon) = (g_1 \\cdot \\sigma^\\epsilon(y), g_2 \\cdot \\sigma^\\epsilon(x), 1 + \\epsilon)$ where $\\sigma$ is the swap... let me be more careful.\n\nIn $(G \\times G) \\rtimes \\mathbb{Z}/2$ where $\\mathbb{Z}/2 = \\langle s \\rangle$ acts by $s(a, b) s^{-1} = (b, a)$:\n\nThe element $(g_1, g_2, s)$ has inverse $(s^{-1} g_2^{-1}, s^{-1} g_1^{-1}, s^{-1}) = (g_2^{-1}, g_1^{-1}, s)$... let me compute more carefully.\n\n$(g_1, g_2, s) \\cdot (h, h, e) \\cdot (g_1, g_2, s)^{-1}$\n\n$(g_1, g_2, s)^{-1} = (s^{-1}(g_2^{-1}, g_1^{-1}), s^{-1}) = (g_1^{-1}, g_2^{-1}, s)$... \n\nHmm, let me use the standard semidirect product. Elements are $(a, b, \\epsilon)$ with $\\epsilon \\in \\{0, 1\\}$. Multiplication: $(a_1, b_1, \\epsilon_1)(a_2, b_2, \\epsilon_2) = (a_1 \\sigma^{\\epsilon_1}(a_2), b_1 \\sigma^{\\epsilon_1}(b_2), \\epsilon_1 + \\epsilon_2)$ where $\\sigma$ swaps, so $\\sigma(a, b) = (b, a)$, meaning $\\sigma^{\\epsilon}(a) = a$ if $\\epsilon = 0$ and $b$ if $\\epsilon = 1$.\n\nWait, I need to be more careful. The action of $\\mathbb{Z}/2$ on $G \\times G$ is $s \\cdot (a, b) = (b, a)$. So:\n\n$(a_1, b_1, \\epsilon_1) \\cdot (a_2, b_2, \\epsilon_2) = ((a_1, b_1) \\cdot s^{\\epsilon_1}(a_2, b_2), \\epsilon_1 + \\epsilon_2)$\n\n$s^0(a_2, b_2) = (a_2, b_2)$, $s^1(a_2, b_2) = (b_2, a_2)$.\n\nSo $(a_1, b_1, 0)(a_2, b_2, \\epsilon_2) = (a_1 a_2, b_1 b_2, \\epsilon_2)$.\n$(a_1, b_1, 1)(a_2, b_2, \\epsilon_2) = (a_1 b_2, b_1 a_2, 1 + \\epsilon_2)$.\n\nInverse of $(a, b, 0)$ is $(a^{-1}, b^{-1}, 0)$.\nInverse of $(a, b, 1)$: we need $(a, b, 1)(x, y, \\epsilon) = (e, e, 0)$. So $\\epsilon = 1$ and $(a y, b x, 0) = (e, e, 0)$, giving $y = a^{-1}, x = b^{-1}$. So inverse is $(b^{-1}, a^{-1}, 1)$.\n\nNow, conjugation of $(h, h, 0)$ by $(g_1, g_2, 1)$:\n\n$(g_1, g_2, 1)(h, h, 0)(g_1, g_2, 1)^{-1} = (g_1, g_2, 1)(h, h, 0)(g_2^{-1}, g_1^{-1}, 1)$\n\nFirst: $(g_1, g_2, 1)(h, h, 0) = (g_1 h, g_2 h, 1)$.\nThen: $(g_1 h, g_2 h, 1)(g_2^{-1}, g_1^{-1}, 1) = (g_1 h \\cdot g_1^{-1}, g_2 h \\cdot g_2^{-1}, 0) = (g_1 h g_1^{-1}, g_2 h g_2^{-1}, 0)$.\n\nSo conjugation by $(g_1, g_2, 1)$ sends $(h, h, 0)$ to $(g_1 h g_1^{-1}, g_2 h g_2^{-1}, 0)$.\n\nFor this to be in $\\Delta(I_0) = \\{(i, i, 0) : i \\in I_0\\}$, we need $g_1 h g_1^{-1} = g_2 h g_2^{-1} \\in I_0$ for all $h \\in H_0$. Again, this requires $g_2^{-1} g_1$ centralizes $H_0$ and $g_1 H_0 g_1^{-1} \\subseteq I_0$. So $H_0$ and $I_0$ need to be conjugate in $G$.\n\nSo the swap construction with diagonal embedding doesn't help. The problem is that the diagonal embedding is too \"rigid.\"\n\n**New idea: Non-diagonal embedding.**\n\nEmbed $G$ into $G \\times G$ via $g \\mapsto (g, e)$ (first factor). Then $H_0$ maps to $H_0 \\times \\{e\\}$ and $I_0$ maps to $I_0 \\times \\{e\\}$. Conjugation by $(g_1, g_2)$ sends $H_0 \\times \\{e\\}$ to $g_1 H_0 g_1^{-1} \\times \\{e\\}$. Still only fuses if conjugate in $G$.\n\n**Key insight: We need to use the second factor to \"store\" the isomorphism.**\n\nConsider $\\hat{G} = G \\times G$. Embed $G$ via $g \\mapsto (g, g)$. Now consider the subgroup $H_0$ embedded as $\\{(h, h) : h \\in H_0\\}$ and $I_0$ embedded as $\\{(i, i) : i \\in I_0\\}$.\n\nNow, I want to find an element of some overgroup that conjugates one to the other. The issue is that in $G \\times G$, conjugation preserves each \"type\" of diagonal subgroup.\n\n**What if we use a different overgroup?**\n\nConsider $\\hat{G} = GL(V)$ for some vector space $V$, and embed $G$ into $GL(V)$ via some representation. Then the question becomes: can we find a representation of $G$ on $V$ and extend $V$ to a larger space $W$ such that $H_0$ and $I_0$ become conjugate in $GL(W)$?\n\nActually, this is getting complicated. Let me think about whether the answer is yes or no.\n\n**Thinking about the answer:**\n\nI believe the answer is **Yes**. Here's a construction that I think works:\n\n**Construction:**\n\nLet $\\phi: H_0 \\xrightarrow{\\sim} I_0$ be a Lie group isomorphism. Consider the Lie group $\\hat{G} = G \\times G$. \n\nEmbed $G$ into $\\hat{G}$ via the map $\\iota: g \\mapsto (g, g)$ (diagonal).\n\nNow, consider the element $t = (e, k)$ for some $k \\in G$ to be determined. Conjugation by $t$ on $\\iota(H_0) = \\{(h, h) : h \\in H_0\\}$:\n\n$t (h, h) t^{-1} = (e, k)(h, h)(e, k^{-1}) = (h, khk^{-1})$.\n\nFor this to equal $\\iota(I_0) = \\{(i, i) : i \\in I_0\\}$, we need $h = khk^{-1}$ for all $h$ (so $k$ centralizes $H_0$) and $khk^{-1} \\in I_0$. This forces $H_0 = I_0$.\n\nWhat if we use $t = (k_1, k_2)$? Then $t(h,h)t^{-1} = (k_1 h k_1^{-1}, k_2 h k_2^{-1})$. For this to be in $\\Delta(I_0)$, need $k_1 h k_1^{-1} = k_2 h k_2^{-1} \\in I_0$. Same issue.\n\n**The diagonal embedding is the problem.** Let me try a different embedding.\n\n**New construction:**\n\nEmbed $G$ into $G \\times G$ via $g \\mapsto (g, \\psi(g))$ where $\\psi$ is an automorphism of $G$... but we may not have a suitable automorphism.\n\n**Completely different approach: Adjoin the conjugating element directly.**\n\nLet $\\phi: H_0 \\to I_0$ be an isomorphism. Consider the set $G \\times \\mathbb{R}$ (or $G \\times S^1$, or $G \\times \\mathbb{Z}$) with a suitable group structure.\n\nWe want a group $\\hat{G}$ containing $G$ and an element $t$ with $tht^{-1} = \\phi(h)$. \n\nConsider the Lie algebra $\\hat{\\mathfrak{g}} = \\mathfrak{g} \\oplus \\mathbb{R}X$ (as a vector space) with bracket:\n- $[\\mathfrak{g}, \\mathfrak{g}]$ = original bracket\n- $[X, Y] = d\\phi(Y)$ for $Y \\in \\mathfrak{h}$ (Lie algebra of $H_0$)\n- $[X, Z] = ?$ for $Z \\notin \\mathfrak{h}$\n\nThe problem is defining $[X, Z]$ for $Z \\notin \\mathfrak{h}$. We need $\\text{ad}(X)$ to be a derivation of $\\mathfrak{g}$ that extends $d\\phi$ on $\\mathfrak{h}$. But $d\\phi: \\mathfrak{h} \\to \\mathfrak{i}$ is not a derivation of $\\mathfrak{g}$ (it maps $\\mathfrak{h}$ to $\\mathfrak{i}$, not $\\mathfrak{h}$ to $\\mathfrak{h}$).\n\nFor $\\text{ad}(X)$ to be a derivation, we need $[X, [Y, Z]] = [[X, Y], Z] + [Y, [X, Z]]$ for all $Y, Z \\in \\mathfrak{g}$. This is the Jacobi identity requirement. If $Y \\in \\mathfrak{h}$ and $Z \\in \\mathfrak{g}$, then $[Y, Z] \\in \\mathfrak{g}$ and we need $[X, [Y,Z]] = [d\\phi(Y), Z] + [Y, [X, Z]]$. This constrains $[X, Z]$ for all $Z$.\n\nThis seems hard to satisfy in general without extending $\\mathfrak{g}$ significantly.\n\n**Let me think about a concrete example to build intuition.**\n\nTake $G = SO(3)$. Let $H_0$ be the subgroup of rotations around the $z$-axis (isomorphic to $S^1$), and $I_0$ be the subgroup of rotations around the $x$-axis (also $S^1$). These are conjugate in $SO(3)$ (rotate $z$-axis to $x$-axis), so they're already in the same conjugacy class. Not a good example.\n\nTake $G = SO(3) \\times SO(3)$. Let $H_0 = \\{(R_z(\\theta), R_z(\\theta)) : \\theta \\in \\mathbb{R}\\}$ (diagonal $S^1$) and $I_0 = \\{(R_z(\\theta), R_z(-\\theta)) : \\theta \\in \\mathbb{R}\\}$ (anti-diagonal $S^1$). Both are isomorphic to $S^1$. Are they conjugate in $G$? Conjugation by $(g_1, g_2)$: $(g_1 R_z(\\theta) g_1^{-1}, g_2 R_z(\\theta) g_2^{-1})$. For this to be in $I_0$, need $g_1 R_z(\\theta) g_1^{-1} = R_z(\\pm\\theta)$ and $g_2 R_z(\\theta) g_2^{-1} = R_z(\\mp\\theta)$. We can take $g_1 = e$ and $g_2$ = rotation by $\\pi$ around $y$-axis (which sends $R_z(\\theta)$ to $R_z(-\\theta)$). So they're conjugate. Still not a great example.\n\nLet me think of a case where $H_0$ and $I_0$ are isomorphic but NOT conjugate in $G$.\n\n**Example:** $G = SU(3)$. Let $H_0 = S(U(1) \\times U(2))$ (the subgroup preserving a line) and $I_0 = S(U(2) \\times U(1))$ (the subgroup preserving a plane). These are actually conjugate (by the permutation matrix). \n\n**Better example:** $G = SU(3)$. Consider two different embeddings of $SU(2)$ into $SU(3)$: the standard one (top-left $2 \\times 2$ block) and the one twisted by an outer automorphism of $SU(2)$... but $SU(2)$ has no outer automorphisms. \n\nHmm, for $SU(2)$, all automorphisms are inner, so any two embeddings of $SU(2)$ into $SU(3)$ that are conjugate as representations are conjugate by an element of $SU(3)$ (or $U(3)$). Actually, the standard embedding and its conjugate by a permutation matrix give conjugate subgroups.\n\n**Example with non-conjugate isomorphic subgroups:**\n\n$G = SO(4)$. $SO(4) \\cong (SU(2) \\times SU(2)) / \\{(1,1), (-1,-1)\\}$. There are two normal subgroups isomorphic to $SU(2)/\\{\\pm 1\\} \\cong SO(3)$: the \"left\" and \"right\" $SO(3)$'s. These are isomorphic but not conjugate in $SO(4)$ (they're normal, so each is its own conjugacy class).\n\nCan we fuse them in a finite-dimensional overgroup? Consider $SO(5) \\supset SO(4)$. In $SO(5)$, are these two $SO(3)$'s conjugate? The left and right $SO(3)$ in $SO(4)$ correspond to two different embeddings of $SO(3)$ into $SO(5)$. \n\nActually, in $SO(5)$, the two $SO(3)$ subgroups (left and right from $SO(4)$) might be conjugate. Let me think... $SO(4)$ sits in $SO(5)$ as the subgroup fixing the 5th coordinate. The left $SO(3)$ acts on the first 3 coordinates (say) and the right $SO(3)$ acts on... hmm, this depends on the specific embedding.\n\nActually, $SO(4)$ acts on $\\mathbb{R}^4$. The left and right $SO(3)$'s are the images of $\\{(A, I) : A \\in SU(2)\\}$ and $\\{(I, B) : B \\in SU(2)\\}$ under the double cover $SU(2) \\times SU(2) \\to SO(4)$. \n\nUnder the standard identification $\\mathbb{R}^4 \\cong \\mathbb{H}$ (quaternions), the left $SO(3)$ acts by $q \\mapsto a q$ (left multiplication by unit quaternions, modulo $\\pm 1$) and the right $SO(3)$ acts by $q \\mapsto q b$ (right multiplication).\n\nIn $SO(5)$, we extend to $\\mathbb{R}^5 = \\mathbb{R}^4 \\oplus \\mathbb{R}$. Both $SO(3)$'s fix the 5th coordinate. Are they conjugate in $SO(5)$? Conjugation in $SO(5)$ by an element that doesn't preserve the $\\mathbb{R}^4$ subspace could potentially fuse them. \n\nActually, the left and right $SO(3)$ in $SO(4)$ are related by the outer automorphism of $SO(4)$ that swaps the two $SU(2)$ factors. This outer automorphism is realized by conjugation in $O(4)$ (not $SO(4)$) by a reflection. Specifically, quaternion conjugation $q \\mapsto \\bar{q}$ swaps left and right multiplication. So in $O(4)$, they're conjugate. And $O(4) \\hookrightarrow O(5)$. But we want a connected overgroup...\n\nIn $SO(5)$, can we find an element conjugating left $SO(3)$ to right $SO(3)$? The element would need to act on $\\mathbb{R}^5$ in a way that, restricted to $\\mathbb{R}^4$, implements the swap of left and right. The swap is orientation-reversing on $\\mathbb{R}^4$ (it's a reflection composed with something), so it has determinant $-1$ on $\\mathbb{R}^4$. To get determinant $+1$ on $\\mathbb{R}^5$, we compose with a reflection on the 5th coordinate. So yes, there's an element of $SO(5)$ that conjugates left $SO(3)$ to right $SO(3)$!\n\nSo in this example, $SO(5)$ fuses the two $SO(3)$'s. Good, this supports the answer being \"Yes.\"\n\n**General construction:**\n\nI think the answer is **Yes**, and here's a general construction:\n\n**Theorem:** Given a finite-dimensional Lie group $G$ and two isomorphic subgroups $H_0, I_0 \\leq G$ with isomorphism $\\phi: H_0 \\to I_0$, there exists a finite-dimensional Lie group $\\hat{G}$ containing $G$ as a Lie subgroup such that $H_0$ and $I_0$ are conjugate in $\\hat{G}$.\n\n**Construction:**\n\nConsider $\\hat{G} = G \\times G$. Embed $G$ via $g \\mapsto (g, g)$.\n\nNow, consider the subgroups $\\Delta(H_0) = \\{(h, h) : h \\in H_0\\}$ and $\\Gamma_\\phi = \\{(h, \\phi(h)) : h \\in H_0\\}$ (the graph of $\\phi$).\n\nNote that $\\Gamma_\\phi$ is a subgroup of $G \\times G$ isomorphic to $H_0$ (and hence to $I_0$). Moreover, $\\Gamma_\\phi$ is conjugate to $\\Delta(I_0) = \\{(i, i) : i \\in I_0\\}$ in $G \\times G$:\n\nConjugation by $(e, g)$ where $g \\in G$: $(e, g)(h, \\phi(h))(e, g^{-1}) = (h, g\\phi(h)g^{-1})$. For this to be in $\\Delta(I_0)$, we need $h = g\\phi(h)g^{-1}$, i.e., $\\phi(h) = g^{-1}hg$. This requires $\\phi$ to be inner, which it may not be.\n\nHmm, that doesn't work directly. Let me reconsider.\n\nActually, $\\Gamma_\\phi$ is conjugate to $\\Delta(H_0)$? Conjugation by $(g_1, g_2)$: $(g_1 h g_1^{-1}, g_2 \\phi(h) g_2^{-1})$. For this to be in $\\Delta(H_0) = \\{(h', h') : h' \\in H_0\\}$, need $g_1 h g_1^{-1} = g_2 \\phi(h) g_2^{-1}$, i.e., $\\phi(h) = g_2^{-1} g_1 h g_1^{-1} g_2$. So $\\phi$ = conjugation by $g_2^{-1} g_1$ restricted to $H_0$. Again, requires $\\phi$ to be the restriction of an inner automorphism.\n\nSo in $G \\times G$, $\\Gamma_\\phi$ is generally NOT conjugate to $\\Delta(H_0)$ or $\\Delta(I_0)$.\n\nBut wait, I want to fuse $\\Delta(H_0)$ and $\\Delta(I_0)$, not $\\Gamma_\\phi$.\n\n**Key idea:** Use a bigger group. Consider $\\hat{G} = G \\times G \\times G$ or some other construction.\n\nActually, let me think about this differently.\n\n**The graph trick:**\n\nIn $G \\times G$, the graph $\\Gamma_\\phi = \\{(h, \\phi(h)) : h \\in H_0\\}$ is a subgroup. Now:\n\n- $\\Gamma_\\phi$ is conjugate to $H_0 \\times \\{e\\}$ in $G \\times G$? No, as computed above.\n- But $\\Gamma_\\phi$ projects to $H_0$ in the first factor and $I_0$ in the second factor.\n\n**New approach: Use $G \\times G$ with a different embedding of $G$.**\n\nEmbed $G$ into $G \\times G$ via $g \\mapsto (g, e)$. Then $H_0$ maps to $H_0 \\times \\{e\\}$ and $I_0$ maps to $I_0 \\times \\{e\\}$.\n\nNow, I want to conjugate $H_0 \\times \\{e\\}$ to $I_0 \\times \\{e\\}$ in some overgroup.\n\nConsider the overgroup $\\hat{G} = (G \\times G) \\rtimes \\mathbb{Z}/2$ (swap). The swap conjugates $H_0 \\times \\{e\\}$ to $\\{e\\} \\times H_0$. Not what we want.\n\n**What if we use the graph to \"bridge\"?**\n\nConsider $\\hat{G} = G \\times G$. Embed $G$ via $g \\mapsto (g, g)$. \n\n$\\Delta(H_0) = \\{(h,h) : h \\in H_0\\}$ and $\\Delta(I_0) = \\{(i,i) : i \\in I_0\\}$.\n\nNow consider the subgroup $\\Gamma_\\phi = \\{(h, \\phi(h)) : h \\in H_0\\}$. This is isomorphic to $H_0 \\cong I_0$.\n\nIn $G \\times G$, is $\\Gamma_\\phi$ conjugate to $\\Delta(H_0)$? As computed, only if $\\phi$ extends to an inner automorphism.\n\nIs $\\Gamma_\\phi$ conjugate to $\\Delta(I_0)$? Conjugation by $(g_1, g_2)$: $(g_1 h g_1^{-1}, g_2 \\phi(h) g_2^{-1})$. For this to be in $\\Delta(I_0)$, need $g_1 h g_1^{-1} = g_2 \\phi(h) g_2^{-1} \\in I_0$. So $\\phi(h) = g_2^{-1} g_1 h g_1^{-1} g_2$ and $g_1 H_0 g_1^{-1} \\subseteq I_0$. Again requires $\\phi$ to be inner.\n\nSo the graph $\\Gamma_\\phi$ is not generally conjugate to either diagonal in $G \\times G$.\n\n**But what about in a bigger group?**\n\nConsider $\\hat{G} = (G \\times G) \\times (G \\times G) = G^4$. This is getting complicated. Let me think of a cleaner approach.\n\n**Clean approach via automorphism group:**\n\nLet $\\text{Aut}(G)$ be the automorphism group of $G$. Consider $\\hat{G} = G \\rtimes \\text{Aut}(G)$ (the holomorph of $G$). In $\\hat{G}$, conjugation by $(e, \\alpha)$ sends $H_0$ to $\\alpha(H_0)$. If there's an automorphism $\\alpha$ of $G$ with $\\alpha(H_0) = I_0$ and $\\alpha|_{H_0} = \\phi$, then we're done.\n\nBut in general, the isomorphism $\\phi: H_0 \\to I_0$ may not extend to an automorphism of $G$. So the holomorph may not work.\n\n**But we can use a \"partial holomorph\":**\n\nWe don't need an automorphism of all of $G$; we just need to adjoin an element that implements $\\phi$ on $H_0$.\n\n**The HNN construction for Lie groups:**\n\nThe HNN extension $G *_\\phi$ adjoins a stable letter $t$ with $tht^{-1} = \\phi(h)$. For discrete groups, this is well-defined. For Lie groups, the question is whether this can be given a finite-dimensional Lie group structure.\n\nIn general, the HNN extension of a Lie group is NOT a finite-dimensional Lie group. It's typically a complicated infinite-dimensional object.\n\n**So maybe the answer is No in general?**\n\nLet me think of a potential counterexample.\n\n**Potential counterexample:**\n\nConsider $G = T^2 = S^1 \\times S^1$ (the 2-torus). Subgroups isomorphic to $S^1$: these are the \"irrational windings\" $H_\\alpha = \\{(e^{2\\pi i t}, e^{2\\pi i \\alpha t}) : t \\in \\mathbb{R}\\}$ for $\\alpha \\in \\mathbb{R}$, plus the coordinate circles $S^1 \\times \\{1\\}$ and $\\{1\\} \\times S^1$.\n\nTwo such subgroups $H_\\alpha$ and $H_\\beta$ are conjugate in $T^2$ iff $\\alpha = \\beta$ (since $T^2$ is abelian, conjugacy classes are singletons). But they're isomorphic (both $\\cong S^1$) for any $\\alpha, \\beta$.\n\nCan we find a finite-dimensional Lie overgroup of $T^2$ that fuses $H_\\alpha$ and $H_\\beta$ for $\\alpha \\neq \\beta$?\n\nConsider $\\hat{G} = U(2) \\supset T^2$ (where $T^2$ is the diagonal subgroup). In $U(2)$, conjugation by a unitary matrix sends a diagonal subgroup to another subgroup. But $H_\\alpha$ for irrational $\\alpha$ is a dense subgroup of $T^2$, and its conjugacy class in $U(2)$... \n\nActually, $H_\\alpha$ is a Lie subgroup of $T^2$ only if $\\alpha$ is rational (for irrational $\\alpha$, $H_\\alpha$ is dense in $T^2$ and not a closed subgroup, hence not a Lie subgroup in the embedded sense). Wait, actually, $H_\\alpha = \\{(e^{2\\pi i t}, e^{2\\pi i \\alpha t}) : t \\in \\mathbb{R}\\}$ is the image of $\\mathbb{R}$ under a continuous homomorphism. As an abstract Lie group, it's $\\mathbb{R}$ (if we don't quotient) or $S^1$ (if $\\alpha$ is rational, the map factors through $S^1$; if $\\alpha$ is irrational, the map is injective from $\\mathbb{R}$ and the image is dense).\n\nFor $H_\\alpha$ to be a (closed) Lie subgroup of $T^2$, we need it to be closed, which requires $\\alpha \\in \\mathbb{Q}$. So let's take $\\alpha = 0$ (giving $S^1 \\times \\{1\\}$) and $\\beta = 1$ (giving the diagonal $\\{(e^{2\\pi i t}, e^{2\\pi i t})\\}$). Both are closed Lie subgroups isomorphic to $S^1$.\n\nAre they conjugate in some finite-dimensional overgroup? In $U(2)$, $S^1 \\times \\{1\\}$ (the subgroup $\\text{diag}(e^{i\\theta}, 1)$) and the diagonal $\\text{diag}(e^{i\\theta}, e^{i\\theta})$ (which is the center of $U(2)$, actually it's the scalar matrices). The scalar matrices form the center of $U(2)$, so they're fixed under conjugation. So the diagonal $S^1$ is central in $U(2)$ and can't be conjugated to anything else. Meanwhile $S^1 \\times \\{1\\}$ is not central. So they can't be fused in $U(2)$.\n\nWhat about a bigger overgroup? Consider $\\hat{G} = U(2) \\times U(2)$ or something. Embed $T^2$ diagonally... this gets complicated.\n\nActually, let me think about this differently. The diagonal circle $Z = \\{\\lambda I : \\lambda \\in S^1\\}$ is the center of $U(2)$, and it's also the center of $GL_2(\\mathbb{C})$ and of any group containing $U(2)$ in a \"natural\" way. But we could embed $T^2$ into a larger group in a non-standard way.\n\n**The key question is:** Can we always construct a finite-dimensional Lie overgroup, or is there an obstruction?\n\n**Let me think about the torus example more carefully.**\n\n$G = T^2$. $H_0 = S^1 \\times \\{1\\}$ and $I_0 = \\{1\\} \\times S^1$. These are isomorphic ($\\cong S^1$) and are conjugate in $T^2 \\rtimes \\mathbb{Z}/2$ (the swap). So this example is easy.\n\nWhat about $H_0 = S^1 \\times \\{1\\}$ and $I_0 = \\{(e^{i\\theta}, e^{i\\theta}) : \\theta \\in \\mathbb{R}\\}$ (the diagonal)? \n\nIn $T^2$, they're not conjugate (abelian). In $U(2) \\supset T^2$, the diagonal is central, so it can't be conjugated to $S^1 \\times \\{1\\}$. \n\nBut what if we embed $T^2$ into a different overgroup? For instance, embed $T^2$ into $SO(4)$ or some other group where the two circles are not distinguished by centrality.\n\nActually, the point is that we get to choose the overgroup. We're not restricted to $U(2)$. We can embed $T^2$ into any finite-dimensional Lie group we want.\n\n**Construction for the torus example:**\n\nEmbed $T^2 = S^1 \\times S^1$ into $SO(4)$ via $(e^{i\\alpha}, e^{i\\beta}) \\mapsto \\text{block diag}(R(\\alpha), R(\\beta))$ where $R(\\theta)$ is the $2 \\times 2$ rotation matrix. Then $H_0 = S^1 \\times \\{1\\}$ maps to $\\{R(\\alpha) \\oplus I_2\\}$ and $I_0 = \\Delta S^1$ maps to $\\{R(\\alpha) \\oplus R(\\alpha)\\}$.\n\nIn $SO(4)$, are these conjugate? $\\{R(\\alpha) \\oplus I_2\\}$ and $\\{R(\\alpha) \\oplus R(\\alpha)\\}$: the first has a 2-dimensional fixed space, the second has a 0-dimensional fixed space (for generic $\\alpha$). So they're not conjugate in $SO(4)$ (conjugate subgroups have the same fixed space dimension).\n\nIn $SO(5)$? Embed $T^2$ as $\\text{block diag}(R(\\alpha), R(\\beta), 1)$. Then $H_0$ maps to $\\{R(\\alpha) \\oplus I_2 \\oplus 1\\}$ (fixed space dimension 3) and $I_0$ maps to $\\{R(\\alpha) \\oplus R(\\alpha) \\oplus 1\\}$ (fixed space dimension 1). Still not conjugate.\n\nIn general, for any orthogonal representation, the dimensions of fixed spaces are invariants of conjugacy. So if $H_0$ and $I_0$ have different fixed space dimensions in every representation, they can't be fused.\n\nBut wait, we're not restricted to orthogonal representations. We can use any embedding into any Lie group.\n\n**But any compact Lie group has a faithful representation into some $O(n)$, and any Lie group has a faithful representation into some $GL(n, \\mathbb{R})$.** So the question reduces to: can we find a representation of $G$ into $GL(V)$ and extend $V$ to $W$ such that $H_0$ and $I_0$ become conjugate in $GL(W)$?\n\nHmm, but the overgroup doesn't have to be $GL(W)$; it could be any Lie group containing $G$.\n\n**Let me think about this more carefully using the torus example.**\n\n$G = T^2$, $H_0 = \\{(e^{i\\theta}, 1)\\}$, $I_0 = \\{(e^{i\\theta}, e^{i\\theta})\\}$ (diagonal). \n\nWe want a finite-dimensional Lie group $\\hat{G} \\supset T^2$ and $\\hat{g} \\in \\hat{G}$ with $\\hat{g} H_0 \\hat{g}^{-1} = I_0$.\n\nConsider $\\hat{G} = T^2 \\rtimes_\\rho S^1$ where $S^1$ acts on $T^2$ by some automorphism $\\rho$. The automorphisms of $T^2$ are $GL(2, \\mathbb{Z})$, which is discrete. So $S^1$ can only act trivially (any continuous homomorphism $S^1 \\to GL(2, \\mathbb{Z})$ is trivial since $GL(2, \\mathbb{Z})$ is discrete). So this doesn't help.\n\nConsider $\\hat{G} = T^3 = S^1 \\times S^1 \\times S^1$ with $T^2$ embedded as $(e^{i\\alpha}, e^{i\\beta}) \\mapsto (e^{i\\alpha}, e^{i\\beta}, e^{i(\\alpha+\\beta)})$ or some other embedding. Then $H_0$ maps to $\\{(e^{i\\theta}, 1, e^{i\\theta})\\}$ and $I_0$ maps to $\\{(e^{i\\theta}, e^{i\\theta}, e^{2i\\theta})\\}$. These are still not conjugate in $T^3$ (abelian).\n\nWhat about non-abelian overgroups? Consider $\\hat{G} = U(3)$ with $T^2$ embedded as $\\text{diag}(e^{i\\alpha}, e^{i\\beta}, 1)$. Then $H_0 = \\{\\text{diag}(e^{i\\theta}, 1, 1)\\}$ and $I_0 = \\{\\text{diag}(e^{i\\theta}, e^{i\\theta}, 1)\\}$. In $U(3)$, $H_0$ is conjugate to $\\{\\text{diag}(1, e^{i\\theta}, 1)\\}$ or $\\{\\text{diag}(1, 1, e^{i\\theta})\\}$ (by permutation matrices), but $I_0 = \\{\\text{diag}(e^{i\\theta}, e^{i\\theta}, 1)\\}$ has a different eigenvalue multiplicity pattern (eigenvalue $e^{i\\theta}$ with multiplicity 2 and eigenvalue 1 with multiplicity 1, vs. eigenvalue $e^{i\\theta}$ with multiplicity 1 and eigenvalue 1 with multiplicity 2). So they're not conjugate in $U(3)$.\n\nIn $U(n)$ for any $n$: if we embed $T^2$ as $\\text{diag}(e^{i\\alpha}, e^{i\\beta}, 1, \\ldots, 1)$, then $H_0$ has eigenvalue pattern $(e^{i\\theta}, 1, 1, \\ldots)$ and $I_0$ has $(e^{i\\theta}, e^{i\\theta}, 1, \\ldots)$. The multiplicities of the eigenvalue 1 differ (for $H_0$: $n-1$; for $I_0$: $n-2$). So they're never conjugate in $U(n)$.\n\nBut what if we use a different embedding of $T^2$ into $U(n)$? For instance, embed $(e^{i\\alpha}, e^{i\\beta})$ as $\\text{diag}(e^{i\\alpha}, e^{i\\alpha}, e^{i\\beta}, e^{i\\beta})$ (each circle with multiplicity 2). Then $H_0 = \\{\\text{diag}(e^{i\\theta}, e^{i\\theta}, 1, 1)\\}$ and $I_0 = \\{\\text{diag}(e^{i\\theta}, e^{i\\theta}, e^{i\\theta}, e^{i\\theta})\\}$. The latter is scalar, hence central in $U(4)$. So $I_0$ is central and can't be conjugated to $H_0$.\n\nHmm, it seems like for the torus, the diagonal circle is \"more central\" than the coordinate circle, and this creates an obstruction.\n\n**But we're not restricted to unitary groups!** We can use any Lie group.\n\nConsider the following: embed $T^2$ into the Heisenberg group or some nilpotent group. Actually, $T^2$ is abelian and compact, so it can't embed into a nilpotent group in a useful way.\n\n**Let me think about this more abstractly.**\n\nThe question is: given $G$, $H_0$, $I_0$ with $H_0 \\cong I_0$, does there exist a finite-dimensional Lie group $\\hat{G} \\supset G$ with $H_0 \\sim_{\\hat{G}} I_0$?\n\n**Potential obstruction:** If $H_0$ is normal in $G$ but $I_0$ is not (or vice versa), then in any overgroup $\\hat{G}$, normality in $G$ might be preserved in some sense... but actually, normality in $G$ doesn't imply normality in $\\hat{G}$. A subgroup normal in $G$ need not be normal in $\\hat{G}$.\n\nWait, but if $H_0$ is normal in $G$ and $I_0$ is not normal in $G$, and they're conjugate in $\\hat{G}$, then... conjugation by $\\hat{g}$ sends $H_0$ to $I_0$. For $g \\in G$, $g I_0 g^{-1} = g \\hat{g} H_0 \\hat{g}^{-1} g^{-1} = \\hat{g} (\\hat{g}^{-1} g \\hat{g}) H_0 (\\hat{g}^{-1} g \\hat{g})^{-1} \\hat{g}^{-1}$. If $\\hat{g}^{-1} g \\hat{g} \\in G$ (which it need not be), then since $H_0$ is normal in $G$, this equals $\\hat{g} H_0 \\hat{g}^{-1} = I_0$. But $\\hat{g}^{-1} g \\hat{g}$ need not be in $G$ in general. So normality in $G$ is not an obstruction.\n\n**Let me think about the problem from the perspective of Lie algebras.**\n\nGiven Lie algebras $\\mathfrak{g} \\supset \\mathfrak{h}, \\mathfrak{i}$ with $\\mathfrak{h} \\cong \\mathfrak{i}$ (as Lie algebras), can we find a finite-dimensional Lie algebra $\\hat{\\mathfrak{g}} \\supset \\mathfrak{g}$ and $X \\in \\hat{\\mathfrak{g}}$ with $\\text{Ad}(\\exp(X)) \\mathfrak{h} = \\mathfrak{i}$? (Or more generally, some automorphism of $\\hat{\\mathfrak{g}}$ that is inner and maps $\\mathfrak{h}$ to $\\mathfrak{i}$.)\n\nAt the Lie algebra level, we need a derivation-like extension. We need $[X, Y] = d\\phi(Y)$ for $Y \\in \\mathfrak{h}$, and this needs to extend to a consistent bracket on $\\hat{\\mathfrak{g}}$.\n\n**The Lie algebra HNN extension:**\n\nWe want $\\hat{\\mathfrak{g}} = \\mathfrak{g} \\oplus \\mathbb{R}X$ with $[X, Y] = d\\phi(Y)$ for $Y \\in \\mathfrak{h}$ and some definition of $[X, Z]$ for $Z \\in \\mathfrak{g} \\setminus \\mathfrak{h}$.\n\nFor Jacobi identity: $[X, [Y, Z]] = [[X, Y], Z] + [Y, [X, Z]]$ for all $Y, Z \\in \\mathfrak{g}$.\n\nIf $Y \\in \\mathfrak{h}$: $[X, [Y, Z]] = [[X, Y], Z] + [Y, [X, Z]]$, i.e., $[X, [Y, Z]] = [d\\phi(Y), Z] + [Y, [X, Z]]$.\n\nThis means $[X, \\cdot]$ must be a derivation of $\\mathfrak{g}$ that agrees with $d\\phi$ on $\\mathfrak{h}$. But $d\\phi: \\mathfrak{h} \\to \\mathfrak{i}$ is a Lie algebra isomorphism, not a derivation of $\\mathfrak{g}$. A derivation $D$ of $\\mathfrak{g}$ satisfies $D([Y, Z]) = [D(Y), Z] + [Y, D(Z)]$. If $D|_\\mathfrak{h} = d\\phi$, then $D([Y, Z]) = [d\\phi(Y), Z] + [Y, D(Z)]$ for $Y \\in \\mathfrak{h}, Z \\in \\mathfrak{g}$. This is a constraint on $D$.\n\nThe question is: does there always exist a derivation $D$ of $\\mathfrak{g}$ extending $d\\phi: \\mathfrak{h} \\to \\mathfrak{i}$? In general, no. Derivations of $\\mathfrak{g}$ form a finite-dimensional space, and the constraint $D|_\\mathfrak{h} = d\\phi$ may have no solution.\n\nBut we don't need $D$ to be a derivation of $\\mathfrak{g}$; we need to extend $\\mathfrak{g}$ to a bigger Lie algebra $\\hat{\\mathfrak{g}}$ where such a $D$ exists.\n\n**Construction at the Lie algebra level:**\n\nConsider $\\hat{\\mathfrak{g}} = \\mathfrak{g} \\oplus \\mathfrak{g}$ (direct sum of two copies). Embed $\\mathfrak{g}$ diagonally: $Y \\mapsto (Y, Y)$. Then $\\mathfrak{h}$ maps to $\\Delta(\\mathfrak{h}) = \\{(Y, Y) : Y \\in \\mathfrak{h}\\}$ and $\\mathfrak{i}$ maps to $\\Delta(\\mathfrak{i}) = \\{(Z, Z) : Z \\in \\mathfrak{i}\\}$.\n\nIn $\\mathfrak{g} \\oplus \\mathfrak{g}$, the element $(0, W)$ conjugates (via $\\text{Ad}$) $\\Delta(\\mathfrak{h})$ to... $\\text{Ad}_{(0, \\exp(W))}(Y, Y) = (Y, \\text{Ad}_{\\exp(W)} Y)$. For this to be in $\\Delta(\\mathfrak{i})$, need $Y = \\text{Ad}_{\\exp(W)} Y \\in \\mathfrak{i}$, so $W$ centralizes $\\mathfrak{h}$ and $\\text{Ad}_{\\exp(W)}$ maps $\\mathfrak{h}$ to $\\mathfrak{i}$. Requires $\\mathfrak{h}$ and $\\mathfrak{i}$ to be conjugate in $\\mathfrak{g}$ already.\n\nWhat about the element $(W, 0)$? $\\text{Ad}_{(\\exp(W), 0)}(Y, Y) = (\\text{Ad}_{\\exp(W)} Y, Y)$. For this to be in $\\Delta(\\mathfrak{i})$, need $\\text{Ad}_{\\exp(W)} Y = Y \\in \\mathfrak{i}$. Same issue.\n\nWhat about a non-diagonal element? In $\\mathfrak{g} \\oplus \\mathfrak{g}$, the only automorphisms (inner) are $\\text{Ad}_{(g_1, g_2)}$, which act as $(\\text{Ad}_{g_1}, \\text{Ad}_{g_2})$ on the two factors. So $\\Delta(\\mathfrak{h})$ maps to $\\{(\\text{Ad}_{g_1} Y, \\text{Ad}_{g_2} Y) : Y \\in \\mathfrak{h}\\}$. For this to be $\\Delta(\\mathfrak{i})$, need $\\text{Ad}_{g_1} Y = \\text{Ad}_{g_2} Y \\in \\mathfrak{i}$, i.e., $\\text{Ad}_{g_2^{-1} g_1}$ maps $\\mathfrak{h}$ to $\\mathfrak{i}$. So again, $\\mathfrak{h}$ and $\\mathfrak{i}$ must be conjugate in $\\mathfrak{g}$.\n\n**What about using the swap?**\n\nConsider $\\hat{\\mathfrak{g}} = (\\mathfrak{g} \\oplus \\mathfrak{g}) \\rtimes \\mathbb{R}$ where $\\mathbb{R}$ acts by the swap $\\sigma(X, Y) = (Y, X)$. This is a Lie algebra with basis $\\mathfrak{g} \\oplus \\mathfrak{g} \\oplus \\mathbb{R}T$ where $[T, (X, 0)] = (0, X)$ and $[T, (0, Y)] = (Y, 0)$ (the derivative of the swap).\n\nEmbed $\\mathfrak{g}$ diagonally: $X \\mapsto (X, X, 0)$. Then $\\mathfrak{h}$ maps to $\\{(Y, Y, 0) : Y \\in \\mathfrak{h}\\}$ and $\\mathfrak{i}$ to $\\{(Z, Z, 0) : Z \\in \\mathfrak{i}\\}$.\n\n$\\text{Ad}_{\\exp(T)}(Y, Y, 0) = ?$. The swap acts as $\\sigma$, so $\\text{Ad}_{\\exp(T)}$ acts as $e^{\\text{ad}_T}$ on $\\mathfrak{g} \\oplus \\mathfrak{g}$. Since $\\text{ad}_T(X, Y) = (Y, X)$, we have $\\text{ad}_T^2 = \\text{id}$ on $\\mathfrak{g} \\oplus \\mathfrak{g}$. So $e^{\\text{ad}_T} = \\cosh(1) \\cdot \\text{id} + \\sinh(1) \\cdot \\text{ad}_T$... wait, that's not right. $\\text{ad}_T$ acts on $\\mathfrak{g} \\oplus \\mathfrak{g}$ as the swap, which has eigenvalues $+1$ (on $\\Delta(\\mathfrak{g})$) and $-1$ (on $\\{(X, -X)\\}$). So $e^{\\text{ad}_T}$ acts as $e^1$ on $\\Delta(\\mathfrak{g})$ and $e^{-1}$ on $\\{(X, -X)\\}$. This is not the swap; it's a hyperbolic transformation.\n\nTo get the actual swap, we'd need $\\exp(\\frac{\\pi}{2} T)$ or something... but the swap is an order-2 automorphism, and $\\text{ad}_T$ generates a continuous family. The swap corresponds to $\\text{Ad}_{\\exp(\\frac{\\pi}{2} T)}$? Let's see: $e^{\\frac{\\pi}{2} \\text{ad}_T}$ on the $+1$ eigenspace gives $e^{\\pi/2}$ and on the $-1$ eigenspace gives $e^{-\\pi/2}$. That's not the swap.\n\nActually, the swap is not in the identity component of $\\text{Aut}(\\mathfrak{g} \\oplus \\mathfrak{g})$ if we use the $\\mathbb{R}$-action. We need a $\\mathbb{Z}/2$-action (semidirect product with $\\mathbb{Z}/2$), which gives a disconnected group. The Lie algebra of $(\\mathfrak{g} \\oplus \\mathfrak{g}) \\rtimes \\mathbb{Z}/2$ is just $\\mathfrak{g} \\oplus \\mathfrak{g}$ (since $\\mathbb{Z}/2$ is discrete). So the swap is an outer automorphism, not inner. We can't implement it via $\\text{Ad}$.\n\nSo the swap approach requires a disconnected group, and the swap is not inner. But the question asks about conjugacy in $\\hat{G}$, which includes all components. So if $\\hat{G} = (G \\times G) \\rtimes \\mathbb{Z}/2$, the swap element $s$ conjugates $\\Delta(H_0)$ to... $s (h, h) s^{-1} = (h, h)$. It fixes the diagonal! So the swap doesn't help with diagonal embeddings.\n\n**I'm going in circles (no pun intended). Let me try a fundamentally different approach.**\n\n**Approach: Use the isomorphism directly to build the overgroup.**\n\nGiven $\\phi: H_0 \\to I_0$, consider the following group:\n\n$\\hat{G} = (G \\times G) / \\{(h, \\phi(h)^{-1}) : h \\in H_0\\}$\n\nWait, $\\{(h, \\phi(h)^{-1}) : h \\in H_0\\}$ is a subgroup of $G \\times G$ (since $\\phi$ is a homomorphism). Let $N = \\{(h, \\phi(h)^{-1}) : h \\in H_0\\}$. Then $\\hat{G} = (G \\times G) / N$.\n\nEmbed $G$ via $g \\mapsto [(g, g)]$ (class of $(g, g)$). Is this well-defined and injective? $(g, g) \\sim (g', g')$ iff $(g, g)(g'^{-1}, g'^{-1}) \\in N$, i.e., $(gg'^{-1}, gg'^{-1}) \\in N$, i.e., $gg'^{-1} \\in H_0$ and $\\phi(gg'^{-1})^{-1} = gg'^{-1}$, i.e., $gg'^{-1} \\in H_0$ and $\\phi(gg'^{-1}) = (gg'^{-1})^{-1}$. This is not generally true, so the diagonal map might not be well-defined (or rather, it's well-defined but might not be injective).\n\nHmm, this quotient approach is tricky. Let me think differently.\n\n**Approach: Amalgamated free product / pushout in the category of Lie groups.**\n\nIn the category of Lie groups, we can form the pushout of $G \\leftarrow H_0 \\xrightarrow{\\phi} I_0 \\hookrightarrow G$. This is the amalgamated free product $G *_\\phi G$ (amalgamating $H_0$ with $I_0$ via $\\phi$). But this is generally infinite-dimensional as a Lie group.\n\nHowever, maybe there's a finite-dimensional quotient or a different construction.\n\n**Let me look at this from the perspective of the answer being \"Yes\" and try to find a construction.**\n\n**Construction via $G \\times G$ with a clever twist:**\n\nLet me try the following. Consider $\\hat{G} = G \\times G$. Define the embedding $\\iota: G \\hookrightarrow \\hat{G}$ by $\\iota(g) = (g, g)$.\n\nNow, $\\iota(H_0) = \\{(h, h) : h \\in H_0\\}$ and $\\iota(I_0) = \\{(i, i) : i \\in I_0\\}$.\n\nConsider the element $t = (h_0, \\phi(h_0))$ for some $h_0 \\in H_0$. Then $t \\in \\Gamma_\\phi$ (the graph of $\\phi$). Conjugation by $t$: $(h_0, \\phi(h_0))(h, h)(h_0^{-1}, \\phi(h_0)^{-1}) = (h_0 h h_0^{-1}, \\phi(h_0) h \\phi(h_0)^{-1})$. This doesn't help.\n\n**What about using a semidirect product with $H_0$ itself?**\n\nConsider $\\hat{G} = G \\rtimes_\\psi H_0$ where $\\psi: H_0 \\to \\text{Aut}(G)$ is some action. We want $\\psi(h)$ to act on $G$ in a way that sends $H_0$ to $I_0$ for some specific $h$.\n\nBut $\\psi$ must be a homomorphism, and $\\text{Aut}(G)$ is a Lie group. We need $\\psi: H_0 \\to \\text{Aut}(G)$ continuous. The constraint is that for some $h \\in H_0$, $\\psi(h)(H_0) = I_0$ (as a set, via the conjugation action).\n\nThis requires an automorphism of $G$ that sends $H_0$ to $I_0$, which may not exist.\n\n**I think the answer might actually be Yes, and the construction uses $G \\times G$ in a more subtle way.**\n\nLet me try yet another approach.\n\n**The \"two copies\" construction:**\n\nConsider $\\hat{G} = G \\times G$. Embed $G$ via $g \\mapsto (g, e)$ (first factor only). Then $H_0$ maps to $H_0 \\times \\{e\\}$ and $I_0$ maps to $I_0 \\times \\{e\\}$.\n\nNow, consider the automorphism $\\alpha$ of $G \\times G$ defined by $\\alpha(g_1, g_2) = (g_1, \\phi'(g_1) g_2)$ where... no, this doesn't make sense unless $\\phi'$ is defined on all of $G$.\n\n**OK let me try to think about what construction could possibly work.**\n\nThe fundamental challenge is: we need an element $\\hat{g}$ in some overgroup such that $\\hat{g} H_0 \\hat{g}^{-1} = I_0$. This element $\\hat{g}$ implements the isomorphism $\\phi: H_0 \\to I_0$ via conjugation.\n\n**Key insight: Use the graph of $\\phi$ as a \"bridge\".**\n\nIn $G \\times G$, consider:\n- $A = H_0 \\times \\{e\\}$ (first factor copy of $H_0$)\n- $B = \\Gamma_\\phi = \\{(h, \\phi(h)) : h \\in H_0\\}$ (graph of $\\phi$)\n- $C = \\{e\\} \\times I_0$ (second factor copy of $I_0$)\n\nNow, $A$ and $B$ are both subgroups of $G \\times G$ isomorphic to $H_0$. Are they conjugate in $G \\times G$?\n\nConjugation by $(g_1, g_2)$: $(g_1, g_2)(h, e)(g_1^{-1}, g_2^{-1}) = (g_1 h g_1^{-1}, e)$. So $A$ is always conjugate to $g_1 H_0 g_1^{-1} \\times \\{e\\}$, which is still in the first factor. $B$ has elements in both factors. So $A$ and $B$ are not conjugate in $G \\times G$ (different projections).\n\nWhat about in a bigger group? Consider $\\hat{G} = (G \\times G) \\times (G \\times G) = G^4$... this is getting too complicated.\n\n**Let me try a completely different tactic: look for the answer in the literature.**\n\nThis question is related to the \"fusion\" of subgroups in Lie groups. I recall that for compact Lie groups, there's a result that any two isomorphic subgroups can be fused in a finite-dimensional overgroup. The construction typically uses $G \\times G$ or a variant.\n\nActually, I think the key construction is:\n\n**The \"twisted diagonal\" construction:**\n\nConsider $\\hat{G} = G \\times G$. Embed $G$ via $g \\mapsto (g, g)$. \n\n$\\Delta(H_0) = \\{(h, h) : h \\in H_0\\}$ and $\\Delta(I_0) = \\{(i, i) : i \\in I_0\\}$.\n\nNow consider the graph $\\Gamma_\\phi = \\{(h, \\phi(h)) : h \\in H_0\\}$. This is a subgroup of $G \\times G$ isomorphic to $H_0$.\n\n**Claim:** $\\Gamma_\\phi$ is conjugate to $\\Delta(H_0)$ in $G \\times G$ iff $\\phi$ extends to an inner automorphism of $G$. (As we computed.)\n\n**But:** $\\Gamma_\\phi$ is conjugate to $\\Delta(I_0)$ in $G \\times G$ iff $\\phi^{-1}$ extends to an inner automorphism. (Similar computation.)\n\nSo if $\\phi$ doesn't extend to an inner automorphism, $\\Gamma_\\phi$ is not conjugate to either diagonal in $G \\times G$.\n\n**However**, consider the following larger group: $\\hat{G} = G \\times G \\times G$. Embed $G$ via $g \\mapsto (g, g, g)$. \n\n$\\Delta(H_0) = \\{(h, h, h) : h \\in H_0\\}$ and $\\Delta(I_0) = \\{(i, i, i) : i \\in I_0\\}$.\n\nConsider the \"partial graph\" $\\Gamma = \\{(h, \\phi(h), \\phi(h)) : h \\in H_0\\}$. Is this conjugate to $\\Delta(H_0)$ or $\\Delta(I_0)$ in $G^3$? Conjugation by $(g_1, g_2, g_3)$: $(g_1 h g_1^{-1}, g_2 \\phi(h) g_2^{-1}, g_3 \\phi(h) g_3^{-1})$. For this to be in $\\Delta(H_0)$: need $g_1 h g_1^{-1} = g_2 \\phi(h) g_2^{-1} = g_3 \\phi(h) g_3^{-1} \\in H_0$. Requires $\\phi$ to be inner. Same issue.\n\nI don't think adding more factors helps.\n\n**Let me reconsider the problem. Maybe the answer is No.**\n\n**Potential counterexample: the torus.**\n\n$G = T^2 = \\mathbb{R}^2 / \\mathbb{Z}^2$. Subgroups isomorphic to $S^1$: these correspond to rational lines in $\\mathbb{R}^2$. Specifically, for $(p, q) \\in \\mathbb{Z}^2$ primitive, $H_{p,q} = \\{(tp, tq) \\mod \\mathbb{Z}^2 : t \\in \\mathbb{R}/\\mathbb{Z}\\}$ is a closed subgroup isomorphic to $S^1$.\n\nTwo such subgroups $H_{p,q}$ and $H_{p',q'}$ are conjugate in $T^2$ iff they're equal (since $T^2$ is abelian). They're isomorphic (both $S^1$) for any $(p,q), (p',q')$.\n\nCan we fuse $H_{1,0}$ and $H_{1,1}$ (the diagonal) in a finite-dimensional Lie overgroup?\n\n**Key observation:** $H_{1,0}$ is a direct factor of $T^2$ (i.e., $T^2 = H_{1,0} \\times H_{0,1}$), while $H_{1,1}$ is not a direct factor (it's a \"diagonal\" subgroup).\n\nIn a finite-dimensional Lie overgroup $\\hat{G}$, if $\\hat{g} H_{1,0} \\hat{g}^{-1} = H_{1,1}$, then $H_{1,1}$ would be a retract of $\\hat{G}$ in some sense... actually, this doesn't directly give an obstruction.\n\n**Let me think about invariants.**\n\nIf $H_0$ and $I_0$ are conjugate in $\\hat{G}$, then for any representation $\\rho: \\hat{G} \\to GL(V)$, the restricted representations $\\rho|_{H_0}$ and $\\rho|_{I_0}$ are equivalent (since $\\rho(\\hat{g}) \\rho(h) \\rho(\\hat{g})^{-1} = \\rho(\\phi(h))$). \n\nConversely, if for every finite-dimensional representation of every finite-dimensional overgroup, the restrictions to $H_0$ and $I_0$ are equivalent, that's necessary but maybe not sufficient.\n\nBut the point is: the overgroup $\\hat{G}$ can have representations that distinguish $H_0$ from $I_0$ when restricted to $G$, but when restricted to $\\hat{G}$, they must agree on $H_0$ and $I_0$ (up to conjugation by $\\rho(\\hat{g})$).\n\n**Actually, I think the answer is Yes, and here's a clean construction:**\n\n**Construction:**\n\nGiven $G$, $H_0$, $I_0$, $\\phi: H_0 \\to I_0$, define:\n\n$$\\hat{G} = (G \\times G) / \\Delta(\\ker \\phi)$$\n\nWait, $\\phi$ is an isomorphism, so $\\ker \\phi = \\{e\\}$. Let me think again.\n\n**Actually, here's a construction that I believe works:**\n\nConsider $\\hat{G} = G \\times G$. Embed $G$ via $g \\mapsto (g, g)$.\n\nNow, $\\Delta(H_0) = \\{(h,h) : h \\in H_0\\}$ and $\\Delta(I_0) = \\{(i,i) : i \\in I_0\\}$.\n\nConsider the subgroup $\\Gamma_\\phi = \\{(h, \\phi(h)) : h \\in H_0\\}$. Note that $\\Gamma_\\phi \\leq G \\times G$ and $\\Gamma_\\phi \\cong H_0 \\cong I_0$.\n\n**Key step:** In $G \\times G$, $\\Gamma_\\phi$ is conjugate to $\\Delta(H_0)$ if and only if $\\phi$ extends to an inner automorphism of $G$. But we can consider a bigger group.\n\nConsider $\\hat{G} = (G \\times G) \\times (G \\times G)$. No, this is silly.\n\n**Let me try the following construction, which I think is the right one:**\n\n**The overgroup is $G \\times G$, but we embed $G$ non-diagonally.**\n\nEmbed $G$ into $G \\times G$ via $\\iota(g) = (g, \\alpha(g))$ where $\\alpha: G \\to G$ is a group homomorphism (not necessarily automorphism) to be determined.\n\nThen $\\iota(H_0) = \\{(h, \\alpha(h)) : h \\in H_0\\}$ and $\\iota(I_0) = \\{(i, \\alpha(i)) : i \\in I_0\\}$.\n\nWe want to find $(g_1, g_2) \\in G \\times G$ such that $(g_1, g_2) \\iota(H_0) (g_1, g_2)^{-1} = \\iota(I_0)$, i.e., $(g_1 h g_1^{-1}, g_2 \\alpha(h) g_2^{-1}) = (i, \\alpha(i))$ for some bijection $h \\mapsto i$.\n\nThis means $g_1 h g_1^{-1} = i$ and $g_2 \\alpha(h) g_2^{-1} = \\alpha(i) = \\alpha(g_1 h g_1^{-1})$.\n\nSo we need $g_2 \\alpha(h) g_2^{-1} = \\alpha(g_1 h g_1^{-1})$ for all $h \\in H_0$.\n\nIf $\\alpha$ is a homomorphism, $\\alpha(g_1 h g_1^{-1})$... but $g_1 h g_1^{-1}$ is not necessarily in $H_0$ (unless $g_1$ normalizes $H_0$). Actually, we need $g_1 H_0 g_1^{-1} = I_0$ (as sets), and then $\\alpha(g_1 h g_1^{-1})$ is $\\alpha$ applied to an element of $I_0$.\n\nSo the conditions are:\n1. $g_1 H_0 g_1^{-1} = I_0$ (i.e., $H_0$ and $I_0$ are conjugate in $G$)\n2. $g_2 \\alpha(h) g_2^{-1} = \\alpha(g_1 h g_1^{-1})$ for all $h \\in H_0$.\n\nCondition 1 already requires $H_0$ and $I_0$ to be conjugate in $G$, which defeats the purpose.\n\nSo non-diagonal embedding with a homomorphism doesn't help either, because the first factor still requires conjugacy in $G$.\n\n**I think the fundamental issue is that in a direct product $G \\times G$, conjugation acts independently on each factor, so we can't \"mix\" the two factors to create a new conjugacy.**\n\n**What about a non-trivial semidirect product?**\n\nConsider $\\hat{G} = G \\rtimes_\\psi K$ where $K$ is some Lie group acting on $G$ via $\\psi: K \\to \\text{Aut}(G)$. Embed $G$ as the normal subgroup. Then conjugation by $(e, k)$ sends $H_0$ to $\\psi(k)(H_0)$. We need $\\psi(k)(H_0) = I_0$ for some $k$.\n\nThis requires an automorphism of $G$ sending $H_0$ to $I_0$. If no such automorphism exists, this approach fails.\n\n**But we can use a bigger group where $G$ is not normal.**\n\nConsider $\\hat{G} = GL(V)$ for some $V$, with $G$ embedded via some faithful representation $\\rho: G \\to GL(V)$. Then $H_0$ and $I_0$ are subgroups of $GL(V)$, and we ask if they're conjugate in $GL(V)$. They're conjugate in $GL(V)$ iff the representations $\\rho|_{H_0}$ and $\\rho|_{I_0} \\circ \\phi$ are equivalent (where we identify $H_0 \\cong I_0$ via $\\phi$).\n\nBut we can choose $\\rho$! If we can find a faithful representation $\\rho$ of $G$ such that $\\rho|_{H_0} \\cong \\rho|_{I_0} \\circ \\phi$ (as representations of the abstract group $H_0$), then $H_0$ and $I_0$ are conjugate in $GL(V)$, and hence in the overgroup $GL(V)$.\n\nBut can we always find such a $\\rho$? Not necessarily. The representation theory of $G$ might not allow it.\n\nHowever, we can extend $V$: consider $\\rho \\oplus \\sigma$ where $\\sigma$ is another representation. We need $(\\rho \\oplus \\sigma)|_{H_0} \\cong (\\rho \\oplus \\sigma)|_{I_0} \\circ \\phi$. This is $(\\rho|_{H_0} \\oplus \\sigma|_{H_0}) \\cong (\\rho|_{I_0} \\circ \\phi \\oplus \\sigma|_{I_0} \\circ \\phi)$.\n\nIf we can choose $\\sigma$ such that $\\sigma|_{H_0} \\cong \\sigma|_{I_0} \\circ \\phi$ and $\\rho|_{H_0} \\oplus \\sigma|_{H_0} \\cong \\rho|_{I_0} \\circ \\phi \\oplus \\sigma|_{I_0} \\circ \\phi$, then we're done. But the first condition $\\sigma|_{H_0} \\cong \\sigma|_{I_0} \\circ \\phi$ is the same type of condition as before.\n\n**Actually, we can use a trick: take $\\sigma$ to be the representation of $G$ induced from a representation of $H_0$ (or $I_0$).**\n\nHmm, this is getting into representation theory. Let me think about whether there's a simpler approach.\n\n**The \"regular representation\" trick:**\n\nConsider the left regular representation of $G$ on $L^2(G)$ (for compact $G$) or some function space. This is infinite-dimensional, so it doesn't directly help. But for compact $G$, we can use the Peter-Weyl theorem to get finite-dimensional approximations.\n\n**For compact $G$:** By Peter-Weyl, $L^2(G) \\cong \\bigoplus_{\\pi \\in \\hat{G}} V_\\pi \\otimes V_\\pi^*$ (as $G \\times G$-representation). The left regular representation (action on the left) is $\\bigoplus_\\pi \\dim(V_\\pi) \\cdot \\pi$. \n\nFor $H_0$ and $I_0$ to be conjugate in $GL(L^2(G))$, we need $\\text{Reg}|_{H_0} \\cong \\text{Reg}|_{I_0} \\circ \\phi$. Since $\\text{Reg} = \\bigoplus_\\pi \\dim(V_\\pi) \\cdot \\pi$, this is $\\bigoplus_\\pi \\dim(V_\\pi) \\cdot \\pi|_{H_0} \\cong \\bigoplus_\\pi \\dim(V_\\pi) \\cdot \\pi|_{I_0} \\circ \\phi$.\n\nThis is a condition on the restriction of all irreducible representations. It may or may not hold.\n\n**I think this problem might have the answer \"Yes\" with a specific construction, or \"No\" with a specific counterexample. Let me try to think about which.**\n\n**Let me reconsider the torus example.**\n\n$G = T^2$, $H_0 = H_{1,0}$ (first circle), $I_0 = H_{1,1}$ (diagonal circle). Both $\\cong S^1$.\n\nThe irreducible representations of $T^2$ are $\\chi_{m,n}(e^{2\\pi i \\alpha}, e^{2\\pi i \\beta}) = e^{2\\pi i (m\\alpha + n\\beta)}$ for $(m,n) \\in \\mathbb{Z}^2$.\n\n$\\chi_{m,n}|_{H_{1,0}} = e^{2\\pi i m \\theta}$ (character of $S^1$ indexed by $m$).\n$\\chi_{m,n}|_{H_{1,1}} \\circ \\phi = e^{2\\pi i (m+n) \\theta}$ (where $\\phi: H_{1,0} \\to H_{1,1}$ is $\\phi(e^{2\\pi i \\theta}, 1) = (e^{2\\pi i \\theta}, e^{2\\pi i \\theta})$).\n\nSo $\\chi_{m,n}|_{H_{1,0}}$ is the character $m$ of $S^1$, and $\\chi_{m,n}|_{H_{1,1}} \\circ \\phi$ is the character $m+n$.\n\nFor the regular representation: $\\text{Reg}|_{H_{1,0}} = \\bigoplus_{(m,n)} \\chi_m$ and $\\text{Reg}|_{H_{1,1}} \\circ \\phi = \\bigoplus_{(m,n)} \\chi_{m+n}$.\n\nAs representations of $S^1$, $\\bigoplus_{(m,n) \\in \\mathbb{Z}^2} \\chi_m = \\bigoplus_{m \\in \\mathbb{Z}} (\\text{countably many copies of } \\chi_m)$ (each $m$ appears countably many times, once for each $n$). Similarly, $\\bigoplus_{(m,n)} \\chi_{m+n} = \\bigoplus_{k \\in \\mathbb{Z}} (\\text{countably many copies of } \\chi_k)$ (each $k = m+n$ appears countably many times). So they're isomorphic! (Both are countably many copies of each irreducible of $S^1$.)\n\nSo in the infinite-dimensional regular representation, $H_{1,0}$ and $H_{1,1}$ are conjugate. But we need finite-dimensional.\n\nFor a finite-dimensional subrepresentation: take $\\bigoplus_{|m|,|n| \\leq N} \\chi_{m,n}$. Then the restriction to $H_{1,0}$ gives $\\bigoplus_{|m| \\leq N} (2N+1) \\cdot \\chi_m$ (each $m$ with $|m| \\leq N$ appears $2N+1$ times). The restriction to $H_{1,1} \\circ \\phi$ gives $\\bigoplus_{|m|,|n| \\leq N} \\chi_{m+n}$. The character $k$ of $S^1$ appears with multiplicity $|\\{(m,n) : |m|,|n| \\leq N, m+n = k\\}|$, which is $\\max(0, 2N+1-|k|)$ for $|k| \\leq 2N$.\n\nSo $\\text{Reg}_N|_{H_{1,0}} = \\bigoplus_{|m| \\leq N} (2N+1) \\chi_m$ and $\\text{Reg}_N|_{H_{1,1}} \\circ \\phi = \\bigoplus_{|k| \\leq 2N} \\max(0, 2N+1-|k|) \\chi_k$.\n\nThese are NOT isomorphic (different multiplicities, different ranges). So this particular finite-dimensional subrepresentation doesn't work.\n\nBut maybe a different finite-dimensional representation works? We need a finite-dimensional representation $\\rho$ of $T^2$ such that $\\rho|_{H_{1,0}} \\cong \\rho|_{H_{1,1}} \\circ \\phi$.\n\n$\\rho = \\bigoplus_{(m,n)} a_{m,n} \\chi_{m,n}$ (finite sum, $a_{m,n} \\geq 0$). Then $\\rho|_{H_{1,0}} = \\bigoplus_m (\\sum_n a_{m,n}) \\chi_m$ and $\\rho|_{H_{1,1}} \\circ \\phi = \\bigoplus_k (\\sum_{m+n=k} a_{m,n}) \\chi_k$.\n\nWe need $\\sum_n a_{m,n} = \\sum_{m'+n'=m} a_{m',n'}$ for all $m$.\n\nThe LHS is the \"column sum\" (fixing $m$, summing over $n$) and the RHS is the \"diagonal sum\" (summing over $m'+n' = m$).\n\nSo we need: for each $m$, the sum of $a_{m,n}$ over $n$ equals the sum of $a_{m',n'}$ over $m'+n' = m$.\n\nThis is a system of linear equations. Can we find a non-trivial solution with finite support?\n\nLet $b_m = \\sum_n a_{m,n}$ (column sums) and $c_k = \\sum_{m+n=k} a_{m,n}$ (diagonal sums). We need $b_m = c_m$ for all $m$.\n\nAlso, $a_{m,n} \\geq 0$ and finitely supported.\n\n$\\sum_m b_m = \\sum_m c_m = \\sum_{m,n} a_{m,n} = $ total. So the total is consistent.\n\nCan we find such $a_{m,n}$? Let's try $a_{0,0} = 1$ and all others 0. Then $b_0 = 1, c_0 = 1$, and all others 0. So $b_m = c_m$ for all $m$! This works!\n\nBut $a_{0,0} = 1$ corresponds to the trivial representation, which is 1-dimensional. The restriction to any subgroup is trivial, so indeed $\\rho|_{H_{1,0}} \\cong \\rho|_{H_{1,1}} \\circ \\phi$ (both trivial). But this means $H_{1,0}$ and $H_{1,1}$ are conjugate in $GL_1(\\mathbb{C}) = \\mathbb{C}^*$, which is trivially true (everything is conjugate to everything in an abelian group... wait, no, $GL_1(\\mathbb{C})$ is abelian, so only trivial conjugacy).\n\nHmm, the trivial representation doesn't give a faithful embedding of $G$. We need $\\rho$ to be faithful (or at least, the overgroup needs to contain $G$).\n\nSo we need a faithful representation $\\rho$ of $T^2$ with $\\rho|_{H_{1,0}} \\cong \\rho|_{H_{1,1}} \\circ \\phi$.\n\nA faithful representation of $T^2$ must include $\\chi_{1,0}$ and $\\chi_{0,1}$ (to separate the two factors). So $a_{1,0} \\geq 1$ and $a_{0,1} \\geq 1$.\n\nWith $a_{1,0} = 1, a_{0,1} = 1$: $b_1 = 1, b_0 = 1, b_{-1}$... wait, I should also consider negative indices. Let me use $a_{1,0} = a_{0,1} = 1$ and $a_{0,0} = c$ for some $c \\geq 0$.\n\n$b_0 = c + 1$ (from $a_{0,0} = c$ and $a_{0,1} = 1$... wait, $b_m = \\sum_n a_{m,n}$. So $b_0 = a_{0,0} + a_{0,1} + a_{0,-1} + \\ldots = c + 1$ (if only $a_{0,0} = c, a_{0,1} = 1$). $b_1 = a_{1,0} = 1$. All other $b_m = 0$.\n\n$c_0 = a_{0,0} = c$. $c_1 = a_{1,0} + a_{0,1} = 1 + 1 = 2$. All other $c_k = 0$.\n\nWe need $b_m = c_m$: $b_0 = c+1 = c_0 = c$ gives $1 = 0$, contradiction. And $b_1 = 1 \\neq c_1 = 2$.\n\nSo this doesn't work. Let me add more terms. We need to solve:\n\n$\\sum_n a_{m,n} = \\sum_{p+q=m} a_{p,q}$ for all $m \\in \\mathbb{Z}$.\n\nThis is: column sum at $m$ = anti-diagonal sum at $m$.\n\nLet me denote $f(m,n) = a_{m,n}$ and think of it as a function on $\\mathbb{Z}^2$ with finite support. The condition is:\n\n$\\sum_n f(m,n) = \\sum_p f(p, m-p)$ for all $m$.\n\nLHS: sum over the vertical line $x = m$.\nRHS: sum over the anti-diagonal $x + y = m$.\n\nWe need these to be equal for all $m$, with $f \\geq 0$, finitely supported, and $f(1,0) \\geq 1, f(0,1) \\geq 1$ (for faithfulness).\n\nThis is a non-trivial constraint. Let me see if it's possible.\n\nLet $S_m = \\sum_n f(m,n)$ (column sums) and $D_m = \\sum_p f(p, m-p)$ (anti-diagonal sums). We need $S_m = D_m$ for all $m$.\n\nNote that $\\sum_m S_m = \\sum_m D_m = \\sum_{m,n} f(m,n) = $ total, so the totals match.\n\nBut the distributions need to match. Let's try to construct such an $f$.\n\nTry $f(1,0) = f(0,1) = f(-1,0) = f(0,-1) = 1$ (the \"cross\" pattern).\n\n$S_1 = f(1,0) = 1$. $D_1 = f(1,0) + f(0,1) = 2$. Not equal.\n\nTry $f(1,0) = f(0,1) = f(1,-1) = 1$.\n\n$S_1 = f(1,0) + f(1,-1) = 2$. $D_1 = f(1,0) + f(0,1) = 2$. ✓\n$S_0 = f(0,1) = 1$. $D_0 = f(1,-1) + f(0,0) = 1 + 0 = 1$. ✓\n$S_{-1} = 0$. $D_{-1} = f(0,-1) + f(-1,0) = 0$. ✓\nAll other $m$: $S_m = D_m = 0$. ✓\n\nSo $f(1,0) = f(0,1) = f(1,-1) = 1$ works! This corresponds to the representation $\\rho = \\chi_{1,0} \\oplus \\chi_{0,1} \\oplus \\chi_{1,-1}$.\n\nIs this faithful? $\\chi_{1,0}(e^{2\\pi i \\alpha}, e^{2\\pi i \\beta}) = e^{2\\pi i \\alpha}$, $\\chi_{0,1} = e^{2\\pi i \\beta}$, $\\chi_{1,-1} = e^{2\\pi i (\\alpha - \\beta)}$. The kernel is $\\{(\\alpha, \\beta) : \\alpha = 0, \\beta = 0, \\alpha - \\beta = 0\\} \\mod \\mathbb{Z}^2 = \\{(0,0)\\}$. So yes, faithful!\n\nSo $\\rho = \\chi_{1,0} \\oplus \\chi_{0,1} \\oplus \\chi_{1,-1}$ is a faithful 3-dimensional representation of $T^2$ such that $\\rho|_{H_{1,0}} \\cong \\rho|_{H_{1,1}} \\circ \\phi$.\n\nLet me verify: $\\rho|_{H_{1,0}} = \\chi_1 \\oplus \\chi_0 \\oplus \\chi_1 = \\chi_0 \\oplus \\chi_1 \\oplus \\chi_1$ (characters of $S^1$: $e^{2\\pi i \\theta}, 1, e^{2\\pi i \\theta}$).\n\n$\\rho|_{H_{1,1}} \\circ \\phi$: $\\phi(e^{2\\pi i \\theta}, 1) = (e^{2\\pi i \\theta}, e^{2\\pi i \\theta})$. So $\\chi_{1,0}|_{H_{1,1}} \\circ \\phi = e^{2\\pi i \\theta} = \\chi_1$, $\\chi_{0,1}|_{H_{1,1}} \\circ \\phi = e^{2\\pi i \\theta} = \\chi_1$, $\\chi_{1,-1}|_{H_{1,1}} \\circ \\phi = e^{2\\pi i (\\theta - \\theta)} = 1 = \\chi_0$.\n\nSo $\\rho|_{H_{1,1}} \\circ \\phi = \\chi_1 \\oplus \\chi_1 \\oplus \\chi_0 = \\chi_0 \\oplus \\chi_1 \\oplus \\chi_1$. ✓ Same as $\\rho|_{H_{1,0}}$!\n\nSo $H_{1,0}$ and $H_{1,1}$ are conjugate in $GL_3(\\mathbb{C})$ (and hence in $U(3)$, since the representation is unitary). The overgroup is $U(3) \\supset T^2$ (embedded via $\\rho$).\n\n**So for the torus example, the answer is Yes.** This is encouraging.\n\n**Now, can we generalize this construction?**\n\nThe key idea was: find a faithful representation $\\rho$ of $G$ such that $\\rho|_{H_0} \\cong \\rho|_{I_0} \\circ \\phi$ (as representations of the abstract group $H_0 \\cong I_0$). Then $H_0$ and $I_0$ are conjugate in $GL(V)$ where $V$ is the representation space.\n\n**Question: Can we always find such a $\\rho$?**\n\nFor a compact Lie group $G$, by Peter-Weyl, any faithful representation can be augmented. The question is whether we can balance the restrictions to $H_0$ and $I_0$.\n\n**General construction for compact $G$:**\n\nLet $\\rho_0$ be any faithful representation of $G$. Then $\\rho_0|_{H_0}$ and $\\rho_0|_{I_0} \\circ \\phi$ are two representations of $H_0$ (identified with $I_0$ via $\\phi$). They may not be equivalent.\n\nLet $\\sigma = \\rho_0|_{H_0}$ and $\\tau = \\rho_0|_{I_0} \\circ \\phi$. We want to find a representation $\\rho'$ of $G$ such that $\\rho'|_{H_0} \\cong \\rho'|_{I_0} \\circ \\phi$ and $\\rho_0 \\oplus \\rho'$ is faithful (which it will be since $\\rho_0$ is already faithful).\n\nWe need $\\rho'|_{H_0} \\cong \\rho'|_{I_0} \\circ \\phi$. If we can find $\\rho'$ such that $\\rho'|_{H_0} \\cong \\tau$ and $\\rho'|_{I_0} \\circ \\phi \\cong \\tau$... no, that's too strong.\n\nActually, we want $\\rho_0 \\oplus \\rho'$ to satisfy $(\\rho_0 \\oplus \\rho')|_{H_0} \\cong (\\rho_0 \\oplus \\rho')|_{I_0} \\circ \\phi$, i.e., $\\sigma \\oplus \\rho'|_{H_0} \\cong \\tau \\oplus \\rho'|_{I_0} \\circ \\phi$.\n\nSo we need $\\rho'|_{H_0} \\ominus \\rho'|_{I_0} \\circ \\phi \\cong \\tau \\ominus \\sigma$ (in the representation ring).\n\nHmm, this is a condition in the representation ring $R(H_0)$. We need to find a representation $\\rho'$ of $G$ whose \"difference\" of restrictions is $\\tau - \\sigma$.\n\n**For compact $G$:** The representation ring $R(G)$ maps to $R(H_0)$ via restriction. The image of $R(G)$ in $R(H_0) \\oplus R(H_0)$ (via $\\rho \\mapsto (\\rho|_{H_0}, \\rho|_{I_0} \\circ \\phi)$) is a subring. We need $(\\sigma, \\tau) + (\\alpha, \\beta)$ to be on the diagonal (i.e., $\\alpha = \\beta$) for some $(\\alpha, \\beta)$ in the image. This means $(\\sigma + \\alpha, \\tau + \\beta)$ with $\\sigma + \\alpha = \\tau + \\beta$, i.e., $\\alpha - \\beta = \\tau - \\sigma$.\n\nSo we need $\\tau - \\sigma$ to be in the image of the map $R(G) \\to R(H_0)$, $\\rho' \\mapsto \\rho'|_{H_0} - \\rho'|_{I_0} \\circ \\phi$.\n\nThis is not always possible. The image might not contain $\\tau - \\sigma$.\n\n**But we can use more than one copy of $\\rho_0$.** Consider $\\rho = \\rho_0^{\\oplus n} \\oplus \\rho'$ for various $n$ and $\\rho'$. We need $n\\sigma \\oplus \\rho'|_{H_0} \\cong n\\tau \\oplus \\rho'|_{I_0} \\circ \\phi$, i.e., $\\rho'|_{H_0} - \\rho'|_{I_0} \\circ \\phi \\cong n(\\tau - \\sigma)$.\n\nSo we need $n(\\tau - \\sigma)$ to be in the image of the restriction difference map, for some $n$.\n\nThis is a question about the cokernel of the map $R(G) \\to R(H_0)$, $\\rho \\mapsto \\rho|_{H_0} - \\rho|_{I_0} \\circ \\phi$.\n\n**For the torus example:** $R(T^2) = \\mathbb{Z}[\\chi_{1,0}^{\\pm 1}, \\chi_{0,1}^{\\pm 1}]$ (Laurent polynomial ring). $R(S^1) = \\mathbb{Z}[\\chi_1^{\\pm 1}]$. The restriction $\\chi_{m,n}|_{",
+      "tool_calls": [],
+      "metrics": {
+        "prompt_tokens": 20800,
+        "completion_tokens": 25000,
+        "cached_tokens": 10588
+      },
+      "extra": {
+        "generation_model": "glm-5-2",
+        "telemetry": {
+          "source": "assistant",
+          "operation": "inference"
+        }
+      }
+    }
+  ],
+  "final_metrics": {
+    "total_prompt_tokens": 20800,
+    "total_completion_tokens": 25000,
+    "total_cached_tokens": 10588,
+    "total_steps": 9
+  }
+}

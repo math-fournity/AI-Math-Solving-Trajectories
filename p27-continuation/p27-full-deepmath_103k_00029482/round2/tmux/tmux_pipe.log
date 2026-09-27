@@ -1,0 +1,9 @@
+The proof is written to `proof.md`. 
+
+**Summary:** The answer is **Yes**. The construction has two stages:
+
+1. **Stage 1** — Use AC (well-ordering + transfinite induction) to build a Vitali-type set $V \subseteq [0,1]$ that intersects *every* positive-measure closed subset of $[0,1]$. This forces $m^*(V)=1$ (else a $G_\delta$ cover of measure $<1$ would leave a positive-measure closed set disjoint from $V$, contradicting the construction). $V$ is non-measurable by the classical Vitali argument (countably many disjoint rational translates of measure 1 cannot tile $[0,1)$).
+
+2. **Stage 2** — Scale: $A_x = xV \subseteq [0,x] \subseteq [0,1]$. By the scaling property of outer measure, $m^*(A_x) = x \cdot m^*(V) = x$. If $A_x$ were measurable, then $V = (1/x)A_x$ would be measurable — contradiction. So $A_x$ is non-measurable with outer measure exactly $x$.
+
+AC is used for well-ordering the $\mathfrak{c}$-many closed sets and equivalence classes, selecting representatives, and running the transfinite recursion.

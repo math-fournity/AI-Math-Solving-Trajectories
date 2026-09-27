@@ -1,0 +1,5 @@
+我将把证明写入 `proof.md`。让我先检查一下当前目录。证明已写入 `proof.md`。
+
+**答案：否** $\boxed{No}$
+
+**反例概要：** 取 $C = \mathbb{C}^2$，$A = B = M_2(\mathbb{C})$，其中 $\phi(\lambda,\mu) = \mathrm{diag}(\lambda,\mu)$ 且 $\psi(\lambda,\mu) = \mathrm{diag}(\mu,\lambda)$（注意交换映射）。在代数融合自由积中，元素 $y = e_{12}^A \cdot e_{21}^B$ 是一个长度为 2 的非零既约字。然而，利用交换融合关系进行计算可得 $yy^* = e_{12}^A \cdot e_{22}^B \cdot e_{21}^A = e_{12}^A \cdot p \cdot e_{21}^A = e_{12}^A \cdot e_{11}^A \cdot e_{21}^A = 0$，因为 $e_{12}\,e_{11}=0$。同理 $y^*y = 0$。由于在任何 *-表示中 $yy^* = 0 \Rightarrow \rho(y) = 0$，因此最大 C*-半范数为零，即 $y$ 映射为 $0 \in A *_C B$。因此自然映射 $\pi: A \circledast_C B \to A *_C B$ 不是单射。

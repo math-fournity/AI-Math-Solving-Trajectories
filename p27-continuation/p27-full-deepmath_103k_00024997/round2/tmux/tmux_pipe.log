@@ -1,0 +1,21 @@
+Looking at this problem, I need to evaluate $\lim_{q\to 1}(1-q^2)\psi^2(q)$ where $\psi(q) = \sum_{n=0}^\infty q^{n(n+1)/2}$ is the Ramanujan theta function.
+
+Let me work through the mathematics in my thinking, then write the proof to `proof.md`.
+
+**Key steps:**
+1. $\psi(q) = \prod_{n=1}^\infty \frac{1-q^{2n}}{1-q^{2n-1}} = \frac{(q^2;q^2)_\infty}{(q;q^2)_\infty} = \frac{(q^2;q^2)_\infty^2}{(q;q)_\infty}$
+2. Set $q = e^{-\varepsilon}$, $\varepsilon \to 0^+$, use modular transformation of Dedekind eta
+3. $(q;q)_\infty \approx \sqrt{2\pi/\varepsilon}\, e^{-\pi^2/(6\varepsilon)}$, $(q^2;q^2)_\infty \approx \sqrt{\pi/\varepsilon}\, e^{-\pi^2/(12\varepsilon)}$
+4. $\psi(q) \approx \sqrt{\pi/(2\varepsilon)}$, and $1-q^2 \approx 2\varepsilon$, giving limit $= \pi$The proof has been written to `proof.md`.
+
+**Summary of the argument:**
+
+1. **Product formula**: $\psi(q) = \frac{(q^2;q^2)_\infty^2}{(q;q)_\infty}$, derived from the Jacobi triple product. This product is the reciprocal of Ramanujan's $q$-continued fraction $\frac{1}{1+\frac{q}{1+\frac{q^2}{\cdots}}} = \frac{(q;q)_\infty^2}{(q^2;q^2)_\infty}$, scaled by $(q^2;q^2)_\infty^3/(q;q)_\infty^3$.
+
+2. **Modular transformation**: Setting $q = e^{-\varepsilon}$ and using $\eta(-1/\tau) = \sqrt{-i\tau}\,\eta(\tau)$, the Dedekind eta function transforms the regime $\varepsilon \to 0^+$ (where $q\to 1$) into the regime $1/\varepsilon \to \infty$ (where $\eta$ is dominated by its leading exponential).
+
+3. **Asymptotics**: The exponential factors $e^{-\pi^2/(6\varepsilon)}$ cancel between numerator and denominator, leaving $\psi(q) \sim \sqrt{\pi/(2\varepsilon)}$.
+
+4. **Limit**: $(1-q^2) \sim 2\varepsilon$ and $\psi^2(q) \sim \pi/(2\varepsilon)$, so the product tends to $\pi$.
+
+$$\boxed{\pi}$$

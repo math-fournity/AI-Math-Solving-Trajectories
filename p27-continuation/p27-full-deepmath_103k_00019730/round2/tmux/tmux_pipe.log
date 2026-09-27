@@ -1,0 +1,19 @@
+证明已写入 `proof.md`。
+
+**结论：$d = \boxed{1}$**
+
+核心论证（基于交接文档中已多路径验证的结论）：
+
+1. **左侧悬挂定义**：$\sigma(\alpha) = \beta_1 \wedge \alpha$，其中 $\beta_1 = \sigma^1(1) \in \widetilde{H}^1(S^1)$。标准约定（Hatcher、Spanier）下 connecting homomorphism 无显式符号。
+
+2. **迭代得生成元**：$\sigma^n(1) = \beta_1^{\wedge n} \in \widetilde{H}^n((S^1)^{\wedge n}) = \widetilde{H}^n(S^n)$。
+
+3. **smash 类无符号**：$\sigma^m(1) \wedge \sigma^n(1) = \beta_1^{\wedge m} \wedge \beta_1^{\wedge n} = \beta_1^{\wedge(m+n)}$。两因子在不同 smash 因子上，cup product 不引入 Koszul 符号。
+
+4. **$\mu$ 是结合律重分组**：$\mu: (S^1)^{\wedge m} \wedge (S^1)^{\wedge n} \to (S^1)^{\wedge(m+n)}$ 只重新加括号，不重排因子顺序，故无 $(-1)^{mn}$ 符号（该符号只在 swap map $\tau$ 下出现）。
+
+5. **拉回**：$\mu^*(\beta_1^{\wedge(m+n)}) = \beta_1^{\wedge m} \wedge \beta_1^{\wedge n} = \sigma^m(1) \wedge \sigma^n(1)$，故 $d = 1$。
+
+6. **$m=n=1$ 验证排除 $(-1)^{mn}$**：$S^1 \wedge S^1 = \Sigma S^1 \cong S^2$，$\mu$ 为 suspension 同胚，$\sigma^1(1)\wedge\sigma^1(1) = \sigma^2(1)$，得 $d=1 \neq -1 = (-1)^{1\cdot 1}$。
+
+### PROOF COMPLETE

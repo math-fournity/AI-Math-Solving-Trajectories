@@ -1,0 +1,13 @@
+The proof is complete and written to `proof.md`.
+
+**Summary of the argument:**
+
+1. **Artin's lemma** → $[K:F] = 2$ (the involution group has order 2, fixed field gives degree ≤ 2, properness gives equality).
+2. **Structure of $K/F$** → $K = F(i)$ with $i \notin F$, so $-1 \notin F^{*2}$.
+3. **Square-class decomposition** → $F^* = F^{*2} \sqcup (-F^{*2})$ (disjoint), using that $K$ is algebraically closed.
+4. **$-1$ not a sum of squares** (two-step):
+   - *Not 2 squares:* Via Brauer group — $\operatorname{Br}(F) \cong \mathbb{Z}/2\mathbb{Z}$ (Hilbert 90 + Herbrand quotient), the unique non-split quaternion algebra is $(-1,-1)_F$, which splits iff $-1$ is a 2-square-sum. Since $\operatorname{Br}(F) \neq 0$, it doesn't split.
+   - *Not any number of squares:* Induction using the square-class decomposition — combining two squares either lands in $-F^{*2}$ (giving a 2-square representation, contradiction) or in $F^{*2}$ (reducing the count, contradicting minimality).
+5. **Artin-Schreier characterization** → $F$ formally real + $F(i) = K$ algebraically closed ⟹ $F$ real-closed.
+
+**Answer:** $\boxed{\text{Yes}}$ — $F$ is always real-closed.

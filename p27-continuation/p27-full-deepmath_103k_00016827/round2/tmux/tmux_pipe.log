@@ -1,0 +1,4 @@
+Error: Agent error: Permission denied: Permission denied: Reached overall message rate limit. Please try again later. Your limit will reset in 1 minute. (trace ID: 0b99ef9313621ffcf4460de6cce097c5): {
+  "cognition.ai/errorKind": "internal",
+  "cognition.ai/retryable": true
+}

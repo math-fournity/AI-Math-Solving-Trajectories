@@ -1,0 +1,23 @@
+根据交接文档，我将从之前的分析继续进行。已确认的关键结果如下：
+
+1. $\mathbb{F}_p$ 标量部分映射到 0
+2. $\dim H^1(I_p, \mathbb{F}_p(\omega^{k-1})) = 1$（通过 wild inertia 分解完全计算得出）
+3. 答案为 0 或 1；需要完成 Frobenius 作用分析和全局到局部的论证
+
+让我完成剩余的步骤并写出证明。证明已写好。让我清理 Step 3 中关于 Frobenius 作用的讨论——其中有一些思考过程的痕迹应该整理成干净的论证。让我把步骤 3 和 4 中混乱的探索部分替换为清晰的论证。现在让我把第4步中杂乱的探索也清理一下：证明已整理并写至 `proof.md`。以下是证明结构的摘要：
+
+**答案：$\dim \operatorname{Im}(\Phi) = \boxed{1}$**
+
+该证明包含四个步骤：
+
+1. **标量部分映射为零** —— 投影 $Ad(\bar{\rho}) \to Ad^0(\bar{\rho})$ 消去了 $\mathbb{F}_p$ 标量直和项，因此 $H^1(G_S, \mathbb{F}_p)$ 贡献为零。
+
+2. **目标是一维的** —— 通过对 $1 \to P_p \to I_p \to I_p/P_p \to 1$ 使用膨胀-限制（inflation-restriction），野生惯性 $P_p^{\mathrm{ab}} \otimes \mathbb{F}_p \cong \bigoplus_i \mathbb{F}_p(\omega^i)$（Serre *Local Fields*），且驯顺商（tame quotient）的上同调消失（pro-prime-to-$p$ 对比 $p$-torsion），我们得到 $H^1(I_p, \mathbb{F}_p(\omega^{k-1})) \cong \mathbb{F}_p$。
+
+3. **局部映射是满射的** —— 关键事实是 $\omega(\mathrm{Frob}_p) = 1$，因为 $\mathbb{Q}_p(\mu_p)/\mathbb{Q}_p$ 是完全分歧的，所以 $\omega$ 在非分歧商上平凡。因此 Frobenius 平凡地作用于所有三个直和项 $H^1(I_p, \mathbb{F}_p(\omega^j))$，得出 $H^1(I_p, Ad^0(\bar{\rho}))^{\hat{\mathbb{Z}}} \cong \mathbb{F}_p^3$。局部映射随后分解为两个满射映射（膨胀-限制满射 + 直和项投影）。
+
+4. **全局到局部的限制是满射的** —— 由于 $\bar{\rho}$ 是绝对不可约的，$H^0(G_S, Ad^0(\bar{\rho})^*(1)) = 0$（Schur 引理）。Poitou-Tate 正合序列随后迫使 $\bigoplus_{v \in S} \mathrm{res}_v$ 满射，特别地 $\mathrm{res}_p$ 满射。
+
+结合步骤 3 和 4，$\Phi = \ell \circ \mathrm{res}_p$ 是对一维目标的满射，因此像的维数为 1。
+
+### 证明完成

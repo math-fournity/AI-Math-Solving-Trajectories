@@ -1,0 +1,13 @@
+I'll work through this mentally and then write the proof to `proof.md`.
+
+The key idea: this is about **monodromy** of multi-valued functions. The classic example is $\log z$ — analytic continuation around the origin adds $2\pi i$, producing a genuinely different germ.The proof is written to `proof.md`.
+
+**Summary of the solution:**
+
+Take $f(z) = \log z$ (principal branch) on a neighborhood of $z_0 = 1$, and the loop $\gamma(t) = e^{2\pi i t}$ winding once counterclockwise around the origin. Analytic continuation of $f$ along $\gamma$ tracks the argument continuously from $0$ to $2\pi$, yielding the germ
+
+$$f' = f + 2\pi i$$
+
+at the return to $z_0 = 1$. Since $f(1) = 0$ but $f'(1) = 2\pi i \neq 0$, we have $f \neq f'$. The nontriviality comes from the branch point at the origin producing infinite-order monodromy (each loop adds another $2\pi i$).
+
+$$\boxed{f(z)=\log z\text{ (principal branch) near }z_0=1,\ \gamma(t)=e^{2\pi i t};\ \text{continuation gives }f'=f+2\pi i\neq f.}$$

@@ -1,0 +1,18 @@
+Looking at this problem, I need to determine whether $H^1_{\text{cont}}(\text{Gal}(L/K), L^\times)$ vanishes for algebraic extensions $L/K$ of $\mathbb{Q}_p$ with the $p$-adic topology on $L^\times$.
+
+Let me work through the key cases and construct a counterexample for the infinite case.The proof has been written to `proof.md`.
+
+## Summary
+
+**Answer:** $H^1_{\text{cont}}(\operatorname{Gal}(L/K), L^\times)$ **does not vanish in general** for algebraic extensions $L/K$ of $\mathbb{Q}_p$ (with $p$-adic topology on $L^\times$).
+
+**Key ideas:**
+
+1. **Finite case:** Vanishes by Hilbert 90 — finite groups have no topology issues, so continuous = abstract cohomology.
+
+2. **Infinite case (counterexample):** For the $\mathbb{Z}_p$-extension $L/\mathbb{Q}_p$ with $G \cong \mathbb{Z}_p$, the cocycle $f(\sigma) = (1+p^e)^{\chi(\sigma)}$ (using the $p$-adic exponential) is:
+   - **Continuous** for the $p$-adic topology (via $\exp/\log$ convergence on $p^e\mathbb{Z}_p$)
+   - **A valid cocycle** (since $1+p^e \in K^\times$, the Galois action is trivial)
+   - **Not a coboundary** — if $f(\sigma) = \sigma(b)/b$ for $b \in L_m^\times$, taking norms gives $(1+p^e)^{p^m} = 1$, impossible since $1+p^e$ is not a root of unity in $\mathbb{Q}_p$
+
+3. **Root cause:** The $p$-adic topology (coarser than discrete) allows continuous cocycles that don't factor through finite quotients, breaking the direct-limit argument that proves classical Hilbert 90 for infinite extensions with the discrete topology.

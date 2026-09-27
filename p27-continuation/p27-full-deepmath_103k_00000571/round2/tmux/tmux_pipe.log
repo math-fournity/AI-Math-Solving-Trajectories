@@ -1,0 +1,13 @@
+证明已写入 `proof.md`。
+
+**答案：No.** $A = C_0(\mathbb{R})$ 是一个非零、非单位的 $C^*$-代数，其状态空间 $S(A)$ 不是弱*紧的。
+
+**证明概要：**
+1. 由 Banach–Alaoglu，$S(A) \subseteq \overline{B}_{A^*}$（弱*紧），故 $S(A)$ 弱*紧 ⟺ 弱*闭。
+2. 取点求值 $\delta_n(f) = f(n)$，每个 $\delta_n$ 都是 $C_0(\mathbb{R})$ 上的状态（正性 + 范数1）。
+3. 对任意 $f \in C_0(\mathbb{R})$，$f(n) \to 0$（因 $f$ 在无穷远处消失），故 $\delta_n \to 0$ 弱*。
+4. 但 $0 \notin S(A)$（零泛函范数为0），故 $S(A)$ 不是弱*闭的，从而不是弱*紧的。
+
+$$\boxed{\text{No}}$$
+
+### PROOF COMPLETE

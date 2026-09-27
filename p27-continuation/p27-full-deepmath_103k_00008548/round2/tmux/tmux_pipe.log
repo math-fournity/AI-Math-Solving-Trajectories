@@ -1,0 +1,50 @@
+# Solution
+
+**Yes.** There exist groups of exponential growth with faithful Schreier graphs of polynomial growth. I'll provide an explicit example.
+
+## Example: The Baumslag–Solitar Group $\mathrm{BS}(1,2)$
+
+Let $G = \mathrm{BS}(1,2) = \langle a, t \mid t\,a\,t^{-1} = a^2 \rangle$, with the finite generating set $S = \{a, a^{-1}, t, t^{-1}\}$, and let $H = \langle a \rangle \cong \mathbb{Z}$.
+
+### Claim 1: $G$ has exponential growth.
+
+$G \cong \mathbb{Z}[1/2] \rtimes \mathbb{Z}$, where $\mathbb{Z}$ acts on $\mathbb{Z}[1/2]$ by multiplication by $2$. Consider the $2^n$ elements
+$$g_{\epsilon} = t^{0}\,a^{\epsilon_0}\,t\,a^{\epsilon_1}\,t\,\cdots\,t\,a^{\epsilon_{n-1}}\,t^{-(n-1)}, \quad \epsilon_i \in \{0,1\}.$$
+Each $g_\epsilon$ has word length $\leq 3n$ and they are all distinct (they correspond to distinct dyadic rationals $\sum \epsilon_i 2^i$). Hence the growth function satisfies $\gamma(3n) \geq 2^n$, giving exponential growth. $\checkmark$
+
+### Claim 2: The Schreier graph of $G/H$ has linear (polynomial) growth.
+
+Every element of $G$ can be written as $a^m\, t^k$ for some $m \in \mathbb{Z}[1/2]$, $k \in \mathbb{Z}$. Since $H = \langle a \rangle$, the right coset $H\, a^m\, t^k = H\, t^k$ (as $a^m \in H$ when $m \in \mathbb{Z}$; more precisely, the coset space $H \backslash G$ is indexed by $k \in \mathbb{Z}$, giving $H \backslash G \cong \mathbb{Z}$).
+
+**Action of generators on cosets:**
+- **$a$**: $H t^k \cdot a = H t^k a = H\, (t^k a\, t^{-k})\, t^k = H\, a^{2^k}\, t^k = H\, t^k$, since $a^{2^k} \in H$. So $a$ fixes every coset (loop at every vertex).
+- **$t$**: $H t^k \cdot t = H t^{k+1}$, shifting by $+1$.
+
+The Schreier graph is a bi-infinite path (with $a$-loops at every vertex). The ball of radius $n$ around $H$ contains exactly $2n+1$ vertices $\{H t^k : |k| \leq n\}$. **Growth is linear** $\sim n$. $\checkmark$
+
+### Claim 3: The action is faithful.
+
+The kernel of the action on $G/H$ is $\mathrm{Core}_G(H) = \bigcap_{g \in G} g H g^{-1}$.
+
+For any $g = a^m t^k$, we have $g H g^{-1} = a^m\, t^k \langle a \rangle\, t^{-k}\, a^{-m} = \langle a^{2^k} \rangle$ (using $t^k a\, t^{-k} = a^{2^k}$ and the fact that $\langle a \rangle$ is abelian).
+
+Therefore:
+$$\mathrm{Core}_G(H) = \bigcap_{k \in \mathbb{Z}} \langle a^{2^k} \rangle.$$
+
+For $k \geq 0$: $\langle a^{2^k} \rangle = \{a^{2^k \cdot m} : m \in \mathbb{Z}\} \subseteq \langle a \rangle$, and these form a descending chain $\langle a \rangle \supsetneq \langle a^2 \rangle \supsetneq \langle a^4 \rangle \supsetneq \cdots$
+
+Their intersection is:
+$$\bigcap_{k \geq 0} \langle a^{2^k} \rangle = \{a^m : 2^k \mid m \text{ for all } k \geq 0\} = \{e\},$$
+since no nonzero integer is divisible by all powers of $2$.
+
+For $k < 0$: $t^k H t^{-k} = \langle a^{2^k} \rangle$ where $2^k$ is a fraction, so $t^k H t^{-k} \supsetneq H$ — these do not further restrict the intersection.
+
+Hence $\mathrm{Core}_G(H) = \{e\}$, and the action of $G$ on $G/H$ is **faithful**. $\checkmark$
+
+### Conclusion
+
+The group $G = \mathrm{BS}(1,2)$ has **exponential growth**, yet its faithful Schreier graph $\Gamma(G, S, H)$ (for $H = \langle a \rangle$) is a bi-infinite path with **linear (polynomial) growth**. The faithfulness arises because conjugation by $t$ exponentially shrinks $H$ ($t^k H t^{-k} = \langle a^{2^k} \rangle \to \{e\}$), so no nontrivial element survives in all conjugates.
+
+This construction generalizes to all $\mathrm{BS}(1,n)$ with $n \geq 2$, and more broadly to any semidirect product $A \rtimes \langle t \rangle$ where $t$ acts on $A$ by an automorphism that suitably stretches a cyclic subgroup while the group retains exponential growth.
+
+$$\boxed{\text{Yes. } \mathrm{BS}(1,2) = \langle a, t \mid tat^{-1}=a^2 \rangle \text{ has exponential growth, and its Schreier graph on } G/\langle a\rangle \text{ is a faithful bi-infinite path (linear growth).}}$$

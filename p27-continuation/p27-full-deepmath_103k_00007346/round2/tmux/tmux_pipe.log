@@ -1,0 +1,13 @@
+Looking at this problem, I need to determine whether a continuous function $f$ on a domain $D \subset \mathbb{C}^n$ that is holomorphic off its zero set $Z$ must be holomorphic everywhere on $D$.
+
+This is a classical result — the answer is **yes**, via Radó's theorem (one variable) extended to several variables using Hartogs' theorem on separate analyticity.
+
+Let me write the complete proof to `proof.md`.The proof is complete and written to `proof.md`.
+
+**Answer:** $\boxed{f \text{ is holomorphic on } D.}$
+
+**Proof outline:**
+
+1. **Radó's theorem (one variable):** For $n=1$, the key insight is that $\log|f|$ is subharmonic on $\Omega$ (harmonic where $f\neq 0$, equal to $-\infty$ on $Z(f)$). Since $f\not\equiv 0$, the $-\infty$-set $Z(f)$ of this non-trivial subharmonic function has 2D Lebesgue measure zero. Then Painlevé's removable singularities theorem (locally bounded + holomorphic off a closed measure-zero set $\Rightarrow$ holomorphic everywhere) applies, since $f$ is continuous hence locally bounded.
+
+2. **Several variables:** Restrict $f$ to any coordinate slice — the slice function is continuous and holomorphic off its zero set, so by Radó's theorem it's holomorphic. This gives separate holomorphicity in each variable. Hartogs' theorem on separate analyticity then implies $f$ is jointly holomorphic on $D$.

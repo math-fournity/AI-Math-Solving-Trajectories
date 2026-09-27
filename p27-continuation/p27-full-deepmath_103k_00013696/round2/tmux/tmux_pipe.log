@@ -1,0 +1,21 @@
+Looking at this problem, I need to determine whether the ratio of trees of order $2n$ with a perfect matching to all trees of order $2n$ tends to 0.
+
+Let me work through this using the labeled tree counting approach (which gives a clean, elementary proof), and then verify the unlabeled case via generating function analysis.
+
+**Key idea (labeled case):** Use a contraction argument. Given a labeled tree $T$ on $[2n]$ with a perfect matching $M$, contract the $n$ matching edges to get a tree on $n$ super-vertices. This gives an exact count of (tree, PM) pairs, which upper-bounds the number of trees with a PM.
+
+Let me write the complete proof to proof.md.The proof has been written to `proof.md`. Here's a summary of the approach:
+
+**Answer: Yes, the ratio converges to zero.**
+
+**Labeled case (elementary):** Using a contraction argument — contract the $n$ edges of a perfect matching in a labeled tree on $[2n]$ to get a tree on $n$ super-vertices. This gives an exact count of (tree, PM) pairs:
+
+$$N_{\text{pairs}} = \frac{(2n)!}{2^n \, n!} \cdot n^{n-2} \cdot 4^{n-1}$$
+
+Since each tree with a PM contributes ≥1 pair, the ratio is bounded by:
+
+$$R_n \leq \frac{(2n)!}{2^n \, n! \, n^n} \sim \sqrt{2}\left(\frac{2}{e}\right)^n \to 0$$
+
+because $2/e \approx 0.736 < 1$.
+
+**Unlabeled case (generating functions):** The GF for rooted trees with a PM satisfies $P(x) = x^2 \exp\!\left(2\sum_{k\geq 1} \frac{P(x^k)}{k}\right)$, while rooted trees satisfy $T(x) = x \exp\!\left(\sum_{k\geq 1} \frac{T(x^k)}{k}\right)$. By induction on coefficients, $P(x) < T(x)^2 < T(x)$ for $x \in (0, \rho_T)$. This implies $P$ is analytic at $\rho_T$ (the singularity of $T$), since the key inequality $g(\rho_T) - 2f(\rho_T) < 0 < 1 - \ln 2$ holds. Therefore $\rho_P > \rho_T$, i.e., $\alpha_P < \alpha_T$, and the ratio decays as $(\alpha_P/\alpha_T)^{2n} \to 0$.

@@ -1,0 +1,25 @@
+Looking at this problem, I need to determine whether "every localization at a prime is a finitely generated $k$-algebra" implies "$R$ is a finitely generated $k$-algebra."
+
+Let me work through the key ideas and then write the proof.
+
+**Key reasoning:**
+
+The hypothesis is very strong — by Zariski's lemma, for every prime $\mathfrak{p}$, the residue field $\kappa(\mathfrak{p})$ must be a finite extension of $k$. But this doesn't prevent $R$ from having infinitely many primes, which is the source of the counterexample.
+
+**Counterexample:** $R = \{f: \mathbb{N} \to k : f \text{ is eventually constant}\}$ with pointwise operations, a $k$-algebra via constant functions.
+
+- The only primes are $\mathfrak{m}_n = \{f: f(n)=0\}$ and $\mathfrak{m}_\infty = \{f: f \text{ eventually } 0\}$, all maximal (proved using orthogonal idempotents $e_n$ with $e_n(1-e_n)=0$).
+- Every localization $R_{\mathfrak{m}_n} \cong k$ and $R_{\mathfrak{m}_\infty} \cong k$, both finitely generated.
+- But $R$ is not finitely generated: any finitely generated subalgebra consists of functions constant for $n \geq N$, while $e_{N+1} \in R$ is not.
+
+Let me write the full proof to proof.md.The answer is **No**. The proof has been written to `proof.md`.
+
+**Summary of the counterexample:** For any field $k$, the ring $R = \{f: \mathbb{N} \to k : f \text{ is eventually constant}\}$ is a $k$-algebra where:
+
+1. **Every localization at a prime is $k$** (hence finitely generated): The only primes are $\mathfrak{m}_n = \{f: f(n)=0\}$ and $\mathfrak{m}_\infty = \{f: f \text{ eventually } 0\}$, all maximal. At each $\mathfrak{m}_n$, the idempotent $e_n$ becomes a unit forcing $e_n=1$ and all other $e_m=0$, giving $R_{\mathfrak{m}_n} \cong k$. At $\mathfrak{m}_\infty$, every $1-e_n$ is a unit forcing all $e_n=0$, giving $R_{\mathfrak{m}_\infty} \cong k$.
+
+2. **$R$ is not finitely generated**: Any finitely generated subalgebra $k[a_1,\ldots,a_m]$ consists of functions constant beyond some threshold $N$, but $e_{N+1} \in R$ is not constant beyond $N$.
+
+The key insight is that having infinitely many orthogonal idempotents creates infinitely many maximal ideals, each with trivial localization, while the global ring remains too large to be finitely generated.
+
+$$\boxed{No}$$

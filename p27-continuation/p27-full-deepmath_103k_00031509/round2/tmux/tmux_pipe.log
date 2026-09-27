@@ -1,0 +1,18 @@
+Looking at the handoff document, I have a clear picture of the problem and the progress so far. The key insight I need to complete is the lower bound proof for the case where some $g_i \geq 2$. Let me work through this.
+
+The critical realization: since $g_i | a_i$, we have $a_i \geq g_i$, so $A - a_i \geq \sum_{j \neq i} g_j$. This gives $f_i \geq \frac{\sum_{j \neq i} g_j}{g_i}$, and then AM-GM on each factor cleanly gives the bound $(n-1)^n$.
+
+Let me write the complete proof.The proof is complete and written to `proof.md`.
+
+## Summary
+
+**Answer:** $\boxed{(n-1)^n}$, achieved when $a_1 = a_2 = \cdots = a_n = 1$.
+
+**Key insight that broke the impasse:** The handoff was stuck trying to prove the lower bound when some $g_i \geq 2$. The crucial observation is:
+
+1. Since $g_i \mid a_i$, we have $a_i \geq g_i$, so $A - a_i = \sum_{j \neq i} a_j \geq \sum_{j \neq i} g_j$.
+2. This gives $f_i \geq \frac{\sum_{j \neq i} g_j}{g_i}$.
+3. Then AM-GM on each factor: $\sum_{j \neq i} g_j \geq (n-1)\left(\prod_{j \neq i} g_j\right)^{1/(n-1)}$.
+4. Taking the product over all $i$, the numerator telescopes beautifully — each $g_k$ appears exactly $n-1$ times with exponent $\frac{1}{n-1}$, giving total exponent $1$ — so $\prod_i \left(\prod_{j \neq i} g_j\right)^{1/(n-1)} = \prod_k g_k$, which cancels the denominator exactly, yielding $(n-1)^n$.
+
+This handles **all** cases (all $g_i = 1$ and some $g_i \geq 2$) uniformly, without needing the case analysis that the handoff was attempting. Equality requires all $g_i$ equal and $a_i = g_i$, which with pairwise coprimality forces $g_i = 1$.

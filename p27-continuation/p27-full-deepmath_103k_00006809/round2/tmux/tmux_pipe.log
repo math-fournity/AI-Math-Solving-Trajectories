@@ -1,0 +1,21 @@
+Looking at this problem, I need to determine whether $a(IA_\mathfrak{p}) \subset A_\mathfrak{p}$ implies $a \in I^{-1}A_\mathfrak{p}$, given $II^{-1} \subseteq \mathfrak{p}$.
+
+Let me work through the key analysis and then write the proof.## Answer: No
+
+The implication does **not** hold in general. Here is the counterexample:
+
+**Setup:** $A = k[x,y]$, $\mathfrak{p} = (x,y)$, and $I = \frac{1}{x}(x,y) = \left(1, \frac{y}{x}\right)$.
+
+**Key computations:**
+- $I^{-1} = (x)$, since $a \in I^{-1}$ requires $a \in A$ and $x \mid ay$, forcing $x \mid a$ (as $\gcd(x,y)=1$).
+- $II^{-1} = (1, y/x)\cdot(x) = (x,y) = \mathfrak{p} \subseteq \mathfrak{p}$. ✓
+- Since $1 \in I$, we have $IA_\mathfrak{p} = A_\mathfrak{p}$, so $(IA_\mathfrak{p})^{-1} = A_\mathfrak{p}$.
+- But $I^{-1}A_\mathfrak{p} = xA_\mathfrak{p} \subsetneq A_\mathfrak{p}$ (since $x \in \mathfrak{p}$ is not a unit in $A_\mathfrak{p}$).
+
+**Counterexample element:** $a = y$. Then $a(IA_\mathfrak{p}) = yA_\mathfrak{p} \subsetneq A_\mathfrak{p}$, but $a = y \notin xA_\mathfrak{p} = I^{-1}A_\mathfrak{p}$ (since $y/x \notin A_\mathfrak{p}$).
+
+**Why it works:** The condition $II^{-1} \subseteq \mathfrak{p}$ with $\mathfrak{p}$ prime forces either $I \subseteq \mathfrak{p}$ or $I^{-1} \subseteq \mathfrak{p}$. When $I^{-1} \subseteq \mathfrak{p}$ but $I \not\subseteq \mathfrak{p}$ (possible for non-integral fractional ideals), $IA_\mathfrak{p} = A_\mathfrak{p}$ collapses the localized ideal to the whole ring, making $(IA_\mathfrak{p})^{-1} = A_\mathfrak{p}$ strictly larger than $I^{-1}A_\mathfrak{p} \subseteq \mathfrak{p}A_\mathfrak{p}$.
+
+$$\boxed{No}$$
+
+The full proof is written to `proof.md`.

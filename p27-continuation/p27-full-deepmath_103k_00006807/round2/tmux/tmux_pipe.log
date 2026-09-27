@@ -1,0 +1,11 @@
+The complete proof has been written to `proof.md`.
+
+**Summary of the argument:**
+
+1. **Key Lemma**: A connected subgroup $H$ of $(\mathbb{R}^2, +)$ must be a real vector subspace — i.e. $\{0\}$, a line through the origin, or all of $\mathbb{R}^2$. The proof uses the lattice $\Lambda = \mathbb{Z}u + \mathbb{Z}v \subseteq H$ and the quotient $H/\Lambda \subseteq \mathbb{T}^2$; the only case yielding a connected preimage is $H/\Lambda = \mathbb{T}^2$, i.e. $H = \mathbb{R}^2$.
+
+2. **Application**: Any connected subfield $K \subseteq \mathbb{C}$ is a connected additive subgroup, so by the Lemma it's $\{0\}$, a line, or $\mathbb{C}$. The line case forces $K = \mathbb{R}$ (multiplicative closure). The $\mathbb{R}^2$ case is $K = \mathbb{C}$.
+
+3. **Direct check for $K \subseteq \mathbb{R}$**: A connected subfield of $\mathbb{R}$ is an interval containing $\mathbb{Q}$, hence must be $\mathbb{R}$.
+
+**Answer**: $\boxed{\mathbb{C}}$

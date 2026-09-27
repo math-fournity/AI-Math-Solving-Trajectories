@@ -1,0 +1,1060 @@
+{
+  "schema_version": "ATIF-v1.7",
+  "session_id": "imminent-brick",
+  "agent": {
+    "name": "devin",
+    "version": "3000.4.25",
+    "model_name": "GLM-5.2 High",
+    "tool_definitions": [
+      {
+        "type": "function",
+        "function": {
+          "name": "web_search",
+          "description": "Search the web for information using a search query. Returns relevant web page titles, URLs, and summaries. Use this when you need to find information online.\n\nYou must not include extraneous information in web searches. For example, to find latest python version, do *NOT* search \"latest Python version 2026 3.11 3.12 3.13\". The \"2026 3.11 3.12 3.13\" is unnecessary. Keep the search string simple and focused, e.g. \"latest Python version\".",
+          "parameters": {
+            "required": [
+              "query"
+            ],
+            "properties": {
+              "query": {
+                "description": "The search query to find relevant web pages.",
+                "type": "string"
+              },
+              "num_results": {
+                "description": "Maximum number of results to return. Defaults to 5.",
+                "type": "integer",
+                "default": null
+              },
+              "domain": {
+                "description": "Optional domain to restrict search results to (e.g. \"docs.rs\").",
+                "type": "string"
+              }
+            },
+            "additionalProperties": false,
+            "type": "object"
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "webfetch",
+          "description": "Fetches a web page and returns its content as readable text.",
+          "parameters": {
+            "required": [
+              "url"
+            ],
+            "properties": {
+              "url": {
+                "description": "The URL to fetch content from.",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "run_subagent",
+          "description": "Launch an independent subagent to handle a task autonomously.\n\nSubagents (also referred to as just \"agents\") are good at handling self-contained, multi-step tasks, especially if they can be parallelized:\n- Parallel execution: Splitting subtasks across subagents allows you to complete your work more quickly than doing these tasks on your own. In order to benefit from this, it's important that you actually launch the background subagents in parallel rather than running them one after the other. Note that subagents' work should be self-contained when runnign in parallel so they don't interfere with each other (e.g. we don't want parallel subagents writing to the same files).\n- Self-contained, multi-step work: For tasks that likely require several steps to complete, where the steps to find the final answer aren't very relevant. For example, broad or uncertain searches/explorations are a good use-case.\n         - Keeping your context clean: For tasks that seem mostly irrelevant to the things you've been working on, subagents can let you answer questions while staying focused. For example, if a user asks a question about Devin CLI documentation or configuraiton while you're refactoring on a codebase, you can use a subagent to investigate this tangential question. Use discretion—sometimes the user does want you to switch tasks, especially if you've already worked on several unrelated things already, or if it seems like your previous tasks are complete.\n\n\n         Skip subagents when simpler tools suffice:\n- If you already know the file path, read it directly\n- Use your grep and glob tools rather than subagents when you think they will meet your needs quickly without many attempts\n- Use your edit or read tools directly if only a few files are involved\n\n- Don't use a subagent to do singular tasks like running a command\n\nWriting effective prompts:\n- Subagents are stateless; they cannot ask clarifying questions, and they can't see any of your context. Front-load all context they might neeed: relevant file paths, function/class names, what you already know, and exactly what you need back.\n- State whether the subagent should make changes or only investigate. It has no visibility into the user's original request. When asking open-ended questions, explicitly state how thorough of an answer you want.\nUsage notes:\n- The user never sees subagent output directly, so you'll need to distill subagents' answers into your own response if you want to .\n- You can generally trust subagent results. Avoid re-doing their work unless something looks wrong.\n\n- Set is_background=true to run a background subagent without blocking. You will be notified automatically when it finishes with a <subagent_completion_notification> message. You can check on the status of a background subagent using your read_subagent tool. To wait for a subagent to complete to see its response, call read_subagent with block=true. Background agents are nice for parallelism and work that might take unexpectedly long, in which case you'd want to do other work while waiting.\n        - Set is_background=false to run a foreground subagent when you need the answer before continuing. You can't do any other work while a foreground subagent is running, and at most one foreground agent can run at once. Despite these restrictions, foreground users have a slightly nicer UX and are less frequently blocked by permission issues. So use is_background=false when you don't need paralellism and would have otherwise spawned a background agent then immediately called read_subagent with block=true.\n        - If you want to run both background subagents and a foreground subagent, run the background subagents first and then run the foreground subagent. Don't try to launch multiple foreground subagents in parallel; instead use background subagents or run the foreground subagents sequentially so you can see each subagent's output before launching the next one.",
+          "parameters": {
+            "required": [
+              "title",
+              "task",
+              "profile"
+            ],
+            "properties": {
+              "title": {
+                "description": "A short, human-readable title for this subagent.",
+                "type": "string"
+              },
+              "task": {
+                "description": "The task or prompt to give the subagent. Be specific and detailed.",
+                "type": "string"
+              },
+              "profile": {
+                "description": "The profile to use for this subagent (e.g. \"subagent_explore\", \"subagent_general\").",
+                "type": "string"
+              },
+              "is_background": {
+                "description": "If true, the subagent runs in the background and returns its ID\nimmediately. You will be automatically woken up with the result\nwhen it completes. You can check progress with read_subagent if\nneeded, but do not poll in a loop — just continue with other work\nor end your turn.",
+                "type": "boolean",
+                "default": false
+              },
+              "resume": {
+                "description": "If set to an agent id (which you can get from the response of a previous\nrun_subagent invocation), your prompt will be sent to that agent, so it can\nrespond using its existing execution transcript as context.",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "mcp_read_resource",
+          "description": "Read a resource from an MCP server. Resources can be files, database records, API responses, or any data exposed by the MCP server. Returns the resource content as text or binary data.",
+          "parameters": {
+            "required": [
+              "server_name",
+              "resource_uri"
+            ],
+            "properties": {
+              "server_name": {
+                "description": "Name of the MCP server (e.g., \"linear\", \"github\").",
+                "type": "string"
+              },
+              "resource_uri": {
+                "description": "Resource URI to read (e.g., \"<file:///path/to/file>\", \"<linear://issue/123>\").",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "close_browser_preview",
+          "description": "Closes a running browser preview by its ID.\n\n- Takes a preview_id parameter, as returned by `browser_preview`\n- The preview URL stops working; the web server it points at is untouched\n- Previews are closed automatically when the session ends, so this is only\n  needed to close one early\n",
+          "parameters": {
+            "required": [
+              "preview_id"
+            ],
+            "properties": {
+              "preview_id": {
+                "description": "The ID of the browser preview to close.",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "kill_shell",
+          "description": "Kills a running background shell by its ID.\n\n- Takes a shell_id parameter identifying the shell to kill\n- Returns a success or failure status\n- Use this tool when you need to terminate a long-running shell\n",
+          "parameters": {
+            "required": [
+              "shell_id"
+            ],
+            "properties": {
+              "shell_id": {
+                "description": "The ID of the shell to kill.",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "read",
+          "description": "Reads a file from the filesystem. The file_path parameter must be an absolute path, not a relative path. By default, it reads up to 20000 characters starting from the beginning of the file. You can optionally specify a line offset and limit (especially handy for long files), but it's recommended to read the whole file by not providing these parameters. Any lines longer than 2000 characters will be truncated.",
+          "parameters": {
+            "required": [
+              "file_path"
+            ],
+            "properties": {
+              "file_path": {
+                "description": "The absolute path to the file to read.",
+                "type": "string"
+              },
+              "offset": {
+                "description": "Optional line number to start reading from (1-based).",
+                "type": "integer"
+              },
+              "limit": {
+                "description": "Optional number of lines to read.",
+                "type": "integer"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "mcp_list_tools",
+          "description": "List available tools and resources from MCP servers. Use this to discover what capabilities are available before calling mcp_call_tool.",
+          "parameters": {
+            "properties": {
+              "server_name": {
+                "description": "Name of the MCP server to list tools from (e.g., \"linear\", \"github\"). If not provided, lists tools from all configured servers.",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "get_output",
+          "description": "Reads the output from a background shell process.\n\nUsage notes:\n- The shell_id argument is required (use the ID returned by the exec tool)\n- You can specify an optional timeout in milliseconds (up to 280000ms). Timeouts below 10000ms (10s) are raised to 10s; the default is 10s.\n- IMPORTANT: timeout is the MAX wait — this returns immediately when the process exits. If you want to wait for the command to finish, set a long timeout. If you want to quickly check status while working on other tasks in parallel, set a short timeout. Either way, do not repeatedly poll.\n- The process continues running after reading output\n- This will return the output of the most recently executed command in the shell if there is no current command running command\n",
+          "parameters": {
+            "required": [
+              "shell_id"
+            ],
+            "properties": {
+              "shell_id": {
+                "description": "The ID of the shell to read output from.",
+                "type": "string"
+              },
+              "timeout": {
+                "description": "Optional timeout in milliseconds.",
+                "type": "integer"
+              },
+              "incremental": {
+                "description": "If true (default), returns the changes since your last read. For interactive shells whose\nscreen redraws in place (progress bars, block redraws), this is a unified diff so in-place\nline changes are shown as `-`old / `+`new; for plain append-only output it is the new lines.\nIf false, returns the full output buffer.",
+                "type": "boolean"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "ask_user_question",
+          "description": "Present multiple-choice questions to the user and collect their answers.\n\nUse this tool when you need the user to make a decision between several options, such as choosing\nan implementation approach, selecting a library, or confirming a design choice.\n\nKey constraints:\n- 1-4 questions per call\n- 2-4 options per question (an \"Other\" free-text option is always added automatically)\n- Keep headers short (e.g. \"Auth method\", \"Library\"); headers over 16 characters are truncated\n- Option labels should be 1-5 words\n\nThe user can:\n- Select from the predefined options\n- Type a custom answer via the \"Other\" option\n- Skip or decline the question to ask for clarification\n\nIf the user submits answers, you will receive a key-value mapping of question text to their selections.\nQuestions the user skipped are marked with \"skipped\": true — treat a skipped question as the user\ndeclining to choose, not as an error, and proceed with your best judgment.\nIf the user chooses to chat instead, you will receive a rejection with any partial answers they provided.",
+          "parameters": {
+            "additionalProperties": false,
+            "required": [
+              "questions"
+            ],
+            "type": "object",
+            "properties": {
+              "questions": {
+                "description": "Array of 1-4 question objects to present to the user.",
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "question": {
+                      "description": "The full question text to display to the user.",
+                      "type": "string"
+                    },
+                    "header": {
+                      "description": "Short label displayed as a chip/tag, e.g. \"Auth method\", \"Library\".\nLabels longer than 16 characters are truncated with an ellipsis (\"…\") for display.",
+                      "type": "string"
+                    },
+                    "options": {
+                      "description": "The choices presented to the user (2-4 options). An \"Other\" free-text option is always added automatically.",
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "label": {
+                            "description": "Display text the user sees (1-5 words).",
+                            "type": "string"
+                          },
+                          "description": {
+                            "description": "Explanation of what this option means or its trade-offs.",
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "label",
+                          "description"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "multi_select": {
+                      "description": "If true, the user can select multiple options; if false, single-select only.",
+                      "type": "boolean",
+                      "default": false
+                    }
+                  },
+                  "required": [
+                    "question",
+                    "header",
+                    "options"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "answers": {
+                "description": "User's answers, keyed by question text. Populated by the UI when the user responds.\nDo not set this yourself; it will be filled in automatically.",
+                "type": "object",
+                "additionalProperties": {
+                  "description": "Represents a single answer from the user for one question.",
+                  "type": "object",
+                  "properties": {
+                    "selected": {
+                      "description": "The selected option label(s). For single-select, this will have one element.\nFor multi-select, it may have multiple. If \"Other\" was chosen, it will contain \"Other\".",
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "custom_text": {
+                      "description": "Custom text provided by the user. Set when the user selects \"Other\".",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "selected"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "write_to_process",
+          "description": "Writes input to an interactive process running in a shell with support for both text and special characters.\n\nIMPORTANT: This command will NOT work if there is no command running in the shell. If you want to execute a command in the shell use the exec tool.\n\nProvide exactly ONE of text_input or bytes_input (never both). To answer a prompt that needs an Enter keypress (e.g. a [y/n] prompt), set bytes_input to y<CR> (the y character followed by Enter).\n\nInput options:\n- text_input: Literal text content (no special character interpretation)\n- bytes_input: Special characters using angle bracket notation (e.g., <ESC>, <CR>, <UP>, <C-c>)\n\nSpecial character notation:\n- <ESC> = Escape character\n- <CR> = Carriage return (Enter)\n- <LF> = Line feed (newline)\n- <BS> = Backspace\n- <UP>, <DOWN>, <LEFT>, <RIGHT> = Arrow keys\n- <C-c>, <C-d>, <C-z> = Ctrl+key combinations\n",
+          "parameters": {
+            "required": [
+              "shell_id"
+            ],
+            "properties": {
+              "shell_id": {
+                "description": "The ID of the shell to write to.",
+                "type": "string"
+              },
+              "text_input": {
+                "description": "Text content to write to the shell (interpreted as literal text).",
+                "type": "string"
+              },
+              "bytes_input": {
+                "description": "Special characters/bytes to write to the shell (interpreted with angle bracket notation).",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "edit",
+          "description": "Performs exact string replacements in files.\n\nUsage:\n- You must use your `read` tool at least once in the conversation before editing. This tool will error if you attempt an edit without reading the file.\n- When editing text from read tool output, ensure you preserve the exact indentation (tabs/spaces) as it appears AFTER the line number prefix. The line number prefix format is: spaces + line number + tab. Everything after that tab is the actual file content to match. Never include any part of the line number prefix in the old_string or new_string.\n- ALWAYS prefer editing existing files to creating new ones.\n- Only use emojis if the user explicitly requests it. Avoid adding emojis to files unless asked.\n- The edit will FAIL if `old_string` is not unique in the file. Either provide a larger string with more surrounding context to make it unique or use `replace_all` to change every instance of `old_string`.\n- Use `replace_all` for replacing and renaming strings across the file. This parameter is useful if you want to rename a variable for instance.",
+          "parameters": {
+            "required": [
+              "file_path",
+              "old_string",
+              "new_string"
+            ],
+            "properties": {
+              "file_path": {
+                "description": "The absolute path to the file to modify",
+                "type": "string"
+              },
+              "old_string": {
+                "description": "The text to replace. Always provide `old_string` before `new_string` so that streaming displays can show the diff progressively.",
+                "type": "string"
+              },
+              "new_string": {
+                "description": "The text to replace it with (must be different from `old_string`)",
+                "type": "string"
+              },
+              "replace_all": {
+                "description": "Replace all occurrences of `old_string` (default false)",
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "request_scope",
+          "description": "Request read or write access to a directory. Use this tool when you encounter a permission error due to sandboxing and need access to a path outside your current allowed directories. The user will be prompted to approve or deny the request. This tool is a no-op if the scope is already granted.",
+          "parameters": {
+            "required": [
+              "scope",
+              "path"
+            ],
+            "properties": {
+              "scope": {
+                "description": "The type of access to request: \"read\" or \"write\".",
+                "type": "string"
+              },
+              "path": {
+                "description": "The absolute path to the directory to request access to.",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "apply_patch",
+          "description": "Use the apply_patch tool to edit files. This is a FREEFORM tool — emit the patch directly, do not wrap it in JSON. You must include a header with your intended action (Add/Update/Delete). You must prefix new lines with `+` even when creating a new file. To delete a file, use a `*** Delete File: <path>` header with no body. To rename or move a file, add a `*** Move to: <new path>` line immediately after its `*** Update File: <path>` header (you may also include edits in the same hunk). You MUST always use the absolute path when specifying the target file.",
+          "parameters": {}
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "update_plan",
+          "description": "Updates the task plan. Provide an optional explanation and a list of plan items, each with a non-empty step description and status. At most one step can be in_progress at a time.",
+          "parameters": {
+            "additionalProperties": false,
+            "required": [
+              "plan"
+            ],
+            "type": "object",
+            "properties": {
+              "explanation": {
+                "description": "Optional explanation for this plan update.",
+                "type": "string"
+              },
+              "plan": {
+                "description": "The plan items with step descriptions and statuses.",
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "step": {
+                      "description": "A brief description of the plan step.",
+                      "type": "string"
+                    },
+                    "status": {
+                      "type": "string",
+                      "enum": [
+                        "pending",
+                        "in_progress",
+                        "completed"
+                      ],
+                      "description": "Current status: pending, in_progress, or completed."
+                    }
+                  },
+                  "required": [
+                    "step",
+                    "status"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "grep",
+          "description": "A powerful search tool built on ripgrep.\n\nUsage:\n- Always prefer this tool over invoking `grep` or `rg` as a shell command. It has been optimized for correct permissions and access.\n- The pattern is treated as a regular expression.\n- Filter files with the glob_pattern parameter in glob format (e.g., \"*.rs\", \"src/**/*.py\").\n- Use output_mode to control results: 'content' for matching lines, 'files_with_matches' for file paths only, 'count' for match counts. Set case_insensitive for case-insensitive matching and context_lines to show lines around each match.\n- If the result is truncated, narrow your search with a more specific pattern or more filters.\n- Files larger than 4 MB are skipped.",
+          "parameters": {
+            "additionalProperties": false,
+            "required": [
+              "pattern"
+            ],
+            "type": "object",
+            "properties": {
+              "pattern": {
+                "description": "The regular expression pattern to search for, passed to ripgrep under the hood",
+                "type": "string"
+              },
+              "path": {
+                "description": "The directory or file to search in. Defaults to current directory.",
+                "type": "string",
+                "default": "."
+              },
+              "glob_pattern": {
+                "description": "Glob pattern to filter files (e.g., '*.rs' searches .rs files in current dir but not subdirs, 'src/**/*.py' searches .py files in src/ and its subdirs). Defaults to searching all files.",
+                "type": "string"
+              },
+              "output_mode": {
+                "type": "string",
+                "enum": [
+                  "content",
+                  "files_with_matches",
+                  "count"
+                ],
+                "description": "How to format the output.",
+                "default": "content"
+              },
+              "case_insensitive": {
+                "description": "Perform case-insensitive search. Defaults to false.",
+                "type": "boolean",
+                "default": false
+              },
+              "max_results": {
+                "description": "Maximum number of matches to return. Defaults to 100, max 20,000. Only applicable for \"content\" output mode.",
+                "type": "integer"
+              },
+              "context_lines": {
+                "description": "Number of lines to show before and after each match (context). Defaults to 0.",
+                "type": "integer",
+                "default": 0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "read_subagent",
+          "description": "Reads the response from a background subagent, using the agent_id you got from the run_subagent tool or a <subagent_completion_notification> message. You use block=true to wait for completion. If you have other work to do, you can do that (you'll be notified whenever a subagent completes). This tool will never interrupt a running subagent.",
+          "parameters": {
+            "required": [
+              "agent_id"
+            ],
+            "properties": {
+              "agent_id": {
+                "description": "The ID of the background subagent to read output from.",
+                "type": "string"
+              },
+              "block": {
+                "description": "If true, block until the subagent finishes or the timeout expires.",
+                "type": "boolean",
+                "default": false
+              },
+              "timeout": {
+                "description": "Maximum number of seconds to wait when blocking. Defaults to 30, capped at 600, unless the tool description documents different limits for a specific subagent type.",
+                "type": "integer"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "mcp_list_servers",
+          "description": "Lists all MCP servers you have access to. Use this first if the user is asking about any third party integrations (e.g. Slack, Linear, etc).",
+          "parameters": {
+            "type": "object",
+            "properties": {},
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "notebook_read",
+          "description": "Read a Jupyter notebook file (.ipynb) and extract all cells with their outputs",
+          "parameters": {
+            "required": [
+              "notebook_path"
+            ],
+            "properties": {
+              "notebook_path": {
+                "description": "The absolute path to the Jupyter notebook file to read (must be absolute, not relative)",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "write",
+          "description": "Write content to a file, creating it if needed and overwriting it if it exists.\n\nUsage:\n- Prefer the edit tool for modifying existing files. Only use this tool to create new files or for complete rewrites.\n- If overwriting an existing file, you SHOULD use the read tool first to read the file's contents.\n- NEVER proactively create documentation files (*.md) or README files unless explicitly requested.\n- Only use emojis if the user explicitly requests it. Avoid writing emojis to files unless asked.",
+          "parameters": {
+            "required": [
+              "file_path",
+              "content"
+            ],
+            "properties": {
+              "file_path": {
+                "description": "The absolute path to the file to write",
+                "type": "string"
+              },
+              "content": {
+                "description": "The content to write to the file",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "notebook_edit",
+          "description": "Edit a cell in a Jupyter notebook file (.ipynb) - replace, insert, or delete cells",
+          "parameters": {
+            "additionalProperties": false,
+            "required": [
+              "notebook_path",
+              "cell_number",
+              "new_source"
+            ],
+            "type": "object",
+            "properties": {
+              "notebook_path": {
+                "description": "The absolute path to the Jupyter notebook file (.ipynb) to edit.",
+                "type": "string"
+              },
+              "cell_number": {
+                "description": "The 0-based index of the cell to edit.",
+                "type": "integer"
+              },
+              "new_source": {
+                "description": "The new source content for the cell.",
+                "type": "string"
+              },
+              "cell_type": {
+                "description": "The type of the cell. If not specified, keeps the current type (for replace) or defaults to code (for insert).",
+                "type": "string",
+                "enum": [
+                  "code",
+                  "markdown"
+                ]
+              },
+              "edit_mode": {
+                "default": "replace",
+                "description": "The edit operation to perform. Defaults to replace.",
+                "type": "string",
+                "enum": [
+                  "replace",
+                  "insert",
+                  "delete"
+                ]
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "exit_plan_mode",
+          "description": "Exit Plan mode and switch to Normal mode to begin implementation.\n\n**ONLY call this tool when ALL of the following are true:**\n1. You have explored the codebase and understood the task\n2. You have asked any necessary clarifying questions using ask_user_question\n3. You have presented your implementation plan in your messages\n\n**Do NOT call this tool:**\n- For research-only tasks that don't require implementation\n- To ask \"Is this plan okay?\" - use ask_user_question for that instead\n\nInclude a concise summary of the plan in the `plan` parameter so the user can review it before approving.\n\nOn success, you will automatically switch to Normal mode and can begin implementation.",
+          "parameters": {
+            "properties": {
+              "plan": {
+                "description": "A concise summary of the implementation plan. This is displayed to the\nuser for approval before switching out of Plan mode.",
+                "type": "string",
+                "default": null
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "skill",
+          "description": "Invoke or discover skills. Modes: 'invoke' (default) activates a skill by name, 'list' discovers skills registered in a project at the given path (scans skill directories like .devin/skills/ at the project root, does not recurse into subdirectories), and 'search' recursively scans for model-invocable skills under a given path and filters them by optional keywords. Skills provide context-specific guidance and may grant tool permissions.",
+          "parameters": {
+            "additionalProperties": false,
+            "properties": {
+              "command": {
+                "description": "The skill operation to perform. Defaults to \"invoke\" if omitted.",
+                "default": "invoke",
+                "type": "string",
+                "enum": [
+                  "invoke",
+                  "list",
+                  "search"
+                ]
+              },
+              "skill": {
+                "description": "The name of the skill to invoke (required for 'invoke' command).\nUse one of the available skills listed in the system prompt.",
+                "type": "string",
+                "default": null
+              },
+              "path": {
+                "description": "Project path to discover skills in (required for 'list' and 'search' commands).\nScans skill directories (e.g. .devin/skills/) at the project root;\n`list` does not recurse into subdirectories, while `search` does.\nRelative paths are resolved against the session's working directory.",
+                "type": "string",
+                "default": null
+              },
+              "keywords": {
+                "description": "List of keywords to search for. Empty or omitted means include all skills.",
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "default": null
+              },
+              "keywords_mode": {
+                "type": "string",
+                "enum": [
+                  "or",
+                  "and"
+                ],
+                "description": "Controls whether all keywords or any keyword need to be present.",
+                "default": "or"
+              }
+            },
+            "type": "object"
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "mcp_call_tool",
+          "description": "Execute a tool on an MCP server. Use this to interact with external services like Linear, GitHub, Slack, databases, and more. The tool result will be returned as structured data.",
+          "parameters": {
+            "required": [
+              "server_name",
+              "tool_name"
+            ],
+            "properties": {
+              "server_name": {
+                "description": "Name of the MCP server to use (e.g., \"linear\", \"github\").",
+                "type": "string"
+              },
+              "tool_name": {
+                "description": "Name of the tool to execute.",
+                "type": "string"
+              },
+              "arguments": {
+                "description": "Input arguments for the tool as a JSON object.",
+                "type": "object",
+                "additionalProperties": true,
+                "default": {},
+                "properties": {}
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "todo_write",
+          "description": "Use this tool to create and manage a structured task list for your current session. It tracks your progress and gives the user visibility into what you are working on.\n\n## When to use\nUse this tool for multi-step tasks (3 or more distinct steps), non-trivial tasks that require planning, or when the user provides multiple tasks or explicitly asks for a todo list. Skip it for trivial, single-step, or purely conversational/informational requests — just do the task directly.\n\n## Task states and management\n- Each task is pending, in_progress, or completed\n- Keep exactly ONE task in_progress at a time; mark it in_progress when starting work on it\n- Mark a task completed IMMEDIATELY after finishing it\n- Only mark a task completed when it is fully done — if you hit errors or blockers, keep it in_progress and add a new task describing what must be resolved\n- Add follow-up tasks discovered during work; remove tasks that are no longer relevant\n- Create specific, actionable items and break complex work into smaller steps\n\n## Example\nFor \"Add a dark mode toggle to settings, then run tests and build\":\n1. Add dark mode toggle component to settings page (in_progress)\n2. Wire up dark mode state management\n3. Update existing components to support theme switching\n4. Run tests and build, fixing any failures",
+          "parameters": {
+            "additionalProperties": false,
+            "required": [
+              "todos"
+            ],
+            "type": "object",
+            "properties": {
+              "todos": {
+                "description": "The updated list of todo items.",
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "content": {
+                      "description": "The task description.",
+                      "type": "string"
+                    },
+                    "status": {
+                      "type": "string",
+                      "enum": [
+                        "pending",
+                        "in_progress",
+                        "completed"
+                      ],
+                      "description": "Current status of the todo item."
+                    }
+                  },
+                  "required": [
+                    "content",
+                    "status"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "exec",
+          "description": "Executes a given shell command in a persistent shell session and waits for output with optional timeout, ensuring proper handling and security measures.\n\nCommands run under bash.\n\nIMPORTANT: This tool is for terminal operations like git, npm, docker, etc. DO NOT use it for file operations (reading, writing, editing, searching, finding files) - use the specialized tools for this instead.\n\nBefore executing the command, please follow these steps:\n\n1. Directory Verification:\n   - If the command will create new directories or files, first use `ls` to verify the parent directory exists and is the correct location\n   - For example, before running \"mkdir foo/bar\", first use `ls foo` to check that \"foo\" exists and is the intended parent directory\n\n2. Command Execution:\n   - Always quote file paths that contain spaces with double quotes (e.g., cd \"path with spaces/file.txt\")\n   - Examples of proper quoting:\n     - cd \"/Users/name/My Documents\" (correct)\n     - cd /Users/name/My Documents (incorrect - will fail)\n     - python \"/path/with spaces/script.py\" (correct)\n     - python /path/with spaces/script.py (incorrect - will fail)\n   - After ensuring proper quoting, execute the command.\n   - Capture the output of the command.\n\nUsage notes:\n  - If the output is too long, it will be truncated before being returned to you.\n  - Commands run in a persistent shell session for each shell_id, preserving state between calls. The working directory persists between commands.\n  - One-shot commands (no `shell_id`) do NOT share state with each other: the working directory does NOT persist between calls. Use the optional `workdir` parameter (an absolute path to an existing directory) to set the working directory for a command, instead of a leading `cd` that the next call would forget. With a `shell_id`, `workdir` changes that session's directory before running the command.\n  - When issuing multiple commands:\n    - If the commands are independent and can run in parallel, make multiple shell tool calls in a single message.\n    - If the commands depend on each other and must run sequentially, chain them in a single call (bash: `cmd1 && cmd2`; PowerShell: `cmd1; if ($?) { cmd2 }`).\n    - In bash, use ';' to run commands sequentially regardless of exit status.\n    - DO NOT use newlines to separate commands (newlines are ok in quoted strings)\n  - Use absolute paths in your commands instead of `cd` if possible. You may use `cd` if the User explicitly requests it.\n  - Passwords cannot be entered into this tool, so `sudo` fails when it needs one. Do NOT retry with a TTY or ask the user to type a password — run without sudo or ask the user to run the command themselves.\n",
+          "parameters": {
+            "required": [
+              "command"
+            ],
+            "properties": {
+              "command": {
+                "description": "The command to execute in the current shell session.\n\nExamples:\n- Bash: \"echo 'Hello World'\", \"ls -la\", \"git status\"\n- PowerShell: \"Write-Output 'Hello World'\", \"Get-ChildItem\"\n\nNote: Do NOT include the shell executable (like \"bash -c\" or \"powershell -Command\") in the command.\nThe command should be the raw shell command as you would type it in the active shell.",
+                "type": "string"
+              },
+              "shell_id": {
+                "description": "Optional shell ID to reuse an existing interactive session. Use shell IDs to maintain multiple shell sessions. When shell ID is provided, writes to that session's stdin. When no shell ID is provided, a new session is created.",
+                "type": "string"
+              },
+              "workdir": {
+                "description": "Optional absolute path to use as the working directory for this command (does not persist between one-shot calls; with a `shell_id` it cds the session).",
+                "type": "string"
+              },
+              "timeout": {
+                "description": "Optional timeout in milliseconds (default: background after 10s idle or 30s total).\nWhen it elapses, a still-running command is backgrounded and its shell_id returned for `get_output`/`kill_shell`. Set to `0` to background immediately.",
+                "type": "integer"
+              },
+              "tty": {
+                "description": "Allocate a PTY-backed interactive session. Default `false`.\n`false` (default): one-shot non-interactive command run through pipes; good for most use cases.\n`true`: persistent interactive session — for TUI programs (vim, tmux, top, REPLs) or state that must persist across calls.",
+                "type": "boolean",
+                "default": false
+              },
+              "env": {
+                "description": "Environment variables for this command's process tree, e.g.\n`{\"API_KEY\": \"abc123\", \"NODE_ENV\": \"development\"}`. These take effect\nonly when a new shell is started, so `env` cannot be combined with\n`shell_id` — omit `shell_id` (the call is rejected otherwise) so the\nvariables are set from the shell's first process onward. They are\nvisible to this command and its child processes only, not to other\nshells or later commands.",
+                "type": "object",
+                "additionalProperties": {
+                  "type": "string"
+                },
+                "properties": {}
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "find_file_by_name",
+          "description": "Fast file name/path pattern matching tool that works with any codebase size using glob patterns. Supports brace expansion (e.g., `**/*.{ts,tsx,js,jsx}`). Matches against file paths, not file contents. Do NOT use this tool for searching for things like function names, variable names, etc. which should be searched against file contents (e.g. using grep).",
+          "parameters": {
+            "required": [
+              "pattern"
+            ],
+            "properties": {
+              "pattern": {
+                "description": "The glob pattern to match files against.\nExamples:\n- `*.py` - matches all Python files in the current directory only (not subdirectories)\n- `**/*.js` - matches all JavaScript files in the current directory and all subdirectories recursively\n- `src/**/*.ts` - matches all TypeScript files within the `src` folder and its subdirectories\n- `test_*.py` - matches Python files starting with `test_` in the current directory (e.g., `test_utils.py`)\n- `**/*.{ts,tsx}` - matches all TypeScript files (both .ts and .tsx) recursively using brace expansion",
+                "type": "string"
+              },
+              "path": {
+                "description": "The directory to search in (defaults to current working directory)",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "browser_preview",
+          "description": "Spin up a browser preview for a running web server.\n\nThis lets the USER interact with the web server as normal, and lets them send\nyou what they see: selecting a DOM element (with its React component and source\nlocation, when resolvable) or the browser console output. Those captures go into\nthe USER's message box for them to send — you will not receive them unless they\ndo, so ask them to share what they see rather than waiting.\n\nUsage notes:\n  - The server must already be running; start it with a background command\n    first (`timeout: 0`) if it isn't.\n  - Returns immediately with a preview ID and URL. The preview stays up for the\n    rest of the session, so the USER can keep using it after you stop.\n  - An attempt is made to open the URL in the USER's browser; the URL is always\n    printed in case that fails (e.g. over SSH or in a container).\n  - Calling this again for the same URL returns the existing preview.\n  - Use `close_browser_preview` when the preview is no longer needed, e.g.\n    before shutting down the server it points at.\n",
+          "parameters": {
+            "required": [
+              "url",
+              "name"
+            ],
+            "properties": {
+              "url": {
+                "description": "The URL of the target web server to provide a browser preview for. This\nshould contain the scheme (e.g. http:// or https://), domain (e.g.\nlocalhost or 127.0.0.1), and port (e.g. :8080) but no path.",
+                "type": "string"
+              },
+              "name": {
+                "description": "A short 3-5 word name for the target web server. Should be title-cased\ne.g. 'Personal Website'. Format as a simple string, not as markdown; and\nplease output the title directly, do not prefix it with 'Title:' or\nanything similar.",
+                "type": "string"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "shell_command",
+          "description": "Runs a shell command and returns its output.\n- Use absolute paths in your commands instead of `cd`. Do not use `cd` unless absolutely necessary.",
+          "parameters": {
+            "required": [
+              "command"
+            ],
+            "properties": {
+              "command": {
+                "description": "The shell script to execute.",
+                "type": "string"
+              },
+              "timeout_ms": {
+                "description": "The timeout for the command in milliseconds.",
+                "type": "integer"
+              }
+            },
+            "type": "object",
+            "additionalProperties": false
+          }
+        }
+      }
+    ],
+    "extra": {
+      "backend": "Windsurf",
+      "permission_mode": "Bypass"
+    }
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "timestamp": "2026-08-21T12:30:40.927799+00:00",
+      "source": "system",
+      "message": "You are Devin, an interactive command line agent from Cognition.\n\nYour job is to use these instructions and the tools available to you to help the user. It is important that you do so earnestly and helpfully, as you are very important to the success of Cognition. Best of luck! We love you. <3\n\nIf the user asks for help, you can check your documentation by invoking the Devin skill (if available). Otherwise, this information may be helpful:\n\n- /help: list commands\n- /bug: report a bug to the Devin CLI developers\n- for support, users can visit https://devin.ai/support\n\nWhen creating new configuration for this tool — including skills, rules, MCP server configs, or any project settings:\n\n- Always use the `.devin/` directory for NEW configuration (e.g. `.devin/skills/<name>/SKILL.md`, `.devin/config.json`)\n- For global (user-level) configuration, use `~/.config/devin/`\n- Do NOT place new configuration in `.claude/`, `.cursor/`, or other tool-specific directories unless explicitly asked. These are only read for compatibility, not written to.\n- If the `devin-cli` skill is available, ALWAYS invoke it and explore for detailed documentation on configuration format and options\n\nWhen reading or referencing existing skills, always use the actual source path reported by the skill tool — skills may live in `.devin/`, `.agents/`, or other directories.\n\n\n# Modes\n\nThe active mode is how the user would like you to act.\n\n- Normal (default, if not specified): Full autonomy to use all your tools freely. For example: exploring a codebase, writing or editing code, etc.\n- Plan: Explore the codebase, ask the user clarifying questions, and then create a plan for what you're going to do next. Do NOT make changes until you're out of this mode and the user has approved the plan.\n\nAdhere strictly to the constraints of the active mode to avoid frustrating the user!\n\n\n# Style\n\n## Professional Objectivity\n\nPrioritize technical accuracy and truthfulness over validating the user's beliefs. It is best for the user if you honestly apply the same rigorous standards to all ideas and disagree when necessary, even if it may not be what the user wants to hear. Objective guidance and respectful correction are more valuable than false agreement. Whenever there is uncertainty, it's best to investigate to find the truth first rather than instinctively confirming the user's beliefs.\n\n## Tone\n\n- Be concise, direct, and to the point. When running commands, briefly explain what you're doing and why so the user can follow along.\n- Remember that your output will be displayed in a command line interface. Your responses can use Github-flavored markdown for formatting, and will be rendered in a monospace font using the CommonMark specification.\n- Output text to communicate with the user; all text you output outside of tool use is displayed to the user. Only use tools to complete tasks. Never use tools like exec or code comments as means to communicate with the user during the session.\n- If you cannot or will not help the user with something, please do not say why or what it could lead to, since this comes across as preachy and annoying. Please offer helpful alternatives if possible, and otherwise keep your response to 1-2 sentences.\n- Only use emojis if the user explicitly requests it. Avoid using emojis in all communication unless asked.\n- If the user asks about timelines or estimated completion times for your work, do not give them concrete estimates as you are not able to accurately predict how long it will take you to achieve a task. Instead just say that you will do your best to complete the task as soon as possible.\n- Avoid guessing. You should verify the real state of the world with your tools before answering the user's questions.\n\n<example>\nuser: What command should I run to watch files in the current directory and rebuild?\nassistant: [use the exec tool to run `ls` and list the files in the current directory, then read docs/commands in the relevant file to find out how to watch files]\nassistant: npm run dev\n</example>\n\n<example>\nuser: what files are in the directory src/?\nassistant: [runs ls and sees foo.c, bar.c, baz.c]\nassistant: foo.c, bar.c, baz.c\nuser: which file contains the implementation of Foo?\nassistant: [reads foo.c]\nassistant: src/foo.c contains `struct Foo`, which implements [...]\n</example>\n\n<example>\nuser: can you write tests for this feature\nassistant: [uses grep and glob search tools to find where similar tests are defined, uses concurrent read file tool use blocks in one tool call to read relevant files at the same time, uses edit file tool to write new tests]\n</example>\n\n## Proactiveness\n\nYou are allowed to be proactive, but only when the user asks you to do something. You should strive to strike a balance between:\n\n1. Doing the right thing when asked, including taking actions and follow-up actions\n\n2. Not surprising the user with actions you take without asking\n\nFor example, if the user asks you how to approach something, you should do your best to explore and answer their question first, but not jump to implementation just yet.\n\n## Handling ambiguous requests\n\nWhen a user request is unclear:\n- First attempt to interpret the request using available context\n- Search the codebase for related code, patterns, or documentation that clarifies intent. Also consider searching the web.\n- If still uncertain after investigation, ask a focused clarifying question\n\n## File references\n\nWhen your output text references specific files or code snippets, use the `<ref_file ... />` and `<ref_snippet ... />` self-closing XML tags to create clickable citations. These tags allow the user to view the referenced code directly in the conversation.\n\nCitation format:\n- `<ref_file file=\"/absolute/path/to/file\" />` - Reference an entire file\n- `<ref_snippet file=\"/absolute/path/to/file\" lines=\"start-end\" />` - Reference specific lines in a file\n\n<example>\nuser: Where are errors from the client handled?\nassistant: Clients are marked as failed in the `connectToServer` function. <ref_snippet file=\"/home/ubuntu/repos/project/src/services/process.ts\" lines=\"710-715\" />\n</example>\n\n<example>\nuser: Can you show me the config file?\nassistant: Here's the configuration file: <ref_file file=\"/home/ubuntu/repos/project/config.json\" />\n</example>\n\n## Tool usage policy\n\n- When webfetch returns a redirect, immediately follow it with a new request.\n- When making multiple edits to the same file or related files and you already know what changes are needed, batch them together.\n\nWhen a tool call produces output that is too long, the output will be truncated and the remaining content will be written to a file. You will see a `<truncation_notice>` tag containing the path to the overflow file. You are responsible for reading this file if you need the full output.\n\n\n# Programming\n\nSince you live in the user's terminal, a very common use-case you will get is writing code. Fortunately, you've been extensively trained in software engineering and are well-equipped to help them out!\n\n## Existing Conventions\n\nWhen making changes to files, first understand the codebase's code conventions. Explore dependencies, references, and related system to understand the codebase's patterns and abstractions. Mimic code style, use existing libraries and utilities, and follow existing patterns.\n- NEVER assume that a given library is available, even if it is well known. Whenever you write code that uses a library or framework, first check that this codebase already uses the given library. For example, you might look at neighboring files, or check the package.json (or cargo.toml, and so on depending on the language). If you're adding a dependency prefer running the package manager command (e.g. npm add or cargo add) instead of editing the file.\n- When adding a new dependency, strongly prefer a version published at least 7 days ago. Newly published versions have not been vetted and a non-trivial fraction of supply chain attacks are caught and yanked within the first few days. Avoid floating ranges (`latest`, `*`, unbounded `>=`) that auto-resolve to brand-new releases.\n- When you create a new component, first look at existing components to see how they're written; then consider framework choice, naming conventions, typing, and other conventions.\n- When you edit a piece of code, first look at the code's surrounding context (especially its imports) to understand the code's choice of frameworks and libraries. Then consider how to make the given change in a way that is most idiomatic.\n- Always follow security best practices. Never introduce code that exposes or logs secrets and keys. Never commit secrets or keys to the repository. Never modify repository security policies or compliance controls (e.g. `minimumReleaseAge`, `minimumReleaseAgeExclude`, branch protection configs, `.npmrc` security settings) to work around CI or build failures — escalate to the user instead. Unless otherwise specified (even if the task seems silly), assume the code is for a real production task.\n\n## Code style\n\n- IMPORTANT: Do NOT add or remove comments unless asked! If you find that you've accidentally deleted an existing comment, be sure to put it back.\n- Default to writing compact code – collapse duplicate else branches, avoid unnecessary nesting, and share abstractions.\n- Follow idiomatic conventions for the language you're writing.\n- Avoid excessive & verbose error handling in your code. Errors should be handled, but not every line needs to be try/catched. Think about the right error boundaries (and look at existing code for error handling style)\n\n## Debugging\n\nWhen debugging issues:\n- First reproduce the problem reliably\n- Trace the code path to understand the flow\n- Add targeted logging or print statements to isolate the issue\n- Identify the root cause before attempting fixes\n- Verify the fix addresses the root cause, not just symptoms\n\n## Workflow\n\nYou should generally prefer to implement new features or fix bugs as follows...\n\n1. If the project has test infrastructure, write a failing test to show the bug\n2. Fix the bug\n3. Ensure that the test now passes\n\nWorking this way makes it easier to tell if you've actually fixed the bug, and saves you from needing to verify later.\n\n## Git\n\n### Creating commits\n1. Run in parallel: `git status`, `git diff`, `git log` (to match commit style)\n2. Draft a concise commit message focusing on \"why\" not \"what\". Check for sensitive info.\n3. Stage files and commit with this format:\n```\ngit commit -m \"$(cat <<'EOF'\nCommit message here.\n\nGenerated with [Devin](https://devin.ai)\n\nCo-Authored-By: Devin <158243242+devin-ai-integration[bot]@users.noreply.github.com>\nEOF\n)\"\n```\n4. If pre-commit hooks modify files and the commit fails, stage the modified files and retry the commit.\n\n### Creating pull requests\nUse `gh` for all GitHub operations. Run in parallel: `git status`, `git diff`, `git log`, `git diff main...HEAD`\n\nReview ALL commits (not just latest), then create PR:\n```\ngh pr create --title \"title\" --body \"$(cat <<'EOF'\n## Summary\n<bullet points>\n\n#### Test plan\n<checklist>\n\nGenerated with [Devin](https://devin.ai)\nEOF\n)\"\n```\n\n### Git rules\n- NEVER update git config\n- NEVER use `-i` flags (interactive mode not supported)\n- DO NOT push unless explicitly asked\n- DO NOT commit if no changes exist\n\n\n# Task Management\n\nYou have access to the todo_write tool to help you manage and plan tasks. Use this tool VERY frequently to ensure that you are tracking your tasks and giving the user visibility into your progress.\nThis tool is also EXTREMELY helpful for planning tasks, and for breaking down larger complex tasks into smaller steps. If you do not use this tool when planning, you may forget to do important tasks - and that is unacceptable.\n\nIt is critical that you mark todos as completed as soon as you are done with a task. Do not batch up multiple tasks before marking them as completed.\n\nExamples:\n\n<example>\nuser: Run the build and fix any type errors\nassistant: I'm going to use the todo_write tool to write the following items to the todo list:\n- Run the build\n- Fix any type errors\n\nI'm now going to run the build using exec.\n\nLooks like I found 10 type errors. I'm going to use the todo_write tool to write 10 items to the todo list.\n\nmarking the first todo as in_progress\n\nLet me start working on the first item...\n\nThe first item has been fixed, let me mark the first todo as completed, and move on to the second item...\n..\n..\n</example>\n\nIn the above example, the assistant completes all the tasks, including the 10 error fixes and running the build and fixing all errors.\n\n<example>\nuser: Help me write a new feature that allows users to track their usage metrics and export them to various formats\nassistant: I'll help you implement a usage metrics tracking and export feature. Let me first use the todo_write tool to plan this task.\nAdding the following todos to the todo list:\n1. Research existing metrics tracking in the codebase\n2. Design the metrics collection system\n3. Implement core metrics tracking functionality\n4. Create export functionality for different formats\n\nLet me start by researching the existing codebase to understand what metrics we might already be tracking and how we can build on that.\n\nI'm going to search for any existing metrics or telemetry code in the project.\n\nI've found some existing telemetry code. Let me mark the first todo as in_progress and start designing our metrics tracking system based on what I've learned...\n\n[Assistant continues implementing the feature step by step, marking todos as in_progress and completed as they go]\n</example>\n\nUsers may configure 'hooks', shell commands that execute in response to events like tool calls, in settings. Treat feedback from hooks, including <user-prompt-submit-hook>, as coming from the user. If you get blocked by a hook, determine if you can adjust your actions in response to the blocked message. If not, ask the user to check their hooks configuration.\n\n\n## Completing Tasks\n\nThe user will primarily request you perform software engineering tasks. This includes solving bugs, adding new functionality, refactoring code, explaining code, and more. For these tasks the following steps are recommended:\n- Use the todo_write tool to plan the task if required\n- Use the available search tools to understand the codebase and the user's query. You are encouraged to use the search tools extensively both in parallel and sequentially.\n- Before making changes, thoroughly explore the codebase to understand the architecture, patterns, and related systems. Read relevant files, trace dependencies, and understand how components interact.\n- Implement the solution using all tools available to you\n\n## Verification\n\nBefore considering a task complete, verify your work. Use judgment based on what you changed - optimize for fast iteration:\n\n- Check for project-specific verification instructions in project rules files (`AGENTS.md`, or similar)\n- Run relevant verification steps based on the scope of changes (lint, typecheck, build, tests)\n- For isolated functionality, consider a temporary test file to verify behavior, then delete it\n- Self-critique: review changes for edge cases and refine as needed\n- If you cannot find verification commands, ask the user and suggest saving them to a project config file\n\n## Saving learned information\n\nIf you discover useful project information (build commands, test commands, verification steps, user preferences, ...) that isn't already documented:\n- If a rules file exists (`AGENTS.md`, etc.), append to it\n- Otherwise, create `AGENTS.md` in the current directory with the learned information\n\n## Error recovery\n\nWhen encountering errors (failed commands, build failures, test failures):\n- Keep trying different approaches to resolve the issue\n- Search for similar issues in the codebase or documentation\n- Only ask the user for help as a last resort after exhausting reasonable options\n- Exception: Always ask the user for help with authentication issues, project configuration changes, or permission problems\n\n## System Guidance\nYou may receive `<system_guidance>` messages containing hints, reminders, or contextual guidance before you take action. These notes are injected by the system to help you make better decisions. Pay attention to their content but do not acknowledge or respond to them directly—simply incorporate their guidance into your actions.\n\n\n\n# Tool Tips\n\n## Shell\nNEVER invoke `rg`, `grep`, or `find` as shell commands — use the provided search tools instead. They have been optimized for correct permissions and access.\n\nIf you must call one of these binaries (e.g. to filter command output), prefer ripgrep (`rg`) over `grep` because it's fast and already installed on the user's system.\n\n\n## File-related tools\n- read can read images (PNG, JPG, etc) - the contents are presented visually.\n- For Jupyter notebooks (.ipynb files), use notebook_read instead of read.\n- Speculatively read multiple files as a batch when potentially useful.\n- Do NOT create documentation files to describe your changes or plan. Exception: persistent project info files like `AGENTS.md` are allowed.\n\n\n# Safety\n\nIMPORTANT: Assist with defensive security tasks only. Refuse to create, modify, or improve code that may be used maliciously. Do not assist with credential discovery or harvesting, including bulk crawling for SSH keys, browser cookies, or cryptocurrency wallets. Allow security analysis, detection rules, vulnerability explanations, defensive tools, and security documentation.\n\nIMPORTANT: You must NEVER generate or guess URLs for the user unless you are confident that the URLs are for helping the user with programming. You may use URLs provided by the user in their messages or local files.\n\n## Destructive Operations\n\nNEVER perform irreversible destructive operations without explicit user confirmation for that specific action, even if you have permission to run the command. This includes:\n- Deleting or truncating database tables, dropping schemas, bulk-deleting rows\n- `rm -rf`, deleting directories, or removing files you did not just create\n- Force-pushing, rewriting git history, deleting branches, checking out over uncommitted changes, or bypassing commit hooks\n- Sending emails, making payments, or calling APIs with real-world side effects\n\nIf a destructive step is required, STOP and describe exactly what you are about to run and why, then wait for the user. Do not assume a previous approval extends to a new destructive operation. If you realize you have already caused data loss, say so immediately rather than attempting to hide or quietly repair it.\n\n\n",
+      "extra": {
+        "telemetry": {
+          "source": "sysprompt",
+          "operation": "normal"
+        }
+      }
+    },
+    {
+      "step_id": 2,
+      "timestamp": "2026-08-21T12:30:40.928452+00:00",
+      "source": "system",
+      "message": "Available subagent profiles for the `run_subagent` tool. Choose the most appropriate profile based on whether the task requires write access:\n- `subagent_explore`: Read-only subagent for codebase exploration, research, and search. Use this when you need to find code, understand architecture, trace dependencies, or answer questions about the codebase. This profile has read-only access (grep, glob, read, web_search) and cannot edit files.\n- `subagent_general`: General-purpose subagent with full tool access (read, write, edit, exec). Use this when the subagent needs to make code changes, run commands with side effects, or perform any task that requires write access. In the foreground it can prompt for tool approval; in the background, unapproved tools are auto-denied.",
+      "extra": {
+        "telemetry": {
+          "source": "sysprompt",
+          "operation": "subagent_profiles"
+        }
+      }
+    },
+    {
+      "step_id": 3,
+      "timestamp": "2026-08-21T12:30:40.938355+00:00",
+      "source": "system",
+      "message": "You are powered by GLM-5.2 High.",
+      "extra": {
+        "telemetry": {
+          "source": "system",
+          "operation": "unknown"
+        }
+      }
+    },
+    {
+      "step_id": 4,
+      "timestamp": "2026-08-21T12:30:40.928813+00:00",
+      "source": "system",
+      "message": "<system_info>\nThe following information is automatically generated context about your current environment.\nCurrent workspace directories:\n  /Volumes/data/math-agent-glm5.2-tmux-agents-dir/p27-continuation/p27-full-deepmath_103k_00002692 (cwd)\n\nPlatform: macos\nOS Version: Darwin 25.6.0\nToday's date: Friday, 2026-08-21\n</system_info>",
+      "extra": {
+        "telemetry": {
+          "source": "system",
+          "operation": "unknown"
+        }
+      }
+    },
+    {
+      "step_id": 5,
+      "timestamp": "2026-08-21T12:30:40.929409+00:00",
+      "source": "system",
+      "message": "<rules type=\"always-on\">\n<rule name=\"cognition-trace-ironlaws\" path=\"/Users/user/.devin/rules/cognition-trace-ironlaws.md\">\n# 认知加载与trace.csv维护铁律（§17-21）\n\n## §17 · 认知加载铁律\n\n**硬约束**：接手任何工作时必须按三层架构加载认知，不能跳过直接开干。\n\n**操作**：加载 README.md（分类法索引）→ 判断需要哪种视角 → 加载对应看法文件 → 加载具体文档/代码 → 带着必要认知工作。\n\n**禁止**：不加载 README.md 就直接回答问题 · 只加载 README.md 不加载看法文件 · 假设自己不加载文档就能回答好问题。\n\n**详见**：`read` skill（一句话触发器 → `/Users/user/skills-devin/workflow.md` §2 §4）。\n\n## §18 · 方案先行铁律\n\n**硬约束**：非平凡工作必须先制定方案（`make-plan`），不能\"用户说改什么就直接改\"。\n\n**方案必须**：\n1. 利用 trace.csv 追溯链实现\"完备\"——认知等价于\"整个 repo 所有元素都放入上下文\"\n2. 拆解为自包含工作包——每个工作包 README.md 列出执行 AI 需要的 View（看法文件）和具体文档/代码\n3. 拆解粒度依赖 trace.csv 追溯支持——精确定位每个工作包涉及哪些元素\n\n**判断标准**：单文件单行修改 → 直接执行。涉及多文件/多步骤/需要理解上下文 → 必须方案先行。\n\n**详见**：`make-plan` skill → `/Users/user/skills-devin/workflow.md` §4 §5。\n\n## §19 · 提交前维护 trace.csv 铁律\n\n**硬约束**：每次 git commit 前必须维护 trace.csv 各层级幂等关系。commit 同时包含 repo 变更和 trace.csv 变更。\n\n**幂等关系**：给定任何一个 commit 时间点，trace.csv 的状态精确反映 repo 在那个时间点的所有元素和关系。trace.csv 和 repo 在同一个 commit 中同步演进。\n\n**维护粒度**：各个层级——文件级、函数级（`path::function`）、章节级（`path#section`）。改了某个函数，trace.csv 中这个函数对应的记录也要同步更新。\n\n**禁止**：只提交 repo 变更不提交 trace.csv 变更 · 事后批量补录 trace.csv · 改了函数级代码但 trace.csv 只更新到文件级。\n\n**破坏后果**：幂等关系被破坏 = 下一个工作包的 AI 按 trace.csv 查询得到错误信息 = 认知体系失效。\n\n**详见**：`/Users/user/skills-devin/workflow.md` §3.5 §3.6。\n\n## §20 · AI 双重责任铁律\n\n**硬约束**：在工作包中工作时，对 trace.csv 既是消费者又是生产者。\n\n- **消费**：利用 trace.csv 了解当前工作包涉及哪些元素，这些元素和哪些其他资产有关系，改了什么会影响什么\n- **生产**：在工作包执行过程中，持续更新 trace.csv，记录自己造成的所有新关系和变更关系\n\n**维护目的**：不仅是当前工作包，更是未来的下一个工作包的 AI——下一个 AI 接手时，trace.csv 是它了解 repo 的基础设施。\n\n**禁止**：只消费不生产（利用 trace.csv 了解情况但不更新它）· 只生产不消费（盲目更新 trace.csv 但不利用它指导自己的工作）。\n\n**详见**：`/Users/user/skills-devin/workflow.md` §3.6。\n\n## §21 · 工作包完成时元数据更新铁律\n\n**硬约束**：工作包完成后必须更新看法文件和映射索引（view-index.csv / trace.csv）。不能\"改完代码就结束\"。\n\n**更新内容**：\n1. 更新看法文件中对应条目的描述（讲什么/覆盖问题场景/依赖关系）\n2. 同步 view-index.csv（看法文件↔文档映射）\n3. 同步 trace.csv（全维度追溯关系）\n4. commit 元数据更新\n\n**分层精度**：\n- 改了整个文件 → `query-by-asset <文件路径>` 查哪些看法文件索引了它\n- 只改了某个函数/章节 → `query-prefix <type> <文件路径>` 查该文件下所有子资产的关系\n\n**禁止**：改完代码不更新元数据就结束 session · 更新了 view-index.csv 不更新 trace.csv · 更新了文件级不更新函数/章节级。\n\n**破坏后果**：不更新元数据 = 下次 AI 按看法文件加载时得到过时信息 = 认知体系失效。\n\n**详见**：`/Users/user/skills-devin/workflow.md` §5 阶段4。\n</rule>\n\n<rule name=\"no-inline-scripts\" path=\"/Users/user/.devin/rules/no-inline-scripts.md\">\n# 禁止inline脚本，所有脚本持久化到项目内\n\n## 硬规则\n\n1. **禁止写inline脚本**——禁止用`.venv/bin/python -c \"...\"`或`python -c \"...\"`写超过3行的脚本。如果一段逻辑需要超过3行代码，它必须被写成文件。\n\n2. **禁止在AGENTS.md中记录inline代码**——AGENTS.md中禁止出现超过5行的bash/python代码块。如果一段操作逻辑需要超过5行代码才能表达，它必须被写成`scripts/`下的脚本，然后在README.md中只记录脚本路径和一行用法示例。AGENTS.md是铁律和每次必须知道的认知，不是代码仓库。\n\n3. **所有脚本写到项目内的脚本目录中**——不是临时目录、不是`/tmp/`、不是home目录。脚本分两类，存放位置不同（见下方\"脚本分类\"）。\n\n4. **在项目README.md中做好索引**——持久化脚本必须在项目README.md中记录：脚本路径、用途、用法（一行示例）。让下一个session的AI能找到它。**索引不是代码全文**——只记路径+用途+一行用法，不记完整代码。\n\n5. **持续维护，不重写**——如果某个操作已经有过脚本，改进那个脚本，不要另写新的。重复的操作应该累积成一个越来越完善的脚本，而不是每次session都从头写。\n\n6. **临时脚本必须在相关文档中建立索引**——如果某项任务有对应的方案文档或调查报告（如`dev-docs/`下的文档），临时脚本必须在文档中记录：脚本路径、用途、用法。这是为了让未来的审计AI可以追溯——如果后来审计发现异常，可以知道是哪个脚本产生的结果，检查脚本是否有问题。\n\n## 脚本分类\n\n脚本分两类，存放位置和索引方式不同：\n\n### 持久化脚本（可复用的操作工具）\n\n- **定义**：会重复使用的操作（如清理僵尸session、批量落盘、进度查询、队列准备）\n- **存放位置**：项目已有的脚本目录或项目的`scripts/`目录\n- **索引位置**：项目README.md\n- **维护方式**：持续改进，不重写\n\n### 临时脚本（一次性任务专用）\n\n- **定义**：为某个具体任务写的一次性脚本（如数据迁移、一次性查询、调查验证脚本）\n- **存放位置**：项目的`tmp-scripts/`子目录\n- **索引位置**：如果该任务有相关文档（方案文档、调查报告等），在文档中记录脚本路径+用途+用法；如果没有相关文档，在README.md中记录\n- **审计目的**：临时脚本的文档索引是为了审计可追溯——如果后来审计发现数据异常或结果异常，审计AI可以定位是哪个脚本产生的，检查脚本逻辑是否有bug\n\n## 为什么\n\n- **inline脚本是一次性的**——写完用完就消失，下一个session的AI看不到、无法复用、无法改进\n- **inline脚本不可追溯**——没有文件路径、没有git历史、无法审计\n- **inline脚本导致重复劳动**——同一个操作（如僵尸清理、批量落盘）每个session都重写一遍，浪费且容易出bug\n- **持久化脚本持续积累**——每次改进都commit，脚本越来越强，下一个session直接用\n- **临时脚本的文档索引保证审计可追溯**——如果审计发现异常结果，可以回溯到产生该结果的脚本，检查脚本逻辑是否有bug\n\n## 判定标准\n\n| 情况 | 做法 |\n|---|---|\n| 单行命令（`ls`、`git status`、`tmux list-sessions`） | 直接执行 |\n| 2-3行的简单查询 | 直接执行可以 |\n| 超过3行的逻辑 | **必须写成文件** |\n| 会重复使用的操作（清理、落盘、查询、批量处理） | **写成持久化脚本，放scripts/，索引到README.md** |\n| 一次性任务专用脚本（数据迁移、调查验证） | **写成临时脚本，放tmp-scripts/，索引到相关文档** |\n| 已有脚本可以改进 | **改进已有脚本，不另写** |\n\n## 操作流程\n\n1. 发现需要写一段脚本逻辑\n2. 判断脚本类型：持久化（可复用）还是临时（一次性任务）\n3. 检查项目内是否已有类似脚本（grep搜索、看README.md索引）\n4. **已有** → 改进那个脚本（edit工具修改），编译验证\n5. **没有** → 创建新文件：\n   - 持久化脚本 → 放项目脚本目录（如`scripts/`）\n   - 临时脚本 → 放`tmp-scripts/`子目录\n6. 建立索引：\n   - 持久化脚本 → 在项目README.md中记录\n   - 临时脚本 → 在相关文档中记录（如方案文档、调查报告）；无相关文档则在README.md中记录\n7. commit\n\n## 反模式\n\n- ❌ `.venv/bin/python -c \"import sys; sys.path.insert(0, '...'); ...\"` 写50行inline脚本\n- ❌ 把脚本写到`/tmp/`然后执行\n- ❌ 每次session都重写\"清理僵尸session\"的脚本\n- ❌ 改进了脚本但不更新README.md索引\n- ❌ **在AGENTS.md中粘贴超过5行的bash/python代码块**——AGENTS.md是铁律不是代码仓库\n- ❌ **在AGENTS.md中写`python -c \"...\"`的多行inline代码**——这既是inline脚本又是文档污染\n- ❌ **临时脚本不建立文档索引**——审计AI无法追溯异常结果的来源脚本\n- ❌ **临时脚本放到`/tmp/`或home目录**——不在项目内，无法git追踪，无法审计\n- ✅ 改进已有脚本的某个函数（而非另写新的）\n- ✅ 新建脚本并在README.md代码索引中记录\n- ✅ README.md中只写一行用法示例，不写完整调用参数和输出\n- ✅ 临时调查脚本放`tmp-scripts/`，在调查报告文档中记录脚本路径和用途\n</rule>\n\n<rule name=\"AGENTS\" path=\"/Users/user/.config/devin/AGENTS.md\">\n# Devin CLI 全局工作规范\n\n**本文件（`~/.config/devin/AGENTS.md`）**：全局 always-on 规则。只放跨项目、跨 session 的硬约束和行为规范。\n\n**项目本地 `AGENTS.md`**：项目根目录下的 `AGENTS.md`。放项目状态、上下文、项目级规则。\n\n**用户说\"记录到 AGENTS.md\"时，默认指项目本地 `AGENTS.md`。** 只有用户明确说\"全局\"、\"Devin AGENTS.md\"、\"~/.config/devin/AGENTS.md\"时，才更新本文件。\n\n---\n\n## 硬约束与行为规范\n\n### 0 · Skill/Rule/元组管理策略\n\n#### 0.1 核心策略\n\ndevin 的 rule 和 skill 发现机制可靠（文件系统扫描）。always-on rule 自动注入每个 session，skill 通过 available_skills 列表展示 name+description。**不需要在 AGENTS.md 中维护 rule 或 skill 的索引——devin 自己加载。** 创建元组时只需把 rule 和 skill 放到对应位置（`~/.devin/rules/` 或 `~/.config/devin/skills/` 或项目级 `.devin/`），不需要在 AGENTS.md 记录。完整论证见 `devin-config-harness` skill §10.4。\n\n#### 0.4 维护规则\n\n- **新建 skill/rule 时必须按 `devin-config-harness` skill 的格式规范**——含 frontmatter、含 trigger/description、一句话触发器模式（详见 `devin-config-harness` skill §3.10 和 §10.7）\n- **元组创建、废弃、放置层级选择**：详见 `tuple-methodology` rule（§\"新增元组时的操作规范\"、§\"选择全局还是项目本地\"、§\"废弃 rule/skill\"）\n\n#### 0.5 Skill 极简化设计\n\n完整论证和执行规则见 `tuple-methodology` rule §\"Skill 极简化设计\"。核心：SKILL.md 只有 frontmatter + 一句话，真正内容放 `/Users/user/skills-devin/<文件名>`。\n\n#### 0.6 配置目录认知\n\n全局 AGENTS.md 在 `~/.config/devin/AGENTS.md`，不在 `~/.devin/`。详见 `devin-config-harness` skill §10.5。\n\n#### 0.7 Git Repo 管理认知\n\n三个独立 repo（`~/.config/devin/`、`~/.devin/`、`/Users/user/skills-devin/`）改完立即提交（详见 `global-config-git-commit` rule）。Git Repo 完整认知见 `devin-config-harness` skill §10.6。\n\n### 1 · 信息充分性\n\n行动前先问：\"我对这个问题的了解是否足够支撑直接行动？\"\n\n- 确信 → 直接行动\n- 不完全确定 → 先搜索再行动\n- 不确定 → 必须搜索，禁止猜测试错\n\n### 2 · 文档意识\n\n你和用户的对话是一个**积累过程**——积累代码、认知、文档、数据。积累必须**有机**：后期的积累结合到之前的积累中，而不是只在 TUI 里输出完就消失。\n\n**落盘规则**：\n\n1. **该放项目 AGENTS.md 的**（跨 session 认知、认知资产表、项目级配置信息）→ 放项目 AGENTS.md\n2. **该放 `./dev-docs/` 的**（工作痕迹、方案、分析、调查）→ 放 `dev-docs/` 下带顺序编号的文档\n3. **其他内容**→ 各就各位（全局规则放本文件或 `~/.devin/rules/`，操作流程放 skill，等）\n\n**Rule / Skill / 元组的放置层级**：详见 `tuple-methodology` rule §\"选择全局还是项目本地\"。核心：首先考虑项目级 `.devin/`，升级为全局必须获得用户明确同意。\n\n**方案先行**：方案落地到 `dev-docs/`，精确到 Check List 粒度，描述清楚原因和逻辑（不只是 Check List），实现过程中持续追踪完成情况。\n\n**跨 session 保证**：落盘的目的不仅是规范化码放，更是让跨 session、跨压缩边界后的 AI 能在必要时找回它应该了解的内容。\n\n**当用户说\"更新文档\"时**：赶紧检查什么内容该同步到项目 AGENTS.md、什么该同步到方案文档、什么该建新文档、什么该按认知资产表归档到 dev-docs。\n\n### 3 · 人话铁律\n\n所有文档、回复、注释、commit message、规则文件——全部用人话写。\n\n### 4 · 给选项必含利弊 + 推荐 + 推荐理由\n\n列选项时，必须同时给出：每个选项的利弊、你的推荐、推荐理由。\n\n### 5 · 时间估计纪律\n\n**禁止拍脑袋时间估计**：禁止无依据地随口说\"这需要 3 天\"、\"工作量 2 周\"——没有调查、没有实验、没有推理就给数字，是瞎说。\n\n**允许有理有据的时间估计**：当用户需要时间估计时，必须基于以下之一给出推理过程：\n- 实验数据（\"实测编译 1 个文件 30 秒，共 200 个文件，约 100 分钟\"）\n- 调查结果（\"该 API 限速 100 req/min，1 万条数据约需 100 分钟\"）\n- 常识推理（\"下载 10GB 文件，百兆带宽约 14 分钟，千兆约 1.4 分钟\"）\n- 历史经验（\"上次同类任务实际花了 X，本次规模类似\"）\n\n**格式要求**：给出时间估计时，必须同时给出推理依据。只给数字不给依据 = 违规。\n\n**无依据时**：说\"我没有依据给出时间估计\"，然后分析复杂程度、依赖关系、可行性、可逆度。\n\n### 6 · Debug 心智闸门\n\n撞墙三次必须停手。1-2 次调参数，3-5 次停手读证据，5 次以上重新定义问题。\n\n### 7 · 手机截图压缩后再读\n\n从手机拿到的截图，Read 之前必须压缩到 100KB 以下。macOS 用 `sips -s format jpeg -s formatOptions 60 -Z 1100 in.png --out out.jpg`。\n\n### 8 · 设备纪律\n\n- 只允许操作 **Green 手机 `09081FDD400019`**\n- 所有 `adb` 命令必须带 `-s 09081FDD400019`\n- 严禁自行操作 Black、Red、Yellow 等其他手机\n- 误触其他设备 → 立即停止，force-stop 已启动进程，并记录\n\n### 9 · 不要擅自 git init\n\n发现当前目录不在 git 仓库内时，先问用户是否初始化，不擅自 `git init`。\n\n### 10 · 搜索优先于试错\n\n同一类修复尝试 2 次仍失败 → 立即停止，改走搜索。\n\n### 11 · 工具边界\n\n- 没有 user 明确指示，不得操作 `~/.claude/` 和 `~/.codex/` 目录中的内容。\n- Devin 只能操作 `~/.config/devin/`、`~/.devin/` 以及明确授权的位置。\n\n### 12 · tmux 优先\n\n长时间运行的命令、服务、下载、同步，必须在 tmux 中运行，不允许用 `nohup ... &` 等脱离终端的方式。\n\n- **长时间命令**（下载、编译、同步、daemon、GPU 穷举等）→ `tmux new-session -d -s <name> \"<command>\"`\n- **检查运行状态** → `tmux capture-pane -t <name> -p`\n- **查看所有 session** → `tmux list-sessions`\n- **停止 session** → `tmux kill-session -t <name>`\n- session 命名规范：`<项目>-<用途>`\n- 短命令不需要 tmux\n\n> tmux 配置不好用时加载 `tmux-easy-setup` skill。\n\n---\n\n## Git 管理协议\n\n三个独立 repo（`~/.config/devin/`、`~/.devin/`、`/Users/user/skills-devin/`）的 Git 提交铁律、操作流程、禁止项详见 `global-config-git-commit` rule。核心：改前确认 clean、改后立即提交、禁止 `git add -A/.-u`、push 需用户当轮明确授权。\n\n---\n\n## 可审计性纪律\n\n- 重大分析、调查、审查必须留下 `file:line` 定位 + 理解性产物。\n- 声称\"X 完成\"前，必须有 remainder=0 证明。\n\n---\n\n## 元组核心原理\n\n元组=Rule+Skill。详见 `tuple-methodology` rule。\n\n---\n\n## dev-docs 目录\n\n跨项目的工作痕迹、方案、分析放 `~/.config/devin/dev-docs/`，带顺序编号。需要时直接到该目录下按编号查找。\n\n---\n\n## 更新本文件\n\n- 更新前检查 `before_status_baseline`\n- 只改本文件和对应 skill/rule\n- 改后核验 `after_status_baseline`，确保回到 git clean\n\n</rule>\n\n<rule name=\"db-delete-backup-first\" path=\"/Users/user/.devin/rules/db-delete-backup-first.md\">\n# 删除数据库数据前必须先备份\n\n**硬约束**：删除数据库的任何数据之前，必须先备份相关的数据，确保删除错误的情况下可以恢复数据。\n\n## 为什么\n\nDB 删除操作不可逆。一旦执行 DELETE/DROP/TRUNCATE/批量删除，数据就没了。如果删除条件写错（比如 WHERE 条件不精确、dry-run 和实际执行结果不一致、脚本有 bug），会丢失不该删的数据，且无法恢复。\n\n历史教训（2026-08-21）：`cleanup_continuation_runs.py` 删除了 p27_continuation_runs 中 224 条 prepared 记录，删除后才发现实际删除数（224）与 dry-run 预期数（223）不一致——因为 collector 在 dry-run 和实际执行之间又创建了 1 条记录。虽然这次差异无害，但如果差异方向反过来（多删了不该删的），就无法恢复了。\n\n## 必做动作\n\n### 步骤1：备份\n\n删除前必须把要删除的数据导出到文件。备份文件路径记录在操作审计文档中。\n\n```bash\n# ArangoDB：用 AQL 导出要删除的记录到 JSON 文件\npython -c \"\nfrom arango import ArangoClient\nimport json\nc = ArangoClient(hosts='http://localhost:8529')\ndb = c.db('dbname', username='root', password='xxx')\n# 用与删除相同的查询条件查出要删除的完整记录\nrecords = list(db.aql.execute('FOR r IN collection FILTER <删除条件> RETURN r', ttl=120))\nwith open('backup_<collection>_<date>.json', 'w') as f:\n    json.dump(records, f, ensure_ascii=False, indent=2)\nprint(f'备份 {len(records)} 条记录到 backup_<collection>_<date>.json')\n\"\n```\n\n### 步骤2：验证备份\n\n确认备份文件非空、记录数与预期一致、每条记录有完整的字段（特别是 `_key`/`_id`，恢复时需要）。\n\n### 步骤3：执行删除\n\n备份完成且验证通过后，才能执行删除。\n\n### 步骤4：记录审计\n\n在 dev-docs 中记录：备份文件路径、删除条件、删除数量、备份记录数。\n\n## 恢复方法\n\n如果删除后发现错误，用备份文件恢复：\n\n```bash\n# ArangoDB：从 JSON 文件恢复\npython -c \"\nfrom arango import ArangoClient\nimport json\nc = ArangoClient(hosts='http://localhost:8529')\ndb = c.db('dbname', username='root', password='xxx')\nwith open('backup_<collection>_<date>.json') as f:\n    records = json.load(f)\ncol = db.collection('collection')\nfor r in records:\n    r.pop('_rev', None)  # _rev 不能手动设置\n    col.insert(r)\nprint(f'恢复 {len(records)} 条记录')\n\"\n```\n\n## 禁止\n\n- 禁止不备份就直接执行批量删除\n- 禁止只 dry-run 不备份就执行删除——dry-run 和实际执行之间可能有状态变化\n- 禁止备份后不验证备份文件就执行删除\n- 禁止删除后不记录备份文件路径——找不到备份=没备份\n\n## 例外\n\n| 情况 | 是否需要备份 |\n|---|---|\n| 批量删除（DELETE/FOR...REMOVE） | ✅ 必须 |\n| DROP collection | ✅ 必须（先导出全集合） |\n| TRUNCATE | ✅ 必须（先导出全集合） |\n| 覆盖写入（insert overwrite） | ✅ 必须（先导出被覆盖的数据） |\n| 单条记录删除 | 可不备份（影响小，可通过日志追溯） |\n| 单条记录状态更新（非删除） | 不需要 |\n| 只读查询 | 不需要 |\n\n## 与其他 rule 的关系\n\n| rule | 关系 |\n|---|---|\n| `closure-checklist-impact-analysis` | commit 前分析影响——本 rule 在删除操作前就触发，更早 |\n| `verify-with-logs` | 删除后验证——本 rule 是删除前预防 |\n| 全局 AGENTS.md §可审计性纪律 | \"重大分析、调查、审查必须留下 file:line 定位\"——本 rule 是其具体化到 DB 删除场景 |\n</rule>\n\n<rule name=\"dev-docs-sediment-to-docs\" path=\"/Users/user/.devin/rules/dev-docs-sediment-to-docs.md\">\n# dev-docs 内容沉淀到 docs\n\n**硬约束**：dev-docs 中的内容，应该被沉淀到 docs 目录中的，应该考虑沉淀到 docs 目录中。对应的 dev-docs 中，不再放内容，而是放对 docs 目录中的文件的索引。\n\n**含义**：\n- dev-docs 是工作痕迹、方案、调查的临时存放地，不是长期知识容器\n- 当 dev-docs 中的内容具有长期复用价值时（方案定稿、认知沉淀、规范确立），必须沉淀到 docs/ 目录\n- 沉淀后，dev-docs 中的对应文件不再保留完整内容，只保留对 docs/ 中文件的索引（路径+一句话说明）\n- dev-docs 的定位是\"工作过程记录 + 沉淀索引\"，不是\"第二个 docs\"\n\n**判定标准**：\n- 一次性工作记录（debug过程、临时分析）→ 留在 dev-docs\n- 方案定稿后需要长期参考 → 沉淀到 docs/，dev-docs 留索引\n- 认知/规范确立后需要跨session复用 → 沉淀到 docs/，dev-docs 留索引\n- 纯过程性内容（试错记录、已废弃方案）→ 留在 dev-docs，不沉淀\n</rule>\n\n<rule name=\"database-schema-doc\" path=\"/Users/user/.devin/rules/database-schema-doc.md\">\n# 数据库表结构强制文档化\n\n## 硬约束\n\n**所有项目的数据库表结构集中存放在 `/Users/user/database/` 目录**，每个项目一个文件，文件名与项目名对应。文件开头必须写明该项目的repo全路径。\n\n## 文件命名和位置\n\n- **存放目录**：`/Users/user/database/`\n- **文件名**：`<项目名>.md`（与repo目录名一致，如`AI-Math-Normal-Solver.md`）\n- **文件开头**：必须写明repo全路径，格式：\n  ```\n  > **Repo全路径**：`/Users/user/<repo目录名>/`\n  ```\n\n## 何时必须更新\n\n- 新建表/集合时\n- 修改表/集合的字段时（增删改字段、改字段类型、改字段含义）\n- 新增索引时\n- 修改字段语义时（如字段值从一种含义变为另一种含义）\n\n## 何时必须先读\n\n- **写查数据库的脚本前**——必须先读 `/Users/user/database/<项目名>.md` 了解表结构，不能凭猜测写AQL/SQL\n- **查数据库前**——必须先读对应文档确认字段名、字段类型、字段含义\n- **设计涉及数据库的功能前**——必须先读对应文档了解现有表结构\n\n## 内容要求\n\n每个表/集合必须记录：\n\n1. **表名/集合名** + 用途（一句话）\n2. **字段表**：字段名、类型、含义、是否必填、默认值\n3. **索引**：索引字段、索引类型\n4. **关键JOIN关系**：和其他表/集合的关联字段\n5. **字段值枚举**：如果字段是枚举值（如status），列出所有取值和含义\n6. **已知问题/注意事项**：字段不一致、缺失字段、历史遗留等\n\n## 多数据库情况\n\n- 如果一个repo涉及多个数据库，文档中分节记录每个数据库\n- 如果表结构由其他repo管理（如本repo只读另一个repo的数据库），文档中注明\"由XXX repo管理\"，并记录本repo依赖的字段\n\n## 反模式\n\n- ❌ 在代码中散落数据库字段名，没有集中文档\n- ❌ 写查数据库脚本前不读文档，凭猜测写AQL\n- ❌ 改了表结构但不更新 `/Users/user/database/` 中的文档\n- ❌ 文档只记表名不记字段\n- ❌ 文档记了字段但不记枚举值\n- ❌ 文档开头不写repo全路径\n- ❌ 把数据库文档放在repo内部而不是集中目录\n- ✅ 每次改表结构同时更新 `/Users/user/database/<项目名>.md` 并commit\n- ✅ 写查数据库脚本前先读 `/Users/user/database/<项目名>.md` 确认字段名和类型\n- ✅ 文档记录已知问题（如字段不一致、历史遗留）\n- ✅ 文档开头写明repo全路径\n</rule>\n\n<rule name=\"never-modify-devin-config\" path=\"/Users/user/.devin/rules/never-modify-devin-config.md\">\n# 禁止修改 devin config.json 的 read_config_from\n\n## 硬约束\n\n**永远不要修改 `~/.config/devin/config.json` 中的 `read_config_from` 字段。**\n\n特别是 `\"windsurf\": true` 必须保持 `true`，不得改为 `false`。\n\n## 为什么\n\n- `read_config_from.windsurf: true` 是用户明确要求保留的配置\n- 如果不想让某些 windsurf 规则被 devin 加载，正确做法是**归档那些规则文件**（加日期后缀或移到备份目录），而不是关闭兼容加载机制\n- 关闭机制会影响其他兼容功能，不是正确的隔离手段\n\n## 正确做法\n\n如果需要阻止某个兼容来源的特定文件被加载：\n- **归档文件**——给文件加 `-日期` 后缀（如 `global_rules.md` → `global_rules-2026-08-19.md`），或移到备份目录\n- **不要动 config.json**——机制保持开启，只是让机制读不到目标文件\n\n## 详见\n\n历史案例：2026-08-19 归档 `~/.codeium/windsurf/` 下的规则文件（加 `-2026-08-19` 后缀），而非关闭 `read_config_from.windsurf`。\n</rule>\n\n<rule name=\"readme-structure-index\" path=\"/Users/user/.devin/rules/readme-structure-index.md\">\n# AGENTS.md与README.md的职责分工\n\n## 硬约束\n\n**AGENTS.md中不索引任何文档和代码。** repo的详细结构信息放在repo根目录的`README.md`中。\n\n## AGENTS.md只放什么\n\nAGENTS.md是always-on的，每一行都占用AI的上下文窗口。只放\"AI每次工作都必须知道的\"：\n\n1. **角色**——AI在这个repo中的身份和职责（一句话）\n2. **repo基本信息**——分支、Python路径、DB/Redis连接信息、.env位置、关键外部路径\n3. **铁律**——必须遵守的硬约束（编号列表）\n4. **运维认知**——监控/健康检查时容易误判的认知（如\"空pane是正常现象\"）\n5. **系统架构概要**——概念性架构图 + 核心服务表 + 启停命令 + 并发控制（不索引具体代码文件）\n6. **数据库表设计**——指向DATABASE.md的引用 + 关键JOIN关系 + 已知问题（不展开字段表）\n\n## README.md放什么\n\nREADME.md是AI工作引导地图，按需加载（不占always-on上下文）。放\"需要时才查的详细结构信息\"：\n\n1. **文档索引**——\"你要做什么→加载什么文档\"的对照表 + 各文档的关键节索引\n2. **代码文件索引**——按目录分组的代码文件表（文件名/用途/用法）\n3. **运行目录结构**——trajectory数据/solver工作目录的目录树 + 文件存在率表\n4. **Skills和Rules索引**——项目级skills/rules的用途表 + 全局skill引用\n5. **关键经验**——操作经验列表（如rate limit风暴、3秒启动间隔等）\n6. **与其他repo的关系**——依赖关系、共享资源\n\n## 判定标准\n\n| 内容 | 放哪里 | 判断依据 |\n|---|---|---|\n| 铁律（\"必须做/不能做\"） | AGENTS.md | 每次工作都必须知道 |\n| 运维认知（\"容易误判的\"） | AGENTS.md | 监控时必须知道 |\n| 启停命令 | AGENTS.md | 运行系统时必须知道 |\n| 文档索引（\"做什么→读什么\"） | README.md | 按需加载时才查 |\n| 代码文件索引（\"什么文件做什么\"） | README.md | 需要找代码时才查 |\n| 目录结构 | README.md | 需要找文件时才查 |\n| status枚举表 | README.md | 需要查终态时才查 |\n| 操作经验 | README.md | 遇到问题时才查 |\n\n## 反模式\n\n- ❌ AGENTS.md中有\"文档索引\"节——应该移到README.md\n- ❌ AGENTS.md中有\"代码文件索引\"节——应该移到README.md\n- ❌ AGENTS.md中列出每个文档的用途和路径——这是README.md的职责\n- ❌ AGENTS.md中列出每个代码文件的用途和用法——这是README.md的职责\n- ❌ README.md中放铁律——铁律在AGENTS.md中always-on\n- ❌ 没有README.md——每个repo必须有README.md作为引导地图\n- ✅ AGENTS.md只有铁律+角色+基本信息+运维认知+架构概要\n- ✅ README.md有完整的文档索引和代码索引\n- ✅ AGENTS.md中有一行\"详细结构信息见README.md\"的指引\n\n## 与三层架构的关系\n\n三层架构：AGENTS.md（铁律）→ README.md（引导地图）→ 具体文档/代码\n\n- **AGENTS.md** = 铁律 + 每次必须知道的认知（always-on，占上下文）\n- **README.md** = 引导地图（按需加载，不占always-on上下文）\n- **具体文档/代码** = 按需加载（从README.md索引中找到后加载）\n\n本规则确保AGENTS.md不膨胀——详细结构信息在README.md中，AI需要时才加载，不永久占用上下文。\n\n## 详见\n\n- `read` skill（操作流程：如何从README.md出发加载认知）\n- `read-sync` skill（维护模式：如何同步README.md和映射数据库）\n- `cognition-trace-ironlaws.md` §17（认知加载铁律）\n- `tuple-methodology.md`（AGENTS.md瘦身工程）\n</rule>\n\n<rule name=\"global-vs-project-local\" path=\"/Users/user/.devin/rules/global-vs-project-local.md\">\n# 全局vs项目本地判断铁律\n\n## 硬约束\n\n**用户说\"更新AGENTS.md\"或\"添加元组/rule/skill\"时，AI必须先判断这是全局还是项目本地内容，不能直接动手。**\n\n## 判断流程\n\n```\n用户说\"更新AGENTS.md\"或\"添加元组/rule/skill\"\n  ↓\n第一步：判断作用范围\n  ├─ 只在当前项目有意义 → 项目本地\n  └─ 在多个项目中都适用 → 全局\n  ↓\n第二步：判断用户意图\n  ├─ 用户明确说\"全局\" → 全局\n  ├─ 用户明确说\"项目本地\" → 项目本地\n  └─ 用户没说 → 必须问用户\n  ↓\n第三步：放到正确位置\n  ├─ 全局rule → ~/.devin/rules/<name>.md\n  ├─ 全局skill → ~/.config/devin/skills/<name>/SKILL.md\n  ├─ 全局AGENTS.md → ~/.config/devin/AGENTS.md\n  ├─ 项目本地rule → ./.devin/rules/<name>.md\n  ├─ 项目本地skill → ./.devin/skills/<name>/SKILL.md\n  └─ 项目本地AGENTS.md → ./AGENTS.md\n```\n\n## 判断标准\n\n| 信号 | 倾向 |\n|---|---|\n| 内容引用了具体项目的路径、脚本名、目录结构 | 项目本地 |\n| 内容是某个项目特有的操作流程、运维认知 | 项目本地 |\n| 内容是跨项目通用的约束、规范、工作流 | 全局 |\n| 内容修改会影响所有项目的AI行为 | 全局 |\n| 用户说\"以后所有项目都要...\" | 全局 |\n| 用户说\"这个项目要...\" | 项目本地 |\n\n## 禁止\n\n- ❌ 不判断就改全局配置（`~/.devin/`或`~/.config/devin/`）\n- ❌ 不判断就改项目本地配置（`./.devin/`或`./AGENTS.md`）\n- ❌ 把项目本地内容放到全局规则中（污染全局配置）\n- ❌ 把全局通用内容放到项目本地（其他项目无法复用）\n- ❌ 用户没说全局还是本地时自作主张决定\n\n## 必须\n\n- ✅ 先判断作用范围（全局还是项目本地）\n- ✅ 用户没明确说时，先问用户\n- ✅ 判断后告诉用户放在哪里，再动手\n- ✅ 改全局配置时遵循`global-config-git-commit`规则（三个独立repo分别commit）\n\n## 详见\n\n- `tuple-methodology.md`——元组的设计原则、全局vs项目本地的选择策略\n- `global-config-git-commit.md`——全局配置的git提交规则\n- `readme-structure-index.md`——AGENTS.md与README.md的职责分工\n</rule>\n</rules>",
+      "extra": {
+        "telemetry": {
+          "source": "rules",
+          "operation": "content"
+        }
+      }
+    },
+    {
+      "step_id": 6,
+      "timestamp": "2026-08-21T12:30:40.929416+00:00",
+      "source": "system",
+      "message": "<rules type=\"always-on\">\nThese rules were triggered but could not be injected due to token limits. Read them when relevant using the read_file tool:\n\n<rule name=\"search-default-internal\" path=\"/Users/user/.devin/rules/search-default-internal.md\" />\n</rules>",
+      "extra": {
+        "telemetry": {
+          "source": "rules",
+          "operation": "overflow"
+        }
+      }
+    },
+    {
+      "step_id": 7,
+      "timestamp": "2026-08-21T12:30:40.929430+00:00",
+      "source": "system",
+      "message": "<available_rules>\nThe following rules are available. Read them when relevant using the read_file tool:\n\n- **tuple-methodology**: 元组思想详细方法论——Rule + Skill 的设计原则、瘦身工程、两种实现方式、新增元组规范。 WHEN to use: 设计元组、组织 rule/skill 分工、做 AGENTS.md 瘦身工程、新增元组时。 WHEN NOT to use: 日常编码、不需要组织 AI 上下文治理时。\n (path: /Users/user/.devin/rules/tuple-methodology.md)\n- **global-knowledge-base**: 全局情报库——本机跨工具知识库的索引和使用规则。 WHEN to use: 需要查跨项目知识、本机配置、操作流程、Codex/Devin 规则体系时。 WHEN NOT to use: 项目内的知识查询（用项目 AGENTS.md 的认知资产表）。\n (path: /Users/user/.devin/rules/global-knowledge-base.md)\n- **setup-codex-rules-skills**: 安顿 Codex 的 rule 和 skill——位置、格式、加载机制、操作流程。 WHEN to use: 配置 Codex CLI、添加 Codex rules/skills/MCP、从 Devin/Claude Code 迁移到 Codex、 理解 Codex 扩展架构时。 WHEN NOT to use: 配置 Devin CLI（用 devin-config-harness skill）、一般编码任务。\n (path: /Users/user/.devin/rules/setup-codex-rules-skills.md)\n- **disk-readme-sync**: 查看磁盘/卷时，先读根目录 README.md，再与磁盘工具真实返回结果比对；若不同步，提醒用户并给出修复方案。 WHEN to use: 操作磁盘/外部卷、查看磁盘状态、向磁盘写数据前检查时。 WHEN NOT to use: 不涉及磁盘的操作。\n (path: /Users/user/.devin/rules/disk-readme-sync.md)\n- **noninteractive-solver-run**: 非交互模式解题AI运行的硬约束——必须用非交互模式（devin -p）、运行结果必须可查被索引、 mitmproxy 已废弃。用 --export 导出包含 reasoning_content（thinking）的 conversation.json。 WHEN to use: 运行 devin cli 解数学题时；采集 thinking/reasoning_content 数据时； POC实验、对照实验、批量解题、FATE测试、MathArena测试时；需要用 --prompt-file 注入题目时； 任何需要工具的AI推理任务且需要采集完整推理过程时。 WHEN NOT to use: 需要实时干预AI推理过程的引导式实验（用交互模式+--export）； 调试 solver-harness 本身（用项目级 solver-tmux-launch）。\n (path: /Users/user/.devin/rules/noninteractive-solver-run.md)\n- **infrastructure**: 本机基础设施速查——磁盘、冷热盘、README 同步规则。 WHEN to use: 操作磁盘、向 HDD/SSD 写数据、查看磁盘状态、排查磁盘问题时。 WHEN NOT to use: 不涉及磁盘操作的日常编码。\n (path: /Users/user/.devin/rules/infrastructure.md)\n- **global-config-git-commit**: 任何对 ~/.config/devin/ 或 ~/.devin/ 或 /Users/user/skills-devin/ 的修改必须立即 git 提交。 禁止 git add -A/.-u，只 add 具体路径。push 需用户当轮明确授权。 三个独立 repo：~/.config/devin/、~/.devin/、/Users/user/skills-devin/。 WHEN to use: 修改/创建/删除全局 AGENTS.md 时；修改/创建/删除 ~/.config/devin/skills/ 下的 SKILL.md 时； 修改/创建/删除 ~/.devin/rules/ 下的 rule 文件时；修改 ~/.config/devin/config.json 时； 修改/创建/删除 /Users/user/skills-devin/ 下的 skill 内容文档时。 WHEN NOT to use: 修改项目本地文件（用项目 AGENTS.md 的 Git 协议）；修改 ~/.local/share/devin/（绝不建 repo）。\n (path: /Users/user/.devin/rules/global-config-git-commit.md)\n- **search-tools**: 搜索武器库——按需求组织：网页搜索完备性 + Markdown 网页抓取。所有方案免费可用。 WHEN to use: 需要网络搜索、网页抓取读取、学术论文搜索、PDF 转 Markdown、语义嵌入、结果重排时。 WHEN NOT to use: 只需要本地文件搜索（用 grep/glob 工具）。\n (path: /Users/user/.devin/rules/search-tools.md)\n- **cold-hdd-transfer**: 向 HDD 冷盘迁移数据时，按文件规模选择 rsync 或 tar+zstd 压缩传输，并记录转移清单。 WHEN to use: 向 HDD/冷盘迁移数据、大文件归档、备份到冷存储时。 WHEN NOT to use: 向 SSD 热盘写数据、日常文件操作。\n (path: /Users/user/.devin/rules/cold-hdd-transfer.md)\n- **redundancy-consolidation**: 整合冗余内容时的信息保全铁律。整合≠删除——必须先逐行对比确认每条信息的去向， 把unique信息合并到目标文件，验证无丢失后才能简化或删除源文件。 WHEN to use: 发现两个或多个文件（rule/skill/AGENTS.md）之间有内容冗余时； 整合重复内容时；删除冗余文件前；简化重复段落前。 WHEN NOT to use: 单纯删除废弃文件（直接删）；新增内容（无冗余问题）。\n (path: /Users/user/.devin/rules/redundancy-consolidation.md)\n- **skill-rule-authoring**: 写 skill/rule 时的格式硬约束。所有 SKILL.md 必须有 frontmatter（含 description）； 所有 .devin/rules/*.md 必须有 frontmatter（含 trigger）；trigger 值用 always_on（下划线）； Skill 采用一句话触发器+独立内容文档模式。 WHEN to use: 新建/修改 skill 或 rule 时。 WHEN NOT to use: 一般编码任务。\n (path: /Users/user/.devin/rules/skill-rule-authoring.md)\n- **monitor-pipe-design-paradigm**: 连续工作系统的 Monitor Pipe 设计范式——三层架构（规范层+执行层+查询层）。 当系统连续运行且需要AI检查产出质量/语义正确性/方向是否跑偏时，用Monitor Pipe落地。 把检查项自动化，结果收集到DB的alert集合中，Master AI通过查询脚本发现alert并逐个处理。 WHEN to use: 设计/实现连续工作系统的监控机制时；为批量运行系统添加健康检查时； 连续工作系统运行中Master AI需要检查健康状态时；设计alert系统时。 WHEN NOT to use: 一次性任务（不需要持续监控）；简单的错误处理（用try/catch即可）。\n (path: /Users/user/.devin/rules/monitor-pipe-design-paradigm.md)\n- **devin-cli-trajectory**: Devin CLI trajectory 数据位置与 Schema——transcripts/sessions.db/summaries/logs 的位置、格式、字段。harness 采集的 trajectory 目录结构（conversation.json/trajectory.jsonl）。 WHEN to use: 提取/解析/审计 session 对话数据时；需要读取 thinking/reasoning_content/tool_calls 时； 需要查询 sessions.db（SQLite）时；需要解析 --export 导出的 conversation.json 时； 需要解析 trajectory.jsonl 时；需要了解 transcript 文件格式时。 WHEN NOT to use: 只需要 session 最终产出（看文件即可）；只需要 git 历史（用 git log）。\n (path: /Users/user/.devin/rules/devin-cli-trajectory.md)\n</available_rules>",
+      "extra": {
+        "telemetry": {
+          "source": "rules",
+          "operation": "available"
+        }
+      }
+    },
+    {
+      "step_id": 8,
+      "timestamp": "2026-08-21T12:30:40.943518+00:00",
+      "source": "user",
+      "message": "# Problem\n\nDoes there exist an \\(\\mathcal{O}(n^3)\\) algorithm for deciding whether there exists a permutation matrix \\(P\\), a lower unit triangular matrix \\(L\\), an upper unit triangular matrix \\(U\\), and a block-diagonal matrix \\(D\\) with \\(1\\times1\\) and \\(2\\times2\\) blocks such that for a given real square matrix \\(A\\), the equation \\(P A P^T = LDU\\) holds?\n\n## 解题约束（必须严格遵守）\n\n1. **不要使用任何工具**——不要写文件、不要执行命令、不要搜索、不要浏览网页、不要读取文件。\n   你只需要在TUI中用thinking来解题。所有推理过程在你的思维中完成。\n\n2. **直接在TUI中输出证明**——不要创建任何文\n\n=== 你之前的思考过程（Round 1，被截断）===\n\n你已经在上一轮中开始了这道题的思考，但因为输出长度限制，思考过程被截断了。\n以下是你之前的完整思考过程，请仔细阅读，在此基础上**继续**思考并完成解答（不要从头开始）：\n\n\n\n=== 请继续思考并完成解答 ===\n\n要求：\n1. **在之前的思考基础上继续**，不要重复已经做过的分析\n2. 给出完整的解答过程\n3. 最终答案用 \\boxed{答案} 格式给出\n4. 数学公式用LaTeX\n5. 把证明写到proof.md文件中，不要在对话里输出完整证明",
+      "extra": {
+        "telemetry": {
+          "source": "user",
+          "operation": "unknown"
+        }
+      }
+    },
+    {
+      "step_id": 9,
+      "timestamp": "2026-08-21T12:30:40.944478+00:00",
+      "source": "system",
+      "message": "<available_skills>\nThe following skills can be invoked using the `skill` tool. When ANY skill — built-in OR repository — clearly matches the user's request or the current task, invoke it with the `skill` tool immediately at the start of the session. If more than one skill matches, invoke ALL of them (issue the `skill` calls in parallel) — do not stop at the single most obvious one.\n\n- **long-running-work-sop**: 长程工作识别与SOP化 (source: /Users/user/.config/devin/skills/long-running-work-sop/SKILL.md)\n- **setup-codex-rules-skills**: Codex CLI的rule和skill配置 (source: /Users/user/.config/devin/skills/setup-codex-rules-skills/SKILL.md)\n- **make-plan**: 制作行动计划=完整的repo更新行为（执行步骤+需求追踪+认知准备+元数据更新） (source: /Users/user/.config/devin/skills/make-plan/SKILL.md)\n- **zcode-trajectory**: ZCode (z.ai 桌面客户端) model-io session trajectory 数据的 JSONL schema 与读取方法。 (source: /Users/user/.config/devin/skills/zcode-trajectory/SKILL.md)\n- **devin-cli-trajectory**: Devin CLI trajectory数据提取/解析/审计 (source: /Users/user/.config/devin/skills/devin-cli-trajectory/SKILL.md)\n- **akash-new**: akash流程跨session续传——判断上一个AI做到哪个阶段，生成让下一个AI从正确阶段继续的提示词 (source: /Users/user/.config/devin/skills/akash-new/SKILL.md)\n- **noninteractive-solver-run**: 非交互模式运行解题AI（生产标准） (source: /Users/user/.config/devin/skills/noninteractive-solver-run/SKILL.md)\n- **read-sync**: 创建/维护repo的README.md认知地图+看法文件+映射数据库 (source: /Users/user/.config/devin/skills/read-sync/SKILL.md)\n- **trajectory-workline-review**: trajectory数据回溯工作脉络 (source: /Users/user/.config/devin/skills/trajectory-workline-review/SKILL.md)\n- **tmux-easy-setup**: tmux最易用状态配置 (source: /Users/user/.config/devin/skills/tmux-easy-setup/SKILL.md)\n- **read**: 按三层架构加载必要认知（README.md→看法文件→具体文档） (source: /Users/user/.config/devin/skills/read/SKILL.md)\n- **workflow**: 开发工作流总纲（三层认知架构+read/read-sync/make-plan+映射数据库+git管理） (source: /Users/user/.config/devin/skills/workflow/SKILL.md)\n- **cold-hdd-transfer**: 向HDD冷盘迁移数据 (source: /Users/user/.config/devin/skills/cold-hdd-transfer/SKILL.md)\n- **db-file-traceability**: 数据库-文件双向可追溯性验证 (source: /Users/user/.config/devin/skills/db-file-traceability/SKILL.md)\n- **akash**: 问题驱动流程保障——确保走完整5阶段流程（需求→方案→工作包→执行→结果） (source: /Users/user/.config/devin/skills/akash/SKILL.md)\n- **devin-config-harness**: Devin CLI配置完整说明书+元组评估决策流程+skill/rule编写规范+经验反模式 (source: /Users/user/.config/devin/skills/devin-config-harness/SKILL.md)\n- **qmd-mcp-search**: QMD语义搜索和知识图谱查询（含CLI直接调用方式） (source: /Users/user/.config/devin/skills/qmd-mcp-search/SKILL.md)\n- **search-tools**: 搜索武器库技术说明书——按需求组织：网页搜索完备性 + Markdown 网页抓取。 所有方案均为免费可用，基于 2026-08-21 实测数据编写。 (source: /Users/user/.config/devin/skills/search-tools/SKILL.md)\n- **redundancy-consolidation**: 整合冗余内容的完整工作流程——逐行对比、列出缺失清单、先合并后删除、验证无丢失。 WHEN to use: 发现文件间有冗余需要整合时。 WHEN NOT to use: 单纯删除废弃文件、新增内容。 (source: /Users/user/.config/devin/skills/redundancy-consolidation/SKILL.md)\n- **disk-readme-sync**: 磁盘/卷README同步检查 (source: /Users/user/.config/devin/skills/disk-readme-sync/SKILL.md)\n- **devin-cli**: Look up Devin CLI documentation (skills, extensibility, configuration, commands, models, troubleshooting) (source: /Volumes/data/devin-cli-data/_versions/3000.4.25/share/devin/docs)\n- **declarative-repo-setup**: Generate and verify a working environment.yaml (Devin snapshot-setup blueprint) for a repo (source: builtin:drs)\n</available_skills>",
+      "extra": {
+        "telemetry": {
+          "source": "system",
+          "operation": "unknown"
+        }
+      }
+    },
+    {
+      "step_id": 10,
+      "timestamp": "2026-08-21T12:30:45.204273+00:00",
+      "source": "agent",
+      "message": "",
+      "model_name": "GLM-5.2 High",
+      "reasoning_content": "The user is asking me to solve a math problem and write the proof to proof.md. Let me analyze the problem.\n\nThe question: Does there exist an O(n³) algorithm for deciding whether there exists a permutation matrix P, a lower unit triangular matrix L, an upper unit triangular matrix U, and a block-diagonal matrix D with 1×1 and 2×2 blocks such that for a given real square matrix A, the equation P A P^T = LDU holds?\n\nThis is essentially asking about the existence of an O(n³) algorithm for the LDU decomposition with partial pivoting where D is block-diagonal with 1×1 and 2×2 blocks.\n\nThis is related to the LU decomposition with partial pivoting. The standard PA = LU decomposition has an O(n³) algorithm (Gaussian elimination with partial pivoting). But here the decomposition is P A P^T = L D U where D is block diagonal with 1×1 and 2×2 blocks, and L, U are unit triangular.\n\nThis is essentially the \"LDU decomposition with symmetric pivoting\" or the Bunch-Kaufman decomposition for symmetric matrices, or more generally, this relates to Gaussian elimination with complete pivoting or some form of pivoting that handles 2×2 blocks.\n\nWait, let me think more carefully. The decomposition P A P^T = L D U where:\n- P is a permutation matrix\n- L is lower unit triangular\n- U is upper unit triangular\n- D is block diagonal with 1×1 and 2×2 blocks\n\nThis is the general LDU decomposition with pivoting. The 2×2 blocks in D arise when we need to pivot on 2×2 blocks (like in Gaussian elimination with complete pivoting, or Bunch-Kaufman for symmetric matrices).\n\nActually, this is exactly what happens in Gaussian elimination with complete pivoting (or even partial pivoting with 2×2 pivots). The key question is whether such a decomposition always exists and can be computed in O(n³).\n\nLet me think about this differently. The standard result is:\n\n1. For any nonsingular matrix A, there exists a PA = LU decomposition (Gaussian elimination with partial pivoting), which is O(n³).\n\n2. The LDU decomposition: PA = LU can be written as PA = L D U' where D is diagonal and L, U are unit triangular. This requires that U has nonzero diagonal entries, which is the case when A is nonsingular.\n\n3. But here we have P A P^T = L D U, which is a two-sided permutation. And D is block-diagonal with 1×1 and 2×2 blocks.\n\nThe two-sided pivoting P A P^T suggests symmetric pivoting. The block-diagonal D with 1×1 and 2×2 blocks is characteristic of:\n- Bunch-Kaufman decomposition for symmetric matrices\n- Gaussian elimination with complete pivoting for general matrices (where 2×2 pivots are used)\n\nActually, wait. Let me reconsider. The question is about a GENERAL real square matrix A (not necessarily symmetric). The decomposition P A P^T = L D U with D block-diagonal (1×1 and 2×2 blocks) is:\n\nThis is the generalization of LDU decomposition that handles the case where some pivots are zero. In standard Gaussian elimination, if a pivot is zero, we need to permute rows (partial pivoting) or both rows and columns (complete pivoting). With complete pivoting, we get P A Q = L U where P and Q are permutation matrices. But here both sides use the same permutation P, which means P A P^T.\n\nHmm, but P A P^T means we're applying the same permutation to rows and columns. This is symmetric pivoting. For a general (non-symmetric) matrix, this is more restrictive.\n\nActually, let me reconsider the problem. The question asks whether there EXISTS such a decomposition (a decision problem), and whether there's an O(n³) algorithm to decide this.\n\nFor a general matrix A, the decomposition P A P^T = L D U with the given constraints may not always exist. The question is whether we can decide in O(n³) if it exists.\n\nLet me think about what this decomposition means. If P A P^T = L D U, then:\n- L is lower unit triangular (1s on diagonal)\n- U is upper unit triangular (1s on diagonal)  \n- D is block diagonal with 1×1 and 2×2 blocks\n\nThis means A = P^T L D U P, so A is obtained from L D U by permuting rows and columns with the same permutation.\n\nFor the case where D is purely diagonal (all 1×1 blocks), this is the standard LDU decomposition with symmetric pivoting. This exists when A can be reduced by symmetric row/column permutations to a form where Gaussian elimination without further pivoting succeeds (all leading principal minors of the permuted matrix are nonzero, or we allow 2×2 blocks to handle zero pivots).\n\nThe 2×2 blocks in D handle the case where a 1×1 pivot is zero but a 2×2 pivot is invertible. This is exactly the mechanism in:\n- Bunch-Kaufman decomposition (for symmetric matrices, O(n³))\n- Gaussian elimination with 2×2 pivots\n\nFor general matrices, the question of whether P A P^T = L D U exists is related to whether A has a \"symmetric pivoting\" LDU decomposition.\n\nActually, I think the answer is YES, such an O(n³) algorithm exists. Here's my reasoning:\n\nThe decomposition P A P^T = L D U is essentially a variant of Gaussian elimination with symmetric pivoting (same row and column permutations). The 2×2 blocks in D handle zero pivots. This can be computed in O(n³) time.\n\nBut wait - does this decomposition ALWAYS exist? For a general matrix, it might not. Consider a matrix where no symmetric permutation can make all leading principal minors (or 2×2 block pivots) nonzero.\n\nActually, let me think about this more carefully. The question is a DECISION problem: does there EXIST such P, L, D, U? Not \"compute it for all A.\"\n\nHmm, but actually I think for any nonsingular matrix, such a decomposition always exists. Let me think...\n\nFor a nonsingular matrix A, we can always do Gaussian elimination with complete pivoting: P A Q = L U. But here we need P = Q^T (same permutation for rows and columns), which is more restrictive.\n\nConsider the 2×2 case: A = [[a, b], [c, d]]. We need P A P^T = L D U.\n- If P = I: A = L D U. If a ≠ 0, then D = diag(a, d - bc/a) (if the Schur complement is nonzero, it's a 1×1 block; the decomposition works). If a = 0 but the 2×2 block A itself is invertible (det A = ad - bc = -bc ≠ 0, so b, c ≠ 0), then D = A (the whole thing is a 2×2 block), L = I, U = I. So P A P^T = A = I · A · I = L D U. ✓\n- If P = [[0,1],[1,0]]: P A P^T = [[d, c], [b, a]]. Similar analysis.\n\nSo for 2×2, if A is nonsingular, the decomposition always exists. If A is singular, we need to check.\n\nFor the general case, I believe the answer is that such a decomposition exists for all matrices (possibly with some conditions), and it can be computed in O(n³).\n\nActually, let me reconsider. The key insight is that this is essentially the question of whether Gaussian elimination with symmetric pivoting (using 1×1 and 2×2 pivots) can be performed. This is closely related to:\n\n1. **Bunch-Kaufman decomposition** for symmetric matrices - always exists for symmetric matrices, O(n³)\n2. **General Gaussian elimination with 2×2 pivots** - for general matrices\n\nFor general (non-symmetric) matrices, the symmetric pivoting constraint (P on both sides) makes this different from standard LU with partial pivoting.\n\nLet me think about whether this always exists for nonsingular matrices...\n\nConsider A = [[0, 1], [0, 0]]. This is singular (rank 1). Can we find P, L, D, U?\n- P = I: A = L D U. The (1,1) entry is 0, so we need a 2×2 block. But the 2×2 block is A itself, which is singular (det = 0). So D can't have a 2×2 block here (the 2×2 block must be invertible for the decomposition to work, since L and U are unit triangular and thus invertible, so D = L^{-1} P A P^T U^{-1} must have the same rank as A).\n\nActually, D must have the same rank as A (since L, U, P are all invertible). So if A is singular, D must be singular, meaning some 1×1 blocks are 0.\n\nFor A = [[0, 1], [0, 0]]: rank 1. \n- P = I: We need L D U = A with D block diagonal. If D has a 1×1 block 0 and a 1×1 block d₂₂, then L D U would have rank 1 (if d₂₂ ≠ 0). Let's try: D = diag(0, 1), L = [[1, 0], [l, 1]], U = [[1, u], [0, 1]]. Then L D U = [[0, 0], [0, 1]] · ... wait, let me compute. L D = [[0, 0], [0, 1]], then (L D) U = [[0, 0], [0, 1]] [[1, u], [0, 1]] = [[0, 0], [0, 1]]. This gives [[0, 0], [0, 1]] ≠ A = [[0, 1], [0, 0]].\n\n- P = [[0,1],[1,0]]: P A P^T = [[0, 0], [1, 0]]. We need L D U = [[0, 0], [1, 0]]. With D = diag(0, 1): L D U = [[0, 0], [0, 1]] · U... same issue. With D = diag(1, 0): L D = [[1, 0], [l, 0]], (L D) U = [[1, 0], [l, 0]] [[1, u], [0, 1]] = [[1, u], [l, lu]]. For this to equal [[0, 0], [1, 0]], we need 1 = 0, contradiction.\n\nSo for A = [[0, 1], [0, 0]], the decomposition doesn't exist with 1×1 blocks only. What about a 2×2 block? D = A (the whole matrix), L = I, U = I: P A P^T = L D U means P A P^T = A. With P = I, this gives A = A. ✓ But wait, D must be block-diagonal with 1×1 and 2×2 blocks. A 2×2 block is fine. But is the 2×2 block required to be invertible? \n\nActually, re-reading the problem: D is block-diagonal with 1×1 and 2×2 blocks. There's no requirement that the blocks be invertible. So D could have a 2×2 block that's singular.\n\nIf D can have singular 2×2 blocks, then for any 2×2 matrix, we can just take D = A (as a 2×2 block), L = I, U = I, P = I. And for n×n, we could potentially take D to be the whole matrix as... no, D is block-diagonal, so it's a direct sum of blocks.\n\nHmm, but if we allow singular 2×2 blocks, then the decomposition becomes trivially possible for any matrix (just take D = A with P = I, L = I, U = I, but that only works if A is already block-diagonal).\n\nWait, no. The decomposition P A P^T = L D U requires L lower unit triangular, U upper unit triangular, D block diagonal. This is a non-trivial constraint.\n\nLet me reconsider. The standard LDU decomposition (with D diagonal) exists iff all leading principal minors of A are nonzero (for the unperturbed case). With pivoting (P A P^T), we need some permutation to make this work.\n\nThe 2×2 blocks in D generalize this: instead of requiring every leading principal minor to be nonzero, we allow 2×2 pivots when a 1×1 pivot is zero.\n\nI think the key question is about the relationship to Gaussian elimination and whether the algorithm is O(n³).\n\nLet me approach this from the perspective of known results:\n\n1. **Gaussian elimination with partial pivoting**: PA = LU, O(n³). Always exists for nonsingular A.\n\n2. **Gaussian elimination with complete pivoting**: PAQ = LU, O(n³) (though finding the optimal pivots might be more expensive, the standard algorithm is O(n³)). Always exists for nonsingular A.\n\n3. **LDU decomposition**: If PA = LU and U has nonzero diagonal, then PA = L D U' where D = diag(u_ii) and U' is unit upper triangular. This requires U to have nonzero diagonal, which is guaranteed for nonsingular A.\n\n4. **Symmetric pivoting LDU**: P A P^T = L D U. This is more restrictive because the same permutation is used on both sides.\n\n5. **Bunch-Kaufman**: For symmetric A, P A P^T = L D L^T where D is block diagonal with 1×1 and 2×2 blocks. O(n³). Always exists for symmetric A.\n\n6. **For general (non-symmetric) A**: The question is whether P A P^T = L D U exists and can be decided in O(n³).\n\nNow, the crucial point: for a general matrix, does P A P^T = L D U always exist (for nonsingular A)?\n\nConsider the 3×3 case. A = [[0, 0, 1], [0, 1, 0], [1, 0, 0]]. This is a permutation matrix (nonsingular).\n\nP A P^T for any P: since A is a permutation matrix, P A P^T is also a permutation matrix. We need L D U = (some permutation matrix). \n\nWith P = I: A = [[0, 0, 1], [0, 1, 0], [1, 0, 0]]. The (1,1) entry is 0. Try 2×2 pivot on rows/cols 1,2: the 2×2 block is [[0, 0], [0, 1]], which is singular. So we can't use a 2×2 pivot here. Try 2×2 pivot on rows/cols 1,3: but that would require permuting first. \n\nWith P that swaps 1 and 3: P A P^T = [[0, 0, 1], [0, 1, 0], [1, 0, 0]] (same matrix, since A is the swap of 1 and 3, and conjugating by itself gives identity... wait, A is the permutation that swaps 1 and 3. So A = A^T = A^{-1}. P A P^T where P = A: A · A · A^T = A · A · A = A^3 = A (since A^2 = I). So P A P^T = A again.\n\nHmm, this matrix is its own inverse, so any P of the form A^k gives back A.\n\nLet me try P that swaps 1 and 2: P = [[0,1,0],[1,0,0],[0,0,1]]. P A P^T = P A P (since P is a swap, P^T = P). \nP A = [[0,1,0],[1,0,0],[0,0,1]] [[0,0,1],[0,1,0],[1,0,0]] = [[0,1,0],[0,0,1],[1,0,0]].\n(P A) P = [[0,1,0],[0,0,1],[1,0,0]] [[0,1,0],[1,0,0],[0,0,1]] = [[1,0,0],[0,0,1],[0,1,0]].\nSo P A P^T = [[1,0,0],[0,0,1],[0,1,0]]. This is a permutation matrix (swaps 2 and 3). \n\nNow, can we write [[1,0,0],[0,0,1],[0,1,0]] = L D U?\nThe (1,1) entry is 1, good. After eliminating: the Schur complement is [[0,1],[1,0]]. The (1,1) entry of this is 0, so we need a 2×2 pivot. The 2×2 block [[0,1],[1,0]] has det = -1 ≠ 0, so it's a valid 2×2 pivot. \n\nSo D = diag(1, [[0,1],[1,0]]) (a 1×1 block and a 2×2 block), L = I, U = I. And indeed [[1,0,0],[0,0,1],[0,1,0]] = I · D · I. ✓\n\nOK so that works. Let me think about whether there's a matrix for which this fails...\n\nActually, I think the answer to the question is **YES**, such an O(n³) algorithm exists. The algorithm is essentially Gaussian elimination with symmetric pivoting using 1×1 and 2×2 pivots. This is a well-known technique.\n\nThe key insight is:\n- At each step, we look at the current pivot position (the (k,k) entry of the remaining submatrix).\n- If it's nonzero (or sufficiently large), use it as a 1×1 pivot.\n- If it's zero (or too small), look for a 2×2 pivot using rows/columns k and some j > k.\n- The 2×2 pivot [[a_kk, a_kj], [a_jk, a_jj]] must be invertible (det ≠ 0).\n\nThe question is whether this always succeeds for nonsingular matrices, and whether the decision problem can be solved in O(n³).\n\nFor the 2×2 pivot strategy: if a_kk = 0, we need to find j > k such that the 2×2 block [[a_kk, a_kj], [a_jk, a_jj]] = [[0, a_kj], [a_jk, a_jj]] has nonzero determinant, i.e., -a_kj · a_jk ≠ 0, i.e., both a_kj ≠ 0 and a_jk ≠ 0.\n\nIf no such j exists, then for all j > k, either a_kj = 0 or a_jk = 0. This means the k-th row and k-th column of the remaining submatrix have a specific zero pattern.\n\nHmm, this is getting complicated. Let me think about whether there's a known result.\n\nActually, I recall that for the **general (non-symmetric) LDU decomposition with symmetric pivoting**, the situation is different from the symmetric case. In the symmetric case (Bunch-Kaufman), the 2×2 pivot criterion is based on the symmetric matrix structure. For general matrices, the criterion is different.\n\nLet me think about this problem from a different angle. The question is asking about a DECISION problem: does there EXIST such a decomposition? This is asking about the existence, not about computing it.\n\nFor the existence question:\n- If A is nonsingular, does P A P^T = L D U always exist?\n- If A is singular, when does it exist?\n\nFor nonsingular A: I believe the answer is yes, it always exists. Here's a sketch:\n\nConsider Gaussian elimination with complete pivoting on A: P₁ A Q₁ = L₁ U₁. This gives us row permutation P₁ and column permutation Q₁. Now, we want P A P^T, i.e., the same permutation on both sides.\n\nActually, this isn't directly helpful. Let me think differently.\n\nClaim: For any nonsingular matrix A, there exists a permutation P such that P A P^T has an LDU decomposition with 1×1 and 2×2 block diagonal D.\n\nProof sketch: We proceed by induction on n. For n = 1, trivial. For n = 2, as shown above, it works.\n\nFor general n: Consider the (1,1) entry of A. If a₁₁ ≠ 0, use it as a 1×1 pivot. The Schur complement S = A₂₂ - A₂₁ a₁₁⁻¹ A₁₂ is (n-1)×(n-1) and nonsingular (since A is nonsingular). By induction, there exists P' such that P' S P'^T = L' D' U'. Then:\n\nA = [[a₁₁, A₁₂], [A₂₁, A₂₂]] = [[1, 0], [A₂₁/a₁₁, I]] [[a₁₁, 0], [0, S]] [[1, A₁₂/a₁₁], [0, I]]\n\nSo A = L₁ [[a₁₁, 0], [0, S]] U₁ where L₁, U₁ are unit triangular. Then applying P' to S:\nP' S P'^T = L' D' U', so S = P'^T L' D' U' P'.\n\nA = L₁ [[a₁₁, 0], [0, P'^T L' D' U' P']] U₁ = L₁ [[1, 0], [0, P'^T]] [[a₁₁, 0], [0, L' D' U']] [[1, 0], [0, P']] U₁\n\nHmm, this is getting messy. Let me think about it more carefully.\n\nIf a₁₁ ≠ 0:\nP = [[1, 0], [0, P']] (block diagonal permutation)\nP A P^T = [[1, 0], [0, P']] [[a₁₁, A₁₂], [A₂₁, A₂₂]] [[1, 0], [0, P'^T]]\n= [[a₁₁, A₁₂ P'^T], [P' A₂₁, P' A₂₂ P'^T]]\n\nNow, P' A₂₂ P'^T = P'(S + A₂₁ a₁₁⁻¹ A₁₂)P'^T = P' S P'^T + P' A₂₁ a₁₁⁻¹ A₁₂ P'^T = L' D' U' + (P' A₂₁) a₁₁⁻¹ (A₁₂ P'^T)\n\nSo P A P^T = [[a₁₁, A₁₂ P'^T], [P' A₂₁, L' D' U' + (P' A₂₁) a₁₁⁻¹ (A₁₂ P'^T)]]\n\nLet b = A₁₂ P'^T (row vector), c = P' A₂₁ (column vector). Then:\nP A P^T = [[a₁₁, b], [c, L' D' U' + c a₁₁⁻¹ b]]\n\n= [[1, 0], [c/a₁₁, I]] [[a₁₁, 0], [0, L' D' U']] [[1, b/a₁₁], [0, I]]\n\n= [[1, 0], [c/a₁₁, I]] [[a₁₁, 0], [0, L']] [[1, 0], [0, D']] [[1, 0], [0, U']] [[1, b/a₁₁], [0, I]]\n\nNow, [[1, 0], [c/a₁₁, I]] [[a₁₁, 0], [0, L']] is lower triangular with 1s on diagonal (since L' is unit lower triangular and the (1,1) block is 1, and the (2,1) block is c/a₁₁, and the (2,2) block is L' which has 1s on diagonal). So this is our L.\n\nSimilarly, [[1, 0], [0, U']] [[1, b/a₁₁], [0, I]] is upper triangular with 1s on diagonal. This is our U.\n\nAnd D = [[a₁₁, 0], [0, D']] is block diagonal with 1×1 and 2×2 blocks (a₁₁ is 1×1, D' has 1×1 and 2×2 blocks by induction).\n\nSo when a₁₁ ≠ 0, the decomposition exists by induction. ✓\n\nNow, if a₁₁ = 0: We need to find a 2×2 pivot. We need to find some j > 1 such that the 2×2 block [[a₁₁, a₁ⱼ], [aⱼ₁, aⱼⱼ]] = [[0, a₁ⱼ], [aⱼ₁, aⱼⱼ]] is nonsingular, i.e., det = -a₁ⱼ · aⱼ₁ ≠ 0.\n\nSince A is nonsingular, not all entries in the first row can be zero (otherwise the first row is zero and A is singular). So there exists j with a₁ⱼ ≠ 0. Similarly, not all entries in the first column can be zero, so there exists k with aₖ₁ ≠ 0.\n\nBut we need the SAME j such that both a₁ⱼ ≠ 0 AND aⱼ₁ ≠ 0. This is not guaranteed!\n\nExample: A = [[0, 1, 0], [0, 0, 1], [1, 0, 0]]. This is a permutation matrix (cyclic permutation), nonsingular.\n\na₁₁ = 0. Row 1: [0, 1, 0], so a₁₂ = 1 ≠ 0, a₁₃ = 0.\nColumn 1: [0, 0, 1], so a₂₁ = 0, a₃₁ = 1 ≠ 0.\n\nFor j = 2: a₁₂ = 1 ≠ 0 but a₂₁ = 0. So det of 2×2 block = -1 · 0 = 0. ✗\nFor j = 3: a₁₃ = 0. So det of 2×2 block = 0. ✗\n\nSo no 2×2 pivot involving row/column 1 works! But we can permute first.\n\nWith P swapping 1 and 3: P A P^T. P = [[0,0,1],[0,1,0],[1,0,0]].\nP A = [[1,0,0],[0,0,1],[0,1,0]]\nP A P^T = [[1,0,0],[0,0,1],[0,1,0]] [[0,0,1],[0,1,0],[1,0,0]] = [[0,0,1],[1,0,0],[0,1,0]]\n\nHmm wait, let me recompute. P A P^T where P swaps 1 and 3:\nP A = swap rows 1 and 3 of A = [[1,0,0],[0,0,1],[0,1,0]]\nP A P^T = swap cols 1 and 3 of (P A) = [[0,0,1],[1,0,0],[0,1,0]]\n\nNow (P A P^T)₁₁ = 0 again. Row 1: [0, 0, 1], so a₁₃ = 1. Col 1: [0, 1, 0], so a₂₁ = 1.\nFor j = 2: a₁₂ = 0. ✗\nFor j = 3: a₁₃ = 1, a₃₁ = 0. ✗\n\nStill fails! Let me try P that cycles (1→2→3→1): P = [[0,1,0],[0,0,1],[1,0,0]].\nP A = [[0,0,1],[1,0,0],[0,1,0]]\nP A P^T = [[0,0,1],[1,0,0],[0,1,0]] [[0,0,1],[0,0,1]... \n\nwait, P^T = [[0,0,1],[1,0,0],[0,1,0]].\nP A P^T = [[0,0,1],[1,0,0],[0,1,0]] [[0,0,1],[1,0,0],[0,1,0]] = [[0,1,0],[0,0,1],[1,0,0]] = A.\n\nSo P A P^T = A again (since A is the cyclic permutation and P = A, so P A P^T = A³ = A).\n\nTry P = [[0,0,1],[1,0,0],[0,1,0]] (cycle 1→3→2→1): \nP^T = [[0,1,0],[0,0,1],[1,0,0]]\nP A = [[1,0,0],[0,1,0],[0,0,1]]... wait.\n\nP = [[0,0,1],[1,0,0],[0,1,0]], A = [[0,1,0],[0,0,1],[1,0,0]]\nP A = [[1,0,0],[0,1,0],[0,0,1]] = I!\n\nSo P A = I, meaning P = A⁻¹ = A^T. Then P A P^T = I · P^T = P^T = A.\nSo P A P^T = A again.\n\nHmm, for this particular matrix A (cyclic permutation), it seems like P A P^T always gives a permutation matrix, and the (1,1) entry is always 0 (since A has no fixed points, and conjugation preserves the cycle structure).\n\nWait, A is the 3-cycle (1 2 3). P A P^T is the conjugate of A by P, which is another 3-cycle. All 3-cycles in S₃ have no fixed points, so the (1,1) entry is always 0.\n\nFor a 3-cycle permutation matrix B, B₁₁ = 0 always. And for the 2×2 pivot, we need a₁ⱼ ≠ 0 and aⱼ₁ ≠ 0 for some j. In a 3-cycle (1→2→3→1), row 1 has a 1 in position 2, and column 1 has a 1 in position 3. So a₁₂ = 1, a₂₁ = 0, a₁₃ = 0, a₃₁ = 1. No j works!\n\nSo for the 3-cycle permutation matrix, there's no P such that P A P^T admits an LDU decomposition with 1×1 and 2×2 blocks starting from position (1,1).\n\nBut wait - maybe we don't need to start from position (1,1). The 2×2 block in D doesn't have to involve the first row/column. Actually, in the LDU decomposition, the blocks of D correspond to contiguous groups of indices (since L is lower triangular and U is upper triangular). The first block of D corresponds to the first few rows/columns (either just {1} or {1,2}).\n\nSo the first block is either 1×1 (using a₁₁ as pivot) or 2×2 (using [[a₁₁, a₁₂], [a₂₁, a₂₂]] as pivot).\n\nFor the 3-cycle, after any symmetric permutation P A P^T, we get another 3-cycle. The (1,1) entry is 0. The 2×2 block [[0, a₁₂], [a₂₁, a₂₂]]: in a 3-cycle, exactly one of row 1 and column 1 has a nonzero in position 2 (since the 3-cycle maps 1 to some j, and some k maps to 1, and j ≠ k since it's a 3-cycle). So a₁₂ and a₂₁ can't both be nonzero. Thus the 2×2 pivot always fails.\n\nTherefore, for the 3-cycle permutation matrix, the decomposition P A P^T = L D U does NOT exist!\n\nWait, but I should double-check. The 3-cycle matrix A = [[0,1,0],[0,0,1],[1,0,0]] is nonsingular. And I've shown that for any permutation P, P A P^T is a 3-cycle permutation matrix, which has (1,1) entry 0 and no valid 2×2 pivot at position (1,2). So the decomposition doesn't exist.\n\nBut hold on - maybe I'm being too restrictive. The 2×2 block in D could be at positions (1,2) but what if we consider a 2×2 block that's not at the top-left? No, in the LDU decomposition, D is block diagonal and L is lower triangular, U is upper triangular. The first block of D must correspond to the first index (or first two indices). So the first pivot is either a₁₁ (1×1) or the 2×2 block at positions (1,2)×(1,2).\n\nSo for the 3-cycle, the decomposition doesn't exist. This means the answer to the decision problem is \"not always yes\" - there exist matrices for which the decomposition doesn't exist.\n\nNow, the question is: is there an O(n³) algorithm to DECIDE whether the decomposition exists?\n\nThis is a more subtle question. Even though the decomposition doesn't always exist, can we decide in polynomial time (specifically O(n³)) whether it exists?\n\nHmm, let me reconsider. Maybe I'm wrong about the 3-cycle. Let me re-examine.\n\nA = [[0,1,0],[0,0,1],[1,0,0]]. \n\nWhat if we use a 2×2 block that's not invertible? The problem says D is block-diagonal with 1×1 and 2×2 blocks. It doesn't say the blocks must be invertible. If we allow a singular 2×2 block:\n\nD = [[0,1,0],[0,0,0],[0,0,1]] (a 2×2 block [[0,1],[0,0]] and a 1×1 block [1]).\n\nThen L D U with L = I, U = I gives D = [[0,1,0],[0,0,0],[0,0,1]] ≠ A.\n\nWe need L D U = A. With D having a singular 2×2 block, L and U unit triangular:\n\nD = [[d₁₁, d₁₂, 0], [d₂₁, d₂₂, 0], [0, 0, d₃₃]] (2×2 block then 1×1 block)\n\nL = [[1,0,0],[l₂₁,1,0],[l₃₁,l₃₂,1]]\nU = [[1,u₁₂,u₁₃],[0,1,u₂₃],[0,0,1]]\n\nL D = [[d₁₁, d₁₂, 0], [l₂₁d₁₁+d₂₁, l₂₁d₁₂+d₂₂, 0], [l₃₁d₁₁+l₃₂d₂₁, l₃₁d₁₂+l₃₂d₂₂, d₃₃]]\n\n(L D) U = [[d₁₁, d₁₁u₁₂+d₁₂, d₁₁u₁₃+d₁₂u₂₃], \n           [l₂₁d₁₁+d₂₁, (l₂₁d₁₁+d₂₁)u₁₂+(l₂₁d₁₂+d₂₂), (l₂₁d₁₁+d₂₁)u₁₃+(l₂₁d₁₂+d₂₂)u₂₃],\n           [l₃₁d₁₁+l₃₂d₂₁, ...], [..., d₃₃]]\n\nThis should equal A = [[0,1,0],[0,0,1],[1,0,0]].\n\nFrom (1,1): d₁₁ = 0\nFrom (1,2): d₁₁u₁₂ + d₁₂ = d₁₂ = 1\nFrom (1,3): d₁₁u₁₃ + d₁₂u₂₃ = u₂₃ = 0\n\nFrom (2,1): l₂₁d₁₁ + d₂₁ = d₂₁ = 0\nFrom (2,2): (l₂₁·0 + 0)u₁₂ + (l₂₁·1 + d₂₂) = l₂₁ + d₂₂ = 0\nFrom (2,3): (0)u₁₃ + (l₂₁ + d₂₂)u₂₃ = 0 · 0 = 0. But A₂₃ = 1. Contradiction!\n\nSo with a singular 2×2 block, we get 0 in position (2,3) but need 1. So it doesn't work.\n\nWhat if the 2×2 block is at positions (2,3) instead? D = [[d₁₁, 0, 0], [0, d₂₂, d₂₃], [0, d₃₂, d₃₃]].\n\nFrom (1,1): d₁₁ = 0 (since A₁₁ = 0 and L₁₁ = U₁₁ = 1, so (LDU)₁₁ = d₁₁ = 0).\nFrom (1,2): d₁₁u₁₂ = 0 = A₁₂ = 1. Contradiction!\n\nSo d₁₁ = 0 leads to (LDU)₁₂ = 0 ≠ 1. Unless we use a 2×2 block at position (1,2).\n\nWe already tried 2×2 at (1,2) and it failed. So the 3-cycle matrix indeed has no such decomposition.\n\nGreat, so the decomposition doesn't always exist. Now the question is about the DECISION problem.\n\nActually, wait. Let me reconsider the problem statement. It says \"block-diagonal matrix D with 1×1 and 2×2 blocks.\" I've been assuming the blocks are contiguous (i.e., D = diag(B₁, B₂, ..., Bₖ) where each Bᵢ is 1×1 or 2×2, and they partition the index set into consecutive groups). This is the standard meaning of block-diagonal in the context of LDU decomposition.\n\nOK so my analysis stands. The 3-cycle permutation matrix is a counterexample to \"always exists.\"\n\nNow, the decision problem: given A, does there exist P such that P A P^T = L D U?\n\nThis is equivalent to: does there exist a permutation P such that the matrix B = P A P^T can be reduced by Gaussian elimination using only 1×1 and 2×2 symmetric pivots (pivots that use the same row and column indices)?\n\nThe question is whether this can be decided in O(n³).\n\nLet me think about this more carefully. The decision problem is essentially:\n\nCan we find a permutation P such that P A P^T admits a \"symmetric Gaussian elimination\" with 1×1 and 2×2 pivots?\n\nAt each step of the elimination, we either:\n1. Use a 1×1 pivot at position (k,k) (requires b_kk ≠ 0)\n2. Use a 2×2 pivot at positions (k,k), (k,k+1), (k+1,k), (k+1,k+1) (requires the 2×2 block to be invertible, or at least to allow the elimination to proceed)\n\nWait, but the 2×2 pivot doesn't have to be at positions (k, k+1). It could be at positions (k, j) for any j > k, but then we'd need to permute rows/columns k+1 and j. But that permutation is part of P, so it's already accounted for.\n\nActually, in the inductive construction, at each step we choose either:\n- A 1×1 pivot at position (k,k), or\n- A 2×2 pivot at positions (k,k), (k,j), (j,k), (j,j) for some j > k, and then we swap rows/columns k+1 and j.\n\nThe choice of which j to use (if any) is part of the permutation P.\n\nSo the decision problem is: can we find a sequence of such choices that successfully reduces the entire matrix?\n\nThis is a combinatorial problem. At each step, we have O(n) choices for the 2×2 pivot (which j to use), and we need to make n/2 such choices in the worst case. This could be exponential in the worst case.\n\nBut maybe there's a smarter way to decide this in O(n³)?\n\nHmm, let me think about what characterizes matrices that admit such a decomposition.\n\nA matrix A admits P A P^T = L D U iff there exists a permutation P such that P A P^T can be reduced by symmetric Gaussian elimination with 1×1 and 2×2 pivots.\n\nThis is related to the concept of \"symmetric pivoting\" or \"symmetric Gaussian elimination.\"\n\nActually, I think this problem is related to the following: a matrix A admits such a decomposition if and only if A is \"symmetrically permutable\" to a matrix that has a certain property.\n\nLet me think about this differently. The condition P A P^T = L D U means that A = P^T L D U P. Since L is lower unit triangular, U is upper unit triangular, and D is block diagonal, this means A can be written as a product of these matrices with a symmetric permutation.\n\nAnother way to think about it: P A P^T = L D U implies that A is \"equivalent\" (under symmetric permutation) to a matrix with an LDU decomposition.\n\nFor the standard LDU decomposition (D diagonal), a matrix B has B = L D U iff all leading principal minors of B are nonzero. With 2×2 blocks, the condition is relaxed: we need that at each step, either the current pivot is nonzero, or there's a 2×2 pivot that's invertible.\n\nThe question of whether there EXISTS a permutation making this work is a combinatorial question.\n\nLet me think about the complexity. \n\nActually, I recall that this problem might be related to the problem of finding a perfect matching in a bipartite graph, or to the problem of determining if a matrix has a certain structural property.\n\nLet me think about the 3-cycle example more carefully. A = [[0,1,0],[0,0,1],[1,0,0]]. The directed graph of A (edge i→j if aᵢⱼ ≠ 0) is the 3-cycle 1→2→3→1. The condition for a 1×1 pivot at position k is a_kk ≠ 0 (self-loop). The condition for a 2×2 pivot at positions (k,j) is a_kk a_jj - a_kj a_jk ≠ 0.\n\nFor the 3-cycle, there are no self-loops, and for any pair (k,j), exactly one of a_kj, a_jk is nonzero (it's a directed cycle), so a_kj a_jk = 0, and a_kk a_jj = 0, so the 2×2 determinant is 0. No pivot works.\n\nThis suggests the problem is related to the structure of the directed graph of A.\n\nNow, the question of whether an O(n³) algorithm exists for this decision problem...\n\nI think the answer is **YES**, and the algorithm is based on the following observation:\n\nThe decomposition P A P^T = L D U exists if and only if A is nonsingular AND the directed graph of A has a certain property (related to the existence of a \"symmetric pivot sequence\").\n\nActually, wait. The 3-cycle matrix IS nonsingular, and the decomposition doesn't exist. So nonsingularity is not sufficient.\n\nLet me reconsider. Maybe the answer is NO, there's no O(n³) algorithm, because the problem is NP-hard or something.\n\nActually, let me think about this problem from the perspective of the question being asked. The question asks \"Does there exist an O(n³) algorithm for deciding whether...\" This is a yes/no question about the existence of an algorithm.\n\nI think the answer is **YES**, such an algorithm exists. Here's my reasoning:\n\nThe key insight is that the problem can be reduced to checking whether a certain graph has a perfect matching, which can be done in O(n³) time (e.g., using the Hopcroft-Karp algorithm or the Hungarian algorithm).\n\nActually, let me think more carefully. The condition for the LDU decomposition with 2×2 blocks is related to the rank structure of the matrix.\n\nHmm, let me think about this from a different angle. \n\nThe decomposition P A P^T = L D U is equivalent to saying that A can be transformed by symmetric permutation into a matrix that has a \"block LDU\" decomposition. \n\nFor a matrix B = P A P^T, the block LDU decomposition exists iff:\n1. B₁₁ (the first 1×1 or 2×2 block) is invertible (or zero, if we allow zero blocks)\n2. The Schur complement S = B₂₂ - B₂₁ B₁₁⁻¹ B₁₂ (if B₁₁ is invertible) also has a block LDU decomposition.\n\nWait, but if B₁₁ is a zero 1×1 block, then we can't form the Schur complement. In that case, we need the first row and column (excluding the (1,1) entry) to be zero, or we need to use a 2×2 block.\n\nActually, I think the problem might be more subtle than I initially thought. Let me reconsider.\n\nIf we allow D to have zero 1×1 blocks, then the decomposition P A P^T = L D U with D having zero blocks means that L D U has a specific rank structure. Specifically, if D has a zero 1×1 block at position k, then the k-th column of L D is zero (well, not exactly, because D is block diagonal).\n\nHmm, this is getting complicated. Let me try to think about what's really being asked.\n\nI think the question is asking about a well-known decomposition in numerical linear algebra. The decomposition P A P^T = L D U where D is block diagonal with 1×1 and 2×2 blocks is essentially the **generalized LDU decomposition with symmetric pivoting**. \n\nFor symmetric matrices, this is the Bunch-Kaufman or Bunch-Parlett decomposition, which is O(n³) and always exists.\n\nFor general matrices, the question is more nuanced. The key reference might be the work on Gaussian elimination with complete pivoting, or the work on \"symmetric Gaussian elimination\" for general matrices.\n\nActually, I think I need to reconsider whether the 2×2 blocks need to be invertible. In the Bunch-Kaufman decomposition for symmetric matrices, the 2×2 blocks are always invertible (they're chosen to be invertible). If we require the 2×2 blocks to be invertible, then the 3-cycle example shows the decomposition doesn't always exist.\n\nBut the problem says \"block-diagonal matrix D with 1×1 and 2×2 blocks\" without specifying invertibility. However, for the decomposition P A P^T = L D U to be meaningful (with L, U unit triangular and hence invertible), D must have the same rank as A. So if A is nonsingular, D must be nonsingular, meaning all blocks must be invertible.\n\nOK so let me consider two cases:\n1. A is nonsingular: D must be nonsingular, so all 1×1 and 2×2 blocks must be invertible.\n2. A is singular: D must have the same rank as A, so some 1×1 blocks can be zero, but 2×2 blocks should be... well, they could be singular too, but then the rank contribution is 0 or 1.\n\nFor the nonsingular case, the 3-cycle shows the decomposition doesn't always exist. The question is whether we can decide in O(n³) if it exists.\n\nLet me think about the structure more. The decomposition exists iff we can find a permutation P such that P A P^T can be reduced by symmetric elimination with invertible 1×1 and 2×2 pivots.\n\nAt each step k, we need:\n- Either a_kk ≠ 0 (1×1 pivot), or\n- There exists j > k such that the 2×2 block [[a_kk, a_kj], [a_jk, a_jj]] is invertible (2×2 pivot, then swap j with k+1).\n\nAfter pivoting, we form the Schur complement and continue.\n\nThe question is: can we decide in O(n³) whether such a sequence of pivots exists?\n\nThis is a sequential decision problem: at each step, the choice of pivot affects the Schur complement, which affects future choices. This could potentially be exponential.\n\nHowever, I think there's a key structural insight: the existence of the decomposition depends only on the \"zero-nonzero pattern\" of A (and the ranks of certain submatrices), not on the specific values. This is because:\n- A 1×1 pivot requires a_kk ≠ 0\n- A 2×2 pivot requires det(2×2 block) ≠ 0\n\nIf we're working over the reals, these are algebraic conditions. But the question is about a specific given matrix, not about generic matrices.\n\nHmm, let me think about this differently. Maybe the answer is YES, and the algorithm is simply to try the greedy approach: at each step, if a_kk ≠ 0, use 1×1 pivot; otherwise, find any j with invertible 2×2 block. If no such j exists, the decomposition doesn't exist.\n\nBut is the greedy approach correct? Could it be that choosing a 1×1 pivot now prevents us from finding pivots later, while choosing a 2×2 pivot would have worked?\n\nConsider a 4×4 matrix where:\n- a₁₁ ≠ 0 (1×1 pivot possible)\n- But using a₁₁ as pivot leads to a Schur complement that's a 3-cycle (no further pivots possible)\n- While using a 2×2 pivot at (1,2) leads to a Schur complement that does have pivots\n\nIf such a matrix exists, then the greedy approach would fail, and we'd need to backtrack, potentially leading to exponential time.\n\nLet me try to construct such a matrix. We want:\n- A is 4×4, nonsingular\n- a₁₁ ≠ 0\n- Using 1×1 pivot at (1,1): Schur complement S is a 3-cycle-like matrix (no symmetric LDU decomposition)\n- Using 2×2 pivot at (1,2): Schur complement S' does have a symmetric LDU decomposition\n\nThe Schur complement after 1×1 pivot at (1,1): S = A₂₂ - A₂₁ a₁₁⁻¹ A₁₂, which is 3×3.\nThe Schur complement after 2×2 pivot at (1,2): S' = A₃₃' - A₃₁' B⁻¹ A₁₃', where B is the 2×2 block, and the indices are reorganized.\n\nThis is getting complicated. Let me try a specific example.\n\nActually, let me think about this more abstractly. The question of whether a greedy approach works for symmetric Gaussian elimination is related to the matroid structure of the problem.\n\nIn standard Gaussian elimination (with row pivoting only), the greedy approach works because the existence of an LU decomposition depends only on the ranks of leading principal submatrices, which form a matroid.\n\nFor symmetric pivoting, the situation is different because we're constraining the row and column permutations to be the same.\n\nI think the key result here is related to the following:\n\n**Theorem**: A nonsingular matrix A admits a decomposition P A P^T = L D U (with D block diagonal, 1×1 and 2×2 blocks, all invertible) if and only if A has a \"symmetric Gaussian elimination\" with 1×1 and 2×2 pivots. This can be decided in O(n³) time.\n\nActually, I'm not sure about this theorem. Let me think about whether the greedy approach works.\n\nClaim: If at step k, a_kk ≠ 0, then using the 1×1 pivot is always safe (i.e., if the decomposition exists, it also exists using the 1×1 pivot at this step).\n\nIs this true? If we use a 1×1 pivot, the Schur complement S = A₂₂ - A₂₁ a_kk⁻¹ A₁₂. If instead we use a 2×2 pivot, the Schur complement is different. Could the 2×2 pivot lead to a \"better\" Schur complement?\n\nIn standard Gaussian elimination (row pivoting only), using any nonzero pivot is safe because the LU decomposition exists iff all leading principal minors are nonzero, and this is independent of which nonzero pivot we choose (the Schur complement has the same rank structure).\n\nFor symmetric pivoting, the situation might be different because the Schur complement's zero pattern depends on the choice of pivot.\n\nHmm, but actually, I think there's a key insight: the RANK of the Schur complement is the same regardless of which invertible pivot we choose. This is because:\n\nrank(S) = rank(A) - rank(B)\n\nwhere B is the pivot block. If B is 1×1 (rank 1) or 2×2 (rank 2), the rank of S is rank(A) - 1 or rank(A) - 2 respectively.\n\nBut the zero PATTERN of S depends on the choice of pivot, and the zero pattern is what determines whether future pivots exist.\n\nSo the greedy approach might not work. This suggests the problem might be harder than O(n³).\n\nBut wait, maybe there's a different approach. Let me think about the problem in terms of graph theory.\n\nDefine a directed graph G on {1, ..., n} where i→j exists iff aᵢⱼ ≠ 0. The 1×1 pivot at k requires a self-loop at k. The 2×2 pivot at (k,j) requires a_kj ≠ 0 and a_jk ≠ 0 (a 2-cycle between k and j) OR the 2×2 determinant is nonzero for other reasons (e.g., a_kk ≠ 0 and a_jj ≠ 0 with a_kj a_jk ≠ a_kk a_jj).\n\nActually, the 2×2 determinant being nonzero is a more complex condition than just the graph structure. It depends on the actual values, not just the zero pattern.\n\nHmm, so the problem depends on the actual values, not just the zero pattern. This makes it harder to reduce to a graph problem.\n\nLet me reconsider. Maybe the answer is YES, and the algorithm is based on a different approach.\n\nActually, I think I should consider the possibility that the answer is simply YES, and the algorithm is the standard Gaussian elimination with symmetric pivoting (using 1×1 and 2×2 pivots), which is O(n³). The key question is whether the greedy approach (use 1×1 if possible, otherwise 2×2) always finds a decomposition if one exists.\n\nLet me think about this more carefully with a potential counterexample to the greedy approach.\n\nConsider a 4×4 matrix:\nA = [[1, 0, 0, 0],\n     [0, 0, 1, 0],\n     [0, 0, 0, 1],\n     [0, 1, 0, 0]]\n\na₁₁ = 1 ≠ 0, so greedy uses 1×1 pivot. Schur complement S = A₂₂ - A₂₁ · 1 · A₁₂ = A₂₂ (since A₂₁ and A₁₂ are zero in the relevant positions).\n\nWait, A₂₁ = [0, 0, 0]^T (column 1 of A, rows 2-4) and A₁₂ = [0, 0, 0] (row 1 of A, columns 2-4). So S = A₂₂ = [[0,1,0],[0,0,1],[1,0,0]], which is the 3-cycle! And we know the 3-cycle doesn't have a symmetric LDU decomposition.\n\nBut does A have a symmetric LDU decomposition with a different pivot choice? Let's try 2×2 pivot at (1,2): B = [[1,0],[0,0]], det = 0. Not invertible. \n\n2×2 pivot at (1,3): B = [[1,0],[0,0]], det = 0. Not invertible.\n2×2 pivot at (1,4): B = [[1,0],[0,0]], det = 0. Not invertible.\n\nSo no 2×2 pivot involving row/column 1 works (since a₁ⱼ = 0 for all j > 1). The only option is the 1×1 pivot at (1,1), which leads to the 3-cycle Schur complement that fails.\n\nSo A doesn't have a symmetric LDU decomposition at all! The greedy approach correctly identifies this (it tries 1×1, gets the 3-cycle, and fails). But the point is that A doesn't have the decomposition, so this isn't a counterexample to the greedy approach.\n\nLet me try to construct a matrix where the greedy approach fails: the greedy uses 1×1 and fails, but a 2×2 would succeed.\n\nWe need:\n- a₁₁ ≠ 0 (greedy uses 1×1)\n- Schur complement after 1×1 pivot doesn't have symmetric LDU\n- 2×2 pivot at (1,j) is invertible for some j\n- Schur complement after 2×2 pivot does have symmetric LDU\n\nLet me try to construct this. We need the 2×2 block [[a₁₁, a₁ⱼ], [aⱼ₁, aⱼⱼ]] to be invertible. Since a₁₁ ≠ 0, this is invertible iff aⱼⱼ - aⱼ₁ a₁ⱼ / a₁₁ ≠ 0 (Schur complement of the 2×2 block w.r.t. a₁₁).\n\nLet me try n = 4. I want:\n- After 1×1 pivot at (1,1): Schur complement is a 3-cycle (fails)\n- After 2×2 pivot at (1,2): Schur complement is something that works (e.g., identity)\n\nLet me set a₁₁ = 1. The 3×3 Schur complement after 1×1 pivot is S = A₂₂ - A₂₁ A₁₂ (since a₁₁ = 1). I want S to be the 3-cycle [[0,1,0],[0,0,1],[1,0,0]].\n\nSo A₂₂ - A₂₁ A₁₂ = [[0,1,0],[0,0,1],[1,0,0]] where A₂₁ = [a₂₁, a₃₁, a₄₁]^T and A₁₂ = [a₁₂, a₁₃, a₁₄].\n\nNow, for the 2×2 pivot at (1,2) to work, I need the 2×2 block [[1, a₁₂], [a₂₁, a₂₂]] to be invertible, i.e., a₂₂ - a₂₁ a₁₂ ≠ 0.\n\nAfter the 2×2 pivot, the Schur complement is a 2×2 matrix. I need it to have a symmetric LDU decomposition, which for 2×2 means either the (1,1) entry is nonzero, or the 2×2 block itself is invertible (which it is, since the original matrix is nonsingular and we used an invertible 2×2 pivot).\n\nActually, for a 2×2 matrix, the symmetric LDU decomposition always exists if the matrix is nonsingular (as I showed earlier). So the Schur complement after the 2×2 pivot (which is 2×2 and nonsingular) always has a symmetric LDU decomposition.\n\nSo I just need to construct A such that:\n1. a₁₁ = 1\n2. A₂₂ - A₂₁ A₁₂ = 3-cycle (so 1×1 pivot fails)\n3. The 2×2 block [[1, a₁₂], [a₂₁, a₂₂]] is invertible\n4. A is nonsingular\n\nLet me choose a₁₂ = 1, a₂₁ = 0, a₂₂ = 1. Then the 2×2 block [[1,1],[0,1]] has det = 1, invertible. ✓\n\nA₂₁ A₁₂ = [0, a₃₁, a₄₁]^T [1, a₁₃, a₁₄] = [[0, 0, 0], [a₃₁, a₃₁ a₁₃, a₃₁ a₁₄], [a₄₁, a₄₁ a₁₃, a₄₁ a₁₄]]\n\nS = A₂₂ - A₂₁ A₁₂ = [[a₂₂ - 0, a₂₃ - 0, a₂₄ - 0], [a₃₂ - a₃₁, a₃₃ - a₃₁ a₁₃, a₃₄ - a₃₁ a₁₄], [a₄₂ - a₄₁, a₄₃ - a₄₁ a₁₃, a₄₄ - a₄₁ a₁₄]]\n\nI want S = [[0,1,0],[0,0,1],[1,0,0]].\n\nFrom S₁₁ = a₂₂ = 1 - 0 = 1. But I want S₁₁ = 0. Contradiction since a₂₂ = 1.\n\nLet me choose a₂₂ = 0 instead. Then 2×2 block [[1, a₁₂], [a₂₁, 0]] has det = -a₂₁ a₁₂. For invertibility, need a₂₁ a₁₂ ≠ 0.\n\nLet a₁₂ = 1, a₂₁ = 1, a₂₂ = 0. 2×2 block [[1,1],[1,0]], det = -1, invertible. ✓\n\nS₁₁ = a₂₂ - a₂₁ a₁₂ = 0 - 1·1 = -1. But I want S₁₁ = 0. Hmm.\n\nOK, I need S₁₁ = 0, which means a₂₂ = a₂₁ a₁₂. But then the 2×2 block [[a₁₁, a₁₂], [a₂₁, a₂₂]] = [[1, a₁₂], [a₂₁, a₂₁ a₁₂]] has det = a₂₁ a₁₂ - a₂₁ a₁₂ = 0. Not invertible!\n\nSo if S₁₁ = 0 (which is required for the 3-cycle Schur complement), the 2×2 block at (1,2) is singular. This means I can't use the 2×2 pivot at (1,2) if the Schur complement has S₁₁ = 0.\n\nWhat about 2×2 pivot at (1,3) or (1,4)? The 2×2 block at (1,3) is [[1, a₁₃], [a₃₁, a₃₃]]. For this to be invertible, a₃₃ - a₃₁ a₁₃ ≠ 0. And S₂₂ = a₃₃ - a₃₁ a₁₃ (the (2,2) entry of the Schur complement after 1×1 pivot). In the 3-cycle, S₂₂ = 0. So again, the 2×2 block is singular.\n\nSimilarly, for (1,4): S₃₃ = a₄₄ - a₄₁ a₁₄ = 0 (from the 3-cycle), so the 2×2 block is singular.\n\nSo if the Schur complement after 1×1 pivot is a 3-cycle (all diagonal entries 0), then ALL 2×2 pivots involving row/column 1 are singular! This means the greedy approach doesn't miss anything: if the 1×1 pivot leads to a bad Schur complement, the 2×2 pivots would also fail.\n\nThis is a key insight! Let me see if this generalizes.\n\n**Key observation**: The 2×2 block [[a_kk, a_kj], [a_jk, a_jj]] is invertible iff a_kk a_jj - a_kj a_jk ≠ 0. The Schur complement after 1×1 pivot at k has (j,j) entry s_jj = a_jj - a_jk a_kj / a_kk. So s_jj = 0 iff a_jj = a_jk a_kj / a_kk iff a_kk a_jj = a_jk a_jk iff the 2×2 block is singular.\n\nWait, that's not quite right. s_jj = a_jj - a_jk a_kj / a_kk. And the 2×2 determinant is a_kk a_jj - a_kj a_jk = a_kk (a_jj - a_jk a_jk / a_kk) = a_kk · s_jj.\n\nSo the 2×2 block at (k,j) is invertible iff a_kk · s_jj ≠ 0. Since a_kk ≠ 0 (we're considering the case where 1×1 pivot is possible), the 2×2 block is invertible iff s_jj ≠ 0.\n\nSo: if we use the 1×1 pivot at k, the Schur complement has s_jj = 0 iff the 2×2 pivot at (k,j) would be singular.\n\nThis means: if the 1×1 pivot at k is available (a_kk ≠ 0), then for any j, the 2×2 pivot at (k,j) is available iff s_jj ≠ 0 (where s_jj is the diagonal entry of the Schur complement after the 1×1 pivot).\n\nNow, the question is: if the 1×1 pivot leads to a Schur complement that doesn't have a symmetric LDU decomposition, could a 2×2 pivot lead to one that does?\n\nThe 2×2 pivot at (k,j) is only available when s_jj ≠ 0. If s_jj ≠ 0, then in the Schur complement S (after 1×1 pivot), position j has a nonzero diagonal entry. So we could use a 1×1 pivot at j in S.\n\nBut the question is whether using the 2×2 pivot at (k,j) in the original matrix leads to a different (and possibly better) Schur complement than using 1×1 at k and then 1×1 at j.\n\nLet me think about this. After 1×1 pivot at k, the Schur complement is S (an (n-1)×(n-1) matrix). If we then use 1×1 pivot at j in S, the Schur complement of S w.r.t. j is S' (an (n-2)×(n-2) matrix).\n\nAfter 2×2 pivot at (k,j) in the original matrix, the Schur complement is S'' (an (n-2)×(n-2) matrix).\n\nAre S' and S'' the same? In standard Gaussian elimination, the Schur complement is independent of the order of elimination (this is a fundamental property). So yes, S' = S''!\n\nThis is the key insight: **the Schur complement after eliminating a set of indices is independent of the order in which they are eliminated** (as long as the pivots are invertible). This is because the Schur complement is the result of projecting out those coordinates, which is a well-defined operation regardless of order.\n\nSo: if a_kk ≠ 0 and s_jj ≠ 0 (meaning the 2×2 pivot at (k,j) is also available), then the Schur complement after either:\n- 1×1 at k, then 1×1 at j, or\n- 2×2 at (k,j)\nis the SAME (n-2)×(n-2) matrix.\n\nThis means: **if the 1×1 pivot at k is available, using it is always safe**. If the decomposition exists with a 2×2 pivot at (k,j), it also exists with the 1×1 pivot at k followed by 1×1 at j (since the resulting Schur complement is the same).\n\nWait, but there's a subtlety. After the 1×1 pivot at k, the Schur complement S might not have a 1×1 pivot at j (because s_jj might be 0). But if s_jj = 0, the 2×2 pivot at (k,j) is also not available (as we showed). So:\n\n- If s_jj ≠ 0: both 1×1 at k then 1×1 at j, and 2×2 at (k,j), are available, and lead to the same Schur complement.\n- If s_jj = 0: neither 2×2 at (k,j) nor 1×1 at j (after 1×1 at k) is available.\n\nSo the 2×2 pivot at (k,j) is available iff we can do 1×1 at k and then 1×1 at j. And they lead to the same result. This means:\n\n**Using a 1×1 pivot when available is always optimal.** The 2×2 pivot doesn't give any advantage over two 1×1 pivots.\n\nBut wait, what about the case where a_kk = 0? Then we MUST use a 2×2 pivot (or permute). The 2×2 pivot at (k,j) requires det([[0, a_kj], [a_jk, a_jj]]) = -a_kj a_jk ≠ 0, i.e., a_kj ≠ 0 and a_jk ≠ 0.\n\nIf a_kk = 0 and no 2×2 pivot is available (for all j, either a_kj = 0 or a_jk = 0), then we need to permute. But the permutation is part of P, so we should have permuted earlier.\n\nActually, the permutation P is chosen before the decomposition. So the question is: does there exist a P such that P A P^T has a symmetric Gaussian elimination with 1×1 and 2×2 pivots?\n\nThe greedy algorithm would be: at each step, if the current pivot is nonzero, use 1×1; otherwise, find a 2×2 pivot. If no 2×2 pivot exists, fail.\n\nBut the greedy algorithm doesn't choose P; it's making choices on the fly. The permutation P is implicitly determined by the choices made during elimination (swapping rows/columns when using 2×2 pivots).\n\nThe question is: does the greedy algorithm always find a decomposition if one exists?\n\nBased on the analysis above:\n- If a_kk ≠ 0, using 1×1 is always safe (doesn't miss any decompositions).\n- If a_kk = 0, we need a 2×2 pivot. If one exists, use it. If not, fail.\n\nBut when a_kk = 0 and we have multiple 2×2 pivot choices, does the choice matter? Could one 2×2 pivot lead to success and another to failure?\n\nAfter a 2×2 pivot at (k,j), the Schur complement is an (n-2)×(n-2) matrix. If we choose a different 2×2 pivot at (k,j'), the Schur complement is different. Could one lead to a valid decomposition and the other not?\n\nBy the same Schur complement independence argument: the Schur complement after eliminating {k,j} is the same regardless of whether we eliminate k first then j, or j first then k, or use a 2×2 block. But if we eliminate {k,j'} instead, we get a different Schur complement (different set of eliminated indices).\n\nSo the choice of which j to use for the 2×2 pivot DOES matter, because it determines which indices are eliminated together.\n\nThis means the greedy approach might need to try multiple 2×2 pivot choices, potentially leading to exponential time.\n\nHmm, but wait. Let me think about this more carefully. When a_kk = 0, we need to find j such that a_kj ≠ 0 and a_jk ≠ 0. The 2×2 block is [[0, a_kj], [a_jk, a_jj]], with det = -a_kj a_jk ≠ 0.\n\nAfter this 2×2 pivot, the Schur complement eliminates rows/columns k and j. The remaining matrix is (n-2)×(n-2).\n\nNow, could it be that choosing j₁ leads to a Schur complement that has a decomposition, while choosing j₂ leads to one that doesn't?\n\nI think yes, this is possible. So the greedy approach with arbitrary 2×2 pivot choice might not work, and we might need to search over choices.\n\nBut the question is whether there's an O(n³) algorithm, not whether the greedy approach works. Maybe there's a smarter algorithm.\n\nLet me think about this problem from a higher level. The decomposition P A P^T = L D U exists iff there's a permutation P and a partition of {1,...,n} into blocks of size 1 or 2 such that:\n- The blocks correspond to the diagonal blocks of D\n- The matrix can be eliminated in the order determined by the blocks\n- Each block (pivot) is invertible\n\nThe Schur complement independence tells us that the final Schur complement (after eliminating all blocks) is always the same (it's the empty matrix, since we eliminate everything). But the intermediate Schur complements depend on the order and grouping.\n\nActually, the Schur complement after eliminating a SET of indices is well-defined (independent of order), as long as the corresponding principal submatrix is invertible. So the Schur complement after eliminating the first k indices (in any order, with any grouping into 1×1 and 2×2 blocks) is the same, as long as the principal submatrix of those k indices is invertible.\n\nWait, that's not quite right either. The Schur complement after eliminating indices {i₁, ..., i_k} is:\n\nS = A₂₂ - A₂₁ A₁₁⁻¹ A₁₂\n\nwhere A₁₁ is the principal submatrix indexed by {i₁, ..., i_k} and A₂₂ is the principal submatrix indexed by the remaining indices. This is well-defined as long as A₁₁ is invertible, and it's independent of the order of elimination.\n\nSo the Schur complement depends only on the SET of eliminated indices, not on the order or grouping. This means:\n\nAt step k, we've eliminated some set S_k of k indices (either k 1×1 blocks or some mix of 1×1 and 2×2 blocks). The Schur complement is determined by S_k. The next pivot is either a 1×1 from the remaining indices, or a 2×2 from the remaining indices.\n\nThe question is: can we choose the sets S_1, S_2, ..., S_n (where S_k is obtained from S_{k-1} by adding one index for 1×1, or two indices for 2×2) such that at each step, the principal submatrix indexed by S_k is invertible?\n\nWait, that's not quite the right condition. The condition is that at each step, the PIVOT (the 1×1 or 2×2 block) is invertible. But the principal submatrix of all eliminated indices must also be invertible (since it's a product of the pivot blocks and triangular matrices).\n\nActually, the principal submatrix A[S_k, S_k] being invertible is equivalent to all the pivot blocks being invertible (since A[S_k, S_k] = L_k D_k U_k where L_k, U_k are unit triangular and D_k is the block diagonal of pivots). So the condition is:\n\n**Find an ordering of {1,...,n} into blocks B₁, B₂, ..., B_m (each of size 1 or 2) such that for each k, the principal submatrix A[B₁ ∪ ... ∪ B_k, B₁ ∪ ... ∪ B_k] is invertible.**\n\nAnd the Schur complement at step k depends only on the set B₁ ∪ ... ∪ B_k, not on the order of the blocks.\n\nNow, the condition \"A[S, S] is invertible for all prefixes S\" is equivalent to \"all leading principal minors (in the permuted order) are nonzero, where the permutation groups indices into blocks of size 1 or 2.\"\n\nThis is related to the concept of a \"nested dissection\" or \"block elimination ordering.\"\n\nThe question is: can we find such an ordering in O(n³) time?\n\nHmm, this is starting to look like a combinatorial optimization problem. Let me think about whether it can be solved efficiently.\n\nKey insight: The Schur complement after eliminating a set S is determined by S. The condition for the next pivot (a 1×1 or 2×2 block from the remaining indices) to be invertible depends on the Schur complement, which depends on S.\n\nBut the Schur complement can be computed in O(n²) time for each step, and there are O(n) steps, giving O(n³) total. The question is whether the SEARCH for the right ordering can be done efficiently.\n\nIf at each step, we can determine in O(n²) time which pivots are available (1×1 or 2×2), and if the choice doesn't affect future availability (i.e., any available pivot is fine), then the total time is O(n³).\n\nBut we've seen that the choice of 2×2 pivot can affect future availability. So the question is whether there's a way to make the choice that doesn't require backtracking.\n\nLet me revisit the key insight: if a 1×1 pivot is available, it's always safe to use it. This is because:\n- If a_kk ≠ 0, using 1×1 at k gives Schur complement S.\n- Any 2×2 pivot at (k,j) that's available (s_jj ≠ 0) would give the same Schur complement after also eliminating j.\n- So using 1×1 at k doesn't lose any options compared to using 2×2 at (k,j) and then eliminating j separately.\n\nWait, but what if we want to use a 2×2 pivot at (k,j) not because a_kk = 0, but because we want to eliminate j together with k for some strategic reason? The Schur complement after eliminating {k,j} is the same whether we use 1×1 at k then 1×1 at j, or 2×2 at (k,j). So there's no strategic advantage to using 2×2 when 1×1 is available.\n\nThis means: **when a 1×1 pivot is available, always use it.** This is provably optimal.\n\nNow, when a_kk = 0 (no 1×1 pivot), we must use a 2×2 pivot. The question is: which j to choose?\n\nAfter the 2×2 pivot at (k,j), the Schur complement eliminates {k,j}. The remaining problem is to find an elimination order for the remaining n-2 indices. The Schur complement depends on which j we chose.\n\nCould different choices of j lead to different outcomes? Let me think...\n\nIf we choose j₁, the Schur complement is S₁ = A[rest, rest] - A[rest, {k,j₁}] A[{k,j₁}, {k,j₁}]⁻¹ A[{k,j₁}, rest].\nIf we choose j₂, the Schur complement is S₂ = A[rest, rest] - A[rest, {k,j₂}] A[{k,j₂}, {k,j₂}]⁻¹ A[{k,j₂}, rest].\n\nThese are different matrices (in general), and one might have a valid elimination order while the other doesn't.\n\nSo the choice of j matters, and we might need to try multiple options. This could lead to exponential time in the worst case.\n\nBut wait, maybe there's a way to determine the right j without trying all options. Let me think about what makes one j better than another.\n\nActually, let me think about this differently. The condition for the decomposition to exist is:\n\nThere exists a partition of {1,...,n} into blocks B₁, ..., B_m (size 1 or 2) and an ordering of these blocks such that for each prefix, the principal submatrix is invertible.\n\nSince the Schur complement is independent of the order of elimination (for a given set), the condition is really:\n\nThere exists a partition of {1,...,n} into blocks of size 1 or 2, and an ordering of the blocks, such that for each k, the principal submatrix A[B₁ ∪ ... ∪ B_k, B₁ ∪ ... ∪ B_k] is invertible.\n\nNow, this is equivalent to: there exists a maximal chain of subsets ∅ = S₀ ⊂ S₁ ⊂ ... ⊂ S_n = {1,...,n} where |S_k \\ S_{k-1}| ∈ {1, 2} and A[S_k, S_k] is invertible for all k.\n\nThis is a problem on the lattice of subsets, which could be exponential in general. But maybe the structure of the problem allows an efficient solution.\n\nLet me think about this in terms of matroid theory. The sets S where A[S, S] is invertible form a \"transversal matroid\" or something similar? Actually, the sets where a principal submatrix is invertible don't form a matroid in general.\n\nHmm, let me think about a different approach. \n\nActually, I realize that the problem might be related to the following classical result:\n\n**Theorem (Gaussian elimination with complete pivoting)**: For any nonsingular matrix A, there exist permutation matrices P and Q such that P A Q = L U. This can be found in O(n³) time.\n\nBut our problem requires P = Q^T (symmetric pivoting), which is more restrictive.\n\n**Theorem (Bunch-Kaufman for symmetric matrices)**: For any symmetric matrix A, there exists P such that P A P^T = L D L^T where D is block diagonal with 1×1 and 2×2 blocks. O(n³).\n\nBut our problem is for general (not necessarily symmetric) matrices, and the decomposition is L D U (not L D L^T).\n\nLet me search my memory for results about LDU decomposition of general matrices with symmetric pivoting...\n\nI think the key result might be related to the work of Bunch and Hopcroft (1974) or similar. Let me think...\n\nActually, I recall that for general matrices, the LDU decomposition with symmetric pivoting (P A P^T = L D U) is NOT always possible, as we showed with the 3-cycle example. The question is whether the EXISTENCE can be decided in O(n³).\n\nLet me think about this from the perspective of the problem. The problem asks \"Does there exist an O(n³) algorithm for deciding whether...\" This is a meta-question about the existence of an algorithm, not about the existence of the decomposition.\n\nI think the answer is **YES**, and here's why:\n\nThe key insight is that the greedy algorithm (always use 1×1 when available, otherwise use any available 2×2) might not work due to the choice of 2×2 pivot. However, we can reformulate the problem as follows:\n\nThe decomposition exists iff there's a permutation P such that P A P^T has all \"block leading principal minors\" nonzero, where the blocks are of size 1 or 2 and contiguous.\n\nThis is equivalent to: there exists an ordering of {1,...,n} into contiguous blocks of size 1 or 2 such that the principal submatrix of the first k blocks is invertible for all k.\n\nNow, here's the key: the Schur complement after eliminating a set S is independent of the order. So the condition is:\n\nThere exists a sequence of sets S₁ ⊂ S₂ ⊂ ... ⊂ S_n = {1,...,n} with |S_k \\ S_{k-1}| ∈ {1, 2} and A[S_k, S_k] nonsingular for all k.\n\nThis is equivalent to: there exists a maximal chain in the poset of \"nonsingular principal submatrices\" where each step adds 1 or 2 elements.\n\nNow, the question is whether this can be decided in polynomial time.\n\nI think the answer is yes, and here's the algorithm:\n\n1. Start with S = ∅.\n2. At each step, try to add one element i (1×1 pivot) such that A[S ∪ {i}, S ∪ {i}] is invertible. If such i exists, add it.\n3. If no 1×1 pivot exists, try to add two elements {i, j} (2×2 pivot) such that A[S ∪ {i, j}, S ∪ {i, j}] is invertible. If such a pair exists, add them.\n4. If neither 1×1 nor 2×2 pivot exists, the decomposition doesn't exist.\n\nThe question is: does the greedy choice in step 2 (always use 1×1 when available) lead to a correct algorithm?\n\nWe showed that if a 1×1 pivot is available, using it is safe (doesn't miss any decompositions). So step 2 is correct.\n\nThe question is about step 3: when no 1×1 pivot is available, which 2×2 pivot to choose?\n\nClaim: when no 1×1 pivot is available (i.e., for all remaining i, A[S ∪ {i}, S ∪ {i}] is singular), any available 2×2 pivot is equally good.\n\nIs this true? Let me think...\n\nIf no 1×1 pivot is available, it means for all remaining i, the Schur complement s_ii = 0 (the diagonal of the Schur complement is all zeros). In this case, a 2×2 pivot at (i, j) requires s_ij · s_ji ≠ 0 (since the 2×2 block is [[0, s_ij], [s_ji, 0]] with det = -s_ij s_ji).\n\nWait, actually the 2×2 block in the Schur complement is [[s_ii, s_ij], [s_ji, s_jj]] = [[0, s_ij], [s_ji, 0]], and its determinant is -s_ij s_ji. For this to be nonzero, we need s_ij ≠ 0 and s_ji ≠ 0.\n\nNow, after the 2×2 pivot at (i, j), the new Schur complement eliminates {i, j}. The question is whether the choice of (i, j) affects the existence of future pivots.\n\nHmm, I think the choice does matter. Let me try to construct a counterexample.\n\nConsider a 6×6 matrix where:\n- After some elimination, we have a 4×4 Schur complement S with all diagonal entries 0.\n- S has 2×2 pivots at (1,2) and (3,4), but not at (1,3) or (1,4) or (2,3) or (2,4).\n- Using 2×2 at (1,2) gives a 2×2 Schur complement that has a 1×1 pivot.\n- Using 2×2 at (3,4) gives a 2×2 Schur complement that doesn't have a 1×1 pivot (but has a 2×2 pivot, which is fine since it's the last step).\n\nWait, for a 2×2 Schur complement, the decomposition always exists (as we showed). So both choices would work. Let me try a larger example.\n\nConsider a 6×6 Schur complement S with all diagonal entries 0. Available 2×2 pivots: (1,2) and (3,4) and (1,5) (for example). \n\n- Using (1,2): remaining 4×4 Schur complement S'. Does S' have a valid elimination?\n- Using (3,4): remaining 4×4 Schur complement S''. Does S'' have a valid elimination?\n- Using (1,5): remaining 4×4 Schur complement S'''. Does S''' have a valid elimination?\n\nThese could be different. One might work and another might not.\n\nSo the greedy approach with arbitrary 2×2 choice might not work. The question is whether there's a smarter way to choose.\n\nHmm, let me think about this differently. Maybe the problem can be reduced to a matching problem or a graph problem that can be solved in polynomial time.\n\nWhen all diagonal entries of the Schur complement are 0, we need to find a perfect matching in the \"2×2 pivot graph\": a graph where vertices are the remaining indices, and edge (i,j) exists iff s_ij ≠ 0 and s_ji ≠ 0 (i.e., the 2×2 pivot at (i,j) is available). We need a perfect matching in this graph (to pair up all indices into 2×2 blocks).\n\nBut wait, after choosing a 2×2 pivot and eliminating, the Schur complement changes, and the new Schur complement might have nonzero diagonal entries (allowing 1×1 pivots) or might still have all-zero diagonal (requiring more 2×2 pivots).\n\nSo the problem is more complex than just finding a perfect matching at one step.\n\nHowever, here's a key insight: if the Schur complement S has all diagonal entries 0, and we find a perfect matching M in the 2×2 pivot graph, then we can eliminate all pairs in M. The question is whether the resulting decomposition is valid, i.e., whether each 2×2 pivot block is invertible.\n\nBut the 2×2 pivot blocks ARE invertible (by definition of the edges in the 2×2 pivot graph). And the Schur complement after eliminating all pairs is well-defined (since each pair's principal submatrix is invertible). So the decomposition exists!\n\nWait, is this correct? Let me think more carefully.\n\nIf S is a 2m × 2m matrix with all diagonal entries 0, and we find a perfect matching M = {(i₁,j₁), (i₂,j₂), ..., (i_m,j_m)} in the 2×2 pivot graph, then we can eliminate the pairs in any order (since the Schur complement after eliminating a set is independent of order). Each 2×2 block S[{i_k, j_k}, {i_k, j_k}] is invertible (det = -s_{i_k j_k} s_{j_k i_k} ≠ 0). So the decomposition exists.\n\nBut wait, we need the principal submatrix S[{i₁,j₁, i₂,j₂, ..., i_k,j_k}, {i₁,j₁, i₂,j₂, ..., i_k,j_k}] to be invertible for each prefix k. Is this guaranteed?\n\nNot necessarily! The principal submatrix of the first k pairs might be singular even if each individual 2×2 block is invertible.\n\nExample: S = [[0, 1, 1, 0], [1, 0, 0, 0], [1, 0, 0, 1], [0, 0, 1, 0]]. All diagonal entries 0. 2×2 pivot graph edges: (1,2) [s₁₂=1, s₂₁=1], (1,3) [s₁₃=1, s₃₁=1], (3,4) [s₃₄=1, s₄₃=1]. Perfect matchings: {(1,2), (3,4)} and {(1,3), (2,4)}... wait, (2,4) is not an edge (s₂₄=0). So the only perfect matching is {(1,2), (3,4)}.\n\nPrincipal submatrix of {(1,2), (3,4)} = S itself = [[0,1,1,0],[1,0,0,0],[1,0,0,1],[0,0,1,0]]. det = ? Let me compute.\n\ndet = 0·det([[0,0,0],[0,0,1],[0,1,0]]) - 1·det([[1,0,0],[1,0,1],[0,1,0]]) + 1·det([[1,0,0],[1,0,0],[0,0,0]]) - 0·...\n= -1·(1·det([[0,1],[1,0]]) - 0 + 0) + 1·(0)\n= -1·(0·0 - 1·1) = -1·(-1) = 1 ≠ 0.\n\nOK so in this case it's invertible. But in general, it might not be.\n\nHmm, actually, if we eliminate the pairs one at a time, the Schur complement after each step is well-defined (since each 2×2 block is invertible). And the principal submatrix of the eliminated indices is the product of the pivot blocks (in some sense), which is invertible. So the principal submatrix IS invertible.\n\nWait, let me think about this more carefully. If we eliminate pair (i₁, j₁) first, the 2×2 block S[{i₁,j₁}, {i₁,j₁}] is invertible. The Schur complement S' is well-defined. Then we eliminate pair (i₂, j₂) from S', and the 2×2 block S'[{i₂,j₂}, {i₂,j₂}] is... is it invertible?\n\nNot necessarily! The 2×2 block in the Schur complement S' might be different from the 2×2 block in S. The Schur complement changes the entries.\n\nSo the fact that s_{i₂ j₂} ≠ 0 and s_{j₂ i₂} ≠ 0 in S doesn't mean the 2×2 block is invertible in S'.\n\nHmm, this complicates things. Let me reconsider.\n\nActually, the 2×2 block in S' (the Schur complement after eliminating (i₁, j₁)) at positions (i₂, j₂) is:\n\nS'[{i₂,j₂}, {i₂,j₂}] = S[{i₂,j₂}, {i₂,j₂}] - S[{i₂,j₂}, {i₁,j₁}] S[{i₁,j₁}, {i₁,j₁}]⁻¹ S[{i₁,j₁}, {i₂,j₂}]\n\nThis is a 2×2 matrix, and its invertibility depends on the specific values. It might be singular even if S[{i₂,j₂}, {i₂,j₂}] is invertible.\n\nSo the perfect matching approach doesn't directly work. We need to be more careful.\n\nOK so let me step back and think about the big picture. The question is whether there's an O(n³) algorithm for this decision problem. Let me consider the possibilities:\n\n1. **YES**: There's an O(n³) algorithm. This could be based on a greedy approach with a smart choice of 2×2 pivots, or on a reduction to a polynomial-time solvable problem (like matching).\n\n2. **NO**: There's no O(n³) algorithm. This could be because the problem is NP-hard, or because it requires more than O(n³) time.\n\nI think the answer is **YES**, and here's my reasoning:\n\nThe key insight is that the problem can be solved by a greedy algorithm where:\n- When a 1×1 pivot is available, use it (provably optimal).\n- When no 1×1 pivot is available, we need to find a 2×2 pivot. The choice of 2×2 pivot matters, but we can use the following strategy: find a perfect matching in the \"2×2 pivot graph\" and use it.\n\nBut as I noted, the perfect matching approach has issues because the Schur complement changes. However, there's a deeper result:\n\n**Key theorem**: If S is a matrix with all diagonal entries 0, and the 2×2 pivot graph has a perfect matching M, then the decomposition exists using the pairs in M (in any order).\n\nIs this true? Let me think about why...\n\nActually, I think this might be true because of the following: if all diagonal entries are 0 and we use a 2×2 pivot at (i,j), the Schur complement S' also has all diagonal entries 0 (or at least, the diagonal entries corresponding to the remaining indices).\n\nWait, is that true? Let's check. After eliminating (i,j), the Schur complement at position (k,k) is:\n\ns'_kk = s_kk - [s_ki, s_kj] [[0, s_ij], [s_ji, 0]]⁻¹ [s_ik, s_jk]^T\n\n[[0, s_ij], [s_ji, 0]]⁻¹ = (1/(-s_ij s_ji)) [[0, -s_ij], [-s_ji, 0]] = [[0, 1/s_ji], [1/s_ij, 0]]\n\nSo [s_ki, s_kj] [[0, 1/s_ji], [1/s_ij, 0]] [s_ik, s_jk]^T = [s_ki, s_kj] [s_jk/s_ji, s_ik/s_ij]^T = s_ki s_jk/s_ji + s_kj s_ik/s_ij\n\ns'_kk = s_kk - s_ki s_jk/s_ji - s_kj s_ik/s_ij = 0 - s_ki s_jk/s_ji - s_kj s_ik/s_ij\n\nThis is NOT necessarily 0. So the Schur complement after a 2×2 pivot doesn't necessarily have all-zero diagonal.\n\nHmm, so the \"all diagonal zero\" property is not preserved. This means after a 2×2 pivot, we might have 1×1 pivots available, which simplifies things.\n\nBut it also means the problem is more complex than just finding a perfect matching.\n\nLet me reconsider. Maybe the answer is actually **YES** and the algorithm is simply the greedy approach, but with a specific strategy for choosing 2×2 pivots that guarantees correctness.\n\nActually, I just realized something. Let me reconsider the problem from scratch.\n\nThe question asks about the existence of an O(n³) algorithm. This is a theoretical question. Let me think about what's known in the literature.\n\nThe decomposition P A P^T = L D U with D block diagonal (1×1 and 2×2 blocks) is known as the **LDU decomposition with symmetric pivoting** or **Gaussian elimination with symmetric pivoting and 2×2 blocks**.\n\nFor symmetric matrices, this is the Bunch-Kaufman decomposition, which is O(n³) and always exists.\n\nFor general matrices, I believe this is related to the work of Bunch and Hopcroft (1974), who showed that Gaussian elimination with complete pivoting can be done in O(n³) for general matrices. But complete pivoting uses different row and column permutations (P A Q = LU), not symmetric pivoting (P A P^T = LDU).\n\nFor symmetric pivoting on general matrices, I'm not aware of a classical result. But let me think about whether the problem can be solved in O(n³).\n\nActually, I think the answer might be **YES**, and the key insight is:\n\n**Theorem**: For any matrix A (singular or nonsingular), the decomposition P A P^T = L D U exists if and only if A can be reduced to upper triangular form by symmetric Gaussian elimination with 1×1 and 2×2 pivots. This can be decided in O(n³) time by the following algorithm:\n\n1. At each step, if a 1×1 pivot is available, use it.\n2. If no 1×1 pivot is available but a 2×2 pivot is, use any available 2×2 pivot.\n3. If neither is available, the decomposition doesn't exist.\n\nThe correctness of step 1 follows from the Schur complement independence argument. The correctness of step 2 (any 2×2 pivot works) needs to be proven.\n\nLet me try to prove step 2. Suppose no 1×1 pivot is available (all diagonal entries of the current Schur complement are 0). We have two available 2×2 pivots: (i,j) and (k,l). We want to show that if the decomposition exists using (i,j), it also exists using (k,l).\n\nHmm, this is not obvious. Let me think about a specific case.\n\nActually, maybe the key insight is different. Let me think about the problem in terms of the rank of principal submatrices.\n\nThe decomposition P A P^T = L D U exists iff there's a permutation P and a block structure such that all \"block leading principal minors\" are nonzero (or more precisely, the block leading principal submatrices are invertible).\n\nThis is equivalent to: there exists a chain of subsets ∅ = S₀ ⊂ S₁ ⊂ ... ⊂ S_m = {1,...,n} with |S_k \\ S_{k-1}| ∈ {1, 2} and A[S_k, S_k] invertible for all k.\n\nNow, the sets where A[S, S] is invertible form a \"independence family\" (not necessarily a matroid). The question is whether we can find a maximal chain in this independence family with steps of size 1 or 2.\n\nFor a matroid, the greedy algorithm works for finding a maximal independent set. But this isn't a matroid, and we need a chain, not just a set.\n\nHmm, let me think about this differently. \n\nActually, I think the answer might be **YES** for the following reason:\n\nThe problem can be reduced to finding a perfect matching in a certain bipartite graph, which can be done in O(n³) time (e.g., Hopcroft-Karp is O(n^{2.5}), but even the simpler Hungarian algorithm is O(n³)).\n\nHere's the reduction: \n\nThe decomposition P A P^T = L D U exists iff A is \"symmetrically permutable\" to a matrix with an LDU decomposition (with 1×1 and 2×2 blocks). This is equivalent to finding a permutation P such that P A P^T has a certain rank property.\n\nActually, I don't think this reduces to bipartite matching in a straightforward way.\n\nLet me try yet another approach. Let me think about what the decomposition implies about the matrix A.\n\nIf P A P^T = L D U, then A = P^T L D U P. Let Q = P^T. Then A = Q L D U Q^T = (QL)(D)(UQ^T). Note that QL is not lower triangular in general (it's a permuted lower triangular matrix). Similarly, UQ^T is a permuted upper triangular matrix.\n\nActually, let me think about the LU decomposition. A = LU (without pivoting) exists iff all leading principal minors are nonzero. With row pivoting, PA = LU exists iff A is nonsingular (for the partial pivoting case). With complete pivoting, PAQ = LU exists iff A is nonsingular.\n\nFor symmetric pivoting, P A P^T = LU exists iff there's a permutation P such that all leading principal minors of P A P^T are nonzero. This is equivalent to: there's an ordering of the indices such that all prefix principal submatrices are invertible.\n\nThis is known to be equivalent to: A is nonsingular and has a \"symmetric Gaussian elimination\" without 2×2 pivots. This doesn't always exist (e.g., the 3-cycle matrix).\n\nWith 2×2 pivots, we relax the condition: we allow the prefix to grow by 2 at a time, and the 2×2 block must be invertible.\n\nNow, the question of whether such an ordering exists is a combinatorial question. Let me think about its complexity.\n\nI think this problem might actually be solvable in O(n³) by the following argument:\n\n**Claim**: The greedy algorithm (use 1×1 when available, otherwise use any available 2×2) correctly decides the problem.\n\n**Proof sketch**: \n- Step 1 (1×1 when available): Proven correct by Schur complement independence.\n- Step 2 (any 2×2 when no 1×1): Need to prove that when all diagonal entries are 0, any available 2×2 pivot leads to a successful decomposition iff any other does.\n\nFor step 2, the key insight might be:\n\nWhen all diagonal entries of the Schur complement S are 0, and we use a 2×2 pivot at (i,j), the resulting Schur complement S' has a specific structure. The question is whether the choice of (i,j) affects the existence of future pivots.\n\nLet me think about this more carefully. When all diagonal entries are 0, the 2×2 pivot at (i,j) has block [[0, s_ij], [s_ji, 0]] with det = -s_ij s_ji ≠ 0.\n\nAfter this pivot, the new Schur complement at position (k,k) is:\ns'_kk = 0 - s_ki s_jk/s_ji - s_kj s_ik/s_ij\n\nAnd at position (k,l) (for k,l ∉ {i,j}):\ns'_kl = s_kl - s_ki s_jl/s_ji - s_kj s_il/s_ij\n\nThe key question: does the set of available pivots in S' depend on the choice of (i,j)?\n\nI think it does, in general. So the greedy approach with arbitrary 2×2 choice might not work.\n\nBut maybe there's a way to choose the 2×2 pivot wisely. For example, choose the 2×2 pivot that maximizes the number of nonzero diagonal entries in S'. Or choose based on some graph-theoretic criterion.\n\nAlternatively, maybe the problem can be solved by a different approach entirely, not based on greedy elimination.\n\nLet me think about the problem from the perspective of the principal minor assignment problem or the matrix completion problem.\n\nActually, I just thought of something. The condition for the decomposition is:\n\nThere exists a permutation P and a block partition B₁, ..., B_m (sizes 1 or 2) such that for each k, det(A[B₁ ∪ ... ∪ B_k, B₁ ∪ ... ∪ B_k]) ≠ 0.\n\nThis is equivalent to: there exists a maximal chain of subsets with increments of size 1 or 2, where each subset has invertible principal submatrix.\n\nNow, consider the set system F = {S ⊆ {1,...,n} : A[S,S] is invertible}. We need to find a maximal chain in F with increments of size 1 or 2.\n\nFor a nonsingular matrix A, {1,...,n} ∈ F. The question is whether we can reach {1,...,n} from ∅ via a chain in F with steps of size 1 or 2.\n\nThis is a reachability problem in a DAG (the Hasse diagram of F restricted to steps of size 1 or 2). The DAG has 2^n vertices in the worst case, so we can't enumerate all of them.\n\nBut maybe we can use dynamic programming or some other technique to solve this efficiently.\n\nHmm, I think the key insight might be related to the matroid structure of the problem. If F were a matroid, the greedy algorithm would work. But F is not a matroid in general.\n\nHowever, F has a special structure: it's the set of \"nonsingular principal submatrices.\" This is related to the concept of a \"linear matroid\" or \"transversal matroid.\"\n\nActually, let me think about this differently. The problem is asking about a specific matrix A over the reals. The condition A[S,S] invertible is a condition on the principal minors of A.\n\nFor a generic matrix (one where all principal minors are nonzero), the decomposition trivially exists (use all 1×1 pivots, P = I). The question is about non-generic matrices.\n\nI think the answer to the original question is **YES**, and the algorithm is based on the following:\n\n**The greedy algorithm with 1×1 pivots first, then any 2×2 pivot, correctly decides the problem in O(n³) time.**\n\nThe key claim that needs to be proven is: when no 1×1 pivot is available, any 2×2 pivot is equally good. \n\nLet me try to prove this. Suppose all diagonal entries of S are 0, and (i,j) and (k,l) are both available 2×2 pivots. We want to show that the decomposition exists using (i,j) iff it exists using (k,l).\n\nCase 1: {i,j} ∩ {k,l} = ∅. \nAfter using (i,j), the Schur complement S' has some structure. After using (k,l), the Schur complement S'' has some structure. We need to show that S' has a valid decomposition iff S'' does.\n\nThis is not obvious. Let me think about a specific example.\n\nS = [[0, 1, 1, 0],\n     [1, 0, 0, 1],\n     [1, 0, 0, 1],\n     [0, 1, 1, 0]]\n\nAll diagonal entries 0. 2×2 pivots: (1,2) [s₁₂=1, s₂₁=1, det=-1≠0], (1,3) [s₁₃=1, s₃₁=1, det=-1≠0], (2,4) [s₂₄=1, s₄₂=1, det=-1≠0], (3,4) [s₃₄=1, s₄₃=1, det=-1≠0].\n\nNote: (2,3) [s₂₃=0, not available], (1,4) [s₁₄=0, not available].\n\nUsing (1,2): Schur complement S' is 2×2 (indices 3,4).\ns'₃₃ = 0 - s₃₁ s₂₃/s₂₁ - s₃₂ s₁₃/s₁₂ = 0 - 1·0/1 - 0·1/1 = 0\ns'₄₄ = 0 - s₄₁ s₂₄/s₂₁ - s₄₂ s₁₄/s₁₂ = 0 - 0·1/1 - 1·0/1 = 0\ns'₃₄ = s₃₄ - s₃₁ s₂₄/s₂₁ - s₃₂ s₁₄/s₁₂ = 1 - 1·1/1 - 0·0/1 = 0\ns'₄₃ = s₄₃ - s₄₁ s₂₃/s₂₁ - s₄₂ s₁₃/s₁₂ = 1 - 0·0/1 - 1·1/1 = 0\n\nSo S' = [[0, 0], [0, 0]]. This is the zero matrix! The 2×2 block is singular (det = 0). No pivot available. Decomposition fails!\n\nUsing (1,3): Schur complement S'' is 2×2 (indices 2,4).\ns''₂₂ = 0 - s₂₁ s₃₂/s₃₁ - s₂₃ s₁₃/s₁₃... wait, let me be more careful.\n\nThe 2×2 pivot is at (1,3), so we eliminate indices 1 and 3. The remaining indices are 2 and 4.\n\ns''₂₂ = s₂₂ - [s₂₁, s₂₃] B⁻¹ [s₁₂, s₃₂]^T where B = [[s₁₁, s₁₃], [s₃₁, s₃₃]] = [[0, 1], [1, 0]], B⁻¹ = [[0, 1], [1, 0]].\n\n[s₂₁, s₂₃] B⁻¹ [s₁₂, s₃₂]^T = [1, 0] [[0,1],[1,0]] [1, 0]^T = [1, 0] [0, 1]^T = 0.\n\ns''₂₂ = 0 - 0 = 0.\n\n",
+      "tool_calls": [],
+      "metrics": {
+        "prompt_tokens": 24239,
+        "completion_tokens": 25000,
+        "cached_tokens": 1355
+      },
+      "extra": {
+        "generation_model": "glm-5-2",
+        "telemetry": {
+          "source": "assistant",
+          "operation": "inference"
+        }
+      }
+    }
+  ],
+  "final_metrics": {
+    "total_prompt_tokens": 24239,
+    "total_completion_tokens": 25000,
+    "total_cached_tokens": 1355,
+    "total_steps": 10
+  }
+}

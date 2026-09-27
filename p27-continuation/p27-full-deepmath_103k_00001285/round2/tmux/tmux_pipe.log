@@ -1,0 +1,18 @@
+Looking at this problem, I need to determine whether every hypergraph has a "good transversal basis" where $I_B$ is maximal by inclusion among all transversal bases.
+
+Let me reason through this carefully, then write the proof to `proof.md`.The proof has been written to `proof.md`.
+
+## Summary
+
+**Answer: No** — not every hypergraph has a good transversal basis.
+
+**Key reasoning:**
+
+- **Finite hypergraphs:** Yes, trivially. The family $\{I_B : B \text{ is a transversal basis}\}$ is a finite subset of $2^E$, so it always has a maximal element under inclusion.
+
+- **Infinite hypergraphs:** No. The counterexample is $V = \mathbb{N}$, $E = \{e_n : n \in \mathbb{N}\}$ where $e_n = \{n, n+1, \ldots\}$.
+
+  - The only transversal bases are singletons $\{k\}$, with $I_{\{k\}} = \{e_0, \ldots, e_k\}$.
+  - Any finite set $B$ with $|B| \geq 2$ fails: only the maximum element is essential, so $B$ is not minimal for $I_B$.
+  - Any infinite (unbounded) set $B$ fails: $e_n \cap B$ is always infinite, so no element is essential.
+  - The chain $I_{\{0\}} \subsetneq I_{\{1\}} \subsetneq I_{\{2\}} \subsetneq \cdots$ has no maximal element, so no good transversal basis exists.

@@ -1,0 +1,21 @@
+我将从第 1 轮结束的地方继续。交接文档显示，我们需要 (1) 精确计算 $m$，以及 (2) 求解优化问题。让我使用 Python/sympy 来精确计算 $m$ 并验证关键计算。$A^2 - BC + C^2 = 0$ 完全成立！第一轮的手动计算出现了算术错误。这意味着 $m = 1$ 完全成立。让我验证一下三次方程的根并确认这一点。有意思！数值计算显示 $m = (w_1+w_3)w_2 = 0.7142857... = 5/7$，而不是 $-w_1w_3 = 1$。第一轮的恒等式 $w_1w_2+w_1w_3+w_2w_3=0$ 是错误的！让我精确地验证一下。$m = 5/7$ 已确认。现在让我从代数上验证这一点，并求解优化问题。$m = 5/7$ 已确认。现在 $\frac{63m}{5} = \frac{63 \cdot 5/7}{5} = 9$。让我来求解这个优化问题。唯一临界点是 $t=1$，此时 $g=6$，且 $g''(1)=48>0$。让我验证一下这是所有 $(a,b,c)$ 的全局最小值，而不仅仅是在 $b=c$ 曲线上。现在让我把完整的证明写到 `proof.md` 文件中。Let me clean up the messy derivative computation in the proof.The proof is complete. Here's a summary of the solution:
+
+## Solution Summary
+
+**Key correction from Round 1:** The handoff's manual calculation of $A^2 - BC + C^2 = -199964000$ was an **arithmetic error**. Exact computation confirms $A^2 - BC + C^2 = 0$ exactly.
+
+**The solution:**
+
+1. **Substitution $u = w^3$** reduces the 9th-degree equation to a cubic $Au^3 - Bu^2 + C = 0$ with no $u$-term, giving $k = 3$ real roots.
+
+2. **The identity $A^2 - BC + C^2 = 0$** (i.e., $BC = A^2 + C^2$) allows factoring the cubic via $u = (C/A)s$:
+   $$(s-1)(C^2 s^2 - A^2 s - A^2) = 0$$
+   So $u_2 = C/A$ is the middle root.
+
+3. **Deriving the equation for $m$:** Through Vieta's formulas and the identity $p^3 + q^3 = (p+q)^3 - 3pq(p+q)$, one obtains:
+   $$m^3 + \frac{218}{245}m - 1 = 0$$
+   Since $m = 5/7$ satisfies this (check: $125/343 + 218/343 - 1 = 0$) and the derivative $3m^2 + 218/245 > 0$ ensures uniqueness, **$m = 5/7$**.
+
+4. **Optimization:** With $m = 5/7$, the coefficient simplifies to $63m/5 = 9$. Normalizing $abc = 1$, the expression becomes $a^3 + b^3 + c^3 + 9/(a+b+c)$. Lagrange multipliers show the only critical point is $a = b = c = 1$ (the case of three distinct roots is impossible since the auxiliary cubic has zero $x^2$-coefficient, forcing $a+b+c=0$, a contradiction). The minimum value is $3 + 3 = 6$.
+
+$$\boxed{6}$$

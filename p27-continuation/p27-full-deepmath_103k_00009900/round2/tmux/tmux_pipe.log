@@ -1,0 +1,15 @@
+我将把证明写到 `proof.md` 文件中。让我先梳理一下关键思路，然后生成文件。
+
+核心结果：**是的**——如果一个 Hecke L-函数的所有局部特征值都是单位根，那么它就是一个 Artin L-函数。证明已写入 `proof.md`。
+
+**答案：** $\boxed{\text{Yes}}$
+
+如果一个 Hecke L-函数的所有局部特征值（Satake 参数）都是单位根，那么它就是一个 Artin L-函数。证明过程包含三个步骤：
+
+1. **单位根条件强制 $\chi$ 为有限阶** — 在 Archimedean 处，非零范数指数 $t \neq 0$ 会导致 $|\alpha_{\mathfrak{p}}| = N(\mathfrak{p})^t \neq 1$，这与单位根的性质矛盾。非平凡的无限型 $(a_v, b_v) \neq (0,0)$ 会导致参数在圆上均匀分布，无法全部落在单位根的离散集合中。因此 $\chi$ 具有平凡的无限型和零范数指数，即它是有限阶的（$A_0$ 型）。
+
+2. **类域论给出 Galois 特征标** — 有限阶 Hecke 特征标 $\chi$ 通过 Artin 互反映射 $\mathrm{rec}_K$ 分解，产生有限交换扩张 $L/K$ 的 Galois 群的特征标 $\tilde{\chi}$。
+
+3. **L-函数重合** — Hecke L-函数 $L(s, \chi)$ 等于 Artin L-函数 $L(s, \tilde{\chi})$，因为 $\chi(\varpi_{\mathfrak{p}}) = \tilde{\chi}(\mathrm{Frob}_{\mathfrak{p}})$，且 Archimedean $\Gamma$-因子匹配（平凡的无限型给出了“非分歧”的 Archimedean 因子）。
+
+逆命题成立，因为有限 Galois 群的每个元素都是有限阶的，因此 $\rho(\mathrm{Frob}_{\mathfrak{p}})$ 的特征值总是单位根。

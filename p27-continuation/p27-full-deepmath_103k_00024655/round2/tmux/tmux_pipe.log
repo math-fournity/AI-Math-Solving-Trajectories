@@ -1,0 +1,17 @@
+Looking at this problem, I need to determine whether commuting homogeneous elements $P, Q$ in the first Weyl algebra $A_1(k)$ (char $k = 0$) can both be expressed as polynomials in some single element $H$.
+
+The key result here is **Dixmier's theorem** on centralizers in the Weyl algebra. Let me write the proof to the file as instructed.The proof has been written to `proof.md`.
+
+**Summary of the argument:**
+
+The answer is **yes** — such an $H$ always exists. The proof relies on a classical theorem of Dixmier (1968):
+
+> For any non-scalar $P \in A_1(k)$, the centralizer $C_{A_1}(P) = \{R : [P,R]=0\}$ is a polynomial algebra $k[H]$ in one variable.
+
+Given commuting $P, Q$:
+- If both are scalars, the result is trivial (take $H = x$).
+- If (say) $P$ is non-scalar, Dixmier's theorem gives $C_{A_1}(P) = k[H]$ for some $H$. Since $P$ commutes with itself, $P \in k[H]$, so $P = g(H)$. Since $[P,Q]=0$, we have $Q \in C_{A_1}(P) = k[H]$, so $Q = f(H)$.
+
+Both $P$ and $Q$ are polynomials in the same $H$. The homogeneity assumption is not actually needed — the result holds for any commuting pair in $A_1(k)$ over a field of characteristic zero.
+
+$$\boxed{\text{Yes, such an } H \text{ exists.}}$$

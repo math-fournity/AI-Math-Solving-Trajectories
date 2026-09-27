@@ -1,0 +1,9 @@
+Looking at this problem, I need to determine whether a finite-index subring $S$ of a non-commutative ring $R$ always contains a 2-sided ideal $I$ with $[R:I] < \infty$.
+
+The answer is **yes**. Let me work through the proof and write it to `proof.md`.The proof has been written to `proof.md`.
+
+**Summary:** The answer is **yes**. The key construction is the ideal
+$$I = \{s \in S : sR \subseteq S \text{ and } Rs \subseteq S\},$$
+which is the intersection of the kernels of two natural action maps $s \mapsto \alpha_s$ and $s \mapsto \beta_s$ from $(S,+)$ into $\operatorname{End}(R/S)$. Since $R/S$ is a finite group, its endomorphism ring is finite, so each kernel has finite index in $S$, and hence so does their intersection $I$. One verifies $I$ is a two-sided ideal of $S$, and then $[R:I] = [R:S]\cdot[S:I] < \infty$.
+
+$$\boxed{\text{Yes. Such a two-sided ideal } I \text{ always exists.}}$$

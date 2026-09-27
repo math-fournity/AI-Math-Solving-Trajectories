@@ -1,0 +1,13 @@
+我来完成这个证明。让我把证明写入 `proof.md`。证明已写入 `proof.md`。
+
+**答案：Yes，$E$ 是 norming 的。**
+
+证明的核心思路：
+
+1. **$|||\cdot||| \leq \|\cdot\|$**（因为 $E \subset F^*$），且 $|||\cdot|||$ 是真正的范数（因为 $E$ 是 total 的）。
+
+2. **$(F, |||\cdot|||)$ 完备**：在 $(F, |||\cdot|||)$ 的完备化 $\widetilde{F}$ 中，每个 $nB$ 是闭集（由假设 $B$ 在 $|||\cdot|||$ 下完备）。由 Baire 纲定理，某个 $nB$ 在 $\widetilde{F}$ 中有非空内部。利用 $nB$ 的凸性和对称性，推出 $0$ 的一个 $|||\cdot|||$-球包含在 $F$ 中。由于 $F$ 是 $\widetilde{F}$ 的线性子空间且包含 $0$ 的邻域，故 $F = \widetilde{F}$，即 $(F, |||\cdot|||)$ 完备。
+
+3. **闭图像定理**：恒等映射 $\mathrm{id}: (F, |||\cdot|||) \to (F, \|\cdot\|)$ 的图像是闭的（若 $f_n \to f$ in $|||\cdot|||$ 且 $f_n \to g$ in $\|\cdot\|$，则由 $|||\cdot||| \leq \|\cdot\|$ 知 $f_n \to g$ in $|||\cdot|||$，故 $f = g$）。两个空间都是 Banach 空间，由闭图像定理得 $\|f\| \leq C\,|||f|||$，即 $|||f||| \geq \frac{1}{C}\|f\|$。
+
+$$\boxed{\text{Yes}}$$

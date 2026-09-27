@@ -1,0 +1,25 @@
+Looking at this problem, I need to determine the maximum number of real intersection points of the unbounded components of two real plane cubic curves.
+
+Let me work through the key ideas:
+
+1. **Unbounded components = pseudo-lines in ℝP²**: A smooth real cubic in ℝP² has either 1 component (Type II, a pseudo-line/non-contractible curve) or 2 components (Type I: one oval + one pseudo-line). In an affine chart, the pseudo-line becomes the unbounded component.
+
+2. **Mod 2 intersection constraint**: Two pseudo-lines in ℝP² each represent the generator of H₁(ℝP², ℤ/2) ≅ ℤ/2. Their mod 2 intersection number is 1, so they must intersect in an **odd** number of points.
+
+3. **Bézout bound**: Two cubics meet in at most 9 points (with multiplicity) in ℂP². The maximum odd number ≤ 9 is **9**.
+
+4. **Achievability**: If both cubics are Type II, their entire real locus is the pseudo-line (unbounded component), so all real intersections count. I can construct two Type II cubics meeting in 9 real transverse points via a pencil argument.
+
+Let me write the proof to proof.md.The proof has been written to `proof.md`.
+
+**Summary of the argument:**
+
+1. **Unbounded component = pseudo-line**: A smooth real cubic in ℝP² has either 1 component (Type II, a pseudo-line) or 2 components (Type I: oval + pseudo-line). The unbounded component in any affine chart is always the pseudo-line (non-contractible in ℝP²).
+
+2. **Parity constraint**: Two pseudo-lines in ℝP² each generate H₁(ℝP², ℤ/2) ≅ ℤ/2, so their mod 2 intersection number is 1. They must meet in an **odd** number of real points.
+
+3. **Bézout bound**: Two cubics meet in at most 9 points, so the odd maximum is **9**.
+
+4. **Achievability**: Take a Type II cubic E (e.g., y² = x³ + x), pick 9 general real points on E(ℝ), form the pencil of cubics through them. Near E in the pencil, all smooth cubics are Type II. Pick D ≠ E from this interval — both are Type II with 9 real transverse intersections, all on the unbounded components.
+
+$$\boxed{9}$$

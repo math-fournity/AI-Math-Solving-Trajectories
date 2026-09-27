@@ -1,0 +1,19 @@
+Looking at my previous analysis, I had established the key computations. Let me complete the solution.
+
+The previous thinking established:
+- $E: y^2 = x^3 + p^3x$ with $E(\mathbb{Q})[2] = \{O,(0,0)\}$, $|E(\mathbb{Q})[2]|=2$
+- $E': y^2 = x^3 - 4p^3x$ (2-isogenous) with $|E'(\mathbb{Q})[2]|=2$
+- $S^{(\hat\phi)} = \{1, p\}$, $|S^{(\hat\phi)}|=2$
+- $S^{(\phi)} = \{1, -p\}$, $|S^{(\phi)}|=2$
+
+The remaining step was deriving the rank formula. Let me finish that and write the proof.The proof has been written to `proof.md`.
+
+**Summary:** By 2-isogeny descent on $E: y^2 = x^3 + p^3x$ (with 2-isogenous curve $E': y^2 = x^3 - 4p^3x$):
+
+- **$S^{(\hat\phi)} = \{1, p\}$**: Only $d=1$ (trivial) and $d=p$ (from the 2-torsion point) survive local solubility. The negative classes fail over $\mathbb{R}$; $d=p$ passes all local tests (the key 2-adic check uses $p(16+p) \equiv 1 \pmod{8}$, which holds since $p \equiv 7 \pmod{16}$).
+
+- **$S^{(\phi)} = \{1, -p\}$**: Only the trivial classes survive. All other candidates ($\pm 1$ aside from $1$, $\pm 2$, $p$, $\pm 2p$) fail — either at $p$ (using $\left(\frac{-1}{p}\right) = -1$ since $p \equiv 3 \pmod 4$) or at $2$ (2-adic valuation/unit obstructions).
+
+Both Selmer groups equal their minimum size (just the trivial elements from $O$ and the 2-torsion), forcing $\text{Sha}[\phi] = \text{Sha}[\hat\phi] = 1$. The descent formula then gives $2^{r+1} = 2 \cdot 2 / 2 = 2$, hence $r = 0$.
+
+$$\boxed{0}$$

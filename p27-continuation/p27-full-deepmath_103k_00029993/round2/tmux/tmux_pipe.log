@@ -1,0 +1,27 @@
+我将从交接文档中断的地方继续分析。之前的探索尝试了多种构造（更新链、爬山-重置链、生灭链、延迟更新链），但均未找到反例。关键突破点在于意识到**任何**不可约正常返链在任意状态下都拥有更新结构，这提供了一般性的收敛论证。
+
+让我来写出证明。## Summary
+
+**Answer: $\boxed{NO}$** — no such chain exists.
+
+### Key Insight
+
+The previous exploration tried many constructions (renewal chains, birth-death chains, climbing-resetting chains, delayed renewal chains) looking for a counterexample where $E_{k_0}[M_n] \not\to E_\mu[X]$. All failed because of a **fundamental structural property** of Markov chains that the exploration didn't fully exploit:
+
+**Every irreducible positive recurrent chain has a renewal decomposition at every state.**
+
+### The Argument (3 steps)
+
+1. **Renewal decomposition** at $k_0$: 
+$$E_{k_0}[M_n] = k_0\, u_n + \sum_{t=1}^{n} u_{n-t}\, g(t)$$
+where $u_n = P^n(k_0,k_0) \to \mu_{k_0}$ and $g(t) = E_{k_0}[M_t \mathbf{1}_{T_{k_0}>t}]$.
+
+2. **Kac's formula** gives $\sum_{t=1}^\infty g(t) = E_\mu[X]/\mu_{k_0} - k_0 < \infty$, so $g \in \ell^1$ — **exactly when** the invariant mean is finite.
+
+3. **Convolution lemma**: if $a_s \to 0$ (bounded) and $g \in \ell^1$, then $\sum_{t=1}^n a_{n-t} g(t) \to 0$. Split at $n/2$: the first half is controlled by $\sup_{s \geq n/2}|a_s| \cdot \|g\|_1 \to 0$, the second by $\|a\|_\infty \cdot \sum_{t > n/2}|g(t)| \to 0$.
+
+### Why the "TV ≠ unbounded expectation" intuition fails
+
+The intuition that TV convergence doesn't control unbounded expectations is correct for *arbitrary* sequences of distributions. But $P^n(k_0, \cdot)$ are not arbitrary — the renewal structure forces $E_{k_0}[M_n]$ to be a convolution, and the finite invariant mean condition is *exactly* the $\ell^1$ condition on the excursion profile that makes the convolution converge. The Markov chain structure provides the uniform integrability that generic distribution sequences lack.
+
+The proof is written to `proof.md`.
