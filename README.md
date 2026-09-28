@@ -1,5 +1,7 @@
 # AI-Math-Solving-Trajectories
 
+> **从零恢复完整工作环境**（本仓库是仓库族之一）：按主仓库手册 [docs/RESTORE-GUIDE.md](https://github.com/math-fournity/AI-Math-Competition-Problem-Solving-System/blob/main/docs/RESTORE-GUIDE.md) 执行。
+
 AI 数学竞赛题解题系统**当前世代**的每题运行现场归档：p27 生产续传管线、v2 递归消化链
 管线（开发中）与 SOP 报表的原始运行数据。
 
